@@ -31,6 +31,7 @@ FEEDS = {
     "CNBC - Economy": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
     "CNBC - US News": "https://www.cnbc.com/id/15837362/device/rss/rss.html",
     "MarketWatch": "https://feeds.marketwatch.com/marketwatch/topstories/",
+    "Bloomberg Markets": "https://feeds.bloomberg.com/markets/news.rss",
     "UOL Economia": "https://rss.uol.com.br/feed/economia.xml",
     "G1 Economia": "https://g1.globo.com/dynamo/economia/rss2.xml",
     "Exame": "https://exame.com/feed/",
@@ -45,6 +46,7 @@ FEEDS = {
     "Nasdaq": "https://www.nasdaq.com/feed/rssoutbound?category=Markets",
     "ZeroHedge": "https://feeds.feedburner.com/zerohedge/feed",
 }
+
 
 KEYWORDS = [
     "selic", "juros", "ibovespa", "dólar", "dolar", "inflação", "inflacao",
