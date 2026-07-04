@@ -136,13 +136,19 @@ def strip_boilerplate(text):
 
 
 def fetch_feed(url):
+    """Busca o feed com um User-Agent de navegador. Se qualquer coisa der
+    errado (timeout, conexão recusada, bloqueio), retorna um feed vazio em
+    vez de deixar o erro derrubar o script inteiro."""
     try:
-        req = urllib.request.Request(
-            url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+        response = requests.get(
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"},
+            timeout=15,
         )
-        return feedparser.parse(req)
-    except Exception:
-        return feedparser.parse(url)
+        return feedparser.parse(response.content)
+    except Exception as e:
+        print(f"AVISO: falha ao buscar feed {url}: {e}")
+        return feedparser.parse("")
 
 
 def summarize_with_gemini(title, body):
@@ -165,6 +171,9 @@ def summarize_with_gemini(title, body):
             timeout=20,
         )
         data = response.json()
+        if "candidates" not in data:
+            print(f"Erro Gemini (resposta sem 'candidates'): {data}")
+            return None
         text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
         parts = text.split("\n\n", 1)
         translated_title = parts[0].strip()
