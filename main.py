@@ -2,11 +2,6 @@
 Bot de Notícias de Mercado - Antes do Sino (versão GitHub Actions)
 Roda UMA VEZ por execução (não é loop infinito) — o GitHub Actions
 chama esse script a cada 5 minutos automaticamente via cron.
-
-Diferença da versão Replit: sem while True, sem time.sleep entre ciclos.
-sent_items.json é commitado de volta no repositório a cada execução,
-para persistir o histórico entre execuções (já que o ambiente do
-GitHub Actions é descartado a cada run).
 """
 
 import feedparser
@@ -16,7 +11,6 @@ import os
 import time
 import hashlib
 import re
-import urllib.request
 import difflib
 from datetime import datetime, timezone, timedelta
 
@@ -37,7 +31,6 @@ FEEDS = {
     "CNBC - Economy": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
     "CNBC - US News": "https://www.cnbc.com/id/15837362/device/rss/rss.html",
     "MarketWatch": "https://feeds.marketwatch.com/marketwatch/topstories/",
-    "Bloomberg Markets": "https://feeds.bloomberg.com/markets/news.rss",
     "UOL Economia": "https://rss.uol.com.br/feed/economia.xml",
     "G1 Economia": "https://g1.globo.com/dynamo/economia/rss2.xml",
     "Exame": "https://exame.com/feed/",
@@ -49,8 +42,6 @@ FEEDS = {
     "Seeking Alpha": "https://seekingalpha.com/market_currents.xml",
     "Business Insider": "https://www.businessinsider.com/rss",
     "WSJ Markets": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
-    "FT Markets": "https://www.ft.com/markets?format=rss",
-    "The Economist Finance": "https://www.economist.com/finance-and-economics/rss.xml",
     "Nasdaq": "https://www.nasdaq.com/feed/rssoutbound?category=Markets",
     "ZeroHedge": "https://feeds.feedburner.com/zerohedge/feed",
 }
@@ -77,11 +68,6 @@ KEYWORDS = [
     "nvidia", "netflix", "jpmorgan", "jp morgan", "goldman sachs",
     "berkshire hathaway", "visa", "mastercard", "disney", "coca-cola",
     "boeing", "intel", "exxon", "chevron", "walmart", "pfizer",
-]
-
-FEED_PRIORITY = [
-    "InfoMoney", "Money Times", "Bloomberg Markets", "CNBC - Finance",
-    "CNBC - Economy", "CNBC - US News", "WSJ Markets",
 ]
 
 WORDPRESS_BOILERPLATE_PATTERNS = [
@@ -136,9 +122,6 @@ def strip_boilerplate(text):
 
 
 def fetch_feed(url):
-    """Busca o feed com um User-Agent de navegador. Se qualquer coisa der
-    errado (timeout, conexão recusada, bloqueio), retorna um feed vazio em
-    vez de deixar o erro derrubar o script inteiro."""
     try:
         response = requests.get(
             url,
@@ -194,6 +177,8 @@ def send_telegram_message(text):
             print(f"Rate limit, aguardando {retry_after}s")
             time.sleep(retry_after)
             r = requests.post(url, json=payload, timeout=10)
+        if r.status_code != 200:
+            print(f"Erro Telegram (status {r.status_code}): {r.text}")
         return r.status_code == 200
     except Exception as e:
         print(f"Erro Telegram: {e}")
@@ -218,8 +203,6 @@ def format_message(source, entry, ai_result):
 
 
 def is_recent_enough(entry):
-    """Considera apenas notícias de hoje (best-effort; se não der pra
-    determinar a data, deixa passar)."""
     date_struct = entry.get("published_parsed") or entry.get("updated_parsed")
     if not date_struct:
         return True
@@ -276,3 +259,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
