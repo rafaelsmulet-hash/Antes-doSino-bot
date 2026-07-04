@@ -112,7 +112,7 @@ def is_relevant(entry):
 def is_duplicate_title(title, recent_titles):
     for old_title in recent_titles:
         ratio = difflib.SequenceMatcher(None, title.lower(), old_title.lower()).ratio()
-        if ratio > 0.8:
+        if ratio > 0.92:
             return True
     return False
 
