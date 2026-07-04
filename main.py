@@ -51,6 +51,8 @@ FEEDS = {
 KEYWORDS = [
     "selic", "juros", "ibovespa", "dólar", "dolar", "inflação", "inflacao",
     "ações", "acoes", "ação", "acao", "bolsa", "b3", "cdi", "tesouro direto",
-    "câmbio", "cambio", "pib", "
+    "câmbio", "cambio", "pib"
+]
+
 
 
