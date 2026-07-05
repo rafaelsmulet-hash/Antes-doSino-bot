@@ -237,7 +237,7 @@ def format_message(source, entry, ai_result):
     body = html_module.escape(body, quote=False)
     source = html_module.escape(source, quote=False)
 
-    msg = "<b>" + title + "</b>\n\n" + body + "\n\n<i>" + source + "</i>\n🔗 " + link
+        msg = "<b>" + title + "</b>\n\n" + body + "\n\n<i>" + source + "</i>"
     return msg
 
 
