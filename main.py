@@ -69,30 +69,23 @@ KEYWORDS = [
 ]
 
 NEGATIVE_KEYWORDS = [
-    # === ESPORTES & JOGOS ===
     "gols", "haaland", "futebol", "campeonato", "libertadores", "neymar", "copa do mundo",
     "partida", "placar", "escalacao", "treinador", "venceu o jogo", "derrota", "tabela",
     "banco de reservas", "medalha de ouro", "podio", "olimpiadas", "olimpico", "grand slam",
     "ufc", "nba", "champions league", "premier league", "venda de jogador", "passe de",
     "football", "soccer", "match", "score", "coach", "world cup", "olympics", "gold medal",
     "stadium", "championship", "player transfer", "substitute bench", "defeat", "win",
-
-    # === ENTRETENIMENTO & CELEBRIDADES ===
     "estreia nos cinemas", "novela", "atriz", "ator", "bbb", "celebridade", "fofoca", 
     "venda de ingressos", "show de", "rock in rio", "lollapalooza", "album", "musica", 
     "clipe", "estreia no", "bilheteria", "oscar", "grammy", "hollywood", "netflix series",
     "box office", "movie premiere", "actor", "actress", "celebrity", "gossip", "tickets sold",
     "concert", "festival", "album launch", "music video", "pop star", "fashion week",
-
-    # === CRIME, SEGURANÇA & SOCIAL ===
     "crime", "assassinato", "preso em flagrante", "acidente de carro", "tiroteio", "policia",
     "trafico", "homicidio", "roubo de bolsa", "furto", "assalto", "sequestro", "baleado",
     "taxa de homicidios", "taxa de mortalidade", "taxa de criminalidade", "bolsa familia",
     "auxilio-reclusao", "bolsa de estudos", "vítima", "batalhao", "operacao policial",
     "murder", "shooting", "police raid", "car crash", "accident", "theft", "robbery", 
     "kidnapping", "homicide", "crime rate", "mortality rate", "welfare program", "victim",
-
-    # === JUDICIÁRIO & PROCESSOS COMUNS ===
     "acoes judiciais", "acao judicial", "processo na justica", "processa", "processado por",
     "tribunal de justica", "liminar", "juiz determines", "reclamacao trabalhista", "indenizacao",
     "advogado", "promotor", "reprovação de contas", "prisao de", "mandado de busca",
@@ -145,12 +138,8 @@ def item_hash(entry):
 # ==========================================
 def is_relevant(entry):
     text = f"{entry.get('title', '')} {entry.get('summary', '')}".lower()
-    
-    # 1. Checa se o conteúdo esbarra na lista negra expandida
     if any(nw in text for nw in NEGATIVE_KEYWORDS):
         return False
-        
-    # 2. Confirma se contém as palavras-chave do mercado financeiro
     if not KEYWORDS:
         return True
     return any(kw.lower() in text for kw in KEYWORDS)
@@ -183,7 +172,7 @@ def is_recent_enough(entry):
     return entry_date.date() == now.date()
 
 # ==========================================
-# REQUISITOS DE CONEXÃO E TRADUÇÃO GRÁTIS + IA
+# TRADUÇÃO GRÁTIS + MODELO DE ANÁLISE DE SENTIMENTO
 # ==========================================
 def fetch_feed(url):
     try:
@@ -204,8 +193,6 @@ def needs_ai(source, body):
 def summarize_with_gemini(title, body, source_name, translate=True):
     try:
         body_cleaned = strip_html_tags(body).strip() if body else ""
-        
-        # Ajuste estratégico para o Yahoo Finance ou feeds com corpos sem dados
         if "Yahoo" in source_name or not body_cleaned:
             body_cleaned = ""
 
@@ -219,22 +206,30 @@ def summarize_with_gemini(title, body, source_name, translate=True):
                 print(f"AVISO: Falha na tradução gratuita ({e}). Usando original.")
 
         if not USE_AI_SUMMARY:
-            return {"title": title, "body": body_cleaned}
+            return {"title": title, "body": body_cleaned, "sentiment": "NEUTRAL"}
 
-        # --- LÓGICA DE INTELIGÊNCIA ARTIFICIAL PARA GERAÇÃO DE CONTEXTO ---
+        # --- NOVO PROMPT MESTRE COM ANÁLISE DE SENTIMENTO INTEGRADA ---
         if not body_cleaned:
             prompt = (
-                "Voce recebeu o titulo traduzido de uma noticia importante de mercado financeiro internacional. "
-                "Como o corpo da noticia nao esta disponivel, use o seu conhecimento de mercado para criar "
-                "um paragrafo explicativo (maximo 2 frases) em portugues do Brasil, detalhando o contexto "
-                "macroeconomico ou o impacto esperado que esse tipo de evento traz para os investidores.\n"
-                "Responda APENAS com o texto explicativo puro, sem markdown, sem asteriscos, sem introducoes.\n\n"
+                "Voce recebeu o titulo traduzido de uma noticia de mercado financeiro internacional.\n"
+                "Sua tarefa consiste em duas etapas:\n"
+                "1. Use seu conhecimento de mercado para criar um paragrafo explicativo (maximo 2 frases) "
+                "em portugues do Brasil detalhando o contexto macroeconomico ou o impacto esperado desse evento.\n"
+                "2. Analise o sentimento dessa noticia para os ativos/mercados envolvidos e classifique estritamente como "
+                "[BULLISH] (se positivo/alta), [BEARISH] (se negativo/baixa) ou [NEUTRAL] (se neutro ou puramente informativo).\n\n"
+                "Sua resposta deve seguir obrigatoriamente este formato JSON plano:\n"
+                '{"sentiment": "BULLISH", "summary": "Seu resumo explicativo aqui"}\n\n'
                 f"Titulo: {title}"
             )
         else:
             prompt = (
-                "Resuma esta noticia de mercado financeiro em portugues do Brasil. "
-                "Responda APENAS com um resumo de no maximo 2 frases em texto simples, sem markdown, sem asteriscos.\n\n"
+                "Voce recebeu uma noticia de mercado financeiro em portugues.\n"
+                "Sua tarefa consiste em duas etapas:\n"
+                "1. Resuma a noticia em no maximo 2 frases claras em portugues do Brasil.\n"
+                "2. Analise o sentimento do mercado para essa noticia e classifique estritamente como "
+                "[BULLISH] (positivo/alta), [BEARISH] (negativo/baixa) ou [NEUTRAL] (neutro/informativo).\n\n"
+                "Sua resposta deve seguir obrigatoriamente este formato JSON plano:\n"
+                '{"sentiment": "BEARISH", "summary": "Seu resumo estruturado aqui"}\n\n'
                 f"Texto original: {body_cleaned}"
             )
 
@@ -245,44 +240,41 @@ def summarize_with_gemini(title, body, source_name, translate=True):
             timeout=20,
         )
         data = response.json()
+        
+        # Fallback caso a IA não retorne a estrutura correta
         if "candidates" not in data:
-            return {"title": title, "body": body_cleaned}
+            return {"title": title, "body": body_cleaned, "sentiment": "NEUTRAL"}
             
-        text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
-        text = text.replace("**", "").replace("*", "")
-        return {"title": title, "body": text}
+        raw_text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
+        
+        # Limpa blocos de codigo markdown que o modelo possa tentar soltar
+        raw_text = re.sub(r"```json|```", "", raw_text).strip()
+        
+        # Parse do JSON gerado pelo Gemini
+        parsed_ai = json.loads(raw_text)
+        sentiment = parsed_ai.get("sentiment", "NEUTRAL").upper()
+        summary = parsed_ai.get("summary", body_cleaned).replace("**", "").replace("*", "")
+        
+        return {"title": title, "body": summary, "sentiment": sentiment}
     except Exception as e:
-        print(f"Erro Gemini: {e}")
-        return None
+        print(f"Erro Gemini/Sentiment: {e}")
+        return {"title": title, "body": body_cleaned, "sentiment": "NEUTRAL"}
 
 # ==========================================
-# SISTEMA DE ENVIO E LOGICA PRINCIPAL
+# FORMATADOR VISUAL COM TAGS COLORIDAS
 # ==========================================
-def send_telegram_message(text):
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
-    try:
-        r = requests.post(url, json=payload, timeout=10)
-        if r.status_code == 429:
-            retry_after = r.json().get("parameters", {}).get("retry_after", 5)
-            time.sleep(retry_after)
-            r = requests.post(url, json=payload, timeout=10)
-        return r.status_code == 200
-    except Exception:
-        return False
-
 def format_message(source, entry, ai_result):
     title = entry.get("title", "Sem título")
     body = entry.get("summary", "")
+    sentiment = "NEUTRAL"
 
     if ai_result:
         title = ai_result.get("title", title) or title
         body = ai_result.get("body", "") or body
+        sentiment = ai_result.get("sentiment", "NEUTRAL")
 
     body = strip_html_tags(body)
     body = strip_boilerplate(body)
-    
-    # Limpa links embutidos promocionais
     body = re.sub(r"https?://\S+", "", body, flags=re.IGNORECASE)
     body = re.sub(r"www\.\S+", "", body, flags=re.IGNORECASE)
     body = re.sub(r"\n+", "\n", body).strip()
@@ -290,11 +282,19 @@ def format_message(source, entry, ai_result):
     if not body:
         body = "Acompanhe os desdobramentos desta notícia direto nos canais oficiais."
 
+    # Define o marcador visual com base na análise algorítmica de sentimento
+    if sentiment == "BULLISH":
+        emoji_marcador = "🟢 <b>[BULLISH]</b>"
+    elif sentiment == "BEARISH":
+        emoji_marcador = "🔴 <b>[BEARISH]</b>"
+    else:
+        emoji_marcador = "🔔"
+
     title_tag = html_module.escape(str(title).strip(), quote=False)
     body_tag = html_module.escape(str(body).strip(), quote=False)
     source_tag = html_module.escape(str(source).strip().upper(), quote=False)
 
-    return f"<b>🔔 {title_tag}</b>\n\n{body_tag}\n\n<i>Fonte: {source_tag}</i>"
+    return f"{emoji_marcador} <b>{title_tag}</b>\n\n{body_tag}\n\n<i>Fonte: {source_tag}</i>"
 
 def main():
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
@@ -331,7 +331,8 @@ def main():
             if needs_ai(source, raw_body):
                 ai_result = summarize_with_gemini(title, raw_body, source_name=source, translate=is_english)
             else:
-                ai_result = None
+                # Mesmo se a fonte for BR e não precisar de resumo longo, passamos pelo Gemini rápido para pegar o sentimento
+                ai_result = summarize_with_gemini(title, raw_body, source_name=source, translate=False)
 
             message = format_message(source, entry, ai_result)
 
@@ -339,11 +340,22 @@ def main():
                 sent_hashes.add(h)
                 recent_titles.append(title)
                 new_count += 1
-                print(f"Enviado com sucesso: {title[:50]}...")
+                print(f"Enviado com Sentimento: {title[:30]} [{ai_result.get('sentiment') if ai_result else 'NEUTRAL'}]")
                 save_state(sent_hashes, recent_titles)
                 time.sleep(3)
 
-    print(f"Ciclo concluído. {new_count} notícias novas enviadas.")
+def send_telegram_message(text):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
+    try:
+        r = requests.post(url, json=payload, timeout=10)
+        if r.status_code == 429:
+            retry_after = r.json().get("parameters", {}).get("retry_after", 5)
+            time.sleep(retry_after)
+            r = requests.post(url, json=payload, timeout=10)
+        return r.status_code == 200
+    except Exception:
+        return False
 
 if __name__ == "__main__":
     main()
