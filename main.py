@@ -17,7 +17,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 USE_AI_SUMMARY = bool(GEMINI_API_KEY)
 STATE_FILE = "sent_items.json"
 
-# Limite máximo de notícias enviadas POR EXECUÇÃO para não estourar o tempo do Actions ou limites da API
+# Limite máximo de notícias enviadas POR EXECUÇÃO para não estourar limites
 MAX_NEWS_PER_CYCLE = 5
 
 BR_TZ = timezone(timedelta(hours=-3))
@@ -166,7 +166,7 @@ def summarize_with_gemini(title, body, translate=True):
     try:
         body_cleaned = strip_html_tags(body).strip()
         
-        # MELHORIA OPÇÃO A: Se o corpo estiver vazio, força o Gemini a gerar um resumo contextual baseado no título
+        # Se o corpo estiver vazio, força a IA a criar contexto a partir do título
         if not body_cleaned:
             prompt = (
                 "Voce recebeu apenas o titulo de uma noticia de mercado financeiro em ingles. "
@@ -175,9 +175,7 @@ def summarize_with_gemini(title, body, translate=True):
                 "para os investidores, baseando-se no seu conhecimento de mercado. "
                 "Responda APENAS com texto simples, sem asteriscos, sem markdown. "
                 "Formato da resposta: O titulo traduzido na primeira linha, uma linha em branco, "
-                "e o contexto criado por voce na linha seguinte.
-
-"
+                "e o contexto criado por voce na linha seguinte.\n\n"
                 f"Titulo: {title}"
             )
         elif translate:
@@ -185,22 +183,16 @@ def summarize_with_gemini(title, body, translate=True):
                 "Traduza e resuma esta noticia de mercado financeiro para portugues do Brasil. "
                 "Responda APENAS com texto simples, sem markdown, sem asteriscos, sem prefixos. "
                 "Formato: primeiro o titulo traduzido em uma linha, depois uma linha em branco, "
-                "depois um resumo de no maximo 2 frases.
-
-"
-                f"Titulo original: {title}
-Texto original: {body_cleaned}"
+                "depois um resumo de no maximo 2 frases.\n\n"
+                f"Titulo original: {title}\nTexto original: {body_cleaned}"
             )
         else:
             prompt = (
                 "Resuma esta noticia de mercado financeiro em portugues do Brasil. O texto ja "
                 "esta em portugues, apenas resuma. Responda APENAS com texto simples, sem markdown, "
                 "sem asteriscos. Formato: primeiro o titulo em uma linha, depois uma linha em branco, "
-                "depois um resumo de no maximo 2 frases.
-
-"
-                f"Titulo original: {title}
-Texto original: {body_cleaned}"
+                "depois um resumo de no maximo 2 frases.\n\n"
+                f"Titulo original: {title}\nTexto original: {body_cleaned}"
             )
 
         response = requests.post(
@@ -217,9 +209,7 @@ Texto original: {body_cleaned}"
         text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
         text = text.replace("**", "").replace("*", "")
         
-        parts = text.split("
-
-", 1)
+        parts = text.split("\n\n", 1)
         translated_title = parts[0].strip()
         summary = parts[1].strip() if len(parts) > 1 else ""
         return {"title": translated_title, "body": summary}
@@ -228,8 +218,27 @@ Texto original: {body_cleaned}"
         return None
 
 
+def send_telegram_message(text):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML", "disable_web_page_preview": False}
+    try:
+        r = requests.post(url, json=payload, timeout=10)
+        if r.status_code == 429:
+            retry_after = r.json().get("parameters", {}).get("retry_after", 5)
+            print(f"Rate limit, aguardando {retry_after}s")
+            time.sleep(retry_after)
+            r = requests.post(url, json=payload, timeout=10)
+        if r.status_code != 200:
+            print(f"Erro Telegram (status {r.status_code}): {r.text}")
+        return r.status_code == 200
+    except Exception as e:
+        print(f"Erro Telegram: {e}")
+        return False
+
+
 def format_message(source, entry, ai_result):
-    title = entry.get("title", "Sem titulo")
+    title = entry.get("title", "Sem título")
+    link = entry.get("link", "")
     body = entry.get("summary", "")
 
     if ai_result:
@@ -239,18 +248,26 @@ def format_message(source, entry, ai_result):
     body = strip_html_tags(body)
     body = strip_boilerplate(body)
     
+    # Se o corpo continuar vazio após filtros, coloca um Fallback padrão inteligível
     if not body:
-        body = "Leia mais no link."
+        body = "Acompanhe os desdobramentos desta notícia direto nos canais oficiais."
 
-    title = html_module.escape(title, quote=False)
-    body = html_module.escape(body, quote=False)
-    source = html_module.escape(source, quote=False)
+    # Força a existência de uma fonte caso venha nula do loop
+    if not source or not str(source).strip():
+        source = "Antes do Sino"
 
-    msg = f"<b>{title}</b>
+    # Escape obrigatório de HTML para evitar erros de renderização no Telegram
+    title = html_module.escape(str(title).strip(), quote=False)
+    body = html_module.escape(str(body).strip(), quote=False)
+    source = html_module.escape(str(source).strip(), quote=False)
 
-{body}
+    # Monta a estrutura rígida de blocos textuais
+    msg = f"<b>{title}</b>\n\n{body}\n\n<i>Fonte: {source}</i>"
+    
+    # Se houver link, anexa de forma limpa e clicável no final
+    if link:
+        msg += f'\n\n<a href="{link}">🔗 Ler notícia original</a>'
 
-<i>{source}</i>"
     return msg
 
 
@@ -308,6 +325,7 @@ def main():
             raw_body = entry.get("summary", "")
             is_english = source not in PORTUGUESE_SOURCES
 
+            # Força o uso da IA se for inglês ou se o corpo em PT estiver vazio
             if needs_ai(source, raw_body):
                 ai_result = summarize_with_gemini(title, raw_body, translate=is_english)
             else:
@@ -320,7 +338,7 @@ def main():
                 recent_titles.append(title)
                 new_count += 1
                 print(f"Enviado: {title[:60]}")
-                save_state(sent_hashes, recent_titles)
+                save_state(sent_hashes, recent_titles)  # Salva o estado imediatamente
                 time.sleep(3)
 
     print(f"Ciclo concluído. {new_count} notícia(s) enviada(s).")
