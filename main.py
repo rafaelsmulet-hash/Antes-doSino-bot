@@ -17,12 +17,10 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 USE_AI_SUMMARY = bool(GEMINI_API_KEY)
 STATE_FILE = "sent_items.json"
 
-# Limite máximo de notícias enviadas POR EXECUÇÃO para não estourar limites
-MAX_NEWS_PER_CYCLE = 5
-
 BR_TZ = timezone(timedelta(hours=-3))
 
 FEEDS = {
+    # --- Fontes Originais (21) ---
     "InfoMoney": "https://www.infomoney.com.br/feed/",
     "Money Times": "https://www.moneytimes.com.br/mercados/feed",
     "Investing.com Brasil": "https://br.investing.com/rss/news_25.rss",
@@ -44,6 +42,16 @@ FEEDS = {
     "WSJ Markets": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
     "Nasdaq": "https://www.nasdaq.com/feed/rssoutbound?category=Markets",
     "ZeroHedge": "https://feeds.feedburner.com/zerohedge/feed",
+    
+    # --- Expansão Estratégica (8 Novas Fontes) ---
+    "IBGE": "https://agenciadenoticias.ibge.gov.br/rss.html",
+    "CVM": "https://www.gov.br/cvm/pt-br/assuntos/noticias/RSS",
+    "Tesouro Nacional": "https://www.gov.br/tesouronacional/pt-br/noticias/RSS",
+    "Noticias Agricolas": "https://www.noticiasagricolas.com.br/rss/noticias.xml",
+    "CanalEnergia": "https://www.canalenergia.com.br/feed",
+    "Fed - Federal Reserve": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "Reuters Business": "http://feeds.reuters.com/reuters/businessNews",
+    "FXStreet Macro": "https://www.fxstreet.com/rss/news"
 }
 
 KEYWORDS = [
@@ -73,7 +81,8 @@ KEYWORDS = [
 PORTUGUESE_SOURCES = {
     "InfoMoney", "Money Times", "Investing.com Brasil", "UOL Economia",
     "G1 Economia", "Exame", "Seu Dinheiro", "Suno Noticias",
-    "Brazil Journal", "Neofeed",
+    "Brazil Journal", "Neofeed", "IBGE", "CVM", "Tesouro Nacional", 
+    "Noticias Agricolas", "CanalEnergia"
 }
 
 WORDPRESS_BOILERPLATE_PATTERNS = [
@@ -166,7 +175,6 @@ def summarize_with_gemini(title, body, translate=True):
     try:
         body_cleaned = strip_html_tags(body).strip()
         
-        # Se o corpo estiver vazio, força a IA a criar contexto a partir do título
         if not body_cleaned:
             prompt = (
                 "Voce recebeu apenas o titulo de uma noticia de mercado financeiro em ingles. "
@@ -247,22 +255,17 @@ def format_message(source, entry, ai_result):
     body = strip_html_tags(body)
     body = strip_boilerplate(body)
     
-    # Se o corpo continuar vazio após filtros, coloca um Fallback padrão inteligível
     if not body:
         body = "Acompanhe os desdobramentos desta notícia direto nos canais oficiais."
 
-    # Força a existência de uma fonte caso venha nula do loop
     if not source or not str(source).strip():
         source = "Antes do Sino"
 
-    # Escape obrigatório de HTML para evitar erros de renderização no Telegram
     title = html_module.escape(str(title).strip(), quote=False)
     body = html_module.escape(str(body).strip(), quote=False)
     source = html_module.escape(str(source).strip(), quote=False)
 
-    # Monta a estrutura rígida de blocos textuais (Sem qualquer link)
     msg = f"<b>{title}</b>\n\n{body}\n\n<i>Fonte: {source}</i>"
-
     return msg
 
 
@@ -284,19 +287,12 @@ def main():
     new_count = 0
 
     for source, url in FEEDS.items():
-        if new_count >= MAX_NEWS_PER_CYCLE:
-            print(f"Limite de {MAX_NEWS_PER_CYCLE} notícias atingido para este ciclo. Interrompendo.")
-            break
-
         feed = fetch_feed(url)
         if not feed.entries:
             print(f"AVISO: Feed '{source}' retornou vazio ou falhou")
             continue
 
         for entry in feed.entries[:10]:
-            if new_count >= MAX_NEWS_PER_CYCLE:
-                break
-
             h = item_hash(entry)
             if h in sent_hashes:
                 continue
@@ -320,7 +316,6 @@ def main():
             raw_body = entry.get("summary", "")
             is_english = source not in PORTUGUESE_SOURCES
 
-            # Força o uso da IA se for inglês ou se o corpo em PT estiver vazio
             if needs_ai(source, raw_body):
                 ai_result = summarize_with_gemini(title, raw_body, translate=is_english)
             else:
@@ -333,7 +328,7 @@ def main():
                 recent_titles.append(title)
                 new_count += 1
                 print(f"Enviado: {title[:60]}")
-                save_state(sent_hashes, recent_titles)  # Salva o estado imediatamente
+                save_state(sent_hashes, recent_titles)
                 time.sleep(3)
 
     print(f"Ciclo concluído. {new_count} notícia(s) enviada(s).")
