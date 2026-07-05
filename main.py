@@ -8,14 +8,12 @@ import re
 import difflib
 import html as html_module
 from datetime import datetime, timezone, timedelta
-from deep_translator import GoogleTranslator
 
-# Configurações de Ambiente (Secrets do GitHub ou Render)
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 
-USE_AI_SUMMARY = bool(GEMINI_API_KEY)
+USE_AI = bool(GROQ_API_KEY)
 STATE_FILE = "sent_items.json"
 
 BR_TZ = timezone(timedelta(hours=-3))
@@ -74,23 +72,19 @@ NEGATIVE_KEYWORDS = [
     "banco de reservas", "medalha de ouro", "podio", "olimpiadas", "olimpico", "grand slam",
     "ufc", "nba", "champions league", "premier league", "venda de jogador", "passe de",
     "football", "soccer", "match", "score", "coach", "world cup", "olympics", "gold medal",
-    "stadium", "championship", "player transfer", "substitute bench", "defeat", "win",
-    "estreia nos cinemas", "novela", "atriz", "ator", "bbb", "celebridade", "fofoca", 
-    "venda de ingressos", "show de", "rock in rio", "lollapalooza", "album", "musica", 
-    "clipe", "estreia no", "bilheteria", "oscar", "grammy", "hollywood", "netflix series",
+    "stadium", "championship", "player transfer", "substitute bench",
+    "estreia nos cinemas", "novela", "atriz", "ator", "bbb", "celebridade", "fofoca",
+    "venda de ingressos", "show de", "rock in rio", "lollapalooza", "album", "musica",
+    "clipe", "estreia no", "bilheteria", "oscar", "grammy", "hollywood",
     "box office", "movie premiere", "actor", "actress", "celebrity", "gossip", "tickets sold",
     "concert", "festival", "album launch", "music video", "pop star", "fashion week",
     "crime", "assassinato", "preso em flagrante", "acidente de carro", "tiroteio", "policia",
     "trafico", "homicidio", "roubo de bolsa", "furto", "assalto", "sequestro", "baleado",
-    "taxa de homicidios", "taxa de mortalidade", "taxa de criminalidade", "bolsa familia",
-    "auxilio-reclusao", "bolsa de estudos", "vítima", "batalhao", "operacao policial",
-    "murder", "shooting", "police raid", "car crash", "accident", "theft", "robbery", 
-    "kidnapping", "homicide", "crime rate", "mortality rate", "welfare program", "victim",
+    "murder", "shooting", "police raid", "car crash", "kidnapping", "homicide",
     "acoes judiciais", "acao judicial", "processo na justica", "processa", "processado por",
-    "tribunal de justica", "liminar", "juiz determines", "reclamacao trabalhista", "indenizacao",
-    "advogado", "promotor", "reprovação de contas", "prisao de", "mandado de busca",
-    "lawsuit", "lawsuits", "legal action", "suing", "sued by", "court house", "injunction", 
-    "judge rules", "labor lawsuit", "indemnity", "lawyer", "attorney", "prosecutor", "arrest warrant"
+    "tribunal de justica", "liminar", "reclamacao trabalhista",
+    "lawsuit", "lawsuits", "legal action", "suing", "sued by", "courthouse", "injunction",
+    "judge rules", "labor lawsuit",
 ]
 
 PORTUGUESE_SOURCES = {
@@ -104,9 +98,7 @@ WORDPRESS_BOILERPLATE_PATTERNS = [
     r"O post .* apareceu primeiro (n[oa]) \w+\s*\.?",
 ]
 
-# ==========================================
-# CONTROLE DE ESTADO (SISTEMA ANTI-LOOP)
-# ==========================================
+
 def load_state():
     if os.path.exists(STATE_FILE):
         try:
@@ -114,8 +106,9 @@ def load_state():
                 data = json.load(f)
                 return set(data.get("hashes", [])), data.get("titles", [])
         except Exception as e:
-            print(f"AVISO: Falha ao carregar estado ({e}). Criando um novo.")
+            print("AVISO: falha ao carregar estado (" + str(e) + "). Criando novo.")
     return set(), []
+
 
 def save_state(hashes, titles):
     trimmed_hashes = list(hashes)[-3000:]
@@ -124,25 +117,37 @@ def save_state(hashes, titles):
         with open(STATE_FILE, "w", encoding="utf-8") as f:
             json.dump({"hashes": trimmed_hashes, "titles": trimmed_titles}, f, ensure_ascii=False, indent=2)
     except Exception as e:
-        print(f"ERRO CRÍTICO ao salvar estado: {e}")
+        print("ERRO ao salvar estado: " + str(e))
+
 
 def normalize_url(url):
     return url.split("?")[0].split("#")[0]
+
 
 def item_hash(entry):
     key = normalize_url(entry.get("link", "")) or entry.get("title", "")
     return hashlib.md5(key.encode("utf-8")).hexdigest()
 
-# ==========================================
-# FILTROS DE RELEVÂNCIA E LIMPEZA
-# ==========================================
+
+def get_entry_body(entry):
+    """Tenta varios campos possiveis do feed, na ordem, ate achar algum
+    texto (resolve o caso do Yahoo Finance, que as vezes usa campos
+    diferentes de 'summary')."""
+    for field in ["summary", "description", "subtitle"]:
+        value = entry.get(field, "")
+        if value and value.strip():
+            return value
+    return ""
+
+
 def is_relevant(entry):
-    text = f"{entry.get('title', '')} {entry.get('summary', '')}".lower()
+    text = (entry.get("title", "") + " " + get_entry_body(entry)).lower()
     if any(nw in text for nw in NEGATIVE_KEYWORDS):
         return False
     if not KEYWORDS:
         return True
     return any(kw.lower() in text for kw in KEYWORDS)
+
 
 def is_duplicate_title(title, recent_titles):
     for old_title in recent_titles:
@@ -151,6 +156,7 @@ def is_duplicate_title(title, recent_titles):
             return True
     return False
 
+
 def strip_html_tags(text):
     if not text:
         return ""
@@ -158,10 +164,12 @@ def strip_html_tags(text):
     text = text.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", '"').replace("&#39;", "'")
     return text.strip()
 
+
 def strip_boilerplate(text):
     for pattern in WORDPRESS_BOILERPLATE_PATTERNS:
         text = re.sub(pattern, "", text, flags=re.IGNORECASE).strip()
     return text
+
 
 def is_recent_enough(entry):
     date_struct = entry.get("published_parsed") or entry.get("updated_parsed")
@@ -171,9 +179,7 @@ def is_recent_enough(entry):
     now = datetime.now(BR_TZ)
     return entry_date.date() == now.date()
 
-# ==========================================
-# TRADUÇÃO GRÁTIS + MODELO DE ANÁLISE DE SENTIMENTO
-# ==========================================
+
 def fetch_feed(url):
     try:
         response = requests.get(
@@ -183,89 +189,108 @@ def fetch_feed(url):
         )
         return feedparser.parse(response.content)
     except Exception as e:
-        print(f"AVISO: falha ao buscar feed {url}: {e}")
+        print("AVISO: falha ao buscar feed " + url + ": " + str(e))
         return feedparser.parse("")
+
 
 def needs_ai(source, body):
     has_body = bool(strip_html_tags(body).strip())
-    return not has_body or source not in PORTUGUESE_SOURCES
+    is_english = source not in PORTUGUESE_SOURCES
+    return is_english or not has_body
 
-def summarize_with_gemini(title, body, source_name, translate=True):
+
+def ask_groq(prompt):
+    """Chama a API da Groq (tier gratuito bem mais generoso que o Gemini)."""
+    response = requests.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        headers={
+            "Authorization": "Bearer " + GROQ_API_KEY,
+            "Content-Type": "application/json",
+        },
+        json={
+            "model": "llama-3.3-70b-versatile",
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.3,
+        },
+        timeout=20,
+    )
+    data = response.json()
+    if "choices" not in data:
+        raise ValueError("Resposta sem 'choices': " + str(data))
+    return data["choices"][0]["message"]["content"].strip()
+
+
+def summarize_with_ai(title, body, translate=True):
+    """Traduz (se necessario), resume e classifica o sentimento da noticia
+    usando a Groq. Retorna None se a IA estiver desativada ou falhar."""
+    if not USE_AI:
+        return None
     try:
-        body_cleaned = strip_html_tags(body).strip() if body else ""
-        if "Yahoo" in source_name or not body_cleaned:
-            body_cleaned = ""
+        body_cleaned = strip_html_tags(body).strip()
 
-        # --- ETAPA DE TRADUÇÃO GRATUITA ---
         if translate:
-            try:
-                title = GoogleTranslator(source='en', target='pt').translate(title)
-                if body_cleaned:
-                    body_cleaned = GoogleTranslator(source='en', target='pt').translate(body_cleaned)
-            except Exception as e:
-                print(f"AVISO: Falha na tradução gratuita ({e}). Usando original.")
-
-        if not USE_AI_SUMMARY:
-            return {"title": title, "body": body_cleaned, "sentiment": "NEUTRAL"}
-
-        # --- NOVO PROMPT MESTRE COM ANÁLISE DE SENTIMENTO INTEGRADA ---
-        if not body_cleaned:
-            prompt = (
-                "Voce recebeu o titulo traduzido de uma noticia de mercado financeiro internacional.\n"
-                "Sua tarefa consiste em duas etapas:\n"
-                "1. Use seu conhecimento de mercado para criar um paragrafo explicativo (maximo 2 frases) "
-                "em portugues do Brasil detalhando o contexto macroeconomico ou o impacto esperado desse evento.\n"
-                "2. Analise o sentimento dessa noticia para os ativos/mercados envolvidos e classifique estritamente como "
-                "[BULLISH] (se positivo/alta), [BEARISH] (se negativo/baixa) ou [NEUTRAL] (se neutro ou puramente informativo).\n\n"
-                "Sua resposta deve seguir obrigatoriamente este formato JSON plano:\n"
-                '{"sentiment": "BULLISH", "summary": "Seu resumo explicativo aqui"}\n\n'
-                f"Titulo: {title}"
+            instruction = (
+                "Voce recebeu uma noticia de mercado financeiro em ingles. Faca tres coisas:\n"
+                "1. Traduza o titulo para portugues do Brasil.\n"
+                "2. Escreva um resumo de no maximo 2 frases em portugues do Brasil. Se o texto "
+                "original for curto ou vazio, baseie o resumo no titulo, explicando o contexto "
+                "provavel do evento para o mercado.\n"
+                "3. Classifique o sentimento da noticia para o mercado como BULLISH (positivo/alta), "
+                "BEARISH (negativo/baixa) ou NEUTRAL (neutro/informativo).\n\n"
+                "Responda APENAS em JSON, sem markdown, no formato exato:\n"
+                '{"title": "...", "summary": "...", "sentiment": "BULLISH"}\n\n'
+                "Titulo original: " + title + "\n"
+                "Texto original: " + body_cleaned
             )
         else:
-            prompt = (
-                "Voce recebeu uma noticia de mercado financeiro em portugues.\n"
-                "Sua tarefa consiste em duas etapas:\n"
-                "1. Resuma a noticia em no maximo 2 frases claras em portugues do Brasil.\n"
-                "2. Analise o sentimento do mercado para essa noticia e classifique estritamente como "
-                "[BULLISH] (positivo/alta), [BEARISH] (negativo/baixa) ou [NEUTRAL] (neutro/informativo).\n\n"
-                "Sua resposta deve seguir obrigatoriamente este formato JSON plano:\n"
-                '{"sentiment": "BEARISH", "summary": "Seu resumo estruturado aqui"}\n\n'
-                f"Texto original: {body_cleaned}"
+            instruction = (
+                "Voce recebeu uma noticia de mercado financeiro em portugues. Faca duas coisas:\n"
+                "1. Escreva um resumo de no maximo 2 frases em portugues do Brasil (o texto ja "
+                "esta em portugues, nao precisa traduzir). Se o texto original for curto ou vazio, "
+                "baseie o resumo no titulo.\n"
+                "2. Classifique o sentimento da noticia para o mercado como BULLISH (positivo/alta), "
+                "BEARISH (negativo/baixa) ou NEUTRAL (neutro/informativo).\n\n"
+                "Responda APENAS em JSON, sem markdown, no formato exato:\n"
+                '{"title": "...", "summary": "...", "sentiment": "BEARISH"}\n\n'
+                "Titulo original: " + title + "\n"
+                "Texto original: " + body_cleaned
             )
 
-        response = requests.post(
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
-            headers={"Content-Type": "application/json", "X-goog-api-key": GEMINI_API_KEY},
-            json={"contents": [{"parts": [{"text": prompt}]}]},
-            timeout=20,
-        )
-        data = response.json()
-        
-        # Fallback caso a IA não retorne a estrutura correta
-        if "candidates" not in data:
-            return {"title": title, "body": body_cleaned, "sentiment": "NEUTRAL"}
-            
-        raw_text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
-        
-        # Limpa blocos de codigo markdown que o modelo possa tentar soltar
-        raw_text = re.sub(r"```json|```", "", raw_text).strip()
-        
-        # Parse do JSON gerado pelo Gemini
-        parsed_ai = json.loads(raw_text)
-        sentiment = parsed_ai.get("sentiment", "NEUTRAL").upper()
-        summary = parsed_ai.get("summary", body_cleaned).replace("**", "").replace("*", "")
-        
-        return {"title": title, "body": summary, "sentiment": sentiment}
-    except Exception as e:
-        print(f"Erro Gemini/Sentiment: {e}")
-        return {"title": title, "body": body_cleaned, "sentiment": "NEUTRAL"}
+        raw_response = ask_groq(instruction)
+        raw_response = re.sub(r"```json|```", "", raw_response).strip()
+        parsed = json.loads(raw_response)
 
-# ==========================================
-# FORMATADOR VISUAL COM TAGS COLORIDAS
-# ==========================================
+        return {
+            "title": parsed.get("title", title) or title,
+            "body": parsed.get("summary", body_cleaned) or body_cleaned,
+            "sentiment": parsed.get("sentiment", "NEUTRAL").upper(),
+        }
+    except Exception as e:
+        print("Erro IA (Groq): " + str(e))
+        return None
+
+
+def send_telegram_message(text):
+    url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
+    try:
+        r = requests.post(url, json=payload, timeout=10)
+        if r.status_code == 429:
+            retry_after = r.json().get("parameters", {}).get("retry_after", 5)
+            print("Rate limit, aguardando " + str(retry_after) + "s")
+            time.sleep(retry_after)
+            r = requests.post(url, json=payload, timeout=10)
+        if r.status_code != 200:
+            print("Erro Telegram (status " + str(r.status_code) + "): " + r.text)
+        return r.status_code == 200
+    except Exception as e:
+        print("Erro Telegram: " + str(e))
+        return False
+
+
 def format_message(source, entry, ai_result):
-    title = entry.get("title", "Sem título")
-    body = entry.get("summary", "")
+    title = entry.get("title", "Sem titulo")
+    body = get_entry_body(entry)
     sentiment = "NEUTRAL"
 
     if ai_result:
@@ -275,26 +300,27 @@ def format_message(source, entry, ai_result):
 
     body = strip_html_tags(body)
     body = strip_boilerplate(body)
-    body = re.sub(r"https?://\S+", "", body, flags=re.IGNORECASE)
-    body = re.sub(r"www\.\S+", "", body, flags=re.IGNORECASE)
+    body = re.sub(r"(?i)pontos[- ]chave:?", "", body)
+    body = re.sub(r"https?://\S+", "", body)
+    body = re.sub(r"www\.\S+", "", body)
     body = re.sub(r"\n+", "\n", body).strip()
 
     if not body:
-        body = "Acompanhe os desdobramentos desta notícia direto nos canais oficiais."
+        body = "Leia mais no link."
 
-    # Define o marcador visual com base na análise algorítmica de sentimento
     if sentiment == "BULLISH":
-        emoji_marcador = "🟢 <b>[BULLISH]</b>"
+        marker = "🟢 <b>[ALTA]</b>"
     elif sentiment == "BEARISH":
-        emoji_marcador = "🔴 <b>[BEARISH]</b>"
+        marker = "🟡 <b>[BAIXA]</b>"
     else:
-        emoji_marcador = "🔔"
+        marker = "⚪ <b>[INFORMATIVO]</b>"
 
-    title_tag = html_module.escape(str(title).strip(), quote=False)
-    body_tag = html_module.escape(str(body).strip(), quote=False)
-    source_tag = html_module.escape(str(source).strip().upper(), quote=False)
+    title = html_module.escape(str(title).strip(), quote=False)
+    body = html_module.escape(str(body).strip(), quote=False)
+    source_tag = html_module.escape(str(source).strip(), quote=False)
 
-    return f"{emoji_marcador} <b>{title_tag}</b>\n\n{body_tag}\n\n<i>Fonte: {source_tag}</i>"
+    return marker + " <b>" + title + "</b>\n\n" + body + "\n\n<i>" + source_tag + "</i>"
+
 
 def main():
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
@@ -307,6 +333,7 @@ def main():
     for source, url in FEEDS.items():
         feed = fetch_feed(url)
         if not feed.entries:
+            print("AVISO: Feed '" + source + "' retornou vazio ou falhou")
             continue
 
         for entry in feed.entries[:10]:
@@ -325,14 +352,12 @@ def main():
                 save_state(sent_hashes, recent_titles)
                 continue
 
-            raw_body = entry.get("summary", "")
+            raw_body = get_entry_body(entry)
             is_english = source not in PORTUGUESE_SOURCES
 
+            ai_result = None
             if needs_ai(source, raw_body):
-                ai_result = summarize_with_gemini(title, raw_body, source_name=source, translate=is_english)
-            else:
-                # Mesmo se a fonte for BR e não precisar de resumo longo, passamos pelo Gemini rápido para pegar o sentimento
-                ai_result = summarize_with_gemini(title, raw_body, source_name=source, translate=False)
+                ai_result = summarize_with_ai(title, raw_body, translate=is_english)
 
             message = format_message(source, entry, ai_result)
 
@@ -340,22 +365,13 @@ def main():
                 sent_hashes.add(h)
                 recent_titles.append(title)
                 new_count += 1
-                print(f"Enviado com Sentimento: {title[:30]} [{ai_result.get('sentiment') if ai_result else 'NEUTRAL'}]")
+                sentiment_log = ai_result.get("sentiment") if ai_result else "N/A"
+                print("Enviado: " + title[:50] + " [" + sentiment_log + "]")
                 save_state(sent_hashes, recent_titles)
                 time.sleep(3)
 
-def send_telegram_message(text):
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
-    try:
-        r = requests.post(url, json=payload, timeout=10)
-        if r.status_code == 429:
-            retry_after = r.json().get("parameters", {}).get("retry_after", 5)
-            time.sleep(retry_after)
-            r = requests.post(url, json=payload, timeout=10)
-        return r.status_code == 200
-    except Exception:
-        return False
+    print("Ciclo concluido. " + str(new_count) + " noticia(s) enviada(s).")
+
 
 if __name__ == "__main__":
     main()
