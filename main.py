@@ -68,6 +68,38 @@ KEYWORDS = [
     "boeing", "intel", "exxon", "chevron", "walmart", "pfizer",
 ]
 
+NEGATIVE_KEYWORDS = [
+    # === ESPORTES & JOGOS ===
+    "gols", "haaland", "futebol", "campeonato", "libertadores", "neymar", "copa do mundo",
+    "partida", "placar", "escalacao", "treinador", "venceu o jogo", "derrota", "tabela",
+    "banco de reservas", "medalha de ouro", "podio", "olimpiadas", "olimpico", "grand slam",
+    "ufc", "nba", "champions league", "premier league", "venda de jogador", "passe de",
+    "football", "soccer", "match", "score", "coach", "world cup", "olympics", "gold medal",
+    "stadium", "championship", "player transfer", "substitute bench", "defeat", "win",
+
+    # === ENTRETENIMENTO & CELEBRIDADES ===
+    "estreia nos cinemas", "novela", "atriz", "ator", "bbb", "celebridade", "fofoca", 
+    "venda de ingressos", "show de", "rock in rio", "lollapalooza", "album", "musica", 
+    "clipe", "estreia no", "bilheteria", "oscar", "grammy", "hollywood", "netflix series",
+    "box office", "movie premiere", "actor", "actress", "celebrity", "gossip", "tickets sold",
+    "concert", "festival", "album launch", "music video", "pop star", "fashion week",
+
+    # === CRIME, SEGURANÇA & SOCIAL ===
+    "crime", "assassinato", "preso em flagrante", "acidente de carro", "tiroteio", "policia",
+    "trafico", "homicidio", "roubo de bolsa", "furto", "assalto", "sequestro", "baleado",
+    "taxa de homicidios", "taxa de mortalidade", "taxa de criminalidade", "bolsa familia",
+    "auxilio-reclusao", "bolsa de estudos", "vítima", "batalhao", "operacao policial",
+    "murder", "shooting", "police raid", "car crash", "accident", "theft", "robbery", 
+    "kidnapping", "homicide", "crime rate", "mortality rate", "welfare program", "victim",
+
+    # === JUDICIÁRIO & PROCESSOS COMUNS ===
+    "acoes judiciais", "acao judicial", "processo na justica", "processa", "processado por",
+    "tribunal de justica", "liminar", "juiz determines", "reclamacao trabalhista", "indenizacao",
+    "advogado", "promotor", "reprovação de contas", "prisao de", "mandado de busca",
+    "lawsuit", "lawsuits", "legal action", "suing", "sued by", "court house", "injunction", 
+    "judge rules", "labor lawsuit", "indemnity", "lawyer", "attorney", "prosecutor", "arrest warrant"
+]
+
 PORTUGUESE_SOURCES = {
     "InfoMoney", "Money Times", "Investing.com Brasil", "UOL Economia",
     "G1 Economia", "Exame", "Seu Dinheiro", "Suno Noticias",
@@ -112,9 +144,15 @@ def item_hash(entry):
 # FILTROS DE RELEVÂNCIA E LIMPEZA
 # ==========================================
 def is_relevant(entry):
+    text = f"{entry.get('title', '')} {entry.get('summary', '')}".lower()
+    
+    # 1. Checa se o conteúdo esbarra na lista negra expandida
+    if any(nw in text for nw in NEGATIVE_KEYWORDS):
+        return False
+        
+    # 2. Confirma se contém as palavras-chave do mercado financeiro
     if not KEYWORDS:
         return True
-    text = f"{entry.get('title', '')} {entry.get('summary', '')}".lower()
     return any(kw.lower() in text for kw in KEYWORDS)
 
 def is_duplicate_title(title, recent_titles):
@@ -167,7 +205,7 @@ def summarize_with_gemini(title, body, source_name, translate=True):
     try:
         body_cleaned = strip_html_tags(body).strip() if body else ""
         
-        # Ajuste cirúrgico para o Yahoo Finance ou feeds com corpos sabidamente vazios
+        # Ajuste estratégico para o Yahoo Finance ou feeds com corpos sem dados
         if "Yahoo" in source_name or not body_cleaned:
             body_cleaned = ""
 
@@ -183,7 +221,7 @@ def summarize_with_gemini(title, body, source_name, translate=True):
         if not USE_AI_SUMMARY:
             return {"title": title, "body": body_cleaned}
 
-        # --- LÓGICA AGRESSIVA PARA CURADORIA DE FONTES SEM CORPO (COMO YAHOO) ---
+        # --- LÓGICA DE INTELIGÊNCIA ARTIFICIAL PARA GERAÇÃO DE CONTEXTO ---
         if not body_cleaned:
             prompt = (
                 "Voce recebeu o titulo traduzido de uma noticia importante de mercado financeiro internacional. "
@@ -244,7 +282,7 @@ def format_message(source, entry, ai_result):
     body = strip_html_tags(body)
     body = strip_boilerplate(body)
     
-    # Limpeza profunda de links promocionais embutidos no feed
+    # Limpa links embutidos promocionais
     body = re.sub(r"https?://\S+", "", body, flags=re.IGNORECASE)
     body = re.sub(r"www\.\S+", "", body, flags=re.IGNORECASE)
     body = re.sub(r"\n+", "\n", body).strip()
@@ -252,12 +290,10 @@ def format_message(source, entry, ai_result):
     if not body:
         body = "Acompanhe os desdobramentos desta notícia direto nos canais oficiais."
 
-    # Escapamento de tags HTML para segurança da API do Telegram
     title_tag = html_module.escape(str(title).strip(), quote=False)
     body_tag = html_module.escape(str(body).strip(), quote=False)
     source_tag = html_module.escape(str(source).strip().upper(), quote=False)
 
-    # Retorna a estrutura visual padrão unificada do Antes do Sino
     return f"<b>🔔 {title_tag}</b>\n\n{body_tag}\n\n<i>Fonte: {source_tag}</i>"
 
 def main():
