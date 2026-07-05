@@ -55,7 +55,7 @@ KEYWORDS = [
     "treasury", "earnings", "ipo", "recession", "rate cut", "rate hike",
     "wall street", "market", "economy", "economic", "trading", "investors",
     "yield", "moody's", "fitch",
-    "petr4", "petr3", "vale3", "itub4", "bbdc4", bbdc3, "abev3", "bbas3",
+    "petr4", "petr3", "vale3", "itub4", "bbdc4", "bbdc3", "abev3", "bbas3",
     "wege3", "rent3", "suzb3", "jbss3", "b3sa3", "mglu3", "lren3", "ggbr4",
     "elet3", "elet6", "csna3", "usim5", "prio3", "rail3", "azul4", "cvcb3",
     "hapv3", "radl3", "vivt3", "sanb11", "brfs3", "embr3",
