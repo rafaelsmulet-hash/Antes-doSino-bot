@@ -1,6 +1,6 @@
 """
-Bot de Notícias de Mercado - Antes do Sino (versão GitHub Actions)
-Roda UMA VEZ por execução (não é loop infinito) — o GitHub Actions
+Bot de Noticias de Mercado - Antes do Sino (versao GitHub Actions)
+Roda UMA VEZ por execucao (nao e loop infinito) - o GitHub Actions
 chama esse script a cada 5 minutos automaticamente via cron.
 """
 
@@ -37,7 +37,7 @@ FEEDS = {
     "G1 Economia": "https://g1.globo.com/dynamo/economia/rss2.xml",
     "Exame": "https://exame.com/feed/",
     "Seu Dinheiro": "https://www.seudinheiro.com/feed/",
-    "Suno Notícias": "https://www.suno.com.br/noticias/feed/",
+    "Suno Noticias": "https://www.suno.com.br/noticias/feed/",
     "Brazil Journal": "https://braziljournal.com/feed/",
     "Neofeed": "https://neofeed.com.br/feed/",
     "Yahoo Finance": "https://finance.yahoo.com/news/rssindex",
@@ -221,7 +221,6 @@ def send_telegram_message(text):
 
 def format_message(source, entry, ai_result):
     title = entry.get("title", "Sem titulo")
-    link = entry.get("link", "")
     body = entry.get("summary", "")
 
     if ai_result:
@@ -237,7 +236,7 @@ def format_message(source, entry, ai_result):
     body = html_module.escape(body, quote=False)
     source = html_module.escape(source, quote=False)
 
-        msg = "<b>" + title + "</b>\n\n" + body + "\n\n<i>" + source + "</i>"
+    msg = "<b>" + title + "</b>\n\n" + body + "\n\n<i>" + source + "</i>"
     return msg
 
 
