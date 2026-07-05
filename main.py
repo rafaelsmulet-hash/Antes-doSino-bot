@@ -183,7 +183,7 @@ def summarize_with_gemini(title, body, translate=True):
             prompt = (
                 "Voce recebeu o titulo de uma noticia de mercado financeiro em portugues. "
                 "Sua tarefa: Crie um paragrafo curto (maximo 2 frases) em portugues explicando "
-                "o contexto macroeconomico ou o significado provavel desta noticia para os investidores. "
+                "o contexto macroeconômico ou o significado provavel desta noticia para os investidores. "
                 "Responda APENAS com texto simples, sem asteriscos, sem markdown.\n\n"
                 f"Titulo: {title}"
             )
@@ -235,17 +235,25 @@ def format_message(source, entry, ai_result):
         title = ai_result.get("title", title) or title
         body = ai_result.get("body", "") or body
 
+    # Limpeza de HTML e boilerplates
     body = strip_html_tags(body)
     body = strip_boilerplate(body)
     
+    # --- LIMPEZA DE LINKS INTERNOS DOS PORTAIS (ANTI-SPAM) ---
+    body = re.sub(r"https?://\S+", "", body, flags=re.IGNORECASE)
+    body = re.sub(r"www\.\S+", "", body, flags=re.IGNORECASE)
+    body = re.sub(r"\n+", "\n", body).strip()
+
     if not body:
         body = "Acompanhe os desdobramentos desta notícia direto nos canais oficiais."
 
-    title = html_module.escape(str(title).strip(), quote=False)
-    body = html_module.escape(str(body).strip(), quote=False)
-    source = html_module.escape(str(source).strip(), quote=False)
+    # Escapamento de caracteres HTML para blindar a API do Telegram
+    title_tag = html_module.escape(str(title).strip(), quote=False)
+    body_tag = html_module.escape(str(body).strip(), quote=False)
+    source_tag = html_module.escape(str(source).strip().upper(), quote=False)
 
-    return f"<b>{title}</b>\n\n{body}\n\n<i>Fonte: {source}</i>"
+    # Retorna o exato padrão visual unificado (Sino + Negrito + Corpo + Fonte)
+    return f"<b>🔔 {title_tag}</b>\n\n{body_tag}\n\n<i>Fonte: {source_tag}</i>"
 
 def main():
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
