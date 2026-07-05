@@ -130,9 +130,6 @@ def item_hash(entry):
 
 
 def get_entry_body(entry):
-    """Tenta varios campos possiveis do feed, na ordem, ate achar algum
-    texto (resolve o caso do Yahoo Finance, que as vezes usa campos
-    diferentes de 'summary')."""
     for field in ["summary", "description", "subtitle"]:
         value = entry.get(field, "")
         if value and value.strip():
@@ -200,7 +197,6 @@ def needs_ai(source, body):
 
 
 def ask_groq(prompt):
-    """Chama a API da Groq (tier gratuito bem mais generoso que o Gemini)."""
     response = requests.post(
         "https://api.groq.com/openai/v1/chat/completions",
         headers={
@@ -221,8 +217,6 @@ def ask_groq(prompt):
 
 
 def summarize_with_ai(title, body, translate=True):
-    """Traduz (se necessario), resume e classifica o sentimento da noticia
-    usando a Groq. Retorna None se a IA estiver desativada ou falhar."""
     if not USE_AI:
         return None
     try:
@@ -319,7 +313,10 @@ def format_message(source, entry, ai_result):
     body = html_module.escape(str(body).strip(), quote=False)
     source_tag = html_module.escape(str(source).strip(), quote=False)
 
-    return marker + " <b>" + title + "</b>\n\n" + body + "\n\n<i>" + source_tag + "</i>"
+    result = marker + " <b>" + title + "</b>\n\n" + body + "\n\n<i>" + source_tag + "</i>"
+    if len(result) > 3900:
+        result = result[:3900] + "..."
+    return result
 
 
 def main():
