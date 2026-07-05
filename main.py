@@ -125,6 +125,8 @@ def is_duplicate_title(title, recent_titles):
     return False
 
 def strip_html_tags(text):
+    if not text:
+        return ""
     text = re.sub(r"<[^>]+>", "", text)
     text = text.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", '"').replace("&#39;", "'")
     return text.strip()
@@ -161,30 +163,34 @@ def needs_ai(source, body):
     has_body = bool(strip_html_tags(body).strip())
     return not has_body or source not in PORTUGUESE_SOURCES
 
-def summarize_with_gemini(title, body, translate=True):
+def summarize_with_gemini(title, body, source_name, translate=True):
     try:
-        body_cleaned = strip_html_tags(body).strip()
+        body_cleaned = strip_html_tags(body).strip() if body else ""
         
-        # --- ETAPA DE TRADUÇÃO GRATUITA E ILIMITADA ---
+        # Ajuste cirúrgico para o Yahoo Finance ou feeds com corpos sabidamente vazios
+        if "Yahoo" in source_name or not body_cleaned:
+            body_cleaned = ""
+
+        # --- ETAPA DE TRADUÇÃO GRATUITA ---
         if translate:
             try:
                 title = GoogleTranslator(source='en', target='pt').translate(title)
                 if body_cleaned:
                     body_cleaned = GoogleTranslator(source='en', target='pt').translate(body_cleaned)
             except Exception as e:
-                print(f"AVISO: Falha na tradução gratuita ({e}). Usando texto original.")
+                print(f"AVISO: Falha na tradução gratuita ({e}). Usando original.")
 
-        # Se a API do Gemini não estiver configurada, retorna apenas o texto traduzido puro
         if not USE_AI_SUMMARY:
             return {"title": title, "body": body_cleaned}
 
-        # --- ETAPA DE RESUMO DA IA (Agora 100% em português) ---
+        # --- LÓGICA AGRESSIVA PARA CURADORIA DE FONTES SEM CORPO (COMO YAHOO) ---
         if not body_cleaned:
             prompt = (
-                "Voce recebeu o titulo de uma noticia de mercado financeiro em portugues. "
-                "Sua tarefa: Crie um paragrafo curto (maximo 2 frases) em portugues explicando "
-                "o contexto macroeconômico ou o significado provavel desta noticia para os investidores. "
-                "Responda APENAS com texto simples, sem asteriscos, sem markdown.\n\n"
+                "Voce recebeu o titulo traduzido de uma noticia importante de mercado financeiro internacional. "
+                "Como o corpo da noticia nao esta disponivel, use o seu conhecimento de mercado para criar "
+                "um paragrafo explicativo (maximo 2 frases) em portugues do Brasil, detalhando o contexto "
+                "macroeconomico ou o impacto esperado que esse tipo de evento traz para os investidores.\n"
+                "Responda APENAS com o texto explicativo puro, sem markdown, sem asteriscos, sem introducoes.\n\n"
                 f"Titulo: {title}"
             )
         else:
@@ -235,11 +241,10 @@ def format_message(source, entry, ai_result):
         title = ai_result.get("title", title) or title
         body = ai_result.get("body", "") or body
 
-    # Limpeza de HTML e boilerplates
     body = strip_html_tags(body)
     body = strip_boilerplate(body)
     
-    # --- LIMPEZA DE LINKS INTERNOS DOS PORTAIS (ANTI-SPAM) ---
+    # Limpeza profunda de links promocionais embutidos no feed
     body = re.sub(r"https?://\S+", "", body, flags=re.IGNORECASE)
     body = re.sub(r"www\.\S+", "", body, flags=re.IGNORECASE)
     body = re.sub(r"\n+", "\n", body).strip()
@@ -247,12 +252,12 @@ def format_message(source, entry, ai_result):
     if not body:
         body = "Acompanhe os desdobramentos desta notícia direto nos canais oficiais."
 
-    # Escapamento de caracteres HTML para blindar a API do Telegram
+    # Escapamento de tags HTML para segurança da API do Telegram
     title_tag = html_module.escape(str(title).strip(), quote=False)
     body_tag = html_module.escape(str(body).strip(), quote=False)
     source_tag = html_module.escape(str(source).strip().upper(), quote=False)
 
-    # Retorna o exato padrão visual unificado (Sino + Negrito + Corpo + Fonte)
+    # Retorna a estrutura visual padrão unificada do Antes do Sino
     return f"<b>🔔 {title_tag}</b>\n\n{body_tag}\n\n<i>Fonte: {source_tag}</i>"
 
 def main():
@@ -288,7 +293,7 @@ def main():
             is_english = source not in PORTUGUESE_SOURCES
 
             if needs_ai(source, raw_body):
-                ai_result = summarize_with_gemini(title, raw_body, translate=is_english)
+                ai_result = summarize_with_gemini(title, raw_body, source_name=source, translate=is_english)
             else:
                 ai_result = None
 
