@@ -9,6 +9,7 @@ import difflib
 import html as html_module
 from datetime import datetime, timezone, timedelta
 
+# Configurações de Ambiente (Secrets do GitHub ou Render)
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
@@ -106,7 +107,7 @@ def load_state():
                 data = json.load(f)
                 return set(data.get("hashes", [])), data.get("titles", [])
         except Exception as e:
-            print("AVISO: falha ao carregar estado (" + str(e) + "). Criando novo.")
+            print(f"AVISO: falha ao carregar estado ({e}). Criando novo.")
     return set(), []
 
 
@@ -117,7 +118,7 @@ def save_state(hashes, titles):
         with open(STATE_FILE, "w", encoding="utf-8") as f:
             json.dump({"hashes": trimmed_hashes, "titles": trimmed_titles}, f, ensure_ascii=False, indent=2)
     except Exception as e:
-        print("ERRO ao salvar estado: " + str(e))
+        print(f"ERRO ao salvar estado: {e}")
 
 
 def normalize_url(url):
@@ -138,7 +139,7 @@ def get_entry_body(entry):
 
 
 def is_relevant(entry):
-    text = (entry.get("title", "") + " " + get_entry_body(entry)).lower()
+    text = f"{entry.get('title', '')} {get_entry_body(entry)}".lower()
     if any(nw in text for nw in NEGATIVE_KEYWORDS):
         return False
     if not KEYWORDS:
@@ -186,7 +187,7 @@ def fetch_feed(url):
         )
         return feedparser.parse(response.content)
     except Exception as e:
-        print("AVISO: falha ao buscar feed " + url + ": " + str(e))
+        print(f"AVISO: falha ao buscar feed {url}: {e}")
         return feedparser.parse("")
 
 
@@ -200,19 +201,19 @@ def ask_groq(prompt):
     response = requests.post(
         "https://api.groq.com/openai/v1/chat/completions",
         headers={
-            "Authorization": "Bearer " + GROQ_API_KEY,
+            "Authorization": f"Bearer {GROQ_API_KEY}",
             "Content-Type": "application/json",
         },
         json={
             "model": "llama-3.3-70b-versatile",
             "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.3,
+            "temperature": 0.2, # Reduzido levemente para garantir respostas JSON mais estritas
         },
         timeout=20,
     )
     data = response.json()
     if "choices" not in data:
-        raise ValueError("Resposta sem 'choices': " + str(data))
+        raise ValueError(f"Resposta sem 'choices': {data}")
     return data["choices"][0]["message"]["content"].strip()
 
 
@@ -226,28 +227,28 @@ def summarize_with_ai(title, body, translate=True):
             instruction = (
                 "Voce recebeu uma noticia de mercado financeiro em ingles. Faca tres coisas:\n"
                 "1. Traduza o titulo para portugues do Brasil.\n"
-                "2. Escreva um resumo de no maximo 2 frases em portugues do Brasil. Se o texto "
+                "2. Escreva um summary (resumo) de no maximo 2 frases em portugues do Brasil. Se o texto "
                 "original for curto ou vazio, baseie o resumo no titulo, explicando o contexto "
                 "provavel do evento para o mercado.\n"
                 "3. Classifique o sentimento da noticia para o mercado como BULLISH (positivo/alta), "
                 "BEARISH (negativo/baixa) ou NEUTRAL (neutro/informativo).\n\n"
-                "Responda APENAS em JSON, sem markdown, no formato exato:\n"
-                '{"title": "...", "summary": "...", "sentiment": "BULLISH"}\n\n'
-                "Titulo original: " + title + "\n"
-                "Texto original: " + body_cleaned
+                "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
+                '{"title": "titulo traduzido aqui", "summary": "resumo aqui", "sentiment": "BULLISH"}\n\n'
+                f"Titulo original: {title}\n"
+                f"Texto original: {body_cleaned}"
             )
         else:
             instruction = (
                 "Voce recebeu uma noticia de mercado financeiro em portugues. Faca duas coisas:\n"
-                "1. Escreva um resumo de no maximo 2 frases em portugues do Brasil (o texto ja "
-                "esta em portugues, nao precisa traduzir). Se o texto original for curto ou vazio, "
+                "1. Mantenha o titulo original em portugues no campo 'title' do JSON.\n"
+                "2. Escreva um resumo de no maximo 2 frases em portugues do Brasil. Se o texto original for curto ou vazio, "
                 "baseie o resumo no titulo.\n"
-                "2. Classifique o sentimento da noticia para o mercado como BULLISH (positivo/alta), "
+                "3. Classifique o sentimento da noticia para o mercado como BULLISH (positivo/alta), "
                 "BEARISH (negativo/baixa) ou NEUTRAL (neutro/informativo).\n\n"
-                "Responda APENAS em JSON, sem markdown, no formato exato:\n"
-                '{"title": "...", "summary": "...", "sentiment": "BEARISH"}\n\n'
-                "Titulo original: " + title + "\n"
-                "Texto original: " + body_cleaned
+                "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
+                '{"title": "titulo original aqui", "summary": "resumo aqui", "sentiment": "BEARISH"}\n\n'
+                f"Titulo original: {title}\n"
+                f"Texto original: {body_cleaned}"
             )
 
         raw_response = ask_groq(instruction)
@@ -260,25 +261,23 @@ def summarize_with_ai(title, body, translate=True):
             "sentiment": parsed.get("sentiment", "NEUTRAL").upper(),
         }
     except Exception as e:
-        print("Erro IA (Groq): " + str(e))
+        print(f"Erro IA (Groq): {e}")
         return None
 
 
 def send_telegram_message(text):
-    url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
     try:
         r = requests.post(url, json=payload, timeout=10)
         if r.status_code == 429:
             retry_after = r.json().get("parameters", {}).get("retry_after", 5)
-            print("Rate limit, aguardando " + str(retry_after) + "s")
+            print(f"Rate limit, aguardando {retry_after}s")
             time.sleep(retry_after)
             r = requests.post(url, json=payload, timeout=10)
-        if r.status_code != 200:
-            print("Erro Telegram (status " + str(r.status_code) + "): " + r.text)
         return r.status_code == 200
     except Exception as e:
-        print("Erro Telegram: " + str(e))
+        print(f"Erro Telegram: {e}")
         return False
 
 
@@ -311,11 +310,11 @@ def format_message(source, entry, ai_result):
 
     title = html_module.escape(str(title).strip(), quote=False)
     body = html_module.escape(str(body).strip(), quote=False)
-    source_tag = html_module.escape(str(source).strip(), quote=False)
+    source_tag = html_module.escape(str(source).strip().upper(), quote=False)
 
-    result = marker + " <b>" + title + "</b>\n\n" + body + "\n\n<i>" + source_tag + "</i>"
+    result = f"{marker} <b>{title}</b>\n\n{body}\n\n<i>Fonte: {source_tag}</i>"
     if len(result) > 3900:
-        result = result[:3900] + "..."
+        result = f"{result[:3900]}..."
     return result
 
 
@@ -330,7 +329,7 @@ def main():
     for source, url in FEEDS.items():
         feed = fetch_feed(url)
         if not feed.entries:
-            print("AVISO: Feed '" + source + "' retornou vazio ou falhou")
+            print(f"AVISO: Feed '{source}' retornou vazio ou falhou")
             continue
 
         for entry in feed.entries[:10]:
@@ -363,11 +362,11 @@ def main():
                 recent_titles.append(title)
                 new_count += 1
                 sentiment_log = ai_result.get("sentiment") if ai_result else "N/A"
-                print("Enviado: " + title[:50] + " [" + sentiment_log + "]")
+                print(f"Enviado: {title[:50]} [{sentiment_log}]")
                 save_state(sent_hashes, recent_titles)
                 time.sleep(3)
 
-    print("Ciclo concluido. " + str(new_count) + " noticia(s) enviada(s).")
+    print(f"Ciclo concluido. {new_count} noticia(s) enviada(s).")
 
 
 if __name__ == "__main__":
