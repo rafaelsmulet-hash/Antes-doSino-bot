@@ -399,6 +399,71 @@ def main():
     print("Enviado com sucesso: " + str(new_count))
     print("Ciclo concluido. " + str(new_count) + " noticia(s) enviada(s).")
 
+def generate_portal(entries, template_path="docs/template.html", output_path="docs/index.html"):
+    if not os.path.exists(template_path):
+        print("AVISO: template.html nao encontrado, portal nao gerado.")
+        return
+
+    with open(template_path, "r", encoding="utf-8") as f:
+        template = f.read()
+
+    def sentiment_class(s):
+        if s == "BULLISH":
+            return "alta", "ALTA"
+        if s == "BEARISH":
+            return "baixa", "BAIXA"
+        return "info", "INFO"
+
+    ticker_html = ""
+    for e in entries[:12]:
+        cls, _ = sentiment_class(e["sentiment"])
+        ticker_html += (
+            '<div class="tick"><span class="dot ' + cls + '"></span>'
+            '<span class="headline">' + html_module.escape(e["title"]) + "</span>"
+            '<span class="src">' + html_module.escape(e["source"]) + "</span></div>\n"
+        )
+
+    cards_html = ""
+    for e in entries[:12]:
+        cls, label = sentiment_class(e["sentiment"])
+        link = e.get("link", "#") or "#"
+        cards_html += (
+            '<div class="card">'
+            '<div class="card-meta"><span class="badge ' + cls + '">' + label + "</span>"
+            '<span class="src">' + html_module.escape(e["source"]) + "</span>"
+            '<span class="time">' + e["time"] + "</span></div>"
+            "<h3>" + html_module.escape(e["title"]) + "</h3>"
+            "<p>" + html_module.escape(e["body"]) + "</p>"
+            '<a href="' + link + '" class="read" target="_blank">Leia mais &rarr;</a>'
+            "</div>\n"
+        )
+
+    start_marker_t = "<!-- TICKER_ITEMS_START -->"
+    end_marker_t = "<!-- TICKER_ITEMS_END -->"
+    start_marker_c = "<!-- FEED_CARDS_START -->"
+    end_marker_c = "<!-- FEED_CARDS_END -->"
+
+    if start_marker_t in template and end_marker_t in template:
+        before = template.split(start_marker_t)[0]
+        after = template.split(end_marker_t)[1]
+        template = before + start_marker_t + "\n" + ticker_html + end_marker_t + after
+
+    if start_marker_c in template and end_marker_c in template:
+        before = template.split(start_marker_c)[0]
+        after = template.split(end_marker_c)[1]
+        template = before + start_marker_c + "\n" + cards_html + end_marker_c + after
+
+    updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
+    template = template.replace(
+        '<span class="mono" id="last-updated">Atualizado automaticamente</span>',
+        '<span class="mono" id="last-updated">Atualizado em ' + updated_at + "</span>",
+    )
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(template)
+
+    print("Portal atualizado: " + output_path)
 
 if __name__ == "__main__":
     main()
