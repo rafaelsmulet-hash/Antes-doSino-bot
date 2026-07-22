@@ -1,8 +1,6 @@
 name: Antes do Sino - Bot de Noticias
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -34,6 +32,11 @@ jobs:
         run: |
           git config --global user.name "antes-do-sino-bot"
           git config --global user.email "bot@antesdosino.local"
-          git add sent_items.json
-          git diff --staged --quiet || git commit -m "Atualiza historico de noticias enviadas"
-          git push
+          git add sent_items.json docs/index.html portal_history.json
+          if ! git diff --staged --quiet; then
+            git commit -m "Atualiza historico de noticias e portal"
+            git pull origin main --no-rebase -X ours
+            git push origin main
+          else
+            echo "Nenhuma alteracao para salvar."
+          fi
