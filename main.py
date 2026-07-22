@@ -307,97 +307,34 @@ def format_message(source, entry, ai_result):
     else:
         marker = "\u26AA <b>[INFORMATIVO]</b>"
 
-    title = html_module.escape(str(title).strip(), quote=False)
-    body = html_module.escape(str(body).strip(), quote=False)
-    source_tag = html_module.escape(str(source).strip(), quote=False)
+    title_esc = html_module.escape(title, quote=False)
+    body_esc = html_module.escape(body, quote=False)
+    source_esc = html_module.escape(source, quote=False)
 
-    result = marker + " <b>" + title + "</b>\n\n" + body + "\n\n<i>" + source_tag + "</i>"
+    result = marker + " <b>" + title_esc + "</b>\n\n" + body_esc + "\n\n<i>" + source_esc + "</i>"
     if len(result) > 3900:
         result = result[:3900] + "..."
-    return result
+    return result, title, body, sentiment
 
 
-def main():
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("ERRO: configure TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID.")
-        return
+PORTAL_HISTORY_FILE = "portal_history.json"
 
-    sent_hashes, recent_titles = load_state()
-    new_count = 0
 
-    total_checked = 0
-    skip_already_sent = 0
-    skip_duplicate_title = 0
-    skip_not_relevant = 0
-    skip_not_recent = 0
-    skip_negative_keyword = 0
+def load_portal_history():
+    if os.path.exists(PORTAL_HISTORY_FILE):
+        try:
+            with open(PORTAL_HISTORY_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return []
+    return []
 
-    for source, url in FEEDS.items():
-        feed = fetch_feed(url)
-        if not feed.entries:
-            print("AVISO: Feed '" + source + "' retornou vazio ou falhou")
-            continue
 
-        for entry in feed.entries[:10]:
-            total_checked += 1
-            h = item_hash(entry)
-            if h in sent_hashes:
-                skip_already_sent += 1
-                continue
+def save_portal_history(entries):
+    trimmed = entries[:30]
+    with open(PORTAL_HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(trimmed, f, ensure_ascii=False)
 
-            title = entry.get("title", "")
-            if is_duplicate_title(title, recent_titles):
-                skip_duplicate_title += 1
-                sent_hashes.add(h)
-                save_state(sent_hashes, recent_titles)
-                continue
-
-            text_check = (title + " " + get_entry_body(entry)).lower()
-            if any(nw in text_check for nw in NEGATIVE_KEYWORDS):
-                skip_negative_keyword += 1
-                sent_hashes.add(h)
-                save_state(sent_hashes, recent_titles)
-                continue
-
-            if not is_relevant(entry):
-                skip_not_relevant += 1
-                sent_hashes.add(h)
-                save_state(sent_hashes, recent_titles)
-                continue
-
-            if not is_recent_enough(entry):
-                skip_not_recent += 1
-                sent_hashes.add(h)
-                save_state(sent_hashes, recent_titles)
-                continue
-
-            raw_body = get_entry_body(entry)
-            is_english = source not in PORTUGUESE_SOURCES
-
-            ai_result = None
-            if needs_ai(source, raw_body):
-                ai_result = summarize_with_ai(title, raw_body, translate=is_english)
-
-            message = format_message(source, entry, ai_result)
-
-            if send_telegram_message(message):
-                sent_hashes.add(h)
-                recent_titles.append(title)
-                new_count += 1
-                sentiment_log = ai_result.get("sentiment") if ai_result else "N/A"
-                print("Enviado: " + title[:50] + " [" + sentiment_log + "]")
-                save_state(sent_hashes, recent_titles)
-                time.sleep(3)
-
-    print("=== DIAGNOSTICO ===")
-    print("Total verificado: " + str(total_checked))
-    print("Ja enviado antes: " + str(skip_already_sent))
-    print("Titulo duplicado: " + str(skip_duplicate_title))
-    print("Palavra negativa: " + str(skip_negative_keyword))
-    print("Nao relevante: " + str(skip_not_relevant))
-    print("Nao e de hoje: " + str(skip_not_recent))
-    print("Enviado com sucesso: " + str(new_count))
-    print("Ciclo concluido. " + str(new_count) + " noticia(s) enviada(s).")
 
 def generate_portal(entries, template_path="docs/template.html", output_path="docs/index.html"):
     if not os.path.exists(template_path):
@@ -464,6 +401,71 @@ def generate_portal(entries, template_path="docs/template.html", output_path="do
         f.write(template)
 
     print("Portal atualizado: " + output_path)
+
+
+def main():
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        print("ERRO: configure TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID.")
+        return
+
+    sent_hashes, recent_titles = load_state()
+    new_count = 0
+    portal_entries = []
+
+    for source, url in FEEDS.items():
+        feed = fetch_feed(url)
+        if not feed.entries:
+            print("AVISO: Feed '" + source + "' retornou vazio ou falhou")
+            continue
+
+        for entry in feed.entries[:10]:
+            h = item_hash(entry)
+            if h in sent_hashes:
+                continue
+
+            title = entry.get("title", "")
+            if is_duplicate_title(title, recent_titles):
+                sent_hashes.add(h)
+                save_state(sent_hashes, recent_titles)
+                continue
+
+            if not is_relevant(entry) or not is_recent_enough(entry):
+                sent_hashes.add(h)
+                save_state(sent_hashes, recent_titles)
+                continue
+
+            raw_body = get_entry_body(entry)
+            is_english = source not in PORTUGUESE_SOURCES
+
+            ai_result = None
+            if needs_ai(source, raw_body):
+                ai_result = summarize_with_ai(title, raw_body, translate=is_english)
+
+            message, final_title, final_body, sentiment = format_message(source, entry, ai_result)
+
+            if send_telegram_message(message):
+                sent_hashes.add(h)
+                recent_titles.append(title)
+                new_count += 1
+                print("Enviado: " + title[:50] + " [" + sentiment + "]")
+                save_state(sent_hashes, recent_titles)
+
+                portal_entries.append({
+                    "title": final_title,
+                    "body": final_body[:200],
+                    "source": source,
+                    "sentiment": sentiment,
+                    "link": entry.get("link", ""),
+                    "time": datetime.now(BR_TZ).strftime("%H:%M"),
+                })
+
+                time.sleep(3)
+
+    all_portal_entries = portal_entries + load_portal_history()
+    save_portal_history(all_portal_entries)
+    generate_portal(all_portal_entries)
+    print("Ciclo concluido. " + str(new_count) + " noticia(s) enviada(s).")
+
 
 if __name__ == "__main__":
     main()
