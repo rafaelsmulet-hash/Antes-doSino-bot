@@ -26,6 +26,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
         run: python main.py
 
       - name: Salvar historico (sent_items.json)
