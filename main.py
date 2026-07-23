@@ -12,6 +12,16 @@ from datetime import datetime, timezone, timedelta
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+BRAPI_TOKEN = os.environ.get("BRAPI_TOKEN", "")
+
+COCKPIT_TICKERS = ["^BVSP", "PETR4", "VALE3"]
+
+TICKER_MENTION_LIST = [
+    "petr4", "petr3", "vale3", "itub4", "bbdc4", "bbas3", "wege3",
+    "mglu3", "abev3", "b3sa3", "azul4", "gol", "embr3", "hapv3",
+    "petrobras", "vale", "itau", "bradesco", "banco do brasil",
+    "weg", "magazine luiza", "ambev", "azul", "embraer", "hapvida",
+]
 
 USE_AI = bool(GROQ_API_KEY)
 STATE_FILE = "sent_items.json"
@@ -317,6 +327,185 @@ def format_message(source, entry, ai_result):
     return result, title, body, sentiment
 
 
+def fetch_cockpit_quotes():
+    if not BRAPI_TOKEN:
+        return []
+    try:
+        tickers_str = ",".join(COCKPIT_TICKERS)
+        url = "https://brapi.dev/api/quote/" + tickers_str + "?token=" + BRAPI_TOKEN
+        response = requests.get(url, timeout=15)
+        data = response.json()
+        results = data.get("results", [])
+        quotes = []
+        for r in results:
+            quotes.append({
+                "symbol": r.get("symbol", ""),
+                "price": r.get("regularMarketPrice", 0),
+                "change": r.get("regularMarketChangePercent", 0),
+            })
+        return quotes
+    except Exception as e:
+        print("Erro ao buscar cotacoes (brapi): " + str(e))
+        return []
+
+
+def fetch_usd_brl():
+    if not BRAPI_TOKEN:
+        return None
+    try:
+        url = "https://brapi.dev/api/v2/currency?currency=USD-BRL&token=" + BRAPI_TOKEN
+        response = requests.get(url, timeout=15)
+        data = response.json()
+        results = data.get("currency", [])
+        if results:
+            r = results[0]
+            return {
+                "price": r.get("bidPrice", 0),
+                "change": r.get("pctChange", 0),
+            }
+        return None
+    except Exception as e:
+        print("Erro ao buscar dolar (brapi): " + str(e))
+        return None
+
+
+def compute_sentiment_thermometer(entries):
+    total = len(entries)
+    if total == 0:
+        return {"alta": 0, "baixa": 0, "info": 0, "total": 0}
+
+    alta = sum(1 for e in entries if e["sentiment"] == "BULLISH")
+    baixa = sum(1 for e in entries if e["sentiment"] == "BEARISH")
+    info = total - alta - baixa
+
+    return {
+        "alta": round(alta / total * 100),
+        "baixa": round(baixa / total * 100),
+        "info": round(info / total * 100),
+        "total": total,
+    }
+
+
+def compute_top_mentions(entries, limit=5):
+    counts = {}
+    for e in entries:
+        text = (e["title"] + " " + e["body"]).lower()
+        for term in TICKER_MENTION_LIST:
+            if term in text:
+                counts[term] = counts.get(term, 0) + 1
+
+    sorted_terms = sorted(counts.items(), key=lambda x: x[1], reverse=True)
+    return sorted_terms[:limit]
+
+
+def market_status():
+    now = datetime.now(BR_TZ)
+    weekday = now.weekday()
+    hour = now.hour
+    minute = now.minute
+
+    is_weekday = weekday < 5
+    current_minutes = hour * 60 + minute
+    open_minutes = 10 * 60
+    close_minutes = 17 * 60
+
+    is_open = is_weekday and open_minutes <= current_minutes < close_minutes
+
+    if is_open:
+        return {"open": True, "label": "Mercado aberto"}
+    else:
+        return {"open": False, "label": "Mercado fechado"}
+
+
+def build_cockpit_html(portal_entries):
+    quotes = fetch_cockpit_quotes()
+    usd = fetch_usd_brl()
+    thermo = compute_sentiment_thermometer(portal_entries)
+    top_mentions = compute_top_mentions(portal_entries)
+    status = market_status()
+
+    quotes_html = ""
+    for q in quotes:
+        change = q["change"]
+        cls = "up" if change >= 0 else "down"
+        sign = "+" if change >= 0 else ""
+        quotes_html += (
+            '<div class="quote-item">'
+            '<span class="quote-symbol">' + html_module.escape(q["symbol"]) + "</span>"
+            '<span class="quote-price">' + str(round(q["price"], 2)) + "</span>"
+            '<span class="quote-change ' + cls + '">' + sign + str(round(change, 2)) + "%</span>"
+            "</div>"
+        )
+
+    if usd:
+        change = usd["change"]
+        cls = "up" if change >= 0 else "down"
+        sign = "+" if change >= 0 else ""
+        quotes_html += (
+            '<div class="quote-item">'
+            '<span class="quote-symbol">USD/BRL</span>'
+            '<span class="quote-price">R$ ' + str(round(usd["price"], 2)) + "</span>"
+            '<span class="quote-change ' + cls + '">' + sign + str(round(change, 2)) + "%</span>"
+            "</div>"
+        )
+
+    if not quotes_html:
+        quotes_html = '<div class="quote-empty">Cotações indisponíveis no momento.</div>'
+
+    mentions_html = ""
+    if top_mentions:
+        for term, count in top_mentions:
+            mentions_html += (
+                '<div class="mention-item">'
+                '<span class="mention-name">' + html_module.escape(term.upper()) + "</span>"
+                '<span class="mention-count">' + str(count) + " menções</span>"
+                "</div>"
+            )
+    else:
+        mentions_html = '<div class="mention-empty">Sem dados suficientes ainda.</div>'
+
+    status_class = "open" if status["open"] else "closed"
+
+    cockpit_html = (
+        '<div class="cockpit-grid">'
+
+        '<div class="cockpit-card">'
+        '<span class="cockpit-label">Status do pregão</span>'
+        '<div class="market-status ' + status_class + '">'
+        '<span class="status-dot"></span>' + status["label"] +
+        "</div>"
+        "</div>"
+
+        '<div class="cockpit-card quotes-card">'
+        '<span class="cockpit-label">Cotações</span>'
+        '<div class="quotes-list">' + quotes_html + "</div>"
+        "</div>"
+
+        '<div class="cockpit-card">'
+        '<span class="cockpit-label">Termômetro do mercado</span>'
+        '<div class="thermo-bar">'
+        '<div class="thermo-seg alta" style="width:' + str(thermo["alta"]) + '%"></div>'
+        '<div class="thermo-seg info" style="width:' + str(thermo["info"]) + '%"></div>'
+        '<div class="thermo-seg baixa" style="width:' + str(thermo["baixa"]) + '%"></div>'
+        "</div>"
+        '<div class="thermo-legend">'
+        '<span><span class="dot alta"></span>' + str(thermo["alta"]) + "% alta</span>"
+        '<span><span class="dot info"></span>' + str(thermo["info"]) + "% neutro</span>"
+        '<span><span class="dot baixa"></span>' + str(thermo["baixa"]) + "% baixa</span>"
+        "</div>"
+        "</div>"
+
+        '<div class="cockpit-card">'
+        '<span class="cockpit-label">Mais citados hoje</span>'
+        '<div class="mentions-list">' + mentions_html + "</div>"
+        "</div>"
+
+        "</div>"
+    )
+
+    return cockpit_html
+
+
 PORTAL_HISTORY_FILE = "portal_history.json"
 
 
@@ -379,6 +568,8 @@ def generate_portal(entries, template_path="docs/template.html", output_path="do
     end_marker_t = "<!-- TICKER_ITEMS_END -->"
     start_marker_c = "<!-- FEED_CARDS_START -->"
     end_marker_c = "<!-- FEED_CARDS_END -->"
+    start_marker_k = "<!-- COCKPIT_START -->"
+    end_marker_k = "<!-- COCKPIT_END -->"
 
     if start_marker_t in template and end_marker_t in template:
         before = template.split(start_marker_t)[0]
@@ -389,6 +580,12 @@ def generate_portal(entries, template_path="docs/template.html", output_path="do
         before = template.split(start_marker_c)[0]
         after = template.split(end_marker_c)[1]
         template = before + start_marker_c + "\n" + cards_html + end_marker_c + after
+
+    if start_marker_k in template and end_marker_k in template:
+        cockpit_html = build_cockpit_html(entries)
+        before = template.split(start_marker_k)[0]
+        after = template.split(end_marker_k)[1]
+        template = before + start_marker_k + "\n" + cockpit_html + end_marker_k + after
 
     updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
     template = template.replace(
