@@ -125,6 +125,38 @@
     line-height:1.2;
   }
 
+  .cockpit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .cockpit-card{background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px;}
+  .cockpit-label{font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:1px;color:var(--bronze);text-transform:uppercase;}
+  .market-status{display:flex;align-items:center;gap:8px;font-weight:600;font-size:1rem;}
+  .status-dot{width:8px;height:8px;border-radius:50%;}
+  .market-status.open .status-dot{background:var(--up);box-shadow:0 0 8px var(--up);}
+  .market-status.closed .status-dot{background:var(--slate-dim);}
+  .market-status.open{color:var(--up);}
+  .market-status.closed{color:var(--slate);}
+  .quotes-list{display:flex;flex-direction:column;gap:8px;}
+  .quote-item{display:flex;justify-content:space-between;align-items:center;font-size:0.9rem;}
+  .quote-symbol{font-family:'IBM Plex Mono',monospace;color:var(--cream);font-weight:600;}
+  .quote-price{color:var(--slate);font-family:'IBM Plex Mono',monospace;}
+  .quote-change{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:0.85rem;}
+  .quote-change.up{color:var(--up);}
+  .quote-change.down{color:var(--down);}
+  .quote-empty,.mention-empty{color:var(--slate-dim);font-size:0.85rem;}
+  .thermo-bar{display:flex;height:10px;border-radius:6px;overflow:hidden;background:rgba(255,255,255,0.05);}
+  .thermo-seg{height:100%;}
+  .thermo-seg.alta{background:var(--up);}
+  .thermo-seg.info{background:var(--slate-dim);}
+  .thermo-seg.baixa{background:var(--down);}
+  .thermo-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:0.78rem;color:var(--slate);}
+  .thermo-legend .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;}
+  .thermo-legend .dot.alta{background:var(--up);}
+  .thermo-legend .dot.info{background:var(--slate-dim);}
+  .thermo-legend .dot.baixa{background:var(--down);}
+  .mentions-list{display:flex;flex-direction:column;gap:8px;}
+  .mention-item{display:flex;justify-content:space-between;font-size:0.88rem;}
+  .mention-name{font-weight:600;color:var(--cream);}
+  .mention-count{color:var(--slate-dim);font-size:0.78rem;}
+
   .feed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
   .card{
     background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:14px;
@@ -165,9 +197,11 @@
   @media (max-width:860px){
     .feed-grid{grid-template-columns:1fr;}
     .feature-grid{grid-template-columns:repeat(2,1fr);}
+    .cockpit-grid{grid-template-columns:repeat(2,1fr);}
   }
   @media (max-width:520px){
     .feature-grid{grid-template-columns:1fr;}
+    .cockpit-grid{grid-template-columns:1fr;}
     nav{padding:18px 5vw;}
     section{padding:7vh 5vw;}
   }
@@ -202,11 +236,18 @@
   <div class="ticker-track" id="ticker-track">
     <!-- TICKER_ITEMS_START -->
     <div class="tick"><span class="dot alta"></span><span class="headline">Ibovespa fecha em alta de 2,44%, aos 177.547 pontos</span><span class="src">InfoMoney</span></div>
-    <div class="tick"><span class="dot info"></span><span class="headline">Petróleo Brent supera US$ 90 com tensão no Oriente Médio</span><span class="src">Reuters</span></div>
-    <div class="tick"><span class="dot baixa"></span><span class="headline">Ações de saúde recuam com queda da Hypera</span><span class="src">Money Times</span></div>
     <!-- TICKER_ITEMS_END -->
   </div>
 </div>
+
+<section>
+  <div class="section-head">
+    <span class="kicker">Cockpit</span>
+    <h2>O mercado, de um só olhar</h2>
+  </div>
+  <!-- COCKPIT_START -->
+  <!-- COCKPIT_END -->
+</section>
 
 <section id="feed">
   <div class="section-head">
