@@ -351,49 +351,30 @@ def format_message(source, entry, ai_result):
 
 def fetch_cockpit_quotes():
     if not BRAPI_TOKEN:
-        print("DIAGNOSTICO: BRAPI_TOKEN vazio")
         return []
-    try:
-        tickers_str = ",".join(COCKPIT_TICKERS)
-        url = "https://brapi.dev/api/quote/" + tickers_str + "?token=" + BRAPI_TOKEN
-        response = requests.get(url, timeout=15)
-        print("DIAGNOSTICO cotacoes - status HTTP: " + str(response.status_code))
-        print("DIAGNOSTICO cotacoes - resposta bruta: " + response.text[:500])
-        data = response.json()
-        results = data.get("results", [])
-        quotes = []
-        for r in results:
-            quotes.append({
-                "symbol": r.get("symbol", ""),
-                "price": r.get("regularMarketPrice", 0),
-                "change": r.get("regularMarketChangePercent", 0),
-            })
-        return quotes
-    except Exception as e:
-        print("Erro ao buscar cotacoes (brapi): " + str(e))
-        return []
+    quotes = []
+    for ticker in COCKPIT_TICKERS:
+        try:
+            url = "https://brapi.dev/api/quote/" + ticker + "?token=" + BRAPI_TOKEN
+            response = requests.get(url, timeout=15)
+            data = response.json()
+            results = data.get("results", [])
+            for r in results:
+                quotes.append({
+                    "symbol": r.get("symbol", ""),
+                    "price": r.get("regularMarketPrice", 0),
+                    "change": r.get("regularMarketChangePercent", 0),
+                })
+        except Exception as e:
+            print("Erro ao buscar cotacao " + ticker + " (brapi): " + str(e))
+            continue
+    return quotes
 
 
 def fetch_usd_brl():
-    if not BRAPI_TOKEN:
-        return None
-    try:
-        url = "https://brapi.dev/api/v2/currency?currency=USD-BRL&token=" + BRAPI_TOKEN
-        response = requests.get(url, timeout=15)
-        print("DIAGNOSTICO dolar - status HTTP: " + str(response.status_code))
-        print("DIAGNOSTICO dolar - resposta bruta: " + response.text[:500])
-        data = response.json()
-        results = data.get("currency", [])
-        if results:
-            r = results[0]
-            return {
-                "price": r.get("bidPrice", 0),
-                "change": r.get("pctChange", 0),
-            }
-        return None
-    except Exception as e:
-        print("Erro ao buscar dolar (brapi): " + str(e))
-        return None
+    """O endpoint de cambio da brapi.dev nao esta disponivel no plano
+    gratuito (retorna 403). Mantido desativado ate upgrade de plano."""
+    return None
 
 
 def compute_sentiment_thermometer(entries):
