@@ -33,7 +33,7 @@ jobs:
         run: |
           git config --global user.name "antes-do-sino-bot"
           git config --global user.email "bot@antesdosino.local"
-          git add sent_items.json docs/index.html portal_history.json
+          git add sent_items.json docs/index.html docs/resumo-diario.html docs/resumo-semanal.html portal_history.json daily_archive.json
           if ! git diff --staged --quiet; then
             git commit -m "Atualiza historico de noticias e portal"
             git pull origin main --no-rebase -X ours
