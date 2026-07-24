@@ -16,11 +16,6 @@ BRAPI_TOKEN = os.environ.get("BRAPI_TOKEN", "")
 
 COCKPIT_TICKERS = ["^BVSP", "PETR4", "VALE3", "ITUB4", "BBDC4", "ABEV3", "WEGE3", "B3SA3", "BBAS3", "MGLU3"]
 
-ECONOMIC_CALENDAR = [
-    {"date": "04-05/08/2026", "event": "Reunião do Copom (decisão da Selic)"},
-    {"date": "A cada ~45 dias", "event": "Próximas reuniões do Copom seguem esse ciclo"},
-]
-
 TICKER_MENTION_LIST = [
     "petr4", "petr3", "vale3", "itub4", "bbdc4", "bbas3", "wege3",
     "mglu3", "abev3", "b3sa3", "azul4", "gol", "embr3", "hapv3",
@@ -468,28 +463,66 @@ def build_terminal_news_html(entries, limit=8):
     return rows
 
 
-def build_calendar_html():
-    """Monta a lista fixa do calendario economico."""
-    rows = ""
-    for item in ECONOMIC_CALENDAR:
-        rows += (
-            '<div class="calendar-item">'
-            '<span class="calendar-date">' + html_module.escape(item["date"]) + "</span>"
-            '<span class="calendar-event">' + html_module.escape(item["event"]) + "</span>"
-            "</div>"
-        )
-    return rows
+def build_today_vs_yesterday_html(today_thermo, yesterday_data):
+    """Compara o termometro de sentimento de hoje com o do dia anterior,
+    usando o arquivo diario ja acumulado (sem chamada extra de IA)."""
+    hoje_alta = today_thermo["alta"]
+    hoje_total = today_thermo["total"]
+
+    if yesterday_data:
+        ontem_alta = yesterday_data.get("alta", 0)
+        ontem_total = yesterday_data.get("total", 0)
+        ontem_label = yesterday_data.get("date", "Ontem")
+    else:
+        ontem_alta = 0
+        ontem_total = 0
+        ontem_label = "Sem dados"
+
+    diff = hoje_alta - ontem_alta
+    if hoje_total == 0:
+        diff_text = "Aguardando notícias de hoje"
+        diff_class = "info"
+    elif diff > 0:
+        diff_text = "+" + str(diff) + " pontos de alta vs. ontem"
+        diff_class = "alta"
+    elif diff < 0:
+        diff_text = str(diff) + " pontos de alta vs. ontem"
+        diff_class = "baixa"
+    else:
+        diff_text = "Igual a ontem"
+        diff_class = "info"
+
+    html = (
+        '<div class="compare-row">'
+        '<div class="compare-col">'
+        '<span class="compare-label">Hoje</span>'
+        '<span class="compare-value">' + str(hoje_alta) + "% alta</span>"
+        '<span class="compare-sub">' + str(hoje_total) + " notícias</span>"
+        "</div>"
+        '<div class="compare-col">'
+        '<span class="compare-label">' + html_module.escape(str(ontem_label)) + "</span>"
+        '<span class="compare-value">' + str(ontem_alta) + "% alta</span>"
+        '<span class="compare-sub">' + str(ontem_total) + " notícias</span>"
+        "</div>"
+        "</div>"
+        '<div class="compare-diff ' + diff_class + '">' + diff_text + "</div>"
+    )
+    return html
 
 
-def build_cockpit_html(portal_entries):
+def build_cockpit_html(portal_entries, entries_today=None, yesterday_data=None):
+    if entries_today is None:
+        entries_today = portal_entries
+
     quotes = fetch_cockpit_quotes()
     usd = fetch_usd_brl()
     selic = fetch_selic()
     thermo = compute_sentiment_thermometer(portal_entries)
+    today_thermo = compute_sentiment_thermometer(entries_today)
     top_mentions = compute_top_mentions(portal_entries)
     status = market_status()
     terminal_rows = build_terminal_news_html(portal_entries)
-    calendar_rows = build_calendar_html()
+    compare_html = build_today_vs_yesterday_html(today_thermo, yesterday_data)
 
     quotes_html = ""
     for q in quotes:
@@ -581,9 +614,9 @@ def build_cockpit_html(portal_entries):
         '<div class="terminal-list">' + terminal_rows + "</div>"
         "</div>"
 
-        '<div class="cockpit-card calendar-card">'
-        '<span class="cockpit-label">Calendário econômico</span>'
-        '<div class="calendar-list">' + calendar_rows + "</div>"
+        '<div class="cockpit-card compare-card">'
+        '<span class="cockpit-label">Hoje vs. ontem</span>'
+        + compare_html +
         "</div>"
 
         "</div>"
@@ -740,7 +773,7 @@ def save_portal_history(entries):
         json.dump(trimmed, f, ensure_ascii=False)
 
 
-def generate_portal(entries, template_path="docs/template.html", output_path="docs/index.html"):
+def generate_portal(entries, entries_today=None, yesterday_data=None, template_path="docs/template.html", output_path="docs/index.html"):
     """Le o template.html, substitui os placeholders de ticker e feed
     pelos dados reais mais recentes, e salva como index.html (o que o
     GitHub Pages efetivamente publica)."""
@@ -800,7 +833,7 @@ def generate_portal(entries, template_path="docs/template.html", output_path="do
         template = before + start_marker_c + "\n" + cards_html + end_marker_c + after
 
     if start_marker_k in template and end_marker_k in template:
-        cockpit_html = build_cockpit_html(entries)
+        cockpit_html = build_cockpit_html(entries, entries_today, yesterday_data)
         before = template.split(start_marker_k)[0]
         after = template.split(end_marker_k)[1]
         template = before + start_marker_k + "\n" + cockpit_html + end_marker_k + after
@@ -879,13 +912,20 @@ def main():
 
     all_portal_entries = portal_entries + load_portal_history()
     save_portal_history(all_portal_entries)
-    generate_portal(all_portal_entries)
 
     today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     entries_today = [e for e in all_portal_entries if e.get("date") == today_str]
-    build_daily_summary_html(entries_today, today_str)
 
     archive = load_daily_archive()
+    yesterday_data = None
+    for d in reversed(archive):
+        if d["date"] != today_str:
+            yesterday_data = d
+            break
+
+    generate_portal(all_portal_entries, entries_today, yesterday_data)
+    build_daily_summary_html(entries_today, today_str)
+
     thermo_today = compute_sentiment_thermometer(entries_today)
     archive = [d for d in archive if d["date"] != today_str]
     archive.append({
