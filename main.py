@@ -351,11 +351,14 @@ def format_message(source, entry, ai_result):
 
 def fetch_cockpit_quotes():
     if not BRAPI_TOKEN:
+        print("DIAGNOSTICO: BRAPI_TOKEN vazio")
         return []
     try:
         tickers_str = ",".join(COCKPIT_TICKERS)
         url = "https://brapi.dev/api/quote/" + tickers_str + "?token=" + BRAPI_TOKEN
         response = requests.get(url, timeout=15)
+        print("DIAGNOSTICO cotacoes - status HTTP: " + str(response.status_code))
+        print("DIAGNOSTICO cotacoes - resposta bruta: " + response.text[:500])
         data = response.json()
         results = data.get("results", [])
         quotes = []
@@ -377,6 +380,8 @@ def fetch_usd_brl():
     try:
         url = "https://brapi.dev/api/v2/currency?currency=USD-BRL&token=" + BRAPI_TOKEN
         response = requests.get(url, timeout=15)
+        print("DIAGNOSTICO dolar - status HTTP: " + str(response.status_code))
+        print("DIAGNOSTICO dolar - resposta bruta: " + response.text[:500])
         data = response.json()
         results = data.get("currency", [])
         if results:
@@ -606,6 +611,135 @@ def build_cockpit_html(portal_entries):
     return cockpit_html
 
 
+DAILY_ARCHIVE_FILE = "daily_archive.json"
+
+
+def load_daily_archive():
+    if os.path.exists(DAILY_ARCHIVE_FILE):
+        try:
+            with open(DAILY_ARCHIVE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return []
+    return []
+
+
+def save_daily_archive(archive):
+    trimmed = archive[-60:]
+    with open(DAILY_ARCHIVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(trimmed, f, ensure_ascii=False)
+
+
+def build_daily_summary_html(entries_today, today_str):
+    """Gera a pagina de resumo diario, sem chamada extra de IA - usa
+    apenas dados ja processados (contagem de sentimento, manchetes)."""
+    thermo = compute_sentiment_thermometer(entries_today)
+
+    if thermo["total"] == 0:
+        intro = "Ainda não há notícias suficientes hoje para um resumo."
+    elif thermo["alta"] > thermo["baixa"]:
+        intro = (
+            "Dia com predominância de notícias positivas para o mercado ("
+            + str(thermo["alta"]) + "% de alta contra " + str(thermo["baixa"]) + "% de baixa)."
+        )
+    elif thermo["baixa"] > thermo["alta"]:
+        intro = (
+            "Dia com predominância de notícias negativas para o mercado ("
+            + str(thermo["baixa"]) + "% de baixa contra " + str(thermo["alta"]) + "% de alta)."
+        )
+    else:
+        intro = "Dia equilibrado entre notícias de alta e baixa para o mercado."
+
+    items_html = ""
+    for e in entries_today:
+        if e["sentiment"] == "BULLISH":
+            tag = '<span class="badge alta">ALTA</span>'
+        elif e["sentiment"] == "BEARISH":
+            tag = '<span class="badge baixa">BAIXA</span>'
+        else:
+            tag = '<span class="badge info">INFO</span>'
+        items_html += (
+            '<div class="card">'
+            '<div class="card-meta">' + tag +
+            '<span class="src">' + html_module.escape(e["source"]) + "</span>"
+            '<span class="time">' + e["time"] + "</span></div>"
+            "<h3>" + html_module.escape(e["title"]) + "</h3>"
+            "<p>" + html_module.escape(e["body"]) + "</p>"
+            "</div>"
+        )
+
+    if not items_html:
+        items_html = '<p style="color:var(--slate)">Nenhuma notícia registrada ainda hoje.</p>'
+
+    page = (
+        "<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'>"
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        "<title>Resumo Diário - " + today_str + " | Antes do Sino</title>"
+        "<link rel='stylesheet' href='assets.css'>"
+        "</head><body>"
+        "<nav><div class='brand'>🔔 Antes do Sino</div>"
+        "<a href='https://t.me/tribute/app?startapp=sZPm' class='nav-cta'>Entrar no grupo</a></nav>"
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Resumo Diário</span>"
+        "<h2>" + today_str + "</h2>"
+        "<p style='color:var(--slate);margin-top:14px;'>" + intro + "</p>"
+        "</div>"
+        "<div class='feed-grid'>" + items_html + "</div>"
+        "</section>"
+        "<footer><span>&copy; Antes do Sino</span>"
+        "<a href='index.html' style='color:var(--gold)'>Voltar ao site</a></footer>"
+        "</body></html>"
+    )
+
+    os.makedirs("docs", exist_ok=True)
+    with open("docs/resumo-diario.html", "w", encoding="utf-8") as f:
+        f.write(page)
+
+
+def build_weekly_summary_html(archive):
+    """Gera a pagina de resumo semanal a partir do arquivo diario
+    acumulado (ultimos 7 dias com dados)."""
+    last_7 = archive[-7:]
+
+    rows_html = ""
+    for day in last_7:
+        rows_html += (
+            '<div class="card">'
+            "<h3>" + day["date"] + "</h3>"
+            "<p>" + str(day["total"]) + " notícias · "
+            + str(day["alta"]) + "% alta · "
+            + str(day["baixa"]) + "% baixa · "
+            + str(day["info"]) + "% neutro</p>"
+            "</div>"
+        )
+
+    if not rows_html:
+        rows_html = '<p style="color:var(--slate)">Ainda não há dias suficientes registrados.</p>'
+
+    page = (
+        "<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'>"
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        "<title>Resumo Semanal | Antes do Sino</title>"
+        "<link rel='stylesheet' href='assets.css'>"
+        "</head><body>"
+        "<nav><div class='brand'>🔔 Antes do Sino</div>"
+        "<a href='https://t.me/tribute/app?startapp=sZPm' class='nav-cta'>Entrar no grupo</a></nav>"
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Resumo Semanal</span>"
+        "<h2>Últimos dias de mercado</h2>"
+        "</div>"
+        "<div class='feed-grid'>" + rows_html + "</div>"
+        "</section>"
+        "<footer><span>&copy; Antes do Sino</span>"
+        "<a href='index.html' style='color:var(--gold)'>Voltar ao site</a></footer>"
+        "</body></html>"
+    )
+
+    os.makedirs("docs", exist_ok=True)
+    with open("docs/resumo-semanal.html", "w", encoding="utf-8") as f:
+        f.write(page)
+
+
 PORTAL_HISTORY_FILE = "portal_history.json"
 
 
@@ -757,6 +891,7 @@ def main():
                     "sentiment": sentiment,
                     "link": entry.get("link", ""),
                     "time": datetime.now(BR_TZ).strftime("%H:%M"),
+                    "date": datetime.now(BR_TZ).strftime("%Y-%m-%d"),
                 })
 
                 time.sleep(3)
@@ -764,6 +899,24 @@ def main():
     all_portal_entries = portal_entries + load_portal_history()
     save_portal_history(all_portal_entries)
     generate_portal(all_portal_entries)
+
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    entries_today = [e for e in all_portal_entries if e.get("date") == today_str]
+    build_daily_summary_html(entries_today, today_str)
+
+    archive = load_daily_archive()
+    thermo_today = compute_sentiment_thermometer(entries_today)
+    archive = [d for d in archive if d["date"] != today_str]
+    archive.append({
+        "date": today_str,
+        "total": thermo_today["total"],
+        "alta": thermo_today["alta"],
+        "baixa": thermo_today["baixa"],
+        "info": thermo_today["info"],
+    })
+    save_daily_archive(archive)
+    build_weekly_summary_html(archive)
+
     print("Ciclo concluido. " + str(new_count) + " noticia(s) enviada(s).")
 
 
