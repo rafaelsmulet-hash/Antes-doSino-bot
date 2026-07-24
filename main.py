@@ -14,7 +14,12 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 BRAPI_TOKEN = os.environ.get("BRAPI_TOKEN", "")
 
-COCKPIT_TICKERS = ["^BVSP", "PETR4", "VALE3"]
+COCKPIT_TICKERS = ["^BVSP", "PETR4", "VALE3", "ITUB4", "BBDC4", "ABEV3", "WEGE3", "B3SA3", "BBAS3", "MGLU3"]
+
+ECONOMIC_CALENDAR = [
+    {"date": "04-05/08/2026", "event": "Reunião do Copom (decisão da Selic)"},
+    {"date": "A cada ~45 dias", "event": "Próximas reuniões do Copom seguem esse ciclo"},
+]
 
 TICKER_MENTION_LIST = [
     "petr4", "petr3", "vale3", "itub4", "bbdc4", "bbas3", "wege3",
@@ -167,9 +172,26 @@ def is_duplicate_title(title, recent_titles):
 def strip_html_tags(text):
     if not text:
         return ""
+    text = re.sub(r"<style[^>]*>.*?</style>", "", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<script[^>]*>.*?</script>", "", text, flags=re.DOTALL | re.IGNORECASE)
     text = re.sub(r"<[^>]+>", "", text)
+    text = re.sub(r"@media[^{]*\{[^}]*\}", "", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"\.[a-zA-Z0-9_-]+\s*\{[^}]*\}", "", text, flags=re.DOTALL)
     text = text.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", '"').replace("&#39;", "'")
     return text.strip()
+
+
+def smart_truncate(text, limit):
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    last_sentence_end = max(cut.rfind(". "), cut.rfind("! "), cut.rfind("? "))
+    if last_sentence_end > limit * 0.5:
+        return cut[:last_sentence_end + 1]
+    last_space = cut.rfind(" ")
+    if last_space > 0:
+        return cut[:last_space] + "..."
+    return cut + "..."
 
 
 def strip_boilerplate(text):
@@ -323,7 +345,7 @@ def format_message(source, entry, ai_result):
 
     result = marker + " <b>" + title_esc + "</b>\n\n" + body_esc + "\n\n<i>" + source_esc + "</i>"
     if len(result) > 3900:
-        result = result[:3900] + "..."
+        result = smart_truncate(result, 3900)
     return result, title, body, sentiment
 
 
@@ -417,12 +439,71 @@ def market_status():
         return {"open": False, "label": "Mercado fechado"}
 
 
+def fetch_selic():
+    """Busca a taxa Selic atual via brapi.dev (gratuito)."""
+    if not BRAPI_TOKEN:
+        return None
+    try:
+        url = "https://brapi.dev/api/v2/prime-rate?country=brazil&token=" + BRAPI_TOKEN
+        response = requests.get(url, timeout=15)
+        data = response.json()
+        rates = data.get("prime-rate", [])
+        if rates:
+            return rates[0].get("value", None)
+        return None
+    except Exception as e:
+        print("Erro ao buscar Selic (brapi): " + str(e))
+        return None
+
+
+def build_terminal_news_html(entries, limit=8):
+    """Monta uma lista compacta estilo terminal (Bloomberg/Reuters) com
+    as noticias mais recentes, uma linha por item."""
+    if not entries:
+        return '<div class="terminal-empty">Sem noticias no momento.</div>'
+
+    rows = ""
+    for e in entries[:limit]:
+        if e["sentiment"] == "BULLISH":
+            tag = '<span class="term-tag alta">ALTA</span>'
+        elif e["sentiment"] == "BEARISH":
+            tag = '<span class="term-tag baixa">BAIXA</span>'
+        else:
+            tag = '<span class="term-tag info">INFO</span>'
+
+        rows += (
+            '<div class="term-row">'
+            '<span class="term-time">' + e["time"] + "</span>"
+            + tag +
+            '<span class="term-title">' + html_module.escape(e["title"]) + "</span>"
+            '<span class="term-src">' + html_module.escape(e["source"]) + "</span>"
+            "</div>"
+        )
+    return rows
+
+
+def build_calendar_html():
+    """Monta a lista fixa do calendario economico."""
+    rows = ""
+    for item in ECONOMIC_CALENDAR:
+        rows += (
+            '<div class="calendar-item">'
+            '<span class="calendar-date">' + html_module.escape(item["date"]) + "</span>"
+            '<span class="calendar-event">' + html_module.escape(item["event"]) + "</span>"
+            "</div>"
+        )
+    return rows
+
+
 def build_cockpit_html(portal_entries):
     quotes = fetch_cockpit_quotes()
     usd = fetch_usd_brl()
+    selic = fetch_selic()
     thermo = compute_sentiment_thermometer(portal_entries)
     top_mentions = compute_top_mentions(portal_entries)
     status = market_status()
+    terminal_rows = build_terminal_news_html(portal_entries)
+    calendar_rows = build_calendar_html()
 
     quotes_html = ""
     for q in quotes:
@@ -446,6 +527,15 @@ def build_cockpit_html(portal_entries):
             '<span class="quote-symbol">USD/BRL</span>'
             '<span class="quote-price">R$ ' + str(round(usd["price"], 2)) + "</span>"
             '<span class="quote-change ' + cls + '">' + sign + str(round(change, 2)) + "%</span>"
+            "</div>"
+        )
+
+    if selic is not None:
+        quotes_html += (
+            '<div class="quote-item">'
+            '<span class="quote-symbol">SELIC</span>'
+            '<span class="quote-price">' + str(selic) + "% a.a.</span>"
+            '<span class="quote-change info">ref.</span>'
             "</div>"
         )
 
@@ -477,7 +567,7 @@ def build_cockpit_html(portal_entries):
         "</div>"
 
         '<div class="cockpit-card quotes-card">'
-        '<span class="cockpit-label">Cotações</span>'
+        '<span class="cockpit-label">Cotações e Selic</span>'
         '<div class="quotes-list">' + quotes_html + "</div>"
         "</div>"
 
@@ -498,6 +588,16 @@ def build_cockpit_html(portal_entries):
         '<div class="cockpit-card">'
         '<span class="cockpit-label">Mais citados hoje</span>'
         '<div class="mentions-list">' + mentions_html + "</div>"
+        "</div>"
+
+        '<div class="cockpit-card terminal-card">'
+        '<span class="cockpit-label">Terminal de notícias</span>'
+        '<div class="terminal-list">' + terminal_rows + "</div>"
+        "</div>"
+
+        '<div class="cockpit-card calendar-card">'
+        '<span class="cockpit-label">Calendário econômico</span>'
+        '<div class="calendar-list">' + calendar_rows + "</div>"
         "</div>"
 
         "</div>"
@@ -526,6 +626,9 @@ def save_portal_history(entries):
 
 
 def generate_portal(entries, template_path="docs/template.html", output_path="docs/index.html"):
+    """Le o template.html, substitui os placeholders de ticker e feed
+    pelos dados reais mais recentes, e salva como index.html (o que o
+    GitHub Pages efetivamente publica)."""
     if not os.path.exists(template_path):
         print("AVISO: template.html nao encontrado, portal nao gerado.")
         return
