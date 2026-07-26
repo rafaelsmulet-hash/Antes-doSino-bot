@@ -771,7 +771,7 @@ def save_portal_history(entries):
         json.dump(trimmed, f, ensure_ascii=False)
 
 
-def generate_portal(entries, entries_today=None, yesterday_data=None, template_path="docs/template.html", output_path="docs/index.html"):
+def generate_portal(entries, entries_today=None, template_path="docs/template.html", output_path="docs/index.html"):
     """Le o template.html, substitui os placeholders de ticker e feed
     pelos dados reais mais recentes, e salva como index.html (o que o
     GitHub Pages efetivamente publica)."""
@@ -831,7 +831,7 @@ def generate_portal(entries, entries_today=None, yesterday_data=None, template_p
         template = before + start_marker_c + "\n" + cards_html + end_marker_c + after
 
     if start_marker_k in template and end_marker_k in template:
-        cockpit_html = build_cockpit_html(entries, entries_today, yesterday_data)
+        cockpit_html = build_cockpit_html(entries, entries_today)
         before = template.split(start_marker_k)[0]
         after = template.split(end_marker_k)[1]
         template = before + start_marker_k + "\n" + cockpit_html + end_marker_k + after
@@ -915,13 +915,8 @@ def main():
     entries_today = [e for e in all_portal_entries if e.get("date") == today_str]
 
     archive = load_daily_archive()
-    yesterday_data = None
-    for d in reversed(archive):
-        if d["date"] != today_str:
-            yesterday_data = d
-            break
 
-    generate_portal(all_portal_entries, entries_today, yesterday_data)
+    generate_portal(all_portal_entries, entries_today)
     build_daily_summary_html(entries_today, today_str)
 
     thermo_today = compute_sentiment_thermometer(entries_today)
