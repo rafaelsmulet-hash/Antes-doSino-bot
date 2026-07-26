@@ -463,54 +463,44 @@ def build_terminal_news_html(entries, limit=8):
     return rows
 
 
-def build_today_vs_yesterday_html(today_thermo, yesterday_data):
-    """Compara o termometro de sentimento de hoje com o do dia anterior,
-    usando o arquivo diario ja acumulado (sem chamada extra de IA)."""
-    hoje_alta = today_thermo["alta"]
-    hoje_total = today_thermo["total"]
-
-    if yesterday_data:
-        ontem_alta = yesterday_data.get("alta", 0)
-        ontem_total = yesterday_data.get("total", 0)
-        ontem_label = yesterday_data.get("date", "Ontem")
-    else:
-        ontem_alta = 0
-        ontem_total = 0
-        ontem_label = "Sem dados"
-
-    diff = hoje_alta - ontem_alta
-    if hoje_total == 0:
-        diff_text = "Aguardando notícias de hoje"
-        diff_class = "info"
-    elif diff > 0:
-        diff_text = "+" + str(diff) + " pontos de alta vs. ontem"
-        diff_class = "alta"
-    elif diff < 0:
-        diff_text = str(diff) + " pontos de alta vs. ontem"
-        diff_class = "baixa"
-    else:
-        diff_text = "Igual a ontem"
-        diff_class = "info"
-
-    html = (
-        '<div class="compare-row">'
-        '<div class="compare-col">'
-        '<span class="compare-label">Hoje</span>'
-        '<span class="compare-value">' + str(hoje_alta) + "% alta</span>"
-        '<span class="compare-sub">' + str(hoje_total) + " notícias</span>"
-        "</div>"
-        '<div class="compare-col">'
-        '<span class="compare-label">' + html_module.escape(str(ontem_label)) + "</span>"
-        '<span class="compare-value">' + str(ontem_alta) + "% alta</span>"
-        '<span class="compare-sub">' + str(ontem_total) + " notícias</span>"
-        "</div>"
-        "</div>"
-        '<div class="compare-diff ' + diff_class + '">' + diff_text + "</div>"
-    )
-    return html
+def compute_hourly_volume(entries_today):
+    """Conta quantas noticias saíram em cada hora do dia (a partir do
+    campo 'time' HH:MM ja registrado em cada entrada)."""
+    counts = {}
+    for e in entries_today:
+        time_str = e.get("time", "")
+        if ":" in time_str:
+            hour = time_str.split(":")[0]
+            counts[hour] = counts.get(hour, 0) + 1
+    return counts
 
 
-def build_cockpit_html(portal_entries, entries_today=None, yesterday_data=None):
+def build_hourly_volume_html(entries_today):
+    counts = compute_hourly_volume(entries_today)
+
+    if not counts:
+        return '<div class="hourly-empty">Sem notícias registradas hoje ainda.</div>'
+
+    sorted_hours = sorted(counts.keys(), key=lambda h: int(h))
+    max_count = max(counts.values())
+
+    rows = ""
+    for hour in sorted_hours:
+        count = counts[hour]
+        width_pct = round((count / max_count) * 100)
+        rows += (
+            '<div class="hourly-row">'
+            '<span class="hourly-hour">' + hour + "h</span>"
+            '<div class="hourly-bar-track">'
+            '<div class="hourly-bar-fill" style="width:' + str(width_pct) + '%"></div>'
+            "</div>"
+            '<span class="hourly-count">' + str(count) + "</span>"
+            "</div>"
+        )
+    return rows
+
+
+def build_cockpit_html(portal_entries, entries_today=None):
     if entries_today is None:
         entries_today = portal_entries
 
@@ -522,7 +512,7 @@ def build_cockpit_html(portal_entries, entries_today=None, yesterday_data=None):
     top_mentions = compute_top_mentions(portal_entries)
     status = market_status()
     terminal_rows = build_terminal_news_html(portal_entries)
-    compare_html = build_today_vs_yesterday_html(today_thermo, yesterday_data)
+    hourly_html = build_hourly_volume_html(entries_today)
 
     quotes_html = ""
     for q in quotes:
@@ -614,9 +604,9 @@ def build_cockpit_html(portal_entries, entries_today=None, yesterday_data=None):
         '<div class="terminal-list">' + terminal_rows + "</div>"
         "</div>"
 
-        '<div class="cockpit-card compare-card">'
-        '<span class="cockpit-label">Hoje vs. ontem</span>'
-        + compare_html +
+        '<div class="cockpit-card hourly-card">'
+        '<span class="cockpit-label">Volume de notícias por horário</span>'
+        '<div class="hourly-list">' + hourly_html + "</div>"
         "</div>"
 
         "</div>"
@@ -686,7 +676,11 @@ def build_daily_summary_html(entries_today, today_str):
         items_html = '<p style="color:var(--slate)">Nenhuma notícia registrada ainda hoje.</p>'
 
     page = (
-        "<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'>"
+        "<!DOCTYPE html><html lang='pt-BR'><head>"
+        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
+        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+        "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<meta charset='UTF-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         "<title>Resumo Diário - " + today_str + " | Antes do Sino</title>"
         "<link rel='stylesheet' href='assets.css'>"
@@ -731,7 +725,11 @@ def build_weekly_summary_html(archive):
         rows_html = '<p style="color:var(--slate)">Ainda não há dias suficientes registrados.</p>'
 
     page = (
-        "<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'>"
+        "<!DOCTYPE html><html lang='pt-BR'><head>"
+        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
+        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+        "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<meta charset='UTF-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         "<title>Resumo Semanal | Antes do Sino</title>"
         "<link rel='stylesheet' href='assets.css'>"
