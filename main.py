@@ -2857,6 +2857,226 @@ def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram
             print("Falha ao enviar Evening Briefing - sera tentado novamente no proximo ciclo dentro da janela.")
 
 
+FORWARDED_CHANNELS = [
+    "panoramajonasesteves",
+    "grupobovespanews",
+]
+
+CHANNEL_DISPLAY_NAMES = {
+    "panoramajonasesteves": "Panorama Jonas Esteves",
+    "grupobovespanews": "Grupo Bovespa News",
+}
+
+KNOWN_AGENCIES = ["Reuters", "Bloomberg", "CNBC", "WSJ", "AFP", "Bovespa News"]
+
+CHANNEL_STATE_FILE = "channel_state.json"
+
+
+def load_channel_state():
+    if os.path.exists(CHANNEL_STATE_FILE):
+        try:
+            with open(CHANNEL_STATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def save_channel_state(state):
+    with open(CHANNEL_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+
+
+def fetch_channel_posts(channel_username):
+    """Le a versao publica web de um canal do Telegram (t.me/s/canal),
+    sem precisar de login/sessao - o mesmo metodo usado no encaminhador
+    original, agora integrado direto ao bot principal."""
+    channel_username = channel_username.lstrip("@")
+    url = "https://t.me/s/" + channel_username
+    try:
+        response = requests.get(
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"},
+            timeout=15,
+        )
+        html_content = response.text
+    except Exception as e:
+        print("Erro ao buscar canal " + channel_username + ": " + str(e))
+        return []
+
+    pattern = re.compile(
+        r'data-post="' + re.escape(channel_username) + r'/(\d+)"(.*?)(?=data-post="' + re.escape(channel_username) + r'/\d+"|$)',
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    posts = []
+    for match in pattern.finditer(html_content):
+        post_id = int(match.group(1))
+        block = match.group(2)
+
+        text_match = re.search(
+            r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>',
+            block,
+            re.DOTALL,
+        )
+        if not text_match:
+            continue
+
+        raw_text = text_match.group(1)
+        raw_text = re.sub(r"<br\s*/?>", "\n", raw_text)
+        clean_text = re.sub(r"<[^>]+>", "", raw_text)
+        clean_text = html_module.unescape(clean_text).strip()
+
+        if clean_text:
+            posts.append({"id": post_id, "text": clean_text})
+
+    posts.sort(key=lambda p: p["id"])
+    return posts
+
+
+def clean_channel_post_text(text):
+    text = re.sub(r"\n*Grupo Bovespa News\s*$", "", text, flags=re.IGNORECASE).strip()
+    text = re.sub(r"^\s*t\.me/\S+\s*$", "", text, flags=re.IGNORECASE | re.MULTILINE).strip()
+    text = re.sub(r"\n{2,}", "\n", text).strip()
+    return text
+
+
+def is_channel_bio(text):
+    bio_markers = [
+        "ver canal", "para entrar em contato", "@jonasesteves", "contato@",
+        "taxa de apenas", "mensalmente", "garantia de 7 dias",
+        "colabore com nosso trabalho", "assinando nosso servico",
+        "assinando nosso serviço", "pagina de assinatura", "página de assinatura",
+        "principais cotacoes do mercado financeiro", "principais cotações do mercado financeiro",
+    ]
+    lower_text = text.lower()
+    return any(marker in lower_text for marker in bio_markers)
+
+
+def detect_real_source(clean_text, clean_channel):
+    for agency in KNOWN_AGENCIES:
+        if agency.lower() in clean_text.lower():
+            return agency
+    return CHANNEL_DISPLAY_NAMES.get(clean_channel.lower(), clean_channel)
+
+
+def classify_channel_sentiment(title):
+    """Classificacao leve por palavra-chave (sem chamada de IA) - os
+    posts encaminhados sao curtos e diretos, entao essa heuristica e
+    suficiente e evita gasto extra de cota da Groq."""
+    title_lower = title.lower()
+    if any(w in title_lower for w in ["alta", "sobe", "lucro", "dispara", "recorde", "bullish"]):
+        return "BULLISH"
+    elif any(w in title_lower for w in ["queda", "cai", "prejuizo", "desaba", "recua", "bearish"]):
+        return "BEARISH"
+    else:
+        return "NEUTRAL"
+
+
+def process_forwarded_channels():
+    """Busca posts novos dos canais encaminhados, envia ao grupo do
+    Telegram, e retorna uma lista de entradas no MESMO formato usado
+    pelo restante do pipeline (title/body/source/sentiment/link/time/
+    date) - assim esse conteudo passa a contar para os Sinais do Dia,
+    paginas de ativo/tema/evento e briefings, nao so aparece no grupo."""
+    state = load_channel_state()
+    new_portal_entries = []
+    has_updates = False
+
+    for channel in FORWARDED_CHANNELS:
+        clean_channel = channel.lstrip("@").strip()
+        last_id = state.get(clean_channel, 0)
+        posts = fetch_channel_posts(clean_channel)
+
+        if not posts:
+            print("AVISO: nenhum post encontrado para " + clean_channel)
+            continue
+
+        if last_id == 0:
+            print("Inicializando " + clean_channel + " no post " + str(posts[-1]["id"]) + ".")
+            state[clean_channel] = posts[-1]["id"]
+            has_updates = True
+            continue
+
+        new_posts = [p for p in posts if p["id"] > last_id]
+
+        for post in new_posts:
+            clean_text = clean_channel_post_text(post["text"])
+
+            if is_channel_bio(clean_text):
+                print("Ignorado (bio do canal): " + clean_text[:60])
+                continue
+            if not clean_text:
+                continue
+
+            fonte_detectada = detect_real_source(clean_text, clean_channel)
+            clean_text = re.sub(
+                r"(?i)^\s*(reuters|bloomberg|cnbc|wsj)\s*$", "", clean_text, flags=re.MULTILINE
+            ).strip()
+
+            linhas = [l.strip() for l in clean_text.split("\n") if l.strip()]
+            if not linhas:
+                continue
+
+            titulo_puro = linhas[0]
+            sentiment = classify_channel_sentiment(titulo_puro)
+
+            if sentiment == "BULLISH":
+                marker = "\U0001F7E2 <b>[ALTA]</b>"
+            elif sentiment == "BEARISH":
+                marker = "\U0001F7E1 <b>[BAIXA]</b>"
+            else:
+                marker = "\u26AA <b>[INFORMATIVO]</b>"
+
+            titulo_escapado = html_module.escape(titulo_puro, quote=False)
+
+            if len(linhas) > 1:
+                corpo_puro = "\n".join(linhas[1:]).strip()
+                corpo_puro = re.sub(r"(?i)pontos[- ]chave:?", "", corpo_puro)
+            else:
+                corpo_puro = ""
+            corpo_escapado = html_module.escape(corpo_puro, quote=False)
+
+            is_real_agency = fonte_detectada in KNOWN_AGENCIES
+            fonte_tag = html_module.escape(fonte_detectada, quote=False)
+
+            if corpo_escapado and is_real_agency:
+                message = marker + " <b>" + titulo_escapado + "</b>\n\n" + corpo_escapado + "\n\n<i>Fonte: " + fonte_tag + "</i>"
+            elif corpo_escapado:
+                message = marker + " <b>" + titulo_escapado + "</b>\n\n" + corpo_escapado
+            elif is_real_agency:
+                message = marker + " <b>" + titulo_escapado + "</b>\n\n<i>Fonte: " + fonte_tag + "</i>"
+            else:
+                message = marker + " <b>" + titulo_escapado + "</b>"
+
+            if len(message) > 3900:
+                message = message[:3900] + "..."
+
+            if send_telegram_message(message):
+                post_link = "https://t.me/" + clean_channel + "/" + str(post["id"])
+                now = datetime.now(BR_TZ)
+                print("Encaminhado de " + clean_channel + " (id " + str(post["id"]) + "): " + clean_text[:40] + "...")
+
+                new_portal_entries.append({
+                    "title": titulo_puro,
+                    "body": corpo_puro[:200] if corpo_puro else "Leia mais no link.",
+                    "source": CHANNEL_DISPLAY_NAMES.get(clean_channel.lower(), clean_channel),
+                    "sentiment": sentiment,
+                    "link": post_link,
+                    "time": now.strftime("%H:%M"),
+                    "date": now.strftime("%Y-%m-%d"),
+                })
+
+                state[clean_channel] = post["id"]
+                has_updates = True
+                time.sleep(3)
+
+    if has_updates:
+        save_channel_state(state)
+
+    return new_portal_entries
+
+
 PORTAL_HISTORY_FILE = "portal_history.json"
 
 
@@ -3040,6 +3260,14 @@ def main():
                 })
 
                 time.sleep(3)
+
+    try:
+        forwarded_entries = process_forwarded_channels()
+        if forwarded_entries:
+            portal_entries.extend(forwarded_entries)
+            print(str(len(forwarded_entries)) + " noticia(s) dos canais encaminhados integrada(s) ao pipeline.")
+    except Exception as e:
+        print("Erro ao processar canais encaminhados (isolado, nao afeta o fluxo principal): " + str(e))
 
     all_portal_entries = portal_entries + load_portal_history()
     save_portal_history(all_portal_entries)
