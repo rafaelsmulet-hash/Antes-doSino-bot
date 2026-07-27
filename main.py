@@ -1260,10 +1260,15 @@ def update_events_registry(entries_today):
     return state.get("events", [])
 
 
-def build_events_html(entries_today):
+def build_events_html(entries_today, all_history=None):
     """Mostra eventos vindos do registro automatico (extraido das
     proprias noticias) combinado com a lista minima de referencia -
-    nunca forca conteudo vazio."""
+    nunca forca conteudo vazio. Quando o evento ja tem volume
+    suficiente para ter pagina propria gerada, o rotulo vira um link
+    direto para ela."""
+    if all_history is None:
+        all_history = entries_today
+
     today = datetime.now(BR_TZ).date()
 
     registry = update_events_registry(entries_today)
@@ -1298,10 +1303,19 @@ def build_events_html(entries_today):
         else:
             countdown = "Em " + str(days_away) + " dias"
         display_date = datetime.strptime(ev["date"], "%Y-%m-%d").strftime("%d/%m/%Y")
+
+        label_escaped = html_module.escape(ev["label"])
+        event_entries_count = len(get_event_entries(all_history, ev))
+        if event_entries_count >= MIN_EVENT_NEWS_THRESHOLD:
+            slug = slugify_label(ev["label"])
+            label_html = '<a href="eventos/' + slug + '.html" style="color:var(--cream);">' + label_escaped + "</a>"
+        else:
+            label_html = label_escaped
+
         events_html += (
             '<div class="event-item">'
             '<span class="event-countdown">' + countdown + "</span>"
-            '<span class="event-label">' + html_module.escape(ev["label"]) + "</span>"
+            '<span class="event-label">' + label_html + "</span>"
             '<span class="event-date">' + display_date + "</span>"
             "</div>"
         )
@@ -2676,7 +2690,7 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
         template = before + start_marker_s + "\n" + signals_html + end_marker_s + after
 
     if start_marker_e in template and end_marker_e in template:
-        events_html = build_events_html(entries_for_today)
+        events_html = build_events_html(entries_for_today, entries)
         before = template.split(start_marker_e)[0]
         after = template.split(end_marker_e)[1]
         template = before + start_marker_e + "\n" + events_html + end_marker_e + after
