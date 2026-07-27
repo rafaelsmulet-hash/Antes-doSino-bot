@@ -97,29 +97,7 @@
   }
   .btn-ghost:hover{border-color:var(--bronze);background:rgba(242,200,121,0.05);}
 
-  .ticker-wrap{
-    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-    background:rgba(0,0,0,0.18);
-    overflow:hidden;position:relative;padding:16px 0;
-  }
-  .ticker-wrap::before, .ticker-wrap::after{
-    content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;
-  }
-  .ticker-wrap::before{left:0;background:linear-gradient(90deg, var(--navy-deep), transparent);}
-  .ticker-wrap::after{right:0;background:linear-gradient(270deg, var(--navy-deep), transparent);}
-  .ticker-track{
-    display:flex;gap:48px;white-space:nowrap;
-    animation: scroll-ticker 38s linear infinite;
-    width:max-content;
-  }
-  @keyframes scroll-ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-  .tick{display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:0.85rem;color:var(--slate);}
-  .tick .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
-  .dot.alta{background:var(--up);}
-  .dot.baixa{background:var(--down);}
-  .dot.info{background:var(--slate-dim);}
-  .tick .headline{color:var(--cream);font-family:'Inter',sans-serif;font-weight:500;font-size:0.88rem;}
-  .tick .src{color:var(--bronze);font-size:0.75rem;}
+
 
   section{padding:8vh 6vw;max-width:1120px;margin:0 auto;}
   .section-head{max-width:560px;margin-bottom:48px;}
@@ -148,21 +126,8 @@
   .quote-change{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:0.85rem;}
   .quote-change.up{color:var(--up);}
   .quote-change.down{color:var(--down);}
-  .quote-empty,.mention-empty{color:var(--slate-dim);font-size:0.85rem;}
-  .thermo-bar{display:flex;height:10px;border-radius:6px;overflow:hidden;background:rgba(255,255,255,0.05);}
-  .thermo-seg{height:100%;}
-  .thermo-seg.alta{background:var(--up);}
-  .thermo-seg.info{background:var(--slate-dim);}
-  .thermo-seg.baixa{background:var(--down);}
-  .thermo-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:0.78rem;color:var(--slate);}
-  .thermo-legend .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;}
-  .thermo-legend .dot.alta{background:var(--up);}
-  .thermo-legend .dot.info{background:var(--slate-dim);}
-  .thermo-legend .dot.baixa{background:var(--down);}
-  .mentions-list{display:flex;flex-direction:column;gap:8px;}
-  .mention-item{display:flex;justify-content:space-between;font-size:0.88rem;}
-  .mention-name{font-weight:600;color:var(--cream);}
-  .mention-count{color:var(--slate-dim);font-size:0.78rem;}
+  .quote-empty{color:var(--slate-dim);font-size:0.85rem;}
+  .thermo-phrase{color:var(--cream);font-size:0.95rem;line-height:1.5;margin:0;}
 
   .feed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
   .card{
@@ -214,35 +179,9 @@
   }
 
   @media (prefers-reduced-motion: reduce){
-    .ticker-track{animation:none;}
     .pulse{animation:none;}
   }
-.terminal-card, .calendar-card{grid-column:span 2;}
-.terminal-list{display:flex;flex-direction:column;gap:6px;}
-.term-row{
-  display:grid;grid-template-columns:52px 54px 1fr auto;gap:10px;align-items:center;
-  font-size:0.82rem;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);
-}
-.term-time{font-family:'IBM Plex Mono',monospace;color:var(--slate-dim);font-size:0.75rem;}
-.term-tag{
-  font-family:'IBM Plex Mono',monospace;font-size:0.62rem;font-weight:700;
-  padding:2px 6px;border-radius:4px;text-align:center;
-}
-.term-tag.alta{background:rgba(63,184,119,0.15);color:var(--up);}
-.term-tag.baixa{background:rgba(226,87,76,0.15);color:var(--down);}
-.term-tag.info{background:rgba(124,140,166,0.15);color:var(--slate);}
-.term-title{color:var(--cream);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.term-src{color:var(--bronze);font-size:0.72rem;font-family:'IBM Plex Mono',monospace;}
-.terminal-empty{color:var(--slate-dim);font-size:0.85rem;}
 
-@media (max-width:860px){
-  .terminal-card{grid-column:span 2;}
-  .term-row{grid-template-columns:44px 46px 1fr;}
-  .term-src{display:none;}
-}
-@media (max-width:520px){
-  .terminal-card{grid-column:span 1;}
-}
   .sub-nav{
     display:flex;justify-content:center;gap:26px;flex-wrap:wrap;
     padding:12px 6vw;background:rgba(0,0,0,0.15);
@@ -268,9 +207,9 @@
 .worry-line.info{background:rgba(242,200,121,0.08);color:var(--cream);}
 .worry-dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex-shrink:0;}
 
-.hero-compact{padding:6vh 6vw 3vh;text-align:center;max-width:700px;margin:0 auto;}
-.hero-compact h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:12px;}
-.hero-compact p{color:var(--slate);font-size:1rem;}
+.hero-compact{padding:3.5vh 6vw 2vh;text-align:center;max-width:600px;margin:0 auto;}
+.hero-compact h1{font-family:'Inter',sans-serif;font-weight:600;font-size:1.3rem;color:var(--cream);margin-bottom:6px;}
+.hero-compact p{color:var(--slate);font-size:0.88rem;}
 
 .since-visit{
   max-width:900px;margin:0 auto 20px;padding:14px 22px;
@@ -347,14 +286,6 @@
 
 <!-- EVENTS_START -->
 <!-- EVENTS_END -->
-
-<div class="ticker-wrap">
-  <div class="ticker-track" id="ticker-track">
-    <!-- TICKER_ITEMS_START -->
-    <div class="tick"><span class="dot alta"></span><span class="headline">Ibovespa fecha em alta de 2,44%, aos 177.547 pontos</span><span class="src">InfoMoney</span></div>
-    <!-- TICKER_ITEMS_END -->
-  </div>
-</div>
 
 <section>
   <div class="section-head">
