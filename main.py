@@ -1113,6 +1113,190 @@ def run_close_carousel(all_entries):
     print("Prompts de fechamento gerados com sucesso: docs/fechamento-hoje.html")
 
 
+def compute_news_clusters(entries):
+    """Agrupa noticias por ativo/tema em comum, e pontua cada cluster
+    internamente por numero de fontes distintas, forca de sentimento e
+    recorrencia - sem expor nenhum numero de indice ao usuario, so o
+    resultado ja ordenado."""
+    clusters = {}
+    for e in entries:
+        text = (e["title"] + " " + e["body"]).lower()
+        for term in TICKER_MENTION_LIST:
+            if term in text:
+                clusters.setdefault(term, []).append(e)
+
+    scored = []
+    for term, items in clusters.items():
+        distinct_sources = len(set(i["source"] for i in items))
+        non_neutral = sum(1 for i in items if i["sentiment"] != "NEUTRAL")
+        recurrence = len(items)
+        score = distinct_sources * 2 + non_neutral * 1.5 + recurrence
+        items_sorted = sorted(items, key=lambda i: i.get("time", ""), reverse=True)
+        scored.append({
+            "term": term,
+            "items": items_sorted,
+            "distinct_sources": distinct_sources,
+            "score": score,
+            "representative": items_sorted[0],
+        })
+
+    scored.sort(key=lambda c: c["score"], reverse=True)
+    return scored
+
+
+def build_worry_line_html(clusters):
+    """Responde a pergunta 'preciso me preocupar com alguma coisa?' em
+    uma unica frase, sem exigir interpretacao."""
+    if not clusters:
+        return (
+            '<div class="worry-line calm">'
+            '<span class="worry-dot"></span> Dia tranquilo, sem sinais fortes de atenção no mercado até agora.'
+            "</div>"
+        )
+
+    top = clusters[0]
+    if top["distinct_sources"] < 2:
+        return (
+            '<div class="worry-line calm">'
+            '<span class="worry-dot"></span> Dia tranquilo, sem sinais fortes de atenção no mercado até agora.'
+            "</div>"
+        )
+
+    rep = top["representative"]
+    asset_label = top["term"].upper()
+    if rep["sentiment"] == "BEARISH":
+        return (
+            '<div class="worry-line alert">'
+            '<span class="worry-dot"></span> Atenção: <b>' + html_module.escape(asset_label) +
+            "</b> concentra o mercado hoje, com sinal de baixa."
+            "</div>"
+        )
+    elif rep["sentiment"] == "BULLISH":
+        return (
+            '<div class="worry-line alert">'
+            '<span class="worry-dot"></span> Destaque: <b>' + html_module.escape(asset_label) +
+            "</b> concentra o mercado hoje, com sinal de alta."
+            "</div>"
+        )
+    else:
+        return (
+            '<div class="worry-line info">'
+            '<span class="worry-dot"></span> <b>' + html_module.escape(asset_label) +
+            "</b> é o assunto mais comentado do mercado agora."
+            "</div>"
+        )
+
+
+def build_signals_html(clusters, limit=5):
+    """Monta os cards de 'Sinais do Dia' - as noticias que realmente
+    movimentaram o mercado, rankeadas por relevancia, nao por horario."""
+    if not clusters:
+        return '<p style="color:var(--slate);">Ainda sem sinais suficientes hoje. Volte mais tarde.</p>'
+
+    cards_html = ""
+    for c in clusters[:limit]:
+        rep = c["representative"]
+        if rep["sentiment"] == "BULLISH":
+            badge = '<span class="badge alta">ALTA</span>'
+        elif rep["sentiment"] == "BEARISH":
+            badge = '<span class="badge baixa">BAIXA</span>'
+        else:
+            badge = '<span class="badge info">INFO</span>'
+
+        if c["distinct_sources"] >= 2:
+            reason = "Mencionado por " + str(c["distinct_sources"]) + " fontes diferentes hoje"
+        else:
+            reason = "Notícia em destaque"
+
+        link = rep.get("link", "#") or "#"
+        cards_html += (
+            '<div class="signal-card">'
+            '<div class="card-meta">' + badge +
+            '<span class="src">' + html_module.escape(rep["source"]) + "</span>"
+            '<span class="time">' + rep["time"] + "</span></div>"
+            "<h3>" + html_module.escape(rep["title"]) + "</h3>"
+            "<p>" + html_module.escape(rep["body"]) + "</p>"
+            '<span class="signal-reason">🔎 ' + reason + "</span>"
+            '<a href="' + link + '" class="read" target="_blank">Leia mais &rarr;</a>'
+            "</div>\n"
+        )
+    return cards_html
+
+
+UPCOMING_EVENTS = [
+    {"date": "04-05/08/2026", "label": "Reunião do Copom", "keyword": "copom"},
+]
+
+
+def build_events_html(entries_today):
+    """So mostra eventos que estao proximos E/OU sendo mencionados nas
+    noticias de hoje - nunca forca conteudo vazio."""
+    today = datetime.now(BR_TZ).date()
+    relevant_events = []
+
+    for ev in UPCOMING_EVENTS:
+        mentioned_today = any(ev["keyword"] in (e["title"] + " " + e["body"]).lower() for e in entries_today)
+        try:
+            first_date_str = ev["date"].split("-")[0] if "-" in ev["date"].split("/")[0] else ev["date"]
+            day_part = ev["date"].split("/")[0].split("-")[0]
+            month_part = ev["date"].split("/")[1]
+            year_part = ev["date"].split("/")[2]
+            event_date = datetime(int(year_part), int(month_part), int(day_part)).date()
+            days_away = (event_date - today).days
+        except Exception:
+            days_away = 999
+
+        if mentioned_today or (0 <= days_away <= 14):
+            relevant_events.append((ev, days_away))
+
+    if not relevant_events:
+        return ""
+
+    events_html = ""
+    for ev, days_away in relevant_events:
+        if days_away <= 0:
+            countdown = "É hoje"
+        elif days_away == 1:
+            countdown = "Amanhã"
+        else:
+            countdown = "Em " + str(days_away) + " dias"
+        events_html += (
+            '<div class="event-item">'
+            '<span class="event-countdown">' + countdown + "</span>"
+            '<span class="event-label">' + html_module.escape(ev["label"]) + "</span>"
+            '<span class="event-date">' + html_module.escape(ev["date"]) + "</span>"
+            "</div>"
+        )
+
+    return (
+        '<section class="events-section"><div class="section-head">'
+        '<span class="kicker">No radar</span>'
+        "<h2>Eventos chegando</h2>"
+        "</div>"
+        '<div class="events-list">' + events_html + "</div>"
+        "</section>"
+    )
+
+
+def build_since_visit_data_json(entries_today):
+    """Monta um JSON leve com as noticias de hoje (titulo, hora, sentimento)
+    para o JavaScript no navegador comparar com o localStorage do
+    visitante e calcular 'o que mudou desde sua ultima visita' - sem
+    nenhum backend, so client-side."""
+    data = []
+    for e in entries_today:
+        try:
+            iso_dt = e["date"] + "T" + e["time"] + ":00-03:00"
+        except Exception:
+            continue
+        data.append({
+            "title": e["title"],
+            "sentiment": e["sentiment"],
+            "datetime": iso_dt,
+        })
+    return json.dumps(data, ensure_ascii=False)
+
+
 PORTAL_HISTORY_FILE = "portal_history.json"
 
 
@@ -1180,6 +1364,17 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
     end_marker_c = "<!-- FEED_CARDS_END -->"
     start_marker_k = "<!-- COCKPIT_START -->"
     end_marker_k = "<!-- COCKPIT_END -->"
+    start_marker_w = "<!-- WORRY_LINE_START -->"
+    end_marker_w = "<!-- WORRY_LINE_END -->"
+    start_marker_s = "<!-- SIGNALS_START -->"
+    end_marker_s = "<!-- SIGNALS_END -->"
+    start_marker_e = "<!-- EVENTS_START -->"
+    end_marker_e = "<!-- EVENTS_END -->"
+    start_marker_v = "<!-- SINCE_VISIT_DATA_START -->"
+    end_marker_v = "<!-- SINCE_VISIT_DATA_END -->"
+
+    entries_for_today = entries_today if entries_today is not None else []
+    clusters = compute_news_clusters(entries_for_today)
 
     if start_marker_t in template and end_marker_t in template:
         before = template.split(start_marker_t)[0]
@@ -1196,6 +1391,30 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
         before = template.split(start_marker_k)[0]
         after = template.split(end_marker_k)[1]
         template = before + start_marker_k + "\n" + cockpit_html + end_marker_k + after
+
+    if start_marker_w in template and end_marker_w in template:
+        worry_html = build_worry_line_html(clusters)
+        before = template.split(start_marker_w)[0]
+        after = template.split(end_marker_w)[1]
+        template = before + start_marker_w + "\n" + worry_html + end_marker_w + after
+
+    if start_marker_s in template and end_marker_s in template:
+        signals_html = build_signals_html(clusters)
+        before = template.split(start_marker_s)[0]
+        after = template.split(end_marker_s)[1]
+        template = before + start_marker_s + "\n" + signals_html + end_marker_s + after
+
+    if start_marker_e in template and end_marker_e in template:
+        events_html = build_events_html(entries_for_today)
+        before = template.split(start_marker_e)[0]
+        after = template.split(end_marker_e)[1]
+        template = before + start_marker_e + "\n" + events_html + end_marker_e + after
+
+    if start_marker_v in template and end_marker_v in template:
+        since_visit_json = build_since_visit_data_json(entries_for_today)
+        before = template.split(start_marker_v)[0]
+        after = template.split(end_marker_v)[1]
+        template = before + start_marker_v + "\n" + since_visit_json + "\n" + end_marker_v + after
 
     updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
     template = template.replace(
