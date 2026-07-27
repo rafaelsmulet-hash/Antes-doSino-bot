@@ -1288,16 +1288,36 @@ def build_since_visit_data_json(entries_today):
 
 
 ASSET_PROFILES = [
-    {"slug": "petr4", "label": "Petrobras (PETR4)", "terms": ["petr4", "petr3", "petrobras"]},
-    {"slug": "vale3", "label": "Vale (VALE3)", "terms": ["vale3", "vale"]},
-    {"slug": "itub4", "label": "Itaú (ITUB4)", "terms": ["itub4", "itau", "itaú"]},
-    {"slug": "b3sa3", "label": "B3 (B3SA3)", "terms": ["b3sa3"]},
-    {"slug": "bbas3", "label": "Banco do Brasil (BBAS3)", "terms": ["bbas3", "banco do brasil"]},
-    {"slug": "wege3", "label": "WEG (WEGE3)", "terms": ["wege3", "weg"]},
-    {"slug": "aapl", "label": "Apple (AAPL)", "terms": ["aapl", "apple"]},
-    {"slug": "tsla", "label": "Tesla (TSLA)", "terms": ["tsla", "tesla"]},
-    {"slug": "nvda", "label": "Nvidia (NVDA)", "terms": ["nvda", "nvidia"]},
-    {"slug": "msft", "label": "Microsoft (MSFT)", "terms": ["msft", "microsoft"]},
+    {"slug": "petr4", "label": "Petrobras (PETR4)", "terms": ["petr4", "petr3", "petrobras"],
+     "group": "commodities_br",
+     "why": "Petrobras é uma das maiores participações do Ibovespa - seus movimentos costumam influenciar o índice como um todo."},
+    {"slug": "vale3", "label": "Vale (VALE3)", "terms": ["vale3", "vale"],
+     "group": "commodities_br",
+     "why": "Vale é a maior mineradora do Ibovespa e altamente sensível ao preço do minério de ferro na China."},
+    {"slug": "itub4", "label": "Itaú (ITUB4)", "terms": ["itub4", "itau", "itaú"],
+     "group": "financeiro_br",
+     "why": "Itaú é o maior banco privado do país - seus resultados refletem o apetite de crédito da economia brasileira."},
+    {"slug": "b3sa3", "label": "B3 (B3SA3)", "terms": ["b3sa3"],
+     "group": "financeiro_br",
+     "why": "A própria bolsa brasileira - seu desempenho reflete o volume de negociação do mercado como um todo."},
+    {"slug": "bbas3", "label": "Banco do Brasil (BBAS3)", "terms": ["bbas3", "banco do brasil"],
+     "group": "financeiro_br",
+     "why": "Maior banco público do país, com forte exposição ao crédito agrícola e à política de juros."},
+    {"slug": "wege3", "label": "WEG (WEGE3)", "terms": ["wege3", "weg"],
+     "group": "industrial_br",
+     "why": "Uma das poucas industrias brasileiras com relevância global - termômetro do setor de bens de capital."},
+    {"slug": "aapl", "label": "Apple (AAPL)", "terms": ["aapl", "apple"],
+     "group": "tech_us",
+     "why": "Uma das empresas mais valiosas do mundo - seus resultados costumam mover o sentimento de toda a bolsa americana."},
+    {"slug": "tsla", "label": "Tesla (TSLA)", "terms": ["tsla", "tesla"],
+     "group": "tech_us",
+     "why": "Referência do setor de veículos elétricos, com volatilidade acima da média entre as big techs."},
+    {"slug": "nvda", "label": "Nvidia (NVDA)", "terms": ["nvda", "nvidia"],
+     "group": "tech_us",
+     "why": "Líder em chips de inteligência artificial - hoje uma das ações mais influentes do mercado americano."},
+    {"slug": "msft", "label": "Microsoft (MSFT)", "terms": ["msft", "microsoft"],
+     "group": "tech_us",
+     "why": "Gigante de tecnologia com forte exposição a nuvem e IA - peso relevante nos índices americanos."},
 ]
 
 ASSET_ARCHIVE_FILE = "asset_archive.json"
@@ -1360,6 +1380,28 @@ def compute_asset_summary_sentence(today_entries, label):
         )
 
 
+def compute_related_assets(profile, all_history, generated_slugs):
+    """Encontra ativos relacionados por grupo economico e por
+    coocorrencia real (mesma noticia menciona os dois ativos) - nunca
+    lista todos os ativos, so os que fazem sentido e que tem pagina
+    gerada de verdade."""
+    self_entries = get_asset_entries(all_history, profile["terms"])
+    scored = []
+
+    for other in ASSET_PROFILES:
+        if other["slug"] == profile["slug"] or other["slug"] not in generated_slugs:
+            continue
+
+        co_occurrence = sum(1 for e in self_entries if match_asset_terms(e, other["terms"]))
+        same_group = 1 if other["group"] == profile["group"] else 0
+
+        if co_occurrence > 0 or same_group:
+            scored.append((other, co_occurrence * 2 + same_group))
+
+    scored.sort(key=lambda pair: pair[1], reverse=True)
+    return [pair[0] for pair in scored[:4]]
+
+
 def compute_asset_clusters(asset_entries_today):
     """Agrupa noticias muito similares (mesma historia coberta por mais
     de uma fonte) usando comparacao de titulo ja existente no projeto,
@@ -1412,10 +1454,11 @@ def update_asset_archive_entry(slug, today_entries):
     return asset_history
 
 
-def build_asset_page_html(profile, all_history, entries_today):
+def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
     slug = profile["slug"]
     label = profile["label"]
     terms = profile["terms"]
+    why_it_matters = profile["why"]
 
     asset_history_entries = get_asset_entries(all_history, terms)
     asset_today_entries = get_asset_entries(entries_today, terms)
@@ -1426,6 +1469,7 @@ def build_asset_page_html(profile, all_history, entries_today):
     trend = update_asset_archive_entry(slug, asset_today_entries)
     summary_sentence = compute_asset_summary_sentence(asset_today_entries, label)
     clusters = compute_asset_clusters(asset_today_entries)
+    related = compute_related_assets(profile, all_history, generated_slugs)
 
     def sentiment_badge(s):
         if s == "BULLISH":
@@ -1435,7 +1479,7 @@ def build_asset_page_html(profile, all_history, entries_today):
         return '<span class="badge info">INFO</span>'
 
     clusters_html = ""
-    for c in clusters[:3]:
+    for c in clusters[:4]:
         rep = c["items"][0]
         reason = (
             "Coberto por " + str(c["distinct_sources"]) + " fontes diferentes"
@@ -1454,37 +1498,35 @@ def build_asset_page_html(profile, all_history, entries_today):
     if not clusters_html:
         clusters_html = '<p style="color:var(--slate);">Sem notícias suficientes hoje sobre ' + html_module.escape(label) + ".</p>"
 
-    ranked_all = sorted(
-        asset_today_entries,
-        key=lambda e: (0 if e["sentiment"] == "NEUTRAL" else 1, e.get("time", "")),
-        reverse=True
-    )[:8]
-    ranked_html = ""
-    for e in ranked_all:
-        ranked_html += (
-            '<div class="card">'
-            '<div class="card-meta">' + sentiment_badge(e["sentiment"]) +
-            '<span class="src">' + html_module.escape(e["source"]) + "</span>"
-            '<span class="time">' + e["time"] + "</span></div>"
-            "<h3>" + html_module.escape(e["title"]) + "</h3>"
-            "<p>" + html_module.escape(e["body"]) + "</p>"
-            "</div>\n"
-        )
-    if not ranked_html:
-        ranked_html = '<p style="color:var(--slate);">Sem movimentações relevantes hoje.</p>'
-
-    trend_rows = ""
-    for day in reversed(trend[-7:]):
-        trend_rows += (
-            "<div class='event-item'><span class='event-date'>" + day["date"] + "</span>"
-            "<span class='event-label'>" + str(day["count"]) + " menções</span>"
-            "<span class='event-countdown'>" + str(day["alta"]) + " alta / " + str(day["baixa"]) + " baixa</span>"
+    # Historico: fallback elegante - so mostra evolucao dia a dia quando
+    # ha pelo menos 3 dias de dados reais. Antes disso, so uma frase.
+    if len(trend) >= 3:
+        trend_rows = ""
+        for day in reversed(trend[-7:]):
+            trend_rows += (
+                "<div class='event-item'><span class='event-date'>" + day["date"] + "</span>"
+                "<span class='event-label'>" + str(day["count"]) + " menções</span>"
+                "<span class='event-countdown'>" + str(day["alta"]) + " alta / " + str(day["baixa"]) + " baixa</span>"
+                "</div>"
+            )
+        history_block = (
+            "<section><div class='section-head'>"
+            "<span class='kicker'>Histórico</span>"
+            "<h2>Evolução recente</h2>"
             "</div>"
+            "<div class='events-list'>" + trend_rows + "</div>"
+            "</section>"
         )
-    if len(trend) <= 1:
-        trend_note = "Começamos a acompanhar o histórico de " + label + " a partir de hoje - volte nos próximos dias para ver a evolução."
     else:
-        trend_note = "Histórico dos últimos dias com notícias sobre " + label + "."
+        history_block = (
+            "<section><div class='section-head'>"
+            "<span class='kicker'>Histórico</span>"
+            "<h2>Evolução recente</h2>"
+            "<p style='color:var(--slate);margin-top:10px;'>Estamos começando a acompanhar "
+            + html_module.escape(label) + " a partir de hoje. Volte em alguns dias para ver a evolução.</p>"
+            "</div>"
+            "</section>"
+        )
 
     all_feed_html = ""
     sorted_all = sorted(asset_history_entries, key=lambda e: (e.get("date", ""), e.get("time", "")), reverse=True)
@@ -1501,10 +1543,18 @@ def build_asset_page_html(profile, all_history, entries_today):
             "</div>\n"
         )
 
-    other_links_html = ""
-    for other in ASSET_PROFILES:
-        if other["slug"] != slug:
-            other_links_html += '<a href="' + other["slug"] + '.html" class="nav-links" style="margin-right:14px;">' + html_module.escape(other["label"]) + "</a>"
+    related_html = ""
+    for other in related:
+        related_html += '<a href="' + other["slug"] + '.html" class="nav-links" style="margin-right:14px;">' + html_module.escape(other["label"]) + "</a>"
+    related_block = ""
+    if related_html:
+        related_block = (
+            "<section><div class='section-head'>"
+            "<span class='kicker'>Ativos relacionados</span>"
+            "</div>"
+            "<div>" + related_html + "</div>"
+            "</section>"
+        )
 
     meta_description = html_module.escape(summary_sentence[:155])
     updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
@@ -1527,6 +1577,8 @@ def build_asset_page_html(profile, all_history, entries_today):
         "<span class='kicker'>Ativo</span>"
         "<h1 style='font-family:Fraunces,serif;font-size:2rem;font-weight:600;'>" + html_module.escape(label) + "</h1>"
         "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>" + html_module.escape(summary_sentence) + "</p>"
+        "<p style='color:var(--slate-dim);margin-top:10px;font-size:0.9rem;border-left:2px solid var(--bronze);padding-left:12px;'>"
+        "<b style='color:var(--bronze);'>Por que isso importa:</b> " + html_module.escape(why_it_matters) + "</p>"
         "</div></section>"
 
         "<section><div class='section-head'>"
@@ -1536,20 +1588,7 @@ def build_asset_page_html(profile, all_history, entries_today):
         "<div class='signals-grid'>" + clusters_html + "</div>"
         "</section>"
 
-        "<section><div class='section-head'>"
-        "<span class='kicker'>Impacto, não cronologia</span>"
-        "<h2>Últimas movimentações relevantes</h2>"
-        "</div>"
-        "<div class='feed-grid'>" + ranked_html + "</div>"
-        "</section>"
-
-        "<section><div class='section-head'>"
-        "<span class='kicker'>Histórico</span>"
-        "<h2>Evolução recente</h2>"
-        "<p style='color:var(--slate);margin-top:10px;'>" + trend_note + "</p>"
-        "</div>"
-        "<div class='events-list'>" + trend_rows + "</div>"
-        "</section>"
+        + history_block +
 
         "<section><div class='section-head'>"
         "<span class='kicker'>Aprofunde-se</span>"
@@ -1558,11 +1597,7 @@ def build_asset_page_html(profile, all_history, entries_today):
         "<div class='feed-grid'>" + all_feed_html + "</div>"
         "</section>"
 
-        "<section><div class='section-head'>"
-        "<span class='kicker'>Outros ativos</span>"
-        "</div>"
-        "<div>" + other_links_html + "</div>"
-        "</section>"
+        + related_block +
 
         "<footer><span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>"
         "<span class='mono'>Atualizado em " + updated_at + "</span></footer>"
@@ -1578,8 +1613,13 @@ def generate_asset_pages(all_history, entries_today):
     os.makedirs("docs/ativos", exist_ok=True)
     generated = []
 
+    generated_slugs = set()
     for profile in ASSET_PROFILES:
-        page_html = build_asset_page_html(profile, all_history, entries_today)
+        if get_asset_entries(all_history, profile["terms"]):
+            generated_slugs.add(profile["slug"])
+
+    for profile in ASSET_PROFILES:
+        page_html = build_asset_page_html(profile, all_history, entries_today, generated_slugs)
         if page_html is None:
             print("Sem volume para " + profile["slug"] + " - pagina nao gerada.")
             continue
