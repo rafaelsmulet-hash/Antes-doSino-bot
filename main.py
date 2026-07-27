@@ -1180,48 +1180,144 @@ def build_signals_html(clusters, limit=5):
     return cards_html
 
 
-UPCOMING_EVENTS = [
-    {"date": "04-05/08/2026", "label": "Reunião do Copom", "keyword": "copom"},
+EVENTS_STATE_FILE = "events_detected.json"
+
+SEED_EVENTS = [
+    {"date": "2026-08-04", "label": "Reunião do Copom (decisão da Selic)"},
 ]
 
 
-def build_events_html(entries_today):
-    """So mostra eventos que estao proximos E/OU sendo mencionados nas
-    noticias de hoje - nunca forca conteudo vazio."""
-    today = datetime.now(BR_TZ).date()
-    relevant_events = []
-
-    for ev in UPCOMING_EVENTS:
-        mentioned_today = any(ev["keyword"] in (e["title"] + " " + e["body"]).lower() for e in entries_today)
+def load_events_state():
+    if os.path.exists(EVENTS_STATE_FILE):
         try:
-            first_date_str = ev["date"].split("-")[0] if "-" in ev["date"].split("/")[0] else ev["date"]
-            day_part = ev["date"].split("/")[0].split("-")[0]
-            month_part = ev["date"].split("/")[1]
-            year_part = ev["date"].split("/")[2]
-            event_date = datetime(int(year_part), int(month_part), int(day_part)).date()
+            with open(EVENTS_STATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {"last_extraction_date": "", "events": []}
+    return {"last_extraction_date": "", "events": []}
+
+
+def save_events_state(state):
+    with open(EVENTS_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+
+
+def extract_events_from_news(entries_today):
+    """Usa a Groq para ler as manchetes do dia e identificar mencoes a
+    eventos futuros especificos (reunioes, decisoes, divulgacoes) com
+    data conhecida - permitindo que a secao de eventos se atualize
+    sozinha, sem precisar de aviso manual."""
+    if not USE_AI or not entries_today:
+        return []
+
+    headlines_text = ""
+    for e in entries_today[:20]:
+        headlines_text += "- " + e["title"] + "\n"
+
+    prompt = (
+        "Leia as manchetes de noticias de mercado financeiro abaixo e identifique "
+        "SOMENTE eventos futuros especificos e com data conhecida (reunioes de bancos "
+        "centrais, decisoes de juros, divulgacao de resultados, eleicoes, feriados de "
+        "mercado, etc). Ignore qualquer noticia que nao mencione uma data futura clara.\n\n"
+        "Manchetes:\n" + headlines_text + "\n\n"
+        "Responda APENAS em JSON plano, uma lista, sem markdown. Formato exato:\n"
+        '[{"date": "AAAA-MM-DD", "label": "Descricao curta do evento"}]\n\n'
+        "Se nao houver nenhum evento futuro claro e com data especifica mencionada, "
+        "responda apenas: []"
+    )
+
+    try:
+        raw_response = ask_groq(prompt)
+        raw_response = re.sub(r"```json|```", "", raw_response).strip()
+        parsed = json.loads(raw_response)
+        if not isinstance(parsed, list):
+            return []
+        valid = []
+        for item in parsed:
+            try:
+                datetime.strptime(item["date"], "%Y-%m-%d")
+                valid.append({"date": item["date"], "label": item["label"]})
+            except Exception:
+                continue
+        return valid
+    except Exception as e:
+        print("Erro ao extrair eventos (Groq): " + str(e))
+        return []
+
+
+def update_events_registry(entries_today):
+    """Roda a extracao de eventos uma vez por dia, mescla com o que ja
+    esta registrado, e descarta eventos cuja data ja passou - mantendo
+    a secao sempre atualizada sozinha."""
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    state = load_events_state()
+
+    if state.get("last_extraction_date") != today_str:
+        new_events = extract_events_from_news(entries_today)
+        existing = state.get("events", [])
+
+        existing_labels = set(e["label"].lower().strip() for e in existing)
+        for ev in new_events:
+            if ev["label"].lower().strip() not in existing_labels:
+                existing.append(ev)
+                existing_labels.add(ev["label"].lower().strip())
+
+        today_date = datetime.now(BR_TZ).date()
+        existing = [
+            e for e in existing
+            if datetime.strptime(e["date"], "%Y-%m-%d").date() >= today_date
+        ]
+
+        state["events"] = existing
+        state["last_extraction_date"] = today_str
+        save_events_state(state)
+
+    return state.get("events", [])
+
+
+def build_events_html(entries_today):
+    """Mostra eventos vindos do registro automatico (extraido das
+    proprias noticias) combinado com a lista minima de referencia -
+    nunca forca conteudo vazio."""
+    today = datetime.now(BR_TZ).date()
+
+    registry = update_events_registry(entries_today)
+
+    all_events = list(SEED_EVENTS)
+    seed_labels = set(e["label"].lower().strip() for e in SEED_EVENTS)
+    for ev in registry:
+        if ev["label"].lower().strip() not in seed_labels:
+            all_events.append(ev)
+
+    relevant_events = []
+    for ev in all_events:
+        try:
+            event_date = datetime.strptime(ev["date"], "%Y-%m-%d").date()
             days_away = (event_date - today).days
         except Exception:
-            days_away = 999
-
-        if mentioned_today or (0 <= days_away <= 14):
+            continue
+        if 0 <= days_away <= 14:
             relevant_events.append((ev, days_away))
+
+    relevant_events.sort(key=lambda pair: pair[1])
 
     if not relevant_events:
         return ""
 
     events_html = ""
     for ev, days_away in relevant_events:
-        if days_away <= 0:
+        if days_away == 0:
             countdown = "É hoje"
         elif days_away == 1:
             countdown = "Amanhã"
         else:
             countdown = "Em " + str(days_away) + " dias"
+        display_date = datetime.strptime(ev["date"], "%Y-%m-%d").strftime("%d/%m/%Y")
         events_html += (
             '<div class="event-item">'
             '<span class="event-countdown">' + countdown + "</span>"
             '<span class="event-label">' + html_module.escape(ev["label"]) + "</span>"
-            '<span class="event-date">' + html_module.escape(ev["date"]) + "</span>"
+            '<span class="event-date">' + display_date + "</span>"
             "</div>"
         )
 
