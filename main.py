@@ -389,18 +389,6 @@ def compute_sentiment_thermometer(entries):
     }
 
 
-def compute_top_mentions(entries, limit=5):
-    counts = {}
-    for e in entries:
-        text = (e["title"] + " " + e["body"]).lower()
-        for term in TICKER_MENTION_LIST:
-            if term in text:
-                counts[term] = counts.get(term, 0) + 1
-
-    sorted_terms = sorted(counts.items(), key=lambda x: x[1], reverse=True)
-    return sorted_terms[:limit]
-
-
 def market_status():
     now = datetime.now(BR_TZ)
     weekday = now.weekday()
@@ -437,32 +425,6 @@ def fetch_selic():
         return None
 
 
-def build_terminal_news_html(entries, limit=8):
-    """Monta uma lista compacta estilo terminal (Bloomberg/Reuters) com
-    as noticias mais recentes, uma linha por item."""
-    if not entries:
-        return '<div class="terminal-empty">Sem noticias no momento.</div>'
-
-    rows = ""
-    for e in entries[:limit]:
-        if e["sentiment"] == "BULLISH":
-            tag = '<span class="term-tag alta">ALTA</span>'
-        elif e["sentiment"] == "BEARISH":
-            tag = '<span class="term-tag baixa">BAIXA</span>'
-        else:
-            tag = '<span class="term-tag info">INFO</span>'
-
-        rows += (
-            '<div class="term-row">'
-            '<span class="term-time">' + e["time"] + "</span>"
-            + tag +
-            '<span class="term-title">' + html_module.escape(e["title"]) + "</span>"
-            '<span class="term-src">' + html_module.escape(e["source"]) + "</span>"
-            "</div>"
-        )
-    return rows
-
-
 def build_cockpit_html(portal_entries, entries_today=None):
     if entries_today is None:
         entries_today = portal_entries
@@ -470,11 +432,8 @@ def build_cockpit_html(portal_entries, entries_today=None):
     quotes = fetch_cockpit_quotes()
     usd = fetch_usd_brl()
     selic = fetch_selic()
-    thermo = compute_sentiment_thermometer(portal_entries)
     today_thermo = compute_sentiment_thermometer(entries_today)
-    top_mentions = compute_top_mentions(portal_entries)
     status = market_status()
-    terminal_rows = build_terminal_news_html(portal_entries)
 
     quotes_html = ""
     for q in quotes:
@@ -513,17 +472,14 @@ def build_cockpit_html(portal_entries, entries_today=None):
     if not quotes_html:
         quotes_html = '<div class="quote-empty">Cotações indisponíveis no momento.</div>'
 
-    mentions_html = ""
-    if top_mentions:
-        for term, count in top_mentions:
-            mentions_html += (
-                '<div class="mention-item">'
-                '<span class="mention-name">' + html_module.escape(term.upper()) + "</span>"
-                '<span class="mention-count">' + str(count) + " menções</span>"
-                "</div>"
-            )
+    if today_thermo["total"] == 0:
+        thermo_phrase = "Ainda não há notícias suficientes hoje para avaliar o humor do mercado."
+    elif today_thermo["alta"] > today_thermo["baixa"]:
+        thermo_phrase = "Hoje o mercado teve mais notícias positivas que negativas."
+    elif today_thermo["baixa"] > today_thermo["alta"]:
+        thermo_phrase = "Hoje o mercado teve mais notícias negativas que positivas."
     else:
-        mentions_html = '<div class="mention-empty">Sem dados suficientes ainda.</div>'
+        thermo_phrase = "Hoje o mercado está equilibrado entre notícias positivas e negativas."
 
     status_class = "open" if status["open"] else "closed"
 
@@ -544,26 +500,7 @@ def build_cockpit_html(portal_entries, entries_today=None):
 
         '<div class="cockpit-card">'
         '<span class="cockpit-label">Termômetro do mercado</span>'
-        '<div class="thermo-bar">'
-        '<div class="thermo-seg alta" style="width:' + str(thermo["alta"]) + '%"></div>'
-        '<div class="thermo-seg info" style="width:' + str(thermo["info"]) + '%"></div>'
-        '<div class="thermo-seg baixa" style="width:' + str(thermo["baixa"]) + '%"></div>'
-        "</div>"
-        '<div class="thermo-legend">'
-        '<span><span class="dot alta"></span>' + str(thermo["alta"]) + "% alta</span>"
-        '<span><span class="dot info"></span>' + str(thermo["info"]) + "% neutro</span>"
-        '<span><span class="dot baixa"></span>' + str(thermo["baixa"]) + "% baixa</span>"
-        "</div>"
-        "</div>"
-
-        '<div class="cockpit-card">'
-        '<span class="cockpit-label">Mais citados hoje</span>'
-        '<div class="mentions-list">' + mentions_html + "</div>"
-        "</div>"
-
-        '<div class="cockpit-card terminal-card">'
-        '<span class="cockpit-label">Terminal de notícias</span>'
-        '<div class="terminal-list">' + terminal_rows + "</div>"
+        '<p class="thermo-phrase">' + thermo_phrase + "</p>"
         "</div>"
 
         "</div>"
@@ -1387,15 +1324,6 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
             return "baixa", "BAIXA"
         return "info", "INFO"
 
-    ticker_html = ""
-    for e in entries[:12]:
-        cls, _ = sentiment_class(e["sentiment"])
-        ticker_html += (
-            '<div class="tick"><span class="dot ' + cls + '"></span>'
-            '<span class="headline">' + html_module.escape(e["title"]) + "</span>"
-            '<span class="src">' + html_module.escape(e["source"]) + "</span></div>\n"
-        )
-
     cards_html = ""
     for e in entries[:12]:
         cls, label = sentiment_class(e["sentiment"])
@@ -1411,8 +1339,6 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
             "</div>\n"
         )
 
-    start_marker_t = "<!-- TICKER_ITEMS_START -->"
-    end_marker_t = "<!-- TICKER_ITEMS_END -->"
     start_marker_c = "<!-- FEED_CARDS_START -->"
     end_marker_c = "<!-- FEED_CARDS_END -->"
     start_marker_k = "<!-- COCKPIT_START -->"
@@ -1428,11 +1354,6 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
 
     entries_for_today = entries_today if entries_today is not None else []
     clusters = compute_news_clusters(entries_for_today)
-
-    if start_marker_t in template and end_marker_t in template:
-        before = template.split(start_marker_t)[0]
-        after = template.split(end_marker_t)[1]
-        template = before + start_marker_t + "\n" + ticker_html + end_marker_t + after
 
     if start_marker_c in template and end_marker_c in template:
         before = template.split(start_marker_c)[0]
