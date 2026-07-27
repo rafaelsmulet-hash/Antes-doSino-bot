@@ -268,6 +268,54 @@
     .sub-nav{gap:16px;padding:10px 5vw;}
     .nav-links{font-size:0.78rem;}
   }
+.status-badge{color:var(--up);font-size:0.7rem;margin-left:6px;}
+
+.worry-line{
+  display:flex;align-items:center;gap:10px;padding:14px 6vw;
+  font-size:0.95rem;border-bottom:1px solid var(--line);
+}
+.worry-line.calm{background:rgba(124,140,166,0.06);color:var(--slate);}
+.worry-line.alert{background:rgba(226,87,76,0.08);color:var(--cream);}
+.worry-line.info{background:rgba(242,200,121,0.08);color:var(--cream);}
+.worry-dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex-shrink:0;}
+
+.hero-compact{padding:6vh 6vw 3vh;text-align:center;max-width:700px;margin:0 auto;}
+.hero-compact h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:12px;}
+.hero-compact p{color:var(--slate);font-size:1rem;}
+
+.since-visit{
+  max-width:900px;margin:0 auto 20px;padding:14px 22px;
+  background:rgba(242,200,121,0.07);border:1px solid var(--line);
+  border-radius:12px;font-size:0.92rem;color:var(--cream);text-align:center;
+}
+.since-visit-icon{margin-right:6px;}
+
+.signals-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.signal-card{
+  background:rgba(255,255,255,0.035);border:1px solid var(--line);border-radius:16px;
+  padding:24px;display:flex;flex-direction:column;gap:10px;
+  transition:border-color 0.2s ease, transform 0.2s ease;
+}
+.signal-card:hover{border-color:var(--bronze);transform:translateY(-3px);}
+.signal-card h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;line-height:1.35;}
+.signal-card p{color:var(--slate);font-size:0.92rem;line-height:1.55;}
+.signal-reason{font-size:0.78rem;color:var(--bronze);font-weight:600;}
+.soft-cta{text-align:center;margin-top:24px;color:var(--slate);font-size:0.9rem;}
+.soft-cta a{color:var(--gold);font-weight:600;}
+
+.events-section{padding:4vh 6vw;max-width:1120px;margin:0 auto;}
+.events-list{display:flex;flex-direction:column;gap:10px;}
+.event-item{
+  display:flex;align-items:center;gap:16px;padding:14px 20px;
+  background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:12px;
+}
+.event-countdown{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-weight:700;font-size:0.85rem;min-width:80px;}
+.event-label{color:var(--cream);font-weight:600;flex-grow:1;}
+.event-date{color:var(--slate-dim);font-size:0.8rem;}
+
+@media (max-width:860px){
+  .signals-grid{grid-template-columns:1fr;}
+}
 </style>
 </head>
 <body>
@@ -276,6 +324,7 @@
   <div class="brand">
     <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v2M8.5 20a3.5 3.5 0 0 0 7 0M5 17h14l-1.4-2.1A7 7 0 0 1 16.5 11V9a4.5 4.5 0 0 0-9 0v2a7 7 0 0 1-1.1 3.9L5 17Z" stroke="#F2C879" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     Antes do Sino
+    <span class="status-badge" id="status-badge">●</span>
   </div>
   <a href="https://t.me/tribute/app?startapp=sZPm" class="nav-cta">Entrar no grupo</a>
 </nav>
@@ -285,15 +334,37 @@
   <a href="resumo-diario.html" class="nav-links">Resumo diário</a>
 </div>
 
-<div class="hero">
-  <span class="eyebrow"><span class="pulse"></span> Ao vivo agora</span>
-  <h1>O mercado não espera<br>você <em>abrir o app.</em></h1>
-  <p>Notícias de mercado financeiro do Brasil e dos EUA, traduzidas, resumidas e classificadas por sentimento — no instante em que acontecem.</p>
-  <div class="cta-row">
-    <a href="https://t.me/tribute/app?startapp=sZPm" class="btn-primary">Entrar no grupo →</a>
-    <a href="#feed" class="btn-ghost">Ver notícias ao vivo</a>
-  </div>
+<!-- WORRY_LINE_START -->
+<div class="worry-line info"><span class="worry-dot"></span> <b>VALE</b> é o assunto mais comentado do mercado agora.</div><!-- WORRY_LINE_END -->
+
+<div class="hero-compact">
+  <h1>O mercado, em 2 minutos.</h1>
+  <p>Não é mais um agregador de notícia. É a curadoria do que realmente importa hoje.</p>
 </div>
+
+<div id="since-visit-box" class="since-visit" style="display:none;"></div>
+
+<section id="signals">
+  <div class="section-head">
+    <span class="kicker">O que está mexendo com o mercado</span>
+    <h2>Sinais do dia, não notícias soltas</h2>
+  </div>
+  <div class="signals-grid">
+    <!-- SIGNALS_START -->
+<div class="signal-card"><div class="card-meta"><span class="badge info">INFO</span><span class="src">InfoMoney</span><span class="time">17:50</span></div><h3>Ibovespa fecha em alta de 0,74% e supera 175 mil pontos puxado por bancos e Vale</h3><p>O final de semana foi marcado por uma pausa nas hostilidades de EUA e Irã</p><span class="signal-reason">🔎 Mencionado por 2 fontes diferentes hoje</span><a href="https://www.infomoney.com.br/mercados/ibovespa-fecha-em-alta-de-074-e-supera-175-mil-pontos-puxado-por-bancos-e-vale/" class="read" target="_blank">Leia mais &rarr;</a></div>
+<div class="signal-card"><div class="card-meta"><span class="badge info">INFO</span><span class="src">Seu Dinheiro</span><span class="time">17:54</span></div><h3>O novo plano do Itaú (ITUB4) para ganhar a guerra da principalidade: agora, o banco quer conversar com você</h3><p>Inteligência artificial ia.i promete transformar a experiência do cliente e fortalecer a principalidade do banco; entenda o que está por vir 
+Dinheiro.</p><span class="signal-reason">🔎 Notícia em destaque</span><a href="https://www.seudinheiro.com/2026/empresas/o-novo-plano-do-itau-itub4-para-ganhar-a-guerra-da-principalidade-agora-o-banco-quer-conversar-com-voce-miql/" class="read" target="_blank">Leia mais &rarr;</a></div>
+<div class="signal-card"><div class="card-meta"><span class="badge info">INFO</span><span class="src">ZeroHedge</span><span class="time">17:42</span></div><h3>Gold Isn&#x27;t Returning... Confidence Is Leaving</h3><p>Gold Isn&#x27;t Returning... Confidence Is Leaving
+            Authored by Mark St.Cyr via AmericanThinker.com,
+Most people are framing the conversation regarding gold wrong.
+They talk about gold making a </p><span class="signal-reason">🔎 Notícia em destaque</span><a href="https://www.zerohedge.com/precious-metals/gold-isnt-returning-confidence-leaving" class="read" target="_blank">Leia mais &rarr;</a></div>
+<!-- SIGNALS_END -->
+  </div>
+  <p class="soft-cta">Quer receber esses sinais no instante em que acontecem? <a href="https://t.me/tribute/app?startapp=sZPm">Entrar no grupo</a></p>
+</section>
+
+<!-- EVENTS_START -->
+<section class="events-section"><div class="section-head"><span class="kicker">No radar</span><h2>Eventos chegando</h2></div><div class="events-list"><div class="event-item"><span class="event-countdown">Em 8 dias</span><span class="event-label">Reunião do Copom</span><span class="event-date">04-05/08/2026</span></div></div></section><!-- EVENTS_END -->
 
 <div class="ticker-wrap">
   <div class="ticker-track" id="ticker-track">
@@ -316,17 +387,17 @@
 
 <section>
   <div class="section-head">
-    <span class="kicker">Cockpit</span>
+    <span class="kicker">Contexto de apoio</span>
     <h2>O mercado, de um só olhar</h2>
   </div>
   <!-- COCKPIT_START -->
-<div class="cockpit-grid"><div class="cockpit-card"><span class="cockpit-label">Status do pregão</span><div class="market-status closed"><span class="status-dot"></span>Mercado fechado</div></div><div class="cockpit-card quotes-card"><span class="cockpit-label">Cotações e Selic</span><div class="quotes-list"><div class="quote-item"><span class="quote-symbol">^BVSP</span><span class="quote-price">175334.45</span><span class="quote-change up">+0.74%</span></div><div class="quote-item"><span class="quote-symbol">PETR4</span><span class="quote-price">41.01</span><span class="quote-change down">-2.84%</span></div><div class="quote-item"><span class="quote-symbol">VALE3</span><span class="quote-price">75.69</span><span class="quote-change up">+0.6%</span></div><div class="quote-item"><span class="quote-symbol">ITUB4</span><span class="quote-price">42.69</span><span class="quote-change up">+1.4%</span></div><div class="quote-item"><span class="quote-symbol">BBDC4</span><span class="quote-price">18.71</span><span class="quote-change up">+1.24%</span></div><div class="quote-item"><span class="quote-symbol">ABEV3</span><span class="quote-price">15.86</span><span class="quote-change up">+1.41%</span></div><div class="quote-item"><span class="quote-symbol">WEGE3</span><span class="quote-price">46.4</span><span class="quote-change up">+0.89%</span></div><div class="quote-item"><span class="quote-symbol">B3SA3</span><span class="quote-price">15.72</span><span class="quote-change up">+1.81%</span></div><div class="quote-item"><span class="quote-symbol">BBAS3</span><span class="quote-price">20.5</span><span class="quote-change up">+0.74%</span></div><div class="quote-item"><span class="quote-symbol">MGLU3</span><span class="quote-price">4.83</span><span class="quote-change up">+3.87%</span></div></div></div><div class="cockpit-card"><span class="cockpit-label">Termômetro do mercado</span><div class="thermo-bar"><div class="thermo-seg alta" style="width:6%"></div><div class="thermo-seg info" style="width:88%"></div><div class="thermo-seg baixa" style="width:6%"></div></div><div class="thermo-legend"><span><span class="dot alta"></span>6% alta</span><span><span class="dot info"></span>88% neutro</span><span><span class="dot baixa"></span>6% baixa</span></div></div><div class="cockpit-card"><span class="cockpit-label">Mais citados hoje</span><div class="mentions-list"><div class="mention-item"><span class="mention-name">VALE</span><span class="mention-count">2 menções</span></div><div class="mention-item"><span class="mention-name">ITUB4</span><span class="mention-count">1 menções</span></div><div class="mention-item"><span class="mention-name">GOL</span><span class="mention-count">1 menções</span></div><div class="mention-item"><span class="mention-name">PETROBRAS</span><span class="mention-count">1 menções</span></div></div></div><div class="cockpit-card terminal-card"><span class="cockpit-label">Terminal de notícias</span><div class="terminal-list"><div class="term-row"><span class="term-time">17:54</span><span class="term-tag info">INFO</span><span class="term-title">O novo plano do Itaú (ITUB4) para ganhar a guerra da principalidade: agora, o banco quer conversar com você</span><span class="term-src">Seu Dinheiro</span></div><div class="term-row"><span class="term-time">17:54</span><span class="term-tag baixa">BAIXA</span><span class="term-title">Principal Financial cai apesar de bater expectativas de lucro no 2º trimestre e aumento de dividendos</span><span class="term-src">Seeking Alpha</span></div><div class="term-row"><span class="term-time">17:52</span><span class="term-tag info">INFO</span><span class="term-title">Taxas dos DIs caem com pausa dos ataques entre EUA e Irã</span><span class="term-src">InfoMoney</span></div><div class="term-row"><span class="term-time">17:50</span><span class="term-tag info">INFO</span><span class="term-title">Ibovespa fecha em alta de 0,74% e supera 175 mil pontos puxado por bancos e Vale</span><span class="term-src">InfoMoney</span></div><div class="term-row"><span class="term-time">17:50</span><span class="term-tag info">INFO</span><span class="term-title">Jão transforma audição de ‘Memórias Póstumas’ em cerimônia para 11 mil fãs</span><span class="term-src">Exame</span></div><div class="term-row"><span class="term-time">17:48</span><span class="term-tag info">INFO</span><span class="term-title">Startups: tarifas pesam sobre vendas e afetam resultados da Shein às vésperas de IPO</span><span class="term-src">InfoMoney</span></div><div class="term-row"><span class="term-time">17:46</span><span class="term-tag info">INFO</span><span class="term-title">E.U.A. - Ações fecharam o pregão inalteradas e o Índice Dow Jones Industrial Average avançou 0,51%</span><span class="term-src">Investing.com Brasil</span></div><div class="term-row"><span class="term-time">17:46</span><span class="term-tag info">INFO</span><span class="term-title">Canadá - Ações fecharam o pregão em alta e o Índice S&amp;P/TSX avançou 0,56%</span><span class="term-src">Investing.com Brasil</span></div></div></div><div class="cockpit-card hourly-card"><span class="cockpit-label">Volume de notícias por horário</span><div class="hourly-list"><div class="hourly-row"><span class="hourly-hour">17h</span><div class="hourly-bar-track"><div class="hourly-bar-fill" style="width:100%"></div></div><span class="hourly-count">32</span></div></div></div></div><!-- COCKPIT_END -->
+<div class="cockpit-grid"><div class="cockpit-card"><span class="cockpit-label">Status do pregão</span><div class="market-status closed"><span class="status-dot"></span>Mercado fechado</div></div><div class="cockpit-card quotes-card"><span class="cockpit-label">Cotações e Selic</span><div class="quotes-list"><div class="quote-item"><span class="quote-symbol">^BVSP</span><span class="quote-price">175334.45</span><span class="quote-change up">+0.74%</span></div><div class="quote-item"><span class="quote-symbol">PETR4</span><span class="quote-price">41.01</span><span class="quote-change down">-2.84%</span></div><div class="quote-item"><span class="quote-symbol">VALE3</span><span class="quote-price">75.69</span><span class="quote-change up">+0.6%</span></div><div class="quote-item"><span class="quote-symbol">ITUB4</span><span class="quote-price">42.69</span><span class="quote-change up">+1.4%</span></div><div class="quote-item"><span class="quote-symbol">BBDC4</span><span class="quote-price">18.71</span><span class="quote-change up">+1.24%</span></div><div class="quote-item"><span class="quote-symbol">ABEV3</span><span class="quote-price">15.86</span><span class="quote-change up">+1.41%</span></div><div class="quote-item"><span class="quote-symbol">WEGE3</span><span class="quote-price">46.4</span><span class="quote-change up">+0.89%</span></div><div class="quote-item"><span class="quote-symbol">B3SA3</span><span class="quote-price">15.72</span><span class="quote-change up">+1.81%</span></div><div class="quote-item"><span class="quote-symbol">BBAS3</span><span class="quote-price">20.5</span><span class="quote-change up">+0.74%</span></div><div class="quote-item"><span class="quote-symbol">MGLU3</span><span class="quote-price">4.83</span><span class="quote-change up">+3.87%</span></div></div></div><div class="cockpit-card"><span class="cockpit-label">Termômetro do mercado</span><div class="thermo-bar"><div class="thermo-seg alta" style="width:7%"></div><div class="thermo-seg info" style="width:87%"></div><div class="thermo-seg baixa" style="width:7%"></div></div><div class="thermo-legend"><span><span class="dot alta"></span>7% alta</span><span><span class="dot info"></span>87% neutro</span><span><span class="dot baixa"></span>7% baixa</span></div></div><div class="cockpit-card"><span class="cockpit-label">Mais citados hoje</span><div class="mentions-list"><div class="mention-item"><span class="mention-name">VALE</span><span class="mention-count">2 menções</span></div><div class="mention-item"><span class="mention-name">ITUB4</span><span class="mention-count">1 menções</span></div><div class="mention-item"><span class="mention-name">GOL</span><span class="mention-count">1 menções</span></div></div></div><div class="cockpit-card terminal-card"><span class="cockpit-label">Terminal de notícias</span><div class="terminal-list"><div class="term-row"><span class="term-time">17:54</span><span class="term-tag info">INFO</span><span class="term-title">O novo plano do Itaú (ITUB4) para ganhar a guerra da principalidade: agora, o banco quer conversar com você</span><span class="term-src">Seu Dinheiro</span></div><div class="term-row"><span class="term-time">17:54</span><span class="term-tag baixa">BAIXA</span><span class="term-title">Principal Financial cai apesar de bater expectativas de lucro no 2º trimestre e aumento de dividendos</span><span class="term-src">Seeking Alpha</span></div><div class="term-row"><span class="term-time">17:52</span><span class="term-tag info">INFO</span><span class="term-title">Taxas dos DIs caem com pausa dos ataques entre EUA e Irã</span><span class="term-src">InfoMoney</span></div><div class="term-row"><span class="term-time">17:50</span><span class="term-tag info">INFO</span><span class="term-title">Ibovespa fecha em alta de 0,74% e supera 175 mil pontos puxado por bancos e Vale</span><span class="term-src">InfoMoney</span></div><div class="term-row"><span class="term-time">17:50</span><span class="term-tag info">INFO</span><span class="term-title">Jão transforma audição de ‘Memórias Póstumas’ em cerimônia para 11 mil fãs</span><span class="term-src">Exame</span></div><div class="term-row"><span class="term-time">17:48</span><span class="term-tag info">INFO</span><span class="term-title">Startups: tarifas pesam sobre vendas e afetam resultados da Shein às vésperas de IPO</span><span class="term-src">InfoMoney</span></div><div class="term-row"><span class="term-time">17:46</span><span class="term-tag info">INFO</span><span class="term-title">E.U.A. - Ações fecharam o pregão inalteradas e o Índice Dow Jones Industrial Average avançou 0,51%</span><span class="term-src">Investing.com Brasil</span></div><div class="term-row"><span class="term-time">17:46</span><span class="term-tag info">INFO</span><span class="term-title">Canadá - Ações fecharam o pregão em alta e o Índice S&amp;P/TSX avançou 0,56%</span><span class="term-src">Investing.com Brasil</span></div></div></div><div class="cockpit-card hourly-card"><span class="cockpit-label">Volume de notícias por horário</span><div class="hourly-list"><div class="hourly-row"><span class="hourly-hour">17h</span><div class="hourly-bar-track"><div class="hourly-bar-fill" style="width:100%"></div></div><span class="hourly-count">30</span></div></div></div></div><!-- COCKPIT_END -->
 </section>
 
 <section id="feed">
   <div class="section-head">
-    <span class="kicker">Ao vivo</span>
-    <h2>As últimas notícias, direto do grupo</h2>
+    <span class="kicker">Aprofunde-se</span>
+    <h2>Todas as notícias de hoje, em ordem cronológica</h2>
   </div>
   <div class="feed-grid" id="feed-grid">
     <!-- FEED_CARDS_START -->
@@ -391,8 +462,47 @@ Dinheiro.</p><a href="https://www.seudinheiro.com/2026/empresas/o-novo-plano-do-
     <a href="planos.html" style="color:var(--gold)">Planos</a>
     <a href="resumo-semanal.html" style="color:var(--gold)">Resumo semanal</a>
   </div>
-  <span class="mono" id="last-updated">Atualizado em 27/07/2026 17:54</span>
+  <span class="mono" id="last-updated">Atualizado em 27/07/2026 17:56</span>
 </footer>
+
+<!-- SINCE_VISIT_DATA_START -->
+[{"title": "O novo plano do Itaú (ITUB4) para ganhar a guerra da principalidade: agora, o banco quer conversar com você", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:54:00-03:00"}, {"title": "Principal Financial cai apesar de bater expectativas de lucro no 2º trimestre e aumento de dividendos", "sentiment": "BEARISH", "datetime": "2026-07-27T17:54:00-03:00"}, {"title": "Taxas dos DIs caem com pausa dos ataques entre EUA e Irã", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:52:00-03:00"}, {"title": "Ibovespa fecha em alta de 0,74% e supera 175 mil pontos puxado por bancos e Vale", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:50:00-03:00"}, {"title": "Jão transforma audição de ‘Memórias Póstumas’ em cerimônia para 11 mil fãs", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:50:00-03:00"}, {"title": "Startups: tarifas pesam sobre vendas e afetam resultados da Shein às vésperas de IPO", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:48:00-03:00"}, {"title": "E.U.A. - Ações fecharam o pregão inalteradas e o Índice Dow Jones Industrial Average avançou 0,51%", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:46:00-03:00"}, {"title": "Canadá - Ações fecharam o pregão em alta e o Índice S&P/TSX avançou 0,56%", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:46:00-03:00"}, {"title": "Marvell Technology vs. Planet Labs: Which Growth Stock Is a Better Buy in 2026, the Artificial Intelligence Company or the Rising Star of the Space-Based Economy?", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:46:00-03:00"}, {"title": "Rivian Automotive's Next Earnings Report on July 30 Could Send the Stock Soaring. Here's Why.", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:46:00-03:00"}, {"title": "Wall Street encerra sem direção única enquanto investidores se concentram em techs", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:44:00-03:00"}, {"title": "Retrato dos Lucros: Vendas Líquidas do Nucor no 2º Trimestre Sobem 23% Ano a Ano; Preços Mais Altos de Aço Impulsionam Lucros das Usinas", "sentiment": "BULLISH", "datetime": "2026-07-27T17:44:00-03:00"}, {"title": "Cracker Barrel Dumps CEO After Woke Logo Fiasco", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:42:00-03:00"}, {"title": "BMO Says Return Of Mexican Cattle Is \"Clear Positive\" For Two Beaten-Down Meatpackers", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:42:00-03:00"}, {"title": "Mapping SpaceX's Lockup Expirations: HSBC Calculates When The Shares Could Hit The Market", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:42:00-03:00"}, {"title": "Gold Isn't Returning... Confidence Is Leaving", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:42:00-03:00"}, {"title": "Juros futuros cedem em toda a curva com pausa dos ataques entre EUA e Irã", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:40:00-03:00"}, {"title": "Quem criou a inteligência artificial? Conheça os cientistas que deram origem à tecnologia", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:40:00-03:00"}, {"title": "Ações com grandes movimentos após o fechamento do mercado: WELL, UHS, ESI", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:40:00-03:00"}, {"title": "Planet Labs PBC vs. Snowflake: Is a Space Stock or AI Cloud Stock the Better Buy in 2026?", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:40:00-03:00"}, {"title": "iShares Inflation Hedged Corporate Bond (LQDI) Enters Oversold Territory", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:40:00-03:00"}, {"title": "AXS Esoterica NextG Economy Breaks Below 200-Day Moving Average - Notable for WUGI", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:41:00-03:00"}, {"title": "SPDR S&P Software & Services Breaks Above 200-Day Moving Average - Bullish for XSW", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:41:00-03:00"}, {"title": "SPDR S&P 1500 Momentum Tilt Breaks Below 200-Day Moving Average - Notable for MMTM", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:41:00-03:00"}, {"title": "Journey Energy (JOY) Shares Cross Below 200 DMA", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:41:00-03:00"}, {"title": "Notable Two Hundred Day Moving Average Cross - RRC", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:41:00-03:00"}, {"title": "TSN Makes Bullish Cross Above Critical Moving Average", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:41:00-03:00"}, {"title": "‘Ainda estou confuso’: Eu vendi ações no valor de $80.000 em 30 de junho, então por que não recebi meu dividendo?", "sentiment": "BEARISH", "datetime": "2026-07-27T17:34:00-03:00"}, {"title": "CME Group relata forte demanda por futuros de ouro 24/7 no primeiro fim de semana", "sentiment": "BULLISH", "datetime": "2026-07-27T17:34:00-03:00"}, {"title": "Earnings Snapshot: Applied Digital Q4 revenue jumps 407% as AI lease backlog nears $20B", "sentiment": "NEUTRAL", "datetime": "2026-07-27T17:34:00-03:00"}]
+<!-- SINCE_VISIT_DATA_END -->
+<script>
+(function() {
+  try {
+    var raw = document.getElementById('since-visit-data').textContent;
+    var entries = JSON.parse(raw);
+    var lastVisit = localStorage.getItem('antesdosino_last_visit');
+    var box = document.getElementById('since-visit-box');
+
+    if (lastVisit && entries.length > 0) {
+      var lastVisitTime = new Date(lastVisit).getTime();
+      var newOnes = entries.filter(function(e) {
+        return new Date(e.datetime).getTime() > lastVisitTime;
+      });
+
+      if (newOnes.length > 0) {
+        var highImpact = newOnes.filter(function(e) { return e.sentiment !== 'NEUTRAL'; }).length;
+        var lastVisitDate = new Date(lastVisit);
+        var dateLabel = lastVisitDate.toLocaleDateString('pt-BR') + ', ' + lastVisitDate.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'});
+
+        var html = '<span class="since-visit-icon">⏱</span> Desde sua última visita (' + dateLabel + '): <b>' + newOnes.length + ' notícia' + (newOnes.length > 1 ? 's' : '') + ' nova' + (newOnes.length > 1 ? 's' : '') + '</b>';
+        if (highImpact > 0) {
+          html += ', ' + highImpact + ' de alto impacto';
+        }
+        html += '.';
+        box.innerHTML = html;
+        box.style.display = 'block';
+      }
+    }
+
+    localStorage.setItem('antesdosino_last_visit', new Date().toISOString());
+  } catch (e) {
+    console.log('since-visit indisponivel: ' + e);
+  }
+})();
+</script>
 
 </body>
 </html>
