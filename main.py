@@ -804,6 +804,12 @@ def get_premarket_window_entries(all_entries):
     return window
 
 
+def filter_brazil_only(entries):
+    """Mantem apenas noticias de fontes brasileiras, para os carrosseis
+    de pre-abertura e fechamento focarem no mercado local."""
+    return [e for e in entries if e.get("source") in PORTUGUESE_SOURCES]
+
+
 def rank_premarket_highlights(entries, top_n=4):
     """Prioriza noticias com sentimento definido (nao neutro) e mais
     recentes, sem chamada de IA."""
@@ -893,7 +899,7 @@ def run_premarket_carousel(all_entries):
     """Fluxo completo: filtra noticias da janela pre-mercado, gera texto
     via IA, gera as 5 imagens do carrossel via Pollinations, e salva tudo
     numa pagina do site para o usuario buscar e postar."""
-    highlights = rank_premarket_highlights(get_premarket_window_entries(all_entries))
+    highlights = rank_premarket_highlights(filter_brazil_only(get_premarket_window_entries(all_entries)))
     ai_content = build_premarket_ai_content(highlights)
 
     if not ai_content:
@@ -1039,7 +1045,7 @@ def run_close_carousel(all_entries):
     imagens via Pollinations, e salva numa pagina do site."""
     today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     entries_today = [e for e in all_entries if e.get("date") == today_str]
-    highlights = rank_premarket_highlights(entries_today)
+    highlights = rank_premarket_highlights(filter_brazil_only(entries_today))
     ibov_quote = get_ibovespa_quote()
     ai_content = build_close_ai_content(highlights, ibov_quote)
 
