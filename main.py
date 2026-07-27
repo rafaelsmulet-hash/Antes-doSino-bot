@@ -2593,6 +2593,270 @@ def gerar_paginas_eventos(noticias, diretorio_saida="docs/eventos"):
     return generated
 
 
+BRIEFINGS_STATE_FILE = "docs/briefings_state.json"
+
+BR_ASSET_GROUPS = {"commodities_br", "financeiro_br", "industrial_br"}
+
+BR_RELEVANT_KEYWORDS = [
+    "ibovespa", "selic", "copom", "dolar", "cambio", "petroleo", "petrobras",
+    "vale", "minerio de ferro", "juros", "b3", "real",
+]
+
+
+def load_briefings_state():
+    if os.path.exists(BRIEFINGS_STATE_FILE):
+        try:
+            with open(BRIEFINGS_STATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {"last_morning_date": "", "last_evening_date": ""}
+    return {"last_morning_date": "", "last_evening_date": ""}
+
+
+def save_briefings_state(state):
+    os.makedirs(os.path.dirname(BRIEFINGS_STATE_FILE), exist_ok=True)
+    with open(BRIEFINGS_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+
+
+def should_send_morning_briefing():
+    """Janela de 08h15 as 08h45, uma vez por dia."""
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_briefings_state()
+    if state.get("last_morning_date") == today_str:
+        return False
+    minutes = now.hour * 60 + now.minute
+    return (8 * 60 + 15) <= minutes <= (8 * 60 + 45)
+
+
+def should_send_evening_briefing():
+    """Janela de 18h15 as 18h45, uma vez por dia."""
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_briefings_state()
+    if state.get("last_evening_date") == today_str:
+        return False
+    minutes = now.hour * 60 + now.minute
+    return (18 * 60 + 15) <= minutes <= (18 * 60 + 45)
+
+
+def get_brazil_relevant_entries(entries):
+    """Filtra apenas noticias com foco no mercado brasileiro: fontes ja
+    nacionais (PORTUGUESE_SOURCES), OU qualquer fonte que mencione um
+    vetor que impacta diretamente o Ibovespa/Real (petroleo, dolar,
+    Vale, Petrobras, juros, etc), conforme a diretriz editorial."""
+    relevant = []
+    for e in entries:
+        if e.get("source") in PORTUGUESE_SOURCES:
+            relevant.append(e)
+            continue
+        text = (e["title"] + " " + e["body"]).lower()
+        if any(kw in text for kw in BR_RELEVANT_KEYWORDS):
+            relevant.append(e)
+    return relevant
+
+
+def is_event_brazil_focused(event):
+    """Heuristica simples para excluir eventos claramente internacionais
+    (Fed/FOMC) da secao de eventos do Brasil dos briefings."""
+    text = (event.get("label", "") + " " + " ".join(event.get("keywords", []))).lower()
+    if "fed" in text or "fomc" in text or "federal reserve" in text:
+        return False
+    return True
+
+
+def get_br_asset_radar(entries, limit=3):
+    """Retorna os papeis da B3 (excluindo big techs americanas) com
+    maior densidade de noticias recentes - usado no radar de acoes."""
+    counts = []
+    for profile in ASSET_PROFILES:
+        if profile["group"] not in BR_ASSET_GROUPS:
+            continue
+        count = len(get_asset_entries(entries, profile["terms"]))
+        if count > 0:
+            counts.append((profile, count))
+    counts.sort(key=lambda pair: pair[1], reverse=True)
+    return [pair[0] for pair in counts[:limit]]
+
+
+def summarize_briefing_with_ai(entries, tipo):
+    """Uma unica chamada a Groq para gerar a sintese executiva do
+    briefing (1 a 2 frases), focada no mercado brasileiro. 'tipo' e
+    'abertura' ou 'fechamento'."""
+    if not USE_AI or not entries:
+        return "Sem dados suficientes para uma sintese hoje."
+
+    headlines_text = ""
+    for e in entries[:15]:
+        headlines_text += "- " + e["title"] + "\n"
+
+    if tipo == "abertura":
+        instrucao = (
+            "Escreva uma sintese de 1 a 2 frases sobre o principal vetor esperado para "
+            "o pregao de hoje na B3 (Ibovespa), com base nas manchetes abaixo. Foque "
+            "em commodities, dolar, noticiario politico/fiscal ou balancos locais. "
+            "Responda em portugues do Brasil, texto simples, sem markdown, sem aspas."
+        )
+    else:
+        instrucao = (
+            "Escreva uma sintese de 1 a 2 frases sobre o que moveu o pregao de hoje na "
+            "B3 (Ibovespa), com base nas manchetes abaixo. Responda em portugues do "
+            "Brasil, texto simples, sem markdown, sem aspas."
+        )
+
+    prompt = instrucao + "\n\nManchetes:\n" + headlines_text
+
+    try:
+        response = ask_groq(prompt)
+        return response.strip().strip('"')
+    except Exception as e:
+        print("Erro ao gerar sintese do briefing (Groq): " + str(e))
+        return "Sintese indisponivel no momento - confira as noticias completas no site."
+
+
+def build_morning_briefing_message(entries_today, eventos):
+    """Monta o texto do Morning Briefing ('Antes do Sino - Abertura B3')."""
+    today_str = datetime.now(BR_TZ).strftime("%d/%m/%Y")
+    today_iso = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+
+    br_entries = get_brazil_relevant_entries(entries_today)
+    sintese = summarize_briefing_with_ai(br_entries, "abertura")
+
+    eventos_hoje = [
+        ev for ev in eventos
+        if ev.get("date") == today_iso and is_event_brazil_focused(ev)
+    ][:3]
+
+    eventos_texto = ""
+    if eventos_hoje:
+        for ev in eventos_hoje:
+            eventos_texto += "• " + ev["label"] + "\n"
+    else:
+        eventos_texto = "Nenhum evento de grande destaque previsto para hoje.\n"
+
+    radar_assets = get_br_asset_radar(br_entries, limit=3)
+    radar_texto = ""
+    if radar_assets:
+        for a in radar_assets:
+            radar_texto += "• " + a["label"] + "\n"
+    else:
+        radar_texto = "Sem destaque de papel especifico ate o momento.\n"
+
+    message = (
+        "🔔 <b>ANTES DO SINO — ABERTURA B3</b>\n"
+        + today_str + "\n\n"
+        "🇧🇷 <b>RADAR DO IBOVESPA</b>\n"
+        + html_module.escape(sintese) + "\n\n"
+        "📌 <b>EVENTOS DO DIA NA B3 / BRASIL</b>\n"
+        + html_module.escape(eventos_texto) + "\n"
+        "🎯 <b>AÇÕES E SETORES NO RADAR</b>\n"
+        + html_module.escape(radar_texto) + "\n"
+        "🌐 Acompanhe ao vivo em antesdosino.com.br"
+    )
+    return message
+
+
+def build_evening_briefing_message(entries_today, eventos):
+    """Monta o texto do Evening Briefing ('Depois do Sino - Fechamento B3')."""
+    today_str = datetime.now(BR_TZ).strftime("%d/%m/%Y")
+    tomorrow_iso = (datetime.now(BR_TZ) + timedelta(days=1)).strftime("%Y-%m-%d")
+
+    br_entries = get_brazil_relevant_entries(entries_today)
+    sintese = summarize_briefing_with_ai(br_entries, "fechamento")
+
+    clusters = compute_news_clusters(br_entries)
+    top_pautas = ""
+    if clusters:
+        for c in clusters[:3]:
+            top_pautas += "• " + c["representative"]["title"] + "\n"
+    else:
+        top_pautas = "Sem pautas de grande destaque hoje.\n"
+
+    eventos_amanha = [
+        ev for ev in eventos
+        if ev.get("date") == tomorrow_iso and is_event_brazil_focused(ev)
+    ][:3]
+
+    eventos_texto = ""
+    if eventos_amanha:
+        for ev in eventos_amanha:
+            eventos_texto += "• " + ev["label"] + "\n"
+    else:
+        eventos_texto = "Sem eventos de grande destaque previstos para amanha.\n"
+
+    message = (
+        "🌆 <b>DEPOIS DO SINO — FECHAMENTO B3</b>\n"
+        + today_str + "\n\n"
+        "📊 <b>BALANÇO DO PREGÃO</b>\n"
+        + html_module.escape(sintese) + "\n\n"
+        "🔥 <b>O QUE MOVEU A BOLSA HOJE</b>\n"
+        + html_module.escape(top_pautas) + "\n"
+        "📅 <b>AMANHÃ NA B3</b>\n"
+        + html_module.escape(eventos_texto) + "\n"
+        "🌐 Análise completa em antesdosino.com.br"
+    )
+    return message
+
+
+def send_briefing_message(text, telegram_bot_token, telegram_chat_id):
+    """Envio de mensagem parametrizado (token/chat id explicitos),
+    independente das variaveis globais do bot principal."""
+    url = "https://api.telegram.org/bot" + telegram_bot_token + "/sendMessage"
+    payload = {"chat_id": telegram_chat_id, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
+    try:
+        r = requests.post(url, json=payload, timeout=10)
+        if r.status_code == 429:
+            retry_after = r.json().get("parameters", {}).get("retry_after", 5)
+            time.sleep(retry_after)
+            r = requests.post(url, json=payload, timeout=10)
+        if r.status_code != 200:
+            print("Erro Telegram (briefing, status " + str(r.status_code) + "): " + r.text)
+        return r.status_code == 200
+    except Exception as e:
+        print("Erro Telegram (briefing): " + str(e))
+        return False
+
+
+def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram_chat_id):
+    """Funcao principal e modular dos briefings automaticos.
+
+    Parametros:
+        noticias: lista completa de noticias ja processadas pelo bot.
+        eventos: lista combinada de eventos (SEED_EVENTS + registro
+                 automatico extraido de events_detected.json).
+        telegram_bot_token / telegram_chat_id: credenciais do canal VIP.
+
+    Comportamento:
+        - So dispara dentro da janela de horario correspondente (manha
+          08h15-08h45, noite 18h15-18h45).
+        - Cada briefing e enviado no maximo 1 vez por dia (controle via
+          docs/briefings_state.json).
+        - Foco editorial 100% Brasil, conforme diretriz do projeto.
+    """
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    entries_today = [e for e in noticias if e.get("date") == today_str]
+    state = load_briefings_state()
+
+    if should_send_morning_briefing():
+        message = build_morning_briefing_message(entries_today, eventos)
+        if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
+            state["last_morning_date"] = today_str
+            save_briefings_state(state)
+            print("Morning Briefing enviado com sucesso.")
+        else:
+            print("Falha ao enviar Morning Briefing - sera tentado novamente no proximo ciclo dentro da janela.")
+
+    if should_send_evening_briefing():
+        message = build_evening_briefing_message(entries_today, eventos)
+        if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
+            state["last_evening_date"] = today_str
+            save_briefings_state(state)
+            print("Evening Briefing enviado com sucesso.")
+        else:
+            print("Falha ao enviar Evening Briefing - sera tentado novamente no proximo ciclo dentro da janela.")
+
+
 PORTAL_HISTORY_FILE = "portal_history.json"
 
 
@@ -2790,6 +3054,13 @@ def main():
     generate_asset_pages(all_portal_entries, entries_today)
     gerar_paginas_temas(all_portal_entries, diretorio_saida="docs/temas")
     gerar_paginas_eventos(all_portal_entries, diretorio_saida="docs/eventos")
+
+    try:
+        events_state_for_briefing = load_events_state()
+        combined_events = list(SEED_EVENTS) + events_state_for_briefing.get("events", [])
+        processar_briefings_telegram(all_portal_entries, combined_events, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
+    except Exception as e:
+        print("Erro ao processar briefings (isolado, nao afeta o fluxo principal): " + str(e))
 
     if should_run_premarket_carousel():
         print("Horario da pre-abertura detectado, gerando carrossel automatico...")
