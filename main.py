@@ -244,6 +244,26 @@ def ask_groq(prompt):
     return data["choices"][0]["message"]["content"].strip()
 
 
+IMPACT_FALLBACK = "Curto Prazo | Acompanhamento de Mercado"
+
+
+def derive_fallback_bullets(text):
+    """Gera bullets basicos por regra (sem IA) quando a Groq nao
+    retornar o campo 'bullets' ou quando ai_result for None - usado
+    tanto no fallback de parse quanto para noticias sem IA (ex: canais
+    encaminhados)."""
+    text = (text or "").strip()
+    if not text:
+        return ["Leia mais no link."]
+    parts = [p.strip() for p in text.split(". ") if p.strip()]
+    bullets = []
+    for p in parts[:2]:
+        if not p.endswith("."):
+            p = p + "."
+        bullets.append(p)
+    return bullets if bullets else ["Leia mais no link."]
+
+
 def summarize_with_ai(title, body, translate=True):
     if not USE_AI:
         return None
@@ -252,26 +272,44 @@ def summarize_with_ai(title, body, translate=True):
 
         if translate:
             instruction = (
-                "Voce recebeu uma noticia de mercado financeiro em ingles. Faca tres coisas:\n"
+                "Voce recebeu uma noticia de mercado financeiro em ingles. Faca cinco coisas:\n"
                 "1. Traduza o titulo para portugues do Brasil.\n"
                 "2. Escreva um resumo de no maximo 2 frases em portugues do Brasil. Se o texto "
                 "original for curto ou vazio, baseie o resumo no titulo, explicando o contexto "
                 "provavel do evento para o mercado.\n"
-                "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n\n"
+                "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
+                "4. Classifique o campo impacto_estimado escolhendo uma combinacao de prazo e tipo "
+                "de evento para o mercado brasileiro, no formato 'Prazo | Tipo de evento'. Exemplos "
+                "validos: 'Curtissimo Prazo | Volatilidade Operacional', 'Medio Prazo | Mudanca "
+                "Tese/Fundamento', 'Imediato | Reacao de Preco na Abertura', 'Curto Prazo | Pressao "
+                "de Margem/Resultado', 'Neutro | Acompanhamento de Rotina'.\n"
+                "5. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes da "
+                "noticia, no campo bullets.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-                '{"title": "titulo traduzido", "summary": "resumo aqui", "sentiment": "BULLISH"}\n\n'
+                '{"title": "titulo traduzido", "summary": "resumo aqui", "sentiment": "BULLISH", '
+                '"impacto_estimado": "Curto Prazo | Pressao de Margem/Resultado", '
+                '"bullets": ["fato 1", "fato 2"]}\n\n'
                 "Titulo original: " + title + "\n"
                 "Texto original: " + body_cleaned
             )
         else:
             instruction = (
-                "Voce recebeu uma noticia de mercado financeiro em portugues. Faca duas coisas:\n"
+                "Voce recebeu uma noticia de mercado financeiro em portugues. Faca quatro coisas:\n"
                 "1. Mantenha o titulo original em portugues no campo title.\n"
                 "2. Escreva um resumo de no maximo 2 frases em portugues do Brasil. Se o texto "
                 "original for curto ou vazio, baseie o resumo no titulo.\n"
-                "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n\n"
+                "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
+                "4. Classifique o campo impacto_estimado escolhendo uma combinacao de prazo e tipo "
+                "de evento para o mercado brasileiro, no formato 'Prazo | Tipo de evento'. Exemplos "
+                "validos: 'Curtissimo Prazo | Volatilidade Operacional', 'Medio Prazo | Mudanca "
+                "Tese/Fundamento', 'Imediato | Reacao de Preco na Abertura', 'Curto Prazo | Pressao "
+                "de Margem/Resultado', 'Neutro | Acompanhamento de Rotina'.\n"
+                "5. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes da "
+                "noticia, no campo bullets.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-                '{"title": "titulo original", "summary": "resumo aqui", "sentiment": "BEARISH"}\n\n'
+                '{"title": "titulo original", "summary": "resumo aqui", "sentiment": "BEARISH", '
+                '"impacto_estimado": "Medio Prazo | Mudanca Tese/Fundamento", '
+                '"bullets": ["fato 1", "fato 2"]}\n\n'
                 "Titulo original: " + title + "\n"
                 "Texto original: " + body_cleaned
             )
@@ -280,10 +318,25 @@ def summarize_with_ai(title, body, translate=True):
         raw_response = re.sub(r"```json|```", "", raw_response).strip()
         parsed = json.loads(raw_response)
 
+        final_body = parsed.get("summary", body_cleaned) or body_cleaned
+
+        bullets = parsed.get("bullets", [])
+        if not isinstance(bullets, list) or not bullets:
+            bullets = derive_fallback_bullets(final_body)
+        bullets = [str(b).strip() for b in bullets if str(b).strip()][:2]
+        if not bullets:
+            bullets = derive_fallback_bullets(final_body)
+
+        impacto_estimado = parsed.get("impacto_estimado", "")
+        if not impacto_estimado or not isinstance(impacto_estimado, str):
+            impacto_estimado = IMPACT_FALLBACK
+
         return {
             "title": parsed.get("title", title) or title,
-            "body": parsed.get("summary", body_cleaned) or body_cleaned,
+            "body": final_body,
             "sentiment": parsed.get("sentiment", "NEUTRAL").upper(),
+            "impacto_estimado": impacto_estimado,
+            "bullets": bullets,
         }
     except Exception as e:
         print("Erro IA (Groq): " + str(e))
@@ -308,15 +361,54 @@ def send_telegram_message(text):
         return False
 
 
+def build_smart_link(title, body):
+    """Verifica se a noticia menciona um ativo, tema ou evento que ja
+    tem pagina propria gerada em disco (de um ciclo anterior) e
+    devolve a URL correspondente - ou None se nao houver pagina. Nunca
+    monta link para pagina inexistente."""
+    fake_entry = {"title": title, "body": body}
+
+    for profile in ASSET_PROFILES:
+        if match_asset_terms(fake_entry, profile["terms"]):
+            path = "docs/ativos/" + profile["slug"] + ".html"
+            if os.path.exists(path):
+                return "https://antesdosino.com.br/ativos/" + profile["slug"] + ".html"
+
+    for theme in THEME_PROFILES:
+        if match_theme_keywords(fake_entry, theme["keywords"]):
+            path = "docs/temas/" + theme["slug"] + ".html"
+            if os.path.exists(path):
+                return "https://antesdosino.com.br/temas/" + theme["slug"] + ".html"
+
+    try:
+        events_state = load_events_state()
+        candidate_events = list(SEED_EVENTS) + events_state.get("events", [])
+        for event in candidate_events:
+            keywords = get_event_keywords(event)
+            if keywords and match_event_keywords(fake_entry, keywords):
+                slug = slugify_label(event["label"])
+                path = "docs/eventos/" + slug + ".html"
+                if os.path.exists(path):
+                    return "https://antesdosino.com.br/eventos/" + slug + ".html"
+    except Exception:
+        pass
+
+    return None
+
+
 def format_message(source, entry, ai_result):
     title = entry.get("title", "Sem titulo")
     body = get_entry_body(entry)
     sentiment = "NEUTRAL"
+    impacto_estimado = IMPACT_FALLBACK
+    bullets = None
 
     if ai_result:
         title = ai_result.get("title", title) or title
         body = ai_result.get("body", "") or body
         sentiment = ai_result.get("sentiment", "NEUTRAL")
+        impacto_estimado = ai_result.get("impacto_estimado", IMPACT_FALLBACK)
+        bullets = ai_result.get("bullets")
 
     body = strip_html_tags(body)
     body = strip_boilerplate(body)
@@ -328,18 +420,39 @@ def format_message(source, entry, ai_result):
     if not body:
         body = "Leia mais no link."
 
+    if not bullets:
+        bullets = derive_fallback_bullets(body)
+
     if sentiment == "BULLISH":
-        marker = "\U0001F7E2 <b>[ALTA]</b>"
+        marker = "\U0001F7E2"
+        sentiment_label = "BULLISH"
     elif sentiment == "BEARISH":
-        marker = "\U0001F7E1 <b>[BAIXA]</b>"
+        marker = "\U0001F7E1"
+        sentiment_label = "BEARISH"
     else:
-        marker = "\u26AA <b>[INFORMATIVO]</b>"
+        marker = "\u26AA"
+        sentiment_label = "NEUTRAL"
 
     title_esc = html_module.escape(title, quote=False)
-    body_esc = html_module.escape(body, quote=False)
+    impacto_esc = html_module.escape(impacto_estimado, quote=False)
     source_esc = html_module.escape(source, quote=False)
 
-    result = marker + " <b>" + title_esc + "</b>\n\n" + body_esc + "\n\n<i>" + source_esc + "</i>"
+    bullets_html = ""
+    for b in bullets[:2]:
+        bullets_html += "\n• " + html_module.escape(b, quote=False)
+
+    smart_link = build_smart_link(title, body)
+    link_line = ""
+    if smart_link:
+        link_line = "\n\n📍 Ver detalhes: " + smart_link
+
+    result = (
+        marker + " <b>" + sentiment_label + "</b> " + title_esc + "\n"
+        "└ ⏱️ Impacto: " + impacto_esc + "\n"
+        + bullets_html +
+        "\n\n<i>" + source_esc + "</i>"
+        + link_line
+    )
     if len(result) > 3900:
         result = smart_truncate(result, 3900)
     return result, title, body, sentiment
