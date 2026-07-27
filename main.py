@@ -1717,11 +1717,12 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
     return page
 
 
-def gerar_sitemap_ativos(generated_profiles, diretorio_saida="docs"):
-    """Gera/atualiza o sitemap.xml contendo APENAS as URLs dos ativos
-    efetivamente gerados nesta execucao - ativos sem volume minimo
-    nunca aparecem aqui, evitando que o Google indexe paginas fracas
-    ou inexistentes."""
+def gerar_sitemap_completo(diretorio_docs="docs"):
+    """Gera/atualiza o sitemap.xml escaneando diretamente as pastas de
+    saida (docs/ativos e docs/temas) - desacoplado de qualquer lista em
+    memoria, entao funciona corretamente independente da ordem em que
+    os modulos de ativos e temas sao executados. So inclui o que
+    realmente existe em disco, nunca pagina inexistente ou fraca."""
     now_iso = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     base_url = "https://antesdosino.com.br"
 
@@ -1730,11 +1731,26 @@ def gerar_sitemap_ativos(generated_profiles, diretorio_saida="docs"):
         "  <url><loc>" + base_url + "/planos.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/como-funciona.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
     )
-    for p in generated_profiles:
-        urls_xml += (
-            "  <url><loc>" + base_url + "/ativos/" + p["slug"] + ".html</loc>"
-            "<lastmod>" + now_iso + "</lastmod></url>\n"
-        )
+
+    ativos_dir = diretorio_docs + "/ativos"
+    if os.path.isdir(ativos_dir):
+        for filename in sorted(os.listdir(ativos_dir)):
+            if filename.endswith(".html") and filename != "index.html":
+                slug = filename[:-5]
+                urls_xml += (
+                    "  <url><loc>" + base_url + "/ativos/" + slug + ".html</loc>"
+                    "<lastmod>" + now_iso + "</lastmod></url>\n"
+                )
+
+    temas_dir = diretorio_docs + "/temas"
+    if os.path.isdir(temas_dir):
+        for filename in sorted(os.listdir(temas_dir)):
+            if filename.endswith(".html") and filename != "index.html":
+                slug = filename[:-5]
+                urls_xml += (
+                    "  <url><loc>" + base_url + "/temas/" + slug + ".html</loc>"
+                    "<lastmod>" + now_iso + "</lastmod></url>\n"
+                )
 
     sitemap_xml = (
         "<?xml version='1.0' encoding='UTF-8'?>\n"
@@ -1743,9 +1759,9 @@ def gerar_sitemap_ativos(generated_profiles, diretorio_saida="docs"):
         "</urlset>\n"
     )
 
-    with open(diretorio_saida + "/sitemap.xml", "w", encoding="utf-8") as f:
+    with open(diretorio_docs + "/sitemap.xml", "w", encoding="utf-8") as f:
         f.write(sitemap_xml)
-    print("sitemap.xml atualizado com " + str(len(generated_profiles)) + " ativo(s).")
+    print("sitemap.xml atualizado (escaneado a partir de " + diretorio_docs + ").")
 
 
 def gerar_paginas_ativos(noticias, diretorio_saida="docs/ativos"):
@@ -1811,7 +1827,7 @@ def gerar_paginas_ativos(noticias, diretorio_saida="docs/ativos"):
         with open(diretorio_saida + "/index.html", "w", encoding="utf-8") as f:
             f.write(index_page)
 
-    gerar_sitemap_ativos(generated, diretorio_saida="docs")
+    gerar_sitemap_completo(diretorio_docs="docs")
     return generated
 
 
@@ -1819,6 +1835,358 @@ def generate_asset_pages(all_history, entries_today):
     """Wrapper mantido por compatibilidade com o restante do bot -
     delega para a funcao modular gerar_paginas_ativos."""
     return gerar_paginas_ativos(all_history, diretorio_saida="docs/ativos")
+
+
+THEME_PROFILES = [
+    {"slug": "copom-juros", "label": "Juros & Copom",
+     "keywords": ["copom", "selic", "taxa de juros", "fed", "fomc", "roberto campos neto", "jerome powell", "monetária"],
+     "why": "Decisões de juros no Brasil e nos EUA afetam diretamente o custo do crédito, o câmbio e a atratividade da bolsa frente à renda fixa."},
+    {"slug": "petroleo-commodities", "label": "Petróleo & Commodities",
+     "keywords": ["petróleo", "brent", "wti", "opep", "minério de ferro", "vale", "petrobras", "commodities"],
+     "why": "Commodities pesam fortemente no Ibovespa e influenciam a inflação global - movimentos aqui se propagam para câmbio e juros."},
+    {"slug": "inflacao-fiscal", "label": "Inflação & Meta Fiscal",
+     "keywords": ["ipca", "igp-m", "inflação", "arcabouço fiscal", "déficit", "superávit", "haddad", "meta fiscal"],
+     "why": "A trajetória fiscal e a inflação são os principais termômetros da confiança dos investidores na economia brasileira."},
+    {"slug": "balancos-resultados", "label": "Temporada de Balanços",
+     "keywords": ["balanço", "lucro líquido", "receita", "ebitda", "dividendo", "jcp", "proventos", "1tri", "2tri", "3tri", "4tri", "trimestre"],
+     "why": "A temporada de resultados revela a saúde financeira real das empresas, movendo preços de ações de forma direta."},
+    {"slug": "cambio-dolar", "label": "Câmbio & Dólar",
+     "keywords": ["dólar", "cambio", "moeda americana", "real", "ptax", "desvalorização", "valorização"],
+     "why": "O dólar impacta importações, inflação e o custo de dívida em moeda estrangeira das empresas brasileiras."},
+]
+
+MIN_THEME_NEWS_THRESHOLD = 3
+
+
+def match_theme_keywords(entry, keywords):
+    text = (entry["title"] + " " + entry["body"]).lower()
+    for kw in keywords:
+        if re.search(r"\b" + re.escape(kw.lower()) + r"\b", text):
+            return True
+    return False
+
+
+def get_theme_entries(all_history, keywords):
+    return [e for e in all_history if match_theme_keywords(e, keywords)]
+
+
+def get_theme_entries_recent(all_history, keywords, hours=ASSET_RECENT_WINDOW_HOURS):
+    cutoff = datetime.now(BR_TZ) - timedelta(hours=hours)
+    recent = []
+    for e in get_theme_entries(all_history, keywords):
+        try:
+            dt = datetime.strptime(e["date"] + " " + e["time"], "%Y-%m-%d %H:%M")
+            dt = dt.replace(tzinfo=BR_TZ)
+        except Exception:
+            continue
+        if dt >= cutoff:
+            recent.append(e)
+    return recent
+
+
+def build_theme_summary_sentence(recent_entries, label):
+    """Frase unica sobre o momento atual do tema, regra baseada em
+    contagem de sentimento - sem chamada extra de IA."""
+    if not recent_entries:
+        return "Sem notícias recentes sobre " + label + "."
+
+    alta = sum(1 for e in recent_entries if e["sentiment"] == "BULLISH")
+    baixa = sum(1 for e in recent_entries if e["sentiment"] == "BEARISH")
+    total = len(recent_entries)
+    most_recent = sorted(recent_entries, key=lambda e: (e.get("date", ""), e.get("time", "")), reverse=True)[0]
+
+    if alta > baixa:
+        return (
+            label + " tem predominância de notícias positivas nas últimas 48h ("
+            + str(total) + " no total). Destaque: " + most_recent["title"]
+        )
+    elif baixa > alta:
+        return (
+            label + " tem predominância de notícias negativas nas últimas 48h ("
+            + str(total) + " no total). Destaque: " + most_recent["title"]
+        )
+    else:
+        return (
+            label + " teve " + str(total) + " notícia(s) nas últimas 48h, sem "
+            "predominância clara de sentimento. Destaque: " + most_recent["title"]
+        )
+
+
+def compute_related_assets_for_theme(theme, all_history, generated_asset_slugs):
+    """Ativos relacionados ao tema, por coocorrencia real (a mesma
+    noticia do tema tambem menciona o ativo) - nunca lista todos."""
+    theme_entries = get_theme_entries(all_history, theme["keywords"])
+    scored = []
+    for profile in ASSET_PROFILES:
+        if profile["slug"] not in generated_asset_slugs:
+            continue
+        co_occurrence = sum(1 for e in theme_entries if match_asset_terms(e, profile["terms"]))
+        if co_occurrence > 0:
+            scored.append((profile, co_occurrence))
+    scored.sort(key=lambda pair: pair[1], reverse=True)
+    return [pair[0] for pair in scored[:4]]
+
+
+def compute_related_themes(theme, all_history, generated_theme_slugs):
+    """Outros temas relacionados, por coocorrencia real (mesma noticia
+    aparece nos dois temas) - nunca lista todos os temas."""
+    theme_entries = get_theme_entries(all_history, theme["keywords"])
+    scored = []
+    for other in THEME_PROFILES:
+        if other["slug"] == theme["slug"] or other["slug"] not in generated_theme_slugs:
+            continue
+        co_occurrence = sum(1 for e in theme_entries if match_theme_keywords(e, other["keywords"]))
+        if co_occurrence > 0:
+            scored.append((other, co_occurrence))
+    scored.sort(key=lambda pair: pair[1], reverse=True)
+    return [pair[0] for pair in scored[:3]]
+
+
+def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_theme_slugs):
+    slug = theme["slug"]
+    label = theme["label"]
+    keywords = theme["keywords"]
+    why_it_matters = theme["why"]
+
+    theme_history_entries = get_theme_entries(all_history, keywords)
+    theme_recent_entries = get_theme_entries_recent(all_history, keywords, ASSET_RECENT_WINDOW_HOURS)
+
+    if len(theme_recent_entries) < MIN_THEME_NEWS_THRESHOLD:
+        return None
+
+    summary_sentence = build_theme_summary_sentence(theme_recent_entries, label)
+
+    def sentiment_badge(s):
+        if s == "BULLISH":
+            return '<span class="badge alta">ALTA</span>'
+        if s == "BEARISH":
+            return '<span class="badge baixa">BAIXA</span>'
+        return '<span class="badge info">INFO</span>'
+
+    def render_card(e):
+        return (
+            '<div class="card">'
+            '<div class="card-meta">' + sentiment_badge(e["sentiment"]) +
+            '<span class="src">' + html_module.escape(e["source"]) + "</span>"
+            '<span class="time">' + e.get("date", "") + " " + e["time"] + "</span></div>"
+            "<h3>" + html_module.escape(e["title"]) + "</h3>"
+            "<p>" + html_module.escape(e["body"]) + "</p>"
+            "</div>\n"
+        )
+
+    # Bloco 2: agrupado por sentimento (Bullish / Bearish / Neutral),
+    # conforme pedido - nao por similaridade de titulo como nos ativos.
+    bullish_items = [e for e in theme_recent_entries if e["sentiment"] == "BULLISH"]
+    bearish_items = [e for e in theme_recent_entries if e["sentiment"] == "BEARISH"]
+    neutral_items = [e for e in theme_recent_entries if e["sentiment"] == "NEUTRAL"]
+
+    def render_sentiment_group(items, group_title, group_class):
+        if not items:
+            return ""
+        cards = ""
+        for e in items[:6]:
+            cards += render_card(e)
+        return (
+            "<div style='margin-bottom:28px;'>"
+            "<h3 style='color:var(--" + group_class + ");font-size:1rem;margin-bottom:12px;'>"
+            + group_title + " (" + str(len(items)) + ")</h3>"
+            "<div class='feed-grid'>" + cards + "</div>"
+            "</div>"
+        )
+
+    sentiment_groups_html = (
+        render_sentiment_group(bullish_items, "🟢 Notícias de Alta", "up")
+        + render_sentiment_group(bearish_items, "🟡 Notícias de Baixa", "down")
+        + render_sentiment_group(neutral_items, "⚪ Informativas", "slate")
+    )
+    if not sentiment_groups_html:
+        sentiment_groups_html = '<p style="color:var(--slate);">Sem notícias suficientes agrupadas ainda.</p>'
+
+    # Bloco 3: feed cronologico completo do tema
+    chrono_html = ""
+    sorted_all = sorted(theme_history_entries, key=lambda e: (e.get("date", ""), e.get("time", "")), reverse=True)
+    for e in sorted_all[:30]:
+        link = e.get("link", "#") or "#"
+        chrono_html += (
+            '<div class="card">'
+            '<div class="card-meta">' + sentiment_badge(e["sentiment"]) +
+            '<span class="src">' + html_module.escape(e["source"]) + "</span>"
+            '<span class="time">' + e.get("date", "") + " " + e["time"] + "</span></div>"
+            "<h3>" + html_module.escape(e["title"]) + "</h3>"
+            "<p>" + html_module.escape(e["body"]) + "</p>"
+            '<a href="' + link + '" class="read" target="_blank">Leia mais &rarr;</a>'
+            "</div>\n"
+        )
+
+    # Bloco 4: links para ativos e temas relacionados
+    related_assets = compute_related_assets_for_theme(theme, all_history, generated_asset_slugs)
+    related_themes = compute_related_themes(theme, all_history, generated_theme_slugs)
+
+    related_links_html = ""
+    for a in related_assets:
+        related_links_html += '<a href="../ativos/' + a["slug"] + '.html" class="nav-links" style="margin-right:14px;">' + html_module.escape(a["label"]) + "</a>"
+    for t in related_themes:
+        related_links_html += '<a href="' + t["slug"] + '.html" class="nav-links" style="margin-right:14px;">' + html_module.escape(t["label"]) + "</a>"
+
+    related_block = ""
+    if related_links_html:
+        related_block = (
+            "<section><div class='section-head'>"
+            "<span class='kicker'>Continue explorando</span>"
+            "</div>"
+            "<div>" + related_links_html + "</div>"
+            "</section>"
+        )
+
+    meta_description = html_module.escape(summary_sentence[:155])
+    updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
+    page_url = "https://antesdosino.com.br/temas/" + slug + ".html"
+    page_title = html_module.escape(label) + " hoje - notícias e sentimento | Antes do Sino"
+
+    schema_items = []
+    for e in sorted_all[:10]:
+        schema_items.append({
+            "@type": "ListItem",
+            "position": len(schema_items) + 1,
+            "url": e.get("link", page_url) or page_url,
+            "name": e["title"],
+        })
+    schema_json = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": label,
+        "url": page_url,
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Notícias sobre " + label,
+            "itemListElement": schema_items,
+        },
+    }
+    schema_script = json.dumps(schema_json, ensure_ascii=False)
+
+    page = (
+        "<!DOCTYPE html><html lang='pt-BR'><head>"
+        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
+        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+        "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<meta charset='UTF-8'>"
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        "<title>" + page_title + "</title>"
+        "<meta name='description' content='" + meta_description + "'>"
+        "<link rel='canonical' href='" + page_url + "'>"
+        "<meta property='og:type' content='website'>"
+        "<meta property='og:title' content='" + page_title + "'>"
+        "<meta property='og:description' content='" + meta_description + "'>"
+        "<meta property='og:url' content='" + page_url + "'>"
+        "<meta property='og:site_name' content='Antes do Sino'>"
+        "<meta name='twitter:card' content='summary'>"
+        "<meta name='twitter:title' content='" + page_title + "'>"
+        "<meta name='twitter:description' content='" + meta_description + "'>"
+        "<link rel='stylesheet' href='../assets.css'>"
+        "<script type='application/ld+json'>" + schema_script + "</script>"
+        "</head><body>"
+        "<nav><div class='brand'>🔔 Antes do Sino</div>"
+        "<a href='../index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Tema</span>"
+        "<h1 style='font-family:Fraunces,serif;font-size:2rem;font-weight:600;'>" + html_module.escape(label) + "</h1>"
+        "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>" + html_module.escape(summary_sentence) + "</p>"
+        "<p style='color:var(--slate-dim);margin-top:10px;font-size:0.9rem;border-left:2px solid var(--bronze);padding-left:12px;'>"
+        "<b style='color:var(--bronze);'>Por que isso importa agora:</b> " + html_module.escape(why_it_matters) + "</p>"
+        "</div></section>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>O que está movendo o tema</span>"
+        "<h2>Notícias agrupadas por sentimento</h2>"
+        "</div>"
+        + sentiment_groups_html +
+        "</section>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Aprofunde-se</span>"
+        "<h2>Todas as notícias sobre " + html_module.escape(label) + "</h2>"
+        "</div>"
+        "<div class='feed-grid'>" + chrono_html + "</div>"
+        "</section>"
+
+        + related_block +
+
+        "<footer><span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>"
+        "<span class='mono'>Atualizado em " + updated_at + "</span></footer>"
+        "</body></html>"
+    )
+
+    return page
+
+
+def gerar_paginas_temas(noticias, diretorio_saida="docs/temas"):
+    """Funcao principal e modular de geracao das paginas de tema.
+
+    Parametros:
+        noticias: lista completa de noticias ja processadas pelo bot
+                  (historico acumulado).
+        diretorio_saida: pasta onde as paginas HTML serao escritas.
+
+    Regras aplicadas:
+        - So gera pagina para temas com pelo menos
+          MIN_THEME_NEWS_THRESHOLD noticias qualificadas dentro da
+          janela de ASSET_RECENT_WINDOW_HOURS horas.
+        - Links relacionados (ativos e outros temas) sao calculados por
+          coocorrencia real nas noticias, nunca listam tudo.
+        - Atualiza o sitemap.xml ao final, incluindo os temas gerados.
+    """
+    os.makedirs(diretorio_saida, exist_ok=True)
+    generated = []
+
+    generated_theme_slugs = set()
+    for theme in THEME_PROFILES:
+        recent = get_theme_entries_recent(noticias, theme["keywords"], ASSET_RECENT_WINDOW_HOURS)
+        if len(recent) >= MIN_THEME_NEWS_THRESHOLD:
+            generated_theme_slugs.add(theme["slug"])
+
+    generated_asset_slugs = set()
+    for profile in ASSET_PROFILES:
+        recent = get_asset_entries_recent(noticias, profile["terms"], ASSET_RECENT_WINDOW_HOURS)
+        if len(recent) >= MIN_NEWS_THRESHOLD:
+            generated_asset_slugs.add(profile["slug"])
+
+    for theme in THEME_PROFILES:
+        page_html = build_theme_page_html(theme, noticias, generated_asset_slugs, generated_theme_slugs)
+        if page_html is None:
+            print("Volume insuficiente para tema " + theme["slug"] + " (minimo "
+                  + str(MIN_THEME_NEWS_THRESHOLD) + " noticias em " + str(ASSET_RECENT_WINDOW_HOURS)
+                  + "h) - pagina nao gerada.")
+            continue
+        with open(diretorio_saida + "/" + theme["slug"] + ".html", "w", encoding="utf-8") as f:
+            f.write(page_html)
+        generated.append(theme)
+        print("Pagina de tema gerada: " + theme["slug"] + ".html")
+
+    if generated:
+        index_items = ""
+        for t in generated:
+            index_items += (
+                '<div class="card"><h3><a href="' + t["slug"] + '.html" style="color:var(--cream);">'
+                + html_module.escape(t["label"]) + "</a></h3></div>"
+            )
+        index_page = (
+            "<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'>"
+            "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+            "<title>Temas acompanhados | Antes do Sino</title>"
+            "<link rel='stylesheet' href='../assets.css'></head><body>"
+            "<nav><div class='brand'>🔔 Antes do Sino</div>"
+            "<a href='../index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
+            "<section><div class='section-head'><span class='kicker'>Temas</span>"
+            "<h2>Temas acompanhados em tempo real</h2></div>"
+            "<div class='feed-grid'>" + index_items + "</div></section>"
+            "</body></html>"
+        )
+        with open(diretorio_saida + "/index.html", "w", encoding="utf-8") as f:
+            f.write(index_page)
+
+    gerar_sitemap_completo(diretorio_docs="docs")
+    return generated
 
 
 PORTAL_HISTORY_FILE = "portal_history.json"
@@ -2011,6 +2379,7 @@ def main():
     generate_portal(all_portal_entries, entries_today)
     build_daily_summary_html(entries_today, today_str)
     generate_asset_pages(all_portal_entries, entries_today)
+    gerar_paginas_temas(all_portal_entries, diretorio_saida="docs/temas")
 
     if should_run_premarket_carousel():
         print("Horario da pre-abertura detectado, gerando carrossel automatico...")
