@@ -1287,6 +1287,330 @@ def build_since_visit_data_json(entries_today):
     return json.dumps(data, ensure_ascii=False)
 
 
+ASSET_PROFILES = [
+    {"slug": "petr4", "label": "Petrobras (PETR4)", "terms": ["petr4", "petr3", "petrobras"]},
+    {"slug": "vale3", "label": "Vale (VALE3)", "terms": ["vale3", "vale"]},
+    {"slug": "itub4", "label": "Itaú (ITUB4)", "terms": ["itub4", "itau", "itaú"]},
+    {"slug": "b3sa3", "label": "B3 (B3SA3)", "terms": ["b3sa3"]},
+    {"slug": "bbas3", "label": "Banco do Brasil (BBAS3)", "terms": ["bbas3", "banco do brasil"]},
+    {"slug": "wege3", "label": "WEG (WEGE3)", "terms": ["wege3", "weg"]},
+    {"slug": "aapl", "label": "Apple (AAPL)", "terms": ["aapl", "apple"]},
+    {"slug": "tsla", "label": "Tesla (TSLA)", "terms": ["tsla", "tesla"]},
+    {"slug": "nvda", "label": "Nvidia (NVDA)", "terms": ["nvda", "nvidia"]},
+    {"slug": "msft", "label": "Microsoft (MSFT)", "terms": ["msft", "microsoft"]},
+]
+
+ASSET_ARCHIVE_FILE = "asset_archive.json"
+
+
+def load_asset_archive():
+    if os.path.exists(ASSET_ARCHIVE_FILE):
+        try:
+            with open(ASSET_ARCHIVE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def save_asset_archive(archive):
+    with open(ASSET_ARCHIVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(archive, f, ensure_ascii=False)
+
+
+def match_asset_terms(entry, terms):
+    text = (entry["title"] + " " + entry["body"]).lower()
+    for term in terms:
+        if re.search(r"\b" + re.escape(term) + r"\b", text):
+            return True
+    return False
+
+
+def get_asset_entries(all_history, terms):
+    return [e for e in all_history if match_asset_terms(e, terms)]
+
+
+def compute_asset_summary_sentence(today_entries, label):
+    """Frase unica sobre o momento atual do ativo, sem chamada extra de
+    IA - regra baseada em contagem de sentimento, no mesmo espirito da
+    worry-line da Home."""
+    if not today_entries:
+        return "Sem notícias recentes sobre " + label + " hoje."
+
+    alta = sum(1 for e in today_entries if e["sentiment"] == "BULLISH")
+    baixa = sum(1 for e in today_entries if e["sentiment"] == "BEARISH")
+    total = len(today_entries)
+
+    most_recent = sorted(today_entries, key=lambda e: e.get("time", ""), reverse=True)[0]
+
+    if alta > baixa:
+        return (
+            label + " tem hoje mais notícias positivas que negativas ("
+            + str(total) + " no total). Destaque: " + most_recent["title"]
+        )
+    elif baixa > alta:
+        return (
+            label + " tem hoje mais notícias negativas que positivas ("
+            + str(total) + " no total). Destaque: " + most_recent["title"]
+        )
+    else:
+        return (
+            label + " teve " + str(total) + " notícia(s) hoje, sem predominância clara "
+            "de sentimento. Destaque: " + most_recent["title"]
+        )
+
+
+def compute_asset_clusters(asset_entries_today):
+    """Agrupa noticias muito similares (mesma historia coberta por mais
+    de uma fonte) usando comparacao de titulo ja existente no projeto,
+    e rankeia por numero de fontes + forca de sentimento."""
+    clusters = []
+    used = set()
+
+    for i, e in enumerate(asset_entries_today):
+        if i in used:
+            continue
+        group = [e]
+        used.add(i)
+        for j, other in enumerate(asset_entries_today):
+            if j in used or j == i:
+                continue
+            ratio = difflib.SequenceMatcher(None, e["title"].lower(), other["title"].lower()).ratio()
+            if ratio > 0.55:
+                group.append(other)
+                used.add(j)
+
+        distinct_sources = len(set(g["source"] for g in group))
+        non_neutral = sum(1 for g in group if g["sentiment"] != "NEUTRAL")
+        score = distinct_sources * 2 + non_neutral * 1.5 + len(group)
+        clusters.append({"items": group, "score": score, "distinct_sources": distinct_sources})
+
+    clusters.sort(key=lambda c: c["score"], reverse=True)
+    return clusters
+
+
+def update_asset_archive_entry(slug, today_entries):
+    """Guarda, uma vez por dia, a contagem de mencoes e sentimento do
+    ativo - constrói historico proprio ao longo do tempo, sem backend."""
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    archive = load_asset_archive()
+    asset_history = archive.get(slug, [])
+
+    asset_history = [d for d in asset_history if d["date"] != today_str]
+    alta = sum(1 for e in today_entries if e["sentiment"] == "BULLISH")
+    baixa = sum(1 for e in today_entries if e["sentiment"] == "BEARISH")
+    asset_history.append({
+        "date": today_str,
+        "count": len(today_entries),
+        "alta": alta,
+        "baixa": baixa,
+    })
+    asset_history = asset_history[-14:]
+
+    archive[slug] = asset_history
+    save_asset_archive(archive)
+    return asset_history
+
+
+def build_asset_page_html(profile, all_history, entries_today):
+    slug = profile["slug"]
+    label = profile["label"]
+    terms = profile["terms"]
+
+    asset_history_entries = get_asset_entries(all_history, terms)
+    asset_today_entries = get_asset_entries(entries_today, terms)
+
+    if not asset_history_entries:
+        return None
+
+    trend = update_asset_archive_entry(slug, asset_today_entries)
+    summary_sentence = compute_asset_summary_sentence(asset_today_entries, label)
+    clusters = compute_asset_clusters(asset_today_entries)
+
+    def sentiment_badge(s):
+        if s == "BULLISH":
+            return '<span class="badge alta">ALTA</span>'
+        if s == "BEARISH":
+            return '<span class="badge baixa">BAIXA</span>'
+        return '<span class="badge info">INFO</span>'
+
+    clusters_html = ""
+    for c in clusters[:3]:
+        rep = c["items"][0]
+        reason = (
+            "Coberto por " + str(c["distinct_sources"]) + " fontes diferentes"
+            if c["distinct_sources"] >= 2 else "Notícia em destaque"
+        )
+        clusters_html += (
+            '<div class="signal-card">'
+            '<div class="card-meta">' + sentiment_badge(rep["sentiment"]) +
+            '<span class="src">' + html_module.escape(rep["source"]) + "</span>"
+            '<span class="time">' + rep["time"] + "</span></div>"
+            "<h3>" + html_module.escape(rep["title"]) + "</h3>"
+            "<p>" + html_module.escape(rep["body"]) + "</p>"
+            '<span class="signal-reason">🔎 ' + reason + "</span>"
+            "</div>\n"
+        )
+    if not clusters_html:
+        clusters_html = '<p style="color:var(--slate);">Sem notícias suficientes hoje sobre ' + html_module.escape(label) + ".</p>"
+
+    ranked_all = sorted(
+        asset_today_entries,
+        key=lambda e: (0 if e["sentiment"] == "NEUTRAL" else 1, e.get("time", "")),
+        reverse=True
+    )[:8]
+    ranked_html = ""
+    for e in ranked_all:
+        ranked_html += (
+            '<div class="card">'
+            '<div class="card-meta">' + sentiment_badge(e["sentiment"]) +
+            '<span class="src">' + html_module.escape(e["source"]) + "</span>"
+            '<span class="time">' + e["time"] + "</span></div>"
+            "<h3>" + html_module.escape(e["title"]) + "</h3>"
+            "<p>" + html_module.escape(e["body"]) + "</p>"
+            "</div>\n"
+        )
+    if not ranked_html:
+        ranked_html = '<p style="color:var(--slate);">Sem movimentações relevantes hoje.</p>'
+
+    trend_rows = ""
+    for day in reversed(trend[-7:]):
+        trend_rows += (
+            "<div class='event-item'><span class='event-date'>" + day["date"] + "</span>"
+            "<span class='event-label'>" + str(day["count"]) + " menções</span>"
+            "<span class='event-countdown'>" + str(day["alta"]) + " alta / " + str(day["baixa"]) + " baixa</span>"
+            "</div>"
+        )
+    if len(trend) <= 1:
+        trend_note = "Começamos a acompanhar o histórico de " + label + " a partir de hoje - volte nos próximos dias para ver a evolução."
+    else:
+        trend_note = "Histórico dos últimos dias com notícias sobre " + label + "."
+
+    all_feed_html = ""
+    sorted_all = sorted(asset_history_entries, key=lambda e: (e.get("date", ""), e.get("time", "")), reverse=True)
+    for e in sorted_all[:30]:
+        link = e.get("link", "#") or "#"
+        all_feed_html += (
+            '<div class="card">'
+            '<div class="card-meta">' + sentiment_badge(e["sentiment"]) +
+            '<span class="src">' + html_module.escape(e["source"]) + "</span>"
+            '<span class="time">' + e.get("date", "") + " " + e["time"] + "</span></div>"
+            "<h3>" + html_module.escape(e["title"]) + "</h3>"
+            "<p>" + html_module.escape(e["body"]) + "</p>"
+            '<a href="' + link + '" class="read" target="_blank">Leia mais &rarr;</a>'
+            "</div>\n"
+        )
+
+    other_links_html = ""
+    for other in ASSET_PROFILES:
+        if other["slug"] != slug:
+            other_links_html += '<a href="' + other["slug"] + '.html" class="nav-links" style="margin-right:14px;">' + html_module.escape(other["label"]) + "</a>"
+
+    meta_description = html_module.escape(summary_sentence[:155])
+    updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
+
+    page = (
+        "<!DOCTYPE html><html lang='pt-BR'><head>"
+        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
+        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+        "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<meta charset='UTF-8'>"
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        "<title>" + html_module.escape(label) + " hoje - notícias e sentimento | Antes do Sino</title>"
+        "<meta name='description' content='" + meta_description + "'>"
+        "<link rel='stylesheet' href='../assets.css'>"
+        "</head><body>"
+        "<nav><div class='brand'>🔔 Antes do Sino</div>"
+        "<a href='../index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Ativo</span>"
+        "<h1 style='font-family:Fraunces,serif;font-size:2rem;font-weight:600;'>" + html_module.escape(label) + "</h1>"
+        "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>" + html_module.escape(summary_sentence) + "</p>"
+        "</div></section>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>O que está movimentando agora</span>"
+        "<h2>Principais notícias sobre " + html_module.escape(label) + "</h2>"
+        "</div>"
+        "<div class='signals-grid'>" + clusters_html + "</div>"
+        "</section>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Impacto, não cronologia</span>"
+        "<h2>Últimas movimentações relevantes</h2>"
+        "</div>"
+        "<div class='feed-grid'>" + ranked_html + "</div>"
+        "</section>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Histórico</span>"
+        "<h2>Evolução recente</h2>"
+        "<p style='color:var(--slate);margin-top:10px;'>" + trend_note + "</p>"
+        "</div>"
+        "<div class='events-list'>" + trend_rows + "</div>"
+        "</section>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Aprofunde-se</span>"
+        "<h2>Todas as notícias sobre " + html_module.escape(label) + "</h2>"
+        "</div>"
+        "<div class='feed-grid'>" + all_feed_html + "</div>"
+        "</section>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Outros ativos</span>"
+        "</div>"
+        "<div>" + other_links_html + "</div>"
+        "</section>"
+
+        "<footer><span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>"
+        "<span class='mono'>Atualizado em " + updated_at + "</span></footer>"
+        "</body></html>"
+    )
+
+    return page
+
+
+def generate_asset_pages(all_history, entries_today):
+    """Gera uma pagina por ativo, mas SO quando ha volume real de
+    noticias - nunca cria pagina vazia (evita indexar conteudo fraco)."""
+    os.makedirs("docs/ativos", exist_ok=True)
+    generated = []
+
+    for profile in ASSET_PROFILES:
+        page_html = build_asset_page_html(profile, all_history, entries_today)
+        if page_html is None:
+            print("Sem volume para " + profile["slug"] + " - pagina nao gerada.")
+            continue
+        with open("docs/ativos/" + profile["slug"] + ".html", "w", encoding="utf-8") as f:
+            f.write(page_html)
+        generated.append(profile)
+        print("Pagina de ativo gerada: " + profile["slug"] + ".html")
+
+    if generated:
+        index_items = ""
+        for p in generated:
+            index_items += (
+                '<div class="card"><h3><a href="' + p["slug"] + '.html" style="color:var(--cream);">'
+                + html_module.escape(p["label"]) + "</a></h3></div>"
+            )
+        index_page = (
+            "<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'>"
+            "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+            "<title>Ativos acompanhados | Antes do Sino</title>"
+            "<link rel='stylesheet' href='../assets.css'></head><body>"
+            "<nav><div class='brand'>🔔 Antes do Sino</div>"
+            "<a href='../index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
+            "<section><div class='section-head'><span class='kicker'>Ativos</span>"
+            "<h2>Ativos acompanhados em tempo real</h2></div>"
+            "<div class='feed-grid'>" + index_items + "</div></section>"
+            "</body></html>"
+        )
+        with open("docs/ativos/index.html", "w", encoding="utf-8") as f:
+            f.write(index_page)
+
+
 PORTAL_HISTORY_FILE = "portal_history.json"
 
 
@@ -1476,6 +1800,7 @@ def main():
 
     generate_portal(all_portal_entries, entries_today)
     build_daily_summary_html(entries_today, today_str)
+    generate_asset_pages(all_portal_entries, entries_today)
 
     if should_run_premarket_carousel():
         print("Horario da pre-abertura detectado, gerando carrossel automatico...")
