@@ -752,6 +752,361 @@ def build_weekly_summary_html(archive):
         f.write(page)
 
 
+PREMARKET_STATE_FILE = "premarket_carousel_state.json"
+
+
+def load_premarket_state():
+    if os.path.exists(PREMARKET_STATE_FILE):
+        try:
+            with open(PREMARKET_STATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def save_premarket_state(state):
+    with open(PREMARKET_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+
+
+def should_run_premarket_carousel():
+    """So dispara uma vez por dia, entre 8h25 e 8h50 (horario de Brasilia)."""
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_premarket_state()
+    if state.get("last_run_date") == today_str:
+        return False
+    minutes = now.hour * 60 + now.minute
+    return (8 * 60 + 25) <= minutes <= (8 * 60 + 50)
+
+
+def get_premarket_window_entries(all_entries):
+    """Filtra noticias entre o fechamento de ontem (~18h) e agora, para
+    servir de base ao resumo da pre-abertura."""
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    yesterday_str = (now - timedelta(days=1)).strftime("%Y-%m-%d")
+
+    window = []
+    for e in all_entries:
+        e_date = e.get("date", "")
+        e_time = e.get("time", "00:00")
+        if e_date == today_str:
+            window.append(e)
+        elif e_date == yesterday_str:
+            try:
+                hour = int(e_time.split(":")[0])
+                if hour >= 18:
+                    window.append(e)
+            except Exception:
+                continue
+    return window
+
+
+def rank_premarket_highlights(entries, top_n=4):
+    """Prioriza noticias com sentimento definido (nao neutro) e mais
+    recentes, sem chamada de IA."""
+    def score(e):
+        sentiment_weight = 0 if e.get("sentiment") == "NEUTRAL" else 1
+        return (sentiment_weight, e.get("date", ""), e.get("time", ""))
+
+    sorted_entries = sorted(entries, key=score, reverse=True)
+    return sorted_entries[:top_n]
+
+
+def build_premarket_ai_content(highlights):
+    """Uma unica chamada a Groq para escrever os textos dos slides e as
+    legendas adaptadas para Instagram/TikTok e X, a partir das noticias
+    mais relevantes da janela pre-mercado."""
+    if not USE_AI or not highlights:
+        return None
+
+    headlines_text = ""
+    for h in highlights:
+        headlines_text += "- [" + h.get("sentiment", "NEUTRAL") + "] " + h["title"] + ": " + h["body"] + "\n"
+
+    prompt = (
+        "Voce e um editor de conteudo para um canal de noticias de mercado financeiro "
+        "chamado 'Antes do Sino'. Com base nas noticias mais relevantes desde o ultimo "
+        "fechamento do pregao, escreva o conteudo de um carrossel de 'pre-abertura' e "
+        "as legendas para redes sociais.\n\n"
+        "Noticias disponiveis:\n" + headlines_text + "\n\n"
+        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
+        '{"slide2_title": "...", "slide2_sub": "...", '
+        '"slide3_title": "...", "slide3_sub": "...", '
+        '"slide4_title": "...", "slide4_sub": "...", '
+        '"titulo_post": "...", '
+        '"legenda_instagram": "...", '
+        '"legenda_x": "..."}\n\n'
+        "Regras: slide2_title deve resumir o cenario geral de abertura em poucas palavras. "
+        "slide3 e slide4 devem trazer os fatos mais relevantes das noticias fornecidas, "
+        "com sub-textos curtos e factuais (sem inventar dados que nao estao nas noticias). "
+        "titulo_post deve ser uma manchete curta e direta. legenda_instagram deve ter no "
+        "maximo 5 hashtags no final. legenda_x deve ser mais curta, estilo Twitter/X, sem "
+        "hashtags em excesso. Todos os textos em portugues do Brasil, sem markdown."
+    )
+
+    try:
+        raw_response = ask_groq(prompt)
+        raw_response = re.sub(r"```json|```", "", raw_response).strip()
+        return json.loads(raw_response)
+    except Exception as e:
+        print("Erro ao gerar conteudo pre-abertura (Groq): " + str(e))
+        return None
+
+
+def build_slide_prompt_text(kind, title_text, sub_text=""):
+    """Monta o prompt de imagem em portugues, no formato exato que ja
+    usamos manualmente para colar no Gemini - sem gerar nenhuma imagem,
+    so o texto do prompt pronto para copiar."""
+    base = (
+        "Crie uma imagem quadrada 1080x1080, fundo gradiente azul-marinho escuro "
+        "(#0B1F3A para #050D1A). "
+    )
+    if kind == "capa":
+        return (
+            base + "No topo, pequeno icone dourado minimalista relacionado ao tema, "
+            "line-art fino. Texto branco bold, tamanho moderado (nao ocupando mais "
+            "que 15% da altura da imagem), centralizado: \"" + title_text + "\". "
+            "Abaixo, em fonte ainda menor: \"" + sub_text + "\". Design limpo, "
+            "profissional, estilo fintech premium."
+        )
+    if kind == "content":
+        return (
+            base + "No topo, icone pequeno dourado relacionado ao tema, line-art "
+            "fino. Texto branco bold, tamanho moderado (nao ocupando mais que 15% "
+            "da altura da imagem), centralizado: \"" + title_text + "\". Abaixo, em "
+            "fonte ainda menor: \"" + sub_text + "\". Design limpo, profissional."
+        )
+    if kind == "cta":
+        return (
+            base + "com sino dourado maior e elaborado centralizado, leve brilho ao "
+            "redor. Texto branco bold, tamanho moderado, acima do sino: \"" +
+            title_text + "\". Abaixo, texto dourado: \"Antes do Sino no Telegram\" "
+            "e menor: \"Link na bio\". Design profissional, elegante."
+        )
+    return base + title_text
+
+
+def run_premarket_carousel(all_entries):
+    """Fluxo completo: filtra noticias da janela pre-mercado, gera texto
+    via IA, gera as 5 imagens do carrossel via Pollinations, e salva tudo
+    numa pagina do site para o usuario buscar e postar."""
+    highlights = rank_premarket_highlights(get_premarket_window_entries(all_entries))
+    ai_content = build_premarket_ai_content(highlights)
+
+    if not ai_content:
+        print("AVISO: nao foi possivel gerar conteudo do carrossel pre-mercado hoje.")
+        return
+
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+
+    slides = [
+        ("capa", "ANTES DE ABRIR O PREGAO", today_str),
+        ("content", ai_content.get("slide2_title", ""), ai_content.get("slide2_sub", "")),
+        ("content", ai_content.get("slide3_title", ""), ai_content.get("slide3_sub", "")),
+        ("content", ai_content.get("slide4_title", ""), ai_content.get("slide4_sub", "")),
+        ("cta", "Acompanhe a abertura em tempo real", ""),
+    ]
+
+    prompts_html = ""
+    for i, (kind, title_text, sub_text) in enumerate(slides, start=1):
+        prompt_text = build_slide_prompt_text(kind, title_text, sub_text)
+        prompts_html += (
+            "<div style='margin-bottom:20px;padding:18px;background:rgba(255,255,255,0.03);"
+            "border-radius:12px;border:1px solid var(--line);'>"
+            "<h4 style='margin-bottom:10px;color:var(--gold);'>Slide " + str(i) + "</h4>"
+            "<p style='white-space:pre-wrap;color:var(--cream);font-family:monospace;"
+            "font-size:0.9rem;'>" + html_module.escape(prompt_text) + "</p>"
+            "</div>"
+        )
+
+    page = (
+        "<!DOCTYPE html><html lang='pt-BR'><head>"
+        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
+        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+        "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<meta charset='UTF-8'>"
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        "<title>Pre-Abertura de Hoje | Antes do Sino</title>"
+        "<link rel='stylesheet' href='assets.css'>"
+        "</head><body>"
+        "<nav><div class='brand'>🔔 Antes do Sino</div>"
+        "<a href='index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Gerado automaticamente</span>"
+        "<h2>" + html_module.escape(ai_content.get("titulo_post", "")) + "</h2>"
+        "</div>"
+        "<h3 style='margin-bottom:16px;'>Prompts para colar no Gemini</h3>"
+        + prompts_html +
+        "<div style='margin-top:30px;padding:20px;background:rgba(255,255,255,0.03);border-radius:12px;'>"
+        "<h4 style='margin-bottom:10px;'>Legenda Instagram/TikTok</h4>"
+        "<p style='white-space:pre-wrap;color:var(--slate);'>" + html_module.escape(ai_content.get("legenda_instagram", "")) + "</p>"
+        "</div>"
+        "<div style='margin-top:16px;padding:20px;background:rgba(255,255,255,0.03);border-radius:12px;'>"
+        "<h4 style='margin-bottom:10px;'>Legenda X</h4>"
+        "<p style='white-space:pre-wrap;color:var(--slate);'>" + html_module.escape(ai_content.get("legenda_x", "")) + "</p>"
+        "</div>"
+        "</section>"
+        "</body></html>"
+    )
+
+    with open("docs/premarket-hoje.html", "w", encoding="utf-8") as f:
+        f.write(page)
+
+    state = load_premarket_state()
+    state["last_run_date"] = today_str
+    save_premarket_state(state)
+
+    print("Prompts de pre-abertura gerados com sucesso: docs/premarket-hoje.html")
+
+
+def should_run_close_carousel():
+    """So dispara uma vez por dia, entre 18h25 e 18h55 (horario de Brasilia)."""
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_premarket_state()
+    if state.get("last_close_run_date") == today_str:
+        return False
+    minutes = now.hour * 60 + now.minute
+    return (18 * 60 + 25) <= minutes <= (18 * 60 + 55)
+
+
+def get_ibovespa_quote():
+    """Reaproveita fetch_cockpit_quotes e extrai apenas o Ibovespa."""
+    quotes = fetch_cockpit_quotes()
+    for q in quotes:
+        if q.get("symbol") == "^BVSP":
+            return q
+    return None
+
+
+def build_close_ai_content(highlights, ibov_quote):
+    """Uma unica chamada a Groq para escrever os textos do carrossel de
+    fechamento e as legendas, usando a cotacao real do Ibovespa quando
+    disponivel e as noticias mais relevantes do dia."""
+    if not USE_AI:
+        return None
+
+    headlines_text = ""
+    for h in highlights:
+        headlines_text += "- [" + h.get("sentiment", "NEUTRAL") + "] " + h["title"] + ": " + h["body"] + "\n"
+
+    if ibov_quote:
+        quote_text = (
+            "Ibovespa fechou em " + ("alta" if ibov_quote["change"] >= 0 else "queda") +
+            " de " + str(abs(round(ibov_quote["change"], 2))) + "%, em " +
+            str(round(ibov_quote["price"])) + " pontos."
+        )
+    else:
+        quote_text = "Cotacao oficial do Ibovespa nao disponivel nesta execucao - nao invente numeros."
+
+    prompt = (
+        "Voce e um editor de conteudo para um canal de noticias de mercado financeiro "
+        "chamado 'Antes do Sino'. Escreva o conteudo de um carrossel de 'resumo do pregao' "
+        "(fechamento do dia) e as legendas para redes sociais.\n\n"
+        "Dado oficial do fechamento: " + quote_text + "\n\n"
+        "Noticias relevantes do dia:\n" + headlines_text + "\n\n"
+        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
+        '{"slide2_title": "...", "slide2_sub": "...", '
+        '"slide3_title": "...", "slide3_sub": "...", '
+        '"slide4_title": "...", "slide4_sub": "...", '
+        '"titulo_post": "...", '
+        '"legenda_instagram": "...", '
+        '"legenda_x": "..."}\n\n'
+        "Regras: slide2 deve trazer o fechamento do indice (use o dado oficial fornecido; "
+        "se nao houver dado oficial, fale de forma qualitativa sem inventar numero). "
+        "slide3 e slide4 devem trazer os fatos mais relevantes do dia, com sub-textos curtos "
+        "e factuais, sem inventar dados que nao estao nas noticias fornecidas. titulo_post "
+        "deve ser uma manchete curta e direta sobre o fechamento. legenda_instagram deve ter "
+        "no maximo 5 hashtags no final. legenda_x deve ser mais curta, estilo Twitter/X. "
+        "Todos os textos em portugues do Brasil, sem markdown."
+    )
+
+    try:
+        raw_response = ask_groq(prompt)
+        raw_response = re.sub(r"```json|```", "", raw_response).strip()
+        return json.loads(raw_response)
+    except Exception as e:
+        print("Erro ao gerar conteudo de fechamento (Groq): " + str(e))
+        return None
+
+
+def run_close_carousel(all_entries):
+    """Fluxo completo do carrossel de fechamento: busca cotacao real do
+    Ibovespa, filtra noticias do dia, gera texto via IA, gera as 5
+    imagens via Pollinations, e salva numa pagina do site."""
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    entries_today = [e for e in all_entries if e.get("date") == today_str]
+    highlights = rank_premarket_highlights(entries_today)
+    ibov_quote = get_ibovespa_quote()
+    ai_content = build_close_ai_content(highlights, ibov_quote)
+
+    if not ai_content:
+        print("AVISO: nao foi possivel gerar conteudo do carrossel de fechamento hoje.")
+        return
+
+    slides = [
+        ("capa", "RESUMO DE MERCADO", "Pregao de " + today_str),
+        ("content", ai_content.get("slide2_title", ""), ai_content.get("slide2_sub", "")),
+        ("content", ai_content.get("slide3_title", ""), ai_content.get("slide3_sub", "")),
+        ("content", ai_content.get("slide4_title", ""), ai_content.get("slide4_sub", "")),
+        ("cta", "Quer receber isso em tempo real, todos os dias?", ""),
+    ]
+
+    prompts_html = ""
+    for i, (kind, title_text, sub_text) in enumerate(slides, start=1):
+        prompt_text = build_slide_prompt_text(kind, title_text, sub_text)
+        prompts_html += (
+            "<div style='margin-bottom:20px;padding:18px;background:rgba(255,255,255,0.03);"
+            "border-radius:12px;border:1px solid var(--line);'>"
+            "<h4 style='margin-bottom:10px;color:var(--gold);'>Slide " + str(i) + "</h4>"
+            "<p style='white-space:pre-wrap;color:var(--cream);font-family:monospace;"
+            "font-size:0.9rem;'>" + html_module.escape(prompt_text) + "</p>"
+            "</div>"
+        )
+
+    page = (
+        "<!DOCTYPE html><html lang='pt-BR'><head>"
+        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
+        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+        "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<meta charset='UTF-8'>"
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        "<title>Fechamento de Hoje | Antes do Sino</title>"
+        "<link rel='stylesheet' href='assets.css'>"
+        "</head><body>"
+        "<nav><div class='brand'>🔔 Antes do Sino</div>"
+        "<a href='index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Gerado automaticamente</span>"
+        "<h2>" + html_module.escape(ai_content.get("titulo_post", "")) + "</h2>"
+        "</div>"
+        "<h3 style='margin-bottom:16px;'>Prompts para colar no Gemini</h3>"
+        + prompts_html +
+        "<div style='margin-top:30px;padding:20px;background:rgba(255,255,255,0.03);border-radius:12px;'>"
+        "<h4 style='margin-bottom:10px;'>Legenda Instagram/TikTok</h4>"
+        "<p style='white-space:pre-wrap;color:var(--slate);'>" + html_module.escape(ai_content.get("legenda_instagram", "")) + "</p>"
+        "</div>"
+        "<div style='margin-top:16px;padding:20px;background:rgba(255,255,255,0.03);border-radius:12px;'>"
+        "<h4 style='margin-bottom:10px;'>Legenda X</h4>"
+        "<p style='white-space:pre-wrap;color:var(--slate);'>" + html_module.escape(ai_content.get("legenda_x", "")) + "</p>"
+        "</div>"
+        "</section>"
+        "</body></html>"
+    )
+
+    with open("docs/fechamento-hoje.html", "w", encoding="utf-8") as f:
+        f.write(page)
+
+    state = load_premarket_state()
+    state["last_close_run_date"] = today_str
+    save_premarket_state(state)
+
+    print("Prompts de fechamento gerados com sucesso: docs/fechamento-hoje.html")
+
+
 PORTAL_HISTORY_FILE = "portal_history.json"
 
 
@@ -918,6 +1273,14 @@ def main():
 
     generate_portal(all_portal_entries, entries_today)
     build_daily_summary_html(entries_today, today_str)
+
+    if should_run_premarket_carousel():
+        print("Horario da pre-abertura detectado, gerando carrossel automatico...")
+        run_premarket_carousel(all_portal_entries)
+
+    if should_run_close_carousel():
+        print("Horario de fechamento detectado, gerando carrossel automatico...")
+        run_close_carousel(all_portal_entries)
 
     thermo_today = compute_sentiment_thermometer(entries_today)
     archive = [d for d in archive if d["date"] != today_str]
