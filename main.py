@@ -1289,34 +1289,34 @@ def build_since_visit_data_json(entries_today):
 
 ASSET_PROFILES = [
     {"slug": "petr4", "label": "Petrobras (PETR4)", "terms": ["petr4", "petr3", "petrobras"],
-     "group": "commodities_br",
+     "group": "commodities_br", "quote_ticker": "PETR4",
      "why": "Petrobras é uma das maiores participações do Ibovespa - seus movimentos costumam influenciar o índice como um todo."},
     {"slug": "vale3", "label": "Vale (VALE3)", "terms": ["vale3", "vale"],
-     "group": "commodities_br",
+     "group": "commodities_br", "quote_ticker": "VALE3",
      "why": "Vale é a maior mineradora do Ibovespa e altamente sensível ao preço do minério de ferro na China."},
     {"slug": "itub4", "label": "Itaú (ITUB4)", "terms": ["itub4", "itau", "itaú"],
-     "group": "financeiro_br",
+     "group": "financeiro_br", "quote_ticker": "ITUB4",
      "why": "Itaú é o maior banco privado do país - seus resultados refletem o apetite de crédito da economia brasileira."},
     {"slug": "b3sa3", "label": "B3 (B3SA3)", "terms": ["b3sa3"],
-     "group": "financeiro_br",
+     "group": "financeiro_br", "quote_ticker": "B3SA3",
      "why": "A própria bolsa brasileira - seu desempenho reflete o volume de negociação do mercado como um todo."},
     {"slug": "bbas3", "label": "Banco do Brasil (BBAS3)", "terms": ["bbas3", "banco do brasil"],
-     "group": "financeiro_br",
+     "group": "financeiro_br", "quote_ticker": "BBAS3",
      "why": "Maior banco público do país, com forte exposição ao crédito agrícola e à política de juros."},
     {"slug": "wege3", "label": "WEG (WEGE3)", "terms": ["wege3", "weg"],
-     "group": "industrial_br",
+     "group": "industrial_br", "quote_ticker": "WEGE3",
      "why": "Uma das poucas industrias brasileiras com relevância global - termômetro do setor de bens de capital."},
     {"slug": "aapl", "label": "Apple (AAPL)", "terms": ["aapl", "apple"],
-     "group": "tech_us",
+     "group": "tech_us", "quote_ticker": "AAPL",
      "why": "Uma das empresas mais valiosas do mundo - seus resultados costumam mover o sentimento de toda a bolsa americana."},
     {"slug": "tsla", "label": "Tesla (TSLA)", "terms": ["tsla", "tesla"],
-     "group": "tech_us",
+     "group": "tech_us", "quote_ticker": "TSLA",
      "why": "Referência do setor de veículos elétricos, com volatilidade acima da média entre as big techs."},
     {"slug": "nvda", "label": "Nvidia (NVDA)", "terms": ["nvda", "nvidia"],
-     "group": "tech_us",
+     "group": "tech_us", "quote_ticker": "NVDA",
      "why": "Líder em chips de inteligência artificial - hoje uma das ações mais influentes do mercado americano."},
     {"slug": "msft", "label": "Microsoft (MSFT)", "terms": ["msft", "microsoft"],
-     "group": "tech_us",
+     "group": "tech_us", "quote_ticker": "MSFT",
      "why": "Gigante de tecnologia com forte exposição a nuvem e IA - peso relevante nos índices americanos."},
 ]
 
@@ -1346,8 +1346,54 @@ def match_asset_terms(entry, terms):
     return False
 
 
+MIN_NEWS_THRESHOLD = 2
+ASSET_RECENT_WINDOW_HOURS = 48
+
+
 def get_asset_entries(all_history, terms):
     return [e for e in all_history if match_asset_terms(e, terms)]
+
+
+def get_asset_entries_recent(all_history, terms, hours=ASSET_RECENT_WINDOW_HOURS):
+    """Filtra noticias de um ativo dentro de uma janela de horas (usada
+    para o criterio de volume minimo de qualidade)."""
+    cutoff = datetime.now(BR_TZ) - timedelta(hours=hours)
+    recent = []
+    for e in get_asset_entries(all_history, terms):
+        try:
+            dt = datetime.strptime(e["date"] + " " + e["time"], "%Y-%m-%d %H:%M")
+            dt = dt.replace(tzinfo=BR_TZ)
+        except Exception:
+            continue
+        if dt >= cutoff:
+            recent.append(e)
+    return recent
+
+
+def fetch_asset_quote(ticker_symbol):
+    """Busca a cotacao de um unico ticker via brapi.dev, respeitando o
+    limite de 1 ativo por requisicao do plano gratuito. Falha de forma
+    graciosa: qualquer erro retorna None, e quem chama simplesmente
+    omite o bloco de cotacao, sem quebrar a pagina."""
+    if not BRAPI_TOKEN:
+        return None
+    try:
+        url = "https://brapi.dev/api/quote/" + ticker_symbol + "?token=" + BRAPI_TOKEN
+        response = requests.get(url, timeout=15)
+        if response.status_code != 200:
+            return None
+        data = response.json()
+        results = data.get("results", [])
+        if not results:
+            return None
+        r = results[0]
+        return {
+            "price": r.get("regularMarketPrice"),
+            "change": r.get("regularMarketChangePercent"),
+        }
+    except Exception as e:
+        print("Erro ao buscar cotacao de " + ticker_symbol + " (fallback gracioso): " + str(e))
+        return None
 
 
 def compute_asset_summary_sentence(today_entries, label):
@@ -1459,12 +1505,16 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
     label = profile["label"]
     terms = profile["terms"]
     why_it_matters = profile["why"]
+    quote_ticker = profile.get("quote_ticker", "")
 
     asset_history_entries = get_asset_entries(all_history, terms)
     asset_today_entries = get_asset_entries(entries_today, terms)
+    asset_recent_entries = get_asset_entries_recent(all_history, terms, ASSET_RECENT_WINDOW_HOURS)
 
-    if not asset_history_entries:
+    if len(asset_recent_entries) < MIN_NEWS_THRESHOLD:
         return None
+
+    quote = fetch_asset_quote(quote_ticker) if quote_ticker else None
 
     trend = update_asset_archive_entry(slug, asset_today_entries)
     summary_sentence = compute_asset_summary_sentence(asset_today_entries, label)
@@ -1522,8 +1572,7 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
             "<section><div class='section-head'>"
             "<span class='kicker'>Histórico</span>"
             "<h2>Evolução recente</h2>"
-            "<p style='color:var(--slate);margin-top:10px;'>Estamos começando a acompanhar "
-            + html_module.escape(label) + " a partir de hoje. Volte em alguns dias para ver a evolução.</p>"
+            "<p style='color:var(--slate);margin-top:10px;'>Histórico de cobertura em consolidação para este ativo.</p>"
             "</div>"
             "</section>"
         )
@@ -1556,8 +1605,58 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
             "</section>"
         )
 
+    # Bloco de cotacao: so aparece se a brapi.dev respondeu com sucesso.
+    # Fallback gracioso - se quote for None (falha ou ticker americano
+    # nao suportado no plano gratuito), o bloco inteiro e omitido, sem
+    # gerar erro nem espaco vazio na pagina.
+    quote_block = ""
+    if quote and quote.get("price") is not None:
+        change = quote.get("change") or 0
+        change_class = "alta" if change >= 0 else "baixa"
+        change_sign = "+" if change >= 0 else ""
+        quote_block = (
+            "<div style='display:inline-flex;align-items:center;gap:10px;margin-top:14px;"
+            "padding:8px 16px;background:rgba(255,255,255,0.03);border:1px solid var(--line);"
+            "border-radius:100px;font-family:monospace;'>"
+            "<b>" + html_module.escape(quote_ticker) + "</b>"
+            "<span>" + str(round(quote["price"], 2)) + "</span>"
+            "<span class='badge " + change_class + "'>" + change_sign + str(round(change, 2)) + "%</span>"
+            "</div>"
+        )
+
     meta_description = html_module.escape(summary_sentence[:155])
     updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
+    updated_iso = datetime.now(BR_TZ).isoformat()
+    page_url = "https://antesdosino.com.br/ativos/" + slug + ".html"
+    page_title = html_module.escape(label) + " hoje - notícias e sentimento | Antes do Sino"
+
+    # JSON-LD: descreve o publicador (NewsMediaOrganization) e lista as
+    # noticias da pagina como ItemList - ajuda buscadores a entenderem
+    # a natureza do conteudo sem exigir nenhuma biblioteca externa.
+    schema_items = []
+    for e in sorted_all[:10]:
+        schema_items.append({
+            "@type": "ListItem",
+            "position": len(schema_items) + 1,
+            "url": e.get("link", page_url) or page_url,
+            "name": e["title"],
+        })
+    schema_json = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "NewsMediaOrganization",
+                "name": "Antes do Sino",
+                "url": "https://antesdosino.com.br",
+            },
+            {
+                "@type": "ItemList",
+                "name": "Notícias sobre " + label,
+                "itemListElement": schema_items,
+            },
+        ],
+    }
+    schema_script = json.dumps(schema_json, ensure_ascii=False)
 
     page = (
         "<!DOCTYPE html><html lang='pt-BR'><head>"
@@ -1566,9 +1665,19 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
         "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
         "<meta charset='UTF-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
-        "<title>" + html_module.escape(label) + " hoje - notícias e sentimento | Antes do Sino</title>"
+        "<title>" + page_title + "</title>"
         "<meta name='description' content='" + meta_description + "'>"
+        "<link rel='canonical' href='" + page_url + "'>"
+        "<meta property='og:type' content='website'>"
+        "<meta property='og:title' content='" + page_title + "'>"
+        "<meta property='og:description' content='" + meta_description + "'>"
+        "<meta property='og:url' content='" + page_url + "'>"
+        "<meta property='og:site_name' content='Antes do Sino'>"
+        "<meta name='twitter:card' content='summary'>"
+        "<meta name='twitter:title' content='" + page_title + "'>"
+        "<meta name='twitter:description' content='" + meta_description + "'>"
         "<link rel='stylesheet' href='../assets.css'>"
+        "<script type='application/ld+json'>" + schema_script + "</script>"
         "</head><body>"
         "<nav><div class='brand'>🔔 Antes do Sino</div>"
         "<a href='../index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
@@ -1576,6 +1685,7 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
         "<section><div class='section-head'>"
         "<span class='kicker'>Ativo</span>"
         "<h1 style='font-family:Fraunces,serif;font-size:2rem;font-weight:600;'>" + html_module.escape(label) + "</h1>"
+        + quote_block +
         "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>" + html_module.escape(summary_sentence) + "</p>"
         "<p style='color:var(--slate-dim);margin-top:10px;font-size:0.9rem;border-left:2px solid var(--bronze);padding-left:12px;'>"
         "<b style='color:var(--bronze);'>Por que isso importa:</b> " + html_module.escape(why_it_matters) + "</p>"
@@ -1607,23 +1717,74 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
     return page
 
 
-def generate_asset_pages(all_history, entries_today):
-    """Gera uma pagina por ativo, mas SO quando ha volume real de
-    noticias - nunca cria pagina vazia (evita indexar conteudo fraco)."""
-    os.makedirs("docs/ativos", exist_ok=True)
+def gerar_sitemap_ativos(generated_profiles, diretorio_saida="docs"):
+    """Gera/atualiza o sitemap.xml contendo APENAS as URLs dos ativos
+    efetivamente gerados nesta execucao - ativos sem volume minimo
+    nunca aparecem aqui, evitando que o Google indexe paginas fracas
+    ou inexistentes."""
+    now_iso = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    base_url = "https://antesdosino.com.br"
+
+    urls_xml = (
+        "  <url><loc>" + base_url + "/</loc><lastmod>" + now_iso + "</lastmod></url>\n"
+        "  <url><loc>" + base_url + "/planos.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
+        "  <url><loc>" + base_url + "/como-funciona.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
+    )
+    for p in generated_profiles:
+        urls_xml += (
+            "  <url><loc>" + base_url + "/ativos/" + p["slug"] + ".html</loc>"
+            "<lastmod>" + now_iso + "</lastmod></url>\n"
+        )
+
+    sitemap_xml = (
+        "<?xml version='1.0' encoding='UTF-8'?>\n"
+        "<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>\n"
+        + urls_xml +
+        "</urlset>\n"
+    )
+
+    with open(diretorio_saida + "/sitemap.xml", "w", encoding="utf-8") as f:
+        f.write(sitemap_xml)
+    print("sitemap.xml atualizado com " + str(len(generated_profiles)) + " ativo(s).")
+
+
+def gerar_paginas_ativos(noticias, diretorio_saida="docs/ativos"):
+    """Funcao principal e modular do modulo de paginas de ativos.
+
+    Parametros:
+        noticias: lista completa de noticias ja processadas pelo bot
+                  (historico acumulado, com campos title/body/source/
+                  sentiment/link/time/date).
+        diretorio_saida: pasta onde as paginas HTML serao escritas.
+
+    Regras aplicadas:
+        - So gera pagina para ativos com pelo menos MIN_NEWS_THRESHOLD
+          noticias dentro da janela de ASSET_RECENT_WINDOW_HOURS horas.
+        - Ativos sem volume minimo sao ignorados no build e omitidos
+          do sitemap.xml.
+        - "Ativos relacionados" e calculado por coocorrencia real nas
+          noticias + grupo economico, nunca lista todos os ativos.
+    """
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    entries_today = [e for e in noticias if e.get("date") == today_str]
+
+    os.makedirs(diretorio_saida, exist_ok=True)
     generated = []
 
     generated_slugs = set()
     for profile in ASSET_PROFILES:
-        if get_asset_entries(all_history, profile["terms"]):
+        recent = get_asset_entries_recent(noticias, profile["terms"], ASSET_RECENT_WINDOW_HOURS)
+        if len(recent) >= MIN_NEWS_THRESHOLD:
             generated_slugs.add(profile["slug"])
 
     for profile in ASSET_PROFILES:
-        page_html = build_asset_page_html(profile, all_history, entries_today, generated_slugs)
+        page_html = build_asset_page_html(profile, noticias, entries_today, generated_slugs)
         if page_html is None:
-            print("Sem volume para " + profile["slug"] + " - pagina nao gerada.")
+            print("Volume insuficiente para " + profile["slug"] + " (minimo "
+                  + str(MIN_NEWS_THRESHOLD) + " noticias em " + str(ASSET_RECENT_WINDOW_HOURS)
+                  + "h) - pagina nao gerada.")
             continue
-        with open("docs/ativos/" + profile["slug"] + ".html", "w", encoding="utf-8") as f:
+        with open(diretorio_saida + "/" + profile["slug"] + ".html", "w", encoding="utf-8") as f:
             f.write(page_html)
         generated.append(profile)
         print("Pagina de ativo gerada: " + profile["slug"] + ".html")
@@ -1647,8 +1808,17 @@ def generate_asset_pages(all_history, entries_today):
             "<div class='feed-grid'>" + index_items + "</div></section>"
             "</body></html>"
         )
-        with open("docs/ativos/index.html", "w", encoding="utf-8") as f:
+        with open(diretorio_saida + "/index.html", "w", encoding="utf-8") as f:
             f.write(index_page)
+
+    gerar_sitemap_ativos(generated, diretorio_saida="docs")
+    return generated
+
+
+def generate_asset_pages(all_history, entries_today):
+    """Wrapper mantido por compatibilidade com o restante do bot -
+    delega para a funcao modular gerar_paginas_ativos."""
+    return gerar_paginas_ativos(all_history, diretorio_saida="docs/ativos")
 
 
 PORTAL_HISTORY_FILE = "portal_history.json"
