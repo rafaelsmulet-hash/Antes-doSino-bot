@@ -268,6 +268,54 @@
     .sub-nav{gap:16px;padding:10px 5vw;}
     .nav-links{font-size:0.78rem;}
   }
+.status-badge{color:var(--up);font-size:0.7rem;margin-left:6px;}
+
+.worry-line{
+  display:flex;align-items:center;gap:10px;padding:14px 6vw;
+  font-size:0.95rem;border-bottom:1px solid var(--line);
+}
+.worry-line.calm{background:rgba(124,140,166,0.06);color:var(--slate);}
+.worry-line.alert{background:rgba(226,87,76,0.08);color:var(--cream);}
+.worry-line.info{background:rgba(242,200,121,0.08);color:var(--cream);}
+.worry-dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex-shrink:0;}
+
+.hero-compact{padding:6vh 6vw 3vh;text-align:center;max-width:700px;margin:0 auto;}
+.hero-compact h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:12px;}
+.hero-compact p{color:var(--slate);font-size:1rem;}
+
+.since-visit{
+  max-width:900px;margin:0 auto 20px;padding:14px 22px;
+  background:rgba(242,200,121,0.07);border:1px solid var(--line);
+  border-radius:12px;font-size:0.92rem;color:var(--cream);text-align:center;
+}
+.since-visit-icon{margin-right:6px;}
+
+.signals-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.signal-card{
+  background:rgba(255,255,255,0.035);border:1px solid var(--line);border-radius:16px;
+  padding:24px;display:flex;flex-direction:column;gap:10px;
+  transition:border-color 0.2s ease, transform 0.2s ease;
+}
+.signal-card:hover{border-color:var(--bronze);transform:translateY(-3px);}
+.signal-card h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;line-height:1.35;}
+.signal-card p{color:var(--slate);font-size:0.92rem;line-height:1.55;}
+.signal-reason{font-size:0.78rem;color:var(--bronze);font-weight:600;}
+.soft-cta{text-align:center;margin-top:24px;color:var(--slate);font-size:0.9rem;}
+.soft-cta a{color:var(--gold);font-weight:600;}
+
+.events-section{padding:4vh 6vw;max-width:1120px;margin:0 auto;}
+.events-list{display:flex;flex-direction:column;gap:10px;}
+.event-item{
+  display:flex;align-items:center;gap:16px;padding:14px 20px;
+  background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:12px;
+}
+.event-countdown{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-weight:700;font-size:0.85rem;min-width:80px;}
+.event-label{color:var(--cream);font-weight:600;flex-grow:1;}
+.event-date{color:var(--slate-dim);font-size:0.8rem;}
+
+@media (max-width:860px){
+  .signals-grid{grid-template-columns:1fr;}
+}
 </style>
 </head>
 <body>
@@ -276,6 +324,7 @@
   <div class="brand">
     <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v2M8.5 20a3.5 3.5 0 0 0 7 0M5 17h14l-1.4-2.1A7 7 0 0 1 16.5 11V9a4.5 4.5 0 0 0-9 0v2a7 7 0 0 1-1.1 3.9L5 17Z" stroke="#F2C879" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     Antes do Sino
+    <span class="status-badge" id="status-badge">●</span>
   </div>
   <a href="https://t.me/tribute/app?startapp=sZPm" class="nav-cta">Entrar no grupo</a>
 </nav>
@@ -285,15 +334,30 @@
   <a href="resumo-diario.html" class="nav-links">Resumo diário</a>
 </div>
 
-<div class="hero">
-  <span class="eyebrow"><span class="pulse"></span> Ao vivo agora</span>
-  <h1>O mercado não espera<br>você <em>abrir o app.</em></h1>
-  <p>Notícias de mercado financeiro do Brasil e dos EUA, traduzidas, resumidas e classificadas por sentimento — no instante em que acontecem.</p>
-  <div class="cta-row">
-    <a href="https://t.me/tribute/app?startapp=sZPm" class="btn-primary">Entrar no grupo →</a>
-    <a href="#feed" class="btn-ghost">Ver notícias ao vivo</a>
-  </div>
+<!-- WORRY_LINE_START -->
+<!-- WORRY_LINE_END -->
+
+<div class="hero-compact">
+  <h1>O mercado, em 2 minutos.</h1>
+  <p>Não é mais um agregador de notícia. É a curadoria do que realmente importa hoje.</p>
 </div>
+
+<div id="since-visit-box" class="since-visit" style="display:none;"></div>
+
+<section id="signals">
+  <div class="section-head">
+    <span class="kicker">O que está mexendo com o mercado</span>
+    <h2>Sinais do dia, não notícias soltas</h2>
+  </div>
+  <div class="signals-grid">
+    <!-- SIGNALS_START -->
+    <!-- SIGNALS_END -->
+  </div>
+  <p class="soft-cta">Quer receber esses sinais no instante em que acontecem? <a href="https://t.me/tribute/app?startapp=sZPm">Entrar no grupo</a></p>
+</section>
+
+<!-- EVENTS_START -->
+<!-- EVENTS_END -->
 
 <div class="ticker-wrap">
   <div class="ticker-track" id="ticker-track">
@@ -305,7 +369,7 @@
 
 <section>
   <div class="section-head">
-    <span class="kicker">Cockpit</span>
+    <span class="kicker">Contexto de apoio</span>
     <h2>O mercado, de um só olhar</h2>
   </div>
   <!-- COCKPIT_START -->
@@ -314,8 +378,8 @@
 
 <section id="feed">
   <div class="section-head">
-    <span class="kicker">Ao vivo</span>
-    <h2>As últimas notícias, direto do grupo</h2>
+    <span class="kicker">Aprofunde-se</span>
+    <h2>Todas as notícias de hoje, em ordem cronológica</h2>
   </div>
   <div class="feed-grid" id="feed-grid">
     <!-- FEED_CARDS_START -->
@@ -375,6 +439,45 @@
   </div>
   <span class="mono" id="last-updated">Atualizado automaticamente</span>
 </footer>
+
+<!-- SINCE_VISIT_DATA_START -->
+<script id="since-visit-data" type="application/json">[]</script>
+<!-- SINCE_VISIT_DATA_END -->
+<script>
+(function() {
+  try {
+    var raw = document.getElementById('since-visit-data').textContent;
+    var entries = JSON.parse(raw);
+    var lastVisit = localStorage.getItem('antesdosino_last_visit');
+    var box = document.getElementById('since-visit-box');
+
+    if (lastVisit && entries.length > 0) {
+      var lastVisitTime = new Date(lastVisit).getTime();
+      var newOnes = entries.filter(function(e) {
+        return new Date(e.datetime).getTime() > lastVisitTime;
+      });
+
+      if (newOnes.length > 0) {
+        var highImpact = newOnes.filter(function(e) { return e.sentiment !== 'NEUTRAL'; }).length;
+        var lastVisitDate = new Date(lastVisit);
+        var dateLabel = lastVisitDate.toLocaleDateString('pt-BR') + ', ' + lastVisitDate.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'});
+
+        var html = '<span class="since-visit-icon">⏱</span> Desde sua última visita (' + dateLabel + '): <b>' + newOnes.length + ' notícia' + (newOnes.length > 1 ? 's' : '') + ' nova' + (newOnes.length > 1 ? 's' : '') + '</b>';
+        if (highImpact > 0) {
+          html += ', ' + highImpact + ' de alto impacto';
+        }
+        html += '.';
+        box.innerHTML = html;
+        box.style.display = 'block';
+      }
+    }
+
+    localStorage.setItem('antesdosino_last_visit', new Date().toISOString());
+  } catch (e) {
+    console.log('since-visit indisponivel: ' + e);
+  }
+})();
+</script>
 
 </body>
 </html>
