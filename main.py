@@ -1081,11 +1081,23 @@ def build_worry_line_html(clusters):
         )
 
 
-def build_signals_html(clusters, limit=5):
+def build_signals_html(clusters, generated_asset_slugs=None, limit=5):
     """Monta os cards de 'Sinais do Dia' - as noticias que realmente
-    movimentaram o mercado, rankeadas por relevancia, nao por horario."""
+    movimentaram o mercado, rankeadas por relevancia, nao por horario.
+    Quando a noticia menciona um ativo que ja tem pagina propria
+    gerada, adiciona um link interno para ela - reforca SEO e ajuda o
+    usuario a se aprofundar sem sair da Home."""
+    if generated_asset_slugs is None:
+        generated_asset_slugs = set()
+
     if not clusters:
         return '<p style="color:var(--slate);">Ainda sem sinais suficientes hoje. Volte mais tarde.</p>'
+
+    def find_asset_link(entry):
+        for profile in ASSET_PROFILES:
+            if profile["slug"] in generated_asset_slugs and match_asset_terms(entry, profile["terms"]):
+                return profile
+        return None
 
     cards_html = ""
     for c in clusters[:limit]:
@@ -1103,6 +1115,14 @@ def build_signals_html(clusters, limit=5):
             reason = "Notícia em destaque"
 
         link = rep.get("link", "#") or "#"
+        asset_match = find_asset_link(rep)
+        asset_link_html = ""
+        if asset_match:
+            asset_link_html = (
+                '<a href="ativos/' + asset_match["slug"] + '.html" class="read" '
+                'style="margin-right:16px;">📊 Ver ' + html_module.escape(asset_match["label"]) + "</a>"
+            )
+
         cards_html += (
             '<div class="signal-card">'
             '<div class="card-meta">' + badge +
@@ -1111,7 +1131,8 @@ def build_signals_html(clusters, limit=5):
             "<h3>" + html_module.escape(rep["title"]) + "</h3>"
             "<p>" + html_module.escape(rep["body"]) + "</p>"
             '<span class="signal-reason">🔎 ' + reason + "</span>"
-            '<a href="' + link + '" class="read" target="_blank">Leia mais &rarr;</a>'
+            "<div>" + asset_link_html +
+            '<a href="' + link + '" class="read" target="_blank">Leia mais &rarr;</a></div>'
             "</div>\n"
         )
     return cards_html
@@ -2275,7 +2296,12 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
         template = before + start_marker_w + "\n" + worry_html + end_marker_w + after
 
     if start_marker_s in template and end_marker_s in template:
-        signals_html = build_signals_html(clusters)
+        generated_asset_slugs_for_home = set()
+        for profile in ASSET_PROFILES:
+            recent = get_asset_entries_recent(entries, profile["terms"], ASSET_RECENT_WINDOW_HOURS)
+            if len(recent) >= MIN_NEWS_THRESHOLD:
+                generated_asset_slugs_for_home.add(profile["slug"])
+        signals_html = build_signals_html(clusters, generated_asset_slugs_for_home)
         before = template.split(start_marker_s)[0]
         after = template.split(end_marker_s)[1]
         template = before + start_marker_s + "\n" + signals_html + end_marker_s + after
