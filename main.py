@@ -7,6 +7,7 @@ import hashlib
 import re
 import difflib
 import html as html_module
+import unicodedata
 from datetime import datetime, timezone, timedelta
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
@@ -1141,7 +1142,8 @@ def build_signals_html(clusters, generated_asset_slugs=None, limit=5):
 EVENTS_STATE_FILE = "events_detected.json"
 
 SEED_EVENTS = [
-    {"date": "2026-08-04", "label": "Reunião do Copom (decisão da Selic)"},
+    {"date": "2026-08-04", "label": "Reunião do Copom (decisão da Selic)",
+     "keywords": ["copom", "selic", "juros"], "organizer": "Banco Central do Brasil"},
 ]
 
 
@@ -1160,11 +1162,25 @@ def save_events_state(state):
         json.dump(state, f, ensure_ascii=False)
 
 
+def guess_event_organizer(label, keywords):
+    """Heuristica simples para o campo organizer do schema.org Event -
+    reconhece organizadores conhecidos de eventos recorrentes; para
+    eventos genericos extraidos automaticamente, usa o proprio site
+    como fonte de cobertura (nao como organizador do evento real)."""
+    text = (label + " " + " ".join(keywords)).lower()
+    if "copom" in text or "selic" in text:
+        return "Banco Central do Brasil"
+    if "fed" in text or "fomc" in text:
+        return "Federal Reserve"
+    return "Antes do Sino (cobertura)"
+
+
 def extract_events_from_news(entries_today):
     """Usa a Groq para ler as manchetes do dia e identificar mencoes a
     eventos futuros especificos (reunioes, decisoes, divulgacoes) com
     data conhecida - permitindo que a secao de eventos se atualize
-    sozinha, sem precisar de aviso manual."""
+    sozinha, sem precisar de aviso manual. Tambem extrai palavras-chave
+    associadas, necessarias para depois vincular noticias ao evento."""
     if not USE_AI or not entries_today:
         return []
 
@@ -1179,9 +1195,12 @@ def extract_events_from_news(entries_today):
         "mercado, etc). Ignore qualquer noticia que nao mencione uma data futura clara.\n\n"
         "Manchetes:\n" + headlines_text + "\n\n"
         "Responda APENAS em JSON plano, uma lista, sem markdown. Formato exato:\n"
-        '[{"date": "AAAA-MM-DD", "label": "Descricao curta do evento"}]\n\n'
-        "Se nao houver nenhum evento futuro claro e com data especifica mencionada, "
-        "responda apenas: []"
+        '[{"date": "AAAA-MM-DD", "label": "Descricao curta do evento", '
+        '"keywords": ["palavra1", "palavra2"]}]\n\n'
+        "O campo keywords deve conter 2 a 4 termos curtos (em portugues, minusculas) "
+        "que apareceriam em noticias relacionadas a esse evento, para permitir "
+        "encontrar essas noticias depois. Se nao houver nenhum evento futuro claro e "
+        "com data especifica mencionada, responda apenas: []"
     )
 
     try:
@@ -1194,7 +1213,14 @@ def extract_events_from_news(entries_today):
         for item in parsed:
             try:
                 datetime.strptime(item["date"], "%Y-%m-%d")
-                valid.append({"date": item["date"], "label": item["label"]})
+                keywords = item.get("keywords", [])
+                if not isinstance(keywords, list):
+                    keywords = []
+                valid.append({
+                    "date": item["date"],
+                    "label": item["label"],
+                    "keywords": [str(k).lower() for k in keywords][:4],
+                })
             except Exception:
                 continue
         return valid
@@ -1221,9 +1247,10 @@ def update_events_registry(entries_today):
                 existing_labels.add(ev["label"].lower().strip())
 
         today_date = datetime.now(BR_TZ).date()
+        retention_cutoff = today_date - timedelta(days=2)
         existing = [
             e for e in existing
-            if datetime.strptime(e["date"], "%Y-%m-%d").date() >= today_date
+            if datetime.strptime(e["date"], "%Y-%m-%d").date() >= retention_cutoff
         ]
 
         state["events"] = existing
@@ -1773,6 +1800,16 @@ def gerar_sitemap_completo(diretorio_docs="docs"):
                     "<lastmod>" + now_iso + "</lastmod></url>\n"
                 )
 
+    eventos_dir = diretorio_docs + "/eventos"
+    if os.path.isdir(eventos_dir):
+        for filename in sorted(os.listdir(eventos_dir)):
+            if filename.endswith(".html") and filename != "index.html":
+                slug = filename[:-5]
+                urls_xml += (
+                    "  <url><loc>" + base_url + "/eventos/" + slug + ".html</loc>"
+                    "<lastmod>" + now_iso + "</lastmod></url>\n"
+                )
+
     sitemap_xml = (
         "<?xml version='1.0' encoding='UTF-8'?>\n"
         "<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>\n"
@@ -2210,6 +2247,338 @@ def gerar_paginas_temas(noticias, diretorio_saida="docs/temas"):
     return generated
 
 
+MIN_EVENT_NEWS_THRESHOLD = 2
+EVENT_WINDOW_DAYS_PAST = 2
+EVENT_WINDOW_DAYS_FUTURE = 30
+
+
+def slugify_label(label):
+    """Converte um rotulo de evento em slug de URL, sem depender de
+    biblioteca externa - remove acentos via unicodedata (biblioteca
+    padrao do Python) e troca qualquer caractere fora de a-z0-9 por
+    hifen."""
+    normalized = unicodedata.normalize("NFKD", label)
+    without_accents = "".join(c for c in normalized if not unicodedata.combining(c))
+    lowered = without_accents.lower()
+    slug = re.sub(r"[^a-z0-9]+", "-", lowered).strip("-")
+    return slug
+
+
+def get_event_keywords(event):
+    """Retorna as palavras-chave do evento, com fallback para eventos
+    antigos no registro que foram salvos antes do campo 'keywords'
+    existir - nesse caso, deriva palavras a partir do proprio rotulo."""
+    keywords = event.get("keywords", [])
+    if keywords:
+        return keywords
+    words = re.findall(r"[a-zA-ZÀ-ÿ]{4,}", event["label"].lower())
+    return words[:4]
+
+
+def match_event_keywords(entry, keywords):
+    text = (entry["title"] + " " + entry["body"]).lower()
+    for kw in keywords:
+        if re.search(r"\b" + re.escape(kw.lower()) + r"\b", text):
+            return True
+    return False
+
+
+def get_event_entries(all_history, event):
+    keywords = get_event_keywords(event)
+    if not keywords:
+        return []
+    return [e for e in all_history if match_event_keywords(e, keywords)]
+
+
+def is_event_in_window(event_date_str, days_past=EVENT_WINDOW_DAYS_PAST, days_future=EVENT_WINDOW_DAYS_FUTURE):
+    """Verifica se a data do evento esta dentro da janela valida:
+    ocorrido ha no maximo 'days_past' dias, ou previsto para os
+    proximos 'days_future' dias."""
+    try:
+        event_date = datetime.strptime(event_date_str, "%Y-%m-%d").date()
+    except Exception:
+        return False
+    today = datetime.now(BR_TZ).date()
+    days_diff = (event_date - today).days
+    return -days_past <= days_diff <= days_future
+
+
+def compute_related_assets_for_event(event_entries, generated_asset_slugs):
+    scored = []
+    for profile in ASSET_PROFILES:
+        if profile["slug"] not in generated_asset_slugs:
+            continue
+        co_occurrence = sum(1 for e in event_entries if match_asset_terms(e, profile["terms"]))
+        if co_occurrence > 0:
+            scored.append((profile, co_occurrence))
+    scored.sort(key=lambda pair: pair[1], reverse=True)
+    return [pair[0] for pair in scored[:4]]
+
+
+def compute_related_themes_for_event(event_entries, generated_theme_slugs):
+    scored = []
+    for theme in THEME_PROFILES:
+        if theme["slug"] not in generated_theme_slugs:
+            continue
+        co_occurrence = sum(1 for e in event_entries if match_theme_keywords(e, theme["keywords"]))
+        if co_occurrence > 0:
+            scored.append((theme, co_occurrence))
+    scored.sort(key=lambda pair: pair[1], reverse=True)
+    return [pair[0] for pair in scored[:3]]
+
+
+def build_event_page_html(event, all_history, generated_asset_slugs, generated_theme_slugs):
+    label = event["label"]
+    event_date_str = event["date"]
+    keywords = get_event_keywords(event)
+    slug = slugify_label(label)
+
+    event_entries = get_event_entries(all_history, event)
+
+    if len(event_entries) < MIN_EVENT_NEWS_THRESHOLD:
+        return None
+    if not is_event_in_window(event_date_str):
+        return None
+
+    event_date = datetime.strptime(event_date_str, "%Y-%m-%d").date()
+    today = datetime.now(BR_TZ).date()
+    days_diff = (event_date - today).days
+    display_date = event_date.strftime("%d/%m/%Y")
+
+    if days_diff > 0:
+        timing_note = "Previsto para " + display_date + " (em " + str(days_diff) + " dia(s))."
+    elif days_diff == 0:
+        timing_note = "Acontece hoje, " + display_date + "."
+    else:
+        timing_note = "Ocorreu em " + display_date + " (há " + str(abs(days_diff)) + " dia(s))."
+
+    organizer = event.get("organizer") or guess_event_organizer(label, keywords)
+
+    def sentiment_badge(s):
+        if s == "BULLISH":
+            return '<span class="badge alta">ALTA</span>'
+        if s == "BEARISH":
+            return '<span class="badge baixa">BAIXA</span>'
+        return '<span class="badge info">INFO</span>'
+
+    def render_card(e):
+        link = e.get("link", "#") or "#"
+        return (
+            '<div class="card">'
+            '<div class="card-meta">' + sentiment_badge(e["sentiment"]) +
+            '<span class="src">' + html_module.escape(e["source"]) + "</span>"
+            '<span class="time">' + e.get("date", "") + " " + e["time"] + "</span></div>"
+            "<h3>" + html_module.escape(e["title"]) + "</h3>"
+            "<p>" + html_module.escape(e["body"]) + "</p>"
+            '<a href="' + link + '" class="read" target="_blank">Leia mais &rarr;</a>'
+            "</div>\n"
+        )
+
+    bullish_items = [e for e in event_entries if e["sentiment"] == "BULLISH"]
+    bearish_items = [e for e in event_entries if e["sentiment"] == "BEARISH"]
+    neutral_items = [e for e in event_entries if e["sentiment"] == "NEUTRAL"]
+
+    def render_group(items, title, color_var):
+        if not items:
+            return ""
+        cards = ""
+        for e in items[:6]:
+            cards += render_card(e)
+        return (
+            "<div style='margin-bottom:28px;'>"
+            "<h3 style='color:var(--" + color_var + ");font-size:1rem;margin-bottom:12px;'>"
+            + title + " (" + str(len(items)) + ")</h3>"
+            "<div class='feed-grid'>" + cards + "</div>"
+            "</div>"
+        )
+
+    sentiment_groups_html = (
+        render_group(bullish_items, "🟢 Notícias de Alta", "up")
+        + render_group(bearish_items, "🟡 Notícias de Baixa", "down")
+        + render_group(neutral_items, "⚪ Informativas", "slate")
+    )
+    if not sentiment_groups_html:
+        sentiment_groups_html = '<p style="color:var(--slate);">Sem notícias suficientes agrupadas ainda.</p>'
+
+    related_assets = compute_related_assets_for_event(event_entries, generated_asset_slugs)
+    related_themes = compute_related_themes_for_event(event_entries, generated_theme_slugs)
+
+    related_links_html = ""
+    for a in related_assets:
+        related_links_html += '<a href="../ativos/' + a["slug"] + '.html" class="nav-links" style="margin-right:14px;">' + html_module.escape(a["label"]) + "</a>"
+    for t in related_themes:
+        related_links_html += '<a href="../temas/' + t["slug"] + '.html" class="nav-links" style="margin-right:14px;">' + html_module.escape(t["label"]) + "</a>"
+
+    related_block = ""
+    if related_links_html:
+        related_block = (
+            "<section><div class='section-head'>"
+            "<span class='kicker'>Ativos e temas impactados</span>"
+            "</div>"
+            "<div>" + related_links_html + "</div>"
+            "</section>"
+        )
+
+    summary_context = (
+        label + ". " + timing_note + " Acompanhe abaixo o que as notícias mais recentes "
+        "dizem sobre o possível impacto no mercado."
+    )
+    meta_description = html_module.escape(summary_context[:155])
+    updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
+    page_url = "https://antesdosino.com.br/eventos/" + slug + ".html"
+    page_title = html_module.escape(label) + " - contexto e notícias | Antes do Sino"
+
+    schema_json = {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": label,
+        "startDate": event_date_str,
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+            "@type": "VirtualLocation",
+            "url": page_url,
+        },
+        "description": summary_context,
+        "organizer": {
+            "@type": "Organization",
+            "name": organizer,
+        },
+    }
+    schema_script = json.dumps(schema_json, ensure_ascii=False)
+
+    page = (
+        "<!DOCTYPE html><html lang='pt-BR'><head>"
+        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
+        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+        "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<meta charset='UTF-8'>"
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        "<title>" + page_title + "</title>"
+        "<meta name='description' content='" + meta_description + "'>"
+        "<link rel='canonical' href='" + page_url + "'>"
+        "<meta property='og:type' content='website'>"
+        "<meta property='og:title' content='" + page_title + "'>"
+        "<meta property='og:description' content='" + meta_description + "'>"
+        "<meta property='og:url' content='" + page_url + "'>"
+        "<meta property='og:site_name' content='Antes do Sino'>"
+        "<meta name='twitter:card' content='summary'>"
+        "<meta name='twitter:title' content='" + page_title + "'>"
+        "<meta name='twitter:description' content='" + meta_description + "'>"
+        "<link rel='stylesheet' href='../assets.css'>"
+        "<script type='application/ld+json'>" + schema_script + "</script>"
+        "</head><body>"
+        "<nav><div class='brand'>🔔 Antes do Sino</div>"
+        "<a href='../index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Evento</span>"
+        "<h1 style='font-family:Fraunces,serif;font-size:2rem;font-weight:600;'>" + html_module.escape(label) + "</h1>"
+        "<p style='color:var(--gold);margin-top:10px;font-weight:600;'>" + timing_note + "</p>"
+        "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>Acompanhe o que o mercado está dizendo "
+        "sobre este evento e o possível impacto nos preços.</p>"
+        "</div></section>"
+
+        "<section><div class='section-head'>"
+        "<span class='kicker'>Notícias e análises relacionadas</span>"
+        "<h2>O que estão dizendo sobre este evento</h2>"
+        "</div>"
+        + sentiment_groups_html +
+        "</section>"
+
+        + related_block +
+
+        "<footer><span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>"
+        "<span class='mono'>Atualizado em " + updated_at + "</span></footer>"
+        "</body></html>"
+    )
+
+    return page
+
+
+def gerar_paginas_eventos(noticias, diretorio_saida="docs/eventos"):
+    """Funcao principal e modular de geracao das paginas de evento.
+
+    Parametros:
+        noticias: lista completa de noticias ja processadas pelo bot
+                  (historico acumulado).
+        diretorio_saida: pasta onde as paginas HTML serao escritas.
+
+    Regras aplicadas:
+        - Fonte dos eventos: registro automatico (events_detected.json,
+          extraido pela Groq a partir das proprias noticias) + lista
+          minima de referencia (SEED_EVENTS).
+        - So gera pagina se a data estiver dentro da janela valida
+          (ocorrido ha no maximo 2 dias, ou previsto para os proximos
+          30 dias) E houver pelo menos MIN_EVENT_NEWS_THRESHOLD
+          noticias associadas.
+        - Links para ativos/temas sao por coocorrencia real, nunca
+          listam tudo.
+        - Atualiza o sitemap.xml ao final (via escaneamento de disco).
+    """
+    os.makedirs(diretorio_saida, exist_ok=True)
+
+    events_state = load_events_state()
+    candidate_events = list(SEED_EVENTS) + events_state.get("events", [])
+
+    seen_labels = set()
+    unique_events = []
+    for ev in candidate_events:
+        key = ev["label"].lower().strip()
+        if key not in seen_labels:
+            seen_labels.add(key)
+            unique_events.append(ev)
+
+    generated_theme_slugs = set()
+    for theme in THEME_PROFILES:
+        recent = get_theme_entries_recent(noticias, theme["keywords"], ASSET_RECENT_WINDOW_HOURS)
+        if len(recent) >= MIN_THEME_NEWS_THRESHOLD:
+            generated_theme_slugs.add(theme["slug"])
+
+    generated_asset_slugs = set()
+    for profile in ASSET_PROFILES:
+        recent = get_asset_entries_recent(noticias, profile["terms"], ASSET_RECENT_WINDOW_HOURS)
+        if len(recent) >= MIN_NEWS_THRESHOLD:
+            generated_asset_slugs.add(profile["slug"])
+
+    generated = []
+    for event in unique_events:
+        page_html = build_event_page_html(event, noticias, generated_asset_slugs, generated_theme_slugs)
+        if page_html is None:
+            print("Evento '" + event["label"] + "' fora da janela valida ou sem "
+                  "volume minimo - pagina nao gerada.")
+            continue
+        slug = slugify_label(event["label"])
+        with open(diretorio_saida + "/" + slug + ".html", "w", encoding="utf-8") as f:
+            f.write(page_html)
+        generated.append({"slug": slug, "label": event["label"]})
+        print("Pagina de evento gerada: " + slug + ".html")
+
+    if generated:
+        index_items = ""
+        for ev in generated:
+            index_items += (
+                '<div class="card"><h3><a href="' + ev["slug"] + '.html" style="color:var(--cream);">'
+                + html_module.escape(ev["label"]) + "</a></h3></div>"
+            )
+        index_page = (
+            "<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'>"
+            "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+            "<title>Eventos acompanhados | Antes do Sino</title>"
+            "<link rel='stylesheet' href='../assets.css'></head><body>"
+            "<nav><div class='brand'>🔔 Antes do Sino</div>"
+            "<a href='../index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
+            "<section><div class='section-head'><span class='kicker'>Eventos</span>"
+            "<h2>Eventos econômicos acompanhados</h2></div>"
+            "<div class='feed-grid'>" + index_items + "</div></section>"
+            "</body></html>"
+        )
+        with open(diretorio_saida + "/index.html", "w", encoding="utf-8") as f:
+            f.write(index_page)
+
+    gerar_sitemap_completo(diretorio_docs="docs")
+    return generated
+
+
 PORTAL_HISTORY_FILE = "portal_history.json"
 
 
@@ -2406,6 +2775,7 @@ def main():
     build_daily_summary_html(entries_today, today_str)
     generate_asset_pages(all_portal_entries, entries_today)
     gerar_paginas_temas(all_portal_entries, diretorio_saida="docs/temas")
+    gerar_paginas_eventos(all_portal_entries, diretorio_saida="docs/eventos")
 
     if should_run_premarket_carousel():
         print("Horario da pre-abertura detectado, gerando carrossel automatico...")
