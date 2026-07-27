@@ -463,43 +463,6 @@ def build_terminal_news_html(entries, limit=8):
     return rows
 
 
-def compute_hourly_volume(entries_today):
-    """Conta quantas noticias saíram em cada hora do dia (a partir do
-    campo 'time' HH:MM ja registrado em cada entrada)."""
-    counts = {}
-    for e in entries_today:
-        time_str = e.get("time", "")
-        if ":" in time_str:
-            hour = time_str.split(":")[0]
-            counts[hour] = counts.get(hour, 0) + 1
-    return counts
-
-
-def build_hourly_volume_html(entries_today):
-    counts = compute_hourly_volume(entries_today)
-
-    if not counts:
-        return '<div class="hourly-empty">Sem notícias registradas hoje ainda.</div>'
-
-    sorted_hours = sorted(counts.keys(), key=lambda h: int(h))
-    max_count = max(counts.values())
-
-    rows = ""
-    for hour in sorted_hours:
-        count = counts[hour]
-        width_pct = round((count / max_count) * 100)
-        rows += (
-            '<div class="hourly-row">'
-            '<span class="hourly-hour">' + hour + "h</span>"
-            '<div class="hourly-bar-track">'
-            '<div class="hourly-bar-fill" style="width:' + str(width_pct) + '%"></div>'
-            "</div>"
-            '<span class="hourly-count">' + str(count) + "</span>"
-            "</div>"
-        )
-    return rows
-
-
 def build_cockpit_html(portal_entries, entries_today=None):
     if entries_today is None:
         entries_today = portal_entries
@@ -512,7 +475,6 @@ def build_cockpit_html(portal_entries, entries_today=None):
     top_mentions = compute_top_mentions(portal_entries)
     status = market_status()
     terminal_rows = build_terminal_news_html(portal_entries)
-    hourly_html = build_hourly_volume_html(entries_today)
 
     quotes_html = ""
     for q in quotes:
@@ -602,11 +564,6 @@ def build_cockpit_html(portal_entries, entries_today=None):
         '<div class="cockpit-card terminal-card">'
         '<span class="cockpit-label">Terminal de notícias</span>'
         '<div class="terminal-list">' + terminal_rows + "</div>"
-        "</div>"
-
-        '<div class="cockpit-card hourly-card">'
-        '<span class="cockpit-label">Volume de notícias por horário</span>'
-        '<div class="hourly-list">' + hourly_html + "</div>"
         "</div>"
 
         "</div>"
@@ -1414,7 +1371,11 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
         since_visit_json = build_since_visit_data_json(entries_for_today)
         before = template.split(start_marker_v)[0]
         after = template.split(end_marker_v)[1]
-        template = before + start_marker_v + "\n" + since_visit_json + "\n" + end_marker_v + after
+        script_block = (
+            "<script id=\"since-visit-data\" type=\"application/json\">"
+            + since_visit_json + "</script>"
+        )
+        template = before + start_marker_v + "\n" + script_block + "\n" + end_marker_v + after
 
     updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
     template = template.replace(
