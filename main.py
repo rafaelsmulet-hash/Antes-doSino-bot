@@ -269,6 +269,23 @@ def ask_groq(prompt):
 
 IMPACT_FALLBACK = "Curto Prazo | Acompanhamento de Mercado"
 
+VALUE_PROP_BLOCK = (
+    "<section style='background:rgba(255,255,255,0.02);border-top:1px solid var(--line);'>"
+    "<div class='section-head'>"
+    "<span class='kicker'>Antes do Sino</span>"
+    "<h2>Isso é o Antes do Sino</h2>"
+    "</div>"
+    "<p style='color:var(--slate);max-width:640px;'>"
+    "Notícias de mercado traduzidas, resumidas e classificadas por sentimento, reunidas "
+    "num só lugar. Esta página é gratuita e sempre vai ser."
+    "</p>"
+    "<p style='margin-top:16px;'>"
+    "<a href='https://t.me/tribute/app?startapp=sZPm' style='color:var(--gold);font-weight:600;'>"
+    "Prefere receber isso direto no Telegram, sem precisar voltar aqui? Entrar no grupo &rarr;"
+    "</a></p>"
+    "</section>"
+)
+
 
 def is_market_relevant_ai(title, body):
     """Chamada leve e dedicada a Groq, usada pelo encaminhador de
@@ -2479,6 +2496,7 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs, 
         "</section>"
 
         + related_block +
+        VALUE_PROP_BLOCK +
 
         "<footer><span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>"
         "<span class='mono'>Atualizado em " + updated_at + "</span></footer>"
@@ -2949,6 +2967,7 @@ def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_t
         "</section>"
 
         + related_block +
+        VALUE_PROP_BLOCK +
 
         "<footer><span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>"
         "<span class='mono'>Atualizado em " + updated_at + "</span></footer>"
@@ -3286,6 +3305,7 @@ def build_event_page_html(event, all_history, generated_asset_slugs, generated_t
         "</section>"
 
         + related_block +
+        VALUE_PROP_BLOCK +
 
         "<footer><span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>"
         "<span class='mono'>Atualizado em " + updated_at + "</span></footer>"
