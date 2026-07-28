@@ -2078,57 +2078,72 @@ def ordinal_pt(n):
     return mapa.get(n, str(n) + "º")
 
 
+def narrative_name(label):
+    """Remove o ticker entre parenteses (ex: '(PETR4)') do rotulo -
+    usado so na camada narrativa, para o texto ler como comentario de
+    analista, nao como rotulo de pagina/menu."""
+    if " (" in label:
+        return label.split(" (")[0]
+    return label
+
+
 def describe_share(label, stat, kind_word):
+    """Sem numero de percentual - so a qualificacao editorial de
+    quanto aquilo dominou o noticiario do dia."""
     if stat["count_today"] == 0:
         return None
     share = stat["share_today"]
-    pct = round(share * 100)
+    name = narrative_name(label)
     if share >= SHARE_STRONG_THRESHOLD:
-        return label + " concentrou " + str(pct) + "% das notícias relevantes de hoje."
+        return name + " dominou o noticiário do dia."
     if share >= SHARE_MODERATE_THRESHOLD:
-        return label + " respondeu por " + str(pct) + "% das notícias relevantes de hoje."
+        return name + " teve presença relevante nas notícias de hoje."
     return None
 
 
 def describe_streak(label, stat, kind_label):
+    """Sempre nomeia a entidade explicitamente - nunca fica generico
+    tipo 'entre os temas mais comentados' sem dizer qual."""
     streak = stat["streak"]
+    name = narrative_name(label)
     if streak < STREAK_MIN_TO_MENTION:
         return None
     if streak == STREAK_MIN_TO_MENTION:
-        return "É o segundo dia consecutivo entre " + kind_label + " mais comentados."
-    return "É o " + ordinal_pt(streak) + " dia consecutivo entre " + kind_label + " mais comentados."
+        return name + " lidera o noticiário pelo segundo dia seguido."
+    return name + " lidera o noticiário pelo " + ordinal_pt(streak) + " dia seguido."
 
 
 def describe_rising(label, stat):
+    """Sem numero de razao (Nx) - so a qualificacao de que a atencao
+    saiu do padrao normal."""
     if not stat["is_rising"]:
         return None
-    weekly_avg = stat["weekly_avg"]
-    if weekly_avg <= 0:
-        return None
-    ratio = stat["count_today"] / weekly_avg
-    ratio_str = str(round(ratio, 1))
-    if ratio_str.endswith(".0"):
-        ratio_str = ratio_str[:-2]
-    return label + " ganhou atenção fora do padrão: " + ratio_str + "x mais menções do que a média dos últimos dias."
+    name = narrative_name(label)
+    return name + " voltou a ganhar atenção do mercado, bem acima do que vinha sendo comum nos últimos dias."
 
 
 def describe_disappeared(label, stat):
     if not stat["is_disappeared"]:
         return None
-    return label + " praticamente desapareceu das manchetes hoje, após presença constante nos últimos dias."
+    name = narrative_name(label)
+    return name + " praticamente saiu do radar hoje, depois de aparecer com frequência nos últimos dias."
 
 
 def describe_sentiment_shift(label, stat):
+    """Descreve a mudanca de tom sem atribuir causa - o dado mostra
+    apenas a variacao na proporcao de noticias positivas/negativas,
+    nao o motivo por tras dela."""
     today = stat["sentiment_today"]
     week_avg = stat["sentiment_week_avg"]
     if today is None or week_avg is None:
         return None
     diff = today["alta_pct"] - week_avg
+    name = narrative_name(label)
     if abs(diff) < SENTIMENT_SHIFT_MIN_POINTS:
         return None
     if diff > 0:
-        return "O sentimento em torno de " + label + " ficou mais positivo do que o normal nos últimos dias."
-    return "O sentimento em torno de " + label + " ficou mais negativo do que o normal nos últimos dias."
+        return "O noticiário sobre " + name + " ficou mais positivo do que o normal nos últimos dias."
+    return "O noticiário sobre " + name + " ficou mais negativo do que o normal nos últimos dias."
 
 
 def build_entity_insights(slug, stats, label, kind_label_plural):
@@ -2174,6 +2189,9 @@ def build_market_insights(intelligence):
         slug = theme["slug"]
         theme_insights[slug] = build_entity_insights(slug, theme_stats, theme["label"], "os temas")
 
+    PRIORITY_P1 = 3
+    PRIORITY_P2 = 2
+
     home_candidates = []
 
     dom_theme_slug = intelligence["dominant_theme_today"]
@@ -2182,7 +2200,7 @@ def build_market_insights(intelligence):
         stat = theme_stats[dom_theme_slug]
         sentence = describe_share(theme_label, stat, "")
         if sentence:
-            home_candidates.append((3, sentence))
+            home_candidates.append((PRIORITY_P1, sentence))
 
     dom_asset_slug = intelligence["dominant_asset_today"]
     if dom_asset_slug:
@@ -2190,34 +2208,34 @@ def build_market_insights(intelligence):
         stat = asset_stats[dom_asset_slug]
         sentence = describe_share(asset_label, stat, "")
         if sentence:
-            home_candidates.append((3, sentence))
+            home_candidates.append((PRIORITY_P1, sentence))
         streak_sentence = describe_streak(asset_label, stat, "os ativos")
         if streak_sentence:
-            home_candidates.append((2, streak_sentence))
+            home_candidates.append((PRIORITY_P2, streak_sentence))
 
     if dom_theme_slug:
         theme_label = next(t["label"] for t in THEME_PROFILES if t["slug"] == dom_theme_slug)
         streak_sentence = describe_streak(theme_label, theme_stats[dom_theme_slug], "os temas")
         if streak_sentence:
-            home_candidates.append((2, streak_sentence))
+            home_candidates.append((PRIORITY_P2, streak_sentence))
 
     for profile in ASSET_PROFILES:
         stat = asset_stats[profile["slug"]]
         sentence = describe_rising(profile["label"], stat) or describe_disappeared(profile["label"], stat)
         if sentence:
-            home_candidates.append((4, sentence))
+            home_candidates.append((PRIORITY_P1, sentence))
 
     for theme in THEME_PROFILES:
         stat = theme_stats[theme["slug"]]
         sentence = describe_rising(theme["label"], stat) or describe_disappeared(theme["label"], stat)
         if sentence:
-            home_candidates.append((4, sentence))
+            home_candidates.append((PRIORITY_P1, sentence))
 
     if dom_theme_slug:
         theme_label = next(t["label"] for t in THEME_PROFILES if t["slug"] == dom_theme_slug)
         sentiment_sentence = describe_sentiment_shift(theme_label, theme_stats[dom_theme_slug])
         if sentiment_sentence:
-            home_candidates.append((1, sentiment_sentence))
+            home_candidates.append((PRIORITY_P2, sentiment_sentence))
 
     home_candidates.sort(key=lambda pair: pair[0], reverse=True)
     seen = set()
