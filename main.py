@@ -446,11 +446,15 @@ def format_message(source, entry, ai_result):
     if smart_link:
         link_line = "\n\n📍 Ver detalhes: " + smart_link
 
+    source_line = ""
+    if source_esc.strip():
+        source_line = "\n\n<i>" + source_esc + "</i>"
+
     result = (
         marker + " <b>" + sentiment_label + "</b> " + title_esc + "\n"
         "└ ⏱️ Impacto: " + impacto_esc + "\n"
-        + bullets_html +
-        "\n\n<i>" + source_esc + "</i>"
+        + bullets_html
+        + source_line
         + link_line
     )
     if len(result) > 3900:
@@ -3048,10 +3052,40 @@ def fetch_channel_posts(channel_username):
 
 
 def clean_channel_post_text(text):
+    """Remove assinatura de canal e links soltos, mas preserva quebras
+    de paragrafo duplas (\\n\\n) - elas sao o sinal usado para separar
+    manchetes distintas dentro do mesmo post, em split_channel_post_into_items."""
     text = re.sub(r"\n*Grupo Bovespa News\s*$", "", text, flags=re.IGNORECASE).strip()
     text = re.sub(r"^\s*t\.me/\S+\s*$", "", text, flags=re.IGNORECASE | re.MULTILINE).strip()
-    text = re.sub(r"\n{2,}", "\n", text).strip()
     return text
+
+
+def split_channel_post_into_items(raw_text):
+    """Um unico post de canal pode conter mais de uma manchete
+    distinta, separadas por linha em branco. Divide o texto em itens
+    individuais (titulo + corpo), garantindo que cada manchete vire
+    uma mensagem propria no Telegram, nunca misturadas num so balao.
+    Blocos que sao apenas o nome de uma agencia (ex: 'Reuters' isolado
+    numa linha) nao viram item novo - sao anexados como atribuicao do
+    item anterior."""
+    text = clean_channel_post_text(raw_text)
+    blocks = [b.strip() for b in re.split(r"\n{2,}", text) if b.strip()]
+
+    items = []
+    for block in blocks:
+        linhas = [l.strip() for l in block.split("\n") if l.strip()]
+        if not linhas:
+            continue
+
+        if len(linhas) == 1 and linhas[0].lower() in [a.lower() for a in KNOWN_AGENCIES]:
+            if items:
+                items[-1]["agency_hint"] = linhas[0]
+            continue
+
+        titulo = linhas[0]
+        corpo = "\n".join(linhas[1:]).strip()
+        items.append({"titulo": titulo, "corpo": corpo, "agency_hint": ""})
+    return items
 
 
 def is_channel_bio(text):
@@ -3071,19 +3105,6 @@ def detect_real_source(clean_text, clean_channel):
         if agency.lower() in clean_text.lower():
             return agency
     return CHANNEL_DISPLAY_NAMES.get(clean_channel.lower(), clean_channel)
-
-
-def classify_channel_sentiment(title):
-    """Classificacao leve por palavra-chave (sem chamada de IA) - os
-    posts encaminhados sao curtos e diretos, entao essa heuristica e
-    suficiente e evita gasto extra de cota da Groq."""
-    title_lower = title.lower()
-    if any(w in title_lower for w in ["alta", "sobe", "lucro", "dispara", "recorde", "bullish"]):
-        return "BULLISH"
-    elif any(w in title_lower for w in ["queda", "cai", "prejuizo", "desaba", "recua", "bearish"]):
-        return "BEARISH"
-    else:
-        return "NEUTRAL"
 
 
 def process_forwarded_channels():
@@ -3114,75 +3135,64 @@ def process_forwarded_channels():
         new_posts = [p for p in posts if p["id"] > last_id]
 
         for post in new_posts:
-            clean_text = clean_channel_post_text(post["text"])
+            items = split_channel_post_into_items(post["text"])
 
-            if is_channel_bio(clean_text):
-                print("Ignorado (bio do canal): " + clean_text[:60])
-                continue
-            if not clean_text:
+            if not items:
                 continue
 
-            fonte_detectada = detect_real_source(clean_text, clean_channel)
-            clean_text = re.sub(
-                r"(?i)^\s*(reuters|bloomberg|cnbc|wsj)\s*$", "", clean_text, flags=re.MULTILINE
-            ).strip()
+            post_link = "https://t.me/" + clean_channel + "/" + str(post["id"])
 
-            linhas = [l.strip() for l in clean_text.split("\n") if l.strip()]
-            if not linhas:
-                continue
+            for item in items:
+                titulo_puro = item["titulo"]
+                corpo_puro = item["corpo"]
+                agency_hint = item.get("agency_hint", "")
 
-            titulo_puro = linhas[0]
-            sentiment = classify_channel_sentiment(titulo_puro)
+                item_text_check = titulo_puro + " " + corpo_puro
+                if is_channel_bio(item_text_check):
+                    print("Ignorado (bio do canal): " + titulo_puro[:60])
+                    continue
+                if not titulo_puro:
+                    continue
 
-            if sentiment == "BULLISH":
-                marker = "\U0001F7E2 <b>[ALTA]</b>"
-            elif sentiment == "BEARISH":
-                marker = "\U0001F7E1 <b>[BAIXA]</b>"
-            else:
-                marker = "\u26AA <b>[INFORMATIVO]</b>"
+                if agency_hint:
+                    fonte_detectada = agency_hint
+                else:
+                    fonte_detectada = detect_real_source(item_text_check, clean_channel)
+                titulo_puro = re.sub(
+                    r"(?i)^\s*(reuters|bloomberg|cnbc|wsj)\s*$", "", titulo_puro
+                ).strip()
+                if not titulo_puro:
+                    continue
 
-            titulo_escapado = html_module.escape(titulo_puro, quote=False)
+                corpo_puro = re.sub(r"(?i)pontos[- ]chave:?", "", corpo_puro).strip()
 
-            if len(linhas) > 1:
-                corpo_puro = "\n".join(linhas[1:]).strip()
-                corpo_puro = re.sub(r"(?i)pontos[- ]chave:?", "", corpo_puro)
-            else:
-                corpo_puro = ""
-            corpo_escapado = html_module.escape(corpo_puro, quote=False)
+                is_real_agency = fonte_detectada in KNOWN_AGENCIES
+                source_for_message = fonte_detectada if is_real_agency else ""
 
-            is_real_agency = fonte_detectada in KNOWN_AGENCIES
-            fonte_tag = html_module.escape(fonte_detectada, quote=False)
+                entry_for_format = {"title": titulo_puro, "summary": corpo_puro, "link": post_link}
+                message, final_title, final_body, sentiment = format_message(
+                    source_for_message, entry_for_format, None
+                )
 
-            if corpo_escapado and is_real_agency:
-                message = marker + " <b>" + titulo_escapado + "</b>\n\n" + corpo_escapado + "\n\n<i>Fonte: " + fonte_tag + "</i>"
-            elif corpo_escapado:
-                message = marker + " <b>" + titulo_escapado + "</b>\n\n" + corpo_escapado
-            elif is_real_agency:
-                message = marker + " <b>" + titulo_escapado + "</b>\n\n<i>Fonte: " + fonte_tag + "</i>"
-            else:
-                message = marker + " <b>" + titulo_escapado + "</b>"
+                if send_telegram_message(message):
+                    now = datetime.now(BR_TZ)
+                    print("Encaminhado de " + clean_channel + " (id " + str(post["id"]) + "): " + titulo_puro[:40] + "...")
 
-            if len(message) > 3900:
-                message = message[:3900] + "..."
+                    new_portal_entries.append({
+                        "title": final_title,
+                        "body": final_body[:200] if final_body else "Leia mais no link.",
+                        "source": CHANNEL_DISPLAY_NAMES.get(clean_channel.lower(), clean_channel),
+                        "sentiment": sentiment,
+                        "link": post_link,
+                        "time": now.strftime("%H:%M"),
+                        "date": now.strftime("%Y-%m-%d"),
+                    })
 
-            if send_telegram_message(message):
-                post_link = "https://t.me/" + clean_channel + "/" + str(post["id"])
-                now = datetime.now(BR_TZ)
-                print("Encaminhado de " + clean_channel + " (id " + str(post["id"]) + "): " + clean_text[:40] + "...")
+                    has_updates = True
+                    time.sleep(3)
 
-                new_portal_entries.append({
-                    "title": titulo_puro,
-                    "body": corpo_puro[:200] if corpo_puro else "Leia mais no link.",
-                    "source": CHANNEL_DISPLAY_NAMES.get(clean_channel.lower(), clean_channel),
-                    "sentiment": sentiment,
-                    "link": post_link,
-                    "time": now.strftime("%H:%M"),
-                    "date": now.strftime("%Y-%m-%d"),
-                })
-
-                state[clean_channel] = post["id"]
-                has_updates = True
-                time.sleep(3)
+            state[clean_channel] = post["id"]
+            has_updates = True
 
     if has_updates:
         save_channel_state(state)
