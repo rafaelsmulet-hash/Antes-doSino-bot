@@ -1838,14 +1838,408 @@ def update_asset_archive_entry(slug, today_entries):
         "alta": alta,
         "baixa": baixa,
     })
-    asset_history = asset_history[-14:]
+    asset_history = asset_history[-30:]
 
     archive[slug] = asset_history
     save_asset_archive(archive)
     return asset_history
 
 
-def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
+MIN_ARCHIVE_DAYS_FOR_COMPARISON = 3
+
+
+def update_all_archives(entries_today):
+    """Atualiza o arquivo de TODOS os ativos e temas de uma vez, antes
+    de qualquer calculo de inteligencia - desacoplado da geracao de
+    paginas (que so roda para quem atinge o threshold de exibicao).
+    A inteligencia precisa do quadro completo, mesmo de ativos/temas
+    que ainda nao tem pagina propria."""
+    asset_archive = {}
+    for profile in ASSET_PROFILES:
+        asset_today = get_asset_entries(entries_today, profile["terms"])
+        asset_archive[profile["slug"]] = update_asset_archive_entry(profile["slug"], asset_today)
+
+    theme_archive = {}
+    for theme in THEME_PROFILES:
+        theme_today = get_theme_entries(entries_today, theme)
+        theme_archive[theme["slug"]] = update_theme_archive_entry(theme["slug"], theme_today)
+
+    return asset_archive, theme_archive
+
+
+def build_day_leader_map(archive):
+    """Para cada data presente no arquivo, descobre qual slug teve a
+    maior contagem naquele dia - base para calcular streaks de
+    dominancia sem precisar guardar isso separadamente."""
+    all_dates = set()
+    for history in archive.values():
+        for d in history:
+            all_dates.add(d["date"])
+
+    leader_by_date = {}
+    for date_str in all_dates:
+        best_slug = None
+        best_count = 0
+        for slug, history in archive.items():
+            day_entry = next((d for d in history if d["date"] == date_str), None)
+            count = day_entry["count"] if day_entry else 0
+            if count > best_count:
+                best_count = count
+                best_slug = slug
+        if best_count > 0:
+            leader_by_date[date_str] = best_slug
+    return leader_by_date
+
+
+def compute_streak(leader_by_date, slug, today_str):
+    """Quantos dias consecutivos, terminando hoje, esse slug foi o
+    mais comentado. Retorna 0 se hoje ele nao lidera."""
+    if leader_by_date.get(today_str) != slug:
+        return 0
+    streak = 0
+    current_date = datetime.strptime(today_str, "%Y-%m-%d").date()
+    while leader_by_date.get(current_date.strftime("%Y-%m-%d")) == slug:
+        streak += 1
+        current_date -= timedelta(days=1)
+    return streak
+
+
+def compute_weekly_total(archive, slug, days=7):
+    history = archive.get(slug, [])
+    return sum(d["count"] for d in history[-days:])
+
+
+def compute_weekly_avg_excluding_today(archive, slug, today_str, days=7):
+    """Media diaria dos ultimos N dias, SEM contar hoje - usada para
+    comparar o dia de hoje contra o padrao recente, evitando comparar
+    um numero com ele mesmo."""
+    history = [d for d in archive.get(slug, []) if d["date"] != today_str]
+    recent = history[-days:]
+    if not recent:
+        return 0.0
+    return sum(d["count"] for d in recent) / len(recent)
+
+
+def compute_sentiment_pct(count, alta, baixa):
+    if count == 0:
+        return None
+    return {
+        "alta_pct": round((alta / count) * 100),
+        "baixa_pct": round((baixa / count) * 100),
+    }
+
+
+def compute_weekly_sentiment_avg(archive, slug, today_str, days=7):
+    """Media de % de alta nos ultimos N dias (excluindo hoje) - usada
+    para comparar o sentimento de hoje contra o padrao recente."""
+    history = [d for d in archive.get(slug, []) if d["date"] != today_str]
+    recent = history[-days:]
+    total_count = sum(d["count"] for d in recent)
+    if total_count == 0:
+        return None
+    total_alta = sum(d["alta"] for d in recent)
+    return (total_alta / total_count) * 100
+
+
+def compute_market_intelligence(entries_today, asset_archive, theme_archive):
+    """Camada matematica pura - so numeros e estruturas, nenhuma frase.
+    Calculada uma unica vez por execucao e reaproveitada por Home,
+    Ativos, Temas e Eventos."""
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    total_relevant_today = len(entries_today)
+
+    archive_days_available = max(
+        (len(h) for h in asset_archive.values()), default=0
+    )
+    has_enough_history = archive_days_available >= MIN_ARCHIVE_DAYS_FOR_COMPARISON
+
+    asset_leader_map = build_day_leader_map(asset_archive)
+    theme_leader_map = build_day_leader_map(theme_archive)
+
+    def analyze_group(profiles, archive, leader_map, get_entries_fn, get_key_fn):
+        results = {}
+        for profile in profiles:
+            slug = get_key_fn(profile)
+            today_entries = get_entries_fn(entries_today, profile)
+            count_today = len(today_entries)
+            alta_today = sum(1 for e in today_entries if e["sentiment"] == "BULLISH")
+            baixa_today = sum(1 for e in today_entries if e["sentiment"] == "BEARISH")
+
+            weekly_avg = compute_weekly_avg_excluding_today(archive, slug, today_str, 7)
+            weekly_total = compute_weekly_total(archive, slug, 7)
+            streak = compute_streak(leader_map, slug, today_str)
+            sentiment_today = compute_sentiment_pct(count_today, alta_today, baixa_today)
+            sentiment_week_avg = compute_weekly_sentiment_avg(archive, slug, today_str, 7)
+
+            is_rising = (
+                weekly_avg >= 0.5 and count_today >= weekly_avg * 2 and count_today >= 2
+            )
+            is_disappeared = weekly_avg >= 1.0 and count_today == 0
+
+            results[slug] = {
+                "profile": profile,
+                "count_today": count_today,
+                "share_today": (count_today / total_relevant_today) if total_relevant_today > 0 else 0,
+                "weekly_avg": weekly_avg,
+                "weekly_total": weekly_total,
+                "streak": streak,
+                "sentiment_today": sentiment_today,
+                "sentiment_week_avg": sentiment_week_avg,
+                "is_rising": is_rising,
+                "is_disappeared": is_disappeared,
+            }
+        return results
+
+    asset_stats = analyze_group(
+        ASSET_PROFILES, asset_archive, asset_leader_map,
+        lambda entries, profile: get_asset_entries(entries, profile["terms"]),
+        lambda profile: profile["slug"],
+    )
+    theme_stats = analyze_group(
+        THEME_PROFILES, theme_archive, theme_leader_map,
+        lambda entries, theme: get_theme_entries(entries, theme),
+        lambda theme: theme["slug"],
+    )
+
+    def top_by_count_today(stats):
+        candidates = [(slug, s) for slug, s in stats.items() if s["count_today"] > 0]
+        if not candidates:
+            return None
+        return max(candidates, key=lambda pair: pair[1]["count_today"])[0]
+
+    def top_by_weekly_total(stats):
+        candidates = [(slug, s) for slug, s in stats.items() if s["weekly_total"] > 0]
+        if not candidates:
+            return None
+        return max(candidates, key=lambda pair: pair[1]["weekly_total"])[0]
+
+    return {
+        "has_enough_history": has_enough_history,
+        "total_relevant_today": total_relevant_today,
+        "assets": asset_stats,
+        "themes": theme_stats,
+        "dominant_asset_today": top_by_count_today(asset_stats),
+        "dominant_theme_today": top_by_count_today(theme_stats),
+        "dominant_asset_week": top_by_weekly_total(asset_stats),
+        "dominant_theme_week": top_by_weekly_total(theme_stats),
+    }
+
+
+THEME_ARCHIVE_FILE = "theme_archive.json"
+
+
+def load_theme_archive():
+    if os.path.exists(THEME_ARCHIVE_FILE):
+        try:
+            with open(THEME_ARCHIVE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def save_theme_archive(archive):
+    with open(THEME_ARCHIVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(archive, f, ensure_ascii=False)
+
+
+def update_theme_archive_entry(slug, today_entries):
+    """Espelha update_asset_archive_entry, mas para temas - mesma
+    estrutura de arquivo, mesma janela de retencao."""
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    archive = load_theme_archive()
+    theme_history = archive.get(slug, [])
+
+    theme_history = [d for d in theme_history if d["date"] != today_str]
+    alta = sum(1 for e in today_entries if e["sentiment"] == "BULLISH")
+    baixa = sum(1 for e in today_entries if e["sentiment"] == "BEARISH")
+    theme_history.append({
+        "date": today_str,
+        "count": len(today_entries),
+        "alta": alta,
+        "baixa": baixa,
+    })
+    theme_history = theme_history[-30:]
+
+    archive[slug] = theme_history
+    save_theme_archive(archive)
+    return theme_history
+
+
+SHARE_STRONG_THRESHOLD = 0.30
+SHARE_MODERATE_THRESHOLD = 0.15
+STREAK_MIN_TO_MENTION = 2
+SENTIMENT_SHIFT_MIN_POINTS = 15
+
+
+def ordinal_pt(n):
+    mapa = {1: "primeiro", 2: "segundo", 3: "terceiro", 4: "quarto", 5: "quinto",
+            6: "sexto", 7: "sétimo", 8: "oitavo", 9: "nono", 10: "décimo"}
+    return mapa.get(n, str(n) + "º")
+
+
+def describe_share(label, stat, kind_word):
+    if stat["count_today"] == 0:
+        return None
+    share = stat["share_today"]
+    pct = round(share * 100)
+    if share >= SHARE_STRONG_THRESHOLD:
+        return label + " concentrou " + str(pct) + "% das notícias relevantes de hoje."
+    if share >= SHARE_MODERATE_THRESHOLD:
+        return label + " respondeu por " + str(pct) + "% das notícias relevantes de hoje."
+    return None
+
+
+def describe_streak(label, stat, kind_label):
+    streak = stat["streak"]
+    if streak < STREAK_MIN_TO_MENTION:
+        return None
+    if streak == STREAK_MIN_TO_MENTION:
+        return "É o segundo dia consecutivo entre " + kind_label + " mais comentados."
+    return "É o " + ordinal_pt(streak) + " dia consecutivo entre " + kind_label + " mais comentados."
+
+
+def describe_rising(label, stat):
+    if not stat["is_rising"]:
+        return None
+    weekly_avg = stat["weekly_avg"]
+    if weekly_avg <= 0:
+        return None
+    ratio = stat["count_today"] / weekly_avg
+    ratio_str = str(round(ratio, 1))
+    if ratio_str.endswith(".0"):
+        ratio_str = ratio_str[:-2]
+    return label + " ganhou atenção fora do padrão: " + ratio_str + "x mais menções do que a média dos últimos dias."
+
+
+def describe_disappeared(label, stat):
+    if not stat["is_disappeared"]:
+        return None
+    return label + " praticamente desapareceu das manchetes hoje, após presença constante nos últimos dias."
+
+
+def describe_sentiment_shift(label, stat):
+    today = stat["sentiment_today"]
+    week_avg = stat["sentiment_week_avg"]
+    if today is None or week_avg is None:
+        return None
+    diff = today["alta_pct"] - week_avg
+    if abs(diff) < SENTIMENT_SHIFT_MIN_POINTS:
+        return None
+    if diff > 0:
+        return "O sentimento em torno de " + label + " ficou mais positivo do que o normal nos últimos dias."
+    return "O sentimento em torno de " + label + " ficou mais negativo do que o normal nos últimos dias."
+
+
+def build_entity_insights(slug, stats, label, kind_label_plural):
+    """Monta a lista priorizada de insights para UM ativo ou tema
+    especifico (usada nas paginas individuais) - no maximo 3, so os
+    sinais realmente fortes."""
+    stat = stats.get(slug)
+    if not stat:
+        return []
+
+    candidates = [
+        describe_disappeared(label, stat),
+        describe_rising(label, stat),
+        describe_streak(label, stat, kind_label_plural),
+        describe_share(label, stat, ""),
+        describe_sentiment_shift(label, stat),
+    ]
+    return [c for c in candidates if c][:3]
+
+
+def build_market_insights(intelligence):
+    """Camada narrativa - unico lugar do sistema que transforma numero
+    em frase. Aplica o filtro editorial: so mantem o que ajuda o
+    investidor a responder 'o que isso significa para mim'."""
+    if not intelligence["has_enough_history"]:
+        fallback = "Estamos acumulando histórico para gerar comparações mais confiáveis."
+        return {
+            "home": [fallback],
+            "assets": {},
+            "themes": {},
+        }
+
+    asset_stats = intelligence["assets"]
+    theme_stats = intelligence["themes"]
+
+    asset_insights = {}
+    for profile in ASSET_PROFILES:
+        slug = profile["slug"]
+        asset_insights[slug] = build_entity_insights(slug, asset_stats, profile["label"], "os ativos")
+
+    theme_insights = {}
+    for theme in THEME_PROFILES:
+        slug = theme["slug"]
+        theme_insights[slug] = build_entity_insights(slug, theme_stats, theme["label"], "os temas")
+
+    home_candidates = []
+
+    dom_theme_slug = intelligence["dominant_theme_today"]
+    if dom_theme_slug:
+        theme_label = next(t["label"] for t in THEME_PROFILES if t["slug"] == dom_theme_slug)
+        stat = theme_stats[dom_theme_slug]
+        sentence = describe_share(theme_label, stat, "")
+        if sentence:
+            home_candidates.append((3, sentence))
+
+    dom_asset_slug = intelligence["dominant_asset_today"]
+    if dom_asset_slug:
+        asset_label = next(p["label"] for p in ASSET_PROFILES if p["slug"] == dom_asset_slug)
+        stat = asset_stats[dom_asset_slug]
+        sentence = describe_share(asset_label, stat, "")
+        if sentence:
+            home_candidates.append((3, sentence))
+        streak_sentence = describe_streak(asset_label, stat, "os ativos")
+        if streak_sentence:
+            home_candidates.append((2, streak_sentence))
+
+    if dom_theme_slug:
+        theme_label = next(t["label"] for t in THEME_PROFILES if t["slug"] == dom_theme_slug)
+        streak_sentence = describe_streak(theme_label, theme_stats[dom_theme_slug], "os temas")
+        if streak_sentence:
+            home_candidates.append((2, streak_sentence))
+
+    for profile in ASSET_PROFILES:
+        stat = asset_stats[profile["slug"]]
+        sentence = describe_rising(profile["label"], stat) or describe_disappeared(profile["label"], stat)
+        if sentence:
+            home_candidates.append((4, sentence))
+
+    for theme in THEME_PROFILES:
+        stat = theme_stats[theme["slug"]]
+        sentence = describe_rising(theme["label"], stat) or describe_disappeared(theme["label"], stat)
+        if sentence:
+            home_candidates.append((4, sentence))
+
+    if dom_theme_slug:
+        theme_label = next(t["label"] for t in THEME_PROFILES if t["slug"] == dom_theme_slug)
+        sentiment_sentence = describe_sentiment_shift(theme_label, theme_stats[dom_theme_slug])
+        if sentiment_sentence:
+            home_candidates.append((1, sentiment_sentence))
+
+    home_candidates.sort(key=lambda pair: pair[0], reverse=True)
+    seen = set()
+    home_insights = []
+    for _, sentence in home_candidates:
+        if sentence not in seen:
+            seen.add(sentence)
+            home_insights.append(sentence)
+        if len(home_insights) >= 4:
+            break
+
+    if not home_insights:
+        home_insights = ["O mercado está com poucos sinais de destaque no momento - nenhum ativo ou tema se sobressaiu hoje."]
+
+    return {
+        "home": home_insights,
+        "assets": asset_insights,
+        "themes": theme_insights,
+    }
+
+
+def build_asset_page_html(profile, all_history, entries_today, generated_slugs, asset_archive=None, asset_insights=None):
     slug = profile["slug"]
     label = profile["label"]
     terms = profile["terms"]
@@ -1861,7 +2255,7 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
 
     quote = fetch_asset_quote(quote_ticker) if quote_ticker else None
 
-    trend = update_asset_archive_entry(slug, asset_today_entries)
+    trend = (asset_archive or {}).get(slug, [])
     summary_sentence = compute_asset_summary_sentence(asset_today_entries, label)
     clusters = compute_asset_clusters(asset_today_entries)
     related = compute_related_assets(profile, all_history, generated_slugs)
@@ -1969,6 +2363,19 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
             "</div>"
         )
 
+    intelligence_sentences = (asset_insights or {}).get(slug, [])
+    intelligence_block = ""
+    if intelligence_sentences:
+        intelligence_html = ""
+        for s in intelligence_sentences:
+            intelligence_html += "<p style='color:var(--cream);margin-top:8px;font-size:0.95rem;'>" + html_module.escape(s) + "</p>"
+        intelligence_block = (
+            "<div style='margin-top:16px;'>"
+            "<span class='kicker' style='display:block;margin-bottom:6px;'>Inteligência</span>"
+            + intelligence_html +
+            "</div>"
+        )
+
     meta_description = html_module.escape(truncate_text_clean(summary_sentence, 155))
     updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
     updated_iso = datetime.now(BR_TZ).isoformat()
@@ -2034,6 +2441,7 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
         "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>" + html_module.escape(summary_sentence) + "</p>"
         "<p style='color:var(--slate-dim);margin-top:10px;font-size:0.9rem;border-left:2px solid var(--bronze);padding-left:12px;'>"
         "<b style='color:var(--bronze);'>Por que isso importa:</b> " + html_module.escape(why_it_matters) + "</p>"
+        + intelligence_block +
         "</div></section>"
 
         "<section><div class='section-head'>"
@@ -2119,7 +2527,7 @@ def gerar_sitemap_completo(diretorio_docs="docs"):
     print("sitemap.xml atualizado (escaneado a partir de " + diretorio_docs + ").")
 
 
-def gerar_paginas_ativos(noticias, diretorio_saida="docs/ativos"):
+def gerar_paginas_ativos(noticias, diretorio_saida="docs/ativos", asset_archive=None, asset_insights=None):
     """Funcao principal e modular do modulo de paginas de ativos.
 
     Parametros:
@@ -2127,6 +2535,11 @@ def gerar_paginas_ativos(noticias, diretorio_saida="docs/ativos"):
                   (historico acumulado, com campos title/body/source/
                   sentiment/link/time/date).
         diretorio_saida: pasta onde as paginas HTML serao escritas.
+        asset_archive: historico diario por ativo (ja atualizado
+                  centralmente antes desta chamada - ver update_all_archives).
+        asset_insights: dict {slug: [frases]} gerado pela camada
+                  narrativa (build_market_insights), consumido apenas
+                  para exibicao - nenhum calculo acontece aqui.
 
     Regras aplicadas:
         - So gera pagina para ativos com pelo menos MIN_NEWS_THRESHOLD
@@ -2161,7 +2574,7 @@ def gerar_paginas_ativos(noticias, diretorio_saida="docs/ativos"):
             print(label + " -> " + str(count) + " noticia(s) -> pagina sera criada")
 
     for profile in ASSET_PROFILES:
-        page_html = build_asset_page_html(profile, noticias, entries_today, generated_slugs)
+        page_html = build_asset_page_html(profile, noticias, entries_today, generated_slugs, asset_archive, asset_insights)
         if page_html is None:
             continue
         with open(diretorio_saida + "/" + profile["slug"] + ".html", "w", encoding="utf-8") as f:
@@ -2195,10 +2608,10 @@ def gerar_paginas_ativos(noticias, diretorio_saida="docs/ativos"):
     return generated
 
 
-def generate_asset_pages(all_history, entries_today):
+def generate_asset_pages(all_history, entries_today, asset_archive=None, asset_insights=None):
     """Wrapper mantido por compatibilidade com o restante do bot -
     delega para a funcao modular gerar_paginas_ativos."""
-    return gerar_paginas_ativos(all_history, diretorio_saida="docs/ativos")
+    return gerar_paginas_ativos(all_history, diretorio_saida="docs/ativos", asset_archive=asset_archive, asset_insights=asset_insights)
 
 
 THEME_PROFILES = [
@@ -2336,7 +2749,7 @@ def compute_related_themes(theme, all_history, generated_theme_slugs):
     return [pair[0] for pair in scored[:3]]
 
 
-def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_theme_slugs):
+def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_theme_slugs, theme_insights=None):
     slug = theme["slug"]
     label = theme["label"]
     why_it_matters = theme["why"]
@@ -2421,6 +2834,19 @@ def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_t
     for t in related_themes:
         related_links_html += '<a href="' + t["slug"] + '.html" class="nav-links" style="margin-right:14px;">' + html_module.escape(t["label"]) + "</a>"
 
+    intelligence_sentences = (theme_insights or {}).get(slug, [])
+    intelligence_block = ""
+    if intelligence_sentences:
+        intelligence_html = ""
+        for s in intelligence_sentences:
+            intelligence_html += "<p style='color:var(--cream);margin-top:8px;font-size:0.95rem;'>" + html_module.escape(s) + "</p>"
+        intelligence_block = (
+            "<div style='margin-top:16px;'>"
+            "<span class='kicker' style='display:block;margin-bottom:6px;'>Inteligência</span>"
+            + intelligence_html +
+            "</div>"
+        )
+
     related_block = ""
     if related_links_html:
         related_block = (
@@ -2487,6 +2913,7 @@ def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_t
         "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>" + html_module.escape(summary_sentence) + "</p>"
         "<p style='color:var(--slate-dim);margin-top:10px;font-size:0.9rem;border-left:2px solid var(--bronze);padding-left:12px;'>"
         "<b style='color:var(--bronze);'>Por que isso importa agora:</b> " + html_module.escape(why_it_matters) + "</p>"
+        + intelligence_block +
         "</div></section>"
 
         "<section><div class='section-head'>"
@@ -2513,7 +2940,7 @@ def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_t
     return page
 
 
-def gerar_paginas_temas(noticias, diretorio_saida="docs/temas"):
+def gerar_paginas_temas(noticias, diretorio_saida="docs/temas", theme_insights=None):
     """Funcao principal e modular de geracao das paginas de tema.
 
     Parametros:
@@ -2545,7 +2972,7 @@ def gerar_paginas_temas(noticias, diretorio_saida="docs/temas"):
             generated_asset_slugs.add(profile["slug"])
 
     for theme in THEME_PROFILES:
-        page_html = build_theme_page_html(theme, noticias, generated_asset_slugs, generated_theme_slugs)
+        page_html = build_theme_page_html(theme, noticias, generated_asset_slugs, generated_theme_slugs, theme_insights)
         if page_html is None:
             print("Volume insuficiente para tema " + theme["slug"] + " (minimo "
                   + str(MIN_THEME_NEWS_THRESHOLD) + " noticias em " + str(ASSET_RECENT_WINDOW_HOURS)
@@ -2662,7 +3089,7 @@ def compute_related_themes_for_event(event_entries, generated_theme_slugs):
     return [pair[0] for pair in scored[:3]]
 
 
-def build_event_page_html(event, all_history, generated_asset_slugs, generated_theme_slugs):
+def build_event_page_html(event, all_history, generated_asset_slugs, generated_theme_slugs, asset_insights=None, theme_insights=None):
     label = event["label"]
     event_date_str = event["date"]
     keywords = get_event_keywords(event)
@@ -2738,6 +3165,21 @@ def build_event_page_html(event, all_history, generated_asset_slugs, generated_t
     related_assets = compute_related_assets_for_event(event_entries, generated_asset_slugs)
     related_themes = compute_related_themes_for_event(event_entries, generated_theme_slugs)
 
+    # Reaproveita a inteligencia ja calculada de ativos/temas relacionados
+    # - nenhum indicador novo e criado so para eventos, conforme pedido.
+    event_context_sentence = ""
+    for t in related_themes:
+        sentences = (theme_insights or {}).get(t["slug"], [])
+        if sentences:
+            event_context_sentence = sentences[0]
+            break
+    if not event_context_sentence:
+        for a in related_assets:
+            sentences = (asset_insights or {}).get(a["slug"], [])
+            if sentences:
+                event_context_sentence = sentences[0]
+                break
+
     related_links_html = ""
     for a in related_assets:
         related_links_html += '<a href="../ativos/' + a["slug"] + '.html" class="nav-links" style="margin-right:14px;">' + html_module.escape(a["label"]) + "</a>"
@@ -2812,6 +3254,10 @@ def build_event_page_html(event, all_history, generated_asset_slugs, generated_t
         "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>" + html_module.escape(
             event.get("why") or "Acompanhe o que o mercado está dizendo sobre este evento e o possível impacto nos preços."
         ) + "</p>"
+        + (
+            "<p style='color:var(--cream);margin-top:10px;font-size:0.95rem;'>" + html_module.escape(event_context_sentence) + "</p>"
+            if event_context_sentence else ""
+        ) +
         "</div></section>"
 
         "<section><div class='section-head'>"
@@ -2831,7 +3277,7 @@ def build_event_page_html(event, all_history, generated_asset_slugs, generated_t
     return page
 
 
-def gerar_paginas_eventos(noticias, diretorio_saida="docs/eventos"):
+def gerar_paginas_eventos(noticias, diretorio_saida="docs/eventos", asset_insights=None, theme_insights=None):
     """Funcao principal e modular de geracao das paginas de evento.
 
     Parametros:
@@ -2878,7 +3324,7 @@ def gerar_paginas_eventos(noticias, diretorio_saida="docs/eventos"):
 
     generated = []
     for event in unique_events:
-        page_html = build_event_page_html(event, noticias, generated_asset_slugs, generated_theme_slugs)
+        page_html = build_event_page_html(event, noticias, generated_asset_slugs, generated_theme_slugs, asset_insights, theme_insights)
         if page_html is None:
             print("Evento '" + event["label"] + "' fora da janela valida ou sem "
                   "volume minimo - pagina nao gerada.")
@@ -3507,7 +3953,7 @@ def save_portal_history(entries):
         json.dump(trimmed, f, ensure_ascii=False)
 
 
-def generate_portal(entries, entries_today=None, template_path="docs/template.html", output_path="docs/index.html"):
+def generate_portal(entries, entries_today=None, template_path="docs/template.html", output_path="docs/index.html", home_insights=None):
     """Le o template.html, substitui os placeholders de ticker e feed
     pelos dados reais mais recentes, e salva como index.html (o que o
     GitHub Pages efetivamente publica)."""
@@ -3548,6 +3994,8 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
     end_marker_w = "<!-- WORRY_LINE_END -->"
     start_marker_s = "<!-- SIGNALS_START -->"
     end_marker_s = "<!-- SIGNALS_END -->"
+    start_marker_i = "<!-- INTELLIGENCE_START -->"
+    end_marker_i = "<!-- INTELLIGENCE_END -->"
     start_marker_e = "<!-- EVENTS_START -->"
     end_marker_e = "<!-- EVENTS_END -->"
     start_marker_v = "<!-- SINCE_VISIT_DATA_START -->"
@@ -3583,6 +4031,25 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
         before = template.split(start_marker_s)[0]
         after = template.split(end_marker_s)[1]
         template = before + start_marker_s + "\n" + signals_html + end_marker_s + after
+
+    if start_marker_i in template and end_marker_i in template:
+        intelligence_html = ""
+        sentences = home_insights or []
+        for s in sentences:
+            intelligence_html += "<p style='color:var(--cream);font-size:1.05rem;line-height:1.6;margin-bottom:12px;'>" + html_module.escape(s) + "</p>"
+        if intelligence_html:
+            intelligence_section = (
+                "<section><div class='section-head'>"
+                "<span class='kicker'>Inteligência do dia</span>"
+                "</div>"
+                "<div style='max-width:720px;'>" + intelligence_html + "</div>"
+                "</section>"
+            )
+        else:
+            intelligence_section = ""
+        before = template.split(start_marker_i)[0]
+        after = template.split(end_marker_i)[1]
+        template = before + start_marker_i + "\n" + intelligence_section + end_marker_i + after
 
     if start_marker_e in template and end_marker_e in template:
         events_html = build_events_html(entries_for_today, entries)
@@ -3702,11 +4169,21 @@ def main():
 
     archive = load_daily_archive()
 
-    generate_portal(all_portal_entries, entries_today)
+    try:
+        asset_archive, theme_archive = update_all_archives(entries_today)
+        intelligence = compute_market_intelligence(entries_today, asset_archive, theme_archive)
+        insights = build_market_insights(intelligence)
+        print("Inteligencia de mercado calculada: " + str(len(insights["home"])) + " insight(s) na Home.")
+    except Exception as e:
+        print("Erro ao calcular inteligencia de mercado (isolado, nao afeta o fluxo principal): " + str(e))
+        asset_archive, theme_archive = {}, {}
+        insights = {"home": [], "assets": {}, "themes": {}}
+
+    generate_portal(all_portal_entries, entries_today, home_insights=insights["home"])
     build_daily_summary_html(entries_today, today_str)
-    generate_asset_pages(all_portal_entries, entries_today)
-    gerar_paginas_temas(all_portal_entries, diretorio_saida="docs/temas")
-    gerar_paginas_eventos(all_portal_entries, diretorio_saida="docs/eventos")
+    generate_asset_pages(all_portal_entries, entries_today, asset_archive, insights["assets"])
+    gerar_paginas_temas(all_portal_entries, diretorio_saida="docs/temas", theme_insights=insights["themes"])
+    gerar_paginas_eventos(all_portal_entries, diretorio_saida="docs/eventos", asset_insights=insights["assets"], theme_insights=insights["themes"])
 
     try:
         events_state_for_briefing = load_events_state()
