@@ -144,7 +144,11 @@
   .card-meta .src{color:var(--bronze);font-weight:600;}
   .card-meta .time{margin-left:auto;color:var(--slate-dim);font-family:'IBM Plex Mono',monospace;}
   .card h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;line-height:1.35;}
-  .card p{color:var(--slate);font-size:0.9rem;line-height:1.55;flex-grow:1;}
+  .card p{
+    color:var(--slate);font-size:0.9rem;line-height:1.55;flex-grow:1;
+    display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+    overflow:hidden;
+  }
   .card .read{font-size:0.82rem;font-weight:600;color:var(--gold);}
 
   .feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
@@ -226,7 +230,11 @@
 }
 .signal-card:hover{border-color:var(--bronze);transform:translateY(-3px);}
 .signal-card h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;line-height:1.35;}
-.signal-card p{color:var(--slate);font-size:0.92rem;line-height:1.55;}
+.signal-card p{
+  color:var(--slate);font-size:0.92rem;line-height:1.55;
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;
+}
 .signal-reason{font-size:0.78rem;color:var(--bronze);font-weight:600;}
 .soft-cta{text-align:center;margin-top:24px;color:var(--slate);font-size:0.9rem;}
 .soft-cta a{color:var(--gold);font-weight:600;}
@@ -372,7 +380,7 @@ A Administração Federal de Aviação dos EUA (FAA) informou nesta segunda-feir
     <a href="planos.html" style="color:var(--gold)">Planos</a>
     <a href="resumo-semanal.html" style="color:var(--gold)">Resumo semanal</a>
   </div>
-  <span class="mono" id="last-updated">Atualizado em 27/07/2026 23:04</span>
+  <span class="mono" id="last-updated">Atualizado em 27/07/2026 23:06</span>
 </footer>
 
 <!-- SINCE_VISIT_DATA_START -->
