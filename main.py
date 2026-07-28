@@ -3245,11 +3245,19 @@ def process_forwarded_channels():
             continue
 
         new_posts = [p for p in posts if p["id"] > last_id]
+        print(
+            "Canal " + clean_channel + ": ultimo processado=" + str(last_id)
+            + " | mais recente disponivel=" + str(posts[-1]["id"])
+            + " | novos encontrados=" + str(len(new_posts))
+        )
 
         for post in new_posts:
             items = split_channel_post_into_items(post["text"])
 
             if not items:
+                print("AVISO: post " + str(post["id"]) + " de " + clean_channel + " nao gerou nenhum item processavel (texto vazio apos limpeza, ou so imagem/sticker).")
+                state[clean_channel] = post["id"]
+                has_updates = True
                 continue
 
             post_link = "https://t.me/" + clean_channel + "/" + str(post["id"])
