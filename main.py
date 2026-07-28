@@ -439,7 +439,7 @@ def build_smart_link(title, body):
                 return "https://antesdosino.com.br/ativos/" + profile["slug"] + ".html"
 
     for theme in THEME_PROFILES:
-        if match_theme_keywords(fake_entry, theme["keywords"]):
+        if match_theme_keywords(fake_entry, theme):
             path = "docs/temas/" + theme["slug"] + ".html"
             if os.path.exists(path):
                 return "https://antesdosino.com.br/temas/" + theme["slug"] + ".html"
@@ -481,11 +481,23 @@ def format_message(source, entry, ai_result):
     body = re.sub(r"www\.\S+", "", body)
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
 
+    used_title_as_body = False
     if not body:
-        body = "Confira mais detalhes no link abaixo."
+        # Fallback inteligente: fontes estilo "alerta rapido" (ex: Yahoo
+        # Finance, Seeking Alpha Market Currents) frequentemente nao tem
+        # descricao separada - o titulo JA E o fato completo. Em vez de
+        # uma frase generica sem informacao, usa o proprio titulo como
+        # base do resumo, preservando a experiencia do usuario.
+        body = title
+        used_title_as_body = True
 
     if not bullets:
-        bullets = derive_fallback_bullets(body)
+        if used_title_as_body:
+            # Evita bullet redundante repetindo o titulo que ja aparece
+            # no cabecalho da mensagem.
+            bullets = []
+        else:
+            bullets = derive_fallback_bullets(body)
 
     if sentiment == "BULLISH":
         marker = "\U0001F7E2"
@@ -502,8 +514,9 @@ def format_message(source, entry, ai_result):
     source_esc = html_module.escape(source, quote=False)
 
     bullets_html = ""
-    for b in bullets[:2]:
-        bullets_html += "\n• " + html_module.escape(b, quote=False)
+    for i, b in enumerate(bullets[:2]):
+        prefix = "\n\n• " if i == 0 else "\n• "
+        bullets_html += prefix + html_module.escape(b, quote=False)
 
     # Link garantido: usa o link original da noticia se for valido; se
     # nao, usa o link inteligente (pagina de ativo/tema/evento) se
@@ -526,7 +539,7 @@ def format_message(source, entry, ai_result):
 
     result = (
         marker + " <b>" + sentiment_label + "</b> " + title_esc + "\n"
-        "└ ⏱️ Impacto: " + impacto_esc + "\n"
+        "└ ⏱️ Impacto: " + impacto_esc
         + bullets_html
         + source_line
         + link_line
@@ -1334,8 +1347,72 @@ EVENTS_STATE_FILE = "events_detected.json"
 
 SEED_EVENTS = [
     {"date": "2026-08-04", "label": "Reunião do Copom (decisão da Selic)",
-     "keywords": ["copom", "selic", "juros"], "organizer": "Banco Central do Brasil"},
+     "keywords": ["copom", "selic", "juros"], "organizer": "Banco Central do Brasil",
+     "why": "Define a taxa básica de juros do Brasil - afeta diretamente crédito, câmbio e a atratividade da bolsa frente à renda fixa."},
+    {"date": "2026-07-29", "label": "Decisão de juros do Fed (FOMC)",
+     "keywords": ["fed", "fomc", "powell", "juros americanos"], "organizer": "Federal Reserve",
+     "why": "Decisão de juros nos EUA move o dólar, os yields dos Treasuries e o apetite por risco em todas as bolsas globais."},
+    {"date": "2026-09-11", "label": "CPI dos EUA (inflação ao consumidor)",
+     "keywords": ["cpi", "inflação americana", "consumer price index"], "organizer": "Bureau of Labor Statistics",
+     "why": "Principal termômetro de inflação dos EUA - influencia diretamente as próximas decisões de juros do Fed."},
+    {"date": "2026-09-15", "label": "Reunião do Copom (decisão da Selic)",
+     "keywords": ["copom", "selic", "juros"], "organizer": "Banco Central do Brasil",
+     "why": "Define a taxa básica de juros do Brasil - afeta diretamente crédito, câmbio e a atratividade da bolsa frente à renda fixa."},
+    {"date": "2026-09-16", "label": "Decisão de juros do Fed (FOMC)",
+     "keywords": ["fed", "fomc", "powell", "juros americanos"], "organizer": "Federal Reserve",
+     "why": "Decisão de juros nos EUA move o dólar, os yields dos Treasuries e o apetite por risco em todas as bolsas globais."},
+    {"date": "2026-10-28", "label": "Decisão de juros do Fed (FOMC)",
+     "keywords": ["fed", "fomc", "powell", "juros americanos"], "organizer": "Federal Reserve",
+     "why": "Decisão de juros nos EUA move o dólar, os yields dos Treasuries e o apetite por risco em todas as bolsas globais."},
+    {"date": "2026-11-03", "label": "Reunião do Copom (decisão da Selic)",
+     "keywords": ["copom", "selic", "juros"], "organizer": "Banco Central do Brasil",
+     "why": "Define a taxa básica de juros do Brasil - afeta diretamente crédito, câmbio e a atratividade da bolsa frente à renda fixa."},
+    {"date": "2026-12-08", "label": "Reunião do Copom (decisão da Selic)",
+     "keywords": ["copom", "selic", "juros"], "organizer": "Banco Central do Brasil",
+     "why": "Define a taxa básica de juros do Brasil - afeta diretamente crédito, câmbio e a atratividade da bolsa frente à renda fixa."},
+    {"date": "2026-12-09", "label": "Decisão de juros do Fed (FOMC)",
+     "keywords": ["fed", "fomc", "powell", "juros americanos"], "organizer": "Federal Reserve",
+     "why": "Decisão de juros nos EUA move o dólar, os yields dos Treasuries e o apetite por risco em todas as bolsas globais."},
 ]
+
+
+def compute_next_payroll_dates(count=3):
+    """O Payroll dos EUA (Employment Situation) e publicado sempre na
+    primeira sexta-feira de cada mes - regra fixa que permite calcular
+    as proximas datas sem depender de atualizacao manual, diferente de
+    Copom/Fed (definidos por comite, exigem consulta ao calendario
+    oficial de tempos em tempos)."""
+    results = []
+    today = datetime.now(BR_TZ).date()
+    year, month = today.year, today.month
+
+    for _ in range(count + 2):
+        first_day = datetime(year, month, 1).date()
+        weekday = first_day.weekday()
+        days_until_friday = (4 - weekday) % 7
+        first_friday = first_day + timedelta(days=days_until_friday)
+
+        if first_friday >= today:
+            results.append(first_friday)
+
+        month += 1
+        if month > 12:
+            month = 1
+            year += 1
+
+        if len(results) >= count:
+            break
+
+    events = []
+    for d in results[:count]:
+        events.append({
+            "date": d.strftime("%Y-%m-%d"),
+            "label": "Payroll dos EUA (Employment Situation)",
+            "keywords": ["payroll", "empregos nos eua", "employment situation"],
+            "organizer": "Bureau of Labor Statistics",
+            "why": "O relatório de emprego mais observado dos EUA - surpresas aqui costumam mover fortemente o dólar e as expectativas de juros do Fed.",
+        })
+    return events
 
 
 def load_events_state():
@@ -1387,11 +1464,13 @@ def extract_events_from_news(entries_today):
         "Manchetes:\n" + headlines_text + "\n\n"
         "Responda APENAS em JSON plano, uma lista, sem markdown. Formato exato:\n"
         '[{"date": "AAAA-MM-DD", "label": "Descricao curta do evento", '
-        '"keywords": ["palavra1", "palavra2"]}]\n\n'
+        '"keywords": ["palavra1", "palavra2"], "why": "Frase curta explicando por que '
+        'esse evento merece atencao do mercado"}]\n\n'
         "O campo keywords deve conter 2 a 4 termos curtos (em portugues, minusculas) "
         "que apareceriam em noticias relacionadas a esse evento, para permitir "
-        "encontrar essas noticias depois. Se nao houver nenhum evento futuro claro e "
-        "com data especifica mencionada, responda apenas: []"
+        "encontrar essas noticias depois. O campo why deve ter no maximo 140 caracteres, "
+        "em portugues, explicando o impacto esperado no mercado. Se nao houver nenhum "
+        "evento futuro claro e com data especifica mencionada, responda apenas: []"
     )
 
     try:
@@ -1407,10 +1486,14 @@ def extract_events_from_news(entries_today):
                 keywords = item.get("keywords", [])
                 if not isinstance(keywords, list):
                     keywords = []
+                why_text = item.get("why", "")
+                if not isinstance(why_text, str):
+                    why_text = ""
                 valid.append({
                     "date": item["date"],
                     "label": item["label"],
                     "keywords": [str(k).lower() for k in keywords][:4],
+                    "why": truncate_text_clean(why_text, 140),
                 })
             except Exception:
                 continue
@@ -1464,10 +1547,11 @@ def build_events_html(entries_today, all_history=None):
 
     registry = update_events_registry(entries_today)
 
-    all_events = list(SEED_EVENTS)
-    seed_labels = set(e["label"].lower().strip() for e in SEED_EVENTS)
+    all_events = list(SEED_EVENTS) + compute_next_payroll_dates(3)
+    seed_labels = set(e["label"].lower().strip() + e["date"] for e in all_events)
     for ev in registry:
-        if ev["label"].lower().strip() not in seed_labels:
+        key = ev["label"].lower().strip() + ev.get("date", "")
+        if key not in seed_labels:
             all_events.append(ev)
 
     relevant_events = []
@@ -1503,10 +1587,18 @@ def build_events_html(entries_today, all_history=None):
         else:
             label_html = label_escaped
 
+        why_text = ev.get("why", "")
+        why_html = ""
+        if why_text:
+            why_html = "<p style='color:var(--slate);font-size:0.82rem;margin-top:4px;'>" + html_module.escape(why_text) + "</p>"
+
         events_html += (
-            '<div class="event-item">'
+            '<div class="event-item" style="flex-wrap:wrap;align-items:flex-start;">'
             '<span class="event-countdown">' + countdown + "</span>"
+            "<div style='flex-grow:1;'>"
             '<span class="event-label">' + label_html + "</span>"
+            + why_html +
+            "</div>"
             '<span class="event-date">' + display_date + "</span>"
             "</div>"
         )
@@ -2051,17 +2143,26 @@ def gerar_paginas_ativos(noticias, diretorio_saida="docs/ativos"):
     generated = []
 
     generated_slugs = set()
+    recent_counts = {}
     for profile in ASSET_PROFILES:
         recent = get_asset_entries_recent(noticias, profile["terms"], ASSET_RECENT_WINDOW_HOURS)
+        recent_counts[profile["slug"]] = len(recent)
         if len(recent) >= MIN_NEWS_THRESHOLD:
             generated_slugs.add(profile["slug"])
 
     for profile in ASSET_PROFILES:
+        count = recent_counts[profile["slug"]]
+        label = profile["label"]
+        if count == 0:
+            print(label + " -> 0 noticias encontradas")
+        elif count < MIN_NEWS_THRESHOLD:
+            print(label + " -> " + str(count) + " noticia(s) -> abaixo do threshold (minimo " + str(MIN_NEWS_THRESHOLD) + ")")
+        else:
+            print(label + " -> " + str(count) + " noticia(s) -> pagina sera criada")
+
+    for profile in ASSET_PROFILES:
         page_html = build_asset_page_html(profile, noticias, entries_today, generated_slugs)
         if page_html is None:
-            print("Volume insuficiente para " + profile["slug"] + " (minimo "
-                  + str(MIN_NEWS_THRESHOLD) + " noticias em " + str(ASSET_RECENT_WINDOW_HOURS)
-                  + "h) - pagina nao gerada.")
             continue
         with open(diretorio_saida + "/" + profile["slug"] + ".html", "w", encoding="utf-8") as f:
             f.write(page_html)
@@ -2102,41 +2203,71 @@ def generate_asset_pages(all_history, entries_today):
 
 THEME_PROFILES = [
     {"slug": "copom-juros", "label": "Juros & Copom",
-     "keywords": ["copom", "selic", "taxa de juros", "fed", "fomc", "roberto campos neto", "jerome powell", "monetária"],
+     "strong": ["copom", "selic", "fomc", "roberto campos neto", "jerome powell", "fed"],
+     "weak": ["taxa de juros", "monetária"],
      "why": "Decisões de juros no Brasil e nos EUA afetam diretamente o custo do crédito, o câmbio e a atratividade da bolsa frente à renda fixa."},
     {"slug": "petroleo-commodities", "label": "Petróleo & Commodities",
-     "keywords": ["petróleo", "brent", "wti", "opep", "minério de ferro", "vale", "petrobras", "commodities"],
+     "strong": ["petróleo", "brent", "wti", "opep", "petrobras", "minério de ferro"],
+     "weak": ["commodities"],
      "why": "Commodities pesam fortemente no Ibovespa e influenciam a inflação global - movimentos aqui se propagam para câmbio e juros."},
     {"slug": "inflacao-fiscal", "label": "Inflação & Meta Fiscal",
-     "keywords": ["ipca", "igp-m", "inflação", "arcabouço fiscal", "déficit", "superávit", "haddad", "meta fiscal"],
+     "strong": ["ipca", "igp-m", "inflação", "arcabouço fiscal", "haddad"],
+     "weak": ["déficit", "superávit", "meta fiscal"],
      "why": "A trajetória fiscal e a inflação são os principais termômetros da confiança dos investidores na economia brasileira."},
     {"slug": "balancos-resultados", "label": "Temporada de Balanços",
-     "keywords": ["balanço", "lucro líquido", "receita", "ebitda", "dividendo", "jcp", "proventos", "1tri", "2tri", "3tri", "4tri", "trimestre"],
+     "strong": ["balanço", "lucro líquido", "ebitda", "dividendo", "jcp", "proventos", "trimestre"],
+     "weak": ["receita líquida", "receita bruta", "1tri", "2tri", "3tri", "4tri"],
      "why": "A temporada de resultados revela a saúde financeira real das empresas, movendo preços de ações de forma direta."},
     {"slug": "cambio-dolar", "label": "Câmbio & Dólar",
-     "keywords": ["dólar", "cambio", "moeda americana", "real", "ptax", "desvalorização", "valorização"],
+     "strong": ["dólar", "câmbio", "ptax", "moeda americana"],
+     "weak": ["valorização", "desvalorização", "real"],
      "why": "O dólar impacta importações, inflação e o custo de dívida em moeda estrangeira das empresas brasileiras."},
 ]
 
 MIN_THEME_NEWS_THRESHOLD = 3
 
 
-def match_theme_keywords(entry, keywords):
+def theme_matches(entry, theme):
+    """Classificacao em 2 niveis: palavras 'strong' sao especificas o
+    suficiente para classificar sozinhas. Palavras 'weak' sao termos
+    genericos (ex: 'real', 'vale', 'receita') que sozinhas geram falso
+    positivo (ex: 'impacto real', 'vale a pena') - so contam se houver
+    2 ou mais sinais fracos no mesmo texto, reduzindo drasticamente
+    ruido sem depender de lista maior de palavras-chave."""
     text = (entry["title"] + " " + entry["body"]).lower()
-    for kw in keywords:
+
+    for kw in theme["strong"]:
+        if re.search(r"\b" + re.escape(kw.lower()) + r"\b", text):
+            return True
+
+    weak_hits = 0
+    for kw in theme.get("weak", []):
+        if re.search(r"\b" + re.escape(kw.lower()) + r"\b", text):
+            weak_hits += 1
+    return weak_hits >= 2
+
+
+def match_theme_keywords(entry, theme):
+    """Mantido por compatibilidade com chamadas existentes - delega
+    para theme_matches (aceita tanto o dict completo do tema quanto,
+    por retrocompatibilidade, uma lista de keywords antiga)."""
+    if isinstance(theme, dict):
+        return theme_matches(entry, theme)
+    text = (entry["title"] + " " + entry["body"]).lower()
+    for kw in theme:
         if re.search(r"\b" + re.escape(kw.lower()) + r"\b", text):
             return True
     return False
 
 
-def get_theme_entries(all_history, keywords):
-    return [e for e in all_history if match_theme_keywords(e, keywords)]
+def get_theme_entries(all_history, theme):
+    return [e for e in all_history if theme_matches(e, theme)]
 
 
-def get_theme_entries_recent(all_history, keywords, hours=ASSET_RECENT_WINDOW_HOURS):
+def get_theme_entries_recent(all_history, theme, hours=ASSET_RECENT_WINDOW_HOURS):
     cutoff = datetime.now(BR_TZ) - timedelta(hours=hours)
     recent = []
-    for e in get_theme_entries(all_history, keywords):
+    for e in get_theme_entries(all_history, theme):
         try:
             dt = datetime.strptime(e["date"] + " " + e["time"], "%Y-%m-%d %H:%M")
             dt = dt.replace(tzinfo=BR_TZ)
@@ -2178,7 +2309,7 @@ def build_theme_summary_sentence(recent_entries, label):
 def compute_related_assets_for_theme(theme, all_history, generated_asset_slugs):
     """Ativos relacionados ao tema, por coocorrencia real (a mesma
     noticia do tema tambem menciona o ativo) - nunca lista todos."""
-    theme_entries = get_theme_entries(all_history, theme["keywords"])
+    theme_entries = get_theme_entries(all_history, theme)
     scored = []
     for profile in ASSET_PROFILES:
         if profile["slug"] not in generated_asset_slugs:
@@ -2193,12 +2324,12 @@ def compute_related_assets_for_theme(theme, all_history, generated_asset_slugs):
 def compute_related_themes(theme, all_history, generated_theme_slugs):
     """Outros temas relacionados, por coocorrencia real (mesma noticia
     aparece nos dois temas) - nunca lista todos os temas."""
-    theme_entries = get_theme_entries(all_history, theme["keywords"])
+    theme_entries = get_theme_entries(all_history, theme)
     scored = []
     for other in THEME_PROFILES:
         if other["slug"] == theme["slug"] or other["slug"] not in generated_theme_slugs:
             continue
-        co_occurrence = sum(1 for e in theme_entries if match_theme_keywords(e, other["keywords"]))
+        co_occurrence = sum(1 for e in theme_entries if match_theme_keywords(e, other))
         if co_occurrence > 0:
             scored.append((other, co_occurrence))
     scored.sort(key=lambda pair: pair[1], reverse=True)
@@ -2208,11 +2339,10 @@ def compute_related_themes(theme, all_history, generated_theme_slugs):
 def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_theme_slugs):
     slug = theme["slug"]
     label = theme["label"]
-    keywords = theme["keywords"]
     why_it_matters = theme["why"]
 
-    theme_history_entries = get_theme_entries(all_history, keywords)
-    theme_recent_entries = get_theme_entries_recent(all_history, keywords, ASSET_RECENT_WINDOW_HOURS)
+    theme_history_entries = get_theme_entries(all_history, theme)
+    theme_recent_entries = get_theme_entries_recent(all_history, theme, ASSET_RECENT_WINDOW_HOURS)
 
     if len(theme_recent_entries) < MIN_THEME_NEWS_THRESHOLD:
         return None
@@ -2404,7 +2534,7 @@ def gerar_paginas_temas(noticias, diretorio_saida="docs/temas"):
 
     generated_theme_slugs = set()
     for theme in THEME_PROFILES:
-        recent = get_theme_entries_recent(noticias, theme["keywords"], ASSET_RECENT_WINDOW_HOURS)
+        recent = get_theme_entries_recent(noticias, theme, ASSET_RECENT_WINDOW_HOURS)
         if len(recent) >= MIN_THEME_NEWS_THRESHOLD:
             generated_theme_slugs.add(theme["slug"])
 
@@ -2525,7 +2655,7 @@ def compute_related_themes_for_event(event_entries, generated_theme_slugs):
     for theme in THEME_PROFILES:
         if theme["slug"] not in generated_theme_slugs:
             continue
-        co_occurrence = sum(1 for e in event_entries if match_theme_keywords(e, theme["keywords"]))
+        co_occurrence = sum(1 for e in event_entries if match_theme_keywords(e, theme))
         if co_occurrence > 0:
             scored.append((theme, co_occurrence))
     scored.sort(key=lambda pair: pair[1], reverse=True)
@@ -2679,8 +2809,9 @@ def build_event_page_html(event, all_history, generated_asset_slugs, generated_t
         "<span class='kicker'>Evento</span>"
         "<h1 style='font-family:Fraunces,serif;font-size:2rem;font-weight:600;'>" + html_module.escape(label) + "</h1>"
         "<p style='color:var(--gold);margin-top:10px;font-weight:600;'>" + timing_note + "</p>"
-        "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>Acompanhe o que o mercado está dizendo "
-        "sobre este evento e o possível impacto nos preços.</p>"
+        "<p style='color:var(--slate);margin-top:14px;font-size:1.05rem;'>" + html_module.escape(
+            event.get("why") or "Acompanhe o que o mercado está dizendo sobre este evento e o possível impacto nos preços."
+        ) + "</p>"
         "</div></section>"
 
         "<section><div class='section-head'>"
@@ -2735,7 +2866,7 @@ def gerar_paginas_eventos(noticias, diretorio_saida="docs/eventos"):
 
     generated_theme_slugs = set()
     for theme in THEME_PROFILES:
-        recent = get_theme_entries_recent(noticias, theme["keywords"], ASSET_RECENT_WINDOW_HOURS)
+        recent = get_theme_entries_recent(noticias, theme, ASSET_RECENT_WINDOW_HOURS)
         if len(recent) >= MIN_THEME_NEWS_THRESHOLD:
             generated_theme_slugs.add(theme["slug"])
 
@@ -3353,8 +3484,25 @@ def load_portal_history():
     return []
 
 
+PORTAL_HISTORY_RETENTION_HOURS = 72
+
+
 def save_portal_history(entries):
-    trimmed = entries[:30]
+    """Mantem o historico por IDADE (72h), nao por contagem fixa de
+    itens. Um limite fixo de 30 itens purgava mencoes validas de
+    ativos/temas antes mesmo da janela de 48h usada pela classificacao
+    terminar - causando paginas de ativo/tema que deveriam existir
+    nunca atingirem o threshold minimo."""
+    cutoff = datetime.now(BR_TZ) - timedelta(hours=PORTAL_HISTORY_RETENTION_HOURS)
+    trimmed = []
+    for e in entries:
+        try:
+            dt = datetime.strptime(e["date"] + " " + e["time"], "%Y-%m-%d %H:%M")
+            dt = dt.replace(tzinfo=BR_TZ)
+        except Exception:
+            continue
+        if dt >= cutoff:
+            trimmed.append(e)
     with open(PORTAL_HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(trimmed, f, ensure_ascii=False)
 
