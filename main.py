@@ -177,6 +177,23 @@ def strip_html_tags(text):
     return text.strip()
 
 
+def truncate_text_clean(text, max_length=160):
+    """Corta o texto no ultimo espaco completo antes do limite, nunca
+    no meio de uma palavra, e adiciona '...' no final quando houver
+    corte. Usada em resumos de cards e meta description."""
+    if not text:
+        return text
+    text = text.strip()
+    if len(text) <= max_length:
+        return text
+    cut = text[:max_length]
+    last_space = cut.rfind(" ")
+    if last_space > 0:
+        cut = cut[:last_space]
+    cut = cut.rstrip(" ,;:-")
+    return cut + "..."
+
+
 def smart_truncate(text, limit):
     if len(text) <= limit:
         return text
@@ -274,9 +291,10 @@ def summarize_with_ai(title, body, translate=True):
             instruction = (
                 "Voce recebeu uma noticia de mercado financeiro em ingles. Faca cinco coisas:\n"
                 "1. Traduza o titulo para portugues do Brasil.\n"
-                "2. Escreva um resumo de no maximo 2 frases em portugues do Brasil. Se o texto "
-                "original for curto ou vazio, baseie o resumo no titulo, explicando o contexto "
-                "provavel do evento para o mercado.\n"
+                "2. Escreva um resumo em no maximo 150 caracteres, em portugues do Brasil, "
+                "em uma frase completa que termine com ponto final - nunca corte a frase no "
+                "meio. Se o texto original for curto ou vazio, baseie o resumo no titulo, "
+                "explicando o contexto provavel do evento para o mercado.\n"
                 "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
                 "4. Classifique o campo impacto_estimado escolhendo uma combinacao de prazo e tipo "
                 "de evento para o mercado brasileiro, no formato 'Prazo | Tipo de evento'. Exemplos "
@@ -296,8 +314,9 @@ def summarize_with_ai(title, body, translate=True):
             instruction = (
                 "Voce recebeu uma noticia de mercado financeiro em portugues. Faca quatro coisas:\n"
                 "1. Mantenha o titulo original em portugues no campo title.\n"
-                "2. Escreva um resumo de no maximo 2 frases em portugues do Brasil. Se o texto "
-                "original for curto ou vazio, baseie o resumo no titulo.\n"
+                "2. Escreva um resumo em no maximo 150 caracteres, em portugues do Brasil, "
+                "em uma frase completa que termine com ponto final - nunca corte a frase no "
+                "meio. Se o texto original for curto ou vazio, baseie o resumo no titulo.\n"
                 "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
                 "4. Classifique o campo impacto_estimado escolhendo uma combinacao de prazo e tipo "
                 "de evento para o mercado brasileiro, no formato 'Prazo | Tipo de evento'. Exemplos "
@@ -319,6 +338,7 @@ def summarize_with_ai(title, body, translate=True):
         parsed = json.loads(raw_response)
 
         final_body = parsed.get("summary", body_cleaned) or body_cleaned
+        final_body = truncate_text_clean(final_body, 160)
 
         bullets = parsed.get("bullets", [])
         if not isinstance(bullets, list) or not bullets:
@@ -1803,7 +1823,7 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs):
             "</div>"
         )
 
-    meta_description = html_module.escape(summary_sentence[:155])
+    meta_description = html_module.escape(truncate_text_clean(summary_sentence, 155))
     updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
     updated_iso = datetime.now(BR_TZ).isoformat()
     page_url = "https://antesdosino.com.br/ativos/" + slug + ".html"
@@ -2227,7 +2247,7 @@ def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_t
             "</section>"
         )
 
-    meta_description = html_module.escape(summary_sentence[:155])
+    meta_description = html_module.escape(truncate_text_clean(summary_sentence, 155))
     updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
     page_url = "https://antesdosino.com.br/temas/" + slug + ".html"
     page_title = html_module.escape(label) + " hoje - notícias e sentimento | Antes do Sino"
@@ -2554,7 +2574,7 @@ def build_event_page_html(event, all_history, generated_asset_slugs, generated_t
         label + ". " + timing_note + " Acompanhe abaixo o que as notícias mais recentes "
         "dizem sobre o possível impacto no mercado."
     )
-    meta_description = html_module.escape(summary_context[:155])
+    meta_description = html_module.escape(truncate_text_clean(summary_context, 155))
     updated_at = datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M")
     page_url = "https://antesdosino.com.br/eventos/" + slug + ".html"
     page_title = html_module.escape(label) + " - contexto e notícias | Antes do Sino"
@@ -3180,7 +3200,7 @@ def process_forwarded_channels():
 
                     new_portal_entries.append({
                         "title": final_title,
-                        "body": final_body[:200] if final_body else "Leia mais no link.",
+                        "body": truncate_text_clean(final_body, 200) if final_body else "Leia mais no link.",
                         "source": CHANNEL_DISPLAY_NAMES.get(clean_channel.lower(), clean_channel),
                         "sentiment": sentiment,
                         "link": post_link,
@@ -3374,7 +3394,7 @@ def main():
 
                 portal_entries.append({
                     "title": final_title,
-                    "body": final_body[:200],
+                    "body": truncate_text_clean(final_body, 200),
                     "source": source,
                     "sentiment": sentiment,
                     "link": entry.get("link", ""),
