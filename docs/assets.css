@@ -56,7 +56,11 @@ section{padding:8vh 6vw;max-width:1120px;margin:0 auto;}
 .card-meta .src{color:var(--bronze);font-weight:600;}
 .card-meta .time{margin-left:auto;color:var(--slate-dim);}
 .card h3{font-weight:600;font-size:1.05rem;line-height:1.35;}
-.card p{color:var(--slate);font-size:0.9rem;line-height:1.55;}
+.card p{
+  color:var(--slate);font-size:0.9rem;line-height:1.55;
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;
+}
 .card .read{font-size:0.82rem;font-weight:600;color:var(--gold);}
 .mono{font-family:'IBM Plex Mono',monospace;}
 .nav-links{font-size:0.85rem;color:var(--slate);}
