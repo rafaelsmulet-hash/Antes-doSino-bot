@@ -96,6 +96,12 @@ NEGATIVE_KEYWORDS = [
     "tribunal de justica", "liminar", "reclamacao trabalhista",
     "lawsuit", "lawsuits", "legal action", "suing", "sued by", "courthouse", "injunction",
     "judge rules", "labor lawsuit",
+    "matsunaga", "assassino", "assassina", "homicidio", "homicídio", "preso", "presa",
+    "cadeia", "penitenciaria", "penitenciária", "policia", "polícia", "crime", "criminoso",
+    "violencia", "violência", "tribunal", "juri", "júri", "heranca", "herança",
+    "ferias escolares", "férias escolares", "guarda do filho", "guarda da filha",
+    "celebridade", "celebridades", "famosos", "famosa", "influencer", "reality show",
+    "ex-marido", "ex-mulher", "affair", "traicao", "traição",
 ]
 
 PORTUGUESE_SOURCES = {
@@ -150,7 +156,7 @@ def get_entry_body(entry):
 
 def is_relevant(entry):
     text = (entry.get("title", "") + " " + get_entry_body(entry)).lower()
-    if any(nw in text for nw in NEGATIVE_KEYWORDS):
+    if any(re.search(r"\b" + re.escape(nw) + r"\b", text) for nw in NEGATIVE_KEYWORDS):
         return False
     if not KEYWORDS:
         return True
@@ -264,6 +270,31 @@ def ask_groq(prompt):
 IMPACT_FALLBACK = "Curto Prazo | Acompanhamento de Mercado"
 
 
+def is_market_relevant_ai(title, body):
+    """Chamada leve e dedicada a Groq, usada pelo encaminhador de
+    canais (que nao passa pelo summarize_with_ai completo) - pergunta
+    SOMENTE se a noticia e relevante para um canal de mercado
+    financeiro. Fallback seguro: em caso de falha da IA, considera
+    relevante (a defesa principal contra crime/gossip e o filtro local
+    de palavras negativas, que roda antes desta chamada)."""
+    if not USE_AI:
+        return True
+    try:
+        prompt = (
+            "Responda apenas 'true' ou 'false', sem nenhuma explicacao adicional: esta "
+            "noticia e genuinamente sobre mercado financeiro, economia ou negocios? "
+            "Responda 'false' se for sobre crime, policia, justica criminal, celebridade, "
+            "entretenimento, esporte, ou qualquer assunto fora desse escopo.\n\n"
+            "Titulo: " + title + "\n"
+            "Texto: " + (body or "")
+        )
+        raw_response = ask_groq(prompt).strip().lower()
+        return "false" not in raw_response
+    except Exception as e:
+        print("Erro na verificacao de relevancia via IA (fallback seguro=relevante): " + str(e))
+        return True
+
+
 def derive_fallback_bullets(text):
     """Gera bullets basicos por regra (sem IA) quando a Groq nao
     retornar o campo 'bullets' ou quando ai_result for None - usado
@@ -271,14 +302,14 @@ def derive_fallback_bullets(text):
     encaminhados)."""
     text = (text or "").strip()
     if not text:
-        return ["Leia mais no link."]
+        return ["Confira mais detalhes no link abaixo."]
     parts = [p.strip() for p in text.split(". ") if p.strip()]
     bullets = []
     for p in parts[:2]:
         if not p.endswith("."):
             p = p + "."
         bullets.append(p)
-    return bullets if bullets else ["Leia mais no link."]
+    return bullets if bullets else ["Confira mais detalhes no link abaixo."]
 
 
 def summarize_with_ai(title, body, translate=True):
@@ -289,7 +320,7 @@ def summarize_with_ai(title, body, translate=True):
 
         if translate:
             instruction = (
-                "Voce recebeu uma noticia de mercado financeiro em ingles. Faca cinco coisas:\n"
+                "Voce recebeu uma noticia de mercado financeiro em ingles. Faca seis coisas:\n"
                 "1. Traduza o titulo para portugues do Brasil.\n"
                 "2. Escreva um resumo em no maximo 150 caracteres, em portugues do Brasil, "
                 "em uma frase completa que termine com ponto final - nunca corte a frase no "
@@ -302,17 +333,21 @@ def summarize_with_ai(title, body, translate=True):
                 "Tese/Fundamento', 'Imediato | Reacao de Preco na Abertura', 'Curto Prazo | Pressao "
                 "de Margem/Resultado', 'Neutro | Acompanhamento de Rotina'.\n"
                 "5. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes da "
-                "noticia, no campo bullets.\n\n"
+                "noticia, no campo bullets.\n"
+                "6. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
+                "sobre mercado financeiro, economia ou negocios. Classifique como false se for "
+                "sobre crime, policia, justica criminal, celebridade, entretenimento, esporte, ou "
+                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
                 '{"title": "titulo traduzido", "summary": "resumo aqui", "sentiment": "BULLISH", '
                 '"impacto_estimado": "Curto Prazo | Pressao de Margem/Resultado", '
-                '"bullets": ["fato 1", "fato 2"]}\n\n'
+                '"bullets": ["fato 1", "fato 2"], "relevante_mercado": true}\n\n'
                 "Titulo original: " + title + "\n"
                 "Texto original: " + body_cleaned
             )
         else:
             instruction = (
-                "Voce recebeu uma noticia de mercado financeiro em portugues. Faca quatro coisas:\n"
+                "Voce recebeu uma noticia de mercado financeiro em portugues. Faca cinco coisas:\n"
                 "1. Mantenha o titulo original em portugues no campo title.\n"
                 "2. Escreva um resumo em no maximo 150 caracteres, em portugues do Brasil, "
                 "em uma frase completa que termine com ponto final - nunca corte a frase no "
@@ -324,11 +359,15 @@ def summarize_with_ai(title, body, translate=True):
                 "Tese/Fundamento', 'Imediato | Reacao de Preco na Abertura', 'Curto Prazo | Pressao "
                 "de Margem/Resultado', 'Neutro | Acompanhamento de Rotina'.\n"
                 "5. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes da "
-                "noticia, no campo bullets.\n\n"
+                "noticia, no campo bullets.\n"
+                "6. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
+                "sobre mercado financeiro, economia ou negocios. Classifique como false se for "
+                "sobre crime, policia, justica criminal, celebridade, entretenimento, esporte, ou "
+                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
                 '{"title": "titulo original", "summary": "resumo aqui", "sentiment": "BEARISH", '
                 '"impacto_estimado": "Medio Prazo | Mudanca Tese/Fundamento", '
-                '"bullets": ["fato 1", "fato 2"]}\n\n'
+                '"bullets": ["fato 1", "fato 2"], "relevante_mercado": true}\n\n'
                 "Titulo original: " + title + "\n"
                 "Texto original: " + body_cleaned
             )
@@ -351,12 +390,17 @@ def summarize_with_ai(title, body, translate=True):
         if not impacto_estimado or not isinstance(impacto_estimado, str):
             impacto_estimado = IMPACT_FALLBACK
 
+        relevante_mercado = parsed.get("relevante_mercado", True)
+        if not isinstance(relevante_mercado, bool):
+            relevante_mercado = True
+
         return {
             "title": parsed.get("title", title) or title,
             "body": final_body,
             "sentiment": parsed.get("sentiment", "NEUTRAL").upper(),
             "impacto_estimado": impacto_estimado,
             "bullets": bullets,
+            "relevante_mercado": relevante_mercado,
         }
     except Exception as e:
         print("Erro IA (Groq): " + str(e))
@@ -435,10 +479,10 @@ def format_message(source, entry, ai_result):
     body = re.sub(r"(?i)pontos[- ]chave:?", "", body)
     body = re.sub(r"https?://\S+", "", body)
     body = re.sub(r"www\.\S+", "", body)
-    body = re.sub(r"\n+", "\n", body).strip()
+    body = re.sub(r"\n{3,}", "\n\n", body).strip()
 
     if not body:
-        body = "Leia mais no link."
+        body = "Confira mais detalhes no link abaixo."
 
     if not bullets:
         bullets = derive_fallback_bullets(body)
@@ -461,10 +505,20 @@ def format_message(source, entry, ai_result):
     for b in bullets[:2]:
         bullets_html += "\n• " + html_module.escape(b, quote=False)
 
-    smart_link = build_smart_link(title, body)
-    link_line = ""
-    if smart_link:
-        link_line = "\n\n📍 Ver detalhes: " + smart_link
+    # Link garantido: usa o link original da noticia se for valido; se
+    # nao, usa o link inteligente (pagina de ativo/tema/evento) se
+    # existir; se nao houver nenhum dos dois, cai no site como
+    # fallback obrigatorio - NUNCA fica sem link no rodape.
+    article_link = (entry.get("link", "") or "").strip()
+    is_valid_link = article_link.startswith("http://") or article_link.startswith("https://")
+
+    if is_valid_link:
+        final_link = article_link
+    else:
+        smart_link = build_smart_link(title, body)
+        final_link = smart_link if smart_link else "https://antesdosino.com.br"
+
+    link_line = "\n\n📌 Ver detalhes: " + final_link
 
     source_line = ""
     if source_esc.strip():
@@ -3080,6 +3134,33 @@ def clean_channel_post_text(text):
     return text
 
 
+def is_agenda_bulletin(text):
+    """Detecta se o post e um boletim de agenda/calendario (varios
+    horarios e marcadores de secao), em vez de uma ou mais manchetes
+    de noticia de verdade. Esses posts nao devem ser fatiados por
+    cabecalho isolado - viram um unico envio estruturado."""
+    horarios_encontrados = len(re.findall(r"\b\d{1,2}h\d{2}\b", text))
+    marcador_encontrado = bool(re.search(r"🗓️|📊|📅|📌", text))
+    return horarios_encontrados >= 2 or (marcador_encontrado and horarios_encontrados >= 1)
+
+
+def has_minimum_content(titulo, corpo):
+    """Trava anti-mensagem-vazia: descarta manchetes muito curtas
+    (menos de 4 palavras, tipo cabecalhos isolados de agenda: 'Eventos',
+    'Balancos') ou sem corpo E sem cara de fato completo."""
+    titulo = (titulo or "").strip()
+    corpo = (corpo or "").strip()
+
+    palavras_titulo = [p for p in re.split(r"\s+", titulo) if p.strip(" 📊📈📅🗓️📌-:")]
+    if len(palavras_titulo) < 4:
+        return False
+
+    if not corpo and len(palavras_titulo) < 6:
+        return False
+
+    return True
+
+
 def split_channel_post_into_items(raw_text):
     """Um unico post de canal pode conter mais de uma manchete
     distinta, separadas por linha em branco. Divide o texto em itens
@@ -3087,8 +3168,19 @@ def split_channel_post_into_items(raw_text):
     uma mensagem propria no Telegram, nunca misturadas num so balao.
     Blocos que sao apenas o nome de uma agencia (ex: 'Reuters' isolado
     numa linha) nao viram item novo - sao anexados como atribuicao do
-    item anterior."""
+    item anterior. Boletins de agenda (varios horarios/marcadores) nao
+    sao fatiados por cabecalho - viram um unico envio estruturado."""
     text = clean_channel_post_text(raw_text)
+    if not text.strip():
+        return []
+
+    if is_agenda_bulletin(text):
+        return [{
+            "titulo": "Agenda do dia: principais eventos e indicadores",
+            "corpo": text.strip(),
+            "agency_hint": "",
+        }]
+
     blocks = [b.strip() for b in re.split(r"\n{2,}", text) if b.strip()]
 
     items = []
@@ -3174,6 +3266,26 @@ def process_forwarded_channels():
                 if not titulo_puro:
                     continue
 
+                # Trava anti-mensagem-vazia: descarta cabecalhos isolados
+                # de agenda (ex: "Eventos", "Balancos") sem conteudo real.
+                if not has_minimum_content(titulo_puro, corpo_puro):
+                    print("Descartado por conteudo insuficiente: " + titulo_puro[:60])
+                    continue
+
+                # Filtro obrigatorio 1: palavras negativas (crime, gossip,
+                # esporte, etc) - mesmo filtro usado no RSS principal,
+                # aplicado aqui via um "entry" equivalente.
+                fake_entry_for_filter = {"title": titulo_puro, "summary": corpo_puro}
+                if not is_relevant(fake_entry_for_filter):
+                    print("Descartado pelo filtro de palavras negativas (encaminhador): " + titulo_puro[:60])
+                    continue
+
+                # Filtro obrigatorio 2: validacao via IA - segunda camada,
+                # pega o que o filtro de palavras-chave nao cobrir.
+                if not is_market_relevant_ai(titulo_puro, corpo_puro):
+                    print("Descartado pela IA (nao relevante para mercado, encaminhador): " + titulo_puro[:60])
+                    continue
+
                 if agency_hint:
                     fonte_detectada = agency_hint
                 else:
@@ -3200,7 +3312,7 @@ def process_forwarded_channels():
 
                     new_portal_entries.append({
                         "title": final_title,
-                        "body": truncate_text_clean(final_body, 200) if final_body else "Leia mais no link.",
+                        "body": truncate_text_clean(final_body, 200) if final_body else "Confira mais detalhes no link abaixo.",
                         "source": CHANNEL_DISPLAY_NAMES.get(clean_channel.lower(), clean_channel),
                         "sentiment": sentiment,
                         "link": post_link,
@@ -3382,6 +3494,20 @@ def main():
             ai_result = None
             if needs_ai(source, raw_body):
                 ai_result = summarize_with_ai(title, raw_body, translate=is_english)
+
+            if ai_result and ai_result.get("relevante_mercado") is False:
+                print("Descartada pela IA (nao relevante para mercado): " + title[:60])
+                sent_hashes.add(h)
+                save_state(sent_hashes, recent_titles)
+                continue
+
+            check_title = ai_result.get("title", title) if ai_result else title
+            check_body = ai_result.get("body", raw_body) if ai_result else raw_body
+            if not has_minimum_content(check_title, check_body):
+                print("Descartada por conteudo insuficiente: " + title[:60])
+                sent_hashes.add(h)
+                save_state(sent_hashes, recent_titles)
+                continue
 
             message, final_title, final_body, sentiment = format_message(source, entry, ai_result)
 
