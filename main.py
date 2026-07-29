@@ -267,8 +267,6 @@ def ask_groq(prompt):
     return data["choices"][0]["message"]["content"].strip()
 
 
-IMPACT_FALLBACK = "Curto Prazo | Acompanhamento de Mercado"
-
 VALUE_PROP_BLOCK = (
     "<section style='background:rgba(255,255,255,0.02);border-top:1px solid var(--line);'>"
     "<div class='section-head'>"
@@ -312,21 +310,14 @@ def is_market_relevant_ai(title, body):
         return True
 
 
-def derive_fallback_bullets(text):
-    """Gera bullets basicos por regra (sem IA) quando a Groq nao
-    retornar o campo 'bullets' ou quando ai_result for None - usado
-    tanto no fallback de parse quanto para noticias sem IA (ex: canais
-    encaminhados)."""
+def derive_fallback_summary(text):
+    """Gera um resumo em paragrafo (2-3 frases) por regra, sem IA -
+    usado quando a Groq nao retorna resumo ou quando ai_result e None
+    (ex: noticias do encaminhador de canais)."""
     text = (text or "").strip()
     if not text:
-        return ["Confira mais detalhes no link abaixo."]
-    parts = [p.strip() for p in text.split(". ") if p.strip()]
-    bullets = []
-    for p in parts[:2]:
-        if not p.endswith("."):
-            p = p + "."
-        bullets.append(p)
-    return bullets if bullets else ["Confira mais detalhes no link abaixo."]
+        return "Confira mais detalhes no link abaixo."
+    return text
 
 
 def summarize_with_ai(title, body, translate=True):
@@ -337,54 +328,61 @@ def summarize_with_ai(title, body, translate=True):
 
         if translate:
             instruction = (
-                "Voce recebeu uma noticia de mercado financeiro em ingles. Faca seis coisas:\n"
-                "1. Traduza o titulo para portugues do Brasil.\n"
-                "2. Escreva um resumo em no maximo 150 caracteres, em portugues do Brasil, "
-                "em uma frase completa que termine com ponto final - nunca corte a frase no "
-                "meio. Se o texto original for curto ou vazio, baseie o resumo no titulo, "
-                "explicando o contexto provavel do evento para o mercado.\n"
+                "Voce recebeu uma noticia de mercado financeiro em ingles, para um canal de "
+                "Telegram voltado a traders. Faca seis coisas:\n"
+                "1. Traduza o titulo para portugues do Brasil, factual e direto, no maximo 12 "
+                "palavras, sem sensacionalismo.\n"
+                "2. Escreva um resumo de 2 a 3 frases completas, em portugues do Brasil claro, "
+                "sem jargao desnecessario, parafraseando (nunca copiando) a noticia original. "
+                "Foque no que muda para quem opera no mercado. Se o texto original for curto ou "
+                "vazio, baseie o resumo no titulo, explicando o contexto provavel do evento.\n"
                 "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
-                "4. Classifique o campo impacto_estimado escolhendo uma combinacao de prazo e tipo "
-                "de evento para o mercado brasileiro, no formato 'Prazo | Tipo de evento'. Exemplos "
-                "validos: 'Curtissimo Prazo | Volatilidade Operacional', 'Medio Prazo | Mudanca "
-                "Tese/Fundamento', 'Imediato | Reacao de Preco na Abertura', 'Curto Prazo | Pressao "
-                "de Margem/Resultado', 'Neutro | Acompanhamento de Rotina'.\n"
-                "5. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes da "
-                "noticia, no campo bullets.\n"
-                "6. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
+                "4. Se a noticia trouxer informacao nova ou acionavel, preencha impacto_estimado "
+                "no formato 'Prazo | Acao especifica', variando a linguagem entre noticias. "
+                "Exemplos: 'Curto Prazo | Reacao Imediata Esperada na Abertura', 'Medio Prazo | "
+                "Monitorar Guidance no Call de Resultados', 'Longo Prazo | Sem Efeito Direto em "
+                "Preco'. Se a noticia NAO trouxer nada novo ou acionavel (ex: e so repeticao ou "
+                "contexto generico), deixe impacto_estimado como string vazia.\n"
+                "5. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
                 "sobre mercado financeiro, economia ou negocios. Classifique como false se for "
                 "sobre crime, policia, justica criminal, celebridade, entretenimento, esporte, ou "
-                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n\n"
+                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n"
+                "6. Classifique destaque como true SOMENTE se for breaking news, decisao de "
+                "politica monetaria (Copom/Fed) ou resultado de empresa relevante. Caso contrario, false.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-                '{"title": "titulo traduzido", "summary": "resumo aqui", "sentiment": "BULLISH", '
-                '"impacto_estimado": "Curto Prazo | Pressao de Margem/Resultado", '
-                '"bullets": ["fato 1", "fato 2"], "relevante_mercado": true}\n\n'
+                '{"title": "titulo traduzido", "summary": "resumo de 2 a 3 frases aqui", '
+                '"sentiment": "BULLISH", "impacto_estimado": "Curto Prazo | Reacao Imediata '
+                'Esperada na Abertura", "relevante_mercado": true, "destaque": false}\n\n'
                 "Titulo original: " + title + "\n"
                 "Texto original: " + body_cleaned
             )
         else:
             instruction = (
-                "Voce recebeu uma noticia de mercado financeiro em portugues. Faca cinco coisas:\n"
-                "1. Mantenha o titulo original em portugues no campo title.\n"
-                "2. Escreva um resumo em no maximo 150 caracteres, em portugues do Brasil, "
-                "em uma frase completa que termine com ponto final - nunca corte a frase no "
-                "meio. Se o texto original for curto ou vazio, baseie o resumo no titulo.\n"
+                "Voce recebeu uma noticia de mercado financeiro em portugues, para um canal de "
+                "Telegram voltado a traders. Faca cinco coisas:\n"
+                "1. Reescreva o titulo em portugues, factual e direto, no maximo 12 palavras, "
+                "sem sensacionalismo (pode ajustar o titulo original se ele for longo ou vago).\n"
+                "2. Escreva um resumo de 2 a 3 frases completas, em portugues do Brasil claro, "
+                "sem jargao desnecessario, parafraseando (nunca copiando) o texto original. Foque "
+                "no que muda para quem opera no mercado. Se o texto original for curto ou vazio, "
+                "baseie o resumo no titulo.\n"
                 "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
-                "4. Classifique o campo impacto_estimado escolhendo uma combinacao de prazo e tipo "
-                "de evento para o mercado brasileiro, no formato 'Prazo | Tipo de evento'. Exemplos "
-                "validos: 'Curtissimo Prazo | Volatilidade Operacional', 'Medio Prazo | Mudanca "
-                "Tese/Fundamento', 'Imediato | Reacao de Preco na Abertura', 'Curto Prazo | Pressao "
-                "de Margem/Resultado', 'Neutro | Acompanhamento de Rotina'.\n"
-                "5. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes da "
-                "noticia, no campo bullets.\n"
-                "6. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
+                "4. Se a noticia trouxer informacao nova ou acionavel, preencha impacto_estimado "
+                "no formato 'Prazo | Acao especifica', variando a linguagem entre noticias. "
+                "Exemplos: 'Curto Prazo | Reacao Imediata Esperada na Abertura', 'Medio Prazo | "
+                "Monitorar Guidance no Call de Resultados', 'Longo Prazo | Sem Efeito Direto em "
+                "Preco'. Se a noticia NAO trouxer nada novo ou acionavel, deixe impacto_estimado "
+                "como string vazia.\n"
+                "5. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
                 "sobre mercado financeiro, economia ou negocios. Classifique como false se for "
                 "sobre crime, policia, justica criminal, celebridade, entretenimento, esporte, ou "
-                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n\n"
+                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n"
+                "6. Classifique destaque como true SOMENTE se for breaking news, decisao de "
+                "politica monetaria (Copom/Fed) ou resultado de empresa relevante. Caso contrario, false.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-                '{"title": "titulo original", "summary": "resumo aqui", "sentiment": "BEARISH", '
-                '"impacto_estimado": "Medio Prazo | Mudanca Tese/Fundamento", '
-                '"bullets": ["fato 1", "fato 2"], "relevante_mercado": true}\n\n'
+                '{"title": "titulo reescrito", "summary": "resumo de 2 a 3 frases aqui", '
+                '"sentiment": "BEARISH", "impacto_estimado": "", '
+                '"relevante_mercado": true, "destaque": false}\n\n'
                 "Titulo original: " + title + "\n"
                 "Texto original: " + body_cleaned
             )
@@ -394,30 +392,30 @@ def summarize_with_ai(title, body, translate=True):
         parsed = json.loads(raw_response)
 
         final_body = parsed.get("summary", body_cleaned) or body_cleaned
-        final_body = truncate_text_clean(final_body, 160)
-
-        bullets = parsed.get("bullets", [])
-        if not isinstance(bullets, list) or not bullets:
-            bullets = derive_fallback_bullets(final_body)
-        bullets = [str(b).strip() for b in bullets if str(b).strip()][:2]
-        if not bullets:
-            bullets = derive_fallback_bullets(final_body)
+        final_body = final_body.strip()
+        if not final_body:
+            final_body = derive_fallback_summary(body_cleaned)
 
         impacto_estimado = parsed.get("impacto_estimado", "")
-        if not impacto_estimado or not isinstance(impacto_estimado, str):
-            impacto_estimado = IMPACT_FALLBACK
+        if not isinstance(impacto_estimado, str):
+            impacto_estimado = ""
+        impacto_estimado = impacto_estimado.strip()
 
         relevante_mercado = parsed.get("relevante_mercado", True)
         if not isinstance(relevante_mercado, bool):
             relevante_mercado = True
+
+        destaque = parsed.get("destaque", False)
+        if not isinstance(destaque, bool):
+            destaque = False
 
         return {
             "title": parsed.get("title", title) or title,
             "body": final_body,
             "sentiment": parsed.get("sentiment", "NEUTRAL").upper(),
             "impacto_estimado": impacto_estimado,
-            "bullets": bullets,
             "relevante_mercado": relevante_mercado,
+            "destaque": destaque,
         }
     except Exception as e:
         print("Erro IA (Groq): " + str(e))
@@ -481,15 +479,13 @@ def format_message(source, entry, ai_result):
     title = entry.get("title", "Sem titulo")
     body = get_entry_body(entry)
     sentiment = "NEUTRAL"
-    impacto_estimado = IMPACT_FALLBACK
-    bullets = None
+    impacto_estimado = ""
 
     if ai_result:
         title = ai_result.get("title", title) or title
         body = ai_result.get("body", "") or body
         sentiment = ai_result.get("sentiment", "NEUTRAL")
-        impacto_estimado = ai_result.get("impacto_estimado", IMPACT_FALLBACK)
-        bullets = ai_result.get("bullets")
+        impacto_estimado = ai_result.get("impacto_estimado", "") or ""
 
     body = strip_html_tags(body)
     body = strip_boilerplate(body)
@@ -498,42 +494,31 @@ def format_message(source, entry, ai_result):
     body = re.sub(r"www\.\S+", "", body)
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
 
-    used_title_as_body = False
     if not body:
         # Fallback inteligente: fontes estilo "alerta rapido" (ex: Yahoo
         # Finance, Seeking Alpha Market Currents) frequentemente nao tem
         # descricao separada - o titulo JA E o fato completo. Em vez de
         # uma frase generica sem informacao, usa o proprio titulo como
         # base do resumo, preservando a experiencia do usuario.
-        body = title
-        used_title_as_body = True
-
-    if not bullets:
-        if used_title_as_body:
-            # Evita bullet redundante repetindo o titulo que ja aparece
-            # no cabecalho da mensagem.
-            bullets = []
-        else:
-            bullets = derive_fallback_bullets(body)
+        body = derive_fallback_summary(title)
 
     if sentiment == "BULLISH":
         marker = "\U0001F7E2"
-        sentiment_label = "BULLISH"
     elif sentiment == "BEARISH":
-        marker = "\U0001F7E1"
-        sentiment_label = "BEARISH"
+        marker = "\U0001F534"
     else:
         marker = "\u26AA"
-        sentiment_label = "NEUTRAL"
 
     title_esc = html_module.escape(title, quote=False)
-    impacto_esc = html_module.escape(impacto_estimado, quote=False)
-    source_esc = html_module.escape(source, quote=False)
+    body_esc = html_module.escape(body, quote=False)
 
-    bullets_html = ""
-    for i, b in enumerate(bullets[:2]):
-        prefix = "\n\n• " if i == 0 else "\n• "
-        bullets_html += prefix + html_module.escape(b, quote=False)
+    # Linha de impacto: so aparece quando a IA identificou algo novo ou
+    # acionavel de verdade - nunca mostramos um texto generico so para
+    # preencher espaco.
+    impacto_line = ""
+    if impacto_estimado:
+        impacto_esc = html_module.escape(impacto_estimado, quote=False)
+        impacto_line = "\n\n⏱️ Impacto: " + impacto_esc
 
     # Link garantido: usa o link original da noticia se for valido; se
     # nao, usa o link inteligente (pagina de ativo/tema/evento) se
@@ -550,15 +535,10 @@ def format_message(source, entry, ai_result):
 
     link_line = "\n\n📌 Ver detalhes: " + final_link
 
-    source_line = ""
-    if source_esc.strip():
-        source_line = "\n\n<i>" + source_esc + "</i>"
-
     result = (
-        marker + " <b>" + sentiment_label + "</b> " + title_esc + "\n"
-        "└ ⏱️ Impacto: " + impacto_esc
-        + bullets_html
-        + source_line
+        marker + " <b>" + title_esc + "</b>\n\n"
+        + body_esc
+        + impacto_line
         + link_line
     )
     if len(result) > 3900:
