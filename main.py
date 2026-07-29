@@ -329,13 +329,19 @@ def sanitize_message_text(text):
     text = re.sub(r'"\s*[a-zA-Z_]+"\s*:\s*', "", text)
 
     # Remove @usuario, link de convite do Telegram e frases-convite -
-    # nunca deve sobrar referencia ao grupo/canal de origem.
+    # nunca deve sobrar referencia ao grupo/canal de origem. As regras
+    # de convite exigem sinal especifico (posse "nosso/nossa" ou
+    # mencao explicita a Telegram/WhatsApp) para nao apagar palavra
+    # legitima de noticia financeira (ex: "assine o contrato", "canal
+    # de vendas", "siga a tendencia do mercado", "grupo economico").
     text = re.sub(r"@\w{3,}", "", text)
     text = re.sub(r"t\.me/\S+", "", text, flags=re.IGNORECASE)
     text = re.sub(
-        r"(?i)(entre|junte-se|inscreva-se|assine|siga)\s+(no|na|ao)?\s*(grupo|canal)[^.\n]*\.?",
+        r"(?i)(entre|junte-se|inscreva-se|assine|siga)(-nos)?\s+(no|na|ao)?\s*(nosso|nossa)\s+(grupo|canal)(\s+d[oe]\s+telegram)?[^.\n]*\.?",
         "", text
     )
+    text = re.sub(r"(?i)\b(grupo|canal)\s+d[oe]\s+telegram\b[^.\n]*\.?", "", text)
+    text = re.sub(r"(?i)\bsiga(-nos)?\s+(no|pelo|via)\s+(telegram|whatsapp)\b[^.\n]*\.?", "", text)
 
     # Colapsa espacos e limita linha vazia dupla intencional (paragrafo)
     # sem destruir a separacao entre titulo e resumo.
@@ -577,6 +583,45 @@ def send_telegram_message(text):
         return False
 
 
+def build_smart_link(title, body):
+    """Verifica se a noticia menciona um ativo, tema ou evento que ja
+    tem pagina propria gerada em disco (de um ciclo anterior) e
+    devolve a URL correspondente - ou None se nao houver pagina. Nunca
+    monta link para pagina inexistente.
+
+    NAO utilizada em format_message atualmente (o formato editorial
+    atual do Antes do Sino nao inclui link nas mensagens) - mantida
+    disponivel no codigo para uso futuro."""
+    fake_entry = {"title": title, "body": body}
+
+    for profile in ASSET_PROFILES:
+        if match_asset_terms(fake_entry, profile["terms"]):
+            path = "docs/ativos/" + profile["slug"] + ".html"
+            if os.path.exists(path):
+                return "https://antesdosino.com.br/ativos/" + profile["slug"] + ".html"
+
+    for theme in THEME_PROFILES:
+        if match_theme_keywords(fake_entry, theme):
+            path = "docs/temas/" + theme["slug"] + ".html"
+            if os.path.exists(path):
+                return "https://antesdosino.com.br/temas/" + theme["slug"] + ".html"
+
+    try:
+        events_state = load_events_state()
+        candidate_events = list(SEED_EVENTS) + events_state.get("events", [])
+        for event in candidate_events:
+            keywords = get_event_keywords(event)
+            if keywords and match_event_keywords(fake_entry, keywords):
+                slug = slugify_label(event["label"])
+                path = "docs/eventos/" + slug + ".html"
+                if os.path.exists(path):
+                    return "https://antesdosino.com.br/eventos/" + slug + ".html"
+    except Exception:
+        pass
+
+    return None
+
+
 def format_message(source, entry, ai_result):
     """Monta a mensagem final do Telegram no formato:
     Titulo em negrito
@@ -749,13 +794,46 @@ def fetch_selic():
         return None
 
 
-def build_cockpit_html(portal_entries, entries_today=None):
-    if entries_today is None:
-        entries_today = portal_entries
+def compute_market_snapshot():
+    """Camada de dados de mercado, independente de noticia - apenas
+    numeros organizados. Sem IA, sem HTML, sem texto, sem mensagem.
 
+    Reaproveita EXATAMENTE as mesmas chamadas que ja existiam
+    (fetch_cockpit_quotes, fetch_selic, fetch_usd_brl) - nao adiciona
+    nenhuma chamada nova de API. Deve ser calculada UMA UNICA VEZ por
+    execucao do bot (no main()) e reaproveitada por build_cockpit_html
+    (Home) e pelos Briefings, evitando busca duplicada."""
     quotes = fetch_cockpit_quotes()
     usd = fetch_usd_brl()
     selic = fetch_selic()
+
+    quotes_by_symbol = {}
+    for q in quotes:
+        symbol = q.get("symbol", "")
+        if symbol:
+            quotes_by_symbol[symbol] = q
+
+    return {
+        "quotes": quotes,
+        "quotes_by_symbol": quotes_by_symbol,
+        "usd": usd,
+        "selic": selic,
+        "fetched_at": datetime.now(BR_TZ).strftime("%Y-%m-%d %H:%M"),
+    }
+
+
+def build_cockpit_html(portal_entries, entries_today=None, market_snapshot=None):
+    if entries_today is None:
+        entries_today = portal_entries
+
+    # Reaproveita o snapshot ja calculado no main() quando disponivel -
+    # so busca de novo se for chamado isoladamente (compatibilidade).
+    if market_snapshot is None:
+        market_snapshot = compute_market_snapshot()
+
+    quotes = market_snapshot["quotes"]
+    usd = market_snapshot["usd"]
+    selic = market_snapshot["selic"]
     today_thermo = compute_sentiment_thermometer(entries_today)
     status = market_status()
 
@@ -3213,9 +3291,54 @@ def is_event_brazil_focused(event):
     return True
 
 
-def get_br_asset_radar(entries, limit=3):
-    """Retorna os papeis da B3 (excluindo big techs americanas) com
-    maior densidade de noticias recentes - usado no radar de acoes."""
+def build_market_context_lines(market_snapshot):
+    """Monta as linhas de texto puro (sem HTML) do bloco 'Contexto dos
+    Mercados' dos Briefings, a partir do snapshot ja calculado. Nunca
+    inventa dado: se um ativo/indicador nao tiver cotacao disponivel
+    no snapshot, a linha dele e simplesmente omitida - nunca aparece
+    com valor zerado ou falso."""
+    if not market_snapshot:
+        return []
+
+    labels_em_ordem = [
+        ("^BVSP", "Ibovespa"),
+        ("PETR4", "Petrobras"),
+        ("VALE3", "Vale"),
+        ("ITUB4", "Itaú"),
+    ]
+
+    quotes_by_symbol = market_snapshot.get("quotes_by_symbol", {})
+    lines = []
+    for symbol, label in labels_em_ordem:
+        q = quotes_by_symbol.get(symbol)
+        if q is None:
+            continue
+        change = q.get("change")
+        if change is None:
+            continue
+        sign = "+" if change >= 0 else ""
+        lines.append(label + ": " + sign + str(round(change, 2)) + "%")
+
+    selic = market_snapshot.get("selic")
+    if selic is not None:
+        lines.append("CDI/Selic: " + str(selic) + "% a.a.")
+
+    return lines
+
+
+def get_br_asset_radar(entries, market_snapshot=None, limit=3):
+    """Retorna os papeis da B3 (excluindo big techs americanas) em
+    destaque, com DUAS fontes possiveis, nessa ordem de preferencia:
+
+    1. Destaque por NOTICIA - densidade de mencoes recentes (fonte
+       original, mais editorial, preferida quando disponivel).
+    2. Destaque por PRECO - maior variacao percentual do dia, usando o
+       snapshot de mercado (fetch_cockpit_quotes) - fallback usado
+       SOMENTE quando nao ha mencao suficiente em noticia, para o
+       radar nunca ficar vazio so por falta de cobertura editorial.
+
+    Cada item retornado indica explicitamente qual fonte foi usada,
+    no campo 'source' ('noticia' ou 'preco')."""
     counts = []
     for profile in ASSET_PROFILES:
         if profile["group"] not in BR_ASSET_GROUPS:
@@ -3224,7 +3347,28 @@ def get_br_asset_radar(entries, limit=3):
         if count > 0:
             counts.append((profile, count))
     counts.sort(key=lambda pair: pair[1], reverse=True)
-    return [pair[0] for pair in counts[:limit]]
+
+    if counts:
+        return [{"profile": pair[0], "source": "noticia"} for pair in counts[:limit]]
+
+    # Fallback: sem destaque editorial suficiente - usa movimento de
+    # preco real do snapshot de mercado, se disponivel.
+    if not market_snapshot:
+        return []
+
+    quotes_by_symbol = market_snapshot.get("quotes_by_symbol", {})
+    price_moves = []
+    for profile in ASSET_PROFILES:
+        if profile["group"] not in BR_ASSET_GROUPS:
+            continue
+        ticker = profile.get("quote_ticker", "")
+        q = quotes_by_symbol.get(ticker)
+        if q is None or q.get("change") is None:
+            continue
+        price_moves.append((profile, q["change"]))
+
+    price_moves.sort(key=lambda pair: abs(pair[1]), reverse=True)
+    return [{"profile": pair[0], "source": "preco", "change": pair[1]} for pair in price_moves[:limit]]
 
 
 def summarize_briefing_with_ai(entries, tipo):
@@ -3262,12 +3406,18 @@ def summarize_briefing_with_ai(entries, tipo):
         return "Sintese indisponivel no momento - confira as noticias completas no site."
 
 
-def build_morning_briefing_message(entries_today, eventos):
+def build_morning_briefing_message(entries_today, eventos, market_snapshot=None):
     """Monta o texto do Morning Briefing ('Antes do Sino - Abertura B3')."""
     today_str = datetime.now(BR_TZ).strftime("%d/%m/%Y")
     today_iso = datetime.now(BR_TZ).strftime("%Y-%m-%d")
 
     br_entries = get_brazil_relevant_entries(entries_today)
+    # Resiliencia: em dia com pouco volume editorial BR-relevante,
+    # amplia a rede para entries_today inteiro (sem o filtro BR) em
+    # vez de deixar a sintese/radar caírem direto no fallback generico.
+    if len(br_entries) < 3 and entries_today:
+        br_entries = entries_today
+
     sintese = summarize_briefing_with_ai(br_entries, "abertura")
 
     eventos_hoje = [
@@ -3282,17 +3432,33 @@ def build_morning_briefing_message(entries_today, eventos):
     else:
         eventos_texto = "Nenhum evento de grande destaque previsto para hoje.\n"
 
-    radar_assets = get_br_asset_radar(br_entries, limit=3)
+    market_lines = build_market_context_lines(market_snapshot)
+    market_texto = ""
+    if market_lines:
+        for linha in market_lines:
+            market_texto += linha + "\n"
+    else:
+        market_texto = "Dados de mercado indisponíveis no momento.\n"
+
+    radar_assets = get_br_asset_radar(br_entries, market_snapshot, limit=3)
     radar_texto = ""
     if radar_assets:
-        for a in radar_assets:
-            radar_texto += "• " + a["label"] + "\n"
+        for item in radar_assets:
+            label = item["profile"]["label"]
+            if item["source"] == "preco":
+                change = item.get("change", 0)
+                sign = "+" if change >= 0 else ""
+                radar_texto += "• " + label + " (destaque de preço, " + sign + str(round(change, 2)) + "%)\n"
+            else:
+                radar_texto += "• " + label + "\n"
     else:
         radar_texto = "Sem destaque de papel especifico ate o momento.\n"
 
     message = (
         "🔔 <b>ANTES DO SINO — ABERTURA B3</b>\n"
         + today_str + "\n\n"
+        "🌎 <b>CONTEXTO DOS MERCADOS</b>\n"
+        + html_module.escape(market_texto) + "\n"
         "🇧🇷 <b>RADAR DO IBOVESPA</b>\n"
         + html_module.escape(sintese) + "\n\n"
         "📌 <b>EVENTOS DO DIA NA B3 / BRASIL</b>\n"
@@ -3304,12 +3470,17 @@ def build_morning_briefing_message(entries_today, eventos):
     return message
 
 
-def build_evening_briefing_message(entries_today, eventos):
+def build_evening_briefing_message(entries_today, eventos, market_snapshot=None):
     """Monta o texto do Evening Briefing ('Depois do Sino - Fechamento B3')."""
     today_str = datetime.now(BR_TZ).strftime("%d/%m/%Y")
     tomorrow_iso = (datetime.now(BR_TZ) + timedelta(days=1)).strftime("%Y-%m-%d")
 
     br_entries = get_brazil_relevant_entries(entries_today)
+    # Resiliencia: mesma logica do Morning - amplia a rede em dia fraco
+    # em vez de deixar sintese/pautas caírem direto no fallback generico.
+    if len(br_entries) < 3 and entries_today:
+        br_entries = entries_today
+
     sintese = summarize_briefing_with_ai(br_entries, "fechamento")
 
     clusters = compute_news_clusters(br_entries)
@@ -3332,9 +3503,19 @@ def build_evening_briefing_message(entries_today, eventos):
     else:
         eventos_texto = "Sem eventos de grande destaque previstos para amanha.\n"
 
+    market_lines = build_market_context_lines(market_snapshot)
+    market_texto = ""
+    if market_lines:
+        for linha in market_lines:
+            market_texto += linha + "\n"
+    else:
+        market_texto = "Dados de mercado indisponíveis no momento.\n"
+
     message = (
         "🌆 <b>DEPOIS DO SINO — FECHAMENTO B3</b>\n"
         + today_str + "\n\n"
+        "🌎 <b>CONTEXTO DOS MERCADOS</b>\n"
+        + html_module.escape(market_texto) + "\n"
         "📊 <b>BALANÇO DO PREGÃO</b>\n"
         + html_module.escape(sintese) + "\n\n"
         "🔥 <b>O QUE MOVEU A BOLSA HOJE</b>\n"
@@ -3365,7 +3546,7 @@ def send_briefing_message(text, telegram_bot_token, telegram_chat_id):
         return False
 
 
-def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram_chat_id):
+def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram_chat_id, market_snapshot=None):
     """Funcao principal e modular dos briefings automaticos.
 
     Parametros:
@@ -3373,6 +3554,9 @@ def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram
         eventos: lista combinada de eventos (SEED_EVENTS + registro
                  automatico extraido de events_detected.json).
         telegram_bot_token / telegram_chat_id: credenciais do canal VIP.
+        market_snapshot: dados de mercado ja calculados no main()
+                 (compute_market_snapshot) - reaproveitado aqui, nao
+                 gera nenhuma chamada de API adicional.
 
     Comportamento:
         - So dispara dentro da janela de horario correspondente (manha
@@ -3386,7 +3570,7 @@ def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram
     state = load_briefings_state()
 
     if should_send_morning_briefing():
-        message = build_morning_briefing_message(entries_today, eventos)
+        message = build_morning_briefing_message(entries_today, eventos, market_snapshot)
         if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
             state["last_morning_date"] = today_str
             save_briefings_state(state)
@@ -3395,7 +3579,7 @@ def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram
             print("Falha ao enviar Morning Briefing - sera tentado novamente no proximo ciclo dentro da janela.")
 
     if should_send_evening_briefing():
-        message = build_evening_briefing_message(entries_today, eventos)
+        message = build_evening_briefing_message(entries_today, eventos, market_snapshot)
         if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
             state["last_evening_date"] = today_str
             save_briefings_state(state)
@@ -3732,7 +3916,7 @@ def save_portal_history(entries):
         json.dump(trimmed, f, ensure_ascii=False)
 
 
-def generate_portal(entries, entries_today=None, template_path="docs/template.html", output_path="docs/index.html", home_insights=None):
+def generate_portal(entries, entries_today=None, template_path="docs/template.html", output_path="docs/index.html", home_insights=None, market_snapshot=None):
     """Le o template.html, substitui os placeholders de ticker e feed
     pelos dados reais mais recentes, e salva como index.html (o que o
     GitHub Pages efetivamente publica)."""
@@ -3789,7 +3973,7 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
         template = before + start_marker_c + "\n" + cards_html + end_marker_c + after
 
     if start_marker_k in template and end_marker_k in template:
-        cockpit_html = build_cockpit_html(entries, entries_today)
+        cockpit_html = build_cockpit_html(entries, entries_today, market_snapshot)
         before = template.split(start_marker_k)[0]
         after = template.split(end_marker_k)[1]
         template = before + start_marker_k + "\n" + cockpit_html + end_marker_k + after
@@ -4003,7 +4187,11 @@ def main():
         asset_archive, theme_archive = {}, {}
         insights = {"home": [], "assets": {}, "themes": {}}
 
-    generate_portal(all_portal_entries, entries_today, home_insights=insights["home"])
+    # Calculado UMA UNICA VEZ por execucao - reaproveitado pela Home
+    # (Cockpit) e pelos Briefings, sem nenhuma chamada de API duplicada.
+    market_snapshot = compute_market_snapshot()
+
+    generate_portal(all_portal_entries, entries_today, home_insights=insights["home"], market_snapshot=market_snapshot)
     build_daily_summary_html(entries_today, today_str)
     generate_asset_pages(all_portal_entries, entries_today, asset_archive, insights["assets"])
     gerar_paginas_temas(all_portal_entries, diretorio_saida="docs/temas", theme_insights=insights["themes"])
@@ -4012,7 +4200,7 @@ def main():
     try:
         events_state_for_briefing = load_events_state()
         combined_events = list(SEED_EVENTS) + events_state_for_briefing.get("events", [])
-        processar_briefings_telegram(all_portal_entries, combined_events, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
+        processar_briefings_telegram(all_portal_entries, combined_events, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, market_snapshot)
     except Exception as e:
         print("Erro ao processar briefings (isolado, nao afeta o fluxo principal): " + str(e))
 
