@@ -564,10 +564,11 @@ def build_smart_link(title, body):
 def format_message(source, entry, ai_result):
     """Monta a mensagem final do Telegram. O titulo e o corpo SEMPRE
     vem da propria noticia (ai_result so contribui sentiment e
-    relevante_mercado - nunca reescreve texto). Regra central: bullets
-    extraidos do corpo real, ou nada - nunca texto inventado. Toda
-    peca de texto passa por sanitize_message_text antes de entrar na
-    mensagem final, entao mesmo que algo escape upstream (IA, RSS,
+    relevante_mercado - nunca reescreve texto). Regra central: o corpo
+    real da noticia como texto corrido, ou nada - nunca texto
+    inventado, nunca reformatado em lista com marcador. Toda peca de
+    texto passa por sanitize_message_text antes de entrar na mensagem
+    final, entao mesmo que algo escape upstream (IA, RSS,
     encaminhador), a mensagem publicada nunca deve conter chave
     solta, null, ou boilerplate de imagem."""
     title = entry.get("title", "Sem titulo")
@@ -576,25 +577,22 @@ def format_message(source, entry, ai_result):
     if ai_result:
         sentiment = ai_result.get("sentiment", "NEUTRAL")
 
-    # Extrai 1-2 frases curtas do corpo original, sem inventar nada.
-    # Se nao houver corpo utilizavel, fica so o titulo - sem frase
-    # generica de preenchimento.
-    bullets = []
+    # Usa o corpo real da noticia como texto corrido - sem inventar
+    # nada, sem reformatar em bullet. Se nao houver corpo utilizavel,
+    # fica so o titulo.
     raw_body = get_entry_body(entry)
     raw_body = strip_html_tags(raw_body)
     raw_body = strip_boilerplate(raw_body)
     raw_body = re.sub(r"https?://\S+", "", raw_body)
-    raw_body = re.sub(r"www\.\S+", "", raw_body).strip()
+    raw_body = re.sub(r"www\.\S+", "", raw_body)
+    raw_body = re.sub(r"\s+", " ", raw_body).strip()
+
+    summary_text = ""
     if raw_body and raw_body.lower() != title.lower():
-        parts = [p.strip() for p in raw_body.split(". ") if p.strip()]
-        for p in parts[:2]:
-            if not p.endswith((".", "!", "?")):
-                p = p + "."
-            bullets.append(p)
+        summary_text = truncate_text_clean(raw_body, 280)
 
     title = sanitize_message_text(title)
-    bullets = [sanitize_message_text(b) for b in bullets]
-    bullets = [b for b in bullets if b][:2]
+    summary_text = sanitize_message_text(summary_text)
 
     if not title:
         title = "Atualizacao de mercado"
@@ -608,9 +606,9 @@ def format_message(source, entry, ai_result):
 
     title_esc = html_module.escape(title, quote=False)
 
-    bullets_block = ""
-    for b in bullets:
-        bullets_block += "\n• " + html_module.escape(b, quote=False)
+    summary_block = ""
+    if summary_text:
+        summary_block = "\n" + html_module.escape(summary_text, quote=False)
 
     source_clean = sanitize_message_text(source or "")
     source_line = ""
@@ -628,12 +626,12 @@ def format_message(source, entry, ai_result):
     if is_valid_link:
         final_link = article_link
     else:
-        smart_link = build_smart_link(title, " ".join(bullets))
+        smart_link = build_smart_link(title, summary_text)
         final_link = smart_link if smart_link else "https://antesdosino.com.br"
 
     result = (
         marker + " <b>" + title_esc + "</b>"
-        + bullets_block
+        + summary_block
         + source_line
         + "\n📌 Ver detalhes\n" + final_link
     )
@@ -646,7 +644,7 @@ def format_message(source, entry, ai_result):
     if len(result) > 3900:
         result = smart_truncate(result, 3900)
 
-    final_body = " ".join(bullets) if bullets else title
+    final_body = summary_text if summary_text else title
     return result, title, final_body, sentiment
 
 
