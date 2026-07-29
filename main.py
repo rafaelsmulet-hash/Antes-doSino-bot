@@ -3455,17 +3455,16 @@ def build_morning_briefing_message(entries_today, eventos, market_snapshot=None)
         radar_texto = "Sem destaque de papel especifico ate o momento.\n"
 
     message = (
-        "🔔 <b>ANTES DO SINO — ABERTURA B3</b>\n"
+        "🔔 <b>Antes do Sino | Abertura B3</b>\n"
         + today_str + "\n\n"
-        "🌎 <b>CONTEXTO DOS MERCADOS</b>\n"
+        "🌎 <b>Contexto dos Mercados</b>\n"
         + html_module.escape(market_texto) + "\n"
-        "🇧🇷 <b>RADAR DO IBOVESPA</b>\n"
+        "📰 <b>O que importa hoje</b>\n"
         + html_module.escape(sintese) + "\n\n"
-        "📌 <b>EVENTOS DO DIA NA B3 / BRASIL</b>\n"
+        "📅 <b>Agenda do Dia</b>\n"
         + html_module.escape(eventos_texto) + "\n"
-        "🎯 <b>AÇÕES E SETORES NO RADAR</b>\n"
-        + html_module.escape(radar_texto) + "\n"
-        "🌐 Acompanhe ao vivo em antesdosino.com.br"
+        "🎯 <b>Em foco</b>\n"
+        + html_module.escape(radar_texto)
     )
     return message
 
@@ -3512,17 +3511,16 @@ def build_evening_briefing_message(entries_today, eventos, market_snapshot=None)
         market_texto = "Dados de mercado indisponíveis no momento.\n"
 
     message = (
-        "🌆 <b>DEPOIS DO SINO — FECHAMENTO B3</b>\n"
+        "🌙 <b>Depois do Sino | Fechamento B3</b>\n"
         + today_str + "\n\n"
-        "🌎 <b>CONTEXTO DOS MERCADOS</b>\n"
-        + html_module.escape(market_texto) + "\n"
-        "📊 <b>BALANÇO DO PREGÃO</b>\n"
+        "📊 <b>O dia em resumo</b>\n"
         + html_module.escape(sintese) + "\n\n"
-        "🔥 <b>O QUE MOVEU A BOLSA HOJE</b>\n"
+        "🌎 <b>Contexto dos Mercados</b>\n"
+        + html_module.escape(market_texto) + "\n"
+        "🔥 <b>O que movimentou o mercado</b>\n"
         + html_module.escape(top_pautas) + "\n"
-        "📅 <b>AMANHÃ NA B3</b>\n"
-        + html_module.escape(eventos_texto) + "\n"
-        "🌐 Análise completa em antesdosino.com.br"
+        "📅 <b>Amanhã no radar</b>\n"
+        + html_module.escape(eventos_texto)
     )
     return message
 
