@@ -445,44 +445,66 @@ def is_market_relevant_ai(title, body):
         return True
 
 
-def classify_news_ai(title, body):
-    """Chamada UNICA e combinada a Groq - substitui o antigo par
-    is_market_relevant_ai() + summarize_with_ai() no loop principal,
-    cortando pela metade o volume de chamadas a IA por noticia.
-
-    So devolve sentiment e relevante_mercado. Nao gera mais bullets
-    via IA: sem traducao, a parafraseie da IA no mesmo idioma do
-    original nao agregava valor sobre o corpo real da noticia -
-    format_message ja usa o corpo real diretamente como fallback, e
-    esse fallback virou o caminho principal.
+def classify_news_ai(title, body, translate=False):
+    """Chamada UNICA e combinada a Groq - relevancia + sentimento
+    sempre; titulo e resumo traduzidos SOMENTE quando translate=True
+    (fonte em ingles), tudo na mesma chamada, sem voltar a gastar 2
+    chamadas por noticia.
 
     'relevante_mercado' e o filtro que bloqueia noticia de crime/
-    celebridade (ex: caso Matsunaga). 'sentiment' e a unica analise
-    que a IA ainda faz melhor que uma regra simples (ex: reconhecer
-    que 'corte de custos' costuma ser BULLISH para a acao, mesmo
-    soando negativo a primeira vista)."""
+    celebridade (ex: caso Matsunaga). 'sentiment' e uma analise que a
+    IA faz melhor que uma regra simples (ex: reconhecer que 'corte de
+    custos' costuma ser BULLISH para a acao, mesmo soando negativo a
+    primeira vista). A traducao usa o corpo real da noticia como base
+    (nunca inventa fato), pedindo traducao fiel, nao parafraseie livre."""
     if not USE_AI:
         return None
     try:
         body_cleaned = strip_html_tags(body).strip()
         body_cleaned = strip_boilerplate(body_cleaned)
 
-        instruction = (
-            "Voce e o classificador de um canal de Telegram de mercado financeiro para "
-            "traders. Analise a noticia abaixo e responda duas coisas:\n"
-            "1. relevante_mercado: true SOMENTE se a noticia for genuinamente sobre mercado "
-            "financeiro, economia ou negocios. false se for sobre crime, policia, justica "
-            "criminal, celebridade, entretenimento, esporte, ou qualquer assunto fora desse "
-            "escopo.\n"
-            "2. sentiment: classifique o impacto da noticia para o mercado como BULLISH, "
-            "BEARISH ou NEUTRAL - considere o contexto real (ex: corte de custos costuma ser "
-            "BULLISH para a acao, mesmo soando negativo a primeira vista).\n\n"
-            "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
-            "formato exato:\n"
-            '{"relevante_mercado": true, "sentiment": "BULLISH"}\n\n'
-            "Titulo: " + title + "\n"
-            "Texto: " + body_cleaned
-        )
+        if translate:
+            instruction = (
+                "Voce e o classificador e tradutor de um canal de Telegram de mercado "
+                "financeiro para traders brasileiros. Analise a noticia abaixo (em ingles) "
+                "e responda quatro coisas:\n"
+                "1. relevante_mercado: true SOMENTE se a noticia for genuinamente sobre "
+                "mercado financeiro, economia ou negocios. false se for sobre crime, policia, "
+                "justica criminal, celebridade, entretenimento, esporte, ou qualquer assunto "
+                "fora desse escopo.\n"
+                "2. sentiment: classifique o impacto da noticia para o mercado como BULLISH, "
+                "BEARISH ou NEUTRAL - considere o contexto real (ex: corte de custos costuma "
+                "ser BULLISH para a acao, mesmo soando negativo a primeira vista).\n"
+                "3. translated_title: traduza o titulo para portugues do Brasil de forma "
+                "fiel e direta, sem inventar informacao.\n"
+                "4. translated_summary: traduza/resuma o texto original para portugues do "
+                "Brasil em 1-2 frases fieis ao conteudo original, sem inventar fato novo. Se "
+                "o texto original for vazio, deixe translated_summary como string vazia.\n\n"
+                "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
+                "formato exato:\n"
+                '{"relevante_mercado": true, "sentiment": "BULLISH", '
+                '"translated_title": "titulo em portugues", '
+                '"translated_summary": "resumo em portugues"}\n\n'
+                "Titulo: " + title + "\n"
+                "Texto: " + body_cleaned
+            )
+        else:
+            instruction = (
+                "Voce e o classificador de um canal de Telegram de mercado financeiro para "
+                "traders. Analise a noticia abaixo e responda duas coisas:\n"
+                "1. relevante_mercado: true SOMENTE se a noticia for genuinamente sobre mercado "
+                "financeiro, economia ou negocios. false se for sobre crime, policia, justica "
+                "criminal, celebridade, entretenimento, esporte, ou qualquer assunto fora desse "
+                "escopo.\n"
+                "2. sentiment: classifique o impacto da noticia para o mercado como BULLISH, "
+                "BEARISH ou NEUTRAL - considere o contexto real (ex: corte de custos costuma ser "
+                "BULLISH para a acao, mesmo soando negativo a primeira vista).\n\n"
+                "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
+                "formato exato:\n"
+                '{"relevante_mercado": true, "sentiment": "BULLISH"}\n\n'
+                "Titulo: " + title + "\n"
+                "Texto: " + body_cleaned
+            )
 
         raw_response = ask_groq(instruction)
         parsed = extract_json_object(raw_response)
@@ -499,10 +521,28 @@ def classify_news_ai(title, body):
         else:
             sentiment = "NEUTRAL"
 
-        return {
+        result = {
             "sentiment": sentiment,
             "relevante_mercado": relevante_mercado,
         }
+
+        if translate:
+            # Validacao defensiva - se a traducao vier vazia/invalida,
+            # nao preenche o campo, e format_message cai de volta no
+            # texto original em ingles em vez de mostrar algo quebrado.
+            raw_translated_title = parsed.get("translated_title")
+            if isinstance(raw_translated_title, str):
+                clean_title = sanitize_message_text(raw_translated_title)
+                if clean_title:
+                    result["translated_title"] = clean_title
+
+            raw_translated_summary = parsed.get("translated_summary")
+            if isinstance(raw_translated_summary, str):
+                clean_summary = sanitize_message_text(raw_translated_summary)
+                if clean_summary:
+                    result["translated_summary"] = clean_summary
+
+        return result
     except Exception as e:
         print("Erro IA (Groq, fallback seguro aplicado): " + str(e))
         return None
@@ -562,34 +602,43 @@ def build_smart_link(title, body):
 
 
 def format_message(source, entry, ai_result):
-    """Monta a mensagem final do Telegram. O titulo e o corpo SEMPRE
-    vem da propria noticia (ai_result so contribui sentiment e
-    relevante_mercado - nunca reescreve texto). Regra central: o corpo
-    real da noticia como texto corrido, ou nada - nunca texto
-    inventado, nunca reformatado em lista com marcador. Toda peca de
-    texto passa por sanitize_message_text antes de entrar na mensagem
-    final, entao mesmo que algo escape upstream (IA, RSS,
-    encaminhador), a mensagem publicada nunca deve conter chave
-    solta, null, ou boilerplate de imagem."""
+    """Monta a mensagem final do Telegram. Titulo e resumo vem da
+    traducao da IA quando a fonte e em ingles e a traducao funcionou
+    (ai_result traz translated_title/translated_summary); caso
+    contrario, usa o titulo e o corpo reais da noticia sem alteracao -
+    nunca texto inventado, nunca reformatado em lista com marcador.
+    Toda peca de texto passa por sanitize_message_text antes de
+    entrar na mensagem final, entao mesmo que algo escape upstream
+    (IA, RSS, encaminhador), a mensagem publicada nunca deve conter
+    chave solta, null, ou boilerplate de imagem."""
     title = entry.get("title", "Sem titulo")
     sentiment = "NEUTRAL"
+    translated_summary = ""
 
     if ai_result:
         sentiment = ai_result.get("sentiment", "NEUTRAL")
+        translated_title = ai_result.get("translated_title")
+        if translated_title:
+            title = translated_title
+        translated_summary = ai_result.get("translated_summary") or ""
 
-    # Usa o corpo real da noticia como texto corrido - sem inventar
-    # nada, sem reformatar em bullet. Se nao houver corpo utilizavel,
-    # fica so o titulo.
-    raw_body = get_entry_body(entry)
-    raw_body = strip_html_tags(raw_body)
-    raw_body = strip_boilerplate(raw_body)
-    raw_body = re.sub(r"https?://\S+", "", raw_body)
-    raw_body = re.sub(r"www\.\S+", "", raw_body)
-    raw_body = re.sub(r"\s+", " ", raw_body).strip()
+    if translated_summary:
+        summary_text = translated_summary
+    else:
+        # Sem traducao (fonte em portugues) ou traducao falhou: usa o
+        # corpo real da noticia como texto corrido - sem inventar
+        # nada, sem reformatar em bullet. Se nao houver corpo
+        # utilizavel, fica so o titulo.
+        raw_body = get_entry_body(entry)
+        raw_body = strip_html_tags(raw_body)
+        raw_body = strip_boilerplate(raw_body)
+        raw_body = re.sub(r"https?://\S+", "", raw_body)
+        raw_body = re.sub(r"www\.\S+", "", raw_body)
+        raw_body = re.sub(r"\s+", " ", raw_body).strip()
 
-    summary_text = ""
-    if raw_body and raw_body.lower() != title.lower():
-        summary_text = truncate_text_clean(raw_body, 280)
+        summary_text = ""
+        if raw_body and raw_body.lower() != title.lower():
+            summary_text = truncate_text_clean(raw_body, 280)
 
     title = sanitize_message_text(title)
     summary_text = sanitize_message_text(summary_text)
@@ -3895,14 +3944,16 @@ def main():
 
             # Chamada UNICA e obrigatoria a IA - roda para TODA noticia
             # que passou nos filtros anteriores, combinando em uma so
-            # chamada o que antes eram duas (relevancia + resumo/
-            # sentimento). Corta pela metade o volume de chamadas a
-            # Groq por noticia, e ainda cobre fontes em portugues com
-            # corpo (a maioria), que antes nunca passavam por
-            # julgamento semantico, so por palavra-chave.
+            # chamada relevancia + sentimento + traducao (quando a
+            # fonte e em ingles). Corta pela metade o volume de
+            # chamadas a Groq por noticia (comparado a duas chamadas
+            # separadas), e ainda cobre fontes em portugues com corpo
+            # (a maioria), que antes nunca passavam por julgamento
+            # semantico, so por palavra-chave.
+            is_english = source not in PORTUGUESE_SOURCES
             ai_result = None
             if USE_AI:
-                ai_result = classify_news_ai(title, raw_body)
+                ai_result = classify_news_ai(title, raw_body, translate=is_english)
                 if ai_result and ai_result.get("relevante_mercado") is False:
                     print("Descartada pela IA (fora do escopo de mercado): " + title[:60])
                     sent_hashes.add(h)
