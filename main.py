@@ -309,7 +309,8 @@ def sanitize_message_text(text):
     RSS ou do encaminhador. Remove qualquer artefato tecnico que nao
     deveria chegar ao usuario final: chaves soltas, null/None
     literais, fragmentos de JSON, linhas vazias duplicadas, espacos
-    extras."""
+    extras - e qualquer resquicio de canal/grupo de origem (@usuario,
+    link de convite, convite para entrar em grupo)."""
     if not text:
         return ""
     text = str(text)
@@ -327,11 +328,21 @@ def sanitize_message_text(text):
     # Remove aspas orfas de JSON quebrado (ex: '"summary":' sobrando)
     text = re.sub(r'"\s*[a-zA-Z_]+"\s*:\s*', "", text)
 
-    # Colapsa espacos e linhas vazias duplicadas
+    # Remove @usuario, link de convite do Telegram e frases-convite -
+    # nunca deve sobrar referencia ao grupo/canal de origem.
+    text = re.sub(r"@\w{3,}", "", text)
+    text = re.sub(r"t\.me/\S+", "", text, flags=re.IGNORECASE)
+    text = re.sub(
+        r"(?i)(entre|junte-se|inscreva-se|assine|siga)\s+(no|na|ao)?\s*(grupo|canal)[^.\n]*\.?",
+        "", text
+    )
+
+    # Colapsa espacos e limita linha vazia dupla intencional (paragrafo)
+    # sem destruir a separacao entre titulo e resumo.
     text = re.sub(r"[ \t]+", " ", text)
-    text = re.sub(r"\n{2,}", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
     text = "\n".join(line.strip() for line in text.split("\n"))
-    text = re.sub(r"\n{2,}", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
 
     return text.strip()
 
@@ -566,51 +577,28 @@ def send_telegram_message(text):
         return False
 
 
-def build_smart_link(title, body):
-    """Verifica se a noticia menciona um ativo, tema ou evento que ja
-    tem pagina propria gerada em disco (de um ciclo anterior) e
-    devolve a URL correspondente - ou None se nao houver pagina. Nunca
-    monta link para pagina inexistente."""
-    fake_entry = {"title": title, "body": body}
-
-    for profile in ASSET_PROFILES:
-        if match_asset_terms(fake_entry, profile["terms"]):
-            path = "docs/ativos/" + profile["slug"] + ".html"
-            if os.path.exists(path):
-                return "https://antesdosino.com.br/ativos/" + profile["slug"] + ".html"
-
-    for theme in THEME_PROFILES:
-        if match_theme_keywords(fake_entry, theme):
-            path = "docs/temas/" + theme["slug"] + ".html"
-            if os.path.exists(path):
-                return "https://antesdosino.com.br/temas/" + theme["slug"] + ".html"
-
-    try:
-        events_state = load_events_state()
-        candidate_events = list(SEED_EVENTS) + events_state.get("events", [])
-        for event in candidate_events:
-            keywords = get_event_keywords(event)
-            if keywords and match_event_keywords(fake_entry, keywords):
-                slug = slugify_label(event["label"])
-                path = "docs/eventos/" + slug + ".html"
-                if os.path.exists(path):
-                    return "https://antesdosino.com.br/eventos/" + slug + ".html"
-    except Exception:
-        pass
-
-    return None
-
-
 def format_message(source, entry, ai_result):
-    """Monta a mensagem final do Telegram. Titulo e resumo vem da
-    traducao da IA quando a fonte e em ingles e a traducao funcionou
-    (ai_result traz translated_title/translated_summary); caso
-    contrario, usa o titulo e o corpo reais da noticia sem alteracao -
-    nunca texto inventado, nunca reformatado em lista com marcador.
-    Toda peca de texto passa por sanitize_message_text antes de
-    entrar na mensagem final, entao mesmo que algo escape upstream
-    (IA, RSS, encaminhador), a mensagem publicada nunca deve conter
-    chave solta, null, ou boilerplate de imagem."""
+    """Monta a mensagem final do Telegram no formato:
+    Titulo em negrito
+    (linha em branco)
+    Resumo em paragrafo unico, max 280 caracteres
+    (linha em branco, se houver fonte)
+    Fonte - Nome da fonte
+
+    Sem emoji, sem URL, sem convite para grupo/canal, sem mencionar
+    Telegram/WhatsApp. O sentimento (BULLISH/BEARISH/NEUTRAL) ainda e
+    calculado e retornado para uso interno do site (paginas de ativo/
+    tema/Sinais do Dia), so nao aparece mais na mensagem em si.
+
+    Titulo e resumo vem da traducao da IA quando a fonte e em ingles e
+    a traducao funcionou (ai_result traz translated_title/
+    translated_summary); caso contrario, usa o titulo e o corpo reais
+    da noticia sem alteracao - nunca texto inventado, nunca
+    reformatado em lista com marcador. Toda peca de texto passa por
+    sanitize_message_text antes de entrar na mensagem final, entao
+    mesmo que algo escape upstream (IA, RSS, encaminhador), a mensagem
+    publicada nunca deve conter chave solta, null, boilerplate de
+    imagem, @usuario ou referencia ao grupo/canal de origem."""
     title = entry.get("title", "Sem titulo")
     sentiment = "NEUTRAL"
     translated_summary = ""
@@ -646,48 +634,31 @@ def format_message(source, entry, ai_result):
     if not title:
         title = "Atualizacao de mercado"
 
-    if sentiment == "BULLISH":
-        marker = "\U0001F7E2"
-    elif sentiment == "BEARISH":
-        marker = "\U0001F7E1"
-    else:
-        marker = "\u26AA"
-
     title_esc = html_module.escape(title, quote=False)
 
     summary_block = ""
     if summary_text:
-        summary_block = "\n" + html_module.escape(summary_text, quote=False)
+        summary_block = "\n\n" + html_module.escape(summary_text, quote=False)
 
+    # So mostra fonte se for uma fonte jornalistica identificavel -
+    # nunca o nome do canal/grupo de origem (ja garantido rio acima:
+    # o encaminhador so preenche 'source' quando detecta uma agencia
+    # real, senao manda string vazia). Nunca inventa fonte.
     source_clean = sanitize_message_text(source or "")
     source_line = ""
     if source_clean:
         source_esc = html_module.escape(source_clean, quote=False)
-        source_line = "\nFonte: " + source_esc
-
-    # Link garantido: usa o link original da noticia se for valido; se
-    # nao, usa o link inteligente (pagina de ativo/tema/evento) se
-    # existir; se nao houver nenhum dos dois, cai no site como
-    # fallback obrigatorio - NUNCA fica sem link no rodape.
-    article_link = (entry.get("link", "") or "").strip()
-    is_valid_link = article_link.startswith("http://") or article_link.startswith("https://")
-
-    if is_valid_link:
-        final_link = article_link
-    else:
-        smart_link = build_smart_link(title, summary_text)
-        final_link = smart_link if smart_link else "https://antesdosino.com.br"
+        source_line = "\n\nFonte • " + source_esc
 
     result = (
-        marker + " <b>" + title_esc + "</b>"
+        "<b>" + title_esc + "</b>"
         + summary_block
         + source_line
-        + "\n📌 Ver detalhes\n" + final_link
     )
 
     # Ultima linha de defesa: sanitiza a mensagem inteira ja montada,
-    # remove qualquer chave/null/linha vazia duplicada que tenha
-    # escapado dos passos anteriores.
+    # remove qualquer chave/null/linha vazia duplicada/@usuario/
+    # convite que tenha escapado dos passos anteriores.
     result = sanitize_message_text(result)
 
     if len(result) > 3900:
