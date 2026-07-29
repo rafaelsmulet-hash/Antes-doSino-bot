@@ -202,14 +202,16 @@ def passes_source_specific_filter(source, entry):
             "openai", "google", "microsoft", "nvidia", "meta", "amazon", "apple",
             "startup", "venture capital", "funding round", "series a", "series b",
             "semiconductor", "chip", "cloud computing", "artificial intelligence",
-            " ai ", "ai startup", "ai model", "big tech",
+            "ai startup", "ai model", "ai chip", "generative ai", "large language model",
+            "llm", "chatbot", "machine learning", "big tech", "ai agent", "ai lab",
         ]
         descartar = [
             "review:", "hands-on", "hands on", "best deals", "gift guide",
-            "how to", "unboxing", "gadget review",
+            "how to", "unboxing", "gadget review", "hidden gems", "app store",
+            "apps you", "best apps", "must-have app", "apps to try", "app of the",
         ]
         if any(d in text for d in descartar):
-            return False, "review/gadget/consumo"
+            return False, "review/gadget/consumo/lista de apps"
         if not any(p in text for p in prioridade):
             return False, "fora do escopo IA/startups/Big Tech"
         return True, ""
@@ -449,61 +451,40 @@ def is_market_relevant_ai(title, body):
         return True
 
 
-def summarize_with_ai(title, body, translate=True):
-    """A IA devolve apenas titulo, bullets e sentimento - nada mais.
-    'relevante_mercado' e a UNICA excecao mantida: e o filtro que
-    bloqueia noticia de crime/celebridade (ex: caso Matsunaga que
-    passou pelo filtro antes), corrigido numa sprint anterior. Remove-lo
-    reabriria esse bug. Qualquer outro campo que a IA devolver e
-    ignorado."""
+def summarize_with_ai(title, body):
+    """A IA devolve apenas bullets e sentimento - o titulo NUNCA e
+    alterado ou traduzido pela IA (a traducao automatica nao estava
+    funcionando de forma confiavel e foi desativada por completo).
+    'relevante_mercado' e a UNICA excecao adicional mantida: e o
+    filtro que bloqueia noticia de crime/celebridade (ex: caso
+    Matsunaga que passou pelo filtro antes), corrigido numa sprint
+    anterior. Remove-lo reabriria esse bug. Qualquer outro campo que
+    a IA devolver e ignorado."""
     if not USE_AI:
         return None
     try:
         body_cleaned = strip_html_tags(body).strip()
         body_cleaned = strip_boilerplate(body_cleaned)
 
-        if translate:
-            instruction = (
-                "Voce recebeu uma noticia de mercado financeiro em ingles, para um canal de "
-                "Telegram voltado a traders. Faca quatro coisas:\n"
-                "1. Traduza o titulo para portugues do Brasil, factual e direto, no maximo 12 "
-                "palavras, sem sensacionalismo.\n"
-                "2. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes, "
-                "parafraseando (nunca copiando) a noticia original. Se o texto original for curto "
-                "ou vazio, deixe a lista de bullets vazia - nunca invente fato.\n"
-                "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
-                "4. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
-                "sobre mercado financeiro, economia ou negocios. Classifique como false se for "
-                "sobre crime, policia, justica criminal, celebridade, entretenimento, esporte, ou "
-                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n\n"
-                "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
-                "formato exato:\n"
-                '{"title": "titulo traduzido", "bullets": ["fato 1", "fato 2"], '
-                '"sentiment": "BULLISH", "relevante_mercado": true}\n\n'
-                "Titulo original: " + title + "\n"
-                "Texto original: " + body_cleaned
-            )
-        else:
-            instruction = (
-                "Voce recebeu uma noticia de mercado financeiro em portugues, para um canal de "
-                "Telegram voltado a traders. Faca quatro coisas:\n"
-                "1. Reescreva o titulo em portugues, factual e direto, no maximo 12 palavras, "
-                "sem sensacionalismo (pode ajustar o titulo original se ele for longo ou vago).\n"
-                "2. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes, "
-                "parafraseando (nunca copiando) o texto original. Se o texto original for curto "
-                "ou vazio, deixe a lista de bullets vazia - nunca invente fato.\n"
-                "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
-                "4. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
-                "sobre mercado financeiro, economia ou negocios. Classifique como false se for "
-                "sobre crime, policia, justica criminal, celebridade, entretenimento, esporte, ou "
-                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n\n"
-                "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
-                "formato exato:\n"
-                '{"title": "titulo reescrito", "bullets": ["fato 1", "fato 2"], '
-                '"sentiment": "BEARISH", "relevante_mercado": true}\n\n'
-                "Titulo original: " + title + "\n"
-                "Texto original: " + body_cleaned
-            )
+        instruction = (
+            "Voce recebeu uma noticia de mercado financeiro, para um canal de Telegram "
+            "voltado a traders. Faca tres coisas, respondendo SEMPRE no mesmo idioma do "
+            "texto original (nunca traduza):\n"
+            "1. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes, "
+            "parafraseando (nunca copiando) a noticia original, no mesmo idioma do texto "
+            "original. Se o texto original for curto ou vazio, deixe a lista de bullets "
+            "vazia - nunca invente fato.\n"
+            "2. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
+            "3. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
+            "sobre mercado financeiro, economia ou negocios. Classifique como false se for "
+            "sobre crime, policia, justica criminal, celebridade, entretenimento, esporte, ou "
+            "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n\n"
+            "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
+            "formato exato:\n"
+            '{"bullets": ["fato 1", "fato 2"], "sentiment": "BULLISH", "relevante_mercado": true}\n\n'
+            "Titulo: " + title + "\n"
+            "Texto original: " + body_cleaned
+        )
 
         raw_response = ask_groq(instruction)
         parsed = extract_json_object(raw_response)
@@ -513,11 +494,9 @@ def summarize_with_ai(title, body, translate=True):
 
         # Validacao defensiva de CADA campo - qualquer tipo errado ou
         # campo ausente cai no fallback seguro, nunca em texto quebrado.
-        raw_title = parsed.get("title")
-        if not isinstance(raw_title, str) or not raw_title.strip():
-            final_title = title
-        else:
-            final_title = sanitize_message_text(raw_title)
+        # O titulo NUNCA vem da IA - e sempre o original, sem traducao,
+        # mas ainda passa pela sanitizacao defensiva.
+        final_title = sanitize_message_text(title)
 
         raw_bullets = parsed.get("bullets")
         bullets = []
@@ -999,367 +978,6 @@ def build_weekly_summary_html(archive):
     os.makedirs("docs", exist_ok=True)
     with open("docs/resumo-semanal.html", "w", encoding="utf-8") as f:
         f.write(page)
-
-
-PREMARKET_STATE_FILE = "premarket_carousel_state.json"
-
-
-def load_premarket_state():
-    if os.path.exists(PREMARKET_STATE_FILE):
-        try:
-            with open(PREMARKET_STATE_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            return {}
-    return {}
-
-
-def save_premarket_state(state):
-    with open(PREMARKET_STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(state, f, ensure_ascii=False)
-
-
-def should_run_premarket_carousel():
-    """So dispara uma vez por dia, entre 8h25 e 8h50 (horario de Brasilia)."""
-    now = datetime.now(BR_TZ)
-    today_str = now.strftime("%Y-%m-%d")
-    state = load_premarket_state()
-    if state.get("last_run_date") == today_str:
-        return False
-    minutes = now.hour * 60 + now.minute
-    return (8 * 60 + 25) <= minutes <= (8 * 60 + 50)
-
-
-def get_premarket_window_entries(all_entries):
-    """Filtra noticias entre o fechamento de ontem (~18h) e agora, para
-    servir de base ao resumo da pre-abertura."""
-    now = datetime.now(BR_TZ)
-    today_str = now.strftime("%Y-%m-%d")
-    yesterday_str = (now - timedelta(days=1)).strftime("%Y-%m-%d")
-
-    window = []
-    for e in all_entries:
-        e_date = e.get("date", "")
-        e_time = e.get("time", "00:00")
-        if e_date == today_str:
-            window.append(e)
-        elif e_date == yesterday_str:
-            try:
-                hour = int(e_time.split(":")[0])
-                if hour >= 18:
-                    window.append(e)
-            except Exception:
-                continue
-    return window
-
-
-def filter_brazil_only(entries):
-    """Mantem apenas noticias de fontes brasileiras, para os carrosseis
-    de pre-abertura e fechamento focarem no mercado local."""
-    return [e for e in entries if e.get("source") in PORTUGUESE_SOURCES]
-
-
-def rank_premarket_highlights(entries, top_n=4):
-    """Prioriza noticias com sentimento definido (nao neutro) e mais
-    recentes, sem chamada de IA."""
-    def score(e):
-        sentiment_weight = 0 if e.get("sentiment") == "NEUTRAL" else 1
-        return (sentiment_weight, e.get("date", ""), e.get("time", ""))
-
-    sorted_entries = sorted(entries, key=score, reverse=True)
-    return sorted_entries[:top_n]
-
-
-def build_premarket_ai_content(highlights):
-    """Uma unica chamada a Groq para escrever os textos dos slides e as
-    legendas adaptadas para Instagram/TikTok e X, a partir das noticias
-    mais relevantes da janela pre-mercado."""
-    if not USE_AI or not highlights:
-        return None
-
-    headlines_text = ""
-    for h in highlights:
-        headlines_text += "- [" + h.get("sentiment", "NEUTRAL") + "] " + h["title"] + ": " + h["body"] + "\n"
-
-    prompt = (
-        "Voce e um editor de conteudo para um canal de noticias de mercado financeiro "
-        "chamado 'Antes do Sino'. Com base nas noticias mais relevantes desde o ultimo "
-        "fechamento do pregao, escreva o conteudo de um carrossel de 'pre-abertura' e "
-        "as legendas para redes sociais.\n\n"
-        "Noticias disponiveis:\n" + headlines_text + "\n\n"
-        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-        '{"slide2_title": "...", "slide2_sub": "...", '
-        '"slide3_title": "...", "slide3_sub": "...", '
-        '"slide4_title": "...", "slide4_sub": "...", '
-        '"titulo_post": "...", '
-        '"legenda_instagram": "...", '
-        '"legenda_x": "..."}\n\n'
-        "Regras: slide2_title deve resumir o cenario geral de abertura em poucas palavras. "
-        "slide3 e slide4 devem trazer os fatos mais relevantes das noticias fornecidas, "
-        "com sub-textos curtos e factuais (sem inventar dados que nao estao nas noticias). "
-        "titulo_post deve ser uma manchete curta e direta. legenda_instagram deve ter no "
-        "maximo 5 hashtags no final. legenda_x deve ser mais curta, estilo Twitter/X, sem "
-        "hashtags em excesso. Todos os textos em portugues do Brasil, sem markdown."
-    )
-
-    try:
-        raw_response = ask_groq(prompt)
-        raw_response = re.sub(r"```json|```", "", raw_response).strip()
-        return json.loads(raw_response)
-    except Exception as e:
-        print("Erro ao gerar conteudo pre-abertura (Groq): " + str(e))
-        return None
-
-
-def build_slide_prompt_text(kind, title_text, sub_text=""):
-    """Monta o prompt de imagem em portugues, no formato exato que ja
-    usamos manualmente para colar no Gemini - sem gerar nenhuma imagem,
-    so o texto do prompt pronto para copiar."""
-    base = (
-        "Crie uma imagem quadrada 1080x1080, fundo gradiente azul-marinho escuro "
-        "(#0B1F3A para #050D1A). "
-    )
-    if kind == "capa":
-        return (
-            base + "No topo, pequeno icone dourado minimalista relacionado ao tema, "
-            "line-art fino. Texto branco bold, tamanho moderado (nao ocupando mais "
-            "que 15% da altura da imagem), centralizado: \"" + title_text + "\". "
-            "Abaixo, em fonte ainda menor: \"" + sub_text + "\". Design limpo, "
-            "profissional, estilo fintech premium."
-        )
-    if kind == "content":
-        return (
-            base + "No topo, icone pequeno dourado relacionado ao tema, line-art "
-            "fino. Texto branco bold, tamanho moderado (nao ocupando mais que 15% "
-            "da altura da imagem), centralizado: \"" + title_text + "\". Abaixo, em "
-            "fonte ainda menor: \"" + sub_text + "\". Design limpo, profissional."
-        )
-    if kind == "cta":
-        return (
-            base + "com sino dourado maior e elaborado centralizado, leve brilho ao "
-            "redor. Texto branco bold, tamanho moderado, acima do sino: \"" +
-            title_text + "\". Abaixo, texto dourado: \"Antes do Sino no Telegram\" "
-            "e menor: \"Link na bio\". Design profissional, elegante."
-        )
-    return base + title_text
-
-
-def run_premarket_carousel(all_entries):
-    """Fluxo completo: filtra noticias da janela pre-mercado, gera texto
-    via IA, gera as 5 imagens do carrossel via Pollinations, e salva tudo
-    numa pagina do site para o usuario buscar e postar."""
-    highlights = rank_premarket_highlights(filter_brazil_only(get_premarket_window_entries(all_entries)))
-    ai_content = build_premarket_ai_content(highlights)
-
-    if not ai_content:
-        print("AVISO: nao foi possivel gerar conteudo do carrossel pre-mercado hoje.")
-        return
-
-    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
-
-    slides = [
-        ("capa", "ANTES DE ABRIR O PREGAO", today_str),
-        ("content", ai_content.get("slide2_title", ""), ai_content.get("slide2_sub", "")),
-        ("content", ai_content.get("slide3_title", ""), ai_content.get("slide3_sub", "")),
-        ("content", ai_content.get("slide4_title", ""), ai_content.get("slide4_sub", "")),
-        ("cta", "Acompanhe a abertura em tempo real", ""),
-    ]
-
-    prompts_html = ""
-    for i, (kind, title_text, sub_text) in enumerate(slides, start=1):
-        prompt_text = build_slide_prompt_text(kind, title_text, sub_text)
-        prompts_html += (
-            "<div style='margin-bottom:20px;padding:18px;background:rgba(255,255,255,0.03);"
-            "border-radius:12px;border:1px solid var(--line);'>"
-            "<h4 style='margin-bottom:10px;color:var(--gold);'>Slide " + str(i) + "</h4>"
-            "<p style='white-space:pre-wrap;color:var(--cream);font-family:monospace;"
-            "font-size:0.9rem;'>" + html_module.escape(prompt_text) + "</p>"
-            "</div>"
-        )
-
-    page = (
-        "<!DOCTYPE html><html lang='pt-BR'><head>"
-        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
-        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
-        "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
-        "<meta charset='UTF-8'>"
-        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
-        "<title>Pre-Abertura de Hoje | Antes do Sino</title>"
-        "<link rel='stylesheet' href='assets.css'>"
-        "</head><body>"
-        "<nav><div class='brand'>🔔 Antes do Sino</div>"
-        "<a href='index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
-        "<section><div class='section-head'>"
-        "<span class='kicker'>Gerado automaticamente</span>"
-        "<h2>" + html_module.escape(ai_content.get("titulo_post", "")) + "</h2>"
-        "</div>"
-        "<h3 style='margin-bottom:16px;'>Prompts para colar no Gemini</h3>"
-        + prompts_html +
-        "<div style='margin-top:30px;padding:20px;background:rgba(255,255,255,0.03);border-radius:12px;'>"
-        "<h4 style='margin-bottom:10px;'>Legenda Instagram/TikTok</h4>"
-        "<p style='white-space:pre-wrap;color:var(--slate);'>" + html_module.escape(ai_content.get("legenda_instagram", "")) + "</p>"
-        "</div>"
-        "<div style='margin-top:16px;padding:20px;background:rgba(255,255,255,0.03);border-radius:12px;'>"
-        "<h4 style='margin-bottom:10px;'>Legenda X</h4>"
-        "<p style='white-space:pre-wrap;color:var(--slate);'>" + html_module.escape(ai_content.get("legenda_x", "")) + "</p>"
-        "</div>"
-        "</section>"
-        "</body></html>"
-    )
-
-    with open("docs/premarket-hoje.html", "w", encoding="utf-8") as f:
-        f.write(page)
-
-    state = load_premarket_state()
-    state["last_run_date"] = today_str
-    save_premarket_state(state)
-
-    print("Prompts de pre-abertura gerados com sucesso: docs/premarket-hoje.html")
-
-
-def should_run_close_carousel():
-    """So dispara uma vez por dia, entre 18h25 e 18h55 (horario de Brasilia)."""
-    now = datetime.now(BR_TZ)
-    today_str = now.strftime("%Y-%m-%d")
-    state = load_premarket_state()
-    if state.get("last_close_run_date") == today_str:
-        return False
-    minutes = now.hour * 60 + now.minute
-    return (18 * 60 + 25) <= minutes <= (18 * 60 + 55)
-
-
-def get_ibovespa_quote():
-    """Reaproveita fetch_cockpit_quotes e extrai apenas o Ibovespa."""
-    quotes = fetch_cockpit_quotes()
-    for q in quotes:
-        if q.get("symbol") == "^BVSP":
-            return q
-    return None
-
-
-def build_close_ai_content(highlights, ibov_quote):
-    """Uma unica chamada a Groq para escrever os textos do carrossel de
-    fechamento e as legendas, usando a cotacao real do Ibovespa quando
-    disponivel e as noticias mais relevantes do dia."""
-    if not USE_AI:
-        return None
-
-    headlines_text = ""
-    for h in highlights:
-        headlines_text += "- [" + h.get("sentiment", "NEUTRAL") + "] " + h["title"] + ": " + h["body"] + "\n"
-
-    if ibov_quote:
-        quote_text = (
-            "Ibovespa fechou em " + ("alta" if ibov_quote["change"] >= 0 else "queda") +
-            " de " + str(abs(round(ibov_quote["change"], 2))) + "%, em " +
-            str(round(ibov_quote["price"])) + " pontos."
-        )
-    else:
-        quote_text = "Cotacao oficial do Ibovespa nao disponivel nesta execucao - nao invente numeros."
-
-    prompt = (
-        "Voce e um editor de conteudo para um canal de noticias de mercado financeiro "
-        "chamado 'Antes do Sino'. Escreva o conteudo de um carrossel de 'resumo do pregao' "
-        "(fechamento do dia) e as legendas para redes sociais.\n\n"
-        "Dado oficial do fechamento: " + quote_text + "\n\n"
-        "Noticias relevantes do dia:\n" + headlines_text + "\n\n"
-        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-        '{"slide2_title": "...", "slide2_sub": "...", '
-        '"slide3_title": "...", "slide3_sub": "...", '
-        '"slide4_title": "...", "slide4_sub": "...", '
-        '"titulo_post": "...", '
-        '"legenda_instagram": "...", '
-        '"legenda_x": "..."}\n\n'
-        "Regras: slide2 deve trazer o fechamento do indice (use o dado oficial fornecido; "
-        "se nao houver dado oficial, fale de forma qualitativa sem inventar numero). "
-        "slide3 e slide4 devem trazer os fatos mais relevantes do dia, com sub-textos curtos "
-        "e factuais, sem inventar dados que nao estao nas noticias fornecidas. titulo_post "
-        "deve ser uma manchete curta e direta sobre o fechamento. legenda_instagram deve ter "
-        "no maximo 5 hashtags no final. legenda_x deve ser mais curta, estilo Twitter/X. "
-        "Todos os textos em portugues do Brasil, sem markdown."
-    )
-
-    try:
-        raw_response = ask_groq(prompt)
-        raw_response = re.sub(r"```json|```", "", raw_response).strip()
-        return json.loads(raw_response)
-    except Exception as e:
-        print("Erro ao gerar conteudo de fechamento (Groq): " + str(e))
-        return None
-
-
-def run_close_carousel(all_entries):
-    """Fluxo completo do carrossel de fechamento: busca cotacao real do
-    Ibovespa, filtra noticias do dia, gera texto via IA, gera as 5
-    imagens via Pollinations, e salva numa pagina do site."""
-    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
-    entries_today = [e for e in all_entries if e.get("date") == today_str]
-    highlights = rank_premarket_highlights(filter_brazil_only(entries_today))
-    ibov_quote = get_ibovespa_quote()
-    ai_content = build_close_ai_content(highlights, ibov_quote)
-
-    if not ai_content:
-        print("AVISO: nao foi possivel gerar conteudo do carrossel de fechamento hoje.")
-        return
-
-    slides = [
-        ("capa", "RESUMO DE MERCADO", "Pregao de " + today_str),
-        ("content", ai_content.get("slide2_title", ""), ai_content.get("slide2_sub", "")),
-        ("content", ai_content.get("slide3_title", ""), ai_content.get("slide3_sub", "")),
-        ("content", ai_content.get("slide4_title", ""), ai_content.get("slide4_sub", "")),
-        ("cta", "Quer receber isso em tempo real, todos os dias?", ""),
-    ]
-
-    prompts_html = ""
-    for i, (kind, title_text, sub_text) in enumerate(slides, start=1):
-        prompt_text = build_slide_prompt_text(kind, title_text, sub_text)
-        prompts_html += (
-            "<div style='margin-bottom:20px;padding:18px;background:rgba(255,255,255,0.03);"
-            "border-radius:12px;border:1px solid var(--line);'>"
-            "<h4 style='margin-bottom:10px;color:var(--gold);'>Slide " + str(i) + "</h4>"
-            "<p style='white-space:pre-wrap;color:var(--cream);font-family:monospace;"
-            "font-size:0.9rem;'>" + html_module.escape(prompt_text) + "</p>"
-            "</div>"
-        )
-
-    page = (
-        "<!DOCTYPE html><html lang='pt-BR'><head>"
-        "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
-        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
-        "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
-        "<meta charset='UTF-8'>"
-        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
-        "<title>Fechamento de Hoje | Antes do Sino</title>"
-        "<link rel='stylesheet' href='assets.css'>"
-        "</head><body>"
-        "<nav><div class='brand'>🔔 Antes do Sino</div>"
-        "<a href='index.html' class='nav-cta' style='background:transparent;border:1px solid var(--line);color:var(--cream);'>Voltar</a></nav>"
-        "<section><div class='section-head'>"
-        "<span class='kicker'>Gerado automaticamente</span>"
-        "<h2>" + html_module.escape(ai_content.get("titulo_post", "")) + "</h2>"
-        "</div>"
-        "<h3 style='margin-bottom:16px;'>Prompts para colar no Gemini</h3>"
-        + prompts_html +
-        "<div style='margin-top:30px;padding:20px;background:rgba(255,255,255,0.03);border-radius:12px;'>"
-        "<h4 style='margin-bottom:10px;'>Legenda Instagram/TikTok</h4>"
-        "<p style='white-space:pre-wrap;color:var(--slate);'>" + html_module.escape(ai_content.get("legenda_instagram", "")) + "</p>"
-        "</div>"
-        "<div style='margin-top:16px;padding:20px;background:rgba(255,255,255,0.03);border-radius:12px;'>"
-        "<h4 style='margin-bottom:10px;'>Legenda X</h4>"
-        "<p style='white-space:pre-wrap;color:var(--slate);'>" + html_module.escape(ai_content.get("legenda_x", "")) + "</p>"
-        "</div>"
-        "</section>"
-        "</body></html>"
-    )
-
-    with open("docs/fechamento-hoje.html", "w", encoding="utf-8") as f:
-        f.write(page)
-
-    state = load_premarket_state()
-    state["last_close_run_date"] = today_str
-    save_premarket_state(state)
-
-    print("Prompts de fechamento gerados com sucesso: docs/fechamento-hoje.html")
 
 
 def compute_news_clusters(entries):
@@ -4304,11 +3922,24 @@ def main():
                 continue
 
             raw_body = get_entry_body(entry)
-            is_english = source not in PORTUGUESE_SOURCES
+
+            # Gate obrigatorio de relevancia - roda para TODA noticia que
+            # passou nos filtros anteriores, independente de precisar de
+            # resumo/traducao. Antes, so rodava quando a fonte era em
+            # ingles ou sem corpo - fontes em portugues com corpo (a
+            # maioria) nunca passavam por julgamento semantico, so por
+            # palavra-chave. Isso substitui a abordagem reativa de
+            # corrigir palavra-chave por palavra-chave.
+            if USE_AI and not is_market_relevant_ai(title, raw_body):
+                print("Descartada pela IA (gate obrigatorio - fora do escopo de mercado): " + title[:60])
+                sent_hashes.add(h)
+                save_state(sent_hashes, recent_titles)
+                registrar_descarte("IA (gate obrigatorio) classificou como fora do escopo")
+                continue
 
             ai_result = None
             if needs_ai(source, raw_body):
-                ai_result = summarize_with_ai(title, raw_body, translate=is_english)
+                ai_result = summarize_with_ai(title, raw_body)
 
             if ai_result and ai_result.get("relevante_mercado") is False:
                 print("Descartada pela IA (nao relevante para mercado): " + title[:60])
@@ -4400,14 +4031,6 @@ def main():
         processar_briefings_telegram(all_portal_entries, combined_events, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
     except Exception as e:
         print("Erro ao processar briefings (isolado, nao afeta o fluxo principal): " + str(e))
-
-    if should_run_premarket_carousel():
-        print("Horario da pre-abertura detectado, gerando carrossel automatico...")
-        run_premarket_carousel(all_portal_entries)
-
-    if should_run_close_carousel():
-        print("Horario de fechamento detectado, gerando carrossel automatico...")
-        run_close_carousel(all_portal_entries)
 
     thermo_today = compute_sentiment_thermometer(entries_today)
     archive = [d for d in archive if d["date"] != today_str]
