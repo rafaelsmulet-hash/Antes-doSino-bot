@@ -30,28 +30,37 @@ STATE_FILE = "sent_items.json"
 BR_TZ = timezone(timedelta(hours=-3))
 
 FEEDS = {
-    "InfoMoney": "https://www.infomoney.com.br/feed/",
-    "Money Times": "https://www.moneytimes.com.br/mercados/feed",
-    "Investing.com Brasil": "https://br.investing.com/rss/news_25.rss",
-    "CNBC - Finance": "https://www.cnbc.com/id/10000664/device/rss/rss.html",
-    "CNBC - Economy": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-    "CNBC - US News": "https://www.cnbc.com/id/15837362/device/rss/rss.html",
-    "MarketWatch": "https://feeds.marketwatch.com/marketwatch/topstories/",
-    "Bloomberg Markets": "https://feeds.bloomberg.com/markets/news.rss",
-    "UOL Economia": "https://rss.uol.com.br/feed/economia.xml",
-    "G1 Economia": "https://g1.globo.com/dynamo/economia/rss2.xml",
-    "Exame": "https://exame.com/feed/",
-    "Seu Dinheiro": "https://www.seudinheiro.com/feed/",
-    "Suno Noticias": "https://www.suno.com.br/noticias/feed/",
-    "Brazil Journal": "https://braziljournal.com/feed/",
-    "Neofeed": "https://neofeed.com.br/feed/",
-    "Yahoo Finance": "https://finance.yahoo.com/news/rssindex",
-    "Seeking Alpha": "https://seekingalpha.com/market_currents.xml",
-    "Business Insider": "https://www.businessinsider.com/rss",
-    "WSJ Markets": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
-    "Nasdaq": "https://www.nasdaq.com/feed/rssoutbound?category=Markets",
-    "ZeroHedge": "https://feeds.feedburner.com/zerohedge/feed",
+    "Bloomberg Markets": {"url": "https://feeds.bloomberg.com/markets/news.rss", "priority": 5, "language": "en", "category": "Mercado financeiro"},
+    "CNBC - Finance": {"url": "https://www.cnbc.com/id/10000664/device/rss/rss.html", "priority": 5, "language": "en", "category": "Mercado financeiro"},
+    "CNBC - Economy": {"url": "https://www.cnbc.com/id/20910258/device/rss/rss.html", "priority": 5, "language": "en", "category": "Macroeconomia"},
+    "WSJ Markets": {"url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml", "priority": 5, "language": "en", "category": "Mercado financeiro"},
+    "IBGE": {"url": "https://agenciadenoticias.ibge.gov.br/agencia-rss", "priority": 5, "language": "pt", "category": "Indicadores economicos"},
+    "InfoMoney": {"url": "https://www.infomoney.com.br/feed/", "priority": 5, "language": "pt", "category": "Mercado financeiro"},
+    "Money Times": {"url": "https://www.moneytimes.com.br/mercados/feed", "priority": 4, "language": "pt", "category": "Mercado financeiro"},
+    "Investing.com Brasil": {"url": "https://br.investing.com/rss/news_25.rss", "priority": 4, "language": "pt", "category": "Mercado financeiro"},
+    "MarketWatch": {"url": "https://feeds.marketwatch.com/marketwatch/topstories/", "priority": 4, "language": "en", "category": "Mercado financeiro"},
+    "Exame": {"url": "https://exame.com/feed/", "priority": 4, "language": "pt", "category": "Empresas"},
+    "Brazil Journal": {"url": "https://braziljournal.com/feed/", "priority": 4, "language": "pt", "category": "Empresas"},
+    "Seeking Alpha": {"url": "https://seekingalpha.com/market_currents.xml", "priority": 4, "language": "en", "category": "Mercado financeiro"},
+    "TechCrunch": {"url": "https://techcrunch.com/feed/", "priority": 4, "language": "en", "category": "Tecnologia"},
+    "Poder360": {"url": "https://www.poder360.com.br/poder-economia/feed/", "priority": 4, "language": "pt", "category": "Governo"},
+    "UOL Economia": {"url": "https://rss.uol.com.br/feed/economia.xml", "priority": 3, "language": "pt", "category": "Macroeconomia"},
+    "G1 Economia": {"url": "https://g1.globo.com/dynamo/economia/rss2.xml", "priority": 3, "language": "pt", "category": "Macroeconomia"},
+    "Seu Dinheiro": {"url": "https://www.seudinheiro.com/feed/", "priority": 3, "language": "pt", "category": "Mercado financeiro"},
+    "Suno Noticias": {"url": "https://www.suno.com.br/noticias/feed/", "priority": 3, "language": "pt", "category": "Mercado financeiro"},
+    "Neofeed": {"url": "https://neofeed.com.br/feed/", "priority": 3, "language": "pt", "category": "Empresas"},
+    "Yahoo Finance": {"url": "https://finance.yahoo.com/news/rssindex", "priority": 3, "language": "en", "category": "Mercado financeiro"},
+    "Business Insider": {"url": "https://www.businessinsider.com/rss", "priority": 3, "language": "en", "category": "Empresas"},
+    "Nasdaq": {"url": "https://www.nasdaq.com/feed/rssoutbound?category=Markets", "priority": 3, "language": "en", "category": "Mercado financeiro"},
+    "ZeroHedge": {"url": "https://feeds.feedburner.com/zerohedge/feed", "priority": 3, "language": "en", "category": "Macroeconomia"},
+    "CNBC - US News": {"url": "https://www.cnbc.com/id/15837362/device/rss/rss.html", "priority": 3, "language": "en", "category": "Internacional"},
+    "Yahoo Finance Australia": {"url": "https://au.finance.yahoo.com/news/rssindex", "priority": 3, "language": "en", "category": "Internacional"},
 }
+
+# PORTUGUESE_SOURCES e derivado do campo "language" de FEEDS - uma unica
+# fonte de verdade, em vez de manter uma lista hardcoded separada que
+# poderia divergir do que esta cadastrado em FEEDS.
+PORTUGUESE_SOURCES = {name for name, info in FEEDS.items() if info["language"] == "pt"}
 
 KEYWORDS = [
     "selic", "juros", "ibovespa", "dolar", "inflacao",
@@ -103,12 +112,6 @@ NEGATIVE_KEYWORDS = [
     "celebridade", "celebridades", "famosos", "famosa", "influencer", "reality show",
     "ex-marido", "ex-mulher", "affair", "traicao", "traição",
 ]
-
-PORTUGUESE_SOURCES = {
-    "InfoMoney", "Money Times", "Investing.com Brasil", "UOL Economia",
-    "G1 Economia", "Exame", "Seu Dinheiro", "Suno Noticias",
-    "Brazil Journal", "Neofeed",
-}
 
 WORDPRESS_BOILERPLATE_PATTERNS = [
     r"The post .* appeared first on \w+\s*\.?",
@@ -169,11 +172,91 @@ def is_relevant(entry):
 
 
 def is_duplicate_title(title, recent_titles):
+    """Limiar afinado de 0.92 para 0.85 - com a integracao de fontes que
+    cobrem os mesmos eventos com fraseado proprio (Poder360/TechCrunch/
+    Yahoo AU podem repetir pauta ja coberta por Reuters/CNBC/InfoMoney),
+    um limiar mais permissivo pega parafraseio que o anterior deixava
+    passar. FEEDS esta ordenado por prioridade editorial, entao a
+    fonte de maior prioridade e processada primeiro e "vence" o
+    duplicado - mantemos so a melhor versao, como pedido."""
     for old_title in recent_titles:
         ratio = difflib.SequenceMatcher(None, title.lower(), old_title.lower()).ratio()
-        if ratio > 0.92:
+        if ratio > 0.85:
             return True
     return False
+
+
+def passes_source_specific_filter(source, entry):
+    """Filtro editorial especifico por fonte (Etapa 5) - aplicado
+    ALEM do filtro generico de palavras-chave (is_relevant). Cada
+    fonte nova tem um perfil de ruido diferente, entao usa um criterio
+    proprio, mantendo a filosofia de maximo sinal, minimo ruido.
+    Retorna (aprovado: bool, motivo_descarte: str)."""
+    if source not in ("TechCrunch", "Poder360", "Yahoo Finance Australia", "IBGE"):
+        return True, ""
+
+    text = (entry.get("title", "") + " " + get_entry_body(entry)).lower()
+
+    if source == "TechCrunch":
+        prioridade = [
+            "openai", "google", "microsoft", "nvidia", "meta", "amazon", "apple",
+            "startup", "venture capital", "funding round", "series a", "series b",
+            "semiconductor", "chip", "cloud computing", "artificial intelligence",
+            " ai ", "ai startup", "ai model", "big tech",
+        ]
+        descartar = [
+            "review:", "hands-on", "hands on", "best deals", "gift guide",
+            "how to", "unboxing", "gadget review",
+        ]
+        if any(d in text for d in descartar):
+            return False, "review/gadget/consumo"
+        if not any(p in text for p in prioridade):
+            return False, "fora do escopo IA/startups/Big Tech"
+        return True, ""
+
+    if source == "Poder360":
+        prioridade = [
+            "fazenda", "banco central", "congresso", "tributa", "fiscal",
+            "reforma tributaria", "reforma administrativa", "imposto", "copom",
+            "selic", "haddad", "orcamento", "divida publica", "arcabouco fiscal",
+            "regulamentacao", "regulacao",
+        ]
+        if not any(p in text for p in prioridade):
+            return False, "politica sem impacto economico direto"
+        return True, ""
+
+    if source == "Yahoo Finance Australia":
+        local = [
+            "australian household", "aussie household", "centrelink",
+            "medicare australia", "australia post", "nrma", "afterpay bnpl",
+        ]
+        global_signal = [
+            "global", "international", "wall street", "federal reserve", " fed ",
+            "china", "opec", "nasdaq", "s&p 500", "dow jones", "us dollar",
+            "crude oil", "gold price",
+        ]
+        if any(l in text for l in local) and not any(g in text for g in global_signal):
+            return False, "noticia exclusivamente local da Australia"
+        return True, ""
+
+    if source == "IBGE":
+        sempre_relevante = [
+            "ipca", "ipca-15", "pib", "pnad", "pim", "pmc", "pms",
+            "producao industrial", "varejo", "servicos", "mercado de trabalho",
+            "desemprego", "desocupacao",
+        ]
+        institucional = [
+            "seminario", "aniversario", "comemora", "celebra", "podcast",
+            "audiencia publica", "banca examinadora", "processo seletivo",
+            "edital", "reserva ecologica", "mapa-mundi",
+        ]
+        if any(s in text for s in sempre_relevante):
+            return True, ""
+        if any(i in text for i in institucional):
+            return False, "noticia institucional sem indicador economico"
+        return True, ""
+
+    return True, ""
 
 
 def strip_html_tags(text):
@@ -4177,26 +4260,47 @@ def main():
     new_count = 0
     portal_entries = []
 
-    for source, url in FEEDS.items():
+    for source, feed_info in FEEDS.items():
+        url = feed_info["url"]
         feed = fetch_feed(url)
         if not feed.entries:
             print("AVISO: Feed '" + source + "' retornou vazio ou falhou")
             continue
 
+        # Contadores por fonte (Etapa 7) - visibilidade de quanto cada
+        # fonte nova esta contribuindo de verdade, e por que o resto
+        # foi descartado.
+        recebidos = len(feed.entries[:10])
+        aprovados = 0
+        motivos_descarte = {}
+
+        def registrar_descarte(motivo):
+            motivos_descarte[motivo] = motivos_descarte.get(motivo, 0) + 1
+
         for entry in feed.entries[:10]:
             h = item_hash(entry)
             if h in sent_hashes:
+                registrar_descarte("ja enviado (hash conhecido)")
                 continue
 
             title = entry.get("title", "")
             if is_duplicate_title(title, recent_titles):
                 sent_hashes.add(h)
                 save_state(sent_hashes, recent_titles)
+                registrar_descarte("duplicado")
                 continue
 
             if not is_relevant(entry) or not is_recent_enough(entry):
                 sent_hashes.add(h)
                 save_state(sent_hashes, recent_titles)
+                registrar_descarte("sem impacto economico / fora do escopo")
+                continue
+
+            passou_filtro, motivo_filtro = passes_source_specific_filter(source, entry)
+            if not passou_filtro:
+                sent_hashes.add(h)
+                save_state(sent_hashes, recent_titles)
+                registrar_descarte(motivo_filtro)
                 continue
 
             raw_body = get_entry_body(entry)
@@ -4210,6 +4314,7 @@ def main():
                 print("Descartada pela IA (nao relevante para mercado): " + title[:60])
                 sent_hashes.add(h)
                 save_state(sent_hashes, recent_titles)
+                registrar_descarte("IA classificou como nao relevante")
                 continue
 
             check_title = ai_result.get("title", title) if ai_result else title
@@ -4218,6 +4323,7 @@ def main():
                 print("Descartada por conteudo insuficiente: " + title[:60])
                 sent_hashes.add(h)
                 save_state(sent_hashes, recent_titles)
+                registrar_descarte("conteudo insuficiente")
                 continue
 
             message, final_title, final_body, sentiment = format_message(source, entry, ai_result)
@@ -4226,6 +4332,7 @@ def main():
                 sent_hashes.add(h)
                 recent_titles.append(title)
                 new_count += 1
+                aprovados += 1
                 print("Enviado: " + title[:50] + " [" + sentiment + "]")
                 save_state(sent_hashes, recent_titles)
 
@@ -4240,6 +4347,20 @@ def main():
                 })
 
                 time.sleep(3)
+
+        descartados = recebidos - aprovados
+        if source in ("TechCrunch", "Poder360", "Yahoo Finance Australia", "IBGE") or descartados > 0:
+            resumo_fonte = (
+                "Fonte: " + source + "\n"
+                "Itens recebidos: " + str(recebidos) + "\n"
+                "Itens aprovados: " + str(aprovados) + "\n"
+                "Itens descartados: " + str(descartados)
+            )
+            if motivos_descarte:
+                resumo_fonte += "\nMotivos:"
+                for motivo, qtd in motivos_descarte.items():
+                    resumo_fonte += "\n- " + motivo + " (" + str(qtd) + ")"
+            print(resumo_fonte)
 
     try:
         forwarded_entries = process_forwarded_channels()
