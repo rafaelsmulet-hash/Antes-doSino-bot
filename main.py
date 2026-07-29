@@ -113,6 +113,11 @@ PORTUGUESE_SOURCES = {
 WORDPRESS_BOILERPLATE_PATTERNS = [
     r"The post .* appeared first on \w+\s*\.?",
     r"O post .* apareceu primeiro (n[oa]) \w+\s*\.?",
+    r"Image source[,:]?\s*[^\n]*",
+    r"Photo\s*(credit|source)[,:]?\s*[^\n]*",
+    r"Cr[eé]dito\s*(da\s*)?(foto|imagem)[,:]?\s*[^\n]*",
+    r"^\s*Getty Images\s*$",
+    r"^\s*Reuters/[A-Za-z ]+$",
 ]
 
 
@@ -213,9 +218,60 @@ def smart_truncate(text, limit):
     return cut + "..."
 
 
+def sanitize_message_text(text):
+    """Ultima linha de defesa - roda em QUALQUER texto antes de virar
+    parte da mensagem final do Telegram, nao importa se veio da IA, do
+    RSS ou do encaminhador. Remove qualquer artefato tecnico que nao
+    deveria chegar ao usuario final: chaves soltas, null/None
+    literais, fragmentos de JSON, linhas vazias duplicadas, espacos
+    extras."""
+    if not text:
+        return ""
+    text = str(text)
+
+    # Remove fragmentos de JSON/markdown que eventualmente escapem do parse
+    text = re.sub(r"```[a-zA-Z]*", "", text)
+    text = text.replace("```", "")
+
+    # Remove chaves soltas (JSON quebrado nunca deve aparecer pro usuario)
+    text = text.replace("{", "").replace("}", "")
+
+    # Remove null/None/undefined literais (typico de parse malformado)
+    text = re.sub(r"\b(null|none|undefined)\b", "", text, flags=re.IGNORECASE)
+
+    # Remove aspas orfas de JSON quebrado (ex: '"summary":' sobrando)
+    text = re.sub(r'"\s*[a-zA-Z_]+"\s*:\s*', "", text)
+
+    # Colapsa espacos e linhas vazias duplicadas
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n{2,}", "\n", text)
+    text = "\n".join(line.strip() for line in text.split("\n"))
+    text = re.sub(r"\n{2,}", "\n", text)
+
+    return text.strip()
+
+
+def extract_json_object(raw_text):
+    """Extrai o primeiro objeto JSON valido de dentro de um texto que
+    pode vir com prosa antes/depois (a Groq as vezes escreve 'Aqui
+    esta o resultado: {...}' apesar da instrucao de responder so
+    JSON). Reduz taxa de falha do parse sem afrouxar a seguranca -
+    se nao encontrar nada parseavel, retorna None."""
+    raw_text = re.sub(r"```[a-zA-Z]*", "", raw_text).replace("```", "").strip()
+    start = raw_text.find("{")
+    end = raw_text.rfind("}")
+    if start == -1 or end == -1 or end < start:
+        return None
+    candidate = raw_text[start:end + 1]
+    try:
+        return json.loads(candidate)
+    except Exception:
+        return None
+
+
 def strip_boilerplate(text):
     for pattern in WORDPRESS_BOILERPLATE_PATTERNS:
-        text = re.sub(pattern, "", text, flags=re.IGNORECASE).strip()
+        text = re.sub(pattern, "", text, flags=re.IGNORECASE | re.MULTILINE).strip()
     return text
 
 
@@ -310,115 +366,107 @@ def is_market_relevant_ai(title, body):
         return True
 
 
-def derive_fallback_summary(text):
-    """Gera um resumo em paragrafo (2-3 frases) por regra, sem IA -
-    usado quando a Groq nao retorna resumo ou quando ai_result e None
-    (ex: noticias do encaminhador de canais)."""
-    text = (text or "").strip()
-    if not text:
-        return "Confira mais detalhes no link abaixo."
-    return text
-
-
 def summarize_with_ai(title, body, translate=True):
+    """A IA devolve apenas titulo, bullets e sentimento - nada mais.
+    'relevante_mercado' e a UNICA excecao mantida: e o filtro que
+    bloqueia noticia de crime/celebridade (ex: caso Matsunaga que
+    passou pelo filtro antes), corrigido numa sprint anterior. Remove-lo
+    reabriria esse bug. Qualquer outro campo que a IA devolver e
+    ignorado."""
     if not USE_AI:
         return None
     try:
         body_cleaned = strip_html_tags(body).strip()
+        body_cleaned = strip_boilerplate(body_cleaned)
 
         if translate:
             instruction = (
                 "Voce recebeu uma noticia de mercado financeiro em ingles, para um canal de "
-                "Telegram voltado a traders. Faca seis coisas:\n"
+                "Telegram voltado a traders. Faca quatro coisas:\n"
                 "1. Traduza o titulo para portugues do Brasil, factual e direto, no maximo 12 "
                 "palavras, sem sensacionalismo.\n"
-                "2. Escreva um resumo de 2 a 3 frases completas, em portugues do Brasil claro, "
-                "sem jargao desnecessario, parafraseando (nunca copiando) a noticia original. "
-                "Foque no que muda para quem opera no mercado. Se o texto original for curto ou "
-                "vazio, baseie o resumo no titulo, explicando o contexto provavel do evento.\n"
+                "2. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes, "
+                "parafraseando (nunca copiando) a noticia original. Se o texto original for curto "
+                "ou vazio, deixe a lista de bullets vazia - nunca invente fato.\n"
                 "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
-                "4. Se a noticia trouxer informacao nova ou acionavel, preencha impacto_estimado "
-                "no formato 'Prazo | Acao especifica', variando a linguagem entre noticias. "
-                "Exemplos: 'Curto Prazo | Reacao Imediata Esperada na Abertura', 'Medio Prazo | "
-                "Monitorar Guidance no Call de Resultados', 'Longo Prazo | Sem Efeito Direto em "
-                "Preco'. Se a noticia NAO trouxer nada novo ou acionavel (ex: e so repeticao ou "
-                "contexto generico), deixe impacto_estimado como string vazia.\n"
-                "5. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
+                "4. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
                 "sobre mercado financeiro, economia ou negocios. Classifique como false se for "
                 "sobre crime, policia, justica criminal, celebridade, entretenimento, esporte, ou "
-                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n"
-                "6. Classifique destaque como true SOMENTE se for breaking news, decisao de "
-                "politica monetaria (Copom/Fed) ou resultado de empresa relevante. Caso contrario, false.\n\n"
-                "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-                '{"title": "titulo traduzido", "summary": "resumo de 2 a 3 frases aqui", '
-                '"sentiment": "BULLISH", "impacto_estimado": "Curto Prazo | Reacao Imediata '
-                'Esperada na Abertura", "relevante_mercado": true, "destaque": false}\n\n'
+                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n\n"
+                "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
+                "formato exato:\n"
+                '{"title": "titulo traduzido", "bullets": ["fato 1", "fato 2"], '
+                '"sentiment": "BULLISH", "relevante_mercado": true}\n\n'
                 "Titulo original: " + title + "\n"
                 "Texto original: " + body_cleaned
             )
         else:
             instruction = (
                 "Voce recebeu uma noticia de mercado financeiro em portugues, para um canal de "
-                "Telegram voltado a traders. Faca cinco coisas:\n"
+                "Telegram voltado a traders. Faca quatro coisas:\n"
                 "1. Reescreva o titulo em portugues, factual e direto, no maximo 12 palavras, "
                 "sem sensacionalismo (pode ajustar o titulo original se ele for longo ou vago).\n"
-                "2. Escreva um resumo de 2 a 3 frases completas, em portugues do Brasil claro, "
-                "sem jargao desnecessario, parafraseando (nunca copiando) o texto original. Foque "
-                "no que muda para quem opera no mercado. Se o texto original for curto ou vazio, "
-                "baseie o resumo no titulo.\n"
+                "2. Escreva ate 2 bullets curtos (uma frase cada) com os fatos mais importantes, "
+                "parafraseando (nunca copiando) o texto original. Se o texto original for curto "
+                "ou vazio, deixe a lista de bullets vazia - nunca invente fato.\n"
                 "3. Classifique o sentimento da noticia para o mercado como BULLISH, BEARISH ou NEUTRAL.\n"
-                "4. Se a noticia trouxer informacao nova ou acionavel, preencha impacto_estimado "
-                "no formato 'Prazo | Acao especifica', variando a linguagem entre noticias. "
-                "Exemplos: 'Curto Prazo | Reacao Imediata Esperada na Abertura', 'Medio Prazo | "
-                "Monitorar Guidance no Call de Resultados', 'Longo Prazo | Sem Efeito Direto em "
-                "Preco'. Se a noticia NAO trouxer nada novo ou acionavel, deixe impacto_estimado "
-                "como string vazia.\n"
-                "5. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
+                "4. Classifique relevante_mercado como true SOMENTE se a noticia for genuinamente "
                 "sobre mercado financeiro, economia ou negocios. Classifique como false se for "
                 "sobre crime, policia, justica criminal, celebridade, entretenimento, esporte, ou "
-                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n"
-                "6. Classifique destaque como true SOMENTE se for breaking news, decisao de "
-                "politica monetaria (Copom/Fed) ou resultado de empresa relevante. Caso contrario, false.\n\n"
-                "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-                '{"title": "titulo reescrito", "summary": "resumo de 2 a 3 frases aqui", '
-                '"sentiment": "BEARISH", "impacto_estimado": "", '
-                '"relevante_mercado": true, "destaque": false}\n\n'
+                "qualquer assunto fora do escopo de um canal de mercado financeiro serio.\n\n"
+                "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
+                "formato exato:\n"
+                '{"title": "titulo reescrito", "bullets": ["fato 1", "fato 2"], '
+                '"sentiment": "BEARISH", "relevante_mercado": true}\n\n'
                 "Titulo original: " + title + "\n"
                 "Texto original: " + body_cleaned
             )
 
         raw_response = ask_groq(instruction)
-        raw_response = re.sub(r"```json|```", "", raw_response).strip()
-        parsed = json.loads(raw_response)
+        parsed = extract_json_object(raw_response)
+        if parsed is None or not isinstance(parsed, dict):
+            print("AVISO: resposta da IA nao contem JSON valido - descartando (fallback seguro).")
+            return None
 
-        final_body = parsed.get("summary", body_cleaned) or body_cleaned
-        final_body = final_body.strip()
-        if not final_body:
-            final_body = derive_fallback_summary(body_cleaned)
+        # Validacao defensiva de CADA campo - qualquer tipo errado ou
+        # campo ausente cai no fallback seguro, nunca em texto quebrado.
+        raw_title = parsed.get("title")
+        if not isinstance(raw_title, str) or not raw_title.strip():
+            final_title = title
+        else:
+            final_title = sanitize_message_text(raw_title)
 
-        impacto_estimado = parsed.get("impacto_estimado", "")
-        if not isinstance(impacto_estimado, str):
-            impacto_estimado = ""
-        impacto_estimado = impacto_estimado.strip()
+        raw_bullets = parsed.get("bullets")
+        bullets = []
+        if isinstance(raw_bullets, list):
+            for b in raw_bullets:
+                if isinstance(b, str):
+                    clean_b = sanitize_message_text(b)
+                    if clean_b:
+                        bullets.append(clean_b)
+        bullets = bullets[:2]
 
-        relevante_mercado = parsed.get("relevante_mercado", True)
-        if not isinstance(relevante_mercado, bool):
-            relevante_mercado = True
+        raw_sentiment = parsed.get("sentiment")
+        if isinstance(raw_sentiment, str) and raw_sentiment.strip().upper() in ("BULLISH", "BEARISH", "NEUTRAL"):
+            sentiment = raw_sentiment.strip().upper()
+        else:
+            sentiment = "NEUTRAL"
 
-        destaque = parsed.get("destaque", False)
-        if not isinstance(destaque, bool):
-            destaque = False
+        raw_relevante = parsed.get("relevante_mercado")
+        relevante_mercado = raw_relevante if isinstance(raw_relevante, bool) else True
+
+        if not final_title:
+            print("AVISO: titulo vazio apos sanitizacao - descartando (fallback seguro).")
+            return None
 
         return {
-            "title": parsed.get("title", title) or title,
-            "body": final_body,
-            "sentiment": parsed.get("sentiment", "NEUTRAL").upper(),
-            "impacto_estimado": impacto_estimado,
+            "title": final_title,
+            "bullets": bullets,
+            "sentiment": sentiment,
             "relevante_mercado": relevante_mercado,
-            "destaque": destaque,
         }
     except Exception as e:
-        print("Erro IA (Groq): " + str(e))
+        print("Erro IA (Groq, fallback seguro aplicado): " + str(e))
         return None
 
 
@@ -476,49 +524,65 @@ def build_smart_link(title, body):
 
 
 def format_message(source, entry, ai_result):
+    """Monta a mensagem final do Telegram. Regra central: bullets ou
+    nada - nunca texto inventado. Toda peca de texto passa por
+    sanitize_message_text antes de entrar na mensagem final, entao
+    mesmo que algo escape upstream (IA, RSS, encaminhador), a
+    mensagem publicada nunca deve conter chave solta, null, ou
+    boilerplate de imagem."""
     title = entry.get("title", "Sem titulo")
-    body = get_entry_body(entry)
     sentiment = "NEUTRAL"
-    impacto_estimado = ""
+    bullets = []
 
     if ai_result:
-        title = ai_result.get("title", title) or title
-        body = ai_result.get("body", "") or body
+        title = ai_result.get("title") or title
         sentiment = ai_result.get("sentiment", "NEUTRAL")
-        impacto_estimado = ai_result.get("impacto_estimado", "") or ""
+        raw_bullets = ai_result.get("bullets")
+        if isinstance(raw_bullets, list):
+            bullets = [str(b) for b in raw_bullets if isinstance(b, str) and b.strip()]
 
-    body = strip_html_tags(body)
-    body = strip_boilerplate(body)
-    body = re.sub(r"(?i)pontos[- ]chave:?", "", body)
-    body = re.sub(r"https?://\S+", "", body)
-    body = re.sub(r"www\.\S+", "", body)
-    body = re.sub(r"\n{3,}", "\n\n", body).strip()
+    if not bullets:
+        # Sem IA (ex: encaminhador de canais) ou IA sem bullets: tenta
+        # extrair 1-2 frases curtas do corpo original, sem inventar
+        # nada. Se nao houver corpo utilizavel, fica so o titulo -
+        # exatamente como pedido, sem frase generica de preenchimento.
+        raw_body = get_entry_body(entry)
+        raw_body = strip_html_tags(raw_body)
+        raw_body = strip_boilerplate(raw_body)
+        raw_body = re.sub(r"https?://\S+", "", raw_body)
+        raw_body = re.sub(r"www\.\S+", "", raw_body).strip()
+        if raw_body and raw_body.lower() != title.lower():
+            parts = [p.strip() for p in raw_body.split(". ") if p.strip()]
+            for p in parts[:2]:
+                if not p.endswith((".", "!", "?")):
+                    p = p + "."
+                bullets.append(p)
 
-    if not body:
-        # Fallback inteligente: fontes estilo "alerta rapido" (ex: Yahoo
-        # Finance, Seeking Alpha Market Currents) frequentemente nao tem
-        # descricao separada - o titulo JA E o fato completo. Em vez de
-        # uma frase generica sem informacao, usa o proprio titulo como
-        # base do resumo, preservando a experiencia do usuario.
-        body = derive_fallback_summary(title)
+    title = sanitize_message_text(title)
+    bullets = [sanitize_message_text(b) for b in bullets]
+    bullets = [b for b in bullets if b][:2]
+
+    if not title:
+        title = "Atualizacao de mercado"
 
     if sentiment == "BULLISH":
         marker = "\U0001F7E2"
     elif sentiment == "BEARISH":
-        marker = "\U0001F534"
+        marker = "\U0001F7E1"
     else:
         marker = "\u26AA"
 
     title_esc = html_module.escape(title, quote=False)
-    body_esc = html_module.escape(body, quote=False)
 
-    # Linha de impacto: so aparece quando a IA identificou algo novo ou
-    # acionavel de verdade - nunca mostramos um texto generico so para
-    # preencher espaco.
-    impacto_line = ""
-    if impacto_estimado:
-        impacto_esc = html_module.escape(impacto_estimado, quote=False)
-        impacto_line = "\n\n⏱️ Impacto: " + impacto_esc
+    bullets_block = ""
+    for b in bullets:
+        bullets_block += "\n• " + html_module.escape(b, quote=False)
+
+    source_clean = sanitize_message_text(source or "")
+    source_line = ""
+    if source_clean:
+        source_esc = html_module.escape(source_clean, quote=False)
+        source_line = "\nFonte: " + source_esc
 
     # Link garantido: usa o link original da noticia se for valido; se
     # nao, usa o link inteligente (pagina de ativo/tema/evento) se
@@ -530,20 +594,26 @@ def format_message(source, entry, ai_result):
     if is_valid_link:
         final_link = article_link
     else:
-        smart_link = build_smart_link(title, body)
+        smart_link = build_smart_link(title, " ".join(bullets))
         final_link = smart_link if smart_link else "https://antesdosino.com.br"
 
-    link_line = "\n\n📌 Ver detalhes: " + final_link
-
     result = (
-        marker + " <b>" + title_esc + "</b>\n\n"
-        + body_esc
-        + impacto_line
-        + link_line
+        marker + " <b>" + title_esc + "</b>"
+        + bullets_block
+        + source_line
+        + "\n📌 Ver detalhes\n" + final_link
     )
+
+    # Ultima linha de defesa: sanitiza a mensagem inteira ja montada,
+    # remove qualquer chave/null/linha vazia duplicada que tenha
+    # escapado dos passos anteriores.
+    result = sanitize_message_text(result)
+
     if len(result) > 3900:
         result = smart_truncate(result, 3900)
-    return result, title, body, sentiment
+
+    final_body = " ".join(bullets) if bullets else title
+    return result, title, final_body, sentiment
 
 
 def fetch_cockpit_quotes():
