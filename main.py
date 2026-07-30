@@ -401,23 +401,54 @@ def fetch_feed(url):
         return feedparser.parse("")
 
 
-def ask_groq(prompt):
-    response = requests.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        headers={
-            "Authorization": "Bearer " + GROQ_API_KEY,
-            "Content-Type": "application/json",
-        },
-        json={
-            "model": "llama-3.3-70b-versatile",
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.3,
-        },
-        timeout=20,
-    )
-    data = response.json()
+GROQ_MODEL_LIGHT = "llama-3.1-8b-instant"
+GROQ_MODEL_STRONG = "llama-3.3-70b-versatile"
+
+
+def ask_groq(prompt, purpose="analysis"):
+    """Camada CENTRALIZADA de chamada a Groq - toda chamada do projeto
+    passa por aqui. 'purpose' escolhe o modelo automaticamente:
+
+      purpose="analysis"   -> modelo LEVE (llama-3.1-8b-instant)
+                               classificacao, sentimento, categorizacao,
+                               qualquer tarefa de alto volume.
+      purpose="generation" -> modelo FORTE (llama-3.3-70b-versatile)
+                               Briefings, textos finais publicados.
+
+    Mantem timeout, tratamento de erro e retorno seguro. Loga
+    claramente quando o motivo da falha e limite de taxa (rate limit),
+    para diagnostico rapido - nunca falha silenciosamente."""
+    modelo = GROQ_MODEL_STRONG if purpose == "generation" else GROQ_MODEL_LIGHT
+
+    try:
+        response = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={
+                "Authorization": "Bearer " + GROQ_API_KEY,
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": modelo,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.3,
+            },
+            timeout=20,
+        )
+        data = response.json()
+    except Exception as e:
+        print("Erro de rede na chamada Groq (" + purpose + "/" + modelo + "): " + str(e))
+        raise
+
     if "choices" not in data:
+        erro = data.get("error", {}) if isinstance(data, dict) else {}
+        codigo_erro = erro.get("code", "")
+        mensagem_erro = erro.get("message", str(data))
+        if codigo_erro == "rate_limit_exceeded":
+            print("AVISO (rate limit Groq, " + purpose + "/" + modelo + "): " + mensagem_erro)
+        else:
+            print("Erro na resposta da Groq (" + purpose + "/" + modelo + "): " + mensagem_erro)
         raise ValueError("Resposta sem choices: " + str(data))
+
     return data["choices"][0]["message"]["content"].strip()
 
 
@@ -457,7 +488,7 @@ def is_market_relevant_ai(title, body):
             "Titulo: " + title + "\n"
             "Texto: " + (body or "")
         )
-        raw_response = ask_groq(prompt).strip().lower()
+        raw_response = ask_groq(prompt, purpose="analysis").strip().lower()
         return "false" not in raw_response
     except Exception as e:
         print("Erro na verificacao de relevancia via IA (fallback seguro=relevante): " + str(e))
@@ -525,7 +556,7 @@ def classify_news_ai(title, body, translate=False):
                 "Texto: " + body_cleaned
             )
 
-        raw_response = ask_groq(instruction)
+        raw_response = ask_groq(instruction, purpose="analysis")
         parsed = extract_json_object(raw_response)
         if parsed is None or not isinstance(parsed, dict):
             print("AVISO: resposta da IA nao contem JSON valido - fallback seguro aplicado.")
@@ -1407,7 +1438,7 @@ def extract_events_from_news(entries_today):
     )
 
     try:
-        raw_response = ask_groq(prompt)
+        raw_response = ask_groq(prompt, purpose="analysis")
         raw_response = re.sub(r"```json|```", "", raw_response).strip()
         parsed = json.loads(raw_response)
         if not isinstance(parsed, list):
@@ -3616,7 +3647,7 @@ def summarize_briefing_with_ai(entries, tipo):
     prompt = instrucao + "\n\nManchetes:\n" + headlines_text
 
     try:
-        response = ask_groq(prompt)
+        response = ask_groq(prompt, purpose="generation")
         return response.strip().strip('"')
     except Exception as e:
         print("Erro ao gerar sintese do briefing (Groq): " + str(e))
