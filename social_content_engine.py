@@ -4,28 +4,42 @@ Social Content Engine - Antes do Sino
 
 Modulo TOTALMENTE ISOLADO do main.py. Nao importa nenhuma funcao
 interna do bot principal - recebe tudo pronto por parametro (dados ja
-calculados pelo main() em cada execucao) e faz sua propria chamada a
-IA, com sua propria constante de timezone e seu proprio arquivo de
-estado.
+calculados pelo main() em cada execucao).
 
-Gera automaticamente conteudo para Instagram, TikTok/Reels e X a
-partir dos mesmos dados que o bot ja possui - nunca inventa fato,
-numero ou informacao que nao esteja no input recebido.
+Arquitetura (v3 - unificada, sem fluxos paralelos):
 
-Tres modos, cada um com seu proprio gatilho, rodando dentro do MESMO
-ciclo de 5 minutos do bot (o main.py chama run_social_content_engine
-todo ciclo - a decisao de "e a hora/e relevante o suficiente" fica
-isolada aqui dentro):
+    content_mode (opening/breaking/midday/closing)
+        │
+        ▼
+    gerar_conteudo_unificado() ou gerar_conteudo_midday_unificado()
+        │  (headline -> instagram -> x -> tiktok, sempre a MESMA forma,
+        │   independente do modo - so muda COMO o conteudo e produzido:
+        │   IA para opening/breaking/closing, template determinístico
+        │   para midday)
+        ▼
+    item salvo em docs/social_queue.json, status="draft"
+        │
+        ▼
+    notificacao privada no Telegram (preview + ID + instrucao de resposta)
+        │
+        ▼   (voce responde "Aprovar <ID>" ou "Rejeitar <ID>")
+        ▼
+    checar_aprovacoes_pendentes() [roda todo ciclo] atualiza o status
+        │
+        ▼
+    status="approved"  -->  social_design_engine gera o ativo visual
+        │                    certo (carrossel/card/roteiro, conforme
+        │                    TEMPLATE_MAP + DESIGN_MAP - nunca assume
+        │                    formato fixo por modo)
+        ▼
+    status="designed"  (pronto para publicacao manual)
+        │
+        ▼
+    status="published" (RESERVADO para o futuro - nao implementado
+                         nesta fase)
 
-  1. Breaking  - avaliado TODO ciclo, so dispara quando o score de
-                 relevancia (logica pura, sem IA) ultrapassa o limiar.
-                 Prioridade X/Twitter, angulo explicativo, nao manchete.
-  2. Midday    - janela 12h00-12h15, 1x/dia, fotografia do mercado.
-  3. Closing   - janela 18h30-19h00, 1x/dia, analise completa do dia
-                 (Instagram + TikTok + X).
-
-O conteudo gerado e so ENFILEIRADO em docs/social_queue.json, com
-status "pending" - nada e publicado automaticamente ainda.
+Todo conteudo, de qualquer modo, passa pela MESMA maquina de estados.
+Nao existe fluxo paralelo para nenhum modo, incluindo Midday.
 """
 
 import os
@@ -40,29 +54,51 @@ BR_TZ = timezone(timedelta(hours=-3))
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 USE_AI = bool(GROQ_API_KEY)
 
-# Notificacao PRIVADA de novo conteudo gerado - reaproveita o MESMO bot
-# (mesmo token) ja usado pelo resto do projeto, mas envia para um chat
-# PRIVADO distinto do canal publico pago (TELEGRAM_CHAT_ID). Sem essa
-# separacao, um aviso de "conteudo ainda nao revisado" vazaria rascunho
-# interno para os assinantes.
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_ADMIN_CHAT_ID = os.environ.get("TELEGRAM_ADMIN_CHAT_ID", "")
 
 SOCIAL_QUEUE_FILE = "docs/social_queue.json"
 BREAKING_STATE_FILE = "docs/social_breaking_state.json"
+OPENING_STATE_FILE = "docs/social_opening_state.json"
 MIDDAY_STATE_FILE = "docs/social_midday_state.json"
 CLOSING_STATE_FILE = "docs/social_content_state.json"
+TELEGRAM_OFFSET_FILE = "docs/telegram_updates_offset.json"
+
+# Versao do prompt - registrada em CADA item gerado, para permitir
+# comparar desempenho entre versoes quando o prompt for melhorado no
+# futuro (A/B de prompt).
+PROMPT_VERSION = "v1.0"
 
 # ---------------------------------------------------------------------------
-# Parametros de frequencia/selecao - ponto de partida, calibravel depois
-# de observar comportamento real (nao sao numeros definitivos).
+# Duas camadas independentes: modo -> template editorial -> tipo de
+# ativo visual. O design NUNCA assume formato fixo por modo - ele so
+# conhece o template, e o template e quem diz o tipo de ativo.
+# ---------------------------------------------------------------------------
+
+TEMPLATE_MAP = {
+    "opening": "deep_dive",
+    "closing": "deep_dive",
+    "breaking": "quick_insight",
+    "midday": "market_snapshot",
+}
+
+DESIGN_MAP = {
+    "deep_dive": "carousel",
+    "quick_insight": "card",
+    "market_snapshot": "card",
+}
+
+# ---------------------------------------------------------------------------
+# Parametros de frequencia/selecao - ponto de partida, calibravel.
 # ---------------------------------------------------------------------------
 
 LIMIAR_BREAKING = 6
 INTERVALO_MINIMO_BREAKING_MINUTOS = 60
 MAX_BREAKING_POR_DIA = 3
+LIMIAR_MOVIMENTO_FORTE = 2.0  # %
 
-LIMIAR_MOVIMENTO_FORTE = 2.0  # % - usado no criterio B do score de Breaking
+OPENING_JANELA_INICIO_MINUTOS = 9 * 60
+OPENING_JANELA_FIM_MINUTOS = 9 * 60 + 30
 
 MIDDAY_JANELA_INICIO_MINUTOS = 12 * 60
 MIDDAY_JANELA_FIM_MINUTOS = 12 * 60 + 15
@@ -70,21 +106,18 @@ MIDDAY_JANELA_FIM_MINUTOS = 12 * 60 + 15
 CLOSING_JANELA_INICIO_MINUTOS = 18 * 60 + 30
 CLOSING_JANELA_FIM_MINUTOS = 19 * 60
 
-# Entidades/temas de alto impacto - criterio A do score de Breaking.
 ENTIDADES_ALTO_IMPACTO = [
     "petrobras", "vale", "itau", "itaú", "bradesco", "banco do brasil",
     "santander", "dolar", "dólar", "juros", "selic", "copom", "fed",
     "fomc", "powell", "campos neto",
 ]
 
-# Marcadores de potencial explicativo/educacional - criterio D do score
-# de Breaking. Heuristica de palavra-chave (sem IA) - propositalmente
-# simples: serve so para PONTUAR o potencial, a IA depois e quem
-# escreve o angulo explicativo de verdade no texto final.
 MARCADORES_POTENCIAL_EDUCACIONAL = [
     "porque", "por que", "entenda", "impacto", "explica", "resultado de",
     "por tras", "consequencia", "o que muda", "reflete", "sinaliza",
 ]
+
+MARCADORES_EVENTO_MACRO = ["copom", "fed", "fomc", "payroll", "cpi", "selic"]
 
 MARCADORES_MUDANCA_ATENCAO = ["ganhou atenção", "saiu do radar"]
 
@@ -106,7 +139,7 @@ def _load_json_seguro(caminho, default):
 def _save_json(caminho, dado):
     os.makedirs(os.path.dirname(caminho), exist_ok=True)
     with open(caminho, "w", encoding="utf-8") as f:
-        json.dump(dado, f, ensure_ascii=False)
+        json.dump(dado, f, ensure_ascii=False, indent=2)
 
 
 def load_breaking_state():
@@ -117,6 +150,14 @@ def load_breaking_state():
 
 def save_breaking_state(state):
     _save_json(BREAKING_STATE_FILE, state)
+
+
+def load_opening_state():
+    return _load_json_seguro(OPENING_STATE_FILE, {"last_opening_date": ""})
+
+
+def save_opening_state(state):
+    _save_json(OPENING_STATE_FILE, state)
 
 
 def load_midday_state():
@@ -133,6 +174,14 @@ def load_social_content_state():
 
 def save_social_content_state(state):
     _save_json(CLOSING_STATE_FILE, state)
+
+
+def load_telegram_offset():
+    return _load_json_seguro(TELEGRAM_OFFSET_FILE, {"offset": 0})
+
+
+def save_telegram_offset(state):
+    _save_json(TELEGRAM_OFFSET_FILE, state)
 
 
 # ---------------------------------------------------------------------------
@@ -176,9 +225,6 @@ def _formata_variacao(change):
 
 
 def _coletar_movimentos_mercado(market_snapshot):
-    """Lista (nome, variacao) de tudo que tiver 'change' disponivel no
-    snapshot - usada tanto no score de Breaking quanto na escolha de
-    assunto do Closing."""
     candidatos = []
     if not market_snapshot:
         return candidatos
@@ -196,237 +242,178 @@ def _coletar_movimentos_mercado(market_snapshot):
     return candidatos
 
 
-# ---------------------------------------------------------------------------
-# MODO 1: BREAKING - avaliado todo ciclo, so dispara acima do limiar
-# ---------------------------------------------------------------------------
-
-def calcular_score_relevancia(clusters, market_snapshot, events):
-    """Score 100% deterministico (sem IA) de 0 a 10, com os motivos
-    que justificaram cada ponto. Avalia impacto financeiro E potencial
-    de conteudo, como pedido - nao so tamanho do movimento de preco.
-
-    Retorna (score:int, motivos:list[str], assunto:dict|None)."""
-    score = 0
-    motivos = []
-
-    top_cluster = clusters[0] if clusters else None
-    texto_cluster = ""
-    if top_cluster:
-        rep = top_cluster.get("representative", {})
-        texto_cluster = (rep.get("title", "") + " " + rep.get("body", "")).lower()
-
-    # Criterio A (+3): noticia com impacto direto em ativo/tema de alto impacto
-    if texto_cluster and any(ent in texto_cluster for ent in ENTIDADES_ALTO_IMPACTO):
-        score += 3
-        motivos.append("menciona ativo/tema de alto impacto (ex: Petrobras, Vale, juros, Fed)")
-
-    # Criterio B (+3): movimento forte de mercado/ativo
-    movimentos = _coletar_movimentos_mercado(market_snapshot)
-    maior_movimento = None
-    if movimentos:
-        movimentos.sort(key=lambda par: abs(par[1]), reverse=True)
-        maior_movimento = movimentos[0]
-        if abs(maior_movimento[1]) >= LIMIAR_MOVIMENTO_FORTE:
-            score += 3
-            motivos.append(
-                maior_movimento[0] + " com movimento forte (" + _formata_variacao(maior_movimento[1]) + ")"
-            )
-
-    # Criterio C (+2): cluster com multiplas fontes ou grande repercussao
-    if top_cluster and top_cluster.get("distinct_sources", 0) >= 2:
-        score += 2
-        motivos.append(
-            "coberto por " + str(top_cluster["distinct_sources"]) + " fontes distintas"
-        )
-
-    # Criterio D (+2): potencial educacional/explicativo (heuristica de
-    # palavra-chave - a IA e quem escreve o angulo de verdade depois,
-    # isso aqui so pontua o POTENCIAL, sem gastar chamada de IA)
-    if texto_cluster and any(m in texto_cluster for m in MARCADORES_POTENCIAL_EDUCACIONAL):
-        score += 2
-        motivos.append("tema com potencial explicativo/educacional")
-
-    # Assunto candidato: prioriza o cluster (mais rico em conteudo); se
-    # nada de cluster relevante mas o movimento de mercado foi o que
-    # pontuou, usa o movimento como assunto.
-    assunto = None
-    if top_cluster and (score > 0):
-        rep = top_cluster.get("representative", {})
-        titulo = rep.get("title", "")
-        if titulo:
-            corpo = rep.get("body", "")
-            assunto = {
-                "titulo": titulo,
-                "contexto": titulo + (". " + corpo if corpo else ""),
-            }
-    if assunto is None and maior_movimento and abs(maior_movimento[1]) >= LIMIAR_MOVIMENTO_FORTE:
-        nome, variacao = maior_movimento
-        assunto = {
-            "titulo": nome + " " + _formata_variacao(variacao),
-            "contexto": nome + " teve variação de " + _formata_variacao(variacao) + " no dia.",
-        }
-
-    return score, motivos, assunto
-
-
-def _limpar_estado_breaking_se_novo_dia(state):
-    hoje = datetime.now(BR_TZ).strftime("%Y-%m-%d")
-    if state.get("date") != hoje:
-        return {"date": hoje, "count_today": 0, "last_breaking_at": "", "topicos_publicados_hoje": []}
-    return state
-
-
-def _assunto_ja_publicado_hoje(assunto, topicos_publicados_hoje):
-    """Deduplicacao simples por similaridade de texto - evita repetir
-    o mesmo assunto (ex: Ibovespa caindo por horas seguidas) varias
-    vezes no mesmo dia."""
-    titulo_normalizado = assunto["titulo"].strip().lower()
-    for topico_anterior in topicos_publicados_hoje:
-        anterior_normalizado = topico_anterior.strip().lower()
-        palavras_comuns = set(titulo_normalizado.split()) & set(anterior_normalizado.split())
-        if len(palavras_comuns) >= 2:
-            return True
-    return False
-
-
-def should_generate_breaking_content(score, assunto, breaking_state):
-    if score < LIMIAR_BREAKING or assunto is None:
-        return False, "score abaixo do limiar (" + str(score) + "/" + str(LIMIAR_BREAKING) + ")"
-
-    if breaking_state.get("count_today", 0) >= MAX_BREAKING_POR_DIA:
-        return False, "teto diario de " + str(MAX_BREAKING_POR_DIA) + " posts Breaking ja atingido"
-
-    last_at = breaking_state.get("last_breaking_at", "")
-    if last_at:
+def _evento_macro_e_hoje(events):
+    hoje = datetime.now(BR_TZ).date()
+    for ev in events or []:
         try:
-            ultimo = datetime.strptime(last_at, "%Y-%m-%d %H:%M:%S").replace(tzinfo=BR_TZ)
-            minutos_desde_ultimo = (datetime.now(BR_TZ) - ultimo).total_seconds() / 60
-            if minutos_desde_ultimo < INTERVALO_MINIMO_BREAKING_MINUTOS:
-                return False, "intervalo minimo entre posts Breaking ainda nao passou"
+            data_evento = datetime.strptime(ev["date"], "%Y-%m-%d").date()
         except Exception:
-            pass
+            continue
+        if data_evento != hoje:
+            continue
+        texto = (ev.get("label", "") + " " + " ".join(ev.get("keywords", []))).lower()
+        if any(m in texto for m in MARCADORES_EVENTO_MACRO):
+            return ev
+    return None
 
-    if _assunto_ja_publicado_hoje(assunto, breaking_state.get("topicos_publicados_hoje", [])):
-        return False, "assunto muito parecido com um ja publicado hoje"
 
-    return True, "score " + str(score) + " atingiu o limiar, com assunto novo"
+def gerar_id_unico():
+    """ID simples e legivel: timestamp com precisao de microssegundo -
+    evita colisao quando 2 itens sao gerados no mesmo segundo (ex: dois
+    modos disparando no mesmo ciclo de 5 min)."""
+    agora = datetime.now(BR_TZ)
+    return agora.strftime("%Y%m%d-%H%M%S-%f")[:-3]
 
 
-def gerar_post_breaking(assunto, motivos):
-    """Chamada UNICA a IA para o conteudo Breaking - prioridade X,
-    texto curto, com angulo explicativo (nunca so a manchete)."""
-    instrucao = (
-        "Voce e o redator do canal 'Antes do Sino', especializado em contexto de "
-        "mercado financeiro. Use SOMENTE os fatos abaixo - nunca invente dado, numero "
-        "ou informacao que nao esteja aqui. Nunca de opiniao de investimento. Escreva "
-        "com angulo EXPLICATIVO, nunca so a manchete pura.\n\n"
-        "Exemplo do que EVITAR (manchete pura, sem angulo):\n"
-        "\"Petrobras cai 5% nesta quarta-feira.\"\n\n"
-        "Exemplo do que fazer (angulo explicativo):\n"
-        "\"Petrobras cai 5% e pressiona o Ibovespa. Mas o movimento reflete uma mudanca "
-        "na expectativa dos investidores sobre...\"\n\n"
-        "ASSUNTO:\n" + assunto["titulo"] + "\n\n"
+def _calcular_expiracao(content_mode):
+    """Cada modo tem uma janela de validade natural - depois disso, o
+    conteudo perde o timing mesmo que ainda nao tenha sido aprovado."""
+    agora = datetime.now(BR_TZ)
+    if content_mode == "breaking":
+        return agora + timedelta(hours=2)
+    if content_mode == "opening":
+        return agora.replace(hour=11, minute=0, second=0, microsecond=0)
+    if content_mode == "midday":
+        return agora.replace(hour=15, minute=0, second=0, microsecond=0)
+    if content_mode == "closing":
+        amanha = agora + timedelta(days=1)
+        return amanha.replace(hour=9, minute=0, second=0, microsecond=0)
+    return agora + timedelta(hours=6)
+
+
+def _prioridade_por_modo(content_mode):
+    return {"breaking": "high", "opening": "high", "midday": "medium", "closing": "medium"}.get(content_mode, "medium")
+
+
+# ---------------------------------------------------------------------------
+# Geracao de conteudo unificada - headline primeiro, depois os 3
+# formatos a partir dela. Usada por Opening, Breaking e Closing.
+# ---------------------------------------------------------------------------
+
+def montar_prompt_unificado(assunto, entries_today, content_mode):
+    manchetes_apoio = ""
+    for e in (entries_today or [])[:8]:
+        manchetes_apoio += "- " + e.get("title", "") + "\n"
+
+    return (
+        "Voce e o redator de conteudo do canal 'Antes do Sino', especializado em "
+        "educacao financeira e contexto de mercado para redes sociais. Use SOMENTE "
+        "os fatos e numeros fornecidos abaixo - nunca invente dado, numero ou "
+        "informacao que nao esteja explicitamente aqui. Nunca de opiniao de "
+        "investimento. Priorize educacao e contexto, nunca sensacionalismo.\n\n"
+        "ASSUNTO PRINCIPAL:\n" + assunto["titulo"] + "\n\n"
         "CONTEXTO DISPONIVEL:\n" + assunto["contexto"] + "\n\n"
-        "Gere um post para X/Twitter, MAXIMO 280 caracteres, com angulo explicativo, "
-        "sem soar como propaganda.\n\n"
+        "MANCHETES DE APOIO:\n" + manchetes_apoio + "\n\n"
+        "Gere PRIMEIRO uma headline central, e depois os 3 formatos DERIVADOS "
+        "dessa mesma headline (mesma ideia central em todos):\n\n"
+        "1. headline: frase unica, direta, que resume o assunto.\n\n"
+        "2. instagram (campos separados, cada um sera usado como bloco de "
+        "conteudo - pode virar carrossel ou card unico dependendo do formato "
+        "escolhido depois, entao cada campo deve fazer sentido sozinho):\n"
+        "   hook: gancho forte de abertura\n"
+        "   context: o que aconteceu, direto\n"
+        "   why_it_matters: por que o mercado reagiu\n"
+        "   impact: impacto no mercado (indices/acoes/setores relacionados)\n"
+        "   watch_next: o que monitorar agora (proximos eventos ou riscos)\n"
+        "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
+        "3. x: post unico para X/Twitter, MAXIMO 280 caracteres, com angulo "
+        "explicativo (nunca so a manchete pura).\n\n"
+        "4. tiktok: roteiro falado de ate 45 segundos, em cenas:\n"
+        "   scenes: lista de objetos {\"visual\": \"o que aparece na tela\", "
+        "\"line\": \"fala do narrador\"}\n"
+        "   cta: fechamento com convite discreto\n\n"
         "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-        '{"x_post": "..."}'
+        '{"headline": "...", '
+        '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
+        '"impact": "...", "watch_next": "...", "cta": "..."}, '
+        '"x": {"post": "..."}, '
+        '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
     )
-    raw_response = ask_groq_isolado(instrucao)
-    parsed = extract_json_object_isolado(raw_response)
+
+
+def validar_conteudo_unificado(parsed):
+    """Validacao defensiva - qualquer campo ausente ou malformado usa
+    fallback vazio, nunca quebra a montagem final."""
     if not isinstance(parsed, dict):
         return None
-    x_post = parsed.get("x_post", "")
-    if not isinstance(x_post, str) or not x_post.strip():
-        return None
-    return {"x_post": x_post.strip()[:280]}
 
-
-def avaliar_breaking_content(clusters, market_snapshot, events):
-    """Roda TODO ciclo. So gera conteudo quando o score ultrapassa o
-    limiar E passa nas travas de frequencia/dedup. Retorna o item pra
-    fila, ou None na grande maioria dos ciclos."""
-    score, motivos, assunto = calcular_score_relevancia(clusters, market_snapshot, events)
-
-    breaking_state = _limpar_estado_breaking_se_novo_dia(load_breaking_state())
-
-    deve_gerar, motivo_decisao = should_generate_breaking_content(score, assunto, breaking_state)
-    if not deve_gerar:
+    headline = parsed.get("headline", "")
+    headline = str(headline).strip() if isinstance(headline, str) else ""
+    if not headline:
         return None
 
+    ig = parsed.get("instagram", {})
+    if not isinstance(ig, dict):
+        ig = {}
+    instagram = {}
+    for campo in ["hook", "context", "why_it_matters", "impact", "watch_next", "cta"]:
+        valor = ig.get(campo, "")
+        instagram[campo] = str(valor).strip() if isinstance(valor, str) else ""
+
+    x_obj = parsed.get("x", {})
+    post = x_obj.get("post", "") if isinstance(x_obj, dict) else ""
+    post = str(post).strip()[:280] if isinstance(post, str) else ""
+
+    tk = parsed.get("tiktok", {})
+    if not isinstance(tk, dict):
+        tk = {}
+    scenes_raw = tk.get("scenes", [])
+    scenes = []
+    if isinstance(scenes_raw, list):
+        for cena in scenes_raw:
+            if isinstance(cena, dict):
+                scenes.append({
+                    "visual": str(cena.get("visual", "")).strip(),
+                    "line": str(cena.get("line", "")).strip(),
+                })
+    tiktok_cta = tk.get("cta", "")
+    tiktok_cta = str(tiktok_cta).strip() if isinstance(tiktok_cta, str) else ""
+
+    return {
+        "headline": headline,
+        "instagram": instagram,
+        "x": {"post": post},
+        "tiktok": {"scenes": scenes, "cta": tiktok_cta},
+    }
+
+
+def gerar_conteudo_unificado(assunto, entries_today, content_mode):
+    """Chamada UNICA a IA - gera headline + instagram + x + tiktok
+    juntos, sempre a partir da mesma ideia central."""
     if not USE_AI:
-        print("Social Content Engine (Breaking): GROQ_API_KEY nao configurada - nada gerado.")
         return None
-
     try:
-        conteudo_ia = gerar_post_breaking(assunto, motivos)
-        if conteudo_ia is None:
-            print("Social Content Engine (Breaking): resposta da IA invalida - nada gerado.")
-            return None
-
-        reason = "; ".join(motivos) if motivos else motivo_decisao
-
-        item = {
-            "content_mode": "breaking",
-            "score": score,
-            "reason": reason,
-            "topic": assunto["titulo"],
-            "x_post": conteudo_ia["x_post"],
-        }
-
-        breaking_state["count_today"] = breaking_state.get("count_today", 0) + 1
-        breaking_state["last_breaking_at"] = datetime.now(BR_TZ).strftime("%Y-%m-%d %H:%M:%S")
-        topicos = breaking_state.get("topicos_publicados_hoje", [])
-        topicos.append(assunto["titulo"])
-        breaking_state["topicos_publicados_hoje"] = topicos
-        save_breaking_state(breaking_state)
-
-        return item
+        prompt = montar_prompt_unificado(assunto, entries_today, content_mode)
+        raw_response = ask_groq_isolado(prompt)
+        parsed = extract_json_object_isolado(raw_response)
+        return validar_conteudo_unificado(parsed)
     except Exception as e:
-        print("Erro no Social Content Engine (Breaking, isolado): " + str(e))
+        print("Erro na geracao unificada de conteudo (isolado): " + str(e))
         return None
 
 
-# ---------------------------------------------------------------------------
-# MODO 2: MIDDAY - janela 12h00-12h15, 1x/dia, sem chamada de IA
-# (numeros diretos do snapshot - menor risco, menor custo)
-# ---------------------------------------------------------------------------
-
-def should_generate_midday_content():
-    now = datetime.now(BR_TZ)
-    today_str = now.strftime("%Y-%m-%d")
-    state = load_midday_state()
-    if state.get("last_midday_date") == today_str:
-        return False
-    minutes = now.hour * 60 + now.minute
-    return MIDDAY_JANELA_INICIO_MINUTOS <= minutes <= MIDDAY_JANELA_FIM_MINUTOS
-
-
-def gerar_conteudo_midday(market_snapshot):
-    """Sem chamada de IA - texto simples e direto a partir dos numeros
-    reais do snapshot. Omite qualquer dado ausente, nunca inventa."""
+def gerar_conteudo_midday_unificado(market_snapshot):
+    """Mesma FORMA de saida (headline/instagram/x/tiktok), mas por
+    template deterministico - sem IA, sem risco de invencao de numero.
+    Midday segue a MESMA maquina de estados dos outros modos, so muda
+    COMO o conteudo e produzido."""
     linhas = []
     quotes_by_symbol = (market_snapshot or {}).get("quotes_by_symbol", {}) or {}
     ibovespa = quotes_by_symbol.get("^BVSP")
     if ibovespa and ibovespa.get("change") is not None:
         linhas.append("Ibovespa " + _formata_variacao(ibovespa["change"]))
-
     sp500 = (market_snapshot or {}).get("sp500")
     if sp500 and sp500.get("change") is not None:
         linhas.append("S&P 500 " + _formata_variacao(sp500["change"]))
-
     usd = (market_snapshot or {}).get("usd")
     if usd and usd.get("change") is not None:
         linhas.append("Dólar " + _formata_variacao(usd["change"]))
-
     wti = (market_snapshot or {}).get("wti")
     if wti and wti.get("change") is not None:
         linhas.append("Petróleo (WTI) " + _formata_variacao(wti["change"]))
-
     bitcoin = (market_snapshot or {}).get("bitcoin")
     if bitcoin and bitcoin.get("change") is not None:
         linhas.append("Bitcoin " + _formata_variacao(bitcoin["change"]))
-
     selic = (market_snapshot or {}).get("selic")
     if selic is not None:
         linhas.append("CDI " + str(selic) + "% a.a.")
@@ -434,60 +421,40 @@ def gerar_conteudo_midday(market_snapshot):
     if not linhas:
         return None
 
-    x_post = "Mercado ao meio-dia: " + " | ".join(linhas)
-    return {"x_post": x_post[:280]}
+    resumo = " | ".join(linhas)
+    headline = "Mercado ao meio-dia: " + resumo
 
-
-def avaliar_midday_snapshot(market_snapshot):
-    if not should_generate_midday_content():
-        return None
-
-    conteudo = gerar_conteudo_midday(market_snapshot)
-    if conteudo is None:
-        print("Social Content Engine (Midday): sem dados de mercado disponiveis - nada gerado.")
-        return None
-
-    item = {
-        "content_mode": "midday",
-        "score": None,
-        "reason": "Snapshot de meio de pregão programado (12h00)",
-        "topic": "Snapshot de mercado - meio-dia",
-        "x_post": conteudo["x_post"],
+    return {
+        "headline": headline,
+        "instagram": {
+            "hook": headline,
+            "context": resumo,
+            "why_it_matters": "",
+            "impact": "",
+            "watch_next": "",
+            "cta": "Acompanhe o mercado em tempo real no Antes do Sino.",
+        },
+        "x": {"post": headline[:280]},
+        "tiktok": {"scenes": [], "cta": ""},
     }
 
-    state = load_midday_state()
-    state["last_midday_date"] = datetime.now(BR_TZ).strftime("%Y-%m-%d")
-    save_midday_state(state)
-
-    return item
-
 
 # ---------------------------------------------------------------------------
-# MODO 3: CLOSING - janela 18h30-19h00, 1x/dia, conteudo completo
-# (Instagram + TikTok + X) - mesma logica que ja existia
+# Escolha de assunto - logica pura, sem IA (Opening e Closing usam a
+# mesma; Breaking tem a sua propria com score)
 # ---------------------------------------------------------------------------
-
-def should_generate_closing_content():
-    now = datetime.now(BR_TZ)
-    today_str = now.strftime("%Y-%m-%d")
-    state = load_social_content_state()
-    if state.get("last_social_content_date") == today_str:
-        return False
-    minutes = now.hour * 60 + now.minute
-    return CLOSING_JANELA_INICIO_MINUTOS <= minutes <= CLOSING_JANELA_FIM_MINUTOS
-
 
 def escolher_assunto_principal(clusters, market_insights, market_snapshot, events):
-    """Escolha do assunto do Closing - ordem de prioridade:
+    """Ordem de prioridade:
     1. Mudanca de atencao (market_intelligence)
     2. Movimento relevante de mercado
     3. Cluster de noticias mais relevante
     4. Evento importante proximo
-    100% logica pura, sem IA."""
+    Retorna (assunto, reason:list[str]) ou (None, [])."""
     home_insights = (market_insights or {}).get("home", [])
     for frase in home_insights:
         if any(marcador in frase for marcador in MARCADORES_MUDANCA_ATENCAO):
-            return {"tipo": "mudanca_atencao", "titulo": frase, "contexto": frase}
+            return {"titulo": frase, "contexto": frase}, ["Mudança de atenção identificada pelo market intelligence"]
 
     movimentos = _coletar_movimentos_mercado(market_snapshot)
     if movimentos:
@@ -496,7 +463,7 @@ def escolher_assunto_principal(clusters, market_insights, market_snapshot, event
         if abs(variacao) >= LIMIAR_MOVIMENTO_FORTE:
             titulo = nome + " " + _formata_variacao(variacao)
             contexto = nome + " teve variação de " + _formata_variacao(variacao) + " no dia."
-            return {"tipo": "movimento_mercado", "titulo": titulo, "contexto": contexto}
+            return {"titulo": titulo, "contexto": contexto}, [nome + " com movimento relevante (" + _formata_variacao(variacao) + ")"]
 
     if clusters:
         top = clusters[0]
@@ -505,7 +472,7 @@ def escolher_assunto_principal(clusters, market_insights, market_snapshot, event
         if titulo:
             corpo = rep.get("body", "")
             contexto = titulo + (". " + corpo if corpo else "")
-            return {"tipo": "cluster_noticia", "titulo": titulo, "contexto": contexto}
+            return {"titulo": titulo, "contexto": contexto}, ["Cluster de notícia mais relevante: " + titulo]
 
     if events:
         hoje = datetime.now(BR_TZ).date()
@@ -523,119 +490,296 @@ def escolher_assunto_principal(clusters, market_insights, market_snapshot, event
             _, evento_escolhido = candidatos_eventos[0]
             titulo = evento_escolhido.get("label", "")
             contexto = titulo + (". " + evento_escolhido["why"] if evento_escolhido.get("why") else "")
-            return {"tipo": "evento_proximo", "titulo": titulo, "contexto": contexto}
+            return {"titulo": titulo, "contexto": contexto}, ["Evento próximo: " + titulo]
 
-    return None
-
-
-def montar_prompt_closing(assunto, entries_today):
-    manchetes_apoio = ""
-    for e in (entries_today or [])[:8]:
-        manchetes_apoio += "- " + e.get("title", "") + "\n"
-
-    return (
-        "Voce e o redator de conteudo do canal 'Antes do Sino', especializado em "
-        "educacao financeira e contexto de mercado para redes sociais (Instagram, "
-        "TikTok e X). Use SOMENTE os fatos e numeros fornecidos abaixo - nunca "
-        "invente dado, numero ou informacao que nao esteja explicitamente aqui. "
-        "Nunca de opiniao de investimento. Priorize educacao e contexto, nunca "
-        "sensacionalismo. Este e o conteudo de FECHAMENTO do dia - foque em "
-        "analise: principais movimentos do dia, o que explicou a bolsa, acoes/"
-        "setores em destaque, e expectativa para o proximo pregao.\n\n"
-        "ASSUNTO PRINCIPAL DE HOJE:\n" + assunto["titulo"] + "\n\n"
-        "CONTEXTO DISPONIVEL:\n" + assunto["contexto"] + "\n\n"
-        "MANCHETES DE APOIO DO DIA:\n" + manchetes_apoio + "\n\n"
-        "Gere TRES conteudos, simultaneamente, mantendo o MESMO contexto editorial:\n\n"
-        "1. INSTAGRAM (carrossel de exatamente 6 slides):\n"
-        "   Slide 1: titulo com gancho forte\n"
-        "   Slide 2: o que aconteceu\n"
-        "   Slide 3: por que o mercado reagiu\n"
-        "   Slide 4: quem e afetado\n"
-        "   Slide 5: resumo final\n"
-        "   Slide 6: CTA discreto para acompanhar o mercado no Antes do Sino\n\n"
-        "2. TIKTOK/REELS (roteiro falado de ate 45 segundos):\n"
-        "   gancho, explicacao, contexto, fechamento_cta\n\n"
-        "3. X/TWITTER (post unico, MAXIMO 280 caracteres):\n\n"
-        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-        '{"instagram_carousel": {"slide_1": "...", "slide_2": "...", "slide_3": "...", '
-        '"slide_4": "...", "slide_5": "...", "slide_6": "..."}, '
-        '"tiktok_script": {"gancho": "...", "explicacao": "...", "contexto": "...", '
-        '"fechamento_cta": "..."}, '
-        '"x_post": "..."}'
-    )
+    return None, []
 
 
-def validar_conteudo_closing(parsed):
-    if not isinstance(parsed, dict):
+# ---------------------------------------------------------------------------
+# MODO: BREAKING - score + segunda validacao por IA
+# ---------------------------------------------------------------------------
+
+def calcular_score_relevancia(clusters, market_snapshot, events):
+    """Score 100% deterministico (sem IA) de 0 a 12. Avalia impacto
+    financeiro E potencial de conteudo. Retorna (score, motivos:list, assunto)."""
+    score = 0
+    motivos = []
+
+    top_cluster = clusters[0] if clusters else None
+    texto_cluster = ""
+    if top_cluster:
+        rep = top_cluster.get("representative", {})
+        texto_cluster = (rep.get("title", "") + " " + rep.get("body", "")).lower()
+
+    if texto_cluster and any(ent in texto_cluster for ent in ENTIDADES_ALTO_IMPACTO):
+        score += 3
+        motivos.append("Menciona ativo/tema de alto impacto")
+
+    movimentos = _coletar_movimentos_mercado(market_snapshot)
+    maior_movimento = None
+    if movimentos:
+        movimentos.sort(key=lambda par: abs(par[1]), reverse=True)
+        maior_movimento = movimentos[0]
+        if abs(maior_movimento[1]) >= LIMIAR_MOVIMENTO_FORTE:
+            score += 3
+            motivos.append(maior_movimento[0] + " com movimento forte (" + _formata_variacao(maior_movimento[1]) + ")")
+
+    if top_cluster and top_cluster.get("distinct_sources", 0) >= 2:
+        score += 2
+        motivos.append("Coberto por " + str(top_cluster["distinct_sources"]) + " fontes distintas")
+
+    if texto_cluster and any(m in texto_cluster for m in MARCADORES_POTENCIAL_EDUCACIONAL):
+        score += 2
+        motivos.append("Tema com potencial explicativo/educacional")
+
+    evento_macro = _evento_macro_e_hoje(events)
+    if evento_macro:
+        score += 2
+        motivos.append("Evento macro hoje: " + evento_macro.get("label", ""))
+
+    assunto = None
+    if top_cluster and score > 0:
+        rep = top_cluster.get("representative", {})
+        titulo = rep.get("title", "")
+        if titulo:
+            corpo = rep.get("body", "")
+            assunto = {"titulo": titulo, "contexto": titulo + (". " + corpo if corpo else "")}
+    if assunto is None and evento_macro:
+        assunto = {
+            "titulo": evento_macro.get("label", ""),
+            "contexto": evento_macro.get("label", "") + (". " + evento_macro["why"] if evento_macro.get("why") else ""),
+        }
+    if assunto is None and maior_movimento and abs(maior_movimento[1]) >= LIMIAR_MOVIMENTO_FORTE:
+        nome, variacao = maior_movimento
+        assunto = {
+            "titulo": nome + " " + _formata_variacao(variacao),
+            "contexto": nome + " teve variação de " + _formata_variacao(variacao) + " no dia.",
+        }
+
+    return score, motivos, assunto
+
+
+def validar_potencial_conteudo_ia(assunto, motivos):
+    """Segunda camada de validacao do Breaking - so roda quando o
+    score ja passou do limiar. Pergunta pra IA se o assunto realmente
+    vale virar post (nao so 'e relevante pro mercado'). Fallback
+    seguro: em caso de falha da IA, permite a geracao (nao trava o
+    fluxo por indisponibilidade da IA)."""
+    if not USE_AI:
+        return True
+    try:
+        prompt = (
+            "Voce e o editor de conteudo do canal 'Antes do Sino'. Avalie se o "
+            "assunto abaixo tem potencial real para virar um post educativo e "
+            "relevante para redes sociais - considere potencial educativo, "
+            "curiosidade, impacto para investidores, e capacidade de gerar "
+            "engajamento. Nao avalie so se e relevante para o mercado - avalie se "
+            "vale a pena virar CONTEUDO.\n\n"
+            "ASSUNTO: " + assunto["titulo"] + "\n"
+            "CONTEXTO: " + assunto["contexto"] + "\n"
+            "SINAIS QUE LEVARAM A ESSA AVALIACAO: " + "; ".join(motivos) + "\n\n"
+            "Responda APENAS 'true' ou 'false', sem explicacao."
+        )
+        raw_response = ask_groq_isolado(prompt).strip().lower()
+        return "false" not in raw_response
+    except Exception as e:
+        print("Erro na validacao de potencial de conteudo (fallback seguro=permite): " + str(e))
+        return True
+
+
+def _limpar_estado_breaking_se_novo_dia(state):
+    hoje = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    if state.get("date") != hoje:
+        return {"date": hoje, "count_today": 0, "last_breaking_at": "", "topicos_publicados_hoje": []}
+    return state
+
+
+def _assunto_ja_publicado_hoje(assunto, topicos_publicados_hoje):
+    titulo_normalizado = assunto["titulo"].strip().lower()
+    for topico_anterior in topicos_publicados_hoje:
+        anterior_normalizado = topico_anterior.strip().lower()
+        palavras_comuns = set(titulo_normalizado.split()) & set(anterior_normalizado.split())
+        if len(palavras_comuns) >= 2:
+            return True
+    return False
+
+
+def should_generate_breaking_content(score, assunto, breaking_state):
+    if score < LIMIAR_BREAKING or assunto is None:
+        return False, "Score abaixo do limiar (" + str(score) + "/" + str(LIMIAR_BREAKING) + ")"
+    if breaking_state.get("count_today", 0) >= MAX_BREAKING_POR_DIA:
+        return False, "Teto diário de " + str(MAX_BREAKING_POR_DIA) + " posts Breaking já atingido"
+    last_at = breaking_state.get("last_breaking_at", "")
+    if last_at:
+        try:
+            ultimo = datetime.strptime(last_at, "%Y-%m-%d %H:%M:%S").replace(tzinfo=BR_TZ)
+            minutos_desde_ultimo = (datetime.now(BR_TZ) - ultimo).total_seconds() / 60
+            if minutos_desde_ultimo < INTERVALO_MINIMO_BREAKING_MINUTOS:
+                return False, "Intervalo mínimo entre posts Breaking ainda não passou"
+        except Exception:
+            pass
+    if _assunto_ja_publicado_hoje(assunto, breaking_state.get("topicos_publicados_hoje", [])):
+        return False, "Assunto muito parecido com um já publicado hoje"
+    return True, "Score " + str(score) + " atingiu o limiar, com assunto novo"
+
+
+def avaliar_breaking_content(entries_today, clusters, market_snapshot, events):
+    score, motivos, assunto = calcular_score_relevancia(clusters, market_snapshot, events)
+    breaking_state = _limpar_estado_breaking_se_novo_dia(load_breaking_state())
+
+    deve_gerar, motivo_decisao = should_generate_breaking_content(score, assunto, breaking_state)
+    if not deve_gerar:
         return None
 
-    ig = parsed.get("instagram_carousel", {})
-    if not isinstance(ig, dict):
-        ig = {}
-    instagram_carousel = {}
-    for i in range(1, 7):
-        chave = "slide_" + str(i)
-        valor = ig.get(chave, "")
-        instagram_carousel[chave] = str(valor).strip() if isinstance(valor, str) else ""
+    if not validar_potencial_conteudo_ia(assunto, motivos):
+        print("Social Content Engine (Breaking): IA avaliou que o assunto não vale virar post - descartado mesmo com score " + str(score) + ".")
+        return None
 
-    tk = parsed.get("tiktok_script", {})
-    if not isinstance(tk, dict):
-        tk = {}
-    tiktok_script = {}
-    for campo in ["gancho", "explicacao", "contexto", "fechamento_cta"]:
-        valor = tk.get(campo, "")
-        tiktok_script[campo] = str(valor).strip() if isinstance(valor, str) else ""
+    conteudo = gerar_conteudo_unificado(assunto, entries_today, "breaking")
+    if conteudo is None:
+        print("Social Content Engine (Breaking): geração de conteúdo falhou - nada gerado.")
+        return None
 
-    x_post = parsed.get("x_post", "")
-    x_post = str(x_post).strip()[:280] if isinstance(x_post, str) else ""
+    item = _montar_item(conteudo, "breaking", score, motivos)
 
-    return {
-        "instagram_carousel": instagram_carousel,
-        "tiktok_script": tiktok_script,
-        "x_post": x_post,
-    }
+    breaking_state["count_today"] = breaking_state.get("count_today", 0) + 1
+    breaking_state["last_breaking_at"] = datetime.now(BR_TZ).strftime("%Y-%m-%d %H:%M:%S")
+    topicos = breaking_state.get("topicos_publicados_hoje", [])
+    topicos.append(assunto["titulo"])
+    breaking_state["topicos_publicados_hoje"] = topicos
+    save_breaking_state(breaking_state)
+
+    return item
+
+
+# ---------------------------------------------------------------------------
+# MODO: OPENING (09h00-09h30)
+# ---------------------------------------------------------------------------
+
+def should_generate_opening_content():
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_opening_state()
+    if state.get("last_opening_date") == today_str:
+        return False
+    minutes = now.hour * 60 + now.minute
+    return OPENING_JANELA_INICIO_MINUTOS <= minutes <= OPENING_JANELA_FIM_MINUTOS
+
+
+def avaliar_opening_content(entries_today, clusters, market_insights, market_snapshot, events):
+    if not should_generate_opening_content():
+        return None
+
+    assunto, reason = escolher_assunto_principal(clusters, market_insights, market_snapshot, events)
+    if assunto is None:
+        print("Social Content Engine (Opening): nenhum assunto disponível hoje - nada gerado.")
+        return None
+
+    conteudo = gerar_conteudo_unificado(assunto, entries_today, "opening")
+    if conteudo is None:
+        print("Social Content Engine (Opening): geração de conteúdo falhou - nada gerado.")
+        return None
+
+    item = _montar_item(conteudo, "opening", None, reason)
+
+    state = load_opening_state()
+    state["last_opening_date"] = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    save_opening_state(state)
+
+    return item
+
+
+# ---------------------------------------------------------------------------
+# MODO: MIDDAY (12h00-12h15) - mesma maquina de estados, sem IA
+# ---------------------------------------------------------------------------
+
+def should_generate_midday_content():
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_midday_state()
+    if state.get("last_midday_date") == today_str:
+        return False
+    minutes = now.hour * 60 + now.minute
+    return MIDDAY_JANELA_INICIO_MINUTOS <= minutes <= MIDDAY_JANELA_FIM_MINUTOS
+
+
+def avaliar_midday_snapshot(market_snapshot):
+    if not should_generate_midday_content():
+        return None
+
+    conteudo = gerar_conteudo_midday_unificado(market_snapshot)
+    if conteudo is None:
+        print("Social Content Engine (Midday): sem dados de mercado disponíveis - nada gerado.")
+        return None
+
+    item = _montar_item(conteudo, "midday", None, ["Snapshot de meio de pregão programado (12h00)"])
+    item["prompt_version"] = "midday-template-" + PROMPT_VERSION
+
+    state = load_midday_state()
+    state["last_midday_date"] = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    save_midday_state(state)
+
+    return item
+
+
+# ---------------------------------------------------------------------------
+# MODO: CLOSING (18h30-19h00)
+# ---------------------------------------------------------------------------
+
+def should_generate_closing_content():
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_social_content_state()
+    if state.get("last_social_content_date") == today_str:
+        return False
+    minutes = now.hour * 60 + now.minute
+    return CLOSING_JANELA_INICIO_MINUTOS <= minutes <= CLOSING_JANELA_FIM_MINUTOS
 
 
 def avaliar_closing_content(entries_today, clusters, market_insights, market_snapshot, events):
     if not should_generate_closing_content():
         return None
 
-    assunto = escolher_assunto_principal(clusters, market_insights, market_snapshot, events)
+    assunto, reason = escolher_assunto_principal(clusters, market_insights, market_snapshot, events)
     if assunto is None:
-        print("Social Content Engine (Closing): nenhum assunto disponivel hoje - nada gerado.")
+        print("Social Content Engine (Closing): nenhum assunto disponível hoje - nada gerado.")
         return None
 
-    if not USE_AI:
-        print("Social Content Engine (Closing): GROQ_API_KEY nao configurada - nada gerado.")
+    conteudo = gerar_conteudo_unificado(assunto, entries_today, "closing")
+    if conteudo is None:
+        print("Social Content Engine (Closing): geração de conteúdo falhou - nada gerado.")
         return None
 
-    try:
-        prompt = montar_prompt_closing(assunto, entries_today)
-        raw_response = ask_groq_isolado(prompt)
-        parsed = extract_json_object_isolado(raw_response)
-        conteudo = validar_conteudo_closing(parsed)
-        if conteudo is None:
-            print("Social Content Engine (Closing): resposta da IA invalida - nada gerado.")
-            return None
+    item = _montar_item(conteudo, "closing", None, reason)
 
-        item = {
-            "content_mode": "closing",
-            "score": None,
-            "reason": "Fechamento diário programado (18h30-19h00) - assunto: " + assunto["tipo"],
-            "topic": assunto["titulo"],
-            "instagram_carousel": conteudo["instagram_carousel"],
-            "tiktok_script": conteudo["tiktok_script"],
-            "x_post": conteudo["x_post"],
-        }
+    state = load_social_content_state()
+    state["last_social_content_date"] = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    save_social_content_state(state)
 
-        state = load_social_content_state()
-        state["last_social_content_date"] = datetime.now(BR_TZ).strftime("%Y-%m-%d")
-        save_social_content_state(state)
+    return item
 
-        return item
-    except Exception as e:
-        print("Erro no Social Content Engine (Closing, isolado): " + str(e))
-        return None
+
+# ---------------------------------------------------------------------------
+# Montagem do item - centraliza os campos comuns a QUALQUER modo
+# ---------------------------------------------------------------------------
+
+def _montar_item(conteudo, content_mode, score, reason):
+    return {
+        "id": gerar_id_unico(),
+        "content_mode": content_mode,
+        "content_template": TEMPLATE_MAP.get(content_mode, "quick_insight"),
+        "headline": conteudo["headline"],
+        "instagram": conteudo["instagram"],
+        "x": conteudo["x"],
+        "tiktok": conteudo["tiktok"],
+        "score": score,
+        "reason": reason,
+        "priority": _prioridade_por_modo(content_mode),
+        "expires_at": _calcular_expiracao(content_mode).strftime("%Y-%m-%d %H:%M:%S"),
+        "prompt_version": PROMPT_VERSION,
+        "status": "draft",
+        "expired_notice_sent": False,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -647,52 +791,20 @@ def load_social_queue():
     return data if isinstance(data, list) else []
 
 
-def notificar_admin_telegram(item):
-    """Notificacao PRIVADA (nunca vai para o canal publico pago) -
-    avisa que um novo conteudo foi gerado e ja esta salvo na fila,
-    pronto para revisao manual. So e chamada DEPOIS que o item ja foi
-    escrito com sucesso em docs/social_queue.json. Falha aqui nunca
-    desfaz o que ja foi salvo - so o aviso que nao chega."""
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_ADMIN_CHAT_ID:
-        print("Social Content Engine: TELEGRAM_ADMIN_CHAT_ID nao configurado - aviso privado nao enviado.")
-        return
-
-    modo = item.get("content_mode", "?")
-    topico = item.get("topic", "")
-    score = item.get("score")
-    reason = item.get("reason", "")
-
-    preview = ""
-    if item.get("x_post"):
-        preview = item["x_post"][:200]
-    elif isinstance(item.get("instagram_carousel"), dict) and item["instagram_carousel"].get("slide_1"):
-        preview = item["instagram_carousel"]["slide_1"][:200]
-
-    texto = (
-        "🆕 <b>Novo conteúdo gerado</b>\n\n"
-        "Modo: " + modo + "\n"
-        "Assunto: " + topico
-    )
-    if score is not None:
-        texto += "\nScore: " + str(score)
-    if reason:
-        texto += "\nMotivo: " + reason
-    if preview:
-        texto += "\n\nPrévia:\n" + preview
-
-    try:
-        url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
-        payload = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "text": texto, "parse_mode": "HTML"}
-        requests.post(url, json=payload, timeout=10)
-    except Exception as e:
-        print("Erro ao enviar notificacao privada (isolado, item ja esta salvo na fila): " + str(e))
+def save_social_queue_full(fila):
+    _save_json(SOCIAL_QUEUE_FILE, fila)
 
 
-def save_social_queue(item):
-    """Acumula historico - nunca sobrescreve. Cada item ja vem com
-    content_mode/score/reason definidos por quem gerou (Breaking/
-    Midday/Closing) - aqui so adiciona date, status e metrics
-    (preparado para integracao futura, nao coletado ainda)."""
+def _find_item_index_by_id(fila, item_id):
+    for i, item in enumerate(fila):
+        if item.get("id") == item_id:
+            return i
+    return None
+
+
+def enfileirar_item(item):
+    """Acumula historico - nunca sobrescreve. Adiciona date/metrics e
+    envia a notificacao de draft."""
     if item is None:
         return
 
@@ -700,43 +812,166 @@ def save_social_queue(item):
 
     novo_item = dict(item)
     novo_item["date"] = datetime.now(BR_TZ).strftime("%Y-%m-%d")
-    novo_item.setdefault("status", "pending")
-    novo_item["metrics"] = {
-        "views": None,
-        "likes": None,
-        "shares": None,
-        "comments": None,
-    }
+    novo_item["metrics"] = {"views": None, "likes": None, "shares": None, "comments": None}
 
     fila.append(novo_item)
-    _save_json(SOCIAL_QUEUE_FILE, fila)
+    save_social_queue_full(fila)
 
     print(
-        "Social Content Engine: item adicionado a docs/social_queue.json "
-        "(modo=" + novo_item.get("content_mode", "?") + ", topico=" + novo_item.get("topic", "") + ")"
+        "Social Content Engine: item " + novo_item["id"] + " criado (modo=" + novo_item["content_mode"]
+        + ", status=draft, template=" + novo_item["content_template"] + ")"
     )
 
-    # Notificacao privada so acontece AQUI - depois que o item ja esta
-    # gravado com sucesso no arquivo, nunca antes.
-    notificar_admin_telegram(novo_item)
+    notificar_draft(novo_item)
 
 
 # ---------------------------------------------------------------------------
-# Ponto de entrada unico - e a UNICA funcao que o main.py precisa chamar
+# Notificacao privada de draft - com ID e instrucao de resposta
+# ---------------------------------------------------------------------------
+
+def _enviar_telegram_admin(texto):
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_ADMIN_CHAT_ID:
+        print("Social Content Engine: TELEGRAM_ADMIN_CHAT_ID não configurado - aviso privado não enviado.")
+        return
+    try:
+        url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
+        payload = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "text": texto, "parse_mode": "HTML"}
+        requests.post(url, json=payload, timeout=10)
+    except Exception as e:
+        print("Erro ao enviar notificação privada (isolado, item já está salvo): " + str(e))
+
+
+def notificar_draft(item):
+    modo_label = {"opening": "Opening", "breaking": "Breaking", "midday": "Midday", "closing": "Closing"}.get(item["content_mode"], item["content_mode"])
+
+    preview = item["headline"]
+    if item.get("instagram", {}).get("hook"):
+        preview += "\n" + item["instagram"]["hook"]
+
+    texto = (
+        "🆕 <b>Novo conteúdo (draft)</b>\n\n"
+        "Modo: " + modo_label + "\n"
+        "Assunto: " + item["headline"] + "\n"
+    )
+    if item.get("score") is not None:
+        texto += "Score: " + str(item["score"]) + "\n"
+    if item.get("reason"):
+        texto += "Motivo: " + "; ".join(item["reason"]) + "\n"
+    texto += (
+        "\nPrévia:\n" + preview
+        + "\n\nID: <code>" + item["id"] + "</code>"
+        + "\n\nResponda:\nAprovar " + item["id"] + "\nou\nRejeitar " + item["id"]
+    )
+    _enviar_telegram_admin(texto)
+
+
+def notificar_expirado(item):
+    texto = (
+        "⚠️ <b>Esse conteúdo perdeu o timing</b>\n\n"
+        "Modo: " + item["content_mode"] + "\n"
+        "Assunto: " + item["headline"] + "\n"
+        "ID: <code>" + item["id"] + "</code>\n\n"
+        "Ainda está como draft e já passou da validade esperada para esse tipo de conteúdo."
+    )
+    _enviar_telegram_admin(texto)
+
+
+# ---------------------------------------------------------------------------
+# Aprovacao por resposta de texto - consulta getUpdates, sem botao
+# ---------------------------------------------------------------------------
+
+def checar_aprovacoes_pendentes():
+    """Roda TODO ciclo. Le mensagens novas do Telegram (so as vindas do
+    chat privado do admin), procura 'Aprovar <ID>' / 'Rejeitar <ID>',
+    atualiza o status do item correspondente (so se ainda estiver
+    'draft' - nunca reverte um item ja aprovado/rejeitado/desenhado).
+    Tambem avisa (uma unica vez) sobre itens draft que expiraram."""
+    if not TELEGRAM_BOT_TOKEN:
+        return
+
+    offset_state = load_telegram_offset()
+    offset = offset_state.get("offset", 0)
+
+    try:
+        url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/getUpdates"
+        params = {"offset": offset, "timeout": 0}
+        response = requests.get(url, params=params, timeout=15)
+        data = response.json()
+        updates = data.get("result", []) if data.get("ok") else []
+    except Exception as e:
+        print("Erro ao consultar getUpdates (isolado): " + str(e))
+        updates = []
+
+    fila = load_social_queue()
+    fila_alterada = False
+    maior_update_id = offset - 1
+
+    for update in updates:
+        update_id = update.get("update_id", 0)
+        if update_id > maior_update_id:
+            maior_update_id = update_id
+
+        message = update.get("message", {})
+        chat_id = str(message.get("chat", {}).get("id", ""))
+        texto = message.get("text", "") or ""
+
+        if TELEGRAM_ADMIN_CHAT_ID and chat_id != str(TELEGRAM_ADMIN_CHAT_ID):
+            continue
+
+        match = re.match(r"(?i)^\s*(aprovar|rejeitar)\s+(\S+)\s*$", texto)
+        if not match:
+            continue
+
+        acao = match.group(1).lower()
+        item_id = match.group(2).strip()
+
+        indice = _find_item_index_by_id(fila, item_id)
+        if indice is None:
+            continue
+
+        item = fila[indice]
+        if item.get("status") != "draft":
+            continue
+
+        novo_status = "approved" if acao == "aprovar" else "rejected"
+        fila[indice]["status"] = novo_status
+        fila_alterada = True
+        print("Social Content Engine: item " + item_id + " marcado como " + novo_status + " via Telegram.")
+
+    # Avisa (uma vez) sobre itens draft expirados
+    agora = datetime.now(BR_TZ)
+    for item in fila:
+        if item.get("status") != "draft" or item.get("expired_notice_sent"):
+            continue
+        try:
+            expira_em = datetime.strptime(item["expires_at"], "%Y-%m-%d %H:%M:%S").replace(tzinfo=BR_TZ)
+        except Exception:
+            continue
+        if agora > expira_em:
+            notificar_expirado(item)
+            item["expired_notice_sent"] = True
+            fila_alterada = True
+
+    if fila_alterada:
+        save_social_queue_full(fila)
+
+    if maior_update_id >= offset:
+        save_telegram_offset({"offset": maior_update_id + 1})
+
+
+# ---------------------------------------------------------------------------
+# Ponto de entrada unico - e a UNICA funcao que o main.py precisa
+# chamar para GERACAO (aprovacao e chamada separadamente, antes)
 # ---------------------------------------------------------------------------
 
 def run_social_content_engine(entries_today, clusters, market_insights, market_snapshot, events):
-    """Roda TODO ciclo do bot (a cada 5 min). Avalia os 3 modos, cada
-    um com seu proprio gatilho isolado - na grande maioria dos ciclos,
-    nenhum dos 3 gera nada (comportamento esperado, nao falha)."""
-    item_breaking = avaliar_breaking_content(clusters, market_snapshot, events)
-    if item_breaking:
-        save_social_queue(item_breaking)
-
-    item_midday = avaliar_midday_snapshot(market_snapshot)
-    if item_midday:
-        save_social_queue(item_midday)
-
-    item_closing = avaliar_closing_content(entries_today, clusters, market_insights, market_snapshot, events)
-    if item_closing:
-        save_social_queue(item_closing)
+    """Roda TODO ciclo do bot. Avalia os 4 modos - na grande maioria
+    dos ciclos, nenhum gera nada (comportamento esperado)."""
+    for item in [
+        avaliar_opening_content(entries_today, clusters, market_insights, market_snapshot, events),
+        avaliar_breaking_content(entries_today, clusters, market_snapshot, events),
+        avaliar_midday_snapshot(market_snapshot),
+        avaliar_closing_content(entries_today, clusters, market_insights, market_snapshot, events),
+    ]:
+        if item:
+            enfileirar_item(item)
