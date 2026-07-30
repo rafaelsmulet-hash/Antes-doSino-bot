@@ -4433,6 +4433,12 @@ def main():
     except Exception as e:
         print("Erro no Social Content Engine (isolado, nao afeta o fluxo principal): " + str(e))
 
+    try:
+        import social_design_engine
+        social_design_engine.process_latest_closing_content()
+    except Exception as e:
+        print("Erro no Social Design Engine (isolado, nao afeta o fluxo principal): " + str(e))
+
     thermo_today = compute_sentiment_thermometer(entries_today)
     archive = [d for d in archive if d["date"] != today_str]
     archive.append({
