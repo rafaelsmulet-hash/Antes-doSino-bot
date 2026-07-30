@@ -188,21 +188,51 @@ def save_telegram_offset(state):
 # IA isolada - mesma chave, zero import de main.py
 # ---------------------------------------------------------------------------
 
-def ask_groq_isolado(prompt):
+GROQ_MODEL_LIGHT = "llama-3.1-8b-instant"
+GROQ_MODEL_STRONG = "llama-3.3-70b-versatile"
+
+
+def ask_groq_isolado(prompt, purpose="generation"):
+    """Camada centralizada de chamada a Groq, isolada do main.py (nao
+    reaproveita a funcao equivalente de la, por design). 'purpose'
+    escolhe o modelo:
+      purpose="generation" -> modelo FORTE (llama-3.3-70b-versatile)
+                               geracao de conteudo final (headline +
+                               instagram/x/tiktok) - e o uso padrao
+                               deste modulo.
+      purpose="analysis"   -> modelo LEVE (llama-3.1-8b-instant)
+                               usado so na segunda validacao do
+                               Breaking (triagem true/false, nao
+                               geracao de texto)."""
+    modelo = GROQ_MODEL_LIGHT if purpose == "analysis" else GROQ_MODEL_STRONG
+
     url = "https://api.groq.com/openai/v1/chat/completions"
     headers = {
         "Authorization": "Bearer " + GROQ_API_KEY,
         "Content-Type": "application/json",
     }
     payload = {
-        "model": "llama-3.3-70b-versatile",
+        "model": modelo,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.7,
     }
-    response = requests.post(url, headers=headers, json=payload, timeout=30)
-    data = response.json()
+    try:
+        response = requests.post(url, headers=headers, json=payload, timeout=30)
+        data = response.json()
+    except Exception as e:
+        print("Erro de rede na chamada Groq isolada (" + purpose + "/" + modelo + "): " + str(e))
+        raise
+
     if "choices" not in data:
+        erro = data.get("error", {}) if isinstance(data, dict) else {}
+        codigo_erro = erro.get("code", "")
+        mensagem_erro = erro.get("message", str(data))
+        if codigo_erro == "rate_limit_exceeded":
+            print("AVISO (rate limit Groq, " + purpose + "/" + modelo + "): " + mensagem_erro)
+        else:
+            print("Erro na resposta da Groq isolada (" + purpose + "/" + modelo + "): " + mensagem_erro)
         raise ValueError("Resposta sem choices: " + str(data))
+
     return data["choices"][0]["message"]["content"].strip()
 
 
@@ -377,19 +407,50 @@ def validar_conteudo_unificado(parsed):
     }
 
 
+def _fallback_template_conteudo(assunto):
+    """Fallback simples por template - usado quando a chamada a IA
+    falha (ex: limite diario da Groq atingido). Garante que o Social
+    Content Engine NUNCA deixe de gerar conteudo por indisponibilidade
+    de IA - o item continua sendo criado, enfileirado e disponivel
+    para aprovacao, so com texto mais simples (direto do assunto ja
+    identificado pela logica pura, sem parafraseie de IA)."""
+    titulo = assunto["titulo"]
+    contexto = assunto.get("contexto", titulo)
+    return {
+        "headline": titulo,
+        "instagram": {
+            "hook": titulo,
+            "context": contexto,
+            "why_it_matters": "",
+            "impact": "",
+            "watch_next": "",
+            "cta": "Acompanhe o mercado no Antes do Sino.",
+        },
+        "x": {"post": titulo[:280]},
+        "tiktok": {"scenes": [], "cta": ""},
+    }
+
+
 def gerar_conteudo_unificado(assunto, entries_today, content_mode):
     """Chamada UNICA a IA - gera headline + instagram + x + tiktok
-    juntos, sempre a partir da mesma ideia central."""
+    juntos, sempre a partir da mesma ideia central. Se a IA falhar
+    (ex: rate limit diario da Groq), cai no fallback por template em
+    vez de descartar o conteudo - nunca deixa de gerar por
+    indisponibilidade de IA."""
     if not USE_AI:
-        return None
+        return _fallback_template_conteudo(assunto)
     try:
         prompt = montar_prompt_unificado(assunto, entries_today, content_mode)
-        raw_response = ask_groq_isolado(prompt)
+        raw_response = ask_groq_isolado(prompt, purpose="generation")
         parsed = extract_json_object_isolado(raw_response)
-        return validar_conteudo_unificado(parsed)
+        conteudo = validar_conteudo_unificado(parsed)
+        if conteudo is None:
+            print("Geracao unificada retornou JSON invalido - usando fallback por template.")
+            return _fallback_template_conteudo(assunto)
+        return conteudo
     except Exception as e:
-        print("Erro na geracao unificada de conteudo (isolado): " + str(e))
-        return None
+        print("Erro na geracao unificada de conteudo (usando fallback por template): " + str(e))
+        return _fallback_template_conteudo(assunto)
 
 
 def gerar_conteudo_midday_unificado(market_snapshot):
@@ -580,7 +641,7 @@ def validar_potencial_conteudo_ia(assunto, motivos):
             "SINAIS QUE LEVARAM A ESSA AVALIACAO: " + "; ".join(motivos) + "\n\n"
             "Responda APENAS 'true' ou 'false', sem explicacao."
         )
-        raw_response = ask_groq_isolado(prompt).strip().lower()
+        raw_response = ask_groq_isolado(prompt, purpose="analysis").strip().lower()
         return "false" not in raw_response
     except Exception as e:
         print("Erro na validacao de potencial de conteudo (fallback seguro=permite): " + str(e))
