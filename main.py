@@ -4426,6 +4426,12 @@ def main():
 
     try:
         import social_content_engine
+        social_content_engine.checar_aprovacoes_pendentes()
+    except Exception as e:
+        print("Erro ao checar aprovacoes do Social Content Engine (isolado): " + str(e))
+
+    try:
+        import social_content_engine
         clusters_para_social = compute_news_clusters(entries_today)
         social_content_engine.run_social_content_engine(
             entries_today, clusters_para_social, insights, market_snapshot, combined_events
@@ -4435,7 +4441,7 @@ def main():
 
     try:
         import social_design_engine
-        social_design_engine.process_latest_closing_content()
+        social_design_engine.process_pending_designs()
     except Exception as e:
         print("Erro no Social Design Engine (isolado, nao afeta o fluxo principal): " + str(e))
 
