@@ -40,6 +40,14 @@ BR_TZ = timezone(timedelta(hours=-3))
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 USE_AI = bool(GROQ_API_KEY)
 
+# Notificacao PRIVADA de novo conteudo gerado - reaproveita o MESMO bot
+# (mesmo token) ja usado pelo resto do projeto, mas envia para um chat
+# PRIVADO distinto do canal publico pago (TELEGRAM_CHAT_ID). Sem essa
+# separacao, um aviso de "conteudo ainda nao revisado" vazaria rascunho
+# interno para os assinantes.
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_ADMIN_CHAT_ID = os.environ.get("TELEGRAM_ADMIN_CHAT_ID", "")
+
 SOCIAL_QUEUE_FILE = "docs/social_queue.json"
 BREAKING_STATE_FILE = "docs/social_breaking_state.json"
 MIDDAY_STATE_FILE = "docs/social_midday_state.json"
@@ -639,6 +647,47 @@ def load_social_queue():
     return data if isinstance(data, list) else []
 
 
+def notificar_admin_telegram(item):
+    """Notificacao PRIVADA (nunca vai para o canal publico pago) -
+    avisa que um novo conteudo foi gerado e ja esta salvo na fila,
+    pronto para revisao manual. So e chamada DEPOIS que o item ja foi
+    escrito com sucesso em docs/social_queue.json. Falha aqui nunca
+    desfaz o que ja foi salvo - so o aviso que nao chega."""
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_ADMIN_CHAT_ID:
+        print("Social Content Engine: TELEGRAM_ADMIN_CHAT_ID nao configurado - aviso privado nao enviado.")
+        return
+
+    modo = item.get("content_mode", "?")
+    topico = item.get("topic", "")
+    score = item.get("score")
+    reason = item.get("reason", "")
+
+    preview = ""
+    if item.get("x_post"):
+        preview = item["x_post"][:200]
+    elif isinstance(item.get("instagram_carousel"), dict) and item["instagram_carousel"].get("slide_1"):
+        preview = item["instagram_carousel"]["slide_1"][:200]
+
+    texto = (
+        "🆕 <b>Novo conteúdo gerado</b>\n\n"
+        "Modo: " + modo + "\n"
+        "Assunto: " + topico
+    )
+    if score is not None:
+        texto += "\nScore: " + str(score)
+    if reason:
+        texto += "\nMotivo: " + reason
+    if preview:
+        texto += "\n\nPrévia:\n" + preview
+
+    try:
+        url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
+        payload = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "text": texto, "parse_mode": "HTML"}
+        requests.post(url, json=payload, timeout=10)
+    except Exception as e:
+        print("Erro ao enviar notificacao privada (isolado, item ja esta salvo na fila): " + str(e))
+
+
 def save_social_queue(item):
     """Acumula historico - nunca sobrescreve. Cada item ja vem com
     content_mode/score/reason definidos por quem gerou (Breaking/
@@ -666,6 +715,10 @@ def save_social_queue(item):
         "Social Content Engine: item adicionado a docs/social_queue.json "
         "(modo=" + novo_item.get("content_mode", "?") + ", topico=" + novo_item.get("topic", "") + ")"
     )
+
+    # Notificacao privada so acontece AQUI - depois que o item ja esta
+    # gravado com sucesso no arquivo, nunca antes.
+    notificar_admin_telegram(novo_item)
 
 
 # ---------------------------------------------------------------------------
