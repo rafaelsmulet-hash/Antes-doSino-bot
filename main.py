@@ -3266,6 +3266,119 @@ def should_send_evening_briefing():
     return (18 * 60 + 15) <= minutes <= (18 * 60 + 45)
 
 
+SNAPSHOT_STATE_FILE = "docs/snapshot_state.json"
+
+
+def load_snapshot_state():
+    """Estado ISOLADO do Snapshot 12h00 - arquivo proprio, nunca
+    compartilha ou interfere com docs/briefings_state.json."""
+    if os.path.exists(SNAPSHOT_STATE_FILE):
+        try:
+            with open(SNAPSHOT_STATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {"last_snapshot_date": ""}
+    return {"last_snapshot_date": ""}
+
+
+def save_snapshot_state(state):
+    os.makedirs(os.path.dirname(SNAPSHOT_STATE_FILE), exist_ok=True)
+    with open(SNAPSHOT_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+
+
+def should_send_market_snapshot():
+    """Janela de 12h00 as 12h15, uma vez por dia."""
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_snapshot_state()
+    if state.get("last_snapshot_date") == today_str:
+        return False
+    minutes = now.hour * 60 + now.minute
+    return (12 * 60) <= minutes <= (12 * 60 + 15)
+
+
+def build_market_snapshot_message(market_snapshot):
+    """Monta a mensagem 'Snapshot 12h00' - fotografia simples do
+    mercado, sem depender de noticia nenhuma. Le diretamente do
+    market_snapshot ja calculado (nenhuma chamada de API aqui).
+
+    Cada linha so aparece se o dado existir de verdade no snapshot -
+    nunca inventa valor. Hoje, S&P 500, WTI, Bitcoin e Treasury 10Y
+    nao tem fonte de dado no projeto (confirmado na auditoria da Fase
+    1) - essas linhas ficam omitidas ate a Fase 2 adicionar essas
+    fontes, sem precisar mudar este codigo."""
+    quotes_by_symbol = (market_snapshot or {}).get("quotes_by_symbol", {})
+    selic = (market_snapshot or {}).get("selic")
+    usd = (market_snapshot or {}).get("usd")
+
+    def formata_variacao(change):
+        sign = "+" if change >= 0 else ""
+        return sign + str(round(change, 2)) + "%"
+
+    mercados_linhas = []
+    ibovespa = quotes_by_symbol.get("^BVSP")
+    if ibovespa is not None and ibovespa.get("change") is not None:
+        mercados_linhas.append("Ibovespa: " + formata_variacao(ibovespa["change"]))
+    # S&P 500: sem fonte de dado ainda (Fase 2) - linha omitida.
+
+    cambio_linhas = []
+    if usd is not None and usd.get("change") is not None:
+        cambio_linhas.append("Dólar: " + formata_variacao(usd["change"]))
+    # WTI e Bitcoin: sem fonte de dado ainda (Fase 2) - linhas omitidas.
+
+    juros_linhas = []
+    if selic is not None:
+        juros_linhas.append("CDI: " + str(selic) + "% a.a.")
+    # Treasury 10Y: sem fonte de dado ainda (Fase 2) - linha omitida.
+
+    partes = ["🔔 <b>Antes do Sino | Snapshot 12h00</b>\n"]
+
+    if mercados_linhas:
+        partes.append("📈 <b>Mercados</b>\n" + "\n".join(mercados_linhas) + "\n")
+
+    if cambio_linhas:
+        partes.append("💵 <b>Câmbio e Commodities</b>\n" + "\n".join(cambio_linhas) + "\n")
+
+    if juros_linhas:
+        partes.append("🏦 <b>Juros</b>\n" + "\n".join(juros_linhas) + "\n")
+
+    partes.append("🕛 Atualizado às 12h00")
+
+    return "\n".join(partes)
+
+
+def processar_market_snapshot_telegram(market_snapshot, telegram_bot_token, telegram_chat_id):
+    """Orquestrador ISOLADO do Snapshot 12h00 - nao toca em
+    Morning/Evening Briefing nem no fluxo normal de noticias.
+
+    Parametros:
+        market_snapshot: dados ja calculados no main() (compute_market_snapshot)
+                 - reaproveitado aqui, zero chamada de API nova.
+        telegram_bot_token / telegram_chat_id: credenciais do canal VIP.
+
+    Comportamento:
+        - So dispara na janela 12h00-12h15.
+        - Enviado no maximo 1 vez por dia (controle via
+          docs/snapshot_state.json, arquivo proprio e isolado).
+        - Sem comentario de IA nesta primeira fase - so os dados do
+          snapshot, formatados.
+    """
+    if not should_send_market_snapshot():
+        return
+
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    message = build_market_snapshot_message(market_snapshot)
+
+    if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
+        state = load_snapshot_state()
+        state["last_snapshot_date"] = today_str
+        save_snapshot_state(state)
+        print("Snapshot 12h00 enviado com sucesso.")
+    else:
+        print("Falha ao enviar Snapshot 12h00 - sera tentado novamente no proximo ciclo dentro da janela.")
+
+
 def get_brazil_relevant_entries(entries):
     """Filtra apenas noticias com foco no mercado brasileiro: fontes ja
     nacionais (PORTUGUESE_SOURCES), OU qualquer fonte que mencione um
@@ -4201,6 +4314,11 @@ def main():
         processar_briefings_telegram(all_portal_entries, combined_events, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, market_snapshot)
     except Exception as e:
         print("Erro ao processar briefings (isolado, nao afeta o fluxo principal): " + str(e))
+
+    try:
+        processar_market_snapshot_telegram(market_snapshot, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
+    except Exception as e:
+        print("Erro ao processar Snapshot 12h00 (isolado, nao afeta Briefings nem noticias): " + str(e))
 
     thermo_today = compute_sentiment_thermometer(entries_today)
     archive = [d for d in archive if d["date"] != today_str]
