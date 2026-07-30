@@ -3401,13 +3401,15 @@ def build_market_snapshot_message(market_snapshot):
     market_snapshot ja calculado (nenhuma chamada de API aqui).
 
     Cada linha so aparece se o dado existir de verdade no snapshot -
-    nunca inventa valor. Hoje, S&P 500, WTI, Bitcoin e Treasury 10Y
-    nao tem fonte de dado no projeto (confirmado na auditoria da Fase
-    1) - essas linhas ficam omitidas ate a Fase 2 adicionar essas
-    fontes, sem precisar mudar este codigo."""
+    nunca inventa valor. Se uma secao inteira ficar sem nenhuma linha
+    disponivel, a secao inteira e omitida (nao aparece titulo vazio)."""
     quotes_by_symbol = (market_snapshot or {}).get("quotes_by_symbol", {})
     selic = (market_snapshot or {}).get("selic")
     usd = (market_snapshot or {}).get("usd")
+    bitcoin = (market_snapshot or {}).get("bitcoin")
+    wti = (market_snapshot or {}).get("wti")
+    treasury_10y = (market_snapshot or {}).get("treasury_10y")
+    sp500 = (market_snapshot or {}).get("sp500")
 
     def formata_variacao(change):
         sign = "+" if change >= 0 else ""
@@ -3417,17 +3419,22 @@ def build_market_snapshot_message(market_snapshot):
     ibovespa = quotes_by_symbol.get("^BVSP")
     if ibovespa is not None and ibovespa.get("change") is not None:
         mercados_linhas.append("Ibovespa: " + formata_variacao(ibovespa["change"]))
-    # S&P 500: sem fonte de dado ainda (Fase 2) - linha omitida.
+    if sp500 is not None and sp500.get("change") is not None:
+        mercados_linhas.append("S&P 500: " + formata_variacao(sp500["change"]))
 
     cambio_linhas = []
     if usd is not None and usd.get("change") is not None:
         cambio_linhas.append("Dólar: " + formata_variacao(usd["change"]))
-    # WTI e Bitcoin: sem fonte de dado ainda (Fase 2) - linhas omitidas.
+    if wti is not None and wti.get("change") is not None:
+        cambio_linhas.append("WTI: " + formata_variacao(wti["change"]))
+    if bitcoin is not None and bitcoin.get("change") is not None:
+        cambio_linhas.append("Bitcoin: " + formata_variacao(bitcoin["change"]))
 
     juros_linhas = []
     if selic is not None:
         juros_linhas.append("CDI: " + str(selic) + "% a.a.")
-    # Treasury 10Y: sem fonte de dado ainda (Fase 2) - linha omitida.
+    if treasury_10y is not None and treasury_10y.get("value") is not None:
+        juros_linhas.append("Treasury 10Y: " + str(round(treasury_10y["value"], 2)) + "%")
 
     partes = ["🔔 <b>Antes do Sino | Snapshot 12h00</b>\n"]
 
