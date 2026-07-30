@@ -14,6 +14,8 @@ TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 BRAPI_TOKEN = os.environ.get("BRAPI_TOKEN", "")
+FRED_API_KEY = os.environ.get("FRED_API_KEY", "")
+COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY", "")
 
 COCKPIT_TICKERS = ["^BVSP", "PETR4", "VALE3", "ITUB4", "BBDC4", "ABEV3", "WEGE3", "B3SA3", "BBAS3", "MGLU3"]
 
@@ -736,9 +738,26 @@ def fetch_cockpit_quotes():
 
 
 def fetch_usd_brl():
-    """O endpoint de cambio da brapi.dev nao esta disponivel no plano
-    gratuito (retorna 403). Mantido desativado ate upgrade de plano."""
-    return None
+    """Busca cotacao USD/BRL via AwesomeAPI (gratuita, sem chave).
+    Substitui a versao anterior, que dependia do endpoint de cambio da
+    brapi.dev - indisponivel no plano gratuito (retornava 403).
+    Retorna None em qualquer falha - nunca quebra o snapshot."""
+    try:
+        url = "https://economia.awesomeapi.com.br/last/USD-BRL"
+        response = requests.get(url, timeout=15)
+        data = response.json()
+        info = data.get("USDBRL", {})
+        price = info.get("bid")
+        change = info.get("pctChange")
+        if price is None:
+            return None
+        return {
+            "price": float(price),
+            "change": float(change) if change is not None else None,
+        }
+    except Exception as e:
+        print("Erro ao buscar USD/BRL (AwesomeAPI): " + str(e))
+        return None
 
 
 def compute_sentiment_thermometer(entries):
@@ -794,18 +813,92 @@ def fetch_selic():
         return None
 
 
+def fetch_bitcoin():
+    """Busca preco atual e variacao de 24h do Bitcoin via CoinGecko
+    Demo API (gratuita, exige chave de cadastro simples, sem cartao).
+    Isolada, com try/except proprio - retorna None em qualquer falha,
+    nunca quebra o snapshot."""
+    if not COINGECKO_API_KEY:
+        return None
+    try:
+        url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true"
+        headers = {"x-cg-demo-api-key": COINGECKO_API_KEY}
+        response = requests.get(url, headers=headers, timeout=15)
+        data = response.json()
+        btc = data.get("bitcoin", {})
+        price = btc.get("usd")
+        change = btc.get("usd_24h_change")
+        if price is None:
+            return None
+        return {
+            "price": float(price),
+            "change": float(change) if change is not None else None,
+        }
+    except Exception as e:
+        print("Erro ao buscar Bitcoin (CoinGecko): " + str(e))
+        return None
+
+
+def fetch_fred_series(series_id):
+    """Busca o valor mais recente e a variacao percentual de uma serie
+    do FRED (Federal Reserve Economic Data) - fonte oficial, gratuita,
+    exige chave (cadastro simples, sem cartao). Usada para Petroleo
+    WTI (DCOILWTICO), Treasury 10Y (DGS10) e S&P 500 (SP500 - representa
+    o ultimo fechamento disponivel, nao intraday).
+
+    Busca ate 10 observacoes recentes (nao so 2) porque series do FRED
+    tem lacunas em fins de semana/feriados - garante achar 2 valores
+    validos mesmo com alguma lacuna no meio. Retorna None em qualquer
+    falha - nunca quebra o snapshot."""
+    if not FRED_API_KEY:
+        return None
+    try:
+        url = (
+            "https://api.stlouisfed.org/fred/series/observations"
+            "?series_id=" + series_id
+            + "&api_key=" + FRED_API_KEY
+            + "&file_type=json&sort_order=desc&limit=10"
+        )
+        response = requests.get(url, timeout=15)
+        data = response.json()
+        observations = data.get("observations", [])
+
+        valid = [o for o in observations if o.get("value") not in (None, ".", "")]
+        if not valid:
+            return None
+
+        latest = float(valid[0]["value"])
+        change = None
+        if len(valid) >= 2:
+            previous = float(valid[1]["value"])
+            if previous:
+                change = ((latest - previous) / previous) * 100
+
+        return {"value": latest, "change": change}
+    except Exception as e:
+        print("Erro ao buscar serie FRED " + series_id + ": " + str(e))
+        return None
+
+
 def compute_market_snapshot():
     """Camada de dados de mercado, independente de noticia - apenas
     numeros organizados. Sem IA, sem HTML, sem texto, sem mensagem.
 
-    Reaproveita EXATAMENTE as mesmas chamadas que ja existiam
-    (fetch_cockpit_quotes, fetch_selic, fetch_usd_brl) - nao adiciona
-    nenhuma chamada nova de API. Deve ser calculada UMA UNICA VEZ por
-    execucao do bot (no main()) e reaproveitada por build_cockpit_html
-    (Home) e pelos Briefings, evitando busca duplicada."""
+    Calculada UMA UNICA VEZ por execucao do bot (no main()) e
+    reaproveitada por build_cockpit_html (Home) e pelos Briefings/
+    Snapshot 12h00 - nenhuma chamada de API duplicada.
+
+    Fase 1: fetch_cockpit_quotes, fetch_usd_brl, fetch_selic.
+    Fase 2 (nova): fetch_bitcoin, fetch_fred_series (WTI, Treasury
+    10Y, S&P 500) - cada uma com try/except proprio, retornando None
+    em falha isolada, sem afetar as demais."""
     quotes = fetch_cockpit_quotes()
     usd = fetch_usd_brl()
     selic = fetch_selic()
+    bitcoin = fetch_bitcoin()
+    wti = fetch_fred_series("DCOILWTICO")
+    treasury_10y = fetch_fred_series("DGS10")
+    sp500 = fetch_fred_series("SP500")
 
     quotes_by_symbol = {}
     for q in quotes:
@@ -818,6 +911,10 @@ def compute_market_snapshot():
         "quotes_by_symbol": quotes_by_symbol,
         "usd": usd,
         "selic": selic,
+        "bitcoin": bitcoin,
+        "wti": wti,
+        "treasury_10y": treasury_10y,
+        "sp500": sp500,
         "fetched_at": datetime.now(BR_TZ).strftime("%Y-%m-%d %H:%M"),
     }
 
