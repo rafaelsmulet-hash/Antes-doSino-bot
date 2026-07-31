@@ -97,8 +97,8 @@ INTERVALO_MINIMO_BREAKING_MINUTOS = 60
 MAX_BREAKING_POR_DIA = 3
 LIMIAR_MOVIMENTO_FORTE = 2.0  # %
 
-OPENING_JANELA_INICIO_MINUTOS = 9 * 60
-OPENING_JANELA_FIM_MINUTOS = 9 * 60 + 30
+OPENING_JANELA_INICIO_MINUTOS = 8 * 60 + 15
+OPENING_JANELA_FIM_MINUTOS = 8 * 60 + 45
 
 MIDDAY_JANELA_INICIO_MINUTOS = 12 * 60
 MIDDAY_JANELA_FIM_MINUTOS = 12 * 60 + 15
@@ -143,6 +143,30 @@ TEXTO_FRASES_PROIBIDAS_PROMPT = (
     "proximas noticias\", \"isso pode indicar\". Se voce nao tem um fato "
     "concreto para preencher uma secao, OMITA essa secao (deixe a string "
     "vazia) em vez de preencher com uma frase vaga."
+)
+
+# Camada de analise editorial - roda ANTES da redacao final, na MESMA
+# chamada de IA (nao gasta chamada extra). Forca a IA a pensar como um
+# editor de mercado antes de escrever: identificar tipo de noticia,
+# a historia real por tras do numero, e quais blocos tem substancia
+# real pra preencher - em vez de so parafrasear a manchete.
+TEXTO_ANALISE_EDITORIAL_PROMPT = (
+    "Antes de escrever o conteudo final, faca uma analise editorial mental "
+    "(que tambem sera registrada no campo 'editorial' da resposta):\n"
+    "1. tipo_noticia: classifique em um destes: Macro, Empresa, Commodities, "
+    "Mercado, Internacional, Politica/economia, Setorial, Outro.\n"
+    "2. historia_principal: identifique qual e a informacao real que um "
+    "investidor precisa entender - NUNCA repita a manchete. Exemplo: se a "
+    "entrada e 'Ibovespa fecha em queda de 1,5%', a manchete NAO e a "
+    "historia - a historia e o motivo real por tras da queda (ex: 'mercado "
+    "reduziu exposicao a risco apos alta dos juros americanos'). A queda e "
+    "consequencia; a explicacao e o que importa.\n"
+    "3. Decida quais blocos (context, why_it_matters, impact, watch_next) "
+    "tem substancia real de acordo com o que foi fornecido. NUNCA force um "
+    "bloco de 'quem ganha/quem perde' ou impacto se a informacao nao "
+    "existir nos dados fornecidos - nesse caso, deixe o campo vazio.\n\n"
+    "Regras invioláveis: nunca invente numero, nunca invente impacto, nunca "
+    "invente ganhador/perdedor que nao esteja explicito nos dados fornecidos."
 )
 
 
@@ -350,34 +374,40 @@ def montar_prompt_unificado(assunto, entries_today, content_mode):
         manchetes_apoio += "- " + e.get("title", "") + "\n"
 
     return (
-        "Voce e o redator de conteudo do canal 'Antes do Sino', especializado em "
+        "Voce e o editor de mercado do canal 'Antes do Sino', especializado em "
         "educacao financeira e contexto de mercado para redes sociais. Use SOMENTE "
         "os fatos e numeros fornecidos abaixo - nunca invente dado, numero ou "
         "informacao que nao esteja explicitamente aqui. Nunca de opiniao de "
         "investimento. Priorize educacao e contexto, nunca sensacionalismo.\n\n"
+        + TEXTO_ANALISE_EDITORIAL_PROMPT + "\n\n"
         "ASSUNTO PRINCIPAL:\n" + assunto["titulo"] + "\n\n"
         "CONTEXTO DISPONIVEL:\n" + assunto["contexto"] + "\n\n"
         "MANCHETES DE APOIO:\n" + manchetes_apoio + "\n\n"
-        "Gere PRIMEIRO uma headline central, e depois os 3 formatos DERIVADOS "
-        "dessa mesma headline (mesma ideia central em todos):\n\n"
-        "1. headline: frase unica, direta, que resume o assunto.\n\n"
-        "2. instagram (campos separados, cada um sera usado como bloco de "
-        "conteudo - pode virar carrossel ou card unico dependendo do formato "
-        "escolhido depois, entao cada campo deve fazer sentido sozinho):\n"
-        "   hook: gancho forte de abertura\n"
+        "Gere PRIMEIRO a analise editorial, depois uma headline central baseada na "
+        "HISTORIA REAL (nao na manchete), e depois os 3 formatos DERIVADOS dessa "
+        "mesma ideia central:\n\n"
+        "1. editorial: {tipo_noticia, historia_principal} conforme instruido acima.\n\n"
+        "2. headline: frase unica e direta que comunica a HISTORIA PRINCIPAL "
+        "identificada, nao apenas a manchete original.\n\n"
+        "3. instagram (campos separados - preencha SOMENTE os que tiverem "
+        "substancia real; deixe string vazia os que nao tiverem):\n"
+        "   hook: gancho forte de abertura, baseado na historia principal\n"
         "   context: o que aconteceu, direto\n"
-        "   why_it_matters: por que o mercado reagiu\n"
-        "   impact: impacto no mercado (indices/acoes/setores relacionados)\n"
-        "   watch_next: o que monitorar agora (proximos eventos ou riscos)\n"
+        "   why_it_matters: por que aconteceu de verdade (a explicacao, nao so o fato)\n"
+        "   impact: como o mercado reagiu (indices/acoes/setores) - inclua "
+        "quem ganha/quem perde SOMENTE se isso estiver claro nos dados fornecidos\n"
+        "   watch_next: o que acompanhar agora (proximos eventos ou riscos concretos)\n"
         "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
-        "3. x: post unico para X/Twitter, MAXIMO 280 caracteres, com angulo "
+        "4. x: post unico para X/Twitter, MAXIMO 280 caracteres, com angulo "
         "explicativo (nunca so a manchete pura).\n\n"
-        "4. tiktok: roteiro falado de ate 45 segundos, em cenas:\n"
+        "5. tiktok: roteiro falado de ate 45 segundos, em cenas:\n"
         "   scenes: lista de objetos {\"visual\": \"o que aparece na tela\", "
         "\"line\": \"fala do narrador\"}\n"
         "   cta: fechamento com convite discreto\n\n"
+        + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
         "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-        '{"headline": "...", '
+        '{"editorial": {"tipo_noticia": "...", "historia_principal": "..."}, '
+        '"headline": "...", '
         '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
         '"impact": "...", "watch_next": "...", "cta": "..."}, '
         '"x": {"post": "..."}, '
@@ -423,11 +453,27 @@ def validar_conteudo_unificado(parsed):
     tiktok_cta = tk.get("cta", "")
     tiktok_cta = str(tiktok_cta).strip() if isinstance(tiktok_cta, str) else ""
 
+    # Bloco de analise editorial - PURAMENTE informativo (nunca bloqueia
+    # a geracao se vier ausente ou malformado). Guardado no item so
+    # para transparencia/auditoria futura, o design engine nunca
+    # precisa dele.
+    TIPOS_VALIDOS = ["Macro", "Empresa", "Commodities", "Mercado", "Internacional", "Politica/economia", "Setorial", "Outro"]
+    editorial_raw = parsed.get("editorial", {})
+    editorial = {"tipo_noticia": "Outro", "historia_principal": ""}
+    if isinstance(editorial_raw, dict):
+        tipo = editorial_raw.get("tipo_noticia", "")
+        if isinstance(tipo, str) and tipo.strip() in TIPOS_VALIDOS:
+            editorial["tipo_noticia"] = tipo.strip()
+        historia = editorial_raw.get("historia_principal", "")
+        if isinstance(historia, str):
+            editorial["historia_principal"] = historia.strip()
+
     return {
         "headline": headline,
         "instagram": instagram,
         "x": {"post": post},
         "tiktok": {"scenes": scenes, "cta": tiktok_cta},
+        "editorial": editorial,
     }
 
 
@@ -452,6 +498,7 @@ def _fallback_template_conteudo(assunto):
         },
         "x": {"post": titulo[:280]},
         "tiktok": {"scenes": [], "cta": ""},
+        "editorial": {"tipo_noticia": "Outro", "historia_principal": ""},
     }
 
 
@@ -472,6 +519,7 @@ def _fallback_template_editorial(headline, corpo_disponivel, content_mode):
         },
         "x": {"post": (headline + (": " + corpo_disponivel if corpo_disponivel else ""))[:280]},
         "tiktok": {"scenes": [], "cta": ""},
+        "editorial": {"tipo_noticia": "Outro", "historia_principal": ""},
     }
 
 
@@ -566,7 +614,9 @@ def gerar_conteudo_closing(dados, entries_today):
     'como foi o pregao hoje?', mesmo sem fato de destaque. Quando nao
     ha fato principal real, instrui a IA a descrever o COMPORTAMENTO
     do mercado (ex: 'fechou estavel'), nunca uma frase vaga tipo
-    'o mercado seguira monitorando'."""
+    'o mercado seguira monitorando'. Identifica a HISTORIA CENTRAL do
+    dia e constroi a narrativa a partir dela - nao e um agrupamento de
+    manchetes soltas."""
     resumo_texto = "\n".join(dados["resumo_indices"]) if dados["resumo_indices"] else "(nenhum dado de fechamento disponivel)"
     fato_texto = dados["fato_principal"] or "(nenhum fato de destaque com cobertura solida hoje - descreva o comportamento geral do mercado com base nos numeros do resumo)"
     destaques_texto = ""
@@ -579,33 +629,41 @@ def gerar_conteudo_closing(dados, entries_today):
     eventos_texto = "\n".join(dados["proximos_eventos"]) if dados["proximos_eventos"] else "(nenhum evento concreto nos proximos dias)"
 
     prompt = (
-        "Voce e o redator do canal 'Antes do Sino'. Use SOMENTE os dados abaixo - "
-        "nunca invente numero, fato ou evento. Nunca de opiniao de investimento. "
-        + TEXTO_FRASES_PROIBIDAS_PROMPT + " Se nao houver um fato principal real, "
-        "descreva o COMPORTAMENTO do mercado com base nos numeros (exemplo: "
-        "'o Ibovespa encerrou o dia praticamente estavel, refletindo um pregao de "
-        "baixa volatilidade') - isso e sempre melhor que uma frase vaga.\n\n"
+        "Voce e o editor de mercado do canal 'Antes do Sino'. Use SOMENTE os dados "
+        "abaixo - nunca invente numero, fato ou evento. Nunca de opiniao de "
+        "investimento. Se nao houver um fato principal real, descreva o "
+        "COMPORTAMENTO do mercado com base nos numeros (exemplo: 'o Ibovespa "
+        "encerrou o dia praticamente estavel, refletindo um pregao de baixa "
+        "volatilidade') - isso e sempre melhor que uma frase vaga.\n\n"
+        + TEXTO_ANALISE_EDITORIAL_PROMPT + "\n\n"
+        "IMPORTANTE: identifique qual foi A PRINCIPAL HISTORIA do mercado hoje - "
+        "nao liste fatos soltos. Monte toda a narrativa do post em torno dessa "
+        "unica historia central.\n\n"
         "RESUMO DOS INDICES:\n" + resumo_texto + "\n\n"
         "FATO PRINCIPAL DO DIA:\n" + fato_texto + "\n\n"
         "MAIORES DESTAQUES (alta/baixa):\n" + destaques_texto + "\n\n"
         "PROXIMOS EVENTOS CONCRETOS:\n" + eventos_texto + "\n\n"
-        "Este e o conteudo de FECHAMENTO - responda 'como foi o pregao hoje?'. "
-        "Gere headline + instagram + x + tiktok, usando esta estrutura no campo "
-        "instagram:\n"
-        "   hook: como fechou o mercado hoje\n"
-        "   context: resumo dos principais indices\n"
-        "   why_it_matters: o fato principal que explicou o dia, OU o "
-        "comportamento do mercado se nao houver fato de destaque - nunca "
-        "especulacao\n"
-        "   impact: quem ganhou e quem perdeu, com base nos destaques fornecidos "
-        "(se nao houver, deixe vazio)\n"
+        "Este e o conteudo de FECHAMENTO - responda 'como foi o pregao hoje?', "
+        "com uma narrativa coerente (nao uma lista de manchetes). Gere a analise "
+        "editorial, headline + instagram + x + tiktok, usando esta estrutura no "
+        "campo instagram:\n"
+        "   hook: resumo do dia em 1 frase\n"
+        "   context: principais numeros do fechamento\n"
+        "   why_it_matters: a HISTORIA CENTRAL identificada - o principal "
+        "acontecimento que explicou o dia (ou o comportamento do mercado, se nao "
+        "houver fato de destaque) - nunca especulacao\n"
+        "   impact: destaques positivos e negativos (quando existirem) E o que "
+        "isso significa para o investidor - combine os dois numa explicacao so; "
+        "se nao houver destaque de ativo, deixe vazio\n"
         "   watch_next: o que observar no proximo pregao, SOMENTE com base nos "
         "eventos concretos fornecidos - se nao houver nenhum, deixe vazio\n"
         "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
         "x: post curto para X/Twitter, MAXIMO 280 caracteres.\n"
         "tiktok: roteiro falado de ate 45 segundos, em cenas.\n\n"
+        + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
         "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-        '{"headline": "...", '
+        '{"editorial": {"tipo_noticia": "...", "historia_principal": "..."}, '
+        '"headline": "...", '
         '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
         '"impact": "...", "watch_next": "...", "cta": "..."}, '
         '"x": {"post": "..."}, '
@@ -669,6 +727,7 @@ def gerar_conteudo_midday_unificado(market_snapshot):
         },
         "x": {"post": headline[:280]},
         "tiktok": {"scenes": [], "cta": ""},
+        "editorial": {"tipo_noticia": "Mercado", "historia_principal": ""},
     }
 
 
@@ -724,10 +783,12 @@ def montar_dados_opening(market_snapshot, events):
 
 
 def gerar_conteudo_opening(dados, entries_today):
-    """Opening e um conteudo EDITORIAL OBRIGATORIO - nunca depende de
-    'ter uma boa noticia'. Sempre gera algo, usando so os dados reais
-    disponiveis (panorama + agenda do dia + manchetes de apoio, se
-    houver)."""
+    """Opening ('Agenda do Dia') e um conteudo EDITORIAL OBRIGATORIO -
+    nunca depende de 'ter uma boa noticia'. Sempre gera algo, com
+    exatamente 4 pontos: o que observar hoje, agenda economica,
+    empresas/eventos relevantes, o que merece atencao. NUNCA inclui
+    horario exato de evento nem consenso de mercado - essas fontes
+    nao existem no projeto hoje."""
     manchetes_apoio = ""
     for e in (entries_today or [])[:8]:
         manchetes_apoio += "- " + e.get("title", "") + "\n"
@@ -736,32 +797,37 @@ def gerar_conteudo_opening(dados, entries_today):
     agenda_texto = "\n".join(dados["agenda_hoje"]) if dados["agenda_hoje"] else "(nenhum evento macro previsto para hoje)"
 
     prompt = (
-        "Voce e o redator do canal 'Antes do Sino', especializado em preparar o "
-        "investidor para o pregao do dia. Use SOMENTE os dados fornecidos abaixo - "
-        "nunca invente numero, evento ou fato. Nunca de opiniao de investimento. "
-        + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
-        "PANORAMA DE MERCADO DISPONIVEL:\n" + panorama_texto + "\n\n"
-        "AGENDA ECONOMICA DE HOJE:\n" + agenda_texto + "\n\n"
-        "MANCHETES DE APOIO (se houver):\n" + (manchetes_apoio or "(nenhuma)") + "\n\n"
-        "Este e o conteudo de ABERTURA do dia - o objetivo e preparar o investidor "
-        "para o pregao, respondendo: como fecharam os mercados relevantes, o que "
-        "esta na agenda hoje, e o que merece atencao. Gere headline + instagram + "
-        "x + tiktok, usando esta estrutura no campo instagram:\n"
-        "   hook: gancho de abertura do dia\n"
-        "   context: panorama dos mercados (baseado SOMENTE no panorama fornecido)\n"
-        "   why_it_matters: agenda do dia e o que ela significa (baseado SOMENTE "
-        "na agenda fornecida - se nao houver evento, deixe vazio)\n"
-        "   impact: o que merece atencao hoje, com base nas manchetes de apoio (se "
-        "nao houver nada concreto, deixe vazio)\n"
-        "   watch_next: o que pode movimentar a bolsa hoje (baseado em fato "
-        "concreto - se nao houver, deixe vazio)\n"
+        "Voce e o editor de mercado do canal 'Antes do Sino', especializado em "
+        "preparar o investidor para o pregao do dia. Use SOMENTE os dados "
+        "fornecidos abaixo - nunca invente numero, evento, horario ou consenso de "
+        "mercado (essas informacoes nao estao disponiveis - se a agenda so tiver "
+        "a DATA do evento, use so a data, nunca invente horario ou expectativa). "
+        "Nunca de opiniao de investimento.\n\n"
+        + TEXTO_ANALISE_EDITORIAL_PROMPT + "\n\n"
+        "PANORAMA DE MERCADO DISPONIVEL (contexto de apoio):\n" + panorama_texto + "\n\n"
+        "AGENDA ECONOMICA DE HOJE (so datas, sem horario/consenso):\n" + agenda_texto + "\n\n"
+        "MANCHETES DE EMPRESAS/EVENTOS DE HOJE:\n" + (manchetes_apoio or "(nenhuma)") + "\n\n"
+        "Este e o conteudo de ABERTURA do dia ('Agenda do Dia') - estrutura de "
+        "EXATAMENTE 4 pontos. Gere a analise editorial, headline + instagram + x "
+        "+ tiktok, usando esta estrutura no campo instagram:\n"
+        "   hook: o que observar hoje - gancho curto resumindo a prioridade do dia\n"
+        "   context: agenda economica de hoje (baseado SOMENTE na agenda "
+        "fornecida - se nao houver evento, deixe vazio)\n"
+        "   why_it_matters: empresas ou eventos relevantes de hoje (baseado "
+        "SOMENTE nas manchetes fornecidas - se nao houver nada concreto, deixe "
+        "vazio)\n"
+        "   impact: o que merece atencao no mercado hoje (baseado no panorama e "
+        "nas manchetes - se nao houver nada concreto, deixe vazio)\n"
+        "   watch_next: deixe vazio (nao faz parte da estrutura da Agenda do Dia)\n"
         "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
         "x: post curto para X/Twitter, MAXIMO 280 caracteres.\n"
         "tiktok: roteiro falado de ate 45 segundos, em cenas.\n\n"
+        + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
         "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-        '{"headline": "...", '
+        '{"editorial": {"tipo_noticia": "...", "historia_principal": "..."}, '
+        '"headline": "...", '
         '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
-        '"impact": "...", "watch_next": "...", "cta": "..."}, '
+        '"impact": "...", "watch_next": "", "cta": "..."}, '
         '"x": {"post": "..."}, '
         '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
     )
@@ -772,11 +838,11 @@ def gerar_conteudo_opening(dados, entries_today):
         conteudo = validar_conteudo_unificado(parsed)
         if conteudo is None:
             print("Opening: resposta da IA invalida - usando fallback por template.")
-            return _fallback_template_editorial("Panorama do mercado", panorama_texto, "opening")
+            return _fallback_template_editorial("Agenda do Dia", panorama_texto, "opening")
         return conteudo
     except Exception as e:
         print("Erro ao gerar conteudo do Opening (usando fallback por template): " + str(e))
-        return _fallback_template_editorial("Panorama do mercado", panorama_texto, "opening")
+        return _fallback_template_editorial("Agenda do Dia", panorama_texto, "opening")
 
 
 def escolher_assunto_principal(clusters, market_insights, market_snapshot, events):
@@ -1063,17 +1129,119 @@ def should_generate_midday_content():
     return MIDDAY_JANELA_INICIO_MINUTOS <= minutes <= MIDDAY_JANELA_FIM_MINUTOS
 
 
-def avaliar_midday_snapshot(market_snapshot):
+def montar_dados_midday_editorial(market_snapshot, clusters, entries_today):
+    """Coleta pura (sem IA) dos dados do Midday editorial - numeros ja
+    coletados + ate 3 acontecimentos da manha, reaproveitando
+    compute_news_clusters() ja calculado no main.py (zero chamada
+    nova de processamento). Nao inventa acontecimento - se nao
+    houver cluster, a lista fica vazia e o prompt trata isso."""
+    linhas = []
+    quotes_by_symbol = (market_snapshot or {}).get("quotes_by_symbol", {}) or {}
+    ibovespa = quotes_by_symbol.get("^BVSP")
+    if ibovespa and ibovespa.get("change") is not None:
+        linhas.append("Ibovespa " + _formata_variacao(ibovespa["change"]))
+    sp500 = (market_snapshot or {}).get("sp500")
+    if sp500 and sp500.get("change") is not None:
+        linhas.append("S&P 500 " + _formata_variacao(sp500["change"]))
+    usd = (market_snapshot or {}).get("usd")
+    if usd and usd.get("change") is not None:
+        linhas.append("Dólar " + _formata_variacao(usd["change"]))
+    wti = (market_snapshot or {}).get("wti")
+    if wti and wti.get("change") is not None:
+        linhas.append("Petróleo (WTI) " + _formata_variacao(wti["change"]))
+    bitcoin = (market_snapshot or {}).get("bitcoin")
+    if bitcoin and bitcoin.get("change") is not None:
+        linhas.append("Bitcoin " + _formata_variacao(bitcoin["change"]))
+    selic = (market_snapshot or {}).get("selic")
+    if selic is not None:
+        linhas.append("CDI " + str(selic) + "% a.a.")
+
+    acontecimentos = []
+    for cluster in (clusters or [])[:3]:
+        rep = cluster.get("representative", {})
+        titulo = rep.get("title", "")
+        if titulo:
+            acontecimentos.append(titulo)
+
+    return {"numeros": linhas, "acontecimentos": acontecimentos}
+
+
+def gerar_conteudo_midday_editorial(dados, entries_today):
+    """Midday passa a ter 1 chamada de IA por dia (unica excecao ao
+    'sem IA' original) - sintetiza a manha como resumo editorial de
+    verdade, nao so numero cru. Se a IA falhar, cai no fallback por
+    template (gerar_conteudo_midday_unificado), que continua existindo
+    intacto."""
+    numeros_texto = "\n".join(dados["numeros"]) if dados["numeros"] else "(nenhum dado de mercado disponivel)"
+    acontecimentos_texto = "\n".join(dados["acontecimentos"]) if dados["acontecimentos"] else "(nenhum acontecimento de destaque ate o momento)"
+
+    prompt = (
+        "Voce e o editor de mercado do canal 'Antes do Sino'. Use SOMENTE os "
+        "dados abaixo - nunca invente numero ou fato. Nunca de opiniao de "
+        "investimento.\n\n"
+        + TEXTO_ANALISE_EDITORIAL_PROMPT + "\n\n"
+        "NUMEROS DO MERCADO ATE O MEIO-DIA:\n" + numeros_texto + "\n\n"
+        "PRINCIPAIS ACONTECIMENTOS DA MANHA (ate 3):\n" + acontecimentos_texto + "\n\n"
+        "Este e o RESUMO DO MEIO-DIA - responda 'o que aconteceu ate agora?'. "
+        "Gere a analise editorial, headline + instagram + x + tiktok, usando "
+        "esta estrutura no campo instagram:\n"
+        "   hook: o que aconteceu ate agora, resumo curto\n"
+        "   context: os principais acontecimentos da manha (baseado SOMENTE na "
+        "lista fornecida - se vazia, deixe vazio)\n"
+        "   why_it_matters: como o mercado reagiu, com base nos numeros "
+        "fornecidos\n"
+        "   impact: deixe vazio, a menos que haja fato concreto de impacto em "
+        "ativo especifico\n"
+        "   watch_next: o que observar ate o fechamento (baseado em fato "
+        "concreto - se nao houver, deixe vazio)\n"
+        "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
+        "x: post curto para X/Twitter, MAXIMO 280 caracteres.\n"
+        "tiktok: roteiro falado de ate 45 segundos, em cenas.\n\n"
+        + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
+        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
+        '{"editorial": {"tipo_noticia": "...", "historia_principal": "..."}, '
+        '"headline": "...", '
+        '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
+        '"impact": "...", "watch_next": "...", "cta": "..."}, '
+        '"x": {"post": "..."}, '
+        '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
+    )
+
+    try:
+        raw_response = ask_groq_isolado(prompt, purpose="generation")
+        parsed = extract_json_object_isolado(raw_response)
+        conteudo = validar_conteudo_unificado(parsed)
+        if conteudo is not None:
+            return conteudo
+        print("Midday: resposta da IA invalida - usando fallback por template (sem IA).")
+    except Exception as e:
+        print("Erro ao gerar conteudo editorial do Midday (usando fallback por template): " + str(e))
+
+    return None  # sinaliza para avaliar_midday_snapshot cair no template determinístico
+
+
+def avaliar_midday_snapshot(market_snapshot, clusters=None, entries_today=None):
     if not should_generate_midday_content():
         return None
 
-    conteudo = gerar_conteudo_midday_unificado(market_snapshot)
-    if conteudo is None:
-        print("Social Content Engine (Midday): sem dados de mercado disponíveis - nada gerado.")
-        return None
+    dados = montar_dados_midday_editorial(market_snapshot, clusters, entries_today)
+    conteudo = gerar_conteudo_midday_editorial(dados, entries_today)
 
-    item = _montar_item(conteudo, "midday", None, ["Snapshot de meio de pregão programado (12h00)"])
-    item["prompt_version"] = "midday-template-" + PROMPT_VERSION
+    reason = ["Resumo editorial de meio de pregão programado (12h00)"]
+    usou_fallback_sem_ia = False
+    if not conteudo:
+        # Fallback determinístico - o Midday original, sem IA, nunca
+        # deixa de gerar por falha da chamada nova.
+        conteudo = gerar_conteudo_midday_unificado(market_snapshot)
+        if conteudo is None:
+            print("Social Content Engine (Midday): sem dados de mercado disponíveis - nada gerado.")
+            return None
+        reason = ["Snapshot de meio de pregão programado (12h00) - fallback sem IA"]
+        usou_fallback_sem_ia = True
+
+    item = _montar_item(conteudo, "midday", None, reason)
+    if usou_fallback_sem_ia:
+        item["prompt_version"] = "midday-template-" + PROMPT_VERSION
 
     state = load_midday_state()
     state["last_midday_date"] = datetime.now(BR_TZ).strftime("%Y-%m-%d")
@@ -1143,6 +1311,7 @@ def _montar_item(conteudo, content_mode, score, reason):
         "instagram": conteudo["instagram"],
         "x": conteudo["x"],
         "tiktok": conteudo["tiktok"],
+        "editorial": conteudo.get("editorial", {"tipo_noticia": "Outro", "historia_principal": ""}),
         "score": score,
         "reason": reason,
         "priority": _prioridade_por_modo(content_mode),
@@ -1515,7 +1684,7 @@ def run_social_content_engine(entries_today, clusters, market_insights, market_s
     for item in [
         avaliar_opening_content(entries_today, clusters, market_insights, market_snapshot, events),
         avaliar_breaking_content(entries_today, clusters, market_snapshot, events),
-        avaliar_midday_snapshot(market_snapshot),
+        avaliar_midday_snapshot(market_snapshot, clusters, entries_today),
         avaliar_closing_content(entries_today, clusters, market_insights, market_snapshot, events),
     ]:
         if item:
