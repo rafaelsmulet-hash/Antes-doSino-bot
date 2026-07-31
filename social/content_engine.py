@@ -1377,6 +1377,38 @@ def checar_aprovacoes_pendentes():
         if TELEGRAM_ADMIN_CHAT_ID and chat_id != str(TELEGRAM_ADMIN_CHAT_ID):
             continue
 
+        # Comando de confirmacao MANUAL - usado quando a publicacao
+        # automatica esta desligada (sem credencial paga configurada).
+        # Fecha o ciclo de estado sem chamar nenhuma API externa.
+        match_manual = re.match(r"(?i)^\s*publicado\s+(\S+)(?:\s+(\S+))?\s*$", texto)
+        if match_manual:
+            item_id = match_manual.group(1).strip()
+            link_informado = (match_manual.group(2) or "").strip() or None
+
+            indice = _find_item_index_by_id(fila, item_id)
+            if indice is None:
+                _enviar_telegram_admin("Não encontrei nenhum conteúdo com o ID <code>" + item_id + "</code>.")
+                continue
+
+            item = fila[indice]
+            if item.get("status") not in ("designed", "failed"):
+                _enviar_telegram_admin(
+                    "O item <code>" + item_id + "</code> está com status \"" + str(item.get("status"))
+                    + "\" - só é possível confirmar publicação de itens \"designed\" ou \"failed\"."
+                )
+                continue
+
+            item["publish_url"] = link_informado
+            item["publish_error"] = None
+            _registrar_transicao(item, "published", "Publicado manualmente via Telegram")
+            fila[indice] = item
+            fila_alterada = True
+            print("Social Content Engine: item " + item_id + " confirmado como publicado manualmente.")
+            save_social_queue_full(fila)
+            registrar_published_post(item, {"success": True, "url": link_informado, "error": None})
+            notificar_publicado(item)
+            continue
+
         match = re.match(r"(?i)^\s*(aprovar|rejeitar|publicar)\s+(\S+)\s*$", texto)
         if not match:
             continue
@@ -1392,6 +1424,10 @@ def checar_aprovacoes_pendentes():
         item = fila[indice]
 
         if acao == "publicar":
+            # Caminho automatico (via API paga) - mantido para uso
+            # futuro, caso o custo da API do X deixe de ser um
+            # empecilho. Hoje o fluxo padrao e o comando 'Publicado',
+            # que nao chama nenhuma API externa.
             # Trava contra publicacao duplicada: so aceita a partir de
             # 'designed' (ou 'failed', pra permitir nova tentativa) -
             # nunca reprocessa algo ja 'publishing'/'published'.
