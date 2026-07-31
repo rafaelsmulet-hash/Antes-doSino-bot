@@ -397,21 +397,30 @@ def _registrar_transicao(item, novo_status, detalhe=""):
 
 def notificar_admin_design(item, pasta, quantidade_slides, tipo_ativo):
     """Notificacao 'Arte pronta' - envia a IMAGEM de capa como preview
-    (quando existir), com instrucao de como publicar. Se o envio da
-    foto falhar por qualquer motivo, cai com seguranca para mensagem
-    de texto simples - nunca perde o aviso."""
+    (quando existir), com o texto pronto para copiar e publicar
+    manualmente (publicacao automatica desabilitada por decisao do
+    usuario - custo da API do X). Se o envio da foto falhar por
+    qualquer motivo, cai com seguranca para mensagem de texto simples
+    - nunca perde o aviso."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_ADMIN_CHAT_ID:
         print("Social Design Engine: TELEGRAM_ADMIN_CHAT_ID não configurado - aviso privado não enviado.")
         return
 
     plataforma = (item.get("platform") or "x").upper()
+    texto_post = (item.get("x") or {}).get("post", "")
+
     texto = (
         "✅ <b>Arte pronta</b>\n"
         "Assunto: " + item.get("headline", "") + "\n"
         "Formato: " + tipo_ativo + " (" + str(quantidade_slides) + " imagem(ns))\n\n"
-        "Destino:\n☑ " + plataforma + "\n\n"
+        "Destino:\n☑ " + plataforma + " (publicação manual)\n\n"
+    )
+    if texto_post:
+        texto += "Texto pronto para copiar:\n" + texto_post + "\n\n"
+    texto += (
         "ID: <code>" + item.get("id", "") + "</code>\n\n"
-        "Responder:\nPublicar " + item.get("id", "")
+        "Depois de publicar manualmente, responder:\nPublicado " + item.get("id", "")
+        + "\n(opcional: cole o link do post depois do ID)"
     )
 
     caminho_capa = os.path.join(pasta, "slide_01.png")
