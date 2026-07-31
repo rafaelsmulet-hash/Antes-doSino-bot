@@ -4456,23 +4456,23 @@ def main():
         print("Erro ao processar Snapshot 12h00 (isolado, nao afeta Briefings nem noticias): " + str(e))
 
     try:
-        import social_content_engine
-        social_content_engine.checar_aprovacoes_pendentes()
+        from social import content_engine
+        content_engine.checar_aprovacoes_pendentes()
     except Exception as e:
         print("Erro ao checar aprovacoes do Social Content Engine (isolado): " + str(e))
 
     try:
-        import social_content_engine
+        from social import content_engine
         clusters_para_social = compute_news_clusters(entries_today)
-        social_content_engine.run_social_content_engine(
+        content_engine.run_social_content_engine(
             entries_today, clusters_para_social, insights, market_snapshot, combined_events
         )
     except Exception as e:
         print("Erro no Social Content Engine (isolado, nao afeta o fluxo principal): " + str(e))
 
     try:
-        import social_design_engine
-        social_design_engine.process_pending_designs()
+        from social import design_engine
+        design_engine.process_pending_designs()
     except Exception as e:
         print("Erro no Social Design Engine (isolado, nao afeta o fluxo principal): " + str(e))
 
