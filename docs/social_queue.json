@@ -36,7 +36,7 @@
     "expires_at": "2026-07-31 09:00:00",
     "prompt_version": "v1.0",
     "status": "draft",
-    "expired_notice_sent": false,
+    "expired_notice_sent": true,
     "date": "2026-07-30",
     "metrics": {
       "views": null,
@@ -126,6 +126,52 @@
     ],
     "priority": "high",
     "expires_at": "2026-07-31 10:41:20",
+    "prompt_version": "v1.0",
+    "status": "draft",
+    "expired_notice_sent": false,
+    "date": "2026-07-31",
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "shares": null,
+      "comments": null
+    }
+  },
+  {
+    "id": "20260731-090146-021",
+    "content_mode": "opening",
+    "content_template": "deep_dive",
+    "headline": "Mercado aguarda desenvolvimentos",
+    "instagram": {
+      "hook": "Iniciamos uma nova jornada no mercado!",
+      "context": "",
+      "why_it_matters": "",
+      "impact": "Notícias como a venda de carteira de empréstimos da HSBC para a Blackstone e o desempenho de empresas como Amazon e Apple podem influenciar o mercado",
+      "watch_next": "",
+      "cta": "Acompanhe o Antes do Sino para mais atualizações!"
+    },
+    "x": {
+      "post": "HSBC vende carteira de empréstimos na Austrália para Blackstone por US$25 bi"
+    },
+    "tiktok": {
+      "scenes": [
+        {
+          "visual": "Tela com notícias de mercado",
+          "line": "Iniciamos o dia com notícias importantes!"
+        },
+        {
+          "visual": "Logotipo da HSBC e da Blackstone",
+          "line": "A HSBC acaba de vender uma carteira de empréstimos na Austrália para a Blackstone por US$25 bi"
+        }
+      ],
+      "cta": "Acompanhe o Antes do Sino para não perder nada!"
+    },
+    "score": null,
+    "reason": [
+      "Conteúdo editorial obrigatório (Opening) - preparação para o pregão"
+    ],
+    "priority": "high",
+    "expires_at": "2026-07-31 11:00:00",
     "prompt_version": "v1.0",
     "status": "draft",
     "expired_notice_sent": false,
