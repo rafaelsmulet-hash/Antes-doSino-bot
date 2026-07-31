@@ -39,4 +39,6 @@ jobs:
             git commit -m "Atualiza historico de noticias e portal"
             git pull origin main --no-rebase -X ours
             git push origin main
-          
+          else
+            echo "Nenhuma alteracao para salvar."
+          fi
