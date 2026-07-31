@@ -121,6 +121,30 @@ MARCADORES_EVENTO_MACRO = ["copom", "fed", "fomc", "payroll", "cpi", "selic"]
 
 MARCADORES_MUDANCA_ATENCAO = ["ganhou atenção", "saiu do radar"]
 
+# Frases banidas em qualquer prompt de geracao - genericas, nao dizem
+# nada de concreto. Se o assunto so puder ser descrito com frases
+# desse tipo, a instrucao do prompt e OMITIR a secao, nunca preencher
+# com uma dessas.
+FRASES_PROIBIDAS = [
+    "isso pode impactar",
+    "vale acompanhar",
+    "os investidores estarão atentos",
+    "os investidores seguem atentos",
+    "o mercado seguirá observando",
+    "o mercado continua monitorando",
+    "o mercado mudou o foco",
+    "acompanhe as próximas notícias",
+    "isso pode indicar",
+]
+TEXTO_FRASES_PROIBIDAS_PROMPT = (
+    "PROIBIDO usar frases genericas e vazias, como: \"isso pode impactar o "
+    "mercado\", \"vale acompanhar\", \"os investidores estarao atentos\", \"o "
+    "mercado segue monitorando\", \"o mercado mudou o foco\", \"acompanhe as "
+    "proximas noticias\", \"isso pode indicar\". Se voce nao tem um fato "
+    "concreto para preencher uma secao, OMITA essa secao (deixe a string "
+    "vazia) em vez de preencher com uma frase vaga."
+)
+
 
 # ---------------------------------------------------------------------------
 # Estado - cada modo tem arquivo proprio, isolado
@@ -431,6 +455,26 @@ def _fallback_template_conteudo(assunto):
     }
 
 
+def _fallback_template_editorial(headline, corpo_disponivel, content_mode):
+    """Fallback por template para conteudo EDITORIAL (Opening/Closing)
+    - esses modos nao tem um 'assunto' unico, entao o fallback usa o
+    que ja foi coletado deterministicamente (panorama/numeros), nunca
+    inventando fato. Usado so quando a IA falha."""
+    return {
+        "headline": headline,
+        "instagram": {
+            "hook": headline,
+            "context": corpo_disponivel or "Sem dados suficientes no momento.",
+            "why_it_matters": "",
+            "impact": "",
+            "watch_next": "",
+            "cta": "Acompanhe o mercado no Antes do Sino.",
+        },
+        "x": {"post": (headline + (": " + corpo_disponivel if corpo_disponivel else ""))[:280]},
+        "tiktok": {"scenes": [], "cta": ""},
+    }
+
+
 def gerar_conteudo_unificado(assunto, entries_today, content_mode):
     """Chamada UNICA a IA - gera headline + instagram + x + tiktok
     juntos, sempre a partir da mesma ideia central. Se a IA falhar
@@ -451,6 +495,134 @@ def gerar_conteudo_unificado(assunto, entries_today, content_mode):
     except Exception as e:
         print("Erro na geracao unificada de conteudo (usando fallback por template): " + str(e))
         return _fallback_template_conteudo(assunto)
+
+
+def montar_dados_closing(market_snapshot, clusters, events):
+    """Coleta pura (sem IA) dos dados fixos do Closing - numeros do
+    fechamento, fato principal (SE existir cluster forte de verdade -
+    nao usa mais 'mudanca de atencao', que gera texto vago demais),
+    maior alta/baixa entre os ativos ja cotados, e proximos eventos
+    reais (nunca frase vaga tipo 'observar o mercado')."""
+    linhas_resumo = []
+    quotes_by_symbol = (market_snapshot or {}).get("quotes_by_symbol", {}) or {}
+
+    ibovespa = quotes_by_symbol.get("^BVSP")
+    if ibovespa and ibovespa.get("change") is not None:
+        linhas_resumo.append("Ibovespa: " + _formata_variacao(ibovespa["change"]))
+    sp500 = (market_snapshot or {}).get("sp500")
+    if sp500 and sp500.get("change") is not None:
+        linhas_resumo.append("S&P 500: " + _formata_variacao(sp500["change"]))
+    usd = (market_snapshot or {}).get("usd")
+    if usd and usd.get("change") is not None:
+        linhas_resumo.append("Dólar: " + _formata_variacao(usd["change"]))
+    wti = (market_snapshot or {}).get("wti")
+    if wti and wti.get("change") is not None:
+        linhas_resumo.append("Petróleo (WTI): " + _formata_variacao(wti["change"]))
+    bitcoin = (market_snapshot or {}).get("bitcoin")
+    if bitcoin and bitcoin.get("change") is not None:
+        linhas_resumo.append("Bitcoin: " + _formata_variacao(bitcoin["change"]))
+
+    # Fato principal: SOMENTE cluster de verdade (varias fontes) -
+    # nunca "mudanca de atencao" isolada, que nao tem substancia
+    # suficiente pra explicar "por que aconteceu" de forma concreta.
+    fato_principal = None
+    if clusters:
+        top = clusters[0]
+        if top.get("distinct_sources", 0) >= 2:
+            rep = top.get("representative", {})
+            titulo = rep.get("title", "")
+            if titulo:
+                fato_principal = titulo + (". " + rep.get("body", "") if rep.get("body") else "")
+
+    # Maiores destaques positivos/negativos - direto da cotacao real,
+    # nao inventado.
+    ativos_com_variacao = [(q.get("symbol"), q.get("change")) for q in (market_snapshot or {}).get("quotes", []) if q.get("change") is not None]
+    maior_alta = max(ativos_com_variacao, key=lambda par: par[1]) if ativos_com_variacao else None
+    maior_baixa = min(ativos_com_variacao, key=lambda par: par[1]) if ativos_com_variacao else None
+
+    # Proximos eventos reais (nao "observar o mercado") - so os que
+    # realmente existem no calendario.
+    hoje = datetime.now(BR_TZ).date()
+    proximos_eventos = []
+    for ev in events or []:
+        try:
+            data_evento = datetime.strptime(ev["date"], "%Y-%m-%d").date()
+        except Exception:
+            continue
+        if 0 <= (data_evento - hoje).days <= 5:
+            proximos_eventos.append(ev.get("label", ""))
+
+    return {
+        "resumo_indices": linhas_resumo,
+        "fato_principal": fato_principal,
+        "maior_alta": maior_alta,
+        "maior_baixa": maior_baixa,
+        "proximos_eventos": proximos_eventos,
+    }
+
+
+def gerar_conteudo_closing(dados, entries_today):
+    """Closing e um conteudo EDITORIAL OBRIGATORIO - sempre responde
+    'como foi o pregao hoje?', mesmo sem fato de destaque. Quando nao
+    ha fato principal real, instrui a IA a descrever o COMPORTAMENTO
+    do mercado (ex: 'fechou estavel'), nunca uma frase vaga tipo
+    'o mercado seguira monitorando'."""
+    resumo_texto = "\n".join(dados["resumo_indices"]) if dados["resumo_indices"] else "(nenhum dado de fechamento disponivel)"
+    fato_texto = dados["fato_principal"] or "(nenhum fato de destaque com cobertura solida hoje - descreva o comportamento geral do mercado com base nos numeros do resumo)"
+    destaques_texto = ""
+    if dados["maior_alta"]:
+        destaques_texto += "Maior alta entre os ativos acompanhados: " + dados["maior_alta"][0] + " " + _formata_variacao(dados["maior_alta"][1]) + "\n"
+    if dados["maior_baixa"]:
+        destaques_texto += "Maior baixa entre os ativos acompanhados: " + dados["maior_baixa"][0] + " " + _formata_variacao(dados["maior_baixa"][1]) + "\n"
+    if not destaques_texto:
+        destaques_texto = "(nenhum destaque de ativo individual disponivel)"
+    eventos_texto = "\n".join(dados["proximos_eventos"]) if dados["proximos_eventos"] else "(nenhum evento concreto nos proximos dias)"
+
+    prompt = (
+        "Voce e o redator do canal 'Antes do Sino'. Use SOMENTE os dados abaixo - "
+        "nunca invente numero, fato ou evento. Nunca de opiniao de investimento. "
+        + TEXTO_FRASES_PROIBIDAS_PROMPT + " Se nao houver um fato principal real, "
+        "descreva o COMPORTAMENTO do mercado com base nos numeros (exemplo: "
+        "'o Ibovespa encerrou o dia praticamente estavel, refletindo um pregao de "
+        "baixa volatilidade') - isso e sempre melhor que uma frase vaga.\n\n"
+        "RESUMO DOS INDICES:\n" + resumo_texto + "\n\n"
+        "FATO PRINCIPAL DO DIA:\n" + fato_texto + "\n\n"
+        "MAIORES DESTAQUES (alta/baixa):\n" + destaques_texto + "\n\n"
+        "PROXIMOS EVENTOS CONCRETOS:\n" + eventos_texto + "\n\n"
+        "Este e o conteudo de FECHAMENTO - responda 'como foi o pregao hoje?'. "
+        "Gere headline + instagram + x + tiktok, usando esta estrutura no campo "
+        "instagram:\n"
+        "   hook: como fechou o mercado hoje\n"
+        "   context: resumo dos principais indices\n"
+        "   why_it_matters: o fato principal que explicou o dia, OU o "
+        "comportamento do mercado se nao houver fato de destaque - nunca "
+        "especulacao\n"
+        "   impact: quem ganhou e quem perdeu, com base nos destaques fornecidos "
+        "(se nao houver, deixe vazio)\n"
+        "   watch_next: o que observar no proximo pregao, SOMENTE com base nos "
+        "eventos concretos fornecidos - se nao houver nenhum, deixe vazio\n"
+        "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
+        "x: post curto para X/Twitter, MAXIMO 280 caracteres.\n"
+        "tiktok: roteiro falado de ate 45 segundos, em cenas.\n\n"
+        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
+        '{"headline": "...", '
+        '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
+        '"impact": "...", "watch_next": "...", "cta": "..."}, '
+        '"x": {"post": "..."}, '
+        '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
+    )
+
+    try:
+        raw_response = ask_groq_isolado(prompt, purpose="generation")
+        parsed = extract_json_object_isolado(raw_response)
+        conteudo = validar_conteudo_unificado(parsed)
+        if conteudo is None:
+            print("Closing: resposta da IA invalida - usando fallback por template.")
+            return _fallback_template_editorial("Fechamento do pregão", resumo_texto, "closing")
+        return conteudo
+    except Exception as e:
+        print("Erro ao gerar conteudo do Closing (usando fallback por template): " + str(e))
+        return _fallback_template_editorial("Fechamento do pregão", resumo_texto, "closing")
 
 
 def gerar_conteudo_midday_unificado(market_snapshot):
@@ -504,6 +676,108 @@ def gerar_conteudo_midday_unificado(market_snapshot):
 # Escolha de assunto - logica pura, sem IA (Opening e Closing usam a
 # mesma; Breaking tem a sua propria com score)
 # ---------------------------------------------------------------------------
+
+def montar_dados_opening(market_snapshot, events):
+    """Coleta pura (sem IA) dos dados fixos do Opening - panorama de
+    mercado e agenda do dia. So inclui o que existe de verdade no
+    snapshot - nunca inventa secao pra dado ausente (ex: Nasdaq,
+    futuros e minerio de ferro ainda nao tem fonte no projeto, entao
+    simplesmente nao aparecem, sem gerar erro)."""
+    linhas_panorama = []
+    quotes_by_symbol = (market_snapshot or {}).get("quotes_by_symbol", {}) or {}
+
+    ibovespa = quotes_by_symbol.get("^BVSP")
+    if ibovespa and ibovespa.get("change") is not None:
+        linhas_panorama.append("Ibovespa: " + _formata_variacao(ibovespa["change"]))
+
+    sp500 = (market_snapshot or {}).get("sp500")
+    if sp500 and sp500.get("change") is not None:
+        linhas_panorama.append("S&P 500 (ultimo fechamento): " + _formata_variacao(sp500["change"]))
+
+    usd = (market_snapshot or {}).get("usd")
+    if usd and usd.get("change") is not None:
+        linhas_panorama.append("Dólar: " + _formata_variacao(usd["change"]))
+
+    wti = (market_snapshot or {}).get("wti")
+    if wti and wti.get("change") is not None:
+        linhas_panorama.append("Petróleo (WTI): " + _formata_variacao(wti["change"]))
+
+    bitcoin = (market_snapshot or {}).get("bitcoin")
+    if bitcoin and bitcoin.get("change") is not None:
+        linhas_panorama.append("Bitcoin: " + _formata_variacao(bitcoin["change"]))
+
+    selic = (market_snapshot or {}).get("selic")
+    if selic is not None:
+        linhas_panorama.append("CDI/Selic: " + str(selic) + "% a.a.")
+
+    hoje = datetime.now(BR_TZ).date()
+    eventos_hoje = []
+    for ev in events or []:
+        try:
+            data_evento = datetime.strptime(ev["date"], "%Y-%m-%d").date()
+        except Exception:
+            continue
+        if data_evento == hoje:
+            eventos_hoje.append(ev.get("label", ""))
+
+    return {"panorama": linhas_panorama, "agenda_hoje": eventos_hoje}
+
+
+def gerar_conteudo_opening(dados, entries_today):
+    """Opening e um conteudo EDITORIAL OBRIGATORIO - nunca depende de
+    'ter uma boa noticia'. Sempre gera algo, usando so os dados reais
+    disponiveis (panorama + agenda do dia + manchetes de apoio, se
+    houver)."""
+    manchetes_apoio = ""
+    for e in (entries_today or [])[:8]:
+        manchetes_apoio += "- " + e.get("title", "") + "\n"
+
+    panorama_texto = "\n".join(dados["panorama"]) if dados["panorama"] else "(nenhum dado de mercado disponivel no momento)"
+    agenda_texto = "\n".join(dados["agenda_hoje"]) if dados["agenda_hoje"] else "(nenhum evento macro previsto para hoje)"
+
+    prompt = (
+        "Voce e o redator do canal 'Antes do Sino', especializado em preparar o "
+        "investidor para o pregao do dia. Use SOMENTE os dados fornecidos abaixo - "
+        "nunca invente numero, evento ou fato. Nunca de opiniao de investimento. "
+        + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
+        "PANORAMA DE MERCADO DISPONIVEL:\n" + panorama_texto + "\n\n"
+        "AGENDA ECONOMICA DE HOJE:\n" + agenda_texto + "\n\n"
+        "MANCHETES DE APOIO (se houver):\n" + (manchetes_apoio or "(nenhuma)") + "\n\n"
+        "Este e o conteudo de ABERTURA do dia - o objetivo e preparar o investidor "
+        "para o pregao, respondendo: como fecharam os mercados relevantes, o que "
+        "esta na agenda hoje, e o que merece atencao. Gere headline + instagram + "
+        "x + tiktok, usando esta estrutura no campo instagram:\n"
+        "   hook: gancho de abertura do dia\n"
+        "   context: panorama dos mercados (baseado SOMENTE no panorama fornecido)\n"
+        "   why_it_matters: agenda do dia e o que ela significa (baseado SOMENTE "
+        "na agenda fornecida - se nao houver evento, deixe vazio)\n"
+        "   impact: o que merece atencao hoje, com base nas manchetes de apoio (se "
+        "nao houver nada concreto, deixe vazio)\n"
+        "   watch_next: o que pode movimentar a bolsa hoje (baseado em fato "
+        "concreto - se nao houver, deixe vazio)\n"
+        "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
+        "x: post curto para X/Twitter, MAXIMO 280 caracteres.\n"
+        "tiktok: roteiro falado de ate 45 segundos, em cenas.\n\n"
+        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
+        '{"headline": "...", '
+        '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
+        '"impact": "...", "watch_next": "...", "cta": "..."}, '
+        '"x": {"post": "..."}, '
+        '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
+    )
+
+    try:
+        raw_response = ask_groq_isolado(prompt, purpose="generation")
+        parsed = extract_json_object_isolado(raw_response)
+        conteudo = validar_conteudo_unificado(parsed)
+        if conteudo is None:
+            print("Opening: resposta da IA invalida - usando fallback por template.")
+            return _fallback_template_editorial("Panorama do mercado", panorama_texto, "opening")
+        return conteudo
+    except Exception as e:
+        print("Erro ao gerar conteudo do Opening (usando fallback por template): " + str(e))
+        return _fallback_template_editorial("Panorama do mercado", panorama_texto, "opening")
+
 
 def escolher_assunto_principal(clusters, market_insights, market_snapshot, events):
     """Ordem de prioridade:
@@ -560,46 +834,68 @@ def escolher_assunto_principal(clusters, market_insights, market_snapshot, event
 # MODO: BREAKING - score + segunda validacao por IA
 # ---------------------------------------------------------------------------
 
-def calcular_score_relevancia(clusters, market_snapshot, events):
-    """Score 100% deterministico (sem IA) de 0 a 12. Avalia impacto
-    financeiro E potencial de conteudo. Retorna (score, motivos:list, assunto)."""
-    score = 0
-    motivos = []
+def calcular_score_conteudo(clusters, market_snapshot, events):
+    """Score por CAMADA EXCLUSIVA (nao soma mais) - retorna o MAIOR
+    nivel encontrado, de 0 a 10. Mede potencial de CONTEUDO, nao so
+    relevancia de mercado.
 
+    Niveis:
+      10 - fato extremamente relevante (entidade de alto impacto + cluster muito forte)
+       9 - movimento excepcional (>=4%)
+       8 - evento macro muito importante hoje (Copom/Fed/Payroll/CPI)
+       7 - cluster muito forte (3+ fontes distintas)
+       6 - movimento relevante (>=2%) ou ativo ganhando atencao com cobertura consistente
+       2 - conteudo fraco (sinal existe, mas sem substancia real - nao deve virar post)
+
+    Retorna (nivel:int, motivo:str, assunto:dict|None)."""
     top_cluster = clusters[0] if clusters else None
     texto_cluster = ""
+    distinct_sources = 0
     if top_cluster:
         rep = top_cluster.get("representative", {})
         texto_cluster = (rep.get("title", "") + " " + rep.get("body", "")).lower()
+        distinct_sources = top_cluster.get("distinct_sources", 0)
 
-    if texto_cluster and any(ent in texto_cluster for ent in ENTIDADES_ALTO_IMPACTO):
-        score += 3
-        motivos.append("Menciona ativo/tema de alto impacto")
+    tem_entidade_alto_impacto = bool(texto_cluster) and any(ent in texto_cluster for ent in ENTIDADES_ALTO_IMPACTO)
 
     movimentos = _coletar_movimentos_mercado(market_snapshot)
     maior_movimento = None
     if movimentos:
         movimentos.sort(key=lambda par: abs(par[1]), reverse=True)
         maior_movimento = movimentos[0]
-        if abs(maior_movimento[1]) >= LIMIAR_MOVIMENTO_FORTE:
-            score += 3
-            motivos.append(maior_movimento[0] + " com movimento forte (" + _formata_variacao(maior_movimento[1]) + ")")
-
-    if top_cluster and top_cluster.get("distinct_sources", 0) >= 2:
-        score += 2
-        motivos.append("Coberto por " + str(top_cluster["distinct_sources"]) + " fontes distintas")
-
-    if texto_cluster and any(m in texto_cluster for m in MARCADORES_POTENCIAL_EDUCACIONAL):
-        score += 2
-        motivos.append("Tema com potencial explicativo/educacional")
 
     evento_macro = _evento_macro_e_hoje(events)
+
+    candidatos = []
+
+    if tem_entidade_alto_impacto and distinct_sources >= 4:
+        candidatos.append((10, "Fato extremamente relevante - entidade de alto impacto com ampla cobertura (" + str(distinct_sources) + " fontes)"))
+
+    if maior_movimento and abs(maior_movimento[1]) >= 4.0:
+        candidatos.append((9, "Movimento excepcional: " + maior_movimento[0] + " " + _formata_variacao(maior_movimento[1])))
+
     if evento_macro:
-        score += 2
-        motivos.append("Evento macro hoje: " + evento_macro.get("label", ""))
+        candidatos.append((8, "Evento macro muito importante hoje: " + evento_macro.get("label", "")))
+
+    if distinct_sources >= 3:
+        candidatos.append((7, "Cluster muito forte - coberto por " + str(distinct_sources) + " fontes distintas"))
+
+    if maior_movimento and abs(maior_movimento[1]) >= LIMIAR_MOVIMENTO_FORTE:
+        candidatos.append((6, "Movimento relevante: " + maior_movimento[0] + " " + _formata_variacao(maior_movimento[1])))
+    if tem_entidade_alto_impacto and distinct_sources >= 2:
+        candidatos.append((6, "Ativo ganhando atenção, com cobertura consistente"))
+
+    if not candidatos and top_cluster:
+        candidatos.append((2, "Sinal fraco - sem substância suficiente para virar conteúdo"))
+
+    if not candidatos:
+        return 0, "", None
+
+    candidatos.sort(key=lambda par: par[0], reverse=True)
+    nivel, motivo = candidatos[0]
 
     assunto = None
-    if top_cluster and score > 0:
+    if top_cluster:
         rep = top_cluster.get("representative", {})
         titulo = rep.get("title", "")
         if titulo:
@@ -610,35 +906,40 @@ def calcular_score_relevancia(clusters, market_snapshot, events):
             "titulo": evento_macro.get("label", ""),
             "contexto": evento_macro.get("label", "") + (". " + evento_macro["why"] if evento_macro.get("why") else ""),
         }
-    if assunto is None and maior_movimento and abs(maior_movimento[1]) >= LIMIAR_MOVIMENTO_FORTE:
+    if assunto is None and maior_movimento:
         nome, variacao = maior_movimento
         assunto = {
             "titulo": nome + " " + _formata_variacao(variacao),
             "contexto": nome + " teve variação de " + _formata_variacao(variacao) + " no dia.",
         }
 
-    return score, motivos, assunto
+    return nivel, motivo, assunto
 
 
-def validar_potencial_conteudo_ia(assunto, motivos):
+def validar_potencial_conteudo_ia(assunto, motivo):
     """Segunda camada de validacao do Breaking - so roda quando o
-    score ja passou do limiar. Pergunta pra IA se o assunto realmente
-    vale virar post (nao so 'e relevante pro mercado'). Fallback
-    seguro: em caso de falha da IA, permite a geracao (nao trava o
-    fluxo por indisponibilidade da IA)."""
+    nivel ja passou do limiar. Pergunta pra IA se o assunto realmente
+    gera conteudo educativo/interessante de verdade - nao so 'e
+    relevante pro mercado'. Fallback seguro: em caso de falha da IA,
+    permite a geracao (nao trava o fluxo por indisponibilidade da IA)."""
     if not USE_AI:
         return True
     try:
         prompt = (
-            "Voce e o editor de conteudo do canal 'Antes do Sino'. Avalie se o "
-            "assunto abaixo tem potencial real para virar um post educativo e "
-            "relevante para redes sociais - considere potencial educativo, "
-            "curiosidade, impacto para investidores, e capacidade de gerar "
-            "engajamento. Nao avalie so se e relevante para o mercado - avalie se "
-            "vale a pena virar CONTEUDO.\n\n"
+            "Voce e o editor de conteudo do canal 'Antes do Sino'. Responda a "
+            "pergunta: \"Isso realmente gera um conteudo educativo ou interessante "
+            "para um investidor?\"\n\n"
+            "Avalie especificamente:\n"
+            "- Existe curiosidade real nesse assunto?\n"
+            "- Existe aprendizado concreto para quem le?\n"
+            "- Existe consequencia pratica para o investidor?\n"
+            "- Existe contexto suficiente para explicar (nao so um fato solto)?\n"
+            "- Existe potencial de engajamento (alguem salvaria ou compartilharia)?\n\n"
+            "Se a resposta for negativa pra maioria desses pontos, responda false - "
+            "prefira descartar a publicar algo fraco.\n\n"
             "ASSUNTO: " + assunto["titulo"] + "\n"
             "CONTEXTO: " + assunto["contexto"] + "\n"
-            "SINAIS QUE LEVARAM A ESSA AVALIACAO: " + "; ".join(motivos) + "\n\n"
+            "SINAL QUE LEVOU A ESSA AVALIACAO: " + motivo + "\n\n"
             "Responda APENAS 'true' ou 'false', sem explicacao."
         )
         raw_response = ask_groq_isolado(prompt, purpose="analysis").strip().lower()
@@ -667,7 +968,7 @@ def _assunto_ja_publicado_hoje(assunto, topicos_publicados_hoje):
 
 def should_generate_breaking_content(score, assunto, breaking_state):
     if score < LIMIAR_BREAKING or assunto is None:
-        return False, "Score abaixo do limiar (" + str(score) + "/" + str(LIMIAR_BREAKING) + ")"
+        return False, "Nível abaixo do limiar (" + str(score) + "/" + str(LIMIAR_BREAKING) + ")"
     if breaking_state.get("count_today", 0) >= MAX_BREAKING_POR_DIA:
         return False, "Teto diário de " + str(MAX_BREAKING_POR_DIA) + " posts Breaking já atingido"
     last_at = breaking_state.get("last_breaking_at", "")
@@ -685,23 +986,24 @@ def should_generate_breaking_content(score, assunto, breaking_state):
 
 
 def avaliar_breaking_content(entries_today, clusters, market_snapshot, events):
-    score, motivos, assunto = calcular_score_relevancia(clusters, market_snapshot, events)
+    """Breaking continua OPORTUNISTA - so gera quando o nivel de
+    conteudo (hierarquia exclusiva, nao soma) ultrapassa o limiar E
+    passa pela segunda validacao da IA. Publicar menos e melhor que
+    publicar conteudo generico."""
+    nivel, motivo, assunto = calcular_score_conteudo(clusters, market_snapshot, events)
     breaking_state = _limpar_estado_breaking_se_novo_dia(load_breaking_state())
 
-    deve_gerar, motivo_decisao = should_generate_breaking_content(score, assunto, breaking_state)
+    deve_gerar, motivo_decisao = should_generate_breaking_content(nivel, assunto, breaking_state)
     if not deve_gerar:
         return None
 
-    if not validar_potencial_conteudo_ia(assunto, motivos):
-        print("Social Content Engine (Breaking): IA avaliou que o assunto não vale virar post - descartado mesmo com score " + str(score) + ".")
+    if not validar_potencial_conteudo_ia(assunto, motivo):
+        print("Social Content Engine (Breaking): IA avaliou que o assunto não gera conteúdo educativo real - descartado mesmo com nível " + str(nivel) + ".")
         return None
 
     conteudo = gerar_conteudo_unificado(assunto, entries_today, "breaking")
-    if conteudo is None:
-        print("Social Content Engine (Breaking): geração de conteúdo falhou - nada gerado.")
-        return None
 
-    item = _montar_item(conteudo, "breaking", score, motivos)
+    item = _montar_item(conteudo, "breaking", nivel, [motivo])
 
     breaking_state["count_today"] = breaking_state.get("count_today", 0) + 1
     breaking_state["last_breaking_at"] = datetime.now(BR_TZ).strftime("%Y-%m-%d %H:%M:%S")
@@ -728,19 +1030,16 @@ def should_generate_opening_content():
 
 
 def avaliar_opening_content(entries_today, clusters, market_insights, market_snapshot, events):
+    """Opening e EDITORIAL OBRIGATORIO - nunca depende de 'ter uma boa
+    noticia'. Nao usa mais escolher_assunto_principal - sempre gera,
+    usando os dados reais de mercado/agenda disponiveis no momento."""
     if not should_generate_opening_content():
         return None
 
-    assunto, reason = escolher_assunto_principal(clusters, market_insights, market_snapshot, events)
-    if assunto is None:
-        print("Social Content Engine (Opening): nenhum assunto disponível hoje - nada gerado.")
-        return None
+    dados = montar_dados_opening(market_snapshot, events)
+    conteudo = gerar_conteudo_opening(dados, entries_today)
 
-    conteudo = gerar_conteudo_unificado(assunto, entries_today, "opening")
-    if conteudo is None:
-        print("Social Content Engine (Opening): geração de conteúdo falhou - nada gerado.")
-        return None
-
+    reason = ["Conteúdo editorial obrigatório (Opening) - preparação para o pregão"]
     item = _montar_item(conteudo, "opening", None, reason)
 
     state = load_opening_state()
@@ -798,19 +1097,17 @@ def should_generate_closing_content():
 
 
 def avaliar_closing_content(entries_today, clusters, market_insights, market_snapshot, events):
+    """Closing e EDITORIAL OBRIGATORIO - responde 'como foi o pregao?'
+    mesmo sem grande noticia. Nao usa mais escolher_assunto_principal."""
     if not should_generate_closing_content():
         return None
 
-    assunto, reason = escolher_assunto_principal(clusters, market_insights, market_snapshot, events)
-    if assunto is None:
-        print("Social Content Engine (Closing): nenhum assunto disponível hoje - nada gerado.")
-        return None
+    dados = montar_dados_closing(market_snapshot, clusters, events)
+    conteudo = gerar_conteudo_closing(dados, entries_today)
 
-    conteudo = gerar_conteudo_unificado(assunto, entries_today, "closing")
-    if conteudo is None:
-        print("Social Content Engine (Closing): geração de conteúdo falhou - nada gerado.")
-        return None
-
+    reason = ["Conteúdo editorial obrigatório (Closing) - fechamento do pregão"]
+    if dados["fato_principal"]:
+        reason.append("Fato principal identificado por cluster de notícia")
     item = _montar_item(conteudo, "closing", None, reason)
 
     state = load_social_content_state()
