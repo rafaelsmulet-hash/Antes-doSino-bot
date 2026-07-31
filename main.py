@@ -4289,10 +4289,115 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
     print("Portal atualizado: " + output_path)
 
 
+# =============================================================================
+# INICIO DO TESTE TEMPORARIO - infraestrutura do Telegram (canal privado)
+# Nao depende de social_content_engine.py nem de social_design_engine.py.
+# Nao gera post, nao envolve IA, nao envolve aprovacao.
+# Remover este bloco inteiro (ate "FIM DO TESTE TEMPORARIO") e a chamada
+# dentro de main() assim que o teste confirmar que esta funcionando.
+# =============================================================================
+
+def test_admin_notification():
+    """Testa SOMENTE o envio de mensagem para o chat privado do admin
+    no Telegram. Nao esconde nenhum erro - imprime detalhe completo de
+    qualquer falha (variavel ausente, chat invalido, bot bloqueado,
+    timeout, erro da API, etc)."""
+    import traceback
+
+    print("[Telegram Test]")
+
+    bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    admin_chat_id = os.environ.get("TELEGRAM_ADMIN_CHAT_ID", "")
+
+    print("Bot token encontrado: " + ("SIM" if bot_token else "NAO"))
+    print("Admin chat encontrado: " + ("SIM" if admin_chat_id else "NAO"))
+
+    if not bot_token:
+        print("ERRO: variavel de ambiente TELEGRAM_BOT_TOKEN nao esta configurada (ausente ou vazia).")
+        print("Teste concluido com falha.")
+        return
+
+    if not admin_chat_id:
+        print("ERRO: variavel de ambiente TELEGRAM_ADMIN_CHAT_ID nao esta configurada (ausente ou vazia).")
+        print("Teste concluido com falha.")
+        return
+
+    texto = (
+        "✅ Teste de notificação\n\n"
+        "Se você recebeu esta mensagem, o canal privado de aprovação do "
+        "Antes do Sino está funcionando corretamente."
+    )
+
+    print("Enviando mensagem...")
+
+    try:
+        url = "https://api.telegram.org/bot" + bot_token + "/sendMessage"
+        payload = {"chat_id": admin_chat_id, "text": texto}
+        response = requests.post(url, json=payload, timeout=15)
+    except requests.exceptions.Timeout:
+        print("ERRO: timeout ao tentar conectar na API do Telegram (sem resposta em 15s).")
+        print("Teste concluido com falha.")
+        return
+    except requests.exceptions.RequestException as e:
+        print("ERRO de rede/conexao ao chamar a API do Telegram: " + str(e))
+        print(traceback.format_exc())
+        print("Teste concluido com falha.")
+        return
+    except Exception as e:
+        print("ERRO inesperado ao montar/enviar a requisicao: " + str(e))
+        print(traceback.format_exc())
+        print("Teste concluido com falha.")
+        return
+
+    print("HTTP Status: " + str(response.status_code))
+
+    try:
+        data = response.json()
+    except Exception as e:
+        print("ERRO: resposta da API nao e um JSON valido: " + str(e))
+        print("Corpo bruto da resposta: " + response.text)
+        print("Teste concluido com falha.")
+        return
+
+    if response.status_code == 200 and data.get("ok") is True:
+        print("Resposta da API: OK")
+        print("Teste concluido com sucesso.")
+        return
+
+    # Erro reportado pela propria API do Telegram - motivo completo,
+    # sem esconder nada. Cobre os casos mais comuns explicitamente.
+    descricao_erro = data.get("description", "sem descricao no corpo da resposta")
+    codigo_erro = data.get("error_code", "desconhecido")
+    print("Resposta da API: FALHA")
+    print("Codigo de erro do Telegram: " + str(codigo_erro))
+    print("Descricao completa do erro: " + str(descricao_erro))
+
+    descricao_lower = str(descricao_erro).lower()
+    if "chat not found" in descricao_lower:
+        print("DIAGNOSTICO: o TELEGRAM_ADMIN_CHAT_ID parece invalido ou nao corresponde a um chat existente.")
+    elif "bot was blocked" in descricao_lower:
+        print("DIAGNOSTICO: o usuario bloqueou o bot no Telegram.")
+    elif "bot can't initiate conversation" in descricao_lower or "initiate conversation" in descricao_lower:
+        print("DIAGNOSTICO: o usuario nunca iniciou uma conversa privada com o bot - e preciso mandar qualquer mensagem pro bot primeiro.")
+    elif "unauthorized" in descricao_lower:
+        print("DIAGNOSTICO: o TELEGRAM_BOT_TOKEN parece invalido ou revogado.")
+
+    print("Corpo completo da resposta: " + json.dumps(data, ensure_ascii=False))
+    print("Teste concluido com falha.")
+
+# =============================================================================
+# FIM DO TESTE TEMPORARIO
+# =============================================================================
+
+
 def main():
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("ERRO: configure TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID.")
         return
+
+    # CHAMADA TEMPORARIA DE TESTE - remover esta linha junto com o bloco
+    # test_admin_notification() acima, depois de confirmar que funcionou.
+    test_admin_notification()
 
     sent_hashes, recent_titles = load_state()
     new_count = 0
