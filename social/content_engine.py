@@ -57,6 +57,63 @@ USE_AI = bool(GROQ_API_KEY)
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_ADMIN_CHAT_ID = os.environ.get("TELEGRAM_ADMIN_CHAT_ID", "")
 
+# Checagem de dia util - duplicada de proposito (isolamento do
+# main.py). Mesma fonte (Brasil API, gratuita, sem chave) e mesmo
+# fallback fixo caso a API esteja fora do ar.
+FERIADOS_STATE_FILE = "docs/feriados_cache.json"
+
+FERIADOS_B3_FALLBACK_2026 = [
+    "2026-01-01", "2026-02-16", "2026-02-17", "2026-04-03", "2026-04-21",
+    "2026-05-01", "2026-06-04", "2026-09-07", "2026-10-12", "2026-11-02",
+    "2026-11-15", "2026-11-20", "2026-12-25",
+]
+
+
+def _carregar_feriados_do_ano(ano):
+    cache = {}
+    if os.path.exists(FERIADOS_STATE_FILE):
+        try:
+            with open(FERIADOS_STATE_FILE, "r", encoding="utf-8") as f:
+                cache = json.load(f)
+        except Exception:
+            cache = {}
+
+    chave_ano = str(ano)
+    if chave_ano in cache:
+        return cache[chave_ano]
+
+    try:
+        url = "https://brasilapi.com.br/api/feriados/v1/" + str(ano)
+        response = requests.get(url, timeout=10)
+        data = response.json()
+        datas = [item["date"] for item in data if "date" in item]
+        if not datas:
+            raise ValueError("resposta vazia da Brasil API")
+        cache[chave_ano] = datas
+        os.makedirs(os.path.dirname(FERIADOS_STATE_FILE), exist_ok=True)
+        with open(FERIADOS_STATE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False)
+        return datas
+    except Exception as e:
+        print("Erro ao buscar feriados via Brasil API (usando lista fixa de reserva): " + str(e))
+        if ano == 2026:
+            return FERIADOS_B3_FALLBACK_2026
+        return []
+
+
+def eh_dia_util_b3():
+    """Combina fim de semana + feriado nacional - usado como guarda
+    dos modos editoriais obrigatorios (Opening, Closing, Midday). O
+    Breaking (oportunista) NAO usa essa guarda - continua avaliado
+    todo ciclo, mas naturalmente tende a nao ter sinal forte em dia
+    sem pregao."""
+    agora = datetime.now(BR_TZ)
+    if agora.weekday() >= 5:
+        return False
+    feriados_do_ano = _carregar_feriados_do_ano(agora.year)
+    hoje_str = agora.strftime("%Y-%m-%d")
+    return hoje_str not in feriados_do_ano
+
 SOCIAL_QUEUE_FILE = "docs/social_queue.json"
 BREAKING_STATE_FILE = "docs/social_breaking_state.json"
 OPENING_STATE_FILE = "docs/social_opening_state.json"
@@ -1086,6 +1143,9 @@ def avaliar_breaking_content(entries_today, clusters, market_snapshot, events):
 # ---------------------------------------------------------------------------
 
 def should_generate_opening_content():
+    """So dispara em dia util da B3 (nao fim de semana nem feriado)."""
+    if not eh_dia_util_b3():
+        return False
     now = datetime.now(BR_TZ)
     today_str = now.strftime("%Y-%m-%d")
     state = load_opening_state()
@@ -1120,6 +1180,9 @@ def avaliar_opening_content(entries_today, clusters, market_insights, market_sna
 # ---------------------------------------------------------------------------
 
 def should_generate_midday_content():
+    """So dispara em dia util da B3 (nao fim de semana nem feriado)."""
+    if not eh_dia_util_b3():
+        return False
     now = datetime.now(BR_TZ)
     today_str = now.strftime("%Y-%m-%d")
     state = load_midday_state()
@@ -1255,6 +1318,9 @@ def avaliar_midday_snapshot(market_snapshot, clusters=None, entries_today=None):
 # ---------------------------------------------------------------------------
 
 def should_generate_closing_content():
+    """So dispara em dia util da B3 (nao fim de semana nem feriado)."""
+    if not eh_dia_util_b3():
+        return False
     now = datetime.now(BR_TZ)
     today_str = now.strftime("%Y-%m-%d")
     state = load_social_content_state()
