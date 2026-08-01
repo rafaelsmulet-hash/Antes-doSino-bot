@@ -769,7 +769,43 @@ def fetch_cockpit_quotes():
     return quotes
 
 
-def fetch_twelvedata_quote(symbol):
+TWELVEDATA_CACHE_FILE = "docs/twelvedata_cache.json"
+TWELVEDATA_CACHE_TTL_MINUTOS = 15
+
+# So busca de verdade na Twelve Data dentro das janelas onde os dados
+# realmente sao usados em alguma mensagem - fora disso, reaproveita o
+# ultimo valor salvo (mesmo que antigo), sem gastar credito a toa.
+TWELVEDATA_JANELAS_PERMITIDAS = [
+    (8 * 60 + 15, 8 * 60 + 45),   # Opening / Agenda do Dia
+    (12 * 60, 12 * 60 + 15),       # Snapshot 12h00 / Midday
+    (18 * 60 + 30, 19 * 60),       # Closing
+    (22 * 60, 22 * 60 + 30),       # Night Wrap
+]
+
+
+def _dentro_de_janela_twelvedata():
+    agora = datetime.now(BR_TZ)
+    minutos = agora.hour * 60 + agora.minute
+    return any(inicio <= minutos <= fim for inicio, fim in TWELVEDATA_JANELAS_PERMITIDAS)
+
+
+def _load_twelvedata_cache():
+    if os.path.exists(TWELVEDATA_CACHE_FILE):
+        try:
+            with open(TWELVEDATA_CACHE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def _save_twelvedata_cache(cache):
+    os.makedirs(os.path.dirname(TWELVEDATA_CACHE_FILE), exist_ok=True)
+    with open(TWELVEDATA_CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False)
+
+
+def _fetch_twelvedata_quote_raw(symbol):
     """Camada UNICA de cotacao via Twelve Data - cobre forex, indices,
     commodities e cripto com a mesma chave e o mesmo formato de
     resposta. Retorna {"price": ..., "change": ...} ou None em
@@ -796,6 +832,46 @@ def fetch_twelvedata_quote(symbol):
     except Exception as e:
         print("Erro ao buscar cotacao Twelve Data (" + symbol + "): " + str(e))
         return None
+
+
+def fetch_twelvedata_quote(symbol):
+    """So chama a API de verdade DENTRO das janelas de mensagem
+    (Opening, Snapshot/Midday, Closing, Night Wrap) - fora delas,
+    reaproveita o ultimo valor salvo em cache, mesmo que antigo, sem
+    gastar credito. Dentro da janela, ainda usa um TTL de 15 min pra
+    nao chamar 3-6x seguidas dentro da mesma janela.
+
+    Efeito esperado: consumo cai de ~750 para menos de 30
+    creditos/dia. Trade-off aceito: fora dessas janelas, o Breaking
+    News nao detecta movimento novo de USD/Bitcoin/WTI/S&P500 (o
+    Ibovespa e acoes BR continuam em tempo real via brapi.dev,
+    sem essa restricao)."""
+    cache = _load_twelvedata_cache()
+    entrada = cache.get(symbol)
+
+    if not _dentro_de_janela_twelvedata():
+        if entrada:
+            return {"price": entrada["price"], "change": entrada["change"]}
+        return None
+
+    if entrada:
+        try:
+            buscado_em = datetime.strptime(entrada["fetched_at"], "%Y-%m-%d %H:%M:%S").replace(tzinfo=BR_TZ)
+            minutos_desde_busca = (datetime.now(BR_TZ) - buscado_em).total_seconds() / 60
+            if minutos_desde_busca < TWELVEDATA_CACHE_TTL_MINUTOS:
+                return {"price": entrada["price"], "change": entrada["change"]}
+        except Exception:
+            pass  # cache corrompido/malformado - busca de novo com seguranca
+
+    resultado = _fetch_twelvedata_quote_raw(symbol)
+    if resultado is not None:
+        cache[symbol] = {
+            "price": resultado["price"],
+            "change": resultado["change"],
+            "fetched_at": datetime.now(BR_TZ).strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        _save_twelvedata_cache(cache)
+    return resultado
 
 
 def fetch_usd_brl():
@@ -3368,14 +3444,16 @@ def save_briefings_state(state):
 
 
 def should_send_morning_briefing():
-    """Janela de 08h15 as 08h45, uma vez por dia."""
+    """Janela de 06h50 as 07h20, uma vez por dia - passa a ser o
+    'Radar da Madrugada', enviado logo no inicio da janela de
+    operacao do bot."""
     now = datetime.now(BR_TZ)
     today_str = now.strftime("%Y-%m-%d")
     state = load_briefings_state()
     if state.get("last_morning_date") == today_str:
         return False
     minutes = now.hour * 60 + now.minute
-    return (8 * 60 + 15) <= minutes <= (8 * 60 + 45)
+    return (6 * 60 + 50) <= minutes <= (7 * 60 + 20)
 
 
 def should_send_evening_briefing():
@@ -3765,25 +3843,88 @@ def summarize_briefing_with_ai(entries, tipo):
         return "Sintese indisponivel no momento - confira as noticias completas no site."
 
 
+def build_radar_madrugada_ai(entries_today):
+    """1 unica chamada a IA para as 3 partes narrativas do Radar da
+    Madrugada. Nunca especula sobre fluxo/setor/juros sem base nas
+    manchetes fornecidas - se nao houver evidencia suficiente, a
+    propria instrucao pede pra IA ser mais enxuta em vez de inventar."""
+    if not USE_AI or not entries_today:
+        return {
+            "frase_sentimento": "Mercado sem sinal predominante claro nas ultimas horas.",
+            "narrativa": "Sem dados suficientes para uma leitura da madrugada hoje.",
+            "leitura_b3": "Sem elementos suficientes para uma leitura de cenario para a B3 no momento.",
+        }
+
+    headlines_text = ""
+    for e in entries_today[:15]:
+        headlines_text += "- " + e.get("title", "") + "\n"
+
+    instrucao = (
+        "Voce e o editor de mercado do canal 'Antes do Sino'. Use SOMENTE as "
+        "manchetes internacionais abaixo, ja processadas pelo pipeline (podem incluir "
+        "o Markets Wrap da Bloomberg e outras fontes internacionais) - nunca invente "
+        "fato, numero ou evento que nao esteja nelas. Nunca de opiniao de investimento. "
+        "Nunca faca previsao categorica.\n\n"
+        "Gere 3 textos:\n"
+        "1. frase_sentimento: UMA UNICA frase resumindo o sentimento predominante dos "
+        "mercados na madrugada (ex: modo risk-on, cautela, aversao a risco).\n"
+        "2. narrativa: texto curto (6 a 10 linhas) conectando os principais "
+        "acontecimentos da madrugada - NAO liste manchetes soltas, construa uma "
+        "narrativa explicando qual foi o principal driver, por que os mercados "
+        "reagiram, e como os eventos se conectam.\n"
+        "3. leitura_b3: como o cenario internacional PODE influenciar a abertura "
+        "brasileira - cenarios e possiveis impactos, nunca previsao categorica. "
+        "IMPORTANTE: só comente fluxo estrangeiro, setores, juros ou dolar se as "
+        "manchetes fornecidas realmente sustentarem essa leitura - se nao houver "
+        "evidencia suficiente sobre um tema, simplesmente nao o mencione. Prefira um "
+        "texto curto e solido a um paragrafo generico.\n\n"
+        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
+        '{"frase_sentimento": "...", "narrativa": "...", "leitura_b3": "..."}\n\n'
+        "Manchetes:\n" + headlines_text
+    )
+
+    try:
+        raw_response = ask_groq(instrucao, purpose="generation")
+        parsed = extract_json_object(raw_response)
+        if not isinstance(parsed, dict):
+            raise ValueError("resposta sem JSON valido")
+        return {
+            "frase_sentimento": str(parsed.get("frase_sentimento", "")).strip() or "Mercado sem sinal predominante claro nas ultimas horas.",
+            "narrativa": str(parsed.get("narrativa", "")).strip() or "Sem dados suficientes para uma leitura da madrugada hoje.",
+            "leitura_b3": str(parsed.get("leitura_b3", "")).strip() or "Sem elementos suficientes para uma leitura de cenario para a B3 no momento.",
+        }
+    except Exception as e:
+        print("Erro ao gerar Radar da Madrugada (Groq): " + str(e))
+        return {
+            "frase_sentimento": "Mercado sem sinal predominante claro nas ultimas horas.",
+            "narrativa": "Sintese indisponivel no momento - confira as noticias completas no site.",
+            "leitura_b3": "Sem elementos suficientes para uma leitura de cenario para a B3 no momento.",
+        }
+
+
 def build_morning_briefing_message(entries_today, eventos, market_snapshot=None):
-    """Monta o texto do Morning Briefing ('Antes do Sino - Abertura B3')."""
-    today_str = datetime.now(BR_TZ).strftime("%d/%m/%Y")
-    today_iso = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    """Monta o texto do Radar da Madrugada ('O que aconteceu enquanto
+    o Brasil dormia'). Versao enxuta: usa SOMENTE o Dolar como numero
+    confirmado (indices internacionais/futuros/ouro/DXY nao tem fonte
+    gratuita confiavel hoje - ver auditoria da Twelve Data). O restante
+    da mensagem e narrativo, construido a partir das manchetes
+    internacionais ja processadas pelo pipeline."""
+    agora = datetime.now(BR_TZ)
+    data_str = agora.strftime("%d/%m")
+    today_iso = agora.strftime("%Y-%m-%d")
 
-    br_entries = get_brazil_relevant_entries(entries_today)
-    # Resiliencia: em dia com pouco volume editorial BR-relevante,
-    # amplia a rede para entries_today inteiro (sem o filtro BR) em
-    # vez de deixar a sintese/radar caírem direto no fallback generico.
-    if len(br_entries) < 3 and entries_today:
-        br_entries = entries_today
+    conteudo_ai = build_radar_madrugada_ai(entries_today)
 
-    sintese = summarize_briefing_with_ai(br_entries, "abertura")
+    usd = (market_snapshot or {}).get("usd")
+    cambio_texto = ""
+    if usd and usd.get("change") is not None:
+        sinal = "+" if usd["change"] >= 0 else ""
+        cambio_texto = "Dólar: " + sinal + str(round(usd["change"], 2)) + "%"
 
     eventos_hoje = [
         ev for ev in eventos
         if ev.get("date") == today_iso and is_event_brazil_focused(ev)
     ][:3]
-
     eventos_texto = ""
     if eventos_hoje:
         for ev in eventos_hoje:
@@ -3791,41 +3932,21 @@ def build_morning_briefing_message(entries_today, eventos, market_snapshot=None)
     else:
         eventos_texto = "Nenhum evento de grande destaque previsto para hoje.\n"
 
-    market_lines = build_market_context_lines(market_snapshot)
-    market_texto = ""
-    if market_lines:
-        for linha in market_lines:
-            market_texto += linha + "\n"
-    else:
-        market_texto = "Dados de mercado indisponíveis no momento.\n"
+    partes = [
+        "🌅 <b>Radar da Madrugada | " + data_str + " • 06h50</b>\n"
+        "O que aconteceu enquanto o Brasil dormia.\n"
+    ]
 
-    radar_assets = get_br_asset_radar(br_entries, market_snapshot, limit=3)
-    radar_texto = ""
-    if radar_assets:
-        for item in radar_assets:
-            label = item["profile"]["label"]
-            if item["source"] == "preco":
-                change = item.get("change", 0)
-                sign = "+" if change >= 0 else ""
-                radar_texto += "• " + label + " (destaque de preço, " + sign + str(round(change, 2)) + "%)\n"
-            else:
-                radar_texto += "• " + label + "\n"
-    else:
-        radar_texto = "Sem destaque de papel especifico ate o momento.\n"
+    if cambio_texto:
+        partes.append("💵 <b>Câmbio</b>\n" + html_module.escape(cambio_texto) + "\n")
 
-    message = (
-        "🔔 <b>Antes do Sino | Abertura B3</b>\n"
-        + today_str + "\n\n"
-        "🌎 <b>Contexto dos Mercados</b>\n"
-        + html_module.escape(market_texto) + "\n"
-        "📰 <b>O que importa hoje</b>\n"
-        + html_module.escape(sintese) + "\n\n"
-        "📅 <b>Agenda do Dia</b>\n"
-        + html_module.escape(eventos_texto) + "\n"
-        "🎯 <b>Em foco</b>\n"
-        + html_module.escape(radar_texto)
-    )
-    return message
+    partes.append("🎯 <b>Em uma frase</b>\n" + html_module.escape(conteudo_ai["frase_sentimento"]) + "\n")
+    partes.append("📰 <b>O que aconteceu</b>\n" + html_module.escape(conteudo_ai["narrativa"]) + "\n")
+    partes.append("🇧🇷 <b>O que isso significa para a B3</b>\n" + html_module.escape(conteudo_ai["leitura_b3"]) + "\n")
+    partes.append("👀 <b>Fique de olho</b>\n" + html_module.escape(eventos_texto))
+    partes.append("<i>Antes do Sino</i>\nO mercado começa antes da abertura.")
+
+    return "\n".join(partes)
 
 
 def build_evening_briefing_message(entries_today, eventos, market_snapshot=None):
