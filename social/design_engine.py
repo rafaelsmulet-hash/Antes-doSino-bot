@@ -396,12 +396,13 @@ def _registrar_transicao(item, novo_status, detalhe=""):
 
 
 def notificar_admin_design(item, pasta, quantidade_slides, tipo_ativo):
-    """Notificacao 'Arte pronta' - envia a IMAGEM de capa como preview
-    (quando existir), com o texto pronto para copiar e publicar
-    manualmente (publicacao automatica desabilitada por decisao do
-    usuario - custo da API do X). Se o envio da foto falhar por
-    qualquer motivo, cai com seguranca para mensagem de texto simples
-    - nunca perde o aviso."""
+    """Notificacao 'Arte pronta' - envia TODAS as imagens do carrossel
+    (via album/sendMediaGroup, ate 10 fotos numa mensagem so) quando
+    houver mais de 1 slide; envia foto unica (sendPhoto) quando for
+    card. Legenda com o texto pronto pra copiar vai na PRIMEIRA
+    imagem do album (e onde o Telegram exibe a legenda). Se o envio
+    de imagem falhar por qualquer motivo, cai com seguranca para
+    mensagem de texto simples - nunca perde o aviso."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_ADMIN_CHAT_ID:
         print("Social Design Engine: TELEGRAM_ADMIN_CHAT_ID não configurado - aviso privado não enviado.")
         return
@@ -423,12 +424,17 @@ def notificar_admin_design(item, pasta, quantidade_slides, tipo_ativo):
         + "\n(opcional: cole o link do post depois do ID)"
     )
 
-    caminho_capa = os.path.join(pasta, "slide_01.png")
+    caminhos_slides = sorted(
+        os.path.join(pasta, f) for f in os.listdir(pasta)
+        if f.startswith("slide_") and f.endswith(".png")
+    ) if os.path.isdir(pasta) else []
 
     try:
-        if os.path.exists(caminho_capa):
+        if len(caminhos_slides) >= 2:
+            _enviar_album_telegram(caminhos_slides, texto)
+        elif len(caminhos_slides) == 1:
             url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendPhoto"
-            with open(caminho_capa, "rb") as f:
+            with open(caminhos_slides[0], "rb") as f:
                 files = {"photo": f}
                 data = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "caption": texto, "parse_mode": "HTML"}
                 requests.post(url, data=data, files=files, timeout=20)
@@ -438,6 +444,34 @@ def notificar_admin_design(item, pasta, quantidade_slides, tipo_ativo):
             requests.post(url, json=payload, timeout=10)
     except Exception as e:
         print("Erro ao enviar notificação privada do design engine (isolado): " + str(e))
+
+
+def _enviar_album_telegram(caminhos_imagens, legenda):
+    """Envia varias imagens juntas via sendMediaGroup (ate 10 por
+    mensagem - todos os nossos carrosseis, com 5-7 slides, cabem
+    tranquilo). A legenda so pode ir em 1 item do album - o Telegram
+    exibe a legenda do PRIMEIRO item como legenda do album inteiro."""
+    import json as json_module
+
+    url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMediaGroup"
+
+    media = []
+    files = {}
+    for i, caminho in enumerate(caminhos_imagens[:10]):
+        chave_arquivo = "foto" + str(i)
+        item_media = {"type": "photo", "media": "attach://" + chave_arquivo}
+        if i == 0:
+            item_media["caption"] = legenda
+            item_media["parse_mode"] = "HTML"
+        media.append(item_media)
+        files[chave_arquivo] = open(caminho, "rb")
+
+    try:
+        data = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "media": json_module.dumps(media)}
+        requests.post(url, data=data, files=files, timeout=30)
+    finally:
+        for f in files.values():
+            f.close()
 
 
 def notificar_falha_design(item, erro):
