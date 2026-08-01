@@ -409,6 +409,7 @@ def notificar_admin_design(item, pasta, quantidade_slides, tipo_ativo):
 
     plataforma = (item.get("platform") or "x").upper()
     texto_post = (item.get("x") or {}).get("post", "")
+    legenda_instagram = item.get("instagram_caption", "")
 
     texto = (
         "✅ <b>Arte pronta</b>\n"
@@ -416,8 +417,10 @@ def notificar_admin_design(item, pasta, quantidade_slides, tipo_ativo):
         "Formato: " + tipo_ativo + " (" + str(quantidade_slides) + " imagem(ns))\n\n"
         "Destino:\n☑ " + plataforma + " (publicação manual)\n\n"
     )
+    if legenda_instagram:
+        texto += "Legenda do Instagram:\n" + legenda_instagram + "\n\n"
     if texto_post:
-        texto += "Texto pronto para copiar:\n" + texto_post + "\n\n"
+        texto += "Texto pronto para copiar (X):\n" + texto_post + "\n\n"
     texto += (
         "ID: <code>" + item.get("id", "") + "</code>\n\n"
         "Depois de publicar manualmente, responder:\nPublicado " + item.get("id", "")
