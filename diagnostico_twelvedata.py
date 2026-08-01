@@ -1,30 +1,22 @@
 """
-Diagnostico Twelve Data - Antes do Sino
-==========================================
+Diagnostico Twelve Data - Antes do Sino (v2 - busca por nome)
+=================================================================
 
-Script TEMPORARIO, isolado - nao faz parte do pipeline do bot. Testa,
-individualmente, cada ativo candidato ao "Radar da Madrugada", com
-fallback automatico de simbolo quando fizer sentido, e gera um
-relatorio final claro sobre o que realmente funciona no plano
-contratado.
+Versao 2: em vez de "chutar" varios formatos de simbolo e gastar 1
+credito de cotacao por tentativa errada (o que ja custou a cota do
+dia duas vezes na v1), essa versao usa o endpoint de BUSCA POR NOME
+(/symbol_search), que e um endpoint de catalogo/referencia - mais
+barato que buscar cotacao de verdade. So depois de achar o simbolo
+certo pelo nome e que fazemos 1 chamada de cotacao real, pra
+confirmar que funciona no plano atual.
 
-Como rodar:
-1. Adicionar TWELVEDATA_API_KEY nas variaveis de ambiente (mesmo
-   secret que ja usamos no bot).
-2. Rodar via workflow (troca temporariamente o "python main.py" por
-   "python diagnostico_twelvedata.py" na etapa "Rodar bot"), ou
-   localmente se voce tiver Python instalado.
-3. Ler o relatorio final impresso no log.
-4. Depois de usar, pode apagar este arquivo e reverter o workflow -
-   ele nao precisa continuar existindo no projeto.
+Como rodar: troca temporariamente "python main.py" por
+"python diagnostico_twelvedata.py" na etapa "Rodar bot" do workflow,
+roda, le o relatorio no log, depois reverte e apaga este arquivo.
 
-IMPORTANTE sobre a regra "nunca aproximar":
-- Para futuros (S&P Futuro, Nasdaq Futuro), o script NUNCA aceita o
-  indice a vista como substituto - se so o indice a vista responder,
-  o relatorio marca o futuro como INDISPONIVEL, nao como sucesso.
-- Fallbacks testados sao APENAS variacoes de nome do MESMO instrumento
-  (ex: "NI225" e "N225" sao dois jeitos de pedir o Nikkei 225 - nunca
-  um ativo diferente).
+IMPORTANTE: so rodar depois que a cota diaria da Twelve Data tiver
+resetado (o teste anterior consumiu tudo - normalmente reseta por
+volta da meia-noite UTC).
 """
 
 import os
@@ -32,192 +24,131 @@ import time
 import requests
 
 TWELVEDATA_API_KEY = os.environ.get("TWELVEDATA_API_KEY", "")
+URL_SEARCH = "https://api.twelvedata.com/symbol_search"
 URL_QUOTE = "https://api.twelvedata.com/quote"
 
-# Cada entrada: (nome_exibicao, tipo, [lista de simbolos candidatos, em ordem de tentativa])
-# tipo = "spot" (indice/ativo a vista) ou "futuro" (nunca aceita fallback pra spot)
-ATIVOS_PARA_TESTAR = [
-    ("USD/BRL", "spot", ["USD/BRL"]),
-    ("WTI (Petroleo)", "spot", ["WTI/USD"]),  # "WTI" sozinho removido - colide com a ACAO da W&T Offshore Inc, nao e o petroleo
-    ("Nikkei 225", "spot", ["NI225", "N225", "Nikkei 225"]),
-    ("Hang Seng", "spot", ["HSI", "HK50", "Hang Seng"]),
-    ("Shanghai Composite", "spot", ["SHCOMP", "000001.SS", "Shanghai Composite"]),
-    ("ASX 200", "spot", ["AS51", "AXJO", "XJO", "S&P/ASX 200"]),
-    ("DAX", "spot", ["DAX", "GDAXI", "DE30"]),
-    ("FTSE 100", "spot", ["FTSE", "UK100", "UKX"]),
-    ("CAC 40", "spot", ["FCHI", "CAC", "PX1"]),
-    ("S&P 500 Futuro", "futuro", ["SPX500USD", "ES1!", "ES=F"]),
-    ("Nasdaq Futuro", "futuro", ["NAS100USD", "NQ1!", "NQ=F"]),
-    ("Ouro", "spot", ["XAU/USD", "GOLD"]),
-    ("DXY (Indice do Dolar)", "spot", ["DXY", "USDX", "DXY/USD"]),
-]
-
-# Validacao de nome - depois de um "sucesso", confere se o nome oficial
-# devolvido faz sentido pro ativo pedido. Evita repetir o erro do WTI
-# (que colidiu com uma acao de mesmo ticker) - se o nome nao bater com
-# nenhuma palavra esperada, o resultado e rejeitado por seguranca.
-PALAVRAS_ESPERADAS_NO_NOME = {
-    "USD/BRL": ["dollar", "real", "brazil"],
-    "WTI (Petroleo)": ["crude", "oil", "wti"],
-    "Nikkei 225": ["nikkei"],
-    "Hang Seng": ["hang seng"],
-    "Shanghai Composite": ["shanghai", "sse"],
-    "ASX 200": ["asx", "australia"],
-    "DAX": ["dax", "germany"],
-    "FTSE 100": ["ftse"],
-    "CAC 40": ["cac", "france"],
-    "S&P 500 Futuro": ["s&p 500 futures", "e-mini", "future"],
-    "Nasdaq Futuro": ["nasdaq 100 futures", "e-mini", "future"],
-    "Ouro": ["gold"],
-    "DXY (Indice do Dolar)": ["dollar index", "dxy"],
-}
-
-# Respeita o limite real do plano gratuito: 8 creditos por MINUTO (nao
-# por segundo) - 8 segundos de intervalo entre CADA chamada individual
-# garante nunca estourar isso, mesmo testando varios simbolos seguidos.
 INTERVALO_ENTRE_CHAMADAS_SEGUNDOS = 8
 
-# Simbolos que, se resolverem com sucesso, indicam que na verdade
-# caimos no indice a vista (nunca deve ser aceito como resposta valida
-# para um item marcado tipo="futuro").
-SIMBOLOS_INDICE_A_VISTA_SP = ["SPX", "GSPC", "S&P 500"]
-SIMBOLOS_INDICE_A_VISTA_NASDAQ = ["IXIC", "NDX", "COMP"]
+# (nome_exibicao, termo de busca, palavras esperadas no nome do resultado)
+ATIVOS_PARA_BUSCAR = [
+    ("USD/BRL", "USD BRL", ["dollar", "real", "brazil"]),
+    ("WTI (Petroleo)", "WTI crude oil", ["crude", "oil", "wti"]),
+    ("Nikkei 225", "Nikkei 225", ["nikkei"]),
+    ("Hang Seng", "Hang Seng", ["hang seng"]),
+    ("Shanghai Composite", "Shanghai Composite", ["shanghai", "sse"]),
+    ("ASX 200", "ASX 200", ["asx", "australia"]),
+    ("DAX", "DAX Germany", ["dax", "germany"]),
+    ("FTSE 100", "FTSE 100", ["ftse"]),
+    ("CAC 40", "CAC 40", ["cac"]),
+    ("S&P 500 Futuro", "S&P 500 futures", ["future"]),
+    ("Nasdaq Futuro", "Nasdaq 100 futures", ["future"]),
+    ("Ouro", "Gold", ["gold"]),
+    ("DXY (Indice do Dolar)", "US Dollar Index", ["dollar index", "dxy"]),
+]
 
 
-def testar_simbolo(simbolo):
-    """Faz 1 chamada real a Twelve Data para o simbolo informado.
-    Retorna dict com sucesso, nome oficial, preco e erro (quando houver)."""
+def buscar_por_nome(termo):
+    """Busca no CATALOGO (endpoint de referencia, mais barato que
+    cotacao) por instrumentos que combinem com o termo. Retorna a
+    lista de candidatos encontrados (symbol + instrument_name)."""
+    try:
+        params = {"symbol": termo, "apikey": TWELVEDATA_API_KEY}
+        response = requests.get(URL_SEARCH, params=params, timeout=15)
+        data = response.json()
+        if "data" not in data:
+            return [], data.get("message", str(data))
+        return data["data"], None
+    except Exception as e:
+        return [], "excecao: " + str(e)
+
+
+def confirmar_cotacao(simbolo):
+    """So chamado DEPOIS de achar um simbolo candidato pela busca -
+    1 chamada de cotacao real pra confirmar que funciona no plano
+    atual."""
     try:
         params = {"symbol": simbolo, "apikey": TWELVEDATA_API_KEY}
         response = requests.get(URL_QUOTE, params=params, timeout=15)
         data = response.json()
-
-        if data.get("status") == "error":
-            return {
-                "sucesso": False,
-                "nome_oficial": None,
-                "preco": None,
-                "erro": data.get("message", "erro desconhecido"),
-                "raw": data,
-            }
-
-        if "close" not in data:
-            return {
-                "sucesso": False,
-                "nome_oficial": None,
-                "preco": None,
-                "erro": "resposta sem campo 'close' - " + str(data),
-                "raw": data,
-            }
-
-        return {
-            "sucesso": True,
-            "nome_oficial": data.get("name", simbolo),
-            "preco": data.get("close"),
-            "erro": None,
-            "raw": data,
-        }
+        if data.get("status") == "error" or "close" not in data:
+            return False, data.get("message", str(data))
+        return True, data.get("close")
     except Exception as e:
-        return {"sucesso": False, "nome_oficial": None, "preco": None, "erro": "excecao: " + str(e), "raw": None}
+        return False, "excecao: " + str(e)
 
 
-def diagnosticar_ativo(nome_exibicao, tipo, candidatos):
-    """Testa a lista de simbolos candidatos, em ordem, ate achar um que
-    funcione de verdade. Para tipo='futuro', nunca aceita um simbolo
-    que na pratica devolveu o indice a vista. Tambem valida se o nome
-    oficial devolvido faz sentido pro ativo pedido (evita colisao de
-    ticker, como aconteceu com "WTI" batendo numa acao)."""
-    tentativas = []
-    palavras_esperadas = PALAVRAS_ESPERADAS_NO_NOME.get(nome_exibicao, [])
+def diagnosticar(nome_exibicao, termo_busca, palavras_esperadas):
+    candidatos, erro_busca = buscar_por_nome(termo_busca)
+    time.sleep(INTERVALO_ENTRE_CHAMADAS_SEGUNDOS)
 
-    for simbolo in candidatos:
-        resultado = testar_simbolo(simbolo)
-        tentativas.append((simbolo, resultado))
+    if erro_busca:
+        return {"disponivel": False, "motivo": "busca falhou: " + erro_busca, "simbolo": None}
 
-        if resultado["sucesso"]:
-            nome_lower = (resultado["nome_oficial"] or "").lower()
+    if not candidatos:
+        return {"disponivel": False, "motivo": "nenhum resultado encontrado na busca por '" + termo_busca + "'", "simbolo": None}
 
-            if palavras_esperadas and not any(p in nome_lower for p in palavras_esperadas):
-                tentativas[-1] = (simbolo, {
-                    **resultado,
-                    "sucesso": False,
-                    "erro": "nome oficial ('" + str(resultado["nome_oficial"]) + "') nao bate com o ativo esperado - REJEITADO (possivel colisao de ticker)",
-                })
-                time.sleep(INTERVALO_ENTRE_CHAMADAS_SEGUNDOS)
-                continue
+    for candidato in candidatos[:5]:
+        nome_instrumento = (candidato.get("instrument_name") or "").lower()
+        if not any(p in nome_instrumento for p in palavras_esperadas):
+            continue
 
-            if tipo == "futuro":
-                candidatos_spot = SIMBOLOS_INDICE_A_VISTA_SP + SIMBOLOS_INDICE_A_VISTA_NASDAQ
-                parece_indice_a_vista = any(s.lower() in nome_lower for s in candidatos_spot) or ("index" in nome_lower and "future" not in nome_lower)
-                if parece_indice_a_vista:
-                    tentativas[-1] = (simbolo, {
-                        **resultado,
-                        "sucesso": False,
-                        "erro": "simbolo resolveu para indice a vista, nao futuro - REJEITADO (regra: nunca aproximar)",
-                    })
-                    time.sleep(INTERVALO_ENTRE_CHAMADAS_SEGUNDOS)
-                    continue
+        simbolo = candidato.get("symbol")
+        sucesso, resultado = confirmar_cotacao(simbolo)
+        time.sleep(INTERVALO_ENTRE_CHAMADAS_SEGUNDOS)
 
+        if sucesso:
             return {
                 "disponivel": True,
-                "simbolo_correto": simbolo,
-                "nome_oficial": resultado["nome_oficial"],
-                "preco": resultado["preco"],
-                "tentativas": tentativas,
+                "simbolo": simbolo,
+                "nome_oficial": candidato.get("instrument_name"),
+                "preco": resultado,
+                "motivo": None,
+            }
+        else:
+            return {
+                "disponivel": False,
+                "simbolo": simbolo,
+                "motivo": "encontrado no catalogo, mas cotacao falhou: " + str(resultado),
             }
 
-        time.sleep(INTERVALO_ENTRE_CHAMADAS_SEGUNDOS)  # respeita o limite real de 8 creditos/minuto
-
-    return {
-        "disponivel": False,
-        "simbolo_correto": None,
-        "nome_oficial": None,
-        "preco": None,
-        "tentativas": tentativas,
-    }
+    return {"disponivel": False, "motivo": "busca achou resultado, mas nenhum nome bateu com '" + str(palavras_esperadas) + "'", "simbolo": None}
 
 
 def gerar_relatorio():
     if not TWELVEDATA_API_KEY:
-        print("ERRO: TWELVEDATA_API_KEY nao configurada. Configure a variavel de ambiente antes de rodar.")
+        print("ERRO: TWELVEDATA_API_KEY nao configurada.")
         return
 
     print("=" * 70)
-    print("DIAGNOSTICO TWELVE DATA - Radar da Madrugada")
+    print("DIAGNOSTICO TWELVE DATA v2 - busca por nome (mais barato)")
     print("=" * 70)
     print()
 
     resultados = {}
-
-    for nome_exibicao, tipo, candidatos in ATIVOS_PARA_TESTAR:
-        print("Testando: " + nome_exibicao + " (tentando: " + ", ".join(candidatos) + ")")
-        resultado = diagnosticar_ativo(nome_exibicao, tipo, candidatos)
-        resultados[nome_exibicao] = resultado
-
-        for simbolo, tentativa in resultado["tentativas"]:
-            status = "OK" if tentativa["sucesso"] else "falhou"
-            detalhe = tentativa.get("erro") or ("preco=" + str(tentativa.get("preco")))
-            print("  -> " + simbolo + ": " + status + " (" + str(detalhe) + ")")
+    for nome_exibicao, termo_busca, palavras_esperadas in ATIVOS_PARA_BUSCAR:
+        print("Buscando: " + nome_exibicao + " (termo: '" + termo_busca + "')")
+        r = diagnosticar(nome_exibicao, termo_busca, palavras_esperadas)
+        resultados[nome_exibicao] = r
+        if r["disponivel"]:
+            print("  -> OK: simbolo=" + r["simbolo"] + " | nome=" + str(r.get("nome_oficial")) + " | preco=" + str(r["preco"]))
+        else:
+            print("  -> falhou: " + str(r["motivo"]))
         print()
 
     print("=" * 70)
     print("RELATORIO FINAL")
     print("=" * 70)
     print()
-
-    for nome_exibicao, tipo, candidatos in ATIVOS_PARA_TESTAR:
+    for nome_exibicao, _, _ in ATIVOS_PARA_BUSCAR:
         r = resultados[nome_exibicao]
         if r["disponivel"]:
-            print("✅ " + nome_exibicao + " — disponível (símbolo correto: " + r["simbolo_correto"] + ", nome oficial: " + str(r["nome_oficial"]) + ", preço atual: " + str(r["preco"]) + ")")
+            print("✅ " + nome_exibicao + " — disponível (símbolo: " + r["simbolo"] + ", preço: " + str(r["preco"]) + ")")
         else:
-            ultimo_erro = r["tentativas"][-1][1]["erro"] if r["tentativas"] else "sem tentativa"
-            print("❌ " + nome_exibicao + " — indisponível (" + str(ultimo_erro) + ")")
+            print("❌ " + nome_exibicao + " — indisponível (" + str(r["motivo"]) + ")")
 
-    print()
-    print("=" * 70)
     disponiveis = sum(1 for r in resultados.values() if r["disponivel"])
-    print("Resumo: " + str(disponiveis) + " de " + str(len(ATIVOS_PARA_TESTAR)) + " ativos disponíveis no plano atual.")
-    print("=" * 70)
+    print()
+    print("Resumo: " + str(disponiveis) + " de " + str(len(ATIVOS_PARA_BUSCAR)) + " ativos disponíveis.")
 
 
 if __name__ == "__main__":
