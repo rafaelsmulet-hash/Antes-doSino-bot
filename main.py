@@ -16,6 +16,7 @@ GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 BRAPI_TOKEN = os.environ.get("BRAPI_TOKEN", "")
 FRED_API_KEY = os.environ.get("FRED_API_KEY", "")
 COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY", "")
+TWELVEDATA_API_KEY = os.environ.get("TWELVEDATA_API_KEY", "")
 
 COCKPIT_TICKERS = ["^BVSP", "PETR4", "VALE3", "ITUB4", "BBDC4", "ABEV3", "WEGE3", "B3SA3", "BBAS3", "MGLU3"]
 
@@ -768,27 +769,39 @@ def fetch_cockpit_quotes():
     return quotes
 
 
-def fetch_usd_brl():
-    """Busca cotacao USD/BRL via AwesomeAPI (gratuita, sem chave).
-    Substitui a versao anterior, que dependia do endpoint de cambio da
-    brapi.dev - indisponivel no plano gratuito (retornava 403).
-    Retorna None em qualquer falha - nunca quebra o snapshot."""
-    try:
-        url = "https://economia.awesomeapi.com.br/last/USD-BRL"
-        response = requests.get(url, timeout=15)
-        data = response.json()
-        info = data.get("USDBRL", {})
-        price = info.get("bid")
-        change = info.get("pctChange")
-        if price is None:
-            return None
-        return {
-            "price": float(price),
-            "change": float(change) if change is not None else None,
-        }
-    except Exception as e:
-        print("Erro ao buscar USD/BRL (AwesomeAPI): " + str(e))
+def fetch_twelvedata_quote(symbol):
+    """Camada UNICA de cotacao via Twelve Data - cobre forex, indices,
+    commodities e cripto com a mesma chave e o mesmo formato de
+    resposta. Retorna {"price": ..., "change": ...} ou None em
+    qualquer falha - nunca quebra o snapshot.
+
+    NOTA: o simbolo exato de commodities (ex: WTI) pode variar - se
+    retornar None de forma consistente pra um simbolo especifico,
+    vale conferir o simbolo certo no painel da Twelve Data e ajustar
+    aqui."""
+    if not TWELVEDATA_API_KEY:
         return None
+    try:
+        url = "https://api.twelvedata.com/quote"
+        params = {"symbol": symbol, "apikey": TWELVEDATA_API_KEY}
+        response = requests.get(url, params=params, timeout=15)
+        data = response.json()
+        if data.get("status") == "error" or "close" not in data:
+            print("Twelve Data nao retornou dado valido para " + symbol + ": " + str(data))
+            return None
+        preco = float(data["close"])
+        variacao_raw = data.get("percent_change")
+        variacao = float(variacao_raw) if variacao_raw is not None else None
+        return {"price": preco, "change": variacao}
+    except Exception as e:
+        print("Erro ao buscar cotacao Twelve Data (" + symbol + "): " + str(e))
+        return None
+
+
+def fetch_usd_brl():
+    """USD/BRL via Twelve Data - substitui a AwesomeAPI, consolidando
+    numa unica fonte junto com S&P 500, WTI e Bitcoin."""
+    return fetch_twelvedata_quote("USD/BRL")
 
 
 def compute_sentiment_thermometer(entries):
@@ -845,29 +858,9 @@ def fetch_selic():
 
 
 def fetch_bitcoin():
-    """Busca preco atual e variacao de 24h do Bitcoin via CoinGecko
-    Demo API (gratuita, exige chave de cadastro simples, sem cartao).
-    Isolada, com try/except proprio - retorna None em qualquer falha,
-    nunca quebra o snapshot."""
-    if not COINGECKO_API_KEY:
-        return None
-    try:
-        url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true"
-        headers = {"x-cg-demo-api-key": COINGECKO_API_KEY}
-        response = requests.get(url, headers=headers, timeout=15)
-        data = response.json()
-        btc = data.get("bitcoin", {})
-        price = btc.get("usd")
-        change = btc.get("usd_24h_change")
-        if price is None:
-            return None
-        return {
-            "price": float(price),
-            "change": float(change) if change is not None else None,
-        }
-    except Exception as e:
-        print("Erro ao buscar Bitcoin (CoinGecko): " + str(e))
-        return None
+    """Bitcoin via Twelve Data - substitui a CoinGecko, consolidando
+    numa unica fonte junto com USD/BRL, S&P 500 e WTI."""
+    return fetch_twelvedata_quote("BTC/USD")
 
 
 def fetch_fred_series(series_id):
@@ -917,19 +910,21 @@ def compute_market_snapshot():
 
     Calculada UMA UNICA VEZ por execucao do bot (no main()) e
     reaproveitada por build_cockpit_html (Home) e pelos Briefings/
-    Snapshot 12h00 - nenhuma chamada de API duplicada.
+    Snapshot 12h00/Night Wrap - nenhuma chamada de API duplicada.
 
-    Fase 1: fetch_cockpit_quotes, fetch_usd_brl, fetch_selic.
-    Fase 2 (nova): fetch_bitcoin, fetch_fred_series (WTI, Treasury
-    10Y, S&P 500) - cada uma com try/except proprio, retornando None
-    em falha isolada, sem afetar as demais."""
+    Fontes: brapi.dev (Ibovespa/acoes BR, mantido - ja funciona bem de
+    graca), Twelve Data (USD/BRL, Bitcoin, WTI, S&P 500 - consolidado
+    numa unica chave, substituindo AwesomeAPI + CoinGecko + FRED pra
+    esses 4), FRED (so Treasury 10Y, fora do escopo desta migracao)."""
     quotes = fetch_cockpit_quotes()
     usd = fetch_usd_brl()
     selic = fetch_selic()
     bitcoin = fetch_bitcoin()
-    wti = fetch_fred_series("DCOILWTICO")
+    wti_raw = fetch_twelvedata_quote("WTI/USD")
+    wti = {"value": wti_raw["price"], "change": wti_raw["change"]} if wti_raw else None
     treasury_10y = fetch_fred_series("DGS10")
-    sp500 = fetch_fred_series("SP500")
+    sp500_raw = fetch_twelvedata_quote("SPX")
+    sp500 = {"value": sp500_raw["price"], "change": sp500_raw["change"]} if sp500_raw else None
 
     quotes_by_symbol = {}
     for q in quotes:
@@ -3514,6 +3509,122 @@ def processar_market_snapshot_telegram(market_snapshot, telegram_bot_token, tele
         print("Falha ao enviar Snapshot 12h00 - sera tentado novamente no proximo ciclo dentro da janela.")
 
 
+# =============================================================================
+# NIGHT WRAP - fechamento do dia as 22h30, encerra a janela de operacao
+# =============================================================================
+
+NIGHT_WRAP_STATE_FILE = "docs/night_wrap_state.json"
+
+NIGHT_WRAP_JANELA_INICIO_MINUTOS = 22 * 60
+NIGHT_WRAP_JANELA_FIM_MINUTOS = 22 * 60 + 30
+
+
+def load_night_wrap_state():
+    """Estado ISOLADO do Night Wrap - arquivo proprio, nao interfere
+    com briefings_state.json nem snapshot_state.json."""
+    if os.path.exists(NIGHT_WRAP_STATE_FILE):
+        try:
+            with open(NIGHT_WRAP_STATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {"last_night_wrap_date": ""}
+    return {"last_night_wrap_date": ""}
+
+
+def save_night_wrap_state(state):
+    os.makedirs(os.path.dirname(NIGHT_WRAP_STATE_FILE), exist_ok=True)
+    with open(NIGHT_WRAP_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+
+
+def should_send_night_wrap():
+    """Janela de 22h00 as 22h30, uma vez por dia - encerra a janela de
+    operacao do bot (06h50-22h30)."""
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_night_wrap_state()
+    if state.get("last_night_wrap_date") == today_str:
+        return False
+    minutes = now.hour * 60 + now.minute
+    return NIGHT_WRAP_JANELA_INICIO_MINUTOS <= minutes <= NIGHT_WRAP_JANELA_FIM_MINUTOS
+
+
+def _formata_numero_br(valor, casas=2):
+    """Formata numero no padrao brasileiro: milhar com ponto, decimal
+    com virgula (ex: 176939.62 -> '176.939,62')."""
+    texto = "{:,.{casas}f}".format(valor, casas=casas)
+    return texto.replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def build_night_wrap_message(market_snapshot):
+    """Monta a mensagem de fechamento da noite (22h30) - mesma logica
+    de 'so mostra o que existe de verdade' do Snapshot 12h00. Le
+    diretamente do market_snapshot ja calculado, zero chamada de API
+    nova. Usa <pre> para garantir alinhamento monoespacado no Telegram."""
+    quotes_by_symbol = (market_snapshot or {}).get("quotes_by_symbol", {}) or {}
+    usd = (market_snapshot or {}).get("usd")
+    wti = (market_snapshot or {}).get("wti")
+    sp500 = (market_snapshot or {}).get("sp500")
+
+    def formata_variacao(change):
+        seta = "▲" if change >= 0 else "▼"
+        sinal = "+" if change >= 0 else ""
+        return seta + " " + sinal + str(round(change, 2)).replace(".", ",") + "%"
+
+    linhas = []
+
+    ibovespa = quotes_by_symbol.get("^BVSP")
+    if ibovespa and ibovespa.get("price") is not None and ibovespa.get("change") is not None:
+        linhas.append(("IBOV", _formata_numero_br(ibovespa["price"]), formata_variacao(ibovespa["change"])))
+
+    if sp500 and sp500.get("value") is not None and sp500.get("change") is not None:
+        linhas.append(("S&P 500", _formata_numero_br(sp500["value"]), formata_variacao(sp500["change"])))
+
+    if usd and usd.get("price") is not None and usd.get("change") is not None:
+        linhas.append(("USD/BRL", _formata_numero_br(usd["price"]), formata_variacao(usd["change"])))
+
+    if wti and wti.get("value") is not None and wti.get("change") is not None:
+        linhas.append(("WTI", _formata_numero_br(wti["value"]), formata_variacao(wti["change"])))
+
+    agora = datetime.now(BR_TZ)
+    data_str = agora.strftime("%d/%m")
+
+    partes = ["🌙 <b>Antes do Sino | Fechamento da Noite — " + data_str + " 22h30</b>"]
+
+    if linhas:
+        maior_label = max(len(l[0]) for l in linhas)
+        tabela = "<b>Fechamento do dia</b>\n<pre>"
+        for label, valor, variacao in linhas:
+            tabela += label.ljust(maior_label + 2) + valor.rjust(12) + "   " + variacao + "\n"
+        tabela += "</pre>"
+        partes.append(tabela)
+    else:
+        partes.append("Dados de fechamento indisponíveis no momento.")
+
+    partes.append("<i>Boa noite e até amanhã. 06h50 BRT.</i>")
+    partes.append("📰 Antes do Sino")
+
+    return "\n\n".join(partes)
+
+
+def processar_night_wrap_telegram(market_snapshot, telegram_bot_token, telegram_chat_id):
+    """Orquestrador ISOLADO do Night Wrap - nao toca em nenhum outro
+    fluxo. So dispara na janela 22h00-22h30, 1x por dia."""
+    if not should_send_night_wrap():
+        return
+
+    today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    message = build_night_wrap_message(market_snapshot)
+
+    if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
+        state = load_night_wrap_state()
+        state["last_night_wrap_date"] = today_str
+        save_night_wrap_state(state)
+        print("Night Wrap (22h30) enviado com sucesso.")
+    else:
+        print("Falha ao enviar Night Wrap - sera tentado novamente no proximo ciclo dentro da janela.")
+
+
 def get_brazil_relevant_entries(entries):
     """Filtra apenas noticias com foco no mercado brasileiro: fontes ja
     nacionais (PORTUGUESE_SOURCES), OU qualquer fonte que mencione um
@@ -4289,9 +4400,27 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
     print("Portal atualizado: " + output_path)
 
 
+JANELA_OPERACAO_INICIO_MINUTOS = 6 * 60 + 50
+JANELA_OPERACAO_FIM_MINUTOS = 22 * 60 + 30
+
+
+def dentro_da_janela_de_operacao():
+    """Guarda de seguranca - o bot so deve operar das 06h50 as 22h30
+    (BR_TZ). O controle principal fica no agendamento externo
+    (cron-job.org), mas essa checagem evita processamento (e consumo
+    de API) caso o cron dispare fora da janela por qualquer motivo."""
+    agora = datetime.now(BR_TZ)
+    minutos = agora.hour * 60 + agora.minute
+    return JANELA_OPERACAO_INICIO_MINUTOS <= minutos <= JANELA_OPERACAO_FIM_MINUTOS
+
+
 def main():
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("ERRO: configure TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID.")
+        return
+
+    if not dentro_da_janela_de_operacao():
+        print("Fora da janela de operacao (06h50-22h30 BRT) - ciclo ignorado.")
         return
 
     sent_hashes, recent_titles = load_state()
@@ -4454,6 +4583,11 @@ def main():
         processar_market_snapshot_telegram(market_snapshot, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
     except Exception as e:
         print("Erro ao processar Snapshot 12h00 (isolado, nao afeta Briefings nem noticias): " + str(e))
+
+    try:
+        processar_night_wrap_telegram(market_snapshot, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
+    except Exception as e:
+        print("Erro ao processar Night Wrap (isolado, nao afeta o fluxo principal): " + str(e))
 
     try:
         from social import content_engine
