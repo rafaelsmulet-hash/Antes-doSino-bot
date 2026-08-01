@@ -455,9 +455,14 @@ def montar_prompt_unificado(assunto, entries_today, content_mode):
         "quem ganha/quem perde SOMENTE se isso estiver claro nos dados fornecidos\n"
         "   watch_next: o que acompanhar agora (proximos eventos ou riscos concretos)\n"
         "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
-        "4. x: post unico para X/Twitter, MAXIMO 280 caracteres, com angulo "
+        "4. instagram_caption: LEGENDA do post do Instagram - texto SEPARADO do "
+        "que fica dentro da imagem (diferente dos campos do item 3 acima). E o "
+        "texto que vai na descricao do post, curto (2-4 frases), retomando a "
+        "historia principal e terminando com convite discreto pra acompanhar o "
+        "Antes do Sino.\n\n"
+        "5. x: post unico para X/Twitter, MAXIMO 280 caracteres, com angulo "
         "explicativo (nunca so a manchete pura).\n\n"
-        "5. tiktok: roteiro falado de ate 45 segundos, em cenas:\n"
+        "6. tiktok: roteiro falado de ate 45 segundos, em cenas:\n"
         "   scenes: lista de objetos {\"visual\": \"o que aparece na tela\", "
         "\"line\": \"fala do narrador\"}\n"
         "   cta: fechamento com convite discreto\n\n"
@@ -467,6 +472,7 @@ def montar_prompt_unificado(assunto, entries_today, content_mode):
         '"headline": "...", '
         '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
         '"impact": "...", "watch_next": "...", "cta": "..."}, '
+        '"instagram_caption": "...", '
         '"x": {"post": "..."}, '
         '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
     )
@@ -494,6 +500,16 @@ def validar_conteudo_unificado(parsed):
     x_obj = parsed.get("x", {})
     post = x_obj.get("post", "") if isinstance(x_obj, dict) else ""
     post = str(post).strip()[:280] if isinstance(post, str) else ""
+
+    # Legenda do Instagram - texto SEPARADO do que fica dentro da
+    # imagem (campos de "instagram" acima). E o texto que vai na
+    # descricao do post, nao renderizado no carrossel/card.
+    legenda_raw = parsed.get("instagram_caption", "")
+    instagram_caption = str(legenda_raw).strip() if isinstance(legenda_raw, str) else ""
+    if not instagram_caption:
+        # Fallback deterministico, sem IA - usa hook + cta ja
+        # existentes, nunca fica vazio.
+        instagram_caption = (instagram.get("hook", "") + " " + instagram.get("cta", "")).strip()
 
     tk = parsed.get("tiktok", {})
     if not isinstance(tk, dict):
@@ -528,6 +544,7 @@ def validar_conteudo_unificado(parsed):
     return {
         "headline": headline,
         "instagram": instagram,
+        "instagram_caption": instagram_caption,
         "x": {"post": post},
         "tiktok": {"scenes": scenes, "cta": tiktok_cta},
         "editorial": editorial,
@@ -553,6 +570,7 @@ def _fallback_template_conteudo(assunto):
             "watch_next": "",
             "cta": "Acompanhe o mercado no Antes do Sino.",
         },
+        "instagram_caption": titulo + " Acompanhe o mercado no Antes do Sino.",
         "x": {"post": titulo[:280]},
         "tiktok": {"scenes": [], "cta": ""},
         "editorial": {"tipo_noticia": "Outro", "historia_principal": ""},
@@ -574,6 +592,7 @@ def _fallback_template_editorial(headline, corpo_disponivel, content_mode):
             "watch_next": "",
             "cta": "Acompanhe o mercado no Antes do Sino.",
         },
+        "instagram_caption": headline + " Acompanhe o mercado no Antes do Sino.",
         "x": {"post": (headline + (": " + corpo_disponivel if corpo_disponivel else ""))[:280]},
         "tiktok": {"scenes": [], "cta": ""},
         "editorial": {"tipo_noticia": "Outro", "historia_principal": ""},
@@ -715,6 +734,9 @@ def gerar_conteudo_closing(dados, entries_today):
         "   watch_next: o que observar no proximo pregao, SOMENTE com base nos "
         "eventos concretos fornecidos - se nao houver nenhum, deixe vazio\n"
         "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
+        "instagram_caption: LEGENDA do post do Instagram - texto SEPARADO do que "
+        "fica dentro da imagem. Curto (2-4 frases), retomando a historia principal "
+        "e terminando com convite discreto pra acompanhar o Antes do Sino.\n\n"
         "x: post curto para X/Twitter, MAXIMO 280 caracteres.\n"
         "tiktok: roteiro falado de ate 45 segundos, em cenas.\n\n"
         + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
@@ -723,6 +745,7 @@ def gerar_conteudo_closing(dados, entries_today):
         '"headline": "...", '
         '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
         '"impact": "...", "watch_next": "...", "cta": "..."}, '
+        '"instagram_caption": "...", '
         '"x": {"post": "..."}, '
         '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
     )
@@ -782,6 +805,7 @@ def gerar_conteudo_midday_unificado(market_snapshot):
             "watch_next": "",
             "cta": "Acompanhe o mercado em tempo real no Antes do Sino.",
         },
+        "instagram_caption": headline + " Acompanhe o mercado em tempo real no Antes do Sino.",
         "x": {"post": headline[:280]},
         "tiktok": {"scenes": [], "cta": ""},
         "editorial": {"tipo_noticia": "Mercado", "historia_principal": ""},
@@ -877,6 +901,9 @@ def gerar_conteudo_opening(dados, entries_today):
         "nas manchetes - se nao houver nada concreto, deixe vazio)\n"
         "   watch_next: deixe vazio (nao faz parte da estrutura da Agenda do Dia)\n"
         "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
+        "instagram_caption: LEGENDA do post do Instagram - texto SEPARADO do que "
+        "fica dentro da imagem. Curto (2-4 frases), retomando a historia principal "
+        "e terminando com convite discreto pra acompanhar o Antes do Sino.\n\n"
         "x: post curto para X/Twitter, MAXIMO 280 caracteres.\n"
         "tiktok: roteiro falado de ate 45 segundos, em cenas.\n\n"
         + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
@@ -885,6 +912,7 @@ def gerar_conteudo_opening(dados, entries_today):
         '"headline": "...", '
         '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
         '"impact": "...", "watch_next": "", "cta": "..."}, '
+        '"instagram_caption": "...", '
         '"x": {"post": "..."}, '
         '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
     )
@@ -1258,6 +1286,9 @@ def gerar_conteudo_midday_editorial(dados, entries_today):
         "   watch_next: o que observar ate o fechamento (baseado em fato "
         "concreto - se nao houver, deixe vazio)\n"
         "   cta: encerramento discreto convidando a acompanhar o Antes do Sino\n\n"
+        "instagram_caption: LEGENDA do post do Instagram - texto SEPARADO do que "
+        "fica dentro da imagem. Curto (2-4 frases), retomando a historia principal "
+        "e terminando com convite discreto pra acompanhar o Antes do Sino.\n\n"
         "x: post curto para X/Twitter, MAXIMO 280 caracteres.\n"
         "tiktok: roteiro falado de ate 45 segundos, em cenas.\n\n"
         + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
@@ -1266,6 +1297,7 @@ def gerar_conteudo_midday_editorial(dados, entries_today):
         '"headline": "...", '
         '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
         '"impact": "...", "watch_next": "...", "cta": "..."}, '
+        '"instagram_caption": "...", '
         '"x": {"post": "..."}, '
         '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
     )
@@ -1375,6 +1407,7 @@ def _montar_item(conteudo, content_mode, score, reason):
         "content_template": TEMPLATE_MAP.get(content_mode, "quick_insight"),
         "headline": conteudo["headline"],
         "instagram": conteudo["instagram"],
+        "instagram_caption": conteudo.get("instagram_caption", ""),
         "x": conteudo["x"],
         "tiktok": conteudo["tiktok"],
         "editorial": conteudo.get("editorial", {"tipo_noticia": "Outro", "historia_principal": ""}),
@@ -1476,6 +1509,28 @@ def _enviar_telegram_admin(texto):
         print("Erro ao enviar notificação privada (isolado, item já está salvo): " + str(e))
 
 
+def _enviar_telegram_admin_com_botoes(texto, botoes):
+    """Envia mensagem com botao inline - continua funcionando com o
+    mesmo polling de getUpdates ja usado pro comando de texto (nao
+    precisa de webhook nem servidor rodando continuo). 'botoes' e uma
+    lista de (rotulo, callback_data)."""
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_ADMIN_CHAT_ID:
+        print("Social Content Engine: TELEGRAM_ADMIN_CHAT_ID não configurado - aviso privado não enviado.")
+        return
+    try:
+        url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
+        teclado = {"inline_keyboard": [[{"text": rotulo, "callback_data": dado} for rotulo, dado in botoes]]}
+        payload = {
+            "chat_id": TELEGRAM_ADMIN_CHAT_ID,
+            "text": texto,
+            "parse_mode": "HTML",
+            "reply_markup": teclado,
+        }
+        requests.post(url, json=payload, timeout=10)
+    except Exception as e:
+        print("Erro ao enviar notificação privada com botão (isolado, item já está salvo): " + str(e))
+
+
 def _enviar_telegram_admin_foto(caminho_imagem, legenda):
     """Envia uma foto (ex: preview do carrossel/card) com legenda para
     o chat privado do admin. Se o arquivo nao existir ou o envio
@@ -1518,9 +1573,13 @@ def notificar_draft(item):
     texto += (
         "\nPrévia:\n" + preview
         + "\n\nID: <code>" + item["id"] + "</code>"
-        + "\n\nResponda:\nAprovar " + item["id"] + "\nou\nRejeitar " + item["id"]
     )
-    _enviar_telegram_admin(texto)
+
+    botoes = [
+        ("✅ Aprovar", "aprovar:" + item["id"]),
+        ("❌ Rejeitar", "rejeitar:" + item["id"]),
+    ]
+    _enviar_telegram_admin_com_botoes(texto, botoes)
 
 
 def notificar_expirado(item):
@@ -1605,9 +1664,35 @@ def checar_aprovacoes_pendentes():
         if update_id > maior_update_id:
             maior_update_id = update_id
 
+        callback_query = update.get("callback_query")
         message = update.get("message", {})
-        chat_id = str(message.get("chat", {}).get("id", ""))
-        texto = message.get("text", "") or ""
+
+        if callback_query:
+            # Clique em botao inline - mesma via de dados que o
+            # comando de texto, so a origem que muda. Normaliza pra
+            # 'texto' no mesmo formato ("aprovar <ID>") pra reaproveitar
+            # a logica existente sem duplicar nada.
+            chat_id = str(callback_query.get("message", {}).get("chat", {}).get("id", ""))
+            dados_botao = callback_query.get("data", "") or ""
+            if ":" in dados_botao:
+                acao_botao, item_id_botao = dados_botao.split(":", 1)
+                texto = acao_botao + " " + item_id_botao
+            else:
+                texto = ""
+
+            callback_id = callback_query.get("id")
+            if callback_id and TELEGRAM_BOT_TOKEN:
+                try:
+                    requests.post(
+                        "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/answerCallbackQuery",
+                        json={"callback_query_id": callback_id},
+                        timeout=10,
+                    )
+                except Exception:
+                    pass  # nao critico - so remove o "carregando" no app do usuario
+        else:
+            chat_id = str(message.get("chat", {}).get("id", ""))
+            texto = message.get("text", "") or ""
 
         if TELEGRAM_ADMIN_CHAT_ID and chat_id != str(TELEGRAM_ADMIN_CHAT_ID):
             continue
