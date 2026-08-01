@@ -551,15 +551,38 @@ def validar_conteudo_unificado(parsed):
     }
 
 
+def _truncar_limpo(texto, limite):
+    """Corta o texto no limite de caracteres sem quebrar palavra no
+    meio - usada pelos fallbacks pra caber no limite do X sem gerar
+    corte feio. Reserva espaco pras reticencias, pra NUNCA ultrapassar
+    o limite total (incluindo o '...')."""
+    texto = texto.strip()
+    if len(texto) <= limite:
+        return texto
+    limite_para_corte = limite - 3  # reserva espaco para "..."
+    cortado = texto[:limite_para_corte].rsplit(" ", 1)[0]
+    return cortado.rstrip(".,;:") + "..."
+
+
 def _fallback_template_conteudo(assunto):
-    """Fallback simples por template - usado quando a chamada a IA
-    falha (ex: limite diario da Groq atingido). Garante que o Social
-    Content Engine NUNCA deixe de gerar conteudo por indisponibilidade
-    de IA - o item continua sendo criado, enfileirado e disponivel
-    para aprovacao, so com texto mais simples (direto do assunto ja
-    identificado pela logica pura, sem parafraseie de IA)."""
+    """Fallback por template - usado quando a chamada a IA falha (ex:
+    limite diario da Groq atingido). Garante que o Social Content
+    Engine NUNCA deixe de gerar conteudo por indisponibilidade de IA.
+
+    Usa o titulo E o contexto real ja disponiveis (nunca inventa nada
+    novo) para dar mais substancia ao X/legenda do que so repetir a
+    manchete - evita o problema de posts tipo 'Titulo: o que muda?'
+    sem responder nada."""
     titulo = assunto["titulo"]
     contexto = assunto.get("contexto", titulo)
+    contexto_ja_inclui_titulo = contexto.strip().lower().startswith(titulo.strip().lower())
+    tem_contexto_real = contexto and contexto.strip() != titulo.strip()
+
+    if tem_contexto_real:
+        texto_combinado = contexto if contexto_ja_inclui_titulo else (titulo + ". " + contexto)
+    else:
+        texto_combinado = titulo
+
     return {
         "headline": titulo,
         "instagram": {
@@ -570,8 +593,8 @@ def _fallback_template_conteudo(assunto):
             "watch_next": "",
             "cta": "Acompanhe o mercado no Antes do Sino.",
         },
-        "instagram_caption": titulo + " Acompanhe o mercado no Antes do Sino.",
-        "x": {"post": titulo[:280]},
+        "instagram_caption": _truncar_limpo(texto_combinado + " Acompanhe o mercado no Antes do Sino.", 500),
+        "x": {"post": _truncar_limpo(texto_combinado, 280)},
         "tiktok": {"scenes": [], "cta": ""},
         "editorial": {"tipo_noticia": "Outro", "historia_principal": ""},
     }
@@ -582,6 +605,9 @@ def _fallback_template_editorial(headline, corpo_disponivel, content_mode):
     - esses modos nao tem um 'assunto' unico, entao o fallback usa o
     que ja foi coletado deterministicamente (panorama/numeros), nunca
     inventando fato. Usado so quando a IA falha."""
+    tem_corpo_real = bool(corpo_disponivel and corpo_disponivel.strip())
+    texto_combinado = (headline + ". " + corpo_disponivel) if tem_corpo_real else headline
+
     return {
         "headline": headline,
         "instagram": {
@@ -592,8 +618,8 @@ def _fallback_template_editorial(headline, corpo_disponivel, content_mode):
             "watch_next": "",
             "cta": "Acompanhe o mercado no Antes do Sino.",
         },
-        "instagram_caption": headline + " Acompanhe o mercado no Antes do Sino.",
-        "x": {"post": (headline + (": " + corpo_disponivel if corpo_disponivel else ""))[:280]},
+        "instagram_caption": _truncar_limpo(texto_combinado + " Acompanhe o mercado no Antes do Sino.", 500),
+        "x": {"post": _truncar_limpo(texto_combinado, 280)},
         "tiktok": {"scenes": [], "cta": ""},
         "editorial": {"tipo_noticia": "Outro", "historia_principal": ""},
     }
@@ -805,8 +831,8 @@ def gerar_conteudo_midday_unificado(market_snapshot):
             "watch_next": "",
             "cta": "Acompanhe o mercado em tempo real no Antes do Sino.",
         },
-        "instagram_caption": headline + " Acompanhe o mercado em tempo real no Antes do Sino.",
-        "x": {"post": headline[:280]},
+        "instagram_caption": _truncar_limpo(headline + " Acompanhe o mercado em tempo real no Antes do Sino.", 500),
+        "x": {"post": _truncar_limpo(headline, 280)},
         "tiktok": {"scenes": [], "cta": ""},
         "editorial": {"tipo_noticia": "Mercado", "historia_principal": ""},
     }
