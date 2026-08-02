@@ -521,7 +521,7 @@
     "priority": "high",
     "expires_at": "2026-08-02 19:16:00",
     "prompt_version": "v1.0",
-    "status": "draft",
+    "status": "designed",
     "expired_notice_sent": false,
     "platform": "x",
     "publish_url": null,
@@ -531,6 +531,21 @@
         "status": "draft",
         "at": "2026-08-02 17:16:00",
         "detalhe": "Conteúdo gerado"
+      },
+      {
+        "status": "approved",
+        "at": "2026-08-02 17:25:35",
+        "detalhe": "Via Telegram"
+      },
+      {
+        "status": "designing",
+        "at": "2026-08-02 17:25:38",
+        "detalhe": "Gerando ativo visual"
+      },
+      {
+        "status": "designed",
+        "at": "2026-08-02 17:25:38",
+        "detalhe": "Ativo visual gerado com sucesso"
       }
     ],
     "date": "2026-08-02",
@@ -539,6 +554,7 @@
       "likes": null,
       "shares": null,
       "comments": null
-    }
+    },
+    "design_folder": "docs/social_posts/2026-08-02_juros-reais-acima-de-8-xp-avalia-se-acoes-brasileiras-ainda-"
   }
 ]
