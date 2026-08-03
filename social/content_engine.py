@@ -1569,8 +1569,9 @@ def _enviar_telegram_admin_com_botoes(texto, botoes):
         return
     try:
         url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
+        linhas_botoes = [botoes[i:i + 2] for i in range(0, len(botoes), 2)]
         teclado = {
-            "keyboard": [[{"text": rotulo} for rotulo in botoes]],
+            "keyboard": [[{"text": rotulo} for rotulo in linha] for linha in linhas_botoes],
             "resize_keyboard": True,
             "one_time_keyboard": True,
         }
@@ -1631,6 +1632,8 @@ def notificar_draft(item):
 
     botoes = [
         "Aprovar " + item["id"],
+        "Editar " + item["id"],
+        "Regenerar " + item["id"],
         "Rejeitar " + item["id"],
     ]
     _enviar_telegram_admin_com_botoes(texto, botoes)
@@ -1663,7 +1666,7 @@ def notificar_draft_com_arte(item, pasta, quantidade_slides, tipo_ativo):
         + "\n\nFormato: " + str(tipo_ativo) + " (" + str(quantidade_slides) + " imagem(ns))"
     )
 
-    botoes = ["Aprovar " + item["id"], "Rejeitar " + item["id"]]
+    botoes = ["Aprovar " + item["id"], "Editar " + item["id"], "Regenerar " + item["id"], "Rejeitar " + item["id"]]
 
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_ADMIN_CHAT_ID:
         print("Social Content Engine: TELEGRAM_ADMIN_CHAT_ID não configurado - aviso privado não enviado.")
@@ -1678,7 +1681,8 @@ def notificar_draft_com_arte(item, pasta, quantidade_slides, tipo_ativo):
         if len(caminhos_slides) == 1:
             # Foto unica aceita teclado direto na mesma mensagem.
             url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendPhoto"
-            teclado = {"keyboard": [[{"text": r} for r in botoes]], "resize_keyboard": True, "one_time_keyboard": True}
+            linhas_botoes = [botoes[i:i + 2] for i in range(0, len(botoes), 2)]
+            teclado = {"keyboard": [[{"text": r} for r in linha] for linha in linhas_botoes], "resize_keyboard": True, "one_time_keyboard": True}
             with open(caminhos_slides[0], "rb") as f:
                 files = {"photo": f}
                 data = {
@@ -1692,7 +1696,7 @@ def notificar_draft_com_arte(item, pasta, quantidade_slides, tipo_ativo):
             # Album nao aceita teclado - manda as imagens, depois o
             # teclado numa mensagem curta separada.
             _enviar_album_telegram_content(caminhos_slides, texto)
-            _enviar_telegram_admin_com_botoes("👆 Aprovar ou rejeitar o conteúdo acima:", botoes)
+            _enviar_telegram_admin_com_botoes("👆 O que fazer com o conteúdo acima?", botoes)
         else:
             # Sem imagem nenhuma (pasta vazia/erro) - cai no texto puro.
             notificar_draft(item)
@@ -1749,6 +1753,59 @@ def notificar_arte_pronta(item, caminho_preview=None):
     _enviar_telegram_admin_foto(caminho_preview, texto)
 
 
+def _gerar_e_entregar_video_tiktok(item):
+    """Gera o video vertical do TikTok a partir dos MESMOS slides ja
+    desenhados, e entrega no Telegram (video + legenda pronta pra
+    copiar, em mensagens separadas). Isolado com try/except proprio -
+    falha aqui NUNCA bloqueia a entrega do Instagram/X, que ja
+    aconteceu antes. Roteiro em texto (script.txt) continua existindo
+    tambem, como material de apoio."""
+    pasta = item.get("design_folder")
+    if not pasta or not os.path.isdir(pasta):
+        return
+
+    try:
+        from social import video_engine
+        if not video_engine.ffmpeg_disponivel():
+            print("TikTok Video Engine: FFmpeg indisponível no ambiente - vídeo não gerado.")
+            return
+
+        caminhos_slides = sorted(
+            os.path.join(pasta, f) for f in os.listdir(pasta)
+            if f.startswith("slide_") and f.endswith(".png")
+        )
+        if not caminhos_slides:
+            return
+
+        caminho_video = video_engine.gerar_video_tiktok(caminhos_slides, pasta)
+
+        tk = item.get("tiktok", {}) or {}
+        cenas = tk.get("scenes", [])
+        cta = tk.get("cta", "")
+        legenda_partes = []
+        for cena in cenas:
+            if cena.get("line"):
+                legenda_partes.append(cena["line"])
+        legenda_completa = " ".join(legenda_partes)
+        if cta:
+            legenda_completa += ("\n\n" + cta if legenda_completa else cta)
+        if not legenda_completa:
+            legenda_completa = item.get("headline", "")
+
+        if TELEGRAM_BOT_TOKEN and TELEGRAM_ADMIN_CHAT_ID:
+            url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendVideo"
+            with open(caminho_video, "rb") as f:
+                files = {"video": f}
+                data = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "caption": "🎥 Vídeo TikTok pronto"}
+                requests.post(url, data=data, files=files, timeout=60)
+
+            _enviar_telegram_admin("🎥 <b>Legenda TikTok</b>\n\n" + legenda_completa)
+
+        print("Social Content Engine: vídeo TikTok gerado e entregue para o item " + item.get("id", "") + ".")
+    except Exception as e:
+        print("Erro ao gerar/entregar vídeo TikTok (isolado, não afeta Instagram/X): " + str(e))
+
+
 def notificar_publicado(item):
     texto = (
         "✅ <b>Publicado no " + (item.get("platform") or "x").upper() + "</b>\n"
@@ -1773,6 +1830,101 @@ def notificar_falha_publicacao(item, erro):
 # ---------------------------------------------------------------------------
 # Aprovacao por resposta de texto - consulta getUpdates, sem botao
 # ---------------------------------------------------------------------------
+
+def _reconstruir_assunto_do_item(item):
+    """Reconstroi um 'assunto' (titulo+contexto) a partir do proprio
+    conteudo ja gerado - usado por Regenerar/Editar, que nao tem mais
+    acesso aos dados brutos originais (cluster/snapshot) usados na
+    primeira geracao. E uma aproximacao deliberada: o resultado usa o
+    conteudo atual como contexto, nao os dados crus originais - mantem
+    o mesmo assunto geral, mas nao reproduz 100% fielmente a fonte
+    primaria da geracao inicial."""
+    ig = item.get("instagram", {}) or {}
+    partes_contexto = [ig.get("context", ""), ig.get("why_it_matters", ""), ig.get("impact", "")]
+    contexto = " ".join(p for p in partes_contexto if p).strip() or item.get("headline", "")
+    return {"titulo": item.get("headline", ""), "contexto": contexto}
+
+
+def regenerar_conteudo_item(item):
+    """Gera uma NOVA abordagem para o mesmo assunto - substitui
+    headline/instagram/instagram_caption/x/tiktok/editorial mantendo
+    o mesmo ID, content_mode, score e reason originais."""
+    assunto = _reconstruir_assunto_do_item(item)
+    novo_conteudo = gerar_conteudo_unificado(assunto, [], item.get("content_mode", "breaking"))
+
+    item["headline"] = novo_conteudo["headline"]
+    item["instagram"] = novo_conteudo["instagram"]
+    item["instagram_caption"] = novo_conteudo.get("instagram_caption", "")
+    item["x"] = novo_conteudo["x"]
+    item["tiktok"] = novo_conteudo["tiktok"]
+    item["editorial"] = novo_conteudo.get("editorial", item.get("editorial", {}))
+    return item
+
+
+def editar_conteudo_item(item, instrucao_usuario):
+    """Aplica uma edicao pontual pedida em texto livre pelo usuario,
+    mantendo o restante do conteudo o mais fiel possivel ao original."""
+    prompt = (
+        "Voce e o editor de mercado do canal 'Antes do Sino'. Este conteudo JA FOI "
+        "GERADO e precisa de uma edicao pontual pedida pelo usuario. Aplique "
+        "EXATAMENTE a edicao solicitada, mantendo o resto do conteudo o mais fiel "
+        "possivel ao original - nao reescreva o que nao foi pedido para mudar. "
+        "Nunca invente dado novo que nao esteja no conteudo atual ou na instrucao.\n\n"
+        "CONTEUDO ATUAL:\n"
+        "Headline: " + item.get("headline", "") + "\n"
+        "Instagram hook: " + item.get("instagram", {}).get("hook", "") + "\n"
+        "Instagram context: " + item.get("instagram", {}).get("context", "") + "\n"
+        "Instagram why_it_matters: " + item.get("instagram", {}).get("why_it_matters", "") + "\n"
+        "Instagram impact: " + item.get("instagram", {}).get("impact", "") + "\n"
+        "Instagram watch_next: " + item.get("instagram", {}).get("watch_next", "") + "\n"
+        "X post: " + item.get("x", {}).get("post", "") + "\n\n"
+        "INSTRUCAO DE EDICAO DO USUARIO:\n\"" + instrucao_usuario + "\"\n\n"
+        + TEXTO_FRASES_PROIBIDAS_PROMPT + "\n\n"
+        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
+        '{"editorial": {"tipo_noticia": "...", "historia_principal": "..."}, '
+        '"headline": "...", '
+        '"instagram": {"hook": "...", "context": "...", "why_it_matters": "...", '
+        '"impact": "...", "watch_next": "...", "cta": "..."}, '
+        '"instagram_caption": "...", '
+        '"x": {"post": "..."}, '
+        '"tiktok": {"scenes": [{"visual": "...", "line": "..."}], "cta": "..."}}'
+    )
+
+    try:
+        raw_response = ask_groq_isolado(prompt, purpose="generation")
+        parsed = extract_json_object_isolado(raw_response)
+        novo_conteudo = validar_conteudo_unificado(parsed)
+        if novo_conteudo is None:
+            raise ValueError("resposta da IA invalida")
+    except Exception as e:
+        print("Erro ao editar conteudo (mantendo original sem alteracao): " + str(e))
+        return item
+
+    item["headline"] = novo_conteudo["headline"]
+    item["instagram"] = novo_conteudo["instagram"]
+    item["instagram_caption"] = novo_conteudo.get("instagram_caption", "")
+    item["x"] = novo_conteudo["x"]
+    item["tiktok"] = novo_conteudo["tiktok"]
+    item["editorial"] = novo_conteudo.get("editorial", item.get("editorial", {}))
+    return item
+
+
+# ---------------------------------------------------------------------------
+# Estado de edicao pendente - "Editar <ID>" pede a instrucao, a
+# PROXIMA mensagem de texto livre (sem comando reconhecido) e tratada
+# como a instrucao de edicao daquele item especifico.
+# ---------------------------------------------------------------------------
+
+PENDING_EDIT_STATE_FILE = "docs/pending_edit_state.json"
+
+
+def load_pending_edit_state():
+    return _load_json_seguro(PENDING_EDIT_STATE_FILE, {"item_id": None})
+
+
+def save_pending_edit_state(state):
+    _save_json(PENDING_EDIT_STATE_FILE, state)
+
 
 def checar_aprovacoes_pendentes():
     """Roda TODO ciclo. Le mensagens novas do Telegram (so as vindas do
@@ -1844,8 +1996,39 @@ def checar_aprovacoes_pendentes():
             notificar_publicado(item)
             continue
 
-        match = re.match(r"(?i)^\s*(aprovar|rejeitar|publicar)\s+(\S+)\s*$", texto)
+        match = re.match(r"(?i)^\s*(aprovar|rejeitar|publicar|editar|regenerar)\s+(\S+)\s*$", texto)
         if not match:
+            # Nao bateu com nenhum comando reconhecido - se houver uma
+            # edicao pendente, trata essa mensagem como a instrucao de
+            # edicao daquele item. Caso contrario, ignora (nao e um
+            # comando valido).
+            pendente = load_pending_edit_state()
+            item_id_pendente = pendente.get("item_id")
+            if item_id_pendente and texto.strip():
+                indice_pendente = _find_item_index_by_id(fila, item_id_pendente)
+                if indice_pendente is not None:
+                    item_pendente = fila[indice_pendente]
+                    item_pendente = editar_conteudo_item(item_pendente, texto.strip())
+                    fila[indice_pendente] = item_pendente
+                    fila_alterada = True
+                    save_social_queue_full(fila)
+                    save_pending_edit_state({"item_id": None})
+                    print("Social Content Engine: item " + item_id_pendente + " editado via instrução livre no Telegram.")
+
+                    pasta_existente = item_pendente.get("design_folder")
+                    if pasta_existente:
+                        try:
+                            from social import design_engine
+                            nova_pasta, qtd, tipo = design_engine.gerar_ativo_visual(item_pendente)
+                            item_pendente["design_folder"] = nova_pasta
+                            fila[indice_pendente] = item_pendente
+                            save_social_queue_full(fila)
+                            notificar_draft_com_arte(item_pendente, nova_pasta, qtd, tipo)
+                        except Exception as e:
+                            print("Erro ao regenerar arte após edição (enviando só texto): " + str(e))
+                            notificar_draft(item_pendente)
+                    else:
+                        notificar_draft(item_pendente)
             continue
 
         acao = match.group(1).lower()
@@ -1857,6 +2040,37 @@ def checar_aprovacoes_pendentes():
             continue
 
         item = fila[indice]
+
+        if acao == "editar":
+            if item.get("status") not in ("draft",):
+                _enviar_telegram_admin("Só é possível editar conteúdo em \"draft\". Status atual: " + str(item.get("status")))
+                continue
+            save_pending_edit_state({"item_id": item_id})
+            _enviar_telegram_admin("✏️ Envie as alterações desejadas para o conteúdo <code>" + item_id + "</code>.")
+            continue
+
+        if acao == "regenerar":
+            if item.get("status") not in ("draft",):
+                _enviar_telegram_admin("Só é possível regenerar conteúdo em \"draft\". Status atual: " + str(item.get("status")))
+                continue
+            item = regenerar_conteudo_item(item)
+            fila[indice] = item
+            fila_alterada = True
+            save_social_queue_full(fila)
+            print("Social Content Engine: item " + item_id + " regenerado via Telegram.")
+
+            pasta_existente = item.get("design_folder")
+            try:
+                from social import design_engine
+                nova_pasta, qtd, tipo = design_engine.gerar_ativo_visual(item)
+                item["design_folder"] = nova_pasta
+                fila[indice] = item
+                save_social_queue_full(fila)
+                notificar_draft_com_arte(item, nova_pasta, qtd, tipo)
+            except Exception as e:
+                print("Erro ao gerar arte após regenerar (enviando só texto): " + str(e))
+                notificar_draft(item)
+            continue
 
         if acao == "publicar":
             # Caminho automatico (via API paga) - mantido para uso
@@ -1924,6 +2138,9 @@ def checar_aprovacoes_pendentes():
             fila_alterada = True
             save_social_queue_full(fila)
             print("Social Content Engine: item " + item_id + " aprovado com arte já pronta - pulou direto para designed.")
+
+            _gerar_e_entregar_video_tiktok(item)
+
             _enviar_telegram_admin_com_botoes(
                 "✅ Aprovado - pronto para publicar.\n\n"
                 "Assunto: " + item.get("headline", "") + "\n"
