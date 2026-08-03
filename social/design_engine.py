@@ -423,9 +423,12 @@ def notificar_admin_design(item, pasta, quantidade_slides, tipo_ativo):
         texto += "Texto pronto para copiar (X):\n" + texto_post + "\n\n"
     texto += (
         "ID: <code>" + item.get("id", "") + "</code>\n\n"
-        "Depois de publicar manualmente, responder:\nPublicado " + item.get("id", "")
-        + "\n(opcional: cole o link do post depois do ID)"
+        "Depois de publicar manualmente, use o botão abaixo\n"
+        "(ou responda \"Publicado " + item.get("id", "") + " <link>\" se quiser guardar o link do post)."
     )
+
+    botao_publicado = "Publicado " + item.get("id", "")
+    teclado = {"keyboard": [[{"text": botao_publicado}]], "resize_keyboard": True, "one_time_keyboard": True}
 
     caminhos_slides = sorted(
         os.path.join(pasta, f) for f in os.listdir(pasta)
@@ -434,16 +437,30 @@ def notificar_admin_design(item, pasta, quantidade_slides, tipo_ativo):
 
     try:
         if len(caminhos_slides) >= 2:
+            # Album nao aceita teclado (limitacao do Telegram) - manda
+            # as imagens, depois o botao numa mensagem curta separada.
             _enviar_album_telegram(caminhos_slides, texto)
+            url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
+            payload = {
+                "chat_id": TELEGRAM_ADMIN_CHAT_ID,
+                "text": "👆 Depois de publicar manualmente, toque no botão:",
+                "reply_markup": teclado,
+            }
+            requests.post(url, json=payload, timeout=10)
         elif len(caminhos_slides) == 1:
             url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendPhoto"
             with open(caminhos_slides[0], "rb") as f:
                 files = {"photo": f}
-                data = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "caption": texto, "parse_mode": "HTML"}
+                data = {
+                    "chat_id": TELEGRAM_ADMIN_CHAT_ID,
+                    "caption": texto,
+                    "parse_mode": "HTML",
+                    "reply_markup": json.dumps(teclado),
+                }
                 requests.post(url, data=data, files=files, timeout=20)
         else:
             url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
-            payload = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "text": texto, "parse_mode": "HTML"}
+            payload = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "text": texto, "parse_mode": "HTML", "reply_markup": teclado}
             requests.post(url, json=payload, timeout=10)
     except Exception as e:
         print("Erro ao enviar notificação privada do design engine (isolado): " + str(e))
