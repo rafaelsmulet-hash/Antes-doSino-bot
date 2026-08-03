@@ -478,6 +478,27 @@ def montar_prompt_unificado(assunto, entries_today, content_mode):
     )
 
 
+HASHTAGS_POR_TIPO = {
+    "Macro": ["#Macroeconomia", "#Juros"],
+    "Empresa": ["#Empresas", "#Resultados"],
+    "Commodities": ["#Commodities", "#Petróleo"],
+    "Mercado": ["#Mercado", "#Bolsa"],
+    "Internacional": ["#MercadoInternacional", "#WallStreet"],
+    "Politica/economia": ["#Economia", "#Política"],
+    "Setorial": ["#Setores", "#Mercado"],
+    "Outro": ["#Mercado", "#Investimentos"],
+}
+
+
+def _gerar_hashtags(tipo_noticia):
+    """Gera hashtags de forma DETERMINISTICA (sem IA) a partir do tipo
+    de noticia ja classificado - evita adicionar mais uma chamada de
+    IA so pra isso, e garante que hashtag nunca fique ausente mesmo
+    no fallback sem IA."""
+    especificas = HASHTAGS_POR_TIPO.get(tipo_noticia, HASHTAGS_POR_TIPO["Outro"])
+    return ["#AntesDoSino"] + especificas + ["#Investimentos"]
+
+
 def validar_conteudo_unificado(parsed):
     """Validacao defensiva - qualquer campo ausente ou malformado usa
     fallback vazio, nunca quebra a montagem final."""
@@ -545,6 +566,7 @@ def validar_conteudo_unificado(parsed):
         "headline": headline,
         "instagram": instagram,
         "instagram_caption": instagram_caption,
+        "hashtags": _gerar_hashtags(editorial["tipo_noticia"]),
         "x": {"post": post},
         "tiktok": {"scenes": scenes, "cta": tiktok_cta},
         "editorial": editorial,
@@ -597,6 +619,7 @@ def _fallback_template_conteudo(assunto):
         "x": {"post": _truncar_limpo(texto_combinado, 280)},
         "tiktok": {"scenes": [], "cta": ""},
         "editorial": {"tipo_noticia": "Outro", "historia_principal": ""},
+        "hashtags": _gerar_hashtags("Outro"),
     }
 
 
@@ -622,6 +645,7 @@ def _fallback_template_editorial(headline, corpo_disponivel, content_mode):
         "x": {"post": _truncar_limpo(texto_combinado, 280)},
         "tiktok": {"scenes": [], "cta": ""},
         "editorial": {"tipo_noticia": "Outro", "historia_principal": ""},
+        "hashtags": _gerar_hashtags("Outro"),
     }
 
 
@@ -835,6 +859,7 @@ def gerar_conteudo_midday_unificado(market_snapshot):
         "x": {"post": _truncar_limpo(headline, 280)},
         "tiktok": {"scenes": [], "cta": ""},
         "editorial": {"tipo_noticia": "Mercado", "historia_principal": ""},
+        "hashtags": _gerar_hashtags("Mercado"),
     }
 
 
@@ -1434,6 +1459,7 @@ def _montar_item(conteudo, content_mode, score, reason):
         "headline": conteudo["headline"],
         "instagram": conteudo["instagram"],
         "instagram_caption": conteudo.get("instagram_caption", ""),
+        "hashtags": conteudo.get("hashtags", _gerar_hashtags("Outro")),
         "x": conteudo["x"],
         "tiktok": conteudo["tiktok"],
         "editorial": conteudo.get("editorial", {"tipo_noticia": "Outro", "historia_principal": ""}),
@@ -1755,42 +1781,45 @@ def notificar_arte_pronta(item, caminho_preview=None):
 
 def _gerar_e_entregar_video_tiktok(item):
     """Gera o video vertical do TikTok a partir dos MESMOS slides ja
-    desenhados, e entrega no Telegram (video + legenda pronta pra
-    copiar, em mensagens separadas). Isolado com try/except proprio -
-    falha aqui NUNCA bloqueia a entrega do Instagram/X, que ja
-    aconteceu antes. Roteiro em texto (script.txt) continua existindo
-    tambem, como material de apoio."""
+    desenhados, e entrega no Telegram (video + legenda+hashtags+CTA
+    prontos pra copiar, em mensagens separadas). Isolado com try/except
+    proprio - falha aqui NUNCA bloqueia a entrega do Instagram/X, que
+    ja aconteceu antes."""
     pasta = item.get("design_folder")
     if not pasta or not os.path.isdir(pasta):
-        return
+        return False
 
     try:
         from social import video_engine
         if not video_engine.ffmpeg_disponivel():
             print("TikTok Video Engine: FFmpeg indisponível no ambiente - vídeo não gerado.")
-            return
+            return False
 
         caminhos_slides = sorted(
             os.path.join(pasta, f) for f in os.listdir(pasta)
             if f.startswith("slide_") and f.endswith(".png")
         )
         if not caminhos_slides:
-            return
-
-        caminho_video = video_engine.gerar_video_tiktok(caminhos_slides, pasta)
+            return False
 
         tk = item.get("tiktok", {}) or {}
-        cenas = tk.get("scenes", [])
         cta = tk.get("cta", "")
-        legenda_partes = []
-        for cena in cenas:
-            if cena.get("line"):
-                legenda_partes.append(cena["line"])
-        legenda_completa = " ".join(legenda_partes)
+
+        caminho_video = video_engine.gerar_video_tiktok(caminhos_slides, pasta, cta_texto=cta)
+
+        valido, info = video_engine.validar_video(caminho_video)
+        if not valido:
+            raise RuntimeError("vídeo gerado, mas validação falhou: " + str(info))
+
+        cenas = tk.get("scenes", [])
+        legenda_partes = [cena["line"] for cena in cenas if cena.get("line")]
+        legenda_completa = " ".join(legenda_partes) or item.get("headline", "")
         if cta:
-            legenda_completa += ("\n\n" + cta if legenda_completa else cta)
-        if not legenda_completa:
-            legenda_completa = item.get("headline", "")
+            legenda_completa += "\n\n" + cta
+
+        hashtags = item.get("hashtags", [])
+        if hashtags:
+            legenda_completa += "\n\n" + " ".join(hashtags)
 
         if TELEGRAM_BOT_TOKEN and TELEGRAM_ADMIN_CHAT_ID:
             url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendVideo"
@@ -1799,11 +1828,78 @@ def _gerar_e_entregar_video_tiktok(item):
                 data = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "caption": "🎥 Vídeo TikTok pronto"}
                 requests.post(url, data=data, files=files, timeout=60)
 
-            _enviar_telegram_admin("🎥 <b>Legenda TikTok</b>\n\n" + legenda_completa)
+            _enviar_telegram_admin("📝 <b>Legenda TikTok</b>\n\n" + legenda_completa)
 
-        print("Social Content Engine: vídeo TikTok gerado e entregue para o item " + item.get("id", "") + ".")
+        print("Social Content Engine: vídeo TikTok gerado e entregue para o item " + item.get("id", "") + " (duração: " + str(round(info, 1)) + "s).")
+        return True
     except Exception as e:
         print("Erro ao gerar/entregar vídeo TikTok (isolado, não afeta Instagram/X): " + str(e))
+        return False
+
+
+def _entregar_pacote_completo_aprovacao(item):
+    """Entrega TODOS os materiais no Telegram, na ordem exata:
+    1) confirmacao, 2) Instagram (carrossel/card), 3) texto do X,
+    4) imagem do X, 5) video TikTok, 6) legenda+hashtags+CTA.
+    Cada etapa e isolada - falha em uma NUNCA impede as seguintes."""
+    pasta = item.get("design_folder")
+    item_id = item.get("id", "")
+
+    # 1) Confirmacao
+    try:
+        _enviar_telegram_admin(
+            "✅ <b>Conteúdo aprovado</b>\n\n"
+            "Assunto: " + item.get("headline", "") + "\n"
+            "ID: <code>" + item_id + "</code>"
+        )
+    except Exception as e:
+        print("Erro ao enviar confirmação de aprovação (isolado): " + str(e))
+
+    caminhos_slides = []
+    if pasta and os.path.isdir(pasta):
+        caminhos_slides = sorted(
+            os.path.join(pasta, f) for f in os.listdir(pasta)
+            if f.startswith("slide_") and f.endswith(".png")
+        )
+
+    # 2) Instagram - carrossel completo ou card unico
+    try:
+        if len(caminhos_slides) >= 2:
+            _enviar_album_telegram_content(caminhos_slides, "📸 <b>Instagram (carrossel)</b>")
+        elif len(caminhos_slides) == 1:
+            _enviar_telegram_admin_foto(caminhos_slides[0], "📸 <b>Instagram (card)</b>")
+        else:
+            print("Aviso: nenhum slide encontrado para entrega do Instagram (item " + item_id + ").")
+    except Exception as e:
+        print("Erro ao entregar Instagram (isolado, não afeta X/TikTok): " + str(e))
+
+    # 3) Texto do X
+    try:
+        texto_x = (item.get("x") or {}).get("post", "")
+        if texto_x:
+            _enviar_telegram_admin("🐦 <b>Texto para o X</b>\n\n" + texto_x)
+    except Exception as e:
+        print("Erro ao entregar texto do X (isolado): " + str(e))
+
+    # 4) Imagem correspondente do X (reaproveita a capa/card - X usa imagem unica)
+    try:
+        if caminhos_slides:
+            _enviar_telegram_admin_foto(caminhos_slides[0], "🖼️ <b>Imagem para o X</b>")
+    except Exception as e:
+        print("Erro ao entregar imagem do X (isolado): " + str(e))
+
+    # 5) e 6) Video do TikTok + legenda/hashtags/CTA (isolado, ja trata sua propria excecao)
+    _gerar_e_entregar_video_tiktok(item)
+
+    # Fecha o ciclo - botao pra confirmar publicacao manual
+    try:
+        _enviar_telegram_admin_com_botoes(
+            "Depois de publicar manualmente, toque no botão\n"
+            "(ou responda \"Publicado " + item_id + " <link>\" se quiser guardar o link do post).",
+            ["Publicado " + item_id]
+        )
+    except Exception as e:
+        print("Erro ao enviar botão de confirmação de publicação (isolado): " + str(e))
 
 
 def notificar_publicado(item):
@@ -1855,6 +1951,7 @@ def regenerar_conteudo_item(item):
     item["headline"] = novo_conteudo["headline"]
     item["instagram"] = novo_conteudo["instagram"]
     item["instagram_caption"] = novo_conteudo.get("instagram_caption", "")
+    item["hashtags"] = novo_conteudo.get("hashtags", item.get("hashtags", []))
     item["x"] = novo_conteudo["x"]
     item["tiktok"] = novo_conteudo["tiktok"]
     item["editorial"] = novo_conteudo.get("editorial", item.get("editorial", {}))
@@ -1903,6 +2000,7 @@ def editar_conteudo_item(item, instrucao_usuario):
     item["headline"] = novo_conteudo["headline"]
     item["instagram"] = novo_conteudo["instagram"]
     item["instagram_caption"] = novo_conteudo.get("instagram_caption", "")
+    item["hashtags"] = novo_conteudo.get("hashtags", item.get("hashtags", []))
     item["x"] = novo_conteudo["x"]
     item["tiktok"] = novo_conteudo["tiktok"]
     item["editorial"] = novo_conteudo.get("editorial", item.get("editorial", {}))
@@ -2139,16 +2237,7 @@ def checar_aprovacoes_pendentes():
             save_social_queue_full(fila)
             print("Social Content Engine: item " + item_id + " aprovado com arte já pronta - pulou direto para designed.")
 
-            _gerar_e_entregar_video_tiktok(item)
-
-            _enviar_telegram_admin_com_botoes(
-                "✅ Aprovado - pronto para publicar.\n\n"
-                "Assunto: " + item.get("headline", "") + "\n"
-                "ID: <code>" + item_id + "</code>\n\n"
-                "Depois de publicar manualmente, toque no botão\n"
-                "(ou responda \"Publicado " + item_id + " <link>\" se quiser guardar o link do post).",
-                ["Publicado " + item_id]
-            )
+            _entregar_pacote_completo_aprovacao(item)
             continue
 
         fila[indice] = item
