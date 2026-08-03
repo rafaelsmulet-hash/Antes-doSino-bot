@@ -1498,7 +1498,14 @@ def _find_item_index_by_id(fila, item_id):
 
 def enfileirar_item(item):
     """Acumula historico - nunca sobrescreve. Adiciona date/metrics e
-    envia a notificacao de draft."""
+    ja tenta gerar a arte IMEDIATAMENTE (antes da aprovacao) - assim a
+    notificacao de draft ja chega com a imagem, e a aprovacao vira
+    quase instantanea (nao precisa esperar o proximo ciclo desenhar).
+
+    Se a geracao de arte falhar por qualquer motivo, cai com seguranca
+    para o fluxo antigo (notificacao so com texto, arte gerada depois
+    da aprovacao, via process_pending_designs) - nunca perde o
+    conteudo por causa disso."""
     if item is None:
         return
 
@@ -1508,15 +1515,30 @@ def enfileirar_item(item):
     novo_item["date"] = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     novo_item["metrics"] = {"views": None, "likes": None, "shares": None, "comments": None}
 
-    fila.append(novo_item)
-    save_social_queue_full(fila)
-
     print(
         "Social Content Engine: item " + novo_item["id"] + " criado (modo=" + novo_item["content_mode"]
         + ", status=draft, template=" + novo_item["content_template"] + ")"
     )
 
-    notificar_draft(novo_item)
+    pasta_arte = None
+    tipo_ativo = None
+    quantidade_slides = None
+    try:
+        from social import design_engine
+        pasta_arte, quantidade_slides, tipo_ativo = design_engine.gerar_ativo_visual(novo_item)
+        novo_item["design_folder"] = pasta_arte
+        novo_item["design_pregerado"] = True
+        print("Social Content Engine: arte pre-gerada junto com o draft (" + tipo_ativo + ", " + str(quantidade_slides) + " imagem(ns)).")
+    except Exception as e:
+        print("Aviso: falha ao pre-gerar arte no momento do draft (cai no fluxo antigo, gera depois da aprovacao): " + str(e))
+
+    fila.append(novo_item)
+    save_social_queue_full(fila)
+
+    if pasta_arte:
+        notificar_draft_com_arte(novo_item, pasta_arte, quantidade_slides, tipo_ativo)
+    else:
+        notificar_draft(novo_item)
 
 
 # ---------------------------------------------------------------------------
@@ -1536,16 +1558,22 @@ def _enviar_telegram_admin(texto):
 
 
 def _enviar_telegram_admin_com_botoes(texto, botoes):
-    """Envia mensagem com botao inline - continua funcionando com o
-    mesmo polling de getUpdates ja usado pro comando de texto (nao
-    precisa de webhook nem servidor rodando continuo). 'botoes' e uma
-    lista de (rotulo, callback_data)."""
+    """Envia mensagem com teclado de RESPOSTA (reply keyboard, nao
+    inline) - ao clicar, o Telegram manda o texto do botao como se
+    voce tivesse digitado e enviado, aparecendo visivel na conversa.
+    Reaproveita 100% a logica de texto que ja existe pro comando
+    manual - nenhum parser novo necessario. 'botoes' e uma lista de
+    rotulos (o rotulo JA E o comando completo, ex: 'Aprovar <ID>')."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_ADMIN_CHAT_ID:
         print("Social Content Engine: TELEGRAM_ADMIN_CHAT_ID não configurado - aviso privado não enviado.")
         return
     try:
         url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
-        teclado = {"inline_keyboard": [[{"text": rotulo, "callback_data": dado} for rotulo, dado in botoes]]}
+        teclado = {
+            "keyboard": [[{"text": rotulo} for rotulo in botoes]],
+            "resize_keyboard": True,
+            "one_time_keyboard": True,
+        }
         payload = {
             "chat_id": TELEGRAM_ADMIN_CHAT_ID,
             "text": texto,
@@ -1602,10 +1630,97 @@ def notificar_draft(item):
     )
 
     botoes = [
-        ("✅ Aprovar", "aprovar:" + item["id"]),
-        ("❌ Rejeitar", "rejeitar:" + item["id"]),
+        "Aprovar " + item["id"],
+        "Rejeitar " + item["id"],
     ]
     _enviar_telegram_admin_com_botoes(texto, botoes)
+
+
+def notificar_draft_com_arte(item, pasta, quantidade_slides, tipo_ativo):
+    """Notificacao de draft FUNDIDA com a arte ja pre-gerada - voce ja
+    ve a imagem antes de decidir aprovar/rejeitar. Limitacao real do
+    Telegram: album (varias fotos) NAO aceita teclado anexado - nesse
+    caso, manda as imagens e o teclado vem numa mensagem curta logo
+    depois. Foto unica aceita teclado direto na mesma mensagem."""
+    modo_label = {"opening": "Opening", "breaking": "Breaking", "midday": "Midday", "closing": "Closing"}.get(item["content_mode"], item["content_mode"])
+
+    preview = item["headline"]
+    if item.get("instagram", {}).get("hook"):
+        preview += "\n" + item["instagram"]["hook"]
+
+    texto = (
+        "🆕 <b>Novo conteúdo (draft)</b>\n\n"
+        "Modo: " + modo_label + "\n"
+        "Assunto: " + item["headline"] + "\n"
+    )
+    if item.get("score") is not None:
+        texto += "Score: " + str(item["score"]) + "\n"
+    if item.get("reason"):
+        texto += "Motivo: " + "; ".join(item["reason"]) + "\n"
+    texto += (
+        "\nPrévia:\n" + preview
+        + "\n\nID: <code>" + item["id"] + "</code>"
+        + "\n\nFormato: " + str(tipo_ativo) + " (" + str(quantidade_slides) + " imagem(ns))"
+    )
+
+    botoes = ["Aprovar " + item["id"], "Rejeitar " + item["id"]]
+
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_ADMIN_CHAT_ID:
+        print("Social Content Engine: TELEGRAM_ADMIN_CHAT_ID não configurado - aviso privado não enviado.")
+        return
+
+    caminhos_slides = sorted(
+        os.path.join(pasta, f) for f in os.listdir(pasta)
+        if f.startswith("slide_") and f.endswith(".png")
+    ) if pasta and os.path.isdir(pasta) else []
+
+    try:
+        if len(caminhos_slides) == 1:
+            # Foto unica aceita teclado direto na mesma mensagem.
+            url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendPhoto"
+            teclado = {"keyboard": [[{"text": r} for r in botoes]], "resize_keyboard": True, "one_time_keyboard": True}
+            with open(caminhos_slides[0], "rb") as f:
+                files = {"photo": f}
+                data = {
+                    "chat_id": TELEGRAM_ADMIN_CHAT_ID,
+                    "caption": texto,
+                    "parse_mode": "HTML",
+                    "reply_markup": json.dumps(teclado),
+                }
+                requests.post(url, data=data, files=files, timeout=20)
+        elif len(caminhos_slides) >= 2:
+            # Album nao aceita teclado - manda as imagens, depois o
+            # teclado numa mensagem curta separada.
+            _enviar_album_telegram_content(caminhos_slides, texto)
+            _enviar_telegram_admin_com_botoes("👆 Aprovar ou rejeitar o conteúdo acima:", botoes)
+        else:
+            # Sem imagem nenhuma (pasta vazia/erro) - cai no texto puro.
+            notificar_draft(item)
+    except Exception as e:
+        print("Erro ao enviar draft com arte (caindo para notificação só de texto): " + str(e))
+        notificar_draft(item)
+
+
+def _enviar_album_telegram_content(caminhos_imagens, legenda):
+    """Duplicada de proposito (isolamento do design_engine.py) - envia
+    varias imagens juntas via sendMediaGroup, legenda na primeira."""
+    url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMediaGroup"
+    media = []
+    files = {}
+    for i, caminho in enumerate(caminhos_imagens[:10]):
+        chave_arquivo = "foto" + str(i)
+        item_media = {"type": "photo", "media": "attach://" + chave_arquivo}
+        if i == 0:
+            item_media["caption"] = legenda
+            item_media["parse_mode"] = "HTML"
+        media.append(item_media)
+        files[chave_arquivo] = open(caminho, "rb")
+    try:
+        data = {"chat_id": TELEGRAM_ADMIN_CHAT_ID, "media": json.dumps(media)}
+        requests.post(url, data=data, files=files, timeout=30)
+    finally:
+        for f in files.values():
+            f.close()
 
 
 def notificar_expirado(item):
@@ -1690,35 +1805,9 @@ def checar_aprovacoes_pendentes():
         if update_id > maior_update_id:
             maior_update_id = update_id
 
-        callback_query = update.get("callback_query")
         message = update.get("message", {})
-
-        if callback_query:
-            # Clique em botao inline - mesma via de dados que o
-            # comando de texto, so a origem que muda. Normaliza pra
-            # 'texto' no mesmo formato ("aprovar <ID>") pra reaproveitar
-            # a logica existente sem duplicar nada.
-            chat_id = str(callback_query.get("message", {}).get("chat", {}).get("id", ""))
-            dados_botao = callback_query.get("data", "") or ""
-            if ":" in dados_botao:
-                acao_botao, item_id_botao = dados_botao.split(":", 1)
-                texto = acao_botao + " " + item_id_botao
-            else:
-                texto = ""
-
-            callback_id = callback_query.get("id")
-            if callback_id and TELEGRAM_BOT_TOKEN:
-                try:
-                    requests.post(
-                        "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/answerCallbackQuery",
-                        json={"callback_query_id": callback_id},
-                        timeout=10,
-                    )
-                except Exception:
-                    pass  # nao critico - so remove o "carregando" no app do usuario
-        else:
-            chat_id = str(message.get("chat", {}).get("id", ""))
-            texto = message.get("text", "") or ""
+        chat_id = str(message.get("chat", {}).get("id", ""))
+        texto = message.get("text", "") or ""
 
         if TELEGRAM_ADMIN_CHAT_ID and chat_id != str(TELEGRAM_ADMIN_CHAT_ID):
             continue
@@ -1825,6 +1914,25 @@ def checar_aprovacoes_pendentes():
 
         novo_status = "approved" if acao == "aprovar" else "rejected"
         _registrar_transicao(item, novo_status, "Via Telegram")
+
+        if novo_status == "approved" and item.get("design_pregerado") and item.get("design_folder"):
+            # Arte ja foi gerada junto com o draft - pula reto pra
+            # 'designed', sem esperar o design engine rodar de novo.
+            # Aprovacao vira instantanea dentro do mesmo ciclo.
+            _registrar_transicao(item, "designed", "Arte pré-gerada no momento do draft - aprovação instantânea")
+            fila[indice] = item
+            fila_alterada = True
+            save_social_queue_full(fila)
+            print("Social Content Engine: item " + item_id + " aprovado com arte já pronta - pulou direto para designed.")
+            _enviar_telegram_admin(
+                "✅ Aprovado - pronto para publicar.\n\n"
+                "Assunto: " + item.get("headline", "") + "\n"
+                "ID: <code>" + item_id + "</code>\n\n"
+                "Depois de publicar manualmente, responda:\nPublicado " + item_id
+                + "\n(opcional: cole o link do post depois do ID)"
+            )
+            continue
+
         fila[indice] = item
         fila_alterada = True
         print("Social Content Engine: item " + item_id + " marcado como " + novo_status + " via Telegram.")
