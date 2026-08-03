@@ -1175,6 +1175,7 @@ def build_daily_summary_html(entries_today, today_str):
         "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
         "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
         "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<script src='analytics.js'></script>"
         "<meta charset='UTF-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         "<title>Resumo Diário - " + today_str + " | Antes do Sino</title>"
@@ -1224,6 +1225,7 @@ def build_weekly_summary_html(archive):
         "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
         "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
         "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<script src='analytics.js'></script>"
         "<meta charset='UTF-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         "<title>Resumo Semanal | Antes do Sino</title>"
@@ -2468,6 +2470,7 @@ def build_asset_page_html(profile, all_history, entries_today, generated_slugs, 
         "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
         "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
         "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<script src='../analytics.js'></script>"
         "<meta charset='UTF-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         "<title>" + page_title + "</title>"
@@ -2942,6 +2945,7 @@ def build_theme_page_html(theme, all_history, generated_asset_slugs, generated_t
         "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
         "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
         "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<script src='../analytics.js'></script>"
         "<meta charset='UTF-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         "<title>" + page_title + "</title>"
@@ -3283,6 +3287,7 @@ def build_event_page_html(event, all_history, generated_asset_slugs, generated_t
         "<script async src='https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG'></script>"
         "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
         "gtag('js', new Date());gtag('config', 'G-KKJKKZB9QG');</script>"
+        "<script src='../analytics.js'></script>"
         "<meta charset='UTF-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         "<title>" + page_title + "</title>"
@@ -3446,7 +3451,10 @@ def save_briefings_state(state):
 def should_send_morning_briefing():
     """Janela de 06h50 as 07h20, uma vez por dia - passa a ser o
     'Radar da Madrugada', enviado logo no inicio da janela de
-    operacao do bot."""
+    operacao do bot. So dispara em dia util da B3 (nao fim de semana
+    nem feriado nacional)."""
+    if not eh_dia_util_b3():
+        return False
     now = datetime.now(BR_TZ)
     today_str = now.strftime("%Y-%m-%d")
     state = load_briefings_state()
@@ -3457,7 +3465,10 @@ def should_send_morning_briefing():
 
 
 def should_send_evening_briefing():
-    """Janela de 18h15 as 18h45, uma vez por dia."""
+    """Janela de 18h15 as 18h45, uma vez por dia. So dispara em dia
+    util da B3 (nao fim de semana nem feriado nacional)."""
+    if not eh_dia_util_b3():
+        return False
     now = datetime.now(BR_TZ)
     today_str = now.strftime("%Y-%m-%d")
     state = load_briefings_state()
@@ -3489,7 +3500,10 @@ def save_snapshot_state(state):
 
 
 def should_send_market_snapshot():
-    """Janela de 12h00 as 12h15, uma vez por dia."""
+    """Janela de 12h00 as 12h15, uma vez por dia. So dispara em dia
+    util da B3 (nao fim de semana nem feriado nacional)."""
+    if not eh_dia_util_b3():
+        return False
     now = datetime.now(BR_TZ)
     today_str = now.strftime("%Y-%m-%d")
     state = load_snapshot_state()
@@ -3617,7 +3631,10 @@ def save_night_wrap_state(state):
 
 def should_send_night_wrap():
     """Janela de 22h00 as 22h30, uma vez por dia - encerra a janela de
-    operacao do bot (06h50-22h30)."""
+    operacao do bot (06h50-22h30). So dispara em dia util da B3 (nao
+    fim de semana nem feriado nacional)."""
+    if not eh_dia_util_b3():
+        return False
     now = datetime.now(BR_TZ)
     today_str = now.strftime("%Y-%m-%d")
     state = load_night_wrap_state()
@@ -4533,6 +4550,79 @@ def dentro_da_janela_de_operacao():
     agora = datetime.now(BR_TZ)
     minutos = agora.hour * 60 + agora.minute
     return JANELA_OPERACAO_INICIO_MINUTOS <= minutos <= JANELA_OPERACAO_FIM_MINUTOS
+
+
+FERIADOS_STATE_FILE = "docs/feriados_cache.json"
+
+# Lista fixa de reserva - usada SOMENTE se a Brasil API estiver fora do
+# ar. Precisa de manutencao manual todo ano (mesmo tipo de manutencao
+# que ja fazemos com SEED_EVENTS).
+FERIADOS_B3_FALLBACK_2026 = [
+    "2026-01-01",  # Confraternizacao Universal
+    "2026-02-16",  # Carnaval (segunda)
+    "2026-02-17",  # Carnaval (terca)
+    "2026-04-03",  # Sexta-feira Santa
+    "2026-04-21",  # Tiradentes
+    "2026-05-01",  # Dia do Trabalho
+    "2026-06-04",  # Corpus Christi
+    "2026-09-07",  # Independencia
+    "2026-10-12",  # Nossa Senhora Aparecida
+    "2026-11-02",  # Finados
+    "2026-11-15",  # Proclamacao da Republica
+    "2026-11-20",  # Consciencia Negra
+    "2026-12-25",  # Natal
+]
+
+
+def _carregar_feriados_do_ano(ano):
+    """Busca feriados nacionais via Brasil API (gratuita, sem chave,
+    mantida pela comunidade), com cache local por ano - nao busca de
+    novo depois da primeira vez no mesmo ano. Se a API falhar, cai na
+    lista fixa de reserva - nunca trava a checagem por causa de uma
+    API externa fora do ar."""
+    cache = {}
+    if os.path.exists(FERIADOS_STATE_FILE):
+        try:
+            with open(FERIADOS_STATE_FILE, "r", encoding="utf-8") as f:
+                cache = json.load(f)
+        except Exception:
+            cache = {}
+
+    chave_ano = str(ano)
+    if chave_ano in cache:
+        return cache[chave_ano]
+
+    try:
+        url = "https://brasilapi.com.br/api/feriados/v1/" + str(ano)
+        response = requests.get(url, timeout=10)
+        data = response.json()
+        datas = [item["date"] for item in data if "date" in item]
+        if not datas:
+            raise ValueError("resposta vazia da Brasil API")
+        cache[chave_ano] = datas
+        os.makedirs(os.path.dirname(FERIADOS_STATE_FILE), exist_ok=True)
+        with open(FERIADOS_STATE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False)
+        return datas
+    except Exception as e:
+        print("Erro ao buscar feriados via Brasil API (usando lista fixa de reserva): " + str(e))
+        if ano == 2026:
+            return FERIADOS_B3_FALLBACK_2026
+        return []
+
+
+def eh_dia_util_b3():
+    """Combina fim de semana + feriado nacional - usado como guarda
+    das mensagens padrao (Radar da Madrugada, Snapshot, Evening
+    Briefing, Night Wrap). NAO bloqueia a coleta normal de noticia
+    nem o Breaking (oportunista) - so as mensagens de rotina que
+    pressupoem que houve pregao."""
+    agora = datetime.now(BR_TZ)
+    if agora.weekday() >= 5:  # 5=sabado, 6=domingo
+        return False
+    feriados_do_ano = _carregar_feriados_do_ano(agora.year)
+    hoje_str = agora.strftime("%Y-%m-%d")
+    return hoje_str not in feriados_do_ano
 
 
 def main():
