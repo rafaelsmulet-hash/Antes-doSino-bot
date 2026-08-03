@@ -1924,12 +1924,13 @@ def checar_aprovacoes_pendentes():
             fila_alterada = True
             save_social_queue_full(fila)
             print("Social Content Engine: item " + item_id + " aprovado com arte já pronta - pulou direto para designed.")
-            _enviar_telegram_admin(
+            _enviar_telegram_admin_com_botoes(
                 "✅ Aprovado - pronto para publicar.\n\n"
                 "Assunto: " + item.get("headline", "") + "\n"
                 "ID: <code>" + item_id + "</code>\n\n"
-                "Depois de publicar manualmente, responda:\nPublicado " + item_id
-                + "\n(opcional: cole o link do post depois do ID)"
+                "Depois de publicar manualmente, toque no botão\n"
+                "(ou responda \"Publicado " + item_id + " <link>\" se quiser guardar o link do post).",
+                ["Publicado " + item_id]
             )
             continue
 
