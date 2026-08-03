@@ -200,6 +200,17 @@
 }
 .signal-reason{font-size:0.78rem;color:var(--bronze);font-weight:600;}
 .soft-cta{text-align:center;margin-top:24px;color:var(--slate);font-size:0.9rem;}
+
+.compare-table{width:100%;border-collapse:collapse;max-width:760px;margin:0 auto;}
+.compare-table th{
+  font-family:'IBM Plex Mono',monospace;font-size:0.75rem;letter-spacing:0.5px;
+  text-transform:uppercase;color:var(--slate-dim);text-align:left;padding:0 20px 14px;
+  border-bottom:1px solid var(--line);
+}
+.compare-table th:last-child{color:var(--bronze);}
+.compare-table td{padding:18px 20px;border-bottom:1px solid var(--line);color:var(--slate);font-size:0.95rem;vertical-align:top;}
+.compare-table td:last-child{color:var(--cream);}
+.compare-table tr:last-child td{border-bottom:none;}
 .soft-cta a{color:var(--gold);font-weight:600;}
 
 .events-section{padding:4vh 6vw;max-width:1120px;margin:0 auto;}
@@ -247,9 +258,13 @@
 
 <section id="rotina" style="padding-top:1vh;">
   <div class="section-head">
-    <span class="kicker">Não é um feed. É uma rotina</span>
-    <h2>Todos os dias, nesses 4 momentos</h2>
+    <span class="kicker">Não é um feed. É um método</span>
+    <h2>Sua rotina de acompanhamento do mercado</h2>
   </div>
+  <p style="color:var(--slate);max-width:640px;margin-bottom:20px;">
+    Todos os dias úteis, você recebe quatro atualizações que acompanham o ritmo do pregão —
+    da abertura ao fechamento, sem você precisar ficar de olho.
+  </p>
   <div class="feature-grid">
     <div class="feature">
       <span class="num">06h50</span>
@@ -272,7 +287,11 @@
       <p>O fechamento do dia, em números, antes de você desligar de vez.</p>
     </div>
   </div>
-  <p class="soft-cta">Isso é só a rotina fixa — Breaking News chega assim que algo relevante acontece. <a href="https://t.me/tribute/app?startapp=sZPm">Entrar no grupo</a></p>
+  <p class="soft-cta" style="margin-bottom:20px;">Isso é só a rotina fixa — Breaking News chega assim que algo relevante acontece.</p>
+  <div style="text-align:center;">
+    <p style="color:var(--cream);font-size:1.05rem;margin-bottom:16px;">Comece sua rotina de acompanhamento do mercado hoje.</p>
+    <a href="https://t.me/tribute/app?startapp=sZPm" class="btn-primary">Conhecer o Telegram →</a>
+  </div>
 </section>
 
 <div id="since-visit-box" class="since-visit" style="display:none;"></div>
@@ -323,24 +342,42 @@
 
 <section>
   <div class="section-head">
-    <span class="kicker">Grátis vs. Telegram</span>
-    <h2>Você já viu o que fazemos. A diferença é o instante.</h2>
+    <span class="kicker">Se já existe tanto conteúdo grátis...</span>
+    <h2>Por que pagar pelo Antes do Sino?</h2>
   </div>
   <p style="color:var(--slate);max-width:640px;margin-bottom:28px;">
-    Os Sinais do Dia acima, a tradução e a classificação de sentimento — tudo isso já é seu, de graça, aqui no site.
-    No grupo do Telegram, a mesma curadoria chega <b style="color:var(--cream);">no instante em que acontece</b>, sem precisar recarregar a página.
+    O que você vê aqui no site é real e é grátis — os Sinais do Dia, a tradução, a classificação de sentimento.
+    A diferença não é a qualidade da informação. É o <b style="color:var(--cream);">esforço</b> que ela exige de você.
   </p>
+  <table class="compare-table">
+    <tr>
+      <th>Conteúdo gratuito</th>
+      <th>Antes do Sino</th>
+    </tr>
+    <tr>
+      <td>Você acompanha vários sites e perfis.</td>
+      <td>O cenário chega organizado até você.</td>
+    </tr>
+    <tr>
+      <td>Você monta sua própria leitura do mercado.</td>
+      <td>Você recebe uma síntese com contexto.</td>
+    </tr>
+    <tr>
+      <td>Informação espalhada ao longo do dia.</td>
+      <td>Uma rotina estruturada em quatro momentos.</td>
+    </tr>
+    <tr>
+      <td>Gratuito, mas exige tempo.</td>
+      <td>Economiza tempo e reduz a dispersão.</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <div class="section-head">
+    <span class="kicker">Sempre, nas duas versões</span>
+  </div>
   <div class="feature-grid">
-    <div class="feature">
-      <span class="num">Aqui no site</span>
-      <h4>Curadoria, quando você abrir</h4>
-      <p>Sinais do dia, tradução e sentimento — atualizados a cada poucos minutos, disponíveis sempre que você visitar.</p>
-    </div>
-    <div class="feature">
-      <span class="num">No Telegram</span>
-      <h4>A mesma curadoria, no instante</h4>
-      <p>Notificação direta assim que a notícia é processada — sem precisar lembrar de checar o site.</p>
-    </div>
     <div class="feature">
       <span class="num">Sempre</span>
       <h4>Sem ruído</h4>
