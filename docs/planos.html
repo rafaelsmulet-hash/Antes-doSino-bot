@@ -10,49 +10,257 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Planos e Assinatura | Antes do Sino</title>
-<link rel="stylesheet" href="assets.css">
+<title>Planos — Antes do Sino</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-deep: #050D1A;
+    --navy: #0B1F3A;
+    --navy-light: #142c52;
+    --gold: #F2C879;
+    --bronze: #C9932F;
+    --cream: #F5EFE3;
+    --slate: #7C8CA6;
+    --slate-dim: #4a5a75;
+    --up: #3FB877;
+    --down: #E2574C;
+    --line: rgba(242,200,121,0.16);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background: radial-gradient(ellipse 120% 80% at 50% -10%, var(--navy-light), var(--navy) 45%, var(--navy-deep) 100%);
+    color:var(--cream);
+    font-family:'Inter', sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none;}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+
+  nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:22px 6vw;
+    position:sticky;top:0;z-index:50;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(180deg, rgba(5,13,26,0.85), rgba(5,13,26,0.4));
+    border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;letter-spacing:0.3px;}
+  .brand svg{width:22px;height:22px;flex-shrink:0;}
+  .nav-cta{
+    font-size:0.85rem;font-weight:600;padding:9px 20px;border-radius:100px;
+    background:var(--gold);color:var(--navy-deep);
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(242,200,121,0.25);}
+
+  .btn-primary{
+    background:var(--gold);color:var(--navy-deep);font-weight:700;font-size:0.98rem;
+    padding:15px 34px;border-radius:100px;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow:0 8px 30px rgba(242,200,121,0.18);
+    display:inline-block;
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 34px rgba(242,200,121,0.32);}
+
+  section{padding:8vh 6vw;max-width:1120px;margin:0 auto;}
+  .section-head{max-width:560px;margin-bottom:48px;}
+  .kicker{
+    font-family:'IBM Plex Mono',monospace;font-size:0.78rem;letter-spacing:1.5px;
+    color:var(--bronze);text-transform:uppercase;display:block;margin-bottom:14px;
+  }
+  .section-head h2{font-family:'Fraunces',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;}
+
+  .sub-nav{
+    display:flex;gap:24px;padding:14px 6vw;overflow-x:auto;
+    border-bottom:1px solid var(--line);font-size:0.85rem;
+  }
+  .nav-links{color:var(--slate);white-space:nowrap;}
+  .nav-links:hover{color:var(--cream);}
+
+  .hero-compact{padding:5vh 6vw 2vh;text-align:center;max-width:640px;margin:0 auto;}
+  .hero-compact h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.6rem,4vw,2.3rem);color:var(--cream);margin-bottom:14px;}
+  .hero-compact p{color:var(--slate);font-size:1rem;line-height:1.6;}
+
+  .feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .feature{border-top:1px solid var(--line);padding-top:22px;}
+  .feature .num{font-family:'IBM Plex Mono',monospace;color:var(--slate-dim);font-size:0.8rem;margin-bottom:14px;display:block;}
+  .feature h4{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;margin-bottom:8px;}
+  .feature p{color:var(--slate);font-size:0.9rem;line-height:1.5;}
+
+  .flow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:32px 0;}
+  .flow-step{
+    background:rgba(255,255,255,0.035);border:1px solid var(--line);border-radius:14px;
+    padding:18px 22px;text-align:center;min-width:160px;
+  }
+  .flow-step .hora{font-family:'IBM Plex Mono',monospace;color:var(--bronze);font-size:0.95rem;display:block;margin-bottom:6px;}
+  .flow-step .nome{font-family:'Fraunces',serif;font-weight:600;font-size:1rem;}
+  .flow-arrow{color:var(--slate-dim);font-size:1.4rem;}
+
+  .lista-recebe{list-style:none;max-width:560px;margin:0 auto;}
+  .lista-recebe li{
+    padding:14px 0;border-bottom:1px solid var(--line);color:var(--cream);
+    font-size:1rem;display:flex;gap:12px;align-items:flex-start;
+  }
+  .lista-recebe li:last-child{border-bottom:none;}
+  .lista-recebe li::before{content:"✓";color:var(--up);font-weight:700;flex-shrink:0;}
+
+  .publico-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto;}
+  .publico-card{
+    background:rgba(255,255,255,0.035);border:1px solid var(--line);border-radius:14px;
+    padding:24px;text-align:center;
+  }
+  .publico-card p{color:var(--cream);font-size:0.95rem;line-height:1.5;}
+
+  .preco-box{
+    text-align:center;max-width:480px;margin:0 auto;
+    background:rgba(255,255,255,0.035);border:1px solid var(--line);border-radius:20px;
+    padding:44px 32px;
+  }
+  .preco-box .valor{font-family:'Fraunces',serif;font-size:clamp(2.2rem,6vw,3rem);font-weight:700;color:var(--gold);}
+  .preco-box .por-dia{color:var(--slate);font-size:0.95rem;margin:10px 0 28px;}
+
+  footer{
+    padding:5vh 6vw;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
+    color:var(--slate-dim);font-size:0.82rem;
+  }
+
+  @media(max-width:860px){
+    .feature-grid{grid-template-columns:repeat(2,1fr);}
+    .publico-grid{grid-template-columns:1fr;}
+  }
+  @media(max-width:560px){
+    .feature-grid{grid-template-columns:1fr;}
+    .flow{flex-direction:column;}
+    .flow-arrow{transform:rotate(90deg);}
+  }
+</style>
 </head>
 <body>
 
 <nav>
-  <div class="brand">🔔 Antes do Sino</div>
-  <a href="index.html" class="nav-cta" style="background:transparent;border:1px solid var(--line);color:var(--cream);">Voltar</a>
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v2M8.5 20a3.5 3.5 0 0 0 7 0M5 17h14l-1.4-2.1A7 7 0 0 1 16.5 11V9a4.5 4.5 0 0 0-9 0v2a7 7 0 0 1-1.1 3.9L5 17Z" stroke="#F2C879" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Antes do Sino
+  </div>
+  <a href="https://t.me/tribute/app?startapp=sZPm" class="nav-cta">Entrar no grupo</a>
 </nav>
+<div class="sub-nav">
+  <a href="como-funciona.html" class="nav-links">Como funciona</a>
+  <a href="planos.html" class="nav-links">Planos</a>
+  <a href="resumo-diario.html" class="nav-links">Resumo diário</a>
+  <a href="ativos/index.html" class="nav-links">Ativos</a>
+  <a href="temas/index.html" class="nav-links">Temas</a>
+  <a href="eventos/index.html" class="nav-links">Eventos</a>
+</div>
+
+<div class="hero-compact">
+  <h1>Você não precisa acompanhar dezenas de fontes.</h1>
+  <p>O Antes do Sino reúne, filtra e explica os acontecimentos mais relevantes para que você comece o dia preparado.</p>
+</div>
 
 <section>
-  <div class="section-head" style="text-align:center;max-width:100%;">
-    <span class="kicker">Planos</span>
-    <h2>Simples, direto, sem letras miúdas</h2>
-    <p style="color:var(--slate);margin-top:14px;">Um único plano. Sem pegadinha, sem fidelidade.</p>
+  <div class="section-head" style="margin:0 auto 32px;text-align:center;max-width:640px;">
+    <span class="kicker">O problema</span>
   </div>
+  <p style="max-width:640px;margin:0 auto;text-align:center;color:var(--slate);font-size:1.05rem;line-height:1.7;">
+    Acompanhar o mercado exige abrir vários sites, redes sociais e plataformas ao longo do dia.
+    Isso consome tempo — e ainda aumenta a chance de você perder o contexto por trás das notícias.
+  </p>
+</section>
 
-  <div class="plan-card">
-    <div style="color:var(--slate);font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;">Assinatura Telegram</div>
-    <div class="plan-price">R$ 15,90<span>/mês</span></div>
-    <ul class="plan-features">
-      <li>Notícias direto no seu Telegram, sem precisar abrir o site</li>
-      <li>Mesma curadoria do site: tradução, resumo e sentimento</li>
-      <li>Sem propaganda ou ruído</li>
-      <li>Cancele quando quiser, sem fidelidade</li>
-    </ul>
-    <a href="https://t.me/tribute/app?startapp=sZPm" class="btn-primary">Assinar agora →</a>
+<section>
+  <div class="section-head" style="margin:0 auto 8px;text-align:center;max-width:640px;">
+    <span class="kicker">A solução</span>
+    <h2>Uma rotina, não um feed infinito</h2>
   </div>
+  <div class="flow">
+    <div class="flow-step">
+      <span class="hora">06h50</span>
+      <span class="nome">🌅 Radar da Madrugada</span>
+    </div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step">
+      <span class="hora">12h00</span>
+      <span class="nome">📈 Snapshot</span>
+    </div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step">
+      <span class="hora">18h15</span>
+      <span class="nome">📊 Evening Briefing</span>
+    </div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step">
+      <span class="hora">22h30</span>
+      <span class="nome">🌙 Night Wrap</span>
+    </div>
+  </div>
+  <div class="feature-grid">
+    <div class="feature">
+      <span class="num">Abertura</span>
+      <p>O que aconteceu enquanto você dormia, e o que isso significa pra abertura da B3.</p>
+    </div>
+    <div class="feature">
+      <span class="num">Meio-dia</span>
+      <p>Uma fotografia rápida do mercado até agora, sem precisar abrir mais nenhuma aba.</p>
+    </div>
+    <div class="feature">
+      <span class="num">Fechamento</span>
+      <p>Como foi o pregão, o que explicou o dia, e o que observar amanhã.</p>
+    </div>
+    <div class="feature">
+      <span class="num">Encerramento</span>
+      <p>O fechamento do dia em números, antes de você desligar de vez.</p>
+    </div>
+  </div>
+</section>
 
-  <div style="max-width:600px;margin:60px auto 0;text-align:center;">
-    <span class="kicker" style="display:block;margin-bottom:14px;">O que é gratuito</span>
-    <p style="color:var(--slate);line-height:1.6;">
-      O site inteiro — cotações, Sinais do Dia, tradução, classificação de sentimento, resumo diário —
-      é gratuito e sempre será. A assinatura não desbloqueia conteúdo novo: ela existe pra quem não
-      quer precisar abrir o site pra saber o que está acontecendo. As mesmas notícias chegam direto
-      no seu Telegram, sem você precisar ir buscar.
-    </p>
+<section>
+  <div class="section-head" style="margin:0 auto 32px;text-align:center;max-width:640px;">
+    <span class="kicker">O que você recebe</span>
+  </div>
+  <ul class="lista-recebe">
+    <li>Resumos com contexto — não só a manchete, mas por que ela importa.</li>
+    <li>Agenda econômica dos próximos dias, sem você precisar procurar.</li>
+    <li>Alertas relevantes durante o pregão, quando algo de peso acontece.</li>
+    <li>Leitura preparada pra celular — feita pra ser lida em 1-2 minutos.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="section-head" style="margin:0 auto 32px;text-align:center;max-width:640px;">
+    <span class="kicker">Para quem é</span>
+  </div>
+  <div class="publico-grid">
+    <div class="publico-card">
+      <p>Investidores que não conseguem acompanhar o mercado durante todo o dia.</p>
+    </div>
+    <div class="publico-card">
+      <p>Profissionais que querem começar o pregão preparados.</p>
+    </div>
+    <div class="publico-card">
+      <p>Quem prefere entender o contexto, não apenas ler manchetes.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="preco-box">
+    <span class="valor">R$ 15,90<span style="font-size:1rem;color:var(--slate);">/mês</span></span>
+    <p class="por-dia">Menos de R$ 0,55 por dia.</p>
+    <a href="https://t.me/tribute/app?startapp=sZPm" class="btn-primary">Assinar o Antes do Sino →</a>
   </div>
 </section>
 
 <footer>
   <span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>
-  <a href="index.html" style="color:var(--gold)">Voltar ao site</a>
+  <div style="display:flex;gap:16px;">
+    <a href="como-funciona.html" style="color:var(--gold)">Como funciona</a>
+    <a href="index.html" style="color:var(--gold)">Início</a>
+  </div>
 </footer>
 
 </body>
