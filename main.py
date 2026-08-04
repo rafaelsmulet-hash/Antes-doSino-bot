@@ -33,31 +33,42 @@ STATE_FILE = "sent_items.json"
 BR_TZ = timezone(timedelta(hours=-3))
 
 FEEDS = {
+    # --- Prioridade maxima (5) ---
     "Bloomberg Markets": {"url": "https://feeds.bloomberg.com/markets/news.rss", "priority": 5, "language": "en", "category": "Mercado financeiro"},
     "CNBC - Finance": {"url": "https://www.cnbc.com/id/10000664/device/rss/rss.html", "priority": 5, "language": "en", "category": "Mercado financeiro"},
     "CNBC - Economy": {"url": "https://www.cnbc.com/id/20910258/device/rss/rss.html", "priority": 5, "language": "en", "category": "Macroeconomia"},
     "WSJ Markets": {"url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml", "priority": 5, "language": "en", "category": "Mercado financeiro"},
-    "IBGE": {"url": "https://agenciadenoticias.ibge.gov.br/agencia-rss", "priority": 5, "language": "pt", "category": "Indicadores economicos"},
     "InfoMoney": {"url": "https://www.infomoney.com.br/feed/", "priority": 5, "language": "pt", "category": "Mercado financeiro"},
+    "IBGE": {"url": "https://agenciadenoticias.ibge.gov.br/agencia-rss", "priority": 5, "language": "pt", "category": "Indicadores economicos"},
+
+    # --- Prioridade alta (4) ---
     "Money Times": {"url": "https://www.moneytimes.com.br/mercados/feed", "priority": 4, "language": "pt", "category": "Mercado financeiro"},
     "Investing.com Brasil": {"url": "https://br.investing.com/rss/news_25.rss", "priority": 4, "language": "pt", "category": "Mercado financeiro"},
-    "MarketWatch": {"url": "https://feeds.marketwatch.com/marketwatch/topstories/", "priority": 4, "language": "en", "category": "Mercado financeiro"},
-    "Exame": {"url": "https://exame.com/feed/", "priority": 4, "language": "pt", "category": "Empresas"},
     "Brazil Journal": {"url": "https://braziljournal.com/feed/", "priority": 4, "language": "pt", "category": "Empresas"},
+    "Exame": {"url": "https://exame.com/feed/", "priority": 4, "language": "pt", "category": "Empresas"},
+    "MarketWatch": {"url": "https://feeds.marketwatch.com/marketwatch/topstories/", "priority": 4, "language": "en", "category": "Mercado financeiro"},
     "Seeking Alpha": {"url": "https://seekingalpha.com/market_currents.xml", "priority": 4, "language": "en", "category": "Mercado financeiro"},
-    "TechCrunch": {"url": "https://techcrunch.com/feed/", "priority": 4, "language": "en", "category": "Tecnologia"},
     "Poder360": {"url": "https://www.poder360.com.br/poder-economia/feed/", "priority": 4, "language": "pt", "category": "Governo"},
-    "UOL Economia": {"url": "https://rss.uol.com.br/feed/economia.xml", "priority": 3, "language": "pt", "category": "Macroeconomia"},
+    "Nasdaq": {"url": "https://www.nasdaq.com/feed/rssoutbound?category=Markets", "priority": 4, "language": "en", "category": "Mercado financeiro"},
+
+    # --- Prioridade media (3) ---
     "G1 Economia": {"url": "https://g1.globo.com/dynamo/economia/rss2.xml", "priority": 3, "language": "pt", "category": "Macroeconomia"},
+    "UOL Economia": {"url": "https://rss.uol.com.br/feed/economia.xml", "priority": 3, "language": "pt", "category": "Macroeconomia"},
     "Seu Dinheiro": {"url": "https://www.seudinheiro.com/feed/", "priority": 3, "language": "pt", "category": "Mercado financeiro"},
     "Suno Noticias": {"url": "https://www.suno.com.br/noticias/feed/", "priority": 3, "language": "pt", "category": "Mercado financeiro"},
     "Neofeed": {"url": "https://neofeed.com.br/feed/", "priority": 3, "language": "pt", "category": "Empresas"},
+    "TechCrunch": {"url": "https://techcrunch.com/feed/", "priority": 3, "language": "en", "category": "Tecnologia"},
     "Yahoo Finance": {"url": "https://finance.yahoo.com/news/rssindex", "priority": 3, "language": "en", "category": "Mercado financeiro"},
     "Business Insider": {"url": "https://www.businessinsider.com/rss", "priority": 3, "language": "en", "category": "Empresas"},
-    "Nasdaq": {"url": "https://www.nasdaq.com/feed/rssoutbound?category=Markets", "priority": 3, "language": "en", "category": "Mercado financeiro"},
-    "ZeroHedge": {"url": "https://feeds.feedburner.com/zerohedge/feed", "priority": 3, "language": "en", "category": "Macroeconomia"},
     "CNBC - US News": {"url": "https://www.cnbc.com/id/15837362/device/rss/rss.html", "priority": 3, "language": "en", "category": "Internacional"},
-    "Yahoo Finance Australia": {"url": "https://au.finance.yahoo.com/news/rssindex", "priority": 3, "language": "en", "category": "Internacional"},
+
+    # --- Prioridade baixa (2) ---
+    "ZeroHedge": {"url": "https://feeds.feedburner.com/zerohedge/feed", "priority": 2, "language": "en", "category": "Macroeconomia"},
+
+    # --- Fontes primarias novas (auditoria editorial - Etapa 1) ---
+    "Federal Reserve": {"url": "https://www.federalreserve.gov/feeds/press_monetary.xml", "priority": 5, "language": "en", "category": "Banco central"},
+    "SEC": {"url": "https://www.sec.gov/news/pressreleases.rss", "priority": 4, "language": "en", "category": "Regulacao"},
+    "BLS": {"url": "https://www.bls.gov/feed/bls_latest.rss", "priority": 4, "language": "en", "category": "Indicadores economicos"},
 }
 
 # PORTUGUESE_SOURCES e derivado do campo "language" de FEEDS - uma unica
@@ -195,7 +206,7 @@ def passes_source_specific_filter(source, entry):
     fonte nova tem um perfil de ruido diferente, entao usa um criterio
     proprio, mantendo a filosofia de maximo sinal, minimo ruido.
     Retorna (aprovado: bool, motivo_descarte: str)."""
-    if source not in ("TechCrunch", "Poder360", "Yahoo Finance Australia", "IBGE"):
+    if source not in ("TechCrunch", "Poder360", "IBGE"):
         return True, ""
 
     text = (entry.get("title", "") + " " + get_entry_body(entry)).lower()
@@ -228,20 +239,6 @@ def passes_source_specific_filter(source, entry):
         ]
         if not any(p in text for p in prioridade):
             return False, "politica sem impacto economico direto"
-        return True, ""
-
-    if source == "Yahoo Finance Australia":
-        local = [
-            "australian household", "aussie household", "centrelink",
-            "medicare australia", "australia post", "nrma", "afterpay bnpl",
-        ]
-        global_signal = [
-            "global", "international", "wall street", "federal reserve", " fed ",
-            "china", "opec", "nasdaq", "s&p 500", "dow jones", "us dollar",
-            "crude oil", "gold price",
-        ]
-        if any(l in text for l in local) and not any(g in text for g in global_signal):
-            return False, "noticia exclusivamente local da Australia"
         return True, ""
 
     if source == "IBGE":
@@ -4734,7 +4731,7 @@ def main():
                 time.sleep(3)
 
         descartados = recebidos - aprovados
-        if source in ("TechCrunch", "Poder360", "Yahoo Finance Australia", "IBGE") or descartados > 0:
+        if source in ("TechCrunch", "Poder360", "IBGE") or descartados > 0:
             resumo_fonte = (
                 "Fonte: " + source + "\n"
                 "Itens recebidos: " + str(recebidos) + "\n"
