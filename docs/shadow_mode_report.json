@@ -1,12 +1,20 @@
 {
   "date": "2026-08-04",
-  "total_ingeridas": 744,
-  "aprovadas_pelo_fluxo_atual": 2,
-  "descartadas_pelos_filtros_atuais": 742,
-  "score_medio_materialidade": 6.5,
+  "total_ingeridas": 992,
+  "aprovadas_pelo_fluxo_atual": 5,
+  "descartadas_pelos_filtros_atuais": 987,
+  "score_medio_materialidade": 5.0,
   "seriam_breaking": 1,
-  "iriam_para_rodada": 1,
-  "seriam_descartadas_pelo_novo_sistema": 0,
-  "total_divergencias": 0,
-  "divergencias": []
+  "iriam_para_rodada": 3,
+  "seriam_descartadas_pelo_novo_sistema": 1,
+  "total_divergencias": 1,
+  "divergencias": [
+    {
+      "title": "Etsy's CFO Sells Over 3,000 Shares, Representing 21% of Direct Holdings. Here's What That Means for Investors.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    }
+  ]
 }
