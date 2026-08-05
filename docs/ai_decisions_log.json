@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Russian attack kills at least 17 in Kyiv as Ukraine hammers more Wildberries warehouses",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "A notícia não está diretamente relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:35.002002-03:00"
-    },
-    {
-      "title": "GM, Chinese automaker extend joint venture for 20 years despite geopolitical tensions with U.S.",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:35.168694-03:00"
-    },
-    {
-      "title": "SpaceX's AI spending unnerves Wall Street despite promises of quick payoff",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:35.316657-03:00"
-    },
-    {
-      "title": "How Economic Power Has Shifted Over The Past 200 Years",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T06:58:36.552869-03:00"
-    },
-    {
-      "title": "US Expands Strategic Foothold On Somalia's Coast As Yemen Conflict Simmers",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T06:58:40.159427-03:00"
-    },
-    {
-      "title": "Which Countries Think They're On The Right Track?",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T06:58:43.691805-03:00"
-    },
-    {
-      "title": "Half Of Foreign Welfare Recipients In Spain Are Moroccan",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A notícia destaca a alta participação de marroquinos no benefício de renda mínima na Espanha, o que pode ter implicações para a política migratória e a economia local.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:47.223075-03:00"
-    },
-    {
       "title": "The Last Places Standing When The Sky Turns To Ash",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T20:16:03.067766-03:00"
+    },
+    {
+      "title": "Selic a 14%: Como o Ibovespa, os juros futuros e o dólar devem reagir ao Copom",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "redução da Selic efeito positivo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T20:20:50.309813-03:00"
+    },
+    {
+      "title": "Por que as ações da HubSpot despencaram hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A queda das ações da HubSpot é um evento relevante e materialmente relevante para o mercado agora, pois pode influenciar a percepção dos investidores sobre o desempenho da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:20:56.359629-03:00"
+    },
+    {
+      "title": "Por que as ações da AppLovin despencaram hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "resultado do relatório financeiro foi pior do que o esperado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:20:59.161654-03:00"
+    },
+    {
+      "title": "Por que as ações da Duolingo estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a queda das ações da Duolingo pode ser um sinal de desconfiança do mercado em relação ao setor de educação online",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:21:02.079748-03:00"
+    },
+    {
+      "title": "Por que as ações da Motorola Solutions estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:21:04.734132-03:00"
+    },
+    {
+      "title": "Axia Energia obtém lucro de R$1,6 bi no 2ºtri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:21:07.360235-03:00"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:21:19.699383-03:00"
     }
   ]
 }
