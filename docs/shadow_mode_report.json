@@ -1,35 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 31376,
-  "aprovadas_pelo_fluxo_atual": 652,
-  "descartadas_pelos_filtros_atuais": 30724,
+  "total_ingeridas": 31624,
+  "aprovadas_pelo_fluxo_atual": 653,
+  "descartadas_pelos_filtros_atuais": 30971,
   "score_medio_materialidade": 4.19,
-  "seriam_breaking": 53,
-  "iriam_para_rodada": 546,
-  "seriam_descartadas_pelo_novo_sistema": 1401,
-  "total_divergencias": 766,
+  "seriam_breaking": 54,
+  "iriam_para_rodada": 547,
+  "seriam_descartadas_pelo_novo_sistema": 1399,
+  "total_divergencias": 764,
   "divergencias": [
-    {
-      "title": "Silicon Valley's favorite fantasy is back: one app to rule them all",
-      "source": "Business Insider",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Morgan Stanley mapped 3 AI futures. One company wins them all.",
-      "source": "Business Insider",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Trump's deportation agenda raised prices, contracted local economies, immigration group says",
-      "source": "CNBC - US News",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "How Economic Power Has Shifted Over The Past 200 Years",
       "source": "ZeroHedge",
@@ -145,6 +124,27 @@
     {
       "title": "Northwest Natural Holding Non-GAAP EPS of $0.01 beats by $0.08, revenue of $243.55M misses by $28.42M",
       "source": "Seeking Alpha",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "As 26-Year Stock Market Milestone Approaches, History Points to What Comes Next",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Sandisk stock is bouncing — how to play earnings with limited risk: Alpha Options Playbook",
+      "source": "Yahoo Finance",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "AMD falls as investors seek bigger AI payoff",
+      "source": "Yahoo Finance",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"

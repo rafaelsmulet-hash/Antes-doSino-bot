@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "2 pilots bought 7 RVs, and are turning their 'Airbnb on wheels' business into a retirement plan",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:22.983017-03:00"
-    },
-    {
-      "title": "The AI bros are lonely",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:23.083497-03:00"
-    },
-    {
-      "title": "Silicon Valley's favorite fantasy is back: one app to rule them all",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T06:58:23.772554-03:00"
-    },
-    {
-      "title": "The law firm of the future may look less like a pyramid — and more like an obelisk",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:27.174130-03:00"
-    },
-    {
-      "title": "Morgan Stanley mapped 3 AI futures. One company wins them all.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T06:58:27.702662-03:00"
-    },
-    {
-      "title": "Austin's long, painful real estate hangover",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:30.816370-03:00"
-    },
-    {
-      "title": "Trump's deportation agenda raised prices, contracted local economies, immigration group says",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T06:58:31.567335-03:00"
-    },
-    {
       "title": "Russian attack kills at least 17 in Kyiv as Ukraine hammers more Wildberries warehouses",
       "source": "CNBC - US News",
       "score": 0.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T20:11:29.231358-03:00"
+    },
+    {
+      "title": "Copom: Petróleo, juros nos EUA e inflação vão ditar se haverá mais cortes na Selic",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Decisão do Copom sobre juros e inflação é relevante para o mercado brasileiro",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T20:15:35.422558-03:00"
+    },
+    {
+      "title": "Riachuelo (RIAA3) registra recorde para um 2º tri ao lucrar R$ 168 mi, alta de 36%",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Aumento na receita líquida consolidada e lucro recorde indicam saúde financeira da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:15:41.248993-03:00"
+    },
+    {
+      "title": "Ídolo do Egito, Mohamed Salah vai ganhar R$ 90 milhões a menos que Neymar em novo clube",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:15:45.838981-03:00"
+    },
+    {
+      "title": "Intrepid raises 2026 TRIO output guide to 295,000-305,000 tons while starting $50M buyback in Q3",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:15:48.720291-03:00"
+    },
+    {
+      "title": "Viavi anticipates Q1 FY2027 EPS of $0.40-$0.42 as it targets a $500M quarter in calendar 2027",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:15:51.392537-03:00"
+    },
+    {
+      "title": "I Ranked Big Tech's AI Spending Four Ways. The Order Never Changed.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:16:00.423709-03:00"
+    },
+    {
+      "title": "ConocoPhillips Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:16:03.067766-03:00"
     }
   ]
 }
