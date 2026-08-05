@@ -1,42 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 30136,
+  "total_ingeridas": 30384,
   "aprovadas_pelo_fluxo_atual": 646,
-  "descartadas_pelos_filtros_atuais": 29490,
-  "score_medio_materialidade": 4.16,
+  "descartadas_pelos_filtros_atuais": 29738,
+  "score_medio_materialidade": 4.17,
   "seriam_breaking": 54,
-  "iriam_para_rodada": 538,
-  "seriam_descartadas_pelo_novo_sistema": 1408,
-  "total_divergencias": 771,
+  "iriam_para_rodada": 540,
+  "seriam_descartadas_pelo_novo_sistema": 1406,
+  "total_divergencias": 770,
   "divergencias": [
-    {
-      "title": "Trading in Pre-IPO Companies Is Taking Off in Popularity. Here's Why That's Bullish for Crypto.",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Alphabet Stock Could Soar as It Targets the $300 Billion AI Chip Market Dominated by Nvidia",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Why Big Tech's AI Data Centers Are Turning to Bloom Energy for Power",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Asian Shares Follow Wall Street Higher Amid Easing AI, Middle East Concerns",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "3 Reasons Chewy Stock Fits Peter Lynch's Blueprint for a 10-Bagger Stock",
       "source": "Nasdaq",
@@ -148,6 +120,34 @@
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Half Of Foreign Welfare Recipients In Spain Are Moroccan",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Oil Markets Price In An Iran Deal That Does Not Exist Yet",
+      "source": "ZeroHedge",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
+      "source": "WSJ Markets",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "eXp World declares $0.05 dividend",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }
