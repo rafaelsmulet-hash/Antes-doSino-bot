@@ -226,11 +226,17 @@ def _load_decision_log():
         return {"decisions": []}
 
 
-def log_decision(title, source, score, motivo, decisao_sugerida):
+def log_decision(title, source, score, motivo, decisao_sugerida, decisao_sistema_atual=None):
     """Registra 1 decisao editorial. 'decisao_sugerida' precisa ser
     'breaking', 'round' ou 'discard' - qualquer outro valor e
     normalizado para 'discard' com aviso, nunca quebra o registro por
-    causa de um valor inesperado."""
+    causa de um valor inesperado.
+
+    'decisao_sistema_atual' e OPCIONAL (Fase 1) - registra o que o
+    fluxo ATUAL fez de verdade com essa noticia ('publicado' ou
+    'descartado'), permitindo comparar depois o sistema novo (sombra)
+    com o que realmente aconteceu. Parametro opcional para nao quebrar
+    quem chamou log_decision na Fase 0 sem esse argumento."""
     if decisao_sugerida not in DECISOES_VALIDAS:
         print("AVISO (decision_log): decisao_sugerida invalida ('" + str(decisao_sugerida) + "'), registrando como 'discard'.")
         decisao_sugerida = "discard"
@@ -242,6 +248,7 @@ def log_decision(title, source, score, motivo, decisao_sugerida):
         "score": score,
         "motivo": motivo,
         "decisao_sugerida": decisao_sugerida,
+        "decisao_sistema_atual": decisao_sistema_atual,
         "timestamp": datetime.now(BR_TZ).isoformat(),
     }
     state["decisions"].append(registro)
@@ -299,3 +306,166 @@ def get_tier_for_source(feeds_dict, source_name):
     if not info_fonte:
         return TIER_PADRAO
     return get_source_tier(info_fonte.get("priority"))
+
+
+# =============================================================================
+# 5) DECISAO SOMBRA E CLUSTERING SIMPLES (Fase 1)
+#
+# Funcoes PURAS (nao leem nem escrevem arquivo) - fazem so o calculo,
+# quem chama decide o que fazer com o resultado. Isso facilita testar
+# cada uma isoladamente, sem precisar de arquivo/estado.
+# =============================================================================
+
+LIMIAR_BREAKING = 8
+LIMIAR_ROUND = 4
+
+
+def compute_shadow_decision(score):
+    """Decide, em modo SOMBRA, o que o sistema novo faria com essa
+    noticia - NUNCA usado para bloquear o envio real nesta fase.
+    score None (IA nao rodou ou falhou) -> 'discard' (sem informacao
+    suficiente pra promover)."""
+    if score is None:
+        return "discard"
+    if score >= LIMIAR_BREAKING:
+        return "breaking"
+    if score >= LIMIAR_ROUND:
+        return "round"
+    return "discard"
+
+
+def derive_cluster_key(text, ticker_list):
+    """Identifica a que 'story' essa noticia provavelmente pertence,
+    usando a MESMA lista de termos ja usada em compute_news_clusters
+    (main.py) - simples de proposito nesta fase (so o primeiro termo
+    encontrado no texto), evita reimplementar clustering semantico
+    complexo antes de validar se a abordagem simples ja basta.
+    Retorna None se nenhum termo bater (a noticia nao vira story
+    rastreada, so fica de fora do active_stories)."""
+    texto_lower = text.lower()
+    for termo in ticker_list:
+        if termo in texto_lower:
+            return termo
+    return None
+
+
+# =============================================================================
+# 6) ESTATISTICAS DIARIAS E RELATORIO DE MODO SOMBRA (Fase 1)
+# =============================================================================
+
+SHADOW_STATS_FILE = "docs/shadow_daily_stats.json"
+SHADOW_REPORT_FILE = "docs/shadow_mode_report.json"
+
+
+def _hoje_str():
+    return datetime.now(BR_TZ).strftime("%Y-%m-%d")
+
+
+def _load_shadow_stats():
+    if not os.path.exists(SHADOW_STATS_FILE):
+        return {"date": _hoje_str(), "total_ingeridas": 0, "aprovadas_atual": 0, "descartadas_atual": 0}
+    try:
+        with open(SHADOW_STATS_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if not isinstance(data, dict) or "date" not in data:
+                raise ValueError("formato inesperado")
+            return data
+    except Exception as e:
+        print("AVISO (shadow_stats): falha ao carregar " + SHADOW_STATS_FILE + " (" + str(e) + "). Reiniciando contadores.")
+        return {"date": _hoje_str(), "total_ingeridas": 0, "aprovadas_atual": 0, "descartadas_atual": 0}
+
+
+def _save_shadow_stats(stats):
+    try:
+        os.makedirs(os.path.dirname(SHADOW_STATS_FILE), exist_ok=True)
+        with open(SHADOW_STATS_FILE, "w", encoding="utf-8") as f:
+            json.dump(stats, f, ensure_ascii=False, indent=2)
+        return True
+    except Exception as e:
+        print("ERRO (shadow_stats): falha ao salvar " + SHADOW_STATS_FILE + ": " + str(e))
+        return False
+
+
+def increment_shadow_stat(campo):
+    """Incrementa 1 contador diario ('total_ingeridas',
+    'aprovadas_atual' ou 'descartadas_atual'). Reinicia os contadores
+    sozinho quando o dia muda - nunca precisa de job separado de
+    limpeza."""
+    stats = _load_shadow_stats()
+    if stats.get("date") != _hoje_str():
+        stats = {"date": _hoje_str(), "total_ingeridas": 0, "aprovadas_atual": 0, "descartadas_atual": 0}
+    stats[campo] = stats.get(campo, 0) + 1
+    _save_shadow_stats(stats)
+
+
+def get_shadow_daily_stats():
+    """Leitura pura dos contadores de hoje - se o arquivo for de um
+    dia anterior, devolve zerado (sem alterar o arquivo em disco;
+    quem realmente reinicia e o increment_shadow_stat, na proxima
+    escrita)."""
+    stats = _load_shadow_stats()
+    if stats.get("date") != _hoje_str():
+        return {"date": _hoje_str(), "total_ingeridas": 0, "aprovadas_atual": 0, "descartadas_atual": 0}
+    return stats
+
+
+def generate_shadow_daily_report():
+    """Gera o relatorio diario de modo sombra, combinando os
+    contadores gerais (shadow_daily_stats) com as decisoes com score
+    registradas hoje (decision_log). Sobrescreve o relatorio a cada
+    chamada - reflete sempre o acumulado ATE AGORA no dia, fica
+    completo por si so ao longo do dia (sem precisar de logica
+    separada de 'fim de dia')."""
+    hoje = _hoje_str()
+    stats = get_shadow_daily_stats()
+
+    todas_decisoes = _load_decision_log().get("decisions", [])
+    decisoes_hoje = [d for d in todas_decisoes if d.get("timestamp", "").startswith(hoje)]
+
+    scores_validos = [d["score"] for d in decisoes_hoje if isinstance(d.get("score"), (int, float))]
+    score_medio = round(sum(scores_validos) / len(scores_validos), 2) if scores_validos else None
+
+    contagem_por_decisao = {"breaking": 0, "round": 0, "discard": 0}
+    divergencias = []
+    for d in decisoes_hoje:
+        contagem_por_decisao[d["decisao_sugerida"]] = contagem_por_decisao.get(d["decisao_sugerida"], 0) + 1
+
+        sugerida = d.get("decisao_sugerida")
+        atual = d.get("decisao_sistema_atual")
+        if atual is None:
+            continue
+        # Divergencia = sistema novo promoveria (breaking/round) algo
+        # que o atual descartou, OU sistema novo descartaria algo que
+        # o atual publicou.
+        novo_promoveria = sugerida in ("breaking", "round")
+        atual_publicou = atual == "publicado"
+        if novo_promoveria != atual_publicou:
+            divergencias.append({
+                "title": d.get("title"),
+                "source": d.get("source"),
+                "score": d.get("score"),
+                "decisao_sugerida": sugerida,
+                "decisao_sistema_atual": atual,
+            })
+
+    relatorio = {
+        "date": hoje,
+        "total_ingeridas": stats.get("total_ingeridas", 0),
+        "aprovadas_pelo_fluxo_atual": stats.get("aprovadas_atual", 0),
+        "descartadas_pelos_filtros_atuais": stats.get("descartadas_atual", 0),
+        "score_medio_materialidade": score_medio,
+        "seriam_breaking": contagem_por_decisao["breaking"],
+        "iriam_para_rodada": contagem_por_decisao["round"],
+        "seriam_descartadas_pelo_novo_sistema": contagem_por_decisao["discard"],
+        "total_divergencias": len(divergencias),
+        "divergencias": divergencias[:20],  # amostra - lista completa fica no decision_log
+    }
+
+    try:
+        os.makedirs(os.path.dirname(SHADOW_REPORT_FILE), exist_ok=True)
+        with open(SHADOW_REPORT_FILE, "w", encoding="utf-8") as f:
+            json.dump(relatorio, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print("ERRO (shadow_report): falha ao salvar " + SHADOW_REPORT_FILE + ": " + str(e))
+
+    return relatorio
