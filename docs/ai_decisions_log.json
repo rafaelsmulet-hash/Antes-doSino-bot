@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Warner reduz exclusividade e abre espaço para o YouTube",
-      "source": "UOL Economia",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de mídia e entretenimento, mas não tem impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:10.242765-03:00"
-    },
-    {
-      "title": "Justiça autoriza dono da Itapemirim a viajar para a Croácia de tornozeleira",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T06:58:10.807483-03:00"
-    },
-    {
-      "title": "Resultado da Lotomania 2959: Veja os números sorteados e se você ganhou",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:13.948949-03:00"
-    },
-    {
-      "title": "Lotofácil 3753 desencanta e faz 2 milionários no Sudeste; Mega-Sena acumula e prêmio em jogo atinge R$ 150 milhões",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:14.291698-03:00"
-    },
-    {
-      "title": "Taxa Selic vai cair, mas destino dos juros será decidido no Planalto, diz economista",
-      "source": "Seu Dinheiro",
-      "score": 3.0,
-      "motivo": "A noticia fala sobre a possibilidade de queda da taxa Selic, mas nao fornece detalhes concretos sobre a decisao",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T06:58:15.049587-03:00"
-    },
-    {
-      "title": "Último mês do PIS/Pasep em 2026: veja quando o abono fica disponível e quem será contemplado em agosto",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:18.216743-03:00"
-    },
-    {
-      "title": "Wispr Flow launches a Granola-styled meeting notetaker",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:20.580676-03:00"
-    },
-    {
-      "title": "General Motors vs. Ford: 1 Auto Giant Is Winning the EV Race",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:20.752932-03:00"
-    },
-    {
-      "title": "Covered Call ETFs Explained: How That 8% Yield Actually Works (and What You Give Up)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:20.900504-03:00"
-    },
-    {
-      "title": "Sponsors pushed for a bigger slice of continuation fund profits in H1",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:58:21.035256-03:00"
-    },
-    {
       "title": "Behind the Ticker: How BSVO Screens Out Value Traps",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T20:01:26.979098-03:00"
+    },
+    {
+      "title": "China’s Cheap AI Is Shifting Investors’ Focus to Internet Stocks",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia destaca a mudança de foco dos investidores para ações de internet devido ao progresso da China na inteligência artificial de baixo custo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T20:05:45.079724-03:00"
+    },
+    {
+      "title": "Small caps: Ágora exclui Marcopolo (POMO4) e escala Smart Fit (SMFT3) para carteira de agosto",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "Alteração na carteira de small caps pode influenciar a demanda por ações de empresas como Smart Fit.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:05:52.863767-03:00"
+    },
+    {
+      "title": "Kaltura forecasts $15.8M-$17.2M adjusted EBITDA for 2026 while expanding agentic AI deal pipeline",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:05:56.366883-03:00"
+    },
+    {
+      "title": "Expedia outlines FY2026 gross bookings of $129.5B-$130.8B as it raises adjusted EBITDA margin expansion to 150-175 bps",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:05:59.065494-03:00"
+    },
+    {
+      "title": "Revolution Medicines updates 2026 GAAP operating expenses to $2.1B-$2.2B while preparing potential daraxonrasib launch",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:06:01.777933-03:00"
+    },
+    {
+      "title": "Clearfield anticipates FY2026 net sales of $151M-$155M amid $22M hyperscale data center order",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:06:04.456289-03:00"
+    },
+    {
+      "title": "Why Eli Lilly Stock Climbed Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:06:08.346471-03:00"
+    },
+    {
+      "title": "Should You Forget Tesla Stock Near a 52-Week Low?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T20:06:11.408019-03:00"
+    },
+    {
+      "title": "Selic a 14% frustra indústria, anima comércio e acende alerta de recessăo",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T20:06:19.595045-03:00"
+    },
+    {
+      "title": "Recorde da soja entra no radar do SNAG11; veja os números de 2026",
+      "source": "Suno Noticias",
+      "score": 7.0,
+      "motivo": "recorde de processamento da soja reforça a tese de investimentos do Fiagro SNAG11",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:06:26.302596-03:00"
     }
   ]
 }

@@ -1,28 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 30880,
-  "aprovadas_pelo_fluxo_atual": 648,
-  "descartadas_pelos_filtros_atuais": 30232,
-  "score_medio_materialidade": 4.18,
+  "total_ingeridas": 31128,
+  "aprovadas_pelo_fluxo_atual": 651,
+  "descartadas_pelos_filtros_atuais": 30477,
+  "score_medio_materialidade": 4.19,
   "seriam_breaking": 53,
-  "iriam_para_rodada": 542,
-  "seriam_descartadas_pelo_novo_sistema": 1405,
-  "total_divergencias": 764,
+  "iriam_para_rodada": 545,
+  "seriam_descartadas_pelo_novo_sistema": 1402,
+  "total_divergencias": 766,
   "divergencias": [
-    {
-      "title": "Justiça autoriza dono da Itapemirim a viajar para a Croácia de tornozeleira",
-      "source": "UOL Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Taxa Selic vai cair, mas destino dos juros será decidido no Planalto, diz economista",
-      "source": "Seu Dinheiro",
-      "score": 3.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Silicon Valley's favorite fantasy is back: one app to rule them all",
       "source": "Business Insider",
@@ -148,6 +134,20 @@
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Ações de telecomunicações caem após SpaceX sinalizar entrada no mercado móvel",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Northwest Natural Holding Non-GAAP EPS of $0.01 beats by $0.08, revenue of $243.55M misses by $28.42M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
