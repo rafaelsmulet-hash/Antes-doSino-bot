@@ -3621,6 +3621,15 @@ def processar_market_snapshot_telegram(market_snapshot, telegram_bot_token, tele
     if not should_send_market_snapshot():
         return
 
+    # Checkpoint engine em modo sombra (Fase 2) - roda no MESMO
+    # momento do checkpoint real, mas so gera rascunho de comparacao.
+    # Isolado - falha aqui nunca impede o envio real logo abaixo.
+    if editorial_foundation is not None:
+        try:
+            editorial_foundation.run_shadow_checkpoint("snapshot")
+        except Exception as e:
+            print("Aviso (checkpoint sombra, isolado, nao afeta envio real): " + str(e))
+
     today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     message = build_market_snapshot_message(market_snapshot)
 
@@ -3739,6 +3748,12 @@ def processar_night_wrap_telegram(market_snapshot, telegram_bot_token, telegram_
     fluxo. So dispara na janela 22h00-22h30, 1x por dia."""
     if not should_send_night_wrap():
         return
+
+    if editorial_foundation is not None:
+        try:
+            editorial_foundation.run_shadow_checkpoint("night_wrap")
+        except Exception as e:
+            print("Aviso (checkpoint sombra, isolado, nao afeta envio real): " + str(e))
 
     today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     message = build_night_wrap_message(market_snapshot)
@@ -4097,6 +4112,12 @@ def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram
     state = load_briefings_state()
 
     if should_send_morning_briefing():
+        if editorial_foundation is not None:
+            try:
+                editorial_foundation.run_shadow_checkpoint("radar_da_madrugada")
+            except Exception as e:
+                print("Aviso (checkpoint sombra, isolado, nao afeta envio real): " + str(e))
+
         message = build_morning_briefing_message(entries_today, eventos, market_snapshot)
         if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
             state["last_morning_date"] = today_str
@@ -4106,6 +4127,12 @@ def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram
             print("Falha ao enviar Morning Briefing - sera tentado novamente no proximo ciclo dentro da janela.")
 
     if should_send_evening_briefing():
+        if editorial_foundation is not None:
+            try:
+                editorial_foundation.run_shadow_checkpoint("evening_briefing")
+            except Exception as e:
+                print("Aviso (checkpoint sombra, isolado, nao afeta envio real): " + str(e))
+
         message = build_evening_briefing_message(entries_today, eventos, market_snapshot)
         if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
             state["last_evening_date"] = today_str
@@ -4719,39 +4746,67 @@ def main():
                 registrar_descarte("duplicado")
                 continue
 
+            raw_body = get_entry_body(entry)
+
+            # FASE 3A - a chamada de IA agora roda logo apos a
+            # deduplicacao tecnica (hash + titulo similar), ANTES dos
+            # filtros de negocio atuais (is_relevant, filtro por
+            # fonte) - exatamente o fluxo pedido: "nova camada
+            # editorial sombra" avalia tudo que sobrou da limpeza
+            # tecnica, antes do pipeline atual decidir o que fazer.
+            #
+            # CUSTO REAL: itens que antes eram descartados por
+            # palavra-chave/filtro de fonte SEM gastar chamada de IA
+            # agora GANHAM 1 chamada de IA mesmo assim, so para a
+            # pontuacao sombra. E um aumento real de volume de
+            # chamadas a Groq - vale monitorar a cota de perto.
+            is_english = source not in PORTUGUESE_SOURCES
+            ai_result = None
+            if USE_AI:
+                ai_result = classify_news_ai(title, raw_body, translate=is_english)
+
+            shadow_score = ai_result.get("score_materialidade") if ai_result else None
+            shadow_motivo = ai_result.get("motivo_materialidade") if ai_result else None
+            shadow_decisao = None
+            try:
+                shadow_decisao = editorial_foundation.compute_shadow_decision(shadow_score)
+            except Exception as e:
+                print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
+
+            def registrar_descarte_com_sombra(motivo):
+                """Registra o descarte REAL (igual sempre foi) e, em
+                paralelo, o que o sistema sombra diria pra essa mesma
+                noticia - permite comparar as 2 decisoes mesmo quando
+                o descarte acontece por um filtro que roda antes do
+                antigo ponto de chamada da IA."""
+                registrar_descarte(motivo)
+                try:
+                    editorial_foundation.log_decision(
+                        title, source, shadow_score, shadow_motivo,
+                        shadow_decisao or "discard", decisao_sistema_atual="descartado"
+                    )
+                except Exception as e:
+                    print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
+
+            if ai_result and ai_result.get("relevante_mercado") is False:
+                print("Descartada pela IA (fora do escopo de mercado): " + title[:60])
+                sent_hashes.add(h)
+                save_state(sent_hashes, recent_titles)
+                registrar_descarte_com_sombra("IA classificou como fora do escopo")
+                continue
+
             if not is_relevant(entry) or not is_recent_enough(entry):
                 sent_hashes.add(h)
                 save_state(sent_hashes, recent_titles)
-                registrar_descarte("sem impacto economico / fora do escopo")
+                registrar_descarte_com_sombra("sem impacto economico / fora do escopo")
                 continue
 
             passou_filtro, motivo_filtro = passes_source_specific_filter(source, entry)
             if not passou_filtro:
                 sent_hashes.add(h)
                 save_state(sent_hashes, recent_titles)
-                registrar_descarte(motivo_filtro)
+                registrar_descarte_com_sombra(motivo_filtro)
                 continue
-
-            raw_body = get_entry_body(entry)
-
-            # Chamada UNICA e obrigatoria a IA - roda para TODA noticia
-            # que passou nos filtros anteriores, combinando em uma so
-            # chamada relevancia + sentimento + traducao (quando a
-            # fonte e em ingles). Corta pela metade o volume de
-            # chamadas a Groq por noticia (comparado a duas chamadas
-            # separadas), e ainda cobre fontes em portugues com corpo
-            # (a maioria), que antes nunca passavam por julgamento
-            # semantico, so por palavra-chave.
-            is_english = source not in PORTUGUESE_SOURCES
-            ai_result = None
-            if USE_AI:
-                ai_result = classify_news_ai(title, raw_body, translate=is_english)
-                if ai_result and ai_result.get("relevante_mercado") is False:
-                    print("Descartada pela IA (fora do escopo de mercado): " + title[:60])
-                    sent_hashes.add(h)
-                    save_state(sent_hashes, recent_titles)
-                    registrar_descarte("IA classificou como fora do escopo")
-                    continue
 
             check_title = title
             check_body = raw_body
@@ -4759,7 +4814,7 @@ def main():
                 print("Descartada por conteudo insuficiente: " + title[:60])
                 sent_hashes.add(h)
                 save_state(sent_hashes, recent_titles)
-                registrar_descarte("conteudo insuficiente")
+                registrar_descarte_com_sombra("conteudo insuficiente")
                 continue
 
             message, final_title, final_body, sentiment = format_message(source, entry, ai_result)
@@ -4778,29 +4833,26 @@ def main():
                 try:
                     editorial_foundation.increment_shadow_stat("aprovadas_atual")
 
-                    score = ai_result.get("score_materialidade") if ai_result else None
-                    motivo_score = ai_result.get("motivo_materialidade") if ai_result else None
-                    decisao_sombra = editorial_foundation.compute_shadow_decision(score)
+                    cluster_key = editorial_foundation.derive_cluster_key(title + " " + raw_body, TICKER_MENTION_LIST)
 
-                    if shadow_stories_state is not None:
-                        cluster_key = editorial_foundation.derive_cluster_key(title + " " + raw_body, TICKER_MENTION_LIST)
-                        if cluster_key:
-                            story_existente = editorial_foundation.find_story_by_cluster_key(shadow_stories_state, cluster_key)
-                            if story_existente:
-                                editorial_foundation.update_story(shadow_stories_state, story_existente["id"], materiality_score=score, source=source)
-                            else:
-                                nova_story = editorial_foundation.create_story(cluster_key, materiality_score=score, source=source)
-                                shadow_stories_state["stories"].append(nova_story)
+                    if shadow_stories_state is not None and cluster_key:
+                        story_existente = editorial_foundation.find_story_by_cluster_key(shadow_stories_state, cluster_key)
+                        if story_existente:
+                            editorial_foundation.update_story(shadow_stories_state, story_existente["id"], materiality_score=shadow_score, source=source)
+                        else:
+                            nova_story = editorial_foundation.create_story(cluster_key, materiality_score=shadow_score, source=source)
+                            shadow_stories_state["stories"].append(nova_story)
 
-                    editorial_foundation.log_decision(title, source, score, motivo_score, decisao_sombra, decisao_sistema_atual="publicado")
+                    editorial_foundation.log_decision(title, source, shadow_score, shadow_motivo, shadow_decisao or "discard", decisao_sistema_atual="publicado")
 
-                    if decisao_sombra == "round":
+                    if shadow_decisao == "round":
                         editorial_foundation.add_to_round_queue({
                             "title": title,
                             "source": source,
-                            "score": score,
-                            "motivo": motivo_score,
+                            "score": shadow_score,
+                            "motivo": shadow_motivo,
                             "categoria": feed_info.get("category"),
+                            "cluster_key": cluster_key,
                         })
                 except Exception as e:
                     print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
