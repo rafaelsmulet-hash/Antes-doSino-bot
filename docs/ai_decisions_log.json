@@ -2285,6 +2285,150 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T07:38:04.441805-03:00"
+    },
+    {
+      "title": "Mercantil do Brasil (BMEB4) aprova pagamento de proventos no valor de R$ 189,5 mi",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "pago de proventos é uma ação rotineira e não impacta significativamente o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:40:40.757551-03:00"
+    },
+    {
+      "title": "Meio/Ideia: Lula lidera 1º turno com 43% das intenções de voto; Flávio tem 35%",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:40:43.626400-03:00"
+    },
+    {
+      "title": "Rodízio de SP está suspenso hoje? Veja como funciona durante greve da CPTM nesta quarta",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:40:49.007453-03:00"
+    },
+    {
+      "title": "Delek Logistics Partners GAAP EPS of $0.54 misses by $0.39, revenue of $384.76M beats by $89.4M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a percepção dos investidores sobre a empresa, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:40:52.319133-03:00"
+    },
+    {
+      "title": "Walt Disney Non-GAAP EPS of $2.06 beats by $0.21, revenue of $25.25B misses by $160M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de lucro da empresa, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T07:40:55.838314-03:00"
+    },
+    {
+      "title": "Disney strikes a breakthrough content-sharing deal with TikTok",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "O acordo pode ter impacto na forma como a Disney distribui seu conteúdo, mas não é um evento de grande magnitude.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T07:41:02.128944-03:00"
+    },
+    {
+      "title": "Thomson Reuters Non-GAAP EPS of $0.99 beats by $0.03, revenue of $1.95B beats by $30M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia apresenta resultados financeiros superiores às expectativas, o que pode ser considerado positivo para a empresa e seus investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:41:08.144005-03:00"
+    },
+    {
+      "title": "NiSource Non-GAAP EPS of $0.16 in-line; reaffirms FY 2026 outlook",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado, mas não apresenta informações surpreendentes ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:41:11.137277-03:00"
+    },
+    {
+      "title": "COMPASS Pathways ADS GAAP EPS of -$1.88",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "O resultado negativo pode afetar a confiança dos investidores na empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:41:14.014608-03:00"
+    },
+    {
+      "title": "FTC Solar GAAP EPS of -$1.69 misses by $1.17, revenue of $26.16M beats by $1.77M",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A notícia apresenta resultados financeiros da FTC Solar, que podem influenciar a percepção dos investidores sobre a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:41:16.984315-03:00"
+    },
+    {
+      "title": "Cautious Investors Keep CAC 40 In Tight Range",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta um impacto significativo no mercado, apenas uma situação de cautela dos investidores.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T07:41:22.079962-03:00"
+    },
+    {
+      "title": "News Corp. Q4 26 Earnings Conference Call At 5:00 PM ET",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A conferência de chamada de resultados financeiros é um evento rotineiro, mas pode fornecer informações importantes sobre o desempenho da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T07:41:28.427735-03:00"
+    },
+    {
+      "title": "NiSource Q2 26 Earnings Conference Call At 11:00 AM ET",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante pois fornece informações sobre os resultados financeiros da empresa, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T07:41:34.851622-03:00"
+    },
+    {
+      "title": "Expedia Group Q2 26 Earnings Conference Call At 4:30 PM ET",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para os investidores interessados nos resultados financeiros da Expedia Group.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T07:41:41.214812-03:00"
+    },
+    {
+      "title": "SpaceX's stock drops on as AI capex costs jump in Q2",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aumento nos custos de investimentos em tecnologia de inteligencia artificial é relevante para a acao da SpaceX no momento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:41:51.820046-03:00"
+    },
+    {
+      "title": "CVS blows past estimates, hikes guidance as insurance unit continues to improve",
+      "source": "CNBC - US News",
+      "score": 6.0,
+      "motivo": "Aumento de diretrizes e melhoria da unidade de seguros são indicativos de saúde financeira positiva da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:41:55.627072-03:00"
     }
   ]
 }
