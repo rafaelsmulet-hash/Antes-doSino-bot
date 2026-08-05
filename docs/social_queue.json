@@ -1443,7 +1443,7 @@
     "priority": "high",
     "expires_at": "2026-08-05 10:13:07",
     "prompt_version": "v1.0",
-    "status": "draft",
+    "status": "designed",
     "expired_notice_sent": false,
     "platform": "x",
     "publish_url": null,
@@ -1453,6 +1453,16 @@
         "status": "draft",
         "at": "2026-08-05 08:13:07",
         "detalhe": "Conteúdo gerado"
+      },
+      {
+        "status": "approved",
+        "at": "2026-08-05 08:17:13",
+        "detalhe": "Via Telegram"
+      },
+      {
+        "status": "designed",
+        "at": "2026-08-05 08:17:13",
+        "detalhe": "Arte pré-gerada no momento do draft - aprovação instantânea"
       }
     ],
     "date": "2026-08-05",
@@ -1463,6 +1473,71 @@
       "comments": null
     },
     "design_folder": "docs/social_posts/2026-08-05_decisoes-da-selic-e-desempenho-do-bradesco-podem-guiar-o-mer",
+    "design_pregerado": true
+  },
+  {
+    "id": "20260805-081723-626",
+    "content_mode": "opening",
+    "content_template": "deep_dive",
+    "headline": "Mercado acompanha resultados de empresas",
+    "instagram": {
+      "hook": "Resultados do 2º trimestre de empresas como Uber e Iron Mountain",
+      "context": "",
+      "why_it_matters": "Empresas como Uber e Iron Mountain apresentam resultados do 2º trimestre, enquanto ações da China têm alta",
+      "impact": "Dólar e Bitcoin têm variações pequenas",
+      "watch_next": "",
+      "cta": "Acompanhe o Antes do Sino para mais notícias do mercado"
+    },
+    "instagram_caption": "Empresas apresentam resultados do 2º trimestre. Acompanhe o Antes do Sino para mais notícias.",
+    "hashtags": [
+      "#AntesDoSino",
+      "#Mercado",
+      "#Bolsa",
+      "#Investimentos"
+    ],
+    "x": {
+      "post": "Resultados do 2º trimestre de empresas como Uber e Iron Mountain"
+    },
+    "tiktok": {
+      "scenes": [
+        {
+          "visual": "Tela com resultados de empresas",
+          "line": "Empresas como Uber e Iron Mountain apresentam resultados do 2º trimestre"
+        }
+      ],
+      "cta": "Acompanhe o Antes do Sino"
+    },
+    "editorial": {
+      "tipo_noticia": "Mercado",
+      "historia_principal": "Empresas como Uber e Iron Mountain apresentam resultados do 2º trimestre"
+    },
+    "score": null,
+    "reason": [
+      "Conteúdo editorial obrigatório (Opening) - preparação para o pregão"
+    ],
+    "priority": "high",
+    "expires_at": "2026-08-05 11:00:00",
+    "prompt_version": "v1.0",
+    "status": "draft",
+    "expired_notice_sent": false,
+    "platform": "x",
+    "publish_url": null,
+    "publish_error": null,
+    "history": [
+      {
+        "status": "draft",
+        "at": "2026-08-05 08:17:23",
+        "detalhe": "Conteúdo gerado"
+      }
+    ],
+    "date": "2026-08-05",
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "shares": null,
+      "comments": null
+    },
+    "design_folder": "docs/social_posts/2026-08-05_mercado-acompanha-resultados-de-empresas",
     "design_pregerado": true
   }
 ]
