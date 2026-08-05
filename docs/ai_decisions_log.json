@@ -7415,6 +7415,240 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-05T11:16:35.626192-03:00"
+    },
+    {
+      "title": "Após semanas de impasse, Flávio anuncia Alfredo Gaspar em chapa “puro-sangue” do PL",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia e sobre politica e nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:21:49.160718-03:00"
+    },
+    {
+      "title": "Como banco pode ser conivente com Americanas se perdeu dinheiro?, diz CEO do Itaú",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque discute a perda bilionária do Itaú, mas o impacto é neutro pois não há informações sobre ações específicas ou mudanças no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T11:21:52.668564-03:00"
+    },
+    {
+      "title": "Por que os futuros de petróleo WTI estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "A queda nos futuros de petróleo WTI pode indicar uma diminuição na demanda ou uma expectativa de excesso de oferta, afetando negativamente o mercado de commodities.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:00.208279-03:00"
+    },
+    {
+      "title": "Ações da Ethan Allen sobem após investidor ativista pedir reforma no conselho",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Reforma no conselho pode levar a mudanças positivas na gestão da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:03.050830-03:00"
+    },
+    {
+      "title": "Por que as ações da Energizer estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A noticia especifica a razao pelas quais as acoes da Energizer estao subindo, o que e relevante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:05.846247-03:00"
+    },
+    {
+      "title": "Por que as ações da Lumen Technologies estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ações da Lumen Technologies estão caindo devido a uma queda no preço das ações, mas sem informações específicas sobre o motivo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:08.834595-03:00"
+    },
+    {
+      "title": "Por que as ações da Toast estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Ações da Toast subindo após anúncio de aumento de receita e expansão de negócios",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:11.718740-03:00"
+    },
+    {
+      "title": "Por que as ações da USANA Health Sciences estão despencando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "a ação está despencando devido a uma notícia negativa sobre a empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:14.612938-03:00"
+    },
+    {
+      "title": "U.S. economy keeps up the momentum, but rising costs put a cap on new hiring",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "A notícia indica que as empresas estão limitando a contratação devido a custos crescentes, o que pode afetar a demanda por mão de obra e, consequentemente, o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T11:22:19.027308-03:00"
+    },
+    {
+      "title": "Ethan Allen holder takes stake, pushes for new board",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia pode influenciar a estratégia da empresa e potencialmente levar a mudanças no seu quadro de liderança.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:25.018063-03:00"
+    },
+    {
+      "title": "ContextLogic Holdings To Acquire GChem From Gaylord Chemical For $850 Mln",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A aquisição é relevante e tem impacto concreto no mercado devido ao valor significativo da transação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:29.412954-03:00"
+    },
+    {
+      "title": "Essential Utilities Q2 26 Earnings Conference Call At 11:00 AM ET",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A conferência de resultados financeiros é um evento rotineiro que não impacta significativamente o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T11:22:32.977247-03:00"
+    },
+    {
+      "title": "Devon Energy Q2 26 Earnings Conference Call At 11:00 AM ET",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque fornece informações sobre a data da conferência de chamada da empresa, mas não contém informações sobre os resultados financeiros em si.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T11:22:39.654840-03:00"
+    },
+    {
+      "title": "Griffon Reports Profit In Q3",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Relatório de lucro trimestral positivo da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:45.553465-03:00"
+    },
+    {
+      "title": "Icahn Enterprises Q2 Loss Widens, Shares Down",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "Perda financeira da empresa afeta o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:48.544367-03:00"
+    },
+    {
+      "title": "MGE Energy, Inc. Q2 Income Climbs",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Aumento do lucro da empresa é relevante para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:22:51.550352-03:00"
+    },
+    {
+      "title": "Elanco Animal Health Boosts FY26 Outlook; Stock Up 7% - Update",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Aumento da previsão para o ano fiscal de 2026 é um sinal positivo para a empresa e pode influenciar a valorização da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T11:22:55.158037-03:00"
+    },
+    {
+      "title": "Estratégia de streaming: Deezer põe superfãs no centro do negócio",
+      "source": "Seu Dinheiro",
+      "score": 3.0,
+      "motivo": "A notícia trata de uma estratégia de negócios da empresa Deezer, mas não tem impacto direto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:23:03.670542-03:00"
+    },
+    {
+      "title": "SpaceX's stock drops as AI capex costs jump in Q2",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aumento dos custos de investimento em IA afeta a rentabilidade da SpaceX.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:23:09.570507-03:00"
+    },
+    {
+      "title": "CVS Stock Slides On 2027 Outlook Despite Hearty Earnings Beat",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a percepção dos investidores sobre a saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T11:23:13.125656-03:00"
+    },
+    {
+      "title": "Legacy Ridge Capital Partners’ Exit from Summit Midstream Corporation (SMC) Marks End of a Costly Mistake",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A saída da empresa pode ter impacto nas ações da Summit Midstream Corporation.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:23:19.218351-03:00"
+    },
+    {
+      "title": "Internal row at Castel rumbles on as family members file complaints",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada a eventos financeiros ou econômicos atuais",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:23:22.121232-03:00"
+    },
+    {
+      "title": "The companies defying macro uncertainty and raising guidance: AlphaCheck",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "Aumento de previsão é um indicador de confiança nas perspectivas de crescimento das empresas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:23:25.147081-03:00"
+    },
+    {
+      "title": "They went to Epstein Island. Now they're being sued.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:23:28.281200-03:00"
+    },
+    {
+      "title": "I live in a 97-square-foot micro-apartment in Paris. Tiny living comes with pros and cons that I didn't expect.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:23:31.321277-03:00"
+    },
+    {
+      "title": "8 working parents share how they use AI to give them more time with their kids",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:23:34.578576-03:00"
     }
   ]
 }
