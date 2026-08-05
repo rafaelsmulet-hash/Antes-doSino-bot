@@ -31,4 +31,19 @@ jobs:
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
-          TWELV
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+        run: python main.py
+
+
+      - name: Salvar historico (sent_items.json)
+        run: |
+          git config --global user.name "antes-do-sino-bot"
+          git config --global user.email "bot@antesdosino.local"
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "Atualiza historico de noticias e portal"
+            git pull origin main --no-rebase -X ours
+            git push origin main
+          else
+            echo "Nenhuma alteracao para salvar."
+          fi
