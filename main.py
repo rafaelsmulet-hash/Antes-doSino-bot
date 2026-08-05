@@ -10,6 +10,12 @@ import html as html_module
 import unicodedata
 from datetime import datetime, timezone, timedelta
 
+try:
+    import editorial_foundation
+except Exception as e:
+    print("AVISO: editorial_foundation nao pode ser importado (" + str(e) + ") - modo sombra desativado neste ciclo, fluxo de publicacao real nao e afetado.")
+    editorial_foundation = None
+
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
@@ -515,7 +521,7 @@ def classify_news_ai(title, body, translate=False):
             instruction = (
                 "Voce e o classificador e tradutor de um canal de Telegram de mercado "
                 "financeiro para traders brasileiros. Analise a noticia abaixo (em ingles) "
-                "e responda quatro coisas:\n"
+                "e responda seis coisas:\n"
                 "1. relevante_mercado: true SOMENTE se a noticia for genuinamente sobre "
                 "mercado financeiro, economia ou negocios. false se for sobre crime, policia, "
                 "justica criminal, celebridade, entretenimento, esporte, ou qualquer assunto "
@@ -527,29 +533,43 @@ def classify_news_ai(title, body, translate=False):
                 "fiel e direta, sem inventar informacao.\n"
                 "4. translated_summary: traduza/resuma o texto original para portugues do "
                 "Brasil em 1-2 frases fieis ao conteudo original, sem inventar fato novo. Se "
-                "o texto original for vazio, deixe translated_summary como string vazia.\n\n"
+                "o texto original for vazio, deixe translated_summary como string vazia.\n"
+                "5. score_materialidade: de 0 a 10, o quanto essa noticia especifica e "
+                "materialmente relevante pro mercado AGORA (nao pro tema em geral) - 0-2 "
+                "irrelevante/ruido, 3-5 relevante mas rotineiro, 6-8 relevante e com impacto "
+                "concreto, 9-10 evento de mercado maior (decisao de juros, choque geopolitico, "
+                "resultado muito acima/abaixo do esperado).\n"
+                "6. motivo_materialidade: 1 frase curta explicando o score dado.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
                 "formato exato:\n"
                 '{"relevante_mercado": true, "sentiment": "BULLISH", '
                 '"translated_title": "titulo em portugues", '
-                '"translated_summary": "resumo em portugues"}\n\n'
+                '"translated_summary": "resumo em portugues", '
+                '"score_materialidade": 5, "motivo_materialidade": "motivo curto"}\n\n'
                 "Titulo: " + title + "\n"
                 "Texto: " + body_cleaned
             )
         else:
             instruction = (
                 "Voce e o classificador de um canal de Telegram de mercado financeiro para "
-                "traders. Analise a noticia abaixo e responda duas coisas:\n"
+                "traders. Analise a noticia abaixo e responda quatro coisas:\n"
                 "1. relevante_mercado: true SOMENTE se a noticia for genuinamente sobre mercado "
                 "financeiro, economia ou negocios. false se for sobre crime, policia, justica "
                 "criminal, celebridade, entretenimento, esporte, ou qualquer assunto fora desse "
                 "escopo.\n"
                 "2. sentiment: classifique o impacto da noticia para o mercado como BULLISH, "
                 "BEARISH ou NEUTRAL - considere o contexto real (ex: corte de custos costuma ser "
-                "BULLISH para a acao, mesmo soando negativo a primeira vista).\n\n"
+                "BULLISH para a acao, mesmo soando negativo a primeira vista).\n"
+                "3. score_materialidade: de 0 a 10, o quanto essa noticia especifica e "
+                "materialmente relevante pro mercado AGORA (nao pro tema em geral) - 0-2 "
+                "irrelevante/ruido, 3-5 relevante mas rotineiro, 6-8 relevante e com impacto "
+                "concreto, 9-10 evento de mercado maior (decisao de juros, choque geopolitico, "
+                "resultado muito acima/abaixo do esperado).\n"
+                "4. motivo_materialidade: 1 frase curta explicando o score dado.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
                 "formato exato:\n"
-                '{"relevante_mercado": true, "sentiment": "BULLISH"}\n\n'
+                '{"relevante_mercado": true, "sentiment": "BULLISH", '
+                '"score_materialidade": 5, "motivo_materialidade": "motivo curto"}\n\n'
                 "Titulo: " + title + "\n"
                 "Texto: " + body_cleaned
             )
@@ -573,6 +593,21 @@ def classify_news_ai(title, body, translate=False):
             "sentiment": sentiment,
             "relevante_mercado": relevante_mercado,
         }
+
+        # Campos de materialidade (Fase 1 - modo sombra). Parsing
+        # totalmente defensivo: se vier ausente ou fora do formato
+        # esperado, o campo fica None e o modo sombra simplesmente
+        # nao pontua essa noticia - nunca quebra classify_news_ai por
+        # causa disso, e o retorno continua 100% compativel com quem
+        # ja consome so sentiment/relevante_mercado/traducao.
+        raw_score = parsed.get("score_materialidade")
+        score_materialidade = None
+        if isinstance(raw_score, (int, float)) and 0 <= raw_score <= 10:
+            score_materialidade = round(float(raw_score), 1)
+        result["score_materialidade"] = score_materialidade
+
+        raw_motivo = parsed.get("motivo_materialidade")
+        result["motivo_materialidade"] = raw_motivo.strip() if isinstance(raw_motivo, str) else None
 
         if translate:
             # Validacao defensiva - se a traducao vier vazia/invalida,
@@ -4635,6 +4670,15 @@ def main():
     new_count = 0
     portal_entries = []
 
+    # Modo sombra (Fase 1) - carregado 1x antes do loop, isolado. Se
+    # falhar por qualquer motivo, o modo sombra fica desligado neste
+    # ciclo mas o fluxo real de publicacao continua normalmente.
+    try:
+        shadow_stories_state = editorial_foundation.load_active_stories()
+    except Exception as e:
+        print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
+        shadow_stories_state = None
+
     for source, feed_info in FEEDS.items():
         url = feed_info["url"]
         feed = fetch_feed(url)
@@ -4651,8 +4695,18 @@ def main():
 
         def registrar_descarte(motivo):
             motivos_descarte[motivo] = motivos_descarte.get(motivo, 0) + 1
+            # Modo sombra (Fase 1) - isolado, nunca afeta a decisao real.
+            try:
+                editorial_foundation.increment_shadow_stat("descartadas_atual")
+            except Exception as e:
+                print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
 
         for entry in feed.entries[:10]:
+            try:
+                editorial_foundation.increment_shadow_stat("total_ingeridas")
+            except Exception as e:
+                print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
+
             h = item_hash(entry)
             if h in sent_hashes:
                 registrar_descarte("ja enviado (hash conhecido)")
@@ -4718,6 +4772,39 @@ def main():
                 print("Enviado: " + title[:50] + " [" + sentiment + "]")
                 save_state(sent_hashes, recent_titles)
 
+                # Modo sombra (Fase 1) - roda DEPOIS do envio real ja
+                # confirmado. Qualquer falha aqui e isolada e nunca
+                # desfaz nem atrasa a publicacao, que ja aconteceu.
+                try:
+                    editorial_foundation.increment_shadow_stat("aprovadas_atual")
+
+                    score = ai_result.get("score_materialidade") if ai_result else None
+                    motivo_score = ai_result.get("motivo_materialidade") if ai_result else None
+                    decisao_sombra = editorial_foundation.compute_shadow_decision(score)
+
+                    if shadow_stories_state is not None:
+                        cluster_key = editorial_foundation.derive_cluster_key(title + " " + raw_body, TICKER_MENTION_LIST)
+                        if cluster_key:
+                            story_existente = editorial_foundation.find_story_by_cluster_key(shadow_stories_state, cluster_key)
+                            if story_existente:
+                                editorial_foundation.update_story(shadow_stories_state, story_existente["id"], materiality_score=score, source=source)
+                            else:
+                                nova_story = editorial_foundation.create_story(cluster_key, materiality_score=score, source=source)
+                                shadow_stories_state["stories"].append(nova_story)
+
+                    editorial_foundation.log_decision(title, source, score, motivo_score, decisao_sombra, decisao_sistema_atual="publicado")
+
+                    if decisao_sombra == "round":
+                        editorial_foundation.add_to_round_queue({
+                            "title": title,
+                            "source": source,
+                            "score": score,
+                            "motivo": motivo_score,
+                            "categoria": feed_info.get("category"),
+                        })
+                except Exception as e:
+                    print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
+
                 portal_entries.append({
                     "title": final_title,
                     "body": truncate_text_clean(final_body, 200),
@@ -4743,6 +4830,16 @@ def main():
                 for motivo, qtd in motivos_descarte.items():
                     resumo_fonte += "\n- " + motivo + " (" + str(qtd) + ")"
             print(resumo_fonte)
+
+    # Modo sombra (Fase 1) - fecha o ciclo: salva o estado de stories
+    # acumulado e regenera o relatorio diario. Isolado - falha aqui
+    # nunca afeta nada do que ja foi publicado neste ciclo.
+    try:
+        if shadow_stories_state is not None:
+            editorial_foundation.save_active_stories(shadow_stories_state)
+        editorial_foundation.generate_shadow_daily_report()
+    except Exception as e:
+        print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
 
     try:
         forwarded_entries = process_forwarded_channels()
