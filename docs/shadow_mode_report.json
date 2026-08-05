@@ -1,21 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 29392,
-  "aprovadas_pelo_fluxo_atual": 636,
-  "descartadas_pelos_filtros_atuais": 28756,
-  "score_medio_materialidade": 4.16,
+  "total_ingeridas": 29640,
+  "aprovadas_pelo_fluxo_atual": 638,
+  "descartadas_pelos_filtros_atuais": 29002,
+  "score_medio_materialidade": 4.17,
   "seriam_breaking": 54,
-  "iriam_para_rodada": 533,
-  "seriam_descartadas_pelo_novo_sistema": 1413,
-  "total_divergencias": 766,
+  "iriam_para_rodada": 536,
+  "seriam_descartadas_pelo_novo_sistema": 1410,
+  "total_divergencias": 768,
   "divergencias": [
-    {
-      "title": "Está na hora de ouvir Alex Karp",
-      "source": "Brazil Journal",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Elon Musk addresses memory-chip stock concerns with one simple observation",
       "source": "MarketWatch",
@@ -145,6 +138,13 @@
     {
       "title": "Morgan Stanley mapped 3 AI futures. One company wins them all.",
       "source": "Business Insider",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Trump's deportation agenda raised prices, contracted local economies, immigration group says",
+      "source": "CNBC - US News",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
