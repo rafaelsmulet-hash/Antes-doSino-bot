@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "ETF Inflows Hit $191B in July as 2026 Total Nears $1.3 Trillion",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A alta entrada em ETFs indica confiança dos investidores no mercado e pode impulsionar a demanda por ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:00:49.768567-03:00"
-    },
-    {
-      "title": "How Namibia Pulled Ahead In Africa’s Hottest Offshore Oil Basin",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Aumento das reservas de petróleo da Namibia é relevante para o mercado de energia e petróleo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:00:50.572980-03:00"
-    },
-    {
-      "title": "Abbott Orders Pause On Texas Data Center Approvals Pending Audit",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:00:51.796999-03:00"
-    },
-    {
-      "title": "Allianz to Buy UOB Asset Management Unit as CEO Targets Asia",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A compra pode indicar um aumento de investimentos na região asiática.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:05:42.746599-03:00"
-    },
-    {
-      "title": "Iran War Exposes US Military Aluminum Risk Shown in Pentagon War Game",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia revela um risco de escassez de alumínio para a produção de aviões de combate, o que pode ter impacto na indústria aeroespacial.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:05:44.844061-03:00"
-    },
-    {
-      "title": "Day Trade hoje (05): Ibovespa pode romper resistência? Veja a análise",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "análise técnica rotineira sobre a Ibovespa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:05:49.361212-03:00"
-    },
-    {
-      "title": "O diamante que perdeu o brilho: escândalo de contrabando abala mercado de gemas",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "a notícia é sobre crime e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:05:52.694110-03:00"
-    },
-    {
-      "title": "Holdings familiares entram na mira da Justiça por fraudes em divórcios e inventários",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "A notícia não é sobre mercado financeiro, economia ou negocios, e não tem impacto direto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:05:53.101685-03:00"
-    },
-    {
-      "title": "Estrangeiro teve 1 motivo em especial para voltar para B3 em julho: movimento durará?",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Entrada de R$ 2,56 bilhões na B3 em julho impulsionada por migração de recursos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:05:53.893721-03:00"
-    },
-    {
-      "title": "Follow Ideas se aproxima de 700 clientes em menos de 3 meses, diz CEO da OnTick",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A notícia destaca o crescimento da empresa OnTick, o que pode ser visto como positivo para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:05:57.251703-03:00"
-    },
-    {
-      "title": "Mercado à espera da decisão do Copom; Ibovespa em dólar sobe hoje (5)",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "Decisão do Copom com expectativa de corte de juros, impactando mercado brasileiro",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:05:58.882052-03:00"
-    },
-    {
-      "title": "UBS eleva recomendação da Technogym após estabilização dos resultados",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a elevação da recomendação da UBS é um sinal positivo para a ação da Technogym",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:06:02.363949-03:00"
-    },
-    {
-      "title": "Macquarie vê ASEAN se beneficiando do recuo do momentum de IA",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A expectativa de crescimento da região ASEAN pode impulsionar as ações de empresas locais.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:06:02.634271-03:00"
-    },
-    {
-      "title": "Ações de telecomunicações caem após SpaceX sinalizar entrada no mercado móvel",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Entrada do SpaceX no mercado móvel pode aumentar a concorrência e pressionar as ações de telecomunicações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:06:02.939757-03:00"
-    },
-    {
-      "title": "A Moove vai operar carros autônomos com a Waymo – e já vale US$ 2,1 bilhões",
-      "source": "Brazil Journal",
-      "score": 8.0,
-      "motivo": "A Moove alcançou um valuation de US$ 2,1 bilhões e se capitalizou para operar carros autônomos com a Waymo, o que pode impulsionar o crescimento da empresa e do mercado de tecnologia automotiva.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:06:04.040119-03:00"
-    },
-    {
-      "title": "O plano do JP Morgan para tirar investidor do 'Ibovespa de 20 anos atrás'",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "JP Morgan lança um novo índice de tecnologia no Brasil, o que pode atrair investidores para o setor e impulsionar as ações de empresas de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:06:08.049285-03:00"
-    },
-    {
       "title": "Pesquisa Genial/Quaest: aprovação de Lula fica estável em 48% e desaprovação segue em 47%",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T20:31:02.236780-03:00"
+    },
+    {
+      "title": "Modelo de IA da Meta invadiu empresa externa durante teste de segurança",
+      "source": "Investing.com Brasil",
+      "score": 1.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:35:35.965338-03:00"
+    },
+    {
+      "title": "Bumble expects Q3 revenue of $205M-$213M as marketing spend drives ~28% EBITDA margin midpoint",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa fornece uma previsão de receita específica e relevante para o mercado, o que é material para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T20:35:40.129201-03:00"
+    },
+    {
+      "title": "Hagerty outlines 2026 adjusted EBITDA of $270M-$280M as written premium growth outlook rises to 16%-17%",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A previsão de crescimento do prêmio escrito é relevante para o mercado de seguros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:35:46.073723-03:00"
+    },
+    {
+      "title": "Sinclair forecasts at least $375M in 2026 political ad revenue while raising adjusted EBITDA outlook to $730M-$760M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:35:48.755505-03:00"
+    },
+    {
+      "title": "U.S. crude falls for third straight day as Iran says Hormuz agreement reached with Oman",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:35:51.457879-03:00"
+    },
+    {
+      "title": "Primoris maintains 2026 adjusted EBITDA guidance of $275M-$325M while targeting $1.5B-$2B in second-half renewables bookings",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:35:54.141874-03:00"
+    },
+    {
+      "title": "CF Industries shares slide on quarterly profit shortfall",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:35:56.781985-03:00"
+    },
+    {
+      "title": "Why Rivian Is Poised to Soar. Hint: It's Not All R2 Hype.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:36:01.653568-03:00"
+    },
+    {
+      "title": "Here's How to Read Super Group Insider Sales After the Firm Beat and Raised Guidance",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:36:04.360516-03:00"
+    },
+    {
+      "title": "Amazon and Alphabet Just Crushed Expectations. Which Is the Better Buy Now?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T20:36:07.689674-03:00"
+    },
+    {
+      "title": "Super Group Beat and Raised Guidance, but the Stock Slipped. Here's How to Read the CFO's Latest Insider Filing",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:36:13.373504-03:00"
+    },
+    {
+      "title": "Tech Shares May Weigh On South Korea Shares",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T20:36:16.406011-03:00"
+    },
+    {
+      "title": "SNEL11: fundo lucra R$ 6,36 mi, reduz custos e ultrapassa marca de 110 mil cotistas",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:36:25.130080-03:00"
+    },
+    {
+      "title": "Oil Extends Losses After US, Qatar Signal Progress on Iran Draft Deal",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:36:28.840604-03:00"
+    },
+    {
+      "title": "Amazon Leads Dow Decliners on News Bezos to Sell More Than $4B Worth of Stock",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:36:31.497154-03:00"
+    },
+    {
+      "title": "Chlor-alkali Market Tightening Drives Olin Corp. (OLN) Stock Recovery",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:36:34.146524-03:00"
     }
   ]
 }
