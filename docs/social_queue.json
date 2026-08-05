@@ -1813,7 +1813,7 @@
     "priority": "medium",
     "expires_at": "2026-08-06 09:00:00",
     "prompt_version": "v1.0",
-    "status": "draft",
+    "status": "designed",
     "expired_notice_sent": false,
     "platform": "x",
     "publish_url": null,
@@ -1823,6 +1823,16 @@
         "status": "draft",
         "at": "2026-08-05 18:31:39",
         "detalhe": "Conteúdo gerado"
+      },
+      {
+        "status": "approved",
+        "at": "2026-08-05 18:37:31",
+        "detalhe": "Via Telegram"
+      },
+      {
+        "status": "designed",
+        "at": "2026-08-05 18:37:31",
+        "detalhe": "Arte pré-gerada no momento do draft - aprovação instantânea"
       }
     ],
     "date": "2026-08-05",
