@@ -1,56 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 28916,
-  "aprovadas_pelo_fluxo_atual": 630,
-  "descartadas_pelos_filtros_atuais": 28286,
-  "score_medio_materialidade": 4.18,
-  "seriam_breaking": 57,
-  "iriam_para_rodada": 533,
-  "seriam_descartadas_pelo_novo_sistema": 1410,
-  "total_divergencias": 767,
+  "total_ingeridas": 29144,
+  "aprovadas_pelo_fluxo_atual": 634,
+  "descartadas_pelos_filtros_atuais": 28510,
+  "score_medio_materialidade": 4.16,
+  "seriam_breaking": 54,
+  "iriam_para_rodada": 532,
+  "seriam_descartadas_pelo_novo_sistema": 1414,
+  "total_divergencias": 766,
   "divergencias": [
-    {
-      "title": "Copom, emprego nos EUA, balanço do Bradesco e mais destaques desta quarta",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "“Riqueza não é dinheiro”: o alerta de Ray Dalio sobre a bolha de IA",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Como uma teoria obscura de 130 anos explica apetite por dívida de US$ 40 tri dos EUA",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Kevin Warsh queria uma “mudança de regime”; os mercados exigem um recomeço",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Bradesco (BBDC3) será o vencedor entre os balanços dos bancos no 2T?",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Tempo real: Ibovespa acompanha decisão do Copom",
-      "source": "Money Times",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "RBI mantém juros inalterados e sinaliza postura mais dovish",
       "source": "Investing.com Brasil",
@@ -146,6 +104,48 @@
       "title": "Após trégua nos preços, azeite volta a ser ameaçado por calor extremo e incêndios na Europa",
       "source": "G1 Economia",
       "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Banco Central deve cortar juro básico da economia pela 4º vez seguida, para 14% ao ano",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Foco no delivery: hamburgueria fatura quase R$ 10 mi com apenas 2 lojas",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Digital já é 25% de vendas da Centauro; chuteira rosa foi destaque na Copa",
+      "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Copom define taxa de juros hoje, e mercado já projeta próximos passos",
+      "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Justiça autoriza dono da Itapemirim a viajar para a Croácia de tornozeleira",
+      "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Taxa Selic vai cair, mas destino dos juros será decidido no Planalto, diz economista",
+      "source": "Seu Dinheiro",
+      "score": 3.0,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     }
