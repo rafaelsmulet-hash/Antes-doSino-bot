@@ -1,35 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 31872,
+  "total_ingeridas": 32120,
   "aprovadas_pelo_fluxo_atual": 654,
-  "descartadas_pelos_filtros_atuais": 31218,
+  "descartadas_pelos_filtros_atuais": 31466,
   "score_medio_materialidade": 4.2,
-  "seriam_breaking": 55,
-  "iriam_para_rodada": 549,
+  "seriam_breaking": 54,
+  "iriam_para_rodada": 550,
   "seriam_descartadas_pelo_novo_sistema": 1396,
-  "total_divergencias": 763,
+  "total_divergencias": 762,
   "divergencias": [
-    {
-      "title": "Oil Markets Price In An Iran Deal That Does Not Exist Yet",
-      "source": "ZeroHedge",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
-      "source": "WSJ Markets",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "eXp World declares $0.05 dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Dona da Droga Raia reduz dívida em 28% e lucra R$ 432,7 mi no trimestre",
       "source": "UOL Economia",
@@ -148,6 +127,27 @@
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Louisiana-Pacific misses Q2 estimates, guides Q3 and FY topline below consensus",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Foco no delivery: hamburgueria fatura quase R$ 10 mi com apenas 2 lojas",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Bradesco (BBDC4) já convenceu a Faria Lima da virada; agora terá de superar o sarrafo elevado para o 2T26",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
