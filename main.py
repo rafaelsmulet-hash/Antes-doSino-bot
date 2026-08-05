@@ -21,7 +21,6 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 BRAPI_TOKEN = os.environ.get("BRAPI_TOKEN", "")
 FRED_API_KEY = os.environ.get("FRED_API_KEY", "")
-COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY", "")
 TWELVEDATA_API_KEY = os.environ.get("TWELVEDATA_API_KEY", "")
 
 COCKPIT_TICKERS = ["^BVSP", "PETR4", "VALE3", "ITUB4", "BBDC4", "ABEV3", "WEGE3", "B3SA3", "BBAS3", "MGLU3"]
