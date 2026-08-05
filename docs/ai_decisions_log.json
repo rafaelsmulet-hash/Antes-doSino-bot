@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Pesquisa Genial/Quaest: aprovação de Lula fica estável em 48% e desaprovação segue em 47%",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia politica e eleitoral, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:06:11.396961-03:00"
-    },
-    {
-      "title": "Pesquisa Meio/Ideia: Lula tem 43% e Flávio Bolsonaro, 35%, no 1º turno",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre eleicoes nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:06:11.731587-03:00"
-    },
-    {
-      "title": "Bússola & Cia: Brasileiros gastam mais de mil reais por mês no supermercado",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não especifica impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:06:12.121284-03:00"
-    },
-    {
-      "title": "Pesquisa Genial/Quaest: Lula tem 44% e Flávio Bolsonaro, 39%, no 2º turno",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "Não há informações financeiras ou econômicas relevantes na notícia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:06:12.666832-03:00"
-    },
-    {
-      "title": "Genial/Quaest: Vantagem de Lula sobre Flávio Bolsonaro cai de 12 para 9 pontos no 1º turno",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:06:12.854363-03:00"
-    },
-    {
-      "title": "Northwest Natural Holding Non-GAAP EPS of $0.01 beats by $0.08, revenue of $243.55M misses by $28.42M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:06:13.746729-03:00"
-    },
-    {
       "title": "Dorian LPG Non-GAAP EPS of $2.52 beats by $0.44, revenue of $187.9M beats by $20.2M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T20:36:34.146524-03:00"
+    },
+    {
+      "title": "ADMA reiterates 2026 guidance of $530M-$560M revenue while targeting $200M+ in share repurchases",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa reiterou sua previsão de receita e anunciou planos de repurchase de ações, o que pode ser positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:40:54.829467-03:00"
+    },
+    {
+      "title": "IA da Meta também fez ataque hacker a empresa, diz site",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:41:01.846853-03:00"
+    },
+    {
+      "title": "Apple’s New CEO Is Bringing a Familiar Face Back From Retirement. The Shift Is Happening.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A escolha de um executivo experiente pode indicar uma estratégia de crescimento e estabilidade para a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:41:09.634765-03:00"
+    },
+    {
+      "title": "Asmodee Surges on Pokémon Like It’s 1997 Again",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:41:12.259180-03:00"
+    },
+    {
+      "title": "Polymarket Talking Up a $20 Billion Valuation as Kalshi Races For Double That",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a valorização de uma empresa de mercado de criptomoedas, o que pode ser relevante para o mercado de criptomoedas e tecnologia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:41:15.473770-03:00"
+    },
+    {
+      "title": "Zebra Technologies Stock Jumped 20% Today on the Best Problem in Tech",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:41:18.114922-03:00"
     }
   ]
 }
