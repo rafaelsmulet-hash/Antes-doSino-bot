@@ -29,15 +29,17 @@
       "id": "cbd5f033-6943-4dad-ac1e-0f54c7901a09",
       "cluster_key": "gol",
       "first_seen": "2026-08-05T06:57:38.913154-03:00",
-      "last_updated": "2026-08-05T11:51:47.450705-03:00",
+      "last_updated": "2026-08-05T13:24:11.644707-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "G1 Economia",
         "ZeroHedge",
         "Investing.com Brasil",
-        "Yahoo Finance"
+        "Yahoo Finance",
+        "InfoMoney",
+        "Seeking Alpha"
       ],
-      "update_count": 8,
+      "update_count": 12,
       "status": "active"
     },
     {
@@ -74,12 +76,14 @@
       "id": "7af7df73-d1c6-49d5-9bac-d44a433050fe",
       "cluster_key": "itau",
       "first_seen": "2026-08-05T08:25:48.533056-03:00",
-      "last_updated": "2026-08-05T11:21:52.666214-03:00",
+      "last_updated": "2026-08-05T13:22:37.385762-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
-        "InfoMoney"
+        "InfoMoney",
+        "UOL Economia",
+        "Neofeed"
       ],
-      "update_count": 3,
+      "update_count": 6,
       "status": "active"
     },
     {
@@ -98,7 +102,7 @@
       "id": "bd74de34-a98c-4bda-8e6e-2d6620b72e72",
       "cluster_key": "itub4",
       "first_seen": "2026-08-05T08:50:52.271262-03:00",
-      "last_updated": "2026-08-05T12:05:56.317728-03:00",
+      "last_updated": "2026-08-05T13:19:22.590165-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "InfoMoney",
@@ -106,7 +110,7 @@
         "Seu Dinheiro",
         "Suno Noticias"
       ],
-      "update_count": 5,
+      "update_count": 6,
       "status": "active"
     },
     {
