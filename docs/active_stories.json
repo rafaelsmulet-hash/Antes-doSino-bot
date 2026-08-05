@@ -63,6 +63,30 @@
       ],
       "update_count": 2,
       "status": "active"
+    },
+    {
+      "id": "7af7df73-d1c6-49d5-9bac-d44a433050fe",
+      "cluster_key": "itau",
+      "first_seen": "2026-08-05T08:25:48.533056-03:00",
+      "last_updated": "2026-08-05T08:25:48.533056-03:00",
+      "materiality_peak": 2.0,
+      "sources_seen": [
+        "InfoMoney"
+      ],
+      "update_count": 1,
+      "status": "active"
+    },
+    {
+      "id": "2bc33a91-f6b2-44fa-a6c2-42455118edbe",
+      "cluster_key": "azul",
+      "first_seen": "2026-08-05T08:25:54.751623-03:00",
+      "last_updated": "2026-08-05T08:25:54.751623-03:00",
+      "materiality_peak": 2.0,
+      "sources_seen": [
+        "InfoMoney"
+      ],
+      "update_count": 1,
+      "status": "active"
     }
   ]
 }
