@@ -1664,6 +1664,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T07:12:05.623039-03:00"
+    },
+    {
+      "title": "Sutcliffe: Markets Closely Watching Oman-Iran Talks",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia sugere que uma reabertura do Estreito de Ormuz pode estar próxima, o que é positivo para os mercados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T07:16:44.289001-03:00"
+    },
+    {
+      "title": "Entenda a crise entre Brasil e EUA que culminou na revogação do visto de embaixadora",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A noticia não é sobre mercado financeiro, mas sim sobre política internacional",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:48.766417-03:00"
+    },
+    {
+      "title": "Defesa Civil envia alerta ‘severo’ para ventos fortes no Rio de Janeiro",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia e sem relevancia direta para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:49.047914-03:00"
+    },
+    {
+      "title": "Cruzeiro x Chapecoense: horário, onde assistir e prováveis escalações",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre esporte e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:52.144147-03:00"
+    },
+    {
+      "title": "Falido e devendo R$ 1 milhão, ele quis ser CLT — mas saiu da entrevista com um negócio de bilhões",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A empresa gaúcha movimentou R$ 1,6 bilhão em consórcios e aposta em aquisições, indicando crescimento e expansão.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:52.471109-03:00"
+    },
+    {
+      "title": "CorVel GAAP EPS of $0.63, revenue of $260M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois fornece informações sobre os resultados financeiros da CorVel, que pode influenciar as expectativas dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:53.606115-03:00"
+    },
+    {
+      "title": "Edgewell declares $0.15 dividend",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Dividendo é uma informação rotineira e não impacta significativamente o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:54.042308-03:00"
+    },
+    {
+      "title": "Anthropic, OpenAI AI agents undertook unsanctioned actions, says research group",
+      "source": "Seeking Alpha",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:54.626810-03:00"
+    },
+    {
+      "title": "Circle Internet Group, Inc. GAAP EPS of $0.18 beats by $0.02, revenue of $701.32M misses by $12M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque o lucro por ação superou a previsão, mas a receita caiu abaixo do esperado, o que pode ter um impacto misto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:55.142054-03:00"
+    },
+    {
+      "title": "LivaNova PLC Non-GAAP EPS of $1.26 beats by $0.17, revenue of $390.6M beats by $10.02M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Resultados financeiros superiores às expectativas são geralmente considerados positivos para as ações da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:55.778428-03:00"
+    },
+    {
+      "title": "Ecovyst Non-GAAP EPS of $0.21 beats by $0.02, revenue of $250M beats by $13.15M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa superou as expectativas de lucro e receita, o que pode ser visto como positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:56.456655-03:00"
+    },
+    {
+      "title": "Primo Water Non-GAAP EPS of $0.37 beats by $0.04, revenue of $1.8B beats by $40M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:16:56.571831-03:00"
+    },
+    {
+      "title": "SpaceX slides as AI spending worries overshadow early returns",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre a saúde financeira da SpaceX.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:17:02.968306-03:00"
+    },
+    {
+      "title": "SpaceX's first earnings reveal the cost of becoming an AI giant: Chart of the Day",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia revela informações financeiras da SpaceX, mas não é um evento de mercado significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T07:17:04.323541-03:00"
+    },
+    {
+      "title": "HELOC and home equity loan rates today, Wednesday, August 5, 2026: Why locking in a low rate matters",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:17:07.757223-03:00"
+    },
+    {
+      "title": "Best high-yield savings interest rates today, Wednesday, August 5, 2026: Earn up to 4.15% APY",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:17:07.879216-03:00"
+    },
+    {
+      "title": "As bank bonuses soar, PE's biggest firms play catch-up",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T07:17:07.986164-03:00"
     }
   ]
 }
