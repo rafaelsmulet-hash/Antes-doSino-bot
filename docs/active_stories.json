@@ -1,3 +1,53 @@
 {
-  "stories": []
+  "stories": [
+    {
+      "id": "2894eec9-b4ad-4aac-9c35-be16300fd025",
+      "cluster_key": "weg",
+      "first_seen": "2026-08-05T06:55:37.144967-03:00",
+      "last_updated": "2026-08-05T06:55:41.454670-03:00",
+      "materiality_peak": 6.0,
+      "sources_seen": [
+        "Bloomberg Markets"
+      ],
+      "update_count": 2,
+      "status": "active"
+    },
+    {
+      "id": "f023d7ad-4df0-45ad-a139-c5bfcbace1bb",
+      "cluster_key": "bradesco",
+      "first_seen": "2026-08-05T06:55:57.746056-03:00",
+      "last_updated": "2026-08-05T06:56:21.031426-03:00",
+      "materiality_peak": 3.0,
+      "sources_seen": [
+        "InfoMoney"
+      ],
+      "update_count": 2,
+      "status": "active"
+    },
+    {
+      "id": "cbd5f033-6943-4dad-ac1e-0f54c7901a09",
+      "cluster_key": "gol",
+      "first_seen": "2026-08-05T06:57:38.913154-03:00",
+      "last_updated": "2026-08-05T06:58:48.076748-03:00",
+      "materiality_peak": null,
+      "sources_seen": [
+        "G1 Economia",
+        "ZeroHedge"
+      ],
+      "update_count": 2,
+      "status": "active"
+    },
+    {
+      "id": "00af5ec9-e29c-4df2-b442-0978c6aba1db",
+      "cluster_key": "vale",
+      "first_seen": "2026-08-05T06:57:46.456273-03:00",
+      "last_updated": "2026-08-05T06:57:46.456273-03:00",
+      "materiality_peak": null,
+      "sources_seen": [
+        "G1 Economia"
+      ],
+      "update_count": 1,
+      "status": "active"
+    }
+  ]
 }

@@ -1,18 +1,151 @@
 {
-  "date": "2026-08-04",
-  "total_ingeridas": 992,
-  "aprovadas_pelo_fluxo_atual": 5,
-  "descartadas_pelos_filtros_atuais": 987,
-  "score_medio_materialidade": 5.0,
-  "seriam_breaking": 1,
-  "iriam_para_rodada": 3,
-  "seriam_descartadas_pelo_novo_sistema": 1,
-  "total_divergencias": 1,
+  "date": "2026-08-05",
+  "total_ingeridas": 248,
+  "aprovadas_pelo_fluxo_atual": 43,
+  "descartadas_pelos_filtros_atuais": 205,
+  "score_medio_materialidade": 4.42,
+  "seriam_breaking": 7,
+  "iriam_para_rodada": 14,
+  "seriam_descartadas_pelo_novo_sistema": 97,
+  "total_divergencias": 38,
   "divergencias": [
     {
-      "title": "Etsy's CFO Sells Over 3,000 Shares, Representing 21% of Direct Holdings. Here's What That Means for Investors.",
+      "title": "Chanel Sales Jump 16% in First Half (Video)",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Vietnam’s Techcombank Seeks $1 Billion, Joining Rush for Funds",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "India Rules Out Early End To FX Deposit Plan, Sees Healthy Flows",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Trump alimenta esperanças de reabertura de Ormuz ao indicar acordo iminente",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Copom, emprego nos EUA, balanço do Bradesco e mais destaques desta quarta",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "“Riqueza não é dinheiro”: o alerta de Ray Dalio sobre a bolha de IA",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Como uma teoria obscura de 130 anos explica apetite por dívida de US$ 40 tri dos EUA",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Kevin Warsh queria uma “mudança de regime”; os mercados exigem um recomeço",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Bradesco (BBDC3) será o vencedor entre os balanços dos bancos no 2T?",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Tempo real: Ibovespa acompanha decisão do Copom",
+      "source": "Money Times",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "RBI mantém juros inalterados e sinaliza postura mais dovish",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Novo relatório alerta que proibição de transceivers chineses prejudicaria gigantes de IA dos EUA",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Está na hora de ouvir Alex Karp",
+      "source": "Brazil Journal",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Elon Musk addresses memory-chip stock concerns with one simple observation",
+      "source": "MarketWatch",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Amazon Just Landed a Big Win in the Race Against Tesla and Waymo",
       "source": "Nasdaq",
-      "score": 2.0,
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Opinion: The Greatest Fleecing of Retail Investors in Wall Street's Storied History Begins Tomorrow, Aug. 6",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Trading in Pre-IPO Companies Is Taking Off in Popularity. Here's Why That's Bullish for Crypto.",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Alphabet Stock Could Soar as It Targets the $300 Billion AI Chip Market Dominated by Nvidia",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Why Big Tech's AI Data Centers Are Turning to Bloom Energy for Power",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Asian Shares Follow Wall Street Higher Amid Easing AI, Middle East Concerns",
+      "source": "Nasdaq",
+      "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     }
