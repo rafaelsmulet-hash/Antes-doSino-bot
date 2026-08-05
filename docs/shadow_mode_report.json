@@ -1,28 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 29144,
-  "aprovadas_pelo_fluxo_atual": 634,
-  "descartadas_pelos_filtros_atuais": 28510,
+  "total_ingeridas": 29392,
+  "aprovadas_pelo_fluxo_atual": 636,
+  "descartadas_pelos_filtros_atuais": 28756,
   "score_medio_materialidade": 4.16,
   "seriam_breaking": 54,
-  "iriam_para_rodada": 532,
-  "seriam_descartadas_pelo_novo_sistema": 1414,
+  "iriam_para_rodada": 533,
+  "seriam_descartadas_pelo_novo_sistema": 1413,
   "total_divergencias": 766,
   "divergencias": [
-    {
-      "title": "RBI mantém juros inalterados e sinaliza postura mais dovish",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Novo relatório alerta que proibição de transceivers chineses prejudicaria gigantes de IA dos EUA",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Está na hora de ouvir Alex Karp",
       "source": "Brazil Journal",
@@ -146,6 +132,20 @@
       "title": "Taxa Selic vai cair, mas destino dos juros será decidido no Planalto, diz economista",
       "source": "Seu Dinheiro",
       "score": 3.0,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Silicon Valley's favorite fantasy is back: one app to rule them all",
+      "source": "Business Insider",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Morgan Stanley mapped 3 AI futures. One company wins them all.",
+      "source": "Business Insider",
+      "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     }
