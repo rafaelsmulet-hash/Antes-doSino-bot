@@ -469,3 +469,168 @@ def generate_shadow_daily_report():
         print("ERRO (shadow_report): falha ao salvar " + SHADOW_REPORT_FILE + ": " + str(e))
 
     return relatorio
+
+
+# =============================================================================
+# 7) CHECKPOINT ENGINE EM MODO SOMBRA (Fase 2)
+#
+# Gera rascunhos de "o que teria sido enviado" nos 4 momentos que ja
+# existem (Radar da Madrugada, Snapshot, Evening Briefing, Night
+# Wrap) - NUNCA envia nada, NUNCA formata como mensagem real de
+# producao. So gera arquivo de comparacao pra avaliacao humana.
+#
+# LIMITACAO CONHECIDA E DELIBERADA: como o modo sombra (Fase 1) so
+# pontua noticias que JA sobreviveram aos filtros atuais (a pontuacao
+# acontece dentro do fluxo de publicacao existente), a comparacao
+# aqui NAO CONSEGUE mostrar "noticias que o novo sistema priorizaria
+# e o atual nunca chegou a publicar" - so o sentido contrario
+# (publicado pelo atual, mas o novo descartaria ou consolidaria).
+# Resolver isso exigiria pontuar noticias ANTES da decisao atual de
+# publicar, o que e um passo de fase futura, nao desta.
+# =============================================================================
+
+SHADOW_CHECKPOINTS_DIR = "docs/shadow_checkpoints"
+LIMITE_ITENS_POR_CHECKPOINT = 8
+
+
+def group_queue_by_theme(queue_items):
+    """Agrupa os itens da fila por cluster_key (o mesmo usado no
+    active_stories) - itens sem tema identificado caem no grupo
+    'geral', preservando a ordem de chegada dentro de cada grupo."""
+    grupos = {}
+    for item in queue_items:
+        tema = item.get("cluster_key") or "geral"
+        grupos.setdefault(tema, []).append(item)
+    return grupos
+
+
+def build_shadow_checkpoint_draft(checkpoint_name, queue_items, limite_itens=LIMITE_ITENS_POR_CHECKPOINT):
+    """Constroi o rascunho de comparacao de 1 checkpoint - NUNCA
+    formatado como mensagem real de producao (isso e proposital,
+    evita qualquer risco de confundir rascunho com mensagem que
+    realmente sai). Ordena por materialidade, corta no limite, agrupa
+    por tema os itens que sobraram dentro do limite."""
+    ordenados = prioritize_queue(queue_items)
+    aproveitados = ordenados[:limite_itens]
+    descartados_pelo_limite = ordenados[limite_itens:]
+
+    grupos = group_queue_by_theme(aproveitados)
+
+    ranking = []
+    for i, item in enumerate(ordenados, 1):
+        score_str = str(item.get("score")) if item.get("score") is not None else "?"
+        ranking.append(str(i) + ". [" + score_str + "] " + item.get("title", "") + " (" + item.get("source", "") + ")")
+
+    linhas_mensagem = ["🔬 [RASCUNHO - NAO E MENSAGEM REAL] " + checkpoint_name]
+    for tema, itens_do_tema in grupos.items():
+        linhas_mensagem.append("")
+        linhas_mensagem.append("📌 " + tema.title())
+        for item in itens_do_tema:
+            score_str = str(item.get("score")) if item.get("score") is not None else "?"
+            linhas_mensagem.append("- [" + score_str + "] " + item.get("title", ""))
+
+    mensagem_rascunho = "\n".join(linhas_mensagem)
+
+    return {
+        "checkpoint": checkpoint_name,
+        "gerado_em": datetime.now(BR_TZ).isoformat(),
+        "itens_na_fila": len(queue_items),
+        "itens_agrupados": len(aproveitados),
+        "itens_descartados_pelo_limite": len(descartados_pelo_limite),
+        "temas_agrupados": list(grupos.keys()),
+        "ranking_por_materialidade": ranking,
+        "titulos_descartados_pelo_limite": [d.get("title") for d in descartados_pelo_limite],
+        "mensagem_que_seria_enviada": mensagem_rascunho,
+    }
+
+
+def save_shadow_checkpoint(draft):
+    """Salva o rascunho em docs/shadow_checkpoints/ - 1 arquivo por
+    execucao (nome com checkpoint + timestamp), permitindo comparar
+    varias execucoes ao longo de vários dias depois."""
+    try:
+        os.makedirs(SHADOW_CHECKPOINTS_DIR, exist_ok=True)
+        timestamp_arquivo = datetime.now(BR_TZ).strftime("%Y%m%d_%H%M%S")
+        caminho = os.path.join(SHADOW_CHECKPOINTS_DIR, draft["checkpoint"] + "_" + timestamp_arquivo + ".json")
+        with open(caminho, "w", encoding="utf-8") as f:
+            json.dump(draft, f, ensure_ascii=False, indent=2)
+        return caminho
+    except Exception as e:
+        print("ERRO (shadow_checkpoint): falha ao salvar rascunho: " + str(e))
+        return None
+
+
+def generate_editorial_comparison(checkpoint_name, queue_items_consumidos):
+    """Compara o que o fluxo ATUAL publicou HOJE (via decision_log)
+    com o que este checkpoint sombra acabou de consolidar. Ver nota de
+    limitacao no cabecalho desta secao - a direcao 'novo priorizaria,
+    atual nunca publicou' nao e mensuravel nesta fase."""
+    hoje = _hoje_str()
+    decisoes_hoje = [d for d in _load_decision_log().get("decisions", []) if d.get("timestamp", "").startswith(hoje)]
+    publicadas_hoje = [d for d in decisoes_hoje if d.get("decisao_sistema_atual") == "publicado"]
+
+    novo_descartaria = [d.get("title") for d in publicadas_hoje if d.get("decisao_sugerida") == "discard"]
+    novo_consolidaria_agora = [item.get("title") for item in queue_items_consumidos]
+
+    comparacao = {
+        "checkpoint": checkpoint_name,
+        "data": hoje,
+        "gerado_em": datetime.now(BR_TZ).isoformat(),
+        "fluxo_atual": {
+            "mensagens_enviadas_hoje": len(publicadas_hoje),
+            "principais_noticias": [d.get("title") for d in publicadas_hoje[-10:]],
+        },
+        "novo_sistema": {
+            "mensagens_que_enviaria_neste_checkpoint": 1 if queue_items_consumidos else 0,
+            "eventos_consolidados_neste_checkpoint": novo_consolidaria_agora,
+        },
+        "diferencas": {
+            "enviadas_pelo_atual_que_o_novo_descartaria_hoje": novo_descartaria,
+            "priorizadas_pelo_novo_e_nao_enviadas_pelo_atual": None,
+            "nota_limitacao": (
+                "O campo acima e None de proposito: nesta fase, o modo sombra so pontua "
+                "noticias que JA sobreviveram aos filtros atuais - nao e possivel ainda "
+                "mostrar noticias que o novo sistema priorizaria e o atual nunca chegou "
+                "a publicar. Isso exigiria pontuar ANTES da decisao atual, planejado para "
+                "uma fase futura."
+            ),
+        },
+    }
+    return comparacao
+
+
+def save_editorial_comparison(comparacao):
+    """Salva a comparacao editorial, no mesmo diretorio dos
+    checkpoints sombra, com sufixo proprio pra distinguir."""
+    try:
+        os.makedirs(SHADOW_CHECKPOINTS_DIR, exist_ok=True)
+        timestamp_arquivo = datetime.now(BR_TZ).strftime("%Y%m%d_%H%M%S")
+        caminho = os.path.join(SHADOW_CHECKPOINTS_DIR, comparacao["checkpoint"] + "_comparacao_" + timestamp_arquivo + ".json")
+        with open(caminho, "w", encoding="utf-8") as f:
+            json.dump(comparacao, f, ensure_ascii=False, indent=2)
+        return caminho
+    except Exception as e:
+        print("ERRO (shadow_checkpoint): falha ao salvar comparacao: " + str(e))
+        return None
+
+
+def run_shadow_checkpoint(checkpoint_name):
+    """Ponto de entrada unico pro checkpoint engine sombra - chamado
+    pelo main.py exatamente nos mesmos momentos em que o checkpoint
+    REAL dispara (reaproveita a janela ja calculada, sem nenhuma
+    logica de agendamento nova). Consome a fila atual (limpa depois -
+    simula o comportamento real futuro de 'checkpoint esvazia a
+    fila'), gera o rascunho e a comparacao, salva os 2 arquivos.
+    NUNCA envia nada, NUNCA bloqueia - quem chama e responsavel por
+    isolar em try/except (assim como todo o resto do modo sombra)."""
+    fila_atual = get_round_queue().get("queue", [])
+
+    draft = build_shadow_checkpoint_draft(checkpoint_name, fila_atual)
+    save_shadow_checkpoint(draft)
+
+    comparacao = generate_editorial_comparison(checkpoint_name, fila_atual[: draft["itens_agrupados"]])
+    save_editorial_comparison(comparacao)
+
+    clear_round_queue()
+
+    return draft, comparacao
