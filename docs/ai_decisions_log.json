@@ -7811,6 +7811,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T11:31:33.914232-03:00"
+    },
+    {
+      "title": "US Services Industry Expands at a Steady Pace",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Indicador relevante para o mercado financeiro, refletindo o crescimento da indústria de serviços nos EUA.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:35:52.120032-03:00"
+    },
+    {
+      "title": "O jalapeño que derrubou o Chipotle: salmonela assusta e ações caem 10%",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:35:55.990944-03:00"
+    },
+    {
+      "title": "Crude inventory rises by 2.5M barrels for the week ended July 31 – EIA",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Aumento na reserva de petróleo cru pode afetar os preços do petróleo e, consequentemente, a economia global.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T11:36:03.924521-03:00"
+    },
+    {
+      "title": "AI chip stocks mixed after AMD dips as outlook fails to impress",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta as ações de empresas de chips de inteligência artificial, que são importantes para o setor tecnológico",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T11:36:07.628749-03:00"
+    },
+    {
+      "title": "Disney's CEO just confirmed the company is exploring a move into free streaming",
+      "source": "Business Insider",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de mídia e entretenimento, mas não tem impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T11:36:25.916999-03:00"
     }
   ]
 }
