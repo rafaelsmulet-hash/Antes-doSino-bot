@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cachorro-quente, brigadeiro e mais: como empreendedores faturam até R$ 4 milhões por ano com ideias simples",
-      "source": "G1 Economia",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:00:45.680197-03:00"
-    },
-    {
-      "title": "Dona da Droga Raia reduz dívida em 28% e lucra R$ 432,7 mi no trimestre",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "Aumento de lucro da empresa é um sinal positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:00:46.360304-03:00"
-    },
-    {
-      "title": "Lotofácil 3753 desencanta e faz 2 milionários no Sudeste; Mega-Sena acumula e prêmio em jogo atinge R$ 150 milhões",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "noticia sobre loteria e prêmios",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:00:47.162071-03:00"
-    },
-    {
-      "title": "How to get the best hotel deals for TechCrunch Disrupt 2026",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:00:49.188140-03:00"
-    },
-    {
       "title": "ETF Inflows Hit $191B in July as 2026 Total Nears $1.3 Trillion",
       "source": "Yahoo Finance",
       "score": 6.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T20:26:05.935433-03:00"
+    },
+    {
+      "title": "Argenx SE (ARGX) Prepares to Demonstrate Vyvgart’s Efficacy in Broader Autoimmune Diseases",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia sugere que o Vyvgart pode ter um impacto mais amplo no mercado de medicamentos, o que pode aumentar o valor da ação da Argenx SE.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:30:53.493145-03:00"
+    },
+    {
+      "title": "Crude Oil Prices Slump on Hopes of a Deal to Reopen Strait of Hormuz",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a disponibilidade e o fluxo de petróleo no mercado internacional.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:30:56.540768-03:00"
+    },
+    {
+      "title": "How McDonald’s Earnings Show the Turnaround Is Taking Hold",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque mostra um aumento nos lucros da empresa, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:30:59.564193-03:00"
+    },
+    {
+      "title": "ArcelorMittal & Microsoft Deepen Partnership With Azure. How to Play MT Stock Here.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T20:31:02.236780-03:00"
     }
   ]
 }
