@@ -1,28 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 29888,
-  "aprovadas_pelo_fluxo_atual": 645,
-  "descartadas_pelos_filtros_atuais": 29243,
+  "total_ingeridas": 30136,
+  "aprovadas_pelo_fluxo_atual": 646,
+  "descartadas_pelos_filtros_atuais": 29490,
   "score_medio_materialidade": 4.16,
   "seriam_breaking": 54,
-  "iriam_para_rodada": 537,
-  "seriam_descartadas_pelo_novo_sistema": 1409,
-  "total_divergencias": 773,
+  "iriam_para_rodada": 538,
+  "seriam_descartadas_pelo_novo_sistema": 1408,
+  "total_divergencias": 771,
   "divergencias": [
-    {
-      "title": "Amazon Just Landed a Big Win in the Race Against Tesla and Waymo",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Opinion: The Greatest Fleecing of Retail Investors in Wall Street's Storied History Begins Tomorrow, Aug. 6",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Trading in Pre-IPO Companies Is Taking Off in Popularity. Here's Why That's Bullish for Crypto.",
       "source": "Nasdaq",
@@ -144,6 +130,20 @@
     },
     {
       "title": "How Economic Power Has Shifted Over The Past 200 Years",
+      "source": "ZeroHedge",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "US Expands Strategic Foothold On Somalia's Coast As Yemen Conflict Simmers",
+      "source": "ZeroHedge",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Which Countries Think They're On The Right Track?",
       "source": "ZeroHedge",
       "score": null,
       "decisao_sugerida": "discard",
