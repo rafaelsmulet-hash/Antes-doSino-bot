@@ -4763,6 +4763,13 @@ def main():
             ai_result = None
             if USE_AI:
                 ai_result = classify_news_ai(title, raw_body, translate=is_english)
+                # Pausa apos TODA chamada de IA, nao so apos o envio -
+                # itens descartados logo em seguida (fora do escopo,
+                # filtro de fonte, etc) tambem gastaram uma chamada e
+                # precisam do mesmo respiro, senao uma rajada de
+                # noticias estoura o rate limit do Groq (30 req/min)
+                # mesmo com poucos itens aprovados/enviados.
+                time.sleep(2.5)
 
             shadow_score = ai_result.get("score_materialidade") if ai_result else None
             shadow_motivo = ai_result.get("motivo_materialidade") if ai_result else None
