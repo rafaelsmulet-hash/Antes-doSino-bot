@@ -1,42 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 28668,
-  "aprovadas_pelo_fluxo_atual": 623,
-  "descartadas_pelos_filtros_atuais": 28045,
-  "score_medio_materialidade": 4.19,
-  "seriam_breaking": 59,
-  "iriam_para_rodada": 540,
-  "seriam_descartadas_pelo_novo_sistema": 1401,
-  "total_divergencias": 763,
+  "total_ingeridas": 28916,
+  "aprovadas_pelo_fluxo_atual": 630,
+  "descartadas_pelos_filtros_atuais": 28286,
+  "score_medio_materialidade": 4.18,
+  "seriam_breaking": 57,
+  "iriam_para_rodada": 533,
+  "seriam_descartadas_pelo_novo_sistema": 1410,
+  "total_divergencias": 767,
   "divergencias": [
-    {
-      "title": "Chanel Sales Jump 16% in First Half (Video)",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Vietnam’s Techcombank Seeks $1 Billion, Joining Rush for Funds",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "India Rules Out Early End To FX Deposit Plan, Sees Healthy Flows",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Trump alimenta esperanças de reabertura de Ormuz ao indicar acordo iminente",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Copom, emprego nos EUA, balanço do Bradesco e mais destaques desta quarta",
       "source": "InfoMoney",
@@ -145,6 +117,34 @@
     {
       "title": "Asian Shares Follow Wall Street Higher Amid Easing AI, Middle East Concerns",
       "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "3 Reasons Chewy Stock Fits Peter Lynch's Blueprint for a 10-Bagger Stock",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Por que recebemos tantas ligações indesejadas? E como evitar esse tipo de chamada?",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "'Nem para comer me chamavam': entenda o que é a solidão corporativa e como pode afetar sua carreira",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Após trégua nos preços, azeite volta a ser ameaçado por calor extremo e incêndios na Europa",
+      "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
