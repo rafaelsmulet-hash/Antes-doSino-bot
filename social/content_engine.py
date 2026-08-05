@@ -1764,21 +1764,6 @@ def notificar_expirado(item):
     _enviar_telegram_admin(texto)
 
 
-def notificar_arte_pronta(item, caminho_preview=None):
-    """Enviada pelo design engine assim que o item vira 'designed' -
-    mostra o preview visual (quando existir imagem) e instrui como
-    publicar. Nunca publica sozinho."""
-    plataforma = (item.get("platform") or "x").upper()
-    texto = (
-        "✅ <b>Arte pronta</b>\n"
-        "Assunto: " + item["headline"] + "\n\n"
-        "Destino:\n☑ " + plataforma + "\n\n"
-        "ID: <code>" + item["id"] + "</code>\n\n"
-        "Responder:\nPublicar " + item["id"]
-    )
-    _enviar_telegram_admin_foto(caminho_preview, texto)
-
-
 def _gerar_e_entregar_video_tiktok(item):
     """Gera o video vertical do TikTok a partir dos MESMOS slides ja
     desenhados, e entrega no Telegram (video + legenda+hashtags+CTA
@@ -1909,17 +1894,6 @@ def notificar_publicado(item):
     )
     if item.get("publish_url"):
         texto += "Link:\n" + item["publish_url"]
-    _enviar_telegram_admin(texto)
-
-
-def notificar_falha_publicacao(item, erro):
-    texto = (
-        "❌ <b>Falha ao publicar</b>\n\n"
-        "Assunto: " + item["headline"] + "\n"
-        "ID: <code>" + item["id"] + "</code>\n"
-        "Erro: " + str(erro) + "\n\n"
-        "Status: failed. Pode tentar novamente respondendo:\nPublicar " + item["id"]
-    )
     _enviar_telegram_admin(texto)
 
 
@@ -2094,7 +2068,7 @@ def checar_aprovacoes_pendentes():
             notificar_publicado(item)
             continue
 
-        match = re.match(r"(?i)^\s*(aprovar|rejeitar|publicar|editar|regenerar)\s+(\S+)\s*$", texto)
+        match = re.match(r"(?i)^\s*(aprovar|rejeitar|editar|regenerar)\s+(\S+)\s*$", texto)
         if not match:
             # Nao bateu com nenhum comando reconhecido - se houver uma
             # edicao pendente, trata essa mensagem como a instrucao de
@@ -2168,57 +2142,6 @@ def checar_aprovacoes_pendentes():
             except Exception as e:
                 print("Erro ao gerar arte após regenerar (enviando só texto): " + str(e))
                 notificar_draft(item)
-            continue
-
-        if acao == "publicar":
-            # Caminho automatico (via API paga) - mantido para uso
-            # futuro, caso o custo da API do X deixe de ser um
-            # empecilho. Hoje o fluxo padrao e o comando 'Publicado',
-            # que nao chama nenhuma API externa.
-            # Trava contra publicacao duplicada: so aceita a partir de
-            # 'designed' (ou 'failed', pra permitir nova tentativa) -
-            # nunca reprocessa algo ja 'publishing'/'published'.
-            if item.get("status") not in ("designed", "failed"):
-                _enviar_telegram_admin(
-                    "O item <code>" + item_id + "</code> está com status \"" + str(item.get("status"))
-                    + "\" - só é possível publicar itens com status \"designed\" ou \"failed\"."
-                )
-                continue
-
-            _registrar_transicao(item, "publishing", "Publicação solicitada via Telegram")
-            fila[indice] = item
-            save_social_queue_full(fila)  # salva o estado 'publishing' ANTES de chamar a API externa
-
-            try:
-                from social.publishers import manager as publisher_manager
-                resultado = publisher_manager.publish(item.get("platform", "x"), item)
-            except Exception as e:
-                resultado = {"success": False, "error": "Erro interno ao acionar o publisher: " + str(e)}
-
-            fila = load_social_queue()
-            indice = _find_item_index_by_id(fila, item_id)
-            item = fila[indice]
-
-            if resultado.get("success"):
-                item["publish_url"] = resultado.get("url")
-                item["publish_error"] = None
-                _registrar_transicao(item, "published", "Publicado com sucesso")
-                fila[indice] = item
-                fila_alterada = True
-                print("Social Content Engine: item " + item_id + " publicado com sucesso.")
-                save_social_queue_full(fila)
-                registrar_published_post(item, resultado)
-                notificar_publicado(item)
-            else:
-                erro = resultado.get("error", "erro desconhecido")
-                item["publish_error"] = erro
-                _registrar_transicao(item, "failed", "Falha na publicação: " + str(erro))
-                fila[indice] = item
-                fila_alterada = True
-                print("Social Content Engine: falha ao publicar item " + item_id + ": " + str(erro))
-                save_social_queue_full(fila)
-                registrar_published_post(item, resultado)
-                notificar_falha_publicacao(item, erro)
             continue
 
         if item.get("status") != "draft":
