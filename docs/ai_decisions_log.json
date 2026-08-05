@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Mercado de fusões e aquisições no Brasil já movimentou US$ 30 bilhões em 2026",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:43.202901-03:00"
-    },
-    {
-      "title": "'A velocidade e o apetite são menores', diz presidente do Sicredi sobre crédito rural",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:43.349955-03:00"
-    },
-    {
-      "title": "EXCLUSIVO: Chery vai vender humanoides e cachorros robôs no Brasil",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:43.478089-03:00"
-    },
-    {
-      "title": "João Fonseca x Stefanos Tsitsipas: veja o horário e onde assistir",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:43.615007-03:00"
-    },
-    {
-      "title": "Elon Musk addresses memory-chip stock concerns with one simple observation",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T06:56:44.309093-03:00"
-    },
-    {
-      "title": "‘I don’t wish to be cold-hearted’: My elderly relative can no longer care for himself. Am I wrong to leave his care to the state?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:47.798276-03:00"
-    },
-    {
-      "title": "This is the whopping amount Joe Rogan earns from the podcast he airs at his $14.4 million Austin home",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:47.959205-03:00"
-    },
-    {
-      "title": "Chesapeake Granite Wash Trust declares $0.0128 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:48.120024-03:00"
-    },
-    {
-      "title": "Kao reports 1H results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:48.205212-03:00"
-    },
-    {
-      "title": "Weis Markets declares $0.34 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:48.304152-03:00"
-    },
-    {
-      "title": "Schaeffler AG reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:48.398858-03:00"
-    },
-    {
-      "title": "Ferroglobe declares $0.015 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:48.501330-03:00"
-    },
-    {
-      "title": "Seaboard declares $2.25 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T06:56:48.595159-03:00"
-    },
-    {
       "title": "Ultragenyx anticipates 2 gene therapy PDUFAs in August/September 2026 while targeting profitability in 2027",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T19:36:19.789151-03:00"
+    },
+    {
+      "title": "Volume de serviços recua 0,4% em maio",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T19:40:46.945515-03:00"
+    },
+    {
+      "title": "SP2B estreia no Ibirapuera reunindo inovação, negócio e cultura; expectativa é de 500 mil visitantes",
+      "source": "Exame",
+      "score": 1.0,
+      "motivo": "evento não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T19:40:51.640953-03:00"
+    },
+    {
+      "title": "Tenaris Q2 Earnings Decline",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado pois afeta os resultados financeiros da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T19:40:57.795906-03:00"
+    },
+    {
+      "title": "AI Trailblazers Nvidia, Palantir, Alphabet, and Meta Are Shaking Wall Street to Its Core With This $3.4 Billion Warning",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T19:41:04.007988-03:00"
+    },
+    {
+      "title": "2 Energy Dividend Stocks to Buy in August for Steady Income",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T19:41:10.113045-03:00"
+    },
+    {
+      "title": "Motorola Solutions Q2 Profit Rises; Raises FY26 Outlook",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T19:41:16.231672-03:00"
+    },
+    {
+      "title": "AppLovin Corporation Q2 Profit Climbs",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T19:41:22.328029-03:00"
+    },
+    {
+      "title": "STERIS Plc Q1 Profit Rises",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "O aumento do lucro é um sinal positivo para a empresa e pode afetar positivamente o preço das ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T19:41:28.717451-03:00"
+    },
+    {
+      "title": "Host Hotels & Resorts Q2 Profit Rises",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T19:41:34.331849-03:00"
+    },
+    {
+      "title": "Salto: BC é prudente, mas há risco de recessăo no Brasil em 2027",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T19:41:42.003375-03:00"
+    },
+    {
+      "title": "Dollar Pressured by Strength in Stocks and Lower Crude Prices",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T19:41:50.650692-03:00"
+    },
+    {
+      "title": "Intel vs. TSMC: Intel Is Winning an AI Battle Against TSMC That Few Investors Are Watching",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T19:41:53.299887-03:00"
+    },
+    {
+      "title": "“Our Conviction Level Is Really Strong”: Goldman Sachs Sees 90% Upside on Korean Stocks. Here Are the ETFs to Buy if They’re Right.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T19:41:55.986086-03:00"
     }
   ]
 }
