@@ -1,42 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 30632,
-  "aprovadas_pelo_fluxo_atual": 647,
-  "descartadas_pelos_filtros_atuais": 29985,
+  "total_ingeridas": 30880,
+  "aprovadas_pelo_fluxo_atual": 648,
+  "descartadas_pelos_filtros_atuais": 30232,
   "score_medio_materialidade": 4.18,
-  "seriam_breaking": 54,
-  "iriam_para_rodada": 543,
-  "seriam_descartadas_pelo_novo_sistema": 1403,
-  "total_divergencias": 768,
+  "seriam_breaking": 53,
+  "iriam_para_rodada": 542,
+  "seriam_descartadas_pelo_novo_sistema": 1405,
+  "total_divergencias": 764,
   "divergencias": [
-    {
-      "title": "Banco Central deve cortar juro básico da economia pela 4º vez seguida, para 14% ao ano",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Foco no delivery: hamburgueria fatura quase R$ 10 mi com apenas 2 lojas",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Digital já é 25% de vendas da Centauro; chuteira rosa foi destaque na Copa",
-      "source": "UOL Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Copom define taxa de juros hoje, e mercado já projeta próximos passos",
-      "source": "UOL Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Justiça autoriza dono da Itapemirim a viajar para a Croácia de tornozeleira",
       "source": "UOL Economia",
@@ -145,6 +117,34 @@
     {
       "title": "Allianz to Buy UOB Asset Management Unit as CEO Targets Asia",
       "source": "Bloomberg Markets",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Day Trade hoje (05): Ibovespa pode romper resistência? Veja a análise",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Follow Ideas se aproxima de 700 clientes em menos de 3 meses, diz CEO da OnTick",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "UBS eleva recomendação da Technogym após estabilização dos resultados",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Macquarie vê ASEAN se beneficiando do recuo do momentum de IA",
+      "source": "Investing.com Brasil",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
