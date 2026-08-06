@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Robinhood Stock Has Soared 45% From Its 52-Week Low. Here's Why I'm Predicting Another Sell-Off.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:36:50.063174-03:00"
-    },
-    {
-      "title": "Indian Shares End Little Changed Amid RBI Rate Hold",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante por ter mencionado a manutenção da taxa de juros pela RBI, mas o impacto foi neutro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:36:56.647838-03:00"
-    },
-    {
-      "title": "Clear Secure, Inc. Reports Increase In Q2 Bottom Line",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois apresenta um aumento nos lucros da empresa, o que pode ser visto como positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:37:03.384363-03:00"
-    },
-    {
-      "title": "CorVel Corp. Q1 Income Rises",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento do lucro é um sinal positivo para a empresa e pode afetar positivamente o preço das ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:37:09.310132-03:00"
-    },
-    {
-      "title": "If a Stock Market Crash Is Coming, History Says the Smartest Investors Are Already Making This 1 Move",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia menciona uma possível crise no mercado de ações, o que é relevante para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:37:13.167012-03:00"
-    },
-    {
-      "title": "Apple's Quarterly iPhone Sales Were Even Better Than They Seem",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A Apple superou as estimativas de analistas, indicando um desempenho forte do mercado de smartphones.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:37:19.893442-03:00"
-    },
-    {
-      "title": "The Carlyle Group Inc. Q2 Income Declines",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "motivo": "Declínio de lucro pode influenciar a percepção dos investidores sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:37:25.842818-03:00"
-    },
-    {
       "title": "Louisiana Pacific Q2 Profit Declines",
       "source": "Nasdaq",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T21:47:10.862459-03:00"
+    },
+    {
+      "title": "JPMorgan é investigado após denúncia de ex-funcionária sobre fraudes",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "investigação de fraude em instituição financeira pode afetar confiança no sistema",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:55:43.962828-03:00"
+    },
+    {
+      "title": "Realty Income outlines 2026 AFFO per share of $4.44 to $4.45 while targeting $10B of acquisitions",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa visa aquisições significativas, o que pode impulsionar o crescimento e os lucros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:55:50.957544-03:00"
+    },
+    {
+      "title": "Clover outlines FY 2026 revenue of $2.92B-$3.0B as 4.5-Star rating boosts 2027 flexibility",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A previsão de receita é relevante para os investidores e pode influenciar as expectativas de crescimento da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:55:54.119724-03:00"
+    },
+    {
+      "title": "Airbnb vs. e.l.f. Beauty: Which Consumer Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações específicas sobre o desempenho atual das ações ou eventos de mercado relevantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:55:58.482783-03:00"
+    },
+    {
+      "title": "Taiwan Stock Market May Hand Back Wednesday's Gains",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:56:01.590419-03:00"
+    },
+    {
+      "title": "BAM (BAM) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:56:07.997455-03:00"
+    },
+    {
+      "title": "There's Nothin' Like a Good Roller Coaster",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:56:17.371152-03:00"
     }
   ]
 }

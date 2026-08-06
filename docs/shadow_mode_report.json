@@ -1,42 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 36336,
-  "aprovadas_pelo_fluxo_atual": 683,
-  "descartadas_pelos_filtros_atuais": 35653,
+  "total_ingeridas": 36584,
+  "aprovadas_pelo_fluxo_atual": 686,
+  "descartadas_pelos_filtros_atuais": 35898,
   "score_medio_materialidade": 4.26,
-  "seriam_breaking": 53,
-  "iriam_para_rodada": 531,
-  "seriam_descartadas_pelo_novo_sistema": 1416,
+  "seriam_breaking": 54,
+  "iriam_para_rodada": 528,
+  "seriam_descartadas_pelo_novo_sistema": 1418,
   "total_divergencias": 755,
   "divergencias": [
-    {
-      "title": "Robinhood Stock Has Soared 45% From Its 52-Week Low. Here's Why I'm Predicting Another Sell-Off.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Indian Shares End Little Changed Amid RBI Rate Hold",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "CorVel Corp. Q1 Income Rises",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "The Carlyle Group Inc. Q2 Income Declines",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "France's €107 Billion Deficit Shock: The Next Euro Debt Crisis?",
       "source": "ZeroHedge",
@@ -145,6 +117,34 @@
     {
       "title": "Perrigo beats top-line and bottom-line estimates; reaffirms FY26 outlook",
       "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Oil prices rebound after Houthis say they attacked Saudi tanker",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da CoreWeave estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Turk Hava Yollari AO caem hoje?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Tullow Oil estão caindo hoje?",
+      "source": "Investing.com Brasil",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
