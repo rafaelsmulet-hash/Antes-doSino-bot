@@ -159,34 +159,8 @@
   .acoes-chip button:hover{color:var(--down);}
   .acoes-empty-hint{padding:16px 12px;color:var(--slate-dim);font-size:0.85rem;text-align:center;}
 
-  /* ---------- Modulo de sentimento ---------- */
+  /* ---------- Linha VIX + DXY ---------- */
   .sentiment-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;height:230px;}
-  .barometer-card{
-    background:var(--panel-bg);border:1px solid var(--line);border-radius:12px;
-    padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:14px;
-  }
-  .barometer-title{
-    font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.6px;
-    text-transform:uppercase;color:var(--bronze);
-  }
-  .barometer-track{
-    height:10px;border-radius:100px;
-    background:linear-gradient(90deg, var(--up), #d9c96b 50%, var(--down));
-    position:relative;
-  }
-  .barometer-marker{
-    position:absolute;top:-5px;width:20px;height:20px;border-radius:50%;
-    background:var(--cream);border:3px solid var(--navy-deep);
-    box-shadow:0 0 0 2px var(--gold);
-    transform:translateX(-50%);
-    transition:left 0.6s ease;
-  }
-  .barometer-labels{display:flex;justify-content:space-between;font-size:0.72rem;color:var(--slate-dim);}
-  .barometer-state{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:600;}
-  .barometer-state.risk-on{color:var(--up);}
-  .barometer-state.risk-off{color:var(--down);}
-  .barometer-state.neutro{color:var(--gold);}
-  .barometer-caption{color:var(--slate);font-size:0.85rem;line-height:1.5;}
 
   /* ---------- Sidebar: feed + lead capture ---------- */
   .feed-card{
@@ -266,7 +240,6 @@
     .acoes-row{height:380px;}
     .acoes-tab{font-size:0.72rem;padding:5px 11px;}
     .sentiment-row{grid-template-columns:1fr;height:auto;}
-    .barometer-card{height:200px;}
     .customize-drawer{width:88vw;}
   }
 </style>
@@ -283,6 +256,7 @@
     <div class="term-actions">
       <a href="calendario.html" class="btn-back-home">📅 Calendário</a>
       <a href="mapa.html" class="btn-back-home">🗺 Mapa de Calor</a>
+      <a href="quant.html" class="btn-back-home">📊 Quant</a>
       <button class="btn-customize" id="btn-customize" type="button">⚙ Personalizar</button>
       <a href="https://t.me/tribute/app?startapp=sZPm" class="btn-vip">Ativar Bot VIP ⚡</a>
     </div>
@@ -360,18 +334,13 @@
           <div class="panel-body" id="widget-vix"></div>
         </div>
 
-        <div class="barometer-card" data-panel-id="barometro">
-          <div class="barometer-title">Clima do dia</div>
-          <div class="barometer-state neutro" id="barometer-state">Carregando...</div>
-          <div class="barometer-track">
-            <div class="barometer-marker" id="barometer-marker" style="left:50%;"></div>
+        <div class="panel" data-panel-id="dxy" draggable="true">
+          <div class="panel-head">
+            <span class="drag-handle">⠿</span>
+            <span class="panel-title">Índice do Dólar (DXY)</span>
+            <button class="panel-hide-btn" data-hide="dxy" title="Ocultar painel">✕</button>
           </div>
-          <div class="barometer-labels">
-            <span>Risk-Off</span>
-            <span>Neutro</span>
-            <span>Risk-On</span>
-          </div>
-          <p class="barometer-caption" id="barometer-caption">Calculado a partir do sentimento das notícias do dia no Antes do Sino.</p>
+          <div class="panel-body" id="widget-dxy"></div>
         </div>
       </section>
     </main>

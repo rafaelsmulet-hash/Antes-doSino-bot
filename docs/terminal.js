@@ -3,10 +3,9 @@
  * ======================================
  * Pagina 100% estatica/client-side, sem dependencia de backend novo:
  * - Cotacoes: widgets embutidos da TradingView (dados deles, nao nossos).
- * - Noticias e clima do dia: busca dados-terminal.html (mesma origem - o
- *   arquivo interno que o main.py gera com o feed completo, nao e uma
- *   pagina do site) e le o feed real + a worry-line ja calculada la -
- *   zero duplicacao de logica Python aqui.
+ * - Noticias: busca dados-terminal.html (mesma origem - o arquivo interno
+ *   que o main.py gera com o feed completo, nao e uma pagina do site) e
+ *   le o feed real - zero duplicacao de logica Python aqui.
  * - Personalizacao (ordem/visibilidade dos paineis): SortableJS + localStorage.
  */
 
@@ -22,7 +21,7 @@
     { id: "commodities", label: "Commodities" },
     { id: "acoes", label: "Ações Brasil" },
     { id: "vix", label: "VIX — Índice de Volatilidade" },
-    { id: "barometro", label: "Clima do dia (Risk-On/Risk-Off)" },
+    { id: "dxy", label: "Índice do Dólar (DXY)" },
   ];
 
   // ---------------------------------------------------------------------
@@ -148,6 +147,7 @@
     ]);
 
     montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
+    montarSymbolOverview("widget-dxy", [["Índice do Dólar (DXY)", "TVC:DXY|1D"]]);
 
     montarWidgetAcoes(); // Top 10 / Minha lista - ver secao "Bloco de acoes" abaixo
   }
@@ -407,10 +407,9 @@
   }
 
   // ---------------------------------------------------------------------
-  // Noticias reais + clima do dia - busca o dados-terminal.html interno
-  // (mesma origem, sem CORS - nao e uma pagina navegavel do site) e
-  // reaproveita o que o main.py ja gerou: os cards do feed e a worry-line
-  // (calma/alerta/info) que vira o barometro.
+  // Noticias reais - busca o dados-terminal.html interno (mesma origem,
+  // sem CORS - nao e uma pagina navegavel do site) e reaproveita os
+  // cards do feed que o main.py ja gerou.
   // ---------------------------------------------------------------------
 
   function carregarDadosDoPortal() {
@@ -422,12 +421,10 @@
       .then(function (html) {
         var doc = new DOMParser().parseFromString(html, "text/html");
         popularFeed(doc);
-        popularBarometro(doc);
       })
       .catch(function (e) {
         document.getElementById("feed-body").innerHTML =
           '<div class="feed-empty">Não foi possível carregar as notícias agora.</div>';
-        document.getElementById("barometer-state").textContent = "Indisponível";
         console.log("Terminal: falha ao carregar dados do portal - " + e);
       });
   }
@@ -463,48 +460,6 @@
         "</div>";
     }
     body.innerHTML = html || '<div class="feed-empty">Sem notícias no momento.</div>';
-  }
-
-  function popularBarometro(doc) {
-    var worryLine = doc.querySelector(".worry-line");
-    var estadoEl = document.getElementById("barometer-state");
-    var markerEl = document.getElementById("barometer-marker");
-    var captionEl = document.getElementById("barometer-caption");
-
-    if (!worryLine) {
-      estadoEl.textContent = "Neutro";
-      estadoEl.className = "barometer-state neutro";
-      markerEl.style.left = "50%";
-      return;
-    }
-
-    var textoWorry = worryLine.textContent.trim();
-    if (captionEl && textoWorry) {
-      captionEl.textContent = textoWorry;
-    }
-
-    // A classe "alert" (main.py: build_worry_line_html) cobre TANTO
-    // destaque de baixa quanto de alta - so o texto distingue qual e
-    // qual ("sinal de baixa" vs "sinal de alta"). Nunca tratar "alert"
-    // como sinonimo de Risk-Off sem checar a polaridade real.
-    var textoLower = textoWorry.toLowerCase();
-    if (worryLine.classList.contains("alert") && textoLower.indexOf("sinal de baixa") !== -1) {
-      estadoEl.textContent = "Risk-Off";
-      estadoEl.className = "barometer-state risk-off";
-      markerEl.style.left = "12%";
-    } else if (worryLine.classList.contains("alert") && textoLower.indexOf("sinal de alta") !== -1) {
-      estadoEl.textContent = "Risk-On";
-      estadoEl.className = "barometer-state risk-on";
-      markerEl.style.left = "88%";
-    } else if (worryLine.classList.contains("calm")) {
-      estadoEl.textContent = "Risk-On";
-      estadoEl.className = "barometer-state risk-on";
-      markerEl.style.left = "88%";
-    } else {
-      estadoEl.textContent = "Neutro";
-      estadoEl.className = "barometer-state neutro";
-      markerEl.style.left = "50%";
-    }
   }
 
   // ---------------------------------------------------------------------
@@ -598,8 +553,8 @@
       aplicarVisibilidade(estadoOcultos);
     }
 
-    // Drag-and-drop dos paineis de cotacao (grid 2x2). VIX/barometro
-    // ficam numa linha fixa por design (sentimento sempre por ultimo).
+    // Drag-and-drop dos paineis de cotacao (grid 2x2). VIX/DXY ficam
+    // numa linha fixa por design (sempre por ultimo).
     if (window.Sortable) {
       Sortable.create(document.getElementById("panels-grid"), {
         handle: ".panel-head",
