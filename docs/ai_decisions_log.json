@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dólar recua e Bolsa sobe com o mercado à espera de decisão do Copom",
-      "source": "UOL Economia",
-      "score": 8.0,
-      "motivo": "Decisão do Copom sobre taxa básica de juros é evento de mercado importante",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:22:38.079386-03:00"
-    },
-    {
-      "title": "Grupo SBF (SBFG3) paga dividendos nesta quarta-feira; confira detalhes",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "Pagamento de dividendos é um sinal de saúde financeira da empresa e pode atrair investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:22:44.878543-03:00"
-    },
-    {
-      "title": "Disney+ looks to TikTok creators to bring fan content to its short-form video feed",
-      "source": "TechCrunch",
-      "score": 1.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:22:48.652911-03:00"
-    },
-    {
-      "title": "7 numbers from AMD earnings reveal an ultra-bullish future: AlphaSpace stats to know",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca números específicos do lucro da AMD, o que sugere que a empresa está tendo sucesso em suas áreas de negócios.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:22:52.240389-03:00"
-    },
-    {
-      "title": "This SpaceX number is spooking already skittish investors",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia está aumentando a incerteza no mercado e afetando a confiança dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:22:58.640916-03:00"
-    },
-    {
-      "title": "Tim Robbins: ‘Shawshank Redemption’ was a box office disaster — but 1 brilliant money move saved it. Copy it to get rich",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre um filme e uma estratégia financeira do ator Tim Robbins.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:23:04.739536-03:00"
-    },
-    {
-      "title": "Consumers Keep Hitting Buy on THC Despite Federal Restrictions",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:23:07.627310-03:00"
-    },
-    {
-      "title": "Mondi introduces laser-marked flexible packaging",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o setor de embalagens, mas não tem impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:23:10.772402-03:00"
-    },
-    {
-      "title": "The refinance ‘Seniority Tax’: How a flawed system and aggressive lenders leave older homeowners overpaying for their mortgage",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia destaca um problema específico no mercado de hipotecas que pode afetar os proprietários mais velhos, mas não é um evento de mercado maior.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:23:13.837314-03:00"
-    },
-    {
-      "title": "Meet 4 of the people who made it to the top of McKinsey this year",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:23:17.051142-03:00"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "source": "Federal Reserve",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma declaração da Reserva Federal, mas não fornece informações específicas sobre a decisão ou impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:23:20.465024-03:00"
-    },
-    {
-      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia indica uma queda na atividade fabril da China, o que pode ter impacto na economia global e nos preços dos commodities.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:25.362206-03:00"
-    },
-    {
-      "title": "Guerra, clima e petróleo: a tempestade perfeita que vai encarecer a comida no mundo",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Previsão de alta de preços dos alimentos até o fim do ano devido a fatores como falta de fertilizantes e El Niño forte",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:29.130784-03:00"
-    },
-    {
-      "title": "Por que as ações da Criteo estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "resultado do trimestre abaixo do esperado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:33.828840-03:00"
-    },
-    {
       "title": "'Culpa' do Brasil: Uber cresce, mas país vira freio para avanço das viagens",
       "source": "Exame",
       "score": 5.0,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T08:41:58.295141-03:00"
+    },
+    {
+      "title": "Siemens aproveita boom da IA para registrar maior lucro industrial de todos os tempos",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Demanda por centros de dados e tecnologia de IA deve impulsionar crescimento da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:45:53.603703-03:00"
+    },
+    {
+      "title": "Maior contratação de sua história: Real Madrid fecha com Diomande por até R$ 828 mi",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A contratação de um jogador de renome pode aumentar a popularidade da equipe e atrair mais fãs, o que pode ser positivo para a economia local e para a equipe em si.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:45:56.960397-03:00"
+    },
+    {
+      "title": "O plano de R$ 40 milhões da Divino Fogão para sair do shopping e levar bufê livre para a rua",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:04.163294-03:00"
+    },
+    {
+      "title": "Cheniere Energy Partners GAAP EPS of $2.14 beats by $1.18, revenue of $2.58B misses by $40M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:07.010766-03:00"
+    },
+    {
+      "title": "Kelly Services GAAP EPS of $0.31 beats by $0.12, revenue of $1B misses by $10M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:09.683767-03:00"
+    },
+    {
+      "title": "Foghorn Therapeutics GAAP EPS of -$0.10 beats by $0.14, revenue of $16.1M beats by $8.17M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:12.360728-03:00"
+    },
+    {
+      "title": "Ginkgo reaffirms 2026 cash burn guidance of $125M-$150M while expanding Nebula to 105 RACs",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:15.036653-03:00"
+    },
+    {
+      "title": "GH Research GAAP EPS of -$0.23",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:18.210970-03:00"
+    },
+    {
+      "title": "Keurig Dr Pepper rises after reporting first earnings with JDE Peet's included",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:46:21.302080-03:00"
+    },
+    {
+      "title": "The Real Brokerage GAAP EPS of -$0.03 misses by $0.04, revenue of $700.6M beats by $46.25M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as expectativas de lucro da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:27.591791-03:00"
+    },
+    {
+      "title": "Intapp Reaches Analyst Target Price",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:46:35.805593-03:00"
+    },
+    {
+      "title": "Lucro da Warner desaba 90% após perda de direitos de transmissão da NBA",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:44.088782-03:00"
+    },
+    {
+      "title": "BTLG11 aumenta lucro em 24% e capta R$ 1,81 bilhão em oferta; saiba mais",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:47.559308-03:00"
+    },
+    {
+      "title": "Revvity, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:46:51.925442-03:00"
     }
   ]
 }
