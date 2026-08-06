@@ -3,9 +3,10 @@
  * ======================================
  * Pagina 100% estatica/client-side, sem dependencia de backend novo:
  * - Cotacoes: widgets embutidos da TradingView (dados deles, nao nossos).
- * - Noticias e clima do dia: busca newsletter.html (mesma origem - a
- *   pagina que o main.py gera com o feed completo) e le o feed real +
- *   a worry-line ja calculada la - zero duplicacao de logica Python aqui.
+ * - Noticias e clima do dia: busca dados-terminal.html (mesma origem - o
+ *   arquivo interno que o main.py gera com o feed completo, nao e uma
+ *   pagina do site) e le o feed real + a worry-line ja calculada la -
+ *   zero duplicacao de logica Python aqui.
  * - Personalizacao (ordem/visibilidade dos paineis): SortableJS + localStorage.
  */
 
@@ -142,8 +143,8 @@
     montarSymbolOverview("widget-commodities", [
       ["Petróleo (WTI)", "TVC:USOIL|1D"],
       ["Ouro", "TVC:GOLD|1D"],
-      ["Cobre", "TVC:COPPER|1D"],
-      ["Soja", "CBOT:ZS1!|1D"],
+      ["Prata", "TVC:SILVER|1D"],
+      ["Milho", "FOREXCOM:CORN|1D"],
     ]);
 
     montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
@@ -406,13 +407,14 @@
   }
 
   // ---------------------------------------------------------------------
-  // Noticias reais + clima do dia - busca o newsletter.html publicado
-  // (mesma origem, sem CORS) e reaproveita o que o main.py ja gerou: os
-  // cards do feed e a worry-line (calma/alerta/info) que vira o barometro.
+  // Noticias reais + clima do dia - busca o dados-terminal.html interno
+  // (mesma origem, sem CORS - nao e uma pagina navegavel do site) e
+  // reaproveita o que o main.py ja gerou: os cards do feed e a worry-line
+  // (calma/alerta/info) que vira o barometro.
   // ---------------------------------------------------------------------
 
   function carregarDadosDoPortal() {
-    fetch("newsletter.html")
+    fetch("dados-terminal.html")
       .then(function (resp) {
         if (!resp.ok) throw new Error("HTTP " + resp.status);
         return resp.text();
