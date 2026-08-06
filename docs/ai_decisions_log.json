@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Griffon declares $0.22 dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A declaração de dividendos é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:56:12.421957-03:00"
-    },
-    {
-      "title": "Holley Non-GAAP EPS of $0.20 beats by $0.08, revenue of $172M misses by $0.63M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia apresenta resultados financeiros que podem influenciar a percepção do mercado sobre a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:56:15.346842-03:00"
-    },
-    {
-      "title": "S&P 500 Poised for Another Record as AI Spending Narrative Holds",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca a demanda forte por inteligência artificial e os gastos correspondentes, o que é relevante para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T09:01:45.048304-03:00"
-    },
-    {
-      "title": "Não é prejuízo grande para Flávio, diz Tarcísio sobre neutralidade do Republicanos",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, economia ou negócios",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:01:51.147739-03:00"
-    },
-    {
-      "title": "Itamaraty rebaixa relação diplomática com Argentina após ofensas de Milei a Lula",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "a noticia e sobre politica e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:01:54.004659-03:00"
-    },
-    {
-      "title": "IPCA-15 é de 0,06% em julho",
-      "source": "IBGE",
-      "score": 6.0,
-      "motivo": "A taxa de inflação foi baixa e estável, o que pode ser positivo para o mercado, mas também pode indicar uma economia em crescimento lento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:01:58.092569-03:00"
-    },
-    {
-      "title": "Por que as ações da Insulet estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A noticia especifica e materialmente relevante pois e sobre acao de uma empresa, e o despencar das acoes e um evento concreto que pode afetar o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:02:01.706439-03:00"
-    },
-    {
-      "title": "Por que as ações da CVS Health estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento de valor das ações devido a uma notícia positiva sobre a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:02:04.756447-03:00"
-    },
-    {
       "title": "Por que as ações da Shopify estão disparando hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-06T07:51:57.488831-03:00"
+    },
+    {
+      "title": "India’s New Auction Passes Sensex Expiry Test After Chaotic Week",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque trata da estabilidade do Índice Sensex após uma semana de turbulência",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:55:51.142684-03:00"
+    },
+    {
+      "title": "Jefferies eleva L’Oreal para neutro e vê tendência de crescimento em alta",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Elevação da nota de uma empresa de cosméticos pode indicar confiança no setor e no crescimento futuro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:55:57.780840-03:00"
+    },
+    {
+      "title": "Onity Group EPS of -$1.53, revenue of $282.9M misses by $9.6M",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A notícia apresenta uma perda financeira da empresa e uma receita abaixo do esperado, o que pode afetar a confiança dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:56:02.374647-03:00"
+    },
+    {
+      "title": "Inter tem lucro recorde de R$ 421 milhões no 2T26 com estratégia da qual outros bancos fogem; CFO explica por quê",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:56:10.712513-03:00"
+    },
+    {
+      "title": "Hapvida tenta virar a página com plano “pé no chão (e sem promessa de remédio rápido)",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:56:16.988244-03:00"
+    },
+    {
+      "title": "De Kovr a KEV: seguradora faz rebranding, mantém independência e reforça parcerias",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:56:23.240803-03:00"
+    },
+    {
+      "title": "Reservoir Media, Inc. Q1 2027 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:56:29.134643-03:00"
+    },
+    {
+      "title": "An Aehr Test Systems Insider Sells Shares Worth $2.5 Million as the Stock Soars. Here's a Closer Look at the Transaction.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:56:31.857713-03:00"
     }
   ]
 }
