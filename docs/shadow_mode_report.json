@@ -1,42 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 34104,
-  "aprovadas_pelo_fluxo_atual": 671,
-  "descartadas_pelos_filtros_atuais": 33433,
-  "score_medio_materialidade": 4.22,
+  "total_ingeridas": 34352,
+  "aprovadas_pelo_fluxo_atual": 672,
+  "descartadas_pelos_filtros_atuais": 33680,
+  "score_medio_materialidade": 4.23,
   "seriam_breaking": 53,
-  "iriam_para_rodada": 544,
-  "seriam_descartadas_pelo_novo_sistema": 1403,
-  "total_divergencias": 766,
+  "iriam_para_rodada": 542,
+  "seriam_descartadas_pelo_novo_sistema": 1405,
+  "total_divergencias": 763,
   "divergencias": [
-    {
-      "title": "Falido e devendo R$ 1 milhão, ele quis ser CLT — mas saiu da entrevista com um negócio de bilhões",
-      "source": "Exame",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "CorVel GAAP EPS of $0.63, revenue of $260M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Circle Internet Group, Inc. GAAP EPS of $0.18 beats by $0.02, revenue of $701.32M misses by $12M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "LivaNova PLC Non-GAAP EPS of $1.26 beats by $0.17, revenue of $390.6M beats by $10.02M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Ecovyst Non-GAAP EPS of $0.21 beats by $0.02, revenue of $250M beats by $13.15M",
       "source": "Seeking Alpha",
@@ -148,6 +120,34 @@
       "score": 8.0,
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Lucro do Banco Mercantil sobe 13,5% no 1º semestre",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Elanco beats top-line and bottom-line estimates; raises FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "'I got on my knees and begged': Kevin O'Leary wept over a Rolex, and thinks they beat this 1 big asset. Do you own any?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Exclusive-JPMorgan CEO Dimon leads new cross-industry effort to tackle AI risks",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }

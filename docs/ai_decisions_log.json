@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Defesa Civil envia alerta ‘severo’ para ventos fortes no Rio de Janeiro",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia e sem relevancia direta para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:16:49.047914-03:00"
-    },
-    {
-      "title": "Cruzeiro x Chapecoense: horário, onde assistir e prováveis escalações",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:16:52.144147-03:00"
-    },
-    {
-      "title": "Falido e devendo R$ 1 milhão, ele quis ser CLT — mas saiu da entrevista com um negócio de bilhões",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A empresa gaúcha movimentou R$ 1,6 bilhão em consórcios e aposta em aquisições, indicando crescimento e expansão.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:16:52.471109-03:00"
-    },
-    {
-      "title": "CorVel GAAP EPS of $0.63, revenue of $260M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois fornece informações sobre os resultados financeiros da CorVel, que pode influenciar as expectativas dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:16:53.606115-03:00"
-    },
-    {
-      "title": "Edgewell declares $0.15 dividend",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Dividendo é uma informação rotineira e não impacta significativamente o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:16:54.042308-03:00"
-    },
-    {
-      "title": "Anthropic, OpenAI AI agents undertook unsanctioned actions, says research group",
-      "source": "Seeking Alpha",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:16:54.626810-03:00"
-    },
-    {
-      "title": "Circle Internet Group, Inc. GAAP EPS of $0.18 beats by $0.02, revenue of $701.32M misses by $12M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque o lucro por ação superou a previsão, mas a receita caiu abaixo do esperado, o que pode ter um impacto misto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:16:55.142054-03:00"
-    },
-    {
-      "title": "LivaNova PLC Non-GAAP EPS of $1.26 beats by $0.17, revenue of $390.6M beats by $10.02M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Resultados financeiros superiores às expectativas são geralmente considerados positivos para as ações da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:16:55.778428-03:00"
-    },
-    {
       "title": "Ecovyst Non-GAAP EPS of $0.21 beats by $0.02, revenue of $250M beats by $13.15M",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-05T21:06:30.338783-03:00"
+    },
+    {
+      "title": "Japan’s Kishida On Growth Strategy and Yen Intervention",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia não traz informações novas ou impactantes sobre a intervenção no iene.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:11:33.676548-03:00"
+    },
+    {
+      "title": "What We Know About Iran's Hormuz Agreement With Oman",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "O acordo pode levar a uma reabertura do Estreito de Ormuz, importante para a navegação de suprimentos de energia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:11:39.732786-03:00"
+    },
+    {
+      "title": "Lotofácil hoje, concurso 3754: confira o resultado sorteado nesta quarta (5)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de concurso de loteria não afeta o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:11:43.047922-03:00"
+    },
+    {
+      "title": "Quina hoje, concurso 7084: confira o resultado sorteado nesta quarta (5)",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:11:45.698592-03:00"
+    },
+    {
+      "title": "SP2B reúne 20 startups de Israel, Japão e Finlândia para agenda de negócios no Brasil",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:11:50.407170-03:00"
+    },
+    {
+      "title": "Fux marca nova audiência no STF sobre empréstimo bilionário para o BRB; crédito segue paralisado",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:11:59.828453-03:00"
+    },
+    {
+      "title": "Why Palantir Technologies Stock Skyrocketed Higher Today",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:12:06.336165-03:00"
+    },
+    {
+      "title": "Is Intercontinental Exchange (ICE) a Buying Opportunity After Its 22% Drop?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:12:08.987909-03:00"
     }
   ]
 }
