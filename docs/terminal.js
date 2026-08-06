@@ -20,6 +20,7 @@
     { id: "emergentes", label: "Emergentes" },
     { id: "commodities", label: "Commodities" },
     { id: "acoes", label: "Ações Brasil" },
+    { id: "cripto", label: "Criptomoedas" },
     { id: "vix", label: "VIX — Índice de Volatilidade" },
     { id: "dxy", label: "Índice do Dólar (DXY)" },
   ];
@@ -149,13 +150,15 @@
     montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
     montarSymbolOverview("widget-dxy", [["Índice do Dólar (DXY)", "TVC:DXY|1D"]]);
 
-    montarWidgetAcoes(); // Top 10 / Minha lista - ver secao "Bloco de acoes" abaixo
+    montarWidgetAcoes(); // Top 10 / Minha lista - ver secao "Bloco picker" abaixo
+    montarWidgetCripto(); // idem, para criptomoedas
   }
 
   // ---------------------------------------------------------------------
-  // Bloco de acoes: aba "Top 10" (fixa) e aba "Minha lista" (busca +
-  // selecao propria do usuario, persistida em localStorage). O widget
-  // TradingView e recriado do zero a cada troca de aba/lista.
+  // Blocos "picker" (Ações Brasil e Criptomoedas): aba "Top 10" (fixa) e
+  // aba "Minha lista" (busca + selecao propria do usuario, persistida em
+  // localStorage). O widget TradingView e recriado do zero a cada troca
+  // de aba/lista. Logica generica em criarBlocoPicker() mais abaixo.
   // ---------------------------------------------------------------------
 
   // Top 10 do Ibovespa por peso na carteira teorica (B3) - pesquisado,
@@ -238,172 +241,251 @@
     { ticker: "MSFT", nome: "Microsoft", symbol: "NASDAQ:MSFT" },
   ];
 
-  var ACOES_CUSTOM_STORAGE_KEY = "antesdosino_terminal_acoes_custom_v1";
+  // Top 10 criptomoedas por capitalizacao de mercado (pesquisado, nao de
+  // memoria - ranking muda com frequencia). Pares em USD/USDT na Coinbase
+  // e Binance, os mesmos provedores ja usados na ticker tape (BITSTAMP/
+  // COINBASE), que a TradingView deixa embutir de graca sem bloqueio.
+  var TOP10_CRIPTO = [
+    ["Bitcoin", "COINBASE:BTCUSD|1D"],
+    ["Ethereum", "COINBASE:ETHUSD|1D"],
+    ["BNB", "BINANCE:BNBUSDT|1D"],
+    ["Solana", "COINBASE:SOLUSD|1D"],
+    ["XRP", "COINBASE:XRPUSD|1D"],
+    ["Cardano", "COINBASE:ADAUSD|1D"],
+    ["Dogecoin", "COINBASE:DOGEUSD|1D"],
+    ["Avalanche", "COINBASE:AVAXUSD|1D"],
+    ["Chainlink", "COINBASE:LINKUSD|1D"],
+    ["Polkadot", "COINBASE:DOTUSD|1D"],
+  ];
+
+  // Universo pesquisavel pra aba "Minha lista" das criptos - mesma logica
+  // curada do STOCK_UNIVERSE, cobrindo as moedas mais liquidas/conhecidas.
+  var CRYPTO_UNIVERSE = [
+    { ticker: "BTC", nome: "Bitcoin", symbol: "COINBASE:BTCUSD" },
+    { ticker: "ETH", nome: "Ethereum", symbol: "COINBASE:ETHUSD" },
+    { ticker: "BNB", nome: "BNB", symbol: "BINANCE:BNBUSDT" },
+    { ticker: "SOL", nome: "Solana", symbol: "COINBASE:SOLUSD" },
+    { ticker: "XRP", nome: "XRP", symbol: "COINBASE:XRPUSD" },
+    { ticker: "ADA", nome: "Cardano", symbol: "COINBASE:ADAUSD" },
+    { ticker: "DOGE", nome: "Dogecoin", symbol: "COINBASE:DOGEUSD" },
+    { ticker: "AVAX", nome: "Avalanche", symbol: "COINBASE:AVAXUSD" },
+    { ticker: "LINK", nome: "Chainlink", symbol: "COINBASE:LINKUSD" },
+    { ticker: "DOT", nome: "Polkadot", symbol: "COINBASE:DOTUSD" },
+    { ticker: "LTC", nome: "Litecoin", symbol: "COINBASE:LTCUSD" },
+    { ticker: "BCH", nome: "Bitcoin Cash", symbol: "COINBASE:BCHUSD" },
+    { ticker: "TRX", nome: "Tron", symbol: "BINANCE:TRXUSDT" },
+    { ticker: "MATIC", nome: "Polygon", symbol: "COINBASE:MATICUSD" },
+    { ticker: "SHIB", nome: "Shiba Inu", symbol: "COINBASE:SHIBUSD" },
+    { ticker: "UNI", nome: "Uniswap", symbol: "COINBASE:UNIUSD" },
+    { ticker: "ATOM", nome: "Cosmos", symbol: "COINBASE:ATOMUSD" },
+    { ticker: "ETC", nome: "Ethereum Classic", symbol: "COINBASE:ETCUSD" },
+    { ticker: "XLM", nome: "Stellar", symbol: "COINBASE:XLMUSD" },
+    { ticker: "NEAR", nome: "Near Protocol", symbol: "COINBASE:NEARUSD" },
+  ];
   var LIMITE_MINHA_LISTA = 15;
-  var acoesAbaAtiva = "top10";
-  var acoesListaCustom = [];
 
-  function carregarListaCustom() {
-    try {
-      var raw = localStorage.getItem(ACOES_CUSTOM_STORAGE_KEY);
-      if (!raw) return { aba: "top10", tickers: [] };
-      var parsed = JSON.parse(raw);
-      return {
-        aba: parsed.aba === "custom" ? "custom" : "top10",
-        tickers: Array.isArray(parsed.tickers) ? parsed.tickers : [],
-      };
-    } catch (e) {
-      return { aba: "top10", tickers: [] };
+  // Bloco "picker" generico: abas Top 10 / Minha lista com busca e
+  // persistencia em localStorage. Usado hoje por Ações Brasil e
+  // Criptomoedas - cada instancia tem seu proprio estado, elementos
+  // (via os ids prefixados por blockId) e chave de storage.
+  function criarBlocoPicker(config) {
+    var abaAtiva = "top10";
+    var listaCustom = [];
+
+    function elId(sufixo) {
+      return config.blockId + "-" + sufixo;
     }
-  }
 
-  function salvarListaCustom() {
-    try {
-      localStorage.setItem(
-        ACOES_CUSTOM_STORAGE_KEY,
-        JSON.stringify({ aba: acoesAbaAtiva, tickers: acoesListaCustom })
-      );
-    } catch (e) {
-      console.log("Terminal: não foi possível salvar a lista de ações (localStorage indisponível).");
+    function carregarListaCustom() {
+      try {
+        var raw = localStorage.getItem(config.storageKey);
+        if (!raw) return { aba: "top10", tickers: [] };
+        var parsed = JSON.parse(raw);
+        return {
+          aba: parsed.aba === "custom" ? "custom" : "top10",
+          tickers: Array.isArray(parsed.tickers) ? parsed.tickers : [],
+        };
+      } catch (e) {
+        return { aba: "top10", tickers: [] };
+      }
     }
-  }
 
-  function buscarNoUniverso(termo) {
-    var termoLower = termo.trim().toLowerCase();
-    if (!termoLower) return [];
-    return STOCK_UNIVERSE.filter(function (ativo) {
-      return (
-        ativo.ticker.toLowerCase().indexOf(termoLower) !== -1 ||
-        ativo.nome.toLowerCase().indexOf(termoLower) !== -1
-      );
-    }).slice(0, 8);
-  }
-
-  function renderResultadosBusca(resultados) {
-    var container = document.getElementById("acoes-search-results");
-    if (!resultados.length) {
-      container.style.display = "none";
-      container.innerHTML = "";
-      return;
+    function salvarListaCustom() {
+      try {
+        localStorage.setItem(
+          config.storageKey,
+          JSON.stringify({ aba: abaAtiva, tickers: listaCustom })
+        );
+      } catch (e) {
+        console.log("Terminal: não foi possível salvar a lista de " + config.blockId + " (localStorage indisponível).");
+      }
     }
-    var html = "";
-    resultados.forEach(function (ativo) {
-      var jaAdicionado = acoesListaCustom.indexOf(ativo.ticker) !== -1;
-      html +=
-        '<div class="acoes-search-result" data-ticker="' + ativo.ticker + '" style="' +
-        (jaAdicionado ? "opacity:0.4;" : "") + '">' +
-        '<span><span class="ticker">' + ativo.ticker + "</span> <span class=\"nome\">" + ativo.nome + "</span></span>" +
-        (jaAdicionado ? "<span class=\"nome\">já na lista</span>" : "") +
-        "</div>";
-    });
-    container.innerHTML = html;
-    container.style.display = "block";
 
-    container.querySelectorAll(".acoes-search-result").forEach(function (el) {
-      el.addEventListener("click", function () {
-        adicionarNaListaCustom(el.getAttribute("data-ticker"));
+    function buscarNoUniverso(termo) {
+      var termoLower = termo.trim().toLowerCase();
+      if (!termoLower) return [];
+      return config.universe.filter(function (ativo) {
+        return (
+          ativo.ticker.toLowerCase().indexOf(termoLower) !== -1 ||
+          ativo.nome.toLowerCase().indexOf(termoLower) !== -1
+        );
+      }).slice(0, 8);
+    }
+
+    function renderResultadosBusca(resultados) {
+      var container = document.getElementById(elId("search-results"));
+      if (!resultados.length) {
+        container.style.display = "none";
+        container.innerHTML = "";
+        return;
+      }
+      var html = "";
+      resultados.forEach(function (ativo) {
+        var jaAdicionado = listaCustom.indexOf(ativo.ticker) !== -1;
+        html +=
+          '<div class="picker-search-result" data-ticker="' + ativo.ticker + '" style="' +
+          (jaAdicionado ? "opacity:0.4;" : "") + '">' +
+          '<span><span class="ticker">' + ativo.ticker + "</span> <span class=\"nome\">" + ativo.nome + "</span></span>" +
+          (jaAdicionado ? "<span class=\"nome\">já na lista</span>" : "") +
+          "</div>";
       });
-    });
-  }
+      container.innerHTML = html;
+      container.style.display = "block";
 
-  function adicionarNaListaCustom(ticker) {
-    if (acoesListaCustom.indexOf(ticker) !== -1) return;
-    if (acoesListaCustom.length >= LIMITE_MINHA_LISTA) {
-      alert("Sua lista já tem " + LIMITE_MINHA_LISTA + " ações (limite). Remova uma pra adicionar outra.");
-      return;
-    }
-    acoesListaCustom.push(ticker);
-    document.getElementById("acoes-search-input").value = "";
-    renderResultadosBusca([]);
-    salvarListaCustom();
-    renderChips();
-    if (acoesAbaAtiva === "custom") renderWidgetCustom();
-  }
-
-  function removerDaListaCustom(ticker) {
-    acoesListaCustom = acoesListaCustom.filter(function (t) {
-      return t !== ticker;
-    });
-    salvarListaCustom();
-    renderChips();
-    if (acoesAbaAtiva === "custom") renderWidgetCustom();
-  }
-
-  function renderChips() {
-    var container = document.getElementById("acoes-chips");
-    if (acoesAbaAtiva !== "custom") {
-      container.classList.remove("visible");
-      return;
-    }
-    container.classList.add("visible");
-    if (!acoesListaCustom.length) {
-      container.innerHTML = "";
-      return;
-    }
-    var html = "";
-    acoesListaCustom.forEach(function (ticker) {
-      html += '<span class="acoes-chip">' + ticker + '<button data-remover="' + ticker + '" title="Remover">✕</button></span>';
-    });
-    container.innerHTML = html;
-    container.querySelectorAll("[data-remover]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        removerDaListaCustom(btn.getAttribute("data-remover"));
+      container.querySelectorAll(".picker-search-result").forEach(function (el) {
+        el.addEventListener("click", function () {
+          adicionarNaListaCustom(el.getAttribute("data-ticker"));
+        });
       });
-    });
-  }
-
-  function renderWidgetCustom() {
-    if (!acoesListaCustom.length) {
-      var container = document.getElementById("widget-acoes");
-      container.innerHTML = '<div class="acoes-empty-hint">Busque acima e adicione as ações que você quer acompanhar.</div>';
-      return;
     }
-    var simbolos = acoesListaCustom.map(function (ticker) {
-      var ativo = STOCK_UNIVERSE.filter(function (a) { return a.ticker === ticker; })[0];
-      var label = ativo ? ativo.ticker : ticker;
-      var symbol = ativo ? ativo.symbol : "BMFBOVESPA:" + ticker;
-      return [label, symbol + "|1D"];
-    });
-    montarSymbolOverview("widget-acoes", simbolos);
-  }
 
-  function trocarAbaAcoes(aba) {
-    acoesAbaAtiva = aba;
-    document.querySelectorAll(".acoes-tab").forEach(function (btn) {
-      btn.classList.toggle("active", btn.getAttribute("data-acoes-tab") === aba);
-    });
-    document.getElementById("acoes-search-row").classList.toggle("visible", aba === "custom");
-    salvarListaCustom();
-    renderChips();
-
-    if (aba === "top10") {
-      montarSymbolOverview("widget-acoes", TOP10_ACOES);
-    } else {
-      renderWidgetCustom();
+    function adicionarNaListaCustom(ticker) {
+      if (listaCustom.indexOf(ticker) !== -1) return;
+      if (listaCustom.length >= LIMITE_MINHA_LISTA) {
+        alert("Sua lista já tem " + LIMITE_MINHA_LISTA + " " + config.itemPlural + " (limite). Remova um pra adicionar outro.");
+        return;
+      }
+      listaCustom.push(ticker);
+      document.getElementById(elId("search-input")).value = "";
+      renderResultadosBusca([]);
+      salvarListaCustom();
+      renderChips();
+      if (abaAtiva === "custom") renderWidgetCustom();
     }
+
+    function removerDaListaCustom(ticker) {
+      listaCustom = listaCustom.filter(function (t) {
+        return t !== ticker;
+      });
+      salvarListaCustom();
+      renderChips();
+      if (abaAtiva === "custom") renderWidgetCustom();
+    }
+
+    function renderChips() {
+      var container = document.getElementById(elId("chips"));
+      if (abaAtiva !== "custom") {
+        container.classList.remove("visible");
+        return;
+      }
+      container.classList.add("visible");
+      if (!listaCustom.length) {
+        container.innerHTML = "";
+        return;
+      }
+      var html = "";
+      listaCustom.forEach(function (ticker) {
+        html += '<span class="picker-chip">' + ticker + '<button data-remover="' + ticker + '" title="Remover">✕</button></span>';
+      });
+      container.innerHTML = html;
+      container.querySelectorAll("[data-remover]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          removerDaListaCustom(btn.getAttribute("data-remover"));
+        });
+      });
+    }
+
+    function renderWidgetCustom() {
+      if (!listaCustom.length) {
+        var container = document.getElementById(config.widgetId);
+        container.innerHTML = '<div class="picker-empty-hint">' + config.emptyHint + '</div>';
+        return;
+      }
+      var simbolos = listaCustom.map(function (ticker) {
+        var ativo = config.universe.filter(function (a) { return a.ticker === ticker; })[0];
+        var label = ativo ? ativo.ticker : ticker;
+        var symbol = ativo ? ativo.symbol : config.symbolFallbackPrefix + ticker;
+        return [label, symbol + "|1D"];
+      });
+      montarSymbolOverview(config.widgetId, simbolos);
+    }
+
+    function trocarAba(aba) {
+      abaAtiva = aba;
+      document.querySelectorAll('.picker-tabs[data-block="' + config.blockId + '"] .picker-tab').forEach(function (btn) {
+        btn.classList.toggle("active", btn.getAttribute("data-picker-tab") === aba);
+      });
+      document.getElementById(elId("search-row")).classList.toggle("visible", aba === "custom");
+      salvarListaCustom();
+      renderChips();
+
+      if (aba === "top10") {
+        montarSymbolOverview(config.widgetId, config.top10);
+      } else {
+        renderWidgetCustom();
+      }
+    }
+
+    function montar() {
+      var salvo = carregarListaCustom();
+      listaCustom = salvo.tickers;
+
+      document.querySelectorAll('.picker-tabs[data-block="' + config.blockId + '"] .picker-tab').forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          trocarAba(btn.getAttribute("data-picker-tab"));
+        });
+      });
+
+      var input = document.getElementById(elId("search-input"));
+      input.addEventListener("input", function () {
+        renderResultadosBusca(buscarNoUniverso(input.value));
+      });
+      document.addEventListener("click", function (e) {
+        if (e.target !== input) {
+          document.getElementById(elId("search-results")).style.display = "none";
+        }
+      });
+
+      trocarAba(salvo.aba);
+    }
+
+    return { montar: montar };
   }
 
   function montarWidgetAcoes() {
-    var salvo = carregarListaCustom();
-    acoesListaCustom = salvo.tickers;
+    criarBlocoPicker({
+      blockId: "acoes",
+      widgetId: "widget-acoes",
+      universe: STOCK_UNIVERSE,
+      top10: TOP10_ACOES,
+      storageKey: "antesdosino_terminal_acoes_custom_v1",
+      itemPlural: "ações",
+      emptyHint: "Busque acima e adicione as ações que você quer acompanhar.",
+      symbolFallbackPrefix: "BMFBOVESPA:",
+    }).montar();
+  }
 
-    document.querySelectorAll(".acoes-tab").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        trocarAbaAcoes(btn.getAttribute("data-acoes-tab"));
-      });
-    });
-
-    var input = document.getElementById("acoes-search-input");
-    input.addEventListener("input", function () {
-      renderResultadosBusca(buscarNoUniverso(input.value));
-    });
-    document.addEventListener("click", function (e) {
-      if (e.target !== input) {
-        document.getElementById("acoes-search-results").style.display = "none";
-      }
-    });
-
-    trocarAbaAcoes(salvo.aba);
+  function montarWidgetCripto() {
+    criarBlocoPicker({
+      blockId: "cripto",
+      widgetId: "widget-cripto",
+      universe: CRYPTO_UNIVERSE,
+      top10: TOP10_CRIPTO,
+      storageKey: "antesdosino_terminal_cripto_custom_v1",
+      itemPlural: "criptomoedas",
+      emptyHint: "Busque acima e adicione as criptomoedas que você quer acompanhar.",
+      symbolFallbackPrefix: "COINBASE:",
+    }).montar();
   }
 
   // ---------------------------------------------------------------------
