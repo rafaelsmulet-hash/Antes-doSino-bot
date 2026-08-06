@@ -1,186 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Rivian Stock Fell 12% Last Month",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "Emissão de novas ações pode afetar o preço da ação da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:46:14.469965-03:00"
-    },
-    {
-      "title": "Why e.l.f. Beauty Stock Jumped 12% in July",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca o crescimento da empresa, o que é relevante para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:46:17.516143-03:00"
-    },
-    {
-      "title": "NNN REIT Net Earnings Drop In Q2, Revises FY26 Outlook",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A perda de lucro e a revisão da previsão para o ano podem afetar a confiança dos investidores na empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:46:20.989371-03:00"
-    },
-    {
-      "title": "Vender ou ficar com BRAV3? Leilão da OPA da Brava Energia acontece hoje (5)",
-      "source": "Seu Dinheiro",
-      "score": 5.0,
-      "motivo": "Leilão da OPA da Brava Energia pode impactar o preço da ação BRAV3, mas o resultado é incerto",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:46:29.523125-03:00"
-    },
-    {
-      "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
-      "source": "Federal Reserve",
-      "score": 8.0,
-      "motivo": "Decisão da taxa de juros do Banco Central é evento de mercado relevante",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:46:36.426858-03:00"
-    },
-    {
-      "title": "Wall Street bankers set to see bonus hikes amid volatile market - report",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque pode influenciar a percepção dos investidores sobre a saúde financeira dos bancos da Wall Street.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:50:37.483636-03:00"
-    },
-    {
-      "title": "SoCal Edison electric tower sparked California's Eaton Fire, Los Angeles County report says",
-      "source": "Seeking Alpha",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:50:43.435170-03:00"
-    },
-    {
-      "title": "AMD's Data Center Business Doubled to $6.7 Billion. The Stock Fell 9% Because of What That Growth Costs.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque mostra um crescimento significativo da receita da AMD, mas também destaca os custos associados a esse crescimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:50:48.811452-03:00"
-    },
-    {
-      "title": "CFO Sells $2.6 Million Stock of AI Growth Stock",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "Venda de ações do CFO não é um evento de mercado significativo, mas pode influenciar a percepção dos investidores sobre a empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:50:51.715458-03:00"
-    },
-    {
-      "title": "12 Words From Amazon CEO Andy Jassy That Should Have Artificial Intelligence (AI) Investors Cheering",
-      "source": "Nasdaq",
-      "score": 8.0,
-      "motivo": "Aumento do orçamento de capex da Amazon é um sinal de confiança na expansão da empresa.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:50:55.286844-03:00"
-    },
-    {
-      "title": "Read Disney CEO Josh D'Amaro's memo to employees after a strong quarter",
-      "source": "Business Insider",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para a Disney, mas não tem impacto direto no mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:51:06.036256-03:00"
-    },
-    {
-      "title": "Ukraine says Western interceptor supply has dropped threefold this year, leaving it unable to stop Russian missiles",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:51:12.045248-03:00"
-    },
-    {
-      "title": "Vusion Explores Strategic Options, Including Possible Sale",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A empresa está explorando opções estratégicas, o que pode afetar seu valor ou estrutura futura.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:55:34.310500-03:00"
-    },
-    {
-      "title": "Wall Street segue otimista sobre acordo entre EUA e Irã, com Dow Jones e S&P 500 nas máximas",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "acordo entre EUA e Irã prevalece, impulsionando índices de Wall Street",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:55:39.712838-03:00"
-    },
-    {
-      "title": "George R.R. Martin revela batalha contra depressão: 'Perdi amigos e lutei contra a tristeza'",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre saúde do autor de Game of Thrones",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:55:46.080984-03:00"
-    },
-    {
-      "title": "Ibovespa sobe com alta dos bancos antes da decisão do Copom",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A alta dos bancos e o contexto positivo externo sugerem uma tendência positiva para o mercado brasileiro antes da decisão do Copom.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:55:49.277683-03:00"
-    },
-    {
-      "title": "PMI composite index revised higher in final July print",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "Revisão do índice PMI composto é um indicador importante da atividade econômica e pode influenciar as expectativas de crescimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:55:55.450104-03:00"
-    },
-    {
-      "title": "Wall Street Bonuses Poised to Increase as Deals Surge",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "Aumento de bônus é um indicador de desempenho positivo dos banqueiros de investimentos e comerciais.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:01:28.579509-03:00"
-    },
-    {
-      "title": "Nike e Adidas jogaram a Copa, mas quem perdeu foi o investidor",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "a notícia não é sobre mercado financeiro, mas sim sobre esporte e sua influência em ações de empresas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:01:36.247986-03:00"
-    },
-    {
-      "title": "Por que as ações da ON Semiconductor estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 4.0,
-      "motivo": "a queda das ações da ON Semiconductor pode ser um sinal de desconfiança dos investidores em relação ao setor de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:01:40.490453-03:00"
-    },
-    {
       "title": "Por que a ação da Compass Pathways está subindo hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17819,186 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T09:01:41.621312-03:00"
+    },
+    {
+      "title": "Alphabet Returns to Bond Market Despite AI Spending Worries",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A empresa está testando o apetite dos investidores após aumentar sua previsão de gastos, o que pode ser um sinal de confiança no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:05:48.050166-03:00"
+    },
+    {
+      "title": "Commerzbank quase dobra lucro no 2º tri e CEO pede diálogo após avanço do UniCredit",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Companhia apresenta resultados financeiros positivos e o CEO expressa otimismo, o que pode influenciar a percepção do mercado sobre a saúde financeira da instituição.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:05:55.072532-03:00"
+    },
+    {
+      "title": "This mom spent $2,000 on her kindergartner as viral ‘back-to-school hauls’ on TikTok and YouTube spin out of control",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:06:02.033482-03:00"
+    },
+    {
+      "title": "Hertz Global Holdings Non-GAAP EPS of -$0.11 beats by $0.13, revenue of $2.4B beats by $120M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:06:07.827123-03:00"
+    },
+    {
+      "title": "USA TODAY GAAP EPS of $0.06 beats by $0.08, revenue of $536.3M misses by $10.36M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:06:10.493799-03:00"
+    },
+    {
+      "title": "Howmet Aerospace rises on earnings beat, gas-turbine demand",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:06:13.748834-03:00"
+    },
+    {
+      "title": "Sempra Non-GAAP EPS of $1.16 beats by $0.10, revenue of $3B misses by $120M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:06:19.413650-03:00"
+    },
+    {
+      "title": "Cion Investment reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:06:22.019666-03:00"
+    },
+    {
+      "title": "Amphenol declares $0.25 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:06:24.619050-03:00"
+    },
+    {
+      "title": "Novavax GAAP EPS of -$0.32 beats by $0.06, revenue of $57M beats by $3.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:06:27.263564-03:00"
+    },
+    {
+      "title": "Globo de luz, grito de guerra e sonoplastia do Ratinho: a estratégia que já fez a Ri Happy vender 77% mais",
+      "source": "Seu Dinheiro",
+      "score": 6.0,
+      "motivo": "a noticia destaca um modelo de negócios inovador que levou a uma melhora significativa nas vendas da Ri Happy",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:06:36.365659-03:00"
+    },
+    {
+      "title": "US Fed clears Santander’s $12.2bn purchase of Webster",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:06:42.332159-03:00"
+    },
+    {
+      "title": "Wall Street set for mixed open after sentiment rebounds in European trading",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:06:48.551253-03:00"
+    },
+    {
+      "title": "Stock market today: Nasdaq futures slip, Dow and S&P 500 futures inch up as earnings roll on",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:06:54.881318-03:00"
+    },
+    {
+      "title": "Dow Jones Futures Rise But Techs Fall As Sandisk, Western Digital, Datadog Lead Earnings Losers",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:07:01.115608-03:00"
+    },
+    {
+      "title": "Kenvue misses quarterly estimates as inflation, tariffs squeeze margins",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:07:07.383142-03:00"
+    },
+    {
+      "title": "Toyota targets 10.5 million vehicles in 2027 – report",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:07:13.012214-03:00"
+    },
+    {
+      "title": "Cathie Wood invests a combined $28.7 million in TSMC, SpaceX after trimming investments in Amazon, Alphabet and Shopify",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:07:16.333054-03:00"
+    },
+    {
+      "title": "Quantum Computing Stocks: D-Wave Earnings, Revenue Miss",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:07:22.533307-03:00"
+    },
+    {
+      "title": "Datadog Earnings Top Views. Software Stock Plunges As Revenue Outlook Underwhelms.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:07:28.860280-03:00"
     }
   ]
 }
