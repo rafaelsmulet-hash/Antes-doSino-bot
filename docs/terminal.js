@@ -22,7 +22,7 @@
     { id: "acoes", label: "Ações Brasil" },
     { id: "cripto", label: "Criptomoedas" },
     { id: "vix", label: "VIX — Índice de Volatilidade" },
-    { id: "us10y", label: "Treasury 10 Anos (US10Y)" },
+    { id: "market-movers", label: "Ativos em Destaque (B3)" },
   ];
 
   // ---------------------------------------------------------------------
@@ -116,6 +116,39 @@
     container.appendChild(wrapper);
   }
 
+  function montarMarketMovers() {
+    var container = document.getElementById("widget-market-movers");
+    if (!container) return;
+    container.innerHTML = "";
+
+    var wrapper = document.createElement("div");
+    wrapper.className = "tradingview-widget-container";
+    wrapper.style.height = "100%";
+    wrapper.style.width = "100%";
+
+    var widgetDiv = document.createElement("div");
+    widgetDiv.className = "tradingview-widget-container__widget";
+    wrapper.appendChild(widgetDiv);
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js";
+    script.async = true;
+    script.text = JSON.stringify({
+      colorTheme: "dark",
+      dateRange: "1D",
+      exchange: "BMFBOVESPA",
+      showChart: false,
+      locale: "br",
+      width: "100%",
+      height: "100%",
+      isTransparent: true,
+    });
+
+    wrapper.appendChild(script);
+    container.appendChild(wrapper);
+  }
+
   function montarTodosOsWidgets() {
     montarTickerTape();
 
@@ -148,7 +181,7 @@
     ]);
 
     montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
-    montarSymbolOverview("widget-us10y", [["Treasury 10 Anos (US10Y)", "TVC:US10Y|1D"]]);
+    montarMarketMovers();
 
     montarWidgetAcoes(); // Top 10 / Minha lista - ver secao "Bloco picker" abaixo
     montarWidgetCripto(); // idem, para criptomoedas
@@ -635,7 +668,7 @@
       aplicarVisibilidade(estadoOcultos);
     }
 
-    // Drag-and-drop dos paineis de cotacao (grid 2x2). VIX/US10Y ficam
+    // Drag-and-drop dos paineis de cotacao (grid 2x2). VIX/Ativos em Destaque ficam
     // numa linha fixa por design (sempre por ultimo).
     if (window.Sortable) {
       Sortable.create(document.getElementById("panels-grid"), {
