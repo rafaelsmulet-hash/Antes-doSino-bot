@@ -34,7 +34,7 @@
       "id": "cbd5f033-6943-4dad-ac1e-0f54c7901a09",
       "cluster_key": "gol",
       "first_seen": "2026-08-05T06:57:38.913154-03:00",
-      "last_updated": "2026-08-05T18:36:05.206304-03:00",
+      "last_updated": "2026-08-06T06:57:30.839817-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "G1 Economia",
@@ -45,16 +45,17 @@
         "InfoMoney",
         "Nasdaq",
         "Bloomberg Markets",
-        "Business Insider"
+        "Business Insider",
+        "Money Times"
       ],
-      "update_count": 30,
+      "update_count": 31,
       "status": "active"
     },
     {
       "id": "00af5ec9-e29c-4df2-b442-0978c6aba1db",
       "cluster_key": "vale",
       "first_seen": "2026-08-05T06:57:46.456273-03:00",
-      "last_updated": "2026-08-05T19:36:04.091881-03:00",
+      "last_updated": "2026-08-06T07:02:00.872445-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "G1 Economia",
@@ -64,9 +65,10 @@
         "Seeking Alpha",
         "Investing.com Brasil",
         "Money Times",
-        "Suno Noticias"
+        "Suno Noticias",
+        "Seu Dinheiro"
       ],
-      "update_count": 9,
+      "update_count": 12,
       "status": "active"
     },
     {
@@ -87,7 +89,7 @@
       "id": "7af7df73-d1c6-49d5-9bac-d44a433050fe",
       "cluster_key": "itau",
       "first_seen": "2026-08-05T08:25:48.533056-03:00",
-      "last_updated": "2026-08-05T13:57:17.960426-03:00",
+      "last_updated": "2026-08-06T07:01:09.943322-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "InfoMoney",
@@ -95,7 +97,7 @@
         "Neofeed",
         "Seu Dinheiro"
       ],
-      "update_count": 8,
+      "update_count": 9,
       "status": "active"
     },
     {
@@ -130,12 +132,13 @@
       "id": "d0befc41-39df-4325-b49b-eb53d8c61049",
       "cluster_key": "petr4",
       "first_seen": "2026-08-05T10:02:21.760505-03:00",
-      "last_updated": "2026-08-05T15:03:03.970442-03:00",
-      "materiality_peak": 6.0,
+      "last_updated": "2026-08-06T07:01:48.315824-03:00",
+      "materiality_peak": 8.0,
       "sources_seen": [
-        "InfoMoney"
+        "InfoMoney",
+        "Seu Dinheiro"
       ],
-      "update_count": 2,
+      "update_count": 4,
       "status": "active"
     },
     {
@@ -154,12 +157,14 @@
       "id": "374b4e47-4334-4563-8ac1-89005f357aae",
       "cluster_key": "petrobras",
       "first_seen": "2026-08-05T17:46:08.826854-03:00",
-      "last_updated": "2026-08-05T17:46:08.826854-03:00",
-      "materiality_peak": null,
+      "last_updated": "2026-08-06T07:01:40.471103-03:00",
+      "materiality_peak": 6.0,
       "sources_seen": [
-        "Investing.com Brasil"
+        "Investing.com Brasil",
+        "InfoMoney",
+        "UOL Economia"
       ],
-      "update_count": 1,
+      "update_count": 4,
       "status": "active"
     }
   ]
