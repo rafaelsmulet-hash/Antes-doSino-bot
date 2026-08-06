@@ -1,195 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bullish Two Hundred Day Moving Average Cross - NEM",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T17:31:59.158980-03:00"
-    },
-    {
-      "title": "NiSource Stock Getting Very Oversold",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T17:32:05.252895-03:00"
-    },
-    {
-      "title": "RB Global (RBA) Shares Cross Below 200 DMA",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T17:32:11.294607-03:00"
-    },
-    {
-      "title": "Harmony Gold Mining (HMY) Shares Cross Above 200 DMA",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A ação ultrapassou sua média móvel de 200 dias, indicando uma tendência positiva",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T17:32:17.687542-03:00"
-    },
-    {
-      "title": "See Which Recent 13F Filers Hold PLTR But Magnolia Private Wealth, IFC Advisors and Emerald Advisers Exited",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:32:23.376022-03:00"
-    },
-    {
-      "title": "Curaleaf Swings To Q2 Profit On Higher Revenue",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:32:26.007206-03:00"
-    },
-    {
-      "title": "Cirrus Logic Inc. Bottom Line Climbs In Q1",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:32:28.627793-03:00"
-    },
-    {
-      "title": "Despite record revenues, Lithia works behind the scenes on customer affordability",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:32:36.393343-03:00"
-    },
-    {
-      "title": "Is Wall Street Bullish or Bearish on Invesco Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:32:39.029289-03:00"
-    },
-    {
-      "title": "Marc Benioff gets a new operating chief, as Salesforce promotes Miguel Milano",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:32:42.049604-03:00"
-    },
-    {
-      "title": "New America Acquisition I appoints new CEO",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações concretas sobre a escolha do novo CEO ou seu impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:35:43.050424-03:00"
-    },
-    {
-      "title": "Earnings Snapshot: AppLovin Q2 profit climbs 55%, revenue misses; Q3 outlook trails views",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a previsão de receita e lucro da empresa, o que pode influenciar a decisão de investir em ações do setor de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T17:35:46.797964-03:00"
-    },
-    {
-      "title": "Ramaco outlines Brook Mine NPV of $3.4B-$8B as it lifts 2026 capex to $92-$97M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:35:52.456153-03:00"
-    },
-    {
-      "title": "SoundHound AI jumps as Q2 results, guidance top estimates",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:35:55.101311-03:00"
-    },
-    {
-      "title": "LandBridge Company LLC reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:35:57.727185-03:00"
-    },
-    {
-      "title": "Lineage lifts 2026 AFFO outlook to $2.80-$3.05 per share while narrowing EBITDA range",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:36:00.395672-03:00"
-    },
-    {
-      "title": "Zevra Therapeutics, Inc. GAAP EPS of $0.14 beats by $0.03, revenue of $39.7M beats by $5.82M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:36:03.063861-03:00"
-    },
-    {
-      "title": "Frete e descontos no Pix derrubam margem do Mercado Livre no 2ş trimestre",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:36:12.055854-03:00"
-    },
-    {
-      "title": "Inter tem lucro recorde de R$ 421 milhões no 2T26 com estratégia da qual outros bancos fogem; CFO explica por quê",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:36:14.892409-03:00"
-    },
-    {
-      "title": "Micron (MU) vs. ASML (ASML): Which AI Chip Giant Offers the Better Risk-Reward?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:36:20.681372-03:00"
-    },
-    {
-      "title": "Are Billionaire Investor Warren Buffett’s Top 5 Stock Picks a Buy in August?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T17:36:23.335779-03:00"
-    },
-    {
       "title": "Will the housing market crash in 2026? What the second half of the year looks like",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17810,195 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T14:33:58.209578-03:00"
+    },
+    {
+      "title": "Lincoln International CEO Sees M&A Recovery",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A empresa registrou um primeiro semestre recorde de receita, o que é um sinal positivo para o mercado de M&A.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T14:37:17.982081-03:00"
+    },
+    {
+      "title": "Mexico Boosting Security to Resume Avocado Exports After US Move",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:21.087321-03:00"
+    },
+    {
+      "title": "European Stocks Gain for Fourth Day in a Row on Big Earnings Day",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T14:37:24.221211-03:00"
+    },
+    {
+      "title": "Situational Awareness hedge fund meltdown was a warning shot for leveraged markets, BofA CEO says",
+      "source": "CNBC - Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:27.047168-03:00"
+    },
+    {
+      "title": "JPMorgan vê pessimismo exagerado com farmacêuticas e mantém RD (RADL3) como favorita",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T14:37:30.314241-03:00"
+    },
+    {
+      "title": "Avient outlines $3.10-$3.25 adjusted EPS outlook for 2026 while targeting 2.2-2.4x net leverage exit rate",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:35.178222-03:00"
+    },
+    {
+      "title": "Murphy Oil outlines $1.55B 2026 capex as Bubale appraisal starts and Eagle Ford activity pulled forward",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:37.827235-03:00"
+    },
+    {
+      "title": "KDP reaffirms $25.9B-$26.4B 2026 net sales outlook while targeting 4.1x leverage ahead of early 2027 separation",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:40.481068-03:00"
+    },
+    {
+      "title": "CACI forecasts FY 2027 revenue of $10.65B-$10.85B and at least $900M in free cash flow as ARKA integration expands space and EW momentum",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:43.152757-03:00"
+    },
+    {
+      "title": "Sunrise expects SUNS-SRT merger to close in Q4 2026 with 17.5% incentive fee and $1M waiver",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:45.808769-03:00"
+    },
+    {
+      "title": "Lexicon anticipates Zynquista NDA resubmission in Q4 2026 as SONATA-HCM top line data expected in Q1 2027",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:48.460520-03:00"
+    },
+    {
+      "title": "Genie Energy outlines cash generation focus while expanding Diversegy and advancing Roded U.S. site selection",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:51.125939-03:00"
+    },
+    {
+      "title": "This Stock Could Be Your Ticket to Becoming a Millionaire",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:37:56.978421-03:00"
+    },
+    {
+      "title": "See Which Recent 13F Filers Hold VLO",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T14:37:59.636783-03:00"
+    },
+    {
+      "title": "SpaceX's Tradable Float Could Triple by December. History Says That's a Problem for the Stock.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:38:02.293650-03:00"
+    },
+    {
+      "title": "Figma's CTO Sells 261,000 Shares for $6.6 Million. Here's What That Means for Investors.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T14:38:04.937112-03:00"
+    },
+    {
+      "title": "Mark Zuckerberg's Net Worth Dropped $18 Billion in a Single Day as Meta Stock Extended a Losing Streak. Is the Sell-Off Overdone?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T14:38:07.608502-03:00"
+    },
+    {
+      "title": "Rivian's R2 Is Shipping and Uber Wants 50,000 of Them",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:38:10.294738-03:00"
+    },
+    {
+      "title": "ChatGPT brings unlimited text chats to free users",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:38:16.868117-03:00"
+    },
+    {
+      "title": "Cathie Wood's Ark Invest Makes SpaceX, Circle Top Holdings After Latest Buying Spree",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:38:19.635858-03:00"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T14:38:23.294853-03:00"
     }
   ]
 }
