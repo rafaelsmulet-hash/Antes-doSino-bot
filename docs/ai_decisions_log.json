@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "NiSource Q2 Net Income Drops, Confirms FY26 Adjusted EPS",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque afeta diretamente os resultados financeiros da NiSource Inc.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:36:28.924409-03:00"
-    },
-    {
-      "title": "J&J Snack Foods Corp. Q3 Income Retreats",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de ações, pois afeta os lucros da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:36:31.818745-03:00"
-    },
-    {
-      "title": "Got $500? 2 Magnificent AI Stocks to Buy Hand Over Fist Before the Anthropic IPO",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a relevância de ações de empresas como Amazon e Alphabet em relação à Anthropic, tornando-a relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:36:35.500195-03:00"
-    },
-    {
-      "title": "Astec Industries Profit Drops In Q2",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A queda nos lucros pode afetar a confiança dos investidores e influenciar a valorização da ação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:36:42.000709-03:00"
-    },
-    {
-      "title": "CDW Corporation Bottom Line Advances In Q2",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento do lucro é um sinal positivo para a empresa e pode influenciar positivamente o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:36:48.008923-03:00"
-    },
-    {
-      "title": "MATERION Corp Q2 Income Advances",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento do lucro é um sinal positivo para a empresa e pode influenciar os preços das ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:36:50.948613-03:00"
-    },
-    {
       "title": "History Says Software-as-a-Service (SaaS) Stocks Will Be the Ultimate AI Winners. 3 SaaS Stocks to Buy Now.",
       "source": "Nasdaq",
       "score": 5.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T07:36:23.166212-03:00"
+    },
+    {
+      "title": "Corte na Selic, alívio no petróleo, balanço da Petrobras: o mercado hoje",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "Corte na Selic e alívio no petróleo são eventos positivos para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:40:39.308186-03:00"
+    },
+    {
+      "title": "Arista Networks Stock Investors Just Got Fantastic News From CEO Jayshree Ullal",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque o CEO compartilhou informações positivas sobre a empresa, o que pode influenciar a percepção dos investidores sobre o futuro da Arista Networks.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:40:47.010135-03:00"
+    },
+    {
+      "title": "Zebra Technologies Corporation Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A empresa apresentou resultados financeiros acima das expectativas, o que pode influenciar positivamente o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:40:49.925016-03:00"
+    },
+    {
+      "title": "SpaceX stock dips in after-hours trading, despite revenue beating Wall Street expectations",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A noticia e relevante porque a SpaceX e uma empresa de tecnologia e acao de mercado, mas o impacto e limitado pois a queda da acao pode ser temporaria",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:40:53.448444-03:00"
+    },
+    {
+      "title": "States Expand Student Loan Programs as Trump's Federal Borrowing Caps Leave Funding Gaps",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A medida pode afetar o mercado de educação e os investimentos relacionados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:40:56.516559-03:00"
+    },
+    {
+      "title": "Many new moms have intrusive thoughts. That's not the same as postpartum psychosis.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:40:59.698147-03:00"
     }
   ]
 }
