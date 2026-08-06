@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Earnings Snapshot: Circle Internet Q2 revenue falls short of estimates despite 19% growth in USDC circulation",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a empresa e pode ter implicações para o mercado de criptomoedas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:31:27.596022-03:00"
-    },
-    {
       "title": "Compania Cervecerias Unidas S.A. reports Q2 results",
       "source": "Seeking Alpha",
       "score": 3.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T21:35:55.449711-03:00"
+    },
+    {
+      "title": "Agibank cresce em clientes, mas provisőes pesam e lucro recua 24% no 2ş tri",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "motivo": "queda de 24,4% no lucro líquido do Agibank impacta negativamente o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:41:06.909258-03:00"
     }
   ]
 }
