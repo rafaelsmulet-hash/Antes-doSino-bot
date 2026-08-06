@@ -1,960 +1,6 @@
 {
   "decisions": [
     {
-      "title": "U.S. Futures Signal Another Positive Session for Wall Street: Dow Jones, S&P, Nasdaq",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:31:15.352407-03:00"
-    },
-    {
-      "title": "American Bitcoin’s President Resigns",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:31:17.957267-03:00"
-    },
-    {
-      "title": "DeepSeek Matched Gemini 3.6 Flash at 3 Cents Per Benchmark Test. Alibaba (BABA) Is Turning Alphabet’s (GOOGL) China Problem Into a Price War",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:31:20.660879-03:00"
-    },
-    {
-      "title": "USD/JPY, USD/CAD, and USD/CHF Forecasts – Carry Trade Interest Drives Dollar Rally",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:31:23.299809-03:00"
-    },
-    {
-      "title": "DeepSeek Won't Sink U.S. AI Titans",
-      "source": "WSJ Markets",
-      "score": 5.0,
-      "motivo": "A notícia sugere que a situação financeira das empresas de tecnologia é melhor do que o mercado está pensando.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:35:44.147184-03:00"
-    },
-    {
-      "title": "BC corta Selic em 0,25 ponto, a 14% ao ano, em linha com esperado pelo mercado",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Corte da Selic é relevante e com impacto concreto para o mercado, pois afeta diretamente os custos de empréstimos e, consequentemente, a economia como um todo.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:35:48.010146-03:00"
-    },
-    {
-      "title": "Iochpe-Maxion (MYPK3) tem lucro de R$ 87 mi no 2º tri",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Resultado operacional positivo e alto Ebitda indicam saúde financeira da empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:35:53.839788-03:00"
-    },
-    {
-      "title": "BC corta a Selic pela 4ª vez seguida e taxa de juros no Brasil cai para 14%",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:35:59.011717-03:00"
-    },
-    {
-      "title": "Allied Gold Non-GAAP EPS of $0.44, revenue of $366.2M misses by $57.8M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:36:05.210601-03:00"
-    },
-    {
-      "title": "Klaviyo Non-GAAP EPS of $0.19 in-line, revenue of $370.58M beats by $8.48M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:36:10.862432-03:00"
-    },
-    {
-      "title": "Lci Industries forecasts 2026 adjusted EPS of $8.25-$8.75 while cutting RV shipment outlook to 280,000-300,000 units",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:36:13.549724-03:00"
-    },
-    {
-      "title": "Service Properties Trust FFO of $0.43 in-line, revenue of $420.97M beats by $17.44M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:36:16.216257-03:00"
-    },
-    {
-      "title": "Radian Group Non-GAAP EPS of $1.14 misses by $0.21, revenue of $575M beats by $78.19M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:36:18.884370-03:00"
-    },
-    {
-      "title": "Cytek Biosciences GAAP EPS of -$0.09 in-line, revenue of $48.1M misses by $0.51M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:36:21.541937-03:00"
-    },
-    {
-      "title": "Cadre Holdings GAAP EPS of $0.26 beats by $0.04, revenue of $207.12M beats by $28.83M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:36:24.204604-03:00"
-    },
-    {
-      "title": "Banco Central reduz taxa básica de juros para 14% ao ano",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:36:33.168526-03:00"
-    },
-    {
-      "title": "Riachuelo (RIAA3) bate recordes de lucro e margens; CFO explica a estratégia e diz que não há mágica",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:36:39.040372-03:00"
-    },
-    {
-      "title": "Meta to take on Anthropic's Claude and OpenAI's Codex with new coding agent",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:36:44.044199-03:00"
-    },
-    {
-      "title": "Alpha Teknova GAAP EPS of -$0.06 beats by $0.03, revenue of $12.2M beats by $1.29M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em lucro por ação e receita, o que é considerado positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:40:40.493865-03:00"
-    },
-    {
-      "title": "SuRo Capital net investment loss per share of -$0.90",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A perda líquida de investimento é uma informação financeira rotineira que não afeta significativamente o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:40:43.456062-03:00"
-    },
-    {
-      "title": "Matador Resources Non-GAAP EPS of $2.61 beats by $0.52, revenue of $1.19B beats by $140M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:40:46.412900-03:00"
-    },
-    {
-      "title": "Xenon Pharma Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:40:49.510954-03:00"
-    },
-    {
-      "title": "E.W. Scripps Q2 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:40:55.109481-03:00"
-    },
-    {
-      "title": "EPAM Systems Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:40:58.212250-03:00"
-    },
-    {
-      "title": "PDF Solutions Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:41:04.283344-03:00"
-    },
-    {
-      "title": "Apesar de corte na Selic, Brasil tem o maior juro real do mundo; veja ranking",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:41:13.562504-03:00"
-    },
-    {
-      "title": "Selic: Copom reduz taxa básica de juros para 14% ao ano",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:41:19.633752-03:00"
-    },
-    {
-      "title": "Auren tem prejuízo de R$ 379,1 milhőes no 2o tri, menor em 32,7%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:41:25.984921-03:00"
-    },
-    {
-      "title": "Why Wall Street Is Panicking About Apple’s Services Business",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:41:34.301950-03:00"
-    },
-    {
-      "title": "Bitmine Accelerates Stock Buybacks And Continues Buying Ethereum",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:41:36.933994-03:00"
-    },
-    {
-      "title": "Investor Cathie Wood Buys Coinbase And Circle Stocks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:41:39.554164-03:00"
-    },
-    {
-      "title": "Philadelphia Fed president says she's keeping an 'open mind' on rates, watching inflation",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:41:42.213607-03:00"
-    },
-    {
-      "title": "Forget QQQI’s 14%. NEOS Just Launched a ‘Boosted’ Version Paying 20%",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:41:44.848898-03:00"
-    },
-    {
-      "title": "Dean of Valuation Aswath Damodaran Raises Alarm Bells for Meta, Alphabet, and Microsoft — Should You Be Worried?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:41:47.531808-03:00"
-    },
-    {
-      "title": "Lucid's new CEO says the EV maker launched cars before they were ready and let customers down",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:41:50.929380-03:00"
-    },
-    {
-      "title": "MNTN CEO on Disney’s Ad Business, Streaming Wars Outlook",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca o crescimento do negócio de streaming da Disney e a perspectiva positiva do mercado de anúncios.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:45:43.939063-03:00"
-    },
-    {
-      "title": "Corte da Selic faz Brasil cair uma posição e leva país ao 2º maior juro real do mundo",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:45:51.094431-03:00"
-    },
-    {
-      "title": "Engie Brasil tem lucro ajustado de R$694 mi no 2ºtri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:45:58.199656-03:00"
-    },
-    {
-      "title": "Lucro da Totvs sobe 17,4% no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "aumento do lucro da empresa é um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:46:01.724284-03:00"
-    },
-    {
-      "title": "Brava tem lucro líquido de R$871 mi no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:07.350637-03:00"
-    },
-    {
-      "title": "México - Ações fecharam o pregão em queda e o Índice S&P/BMV IPC recuou 0,46%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:46:10.440711-03:00"
-    },
-    {
-      "title": "Colômbia - Ações fecharam o pregão em queda e o Índice COLCAP recuou 1,26%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:16.093291-03:00"
-    },
-    {
-      "title": "Carriage Non-GAAP EPS of $0.78 misses by $0.04, revenue of $102.9M misses by $6.01M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:19.197760-03:00"
-    },
-    {
-      "title": "Ero Copper Non-GAAP EPS of $0.83 beats by $0.12, revenue of $284.3M beats by $6.89M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:21.855823-03:00"
-    },
-    {
-      "title": "Curtiss-Wright Non-GAAP EPS of $3.72 beats by $0.10, revenue of $924M misses by $2.54M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:24.790201-03:00"
-    },
-    {
-      "title": "W&amp;T Offshore Non-GAAP EPS of $0.02 misses by $0.01, revenue of $162.62M beats by $6.83M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:27.448700-03:00"
-    },
-    {
-      "title": "Chime Financial, Inc. GAAP EPS of $0.07 beats by $0.07, revenue of $670M beats by $28.83M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:30.113827-03:00"
-    },
-    {
-      "title": "NICE forecasts FY2026 EPS of $11.06-$11.26 while reiterating $3.170B-$3.190B revenue",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:32.763546-03:00"
-    },
-    {
-      "title": "Braves targets postseason run with 89% division odds as BravesVision shifts cash timing",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:35.435526-03:00"
-    },
-    {
-      "title": "News Corporation Q4 Income Drops",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:40.848874-03:00"
-    },
-    {
-      "title": "CF Industries Holdings Inc. Profit Climbs In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:46:43.894674-03:00"
-    },
-    {
-      "title": "Why Gibraltar Industries Stock Soared by 14% on Wednesday",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:49.531409-03:00"
-    },
-    {
-      "title": "Stock Market Today, Aug. 5: Shopify Soars 17% After Beating Q2 Estimates, Raises Q3 Outlook",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:46:52.892702-03:00"
-    },
-    {
-      "title": "American States Water Co. Announces Advance In Q2 Bottom Line",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:46:58.549487-03:00"
-    },
-    {
-      "title": "Deluxe Corp. Bottom Line Declines In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:47:01.175081-03:00"
-    },
-    {
-      "title": "Black Hills Corp Reveals Rise In Q2 Income",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:47:03.819313-03:00"
-    },
-    {
-      "title": "Horace Mann Educators Corp Q2 Profit Advances",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:47:06.939772-03:00"
-    },
-    {
-      "title": "Stock Market Today, Aug. 5: SpaceX Beats Revenue but Faces Capital Spending Pressure",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:47:13.065598-03:00"
-    },
-    {
-      "title": "Part 1: How to Spot a Corporate Fraud Before It Makes the Headlines",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:47:19.026435-03:00"
-    },
-    {
-      "title": "Vitória desbanca Balneário Camboriú e volta ao topo das cidades com m² mais caro do país",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:47:23.598488-03:00"
-    },
-    {
-      "title": "França condena dois streamers após morte de influenciador durante transmissão ao vivo; relembre o caso",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:47:29.304424-03:00"
-    },
-    {
-      "title": "Copom corta Selic para 14% ao ano e deixa em aberto os próximos passos — mas mercado já espera mais cortes",
-      "source": "Seu Dinheiro",
-      "score": 8.0,
-      "motivo": "Corte na Selic é um sinal de melhora no cenário econômico e pode impulsionar a economia",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:47:33.560310-03:00"
-    },
-    {
-      "title": "Analyst Report: Hartford Insurance Grp Inc",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:47:40.980947-03:00"
-    },
-    {
-      "title": "SpaceX ramps up Tesla Megapack purchases in Q2 to power its AI data centers",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:47:44.629056-03:00"
-    },
-    {
-      "title": "OpenAI, Anthropic Models Created Fake Profiles, Tried To Trick Humans During Cyber Tests",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:47:51.269342-03:00"
-    },
-    {
-      "title": "Jim Cramer Just Sold His Bitcoin And Bulls Couldn't Be Happier",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:47:57.338947-03:00"
-    },
-    {
-      "title": "DHS Confirms Over 3 Million Total Deportations, Highlights Arrests Of Five More \"Worst Of The Worst\" Criminal Illegals",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:48:03.053026-03:00"
-    },
-    {
-      "title": "Sandisk Tumbles After Revenue, Earnings Forecasts Miss Estimates",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:48:06.126391-03:00"
-    },
-    {
-      "title": "They Really Don't Care",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:48:12.199189-03:00"
-    },
-    {
-      "title": "Israel To Scale Back Gaza Strikes To Give Trump's Hamas Disarmament Plan A Chance",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:48:17.878753-03:00"
-    },
-    {
-      "title": "SEC Proposes New E-Delivery Approach to Make Information More Readily Accessible and Useful for Investors",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:48:20.674770-03:00"
-    },
-    {
-      "title": "Fed's Cook 'Prepared to Act' on Rates If Inflation Doesn't Slow",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:50:34.721798-03:00"
-    },
-    {
-      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia indica uma mudança na tendência da atividade fabril da China, o que pode ter impacto na economia global.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:50:40.948419-03:00"
-    },
-    {
-      "title": "Arabica Coffee Prices Hit Record on U.S., Colombia Tariff Spat",
-      "source": "WSJ Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:50:43.810645-03:00"
-    },
-    {
-      "title": "Brava (BRAV3) tem lucro líquido de R$ 871 mi no 2º tri, queda de 17% ao ano",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:50:46.663616-03:00"
-    },
-    {
-      "title": "Abate de bovinos no Brasil em 2026 deve encolher e somar cerca de 40 mi cabeças, prevê Abiec",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:50:50.760765-03:00"
-    },
-    {
-      "title": "PRIO bate recordes com petróleo em alta; e os dividendos?",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:50:53.651396-03:00"
-    },
-    {
-      "title": "CEO da COP30: Clima não é mais um nicho, é agenda de desenvolvimento econômico e social",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:50:56.532308-03:00"
-    },
-    {
-      "title": "CanPR Technology settles $72,500 debt with shares, grants new options",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:04.075936-03:00"
-    },
-    {
-      "title": "Atmos Energy EPS of $7.33",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:06.679453-03:00"
-    },
-    {
-      "title": "F&G Annuities & Life Non-GAAP EPS of $0.65 misses by $0.13, revenue of $1.42B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:09.338455-03:00"
-    },
-    {
-      "title": "Caris Life Sciences, Inc. GAAP EPS of $0.00 misses by $0.01, revenue of $263.7M beats by $25.62M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:12.013363-03:00"
-    },
-    {
-      "title": "Cooper-Standard Non-GAAP EPS of -$0.13 misses by $0.68, revenue of $721.3M beats by $12.4M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:14.679261-03:00"
-    },
-    {
-      "title": "Earnings Snapshot: Beyond Meat Q2 posts revenue beat; Q3 outlook misses on weaker sales",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:51:17.821248-03:00"
-    },
-    {
-      "title": "Horace Mann Educators Non-GAAP EPS of $1.17 beats by $0.44, revenue of $443.5M in-line",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:23.483629-03:00"
-    },
-    {
-      "title": "Rodolfo Amstalden: Behind the curve, mas só porque ele jogou a curva à frente",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:31.363200-03:00"
-    },
-    {
-      "title": "Spotify stock sinks as streaming giant's monthly active users forecast misses estimates",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:36.412881-03:00"
-    },
-    {
-      "title": "McDonald’s Slowest Quarter in a Year Costs Its US President His Job",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:39.098873-03:00"
-    },
-    {
-      "title": "Snap stock jumps 13% on improved advertising, World Cup boost",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:41.741859-03:00"
-    },
-    {
-      "title": "The stock market’s brutal summer reset is finally over. Here is why Citadel Securities says it is time to buy again.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:44.441388-03:00"
-    },
-    {
-      "title": "Fed's Paulson keeps 'open mind' on rate policy outlook amid high inflation",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:47.105342-03:00"
-    },
-    {
-      "title": "SEC Establishes Financial Reporting and Accounting Unit in Enforcement Division",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:51:50.802639-03:00"
-    },
-    {
-      "title": "Engie Brasil (EGIE3) tem lucro ajustado de R$ 694 mi no 2ºtri; alta de 23% no ano",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "O lucro ajustado é um indicador importante para avaliar a saúde financeira da empresa, e um aumento de 23% no ano é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:56:17.415198-03:00"
-    },
-    {
-      "title": "Em maio, vendas no varejo variam 0,1%",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:56:25.081178-03:00"
-    },
-    {
-      "title": "Sandisk’s stock falls as the company’s forecast doesn’t live up to high expectations",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A previsão de receita da empresa foi abaixo do esperado, o que pode afetar a confiança dos investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:56:30.869322-03:00"
-    },
-    {
-      "title": "Carlsmed, Inc. reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:56:33.632315-03:00"
-    },
-    {
-      "title": "American Coastal Insurance GAAP EPS of $0.44 beats by $0.03, revenue of $82.59M beats by $6.89M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:56:36.273886-03:00"
-    },
-    {
-      "title": "Legacy Housing GAAP EPS of $0.99 beats by $0.24, revenue of $66.3M in-line",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:56:38.894626-03:00"
-    },
-    {
-      "title": "Capri anticipates $3.4B FY2027 revenue while maintaining $2.15 EPS outlook amid Michael Kors inventory delays",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:56:41.541856-03:00"
-    },
-    {
-      "title": "Lilly expects 2026 revenue of $85B-$87B while expanding Foundayo and Medicare GLP-1 Bridge access",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:56:44.222518-03:00"
-    },
-    {
-      "title": "OTC Markets Non-GAAP EPS of $1.04 beats by $0.34, revenue of $33.74M misses by $0.5M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:56:47.358887-03:00"
-    },
-    {
-      "title": "Gladstone Commercial FFO of $0.38 beats by $0.03, revenue of $43.99M beats by $1.81M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em termos de FFO e receita, o que é positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:56:53.255288-03:00"
-    },
-    {
-      "title": "O que é a taxa Selic — e como ela afeta juros, emprego e investimentos",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T18:57:01.810616-03:00"
-    },
-    {
-      "title": "Baron Capital Sees Years of Mid-Teens Growth for Intuitive Surgical (ISRG)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:57:11.520999-03:00"
-    },
-    {
-      "title": "SpaceX Stock Rises in Early Trading",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T18:57:14.134690-03:00"
-    },
-    {
-      "title": "Hedge Funds Take Big Hit in July After Bruising AI Selloff",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Perdas significativas em fundos de hedge podem afetar a confiança dos investidores e influenciar as decisões de investimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T19:00:55.512711-03:00"
-    },
-    {
       "title": "Onde assistir Fortaleza x Palmeiras?",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17045,960 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-06T17:19:10.338117-03:00"
+    },
+    {
+      "title": "Latest Oil Market News and Analysis for Aug. 7",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:04.767566-03:00"
+    },
+    {
+      "title": "Big Take: The situation at Situational Awareness",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:07.399612-03:00"
+    },
+    {
+      "title": "Fed’s Fima Repo Facility Went Unused for 8th Straight Week",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:10.038585-03:00"
+    },
+    {
+      "title": "Follow the Money All the Way to Carney's Canada",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:12.667047-03:00"
+    },
+    {
+      "title": "Elanco CEO on Boosted Forecast, Surge in Tick Bites",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Aumento de previsão de lucro e receita da Elanco Animal Health é relevante para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:14:15.663496-03:00"
+    },
+    {
+      "title": "AIG Profit Beat Estimates, Cites Strong Underwriting",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:18.286769-03:00"
+    },
+    {
+      "title": "DraftKings Profit Falls Short Amid Prediction Market Blitz",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:20.915621-03:00"
+    },
+    {
+      "title": "Republicanos confirma chapa própria em Minas e amplia impasse sobre Cleitinho",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:14:24.733778-03:00"
+    },
+    {
+      "title": "Daniella diz que campanha de Flávio já prepara PEC e PLs para corte de gastos",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:14:27.380949-03:00"
+    },
+    {
+      "title": "Flávio diz que Lula está em processo de “bidenização, perigoso para o Brasil”",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:30.027424-03:00"
+    },
+    {
+      "title": "Localiza (RENT3) tem lucro de R$ 1 bi no 2T, alta de 30,6%; receita supera R$ 12 bi",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:32.685816-03:00"
+    },
+    {
+      "title": "Startups: Tik Tok demite 250 e reacende polêmica da IA na moderação",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:35.326246-03:00"
+    },
+    {
+      "title": "Janja pede bloqueio do Discord no Brasil; AGU anuncia ação contra plataforma",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:37.972923-03:00"
+    },
+    {
+      "title": "Juros, canetas emagrecedoras e bets seguram crescimento de vendas, diz Assaí",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:40.622025-03:00"
+    },
+    {
+      "title": "Hypera (HYPE3) tem lucro líquido de R$ 490,2 milhões no 2º tri, alta anual de 15,2%",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:14:43.272660-03:00"
+    },
+    {
+      "title": "Renner tem lucro estável a R$ 405 mi no 2T e reduz projeção de alta da receita no ano",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:45.932225-03:00"
+    },
+    {
+      "title": "Tupy reverte lucro e tem prejuízo de R$ 24 milhões no 2º trimestre",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:48.573667-03:00"
+    },
+    {
+      "title": "Bradesco (BBDC4) e Wall Street derrubam Ibovespa de volta aos 175 mil pontos; dólar recua a R$ 5,10",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:52.921322-03:00"
+    },
+    {
+      "title": "México - Ações fecharam o pregão em queda e o Índice S&P/BMV IPC recuou 0,19%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:55.708140-03:00"
+    },
+    {
+      "title": "Ibovespa e dólar hoje: Payroll domina a agenda em meio a tensão em Ormuz",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:14:58.355269-03:00"
+    },
+    {
+      "title": "Colômbia - Ações fecharam o pregão em alta e o Índice COLCAP avançou 0,24%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:00.999037-03:00"
+    },
+    {
+      "title": "Tupy reverte lucro e tem prejuízo no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:03.618921-03:00"
+    },
+    {
+      "title": "Rússia - Ações fecharam o pregão em queda e o Índice MOEX Russia Index recuou 0,76%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:06.272679-03:00"
+    },
+    {
+      "title": "Eztec tem lucro de R$110,4 mi no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:08.891920-03:00"
+    },
+    {
+      "title": "Recuperação de preços e investimentos ajudam Unipar no trimestre",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:11.526440-03:00"
+    },
+    {
+      "title": "Fleury tem alta de 45,7% no lucro líquido do 2º tri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:14.150998-03:00"
+    },
+    {
+      "title": "Hackers atacaram setor de private equity dos EUA e outras empresas, incluindo Blackstone e CME",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:16.814723-03:00"
+    },
+    {
+      "title": "Assaí tem salto no lucro líquido para R$484 mi no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:19.447416-03:00"
+    },
+    {
+      "title": "'Não adianta nos chamar de guardiões e nos deixar de fora das decisões', diz Sônia Guajajara",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:22.937795-03:00"
+    },
+    {
+      "title": "SP2B reúne fundos globais para revelar as próximas tendências em investimentos, IA e deep tech",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:25.602154-03:00"
+    },
+    {
+      "title": "Protestos e votação no Senado: entenda a proposta de 'Lei de Terras' de Milei",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:28.263097-03:00"
+    },
+    {
+      "title": "Da ‘taxa das blusinhas’ a crédito para exportadores: as MPs que pautam a economia no 2º semestre",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:30.928415-03:00"
+    },
+    {
+      "title": "Maior empresário do bitcoin diz que usou o ChatGPT para captar US$ 15 bilhões",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "Noticia sobre o uso de tecnologia avançada em uma empresa de criptomoedas pode ser positiva para o mercado de criptomoedas em geral.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:15:33.768502-03:00"
+    },
+    {
+      "title": "Lucro ajustado da Log cresce 100%. 'Em 18 anos, nunca vi algo parecido', diz CEO",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:36.414293-03:00"
+    },
+    {
+      "title": "Fleury lucra R$ 222 milhões no 2º tri — e continua atento a oportunidades de M&A",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:39.068976-03:00"
+    },
+    {
+      "title": "Netflix divulga primeira foto de 'Gente Grande 3', estrelado por Adam Sandler",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:15:41.725159-03:00"
+    },
+    {
+      "title": "Assaí chega a menor alavancagem desde 2021: 'Ciclo de expansão já passou'",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:44.373273-03:00"
+    },
+    {
+      "title": "Ibovespa recua 1,23% com bancos, Vale e cautela após decisão do Copom",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:15:47.014921-03:00"
+    },
+    {
+      "title": "Trade Desk shares tumble on earnings miss and weak outlook",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:15:49.728419-03:00"
+    },
+    {
+      "title": "Gold prices are breaking higher after a tough stretch. Could fresh records be within reach?",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:15:52.387206-03:00"
+    },
+    {
+      "title": "How to wish Social Security a happy 91st birthday",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:15:55.012409-03:00"
+    },
+    {
+      "title": "How to use options to trade stocks around an earnings announcement",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:15:57.653491-03:00"
+    },
+    {
+      "title": "Cooper-Standard targets over $400M of 2026 net new awards while keeping adjusted EBITDA midpoint unchanged",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:00.363764-03:00"
+    },
+    {
+      "title": "Ziff Davis Non-GAAP EPS of $1.03 beats by $0.19, revenue of $286.7M beats by $0.79M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:03.012070-03:00"
+    },
+    {
+      "title": "Here are the major earnings before the open Friday",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:05.638648-03:00"
+    },
+    {
+      "title": "Valhi GAAP EPS of $0.78, revenue of $606.1M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:08.262081-03:00"
+    },
+    {
+      "title": "CVRx GAAP EPS of -$0.53 misses by $0.01, revenue of $15.71M beats by $0.16M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:10.903575-03:00"
+    },
+    {
+      "title": "WELL Health Technologies Non-GAAP EPS of $0.04 misses by $0.02, revenue of $400.43M beats by $13.8M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:13.564812-03:00"
+    },
+    {
+      "title": "E.W. Scripps reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:16.171768-03:00"
+    },
+    {
+      "title": "Why SoundHound AI Stock Surged Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:20.047625-03:00"
+    },
+    {
+      "title": "FirstEnergy Breaks Below 200-Day Moving Average - Notable for FE",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:22.692474-03:00"
+    },
+    {
+      "title": "Dutch Bros is Now Oversold (BROS)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:25.308611-03:00"
+    },
+    {
+      "title": "AMREP is Now Oversold (AXR)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:27.916743-03:00"
+    },
+    {
+      "title": "United States 12 Month Natural Gas Fund Getting Very Oversold",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:30.557820-03:00"
+    },
+    {
+      "title": "RBLU Crosses Critical Technical Indicator",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:33.171963-03:00"
+    },
+    {
+      "title": "Notable Two Hundred Day Moving Average Cross - ENB",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:35.804001-03:00"
+    },
+    {
+      "title": "Bullish Two Hundred Day Moving Average Cross - CACI",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:38.437091-03:00"
+    },
+    {
+      "title": "MDU Crosses Above Key Moving Average Level",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:41.053106-03:00"
+    },
+    {
+      "title": "Why SiTime Stock Blasted Almost 27% Higher on Thursday",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:43.683255-03:00"
+    },
+    {
+      "title": "Trump anuncia nova tarifa para proteger indústria de chips e energia solar dos EUA",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:48.739293-03:00"
+    },
+    {
+      "title": "Crise do BRB: Durigan nega 'inércia' da União e diz que reclamação do governo do DF prejudica acordo",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:51.418509-03:00"
+    },
+    {
+      "title": "OpenAI prepara aparelho de IA sem tela para rivalizar com celular; preço deve passar de R$ 1,5 mil",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:54.091143-03:00"
+    },
+    {
+      "title": "Muito caro viajar de avião? Guerra encarece querosene e gera R$ 5,2 bilhões de gastos a mais às aéreas",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:16:56.769091-03:00"
+    },
+    {
+      "title": "Energisa tem prejuízo de R$ 40 milhões no 2º tri após lucro 1 ano antes",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:16:59.827168-03:00"
+    },
+    {
+      "title": "Lojas Renner tem lucro de R$ 404 mi e reduz projeção de receita no 2º tri",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:02.484195-03:00"
+    },
+    {
+      "title": "Dona da Havaianas, Alpargatas tem lucro de R$ 169,7 milhões, alta de 95%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:05.127063-03:00"
+    },
+    {
+      "title": "Grendene lucra R$ 95,3 milhões no 2 tºri, queda de 48,6%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:07.757962-03:00"
+    },
+    {
+      "title": "Grupo Fleury lucra R$ 221,9 milhões no 2º tri, alta de 45,7%",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "aquisição do Femme contribuiu para o aumento da lucratividade do Grupo Fleury",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:10.586978-03:00"
+    },
+    {
+      "title": "Farmacêutica Hypera lucra R$ 490 milhões no 2º tri, alta de 15%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:13.222954-03:00"
+    },
+    {
+      "title": "Localiza lucra R$ 1 bilhão no 2º tri e rola R$ 7 bilhões em dívidas",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:15.867201-03:00"
+    },
+    {
+      "title": "Allos tem lucro de R$ 341 mi no 2º tri, alta de 11,8%, e vende shopping",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:18.508673-03:00"
+    },
+    {
+      "title": "Aegea tem prejuízo de R$ 127 milhões no 2º trimestre, queda de 45,2%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:21.155126-03:00"
+    },
+    {
+      "title": "Natura, Azzas, Hapvida: o que explica o fracasso dos conglomerados brasileiros?",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:23.956641-03:00"
+    },
+    {
+      "title": "Aos 100 anos, Grupo Fleury (FLRY3) cresce como startup e lucro salta 45%; CEO dá diagnóstico",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:26.618848-03:00"
+    },
+    {
+      "title": "CDI, prefixado ou IPCA+? Veja onde investir na renda fixa com a Selic em 14%",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:29.274599-03:00"
+    },
+    {
+      "title": "SNAG11: exportações do agro mineiro somam R$ 45,6 bilhões e aceleram crédito rural",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:33.023409-03:00"
+    },
+    {
+      "title": "Ibovespa cai 1,23% após Copom e tensão no exterior; Petrobras (PETR4) limita perdas",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:35.680790-03:00"
+    },
+    {
+      "title": "Selic a 14%: CDB ou poupança, onde o dinheiro rende mais agora?",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:38.321607-03:00"
+    },
+    {
+      "title": "Assaí cresce receita, lucro e ganha market share, mas as despesas preocupam",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:42.549150-03:00"
+    },
+    {
+      "title": "Na maior venda da história da Log, um efeito contábil pontual",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:45.192164-03:00"
+    },
+    {
+      "title": "Hapvida tenta virar a página com plano “pé no chão” (e sem promessa de remédio rápido)",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:47.853046-03:00"
+    },
+    {
+      "title": "Your table awaits: Exhibit at TechCrunch Disrupt 2026 to be seen by thousands",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:17:50.557200-03:00"
+    },
+    {
+      "title": "Vogue just gave another nod of approval to the tech world",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:53.193768-03:00"
+    },
+    {
+      "title": "Get up to $400 off your TechCrunch Disrupt 2026 pass until tomorrow",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:55.836768-03:00"
+    },
+    {
+      "title": "Siemens Energy beats forecasts as AI data-center demand drives record orders: Q3 Earnings",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:17:58.589263-03:00"
+    },
+    {
+      "title": "Regions Financial Stock: Analyst Estimates & Ratings",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:01.222157-03:00"
+    },
+    {
+      "title": "CVS Stock Slides On 2027 Outlook Despite Hearty Earnings Beat",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:03.858743-03:00"
+    },
+    {
+      "title": "Dollar Slides on Stock Strength and Weakness in US Economic Reports",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:06.505056-03:00"
+    },
+    {
+      "title": "Analysts See More Upside for PLTR Stock as Palantir's Explosive Growth Eases Competition and Valuation Concerns",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:09.182999-03:00"
+    },
+    {
+      "title": "Analyst Report: Shopify Inc",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:11.790814-03:00"
+    },
+    {
+      "title": "Spencer Jakab | DIY Dividends",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:14.400364-03:00"
+    },
+    {
+      "title": "XRP Price Forecast: Risk of a Drop Below $1 Rise as ETF Inflows Dry Up",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:17.052628-03:00"
+    },
+    {
+      "title": "AAON’s (AAON) Growth Strategy Positions It for Long-Term Strength",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:19.693240-03:00"
+    },
+    {
+      "title": "Alex Gibney's Elon doc isn't even out but Musk is already calling it a 'hit job'",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:22.614756-03:00"
+    },
+    {
+      "title": "Social media star Sydney Towle died at 26. She helped define a new generation of young cancer influencers.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:25.295856-03:00"
+    },
+    {
+      "title": "Companies laying off staff this year include Meta, Amazon, and Visa — see the list",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:18:27.957089-03:00"
+    },
+    {
+      "title": "Here's how SpaceX imagines its massive Terafab chip factory will look",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:30.603980-03:00"
+    },
+    {
+      "title": "The most iconic seafood shack in every state",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:33.227651-03:00"
+    },
+    {
+      "title": "Sweetgreen cuts full-year outlook as cyclospora fears weigh on sales",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:36.075971-03:00"
+    },
+    {
+      "title": "Investigators Unveil Charges Against Dismissed Ukrainian Ambassador To The US",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:18:39.126443-03:00"
+    },
+    {
+      "title": "US Immigration Agency Asks Public To Report Fraud, Anti-Government Activities",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:18:41.792012-03:00"
+    },
+    {
+      "title": "DeepSeek Resumes $74BN Mega-Raise - Then Warns It's Jacking-Up Prices",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:18:44.447910-03:00"
+    },
+    {
+      "title": "DoorDash Wins Federal Approval To Fly Its Own Delivery Drones",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:18:47.100721-03:00"
+    },
+    {
+      "title": "Japan Marks Hiroshima Anniversary Without Naming US, While Shaming Russia",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:18:49.765887-03:00"
+    },
+    {
+      "title": "The COVID Lockdowns Gave America A Glimpse Of Socialism",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T19:18:52.429701-03:00"
+    },
+    {
+      "title": "Judge Rules Trump Admin Can End Temporary Protected Status For Haitians",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T19:18:55.087490-03:00"
     }
   ]
 }
