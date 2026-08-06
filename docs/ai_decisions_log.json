@@ -1,222 +1,6 @@
 {
   "decisions": [
     {
-      "title": "'Culpa' do Brasil: Uber cresce, mas país vira freio para avanço das viagens",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A noticia e sobre o desempenho da Uber, mas nao e uma noticia positiva ou negativa em si, apenas uma atualizacao sobre as projecoes da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:36.945891-03:00"
-    },
-    {
-      "title": "A caixa de joias imaginada por Humberto Campana para a Tiffany & Co.",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:39.931900-03:00"
-    },
-    {
-      "title": "Popular 6.375 PFD A shares declares $0.1328 dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Dividendos significativos podem atrair investidores e influenciar a demanda por ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:43.045708-03:00"
-    },
-    {
-      "title": "Popular 6.125% Cumulative Monthly Income Trust Preferred Securities declares $0.1276 dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "O pagamento de divendo é um sinal de saúde financeira da empresa e pode atrair investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:46.192857-03:00"
-    },
-    {
-      "title": "Hudson Pacific Properties reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "Os resultados financeiros da empresa são relevantes para os investidores, mas não são um evento de grande impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:49.107686-03:00"
-    },
-    {
-      "title": "Genasys receives $2.4M CIP order",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A ordem de compra é um sinal de confiança do investidor no potencial de crescimento da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:51.982929-03:00"
-    },
-    {
-      "title": "Shiseido Company reports 1H results",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado de ações de empresas de cosméticos e produtos de beleza.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:55.019132-03:00"
-    },
-    {
-      "title": "SSR Mining Inc. declares $0.03 dividend",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para os investidores que possuem ações da empresa, pois afeta diretamente a distribuição de dividendos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:26:57.895316-03:00"
-    },
-    {
-      "title": "Elanco posts Q2 beat as Zenrelia hits blockbuster status",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado devido ao desempenho positivo da Elanco e ao status de blockbuster da Zenrelia, o que pode influenciar as ações dessas empresas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:27:01.077793-03:00"
-    },
-    {
-      "title": "Why D-Wave Stock Fell 25% in July",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento de grande impacto",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:27:07.884897-03:00"
-    },
-    {
-      "title": "Futures Pointing To Extended Rally On Wall Street",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Indicações de alta nos futuros dos principais índices de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:27:14.428966-03:00"
-    },
-    {
-      "title": "Gerdau (GGBR4) supera expectativas no 2T, mas ação recua; veja o que analistas dizem",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Resultados financeiros superaram expectativas, indicando saúde financeira da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:30:52.171118-03:00"
-    },
-    {
-      "title": "Itaú Unibanco vê “super estabilidade” na inadimplência do banco à frente, diz CEO",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "a expectativa de crescimento da carteira de crédito do Itaú é positiva para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:30:59.013041-03:00"
-    },
-    {
-      "title": "Lula e Alcolumbre se reúnem após crise política em encontro articulado por ministros do STF",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:31:08.401241-03:00"
-    },
-    {
-      "title": "Justiça de São Paulo aprova recuperação extrajudicial da Oncoclínicas",
-      "source": "UOL Economia",
-      "score": 3.0,
-      "motivo": "Aprovou recuperação extrajudicial, mas sem impacto imediato no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:31:17.138577-03:00"
-    },
-    {
-      "title": "Situational Awareness hedge fund meltdown was a warning shot for leveraged markets, BofA CEO says",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "O colapso do hedge fund pode influenciar a confiança dos investidores em mercados de alta risco.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:35:32.646516-03:00"
-    },
-    {
-      "title": "UBS aponta mineradoras de PGM favoritas com alta dos híbridos",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A notícia destaca mineradoras de PGM favoritas, o que pode impulsionar ações dessas empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:35:40.631835-03:00"
-    },
-    {
-      "title": "Saba Capital constrói participação de mais de 5% no Unite Group",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "inversão significativa em empresa pode impulsionar ação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:35:43.425863-03:00"
-    },
-    {
-      "title": "Goldman Sachs mantém previsão de payroll em 75 mil após dado fraco do ADP",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A Goldman Sachs manteve sua previsão de payroll em 75 mil, indicando que a notícia não é significativamente impactante, mas ainda relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:35:46.767972-03:00"
-    },
-    {
-      "title": "ONGC planeja assinar acordos para operar dois blocos de petróleo na Venezuela",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "ONGC planeja assinar acordos para operar dois blocos de petróleo, o que pode indicar uma expansão de suas operações e aumento de produção de petróleo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:35:52.675935-03:00"
-    },
-    {
-      "title": "Chipotle sobe 3,5% após autoridades de saúde de Minnesota inocentarem a rede",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A inocentação da rede de Chipotle diminui o risco de danos à reputação e ao negócio da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:35:56.044802-03:00"
-    },
-    {
-      "title": "Compromissos de compra da Apple sobem 28%; BofA vê avanço do iPhone",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento dos compromissos de compra da Apple é um sinal positivo para a empresa e seu produto iPhone",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:36:02.589105-03:00"
-    },
-    {
-      "title": "Para uma empresa ser citada por uma IA ela precisa estar no Reddit; e isso virou um problema",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:10.109986-03:00"
-    },
-    {
-      "title": "Alpha Modus signs multi-year services agreement with potential $8M revenue",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois indica um compromisso de longo prazo da empresa, o que pode ser positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:13.178490-03:00"
-    },
-    {
       "title": "Wall Street rises amid softer jobs report",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17783,222 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T08:46:51.925442-03:00"
+    },
+    {
+      "title": "Celsius Shares Slump as Namesake Brand Sales Tumble",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Vendas da marca principal da empresa caíram abaixo das expectativas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:50:35.910011-03:00"
+    },
+    {
+      "title": "Coreia do Norte lança míssil de curto alcance, diz Forças Armadas da Coreia do Sul",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:50:39.842437-03:00"
+    },
+    {
+      "title": "CPTM: Linhas 11-Coral e 12-Safira operaram com velocidade menor no 1º dia após greve",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:50:42.514232-03:00"
+    },
+    {
+      "title": "Commerzbank quase dobra lucro no 2º tri e CEO pede diálogo após avanço do UniCredit",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:50:45.184123-03:00"
+    },
+    {
+      "title": "Cyrela (CYRE3) negocia venda de ativos imobiliários de R$ 2,14 bilhões ao TRXF11",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:50:47.847948-03:00"
+    },
+    {
+      "title": "Minério de ferro amplia ganhos com notícias sobre medidas de estímulo ao setor imobiliário na China",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:50:52.270598-03:00"
+    },
+    {
+      "title": "Por que as ações da Molson Coors estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:50:55.039084-03:00"
+    },
+    {
+      "title": "Por que as ações da Becton Dickinson estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:50:57.677921-03:00"
+    },
+    {
+      "title": "Por que as ações da Krispy Kreme estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:00.346140-03:00"
+    },
+    {
+      "title": "Por que as ações da Shift4 Payments estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Ações estão caindo devido a perda de valor, indicando uma situação negativa para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:03.127784-03:00"
+    },
+    {
+      "title": "Por que as ações da Zoetis estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:05.756828-03:00"
+    },
+    {
+      "title": "Por que as ações da Howmet Aerospace estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:08.706482-03:00"
+    },
+    {
+      "title": "Por que as ações do Datadog estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:11.336540-03:00"
+    },
+    {
+      "title": "Por que as ações da Papa John’s estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:14.009659-03:00"
+    },
+    {
+      "title": "D-Wave Quantum fica abaixo das estimativas do 2º tri e ações caem",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:16.662388-03:00"
+    },
+    {
+      "title": "Por que as ações da Constellation Energy estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:19.304273-03:00"
+    },
+    {
+      "title": "Mastech Digital Non-GAAP EPS of $0.08, revenue of $41.44M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:22.545834-03:00"
+    },
+    {
+      "title": "Premium Brands declares CAD 0.85 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:25.202386-03:00"
+    },
+    {
+      "title": "Priority Technology Non-GAAP EPS of $0.29 beats by $0.03, revenue of $262.3M beats by $4.48M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:27.863129-03:00"
+    },
+    {
+      "title": "TIC Solutions Non-GAAP EPS of $0.14 beats by $0.02, revenue of $584.3M beats by $6.26M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:30.520628-03:00"
+    },
+    {
+      "title": "Distribution Solutions Group Non-GAAP EPS of $0.47, revenue of $557.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:33.168222-03:00"
+    },
+    {
+      "title": "Starwood Property Trust Q2 earnings in line as real estate fundamentals improve",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:51:36.295886-03:00"
+    },
+    {
+      "title": "Sunstone Hotel FFO of $0.32 beats by $0.03, revenue of $277.11M beats by $7.86M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:41.948562-03:00"
+    },
+    {
+      "title": "SpaceX beats Wall Street expectations in first earnings release",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:51:51.009312-03:00"
     }
   ]
 }
