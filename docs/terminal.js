@@ -140,10 +140,10 @@
     ]);
 
     montarSymbolOverview("widget-commodities", [
-      ["Petróleo Brent", "TVC:UKOIL|1D"],
-      ["Rio Tinto (proxy minério)", "NYSE:RIO|1D"],
+      ["Petróleo (WTI)", "TVC:USOIL|1D"],
       ["Ouro", "TVC:GOLD|1D"],
-      ["Prata", "TVC:SILVER|1D"],
+      ["Cobre", "TVC:COPPER|1D"],
+      ["Soja", "CBOT:ZS1!|1D"],
     ]);
 
     montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
