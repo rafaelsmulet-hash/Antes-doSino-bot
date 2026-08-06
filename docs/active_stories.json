@@ -138,7 +138,7 @@
       "id": "d0befc41-39df-4325-b49b-eb53d8c61049",
       "cluster_key": "petr4",
       "first_seen": "2026-08-05T10:02:21.760505-03:00",
-      "last_updated": "2026-08-06T19:32:31.440652-03:00",
+      "last_updated": "2026-08-06T20:08:38.586327-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "InfoMoney",
@@ -146,7 +146,7 @@
         "Money Times",
         "Suno Noticias"
       ],
-      "update_count": 12,
+      "update_count": 14,
       "status": "active"
     },
     {
@@ -165,14 +165,15 @@
       "id": "374b4e47-4334-4563-8ac1-89005f357aae",
       "cluster_key": "petrobras",
       "first_seen": "2026-08-05T17:46:08.826854-03:00",
-      "last_updated": "2026-08-06T19:10:40.294939-03:00",
+      "last_updated": "2026-08-06T20:08:32.841817-03:00",
       "materiality_peak": 5.0,
       "sources_seen": [
         "Investing.com Brasil",
         "InfoMoney",
-        "UOL Economia"
+        "UOL Economia",
+        "Exame"
       ],
-      "update_count": 6,
+      "update_count": 9,
       "status": "active"
     },
     {
@@ -216,13 +217,14 @@
       "id": "d329f4cd-3fd1-435f-b36a-f67e962ab009",
       "cluster_key": "magazine luiza",
       "first_seen": "2026-08-06T19:29:19.753226-03:00",
-      "last_updated": "2026-08-06T19:31:37.746996-03:00",
+      "last_updated": "2026-08-06T20:07:31.057066-03:00",
       "materiality_peak": null,
       "sources_seen": [
         "Investing.com Brasil",
-        "UOL Economia"
+        "UOL Economia",
+        "Exame"
       ],
-      "update_count": 2,
+      "update_count": 3,
       "status": "active"
     }
   ]
