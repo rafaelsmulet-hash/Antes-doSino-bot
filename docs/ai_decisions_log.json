@@ -1,249 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Vishay Intertechnology Non-GAAP EPS of $0.19 beats by $0.05, revenue of $888.58M misses by $6.46M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de lucro da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:21:48.090656-03:00"
-    },
-    {
-      "title": "Sprott GAAP EPS of $1.33, revenue of $71.78M misses by $6.38M",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A notícia é relevante porque afeta os resultados financeiros da Sprott, mas não é um evento de grande impacto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:21:51.117616-03:00"
-    },
-    {
-      "title": "Less Fed guidance could lift market volatility, Perkins says",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia sugere que a Fed pode reduzir sua intervenção no mercado, o que pode ser visto como positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:21:54.752786-03:00"
-    },
-    {
-      "title": "Extreme Networks Non-GAAP EPS of $1.06 beats by $0.03, revenue of $1.28B in-line",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de lucro, o que é positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:22:00.745597-03:00"
-    },
-    {
-      "title": "GlobalFoundries dips despite Q2 beat",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de lucro, mas a reação negativa da ação é devido a preocupações com a demanda futura, o que é relevante para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:22:03.657872-03:00"
-    },
-    {
-      "title": "Kymera Therapeutics GAAP EPS of -$0.62 beats by $0.12, revenue of $65M beats by $32.22M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em termos de lucro e receita, o que é positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:22:06.693692-03:00"
-    },
-    {
-      "title": "New York Times in Charts: Subscriber growth powers another strong digital Q2",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Crescimento de assinantes e lucros da New York Times é relevante para o mercado de mídia e imprensa, refletindo positivamente sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:22:09.754818-03:00"
-    },
-    {
-      "title": "Klabin lucra R$ 386,6 milhões no 2º trimestre, queda de 33,9%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "Lucro da Klabin é relevante para o mercado de ações de empresas de celulose e papel",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:22:19.007494-03:00"
-    },
-    {
-      "title": "De R$ 480 a R$ 5 mil: os tênis que todo pai vai querer ganhar neste Dia dos Pais",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:22:21.878542-03:00"
-    },
-    {
-      "title": "Zalando trims FY26 outlook despite strong Q2 revenue growth",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Ajuste de expectativa de receita pode influenciar a valorização da ação da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:22:28.139628-03:00"
-    },
-    {
-      "title": "A debate is brewing over the risks and rewards of serving ads to AI agents",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não se refere a um evento ou decisão específica que possa impactar o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:22:31.406103-03:00"
-    },
-    {
-      "title": "Disney beats earnings estimates in CEO Josh D'Amaro's first full quarter — and strikes a TikTok deal",
-      "source": "Business Insider",
-      "score": 5.0,
-      "motivo": "Parceria com o TikTok e crescimento no segmento de entretenimento são relevantes para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:22:35.063785-03:00"
-    },
-    {
-      "title": "Ken Griffin's Citadel posts best month in years after scooping up Situational Awareness stocks",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A aquisição de ações de Situational Awareness pelo Citadel é relevante para o mercado devido ao seu impacto direto nas operações da empresa e no mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:25:41.696791-03:00"
-    },
-    {
-      "title": "Bradesco, Itaú, Gerdau, Eneva, Taesa e mais ações para acompanhar hoje",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "Notícia sobre ações para acompanhar, mas sem conteúdo específico",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:25:48.534140-03:00"
-    },
-    {
-      "title": "Eneva recebe autorização da Aneel para início da operação comercial da usina Azulão I",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre operacionalizacao de uma usina termelétrica, sem impacto imediato no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:25:54.752605-03:00"
-    },
-    {
-      "title": "J&amp;J Snack Foods GAAP EPS of $1.89 beats by $0.26, revenue of $425.9M misses by $3.15M",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque afeta os resultados financeiros da empresa, mas não é um evento de grande impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:03.219985-03:00"
-    },
-    {
-      "title": "At a glance: stocks gapping up premarket",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois indica tendências de mercado, embora seja um evento rotineiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:26:06.603966-03:00"
-    },
-    {
-      "title": "FuboTV Inc. reports Q3 results",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:12.568543-03:00"
-    },
-    {
-      "title": "Orion Energy Systems GAAP EPS of $0.47, revenue of $25.7M",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A divulgação dos resultados financeiros da empresa é relevante para os investidores, mas não é um evento inesperado ou impactante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:15.475730-03:00"
-    },
-    {
-      "title": "Gran Tierra Energy to sell Colombia, Ecuador assets in $1.33B deal",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A venda de ativos significativos pode afetar a estratégia e a rentabilidade da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:18.370204-03:00"
-    },
-    {
-      "title": "SharkNinja GAAP EPS of $0.92 misses by $0.16, revenue of $1.77B beats by $120M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a expectativa de lucro da SharkNinja, uma empresa pública",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:21.317858-03:00"
-    },
-    {
-      "title": "Lifecore Biomedical GAAP EPS of -$0.19 beats by $0.03, revenue of $34.17M beats by $2.15M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em lucro e receita, o que é considerado positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:24.230600-03:00"
-    },
-    {
-      "title": "Indian EV startup River raises $120M Series C to scale production, launch more models",
-      "source": "TechCrunch",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois trata da expansão de uma startup de veículos elétricos, que pode impactar a demanda por componentes e a competitividade no mercado automotivo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:33.521872-03:00"
-    },
-    {
-      "title": "Shipper liability takes another Texas setback; CHRW plays offense",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia afeta a indústria de transporte, que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:36.521454-03:00"
-    },
-    {
-      "title": "Solar Landscape closes $150m financing with CIP for solar projects",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Financiamento significativo para projetos solares pode impulsionar investimentos em energia renovável.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:39.396656-03:00"
-    },
-    {
-      "title": "Inside Ford's \"Passionate\" Reinvention",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A Ford está se concentrando em veículos mais lucrativos e personalizáveis, o que deve melhorar seus resultados financeiros a longo prazo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:26:43.213762-03:00"
-    },
-    {
-      "title": "Meio/Ideia: apesar da liderança, Lula é desaprovado por 49% dos brasileiros",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:30:40.539567-03:00"
-    },
-    {
       "title": "Reports of the 60/40 portfolio’s demise are proving to be premature",
       "source": "MarketWatch",
       "score": 5.0,
@@ -18044,6 +17801,204 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-06T07:08:03.759757-03:00"
+    },
+    {
+      "title": "Bonds, Dollar Weighed Down by Washington Policy Decisions",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "Decisões de política de Washington podem afetar o mercado de títulos e a valorização do dólar.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:10:41.370988-03:00"
+    },
+    {
+      "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A mudança de política monetária pode influenciar a economia e os preços em Singapura.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:10:47.828089-03:00"
+    },
+    {
+      "title": "What's New This Tax Season That Can Save You Money",
+      "source": "WSJ Markets",
+      "score": 1.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:10:51.031034-03:00"
+    },
+    {
+      "title": "Mini-índice (WINQ26): balanços testam reação do contrato após o Copom",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia não traz informações novas ou significativas sobre o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:10:54.815891-03:00"
+    },
+    {
+      "title": "Selic cai para 14%, mas é a Petrobras (PETR4) que mexe com o mercado; Ibovespa em dólar sobe hoje (6)",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "A noticia é sobre mercado financeiro, mas o corte de Selic era esperado e o foco agora é a comunicação do Banco Central.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:11:02.318745-03:00"
+    },
+    {
+      "title": "Como um visto negado salvou esta indústria de SP que agora chega aos R$ 300 milhões",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "A notícia apresenta uma empresa que cresceu significativamente após um obstáculo e agora investe em expansão, indicando um cenário positivo para o mercado.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:09.359362-03:00"
+    },
+    {
+      "title": "Flash crash briefly fells SK Hynix while SocGen strategist says Korean shakeout is nearly done",
+      "source": "MarketWatch",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado, mas trata-se de um evento isolado e não tem impacto significativo a longo prazo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:11:13.236658-03:00"
+    },
+    {
+      "title": "Walker &amp; Dunlop Non-GAAP EPS of $1.19 beats by $0.06, revenue of $306.69M misses by $30.68M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as expectativas de lucro da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:19.345653-03:00"
+    },
+    {
+      "title": "ATS Non-GAAP EPS of $0.35 beats by $0.06, revenue of $693.7M beats by $178.23M",
+      "source": "Seeking Alpha",
+      "score": 8.0,
+      "motivo": "A empresa superou as expectativas em lucro e receita, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:22.509962-03:00"
+    },
+    {
+      "title": "Targa Resources reports Q2 results; updates FY 2026 outlook",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A atualização da previsão para o ano de 2026 pode influenciar as expectativas dos investidores sobre o desempenho da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:25.486328-03:00"
+    },
+    {
+      "title": "ACI Worldwide Non-GAAP EPS of $0.54 beats by $0.01, revenue of $430M misses by $0.6M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as expectativas de lucro e receita da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:28.449244-03:00"
+    },
+    {
+      "title": "Enerflex GAAP EPS of $0.25 misses by $0.09, revenue of $582M misses by $19.31M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de lucro da Enerflex, o que pode influenciar a decisão de investir no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:31.535065-03:00"
+    },
+    {
+      "title": "Lamar Advertising GAAP EPS of $1.58 in-line, revenue of $616.7M beats by $10.09M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas de receita, o que é considerado positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:34.541682-03:00"
+    },
+    {
+      "title": "Oscar Health GAAP EPS of $1.10 beats by $0.69, revenue of $4.88B beats by $130M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas de lucro e receita, o que é considerado positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:37.507229-03:00"
+    },
+    {
+      "title": "Ross Gerber Says Tesla's FSD 'Almost' Caused an Accident While Passing Emergency Vehicles: 'Still Has Major Issues'",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia destaca problemas no sistema de condução autônoma da Tesla, o que pode afetar a confiança dos investidores e o preço da ação da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:49.687218-03:00"
+    },
+    {
+      "title": "First Watch Restaurant Group, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados financeiros melhorados e estratégias de crescimento, o que é relevante para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:52.631788-03:00"
+    },
+    {
+      "title": "Graphic Packaging Holding Company Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados financeiros dentro do esperado, o que é relevante para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:55.606192-03:00"
+    },
+    {
+      "title": "W.W. Grainger, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A empresa forneceu informações sobre seus resultados financeiros, mas não há informações inesperadas ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:11:58.578134-03:00"
+    },
+    {
+      "title": "Exp World Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas financeiras, o que é positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:12:01.498874-03:00"
+    },
+    {
+      "title": "Corn Falls Back on Turnaround Tuesday",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia é relevante para o mercado de commodities, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:12:05.031695-03:00"
+    },
+    {
+      "title": "I've worked in the US, Europe, and Korea. The biggest difference is how people approach innovation.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:12:08.350422-03:00"
+    },
+    {
+      "title": "A former T-Mobile exec shares his strategy for working with difficult colleagues",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:12:11.211117-03:00"
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
   "date": "2026-08-06",
-  "total_ingeridas": 496,
-  "aprovadas_pelo_fluxo_atual": 52,
-  "descartadas_pelos_filtros_atuais": 444,
-  "score_medio_materialidade": 3.83,
+  "total_ingeridas": 744,
+  "aprovadas_pelo_fluxo_atual": 56,
+  "descartadas_pelos_filtros_atuais": 688,
+  "score_medio_materialidade": 4.05,
   "seriam_breaking": 8,
-  "iriam_para_rodada": 42,
-  "seriam_descartadas_pelo_novo_sistema": 84,
-  "total_divergencias": 50,
+  "iriam_para_rodada": 44,
+  "seriam_descartadas_pelo_novo_sistema": 109,
+  "total_divergencias": 68,
   "divergencias": [
     {
       "title": "WPP Soars Most on Record After Turnaround Effort Gains Steam",
@@ -148,34 +148,6 @@
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Diodes anticipates Q3 revenue of about $510M with 35% gross margin as it advances proposed ElevATE deal",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Thinking of Buying Tesla Stock on the Dip? Here's One Green Flag and One Red Flag.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Strategy's Michael Saylor Is Making a Strong Case Against a Proposed New Bitcoin Upgrade. Here's What That Means for Bitcoin.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Nvidia, Micron, and Sandisk Are Up Over 1,000% Since the AI Boom Started. These 2 AI Stocks Could Be the Next Big Winners.",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
     }
   ]
 }
