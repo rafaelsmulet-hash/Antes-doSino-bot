@@ -475,10 +475,10 @@ def generate_shadow_daily_report():
 # =============================================================================
 # 7) CHECKPOINT ENGINE EM MODO SOMBRA (Fase 2)
 #
-# Gera rascunhos de "o que teria sido enviado" nos 4 momentos que ja
-# existem (Radar da Madrugada, Snapshot, Evening Briefing, Night
-# Wrap) - NUNCA envia nada, NUNCA formata como mensagem real de
-# producao. So gera arquivo de comparacao pra avaliacao humana.
+# Gera rascunhos de "o que teria sido enviado" nos momentos que ja
+# existem (Snapshot, Evening Briefing, Night Wrap) - NUNCA envia nada,
+# NUNCA formata como mensagem real de producao. So gera arquivo de
+# comparacao pra avaliacao humana.
 #
 # LIMITACAO CONHECIDA E DELIBERADA: como o modo sombra (Fase 1) so
 # pontua noticias que JA sobreviveram aos filtros atuais (a pontuacao
