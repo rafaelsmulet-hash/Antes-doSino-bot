@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "BP to Sell U.S. Biogas Unit as Oil Profits Surge",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:33.029309-03:00"
-    },
-    {
-      "title": "Caterpillar lifts 2026 sales growth forecast as AI buildout powers on",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:35.669264-03:00"
-    },
-    {
-      "title": "Meta debuts first AI coding agent to take on Anthropic and OpenAI",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T16:16:39.339093-03:00"
-    },
-    {
-      "title": "SEC Establishes Financial Reporting and Accounting Unit in Enforcement Division",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:45.498319-03:00"
-    },
-    {
-      "title": "Lula promete seriedade fiscal para baixar Selic, mas diz que teto limita investimento",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Lula promete seriedade fiscal, o que pode levar a uma redução na Selic",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T16:21:12.383134-03:00"
-    },
-    {
-      "title": "Testamento de Oliver Tree revela desejo inusitado para coleção de arte após sua morte",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:21:18.362463-03:00"
-    },
-    {
-      "title": "Chanceler argentino diz esperar ‘mudança de direção ideológica’ no Brasil",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre política internacional não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:21:21.296261-03:00"
-    },
-    {
-      "title": "Small caps: Ágora exclui Marcopolo (POMO4) e escala Smart Fit (SMFT3) para carteira de agosto",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:21:25.583880-03:00"
-    },
-    {
-      "title": "A peça de meia tonelada que mudou o alvo dos ladrões de carros",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:21:37.467362-03:00"
-    },
-    {
-      "title": "Infantino ofereceu final da Copa ao Marrocos em troca de apoio político, diz jornal",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:25:48.218943-03:00"
-    },
-    {
-      "title": "EUA fará exercícios militares com Brasil e outros 17 países na América Latina",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:25:50.973603-03:00"
-    },
-    {
       "title": "S&P Global eleva rating da Kinross Gold após redução de dívidas",
       "source": "Investing.com Brasil",
       "score": 6.0,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T12:22:22.880294-03:00"
+    },
+    {
+      "title": "Bradesco expande lucro com inadimplência sob controle. ROE vai a 16,2%",
+      "source": "Brazil Journal",
+      "score": 6.0,
+      "motivo": "lucro crescente e ROE alto indicam saúde financeira do Bradesco",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:25:39.795022-03:00"
+    },
+    {
+      "title": "Oklo's Groves reactor achieves first 'criticality' under DoE program",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações financeiras ou de mercado relevantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:25:43.370590-03:00"
+    },
+    {
+      "title": "Hexagon Composites reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:25:45.974893-03:00"
+    },
+    {
+      "title": "Klarna's integration with J.P. Morgan Payments goes live",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:25:48.588681-03:00"
+    },
+    {
+      "title": "Grant Cardone reveals the ‘best thing to do’ with $50K — with ‘zilch’ chance of going to $0. Do you own any?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:26:00.317800-03:00"
+    },
+    {
+      "title": "SpaceX lockup expires today, with stock bucking higher",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:26:02.932244-03:00"
+    },
+    {
+      "title": "Allianz to buy UOB’s asset management arm for $432.8m",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:26:05.544149-03:00"
+    },
+    {
+      "title": "Why BillionToOne Plummeted 36%, Leading A Medtech Sell-Off",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:26:08.330602-03:00"
+    },
+    {
+      "title": "Bob’s Discount Furniture Jumps on Q2 Revenue Growth",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Crescimento de receita é um sinal positivo para a empresa e pode afetar o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:26:11.262184-03:00"
+    },
+    {
+      "title": "Prediction: Micron Will Trade at This Price in 2028",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:26:13.870528-03:00"
+    },
+    {
+      "title": "SEC Office of Municipal Securities Updates FAQs for Registration of Municipal Advisors",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:26:17.338551-03:00"
     }
   ]
 }
