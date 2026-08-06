@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ray-Ban: a briga de família que pode desmontar um império de € 40 bi",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma crise de governança em uma empresa, mas não é diretamente relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:31:04.357517-03:00"
-    },
-    {
-      "title": "UBS rebaixa Ferretti com demanda fraca por iates e poucos catalisadores",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "demanda fraca por iates e poucos catalisadores afetam negativamente a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:31:08.645805-03:00"
-    },
-    {
       "title": "Ações da China atingem maior cotação da semana com alta das ações do setor de chips",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T21:26:18.615931-03:00"
+    },
+    {
+      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
+      "source": "WSJ Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de energia, mas não apresenta informações significativas ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:30:46.216546-03:00"
+    },
+    {
+      "title": "2 Brilliant Growth Stocks That Just Hit All-Time Highs With Plenty of Room to Run",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a perspectiva de crescimento de empresas específicas, o que é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:30:55.203815-03:00"
     }
   ]
 }

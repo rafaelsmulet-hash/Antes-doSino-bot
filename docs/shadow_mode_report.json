@@ -1,21 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 35096,
-  "aprovadas_pelo_fluxo_atual": 676,
-  "descartadas_pelos_filtros_atuais": 34420,
+  "total_ingeridas": 35344,
+  "aprovadas_pelo_fluxo_atual": 677,
+  "descartadas_pelos_filtros_atuais": 34667,
   "score_medio_materialidade": 4.26,
   "seriam_breaking": 53,
   "iriam_para_rodada": 536,
   "seriam_descartadas_pelo_novo_sistema": 1411,
-  "total_divergencias": 758,
+  "total_divergencias": 757,
   "divergencias": [
-    {
-      "title": "UBS rebaixa Ferretti com demanda fraca por iates e poucos catalisadores",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Ações da China atingem maior cotação da semana com alta das ações do setor de chips",
       "source": "Investing.com Brasil",
@@ -148,6 +141,13 @@
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Disney strikes a breakthrough content-sharing deal with TikTok",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
