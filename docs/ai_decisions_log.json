@@ -1,222 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bank of America spends $250 million a year on GLP-1 drugs for its employees, CEO says",
-      "source": "CNBC - Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:48:48.250663-03:00"
-    },
-    {
-      "title": "Disney libera Marvel e Star Wars para o TikTok — e leva os vídeos para o Disney+",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:48:55.868696-03:00"
-    },
-    {
-      "title": "Um ano após cobrança de IOF, previdência privada perde R$ 4,6 bilhões em aportes",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:49:02.118296-03:00"
-    },
-    {
-      "title": "Eli Lilly eleva projeção de receita para 2026 após balanço impulsionado por GLP-1",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Elevação da projeção de receita e superação das estimativas de lucro por ação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:49:07.964486-03:00"
-    },
-    {
-      "title": "El Niño forte pode aumentar para 274 milhões o número de famintos no mundo",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:49:10.609990-03:00"
-    },
-    {
-      "title": "Ações da Flotek disparam 30% após resultados recordes no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:49:15.542217-03:00"
-    },
-    {
-      "title": "Lockheed Martin e Marinha dos EUA testam sistema de detecção de submarinos com IA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:49:18.192315-03:00"
-    },
-    {
-      "title": "Novo Nordisk obtém ordem judicial nos Países Baixos contra a Ceban por semaglutida",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:49:20.852186-03:00"
-    },
-    {
-      "title": "Ibovespa sobe na abertura com Itaú entre suportes após balanço",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:49:24.258859-03:00"
-    },
-    {
-      "title": "Braveheart Bio deve precificar IPO acima da faixa de marketing",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:49:30.528793-03:00"
-    },
-    {
-      "title": "Chipotle diz que metas anuais excluem impacto da salmonela enquanto ação tenta recuperação",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:49:36.839320-03:00"
-    },
-    {
-      "title": "Disney e TikTok fecham acordo para compartilhamento de vídeos curtos",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:49:43.082446-03:00"
-    },
-    {
-      "title": "O RH como 'farol' da IA: o desafio agora é redesenhar o trabalho entre humanos e agentes digitais",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:49:49.128357-03:00"
-    },
-    {
-      "title": "Alfredo Gaspar, ex-relator da CPMI do INSS, será vice na chapa de Flávio à Presidência",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:49:51.787298-03:00"
-    },
-    {
-      "title": "It’s the worst time in years to invest in AI credit markets: ‘Almost no upside and plenty of downside’",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:49:55.190751-03:00"
-    },
-    {
-      "title": "BorgWarner secures new awards, beats Q2 expectations",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:50:00.841798-03:00"
-    },
-    {
-      "title": "Kelly Services Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:50:04.112893-03:00"
-    },
-    {
-      "title": "CoStar forecasts industrial demand to outpace supply by late 2027",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:50:09.749359-03:00"
-    },
-    {
-      "title": "Immunovant Q1 2027 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:50:12.351450-03:00"
-    },
-    {
-      "title": "Biggest stock movers Wednesday: AMD, SPCX, SHOP, and more",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:50:14.981987-03:00"
-    },
-    {
-      "title": "Insulet sends Tandem, DexCom lower after guidance cut",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:50:17.604111-03:00"
-    },
-    {
-      "title": "Bed Bath & Beyond: If they build it, will investors come?",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:50:20.836134-03:00"
-    },
-    {
-      "title": "American Financial Group Q2 26 Earnings Conference Call At 11:30 AM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:50:30.887425-03:00"
-    },
-    {
-      "title": "U.S. Services Index Inches Slightly Higher In July",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:50:36.505774-03:00"
-    },
-    {
       "title": "Nasdaq 100 Movers: SPCX, SHOP",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17783,222 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T09:37:12.797486-03:00"
+    },
+    {
+      "title": "Low Hydropower Stocks in Europe Threaten High Prices for Months",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia menciona a possibilidade de preços de eletricidade aumentarem em resposta às condições climáticas adversas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:41:00.087187-03:00"
+    },
+    {
+      "title": "Rússia atinge duas embarcações perto de Odessa, na Ucrânia, diz agência",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:41:07.112163-03:00"
+    },
+    {
+      "title": "Carteira recomendada: 14 ações para ter em agosto, segundo a XP Investimentos",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "Ajuste na carteira recomendada da XP Investimentos pode influenciar as escolhas de investimento dos traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:41:15.266188-03:00"
+    },
+    {
+      "title": "Por que as ações da Playtika estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:21.238500-03:00"
+    },
+    {
+      "title": "Por que as ações da Hertz estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:23.883609-03:00"
+    },
+    {
+      "title": "Por que a ação da Evolent Health está disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:26.536624-03:00"
+    },
+    {
+      "title": "Lucro operacional da Nintendo salta 151% devido à forte demanda por jogos e reembolso de tarifas nos EUA",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:29.230143-03:00"
+    },
+    {
+      "title": "Bradesco vê crescimento do crédito convergindo para guidance até o final do ano",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:41:32.550587-03:00"
+    },
+    {
+      "title": "Registros de veículos na UE sobem 5,2% em julho, aponta Jefferies",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:38.203142-03:00"
+    },
+    {
+      "title": "Por que as ações da Albemarle estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:40.845896-03:00"
+    },
+    {
+      "title": "Por que as ações da Tigo Energy estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:43.491928-03:00"
+    },
+    {
+      "title": "Por que as ações da Honest Company estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:46.141578-03:00"
+    },
+    {
+      "title": "Citi recomenda compra em ações de memória: ciclo de alta ainda está no início",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:48.810362-03:00"
+    },
+    {
+      "title": "Ações da Diageo disparam com plano de corte de custos de US$ 1 bilhão",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:52.541264-03:00"
+    },
+    {
+      "title": "Fiserv’s stock drops as the company goes through another bruising ‘reset’",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:55.387616-03:00"
+    },
+    {
+      "title": "Loar Holdings beats top-line and bottom-line estimates; raises FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:41:58.082177-03:00"
+    },
+    {
+      "title": "Meta lança IA para programação, buscando competir com OpenAI e Anthropic",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:42:08.116873-03:00"
+    },
+    {
+      "title": "Riachuelo supera inverno tardio e lucra R$ 167,9 milhões no 2º trimestre",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:42:15.582067-03:00"
+    },
+    {
+      "title": "Aegea tem prejuízo de R$ 46 milhões no segundo trimestre",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:42:18.234396-03:00"
+    },
+    {
+      "title": "Etsy layoffs: CEO Kruti Patel Goyal cuts 12% of workforce, Q2 2026",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:42:23.625254-03:00"
+    },
+    {
+      "title": "Why the Sandisk earnings sell-off looks absurd",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:42:26.877688-03:00"
+    },
+    {
+      "title": "Salesforce (CRM) Declined as Market Questions SaaS Resilience",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:42:33.078669-03:00"
+    },
+    {
+      "title": "Celsius Holdings Q2 2026 earnings miss as Celsius brand sales fall",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:42:39.297425-03:00"
+    },
+    {
+      "title": "I interviewed Wolfgang Puck for a school project when I was 10. Now I run his kitchen at Spago.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:42:45.211937-03:00"
     }
   ]
 }
