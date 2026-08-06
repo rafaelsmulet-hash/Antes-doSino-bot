@@ -1,63 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 34352,
-  "aprovadas_pelo_fluxo_atual": 672,
-  "descartadas_pelos_filtros_atuais": 33680,
-  "score_medio_materialidade": 4.23,
+  "total_ingeridas": 34600,
+  "aprovadas_pelo_fluxo_atual": 673,
+  "descartadas_pelos_filtros_atuais": 33927,
+  "score_medio_materialidade": 4.24,
   "seriam_breaking": 53,
-  "iriam_para_rodada": 542,
-  "seriam_descartadas_pelo_novo_sistema": 1405,
-  "total_divergencias": 763,
+  "iriam_para_rodada": 538,
+  "seriam_descartadas_pelo_novo_sistema": 1409,
+  "total_divergencias": 759,
   "divergencias": [
-    {
-      "title": "Ecovyst Non-GAAP EPS of $0.21 beats by $0.02, revenue of $250M beats by $13.15M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "SpaceX slides as AI spending worries overshadow early returns",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "SpaceX's first earnings reveal the cost of becoming an AI giant: Chart of the Day",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Sprake: Markets Punch-Drunk on AI Capex Spend",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Aos 175 anos, gigante dona do vidro do iPhone fatura R$ 77 bilhões e quer dobrar receita no Brasil",
-      "source": "Exame",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Vishay Precision misses top-line and bottom-line estimates; gives Q3 outlook",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Taboola.com GAAP EPS of $0.01 misses by $0.03, revenue of $476.8M misses by $22.63M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Pinterest stock slides after Q3 forecast fails to impress",
       "source": "Seeking Alpha",
@@ -148,6 +99,55 @@
       "score": 2.0,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Western Union and Rain launch Stablecard tied to USDPT",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "CVS beats Q2 estimates, raises FY outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "United Therapeutics GAAP EPS of $7.27 beats by $0.41, revenue of $783.3M misses by $21.35M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Dynatrace Non-GAAP EPS of $0.48 beats by $0.04, revenue of $554.5M beats by $5.06M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Cencora beats top-line and bottom-line estimates; updates FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Recursion Pharmaceuticals GAAP EPS of -$0.25 misses by $0.04, revenue of $7.67M misses by $4.29M",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }
