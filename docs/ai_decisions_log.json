@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lucro da C&A cresce 4,3% no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Crescimento do lucro da C&A é um sinal positivo para a empresa e pode influenciar a valorização das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:46:25.022863-03:00"
-    },
-    {
       "title": "Bloomin' Brands beats top-line and bottom-line estimates; gives Q3 and updates FY26 outlook",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T22:25:57.103320-03:00"
+    },
+    {
+      "title": "Day Traders Hammered by Stock Market Slump Double Down in Taiwan",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T22:30:39.873218-03:00"
     }
   ]
 }
