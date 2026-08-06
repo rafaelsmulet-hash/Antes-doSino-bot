@@ -110,8 +110,54 @@
   .panel[data-hidden="true"]{display:none;}
 
   /* ---------- Bloco de acoes (full-width, mais alto p/ caber 10 ativos) ---------- */
-  .acoes-row{height:360px;}
+  .acoes-row{height:420px;}
   .acoes-row .panel{height:100%;}
+
+  .acoes-tabs{display:flex;gap:6px;padding:8px 12px 0;flex-shrink:0;}
+  .acoes-tab{
+    background:none;border:1px solid var(--line);color:var(--slate);cursor:pointer;
+    font-size:0.76rem;font-weight:600;padding:6px 14px;border-radius:100px;
+    font-family:'IBM Plex Mono',monospace;
+  }
+  .acoes-tab.active{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
+  .acoes-tab:not(.active):hover{color:var(--cream);border-color:var(--bronze);}
+
+  .acoes-search-row{display:none;padding:10px 12px 0;position:relative;flex-shrink:0;}
+  .acoes-search-row.visible{display:block;}
+  .acoes-search-input{
+    width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--line);
+    border-radius:8px;padding:8px 12px;color:var(--cream);font-size:0.85rem;
+    font-family:'Inter',sans-serif;
+  }
+  .acoes-search-input:focus{outline:none;border-color:var(--gold);}
+  .acoes-search-results{
+    position:absolute;left:12px;right:12px;top:calc(100% - 2px);z-index:20;
+    background:var(--navy);border:1px solid var(--line);border-top:none;
+    border-radius:0 0 8px 8px;max-height:220px;overflow-y:auto;
+    box-shadow:0 12px 24px rgba(0,0,0,0.35);
+  }
+  .acoes-search-result{
+    padding:9px 12px;font-size:0.85rem;cursor:pointer;
+    display:flex;justify-content:space-between;gap:10px;
+  }
+  .acoes-search-result:hover{background:rgba(242,200,121,0.08);}
+  .acoes-search-result .ticker{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-weight:600;}
+  .acoes-search-result .nome{color:var(--slate);font-size:0.8rem;}
+  .acoes-search-empty{padding:10px 12px;font-size:0.82rem;color:var(--slate-dim);}
+
+  .acoes-chips{display:none;flex-wrap:wrap;gap:6px;padding:10px 12px 0;flex-shrink:0;}
+  .acoes-chips.visible{display:flex;}
+  .acoes-chip{
+    display:flex;align-items:center;gap:6px;background:rgba(242,200,121,0.1);
+    border:1px solid var(--line);border-radius:100px;padding:4px 6px 4px 12px;
+    font-size:0.78rem;font-family:'IBM Plex Mono',monospace;color:var(--cream);
+  }
+  .acoes-chip button{
+    background:none;border:none;color:var(--slate-dim);cursor:pointer;
+    font-size:0.85rem;padding:2px 5px;line-height:1;
+  }
+  .acoes-chip button:hover{color:var(--down);}
+  .acoes-empty-hint{padding:16px 12px;color:var(--slate-dim);font-size:0.85rem;text-align:center;}
 
   /* ---------- Modulo de sentimento ---------- */
   .sentiment-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;height:230px;}
@@ -217,7 +263,8 @@
     .btn-back-home{font-size:0.74rem;}
     .term-body{grid-template-columns:1fr;}
     .panels-grid{grid-template-columns:1fr;grid-auto-rows:220px;}
-    .acoes-row{height:300px;}
+    .acoes-row{height:380px;}
+    .acoes-tab{font-size:0.72rem;padding:5px 11px;}
     .sentiment-row{grid-template-columns:1fr;height:auto;}
     .barometer-card{height:200px;}
     .customize-drawer{width:88vw;}
@@ -286,9 +333,18 @@
         <div class="panel" data-panel-id="acoes" draggable="true">
           <div class="panel-head">
             <span class="drag-handle">⠿</span>
-            <span class="panel-title">Ações Brasil — Top 10 (Ibovespa)</span>
+            <span class="panel-title">Ações Brasil</span>
             <button class="panel-hide-btn" data-hide="acoes" title="Ocultar painel">✕</button>
           </div>
+          <div class="acoes-tabs">
+            <button class="acoes-tab active" data-acoes-tab="top10" type="button">Top 10 (Ibovespa)</button>
+            <button class="acoes-tab" data-acoes-tab="custom" type="button">Minha lista</button>
+          </div>
+          <div class="acoes-search-row" id="acoes-search-row">
+            <input type="text" id="acoes-search-input" class="acoes-search-input" placeholder="Buscar ação por código ou nome (ex: PETR4, Vale)..." autocomplete="off">
+            <div class="acoes-search-results" id="acoes-search-results"></div>
+          </div>
+          <div class="acoes-chips" id="acoes-chips"></div>
           <div class="panel-body" id="widget-acoes"></div>
         </div>
       </section>
