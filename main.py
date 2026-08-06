@@ -358,25 +358,58 @@ WORDPRESS_BOILERPLATE_PATTERNS = [
 ]
 
 
+DEDUP_WINDOW_HOURS = 12
+
+
 def load_state():
+    """recent_titles e uma lista de dicts {"title", "sent_at"} - janela
+    de tempo real (DEDUP_WINDOW_HOURS), nao mais um corte por
+    quantidade fixa. Compartilhada entre o pipeline RSS e o
+    encaminhador de canais, entao uma noticia ja publicada por um dos
+    dois bloqueia o outro de publicar de novo.
+
+    Compatibilidade: entradas antigas (string simples, sem timestamp -
+    formato de antes desta mudanca) sao descartadas ao carregar, ja
+    que nao da pra saber a idade real delas - a janela de 12h se
+    autopreenche de novo em poucas horas, sem risco de duplicar nesse
+    meio-tempo (o hash exato continua cobrindo o caso mais obvio)."""
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                return set(data.get("hashes", [])), data.get("titles", [])
+                hashes = set(data.get("hashes", []))
+                raw_titles = data.get("titles", [])
+                titles = [t for t in raw_titles if isinstance(t, dict) and t.get("title") and t.get("sent_at")]
+                return hashes, titles
         except Exception as e:
             print("AVISO: falha ao carregar estado (" + str(e) + "). Criando novo.")
     return set(), []
 
 
 def save_state(hashes, titles):
+    limite = datetime.now(BR_TZ) - timedelta(hours=DEDUP_WINDOW_HOURS)
+    titles_na_janela = []
+    for t in titles:
+        try:
+            if datetime.fromisoformat(t["sent_at"]) >= limite:
+                titles_na_janela.append(t)
+        except Exception:
+            continue
+
     trimmed_hashes = list(hashes)[-3000:]
-    trimmed_titles = titles[-500:]
+    # Trava de seguranca adicional (independente da janela de tempo) -
+    # evita que um dia excepcionalmente movimentado deixe o arquivo
+    # crescer sem limite.
+    trimmed_titles = titles_na_janela[-1000:]
     try:
         with open(STATE_FILE, "w", encoding="utf-8") as f:
             json.dump({"hashes": trimmed_hashes, "titles": trimmed_titles}, f, ensure_ascii=False, indent=2)
     except Exception as e:
         print("ERRO ao salvar estado: " + str(e))
+
+
+def add_to_recent_titles(recent_titles, title):
+    recent_titles.append({"title": title, "sent_at": datetime.now(BR_TZ).isoformat()})
 
 
 def normalize_url(url):
@@ -412,8 +445,15 @@ def is_duplicate_title(title, recent_titles):
     um limiar mais permissivo pega parafraseio que o anterior deixava
     passar. FEEDS esta ordenado por prioridade editorial, entao a
     fonte de maior prioridade e processada primeiro e "vence" o
-    duplicado - mantemos so a melhor versao, como pedido."""
-    for old_title in recent_titles:
+    duplicado - mantemos so a melhor versao, como pedido.
+
+    recent_titles ja vem filtrada pela janela de tempo (ver load_state/
+    save_state) - aqui so compara o texto. Compartilhada entre o
+    pipeline RSS e o encaminhador de canais, entao tambem pega o caso
+    de uma noticia ja publicada via RSS ser reencontrada, com fraseado
+    proprio, num canal encaminhado (ou vice-versa)."""
+    for item in recent_titles:
+        old_title = item["title"] if isinstance(item, dict) else item
         ratio = difflib.SequenceMatcher(None, title.lower(), old_title.lower()).ratio()
         if ratio > 0.85:
             return True
@@ -3184,12 +3224,17 @@ def detect_real_source(clean_text, clean_channel):
     return CHANNEL_DISPLAY_NAMES.get(clean_channel.lower(), clean_channel)
 
 
-def process_forwarded_channels():
+def process_forwarded_channels(sent_hashes, recent_titles):
     """Busca posts novos dos canais encaminhados, envia ao grupo do
     Telegram, e retorna uma lista de entradas no MESMO formato usado
     pelo restante do pipeline (title/body/source/sentiment/link/time/
     date) - assim esse conteudo passa a contar para os Sinais do Dia,
-    paginas de ativo/tema/evento e briefings, nao so aparece no grupo."""
+    paginas de ativo/tema/evento e briefings, nao so aparece no grupo.
+
+    sent_hashes/recent_titles sao os MESMOS objetos ja usados pelo
+    pipeline RSS (mutados na hora, sem precisar retornar) - garante que
+    uma noticia ja publicada via RSS bloqueia o encaminhador de
+    republicar a mesma pauta com fraseado de canal, e vice-versa."""
     state = load_channel_state()
     new_portal_entries = []
     has_updates = False
@@ -3251,6 +3296,26 @@ def process_forwarded_channels():
                 fake_entry_for_filter = {"title": titulo_puro, "summary": corpo_puro}
                 if not is_relevant(fake_entry_for_filter):
                     print("Descartado pelo filtro de palavras negativas (encaminhador): " + titulo_puro[:60])
+                    continue
+
+                # Filtro de duplicidade - compara com o que ja foi
+                # publicado (via RSS OU via outro canal encaminhado) nas
+                # ultimas DEDUP_WINDOW_HOURS. Roda ANTES da chamada de
+                # IA de proposito - descarta reposts obvios sem gastar
+                # uma classificacao. Hash exato (link/titulo) primeiro,
+                # depois similaridade de titulo (pega parafraseio).
+                # Nao usa item_hash() aqui de proposito: ela prioriza o
+                # link sobre o titulo, mas varios itens de um MESMO post
+                # compartilham o mesmo post_link (split_channel_post_into_items)
+                # - usar so o link colidiria o hash de itens diferentes
+                # do mesmo post. Combina link+titulo pra manter unico por item.
+                post_link_provisorio = "https://t.me/" + clean_channel + "/" + str(post["id"])
+                h_forward = hashlib.md5((post_link_provisorio + "|" + titulo_puro).encode("utf-8")).hexdigest()
+                if h_forward in sent_hashes:
+                    print("Descartado por duplicidade (hash, encaminhador): " + titulo_puro[:60])
+                    continue
+                if is_duplicate_title(titulo_puro, recent_titles):
+                    print("Descartado por duplicidade (titulo similar, encaminhador): " + titulo_puro[:60])
                     continue
 
                 # Filtro obrigatorio 2: validacao + pontuacao de
@@ -3318,6 +3383,10 @@ def process_forwarded_channels():
                 if enviado_ou_enfileirado:
                     now = datetime.now(BR_TZ)
                     print(("Encaminhado (breaking)" if dispatch_tier == "breaking" else "Encaminhado (giro)") + " de " + clean_channel + " (id " + str(post["id"]) + "): " + titulo_puro[:40] + "...")
+
+                    sent_hashes.add(h_forward)
+                    add_to_recent_titles(recent_titles, titulo_puro)
+                    save_state(sent_hashes, recent_titles)
 
                     new_portal_entries.append({
                         "title": final_title,
@@ -3760,7 +3829,7 @@ def main():
 
             if enviado_ou_enfileirado:
                 sent_hashes.add(h)
-                recent_titles.append(title)
+                add_to_recent_titles(recent_titles, title)
                 new_count += 1
                 aprovados += 1
                 print(("Enviado (breaking)" if dispatch_tier == "breaking" else "Enfileirado (giro)") + ": " + title[:50] + " [" + sentiment + "]")
@@ -3829,7 +3898,7 @@ def main():
         print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
 
     try:
-        forwarded_entries = process_forwarded_channels()
+        forwarded_entries = process_forwarded_channels(sent_hashes, recent_titles)
         if forwarded_entries:
             portal_entries.extend(forwarded_entries)
             print(str(len(forwarded_entries)) + " noticia(s) dos canais encaminhados integrada(s) ao pipeline.")
