@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wall Street rises amid softer jobs report",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Relatório de empregos mais suave do que esperado, considerado positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:36:16.562141-03:00"
-    },
-    {
-      "title": "OMRON reports FQ1 results",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A empresa japonesa Omron relatou resultados financeiros, mas sem detalhes específicos sobre impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:22.704708-03:00"
-    },
-    {
-      "title": "France taps auto industry to mass-produce military drones",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter um impacto indireto em empresas que trabalham com tecnologia de drones.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:25.578498-03:00"
-    },
-    {
-      "title": "CleanSpark signs $6.6B data center lease; July Bitcoin production hits 586 coins",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois envolve uma grande operação financeira e uma produção de Bitcoin significativa, o que pode influenciar os preços de criptomoedas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:28.623274-03:00"
-    },
-    {
-      "title": "Chorus Aviation declares $0.11 dividend",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Dividendos são uma notícia rotineira e não impactam significativamente o preço das ações.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:31.568123-03:00"
-    },
-    {
-      "title": "Canada Goose to sell Baffin footwear brand to Royer",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A venda é considerada relevante, mas rotineira, pois não afeta diretamente a performance financeira da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:34.530693-03:00"
-    },
-    {
-      "title": "Is ServiceNow (NOW) a Mispriced AI Winner After the Software Sell-Off?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a possibilidade de ServiceNow ser um vencedor em inteligência artificial, o que pode ser relevante para investidores interessados em tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:44.569228-03:00"
-    },
-    {
-      "title": "Can Lockheed Martin (LMT) Capitalize on Surging Defense Demand Despite Rising Risks?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa pode se beneficiar da demanda crescente de defesa, o que é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:47.739157-03:00"
-    },
-    {
-      "title": "Intercontinental Exchange’s (ICE) Moat Is Built to Outlast Market Jitters",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a robustez da posição da ICE no mercado, o que é relevante para os investidores e traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:36:51.178069-03:00"
-    },
-    {
-      "title": "HubSpot Chief Legal Officer Sells 728 Shares for Tax Withholding",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A venda de ações é rotineira e não indica uma saída iminente do cargo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:36:57.176193-03:00"
-    },
-    {
-      "title": "Iran Set To Emerge With More Hormuz Leverage Than Before The War Under Draft US-Oman Deal",
-      "source": "ZeroHedge",
-      "score": 5.0,
-      "motivo": "O acordo poderia deixar o Irã com maior controle sobre a energia transitada do que antes da guerra, o que é relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:37:01.632584-03:00"
-    },
-    {
-      "title": "Treasury Refunding: No Change To Auction Sizes As Bessent Deepens Reliance On Short-Term Debt",
-      "source": "ZeroHedge",
-      "score": 5.0,
-      "motivo": "A notícia destaca a falta de mudanças nos tamanhos de leilões, o que pode ser visto como uma boa notícia para o mercado, pois evita surpresas negativas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:37:08.342223-03:00"
-    },
-    {
-      "title": "\"This Is Going To Surprise Some People\": Leading Biden COVID-19 Figure Embraces The Lab Leak Theory",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:37:14.450193-03:00"
-    },
-    {
-      "title": "\"Hiring Patterns Are Changing\": ADP Reports Weakest Job Gains In 6 Months, But...",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois pode influenciar a decisão da Fed sobre a inflação e a política monetária.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:37:20.954243-03:00"
-    },
-    {
-      "title": "Glencore Takes Provision on Exposure to Trader Radiant World",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia revela uma mudança na estratégia de negócios da Glencore com uma empresa importante no mercado de ferro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:40:49.140539-03:00"
-    },
-    {
-      "title": "US Copper Trades Near Record on Tariff Risks, Hormuz Speculation",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia menciona a proximidade do preço do cobre a um recorde histórico, o que é relevante para o mercado de commodities.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:40:52.947015-03:00"
-    },
-    {
-      "title": "US Companies Added Fewer Jobs Than Expected in July: ADP",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia indica que as empresas americanas criaram menos empregos do que o esperado, o que pode afetar a economia e os mercados financeiros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:40:58.960584-03:00"
-    },
-    {
-      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
-      "source": "WSJ Markets",
-      "score": 3.0,
-      "motivo": "O acordo pode ter impacto na produção de gás natural nos EUA.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:41:02.506017-03:00"
-    },
-    {
       "title": "Para 43%, Lula tem respondido mal ao tarifaço de Trump, aponta pesquisa Genial/Quaest",
       "source": "InfoMoney",
       "score": 1.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T08:51:51.009312-03:00"
+    },
+    {
+      "title": "Papa visitará a América Latina em novembro; veja por quais países ele vai passar",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:55:46.327506-03:00"
+    },
+    {
+      "title": "AtlasIntel: Quase 9 em cada 10 brasileiros veem influência das redes na eleição",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "Não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:55:49.178647-03:00"
+    },
+    {
+      "title": "Bradesco, Santander, Cyrela, Copasa e mais ações para acompanhar hoje",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre acoes para acompanhar, sem conteudo especifico",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:55:52.717988-03:00"
+    },
+    {
+      "title": "Especialistas da ONU pedem medidas para evitar “Gaza silenciosa” em Cuba",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:55:58.369484-03:00"
+    },
+    {
+      "title": "China e Argentina renovam acordo bilateral de swap cambial",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:01.006266-03:00"
+    },
+    {
+      "title": "Os 10 filmes de super-heróis mais bem avaliados, segundo o Rotten Tomatoes",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:07.148702-03:00"
+    },
+    {
+      "title": "Rheinmetall AG reports 1H results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:10.012808-03:00"
+    },
+    {
+      "title": "Installed Building Products declares $0.39 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:12.632759-03:00"
+    },
+    {
+      "title": "Tarsus Pharmaceuticals to buy Alkeus Pharmaceuticals",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:15.260984-03:00"
+    },
+    {
+      "title": "Teleflex declares $0.34 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:17.868279-03:00"
+    },
+    {
+      "title": "UK antitrust regulator approves Paramount's $110B purchase of Warner Bros.",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:20.507621-03:00"
+    },
+    {
+      "title": "Advanced Drainage Systems declares $0.20 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:23.126766-03:00"
+    },
+    {
+      "title": "CME declares $1.30 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:25.717287-03:00"
+    },
+    {
+      "title": "Axia pagará R$ 53,71 por ação em resgate de preferenciais classe C",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:56:35.037805-03:00"
+    },
+    {
+      "title": "\"In Uncharted Waters\": The SpaceX Lockup Expiration Begins",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:56:45.707433-03:00"
+    },
+    {
+      "title": "Researcher Finds Backdoor In Chinese-Made Routers Sold Worldwide",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:56:51.350107-03:00"
+    },
+    {
+      "title": "\"If Clarity Dies, Democrats Killed It\": Lummis Urges Senate To Act On Crypto Bill Before Recess",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:56:54.739291-03:00"
+    },
+    {
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:57:00.572413-03:00"
     }
   ]
 }
