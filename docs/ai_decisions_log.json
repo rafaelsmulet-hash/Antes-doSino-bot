@@ -1,231 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The 10 best and 10 worst cities for renters",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:07:34.261839-03:00"
-    },
-    {
-      "title": "The K-shaped economy isn't dead yet",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T16:07:37.593273-03:00"
-    },
-    {
-      "title": "Bank of America spends more than $250 million on GLP-1s",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:07:43.222179-03:00"
-    },
-    {
-      "title": "Microsoft AI exec tells developers to default to OpenAI's top model as part of efficiency push",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T16:07:46.680331-03:00"
-    },
-    {
-      "title": "Vice de Flávio, Alfredo Gaspar foi acusado por suposto estupro de vulnerável",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:10:44.192375-03:00"
-    },
-    {
-      "title": "Ouro sobe mais de 3% e retoma os US$ 4,3 mil de olho em Ormuz",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T16:10:48.749740-03:00"
-    },
-    {
-      "title": "Pilotos da Allegiant Air aprovam acordo trabalhista com aumento de 40%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento de 40% nos salários dos pilotos pode reduzir custos operacionais da companhia aérea",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:10:54.998725-03:00"
-    },
-    {
-      "title": "CEAB3: Por que as ações da C&A estão em queda hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T16:10:58.122256-03:00"
-    },
-    {
-      "title": "Aurelius em negociações exclusivas para comprar dona da Ella’s Kitchen",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:11:03.785166-03:00"
-    },
-    {
-      "title": "Ex-chefe de gabinete de Lula pede para deixar campanha após empréstimo de investigada no caso INSS",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:11:07.163566-03:00"
-    },
-    {
-      "title": "Adient signals FY2026 revenue of ~$15B while holding adjusted EBITDA at ~$885M amid Middle East cost pressure",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:11:10.130031-03:00"
-    },
-    {
-      "title": "Airbnb vs. Axon Enterprise: Which Consumer Stock Is a Better Buy in 2026?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T16:11:15.753062-03:00"
-    },
-    {
-      "title": "Rodolfo Amstalden: Behind the curve, mas só porque ele jogou a curva à frente",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:11:24.480364-03:00"
-    },
-    {
-      "title": "Em busca de receita, OpenAI inclui anúncios no ChatGPT",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T16:11:27.656192-03:00"
-    },
-    {
-      "title": "Bank of America spends more than $250 million on GLP-1s",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:11:35.889424-03:00"
-    },
-    {
-      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:11:39.574443-03:00"
-    },
-    {
-      "title": "SEC Announces Roundtable on Preparations for 24-Hour Trading",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:11:42.447256-03:00"
-    },
-    {
-      "title": "Milei foi agressivo e fez críticas de forma nunca vista antes, diz Vieira",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "relacionamento entre governos não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:01.060184-03:00"
-    },
-    {
-      "title": "Sem vestibular: a fórmula que levou 206 alunos dessa escola de pernambuco direto para USP e Unesp",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:06.504081-03:00"
-    },
-    {
-      "title": "Senate vote on the Protect College Sports Act could come this week: What it means for transfers and salary caps",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:09.686398-03:00"
-    },
-    {
-      "title": "Tanger forecasts 2026 core FFO of $2.45-$2.52 as it adds Levis commons and re-tenants Saks boxes",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:12.386531-03:00"
-    },
-    {
-      "title": "DOJ withdraws nearly 40-year-old guidance on shareholder proxy advisory business",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:15.038334-03:00"
-    },
-    {
-      "title": "Edgewell forecasts FY2026 adjusted EPS of $1.80-$2.00 as organic sales turn to 0% to +0.5%",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:17.695272-03:00"
-    },
-    {
-      "title": "Janus Living forecasts 2026 FFO as adjusted of $0.95-$0.98 per share while raising same-store NOI growth to 13%-17%",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:20.378852-03:00"
-    },
-    {
-      "title": "Hyster-Yale signals 7% operating profit objective while expecting moderate 2026 operating loss",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T16:16:23.045175-03:00"
-    },
-    {
       "title": "BP to Sell U.S. Biogas Unit as Oil Profits Surge",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17774,231 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-06T12:11:54.656233-03:00"
+    },
+    {
+      "title": "Smashburger CEO on Franchising, Cyclospora Outbreak and Pricing",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para a empresa, mas não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:10.287233-03:00"
+    },
+    {
+      "title": "Oil Rises as Market Awaits Iran-Oman Hormuz Deal Details",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:21:12.897034-03:00"
+    },
+    {
+      "title": "FII TRXF11 aprova oferta de até R$ 5 bilhões para financiar nova fase de expansão",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:16.177942-03:00"
+    },
+    {
+      "title": "Bradesco (BBDC4): Os pontos de atenção após resultados; analista vê ‘oportunidade’",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:21:20.275893-03:00"
+    },
+    {
+      "title": "SmartFit (SMFT3) recua mais de 8% com ‘decepção’ com lucro; hora de vender as ações?",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:21:22.897681-03:00"
+    },
+    {
+      "title": "Enact outlines $550M-$600M 2026 capital return plan as it highlights early ELLA genAI underwriting rollout",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:26.587650-03:00"
+    },
+    {
+      "title": "KVH signals completing $15M buyback authorization within current month as LEO plans expand",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:29.208316-03:00"
+    },
+    {
+      "title": "Versant outlines 2026 revenue of $6.2B-$6.45B while expanding share repurchases with an additional $100M ASR",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:31.828530-03:00"
+    },
+    {
+      "title": "Ajinomoto Co reports Q1 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:34.428201-03:00"
+    },
+    {
+      "title": "Sappi Non-GAAP EPS of -$0.08, revenue of $1.33B",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:37.029615-03:00"
+    },
+    {
+      "title": "Fiserv signals 2026 organic revenue of -1% to flat while investing $100M in infrastructure",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:39.648078-03:00"
+    },
+    {
+      "title": "CLP Holdings Limited reports 1H results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:42.256978-03:00"
+    },
+    {
+      "title": "IYR, PLD, DLR, O: Large Outflows Detected at ETF",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:47.099192-03:00"
+    },
+    {
+      "title": "Vanguard Total International Bond ETF Experiences Big Inflow",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:49.709091-03:00"
+    },
+    {
+      "title": "JPMorgan BetaBuilders International Equity ETF Experiences Big Outflow",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:21:52.317803-03:00"
+    },
+    {
+      "title": "Why Nokia's 5G Business Just Became an AI Story (and Who Wins)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:54.924264-03:00"
+    },
+    {
+      "title": "NOWL, EMJL: Big ETF Outflows",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:21:57.516703-03:00"
+    },
+    {
+      "title": "BND, VCHY: Big ETF Inflows",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:22:00.106681-03:00"
+    },
+    {
+      "title": "VTI, GLW, TMO, PEP: Large Inflows Detected at ETF",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:22:02.708737-03:00"
+    },
+    {
+      "title": "XLF September 25th Options Begin Trading",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:22:05.304584-03:00"
+    },
+    {
+      "title": "September 25th Options Now Available For Devon Energy (DVN)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:22:07.949163-03:00"
+    },
+    {
+      "title": "September 25th Options Now Available For Boston Scientific (BSX)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:22:10.563842-03:00"
+    },
+    {
+      "title": "RZTR11 lucra R$ 18,7 milhões e enfrenta inadimplência em fazenda",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:22:16.160266-03:00"
+    },
+    {
+      "title": "Tesla and SpaceX will invest $16.8B to start building ‘Terafab’ chip factory in Texas",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T12:22:20.010176-03:00"
+    },
+    {
+      "title": "The US dropped an atomic bomb on Hiroshima on this day in 1945. Haunting photos show what happened.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T12:22:22.880294-03:00"
     }
   ]
 }
