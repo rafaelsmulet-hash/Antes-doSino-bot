@@ -1,213 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Modelos do Claude e do ChatGPT atacaram alvos reais em teste, diz órgão britânico",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "noticia sobre tecnologia e segurança não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:51:07.655403-03:00"
-    },
-    {
-      "title": "ContextLogic to buy gChem for $850M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque indica uma aquisição significativa que pode afetar o desempenho financeiro da empresa adquirente.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:51:11.433151-03:00"
-    },
-    {
-      "title": "CS Disco Non-GAAP EPS of -$0.06 in-line, revenue of $43.15M beats by $0.48M; gives Q3 and updated FY guidance",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou a expectativa de receita, o que pode ser visto como um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:51:14.506313-03:00"
-    },
-    {
-      "title": "1stdibs.com GAAP EPS of -$0.03 beats by $0.03, revenue of $23.3M beats by $1.07M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em lucro e receita, o que é considerado positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:51:17.527353-03:00"
-    },
-    {
-      "title": "NewAmsterdam Pharma reports Q2 results\n$678.3 million in cash, cash equivalents and marketable securities at June 30, 2026",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "Os resultados financeiros da empresa são relevantes para os investidores, mas não são um evento inesperado ou impactante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:51:21.164111-03:00"
-    },
-    {
-      "title": "Astec Non-GAAP EPS of $0.94 misses by $0.09, revenue of $408.1M beats by $2.6M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a percepção do desempenho da Astec, mas não é um evento de grande impacto",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:51:27.116511-03:00"
-    },
-    {
-      "title": "Kontoor Brands updates on the sale of the Lee jeans business",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A venda da linha de calças Lee pode liberar recursos para a Kontoor Brands investir em outras áreas da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:51:30.105198-03:00"
-    },
-    {
-      "title": "Alliança Saúde protocola plano de recuperação extrajudicial para renegociar R$ 1,1 bilhão em dívidas",
-      "source": "G1 Economia",
-      "score": 6.0,
-      "motivo": "A Alliança Saúde conseguiu acordo com mais de 83 credores para renegociar R$ 1,1 bilhão em dívidas, o que pode ajudar a empresa a se recuperar financeiramente",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:51:37.148677-03:00"
-    },
-    {
-      "title": "Guerras e El Niño vão aumentar preço dos alimentos, alerta FAO",
-      "source": "UOL Economia",
-      "score": 8.0,
-      "motivo": "Guerra e El Niño podem afetar a produção e o preço dos alimentos, impactando a economia global.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:51:41.152825-03:00"
-    },
-    {
-      "title": "Mais uma: Alliança Saúde (AALR3) pede recuperação extrajudicial para renegociar R$ 1,1 bilhão em dívidas",
-      "source": "Seu Dinheiro",
-      "score": 8.0,
-      "motivo": "A empresa pede recuperação extrajudicial para renegociar dívidas, o que pode afetar negativamente a saúde financeira da empresa e, consequentemente, o mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:51:47.718121-03:00"
-    },
-    {
-      "title": "Glencore's energy trading profits soar on Iran war",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A instabilidade geopolítica no Oriente Médio afeta o preço do petróleo e beneficia a Glencore em suas operações de negociação de energia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:51:57.350920-03:00"
-    },
-    {
-      "title": "9 Stocks' Cash Flow Seen Blowing The Doors Off The S&P 500",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "O resultado do fluxo de caixa dessas ações é mais do que o esperado, o que pode influenciar a percepção do mercado sobre o desempenho das empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:52:03.773356-03:00"
-    },
-    {
-      "title": "Absa updates credit risk systems with SAS",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A atualização dos sistemas de risco de crédito pode melhorar a eficiência e a precisão das decisões de crédito da Absa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:52:09.659484-03:00"
-    },
-    {
-      "title": "Qualys Earnings, Revenue Top Estimates. Cybersecurity Stock Climbs.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa superou as estimativas de lucro e receita, o que é um sinal positivo para a acao.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:52:13.034733-03:00"
-    },
-    {
-      "title": "Arista Earnings Beat. Cloud Networking Leader Hikes 2026 Sales Guidance.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Aumento da previsão de vendas é um indicador de confiança da empresa em seu desempenho futuro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:52:19.476353-03:00"
-    },
-    {
-      "title": "Trump Borrows From Democrats’ Playbook With Attack on High Gas Prices",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações concretas sobre impacto econômico ou mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:55:44.473049-03:00"
-    },
-    {
-      "title": "India’s Upsized LIC Share Sale Ends With Partial Retail Take-Up",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia indica que a demanda por ações da LIC foi abaixo da expectativa, o que pode afetar negativamente o mercado de ações da Índia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:55:47.541643-03:00"
-    },
-    {
-      "title": "Greve da CPTM entra no 2º dia em São Paulo; veja como estão as linhas afetadas",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:55:51.304445-03:00"
-    },
-    {
-      "title": "Acacia Research Non-GAAP EPS of $0.13 beats by $0.22, revenue of $114.5M beats by $65M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque superou as expectativas de lucro e receita da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:55:57.249936-03:00"
-    },
-    {
-      "title": "Arista surges after Q2 results and outlook keep analysts bullish",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Resultados financeiros positivos e perspectiva otimista da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:56:00.516322-03:00"
-    },
-    {
-      "title": "Aramark declares $0.12 dividend",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "Declaração de dividendos é um indicador de saúde financeira da empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:56:03.422331-03:00"
-    },
-    {
-      "title": "CDW Corporation declares $0.63 dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A declaração de dividendos é um sinal de saúde financeira da empresa e pode atrair investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:56:06.256779-03:00"
-    },
-    {
-      "title": "Orthofix Medical beats top-line and bottom-line estimates; updates FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:56:09.526610-03:00"
-    },
-    {
       "title": "Griffon declares $0.22 dividend",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17792,213 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-06T07:48:13.347169-03:00"
+    },
+    {
+      "title": "Michael Burry bets against rally: 'We are near a major top, and possible a 1987-type fall'",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "A opinião de um investidor conhecido e respeitado sobre o mercado pode influenciar a percepção dos investidores e traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:50:40.855440-03:00"
+    },
+    {
+      "title": "Por que as ações da Diageo estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "aumento de demanda por bebidas alcoólicas após relançamento de produtos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:50:45.656566-03:00"
+    },
+    {
+      "title": "Por que as ações da OC Oerlikon estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Ação de uma empresa de tecnologia avançada com resultados positivos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:50:48.796252-03:00"
+    },
+    {
+      "title": "Por que as ações da International Flavors & Fragrances estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "aumento de acoes pode ser um sinal de confianca dos investidores no futuro da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:50:51.733507-03:00"
+    },
+    {
+      "title": "Por que as ações da Paycom estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A ação da Paycom está subindo devido a uma notícia positiva sobre o desempenho da empresa, o que é relevante para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:50:54.546749-03:00"
+    },
+    {
+      "title": "Por que as ações da EPAM Systems estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a queda das ações da EPAM Systems é um sinal de desconfiança do mercado em relação à empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:50:57.463348-03:00"
+    },
+    {
+      "title": "Índia - Ações fecharam o pregão em alta e o Índice Nifty 50 avançou 0,05%",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "O Índice Nifty 50 avançou, indicando uma tendência positiva no mercado indiano.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:00.534555-03:00"
+    },
+    {
+      "title": "SoftBank obtém empréstimo de US$ 10 bilhões com garantia em ações da OpenAI",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "SoftBank obtém empréstimo significativo, mas sem impacto imediato no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:03.432689-03:00"
+    },
+    {
+      "title": "Jefferies eleva L’Oreal para neutro e vê tendência de crescimento em alta",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ação de uma empresa de cosméticos com potencial de crescimento",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:06.318329-03:00"
+    },
+    {
+      "title": "Cinemas faturam mais em 2026, mas vendem menos ingressos que antes da pandemia",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "aumento de arrecadação dos cinemas não é relevante para o mercado financeiro em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:09.565228-03:00"
+    },
+    {
+      "title": "Restaurant Brands declares $0.65 dividend",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para investidores que possuem ações da empresa, mas não tem impacto significativo no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:13.097397-03:00"
+    },
+    {
+      "title": "Krispy Kreme GAAP EPS of -$0.12 beats by $0.11, revenue of $331M beats by $17.49M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:15.799516-03:00"
+    },
+    {
+      "title": "Constellation Energy Non-GAAP EPS of $2.55 beats by $0.27, revenue of $7.5B misses by $130M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:18.783544-03:00"
+    },
+    {
+      "title": "Warby Parker GAAP EPS of $0.04 in-line, revenue of $235.51M misses by $2.45M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:21.450700-03:00"
+    },
+    {
+      "title": "Onity Group EPS of -$1.53, revenue of $282.9M misses by $9.6M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:24.405650-03:00"
+    },
+    {
+      "title": "Figma CEO forfeits $46M in stock awards amid share decline",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:27.064734-03:00"
+    },
+    {
+      "title": "Kenvue Non-GAAP EPS of $0.31 misses by $0.01, revenue of $3.96B misses by $10M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:29.733941-03:00"
+    },
+    {
+      "title": "Travis Kalanick’s robotics startup Atoms taps former Uber finance chief as CFO",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:39.064948-03:00"
+    },
+    {
+      "title": "Stocks to Watch: Palantir, SpaceX, HSBC",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:41.753968-03:00"
+    },
+    {
+      "title": "Stock indexes register records after upbeat company forecasts; oil drops",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:44.721779-03:00"
+    },
+    {
+      "title": "Rockwell Automation, Inc. Q3 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:51:47.363062-03:00"
+    },
+    {
+      "title": "EU To Use $1.62 Billion In Interest From Frozen Russian Assets To Support Ukraine",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:51:51.389689-03:00"
+    },
+    {
+      "title": "Spot The Odd One Out...",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:51:57.488831-03:00"
     }
   ]
 }
