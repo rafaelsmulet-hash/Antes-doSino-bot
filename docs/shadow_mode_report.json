@@ -1,49 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 37824,
+  "total_ingeridas": 38072,
   "aprovadas_pelo_fluxo_atual": 689,
-  "descartadas_pelos_filtros_atuais": 37135,
+  "descartadas_pelos_filtros_atuais": 37383,
   "score_medio_materialidade": 4.29,
   "seriam_breaking": 53,
-  "iriam_para_rodada": 527,
-  "seriam_descartadas_pelo_novo_sistema": 1420,
-  "total_divergencias": 756,
+  "iriam_para_rodada": 528,
+  "seriam_descartadas_pelo_novo_sistema": 1419,
+  "total_divergencias": 754,
   "divergencias": [
-    {
-      "title": "News Corp. Q4 26 Earnings Conference Call At 5:00 PM ET",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "NiSource Q2 26 Earnings Conference Call At 11:00 AM ET",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Expedia Group Q2 26 Earnings Conference Call At 4:30 PM ET",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "SpaceX's stock drops on as AI capex costs jump in Q2",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "CVS blows past estimates, hikes guidance as insurance unit continues to improve",
-      "source": "CNBC - US News",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Lucro da C&A cresce 4,3% no 2º tri",
       "source": "Investing.com Brasil",
@@ -146,6 +111,41 @@
       "title": "Iron Mountain beats top-line and bottom-line estimates; raises FY26 outlook",
       "source": "Seeking Alpha",
       "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Chimera Investment Non-GAAP EPS of $0.46 misses by $0.06, revenue of $72.56M misses by $7.69M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "CVS Health in Charts: Health Services continues to drive double-digit growth in Q2",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Eli Lilly Non-GAAP EPS of $8.38 beats by $1.80, revenue of $23B beats by $2.31B",
+      "source": "Seeking Alpha",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Choice Hotels beats top-line and bottom-line estimates; updates FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Choice Hotels International, Inc Q2 Income Retreats",
+      "source": "Nasdaq",
+      "score": 4.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }

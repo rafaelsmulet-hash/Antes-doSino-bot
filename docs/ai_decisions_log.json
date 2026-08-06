@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "News Corp. Q4 26 Earnings Conference Call At 5:00 PM ET",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A conferência de chamada de resultados financeiros é um evento rotineiro, mas pode fornecer informações importantes sobre o desempenho da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:41:28.427735-03:00"
-    },
-    {
-      "title": "NiSource Q2 26 Earnings Conference Call At 11:00 AM ET",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante pois fornece informações sobre os resultados financeiros da empresa, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:41:34.851622-03:00"
-    },
-    {
-      "title": "Expedia Group Q2 26 Earnings Conference Call At 4:30 PM ET",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para os investidores interessados nos resultados financeiros da Expedia Group.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:41:41.214812-03:00"
-    },
-    {
-      "title": "SpaceX's stock drops on as AI capex costs jump in Q2",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento nos custos de investimentos em tecnologia de inteligencia artificial é relevante para a acao da SpaceX no momento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:41:51.820046-03:00"
-    },
-    {
-      "title": "CVS blows past estimates, hikes guidance as insurance unit continues to improve",
-      "source": "CNBC - US News",
-      "score": 6.0,
-      "motivo": "Aumento de diretrizes e melhoria da unidade de seguros são indicativos de saúde financeira positiva da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:41:55.627072-03:00"
-    },
-    {
       "title": "Lucro da C&A cresce 4,3% no 2º tri",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T22:16:41.156445-03:00"
+    },
+    {
+      "title": "Paycom forecasts $2.197B-$2.212B 2026 revenue and $1.007B-$1.022B adjusted EBITDA amid expanded automation releases",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa prevê um crescimento significativo em receita e lucro, o que pode afetar a valorização das ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T22:25:38.420250-03:00"
+    },
+    {
+      "title": "Central Garden & Pet signals $2.85 or better fiscal 2026 non-GAAP EPS while advancing TRIXIE deal",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa sinalizou um lucro não ajustado positivo para o ano fiscal de 2026, o que pode ser visto como um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T22:25:41.637120-03:00"
+    },
+    {
+      "title": "Delek US Holdings (DK) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre uma transcrição de conferência de resultados, que não é um evento atual ou relevante para o mercado agora.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T22:25:47.012039-03:00"
+    },
+    {
+      "title": "Bessent's call to upsize Fed foreign lending facility may not be risk-free",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A sugestão de Bessent pode influenciar a política monetária da Fed e afetar os mercados financeiros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T22:25:54.458198-03:00"
+    },
+    {
+      "title": "Allworth Financial Acquires $1.1B Tax-Focused RIA Sachetta",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T22:25:57.103320-03:00"
     }
   ]
 }
