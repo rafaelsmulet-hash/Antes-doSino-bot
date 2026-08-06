@@ -1,13 +1,13 @@
 {
   "date": "2026-08-06",
-  "total_ingeridas": 744,
-  "aprovadas_pelo_fluxo_atual": 56,
-  "descartadas_pelos_filtros_atuais": 688,
-  "score_medio_materialidade": 4.05,
+  "total_ingeridas": 992,
+  "aprovadas_pelo_fluxo_atual": 57,
+  "descartadas_pelos_filtros_atuais": 935,
+  "score_medio_materialidade": 4.12,
   "seriam_breaking": 8,
-  "iriam_para_rodada": 44,
-  "seriam_descartadas_pelo_novo_sistema": 109,
-  "total_divergencias": 68,
+  "iriam_para_rodada": 49,
+  "seriam_descartadas_pelo_novo_sistema": 85,
+  "total_divergencias": 71,
   "divergencias": [
     {
       "title": "Debt-Fueled Solar Firm GoldenPeaks Accused of Fraudulent Lending",
@@ -122,32 +122,32 @@
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Thinking of Buying Tesla Stock on the Dip? Here's One Green Flag and One Red Flag.",
-      "source": "Nasdaq",
+      "title": "AI memory chip stocks fall after Sandisk's mixed outlook",
+      "source": "Seeking Alpha",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Nvidia, Micron, and Sandisk Are Up Over 1,000% Since the AI Boom Started. These 2 AI Stocks Could Be the Next Big Winners.",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Asian Shares Mixed Amid Tech Pullback",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Donald Trump's 10% Global Tariff Expired on July 24. Its Section 301 Replacement Covers 60 Countries at Rates of 10% to 12.5%.",
-      "source": "Nasdaq",
-      "score": 6.0,
+      "title": "U.S. announced job cuts drop to lowest monthly level in two years",
+      "source": "Seeking Alpha",
+      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Judgment Day Has Arrived for SpaceX, With Up to $99 Billion in Selling Pressure Waiting in the Wings",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "PetroTal Corp. Reports Fall In Q2 Bottom Line",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
