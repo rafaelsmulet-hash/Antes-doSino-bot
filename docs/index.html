@@ -109,55 +109,55 @@
   .panel-body{flex:1;min-height:0;position:relative;}
   .panel[data-hidden="true"]{display:none;}
 
-  /* ---------- Bloco de acoes (full-width, mais alto p/ caber 10 ativos) ---------- */
-  .acoes-row{height:420px;}
-  .acoes-row .panel{height:100%;}
+  /* ---------- Bloco personalizavel (acoes/cripto - full-width, mais alto p/ caber 10 ativos) ---------- */
+  .picker-row{height:420px;}
+  .picker-row .panel{height:100%;}
 
-  .acoes-tabs{display:flex;gap:6px;padding:8px 12px 0;flex-shrink:0;}
-  .acoes-tab{
+  .picker-tabs{display:flex;gap:6px;padding:8px 12px 0;flex-shrink:0;}
+  .picker-tab{
     background:none;border:1px solid var(--line);color:var(--slate);cursor:pointer;
     font-size:0.76rem;font-weight:600;padding:6px 14px;border-radius:100px;
     font-family:'IBM Plex Mono',monospace;
   }
-  .acoes-tab.active{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
-  .acoes-tab:not(.active):hover{color:var(--cream);border-color:var(--bronze);}
+  .picker-tab.active{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
+  .picker-tab:not(.active):hover{color:var(--cream);border-color:var(--bronze);}
 
-  .acoes-search-row{display:none;padding:10px 12px 0;position:relative;flex-shrink:0;}
-  .acoes-search-row.visible{display:block;}
-  .acoes-search-input{
+  .picker-search-row{display:none;padding:10px 12px 0;position:relative;flex-shrink:0;}
+  .picker-search-row.visible{display:block;}
+  .picker-search-input{
     width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--line);
     border-radius:8px;padding:8px 12px;color:var(--cream);font-size:0.85rem;
     font-family:'Inter',sans-serif;
   }
-  .acoes-search-input:focus{outline:none;border-color:var(--gold);}
-  .acoes-search-results{
+  .picker-search-input:focus{outline:none;border-color:var(--gold);}
+  .picker-search-results{
     position:absolute;left:12px;right:12px;top:calc(100% - 2px);z-index:20;
     background:var(--navy);border:1px solid var(--line);border-top:none;
     border-radius:0 0 8px 8px;max-height:220px;overflow-y:auto;
     box-shadow:0 12px 24px rgba(0,0,0,0.35);
   }
-  .acoes-search-result{
+  .picker-search-result{
     padding:9px 12px;font-size:0.85rem;cursor:pointer;
     display:flex;justify-content:space-between;gap:10px;
   }
-  .acoes-search-result:hover{background:rgba(242,200,121,0.08);}
-  .acoes-search-result .ticker{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-weight:600;}
-  .acoes-search-result .nome{color:var(--slate);font-size:0.8rem;}
-  .acoes-search-empty{padding:10px 12px;font-size:0.82rem;color:var(--slate-dim);}
+  .picker-search-result:hover{background:rgba(242,200,121,0.08);}
+  .picker-search-result .ticker{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-weight:600;}
+  .picker-search-result .nome{color:var(--slate);font-size:0.8rem;}
+  .picker-search-empty{padding:10px 12px;font-size:0.82rem;color:var(--slate-dim);}
 
-  .acoes-chips{display:none;flex-wrap:wrap;gap:6px;padding:10px 12px 0;flex-shrink:0;}
-  .acoes-chips.visible{display:flex;}
-  .acoes-chip{
+  .picker-chips{display:none;flex-wrap:wrap;gap:6px;padding:10px 12px 0;flex-shrink:0;}
+  .picker-chips.visible{display:flex;}
+  .picker-chip{
     display:flex;align-items:center;gap:6px;background:rgba(242,200,121,0.1);
     border:1px solid var(--line);border-radius:100px;padding:4px 6px 4px 12px;
     font-size:0.78rem;font-family:'IBM Plex Mono',monospace;color:var(--cream);
   }
-  .acoes-chip button{
+  .picker-chip button{
     background:none;border:none;color:var(--slate-dim);cursor:pointer;
     font-size:0.85rem;padding:2px 5px;line-height:1;
   }
-  .acoes-chip button:hover{color:var(--down);}
-  .acoes-empty-hint{padding:16px 12px;color:var(--slate-dim);font-size:0.85rem;text-align:center;}
+  .picker-chip button:hover{color:var(--down);}
+  .picker-empty-hint{padding:16px 12px;color:var(--slate-dim);font-size:0.85rem;text-align:center;}
 
   /* ---------- Linha VIX + DXY ---------- */
   .sentiment-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;height:230px;}
@@ -237,8 +237,8 @@
     .btn-back-home{font-size:0.74rem;}
     .term-body{grid-template-columns:1fr;}
     .panels-grid{grid-template-columns:1fr;grid-auto-rows:220px;}
-    .acoes-row{height:380px;}
-    .acoes-tab{font-size:0.72rem;padding:5px 11px;}
+    .picker-row{height:380px;}
+    .picker-tab{font-size:0.72rem;padding:5px 11px;}
     .sentiment-row{grid-template-columns:1fr;height:auto;}
     .customize-drawer{width:88vw;}
   }
@@ -258,7 +258,7 @@
       <a href="mapa.html" class="btn-back-home">🗺 Mapa de Calor</a>
       <a href="quant.html" class="btn-back-home">📊 Quant</a>
       <button class="btn-customize" id="btn-customize" type="button">⚙ Personalizar</button>
-      <a href="https://t.me/tribute/app?startapp=sZPm" class="btn-vip">Ativar Bot VIP ⚡</a>
+      <a href="https://t.me/tribute/app?startapp=sZPm" class="btn-vip" style="display:none;">Ativar Bot VIP ⚡</a>
     </div>
   </header>
 
@@ -304,23 +304,43 @@
 
       </section>
 
-      <section class="acoes-row">
+      <section class="picker-row">
         <div class="panel" data-panel-id="acoes" draggable="true">
           <div class="panel-head">
             <span class="drag-handle">⠿</span>
             <span class="panel-title">Ações Brasil</span>
             <button class="panel-hide-btn" data-hide="acoes" title="Ocultar painel">✕</button>
           </div>
-          <div class="acoes-tabs">
-            <button class="acoes-tab active" data-acoes-tab="top10" type="button">Top 10 (Ibovespa)</button>
-            <button class="acoes-tab" data-acoes-tab="custom" type="button">Minha lista</button>
+          <div class="picker-tabs" data-block="acoes">
+            <button class="picker-tab active" data-picker-tab="top10" type="button">Top 10 (Ibovespa)</button>
+            <button class="picker-tab" data-picker-tab="custom" type="button">Minha lista</button>
           </div>
-          <div class="acoes-search-row" id="acoes-search-row">
-            <input type="text" id="acoes-search-input" class="acoes-search-input" placeholder="Buscar ação por código ou nome (ex: PETR4, Vale)..." autocomplete="off">
-            <div class="acoes-search-results" id="acoes-search-results"></div>
+          <div class="picker-search-row" id="acoes-search-row">
+            <input type="text" id="acoes-search-input" class="picker-search-input" placeholder="Buscar ação por código ou nome (ex: PETR4, Vale)..." autocomplete="off">
+            <div class="picker-search-results" id="acoes-search-results"></div>
           </div>
-          <div class="acoes-chips" id="acoes-chips"></div>
+          <div class="picker-chips" id="acoes-chips"></div>
           <div class="panel-body" id="widget-acoes"></div>
+        </div>
+      </section>
+
+      <section class="picker-row">
+        <div class="panel" data-panel-id="cripto" draggable="true">
+          <div class="panel-head">
+            <span class="drag-handle">⠿</span>
+            <span class="panel-title">Criptomoedas</span>
+            <button class="panel-hide-btn" data-hide="cripto" title="Ocultar painel">✕</button>
+          </div>
+          <div class="picker-tabs" data-block="cripto">
+            <button class="picker-tab active" data-picker-tab="top10" type="button">Top 10</button>
+            <button class="picker-tab" data-picker-tab="custom" type="button">Minha lista</button>
+          </div>
+          <div class="picker-search-row" id="cripto-search-row">
+            <input type="text" id="cripto-search-input" class="picker-search-input" placeholder="Buscar cripto por código ou nome (ex: BTC, Solana)..." autocomplete="off">
+            <div class="picker-search-results" id="cripto-search-results"></div>
+          </div>
+          <div class="picker-chips" id="cripto-chips"></div>
+          <div class="panel-body" id="widget-cripto"></div>
         </div>
       </section>
 
