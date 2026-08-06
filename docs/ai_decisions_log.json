@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Com R$ 8 milhões, famosa galeteria gaúcha estreia em Brasília — e já olha pontos em Goiás e Minas",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre investimento em empresa não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:21:03.184098-03:00"
-    },
-    {
-      "title": "Dexterra Group declares $0.10 dividend",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "Anúncio de dividendos é um sinal positivo para os investidores",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:21:06.341707-03:00"
-    },
-    {
-      "title": "Qualys drives up current billings 16% as it gains market share: analysts",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Aumento nas receitas atuais da Qualys é um indicativo positivo para o mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:21:10.092073-03:00"
-    },
-    {
-      "title": "Schrödinger expands Bristol Myers Squibb partnership with AI co-scientist deal",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A parceria envolve a utilização de inteligência artificial em pesquisas de medicamentos, o que pode ter um impacto significativo no desenvolvimento de novos tratamentos e medicamentos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:21:16.074084-03:00"
-    },
-    {
-      "title": "RB Global, Inc. declares $0.33 dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "O pagamento de dividendos é um sinal de saúde financeira da empresa e pode atrair investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:21:19.087939-03:00"
-    },
-    {
-      "title": "Bloomin' Brands rallies as Q2 results beat expectations, raises FY26 profit outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa apresentou resultados financeiros positivos, o que é relevante para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:21:22.036467-03:00"
-    },
-    {
-      "title": "Brookfield Asset Management Q2 revenue beats as fundraising sets a record",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de receita, o que é positivo para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:21:25.001421-03:00"
-    },
-    {
-      "title": "ETRACS 2xMonthly Pay Leveraged Preferred Stock Index ETN declares $0.0779 dividend",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Dividendo declarado, mas não é um evento de mercado significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:21:27.981409-03:00"
-    },
-    {
-      "title": "Southwest Gas Holdings Reports Net Income In Q2; Reaffirms 2026 Guidance",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A empresa confirmou sua orientação para 2026, o que é relevante para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:21:34.541544-03:00"
-    },
-    {
-      "title": "The New York Times Co., Q2 Profit Climbs",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento de lucro é um sinal positivo para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:21:37.836131-03:00"
-    },
-    {
-      "title": "Dynatrace Boosts FY26 Adj. EPS Outlook: CFO Jim Benson To Resign; Stock Surges 12.5% - Update",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "Aumento da previsão de lucro e saída do CFO são eventos importantes para a empresa e podem influenciar os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:21:44.272082-03:00"
-    },
-    {
-      "title": "Hecla Mining Q2 26 Earnings Conference Call At 10:00 AM ET",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para os investidores que seguem a Hecla Mining Co., mas não é um evento de grande impacto",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:21:50.792977-03:00"
-    },
-    {
-      "title": "Choice Hotels International Q2 26 Earnings Conference Call At 10:00 AM ET",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma conferência de chamada de resultados financeiros, mas não fornece informações específicas sobre os resultados.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:21:57.131114-03:00"
-    },
-    {
-      "title": "Brookfield Asset Management Q2 26 Earnings Conference Call At 10:00 AM ET",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A conferência de chamada pode trazer informações relevantes sobre os resultados financeiros da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:22:03.626965-03:00"
-    },
-    {
-      "title": "Brookfield Asset Management Ltd Q2 Profit Advances",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "O lucro avançado é um sinal positivo para a empresa e pode impactar positivamente o mercado de ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:22:09.954176-03:00"
-    },
-    {
-      "title": "The Brink's Q2 Income And Revenue Rise, Issues Q3 Outlook",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A empresa emitiu previsão para o 3º trimestre, o que pode influenciar as expectativas dos investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:22:16.427338-03:00"
-    },
-    {
-      "title": "Shopify Q2 Profit Rises, Sees Q3 Revenue Growth In Low-Thirties; Shares Up In Pre-market",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois o Shopify é uma empresa de tecnologia de comércio eletrônico importante e o aumento de lucro e receita é um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:22:23.016207-03:00"
-    },
-    {
-      "title": "Want $500 Per Month in Passive Income? This Dividend ETF Can Get You There.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia aborda uma estratégia de investimento em ETFs de dividendos, o que é relevante para os traders e investidores que buscam renda passiva.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:22:29.610147-03:00"
-    },
-    {
       "title": "Dólar recua e Bolsa sobe com o mercado à espera de decisão do Copom",
       "source": "UOL Economia",
       "score": 8.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T08:36:45.858268-03:00"
+    },
+    {
+      "title": "Hexacampeão francês é vendido por 1 euro e ganha nova chance de sobreviver após crise",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre esporte e negociação de um clube de futebol",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:40:36.601208-03:00"
+    },
+    {
+      "title": "Infantino pede desculpas, reconhece erros e tenta fim à turbulência de sua gestão",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre gestão de entidade esportiva, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:40:39.419750-03:00"
+    },
+    {
+      "title": "HBO Max vira motor de lucro da Warner antes de fusão com Paramount",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A notícia destaca o aumento do lucro da Warner devido ao setor de streaming, o que é positivo para a empresa e pode influenciar o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:40:44.069751-03:00"
+    },
+    {
+      "title": "Aos 167 anos, gigante dos carros-fortes fatura R$ 27 bi — e tem um plano para um mundo sem dinheiro",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:40:47.008564-03:00"
+    },
+    {
+      "title": "Is Microsoft Still Undervalued After Its 25% Post-Earnings Rally?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:40:52.513047-03:00"
+    },
+    {
+      "title": "Evergy, Inc. Q2 Profit Advances",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:40:58.570382-03:00"
+    },
+    {
+      "title": "JXN Crosses Above Average Analyst Target",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:41:04.628290-03:00"
+    },
+    {
+      "title": "UroGen Pharma Reaches Analyst Target Price",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:41:10.774895-03:00"
+    },
+    {
+      "title": "TripAdvisor, Inc. Bottom Line Retreats In Q2",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:41:16.436477-03:00"
+    },
+    {
+      "title": "BENTLEY SYSTEMS INC Bottom Line Rises In Q2",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:41:19.059464-03:00"
+    },
+    {
+      "title": "This Comment From Apple CEO Tim Cook Supports Buying the Dip in Micron Stock",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:41:22.173846-03:00"
+    },
+    {
+      "title": "Comitê dos estados estima futuro imposto sobre o consumo brasileiro de 28% em 2033; taxa supera a dos países da OCDE",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:41:29.726204-03:00"
+    },
+    {
+      "title": "Reino Unido libera compra da Warner Bros. Discovery pela Paramount; operação ainda enfrenta batalha judicial nos EUA",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:41:35.850062-03:00"
+    },
+    {
+      "title": "Copom não diz, mas encaminha novo corte de juros em setembro, último do ano",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "Corte de juros previsto, mas ainda incerto",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:41:42.640566-03:00"
+    },
+    {
+      "title": "Middle East War Triggers New Global Refining Boom",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:41:49.884443-03:00"
+    },
+    {
+      "title": "Why Bank of America Remains Bullish on Tesla Despite Weaker Q2 Profitability",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:41:52.547886-03:00"
+    },
+    {
+      "title": "How Much Do You Really Need Invested to Replace a $100,000 Salary With Dividends?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:41:55.206219-03:00"
+    },
+    {
+      "title": "Google's AI reshuffle: Chief scientist Jeff Dean exits and Demis Hassabis steps down as DeepMind CEO",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:41:58.295141-03:00"
     }
   ]
 }
