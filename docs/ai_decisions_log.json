@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Iron Mountain in charts: Delivers record Q2 as global data center revenue jumps 38.8%",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Aumento significativo na receita global de centros de dados é relevante para o mercado de tecnologia e infraestrutura de dados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:31:00.954530-03:00"
-    },
-    {
-      "title": "Mortgage demand weakens as rates rise in wake of July FOMC meeting",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a economia e as taxas de juros, que são fundamentais para a tomada de decisões de investimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:31:03.906294-03:00"
-    },
-    {
-      "title": "Cushman &amp; Wakefield Non-GAAP EPS of $0.35 in-line, revenue of $2.8B beats by $150M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de receita, o que é um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:31:06.961985-03:00"
-    },
-    {
-      "title": "Copom decide juros no Brasil, emprego nos EUA, balanços de empresas",
-      "source": "UOL Economia",
-      "score": 8.0,
-      "motivo": "decisão de juros do Copom e resultados de balanços de empresas são eventos importantes para o mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T08:31:16.254739-03:00"
-    },
-    {
-      "title": "Anthropic's Mythos created fake identities to fool humans in new cyber incident",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "Incidente não está relacionado ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:31:24.294737-03:00"
-    },
-    {
-      "title": "Em maio, vendas no varejo variam 0,1%",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:35:43.101127-03:00"
-    },
-    {
       "title": "Petróleo sobe enquanto investidores aguardam desfecho das negociações entre EUA e Irã",
       "source": "Money Times",
       "score": 8.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T07:26:41.392032-03:00"
+    },
+    {
+      "title": "Advanced Energy declares $0.10 dividend",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que possuem ações da empresa, mas não tem impacto significativo no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:30:45.374785-03:00"
+    },
+    {
+      "title": "Missouri voters reject measure to end income tax",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A medida não teve impacto significativo no mercado financeiro, pois não afeta diretamente as taxas de juros ou a política fiscal federal.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:30:48.299482-03:00"
+    },
+    {
+      "title": "Marcus &amp; Millichap GAAP EPS of $0.10 beats by $0.07, revenue of $202.9M beats by $8.6M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas de lucro e receita, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:30:51.446557-03:00"
+    },
+    {
+      "title": "How Many Retirees Have No Savings Beyond Social Security?",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é específica e relevante para o mercado financeiro imediatamente, mas pode ter implicações a longo prazo para a economia e as políticas de previdência.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:31:03.602989-03:00"
+    },
+    {
+      "title": "Lucid’s turnaround plan hinges on $1.4B in cash savings, robotaxis",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A economia de R$ 7,2 bilhões em custos pode ser um passo importante para a recuperação da Lucid, mas ainda é cedo para avaliar seu impacto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:31:06.575798-03:00"
+    },
+    {
+      "title": "Suncor Tops Profit Estimates as High Oil Prices Boost Refining Margins",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a margem de refino da empresa, que é influenciada pelos preços do petróleo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:31:09.545405-03:00"
     }
   ]
 }
