@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A nova temporada de 'Ted Lasso' reforça o bom momento do futebol feminino",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia e sobre esporte e entretenimento, nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T13:55:50.735956-03:00"
-    },
-    {
-      "title": "Gabriel Bortoleto terá nova dupla na Fórmula 1?",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T13:55:53.363386-03:00"
-    },
-    {
-      "title": "How Ozempic maker Novo Nordisk blew its lead in GLP-1 weight-loss drugs. Can Europe compete in the high-stakes global economy?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T13:55:56.929861-03:00"
-    },
-    {
-      "title": "Alphabet’s stock drops as Google loses another key AI executive",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T13:56:03.029531-03:00"
-    },
-    {
-      "title": "Magnera Q3 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T13:56:08.775186-03:00"
-    },
-    {
-      "title": "Owens Corning anticipates Q3 2026 revenue of $2.6B-$2.7B with adjusted EBITDA margin of 20%-22%",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T13:56:11.592683-03:00"
-    },
-    {
-      "title": "Brink’s projects Q3 revenue of $1.365B-$1.415B while advancing NCR Atleos closing to early Q1",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T13:56:14.287692-03:00"
-    },
-    {
-      "title": "Ligand Pharmaceuticals Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T13:56:17.384762-03:00"
-    },
-    {
-      "title": "Unusual Machines Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T13:56:23.467838-03:00"
-    },
-    {
       "title": "Lockheed Martin demonstrates AI-powered sonar for submarine detection",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-06T10:52:35.456447-03:00"
+    },
+    {
+      "title": "New ETFs to Watch: Nasdaq 100 Challenger and Multi-Token Launch",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia se refere a novos ETFs, mas sem detalhes sobre impacto prático no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T10:55:40.894551-03:00"
+    },
+    {
+      "title": "Fed's Warsh to stick with scaled-back communications - report",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A decisão do Fed sobre comunicação não é um evento de mercado significativo, mas pode ter impacto na percepção do mercado sobre a instituição.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T10:55:47.341987-03:00"
+    },
+    {
+      "title": "Thinkific Labs reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T10:55:49.933423-03:00"
+    },
+    {
+      "title": "Hyliion wins largest military contract to date",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T10:55:52.524128-03:00"
+    },
+    {
+      "title": "Nuclear Utility Constellation Leads Nasdaq 100 After Earnings",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T10:56:05.093545-03:00"
+    },
+    {
+      "title": "DoorDash Q2 2026 earnings: revenue up 36%, outlook raised",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T10:56:07.689239-03:00"
+    },
+    {
+      "title": "Nebius Director John Wilson Boynton IV Sells 5,812 Shares for $1.5 Million",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T10:56:10.389242-03:00"
+    },
+    {
+      "title": "My mother-in-law's care costs about $11,000 a month. At 66 and 72, we can't retire because we need to help her out.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T10:56:13.250401-03:00"
+    },
+    {
+      "title": "SEC Announces Departure of Principal Deputy Director of Enforcement Sam Waldon",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T10:56:16.882090-03:00"
     }
   ]
 }
