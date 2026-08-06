@@ -1224,49 +1224,6 @@ def compute_news_clusters(entries):
     return scored
 
 
-def build_worry_line_html(clusters):
-    """Responde a pergunta 'preciso me preocupar com alguma coisa?' em
-    uma unica frase, sem exigir interpretacao."""
-    if not clusters:
-        return (
-            '<div class="worry-line calm">'
-            '<span class="worry-dot"></span> Dia tranquilo, sem sinais fortes de atenção no mercado até agora.'
-            "</div>"
-        )
-
-    top = clusters[0]
-    if top["distinct_sources"] < 2:
-        return (
-            '<div class="worry-line calm">'
-            '<span class="worry-dot"></span> Dia tranquilo, sem sinais fortes de atenção no mercado até agora.'
-            "</div>"
-        )
-
-    rep = top["representative"]
-    asset_label = top["term"].upper()
-    if rep["sentiment"] == "BEARISH":
-        return (
-            '<div class="worry-line alert">'
-            '<span class="worry-dot"></span> Atenção: <b>' + html_module.escape(asset_label) +
-            "</b> concentra o mercado hoje, com sinal de baixa."
-            "</div>"
-        )
-    elif rep["sentiment"] == "BULLISH":
-        return (
-            '<div class="worry-line alert">'
-            '<span class="worry-dot"></span> Destaque: <b>' + html_module.escape(asset_label) +
-            "</b> concentra o mercado hoje, com sinal de alta."
-            "</div>"
-        )
-    else:
-        return (
-            '<div class="worry-line info">'
-            '<span class="worry-dot"></span> <b>' + html_module.escape(asset_label) +
-            "</b> é o assunto mais comentado do mercado agora."
-            "</div>"
-        )
-
-
 def build_signals_html(clusters, limit=5):
     """Monta os cards de 'Sinais do Dia' - as noticias que realmente
     movimentaram o mercado, rankeadas por relevancia, nao por horario."""
@@ -2070,7 +2027,7 @@ def build_market_insights(intelligence):
 
 def gerar_sitemap_completo(diretorio_docs="docs"):
     """Gera/atualiza o sitemap.xml com as rotas estaticas do site -
-    Terminal (home), Calendario e Mapa de Calor."""
+    Terminal (home), Calendario, Mapa de Calor e Quant."""
     now_iso = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     base_url = "https://antesdosino.com.br"
 
@@ -2078,6 +2035,7 @@ def gerar_sitemap_completo(diretorio_docs="docs"):
         "  <url><loc>" + base_url + "/</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/calendario.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/mapa.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
+        "  <url><loc>" + base_url + "/quant.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
     )
 
     sitemap_xml = (
@@ -3209,8 +3167,6 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
     end_marker_c = "<!-- FEED_CARDS_END -->"
     start_marker_k = "<!-- COCKPIT_START -->"
     end_marker_k = "<!-- COCKPIT_END -->"
-    start_marker_w = "<!-- WORRY_LINE_START -->"
-    end_marker_w = "<!-- WORRY_LINE_END -->"
     start_marker_s = "<!-- SIGNALS_START -->"
     end_marker_s = "<!-- SIGNALS_END -->"
     start_marker_i = "<!-- INTELLIGENCE_START -->"
@@ -3233,12 +3189,6 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
         before = template.split(start_marker_k)[0]
         after = template.split(end_marker_k)[1]
         template = before + start_marker_k + "\n" + cockpit_html + end_marker_k + after
-
-    if start_marker_w in template and end_marker_w in template:
-        worry_html = build_worry_line_html(clusters)
-        before = template.split(start_marker_w)[0]
-        after = template.split(end_marker_w)[1]
-        template = before + start_marker_w + "\n" + worry_html + end_marker_w + after
 
     if start_marker_s in template and end_marker_s in template:
         signals_html = build_signals_html(clusters)
@@ -3629,8 +3579,8 @@ def main():
 
     # output_path NAO aponta mais para uma pagina publica - dados-terminal.html
     # e um arquivo interno (sem nav, sem link em lugar nenhum do site) que so
-    # existe para o Terminal (index.html) ler o feed e a worry-line gerados
-    # aqui via fetch("dados-terminal.html") no lado do cliente (ver docs/terminal.js).
+    # existe para o Terminal (index.html) ler o feed gerado aqui via
+    # fetch("dados-terminal.html") no lado do cliente (ver docs/terminal.js).
     generate_portal(all_portal_entries, entries_today, output_path="docs/dados-terminal.html", home_insights=insights["home"], market_snapshot=market_snapshot)
 
     try:

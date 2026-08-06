@@ -11,8 +11,8 @@
 <script src="analytics.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calendário Econômico — Antes do Sino</title>
-<meta name="description" content="Agenda de indicadores e eventos econômicos que podem mover o mercado hoje e nos próximos dias.">
+<title>Painel Quantitativo — Antes do Sino</title>
+<meta name="description" content="Screener quantitativo de ações do Brasil e dos EUA: preço, variação, volume relativo, RSI e outros indicadores técnicos em tempo real.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -84,7 +84,7 @@
   }
   .vip-banner a.btn-vip:hover{transform:translateY(-1px);box-shadow:0 8px 26px rgba(242,200,121,0.32);}
 
-  section{padding:6vh 6vw;max-width:1120px;margin:0 auto;}
+  section{padding:6vh 6vw;max-width:1200px;margin:0 auto;}
   .page-head{max-width:680px;margin-bottom:32px;}
   .page-head .kicker{
     font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:1.5px;
@@ -95,6 +95,18 @@
     line-height:1.2;margin-bottom:12px;
   }
   .page-head p{color:var(--slate);font-size:0.98rem;line-height:1.6;}
+
+  .screener-section{margin-bottom:44px;}
+  .screener-section:last-child{margin-bottom:0;}
+  .screener-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .screener-head .flag{font-size:1.3rem;line-height:1;}
+  .screener-head h2{
+    font-family:'Fraunces',serif;font-weight:600;font-size:1.25rem;
+  }
+  .screener-head span.tag{
+    font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.6px;
+    color:var(--bronze);text-transform:uppercase;
+  }
 
   .widget-frame{
     background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:14px;
@@ -128,46 +140,87 @@
 </nav>
 <div class="sub-nav">
   <a href="index.html" class="nav-links">Terminal</a>
-  <a href="calendario.html" class="nav-links active">Calendário</a>
+  <a href="calendario.html" class="nav-links">Calendário</a>
   <a href="mapa.html" class="nav-links">Mapa de Calor</a>
-  <a href="quant.html" class="nav-links">Quant</a>
+  <a href="quant.html" class="nav-links active">Quant</a>
 </div>
 
 <div class="vip-banner">
-  <p>Não perca os horários do mercado: receba alertas antes dos eventos no <strong>Bot VIP ⚡</strong></p>
+  <p>Quer saber na hora quando um ativo entrar em sobrecompra/sobrevenda? Acompanhe de perto no <strong>Bot VIP ⚡</strong></p>
   <a href="https://t.me/tribute/app?startapp=sZPm" class="btn-vip">Ativar Bot VIP ⚡</a>
 </div>
 
 <section>
   <div class="page-head">
-    <span class="kicker">Calendário econômico</span>
-    <h1>Agenda de Indicadores e Eventos que Moverão o Mercado</h1>
-    <p>Acompanhe em tempo real os principais indicadores macroeconômicos, decisões de juros e divulgações que costumam mexer com ações, câmbio e juros — no Brasil e no mundo.</p>
+    <span class="kicker">Painel quantitativo</span>
+    <h1>Screener de Ações — Sinais Técnicos em Tempo Real</h1>
+    <p>Busque por ticker ou setor e filtre ações por preço, variação, volume relativo e indicadores técnicos como RSI (IFR), médias móveis e osciladores. Use a barra de busca do próprio painel para localizar um papel específico (ex: PETR4, VALE3, WEGE3, AAPL).</p>
   </div>
 
-  <div class="widget-frame">
-    <div class="tradingview-widget-container" style="height:100%;width:100%;">
-      <div class="tradingview-widget-container__widget"></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
-      {
-        "colorTheme": "dark",
-        "isTransparent": true,
-        "width": "100%",
-        "height": "100%",
-        "locale": "br",
-        "importanceFilter": "-1,0,1",
-        "countryFilter": "us,br,eu,gb,jp,cn"
-      }
-      </script>
+  <div class="screener-section">
+    <div class="screener-head">
+      <span class="flag">🇧🇷</span>
+      <h2>Ações do Brasil</h2>
+      <span class="tag">B3 / Ibovespa</span>
+    </div>
+    <div class="widget-frame">
+      <div class="tradingview-widget-container" style="height:100%;width:100%;">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        {
+          "width": "100%",
+          "height": "100%",
+          "defaultColumn": "oscillators",
+          "defaultScreen": "general",
+          "market": "brazil",
+          "showToolbar": true,
+          "colorTheme": "dark",
+          "locale": "br",
+          "isTransparent": true
+        }
+        </script>
+      </div>
     </div>
   </div>
+
+  <div class="screener-section">
+    <div class="screener-head">
+      <span class="flag">🇺🇸</span>
+      <h2>Ações dos EUA</h2>
+      <span class="tag">NYSE / Nasdaq</span>
+    </div>
+    <div class="widget-frame">
+      <div class="tradingview-widget-container" style="height:100%;width:100%;">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        {
+          "width": "100%",
+          "height": "100%",
+          "defaultColumn": "oscillators",
+          "defaultScreen": "general",
+          "market": "america",
+          "showToolbar": true,
+          "colorTheme": "dark",
+          "locale": "br",
+          "isTransparent": true
+        }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <p style="color:var(--slate-dim);font-size:0.8rem;line-height:1.6;max-width:680px;">
+    Dados e indicadores técnicos fornecidos pela TradingView. Use os botões de coluna dentro do próprio painel
+    para alternar entre Visão geral, Osciladores, Médias móveis e Performance, e o filtro "Sinal" para ver rapidamente
+    ações em sobrecompra, sobrevenda ou com médias em alta/baixa.
+  </p>
 </section>
 
 <footer>
   <span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>
   <div style="display:flex;gap:16px;">
+    <a href="calendario.html" style="color:var(--gold)">Calendário</a>
     <a href="mapa.html" style="color:var(--gold)">Mapa de Calor</a>
-    <a href="quant.html" style="color:var(--gold)">Quant</a>
     <a href="resumo-semanal.html" style="color:var(--gold)">Resumo semanal</a>
   </div>
 </footer>
