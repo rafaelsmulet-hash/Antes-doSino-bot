@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nasdaq 100 Movers: SPCX, SHOP",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:50:39.698483-03:00"
-    },
-    {
-      "title": "Treasury Reveals Details Of Long-Term Securities Auctions",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A divulgação de detalhes de leilões de títulos é relevante para o mercado, mas não é um evento inesperado ou impactante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:50:46.287133-03:00"
-    },
-    {
-      "title": "Palantir Crushes Earnings in Q2. Is the Stock Heading Back to $200?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:50:52.511467-03:00"
-    },
-    {
-      "title": "S&P 500 Movers: PODD, CRL",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:50:58.696384-03:00"
-    },
-    {
-      "title": "Dow Movers: PG, HONIV",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:51:05.194306-03:00"
-    },
-    {
       "title": "Tractor Supply Director Hawaux Buys 3,150 Shares Amid 44% Decline",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T09:42:45.211937-03:00"
+    },
+    {
+      "title": "DeepSeek Plans AI Price Hike; Google Reshuffles AI Leadership | Bloomberg Brief 08/06/26",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois afeta diretamente a DeepSeek e pode influenciar a percepção dos investidores sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:45:56.508496-03:00"
+    },
+    {
+      "title": "EUA: planos de demissão arrefecem em julho, mas setor de tecnologia lidera cortes",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:46:03.377216-03:00"
+    },
+    {
+      "title": "Minério amplia ganhos com notícias sobre medidas de estímulo ao setor imobiliário",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:46:06.648058-03:00"
+    },
+    {
+      "title": "Lucro operacional da Nintendo salta 151% devido à forte demanda por jogos e reembolso de tarifas nos EUA",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Forta demanda por jogos e reembolso de tarifas nos EUA impactam positivamente o lucro da Nintendo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:46:14.685523-03:00"
+    },
+    {
+      "title": "My mother-in-law's care costs about $11,000 a month. At 66 and 72, we can't retire because we need to help her out.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:46:31.009930-03:00"
     }
   ]
 }
