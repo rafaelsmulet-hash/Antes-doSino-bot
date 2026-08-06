@@ -2070,13 +2070,12 @@ def build_market_insights(intelligence):
 
 def gerar_sitemap_completo(diretorio_docs="docs"):
     """Gera/atualiza o sitemap.xml com as rotas estaticas do site -
-    Terminal (home), Newsletter, Calendario e Mapa de Calor."""
+    Terminal (home), Calendario e Mapa de Calor."""
     now_iso = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     base_url = "https://antesdosino.com.br"
 
     urls_xml = (
         "  <url><loc>" + base_url + "/</loc><lastmod>" + now_iso + "</lastmod></url>\n"
-        "  <url><loc>" + base_url + "/newsletter.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/calendario.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/mapa.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
     )
@@ -3174,8 +3173,9 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
     """Le o template.html, substitui os placeholders de ticker e feed
     pelos dados reais mais recentes, e salva em output_path. Desde que
     o Terminal virou a home (docs/index.html), a chamada real usa
-    output_path="docs/newsletter.html" - o feed completo passou a ser
-    uma pagina secundaria, lida pelo Terminal via fetch() no cliente."""
+    output_path="docs/dados-terminal.html" - um arquivo interno (nao e
+    uma pagina do site, nao tem link em lugar nenhum), lido pelo
+    Terminal via fetch() no cliente."""
     if not os.path.exists(template_path):
         print("AVISO: template.html nao encontrado, portal nao gerado.")
         return
@@ -3627,12 +3627,11 @@ def main():
     # (Cockpit) e pelos Briefings, sem nenhuma chamada de API duplicada.
     market_snapshot = compute_market_snapshot()
 
-    # output_path aponta para newsletter.html, NAO index.html - desde
-    # que o Terminal (docs/terminal.html antigo) virou a home, o feed
-    # completo que esta funcao gera passou a ser uma pagina secundaria.
-    # O Terminal (index.html) le o feed e a worry-line gerados aqui via
-    # fetch("newsletter.html") no lado do cliente (ver docs/terminal.js).
-    generate_portal(all_portal_entries, entries_today, output_path="docs/newsletter.html", home_insights=insights["home"], market_snapshot=market_snapshot)
+    # output_path NAO aponta mais para uma pagina publica - dados-terminal.html
+    # e um arquivo interno (sem nav, sem link em lugar nenhum do site) que so
+    # existe para o Terminal (index.html) ler o feed e a worry-line gerados
+    # aqui via fetch("dados-terminal.html") no lado do cliente (ver docs/terminal.js).
+    generate_portal(all_portal_entries, entries_today, output_path="docs/dados-terminal.html", home_insights=insights["home"], market_snapshot=market_snapshot)
 
     try:
         events_state_for_briefing = load_events_state()
