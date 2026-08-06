@@ -109,6 +109,10 @@
   .panel-body{flex:1;min-height:0;position:relative;}
   .panel[data-hidden="true"]{display:none;}
 
+  /* ---------- Bloco de acoes (full-width, mais alto p/ caber 10 ativos) ---------- */
+  .acoes-row{height:360px;}
+  .acoes-row .panel{height:100%;}
+
   /* ---------- Modulo de sentimento ---------- */
   .sentiment-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;height:230px;}
   .barometer-card{
@@ -213,6 +217,7 @@
     .btn-back-home{font-size:0.74rem;}
     .term-body{grid-template-columns:1fr;}
     .panels-grid{grid-template-columns:1fr;grid-auto-rows:220px;}
+    .acoes-row{height:300px;}
     .sentiment-row{grid-template-columns:1fr;height:auto;}
     .barometer-card{height:200px;}
     .customize-drawer{width:88vw;}
@@ -275,6 +280,17 @@
           <div class="panel-body" id="widget-commodities"></div>
         </div>
 
+      </section>
+
+      <section class="acoes-row">
+        <div class="panel" data-panel-id="acoes" draggable="true">
+          <div class="panel-head">
+            <span class="drag-handle">⠿</span>
+            <span class="panel-title">Ações Brasil — Top 10 (Ibovespa)</span>
+            <button class="panel-hide-btn" data-hide="acoes" title="Ocultar painel">✕</button>
+          </div>
+          <div class="panel-body" id="widget-acoes"></div>
+        </div>
       </section>
 
       <section class="sentiment-row">
