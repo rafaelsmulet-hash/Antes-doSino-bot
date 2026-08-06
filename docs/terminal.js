@@ -19,6 +19,7 @@
     { id: "moedas", label: "Dólar & Moedas Globais" },
     { id: "emergentes", label: "Emergentes" },
     { id: "commodities", label: "Commodities" },
+    { id: "acoes", label: "Ações Brasil — Top 10 (Ibovespa)" },
     { id: "vix", label: "VIX — Índice de Volatilidade" },
     { id: "barometro", label: "Clima do dia (Risk-On/Risk-Off)" },
   ];
@@ -139,12 +140,31 @@
 
     montarSymbolOverview("widget-commodities", [
       ["Petróleo Brent", "TVC:UKOIL|1D"],
-      ["Vale (proxy minério)", "NYSE:VALE|1D"],
+      ["Rio Tinto (proxy minério)", "NYSE:RIO|1D"],
       ["Ouro", "TVC:GOLD|1D"],
       ["Prata", "TVC:SILVER|1D"],
     ]);
 
     montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
+
+    // Top 10 do Ibovespa por peso na carteira teorica (B3) - pesquisado,
+    // nao de memoria. PETR3/PETR4 sao a mesma empresa (classes de acao
+    // diferentes), entao mantemos so PETR4 pra nao repetir a Petrobras
+    // e abrir espaco pra 10 empresas distintas. Posicoes 9-10 tem mais
+    // variacao entre rebalanceamentos da B3 (a cada 4 meses) do que o
+    // topo da lista.
+    montarSymbolOverview("widget-acoes", [
+      ["Vale", "BMFBOVESPA:VALE3|1D"],
+      ["Itaú Unibanco", "BMFBOVESPA:ITUB4|1D"],
+      ["Petrobras", "BMFBOVESPA:PETR4|1D"],
+      ["Axia Energia (ex-Eletrobras)", "BMFBOVESPA:AXIA3|1D"],
+      ["Banco do Brasil", "BMFBOVESPA:BBAS3|1D"],
+      ["Bradesco", "BMFBOVESPA:BBDC4|1D"],
+      ["B3", "BMFBOVESPA:B3SA3|1D"],
+      ["Ambev", "BMFBOVESPA:ABEV3|1D"],
+      ["WEG", "BMFBOVESPA:WEGE3|1D"],
+      ["BTG Pactual", "BMFBOVESPA:BPAC11|1D"],
+    ]);
   }
 
   // ---------------------------------------------------------------------
