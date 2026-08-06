@@ -37,6 +37,221 @@ STATE_FILE = "sent_items.json"
 
 BR_TZ = timezone(timedelta(hours=-3))
 
+# Limiares de despacho REAL por score_materialidade (Fase 2 - graduacao
+# do modo sombra de editorial_foundation.py, que so registrava o que
+# faria de diferente sem nunca bloquear o envio). Mesmos valores de
+# editorial_foundation.LIMIAR_BREAKING/LIMIAR_ROUND, duplicados aqui de
+# proposito: a decisao de despacho e critica (evita o flood do grupo) e
+# nao pode depender de editorial_foundation estar importavel.
+MATERIALITY_BREAKING_THRESHOLD = 8
+MATERIALITY_ROUND_THRESHOLD = 4
+
+# Mapeia termos de TICKER_MENTION_LIST (empresa ou ticker) para a
+# hashtag padrao usada nas mensagens (#PETR4 em vez de #petrobras).
+TICKER_HASHTAG_MAP = {
+    "petr4": "PETR4", "petr3": "PETR3", "vale3": "VALE3", "itub4": "ITUB4",
+    "bbdc4": "BBDC4", "bbas3": "BBAS3", "wege3": "WEGE3", "mglu3": "MGLU3",
+    "abev3": "ABEV3", "b3sa3": "B3SA3", "azul4": "AZUL4", "gol": "GOLL4",
+    "embr3": "EMBR3", "hapv3": "HAPV3",
+    "petrobras": "PETR4", "vale": "VALE3", "itau": "ITUB4", "bradesco": "BBDC4",
+    "banco do brasil": "BBAS3", "weg": "WEGE3", "magazine luiza": "MGLU3",
+    "ambev": "ABEV3", "azul": "AZUL4", "embraer": "EMBR3", "hapvida": "HAPV3",
+}
+
+
+def extract_ticker_hashtags(text):
+    """Extrai hashtags de ativos citados no texto (titulo+corpo), na
+    ordem em que aparecem em TICKER_MENTION_LIST, sem repetir. Quando
+    nenhum ticker especifico e encontrado, tenta um pequeno conjunto de
+    hashtags macro (cambio/Ibovespa/juros) - nunca inventa ticker que
+    nao esta no texto."""
+    text_lower = text.lower()
+    found = []
+    for term in TICKER_MENTION_LIST:
+        if term in text_lower:
+            hashtag = TICKER_HASHTAG_MAP.get(term)
+            if hashtag and hashtag not in found:
+                found.append(hashtag)
+    if not found:
+        if "dólar" in text_lower or "dolar" in text_lower or "câmbio" in text_lower or "cambio" in text_lower:
+            found.append("USD/BRL")
+        elif "ibovespa" in text_lower:
+            found.append("IBOVESPA")
+        elif "selic" in text_lower or "copom" in text_lower:
+            found.append("SELIC")
+    return found
+
+
+def decide_dispatch_tier(score):
+    """Decide o destino REAL de uma noticia ja aprovada pelos filtros de
+    relevancia, com base no score_materialidade (0-10) calculado pela
+    IA. Graduacao do modo sombra (Fase 1, editorial_foundation.py) para
+    decisao real (Fase 2) - a peca central da correcao de flood do
+    grupo (~300 msgs em poucas horas antes desta mudanca).
+
+    Diferente de editorial_foundation.compute_shadow_decision: aqui,
+    score None (IA nao rodou ou a chamada falhou) cai em 'round', nao em
+    'discard' - fallback seguro, mesmo espirito ja usado no resto do
+    pipeline (nunca perder noticia real so por falha tecnica passageira
+    da IA).
+
+    'breaking' (score >= 8): mensagem individual, envio imediato.
+    'round' (score 4-7, ou sem score): entra na fila do Giro do
+    Mercado, consolidada em 1 mensagem por hora em vez de 1 por
+    noticia.
+    'discard' (score < 4): nao publica."""
+    if score is not None and score >= MATERIALITY_BREAKING_THRESHOLD:
+        return "breaking"
+    if score is None or score >= MATERIALITY_ROUND_THRESHOLD:
+        return "round"
+    return "discard"
+
+
+def build_breaking_message(title, resumo, motivo, sentiment, source, hashtags):
+    """Template A - Breaking News (score >= 8): mensagem individual,
+    formato fixo com hashtag de ativo, destaques em bullet e fonte."""
+    hashtag_str = " ".join("#" + h for h in hashtags)
+    header = "🚨 <b>BREAKING</b>" + (" | " + hashtag_str if hashtag_str else "")
+
+    impacto_por_sentimento = {
+        "BULLISH": "sinal de alta para o papel/ativo",
+        "BEARISH": "sinal de baixa para o papel/ativo",
+        "NEUTRAL": "impacto ainda neutro, sem direção clara",
+    }
+    impacto = impacto_por_sentimento.get(sentiment, impacto_por_sentimento["NEUTRAL"])
+
+    bullets = []
+    if resumo:
+        bullets.append("• " + html_module.escape(sanitize_message_text(resumo), quote=False))
+    if motivo:
+        bullets.append("• " + html_module.escape(sanitize_message_text(motivo), quote=False))
+    bullets.append("• Impacto: " + impacto)
+
+    partes = [
+        header,
+        "",
+        html_module.escape(sanitize_message_text(title), quote=False),
+        "",
+        "\n".join(bullets),
+    ]
+
+    if source:
+        partes.append("")
+        partes.append("🔗 Fonte: " + html_module.escape(sanitize_message_text(source), quote=False))
+
+    partes.append("⚡ Antes do Sino VIP")
+
+    result = "\n".join(partes)
+    result = sanitize_message_text(result)
+    if len(result) > 3900:
+        result = smart_truncate(result, 3900)
+    return result
+
+
+GIRO_INTERVALO_MINUTOS = 60
+GIRO_MAX_ITENS_POR_MENSAGEM = 20
+
+
+def build_giro_message(queue_items):
+    """Template B - Giro do Mercado: consolida os itens 'round'
+    acumulados na ultima hora numa unica mensagem, em bullets curtos
+    por ativo. Ordena por materialidade (mais importante primeiro) via
+    editorial_foundation.prioritize_queue quando disponivel."""
+    agora = datetime.now(BR_TZ)
+    inicio = (agora - timedelta(minutes=GIRO_INTERVALO_MINUTOS)).strftime("%Hh%M")
+    fim = agora.strftime("%Hh%M")
+
+    if editorial_foundation is not None:
+        try:
+            ordenados = editorial_foundation.prioritize_queue(queue_items)
+        except Exception:
+            ordenados = queue_items
+    else:
+        ordenados = queue_items
+
+    mostrados = ordenados[:GIRO_MAX_ITENS_POR_MENSAGEM]
+    restantes = len(ordenados) - len(mostrados)
+
+    linhas = []
+    for item in mostrados:
+        hashtags = item.get("hashtags") or []
+        prefixo = " ".join("#" + h for h in hashtags) + ": " if hashtags else ""
+        resumo = item.get("resumo") or item.get("title") or ""
+        linhas.append("• " + prefixo + html_module.escape(sanitize_message_text(resumo), quote=False))
+
+    corpo = "\n".join(linhas) if linhas else "Sem novidades relevantes nesta hora."
+
+    rodape = "⚡ Antes do Sino — Curadoria em tempo real"
+    if restantes > 0:
+        rodape = "+" + str(restantes) + " atualizações adicionais nesta hora.\n\n" + rodape
+
+    message = (
+        "📊 <b>GIRO DO MERCADO (" + inicio + " - " + fim + ")</b>\n\n"
+        + corpo + "\n\n" + rodape
+    )
+    message = sanitize_message_text(message)
+    if len(message) > 3900:
+        message = smart_truncate(message, 3900)
+    return message
+
+
+GIRO_STATE_FILE = "docs/giro_state.json"
+
+
+def load_giro_state():
+    if os.path.exists(GIRO_STATE_FILE):
+        try:
+            with open(GIRO_STATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {"last_giro_sent": ""}
+    return {"last_giro_sent": ""}
+
+
+def save_giro_state(state):
+    os.makedirs(os.path.dirname(GIRO_STATE_FILE), exist_ok=True)
+    with open(GIRO_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+
+
+def should_send_giro_do_mercado():
+    state = load_giro_state()
+    last = state.get("last_giro_sent")
+    if not last:
+        return True
+    try:
+        last_dt = datetime.fromisoformat(last)
+    except Exception:
+        return True
+    return (datetime.now(BR_TZ) - last_dt) >= timedelta(minutes=GIRO_INTERVALO_MINUTOS)
+
+
+def processar_giro_do_mercado(telegram_bot_token, telegram_chat_id):
+    """Consolida os itens 'round' acumulados (score 4-7, ou sem score)
+    numa unica mensagem por hora, no lugar de 1 mensagem por noticia -
+    a peca central da correcao de flood do grupo. So dispara dentro da
+    janela horaria (should_send_giro_do_mercado); sempre reseta o
+    relogio de 1h mesmo com fila vazia, pra manter cadencia previsivel.
+    Isolado - qualquer falha aqui nunca afeta o resto do pipeline."""
+    if editorial_foundation is None:
+        return
+    if not should_send_giro_do_mercado():
+        return
+
+    fila = editorial_foundation.get_round_queue().get("queue", [])
+
+    if not fila:
+        save_giro_state({"last_giro_sent": datetime.now(BR_TZ).isoformat()})
+        return
+
+    message = build_giro_message(fila)
+    if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
+        editorial_foundation.clear_round_queue()
+        save_giro_state({"last_giro_sent": datetime.now(BR_TZ).isoformat()})
+        print("Giro do Mercado enviado com " + str(len(fila)) + " item(ns).")
+    else:
+        print("Falha ao enviar Giro do Mercado - fila mantida, tentaremos novamente no proximo ciclo.")
+
 FEEDS = {
     # --- Prioridade maxima (5) ---
     "Bloomberg Markets": {"url": "https://feeds.bloomberg.com/markets/news.rss", "priority": 5, "language": "en", "category": "Mercado financeiro"},
@@ -494,31 +709,6 @@ VALUE_PROP_BLOCK = (
     "</a></p>"
     "</section>"
 )
-
-
-def is_market_relevant_ai(title, body):
-    """Chamada leve e dedicada a Groq, usada pelo encaminhador de
-    canais (que nao passa pelo summarize_with_ai completo) - pergunta
-    SOMENTE se a noticia e relevante para um canal de mercado
-    financeiro. Fallback seguro: em caso de falha da IA, considera
-    relevante (a defesa principal contra crime/gossip e o filtro local
-    de palavras negativas, que roda antes desta chamada)."""
-    if not USE_AI:
-        return True
-    try:
-        prompt = (
-            "Responda apenas 'true' ou 'false', sem nenhuma explicacao adicional: esta "
-            "noticia e genuinamente sobre mercado financeiro, economia ou negocios? "
-            "Responda 'false' se for sobre crime, policia, justica criminal, celebridade, "
-            "entretenimento, esporte, ou qualquer assunto fora desse escopo.\n\n"
-            "Titulo: " + title + "\n"
-            "Texto: " + (body or "")
-        )
-        raw_response = ask_groq(prompt, purpose="analysis").strip().lower()
-        return "false" not in raw_response
-    except Exception as e:
-        print("Erro na verificacao de relevancia via IA (fallback seguro=relevante): " + str(e))
-        return True
 
 
 def classify_news_ai(title, body, translate=False):
@@ -2436,39 +2626,46 @@ def is_event_brazil_focused(event):
     return True
 
 
-def build_market_context_lines(market_snapshot):
-    """Monta as linhas de texto puro (sem HTML) do bloco 'Contexto dos
-    Mercados' dos Briefings, a partir do snapshot ja calculado. Nunca
-    inventa dado: se um ativo/indicador nao tiver cotacao disponivel
-    no snapshot, a linha dele e simplesmente omitida - nunca aparece
-    com valor zerado ou falso."""
+def build_ibovespa_dolar_lines(market_snapshot):
+    """Linhas 'Ibovespa: [pts] ([var%])' e 'Dólar Comercial: R$ [valor]
+    ([var%])' do Fechamento B3, com dado real do snapshot ja calculado.
+    Omite a linha inteira quando o dado nao esta disponivel - nunca
+    inventa numero (nao ha fonte gratuita de volume negociado da B3
+    hoje, entao esse campo simplesmente nao aparece)."""
     if not market_snapshot:
         return []
-
-    labels_em_ordem = [
-        ("^BVSP", "Ibovespa"),
-        ("PETR4", "Petrobras"),
-        ("VALE3", "Vale"),
-        ("ITUB4", "Itaú"),
-    ]
-
-    quotes_by_symbol = market_snapshot.get("quotes_by_symbol", {})
     lines = []
-    for symbol, label in labels_em_ordem:
-        q = quotes_by_symbol.get(symbol)
-        if q is None:
+    quotes_by_symbol = market_snapshot.get("quotes_by_symbol", {})
+    ibov = quotes_by_symbol.get("^BVSP")
+    if ibov and ibov.get("price") is not None and ibov.get("change") is not None:
+        sinal = "+" if ibov["change"] >= 0 else ""
+        lines.append("• Ibovespa: " + str(round(ibov["price"])) + " pts (" + sinal + str(round(ibov["change"], 2)) + "%)")
+    usd = market_snapshot.get("usd")
+    if usd and usd.get("price") is not None and usd.get("change") is not None:
+        sinal = "+" if usd["change"] >= 0 else ""
+        lines.append("• Dólar Comercial: R$ " + str(round(usd["price"], 2)) + " (" + sinal + str(round(usd["change"], 2)) + "%)")
+    return lines
+
+
+def build_market_movers_br(market_snapshot, limit=2):
+    """Maiores altas/baixas REAIS entre as ações brasileiras
+    acompanhadas (COCKPIT_TICKERS, exclui o próprio índice ^BVSP). Não
+    é o mercado inteiro - é o conjunto que o bot já monitora de graça -
+    mas é dado 100% real, nunca estimado."""
+    if not market_snapshot:
+        return [], []
+    quotes_by_symbol = market_snapshot.get("quotes_by_symbol", {})
+    movidas = []
+    for symbol, q in quotes_by_symbol.items():
+        if symbol == "^BVSP":
             continue
         change = q.get("change")
         if change is None:
             continue
-        sign = "+" if change >= 0 else ""
-        lines.append(label + ": " + sign + str(round(change, 2)) + "%")
-
-    selic = market_snapshot.get("selic")
-    if selic is not None:
-        lines.append("CDI/Selic: " + str(selic) + "% a.a.")
-
-    return lines
+        movidas.append((symbol, change))
+    altas = sorted([par for par in movidas if par[1] > 0], key=lambda par: par[1], reverse=True)[:limit]
+    baixas = sorted([par for par in movidas if par[1] < 0], key=lambda par: par[1])[:limit]
+    return altas, baixas
 
 
 def get_br_asset_radar(entries, market_snapshot=None, limit=3):
@@ -2624,55 +2821,66 @@ def build_radar_madrugada_ai(entries_today):
 
 
 def build_morning_briefing_message(entries_today, eventos, market_snapshot=None):
-    """Monta o texto do Radar da Madrugada ('O que aconteceu enquanto
-    o Brasil dormia'). Versao enxuta: usa SOMENTE o Dolar como numero
-    confirmado (indices internacionais/futuros/ouro/DXY nao tem fonte
-    gratuita confiavel hoje - ver auditoria da Twelve Data). O restante
-    da mensagem e narrativo, construido a partir das manchetes
-    internacionais ja processadas pelo pipeline."""
+    """Monta o texto do Radar da Madrugada / Briefing Matinal. Usa
+    SOMENTE o Dolar como numero de mercado confirmado (indices
+    internacionais/futuros/DXY/Brent/minerio nao tem fonte gratuita
+    confiavel hoje - ver auditoria da Twelve Data): a linha correspondente
+    e omitida quando o dado nao existe, nunca aparece com valor
+    inventado. O restante da mensagem e narrativo, construido a partir
+    das manchetes internacionais ja processadas pelo pipeline."""
     agora = datetime.now(BR_TZ)
-    data_str = agora.strftime("%d/%m")
+    data_str = agora.strftime("%d/%m/%Y")
     today_iso = agora.strftime("%Y-%m-%d")
 
     conteudo_ai = build_radar_madrugada_ai(entries_today)
 
     usd = (market_snapshot or {}).get("usd")
-    cambio_texto = ""
+    mercado_linhas = []
     if usd and usd.get("change") is not None:
         sinal = "+" if usd["change"] >= 0 else ""
-        cambio_texto = "Dólar: " + sinal + str(round(usd["change"], 2)) + "%"
+        mercado_linhas.append("• Dólar: " + sinal + str(round(usd["change"], 2)) + "%")
 
     eventos_hoje = [
         ev for ev in eventos
         if ev.get("date") == today_iso and is_event_brazil_focused(ev)
     ][:3]
-    eventos_texto = ""
-    if eventos_hoje:
-        for ev in eventos_hoje:
-            eventos_texto += "• " + ev["label"] + "\n"
-    else:
-        eventos_texto = "Nenhum evento de grande destaque previsto para hoje.\n"
+    agenda_linhas = ["• " + html_module.escape(ev["label"], quote=False) for ev in eventos_hoje]
+    if not agenda_linhas:
+        agenda_linhas = ["• Nenhum evento de grande destaque previsto para hoje."]
 
     partes = [
-        "🌅 <b>Radar da Madrugada | " + data_str + " • 06h50</b>\n"
-        "O que aconteceu enquanto o Brasil dormia.\n"
+        "🔔 <b>BOM DIA | ANTES DO SINO</b>",
+        "📅 " + data_str,
+        "",
     ]
 
-    if cambio_texto:
-        partes.append("💵 <b>Câmbio</b>\n" + html_module.escape(cambio_texto) + "\n")
+    if mercado_linhas:
+        partes.append("🌐 <b>Mercado Global</b>")
+        partes.append("\n".join(mercado_linhas))
+        partes.append("")
 
-    partes.append("🎯 <b>Em uma frase</b>\n" + html_module.escape(conteudo_ai["frase_sentimento"]) + "\n")
-    partes.append("📰 <b>O que aconteceu</b>\n" + html_module.escape(conteudo_ai["narrativa"]) + "\n")
-    partes.append("🇧🇷 <b>O que isso significa para a B3</b>\n" + html_module.escape(conteudo_ai["leitura_b3"]) + "\n")
-    partes.append("👀 <b>Fique de olho</b>\n" + html_module.escape(eventos_texto))
-    partes.append("<i>Antes do Sino</i>\nO mercado começa antes da abertura.")
+    partes.append("🎯 <b>Em uma frase</b>")
+    partes.append(html_module.escape(conteudo_ai["frase_sentimento"], quote=False))
+    partes.append("")
+    partes.append("📰 <b>O que aconteceu</b>")
+    partes.append(html_module.escape(conteudo_ai["narrativa"], quote=False))
+    partes.append("")
+    partes.append("🇧🇷 <b>O que isso significa para a B3</b>")
+    partes.append(html_module.escape(conteudo_ai["leitura_b3"], quote=False))
+    partes.append("")
+    partes.append("📌 <b>Agenda de Hoje</b>")
+    partes.append("\n".join(agenda_linhas))
+    partes.append("")
+    partes.append("⚡ Tenha um excelente pregão!")
 
     return "\n".join(partes)
 
 
 def build_evening_briefing_message(entries_today, eventos, market_snapshot=None):
-    """Monta o texto do Evening Briefing ('Depois do Sino - Fechamento B3')."""
-    today_str = datetime.now(BR_TZ).strftime("%d/%m/%Y")
+    """Monta o texto do Fechamento B3 (Evening Briefing). Ibovespa/Dólar
+    e as maiores altas/baixas usam SOMENTE dado real do snapshot -
+    nunca inventa numero; volume negociado da B3 nao tem fonte gratuita
+    hoje, entao simplesmente nao aparece."""
     tomorrow_iso = (datetime.now(BR_TZ) + timedelta(days=1)).strftime("%Y-%m-%d")
 
     br_entries = get_brazil_relevant_entries(entries_today)
@@ -2703,27 +2911,33 @@ def build_evening_briefing_message(entries_today, eventos, market_snapshot=None)
     else:
         eventos_texto = "Sem eventos de grande destaque previstos para amanha.\n"
 
-    market_lines = build_market_context_lines(market_snapshot)
-    market_texto = ""
-    if market_lines:
-        for linha in market_lines:
-            market_texto += linha + "\n"
-    else:
-        market_texto = "Dados de mercado indisponíveis no momento.\n"
+    partes = ["🌆 <b>FECHAMENTO B3</b>", ""]
 
-    message = (
-        "🌙 <b>Depois do Sino | Fechamento B3</b>\n"
-        + today_str + "\n\n"
-        "📊 <b>O dia em resumo</b>\n"
-        + html_module.escape(sintese) + "\n\n"
-        "🌎 <b>Contexto dos Mercados</b>\n"
-        + html_module.escape(market_texto) + "\n"
-        "🔥 <b>O que movimentou o mercado</b>\n"
-        + html_module.escape(top_pautas) + "\n"
-        "📅 <b>Amanhã no radar</b>\n"
-        + html_module.escape(eventos_texto)
-    )
-    return message
+    resumo_linhas = build_ibovespa_dolar_lines(market_snapshot)
+    if resumo_linhas:
+        partes.append("\n".join(resumo_linhas))
+        partes.append("")
+
+    altas, baixas = build_market_movers_br(market_snapshot)
+    if altas:
+        partes.append("🟢 <b>Maiores Altas</b>")
+        partes.append("\n".join("• #" + s + ": +" + str(round(c, 2)) + "%" for s, c in altas))
+        partes.append("")
+    if baixas:
+        partes.append("🔴 <b>Maiores Baixas</b>")
+        partes.append("\n".join("• #" + s + ": " + str(round(c, 2)) + "%" for s, c in baixas))
+        partes.append("")
+
+    partes.append("📊 <b>O dia em resumo</b>")
+    partes.append(html_module.escape(sintese, quote=False))
+    partes.append("")
+    partes.append("🔥 <b>O que movimentou o mercado</b>")
+    partes.append(html_module.escape(top_pautas, quote=False))
+    partes.append("📅 <b>Amanhã no radar</b>")
+    partes.append(html_module.escape(eventos_texto, quote=False))
+    partes.append("⚡ Antes do Sino")
+
+    return "\n".join(partes)
 
 
 def send_briefing_message(text, telegram_bot_token, telegram_chat_id):
@@ -3039,11 +3253,19 @@ def process_forwarded_channels():
                     print("Descartado pelo filtro de palavras negativas (encaminhador): " + titulo_puro[:60])
                     continue
 
-                # Filtro obrigatorio 2: validacao via IA - segunda camada,
-                # pega o que o filtro de palavras-chave nao cobrir.
-                if not is_market_relevant_ai(titulo_puro, corpo_puro):
+                # Filtro obrigatorio 2: validacao + pontuacao de
+                # materialidade via IA (mesma chamada usada no pipeline
+                # RSS - Fase 2, antes o encaminhador so tinha o check
+                # booleano de is_market_relevant_ai, sem nenhum limite
+                # de volume). Canais ja publicam em portugues -
+                # translate=False.
+                ai_result = classify_news_ai(titulo_puro, corpo_puro, translate=False)
+                if ai_result and ai_result.get("relevante_mercado") is False:
                     print("Descartado pela IA (nao relevante para mercado, encaminhador): " + titulo_puro[:60])
                     continue
+
+                canal_score = ai_result.get("score_materialidade") if ai_result else None
+                canal_motivo = ai_result.get("motivo_materialidade") if ai_result else None
 
                 if agency_hint:
                     fonte_detectada = agency_hint
@@ -3062,12 +3284,40 @@ def process_forwarded_channels():
 
                 entry_for_format = {"title": titulo_puro, "summary": corpo_puro, "link": post_link}
                 message, final_title, final_body, sentiment = format_message(
-                    source_for_message, entry_for_format, None
+                    source_for_message, entry_for_format, ai_result
                 )
 
-                if send_telegram_message(message):
+                dispatch_tier = decide_dispatch_tier(canal_score)
+                hashtags = extract_ticker_hashtags(titulo_puro + " " + corpo_puro)
+
+                enviado_ou_enfileirado = False
+                if dispatch_tier == "breaking":
+                    breaking_message = build_breaking_message(
+                        title=final_title, resumo=final_body, motivo=canal_motivo,
+                        sentiment=sentiment, source=source_for_message, hashtags=hashtags,
+                    )
+                    enviado_ou_enfileirado = send_telegram_message(breaking_message)
+                    if enviado_ou_enfileirado:
+                        time.sleep(3)
+                elif dispatch_tier == "round":
+                    if editorial_foundation is not None:
+                        editorial_foundation.add_to_round_queue({
+                            "title": final_title,
+                            "resumo": truncate_text_clean(final_body, 140) if final_body else final_title,
+                            "hashtags": hashtags,
+                            "source": source_for_message,
+                            "score": canal_score,
+                            "link": post_link,
+                        })
+                        enviado_ou_enfileirado = True
+                    else:
+                        enviado_ou_enfileirado = send_telegram_message(message)
+                        if enviado_ou_enfileirado:
+                            time.sleep(3)
+
+                if enviado_ou_enfileirado:
                     now = datetime.now(BR_TZ)
-                    print("Encaminhado de " + clean_channel + " (id " + str(post["id"]) + "): " + titulo_puro[:40] + "...")
+                    print(("Encaminhado (breaking)" if dispatch_tier == "breaking" else "Encaminhado (giro)") + " de " + clean_channel + " (id " + str(post["id"]) + "): " + titulo_puro[:40] + "...")
 
                     new_portal_entries.append({
                         "title": final_title,
@@ -3080,7 +3330,6 @@ def process_forwarded_channels():
                     })
 
                     has_updates = True
-                    time.sleep(3)
 
             state[clean_channel] = post["id"]
             has_updates = True
@@ -3473,17 +3722,54 @@ def main():
 
             message, final_title, final_body, sentiment = format_message(source, entry, ai_result)
 
-            if send_telegram_message(message):
+            # Fase 2 - decisao real de despacho (graduada do modo sombra
+            # Fase 1): breaking sai na hora, round entra na fila do Giro
+            # do Mercado (1 msg/hora em vez de 1 msg/noticia), discard
+            # nao publica. Ver decide_dispatch_tier().
+            dispatch_tier = decide_dispatch_tier(shadow_score)
+            hashtags = extract_ticker_hashtags(title + " " + raw_body)
+
+            enviado_ou_enfileirado = False
+            if dispatch_tier == "breaking":
+                breaking_message = build_breaking_message(
+                    title=final_title, resumo=final_body, motivo=shadow_motivo,
+                    sentiment=sentiment, source=source, hashtags=hashtags,
+                )
+                enviado_ou_enfileirado = send_telegram_message(breaking_message)
+                if enviado_ou_enfileirado:
+                    time.sleep(3)
+            elif dispatch_tier == "round":
+                if editorial_foundation is not None:
+                    editorial_foundation.add_to_round_queue({
+                        "title": final_title,
+                        "resumo": truncate_text_clean(final_body, 140) if final_body else final_title,
+                        "hashtags": hashtags,
+                        "source": source,
+                        "score": shadow_score,
+                        "link": entry.get("link", ""),
+                    })
+                    enviado_ou_enfileirado = True
+                else:
+                    # Fallback seguro: sem editorial_foundation nao ha
+                    # fila pra guardar o item - envia na hora pra nao
+                    # perder a noticia (mesmo espirito de resiliencia
+                    # usado no resto do pipeline).
+                    enviado_ou_enfileirado = send_telegram_message(message)
+                    if enviado_ou_enfileirado:
+                        time.sleep(3)
+
+            if enviado_ou_enfileirado:
                 sent_hashes.add(h)
                 recent_titles.append(title)
                 new_count += 1
                 aprovados += 1
-                print("Enviado: " + title[:50] + " [" + sentiment + "]")
+                print(("Enviado (breaking)" if dispatch_tier == "breaking" else "Enfileirado (giro)") + ": " + title[:50] + " [" + sentiment + "]")
                 save_state(sent_hashes, recent_titles)
 
-                # Modo sombra (Fase 1) - roda DEPOIS do envio real ja
-                # confirmado. Qualquer falha aqui e isolada e nunca
-                # desfaz nem atrasa a publicacao, que ja aconteceu.
+                # Modo sombra (Fase 1) - roda DEPOIS da decisao real ja
+                # tomada. Qualquer falha aqui e isolada e nunca desfaz
+                # nem atrasa a publicacao/enfileiramento, que ja
+                # aconteceu.
                 try:
                     editorial_foundation.increment_shadow_stat("aprovadas_atual")
 
@@ -3498,16 +3784,6 @@ def main():
                             shadow_stories_state["stories"].append(nova_story)
 
                     editorial_foundation.log_decision(title, source, shadow_score, shadow_motivo, shadow_decisao or "discard", decisao_sistema_atual="publicado")
-
-                    if shadow_decisao == "round":
-                        editorial_foundation.add_to_round_queue({
-                            "title": title,
-                            "source": source,
-                            "score": shadow_score,
-                            "motivo": shadow_motivo,
-                            "categoria": feed_info.get("category"),
-                            "cluster_key": cluster_key,
-                        })
                 except Exception as e:
                     print("Aviso (modo sombra, isolado, nao afeta publicacao real): " + str(e))
 
@@ -3520,8 +3796,13 @@ def main():
                     "time": datetime.now(BR_TZ).strftime("%H:%M"),
                     "date": datetime.now(BR_TZ).strftime("%Y-%m-%d"),
                 })
-
-                time.sleep(3)
+            else:
+                sent_hashes.add(h)
+                save_state(sent_hashes, recent_titles)
+                registrar_descarte_com_sombra(
+                    "score de materialidade abaixo do limiar (" + str(shadow_score) + ")"
+                    if dispatch_tier == "discard" else "falha ao publicar/enfileirar"
+                )
 
         descartados = recebidos - aprovados
         if source in ("TechCrunch", "Poder360", "IBGE") or descartados > 0:
@@ -3589,6 +3870,11 @@ def main():
         processar_briefings_telegram(all_portal_entries, combined_events, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, market_snapshot)
     except Exception as e:
         print("Erro ao processar briefings (isolado, nao afeta o fluxo principal): " + str(e))
+
+    try:
+        processar_giro_do_mercado(TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
+    except Exception as e:
+        print("Erro ao processar Giro do Mercado (isolado, nao afeta o fluxo principal): " + str(e))
 
     try:
         processar_market_snapshot_telegram(market_snapshot, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)

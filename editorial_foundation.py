@@ -192,11 +192,12 @@ def clear_round_queue():
 def prioritize_queue(queue_items):
     """Ordena os itens da fila por prioridade - funcao PURA (nao le
     nem escreve arquivo), recebe uma lista e devolve outra ordenada.
-    Hoje ordena por 'materiality_score' (maior primeiro, itens sem
-    score vao pro fim) e, em empate, pelo mais antigo na fila primeiro
-    (queued_at) - garante que nada fique esquecido indefinidamente."""
+    Hoje ordena por 'score' (o campo usado de fato por quem enfileira -
+    ver add_to_round_queue; maior primeiro, itens sem score vao pro
+    fim) e, em empate, pelo mais antigo na fila primeiro (queued_at) -
+    garante que nada fique esquecido indefinidamente."""
     def chave_ordenacao(item):
-        score = item.get("materiality_score")
+        score = item.get("score")
         score_para_ordenar = score if score is not None else -1
         return (-score_para_ordenar, item.get("queued_at", ""))
 
