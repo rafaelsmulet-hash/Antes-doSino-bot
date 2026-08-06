@@ -22,7 +22,7 @@
     { id: "acoes", label: "Ações Brasil" },
     { id: "cripto", label: "Criptomoedas" },
     { id: "vix", label: "VIX — Índice de Volatilidade" },
-    { id: "dxy", label: "Índice do Dólar (DXY)" },
+    { id: "us10y", label: "Treasury 10 Anos (US10Y)" },
   ];
 
   // ---------------------------------------------------------------------
@@ -148,7 +148,7 @@
     ]);
 
     montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
-    montarSymbolOverview("widget-dxy", [["Índice do Dólar (DXY)", "TVC:DXY|1D"]]);
+    montarSymbolOverview("widget-us10y", [["Treasury 10 Anos (US10Y)", "TVC:US10Y|1D"]]);
 
     montarWidgetAcoes(); // Top 10 / Minha lista - ver secao "Bloco picker" abaixo
     montarWidgetCripto(); // idem, para criptomoedas
@@ -635,7 +635,7 @@
       aplicarVisibilidade(estadoOcultos);
     }
 
-    // Drag-and-drop dos paineis de cotacao (grid 2x2). VIX/DXY ficam
+    // Drag-and-drop dos paineis de cotacao (grid 2x2). VIX/US10Y ficam
     // numa linha fixa por design (sempre por ultimo).
     if (window.Sortable) {
       Sortable.create(document.getElementById("panels-grid"), {
