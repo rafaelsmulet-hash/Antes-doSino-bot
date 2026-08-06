@@ -1,28 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 36832,
+  "total_ingeridas": 37080,
   "aprovadas_pelo_fluxo_atual": 687,
-  "descartadas_pelos_filtros_atuais": 36145,
-  "score_medio_materialidade": 4.26,
-  "seriam_breaking": 54,
+  "descartadas_pelos_filtros_atuais": 36393,
+  "score_medio_materialidade": 4.28,
+  "seriam_breaking": 53,
   "iriam_para_rodada": 527,
-  "seriam_descartadas_pelo_novo_sistema": 1419,
+  "seriam_descartadas_pelo_novo_sistema": 1420,
   "total_divergencias": 755,
   "divergencias": [
-    {
-      "title": "France's €107 Billion Deficit Shock: The Next Euro Debt Crisis?",
-      "source": "ZeroHedge",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Delek Logistics Partners GAAP EPS of $0.54 misses by $0.39, revenue of $384.76M beats by $89.4M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Disney strikes a breakthrough content-sharing deal with TikTok",
       "source": "Seeking Alpha",
@@ -144,6 +130,20 @@
     },
     {
       "title": "Por que as ações da Tullow Oil estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Índia - Ações fecharam o pregão em alta e o Índice Nifty 50 avançou 0,04%",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Clear Secure estão disparando hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
       "decisao_sugerida": "round",
