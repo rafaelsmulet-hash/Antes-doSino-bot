@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cencora Q3 26 Earnings Conference Call 8:30 AM ET",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma conferência de imprensa rotineira para discutir resultados financeiros.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T09:03:06.209923-03:00"
-    },
-    {
-      "title": "Esses 2 fatores podem afetar as criptomoedas no médio prazo — e você pode aproveitar qualquer cenário; confira",
-      "source": "Seu Dinheiro",
-      "score": 6.0,
-      "motivo": "A noticia especifica a recuperação do bitcoin e a influencia de fatores de risco no mercado de criptomoedas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:03:14.449666-03:00"
-    },
-    {
-      "title": "Shopify Soars As Q2 Operating Profit, Revenue Top Expectations",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa superou as expectativas de lucro e receita, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:03:19.487920-03:00"
-    },
-    {
-      "title": "GPU Debt Mismatches Could Trigger the Crisis That Sends Bitcoin to $1 Million, Says Hayes",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "A notícia menciona a possibilidade de uma crise que afetaria o preço do Bitcoin, o que é um evento de mercado relevante e com impacto concreto.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:03:22.526448-03:00"
-    },
-    {
-      "title": "Kalshi strikes partnership with compliance tech firm to help companies police insider trading",
-      "source": "CNBC - Finance",
-      "score": 3.0,
-      "motivo": "Parceria rotineira de tecnologia de conformidade para combater o comércio de informações privilegiadas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:05:36.926988-03:00"
-    },
-    {
-      "title": "Tarcísio de Freitas diz que não colocaria o boné de Donald Trump novamente",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:05:40.983491-03:00"
-    },
-    {
-      "title": "IPCA fica em 0,16% em junho",
-      "source": "IBGE",
-      "score": 6.0,
-      "motivo": "A notícia apresenta uma variação do IPCA dentro do esperado, sem impacto significativo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:05:44.935764-03:00"
-    },
-    {
-      "title": "Bybit.eu broadens European offering with Austrian EMI licence",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A licença de EMI da Áustria é relevante para o mercado pois indica que a Bybit.eu está se expandindo para um novo mercado europeu.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:05:58.154767-03:00"
-    },
-    {
-      "title": "Ibovespa Futuro sobe com cenário eleitoral em foco antes de Copom e balanços",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A noticia pode influenciar a confianca dos investidores e, consequentemente, o mercado de acoes.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T09:10:57.853169-03:00"
-    },
-    {
-      "title": "Como transformar texto ou PDF em planilha usando IA?",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:11:07.432173-03:00"
-    },
-    {
-      "title": "Como limpar uma planilha bagunçada com IA: remover duplicatas, padronizar datas e nomes",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia e sobre tecnologia e ferramentas de produtividade, nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:11:10.407037-03:00"
-    },
-    {
-      "title": "Trackfy WakeCap compra startup de Singapura para conectar IA ao planejamento de grandes obras",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A compra da startup de Singapura pode impulsionar a inovação e a eficiência na Trackfy WakeCap, aumentando suas oportunidades de negócios.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:11:13.371805-03:00"
-    },
-    {
-      "title": "Southwest Gas Non-GAAP EPS of $0.45 beats by $0.01, revenue of $358.15M misses by $55.64M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de lucro e receita da empresa, influenciando potencialmente as ações no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:11:17.082137-03:00"
-    },
-    {
-      "title": "CVS Health expands GLP-1 offerings with Lilly",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o setor de saúde e farmacêutica, mas não tem um impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T09:11:20.186058-03:00"
-    },
-    {
       "title": "One Stop Systems beats top-line and bottom-line estimates; raises FY26 outlook",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T08:01:51.843114-03:00"
+    },
+    {
+      "title": "Indonesia’s Plan to Overhaul Commodity Exports Is Still in Flux",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia não traz informações concretas sobre a implementação do plano.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:05:42.906843-03:00"
+    },
+    {
+      "title": "Celsius Shares Slump as Namesake Brand Sales Tumble",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:05:45.526908-03:00"
+    },
+    {
+      "title": "CEO do JP Morgan alerta para risco oculto de alavancagem no mercado",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "alerta de risco oculto de alavancagem pode afetar estabilidade do mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:05:53.769629-03:00"
+    },
+    {
+      "title": "SoftBank earnings exceed expectations, even without an OpenAI boost. This U.S. chip company saved the day.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:06:00.104567-03:00"
+    },
+    {
+      "title": "Should wealthier Americans forgo their Social Security benefits as a charitable gesture?",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:06:05.756340-03:00"
+    },
+    {
+      "title": "Dogs days of summer? July jobs report likely to show soft pace of hiring.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:06:08.872300-03:00"
+    },
+    {
+      "title": "Fiserv Non-GAAP EPS of $1.84 misses by $0.08, revenue of $4.96B misses by $80M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:06:14.654547-03:00"
+    },
+    {
+      "title": "Roivant Sciences GAAP EPS of -$0.26 beats by $0.06, revenue of $1.44M misses by $0.9M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:06:17.301259-03:00"
+    },
+    {
+      "title": "D-Wave Quantum GAAP EPS of -$0.13 misses by $0.03, revenue of $3.08B beats by $3.08B",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:06:19.943847-03:00"
+    },
+    {
+      "title": "Papa John's Non-GAAP EPS of $0.46 beats by $0.01, revenue of $482.39M beats by $0.8M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:06:22.592259-03:00"
+    },
+    {
+      "title": "Datadog beats top-line and bottom-line estimates; gives Q3 and updates FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:06:25.250743-03:00"
+    },
+    {
+      "title": "ICON unit prices $2.15B of senior notes",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:06:27.859375-03:00"
+    },
+    {
+      "title": "Situational Awareness: Lessons of leverage from the AI trade",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:06:30.491124-03:00"
+    },
+    {
+      "title": "Soldiers have to plan out every step just to reach Ukraine's deadly 'zero line.' A sergeant said it's like 'Mission Impossible.'",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:06:40.208307-03:00"
     }
   ]
 }
