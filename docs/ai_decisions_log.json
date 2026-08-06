@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Anthropic's Mythos created fake identities to fool humans in new cyber incident",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:22:27.253187-03:00"
-    },
-    {
-      "title": "Greve da CPTM: Prefeitura de SP mantém suspensão do rodízio nesta quarta-feira",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia e sobre transporte publico e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:25:45.780177-03:00"
-    },
-    {
-      "title": "Podemos oficializa decisão de permanecer neutro na eleição presidencial",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia politica sem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:25:48.543135-03:00"
-    },
-    {
-      "title": "NCR Atleos Non-GAAP EPS of $1.49 beats by $0.52, revenue of $1.1B misses by $30M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A superação das expectativas do lucro por ação é relevante para o mercado, mas a receita abaixo das expectativas não é tão impactante",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:25:55.462067-03:00"
-    },
-    {
-      "title": "Vision Marine adopts share buyback program",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Adoção de programa de compra de ações é um sinal de confiança da empresa em suas ações e pode aumentar a liquidez do mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:25:58.365954-03:00"
-    },
-    {
-      "title": "Ridgepost Capital Non-GAAP EPS of $0.24 beats by $0.01, revenue of $80.9M beats by $0.1M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Os resultados financeiros superaram as expectativas, o que é considerado positivo para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:26:01.330208-03:00"
-    },
-    {
-      "title": "Glencore Profit Jumps on Trading Boom and Record Copper",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente os preços de commodities importantes como cobre e energia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:30:57.698762-03:00"
-    },
-    {
       "title": "Ray-Ban: a briga de família que pode desmontar um império de € 40 bi",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T21:21:05.436102-03:00"
+    },
+    {
+      "title": "Glencore Eyes Australia Listing to Tap $3.1 Trillion Pension Pot",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A listagem visa capturar investimentos em um mercado de pensões de grande porte",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:25:45.500050-03:00"
+    },
+    {
+      "title": "Exelixis outlines zanza CRC launch plans as 2026 revenue guidance midpoint is lowered by $50M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A redução na orientação de receita pode afetar a confiança dos investidores no desempenho da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:25:51.724243-03:00"
+    },
+    {
+      "title": "Rand Capital outlines $0.29 Q3 2026 dividend while continuing portfolio rebuilding after BMP Swanson write-down",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa continua a pagar dividendos, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:25:54.796142-03:00"
+    },
+    {
+      "title": "Singapore Stock Market May Extend Losing Streak",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:26:01.615704-03:00"
+    },
+    {
+      "title": "Life360's Revenue Grew 38% While the Stock Fell. Here's What to Make of the Latest Director Sale",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:26:07.277011-03:00"
+    },
+    {
+      "title": "Italy’s Largest Bank Cuts BlackRock Bitcoin ETF Stake 94%: Rotation to Ethereum?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:26:15.990359-03:00"
+    },
+    {
+      "title": "Diversified Healthcare Trust Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:26:18.615931-03:00"
     }
   ]
 }

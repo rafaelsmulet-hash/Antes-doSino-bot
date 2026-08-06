@@ -1,35 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 34848,
-  "aprovadas_pelo_fluxo_atual": 675,
-  "descartadas_pelos_filtros_atuais": 34173,
-  "score_medio_materialidade": 4.24,
+  "total_ingeridas": 35096,
+  "aprovadas_pelo_fluxo_atual": 676,
+  "descartadas_pelos_filtros_atuais": 34420,
+  "score_medio_materialidade": 4.26,
   "seriam_breaking": 53,
-  "iriam_para_rodada": 537,
-  "seriam_descartadas_pelo_novo_sistema": 1410,
-  "total_divergencias": 757,
+  "iriam_para_rodada": 536,
+  "seriam_descartadas_pelo_novo_sistema": 1411,
+  "total_divergencias": 758,
   "divergencias": [
-    {
-      "title": "NCR Atleos Non-GAAP EPS of $1.49 beats by $0.52, revenue of $1.1B misses by $30M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Vision Marine adopts share buyback program",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Ridgepost Capital Non-GAAP EPS of $0.24 beats by $0.01, revenue of $80.9M beats by $0.1M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "UBS rebaixa Ferretti com demanda fraca por iates e poucos catalisadores",
       "source": "Investing.com Brasil",
@@ -145,6 +124,27 @@
     {
       "title": "CorVel Corp. Q1 Income Rises",
       "source": "Nasdaq",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "The Carlyle Group Inc. Q2 Income Declines",
+      "source": "Nasdaq",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "France's €107 Billion Deficit Shock: The Next Euro Debt Crisis?",
+      "source": "ZeroHedge",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Delek Logistics Partners GAAP EPS of $0.54 misses by $0.39, revenue of $384.76M beats by $89.4M",
+      "source": "Seeking Alpha",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
