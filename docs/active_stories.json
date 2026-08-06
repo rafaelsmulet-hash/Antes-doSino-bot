@@ -4,13 +4,13 @@
       "id": "2894eec9-b4ad-4aac-9c35-be16300fd025",
       "cluster_key": "weg",
       "first_seen": "2026-08-05T06:55:37.144967-03:00",
-      "last_updated": "2026-08-05T11:48:48.248167-03:00",
+      "last_updated": "2026-08-06T20:05:35.006280-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "Bloomberg Markets",
         "CNBC - Finance"
       ],
-      "update_count": 3,
+      "update_count": 4,
       "status": "active"
     },
     {
@@ -139,7 +139,7 @@
       "id": "d0befc41-39df-4325-b49b-eb53d8c61049",
       "cluster_key": "petr4",
       "first_seen": "2026-08-05T10:02:21.760505-03:00",
-      "last_updated": "2026-08-06T19:17:35.674884-03:00",
+      "last_updated": "2026-08-06T20:07:56.610083-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "InfoMoney",
@@ -147,7 +147,7 @@
         "Money Times",
         "Suno Noticias"
       ],
-      "update_count": 11,
+      "update_count": 14,
       "status": "active"
     },
     {
@@ -166,14 +166,15 @@
       "id": "374b4e47-4334-4563-8ac1-89005f357aae",
       "cluster_key": "petrobras",
       "first_seen": "2026-08-05T17:46:08.826854-03:00",
-      "last_updated": "2026-08-06T19:10:40.294939-03:00",
+      "last_updated": "2026-08-06T20:07:48.392395-03:00",
       "materiality_peak": 5.0,
       "sources_seen": [
         "Investing.com Brasil",
         "InfoMoney",
-        "UOL Economia"
+        "UOL Economia",
+        "Exame"
       ],
-      "update_count": 6,
+      "update_count": 10,
       "status": "active"
     },
     {
@@ -199,6 +200,19 @@
         "Money Times"
       ],
       "update_count": 1,
+      "status": "active"
+    },
+    {
+      "id": "a49a0d57-579d-4236-a127-3633bfad9678",
+      "cluster_key": "magazine luiza",
+      "first_seen": "2026-08-06T20:06:44.946021-03:00",
+      "last_updated": "2026-08-06T20:07:53.713469-03:00",
+      "materiality_peak": null,
+      "sources_seen": [
+        "Exame",
+        "UOL Economia"
+      ],
+      "update_count": 2,
       "status": "active"
     }
   ]
