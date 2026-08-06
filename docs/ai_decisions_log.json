@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Para 43%, Lula tem respondido mal ao tarifaço de Trump, aponta pesquisa Genial/Quaest",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:41:06.236561-03:00"
-    },
-    {
-      "title": "Mendonça nega remoção de vídeo de Flávio inspirado em ‘Top Gun’ e gerado por IA",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia, portanto não tem impacto relevante para o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:41:09.361061-03:00"
-    },
-    {
-      "title": "Nova parceria entre Caixa e iFood facilita acesso a crédito para entregadores",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Parceria entre Caixa e iFood facilita acesso a crédito para entregadores, reduzindo juros e tornando o processo mais digital",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:41:13.004573-03:00"
-    },
-    {
-      "title": "Ternium bate o mercado em 15% com custos menores e volume forte no México",
-      "source": "Brazil Journal",
-      "score": 6.0,
-      "motivo": "Aumento de 50% no EBITDA e resultados acima das projeções dos analistas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:41:22.840751-03:00"
-    },
-    {
-      "title": "Shell to invest in Surat Gas Project Central in Queensland",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "O investimento da Shell é um sinal de confiança no potencial do projeto e pode impulsionar a produção de gás na região.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:41:45.200144-03:00"
-    },
-    {
-      "title": "Elon Musk's 5 most noteworthy comments during SpaceX's first earnings call",
-      "source": "Business Insider",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações financeiras ou econômicas relevantes para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:41:48.981224-03:00"
-    },
-    {
-      "title": "Disney's Third-Quarter Profit Growth Driven by Parks, Streaming",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca o crescimento do lucro da Disney, que superou as expectativas, o que é relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:45:45.475055-03:00"
-    },
-    {
-      "title": "Quaest: Para 59%, manifestação de paz entre Michelle e Flávio Bolsonaro foi positiva",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:45:51.890142-03:00"
-    },
-    {
-      "title": "Em maio, vendas no varejo variam 0,1%",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:45:55.207983-03:00"
-    },
-    {
-      "title": "We Bought While the Bears Panicked - and Banked 17.9%, 20.7% and 28.5%",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre um evento ou decisão de mercado relevante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:46:02.469446-03:00"
-    },
-    {
-      "title": "Insider Dumps 5,300 Shares of Major U.S. Airline",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "Venda de ações por parte de um acionista não é um evento significativo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:46:05.477485-03:00"
-    },
-    {
-      "title": "HubSpot Chief Legal Officer Sells 728 Shares for Tax Withholding",
-      "source": "Nasdaq",
-      "score": 1.0,
-      "motivo": "A venda de ações do diretor jurídico não é um evento significativo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:46:08.447317-03:00"
-    },
-    {
-      "title": "3 Ways to Supplement Your Social Security Income Before 2026 Ends",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:46:11.497820-03:00"
-    },
-    {
       "title": "Why Rivian Stock Fell 12% Last Month",
       "source": "Nasdaq",
       "score": 6.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T08:57:00.572413-03:00"
+    },
+    {
+      "title": "Sprake: Markets Punch-Drunk on AI Capex Spend",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "A notícia menciona a redução do preço do petróleo e sua influência nos juros da Tesouraria, o que é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:00:53.921110-03:00"
+    },
+    {
+      "title": "Hackers Target Hedge Funds, Iran Says Deal Reached with Oman | The Opening Trade 8/6/2026",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não há informações concretas sobre impacto direto nas ações ou no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:00:57.406604-03:00"
+    },
+    {
+      "title": "No MASP, uma sucessão com tom de continuidade",
+      "source": "Brazil Journal",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:05.434103-03:00"
+    },
+    {
+      "title": "Nintendo bate estimativas com força dos jogos e mantém projeções",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:08.305161-03:00"
+    },
+    {
+      "title": "Millicom International Cellular S.A. declares $0.75 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:11.115471-03:00"
+    },
+    {
+      "title": "Lifemd outlines Q4 2026 $60M-$64M revenue and $3M-$6M adjusted EBITDA amid shift away from paid media",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:13.797712-03:00"
+    },
+    {
+      "title": "Yellow Pages declares CAD 0.25 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:16.690976-03:00"
+    },
+    {
+      "title": "MSC Income Fund declares $0.11 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:19.323318-03:00"
+    },
+    {
+      "title": "Onterris outlines 2026 revenue of $740M-$790M as board begins comprehensive strategic review",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:22.043586-03:00"
+    },
+    {
+      "title": "Meta diz que sua IA também fez ataque hacker a outra empresa",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:31.635627-03:00"
+    },
+    {
+      "title": "The Investing Heavyweights That Backed Situational Awareness Before It Blew Up",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:36.348911-03:00"
+    },
+    {
+      "title": "Daily – Vickers Top Insider Picks for 08/06/2026",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:38.987688-03:00"
+    },
+    {
+      "title": "Gilead Sciences Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:01:41.621312-03:00"
     }
   ]
 }
