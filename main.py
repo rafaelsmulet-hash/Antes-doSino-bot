@@ -2344,30 +2344,14 @@ def load_briefings_state():
             with open(BRIEFINGS_STATE_FILE, "r", encoding="utf-8") as f:
                 return json.load(f)
         except Exception:
-            return {"last_morning_date": "", "last_evening_date": ""}
-    return {"last_morning_date": "", "last_evening_date": ""}
+            return {"last_evening_date": ""}
+    return {"last_evening_date": ""}
 
 
 def save_briefings_state(state):
     os.makedirs(os.path.dirname(BRIEFINGS_STATE_FILE), exist_ok=True)
     with open(BRIEFINGS_STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False)
-
-
-def should_send_morning_briefing():
-    """Janela de 06h50 as 07h20, uma vez por dia - passa a ser o
-    'Radar da Madrugada', enviado logo no inicio da janela de
-    operacao do bot. So dispara em dia util da B3 (nao fim de semana
-    nem feriado nacional)."""
-    if not eh_dia_util_b3():
-        return False
-    now = datetime.now(BR_TZ)
-    today_str = now.strftime("%Y-%m-%d")
-    state = load_briefings_state()
-    if state.get("last_morning_date") == today_str:
-        return False
-    minutes = now.hour * 60 + now.minute
-    return (6 * 60 + 50) <= minutes <= (7 * 60 + 20)
 
 
 def should_send_evening_briefing():
@@ -2522,7 +2506,7 @@ def processar_market_snapshot_telegram(market_snapshot, telegram_bot_token, tele
 
 NIGHT_WRAP_STATE_FILE = "docs/night_wrap_state.json"
 
-NIGHT_WRAP_JANELA_INICIO_MINUTOS = 22 * 60
+NIGHT_WRAP_JANELA_INICIO_MINUTOS = 22 * 60 + 20
 NIGHT_WRAP_JANELA_FIM_MINUTOS = 22 * 60 + 30
 
 
@@ -2545,9 +2529,13 @@ def save_night_wrap_state(state):
 
 
 def should_send_night_wrap():
-    """Janela de 22h00 as 22h30, uma vez por dia - encerra a janela de
-    operacao do bot (06h50-22h30). So dispara em dia util da B3 (nao
-    fim de semana nem feriado nacional)."""
+    """Janela estrita de 22h20 as 22h30 (fecha exatamente junto com a
+    janela de operacao do bot, 06h50-22h30) - o Night Wrap deve ser
+    sempre a ULTIMA mensagem do dia, entao a janela e propositalmente
+    curta e termina no mesmo minuto em que o bot para de operar. So
+    dispara em dia util da B3 (nao fim de semana nem feriado
+    nacional). Ver tambem a trava em main() que impede qualquer outro
+    envio depois que o Night Wrap ja saiu hoje."""
     if not eh_dia_util_b3():
         return False
     now = datetime.now(BR_TZ)
@@ -2801,121 +2789,6 @@ def summarize_briefing_with_ai(entries, tipo):
         return "Sintese indisponivel no momento - confira as noticias completas no site."
 
 
-def build_radar_madrugada_ai(entries_today):
-    """1 unica chamada a IA para as 3 partes narrativas do Radar da
-    Madrugada. Nunca especula sobre fluxo/setor/juros sem base nas
-    manchetes fornecidas - se nao houver evidencia suficiente, a
-    propria instrucao pede pra IA ser mais enxuta em vez de inventar."""
-    if not USE_AI or not entries_today:
-        return {
-            "frase_sentimento": "Mercado sem sinal predominante claro nas ultimas horas.",
-            "narrativa": "Sem dados suficientes para uma leitura da madrugada hoje.",
-            "leitura_b3": "Sem elementos suficientes para uma leitura de cenario para a B3 no momento.",
-        }
-
-    headlines_text = ""
-    for e in entries_today[:15]:
-        headlines_text += "- " + e.get("title", "") + "\n"
-
-    instrucao = (
-        "Voce e o editor de mercado do canal 'Antes do Sino'. Use SOMENTE as "
-        "manchetes internacionais abaixo, ja processadas pelo pipeline (podem incluir "
-        "o Markets Wrap da Bloomberg e outras fontes internacionais) - nunca invente "
-        "fato, numero ou evento que nao esteja nelas. Nunca de opiniao de investimento. "
-        "Nunca faca previsao categorica.\n\n"
-        "Gere 3 textos:\n"
-        "1. frase_sentimento: UMA UNICA frase resumindo o sentimento predominante dos "
-        "mercados na madrugada (ex: modo risk-on, cautela, aversao a risco).\n"
-        "2. narrativa: texto curto (6 a 10 linhas) conectando os principais "
-        "acontecimentos da madrugada - NAO liste manchetes soltas, construa uma "
-        "narrativa explicando qual foi o principal driver, por que os mercados "
-        "reagiram, e como os eventos se conectam.\n"
-        "3. leitura_b3: como o cenario internacional PODE influenciar a abertura "
-        "brasileira - cenarios e possiveis impactos, nunca previsao categorica. "
-        "IMPORTANTE: só comente fluxo estrangeiro, setores, juros ou dolar se as "
-        "manchetes fornecidas realmente sustentarem essa leitura - se nao houver "
-        "evidencia suficiente sobre um tema, simplesmente nao o mencione. Prefira um "
-        "texto curto e solido a um paragrafo generico.\n\n"
-        "Responda APENAS em JSON plano, sem markdown, no formato exato:\n"
-        '{"frase_sentimento": "...", "narrativa": "...", "leitura_b3": "..."}\n\n'
-        "Manchetes:\n" + headlines_text
-    )
-
-    try:
-        raw_response = ask_groq(instrucao, purpose="generation")
-        parsed = extract_json_object(raw_response)
-        if not isinstance(parsed, dict):
-            raise ValueError("resposta sem JSON valido")
-        return {
-            "frase_sentimento": str(parsed.get("frase_sentimento", "")).strip() or "Mercado sem sinal predominante claro nas ultimas horas.",
-            "narrativa": str(parsed.get("narrativa", "")).strip() or "Sem dados suficientes para uma leitura da madrugada hoje.",
-            "leitura_b3": str(parsed.get("leitura_b3", "")).strip() or "Sem elementos suficientes para uma leitura de cenario para a B3 no momento.",
-        }
-    except Exception as e:
-        print("Erro ao gerar Radar da Madrugada (Groq): " + str(e))
-        return {
-            "frase_sentimento": "Mercado sem sinal predominante claro nas ultimas horas.",
-            "narrativa": "Sintese indisponivel no momento - confira as noticias completas no site.",
-            "leitura_b3": "Sem elementos suficientes para uma leitura de cenario para a B3 no momento.",
-        }
-
-
-def build_morning_briefing_message(entries_today, eventos, market_snapshot=None):
-    """Monta o texto do Radar da Madrugada / Briefing Matinal. Usa
-    SOMENTE o Dolar como numero de mercado confirmado (indices
-    internacionais/futuros/DXY/Brent/minerio nao tem fonte gratuita
-    confiavel hoje - ver auditoria da Twelve Data): a linha correspondente
-    e omitida quando o dado nao existe, nunca aparece com valor
-    inventado. O restante da mensagem e narrativo, construido a partir
-    das manchetes internacionais ja processadas pelo pipeline."""
-    agora = datetime.now(BR_TZ)
-    data_str = agora.strftime("%d/%m/%Y")
-    today_iso = agora.strftime("%Y-%m-%d")
-
-    conteudo_ai = build_radar_madrugada_ai(entries_today)
-
-    usd = (market_snapshot or {}).get("usd")
-    mercado_linhas = []
-    if usd and usd.get("change") is not None:
-        sinal = "+" if usd["change"] >= 0 else ""
-        mercado_linhas.append("• Dólar: " + sinal + str(round(usd["change"], 2)) + "%")
-
-    eventos_hoje = [
-        ev for ev in eventos
-        if ev.get("date") == today_iso and is_event_brazil_focused(ev)
-    ][:3]
-    agenda_linhas = ["• " + html_module.escape(ev["label"], quote=False) for ev in eventos_hoje]
-    if not agenda_linhas:
-        agenda_linhas = ["• Nenhum evento de grande destaque previsto para hoje."]
-
-    partes = [
-        "🔔 <b>BOM DIA | ANTES DO SINO</b>",
-        "📅 " + data_str,
-        "",
-    ]
-
-    if mercado_linhas:
-        partes.append("🌐 <b>Mercado Global</b>")
-        partes.append("\n".join(mercado_linhas))
-        partes.append("")
-
-    partes.append("🎯 <b>Em uma frase</b>")
-    partes.append(html_module.escape(conteudo_ai["frase_sentimento"], quote=False))
-    partes.append("")
-    partes.append("📰 <b>O que aconteceu</b>")
-    partes.append(html_module.escape(conteudo_ai["narrativa"], quote=False))
-    partes.append("")
-    partes.append("🇧🇷 <b>O que isso significa para a B3</b>")
-    partes.append(html_module.escape(conteudo_ai["leitura_b3"], quote=False))
-    partes.append("")
-    partes.append("📌 <b>Agenda de Hoje</b>")
-    partes.append("\n".join(agenda_linhas))
-    partes.append("")
-    partes.append("⚡ Tenha um excelente pregão!")
-
-    return "\n".join(partes)
-
-
 def build_evening_briefing_message(entries_today, eventos, market_snapshot=None):
     """Monta o texto do Fechamento B3 (Evening Briefing). Ibovespa/Dólar
     e as maiores altas/baixas usam SOMENTE dado real do snapshot -
@@ -3012,30 +2885,15 @@ def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram
                  gera nenhuma chamada de API adicional.
 
     Comportamento:
-        - So dispara dentro da janela de horario correspondente (manha
-          08h15-08h45, noite 18h15-18h45).
-        - Cada briefing e enviado no maximo 1 vez por dia (controle via
+        - So dispara dentro da janela de horario correspondente
+          (18h15-18h45).
+        - Enviado no maximo 1 vez por dia (controle via
           docs/briefings_state.json).
         - Foco editorial 100% Brasil, conforme diretriz do projeto.
     """
     today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     entries_today = [e for e in noticias if e.get("date") == today_str]
     state = load_briefings_state()
-
-    if should_send_morning_briefing():
-        if editorial_foundation is not None:
-            try:
-                editorial_foundation.run_shadow_checkpoint("radar_da_madrugada")
-            except Exception as e:
-                print("Aviso (checkpoint sombra, isolado, nao afeta envio real): " + str(e))
-
-        message = build_morning_briefing_message(entries_today, eventos, market_snapshot)
-        if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
-            state["last_morning_date"] = today_str
-            save_briefings_state(state)
-            print("Morning Briefing enviado com sucesso.")
-        else:
-            print("Falha ao enviar Morning Briefing - sera tentado novamente no proximo ciclo dentro da janela.")
 
     if should_send_evening_briefing():
         if editorial_foundation is not None:
@@ -3637,10 +3495,9 @@ def _carregar_feriados_do_ano(ano):
 
 def eh_dia_util_b3():
     """Combina fim de semana + feriado nacional - usado como guarda
-    das mensagens padrao (Radar da Madrugada, Snapshot, Evening
-    Briefing, Night Wrap). NAO bloqueia a coleta normal de noticia
-    nem o Breaking (oportunista) - so as mensagens de rotina que
-    pressupoem que houve pregao."""
+    das mensagens padrao (Snapshot, Evening Briefing, Night Wrap). NAO
+    bloqueia a coleta normal de noticia nem o Breaking (oportunista) -
+    so as mensagens de rotina que pressupoem que houve pregao."""
     agora = datetime.now(BR_TZ)
     if agora.weekday() >= 5:  # 5=sabado, 6=domingo
         return False
@@ -3656,6 +3513,14 @@ def main():
 
     if not dentro_da_janela_de_operacao():
         print("Fora da janela de operacao (06h50-22h30 BRT) - ciclo ignorado.")
+        return
+
+    # Night Wrap deve ser SEMPRE a ultima mensagem do dia - se ja foi
+    # enviado hoje, nenhum outro processamento roda ate amanha (nem
+    # RSS, nem encaminhador, nem Giro do Mercado, nem Breaking). Guarda
+    # simples no topo do ciclo, antes de qualquer outro trabalho.
+    if load_night_wrap_state().get("last_night_wrap_date") == datetime.now(BR_TZ).strftime("%Y-%m-%d"):
+        print("Night Wrap ja foi enviado hoje - ciclo ignorado (Night Wrap e sempre a ultima mensagem do dia).")
         return
 
     sent_hashes, recent_titles = load_state()
