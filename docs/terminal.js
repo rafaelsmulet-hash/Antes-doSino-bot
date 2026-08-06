@@ -80,6 +80,62 @@
     container.appendChild(wrapper);
   }
 
+  // Lista compacta (widget "Market Overview" da TradingView, sem
+  // grafico - so nome + preco + variacao, 1 linha por ativo). Usada
+  // nos paineis com varios ativos (Indices, Moedas, Emergentes,
+  // Commodities, Acoes Brasil, Criptomoedas) pra evitar o problema do
+  // Symbol Overview: 1 grafico grande (as vezes quase vazio, sem
+  // muita variacao no dia) por vez, escondendo os outros ativos atras
+  // de abas. Mesma assinatura de montarSymbolOverview (mesmos pares
+  // [label, "EXCHANGE:TICKER|intervalo"]) pra poder trocar so a
+  // chamada, sem mexer em quem chama.
+  function montarListaAtivos(containerId, simbolos) {
+    var container = document.getElementById(containerId);
+    if (!container) return;
+    container.innerHTML = "";
+
+    var wrapper = document.createElement("div");
+    wrapper.className = "tradingview-widget-container";
+    wrapper.style.height = "100%";
+    wrapper.style.width = "100%";
+
+    var widgetDiv = document.createElement("div");
+    widgetDiv.className = "tradingview-widget-container__widget";
+    wrapper.appendChild(widgetDiv);
+
+    var symbolsFormatados = simbolos.map(function (par) {
+      var label = par[0];
+      var symbol = par[1].split("|")[0];
+      return { s: symbol, d: label };
+    });
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js";
+    script.async = true;
+    script.text = JSON.stringify({
+      colorTheme: "dark",
+      dateRange: "1D",
+      showChart: false,
+      locale: "br",
+      isTransparent: true,
+      showSymbolLogo: true,
+      showFloatingTooltip: false,
+      width: "100%",
+      height: "100%",
+      tabs: [
+        {
+          title: "Ativos",
+          symbols: symbolsFormatados,
+          originalTitle: "Ativos",
+        },
+      ],
+    });
+
+    wrapper.appendChild(script);
+    container.appendChild(wrapper);
+  }
+
   function montarTickerTape() {
     var container = document.getElementById("ticker-tape-container");
     if (!container) return;
@@ -152,7 +208,7 @@
   function montarTodosOsWidgets() {
     montarTickerTape();
 
-    montarSymbolOverview("widget-indices", [
+    montarListaAtivos("widget-indices", [
       ["S&P 500", "FOREXCOM:SPXUSD|1D"],
       ["Nasdaq", "FOREXCOM:NSXUSD|1D"],
       ["Dow Jones", "FOREXCOM:DJI|1D"],
@@ -160,20 +216,20 @@
       ["DAX", "XETR:DAX|1D"],
     ]);
 
-    montarSymbolOverview("widget-moedas", [
+    montarListaAtivos("widget-moedas", [
       ["USD/JPY", "FX:USDJPY|1D"],
       ["EUR/USD", "FX:EURUSD|1D"],
       ["GBP/USD", "FX:GBPUSD|1D"],
       ["USD/BRL", "FX_IDC:USDBRL|1D"],
     ]);
 
-    montarSymbolOverview("widget-emergentes", [
+    montarListaAtivos("widget-emergentes", [
       ["USD/MXN", "FX_IDC:USDMXN|1D"],
       ["USD/ZAR", "FX_IDC:USDZAR|1D"],
       ["USD/TRY", "FX_IDC:USDTRY|1D"],
     ]);
 
-    montarSymbolOverview("widget-commodities", [
+    montarListaAtivos("widget-commodities", [
       ["Petróleo (WTI)", "TVC:USOIL|1D"],
       ["Ouro", "TVC:GOLD|1D"],
       ["Prata", "TVC:SILVER|1D"],
@@ -450,7 +506,7 @@
         var symbol = ativo ? ativo.symbol : config.symbolFallbackPrefix + ticker;
         return [label, symbol + "|1D"];
       });
-      montarSymbolOverview(config.widgetId, simbolos);
+      montarListaAtivos(config.widgetId, simbolos);
     }
 
     function trocarAba(aba) {
@@ -463,7 +519,7 @@
       renderChips();
 
       if (aba === "top10") {
-        montarSymbolOverview(config.widgetId, config.top10);
+        montarListaAtivos(config.widgetId, config.top10);
       } else {
         renderWidgetCustom();
       }
