@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Em busca de financiamento para a sua empresa? Conheça o novo Simulador de Crédito Empresarial",
-      "source": "Seu Dinheiro",
-      "score": 3.0,
-      "motivo": "noticia sobre ferramenta de financiamento empresarial, mas sem impacto imediato no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:03:00.285754-03:00"
-    },
-    {
-      "title": "Alliança Saúde engrossa a lista de empresas que recorrem à recuperação extrajudicial",
-      "source": "Neofeed",
-      "score": 6.0,
-      "motivo": "A Alliança Saúde recorre à recuperação extrajudicial, o que pode afetar negativamente a confiança dos investidores no setor de saúde.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:03:06.373703-03:00"
-    },
-    {
-      "title": "Mortgage rate predictions through 2030: What the market tells us",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia fornece informações sobre as previsões de taxa de juros hipotecário, que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:03:13.166199-03:00"
-    },
-    {
-      "title": "Galaxy Digital’s Stock Drops 5% As Financial Results Disappoint",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois afeta negativamente a percepção dos investidores sobre a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:03:16.168391-03:00"
-    },
-    {
-      "title": "Charles River Blows Out Of A Buy Zone After One Metric Hits A Four-Year High",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque indica um potencial de crescimento da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:03:19.406740-03:00"
-    },
-    {
-      "title": "Nike stock is underperforming on a historic scale: AlphaSpace stat to know",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o desempenho da ação da Nike, que é um dos líderes no mercado de esportes.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:03:22.565347-03:00"
-    },
-    {
-      "title": "Minneapolis Fed's Kashkari calls for gradual rate hikes in 2026",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a perspectiva de Kashkari sobre a política monetária futura, o que pode influenciar as expectativas de mercado e os preços dos ativos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:03:26.285914-03:00"
-    },
-    {
-      "title": "Here’s Why Emerald Wealth Partners Cut Its Shell (SHEL) Stake",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A redução da participação da Emerald Wealth Partners pode influenciar a demanda pela ação da Shell.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:03:32.257623-03:00"
-    },
-    {
-      "title": "Could ASML Holding N.V. (ASML) Be the Most Durable Winner From the AI Chip Boom?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque a ASML é uma empresa líder na produção de equipamentos para fabricar chips de IA, e o boom de chips de IA é um tema importante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:03:35.672395-03:00"
-    },
-    {
-      "title": "Stocks get AI boost; investors on tenterhooks over Mideast peace talks",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia menciona a aplicação da inteligência artificial em ações, o que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:03:39.404286-03:00"
-    },
-    {
-      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia indica uma queda na demanda e contração na atividade fabril, o que pode ter impacto na economia chinesa e no mercado global.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:05:49.631216-03:00"
-    },
-    {
-      "title": "Fala de Mucio sobre “abrir portão” aos EUA incomodou Lula",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "notícia política sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:05:53.157746-03:00"
-    },
-    {
-      "title": "Renda Fixa Hoje: as taxas de CDBs, LCIs e LCAs na XP nesta quarta-feira (5)",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "taxas de CDBs, LCIs e LCAs são divulgadas, mas não há mudanças significativas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:05:56.166526-03:00"
-    },
-    {
-      "title": "O truque da Alibaba para desafiar o Claude e o ChatGPT sem cobrar caro",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Alibaba apresenta modelo de IA eficiente e barato, o que pode impulsionar sua receita e faturamento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T11:06:03.680529-03:00"
-    },
-    {
-      "title": "SpaceX selloff puts these ETFs in focus",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado financeiro pois afeta a valorização de certos ETFs que investem em tecnologia e aeroespacial.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T11:06:10.650739-03:00"
-    },
-    {
       "title": "ISM Services PMI stagnates in July, softer than expected",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-06T09:12:40.381013-03:00"
+    },
+    {
+      "title": "Insight Enterprises Non-GAAP EPS of $3.86 beats by $0.93, revenue of $2.39B beats by $180M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Os resultados financeiros superiores às expectativas são considerados relevantes e com impacto concreto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:15:54.905379-03:00"
+    },
+    {
+      "title": "Sempra Energy Profit Advances In Q2",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:16:00.166012-03:00"
+    },
+    {
+      "title": "Meta Platforms Saw Free Cash Flow Plunge 91% to Just $784 Million as Artificial Intelligence (AI) Spending Ballooned. Here's Why That Should Worry Investors.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:16:06.418920-03:00"
+    },
+    {
+      "title": "Parker Hannifin Sees Growth In FY27; Stock Up 8.4% - Update",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:16:12.517786-03:00"
+    },
+    {
+      "title": "Advanced Drainage Systems Earnings Up In Q1",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:16:18.849198-03:00"
+    },
+    {
+      "title": "Parker Hannifin Corp. Announces Advance In Q4 Profit",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:16:24.499450-03:00"
+    },
+    {
+      "title": "Medtronic Expands CE Mark Indication For Affera System For Ventricular Arrhythmias Treatment",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:16:27.188844-03:00"
+    },
+    {
+      "title": "Where Will Rocket Lab Stock Be in 5 Years?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:16:29.841609-03:00"
+    },
+    {
+      "title": "Zoetis Inc. Q2 Sales Decline",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:16:32.462385-03:00"
+    },
+    {
+      "title": "Prediction: The S&P 500 Will Pull Back This August. Here's What History Says About the Damage.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:16:35.907031-03:00"
+    },
+    {
+      "title": "Viatris Posts Wider Loss In Q2; Raises 2026 Guidance",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:16:41.556534-03:00"
+    },
+    {
+      "title": "Lessons from the Iran war: China’s oil buffer and energy resilience, tested",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a capacidade da China de lidar com uma crise energética, o que pode influenciar a demanda por petróleo e, consequentemente, os preços.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:16:48.589113-03:00"
+    },
+    {
+      "title": "Antipodes Exited Sanofi (SNY) After Repeated Pipeline Setbacks",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T09:16:51.662205-03:00"
+    },
+    {
+      "title": "Daily – Vickers Top Buyers & Sellers for 08/06/2026",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:16:57.555939-03:00"
+    },
+    {
+      "title": "A former T-Mobile exec shares his strategy for working with difficult colleagues",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T09:17:00.516046-03:00"
     }
   ]
 }
