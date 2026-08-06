@@ -35,7 +35,7 @@
       "id": "cbd5f033-6943-4dad-ac1e-0f54c7901a09",
       "cluster_key": "gol",
       "first_seen": "2026-08-05T06:57:38.913154-03:00",
-      "last_updated": "2026-08-06T15:43:33.421772-03:00",
+      "last_updated": "2026-08-06T19:55:35.715645-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "G1 Economia",
@@ -47,16 +47,17 @@
         "Nasdaq",
         "Bloomberg Markets",
         "Business Insider",
-        "Money Times"
+        "Money Times",
+        "MarketWatch"
       ],
-      "update_count": 44,
+      "update_count": 46,
       "status": "active"
     },
     {
       "id": "00af5ec9-e29c-4df2-b442-0978c6aba1db",
       "cluster_key": "vale",
       "first_seen": "2026-08-05T06:57:46.456273-03:00",
-      "last_updated": "2026-08-06T17:00:27.562026-03:00",
+      "last_updated": "2026-08-06T19:57:49.658330-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "G1 Economia",
@@ -71,14 +72,14 @@
         "Nasdaq",
         "Exame"
       ],
-      "update_count": 16,
+      "update_count": 17,
       "status": "active"
     },
     {
       "id": "f308ceca-edbc-4053-8cf7-084963054294",
       "cluster_key": "bbdc4",
       "first_seen": "2026-08-05T07:11:54.998714-03:00",
-      "last_updated": "2026-08-06T15:43:11.674270-03:00",
+      "last_updated": "2026-08-06T19:53:22.735890-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "Seu Dinheiro",
@@ -86,7 +87,7 @@
         "Suno Noticias",
         "Money Times"
       ],
-      "update_count": 12,
+      "update_count": 13,
       "status": "active"
     },
     {
@@ -137,7 +138,7 @@
       "id": "d0befc41-39df-4325-b49b-eb53d8c61049",
       "cluster_key": "petr4",
       "first_seen": "2026-08-05T10:02:21.760505-03:00",
-      "last_updated": "2026-08-06T17:01:57.716650-03:00",
+      "last_updated": "2026-08-06T19:56:32.849420-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "InfoMoney",
@@ -145,7 +146,7 @@
         "Money Times",
         "Suno Noticias"
       ],
-      "update_count": 10,
+      "update_count": 13,
       "status": "active"
     },
     {
@@ -164,26 +165,28 @@
       "id": "374b4e47-4334-4563-8ac1-89005f357aae",
       "cluster_key": "petrobras",
       "first_seen": "2026-08-05T17:46:08.826854-03:00",
-      "last_updated": "2026-08-06T09:12:30.740499-03:00",
-      "materiality_peak": 5.0,
+      "last_updated": "2026-08-06T19:55:46.709625-03:00",
+      "materiality_peak": 8.0,
       "sources_seen": [
         "Investing.com Brasil",
         "InfoMoney",
-        "UOL Economia"
+        "UOL Economia",
+        "Exame"
       ],
-      "update_count": 5,
+      "update_count": 8,
       "status": "active"
     },
     {
       "id": "5745fb50-50ba-4ec2-b9a3-a41fe2003515",
       "cluster_key": "hapvida",
       "first_seen": "2026-08-06T07:56:16.984349-03:00",
-      "last_updated": "2026-08-06T07:56:16.984349-03:00",
+      "last_updated": "2026-08-06T19:56:18.528989-03:00",
       "materiality_peak": null,
       "sources_seen": [
-        "Neofeed"
+        "Neofeed",
+        "Seu Dinheiro"
       ],
-      "update_count": 1,
+      "update_count": 2,
       "status": "active"
     },
     {
@@ -196,6 +199,20 @@
         "Money Times"
       ],
       "update_count": 1,
+      "status": "active"
+    },
+    {
+      "id": "8b006db7-cdd6-43f1-ae8d-8cbc5143452c",
+      "cluster_key": "magazine luiza",
+      "first_seen": "2026-08-06T19:53:33.502588-03:00",
+      "last_updated": "2026-08-06T19:55:51.995298-03:00",
+      "materiality_peak": null,
+      "sources_seen": [
+        "Investing.com Brasil",
+        "Exame",
+        "UOL Economia"
+      ],
+      "update_count": 3,
       "status": "active"
     }
   ]
