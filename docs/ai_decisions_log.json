@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lineage reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:11:48.477689-03:00"
-    },
-    {
-      "title": "Clear Secure beats top-line and bottom-line estimates; gives Q3 outlook",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:11:48.607156-03:00"
-    },
-    {
-      "title": "Foco no delivery: hamburgueria fatura quase R$ 10 mi com apenas 2 lojas",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "A noticia destaca o sucesso de uma pequena empresa, o que pode inspirar confianca no mercado e empreendedorismo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:11:54.158610-03:00"
-    },
-    {
-      "title": "Bradesco (BBDC4) já convenceu a Faria Lima da virada; agora terá de superar o sarrafo elevado para o 2T26",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:11:54.999239-03:00"
-    },
-    {
-      "title": "SpaceX's science fiction dreams come with an astronomical bill",
-      "source": "Business Insider",
-      "score": 6.0,
-      "motivo": "A queda nas ações da SpaceX após superar as expectativas de lucro é relevante e com impacto concreto.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:12:01.584299-03:00"
-    },
-    {
-      "title": "Half Of Foreign Welfare Recipients In Spain Are Moroccan",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:12:05.623039-03:00"
-    },
-    {
-      "title": "Sutcliffe: Markets Closely Watching Oman-Iran Talks",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia sugere que uma reabertura do Estreito de Ormuz pode estar próxima, o que é positivo para os mercados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T07:16:44.289001-03:00"
-    },
-    {
-      "title": "Entenda a crise entre Brasil e EUA que culminou na revogação do visto de embaixadora",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A noticia não é sobre mercado financeiro, mas sim sobre política internacional",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T07:16:48.766417-03:00"
-    },
-    {
       "title": "Defesa Civil envia alerta ‘severo’ para ventos fortes no Rio de Janeiro",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-05T21:01:25.055356-03:00"
+    },
+    {
+      "title": "Dívida pública ultrapassa 80% do PIB e pressiona juros, crédito e custo de vida",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "Aumento da dívida pública pode pressionar juros e crédito, afetando negativamente o mercado.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:05:48.402386-03:00"
+    },
+    {
+      "title": "Sunrun expects to exit 2026 with over 10% growth while targeting over 10 GWh by end of 2028",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A expectativa de crescimento da Sunrun é relevante para o mercado de energia renovável e a indústria de energia solar.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:05:54.610131-03:00"
+    },
+    {
+      "title": "Duolingo outlines 2026 revenue growth of ~16% while targeting 100 million DAUs in 2028",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante para o mercado de tecnologia e educação, e o crescimento da receita e do número de usuários ativos é um sinal positivo para o futuro da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:05:57.596103-03:00"
+    },
+    {
+      "title": "Agentic AI boosts productivity, but C-suite struggles to reap value",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-05T21:06:08.171119-03:00"
+    },
+    {
+      "title": "Federal Operation Takes More Than 800 Dangerous Truckers Off US Highways",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:06:12.102132-03:00"
+    },
+    {
+      "title": "Tit-For-Tat: China Hits Back At US With Tighter Drone Export Controls",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:06:18.178808-03:00"
+    },
+    {
+      "title": "Argentina's Milei: Ending the Debt State By Holding Politicians Personally Accountable For Fiscal Excess",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:06:24.285838-03:00"
+    },
+    {
+      "title": "Japan Looks To Palantir For Battlefield AI",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-05T21:06:30.338783-03:00"
     }
   ]
 }

@@ -1,28 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 33856,
-  "aprovadas_pelo_fluxo_atual": 666,
-  "descartadas_pelos_filtros_atuais": 33190,
+  "total_ingeridas": 34104,
+  "aprovadas_pelo_fluxo_atual": 671,
+  "descartadas_pelos_filtros_atuais": 33433,
   "score_medio_materialidade": 4.22,
-  "seriam_breaking": 52,
-  "iriam_para_rodada": 545,
+  "seriam_breaking": 53,
+  "iriam_para_rodada": 544,
   "seriam_descartadas_pelo_novo_sistema": 1403,
-  "total_divergencias": 762,
+  "total_divergencias": 766,
   "divergencias": [
-    {
-      "title": "Foco no delivery: hamburgueria fatura quase R$ 10 mi com apenas 2 lojas",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Bradesco (BBDC4) já convenceu a Faria Lima da virada; agora terá de superar o sarrafo elevado para o 2T26",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Falido e devendo R$ 1 milhão, ele quis ser CLT — mas saiu da entrevista com um negócio de bilhões",
       "source": "Exame",
@@ -147,6 +133,20 @@
       "source": "Investing.com Brasil",
       "score": 6.0,
       "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Ações da China atingem maior cotação da semana com alta das ações do setor de chips",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Ações da Gran Tierra Energy disparam 26% após venda bilionária de ativos",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado"
     }
   ]
