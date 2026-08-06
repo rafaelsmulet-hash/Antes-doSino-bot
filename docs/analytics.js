@@ -167,10 +167,6 @@
     if (elementoLink.classList && elementoLink.classList.contains("btn-primary")) {
       dispararEvento("click_cta_principal", parametrosBase);
     }
-
-    if (href.indexOf("planos.html") !== -1) {
-      dispararEvento("click_nav_planos", parametrosBase);
-    }
   }
 
   function inicializarDelegacaoDeClique() {
