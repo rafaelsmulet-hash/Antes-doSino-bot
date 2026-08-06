@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Reports of the 60/40 portfolio’s demise are proving to be premature",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A notícia sugere que a estratégia de investimento tradicional ainda é viável, o que é relevante para o mercado de ações e investimentos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:30:45.554606-03:00"
-    },
-    {
-      "title": "Eli Lilly jumps after Q2 beat driven by obesity drugs",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de lucro, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:30:48.618480-03:00"
-    },
-    {
-      "title": "Galaxy Digital Non-GAAP EPS of -$0.09 beats by $0.19, revenue of $8.56B misses by $490M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:30:51.795690-03:00"
-    },
-    {
-      "title": "Caesarstone Non-GAAP EPS of $0.10, revenue of $96.6M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois fornece informações sobre os resultados financeiros da empresa, que podem influenciar a percepção dos investidores sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:30:54.766648-03:00"
-    },
-    {
-      "title": "Shopify skyrockets after posting +30% revenue and GMV growth",
-      "source": "Seeking Alpha",
-      "score": 8.0,
-      "motivo": "O crescimento significativo da receita e do GMV é um sinal de saúde financeira para a empresa e pode influenciar positivamente o mercado de ações.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T08:30:57.839635-03:00"
-    },
-    {
       "title": "Iron Mountain in charts: Delivers record Q2 as global data center revenue jumps 38.8%",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17945,6 +17900,105 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T07:21:45.232690-03:00"
+    },
+    {
+      "title": "Por que as ações da ThredUp estão despencando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Desempenho negativo da empresa afeta valor das ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:25:54.020550-03:00"
+    },
+    {
+      "title": "Valeura Energy Inc. reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A divulgação de resultados financeiros é relevante para os investidores, mas não é um evento inesperado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:25:58.285695-03:00"
+    },
+    {
+      "title": "Arhaus beats top-line and bottom-line estimates; reaffirms FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as estimativas de receita e lucro líquido, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:26:04.297458-03:00"
+    },
+    {
+      "title": "Stella Jones GAAP EPS of C$1.59, revenue of C$1.04B",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados financeiros positivos, o que é relevante para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:26:07.257378-03:00"
+    },
+    {
+      "title": "AtkinsRéalis Non-GAAP EPS of $0.97, revenue of $3B beats by $950M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas de receita, o que é considerado positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:26:10.257058-03:00"
+    },
+    {
+      "title": "AM Markets Need to Know: Trump-Warsh contacts, JPMorgan flags leverage risks, and more",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia menciona uma instituição financeira alertando sobre riscos de endividamento, o que pode ter impacto nos mercados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:26:13.672046-03:00"
+    },
+    {
+      "title": "Acushnet Holdings Corp. GAAP EPS of $2.08 beats by $0.45, revenue of $820M beats by $31.75M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa superou as expectativas de lucro e receita, o que é considerado positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:26:19.718902-03:00"
+    },
+    {
+      "title": "Bolsas da Ásia caem, e Europa avança com balanços e tensão em Hormuz",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "mercados operam no azul, mas com tensão em Hormuz",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T07:26:27.417583-03:00"
+    },
+    {
+      "title": "Bending Spoons got Airtable for 80% off. Who's next?",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:26:35.266058-03:00"
+    },
+    {
+      "title": "3 Stocks I'd Build My Portfolio Around if I Were Starting Over Today",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações específicas ou materiais sobre eventos atuais do mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:26:38.301731-03:00"
+    },
+    {
+      "title": "Strata Critical Medical, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "Os resultados financeiros são relevantes para os investidores, mas não são surpreendentes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T07:26:41.392032-03:00"
     }
   ]
 }
