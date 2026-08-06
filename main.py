@@ -3882,18 +3882,31 @@ def summarize_briefing_with_ai(entries, tipo):
     for e in entries[:15]:
         headlines_text += "- " + e["title"] + "\n"
 
+    trava_anti_alucinacao = (
+        "Use SOMENTE as manchetes fornecidas abaixo - nunca invente fato, numero ou "
+        "evento que nao esteja nelas. Nunca invente relacao causal entre manchetes "
+        "que nao tem conexao explicita, e nunca conecte 2 manchetes so porque estao "
+        "na mesma lista - elas podem ser sobre empresas, paises ou temas totalmente "
+        "independentes. So afirme que um acontecimento influenciou o outro se as "
+        "proprias manchetes realmente sustentarem essa leitura. Prefira uma resposta "
+        "mais generica e honesta a forcar uma narrativa conectada que os dados nao "
+        "sustentam."
+    )
+
     if tipo == "abertura":
         instrucao = (
             "Escreva uma sintese de 1 a 2 frases sobre o principal vetor esperado para "
             "o pregao de hoje na B3 (Ibovespa), com base nas manchetes abaixo. Foque "
             "em commodities, dolar, noticiario politico/fiscal ou balancos locais. "
-            "Responda em portugues do Brasil, texto simples, sem markdown, sem aspas."
+            "Responda em portugues do Brasil, texto simples, sem markdown, sem aspas.\n\n"
+            + trava_anti_alucinacao
         )
     else:
         instrucao = (
             "Escreva uma sintese de 1 a 2 frases sobre o que moveu o pregao de hoje na "
             "B3 (Ibovespa), com base nas manchetes abaixo. Responda em portugues do "
-            "Brasil, texto simples, sem markdown, sem aspas."
+            "Brasil, texto simples, sem markdown, sem aspas.\n\n"
+            + trava_anti_alucinacao
         )
 
     prompt = instrucao + "\n\nManchetes:\n" + headlines_text
