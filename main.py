@@ -211,10 +211,33 @@ def passes_source_specific_filter(source, entry):
     fonte nova tem um perfil de ruido diferente, entao usa um criterio
     proprio, mantendo a filosofia de maximo sinal, minimo ruido.
     Retorna (aprovado: bool, motivo_descarte: str)."""
+    text = (entry.get("title", "") + " " + get_entry_body(entry)).lower()
+
+    # Aviso de agenda de teleconferencia de resultados (ex: "News Corp.
+    # Q4 26 Earnings Conference Call At 5:00 PM ET") - e um aviso de
+    # HORARIO, nao noticia. Aplica-se independente da fonte, ja que
+    # esse formato mecanico aparece em varios feeds de wire financeiro.
+    if re.search(r"earnings conference call at \d{1,2}:\d{2}\s*(am|pm)\s*et", text):
+        return False, "aviso de agenda de teleconferencia (nao e noticia)"
+
+    if source == "Seeking Alpha":
+        # Seeking Alpha publica um snippet mecanico de EPS/receita pra
+        # praticamente toda empresa que reporta resultado, incluindo
+        # small/mid caps americanas sem nenhuma relevancia pro publico
+        # do canal. So deixa passar se mencionar um ativo que o
+        # projeto de fato acompanha (ASSET_PROFILES) - senao e ruido.
+        formato_mecanico_resultado = re.search(
+            r"gaap eps of|beats top-line and bottom-line|misses top-line and bottom-line|"
+            r"\bq\d\s*(?:'?\d{2})?\s*income (rises|declines)\b",
+            text,
+        )
+        if formato_mecanico_resultado:
+            termos_acompanhados = [t for perfil in ASSET_PROFILES for t in perfil["terms"]]
+            if not any(termo in text for termo in termos_acompanhados):
+                return False, "resultado trimestral de empresa fora do radar (Seeking Alpha)"
+
     if source not in ("TechCrunch", "Poder360", "IBGE"):
         return True, ""
-
-    text = (entry.get("title", "") + " " + get_entry_body(entry)).lower()
 
     if source == "TechCrunch":
         prioridade = [
