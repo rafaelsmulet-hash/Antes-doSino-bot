@@ -1,35 +1,14 @@
 {
   "date": "2026-08-05",
-  "total_ingeridas": 34600,
-  "aprovadas_pelo_fluxo_atual": 673,
-  "descartadas_pelos_filtros_atuais": 33927,
+  "total_ingeridas": 34848,
+  "aprovadas_pelo_fluxo_atual": 675,
+  "descartadas_pelos_filtros_atuais": 34173,
   "score_medio_materialidade": 4.24,
   "seriam_breaking": 53,
-  "iriam_para_rodada": 538,
-  "seriam_descartadas_pelo_novo_sistema": 1409,
-  "total_divergencias": 759,
+  "iriam_para_rodada": 537,
+  "seriam_descartadas_pelo_novo_sistema": 1410,
+  "total_divergencias": 757,
   "divergencias": [
-    {
-      "title": "Pinterest stock slides after Q3 forecast fails to impress",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "AM Markets Need to Know: Starship test, Palantir surge, and more",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Carlyle Non-GAAP EPS of $1.07, revenue of $1.12B",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "NCR Atleos Non-GAAP EPS of $1.49 beats by $0.52, revenue of $1.1B misses by $30M",
       "source": "Seeking Alpha",
@@ -146,6 +125,27 @@
       "title": "Recursion Pharmaceuticals GAAP EPS of -$0.25 misses by $0.04, revenue of $7.67M misses by $4.29M",
       "source": "Seeking Alpha",
       "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Robinhood Stock Has Soared 45% From Its 52-Week Low. Here's Why I'm Predicting Another Sell-Off.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Indian Shares End Little Changed Amid RBI Rate Hold",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "CorVel Corp. Q1 Income Rises",
+      "source": "Nasdaq",
+      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
