@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Franklin Resources posts $1.80T AUM in July, helped by $6B net inflows",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque indica um aumento nos fluxos de investimentos para a Franklin Resources, o que pode ser um sinal positivo para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:11:35.733138-03:00"
-    },
-    {
-      "title": "TXO Energy Partners declares $0.40 dividend",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para os investidores que possuem ações da TXO Energy Partners, mas não tem impacto significativo no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:11:38.685985-03:00"
-    },
-    {
-      "title": "AMD slips after earnings; these ETFs hold the biggest stakes",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A notícia afeta diretamente a empresa AMD e seus ETFs associados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:11:42.316654-03:00"
-    },
-    {
-      "title": "FingerMotion appoints new CEO",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não é significativa para o mercado financeiro, pois trata-se de uma mudança de liderança em uma empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:11:48.375241-03:00"
-    },
-    {
-      "title": "Cachorro-quente, brigadeiro e mais: como empreendedores faturam até R$ 4 milhões por ano com ideias simples",
-      "source": "G1 Economia",
-      "score": 0.0,
-      "motivo": "não há informações financeiras relevantes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:11:55.681884-03:00"
-    },
-    {
-      "title": "Banco Mercantil alcança lucro recorde de R$ 275 milhões no 2º trimestre",
-      "source": "UOL Economia",
-      "score": 8.0,
-      "motivo": "lucro recorde e crescimento histórico do banco",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:11:59.159435-03:00"
-    },
-    {
-      "title": "Elon Musk repeatedly one-upped his execs on SpaceX’s first earnings call",
-      "source": "TechCrunch",
-      "score": 3.0,
-      "motivo": "A notícia destaca a confiança de Musk em suas operações, o que pode ser positivo para a empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:12:04.872381-03:00"
-    },
-    {
-      "title": "Eli Lilly's Diabetes And Obesity Drugs Blow Past Expectations; Shares Pop",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Superar expectativas em medicamentos de grande demanda é um sinal positivo para o desempenho futuro da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:12:08.170870-03:00"
-    },
-    {
-      "title": "Dine Brands Q2 2026 earnings: IHOP growth offsets Applebee's decline",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta as ações da Dine Brands, mas não é um evento de mercado maior.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:12:11.643040-03:00"
-    },
-    {
-      "title": "I moved from California to Italy. I started walking over 10,000 steps without even trying.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação com mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:12:17.841700-03:00"
-    },
-    {
-      "title": "Ibovespa avança à espera de novo corte na Selic pelo Copom; 5 coisas para saber antes de investir hoje (5)",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "A noticia menciona a expectativa de corte na Selic pelo Copom, o que geralmente e positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:15:43.985904-03:00"
-    },
-    {
-      "title": "Como abrir um escritório de advocacia? Veja os requisitos, custos e erros que podem comprometer início do seu negócio",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "A noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:15:55.050052-03:00"
-    },
-    {
-      "title": "PMLL11 investe “milhões” em compra no Shopping Jardim Sul; entenda",
-      "source": "Suno Noticias",
-      "score": 6.0,
-      "motivo": "O investimento do PMLL11 no Shopping Jardim Sul deve gerar yield médio de 11,6% e seguir a política de alocação em ativos de varejo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:15:59.021355-03:00"
-    },
-    {
-      "title": "Instagram boss Adam Mosseri is 'pro' wearing shorts in the office: 'When it hits, it hits'",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:16:06.153617-03:00"
-    },
-    {
-      "title": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
-      "source": "Federal Reserve",
-      "score": 8.0,
-      "motivo": "A publicação das minutas da reunião da Comissão de Mercado Aberto Federal é um evento importante para o mercado financeiro, pois pode fornecer insights sobre as decisões e perspectivas da Fed.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:16:10.087889-03:00"
-    },
-    {
-      "title": "GM dobra aposta na China, renova parceria por 20 anos e vai exportar para o mundo",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A GM renova parceria por 20 anos e expande exportações para novos mercados, o que pode impulsionar suas vendas e lucros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:20:45.635550-03:00"
-    },
-    {
-      "title": "IA não pode ser subestimada na adaptação da reforma tributária, dizem especialistas",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A noticia se refere a especialistas e tecnologia, mas nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:20:48.957154-03:00"
-    },
-    {
-      "title": "Bitcoin sobe com proximidade de acordo sobre o Estreito de Ormuz",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "melhora do cenário geopolítico positiva para criptomoedas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:20:57.205228-03:00"
-    },
-    {
       "title": "Com R$ 8 milhões, famosa galeteria gaúcha estreia em Brasília — e já olha pontos em Goiás e Minas",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-06T08:32:15.529415-03:00"
+    },
+    {
+      "title": "Swiss Re Profit Beats Estimates as the Firm Boosts Cost Cuts",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Anúncio de cortes de custos e superação de expectativas de lucro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:35:40.285278-03:00"
+    },
+    {
+      "title": "Planet Fitness Cuts Outlook on Sluggish Member Sign-Ups",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:35:43.510176-03:00"
+    },
+    {
+      "title": "Coreia do Sul: associação de futebol é alvo de operação por contratação de ex-técnico",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:35:50.240939-03:00"
+    },
+    {
+      "title": "Isolamento faz Flávio Bolsonaro trocar sinalização a mulheres por segurança pública com vice",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:35:55.854889-03:00"
+    },
+    {
+      "title": "33 stocks to bet on foreign markets continuing to beat the S&P 500",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:35:59.447643-03:00"
+    },
+    {
+      "title": "Cheniere Energy GAAP EPS of $14.65 beats by $11.69, revenue of $5.73B beats by $880M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:05.293083-03:00"
+    },
+    {
+      "title": "Lexicon Pharmaceuticals GAAP EPS of -$0.07 misses by $0.02, revenue of $28.9M beats by $24.9M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:08.021970-03:00"
+    },
+    {
+      "title": "Cronos Group GAAP EPS of $0.09 beats by $0.08, revenue of $53M beats by $9.64M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:10.745883-03:00"
+    },
+    {
+      "title": "ITT Non-GAAP EPS of $2.08 beats by $0.13, revenue of $1.47B beats by $80M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:13.464074-03:00"
+    },
+    {
+      "title": "ATI Non-GAAP EPS of $1.23 beats by $0.19, revenue of $1.26B beats by $40M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:16.180961-03:00"
+    },
+    {
+      "title": "Tarsus Pharmaceuticals, Inc. GAAP EPS of -$0.43, revenue of $173.9M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:18.888301-03:00"
+    },
+    {
+      "title": "Via Transportation, Inc. Non-GAAP EPS of -$0.01 beats by $0.01, revenue of $136M beats by $2.66M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:21.612040-03:00"
+    },
+    {
+      "title": "Goldman Sachs' new oil price target sparks wild onchain trading",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:31.948537-03:00"
+    },
+    {
+      "title": "A 'Market Wizard' Is Running One of the Worst ETFs of 2026",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:34.653949-03:00"
+    },
+    {
+      "title": "Westlake Chemical Partners LP Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:37.352624-03:00"
+    },
+    {
+      "title": "Wayfair Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:40.035612-03:00"
+    },
+    {
+      "title": "Alphabet Is Worth $4.6 Trillion. Here's What Has to Happen for the Stock to Double by 2032.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:42.766853-03:00"
+    },
+    {
+      "title": "A former T-Mobile exec shares his strategy for working with difficult colleagues",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:36:45.858268-03:00"
     }
   ]
 }
