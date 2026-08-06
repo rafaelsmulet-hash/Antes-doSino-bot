@@ -57,7 +57,7 @@
       "id": "00af5ec9-e29c-4df2-b442-0978c6aba1db",
       "cluster_key": "vale",
       "first_seen": "2026-08-05T06:57:46.456273-03:00",
-      "last_updated": "2026-08-06T19:08:49.196620-03:00",
+      "last_updated": "2026-08-06T20:06:55.998187-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "G1 Economia",
@@ -72,7 +72,7 @@
         "Nasdaq",
         "Exame"
       ],
-      "update_count": 16,
+      "update_count": 17,
       "status": "active"
     },
     {
@@ -138,7 +138,7 @@
       "id": "d0befc41-39df-4325-b49b-eb53d8c61049",
       "cluster_key": "petr4",
       "first_seen": "2026-08-05T10:02:21.760505-03:00",
-      "last_updated": "2026-08-06T19:11:02.633473-03:00",
+      "last_updated": "2026-08-06T20:06:08.481628-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "InfoMoney",
@@ -146,7 +146,7 @@
         "Money Times",
         "Suno Noticias"
       ],
-      "update_count": 11,
+      "update_count": 14,
       "status": "active"
     },
     {
@@ -165,14 +165,15 @@
       "id": "374b4e47-4334-4563-8ac1-89005f357aae",
       "cluster_key": "petrobras",
       "first_seen": "2026-08-05T17:46:08.826854-03:00",
-      "last_updated": "2026-08-06T19:10:40.294939-03:00",
+      "last_updated": "2026-08-06T20:05:59.923925-03:00",
       "materiality_peak": 5.0,
       "sources_seen": [
         "Investing.com Brasil",
         "InfoMoney",
-        "UOL Economia"
+        "UOL Economia",
+        "Exame"
       ],
-      "update_count": 6,
+      "update_count": 10,
       "status": "active"
     },
     {
@@ -198,6 +199,19 @@
         "Money Times"
       ],
       "update_count": 1,
+      "status": "active"
+    },
+    {
+      "id": "e675157e-2b8b-4d81-b83b-c9bcf34b71d3",
+      "cluster_key": "magazine luiza",
+      "first_seen": "2026-08-06T20:04:53.742948-03:00",
+      "last_updated": "2026-08-06T20:06:05.402134-03:00",
+      "materiality_peak": null,
+      "sources_seen": [
+        "Exame",
+        "UOL Economia"
+      ],
+      "update_count": 2,
       "status": "active"
     }
   ]
