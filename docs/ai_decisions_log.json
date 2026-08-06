@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Robinhood to list a fund that lets anyone back Y Combinator startups",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:06:05.242269-03:00"
-    },
-    {
-      "title": "Trump rips Exxon, Chevron for ‘making too much money’ as US gas prices soar above $4 — but is Big Oil the bad guy?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:06:08.608022-03:00"
-    },
-    {
-      "title": "Bitcoin and ethereum prices today, Wednesday, August 5, 2026:  Crypto prices rise as investors watch Hormuz negotiations and jobs report closely",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente os preços das criptomoedas, que são influenciados por eventos geopolíticos e econômicos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:06:15.249848-03:00"
-    },
-    {
-      "title": "Stock Market Today: Dow Rises After Surprise Jobs Data; AMD, SpaceX Plunge On Earnings (Live Coverage)",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Dados de emprego surpreendentes e divulgação de resultados financeiros de empresas significativas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:06:22.110013-03:00"
-    },
-    {
-      "title": "PIF, Silver Lake, and Jared Kushner's Affinity Partners complete $55 billion EA deal",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "A compra de uma empresa de jogos por um valor recorde é um evento significativo no mercado de tecnologia e entretenimento.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:06:28.041755-03:00"
-    },
-    {
-      "title": "What Happens When Stock Implied Volatility Outpaces the SPY",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:06:30.659580-03:00"
-    },
-    {
-      "title": "Private Hiring Stalls in July, Complicating Everything",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Paralisação do recrutamento privado pode afetar a confiança dos consumidores e a demanda por produtos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:06:33.581825-03:00"
-    },
-    {
-      "title": "Could UnitedHealth Group (UNH) See Substantial Upside as Medicare Profits Recover?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:06:36.227489-03:00"
-    },
-    {
-      "title": "Guardant Health (GH) Sees 48% Growth as Its Cancer Tests Gain Momentum",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois indica um aumento na demanda por produtos da empresa, o que pode impactar positivamente o preço das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:06:39.291350-03:00"
-    },
-    {
-      "title": "Anthropic confirms it's building an in-house chip team for Claude",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:06:42.077734-03:00"
-    },
-    {
-      "title": "What Leopold Aschenbrenner can learn from Warren Buffett after his $45 billion AI fund imploded",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:06:45.355531-03:00"
-    },
-    {
-      "title": "Nostalgia hit me in the Costco clothing aisle. I bought the $17 Esprit sweatshirt and love it.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:06:51.801188-03:00"
-    },
-    {
-      "title": "Google is in talks for a $1.5 billion-plus deal with AI coding agent startup Mechanize",
-      "source": "Business Insider",
-      "score": 6.0,
-      "motivo": "A notícia sugere que a Google está investindo em tecnologia de IA, o que pode ter impacto positivo em suas ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:06:55.555791-03:00"
-    },
-    {
-      "title": "Futures Hit New Record High On Strong Earnings Following Historic Call Buying Frenzy",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:07:02.017292-03:00"
-    },
-    {
-      "title": "Brent Bounces As Houthis Attack, Sink Vessel Off Yemen With Sea Drone",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A notícia de um ataque a um navio no Iêmen com um drone marítimo aumentou a incerteza sobre a segurança dos navios no Golfo Pérsico, afetando o preço do petróleo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:07:05.166702-03:00"
-    },
-    {
-      "title": "Fauci's Time Is Up...",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:07:08.415218-03:00"
-    },
-    {
-      "title": "\"Momentum Continues\": Lilly Jumps After Raising Revenue Outlook On Surging GLP-1 Demand",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T10:07:14.650642-03:00"
-    },
-    {
-      "title": "Por que as ações da Angi estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "a noticia especifica a razao do desempenho negativo das acoes da Angi",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T10:10:49.453949-03:00"
-    },
-    {
       "title": "Thomson Reuters divulga aumento na receita do 2º trimestre e eleva previsão para o ano",
       "source": "Investing.com Brasil",
       "score": 8.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T08:22:35.341251-03:00"
+    },
+    {
+      "title": "Warner Bros. Sales Fall on Loss of NBA, Weak Film Slate",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A perda dos direitos da NBA é um fator significativo para a empresa, pois afeta suas receitas de transmissão de esportes",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:25:42.394835-03:00"
+    },
+    {
+      "title": "Record India Sugar Prices Spur Mills to Advance Cane Crushing",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A medida visa controlar os preços recorde de açúcar e aumentar as suprimentos antes do período de festas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:25:45.657376-03:00"
+    },
+    {
+      "title": "Dívida de R$25 bi: Estado pede conversão da recuperação judicial da Refit em falência",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T08:25:49.289494-03:00"
+    },
+    {
+      "title": "Crise ameaça reeleição de Infantino: veja como funciona a eleição para a Fifa",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:25:54.969386-03:00"
+    },
+    {
+      "title": "Equatorial recebe aval do Cade para comprar 30% da Copasa",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:25:57.627513-03:00"
+    },
+    {
+      "title": "Lula sinaliza a aliados que vai procurar Trump na próxima semana",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:00.290643-03:00"
+    },
+    {
+      "title": "Vital Farms beats top-line and bottom-line estimates; reaffirms FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:05.483947-03:00"
+    },
+    {
+      "title": "Scholar Rock GAAP EPS of -$0.84 beats by $0.01",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:08.122904-03:00"
+    },
+    {
+      "title": "Regenxbio GAAP EPS of $0.43 beats by $0.42, revenue of $108.02M beats by $11.56M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:10.828236-03:00"
+    },
+    {
+      "title": "Arbe Robotics GAAP EPS of -$0.07, revenue of $0.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:13.503244-03:00"
+    },
+    {
+      "title": "Nuveen Churchill Direct Lending NII of $0.41 beats by $0.02",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:16.152747-03:00"
+    },
+    {
+      "title": "Opus Genetics GAAP EPS of -$0.14 beats by $0.02, revenue of $0.75M misses by $1.82M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:18.823233-03:00"
+    },
+    {
+      "title": "Tecnoglass beats top-line and bottom-line estimates; narrows FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:21.488505-03:00"
+    },
+    {
+      "title": "3 Defense Stocks to Buy in August",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:35.007506-03:00"
+    },
+    {
+      "title": "Microsoft vs. Aehr Test Systems: Comparing Revenue Trends Between These Artificial Intelligence Companies",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:37.700040-03:00"
+    },
+    {
+      "title": "Pamt Corp. books another net loss, 110.6% adjusted TL OR",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:40.346792-03:00"
+    },
+    {
+      "title": "Certara, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:42.990685-03:00"
+    },
+    {
+      "title": "We took my husband's 75-year-old grandmother to Iceland. We still talk about that trip 9 years later.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T08:26:45.942168-03:00"
     }
   ]
 }
