@@ -97,7 +97,7 @@
     script.text = JSON.stringify({
       symbols: [
         { proName: "FOREXCOM:SPXUSD", title: "S&P 500" },
-        { proName: "TVC:DXY", title: "Dólar (DXY)" },
+        { proName: "FX_IDC:USDBRL", title: "Dólar (USD/BRL)" },
         { proName: "TVC:GOLD", title: "Ouro" },
         { proName: "BITSTAMP:BTCUSD", title: "Bitcoin" },
         { proName: "BMFBOVESPA:IBOV", title: "Ibovespa" },
@@ -120,12 +120,12 @@
       ["S&P 500", "FOREXCOM:SPXUSD|1D"],
       ["Nasdaq", "FOREXCOM:NSXUSD|1D"],
       ["Dow Jones", "FOREXCOM:DJI|1D"],
-      ["Nikkei 225", "TVC:NI225|1D"],
+      ["Ibovespa", "BMFBOVESPA:IBOV|1D"],
       ["DAX", "XETR:DAX|1D"],
     ]);
 
     montarSymbolOverview("widget-moedas", [
-      ["DXY", "TVC:DXY|1D"],
+      ["USD/JPY", "FX:USDJPY|1D"],
       ["EUR/USD", "FX:EURUSD|1D"],
       ["GBP/USD", "FX:GBPUSD|1D"],
       ["USD/BRL", "FX_IDC:USDBRL|1D"],
@@ -139,12 +139,12 @@
 
     montarSymbolOverview("widget-commodities", [
       ["Petróleo Brent", "TVC:UKOIL|1D"],
-      ["Minério de Ferro", "SGX:FEF1!|1D"],
+      ["Vale (proxy minério)", "NYSE:VALE|1D"],
       ["Ouro", "TVC:GOLD|1D"],
       ["Prata", "TVC:SILVER|1D"],
     ]);
 
-    montarSymbolOverview("widget-vix", [["VIX", "CBOE:VIX|1D"]]);
+    montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
   }
 
   // ---------------------------------------------------------------------
@@ -223,10 +223,19 @@
       captionEl.textContent = textoWorry;
     }
 
-    if (worryLine.classList.contains("alert")) {
+    // A classe "alert" (main.py: build_worry_line_html) cobre TANTO
+    // destaque de baixa quanto de alta - so o texto distingue qual e
+    // qual ("sinal de baixa" vs "sinal de alta"). Nunca tratar "alert"
+    // como sinonimo de Risk-Off sem checar a polaridade real.
+    var textoLower = textoWorry.toLowerCase();
+    if (worryLine.classList.contains("alert") && textoLower.indexOf("sinal de baixa") !== -1) {
       estadoEl.textContent = "Risk-Off";
       estadoEl.className = "barometer-state risk-off";
       markerEl.style.left = "12%";
+    } else if (worryLine.classList.contains("alert") && textoLower.indexOf("sinal de alta") !== -1) {
+      estadoEl.textContent = "Risk-On";
+      estadoEl.className = "barometer-state risk-on";
+      markerEl.style.left = "88%";
     } else if (worryLine.classList.contains("calm")) {
       estadoEl.textContent = "Risk-On";
       estadoEl.className = "barometer-state risk-on";
