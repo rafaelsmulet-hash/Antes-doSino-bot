@@ -2592,6 +2592,7 @@ def gerar_sitemap_completo(diretorio_docs="docs"):
 
     urls_xml = (
         "  <url><loc>" + base_url + "/</loc><lastmod>" + now_iso + "</lastmod></url>\n"
+        "  <url><loc>" + base_url + "/newsletter.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/planos.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/como-funciona.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
     )
@@ -4507,8 +4508,10 @@ def save_portal_history(entries):
 
 def generate_portal(entries, entries_today=None, template_path="docs/template.html", output_path="docs/index.html", home_insights=None, market_snapshot=None):
     """Le o template.html, substitui os placeholders de ticker e feed
-    pelos dados reais mais recentes, e salva como index.html (o que o
-    GitHub Pages efetivamente publica)."""
+    pelos dados reais mais recentes, e salva em output_path. Desde que
+    o Terminal virou a home (docs/index.html), a chamada real usa
+    output_path="docs/newsletter.html" - o feed completo passou a ser
+    uma pagina secundaria, lida pelo Terminal via fetch() no cliente."""
     if not os.path.exists(template_path):
         print("AVISO: template.html nao encontrado, portal nao gerado.")
         return
@@ -4965,7 +4968,12 @@ def main():
     # (Cockpit) e pelos Briefings, sem nenhuma chamada de API duplicada.
     market_snapshot = compute_market_snapshot()
 
-    generate_portal(all_portal_entries, entries_today, home_insights=insights["home"], market_snapshot=market_snapshot)
+    # output_path aponta para newsletter.html, NAO index.html - desde
+    # que o Terminal (docs/terminal.html antigo) virou a home, o feed
+    # completo que esta funcao gera passou a ser uma pagina secundaria.
+    # O Terminal (index.html) le o feed e a worry-line gerados aqui via
+    # fetch("newsletter.html") no lado do cliente (ver docs/terminal.js).
+    generate_portal(all_portal_entries, entries_today, output_path="docs/newsletter.html", home_insights=insights["home"], market_snapshot=market_snapshot)
     build_daily_summary_html(entries_today, today_str)
     generate_asset_pages(all_portal_entries, entries_today, asset_archive, insights["assets"])
     gerar_paginas_temas(all_portal_entries, diretorio_saida="docs/temas", theme_insights=insights["themes"])
