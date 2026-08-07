@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "XP: Setor de planos de saúde encerra 2º tri com crescimento sólido",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:28.301605-03:00"
-    },
-    {
-      "title": "Anvisa proíbe venda de “Ozempic Natural” e medicamentos à base de cannabis",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:08:30.937409-03:00"
-    },
-    {
-      "title": "Sarampo: buscas pela doença saltam 910%; veja respostas para as 10 principais dúvidas",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:33.857326-03:00"
-    },
-    {
-      "title": "Dividendos: como buscá-los em meio ao período eleitoral e aos juros elevados? Veja 8 recomendações da Empiricus para o momento",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "A notícia destaca ações recomendadas para investidores que buscam proventos, o que pode atrair mais investidores para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:08:38.346821-03:00"
-    },
-    {
-      "title": "Por que as ações da First Solar estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:41.116617-03:00"
-    },
-    {
-      "title": "Portugal - Ações fecharam o pregão em alta e o Índice PSI avançou 0,52%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:43.743548-03:00"
-    },
-    {
-      "title": "Honeywell Aerospace lands in Wall Street’s ‘penalty box’ after gloomy guidance triggers 21% stock selloff",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:08:47.259774-03:00"
-    },
-    {
-      "title": "The dollar’s global dominance is starting to slip. This was the tell.",
-      "source": "MarketWatch",
-      "score": 6.0,
-      "motivo": "A perda de domínio do dólar pode ter impacto significativo nas taxas de câmbio e nas economias globais.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:08:50.235886-03:00"
-    },
-    {
-      "title": "As a woman of color who travels alone, is it a waste of money to visit places with zero diversity?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:52.881529-03:00"
-    },
-    {
-      "title": "Chord targets at least 75% of adjusted free cash flow returned to shareholders starting in Q3 2026",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:55.576087-03:00"
-    },
-    {
-      "title": "FCC gets rid of limit on broadcast TV ownership",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:58.197560-03:00"
-    },
-    {
-      "title": "Tripadvisor falls after weak quarterly results, guidance",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:09:00.819634-03:00"
-    },
-    {
-      "title": "Prestige outlines FY2027 revenue of $1.29B-$1.315B while integrating Breathe Right and LaCorium",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois a Prestige está aumentando sua receita prevista após a integração de duas marcas, o que pode ser visto como um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:09:03.807409-03:00"
-    },
-    {
-      "title": "Qt Group Oyj GAAP EPS of EUR0.09, revenue of EUR61.3M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:09:06.429498-03:00"
-    },
-    {
-      "title": "TBC Bank Group PLC reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:09:09.040720-03:00"
-    },
-    {
-      "title": "Adecco Group AG GAAP EPS of €0.27, revenue of €6B",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas os números não são surpreendentes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:09:12.256676-03:00"
-    },
-    {
-      "title": "SpaceX Stock: 3 Reasons I Am Not Buying the Dip",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:09:16.212361-03:00"
-    },
-    {
-      "title": "Apollo To Acquire EasyJet For £5.7 Bln After Castlelake Withdraws Bid",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:09:18.851647-03:00"
-    },
-    {
       "title": "Chewy CEO Sumit Singh Sells 81,841 Shares for $1.9 Million -- Is the Stock a Sale?",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T15:06:21.294055-03:00"
+    },
+    {
+      "title": "Natural Gas Falls on Shifting Weather Forecasts",
+      "source": "WSJ Markets",
+      "score": 4.0,
+      "motivo": "A mudança nas previsões do tempo afeta a demanda por gás natural, tornando a notícia relevante para o mercado de commodities.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:10:42.076417-03:00"
+    },
+    {
+      "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
+      "source": "WSJ Markets",
+      "score": 5.0,
+      "motivo": "Oferta hostil pode influenciar preço da ação da Beacon",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:10:45.098125-03:00"
+    },
+    {
+      "title": "Petrobras aposta em refino recorde e subvenção para segurar preços com petróleo em alta",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T15:10:50.967446-03:00"
+    },
+    {
+      "title": "Startup de IA jurídica negocia nova rodada e pode chegar a avaliação de US$ 15,5 bilhões",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:10:53.695219-03:00"
+    },
+    {
+      "title": "10 habilidades para colocar no currículo e chamar a atenção dos recrutadores",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:10:56.439007-03:00"
+    },
+    {
+      "title": "Opinião: Caso Louis Vuitton mostra que procurar um sucessor é um erro",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:10:59.191519-03:00"
+    },
+    {
+      "title": "Construction Partners anticipates $3.64B-$3.68B FY 2026 revenue as it raises outlook and integrates Ellsworth",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:02.438250-03:00"
+    },
+    {
+      "title": "'Não somos ONG', diz presidente da Petrobras sobre preços do gás natural",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T15:11:11.658282-03:00"
+    },
+    {
+      "title": "Petrobras entrega lucro histórico, mas freia expectativas por dividendos extraordinários",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T15:11:17.795127-03:00"
+    },
+    {
+      "title": "US Dollar Price Forecast: NFP Countdown Keeps DXY, EUR/USD and GBP/USD in Focus",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:20.786566-03:00"
+    },
+    {
+      "title": "SunTrust's $240 million overdraft fee settlement could pay you up to $1,000",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:23.533736-03:00"
+    },
+    {
+      "title": "I'm 65 With $1.1 Million Saved and $2,800 Monthly Social Security. What's My Retirement Budget?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:26.298080-03:00"
+    },
+    {
+      "title": "OpenAI seeks dismissal of Apple's trade secrets lawsuit",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:28.984906-03:00"
+    },
+    {
+      "title": "Working at 70: What It Means for Your Social Security Checks",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:31.716587-03:00"
+    },
+    {
+      "title": "We're 62 With $950k in IRAs. Should We Still Consider a Roth Conversion?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:34.454867-03:00"
+    },
+    {
+      "title": "Weyerhaeuser Company Stock: Is Wall Street Bullish or Bearish?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:37.192954-03:00"
+    },
+    {
+      "title": "China's CMRG tells some steel mills to halt talks with Rio Tinto for shipments from September, sources say",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:39.941707-03:00"
+    },
+    {
+      "title": "Investors see big dividends from TerraCycle, a US recycling firm that turns trash into shareholder treasure",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:11:42.722132-03:00"
     }
   ]
 }
