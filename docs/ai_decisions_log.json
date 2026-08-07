@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lucro da Copel aumenta 42,6% no 2º trimestre e atinge R$ 645 milhões",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:26:43.727152-03:00"
-    },
-    {
-      "title": "Por que o chinelo de salto “feio” da Havaianas pode mudar a história da marca?",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:26:46.486212-03:00"
-    },
-    {
-      "title": "No Google, mais uma dança das cadeiras no time de inteligência artificial",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:26:51.440016-03:00"
-    },
-    {
-      "title": "Jobs report preview: Payrolls expected to grow by 80,000, unemployment seen holding steady",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:26:54.256001-03:00"
-    },
-    {
-      "title": "US dollar rises against yen as markets eye Iran deal, jobs report",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:26:56.864898-03:00"
-    },
-    {
-      "title": "Bill Ackman's 7-Stock Portfolio Is Quietly Beating the Market. Here's What's Inside It.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:26:59.480468-03:00"
-    },
-    {
-      "title": "PepsiCo Lags Coca-Cola as Domestic Sales Stumble",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:27:02.096722-03:00"
-    },
-    {
-      "title": "Why Wall Street Keeps Ignoring SoFi’s Record Growth for Robinhood",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:27:04.709824-03:00"
-    },
-    {
-      "title": "Fiserv Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:27:07.301497-03:00"
-    },
-    {
       "title": "I tried frozen custard from Culver's, Freddy's, and Shake Shack — and there's only one chain I'm rushing to return to",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T15:56:20.788835-03:00"
+    },
+    {
+      "title": "Dauch Corporation rises 13% after Q2 beat",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas financeiras, o que é considerado positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:01:01.451385-03:00"
+    },
+    {
+      "title": "Runway outlines BC Partners purchases up to 10% over two years while shares trade below 70% of NAV",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A compra de ações pela BC Partners pode aumentar a liquidez e valor das ações da Runway.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T16:01:04.784207-03:00"
+    },
+    {
+      "title": "CareTrust forecasts 2026 normalized FFO per share of $2.03-$2.06 as investments reach $1.5B year-to-date",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque fornece uma previsão de desempenho financeiro específica para a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:01:08.488589-03:00"
+    },
+    {
+      "title": "Ryman outlines $400M-$500M 2026 capex plan while estimating Gaylord Opryland to cross $200M adjusted EBITDAre",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:01:11.190731-03:00"
+    },
+    {
+      "title": "Rapid Micro outlines at least 27 validations in 2026 while targeting positive cash flow by end of 2028",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:01:13.891804-03:00"
+    },
+    {
+      "title": "Gsbd outlines path to reactivating 75 million-share buyback as leverage moves below 1.25x target",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:01:16.587359-03:00"
+    },
+    {
+      "title": "Hamilton outlines low double-digit 2026 growth while targeting low-to-mid-90s combined ratio through cycle",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:01:19.285704-03:00"
+    },
+    {
+      "title": "Why Kevin Warsh's Job Just Got a Lot Harder. And What It Means for the Stock Market.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T16:01:25.285891-03:00"
+    },
+    {
+      "title": "Why Wix.com Stock Rebounded 21.3% in July",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:01:27.915952-03:00"
     }
   ]
 }
