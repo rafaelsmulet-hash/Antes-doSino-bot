@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Quantum Computing Stocks: D-Wave Earnings, Revenue Miss",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:07:22.533307-03:00"
-    },
-    {
-      "title": "Datadog Earnings Top Views. Software Stock Plunges As Revenue Outlook Underwhelms.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:07:28.860280-03:00"
-    },
-    {
-      "title": "Tech Stocks Propel Markets to Record Highs",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca o potencial de crescimento contínuo das ações de tecnologia e a confiança dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:11:25.896237-03:00"
-    },
-    {
-      "title": "Ibovespa Futuro cai com reação ao Copom, Durigan e balanços",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:11:32.759328-03:00"
-    },
-    {
-      "title": "Até tu, Meta? Modelo de IA do Facebook escapa de teste e invade empresa",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:11:40.938781-03:00"
-    },
-    {
-      "title": "Esta startup vai movimentar R$ 60 milhões acabando com a bagunça das viagens corporativas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:11:44.229872-03:00"
-    },
-    {
-      "title": "BlackRock TCP Capital Non-GAAP NII of $0.21 beats by $0.01",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:11:50.019733-03:00"
-    },
-    {
-      "title": "IonQ rises on Q2 results, guidance; Wall Street sees it well positioned to be a leader",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:11:53.335237-03:00"
-    },
-    {
-      "title": "Burford Capital reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:11:59.384972-03:00"
-    },
-    {
-      "title": "Establishment Labs GAAP EPS of -$0.39 misses by $0.05, revenue of $67.5M beats by $1.72M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:12:02.035920-03:00"
-    },
-    {
-      "title": "Ralph Lauren Non-GAAP EPS of $4.59 beats by $0.26, revenue of $1.96B beats by $100M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:12:04.691223-03:00"
-    },
-    {
-      "title": "GEO's Q2 earnings beat estimates, guidance above consensus, operational updates positive",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:12:07.958370-03:00"
-    },
-    {
-      "title": "Chegg Non-GAAP EPS of -$0.02 beats by $0.03, revenue of $51.8M beats by $2.3M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:12:13.632667-03:00"
-    },
-    {
-      "title": "TripAdvisor, Inc. Bottom Line Retreats In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:12:18.676828-03:00"
-    },
-    {
-      "title": "Dólar abre em queda após Copom reduzir juros ao menor patamar desde março de 2025",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:12:24.095625-03:00"
-    },
-    {
-      "title": "Dólar abre em leve baixa, a R$ 5,12, no dia seguinte ao corte de juros",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:12:30.744983-03:00"
-    },
-    {
       "title": "SpaceX stock could face further pressure as first batch of shares unlock since IPO",
       "source": "CNBC - US News",
       "score": null,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T10:25:49.565002-03:00"
+    },
+    {
+      "title": "EasyJet é vendida por £ 5,7 bi e agita mercado de aéreas na europa",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "A venda da EasyJet pode impulsionar a competitividade no mercado de aéreas na Europa, potencialmente beneficiando outras empresas do setor.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:30:48.443275-03:00"
+    },
+    {
+      "title": "Fleury (FLRY3): ação dispara mais de 10% após resultados do 2T; o que animou tanto?",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "crescimento de receita acima do esperado e manutenção da disciplina operacional",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:30:54.849181-03:00"
+    },
+    {
+      "title": "Banco do Brasil pede para não participar de audiência sobre BRB",
+      "source": "Investing.com Brasil",
+      "score": 3.0,
+      "motivo": "a noticia pode indicar problemas internos no Banco do Brasil, afetando sua imagem e confianca no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:00.272635-03:00"
+    },
+    {
+      "title": "Juros futuros reduzem chances de alta pelo Fed em setembro após dados do mercado de trabalho",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:31:02.932857-03:00"
+    },
+    {
+      "title": "Redes de pizza, hambúrguer e culinária japonesa fazem fusão para criar grupo de R$ 72 milhões",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:07.032474-03:00"
+    },
+    {
+      "title": "Bath & Body Works declares $0.20 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:09.780197-03:00"
+    },
+    {
+      "title": "Petrus Resources reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:12.413368-03:00"
+    },
+    {
+      "title": "Jerash Holdings declares $0.05 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:15.041702-03:00"
+    },
+    {
+      "title": "PyroGenesis Canada reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:17.673743-03:00"
+    },
+    {
+      "title": "Ametek declares $0.34 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:20.291842-03:00"
+    },
+    {
+      "title": "Naver reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "Resultados financeiros da empresa são relevantes para os investidores",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:23.226944-03:00"
+    },
+    {
+      "title": "Mark Your Calendar: Aug. 12 Is an Important Date for Social Security Retirement Beneficiaries",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:31:27.239762-03:00"
+    },
+    {
+      "title": "Algoma Central Corp Profit Advances In Q2",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:31:29.868621-03:00"
+    },
+    {
+      "title": "Vistra Q2 26 Earnings Conference Call At 10:00 AM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:32.505801-03:00"
+    },
+    {
+      "title": "Sun Life Financial Q2 26 Earnings Conference Call At 10:00 AM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:35.147085-03:00"
+    },
+    {
+      "title": "Telephone And Data Systems Reports Net Income In Q2",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:31:37.796471-03:00"
     }
   ]
 }
