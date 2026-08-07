@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wall Street recua de olho no plano de fechar Ormuz para os EUA e payroll",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:56:52.489386-03:00"
-    },
-    {
-      "title": "Petróleo avança 4% com informações do acordo sobre Ormuz e ataques dos houthis",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:56:55.199149-03:00"
-    },
-    {
       "title": "Inter (INBR32) chega a tombar, mas recupera fôlego; quem tiver ‘estômago’ pode ver ação saltar 70%, vê Genial",
       "source": "Money Times",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T17:56:00.824325-03:00"
+    },
+    {
+      "title": "Groupon expects Q3 billings growth of 4% to 6% while migrating all surfaces to new platform by end of Q3",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:01:06.809204-03:00"
+    },
+    {
+      "title": "Security researchers scanned the Polish web and found courts, hospitals, and airports at risk of hacks",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:01:20.148539-03:00"
     }
   ]
 }
