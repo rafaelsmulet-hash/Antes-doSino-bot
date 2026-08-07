@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Kenvue misses quarterly estimates as inflation, tariffs squeeze margins",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:07:07.383142-03:00"
-    },
-    {
-      "title": "Toyota targets 10.5 million vehicles in 2027 – report",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:07:13.012214-03:00"
-    },
-    {
-      "title": "Cathie Wood invests a combined $28.7 million in TSMC, SpaceX after trimming investments in Amazon, Alphabet and Shopify",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:07:16.333054-03:00"
-    },
-    {
       "title": "Quantum Computing Stocks: D-Wave Earnings, Revenue Miss",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T10:22:01.557056-03:00"
+    },
+    {
+      "title": "US Loses 23,000 Jobs in July, Unemployment Rate Falls",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "Perda de empregos e revisão de contratação nos dois meses anteriores são relevantes para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:25:34.146588-03:00"
+    },
+    {
+      "title": "Waymo's Co-CEO Just Issued a Stark Warning to Every AI Company Building Robots and Cars: 'There's Simply Not An Undo…'",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia pode afetar a percepção dos investidores sobre a indústria de automação e inteligência artificial.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:25:46.763959-03:00"
+    },
+    {
+      "title": "Only 17 superhero movies have ever crossed $1 billion — here they all are",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:25:49.565002-03:00"
     }
   ]
 }
