@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Magalu tem prejuízo de R$ 50,4 milhões no 2º trimestre de 2026",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:59:36.316905-03:00"
-    },
-    {
-      "title": "Energisa tem prejuízo de R$ 40 milhões no 2º tri após lucro 1 ano antes",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:59:39.012769-03:00"
-    },
-    {
-      "title": "Lojas Renner tem lucro de R$ 404 mi e reduz projeção de receita no 2º tri",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:59:41.705806-03:00"
-    },
-    {
-      "title": "Dona da Havaianas, Alpargatas tem lucro de R$ 169,7 milhões, alta de 95%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:59:44.407810-03:00"
-    },
-    {
-      "title": "Grendene lucra R$ 95,3 milhões no 2 tºri, queda de 48,6%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:59:47.095047-03:00"
-    },
-    {
-      "title": "Grupo Fleury lucra R$ 221,9 milhões no 2º tri, alta de 45,7%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:59:49.789798-03:00"
-    },
-    {
-      "title": "Farmacêutica Hypera lucra R$ 490 milhões no 2º tri, alta de 15%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:59:52.481412-03:00"
-    },
-    {
-      "title": "Localiza lucra R$ 1 bilhão no 2º tri e rola R$ 7 bilhões em dívidas",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:59:55.184567-03:00"
-    },
-    {
-      "title": "A fabricante de robôs de US$ 9 bilhões da China que até a DeepSeek  quer um pedaço",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:59:58.077991-03:00"
-    },
-    {
       "title": "As ações “esquecidas” de Wall Street que estão dando um banho nas gigantes da tecnologia",
       "source": "Seu Dinheiro",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T18:21:56.820882-03:00"
+    },
+    {
+      "title": "Raytheon fecha contratos de US$ 1,3 bilhão em defesa antimíssil",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Contratos de defesa antimíssil indicam demanda por segurança e estabilidade, positivo para ações de empresas de defesa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:25:45.530183-03:00"
+    },
+    {
+      "title": "Rússia - Ações fecharam o pregão em queda e o Índice MOEX Russia Index recuou 0,22%",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "queda das ações e do índice MOEX Russia Index indicam impacto negativo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:25:48.564528-03:00"
+    },
+    {
+      "title": "Agricultores argentinos retêm safra de trigo de olho em preços mais altos",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Agricultores retêm safra, aumentando a oferta potencial e pressionando preços a subir",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:25:51.500948-03:00"
+    },
+    {
+      "title": "Senado dos EUA confirma novo embaixador para o Brasil e outros indicados por Trump",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:25:54.265112-03:00"
+    },
+    {
+      "title": "Investors’ Confidence in Bio-Techne Corp. (TECH) Strengthens as Headwind Eases",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:26:09.190579-03:00"
+    },
+    {
+      "title": "Broad-Based Growth Lifted West Pharmaceuticals (WST) in Q2",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:26:11.973549-03:00"
+    },
+    {
+      "title": "ConocoPhillips beats second-quarter earnings as record Permian production supports results",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:26:14.722321-03:00"
+    },
+    {
+      "title": "PPL Corporation Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:26:17.467536-03:00"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Target Stock?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:26:20.183722-03:00"
     }
   ]
 }
