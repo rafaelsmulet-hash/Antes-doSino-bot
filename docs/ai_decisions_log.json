@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Prediction: The S&P 500 Will Pull Back This August. Here's What History Says About the Damage.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:16:35.907031-03:00"
-    },
-    {
-      "title": "Viatris Posts Wider Loss In Q2; Raises 2026 Guidance",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:16:41.556534-03:00"
-    },
-    {
-      "title": "Lessons from the Iran war: China’s oil buffer and energy resilience, tested",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a capacidade da China de lidar com uma crise energética, o que pode influenciar a demanda por petróleo e, consequentemente, os preços.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:16:48.589113-03:00"
-    },
-    {
-      "title": "Antipodes Exited Sanofi (SNY) After Repeated Pipeline Setbacks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:16:51.662205-03:00"
-    },
-    {
-      "title": "Daily – Vickers Top Buyers & Sellers for 08/06/2026",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:16:57.555939-03:00"
-    },
-    {
-      "title": "A former T-Mobile exec shares his strategy for working with difficult colleagues",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:17:00.516046-03:00"
-    },
-    {
-      "title": "Stocks Waver as Traders Await Iran Deal, Jobs Data: Markets Wrap",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a direção das ações e os investidores estão aguardando dados importantes.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:20:47.404823-03:00"
-    },
-    {
-      "title": "Scotiabank's Warrier on Hedge Funds' Tough July",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia destaca um mês difícil para os fundos de hedge, o que pode influenciar a confiança dos investidores no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:20:51.104562-03:00"
-    },
-    {
-      "title": "Bradesco: 10º tri seguido de alta do lucro, mas qualidade dos ativos divide mercado",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:20:58.570106-03:00"
-    },
-    {
-      "title": "AtlasIntel: 47% dos brasileiros acreditam em novo escândalo de corrupção em 6 meses",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:21:04.818223-03:00"
-    },
-    {
-      "title": "Ibovespa futuro sobe aos 178 mil pontos com Copom e Petrobras (PETR4); dólar cai a R$ 5,12",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:21:12.414061-03:00"
-    },
-    {
-      "title": "Por que as ações da Bentley Systems estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:21:18.275953-03:00"
-    },
-    {
       "title": "Alphabet entra no mercado de títulos com emissão de 10 tranches para financiar IA",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T10:36:19.167050-03:00"
+    },
+    {
+      "title": "EasyJet é vendida por £ 5,7 bi e agita mercado de aéreas na europa",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Venda de uma das principais empresas de baixo custo da Europa pode ter impacto significativo no mercado de aéreas da região",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:40:37.493150-03:00"
+    },
+    {
+      "title": "O que diz a lei de Milei que levou milhares às ruas na Argentina",
+      "source": "Exame",
+      "score": 1.0,
+      "motivo": "noticia sobre política e lei, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:40:42.288115-03:00"
+    },
+    {
+      "title": "Exclusivo: São Paulo sediará encontro global de cidades inteligentes",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:40:45.237022-03:00"
+    },
+    {
+      "title": "Kevin O’Leary, aka ‘Mr. Wonderful,’ on crypto, winning in AI and 3 things all business owners must know",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:40:48.035806-03:00"
+    },
+    {
+      "title": "Interfor GAAP EPS of $0.02",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento de grande impacto no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:40:51.052335-03:00"
+    },
+    {
+      "title": "Grove outlines $142.5M-$152.5M 2026 net revenue outlook while leaning into Amazon and dropship expansion",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:40:53.676683-03:00"
+    },
+    {
+      "title": "Kingsway Financial Services reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:40:56.392362-03:00"
+    },
+    {
+      "title": "Traders scale back Fed hike odds after weak jobs report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:40:58.998145-03:00"
+    },
+    {
+      "title": "SmartCentres REIT reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:41:01.598170-03:00"
+    },
+    {
+      "title": "BofA says administration unlikely to let tighter financial conditions derail bull market",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:41:04.249391-03:00"
+    },
+    {
+      "title": "PPL Reaffirms FY26 Outlook - Update",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:41:12.619292-03:00"
+    },
+    {
+      "title": "Circle’s USDC volume jumps 151%, but revenue tells different story",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:41:19.718058-03:00"
     }
   ]
 }
