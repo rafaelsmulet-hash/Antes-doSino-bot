@@ -6,6 +6,19 @@ on:
 permissions:
   contents: write
 
+# Serializa as execucoes do bot: o disparo externo roda a cada poucos
+# minutos, mas uma execucao pode demorar mais que isso (FFmpeg, chamadas
+# de IA, geracao de arte). Sem essa trava, duas execucoes rodavam em
+# paralelo sobre o MESMO checkout (mesmo social_queue.json, mesmo offset
+# do Telegram, mesmos estados de opening/midday/closing/breaking) e a
+# que dava push por ultimo sobrescrevia o trabalho da outra - inclusive
+# itens ja aprovados, causando o loop de "ID nao encontrado" +
+# reenvio duplicado de conteudo para aprovacao. cancel-in-progress:false
+# enfileira a proxima chamada em vez de cancelar a que esta rodando.
+concurrency:
+  group: antes-do-sino-bot
+  cancel-in-progress: false
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
@@ -42,7 +55,14 @@ jobs:
           git add -A
           if ! git diff --staged --quiet; then
             git commit -m "Atualiza historico de noticias e portal"
-            git pull origin main --no-rebase -X ours
+            # Com a fila de concorrencia acima, este pull normalmente e um
+            # fast-forward (nao ha commits divergentes). Se ainda assim
+            # houver conflito, NAO usamos "-X ours": isso descartava em
+            # silencio o lado remoto (podendo apagar item ja aprovado ou
+            # o offset do Telegram ja avancado). Preferimos falhar o job
+            # e deixar a proxima execucao tentar de novo com estado
+            # integro, em vez de corromper o historico silenciosamente.
+            git pull --rebase origin main
             git push origin main
           else
             echo "Nenhuma alteracao para salvar."
