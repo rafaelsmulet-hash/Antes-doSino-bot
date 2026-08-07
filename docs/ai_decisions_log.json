@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:01:30.097971-03:00"
-    },
-    {
-      "title": "Premium Brands Non-GAAP EPS of C$1.53, revenue of C$2.4B",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois divulga os resultados financeiros da empresa, que podem influenciar a percepção dos investidores sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:06:01.231867-03:00"
-    },
-    {
-      "title": "SwissCom reports 1H results",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "O resultado é relevante para a empresa, mas não tem impacto direto no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:06:04.335054-03:00"
-    },
-    {
-      "title": "Roche introduces two new Cyclospora tests amid U.S. outbreak",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas pode ter alguma relevância para a indústria de saúde e biotecnologia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:06:07.534235-03:00"
-    },
-    {
       "title": "Old National Bancorp Q2 GAAP EPS of $0.65, revenue of $740.1M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T13:41:14.605299-03:00"
+    },
+    {
+      "title": "The Free Money AI Bond Buildout Is Gone",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "Aumento do custo de financiamento pode afetar as empresas de tecnologia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T13:45:53.837306-03:00"
+    },
+    {
+      "title": "Under Armour Cuts Sales View on Softer Demand Around the World",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A empresa reduziu a previsão de queda nas vendas e espera queda nas vendas em várias regiões, o que pode afetar o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:45:56.902389-03:00"
+    },
+    {
+      "title": "Bloomberg Surveillance 8/7/2026",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T13:45:59.516224-03:00"
+    },
+    {
+      "title": "Trump teased an Iran deal that didn't come, but markets soared. Here’s why it keeps happening",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:46:16.406662-03:00"
     }
   ]
 }
