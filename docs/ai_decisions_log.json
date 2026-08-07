@@ -1,186 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SAT Schism Roils University of California System",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada a eventos financeiros ou econômicos diretos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:41:24.904408-03:00"
-    },
-    {
-      "title": "OpenAI Models Joined Forces Months Ahead of Hugging Face Hack",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de tecnologia, mas não tem um impacto imediato e concreto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:41:27.935903-03:00"
-    },
-    {
-      "title": "Ishbia’s Mortgage Firm Suffers Record Drop on Dividend Halt",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "motivo": "A suspensão de dividendos e o prejuízo significativo são eventos importantes para a empresa e podem afetar o mercado de ações.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:41:31.565831-03:00"
-    },
-    {
-      "title": "Voepass: Pilotos relataram falha no sistema de gelo e comparam aeronave a ‘fusquinha’",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "acidente aéreo não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:41:35.383456-03:00"
-    },
-    {
-      "title": "Operação da PF em MT investiga desvio por meio de fundos do Master",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há conexão direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:41:38.200067-03:00"
-    },
-    {
-      "title": "Ouro cai com Oriente Médio e Fed no radar",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "noticia especifica e materialmente relevante sobre o preco do ouro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:41:43.050781-03:00"
-    },
-    {
-      "title": "Nubank vê espaço para triplicar operação no Brasil e potencial de atingir mesmo porte no México",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Nubank visa expansão e crescimento significativo no Brasil e no México",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:41:46.088266-03:00"
-    },
-    {
-      "title": "River City Bank estreia na Nasdaq após IPO de US$ 121,5 milhões",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "IPO bem-sucedido pode atrair investidores e aumentar liquidez da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:41:48.967523-03:00"
-    },
-    {
-      "title": "Por que a ação do GBank Financial está subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A ação do GBank Financial está subindo devido a uma notícia positiva sobre a empresa, mas não especificada no texto.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:41:51.821456-03:00"
-    },
-    {
-      "title": "Por que as ações da Kraft Heinz estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ações da Kraft Heinz estão caindo devido a declínio no desempenho financeiro da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:41:54.608994-03:00"
-    },
-    {
-      "title": "Por que as gigantes de tecnologia pretendem gastar até US$ 1 trilhão em IA nos próximos anos",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "Investimentos maciços em IA devem impulsionar crescimento econômico e demanda por habilidades tecnológicas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:41:57.732422-03:00"
-    },
-    {
-      "title": "Fórmula 1: como comprovar a meia-entrada para o GP de São Paulo?",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira ou econômica",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:42:00.545825-03:00"
-    },
-    {
-      "title": "Quem são os 13 candidatos à Presidência nas eleições 2026",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:42:03.411010-03:00"
-    },
-    {
-      "title": "Real Madrid confirma contrato com Vini Jr. até 2032",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:42:06.262588-03:00"
-    },
-    {
-      "title": "EXCLUSIVO: Insider ganha concorrente com nova linha tecnológica da Shein",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A Shein lança uma nova linha de moda funcional no Brasil, o que pode ser positivo para a empresa e potencialmente impactar o mercado de varejo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:42:09.194069-03:00"
-    },
-    {
-      "title": "Ignorar a natureza na gestão de risco pode custar US$ 15 trilhões por ano",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A noticia se refere a uma conferencia sobre biodiversidade e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:42:12.014969-03:00"
-    },
-    {
-      "title": "Internacional fecha patrocínio com Shopee para jogos contra Corinthians e Palmeiras",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:42:14.645229-03:00"
-    },
-    {
-      "title": "Balança comercial fecha julho com superávit de US$ 7,07 bilhões; China segue como maior parceiro",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia apresenta um superávit no balança comercial, indicando um desempenho positivo da economia brasileira, mas sem impacto imediato significativo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:42:17.590863-03:00"
-    },
-    {
-      "title": "Amazon lança IA que entrevista candidatos e acelera contratações em massa",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:42:20.205272-03:00"
-    },
-    {
-      "title": "Governo aponta azeites vendidos como extravirgem fora da classificação; veja quais",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:42:22.834018-03:00"
-    },
-    {
       "title": "Artesian Resources Corporation declares $0.3199 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17819,186 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T17:26:23.056681-03:00"
+    },
+    {
+      "title": "US Army Wants to Let Companies Test Weapons Faster",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:01.301058-03:00"
+    },
+    {
+      "title": "Markets Rally on Weak Jobs Report | Closing Bell",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Relatório de emprego fraco é visto como positivo para os mercados, pois reduz a probabilidade de aumento de juros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T17:31:04.304443-03:00"
+    },
+    {
+      "title": "Wall Street Risk Complex Surges Anew Amid Deluge of Fresh Cash",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T17:31:06.981230-03:00"
+    },
+    {
+      "title": "Dia da Cerveja: veja onde comemorar a data em São Paulo",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:13.082031-03:00"
+    },
+    {
+      "title": "FIGS expects ~20% 2026 revenue growth while raising operating margin outlook to ~10.8%",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:15.899331-03:00"
+    },
+    {
+      "title": "Concentra targets $2.325B-$2.375B 2026 revenue and $485M-$495M adjusted EBITDA as CEO transition set for November 1",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:18.612724-03:00"
+    },
+    {
+      "title": "Treace medical outlines 2026 revenue of $204M-$212M as new product launches broaden foot and ankle reach",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:21.329416-03:00"
+    },
+    {
+      "title": "Ford plans four-door Mustang - report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:23.960842-03:00"
+    },
+    {
+      "title": "Easing Interest Rate Concerns Contribute To Strength On Wall Street",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T17:31:27.892641-03:00"
+    },
+    {
+      "title": "Airbnb vs. Coca-Cola: Which Consumer Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T17:31:30.565147-03:00"
+    },
+    {
+      "title": "Why Fermi Stock Collapased 37.9% in July",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:33.198047-03:00"
+    },
+    {
+      "title": "Bets, fim da taxa das blusinhas e Copa do Mundo: CEO da Lojas Renner (LREN3) explica o que derrubou as vendas, o guidance e as ações",
+      "source": "Seu Dinheiro",
+      "score": 8.0,
+      "motivo": "redução do guidance e desempenho abaixo do esperado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:39.455515-03:00"
+    },
+    {
+      "title": "Custos do setor elétrico ameaçam “apagar” corrida para o mercado livre de energia",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:45.626167-03:00"
+    },
+    {
+      "title": "Morning Bid: Gold stirs",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:48.356094-03:00"
+    },
+    {
+      "title": "Nvidia’s (NVDA) Amkor (AMKR) Deal Adds Packaging Muscle Ahead Of Earnings",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:51.042653-03:00"
+    },
+    {
+      "title": "eBay beats second-quarter expectations but mixed guidance limits share gains",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:53.727111-03:00"
+    },
+    {
+      "title": "Stock Market Suffers AI Sell-Off In July. What's Next?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:56.380452-03:00"
+    },
+    {
+      "title": "Why Investor Returns Don’t Always Match Fund Performance",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:31:59.038113-03:00"
+    },
+    {
+      "title": "First look: mixed performance at RXO with some strong points",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:32:01.699641-03:00"
+    },
+    {
+      "title": "Walmart Earnings: Bull Put Spread Trade",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:32:04.337359-03:00"
     }
   ]
 }
