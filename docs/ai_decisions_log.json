@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Via Transportation, Inc. Non-GAAP EPS of -$0.01 beats by $0.01, revenue of $136M beats by $2.66M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:21.612040-03:00"
-    },
-    {
-      "title": "Goldman Sachs' new oil price target sparks wild onchain trading",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:31.948537-03:00"
-    },
-    {
-      "title": "A 'Market Wizard' Is Running One of the Worst ETFs of 2026",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:34.653949-03:00"
-    },
-    {
-      "title": "Westlake Chemical Partners LP Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:37.352624-03:00"
-    },
-    {
-      "title": "Wayfair Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:40.035612-03:00"
-    },
-    {
-      "title": "Alphabet Is Worth $4.6 Trillion. Here's What Has to Happen for the Stock to Double by 2032.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:42.766853-03:00"
-    },
-    {
-      "title": "A former T-Mobile exec shares his strategy for working with difficult colleagues",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:45.858268-03:00"
-    },
-    {
-      "title": "Hexacampeão francês é vendido por 1 euro e ganha nova chance de sobreviver após crise",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre esporte e negociação de um clube de futebol",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:40:36.601208-03:00"
-    },
-    {
-      "title": "Infantino pede desculpas, reconhece erros e tenta fim à turbulência de sua gestão",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre gestão de entidade esportiva, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:40:39.419750-03:00"
-    },
-    {
-      "title": "HBO Max vira motor de lucro da Warner antes de fusão com Paramount",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A notícia destaca o aumento do lucro da Warner devido ao setor de streaming, o que é positivo para a empresa e pode influenciar o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:40:44.069751-03:00"
-    },
-    {
-      "title": "Aos 167 anos, gigante dos carros-fortes fatura R$ 27 bi — e tem um plano para um mundo sem dinheiro",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:40:47.008564-03:00"
-    },
-    {
-      "title": "Is Microsoft Still Undervalued After Its 25% Post-Earnings Rally?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:40:52.513047-03:00"
-    },
-    {
-      "title": "Evergy, Inc. Q2 Profit Advances",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:40:58.570382-03:00"
-    },
-    {
-      "title": "JXN Crosses Above Average Analyst Target",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:41:04.628290-03:00"
-    },
-    {
       "title": "UroGen Pharma Reaches Analyst Target Price",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T09:41:52.617308-03:00"
+    },
+    {
+      "title": "Minério de ferro sobe pela 3ª sessão consecutiva devido a preocupações com oferta",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "greve pode afetar oferta, mas não é um evento de grande impacto",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:01.022413-03:00"
+    },
+    {
+      "title": "Rio mantém alerta para ventos fortes nesta sexta; rede municipal suspende aulas",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:03.796654-03:00"
+    },
+    {
+      "title": "Por que as ações da PDF Solutions estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ação de uma empresa específica está subindo, o que é relevante para os traders que seguem esse mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:08.713439-03:00"
+    },
+    {
+      "title": "Ações da QumulusAI disparam com acordo de GPU e partilha de lucros com fundo de hedge",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:11.348009-03:00"
+    },
+    {
+      "title": "Por que as ações da POET Technologies estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:13.946517-03:00"
+    },
+    {
+      "title": "Ações da Newmark caem com saída do CEO Barry Gosin",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:16.543442-03:00"
+    },
+    {
+      "title": "Futuros da TSX sobem antes de dados cruciais de emprego",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:19.166214-03:00"
+    },
+    {
+      "title": "Citi reduz preço-alvo da Micron e vê pico dos chips de memória no 2º tri de 2027",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:21.770337-03:00"
+    },
+    {
+      "title": "Maior câmera do mundo registra mais de 500 mil galáxias em imagem inédita",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:24.633444-03:00"
+    },
+    {
+      "title": "SIGA targets FDA submission in H1 2027 while pursuing a new multiyear U.S. procurement contract",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:27.397927-03:00"
+    },
+    {
+      "title": "Kestrel Group Ltd GAAP EPS of -$1.03, revenue of $6.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:29.993418-03:00"
+    },
+    {
+      "title": "Xenetic Biosciences reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:32.579923-03:00"
+    },
+    {
+      "title": "Stock index futures muted as investors await July jobs report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:46:35.175732-03:00"
+    },
+    {
+      "title": "Petrobras reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:46:37.761322-03:00"
     }
   ]
 }
