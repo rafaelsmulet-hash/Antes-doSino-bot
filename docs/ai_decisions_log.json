@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "PSB em MG segue aliança nacional e indica Jarbas Soares Júnior como vice de Patrus",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há informações financeiras ou econômicas relevantes no texto",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:12.327539-03:00"
-    },
-    {
-      "title": "Mendonça: Num mundo ideal não deveria existir decisão monocrática no Tribunal",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:14.958486-03:00"
-    },
-    {
-      "title": "TSE amplia prazo para Meta preservar dados de perfis investigados em ação do PL",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:17.746078-03:00"
-    },
-    {
-      "title": "“Flávio tem fragilidade de articulação enorme”, avalia líder do Republicanos",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:08:20.377331-03:00"
-    },
-    {
-      "title": "PGR defende que Buzzi perca cargo de ministro do STJ após acusação de assédio",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:08:23.006567-03:00"
-    },
-    {
-      "title": "KitKat terá mega stand no Rock in Rio com ativações e brindes com foco na geração Z",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:08:25.662048-03:00"
-    },
-    {
       "title": "XP: Setor de planos de saúde encerra 2º tri com crescimento sólido",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T15:01:44.084457-03:00"
+    },
+    {
+      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A notícia indica uma redução inesperada da atividade fabril da China, o que pode ter impacto na economia global.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:05:48.665736-03:00"
+    },
+    {
+      "title": "OpenAI pauses work on upcoming Astra model over cyber capabilities",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A suspensão do desenvolvimento do modelo pode afetar a confiança dos investidores na empresa e impactar seu valor de mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:05:55.933763-03:00"
+    },
+    {
+      "title": "European Markets Rise On Earnings, Economic Data",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T15:06:04.861977-03:00"
+    },
+    {
+      "title": "Why Palantir Technologies Stock Skyrocketed (Again) Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:06:07.655450-03:00"
+    },
+    {
+      "title": "Friday 8/7 Insider Buying Report: HLI, WCC",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:06:10.396040-03:00"
+    },
+    {
+      "title": "Live Q&A: How a 23-year-old with no experience built a global toy company",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não contém informações financeiras ou de mercado relevantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:06:21.294055-03:00"
     }
   ]
 }
