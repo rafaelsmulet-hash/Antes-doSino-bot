@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Naufrágio de mais de 160 anos escondia champanhe destinado ao czar da Rússia",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:33:15.792695-03:00"
-    },
-    {
-      "title": "SA Asks: After last Friday's sell-off, is Apple a buy, hold, or sell?",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:33:18.858806-03:00"
-    },
-    {
-      "title": "UMH outlines plan to fill 800+ new rental homes in 2026 while maintaining normalized FFO guidance of $0.98 to $1.04 per share",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:33:21.533828-03:00"
-    },
-    {
       "title": "Dixie Group GAAP EPS of $0.07, revenue of $68.6M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T16:11:27.716226-03:00"
+    },
+    {
+      "title": "NYC Economic Head on City-Run Grocery Stores, Biz Outlook",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações específicas sobre impacto econômico imediato",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:16:01.835966-03:00"
+    },
+    {
+      "title": "Quartas de final da Copa do Brasil: veja quando será o sorteio",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:16:07.523270-03:00"
+    },
+    {
+      "title": "What led to Salad and Go’s downfall",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é sobre a falência de uma empresa de delivery, o que não é relevante para o mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:16:17.318223-03:00"
     }
   ]
 }
