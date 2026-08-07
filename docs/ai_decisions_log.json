@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "How to use options to trade stocks around an earnings announcement",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:58:11.538599-03:00"
-    },
-    {
-      "title": "The last time value stocks beat growth by this much was 2022 — the year of the last major bear market",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:58:14.245930-03:00"
-    },
-    {
-      "title": "As Alphabet burns through cash on AI, it’s turning back to the bond market",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:58:16.953531-03:00"
-    },
-    {
-      "title": "Micron’s stock claws back to buck the memory-chip selloff",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:58:19.648723-03:00"
-    },
-    {
-      "title": "Chipotle’s stock extends its declines, but analysts aren’t sweating the jalapeno scare",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:58:22.357912-03:00"
-    },
-    {
-      "title": "Trump signs order setting 15% tariff, price floors on polysilicon imports",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:58:25.162688-03:00"
-    },
-    {
-      "title": "GoodRx projects $790M-$805M revenue and $240M-$250M adjusted EBITDA as Pharma Direct targets 70%+ growth",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:58:27.871315-03:00"
-    },
-    {
-      "title": "Western Midstream outlines 2026 adjusted EBITDA of $2.75B-$2.95B while integrating Brazos acquisition",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:58:30.573200-03:00"
-    },
-    {
-      "title": "CarParts.com targets free cash flow positive in 2026 with A-Premium near $50M run rate and 300,000-package last-mile goal",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:58:33.294896-03:00"
-    },
-    {
-      "title": "HCI outlines over $10M per quarter reinsurance savings as GEICO begins selling new product",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:58:36.009165-03:00"
-    },
-    {
-      "title": "Immunocore outlines TEBE-AM data as early as end of 2026 while scaling KIMMTRAK beyond ~1,000 patients per year",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:58:38.729293-03:00"
-    },
-    {
-      "title": "StoneX expects RJO cost synergies to reach a $50M run rate by end of Q1 FY 2027 as volatility moderates",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:58:41.439960-03:00"
-    },
-    {
       "title": "Sunoco To Acquire Offen Petroleum",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T18:12:11.057771-03:00"
+    },
+    {
+      "title": "Bolsas de NY sobem com payroll mais fraco que o esperado sugerindo Fed mais brando",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Payroll mais fraco que o esperado sugere que a Fed pode manter uma política monetária mais relaxada",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T18:15:43.476247-03:00"
+    },
+    {
+      "title": "Trump diz que juro na Suíça é baixo porque é subsidiado por superávit com os EUA",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "Comentário de Trump não é uma notícia de mercado financeiro relevante, mas sim uma declaração política que pode ter impacto negativo no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:15:46.570431-03:00"
+    },
+    {
+      "title": "Raytheon wins two U.S. defense contracts worth $1.28B: Full details inside",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:15:51.347339-03:00"
+    },
+    {
+      "title": "Check-Cap announces 1-for-7 reverse stock split",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:15:54.006906-03:00"
+    },
+    {
+      "title": "NetApp Moves Up In Market Cap Rank, Passing Kenvue",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T18:16:00.019032-03:00"
+    },
+    {
+      "title": "FII TRCO11 sofre novo calote dias após receber aluguel atrasado com multa",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T18:16:05.849131-03:00"
+    },
+    {
+      "title": "AMD's Beat-and-Raise Q2 Earnings Shows Just How High the AI Bar Is",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:16:10.412024-03:00"
+    },
+    {
+      "title": "IonQ Earnings Top Views. Investor Day Set For Sept. 8 Amid SkyWater Deal.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:16:13.183291-03:00"
+    },
+    {
+      "title": "Dominion Energy Stock: Is Wall Street Bullish or Bearish?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:16:15.871181-03:00"
+    },
+    {
+      "title": "Jamie Dimon warns record margin debt could trigger market disruption",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:16:18.562107-03:00"
+    },
+    {
+      "title": "Cathie Wood invests a combined $28.7 million in TSMC, SpaceX after trimming investments in Amazon, Alphabet and Shopify",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:16:21.324485-03:00"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Altria Group Stock?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:16:24.007901-03:00"
     }
   ]
 }
