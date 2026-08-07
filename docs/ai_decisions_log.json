@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "UroGen Pharma Reaches Analyst Target Price",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:41:10.774895-03:00"
-    },
-    {
-      "title": "TripAdvisor, Inc. Bottom Line Retreats In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:41:16.436477-03:00"
-    },
-    {
-      "title": "BENTLEY SYSTEMS INC Bottom Line Rises In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:41:19.059464-03:00"
-    },
-    {
-      "title": "This Comment From Apple CEO Tim Cook Supports Buying the Dip in Micron Stock",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:41:22.173846-03:00"
-    },
-    {
-      "title": "Comitê dos estados estima futuro imposto sobre o consumo brasileiro de 28% em 2033; taxa supera a dos países da OCDE",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:41:29.726204-03:00"
-    },
-    {
-      "title": "Reino Unido libera compra da Warner Bros. Discovery pela Paramount; operação ainda enfrenta batalha judicial nos EUA",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:41:35.850062-03:00"
-    },
-    {
-      "title": "Copom não diz, mas encaminha novo corte de juros em setembro, último do ano",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "Corte de juros previsto, mas ainda incerto",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:41:42.640566-03:00"
-    },
-    {
-      "title": "Middle East War Triggers New Global Refining Boom",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:41:49.884443-03:00"
-    },
-    {
-      "title": "Why Bank of America Remains Bullish on Tesla Despite Weaker Q2 Profitability",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:41:52.547886-03:00"
-    },
-    {
-      "title": "How Much Do You Really Need Invested to Replace a $100,000 Salary With Dividends?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:41:55.206219-03:00"
-    },
-    {
-      "title": "Google's AI reshuffle: Chief scientist Jeff Dean exits and Demis Hassabis steps down as DeepMind CEO",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:41:58.295141-03:00"
-    },
-    {
-      "title": "Siemens aproveita boom da IA para registrar maior lucro industrial de todos os tempos",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Demanda por centros de dados e tecnologia de IA deve impulsionar crescimento da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:45:53.603703-03:00"
-    },
-    {
       "title": "Maior contratação de sua história: Real Madrid fecha com Diomande por até R$ 828 mi",
       "source": "InfoMoney",
       "score": 5.0,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T09:46:37.761322-03:00"
+    },
+    {
+      "title": "Saques na poupança em julho superam os depósitos em R$ 7,152 bilhões",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Saques superando depósitos indica liquidez excessiva, o que pode pressionar taxas de juros a baixar",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:50:48.771480-03:00"
+    },
+    {
+      "title": "Alerta Severo: entenda alertas da Defesa Civil por risco de chuva e ventos no Rio",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:50:51.479765-03:00"
+    },
+    {
+      "title": "Is XRP a Millionaire-Maker Cryptocurrency?",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro em geral, mas sim sobre uma análise específica de uma criptomoeda.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:50:57.793171-03:00"
+    },
+    {
+      "title": "What Does a Hilton Executive's Sale of Nearly 2,000 Shares Mean for Investors?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:51:00.418802-03:00"
+    },
+    {
+      "title": "Tredegar Corporation Reports Increase In Q2 Bottom Line",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:51:03.038327-03:00"
+    },
+    {
+      "title": "Can You Retire Comfortably on $750,000? Here's the Reality.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:51:05.655815-03:00"
+    },
+    {
+      "title": "Wall Street Might Open Moderately Higher",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:51:08.262653-03:00"
+    },
+    {
+      "title": "Array Digital Infrastructure Earnings Up In Q2; Lifts FY26 Guidance",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:51:10.881047-03:00"
+    },
+    {
+      "title": "Fiera Capital Corp. Q2 Sales Decline",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:51:13.547711-03:00"
+    },
+    {
+      "title": "PPL Corporation Bottom Line Advances In Q2",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:51:16.161232-03:00"
+    },
+    {
+      "title": "Analyst Report: United Parcel Service Inc",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:51:23.830165-03:00"
+    },
+    {
+      "title": "Small Business Forum’s Report to Congress Highlights Recommendations to Improve Capital-Raising Policy",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:51:27.252108-03:00"
     }
   ]
 }
