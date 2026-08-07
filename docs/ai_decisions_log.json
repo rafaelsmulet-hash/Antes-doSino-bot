@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SNEL11: fundo lucra R$ 6,36 mi, reduz custos e ultrapassa marca de 110 mil cotistas",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T20:36:25.130080-03:00"
-    },
-    {
-      "title": "Oil Extends Losses After US, Qatar Signal Progress on Iran Draft Deal",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T20:36:28.840604-03:00"
-    },
-    {
       "title": "Amazon Leads Dow Decliners on News Bezos to Sell More Than $4B Worth of Stock",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T22:11:42.053733-03:00"
+    },
+    {
+      "title": "Por que as ações da Moderna reverteram os ganhos e fecharam em queda?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "a queda das ações da Moderna afeta negativamente o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T22:15:58.865313-03:00"
+    },
+    {
+      "title": "Futuros americanos sobem com resultados positivos; payroll em foco",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "resultados positivos nos futuros americanos indicam confiança no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T22:16:01.662243-03:00"
     }
   ]
 }
