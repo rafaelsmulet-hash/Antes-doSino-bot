@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bradesco (BBDC4) e Wall Street derrubam Ibovespa de volta aos 175 mil pontos; dólar recua a R$ 5,10",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:56:47.066168-03:00"
-    },
-    {
-      "title": "Dólar cai a R$ 5,10 com corte da Selic e política monetária dos EUA no radar",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:56:49.787649-03:00"
-    },
-    {
       "title": "Wall Street recua de olho no plano de fechar Ormuz para os EUA e payroll",
       "source": "Money Times",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-07T17:51:33.218817-03:00"
+    },
+    {
+      "title": "Ibovespa cai com blue chips e balanços e perde 3,08% na semana; dólar vai a R$ 5,08",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "queda da Ibovespa e valor do dólar",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T17:55:48.616967-03:00"
+    },
+    {
+      "title": "Portal blasting concludes at Amex Gold’s Perron Gold Project",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de mineração e pode afetar a valorização da ação da Amex Gold.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:56:00.824325-03:00"
     }
   ]
 }
