@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "IFIX recua 0,06%, fechando novamente em leve queda",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T19:36:04.095726-03:00"
-    },
-    {
-      "title": "Strong finish: Ocean lines raise profit outlook by 200%",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T19:36:11.316815-03:00"
-    },
-    {
-      "title": "Caterpillar stock pops on record quarterly revenue",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T19:36:13.947973-03:00"
-    },
-    {
-      "title": "Dollar Pressured by Strength in Stocks and Lower Crude Prices",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T19:36:16.594463-03:00"
-    },
-    {
-      "title": "Caterpillar Stock Pulls Up the Dow Thanks to Demand From Data Centers",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A demanda de centros de dados é um indicador positivo para a economia e, consequentemente, para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T19:36:19.789151-03:00"
-    },
-    {
-      "title": "Volume de serviços recua 0,4% em maio",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T19:40:46.945515-03:00"
-    },
-    {
-      "title": "SP2B estreia no Ibirapuera reunindo inovação, negócio e cultura; expectativa é de 500 mil visitantes",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "evento não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-05T19:40:51.640953-03:00"
-    },
-    {
-      "title": "Tenaris Q2 Earnings Decline",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado pois afeta os resultados financeiros da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T19:40:57.795906-03:00"
-    },
-    {
-      "title": "AI Trailblazers Nvidia, Palantir, Alphabet, and Meta Are Shaking Wall Street to Its Core With This $3.4 Billion Warning",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-05T19:41:04.007988-03:00"
-    },
-    {
       "title": "2 Energy Dividend Stocks to Buy in August for Steady Income",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-06T21:21:09.955903-03:00"
+    },
+    {
+      "title": "Mexico Arrests Ex-Governor Over 2014 Student Abduction Case",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T21:25:39.017987-03:00"
+    },
+    {
+      "title": "Lotofácil hoje, concurso 3755: confira o resultado sorteado nesta quinta (6)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de um concurso de loteria não afeta o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T21:25:42.748698-03:00"
+    },
+    {
+      "title": "Kit Connor na Marvel? Entenda os rumores sobre o novo Ciclope dos X-Men",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre entretenimento, sem impacto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T21:25:47.498915-03:00"
+    },
+    {
+      "title": "Shake Shack Revenue Climbs, Profit Slips on Higher Costs",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T21:25:57.052635-03:00"
+    },
+    {
+      "title": "Assurant, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T21:25:59.702572-03:00"
+    },
+    {
+      "title": "Greenlight Capital Re, Ltd. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T21:26:02.365983-03:00"
+    },
+    {
+      "title": "SpaceX Spending Is Incredible, Unbelievable, Google-Like",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T21:26:05.031441-03:00"
+    },
+    {
+      "title": "Solid Power, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-06T21:26:07.717044-03:00"
+    },
+    {
+      "title": "Meta ordered to pay $567 million into abatement fund as remedy to child harms case in New Mexico",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-06T21:26:10.872413-03:00"
     }
   ]
 }
