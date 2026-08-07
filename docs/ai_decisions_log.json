@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Soldiers have to plan out every step just to reach Ukraine's deadly 'zero line.' A sergeant said it's like 'Mission Impossible.'",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:06:40.208307-03:00"
-    },
-    {
-      "title": "Rising Cocoa Prices Push Processors Outside the Candy Aisle",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre um evento específico de mercado, mas sim sobre a situação de uma empresa de chocolate.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:10:36.673717-03:00"
-    },
-    {
-      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
-      "source": "WSJ Markets",
-      "score": 4.0,
-      "motivo": "A queda das ações de Nvidia e outras empresas de infraestrutura de inteligência artificial é relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:10:40.213882-03:00"
-    },
-    {
-      "title": "Lucro do Banco ABC aumenta 5,4% no 2º tri",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:10:43.827927-03:00"
-    },
-    {
-      "title": "O plano de R$ 40 milhões da Divino Fogão para sair do shopping e levar bufê livre para a rua",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:10:51.529994-03:00"
-    },
-    {
-      "title": "Hedge funds forced out of tech stocks may leave the market at the mercy of retail traders",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:10:54.816167-03:00"
-    },
-    {
-      "title": "Vistance Networks Non-GAAP EPS of $0.12 misses by $0.15, revenue of $319.6M misses by $175.9M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:11:00.586604-03:00"
-    },
-    {
-      "title": "Celsius Holdings slides after sales for its namesake brand turn negative",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:11:03.247666-03:00"
-    },
-    {
-      "title": "PENN Entertainment Non-GAAP EPS of $0.44 beats by $0.18, revenue of $1.86B in-line",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:11:06.204763-03:00"
-    },
-    {
-      "title": "Evolent Health Non-GAAP EPS of $0.02 beats by $0.04, revenue of $652.2M beats by $52.41M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:11:08.875400-03:00"
-    },
-    {
-      "title": "Open Text Non-GAAP EPS of $1.23 beats by $0.19, revenue of $1.35B beats by $30M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:11:11.533538-03:00"
-    },
-    {
-      "title": "Warner Bros. Discovery GAAP EPS of $0.06 beats by $0.16, revenue of $8.7B misses by $480M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:11:14.231016-03:00"
-    },
-    {
-      "title": "Optimum Communications GAAP EPS of -$0.67 misses by $0.52, revenue of $2.02B misses by $20M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:11:16.931557-03:00"
-    },
-    {
-      "title": "BTG Pactual, Lavvi e Engie informam pagamento de proventos",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Distribuição de proventos positiva para ações da BTG Pactual",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:16:36.401383-03:00"
-    },
-    {
-      "title": "Reviravolta em MG: União-PP retoma apoio a Mateus Simões e isola Marcelo Aro",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia não é sobre mercado financeiro, economia ou negocios",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:16:39.256141-03:00"
-    },
-    {
-      "title": "Smartfit tem alta de 8% no lucro recorrente do 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a alta de lucro recorrente é um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:16:44.753054-03:00"
-    },
-    {
-      "title": "Vivara tem lucro líquido de R$156,7 mi no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Vivara apresentou resultados financeiros positivos, o que é considerado um sinal positivo para a empresa e potencialmente para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:16:47.731535-03:00"
-    },
-    {
       "title": "Por que as ações da L’Oreal estão subindo hoje?",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T08:56:38.623076-03:00"
+    },
+    {
+      "title": "Copper Heads for New Highs as US and China Squeeze Buffers",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia sugere que o mercado de cobre está se tornando cada vez mais volátil e sujeito a grandes flutuações, o que pode ter um impacto significativo nas previsões de preços.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:00:55.176491-03:00"
+    },
+    {
+      "title": "Michael Burry bets against rally: 'We are near a major top, and possible a 1987-type fall'",
+      "source": "CNBC - Finance",
+      "score": 8.0,
+      "motivo": "A opinião de um investidor conhecido e respeitado sobre um possível colapso do mercado é considerada material e relevante.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:00:58.349452-03:00"
+    },
+    {
+      "title": "Operação do Campo de Marte não deve ter impacto no setor imobiliário, prevê DECEA",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:01:01.366448-03:00"
+    },
+    {
+      "title": "Marco temporal, licenciamento, moratória da soja: as pautas ambientais no STF",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:03.998728-03:00"
+    },
+    {
+      "title": "Por que a ação da Take-Two Interactive está volátil hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:07.934326-03:00"
+    },
+    {
+      "title": "Por que as ações da Applied Optoelectronics estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:10.555796-03:00"
+    },
+    {
+      "title": "Ações da Take-Two caem com guidance fraco antes do lançamento de GTA VI",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "guidance fraco impacta expectativas de lucro da empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:13.416498-03:00"
+    },
+    {
+      "title": "Bank of America vê pressão por rendimentos mais altos no mercado municipal",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:16.044694-03:00"
+    },
+    {
+      "title": "Narrativa ’Sell America’ ressurge com riscos do Fed e do iene",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:01:18.658557-03:00"
+    },
+    {
+      "title": "Por que as ações da Vertiv estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:21.263487-03:00"
+    },
+    {
+      "title": "Oklo registra prejuízo maior no 2º tri, mas supera estimativa de receita",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:23.883815-03:00"
+    },
+    {
+      "title": "Spectral Medical GAAP EPS of $0.00 beats by $0.01, revenue of $0.62M beats by $0.02M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:27.180780-03:00"
+    },
+    {
+      "title": "Consensus Cloud reaffirms 2026 revenue of $350M-$364M while outlining Healthcare Strategy group and doc.health tuck-in",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:29.815782-03:00"
+    },
+    {
+      "title": "NerdWallet expects Q3 revenue of $244M-$260M while scaling IRR-based marketing investment",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:01:32.418081-03:00"
+    },
+    {
+      "title": "$10,000 in AMDL Became $40,270 in 7 Months, but AMD’s Earnings Crash Erased $9,500 in One Day",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:40.596781-03:00"
+    },
+    {
+      "title": "Review & Preview: The Dow’s Streak Survives",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:01:43.189683-03:00"
+    },
+    {
+      "title": "Global Food Prices Hit Three-Year High As War, Chokepoint Chaos And El Nino Spark Perfect Storm",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:01:46.559444-03:00"
     }
   ]
 }
