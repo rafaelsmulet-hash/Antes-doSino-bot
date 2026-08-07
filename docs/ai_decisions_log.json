@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "CION Investment Corporation Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:48:35.687704-03:00"
-    },
-    {
-      "title": "What Investors Should Know About Spotify Co-CEO Soderstrom Selling $10.6M Stock",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:48:38.367890-03:00"
-    },
-    {
-      "title": "OpenAI says Apple's trade-secrets lawsuit is really about losing the AI talent war",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:48:41.403509-03:00"
-    },
-    {
-      "title": "World Sugar Market’s Most-Trusted Data Becomes More Opaque",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A perda de confiança nos dados do mercado pode influenciar as decisões de investimento e negociação de açúcar.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:09:44.323801-03:00"
-    },
-    {
-      "title": "Hospital Sector to See K-Shaped Path, Federal Cuts Expected",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente os hospitais e a indústria de saúde nos EUA, que estão prestes a enfrentar mudanças significativas de políticas federais.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:09:47.398321-03:00"
-    },
-    {
-      "title": "US Yen Intervention Is a Band-Aid Fix for Bonds: Levin",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A intervenção pode ter impacto concreto no mercado de títulos de renda fixa e no valor do iene.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:09:50.733429-03:00"
-    },
-    {
-      "title": "Saudi Crude Shipments to US Plunge to Zero as Oil Refiners Pivot",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia indica uma mudança significativa nas importações de petróleo da Arábia Saudita para os EUA, o que pode ter impacto na demanda e no preço do petróleo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:09:54.080973-03:00"
-    },
-    {
-      "title": "Blackstone Has Pitched Mega Debt Package for Anthropic Chip Deal",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque envolve um pacote de dívida gigante, o que pode ter impacto significativo no mercado de dívida e na economia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:09:57.135944-03:00"
-    },
-    {
       "title": "United Wholesale Mortgage plunges 40% after suspending dividend and raising capital",
       "source": "CNBC - Finance",
       "score": 6.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T16:56:16.074744-03:00"
+    },
+    {
+      "title": "França prevê queda de 35% na safra de milho devido a intempéries",
+      "source": "Money Times",
+      "score": 7.0,
+      "motivo": "queda significativa na safra de milho francesa pode afetar preços e estoques globais",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:01:02.745762-03:00"
+    },
+    {
+      "title": "Gray Media anticipates $165M-$185M Q3 political revenue while prioritizing debt reduction",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa está priorizando a redução da dívida, o que pode ser visto como um sinal de saúde financeira e positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:01:07.841447-03:00"
+    },
+    {
+      "title": "Quer proteger seu patrimônio antes das eleições? Participe do Suno Invest 2026",
+      "source": "Suno Noticias",
+      "score": 0.0,
+      "motivo": "evento não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:01:17.611191-03:00"
+    },
+    {
+      "title": "Solventum plans software separation to become ‘true medtech company’",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:01:21.756465-03:00"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Halliburton Stock?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:01:24.531987-03:00"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Coca-Cola Stock?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:01:27.303182-03:00"
+    },
+    {
+      "title": "CenterPoint Energy Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:01:30.093642-03:00"
+    },
+    {
+      "title": "A facelift in the US would have cost me $45,000. I went to Turkey instead.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:01:33.347701-03:00"
     }
   ]
 }
