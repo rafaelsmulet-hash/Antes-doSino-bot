@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Rep. Jim Jordan, House Republicans raise alarms over new South Korean 'fake news' law",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:10:28.889767-03:00"
-    },
-    {
-      "title": "MercadoLibre Drops as E-Commerce Giant Signals More Spending",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:25:55.167009-03:00"
-    },
-    {
-      "title": "PSB em MG segue aliança nacional e indica Jarbas Soares Júnior como vice de Patrus",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:25:59.722982-03:00"
-    },
-    {
       "title": "Na curva a termo, mercado já precifica 60% de chance de corte na Selic em setembro",
       "source": "Money Times",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-07T15:41:13.221648-03:00"
+    },
+    {
+      "title": "Vendaval: prefeitura do Rio e governo do Estado recomendam antecipação de expediente",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:45:56.579486-03:00"
+    },
+    {
+      "title": "Magazine Luiza (MGLU3) volta ao prejuízo no 2T26; o que aconteceu?",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "A perda da Magazine Luiza foi menor do que esperado, mas ainda assim negativa, o que pode afetar a confiança dos investidores no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T15:46:12.269523-03:00"
+    },
+    {
+      "title": "Bango chair Darcy Antonellis on governance, growth and opportunity",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:46:17.054926-03:00"
     }
   ]
 }
