@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Western Midstream outlines 2026 adjusted EBITDA of $2.75B-$2.95B while integrating Brazos acquisition",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:09:20.401909-03:00"
-    },
-    {
-      "title": "CarParts.com targets free cash flow positive in 2026 with A-Premium near $50M run rate and 300,000-package last-mile goal",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:09:23.112353-03:00"
-    },
-    {
-      "title": "HCI outlines over $10M per quarter reinsurance savings as GEICO begins selling new product",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:09:25.784877-03:00"
-    },
-    {
       "title": "Immunocore outlines TEBE-AM data as early as end of 2026 while scaling KIMMTRAK beyond ~1,000 patients per year",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T19:46:24.558589-03:00"
+    },
+    {
+      "title": "Embecta forecasts $1.80-$1.90 FY2026 adjusted EPS while raising adjusted operating margin to 23.5%-24%",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa aumentou a previsão de lucro e a margem operacional ajustada, o que é considerado positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:50:38.431370-03:00"
+    },
+    {
+      "title": "OpenAI says it slowed Astra model development over security concerns",
+      "source": "TechCrunch",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre um evento específico de mercado, mas sim sobre uma medida interna da empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:50:47.086956-03:00"
+    },
+    {
+      "title": "YouTube star Hank Green sets new AI policy for himself — and urges other content creators to do the same",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:50:50.159541-03:00"
     }
   ]
 }
