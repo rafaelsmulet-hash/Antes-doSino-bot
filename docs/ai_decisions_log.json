@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "United Wholesale Mortgage plunges 40% after suspending dividend and raising capital",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A suspensão de dividendos e aumento de capital são medidas significativas que afetam a valorização da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:10:00.228496-03:00"
-    },
-    {
-      "title": "STJ decide condenar Marco Buzzi com pena máxima e perda do cargo",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "a noticia não é sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:10:04.803844-03:00"
-    },
-    {
-      "title": "Durigan diz que aumento da dívida decorre dos juros, não dos gastos",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A noticia destaca a influencia dos juros na dívida pública, o que pode ser visto como positivo para o mercado pois sugere que a dívida pode ser controlada com uma política monetária mais favorável",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:10:07.888211-03:00"
-    },
-    {
-      "title": "Novo recorde: percentual de brasileiros endividados atinge 82% em julho",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Aumento do endividamento pode afetar a capacidade de consumo e, consequentemente, a economia brasileira.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:10:14.510851-03:00"
-    },
-    {
-      "title": "Agentes de IA da OpenAI “conspiraram” por meses antes de invadir sistema rival",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:10:17.450140-03:00"
-    },
-    {
-      "title": "13 ações pagam dividendos acima do CDI com a Selic a 14%; veja quais",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "noticia sobre dividendos de ações, que pode atrair investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:10:20.407590-03:00"
-    },
-    {
-      "title": "Coreia do Sul fora do MSCI Emergentes? Brasil pode ser um dos beneficiados",
-      "source": "InfoMoney",
-      "score": 7.0,
-      "motivo": "Redirecionamento de investimentos significativo para a América Latina e impacto em ativos brasileiros",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:10:23.315030-03:00"
-    },
-    {
-      "title": "Petróleo brent passa a subir quase 4% em meio a obstáculos em acordo sobre Ormuz",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:10:25.984468-03:00"
-    },
-    {
-      "title": "Veja até quando vai alerta de ventos fortes de até 100 km/h em São Paulo",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:10:28.652012-03:00"
-    },
-    {
-      "title": "Produção industrial recua -1,8% em junho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T15:10:32.358622-03:00"
-    },
-    {
-      "title": "Bolsas da Europa fecham em alta com expectativa de acordo entre EUA e Irã; Londres cai",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:10:35.768316-03:00"
-    },
-    {
-      "title": "Fed monitora riscos financeiros do boom de investimentos em IA",
-      "source": "Investing.com Brasil",
-      "score": 7.0,
-      "motivo": "A Fed está monitorando riscos financeiros relacionados ao boom de investimentos em IA, o que pode influenciar a política monetária e a estabilidade financeira.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T15:10:39.085350-03:00"
-    },
-    {
       "title": "Guggenheim aponta sua principal escolha de ação no setor de biotecnologia",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T17:01:33.347701-03:00"
+    },
+    {
+      "title": "Credit Card Balances at Pace with Inflation: Whitney",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações específicas sobre o mercado financeiro que possam ter um impacto imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:05:55.575121-03:00"
+    },
+    {
+      "title": "Na disputa pelo Senado por SP, Marina espera que eleitor leia clima como economia",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia politica sem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:06:01.402528-03:00"
+    },
+    {
+      "title": "A Reforma Tributária pode provocar a quebra do setor de logística?",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia menciona a possibilidade de quebra do setor de logística, o que pode ter um impacto significativo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:06:04.418537-03:00"
+    },
+    {
+      "title": "Westwater Resources, 5E Advanced Materials projects to get Export-Import Bank loans - Reuters",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:06:07.248521-03:00"
+    },
+    {
+      "title": "Cybersecurity decouples from SaaS as AI threats surge - Citrini",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:06:09.917580-03:00"
+    },
+    {
+      "title": "The Trade Desk Rebuilt Its C-Suite in Two Months. Its First Guidance Since Points to a 12% Revenue Decline.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:06:14.710565-03:00"
+    },
+    {
+      "title": "Why QuantumScape Stock Collapsed 31% in July",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:06:17.349607-03:00"
+    },
+    {
+      "title": "Dólar cai a R$ 5,08 e Bolsa recua influenciados por balanços e petróleo",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T17:06:23.336038-03:00"
+    },
+    {
+      "title": "Após queda da Selic para 14%, ainda vale a pena investir em FIIs?",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T17:06:27.088890-03:00"
+    },
+    {
+      "title": "Berkshire Hathaway (BRK-B) Buys Taylor Morrison as Blackstone (BX) Hedge Fund Interest Holds Steady",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:06:31.168468-03:00"
+    },
+    {
+      "title": "NRG nears 1.2-GW hyperscaler deal amid Texas data center pause",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:06:33.832767-03:00"
+    },
+    {
+      "title": "Trump doubles down on Credit Card Competition Act as merchants paid $198 billion in swipe fees last year",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T17:06:36.541097-03:00"
     }
   ]
 }
