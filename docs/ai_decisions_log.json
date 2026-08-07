@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Méliuz lucra R$ 9,7 milhões no 2º trimestre e anuncia recompra de ações",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:22:22.093043-03:00"
-    },
-    {
-      "title": "Mega-Sena acumulada pode pagar R$ 150 milhões hoje; saiba quanto rende essa bolada na renda fixa conservadora com a taxa Selic a 14% ao ano",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:22:25.532911-03:00"
-    },
-    {
-      "title": "Lessons from the Iran war: China’s oil buffer and energy resilience, tested",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:22:33.387116-03:00"
-    },
-    {
-      "title": "Stock Market Today: Dow Rises, Nasdaq Falls As AI Stocks Sandisk, Western Digital Plunge On Earnings (Live Coverage)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:22:36.726031-03:00"
-    },
-    {
-      "title": "Midstream Energy Player MPLX Offers Robust 7.2% Yield",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:22:42.887525-03:00"
-    },
-    {
-      "title": "Lawmakers want to crack down on IRA rules that benefit the rich — but one critic wants to kill the tax breaks altogether",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia pode afetar a confiança dos investidores em ações de empresas que oferecem planos de aposentadoria IRA",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:22:48.947025-03:00"
-    },
-    {
-      "title": "Warner Bros. Discovery Q2 2026 earnings: streaming revenue up 10%",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:22:52.097189-03:00"
-    },
-    {
-      "title": "Wall Street Bulls Flock to S&P 500 Calls as Rally Broadens",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a tendência de otimismo dos traders em relação ao S&P 500, indicando uma perspectiva positiva para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:27:03.646921-03:00"
-    },
-    {
-      "title": "Iran Nears Strait of Hormuz Shipping Deal, Hackers Target Wall Street | The Pulse 8/6/2026",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T09:27:09.889147-03:00"
-    },
-    {
-      "title": "What a divided Fed means for investors",
-      "source": "CNBC - Economy",
-      "score": 8.0,
-      "motivo": "A notícia indica que uma alta de juros está próxima, o que pode afetar os investidores.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:27:16.020470-03:00"
-    },
-    {
-      "title": "Brava Energia (BRAV3): Ecopetrol adquire fatia de 25% da companhia por R$ 2,67 bi",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T09:27:19.915721-03:00"
-    },
-    {
       "title": "Dólar opera perto da estabilidade após decisão do Copom",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T10:51:21.882552-03:00"
+    },
+    {
+      "title": "Quais BDRs comprar em agosto? Veja o ranking das ações internacionais mais indicadas pelos analistas",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "ranking de BDRs recomendadas pelos analistas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:55:41.633097-03:00"
+    },
+    {
+      "title": "Maxim Power GAAP EPS of -$0.05, revenue of $15.34M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas os resultados financeiros não são alarmantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:55:45.616684-03:00"
+    },
+    {
+      "title": "Elanco granted FDA’s emergency nod for new world screwworm drug",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o setor agrícola, mas não parece ter um impacto direto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:55:48.506029-03:00"
+    },
+    {
+      "title": "Canadian Apartment Properties REIT reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:55:51.192335-03:00"
+    },
+    {
+      "title": "Goldmoney reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:55:53.859272-03:00"
+    },
+    {
+      "title": "The Trade Desk downgraded to Neutral by Susquehanna, price target cut to $14",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:55:56.531215-03:00"
+    },
+    {
+      "title": "Eli Lilly and Company Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:56:06.055788-03:00"
+    },
+    {
+      "title": "Magnum (MICC) Q2 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:56:08.671682-03:00"
+    },
+    {
+      "title": "Dorian LPG Ltd. Q1 2027 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:56:11.331891-03:00"
+    },
+    {
+      "title": "Phillips 66 Profit Jumps as Refining Margins More Than Double",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:56:14.010100-03:00"
+    },
+    {
+      "title": "Outfront Media Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:56:16.683244-03:00"
     }
   ]
 }
