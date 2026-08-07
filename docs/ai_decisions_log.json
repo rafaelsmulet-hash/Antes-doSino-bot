@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Inter (INBR32) chega a tombar, mas recupera fôlego; quem tiver ‘estômago’ pode ver ação saltar 70%, vê Genial",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:56:57.904304-03:00"
-    },
-    {
-      "title": "Conselho da Petrobras aprova R$17,4 bi em remuneração aos acionistas",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Aprovacao de remuneracao aos acionistas da Petrobras e valor significativo envolvido",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:57:04.646166-03:00"
-    },
-    {
-      "title": "Prejuízo da Magazine Luiza atinge R$50,4 mi no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:57:07.331413-03:00"
-    },
-    {
-      "title": "Alta de 34% no mês: ação de materiais selecionada por IA dispara 22% após resultados sólidos",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T19:57:10.028080-03:00"
-    },
-    {
-      "title": "México - Ações fecharam o pregão em queda e o Índice S&P/BMV IPC recuou 0,19%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T19:57:12.746398-03:00"
-    },
-    {
       "title": "Ibovespa e dólar hoje: Payroll domina a agenda em meio a tensão em Ormuz",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T18:01:20.148539-03:00"
+    },
+    {
+      "title": "Formlabs estuda IPO para captar US$ 500 milhões, diz Bloomberg",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a empresa estuda captar US$ 500 milhões, o que pode ser positivo para o mercado de ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T18:05:48.171609-03:00"
+    },
+    {
+      "title": "Petrobras estuda elevar capacidade de produção de diesel em quase 80% até 2031",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "aumento da capacidade de produção de diesel deve impulsionar a demanda e, consequentemente, o preço da ação da Petrobras",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T18:05:51.162703-03:00"
+    },
+    {
+      "title": "Após apagão em São Paulo, alunos criam projeto para tornar escola autossuficiente em energia solar",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:05:54.645367-03:00"
+    },
+    {
+      "title": "Hawaiian Electric GAAP EPS of $0.71, revenue of $939.7M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A divulgação de resultados financeiros é relevante para o mercado, pois fornece informações sobre a saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T18:05:58.139616-03:00"
+    },
+    {
+      "title": "GE Vernova Holds an $176 Billion Backlog, Yet Wall Street Is Selling: What Investors Should Know.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T18:06:04.093288-03:00"
     }
   ]
 }
