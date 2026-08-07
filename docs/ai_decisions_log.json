@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Vitória x Athletico-PR: horário, onde assistir e prováveis escalações",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia sobre esporte",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:17:30.112270-03:00"
-    },
-    {
-      "title": "LifeStance Health Group beats top-line and bottom-line estimates; raises FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Aumento da previsão para o ano fiscal de 2026 é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:17:33.225514-03:00"
-    },
-    {
-      "title": "Genesis Energy reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque fornece informações financeiras da Genesis Energy, mas não é um evento inesperado ou impactante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:17:36.145899-03:00"
-    },
-    {
-      "title": "Ducommun Non-GAAP EPS of $1.18 beats by $0.20, revenue of $224.5M beats by $10.18M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia apresenta resultados financeiros que superam as expectativas de mercado, o que é relevante para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:17:39.406741-03:00"
-    },
-    {
-      "title": "Privia Health Group Non-GAAP EPS of $0.19 misses by $0.05, revenue of $632.6M beats by $31.84M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque a empresa não atingiu as expectativas em termos de lucro, mas superou em receita, o que pode ter impacto nas ações da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:17:42.735093-03:00"
-    },
-    {
-      "title": "GigaCloud Technology Non-GAAP EPS of $1.65 beats by $0.80, revenue of $411.6M beats by $30.97M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "Resultados financeiros superaram as expectativas, indicando um desempenho positivo da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:17:45.766569-03:00"
-    },
-    {
-      "title": "Cytek raises 2026 revenue outlook to $207M-$212M as it rolls out Borealis and Aurora Evo automation",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A previsão de receita foi aumentada devido ao lançamento de novas tecnologias de automação, o que pode ter um impacto positivo na empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:17:48.798677-03:00"
-    },
-    {
-      "title": "Enovis Corporation beats top-line and bottom-line estimates; reaffirms FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas de receita e lucro, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:17:51.824902-03:00"
-    },
-    {
-      "title": "Dexco: lucro líquido vai a R$ 14,8 milhões no 2tri26, recuo de 61,4% ante 2tri25",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "o lucro líquido da Dexco recuou menos do que o esperado, o que pode ser visto como positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:20:54.608006-03:00"
-    },
-    {
-      "title": "ProFrac Holding reports Q2 results; reaffirms capex outlook",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de ações, pois fornece informações sobre a expectativa de investimentos da empresa, mas não é um evento inesperado ou impactante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:21:02.230730-03:00"
-    },
-    {
       "title": "China launches security review of Palo Alto Networks products",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T07:41:36.786603-03:00"
+    },
+    {
+      "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta a expectativa de crescimento econômico dos EUA e pode influenciar as decisões de investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:45:36.938762-03:00"
+    },
+    {
+      "title": "Lucro da Log cai 32,6% no 2º tri",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "queda no lucro da empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:45:40.232821-03:00"
+    },
+    {
+      "title": "Índice Nacional da Construção Civil acelera para 1,19% em junho",
+      "source": "IBGE",
+      "score": 6.0,
+      "motivo": "Aceleração do índice nacional da construção civil e aumento dos custos de materiais e mão de obra indicam um mercado em expansão.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:45:44.168091-03:00"
+    },
+    {
+      "title": "ACT Energy Technologies GAAP EPS of $0.06 misses by $0.08, revenue of $178.5M beats by $27.05M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a expectativa de lucro da empresa, mas também é positiva devido à superação das expectativas de receita.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:45:48.345727-03:00"
+    },
+    {
+      "title": "Heliostar Metals GAAP EPS of $0.03, revenue of $56.5M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque fornece informações financeiras atualizadas da empresa, que pode influenciar as decisões de investimento dos traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:45:51.226670-03:00"
+    },
+    {
+      "title": "Yum China takes control of the Pizza Hut business in mainland China",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A mudança de controle pode levar a melhorias na gestão e aumento de vendas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:45:54.071893-03:00"
+    },
+    {
+      "title": "Embecta Non-GAAP EPS of $0.56 beats by $0.29, revenue of $271.7M beats by $17.16M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Resultados financeiros superiores às expectativas são relevantes para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:45:57.088625-03:00"
+    },
+    {
+      "title": "GXO Vows to Close Margin Gap With Rivals After Earnings Selloff",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa busca melhorar sua competitividade no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:46:06.443926-03:00"
+    },
+    {
+      "title": "Shopify Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A empresa superou as expectativas de receita e lucro, o que é um sinal positivo para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:46:09.344083-03:00"
+    },
+    {
+      "title": "This Dividend King Yields Over 4% and Trades Near Its 52-Week Lows, But Don’t Rush to Buy the Dip",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa está perto de baixas de 52 semanas, o que pode indicar um preço de compra atraente.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:46:12.600488-03:00"
     }
   ]
 }
