@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Na curva a termo, mercado já precifica 60% de chance de corte na Selic em setembro",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:26:03.409752-03:00"
-    },
-    {
-      "title": "Ações da Braveheart Bio disparam 68% em estreia na bolsa de Nova York",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:26:06.284171-03:00"
-    },
-    {
-      "title": "Ações ampliam sequência de máximas recordes com balanços e otimismo sobre Oriente Médio",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:26:08.901591-03:00"
-    },
-    {
-      "title": "S&P rebaixa perspectiva da Mosaic por custos elevados e fluxo de caixa fraco",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T14:26:11.516724-03:00"
-    },
-    {
-      "title": "CEO da Bper Banca diz que banco está pronto para fusões e recompra de ações",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:26:14.131472-03:00"
-    },
-    {
       "title": "Nomura Holdings reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T15:46:17.054926-03:00"
+    },
+    {
+      "title": "Caiado diz que emendas parlamentares são ‘desestruturação do presidencialismo’",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:50:43.031102-03:00"
+    },
+    {
+      "title": "Ouro sobe 8% e registra maior ganho semanal desde janeiro",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "Ouro encerrou em alta após dado do mercado de trabalho fraco nos EUA, impactando diretamente os preços do metal precioso",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:50:47.374167-03:00"
+    },
+    {
+      "title": "ANI projects $1.08B-$1.14B 2026 revenue as it revises Cortrophin to $520M-$540M amid gout sales force expansion",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A revisão da receita de Cortrophin e a expansão da força de vendas de gout são indicativos de uma expectativa positiva para o crescimento da receita da ANI em 2026.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:50:51.522468-03:00"
+    },
+    {
+      "title": "Goodbye mansions, hello jail: Nevada woman stole $26 million from construction boss — then the IRS caught up with her",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:51:04.277467-03:00"
+    },
+    {
+      "title": "WPP Shares Surge After Turnaround Helps Ease Top-Line Decline",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T15:51:06.984747-03:00"
     }
   ]
 }
