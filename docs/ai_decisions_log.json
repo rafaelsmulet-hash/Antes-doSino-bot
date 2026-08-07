@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Celsius Shares Slump as Namesake Brand Sales Tumble",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "Vendas da marca principal da empresa caíram abaixo das expectativas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:50:35.910011-03:00"
-    },
-    {
-      "title": "Coreia do Norte lança míssil de curto alcance, diz Forças Armadas da Coreia do Sul",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:50:39.842437-03:00"
-    },
-    {
-      "title": "CPTM: Linhas 11-Coral e 12-Safira operaram com velocidade menor no 1º dia após greve",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:50:42.514232-03:00"
-    },
-    {
-      "title": "Commerzbank quase dobra lucro no 2º tri e CEO pede diálogo após avanço do UniCredit",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:50:45.184123-03:00"
-    },
-    {
-      "title": "Cyrela (CYRE3) negocia venda de ativos imobiliários de R$ 2,14 bilhões ao TRXF11",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:50:47.847948-03:00"
-    },
-    {
-      "title": "Minério de ferro amplia ganhos com notícias sobre medidas de estímulo ao setor imobiliário na China",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:50:52.270598-03:00"
-    },
-    {
-      "title": "Por que as ações da Molson Coors estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:50:55.039084-03:00"
-    },
-    {
-      "title": "Por que as ações da Becton Dickinson estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:50:57.677921-03:00"
-    },
-    {
-      "title": "Por que as ações da Krispy Kreme estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:51:00.346140-03:00"
-    },
-    {
-      "title": "Por que as ações da Shift4 Payments estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Ações estão caindo devido a perda de valor, indicando uma situação negativa para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:51:03.127784-03:00"
-    },
-    {
-      "title": "Por que as ações da Zoetis estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:51:05.756828-03:00"
-    },
-    {
-      "title": "Por que as ações da Howmet Aerospace estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:51:08.706482-03:00"
-    },
-    {
-      "title": "Por que as ações do Datadog estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:51:11.336540-03:00"
-    },
-    {
-      "title": "Por que as ações da Papa John’s estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:51:14.009659-03:00"
-    },
-    {
-      "title": "D-Wave Quantum fica abaixo das estimativas do 2º tri e ações caem",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:51:16.662388-03:00"
-    },
-    {
-      "title": "Por que as ações da Constellation Energy estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:51:19.304273-03:00"
-    },
-    {
-      "title": "Mastech Digital Non-GAAP EPS of $0.08, revenue of $41.44M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:51:22.545834-03:00"
-    },
-    {
       "title": "Premium Brands declares CAD 0.85 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T09:56:30.391425-03:00"
+    },
+    {
+      "title": "US Treasuries Rally as Soft Jobs Data Trims Fed Rate-Hike Bets",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia sugere que a Fed pode ser menos propensa a aumentar as taxas de juros, o que é relevante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:00:44.605623-03:00"
+    },
+    {
+      "title": "As Warsh’s Fed faces pressure to act on inflation, these indicators show it’s at its lowest in years",
+      "source": "CNBC - Economy",
+      "score": 5.0,
+      "motivo": "A notícia sugere que a inflação pode estar em declínio, o que pode ser positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:00:49.145327-03:00"
+    },
+    {
+      "title": "What a divided Fed means for investors",
+      "source": "CNBC - Economy",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:00:51.736849-03:00"
+    },
+    {
+      "title": "Fundos imobiliários: Alianza Trust (ALZR11) entra em carteira da Empiricus no lugar do Bresco Logística (BRCO11)",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:00:56.239818-03:00"
+    },
+    {
+      "title": "Motorista de ônibus derrubou drone explosivo em pleno voo em aeroporto alemão, diz deputado",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:00:59.018831-03:00"
+    },
+    {
+      "title": "Adnoc nomeia executivo do Morgan Stanley como diretor de investimentos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:01.620671-03:00"
+    },
+    {
+      "title": "Payroll: EUA perdem 23 mil vagas em julho; mercado previa criação de 80 mil",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:04.547471-03:00"
+    },
+    {
+      "title": "Como usar IA para responder e-mails em lote sem soar robótico",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:01:07.156911-03:00"
+    },
+    {
+      "title": "Runway Growth appoints Michael Rovner as co-CEO",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:09.938020-03:00"
+    },
+    {
+      "title": "HeartCore to sell 51% stake in Vietnam software JV for $184K",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:12.849917-03:00"
+    },
+    {
+      "title": "Blend outlines $31.5M-$33.5M Q3 2026 revenue outlook while urging caution on Autopilot modeling",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:15.496923-03:00"
+    },
+    {
+      "title": "Autoscope Technologies reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:18.096226-03:00"
+    },
+    {
+      "title": "Atossa Therapeutics GAAP EPS of -$0.95",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:20.690865-03:00"
+    },
+    {
+      "title": "Do produto à compra, ChatGPT muda líder em 23 de 32 das categorias",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:26.171695-03:00"
+    },
+    {
+      "title": "JBS (JBS,JBSS32) cria negócio de US$ 10 bilhões do outro lado do mundo com foco em aquisições e expansão",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T10:01:28.881793-03:00"
+    },
+    {
+      "title": "The Investors Whose SpaceX Shares Vanished Before They Could Cash In",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:33.741410-03:00"
+    },
+    {
+      "title": "Younger Boomer Asks, What Are You Going to Do With a 4,000-Square-Foot Home in Your 70s? ‘They’re Not Going to Have Any Choice’ but Move",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T10:01:36.410720-03:00"
     }
   ]
 }
