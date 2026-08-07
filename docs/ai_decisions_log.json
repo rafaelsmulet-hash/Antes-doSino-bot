@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fed's Schmid calls for tighter monetary policy to tamp down on 'too high' inflation",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:18:13.727576-03:00"
-    },
-    {
-      "title": "Wayfair (W) Rallies 30% as Sales Growth Hits Post-Pandemic High",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:18:16.369459-03:00"
-    },
-    {
-      "title": "Angel Oak Mortgage, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:18:19.001173-03:00"
-    },
-    {
-      "title": "Archer-Daniels-Midland Company Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:18:21.632881-03:00"
-    },
-    {
-      "title": "Paramount-Warner Deal Cleared by UK Antitrust Watchdog",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A aprovação do acordo pode indicar que o setor de entretenimento está se recuperando e pode ser um sinal positivo para as ações das empresas envolvidas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:21:38.727972-03:00"
-    },
-    {
-      "title": "Six Flags Shares Slide After Attendance, Revenue Miss Estimates",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para a empresa, mas não tem impacto direto no mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:21:41.701054-03:00"
-    },
-    {
       "title": "Jeff Bezos just filed to sell $4 billion in Amazon. The shares are falling",
       "source": "CNBC - Finance",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-07T09:11:42.225715-03:00"
+    },
+    {
+      "title": "US Futures Rise as Trump Touts Iran Progress; Awaiting Jobs Data",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois afeta a volatilidade do mercado e pode influenciar as expectativas de investidores em relação ao desempenho da economia americana.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:15:37.654477-03:00"
+    },
+    {
+      "title": "Ibovespa Futuro tem leve alta com dados de emprego dos EUA e balanços no radar",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Criação de vagas de trabalho positiva para a economia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:15:41.246337-03:00"
+    },
+    {
+      "title": "Caso Lulinha amplia clima de desconfiança entre grupos de ministros do STF",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "não há conexão direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:15:44.031193-03:00"
+    },
+    {
+      "title": "Onde o salário mínimo é maior no Brasil? Confira os estados com piso regional",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:15:48.543081-03:00"
+    },
+    {
+      "title": "Quanto custa a bebida que ameaça a hegemonia do badalado Aperol Spritz",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:15:54.591735-03:00"
+    },
+    {
+      "title": "Companies scoff at airlines' cheapest business class tickets. 'The real value is flexibility'",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:16:00.921364-03:00"
     }
   ]
 }
