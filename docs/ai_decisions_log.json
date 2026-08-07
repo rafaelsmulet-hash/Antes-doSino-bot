@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "RZTR11 lucra R$ 18,7 milhões e enfrenta inadimplência em fazenda",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:22:16.160266-03:00"
-    },
-    {
-      "title": "Tesla and SpaceX will invest $16.8B to start building ‘Terafab’ chip factory in Texas",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T12:22:20.010176-03:00"
-    },
-    {
-      "title": "The US dropped an atomic bomb on Hiroshima on this day in 1945. Haunting photos show what happened.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:22:22.880294-03:00"
-    },
-    {
-      "title": "Bradesco expande lucro com inadimplência sob controle. ROE vai a 16,2%",
-      "source": "Brazil Journal",
-      "score": 6.0,
-      "motivo": "lucro crescente e ROE alto indicam saúde financeira do Bradesco",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:25:39.795022-03:00"
-    },
-    {
-      "title": "Oklo's Groves reactor achieves first 'criticality' under DoE program",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações financeiras ou de mercado relevantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:25:43.370590-03:00"
-    },
-    {
-      "title": "Hexagon Composites reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:25:45.974893-03:00"
-    },
-    {
-      "title": "Klarna's integration with J.P. Morgan Payments goes live",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T12:25:48.588681-03:00"
-    },
-    {
       "title": "Grant Cardone reveals the ‘best thing to do’ with $50K — with ‘zilch’ chance of going to $0. Do you own any?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T14:01:42.187048-03:00"
+    },
+    {
+      "title": "Modelo chinês de IA Kimi K3 encontra brecha e contorna teste de segurança",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "brecha de segurança em modelo de IA não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T14:06:21.985146-03:00"
+    },
+    {
+      "title": "Barrick Mining Q2 2026 earnings preview: Y/Y growth expected",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A previsão de crescimento anual no lucro é relevante para os investidores e pode influenciar as ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:06:25.117206-03:00"
+    },
+    {
+      "title": "Tech stocks take off as earnings results, powered up by AI deals, propel market higher",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:06:27.794079-03:00"
+    },
+    {
+      "title": "Why Fluor Stock Is Skyrocketing Today",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Divulgação de resultados financeiros da Fluor",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:06:32.959288-03:00"
+    },
+    {
+      "title": "Elon Musk Says AI Needs More Power Than the Grid Can Handle. Is He Right?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:06:35.625718-03:00"
+    },
+    {
+      "title": "Em busca de dividendos ‘pingando na conta’? Confira 8 ações recomendadas pela Empiricus para agosto",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:06:41.534686-03:00"
+    },
+    {
+      "title": "Earnings live updates: The Trade Desk stock plummets on earnings miss, Oklo jumps on 'criticality' milestone",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T14:06:46.550901-03:00"
     }
   ]
 }
