@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Arrow Electronics outlines Q3 sales of $9.6B-$10.2B with non-GAAP EPS of $4.83-$5.03",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa prevê resultados financeiros positivos, o que pode ser visto como um sinal de saúde da economia e do setor de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:25:44.529625-03:00"
-    },
-    {
-      "title": "Lucro da Petrobras sobe 96,8% no 2º trimestre, para R$ 52,4 bilhões, com disparada do petróleo",
-      "source": "G1 Economia",
-      "score": 8.0,
-      "motivo": "alta significativa do lucro da Petrobras, impulsionada por aumento da produção e alta das cotações internacionais do petróleo",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:25:54.759059-03:00"
-    },
-    {
-      "title": "Megaacordo da Tesla mostra expansão da energia renovável; SNEL11 atento aos movimentos",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:25:59.010526-03:00"
-    },
-    {
       "title": "Booking Holdings Q2 results top estimates as travel demand remains resilient",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T20:35:43.067851-03:00"
+    },
+    {
+      "title": "Bia Haddad Maia anuncia pausa na carreira: 'Não tem sido fácil a minha relação com o tênis'",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:41:01.375527-03:00"
+    },
+    {
+      "title": "Ondo Perps hits $7 billion in volume weeks after launch",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O alto volume de negócios indica um grande interesse dos investidores na plataforma.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:41:13.075665-03:00"
+    },
+    {
+      "title": "Block Stock Falls Amid Earnings Beat. Are Operating Expenses Still Too High?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque a Block é uma empresa importante no setor financeiro e as despesas operacionais altas podem afetar suas perspectivas futuras.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:41:16.105789-03:00"
     }
   ]
 }
