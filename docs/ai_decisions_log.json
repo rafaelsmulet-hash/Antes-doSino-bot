@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Trex CEO on Earnings, Consumer Demand For Deck Materials",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:08:22.276685-03:00"
-    },
-    {
-      "title": "Grupo Panvel (PNVL3) tem alta de quase 40% no lucro do 2º tri, a R$ 38,9 milhões",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:08:26.225949-03:00"
-    },
-    {
-      "title": "PetroReconcavo (RECV3) lucra R$ 203 mi no 2º tri e anuncia R$ 100 milhões em JCP",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:08:28.879199-03:00"
-    },
-    {
-      "title": "Flávio Bolsonaro: Tenho vantagem competitiva que é me relacionar bem com Congresso",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:08:31.539437-03:00"
-    },
-    {
-      "title": "Petrobras (PETR4): lucro praticamente dobra e vai a R$ 52,44 bi, acima do esperado",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:08:34.204540-03:00"
-    },
-    {
-      "title": "Flávio: Escolha de vice foi ‘novelinha’ dificultada por candidaturas já estruturadas",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:08:36.867173-03:00"
-    },
-    {
-      "title": "Lucro da Alpargatas quase dobra no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "o lucro dobra, indicando crescimento da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:08:41.468603-03:00"
-    },
-    {
-      "title": "Petrobras tem lucro líquido de R$52,4 bi no 2° tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:08:44.095010-03:00"
-    },
-    {
-      "title": "Grupo Panvel tem alta de quse 40% no lucro do 2º tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:08:46.726984-03:00"
-    },
-    {
       "title": "Colômbia - Ações fecharam o pregão em alta e o Índice COLCAP avançou 0,24%",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T19:31:17.458752-03:00"
+    },
+    {
+      "title": "Senado dos EUA aprova projeto de lei bipartidário de sanções contra a Rússia",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Choque geopolítico com potencial impacto na economia russa e no mercado de commodities",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:41:13.566473-03:00"
+    },
+    {
+      "title": "Iguatemi assina proposta de venda de participações em cinco ativos do portfólio",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Venda de ativos do portfólio pode afetar o desempenho da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T19:41:16.450995-03:00"
+    },
+    {
+      "title": "Orion Properties narrows 2026 core FFO to $0.72-$0.77 while lowering net debt to EBITDA outlook to 6-6.8x",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A justificativa da redução da dívida líquida em relação ao EBITDA é um sinal de melhoria financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:41:24.289269-03:00"
+    },
+    {
+      "title": "SpaceX Plans Natural Gas Power Plants For Texas Chip Factory",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica investimentos em infraestrutura para a fábrica de chips, o que pode impactar a demanda por energia e, consequentemente, os preços de energia e commodities relacionadas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T19:41:29.013063-03:00"
+    },
+    {
+      "title": "RWE Reaches $1.22 Bln Deal To Exit U.S. Offshore Wind Projects",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Acordo significativo de $1,22 bilhão envolvendo investimentos em gás natural",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T19:41:32.027328-03:00"
+    },
+    {
+      "title": "Meta Ordered To Pay $567 Mln More In New Mexico Child Safety Case",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T19:41:34.712076-03:00"
+    },
+    {
+      "title": "Alphabet Is Taking on More Debt to Finance Its AI Spending. Why That’s Not Necessarily Bad News",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A dívida adicional pode permitir que a Alphabet continue a investir em tecnologia de ponta, potencialmente aumentando sua competitividade no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:41:45.632246-03:00"
+    },
+    {
+      "title": "Truck manufacturer exits Ohio location, eliminates 1,341 jobs",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:41:48.311164-03:00"
+    },
+    {
+      "title": "Meet The Lab-Leak Proponent Set To Take Fauci's Old Job",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:41:51.885756-03:00"
     }
   ]
 }
