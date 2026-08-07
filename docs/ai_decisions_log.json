@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fed's Musalem Expresses Preference to Raise Rates",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A declaração de Musalem sobre aumento de taxas de juros é relevante para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:15:59.869880-03:00"
-    },
-    {
-      "title": "Chinese Banks Expand Direct Settlement to Aid Yuan’s Global Role",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A expansão do yuan em pagamentos diretos pode aumentar a sua aceitação global e reduzir a dependência do dólar.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:16:03.029551-03:00"
-    },
-    {
-      "title": "Japan Small Caps Face Survival Race as Topix Cull Looms",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Remoção de mais de 600 empresas do índice Topix pode ter impacto significativo no mercado japonês.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:16:06.102989-03:00"
-    },
-    {
-      "title": "STF suspende discussão sobre proibir jogos de azar; regras para bets podem entrar no julgamento",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:16:11.731950-03:00"
-    },
-    {
       "title": "Por que ações do Mercado Livre caíram quase 5% após receita subir 50%?",
       "source": "UOL Economia",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T20:21:26.023849-03:00"
+    },
+    {
+      "title": "Houthis atacam Marib novamente; ONU alerta que Iêmen está à beira de conflito maior",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "a noticia e sobre conflito geopolitico, nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:25:46.908061-03:00"
+    },
+    {
+      "title": "Conheça o papel do Congresso Nacional na estrutura bicameral brasileira",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "Não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:25:51.638988-03:00"
+    },
+    {
+      "title": "Restaurant Brands Falls on Burger King’s Best Quarter in Years",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois afeta diretamente a empresa Restaurant Brands International e seu desempenho financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:26:01.004169-03:00"
+    },
+    {
+      "title": "Western Digital Stock Tanks. An Earnings Beat Isn’t Enough These Days.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "O resultado foi positivo, mas não foi suficiente para superar as preocupações com a demanda e a concorrência.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:26:03.993077-03:00"
     }
   ]
 }
