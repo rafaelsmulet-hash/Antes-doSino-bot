@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Diageo sets out $1bn savings plan",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T11:52:47.155644-03:00"
-    },
-    {
-      "title": "Small caps are quietly outperforming the S&P 500 and 'Magnificent 7' this year: AlphaCheck",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T11:52:49.761425-03:00"
-    },
-    {
-      "title": "Bain Capital to acquire bubble tea chain Gong cha",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T11:52:52.361804-03:00"
-    },
-    {
-      "title": "Traders on Kalshi now think it's likely that the S&P 500 will hit 8,000 in 2026",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "Aumento da probabilidade de o S&P 500 alcançar 8.000 em 2026 é relevante e tem impacto concreto no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T11:56:39.089520-03:00"
-    },
-    {
-      "title": "Por que o Ibovespa cai nesta 5ª mesmo com o corte de juros pelo Copom?",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Noticia enfatiza a falta de sinalização sobre próximos passos do Copom, o que é visto como negativo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T11:56:42.219563-03:00"
-    },
-    {
-      "title": "As a woman of color who travels alone, is it a waste of money to visit places with zero diversity?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T11:56:47.469006-03:00"
-    },
-    {
-      "title": "Medical Facilities GAAP EPS of $0.09",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T11:56:50.126999-03:00"
-    },
-    {
-      "title": "Tesla is building a monster Terafab chip complex - these stocks could also benefit",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T11:56:52.777579-03:00"
-    },
-    {
-      "title": "Solaris Resources Q2 GAAP EPS of -$0.02",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T11:56:55.373895-03:00"
-    },
-    {
-      "title": "RENK Group AG reports 1H results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T11:56:57.959367-03:00"
-    },
-    {
-      "title": "Virginia governor says she will 'intervene' in NextEra-Dominion merger",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T11:57:00.560363-03:00"
-    },
-    {
-      "title": "Com foco em linhas garantidas, Bradesco diz estar um passo à frente do mercado em crédito",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T11:57:11.671563-03:00"
-    },
-    {
-      "title": "SEC Forms New Retail Fraud Working Group",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T11:57:15.307542-03:00"
-    },
-    {
       "title": "Situational Awareness hedge fund meltdown was a warning shot for leveraged markets, BofA CEO says",
       "source": "CNBC - Finance",
       "score": 4.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T13:31:47.375050-03:00"
+    },
+    {
+      "title": "BlackRock’s Rieder Sees AI Helping Buoy GDP Even as Hiring Slows",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia destaca a visão otimista de Rieder sobre o crescimento do PIB dos EUA, apesar da contratação estagnada.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:35:54.789988-03:00"
+    },
+    {
+      "title": "'Meta é para os fracos', diz Petrobras ao atribuir recorde à operação, não ao Brent",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A Petrobras alcançou lucro histórico graças a recordes de produção e refino, o que é positivo para a empresa e pode impactar positivamente o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:35:59.870838-03:00"
+    },
+    {
+      "title": "A solução para construir uma colônia em Marte pode estar nos asteroides",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não está relacionado a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T13:36:02.697089-03:00"
+    },
+    {
+      "title": "A nova fronteira da beleza: algoritmos que analisam o seu rosto",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:36:05.348768-03:00"
+    },
+    {
+      "title": "A look at pricey high-flying stocks in the industrial sector",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:36:08.125612-03:00"
+    },
+    {
+      "title": "Pain drug developer Latigo climbs after upsized IPO",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:36:10.890235-03:00"
+    },
+    {
+      "title": "B2Gold granted Fekola Regional exploitation permit by Mali government",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:36:13.541319-03:00"
+    },
+    {
+      "title": "Friday's ETF Movers: SGDM, IAK",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:36:17.411532-03:00"
+    },
+    {
+      "title": "Inflação nos EUA dá alívio, mas ainda não libera o Fed; entenda o PCE de junho",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:36:23.135270-03:00"
+    },
+    {
+      "title": "Why Instacart Stock Popped Today",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T13:36:28.070748-03:00"
+    },
+    {
+      "title": "ETF influx amid peace bid drives $2.76B inflow to high-yield bond retail funds",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:36:30.729117-03:00"
+    },
+    {
+      "title": "Twilio Stock Surges 31% On Earnings Beat As AI Tools Gain Traction",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T13:36:33.376760-03:00"
+    },
+    {
+      "title": "AGNC Investment Could Turn $1,000 Into Decades of Monthly Passive Income",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T13:36:36.036933-03:00"
     }
   ]
 }
