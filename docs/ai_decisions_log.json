@@ -1,204 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Advanced Energy declares $0.10 dividend",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os investidores que possuem ações da empresa, mas não tem impacto significativo no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:30:45.374785-03:00"
-    },
-    {
-      "title": "Missouri voters reject measure to end income tax",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A medida não teve impacto significativo no mercado financeiro, pois não afeta diretamente as taxas de juros ou a política fiscal federal.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:30:48.299482-03:00"
-    },
-    {
-      "title": "Marcus &amp; Millichap GAAP EPS of $0.10 beats by $0.07, revenue of $202.9M beats by $8.6M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de lucro e receita, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:30:51.446557-03:00"
-    },
-    {
-      "title": "How Many Retirees Have No Savings Beyond Social Security?",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é específica e relevante para o mercado financeiro imediatamente, mas pode ter implicações a longo prazo para a economia e as políticas de previdência.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:31:03.602989-03:00"
-    },
-    {
-      "title": "Lucid’s turnaround plan hinges on $1.4B in cash savings, robotaxis",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A economia de R$ 7,2 bilhões em custos pode ser um passo importante para a recuperação da Lucid, mas ainda é cedo para avaliar seu impacto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:31:06.575798-03:00"
-    },
-    {
-      "title": "Suncor Tops Profit Estimates as High Oil Prices Boost Refining Margins",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a margem de refino da empresa, que é influenciada pelos preços do petróleo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:31:09.545405-03:00"
-    },
-    {
-      "title": "Empresas do S&P 500 apresentam forte tendência de guidance para o terceiro trimestre",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Empresas do S&P 500 apresentam tendência de aumento na guidance, indicando potencial de crescimento e positividade para o mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T07:35:46.239417-03:00"
-    },
-    {
-      "title": "Por que as ações da Oracle Financial Software estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "A notícia especifica e materialmente relevante para o mercado atual, pois afeta diretamente a ação da Oracle Financial Software",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:35:51.995342-03:00"
-    },
-    {
-      "title": "Por que as ações da Verra Mobility estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 7.0,
-      "motivo": "a noticia especifica a razao pelas quais as acoes da Verra Mobility estão caindo, o que pode ter impacto imediato no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:35:54.987158-03:00"
-    },
-    {
-      "title": "Por que as ações da Inseego estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a queda das ações da Inseego pode ser um sinal de desconfiança do mercado em relação à empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:35:57.902513-03:00"
-    },
-    {
-      "title": "Por que as ações da NN estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Ação de uma empresa específica está subindo, indicando possíveis melhorias financeiras ou outras notícias positivas.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:36:00.736940-03:00"
-    },
-    {
-      "title": "Leggett &amp; Platt Non-GAAP EPS of $0.39 beats by $0.13, revenue of $999.7M beats by $16.84M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de lucro e receita, o que é considerado positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:36:04.873688-03:00"
-    },
-    {
-      "title": "Americold Realty Trust FFO of $0.35 beats by $0.11, revenue of $662.9M beats by $48.47M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa superou as expectativas em FFO e receita, o que é um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:36:07.786771-03:00"
-    },
-    {
-      "title": "BCE Non-GAAP EPS of C$0.65 misses by C$0.05, revenue of C$6.18B in-line",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta o desempenho financeiro da BCE, mas não é um evento de grande impacto",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:36:10.797523-03:00"
-    },
-    {
-      "title": "Restaurant Brands beats bottom-line estimates; reaffirms FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas de lucro, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:36:14.145523-03:00"
-    },
-    {
-      "title": "Planet Fitness Non-GAAP EPS of $0.88 beats by $0.03, revenue of $365.2M beats by $8.54M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Resultados financeiros superaram as expectativas, indicando potencial de crescimento para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:36:17.081733-03:00"
-    },
-    {
-      "title": "Becton, Dickinson Non-GAAP EPS of $3.23 beats by $0.09, revenue of $5B beats by $110M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Resultados financeiros superiores às expectativas são geralmente considerados positivos para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:36:20.221816-03:00"
-    },
-    {
-      "title": "Xperi targets TiVo One ARPU above $10 while lifting 2026 capex to about $25M",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "Aumento do capex pode indicar investimentos em tecnologia e expansão de negócios, mas não é um evento de grande impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:36:23.166212-03:00"
-    },
-    {
-      "title": "Corte na Selic, alívio no petróleo, balanço da Petrobras: o mercado hoje",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "Corte na Selic e alívio no petróleo são eventos positivos para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T07:40:39.308186-03:00"
-    },
-    {
-      "title": "Arista Networks Stock Investors Just Got Fantastic News From CEO Jayshree Ullal",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque o CEO compartilhou informações positivas sobre a empresa, o que pode influenciar a percepção dos investidores sobre o futuro da Arista Networks.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:40:47.010135-03:00"
-    },
-    {
-      "title": "Zebra Technologies Corporation Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa apresentou resultados financeiros acima das expectativas, o que pode influenciar positivamente o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:40:49.925016-03:00"
-    },
-    {
-      "title": "SpaceX stock dips in after-hours trading, despite revenue beating Wall Street expectations",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A noticia e relevante porque a SpaceX e uma empresa de tecnologia e acao de mercado, mas o impacto e limitado pois a queda da acao pode ser temporaria",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:40:53.448444-03:00"
-    },
-    {
       "title": "States Expand Student Loan Programs as Trump's Federal Borrowing Caps Leave Funding Gaps",
       "source": "Yahoo Finance",
       "score": 4.0,
@@ -17999,6 +17801,204 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T08:11:32.843606-03:00"
+    },
+    {
+      "title": "China: reservas cambiais sobem em julho com dólar fraco e compras de ouro continuam",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "aumento das reservas cambiais da China pode ser um sinal de estabilidade econômica, mas não é um evento de grande impacto imediato",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T08:15:45.954465-03:00"
+    },
+    {
+      "title": "Assaí (ASAI3) aprova Rafael Sachete como novo diretor de Relações com Investidores",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "nomeação de executivo não é um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:15:48.688625-03:00"
+    },
+    {
+      "title": "EUA usam referência ao Homem-Aranha para promover prisões e deportações",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:15:51.531242-03:00"
+    },
+    {
+      "title": "Por que as ações da Guardian Pharmacy Services estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:15:55.137344-03:00"
+    },
+    {
+      "title": "Por que as ações da Halozyme Therapeutics estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:15:57.762911-03:00"
+    },
+    {
+      "title": "Por que a ação da USA Rare Earth está subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:00.380466-03:00"
+    },
+    {
+      "title": "Por que as ações da Trulieve Cannabis estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:02.999838-03:00"
+    },
+    {
+      "title": "Porto Seguro registra lucro de R$879,4 milhões no segundo trimestre",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:05.625963-03:00"
+    },
+    {
+      "title": "Mais de 130 imóveis do Itaú entram em leilão com descontos de até 71%",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:08.751834-03:00"
+    },
+    {
+      "title": "Canopy Growth in charts: FQ1 revenue gains driven by growth across medical, adult-use, and Storz & Bickel segments",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:11.763293-03:00"
+    },
+    {
+      "title": "Calumet, Inc. GAAP EPS of -$1.09 misses by $1.03, revenue of $1.44B beats by $320M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:14.387131-03:00"
+    },
+    {
+      "title": "Mobility Global, Inc. GAAP EPS of $0.18 misses by $0.06, revenue of $468M misses by $1.88M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:17.018531-03:00"
+    },
+    {
+      "title": "Johnson Outdoors GAAP EPS of $1.42 beats by $0.74, revenue of $189.7M beats by $3.51M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:19.648581-03:00"
+    },
+    {
+      "title": "Treace Medical Concepts GAAP EPS of -$0.24 beats by $0.06, revenue of $45.4M beats by $1.48M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:22.274084-03:00"
+    },
+    {
+      "title": "Purple Biotech GAAP EPADS of -$0.41",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:24.889033-03:00"
+    },
+    {
+      "title": "WhatsApp deixará de funcionar em celulares antigos em setembro; veja se o seu será afetado",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T08:16:32.705453-03:00"
+    },
+    {
+      "title": "Como criar galinhas poedeiras e frangos caipiras",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:35.329084-03:00"
+    },
+    {
+      "title": "Mercado reage hoje a lucro da Petrobras e dados de emprego dos EUA",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "motivo": "Lucro da Petrobras e dados de emprego dos EUA são indicadores importantes para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T08:16:38.781354-03:00"
+    },
+    {
+      "title": "Super Group Beat and Raised Guidance, but the Stock Slipped. Here's How to Read the CFO's Latest Insider Filing",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:43.499883-03:00"
+    },
+    {
+      "title": "Nike stock could suffer because of JPMorgan verdict",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:46.124857-03:00"
+    },
+    {
+      "title": "Fed's Daly says central bank was right to hold rates steady at July policy meeting",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:48.761879-03:00"
+    },
+    {
+      "title": "KORU Medical Systems, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T08:16:51.400392-03:00"
     }
   ]
 }
