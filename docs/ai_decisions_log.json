@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Analysis: Trump treats Fed Chairman Kevin Warsh as an ally. That creates economic risks",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:02:05.891895-03:00"
-    },
-    {
-      "title": "Investigators Unveil Charges Against Dismissed Ukrainian Ambassador To The US",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:02:09.093035-03:00"
-    },
-    {
       "title": "US Immigration Agency Asks Public To Report Fraud, Anti-Government Activities",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-07T19:21:02.046471-03:00"
+    },
+    {
+      "title": "Ken Griffin's Citadel posts best month in years after scooping up Situational Awareness stocks",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "Aquisição de ações da Situational Awareness teve impacto positivo nos resultados de julho de Citadel",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:25:38.442143-03:00"
+    },
+    {
+      "title": "IFIX avança 0,29%, mas fecha semana com queda de 1,24%",
+      "source": "Suno Noticias",
+      "score": 3.0,
+      "motivo": "avanço do IFIX, mas queda na semana",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T19:25:49.172700-03:00"
     }
   ]
 }
