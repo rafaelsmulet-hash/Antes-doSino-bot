@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "China launches security review of Palo Alto Networks products",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A revisão pode afetar a venda de produtos da empresa na China e impactar sua receita.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:21:05.349842-03:00"
-    },
-    {
-      "title": "MidCap Financial Investment Non-GAAP EPS of $0.40 beats by $0.04",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A superação da expectativa de lucro por ação é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:21:08.403601-03:00"
-    },
-    {
-      "title": "Keyera reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A Keyera é uma empresa de petróleo e gás, e os resultados financeiros são relevantes para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:21:11.658155-03:00"
-    },
-    {
-      "title": "FS KKR Capital Non-GAAP NII of $0.43 beats by $0.01",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A superação da expectativa positiva é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:21:14.575542-03:00"
-    },
-    {
-      "title": "Prestige Consumer Healthcare Non-GAAP EPS of $0.98 beats by $0.10, revenue of $265.7M beats by $15.38M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de lucro e receita, o que é um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:21:17.751032-03:00"
-    },
-    {
-      "title": "First look: GXO books strongest sales quarter in three years",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O trimestre de vendas forte da GXO é relevante para o mercado pois indica uma recuperação da demanda e pode influenciar as ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:21:30.013511-03:00"
-    },
-    {
-      "title": "Spotify Just Reached 300 Million Paying Subscribers. No Audio Streaming Service Has Ever Done That.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Alcance de assinantes pagantes é um indicador importante de saúde financeira da empresa e pode influenciar a demanda por ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T07:21:33.250098-03:00"
-    },
-    {
       "title": "InfuSystem Holdings, Inc. Q2 2026 Earnings Call Summary",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T07:46:12.600488-03:00"
+    },
+    {
+      "title": "Big Tech Stocks Storm Back as AI Fears Fade and Euphoria Resumes",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as ações das empresas de tecnologia, que são importantes ativos do mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T07:50:33.649013-03:00"
+    },
+    {
+      "title": "Petrobras: balanço forte e dividendos no topo das projeções; mais está por vir no 3T?",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Balanço forte e dividendos acima das expectativas são sinal de saúde financeira da Petrobras.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T07:50:40.658852-03:00"
+    },
+    {
+      "title": "Tornado e ventos acima de 100 km/h deixam Rio Grande do Sul em alerta",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia ecológica sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:50:45.576248-03:00"
+    },
+    {
+      "title": "Bengal Energy Ltd. GAAP EPS of C$0.00, revenue of C$1.4M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não tem impacto significativo no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:50:48.910081-03:00"
+    },
+    {
+      "title": "Atmus Filtration beats top-line and bottom-line estimates; raises FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as estimativas de lucro e receita, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:50:51.914285-03:00"
+    },
+    {
+      "title": "Every S&P 500 Sector ETF Ranked by How Much It Actually Depends on Just 3 Stocks",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T07:50:58.211964-03:00"
+    },
+    {
+      "title": "SpaceX Stock Is Down 50% From Its Peak. Here's 1 Reason to Buy the Dip, and 1 Reason to Run for the Hills.",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A noticia nao e relevante para o mercado financeiro brasileiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T07:51:01.235259-03:00"
     }
   ]
 }
