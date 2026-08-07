@@ -10,21 +10,56 @@
   "total_divergencias": 35,
   "divergencias": [
     {
-      "title": "UAE’s Adnoc Buys $1.3 Billion of Tankers as Oil Exports Boom",
+      "title": "Bond Traders Look to Jobs Data That May Tip Scale on Fed Hike",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Hindalco Profit Tops Estimates as Metal Prices Surge",
       "source": "Bloomberg Markets",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Global Food Prices Hit Three-Year High as Supply Fears Build",
+      "title": "State Bank of India’s Net Income Beats Estimates Aided By Loan Growth",
       "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Petróleo sobe com preocupações sobre planos para reabertura do Estreito de Ormuz",
+      "title": "Trump diz que alguns estoques de munição dos EUA estão ‘um pouco mais restritos’",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "IA virou preocupação do Fed: investimento dispara e alerta de bolha acende",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Futuros dos EUA operam sem direção única antes do payroll de julho",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "O agro quebra mais que qualquer outro setor — e não é por causa da safra",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Bolsas da Ásia fecham mistas com queda em NY e incertezas no Oriente Médio",
       "source": "Money Times",
       "score": 6.0,
       "decisao_sugerida": "round",
@@ -33,35 +68,21 @@
     {
       "title": "J.P. Morgan aposta em small e mid caps do Reino Unido com valuations baratos",
       "source": "Investing.com Brasil",
-      "score": 6.0,
+      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
       "title": "Por que as ações da Airbnb estão disparando hoje?",
       "source": "Investing.com Brasil",
-      "score": 6.0,
+      "score": 5.0,
       "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Sezzle estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado"
     },
     {
       "title": "The Trade Desk sofre rebaixamentos em Wall St após resultados decepcionantes no 2º tri",
       "source": "Investing.com Brasil",
       "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Pague Menos vai emitir R$350 milhões em debêntures em 9ª emissão",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
@@ -73,81 +94,60 @@
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Por que as ações da Sweetgreen estão despencando hoje?",
+      "title": "Por que um relatório de empregos sólido pode derrubar as bolsas, segundo o JPMorgan",
       "source": "Investing.com Brasil",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Engenharia de contexto: a técnica que está substituindo os prompts nas empresas mais avançadas",
-      "source": "Exame",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Interface Non-GAAP EPS of $0.88 beats by $0.24, revenue of $396M beats by $4.78M",
+      "title": "Berenberg eleva Prysmian a compra e aumenta preço-alvo para €150",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "A resiliência do peronismo e a ruptura de Milei: um livro que explica a Argentina",
+      "source": "Brazil Journal",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Abacus reiterates $100M-$106M 2026 adjusted net income guidance as it targets $26M-$28M in Q3",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Arko Corp. GAAP EPS of $0.26, revenue of $1.84B",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Nature's Sunshine targets $1B in sales and 15% EBITDA margin while cutting 2026 sales outlook to $490M-$500M",
       "source": "Seeking Alpha",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Asian Shares Mixed Amid Hormuz Tensions, Strong China Trade Data",
+      "title": "Tech Stocks Under Pressure: 1 Magnificent ETF to Buy on the Dip",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Alex Karp Delivers Fantastic News for Palantir Stock Investors!",
+      "title": "ACM Research, Inc. Bottom Line Rises In Q2",
       "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Mark Zuckerberg's Net Worth Swung by Double-Digit Billions Twice This Summer as Meta's AI Spending Divides Wall Street. Here's What the Volatility Signals for Investors.",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Você sabe separar amizade e trabalho? Faça o QUIZ e descubra",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Como a cerveja é feita? Do lúpulo à levedura, veja o caminho da bebida até chegar ao copo",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "El Niño: governo decide reduzir geração de hidrelétricas para enfrentar fenômeno climático",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Golpe da renegociação de consignado dispara entre aposentados",
-      "source": "UOL Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Já posicionou a carteira para a corrida do e-commerce? FII logístico é o favorito dos analistas para agosto; veja o ranking completo",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }
