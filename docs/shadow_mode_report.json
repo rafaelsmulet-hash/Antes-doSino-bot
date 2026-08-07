@@ -1,150 +1,150 @@
 {
-  "date": "2026-08-06",
-  "total_ingeridas": 25226,
-  "aprovadas_pelo_fluxo_atual": 547,
-  "descartadas_pelos_filtros_atuais": 24679,
-  "score_medio_materialidade": 4.17,
-  "seriam_breaking": 23,
-  "iriam_para_rodada": 298,
-  "seriam_descartadas_pelo_novo_sistema": 1567,
-  "total_divergencias": 670,
+  "date": "2026-08-07",
+  "total_ingeridas": 248,
+  "aprovadas_pelo_fluxo_atual": 32,
+  "descartadas_pelos_filtros_atuais": 216,
+  "score_medio_materialidade": 3.74,
+  "seriam_breaking": 4,
+  "iriam_para_rodada": 28,
+  "seriam_descartadas_pelo_novo_sistema": 69,
+  "total_divergencias": 26,
   "divergencias": [
     {
-      "title": "Debt-Fueled Solar Firm GoldenPeaks Accused of Fraudulent Lending",
+      "title": "UAE’s Adnoc Buys $1.3 Billion of Tankers as Oil Exports Boom",
       "source": "Bloomberg Markets",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Zurich Insurance Sees No Material Exposure to Wildfires",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
+      "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Rheinmetall Cuts Outlook After Losing Out on Naval Contract",
+      "title": "Global Food Prices Hit Three-Year High as Supply Fears Build",
       "source": "Bloomberg Markets",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Odd Lots: Brad Setser on the US’s Yen Intervention (Podcast)",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Reação ao Copom, balança comercial, Petrobras e mais destaques desta quinta-feira",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Futuros de NY operam mistos à espera de acordo entre EUA e Irã e do payroll",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Tempo real: Ibovespa repercute Copom",
+      "title": "Petróleo sobe com preocupações sobre planos para reabertura do Estreito de Ormuz",
       "source": "Money Times",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Petróleo sobe com investidores cautelosos sobre avanço das negociações entre Irã e Omã",
-      "source": "Money Times",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Ações da ClearOne disparam após aprovação de fusão transformadora",
+      "title": "J.P. Morgan aposta em small e mid caps do Reino Unido com valuations baratos",
       "source": "Investing.com Brasil",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Por que a ação da Flutter Entertainment está subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Ações da China fecham com resultados mistos; setor do ouro sobe",
+      "title": "Por que as ações da Airbnb estão disparando hoje?",
       "source": "Investing.com Brasil",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Na Bolsa do México, um múltiplo de 12x aguarda melhores ventos do norte",
-      "source": "Brazil Journal",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
+      "title": "Por que as ações da Sezzle estão despencando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Nem o lixo escapa: EUA suspendem exportações de sucata para a China",
+      "title": "The Trade Desk sofre rebaixamentos em Wall St após resultados decepcionantes no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Pague Menos vai emitir R$350 milhões em debêntures em 9ª emissão",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Lucro líquido da Mitre Realty sobe 45,5% no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Sweetgreen estão despencando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Engenharia de contexto: a técnica que está substituindo os prompts nas empresas mais avançadas",
       "source": "Exame",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Interface Non-GAAP EPS of $0.88 beats by $0.24, revenue of $396M beats by $4.78M",
+      "source": "Seeking Alpha",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Sandisk is falling after earnings. Here’s what Wall Street says.",
-      "source": "MarketWatch",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "SpaceX insiders get their first chance to cash out — but the stock’s slide will limit their opportunity",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Array reaffirms $1.4B-$1.5B 2026 revenue while raising adjusted EPS to $0.68-$0.75",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "AI memory chip stocks fall after Sandisk's mixed outlook",
-      "source": "Seeking Alpha",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "U.S. announced job cuts drop to lowest monthly level in two years",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Judgment Day Has Arrived for SpaceX, With Up to $99 Billion in Selling Pressure Waiting in the Wings",
+      "title": "Asian Shares Mixed Amid Hormuz Tensions, Strong China Trade Data",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "PetroTal Corp. Reports Fall In Q2 Bottom Line",
+      "title": "Alex Karp Delivers Fantastic News for Palantir Stock Investors!",
       "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Mark Zuckerberg's Net Worth Swung by Double-Digit Billions Twice This Summer as Meta's AI Spending Divides Wall Street. Here's What the Volatility Signals for Investors.",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Você sabe separar amizade e trabalho? Faça o QUIZ e descubra",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Como a cerveja é feita? Do lúpulo à levedura, veja o caminho da bebida até chegar ao copo",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "El Niño: governo decide reduzir geração de hidrelétricas para enfrentar fenômeno climático",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Golpe da renegociação de consignado dispara entre aposentados",
+      "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Já posicionou a carteira para a corrida do e-commerce? FII logístico é o favorito dos analistas para agosto; veja o ranking completo",
+      "source": "Seu Dinheiro",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"

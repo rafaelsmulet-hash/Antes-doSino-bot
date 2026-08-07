@@ -17,7 +17,7 @@
       "id": "f023d7ad-4df0-45ad-a139-c5bfcbace1bb",
       "cluster_key": "bradesco",
       "first_seen": "2026-08-05T06:55:57.746056-03:00",
-      "last_updated": "2026-08-06T12:36:11.336284-03:00",
+      "last_updated": "2026-08-07T06:54:56.561959-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "InfoMoney",
@@ -28,14 +28,14 @@
         "Neofeed",
         "Seu Dinheiro"
       ],
-      "update_count": 15,
+      "update_count": 16,
       "status": "active"
     },
     {
       "id": "cbd5f033-6943-4dad-ac1e-0f54c7901a09",
       "cluster_key": "gol",
       "first_seen": "2026-08-05T06:57:38.913154-03:00",
-      "last_updated": "2026-08-06T22:21:00.782482-03:00",
+      "last_updated": "2026-08-07T06:55:08.977860-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "G1 Economia",
@@ -48,9 +48,10 @@
         "Bloomberg Markets",
         "Business Insider",
         "Money Times",
-        "MarketWatch"
+        "MarketWatch",
+        "UOL Economia"
       ],
-      "update_count": 48,
+      "update_count": 50,
       "status": "active"
     },
     {
@@ -138,7 +139,7 @@
       "id": "d0befc41-39df-4325-b49b-eb53d8c61049",
       "cluster_key": "petr4",
       "first_seen": "2026-08-05T10:02:21.760505-03:00",
-      "last_updated": "2026-08-06T20:09:58.288253-03:00",
+      "last_updated": "2026-08-07T06:52:20.593752-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
         "InfoMoney",
@@ -146,7 +147,7 @@
         "Money Times",
         "Suno Noticias"
       ],
-      "update_count": 14,
+      "update_count": 15,
       "status": "active"
     },
     {
@@ -206,14 +207,14 @@
       "id": "a49a0d57-579d-4236-a127-3633bfad9678",
       "cluster_key": "magazine luiza",
       "first_seen": "2026-08-06T19:24:02.995524-03:00",
-      "last_updated": "2026-08-06T20:09:01.477651-03:00",
-      "materiality_peak": null,
+      "last_updated": "2026-08-07T06:55:11.956465-03:00",
+      "materiality_peak": 6.0,
       "sources_seen": [
         "UOL Economia",
         "Investing.com Brasil",
         "Exame"
       ],
-      "update_count": 4,
+      "update_count": 5,
       "status": "active"
     }
   ]
