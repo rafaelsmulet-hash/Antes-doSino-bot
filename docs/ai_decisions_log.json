@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Jeff Bezos just filed to sell $4 billion in Amazon. The shares are falling",
-      "source": "CNBC - Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:21:44.464551-03:00"
-    },
-    {
-      "title": "Lula e Alcolumbre decidem deixar discussão sobre 6×1 para depois das eleições",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:21:47.335810-03:00"
-    },
-    {
-      "title": "Atlas/Bloomberg: Lula tem melhor imagem positiva entre candidatos à Presidência",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:21:49.993741-03:00"
-    },
-    {
-      "title": "Riachuelo tem recorde no EBITDA e lucro. Agora vem a expansão",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:21:54.904256-03:00"
-    },
-    {
-      "title": "Genius Sports GAAP EPS of -$0.28 misses by $0.21, revenue of $196M beats by $11.45M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:21:57.800463-03:00"
-    },
-    {
-      "title": "Ironwood Pharmaceuticals reports mixed Q2 results; raises FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:22:00.443025-03:00"
-    },
-    {
-      "title": "Unity Software jumps on Q2 earnings beat, aided by Grow Solutions",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T08:22:03.739001-03:00"
-    },
-    {
-      "title": "Blackstone Secured Lending turns in solid Q2 results with return on NAV holding steady",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:22:09.402112-03:00"
-    },
-    {
-      "title": "Sotera Health Non-GAAP EPS of $0.26 beats by $0.02, revenue of $321.3M beats by $11.73M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:22:12.060571-03:00"
-    },
-    {
       "title": "TripAdvisor Non-GAAP EPS of $0.35 misses by $0.03, revenue of $441.9M misses by $62.4M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-07T09:16:00.921364-03:00"
+    },
+    {
+      "title": "Dólar hoje recua antes de dados emprego nos EUA",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre movimento de moeda, mas sem impacto significativo no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:20:36.252875-03:00"
+    },
+    {
+      "title": "Correção da IA derruba fundos chineses e elimina ganhos de 2026",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "Correção das ações de IA afeta fundos chineses de forma significativa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:20:40.975581-03:00"
+    },
+    {
+      "title": "Maximus expects FY2026 adjusted EPS of $7.90-$8.20 as VA incentives pause reduces outlook by ~$0.35",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a previsão de lucro da empresa, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:20:44.488744-03:00"
+    },
+    {
+      "title": "Hyperfine reiterates $20M-$22M 2026 revenue outlook while targeting contrast FDA submission by year-end 2026",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:20:47.103179-03:00"
+    },
+    {
+      "title": "Good Times sees Q4 same-store sales staying positive as it considers extending $2 Bambinos pricing",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:20:49.718546-03:00"
+    },
+    {
+      "title": "Newmark CEO Barry Gosin to step down",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:20:52.346489-03:00"
+    },
+    {
+      "title": "Dólar abre a R$ 5,10, com petróleo, emprego dos EUA e Petrobras no radar",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:20:57.659721-03:00"
+    },
+    {
+      "title": "MRV vende último projeto legado da Resia por US$ 170 milhões",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:21:02.540619-03:00"
+    },
+    {
+      "title": "Clover Health Investments Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:21:05.468455-03:00"
     }
   ]
 }
