@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Superintendentes da PF divulgam nota em defesa de diretor em meio a crise com STF",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:33:02.535715-03:00"
-    },
-    {
-      "title": "Sem Cleitinho, Republicanos deve lançar ex-prefeito ao governo de Minas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:33:05.192370-03:00"
-    },
-    {
-      "title": "Um Jereissati vai às compras para consolidar o setor de retail media",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:33:07.846044-03:00"
-    },
-    {
-      "title": "No BTG Pactual, um diretor saiu da 'caixinha' técnica para decisões mais abrangentes",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:33:10.504233-03:00"
-    },
-    {
-      "title": "No estado com o menor desemprego do Brasil, Britânia vira a maior pagadora de Joinville",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T14:33:13.139096-03:00"
-    },
-    {
       "title": "Naufrágio de mais de 160 anos escondia champanhe destinado ao czar da Rússia",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T16:06:10.078099-03:00"
+    },
+    {
+      "title": "Gray Media stock jumps after Q2 beat",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A superação das expectativas financeiras é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:11:06.476047-03:00"
+    },
+    {
+      "title": "Consumer credit rises more than expected in June",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Aumento do crédito ao consumidor é um indicador positivo de recuperação econômica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:11:10.619956-03:00"
+    },
+    {
+      "title": "Greg Abel Reports Saturday Morning. Berkshire Stock Just Hit a 52-Week High and Is Still Behind the S&P 500 This Year.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A Berkshire está realizando recompras de ações, o que é um sinal positivo para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T16:11:17.274462-03:00"
+    },
+    {
+      "title": "The Average 401(k) Balance for Americans Ages 65 to 69 May Surprise You",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:11:19.944043-03:00"
+    },
+    {
+      "title": "New York homeowners are suing Mamdani over the city's pied-a-terre tax letter 'confusion'",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T16:11:27.716226-03:00"
     }
   ]
 }
