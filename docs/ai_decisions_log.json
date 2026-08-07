@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lexicon Pharmaceuticals GAAP EPS of -$0.07 misses by $0.02, revenue of $28.9M beats by $24.9M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:08.021970-03:00"
-    },
-    {
-      "title": "Cronos Group GAAP EPS of $0.09 beats by $0.08, revenue of $53M beats by $9.64M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:10.745883-03:00"
-    },
-    {
-      "title": "ITT Non-GAAP EPS of $2.08 beats by $0.13, revenue of $1.47B beats by $80M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:13.464074-03:00"
-    },
-    {
-      "title": "ATI Non-GAAP EPS of $1.23 beats by $0.19, revenue of $1.26B beats by $40M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:16.180961-03:00"
-    },
-    {
-      "title": "Tarsus Pharmaceuticals, Inc. GAAP EPS of -$0.43, revenue of $173.9M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T08:36:18.888301-03:00"
-    },
-    {
       "title": "Via Transportation, Inc. Non-GAAP EPS of -$0.01 beats by $0.01, revenue of $136M beats by $2.66M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T09:36:45.987578-03:00"
+    },
+    {
+      "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A perda de empregos inesperada pode influenciar a política monetária e afetar as expectativas de crescimento econômico.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T09:41:26.867150-03:00"
+    },
+    {
+      "title": "Eregli Demir ve Çelik Fabrikalari T.A.S. GAAP EPS of TRY 5.71, revenue of TRY 59.68B",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque fornece informações sobre os resultados financeiros da empresa, mas não é um evento inesperado ou de grande impacto.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:41:34.963309-03:00"
+    },
+    {
+      "title": "OKLO, HTO draw highest short interest in utilities sector; PCG and WTRG see lowest short interest",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia fornece informações sobre o interesse de curto prazo de ações específicas, o que pode ser relevante para traders e investidores.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:41:38.095133-03:00"
+    },
+    {
+      "title": "AMN forecasts Q3 revenue of $640M-$655M as nurse and allied segment targets 9%-11% growth",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:41:40.784524-03:00"
+    },
+    {
+      "title": "Analyst Report: Space Exploration Tech. Corp",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T09:41:52.617308-03:00"
     }
   ]
 }
