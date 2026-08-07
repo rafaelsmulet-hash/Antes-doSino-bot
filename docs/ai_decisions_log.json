@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Berkshire Hathaway Stock: Is Wall Street Bullish or Bearish?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:10:17.950186-03:00"
-    },
-    {
-      "title": "Why It’s Time to Buy the Dip In SoFi Stock",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:10:20.570731-03:00"
-    },
-    {
       "title": "The Biggest Risk To Meta Platforms Stock Is A Bill Without A Payback Date",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T20:06:00.574152-03:00"
+    },
+    {
+      "title": "Quando 'Michael 2' chega aos cinemas? Veja o que já se sabe sobre a sequência",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há informações financeiras ou de mercado relevantes no texto",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:10:50.286785-03:00"
+    },
+    {
+      "title": "Calumet expects 120M-150M gallons of SAF by spring 2027 while targeting sub-3x leverage next quarter",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois fornece informações sobre a produção de combustível sintético a partir de álcool, que pode ter impacto no mercado de petróleo e energia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:10:53.528781-03:00"
     }
   ]
 }
