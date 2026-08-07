@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "OpenAI’s new AI smart speaker will reportedly sell for between $300-$400",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:10:07.259197-03:00"
-    },
-    {
-      "title": "Circle Taps Visa, Mastercard and BlackRock as Validators for September Arc Launch",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:10:10.001539-03:00"
-    },
-    {
-      "title": "Crude Prices Pressured by Growing Optimism the Strait of Hormuz to Soon Reopen",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:10:12.660050-03:00"
-    },
-    {
-      "title": "North America becomes GXO’s fastest-growing market in Q2, topping $782M",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:10:15.311014-03:00"
-    },
-    {
       "title": "Berkshire Hathaway Stock: Is Wall Street Bullish or Bearish?",
       "source": "Yahoo Finance",
       "score": null,
@@ -18017,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T20:01:38.321993-03:00"
+    },
+    {
+      "title": "SEC Drops Insider-Trading Suit Against Executive Trump Pardoned",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro, apenas um caso de insider trading que foi abandonado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:05:44.241984-03:00"
+    },
+    {
+      "title": "SpaceX Stock Rises on ‘Lockup Day’",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A noticia e relevante porque afeta a liquidez e a volatilidade da acao da SpaceX, o que pode influenciar os traders e investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T20:06:00.574152-03:00"
     }
   ]
 }
