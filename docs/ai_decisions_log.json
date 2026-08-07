@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "França - Ações fecharam o pregão em alta e o Índice CAC 40 avançou 0,35%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "o avanço do Índice CAC 40 é um sinal positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:19.317570-03:00"
-    },
-    {
-      "title": "Bélgica - Ações fecharam o pregão em queda e o Índice BEL 20 recuou 0,27%",
-      "source": "Investing.com Brasil",
-      "score": 2.0,
-      "motivo": "queda no índice BEL 20, mas não é um evento significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:22.126121-03:00"
-    },
-    {
-      "title": "Suécia - Ações fecharam o pregão em queda e o Índice OMX Stockholm 30 recuou 0,12%",
-      "source": "Investing.com Brasil",
-      "score": 4.0,
-      "motivo": "queda no Índice OMX Stockholm 30",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:24.827005-03:00"
-    },
-    {
-      "title": "Finlândia - Ações fecharam o pregão em alta e o Índice OMX Helsinki 25 avançou 0,33%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento do Índice OMX Helsinki 25 indica melhora da confiança no mercado finlandês",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:27.820954-03:00"
-    },
-    {
-      "title": "Alphabet sells more debt to fund AI ambitions",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A venda de dívida pode ser um sinal de que a Alphabet está confiante em suas perspectivas financeiras e está disposta a financiar seus investimentos em IA.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T13:22:31.688771-03:00"
-    },
-    {
-      "title": "Harvia Oyj GAAP EPS of EUR 0.30, revenue of EUR 52.8M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado, mas não apresenta impacto significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:34.615890-03:00"
-    },
-    {
-      "title": "Evolent projects 2027 revenue growth of more than 25% with 2027 adjusted EBITDA midpoint at or above $150m",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois fornece informações sobre o crescimento esperado da empresa em 2027, o que pode influenciar as expectativas dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:37.584039-03:00"
-    },
-    {
-      "title": "Renk CEO says crewed combat vehicles will dominate battlefield through 2030",
-      "source": "Seeking Alpha",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:40.443123-03:00"
-    },
-    {
-      "title": "Teleflex forecasts 2026 revenue growth of 3.5% to 4.5% while raising adjusted EPS to $6.90 to $7.20",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:43.065847-03:00"
-    },
-    {
-      "title": "Nuvation Bio outlines $30M Eisai milestone timing while expanding safusidenib studies with PFS readouts expected in 2029",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:45.693633-03:00"
-    },
-    {
-      "title": "Why Did Aeva Stock Soar After Earnings?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A ação superou as expectativas de perda, o que pode ser visto como positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T13:22:52.058756-03:00"
-    },
-    {
-      "title": "2 Nuclear Energy Stocks to Buy Hand Over Fist in August",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia menciona uma tendência positiva para o setor de energia nuclear.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T13:22:55.120728-03:00"
-    },
-    {
-      "title": "See How Franco-Nevada Ranks Among Analysts' Top Metals Picks",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T13:22:57.748179-03:00"
-    },
-    {
-      "title": "S&P 500 Analyst Moves: ABT",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T13:23:00.339660-03:00"
-    },
-    {
-      "title": "See Which Recent 13F Filers Hold MSFT But GSA Capital Partners Exited",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T13:23:03.265945-03:00"
-    },
-    {
-      "title": "How To YieldBoost Aura Minerals From 4.7% To 24.2% Using Options",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T13:23:05.873496-03:00"
-    },
-    {
-      "title": "NuScale's Revenue Plunged 99% Last Quarter, But the Stock Has Gained 1% So Far. Here's What Investors Need to Know.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T13:23:08.505607-03:00"
-    },
-    {
-      "title": "Is the Market Underrating American Express's Growth Runway?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T13:23:11.386417-03:00"
-    },
-    {
       "title": "Astera Labs vs. AppLovin: Which Technology Stock Is a Better Buy in 2026?",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T14:31:39.989884-03:00"
+    },
+    {
+      "title": "US Treasury Sparks Debate Over Auction Cutbacks to Temper Yields",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia sugere que o Tesouro pode precisar aumentar os leilões para controlar as taxas de juros, o que pode ter impacto significativo no mercado de títulos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:40:41.370935-03:00"
+    },
+    {
+      "title": "Ações da BlossomHill Therapeutics caem em estreia na bolsa após IPO",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a ação caiu após o IPO, indicando possíveis problemas na empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:40:46.548405-03:00"
+    },
+    {
+      "title": "Ações da Latigo Biotherapeutics disparam 17% após IPO ampliado",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "o aumento de 17% nas ações da Latigo Biotherapeutics após o IPO ampliado é um sinal positivo para o mercado de ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:40:49.513854-03:00"
+    },
+    {
+      "title": "S&P rebaixa nota da Aston Martin por preocupações com recuperação de dívida",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "a rebaixa da nota da Aston Martin pode afetar a confiança dos investidores e influenciar o preço das ações da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:40:52.488348-03:00"
+    },
+    {
+      "title": "9 profissões ‘a prova’ de IA — e por que inteligência emocional faz diferença",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia, portanto não é relevante para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T14:40:55.925878-03:00"
+    },
+    {
+      "title": "Hacker da Coldcard movimenta bitcoin roubado e recebe avalanche de mensagens",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T14:40:58.722009-03:00"
+    },
+    {
+      "title": "Energy Vault signs contract for 1.25 GW of AI data center power infrastructure in Texas",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T14:41:01.614505-03:00"
+    },
+    {
+      "title": "Trump moves forward with attempt to remove Fed Governor Cook - report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:41:04.278655-03:00"
+    },
+    {
+      "title": "This Power Stock Could Be a Big Winner From the Data Center Boom",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T14:41:08.274097-03:00"
+    },
+    {
+      "title": "Oklo's Groves Reactor Just Achieved First Criticality. Here's What It Means for OKLO Stock.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T14:41:11.095583-03:00"
+    },
+    {
+      "title": "Notable Friday Option Activity: MSFT, MCHP, AVGO",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:41:13.730165-03:00"
+    },
+    {
+      "title": "Noteworthy Friday Option Activity: AKAM, QCOM, NFLX",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:41:16.392011-03:00"
+    },
+    {
+      "title": "Noteworthy Friday Option Activity: ULTA, SMCI, SWK",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:41:19.020095-03:00"
+    },
+    {
+      "title": "Notable Friday Option Activity: COIN, AAPL, TTD",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:41:21.648031-03:00"
+    },
+    {
+      "title": "Notable Friday Option Activity: IBKR, ORCL, STX",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:41:24.418052-03:00"
+    },
+    {
+      "title": "See Which Recent 13F Filers Hold MRVL",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T14:41:27.031646-03:00"
+    },
+    {
+      "title": "Petrobras não deve distribuir dividendo extraordinário, diz CFO da empresa",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T14:41:32.194787-03:00"
+    },
+    {
+      "title": "Não é o home office: pais querem outro tipo de flexibilidade no trabalho",
+      "source": "Seu Dinheiro",
+      "score": 1.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T14:41:35.149136-03:00"
     }
   ]
 }
