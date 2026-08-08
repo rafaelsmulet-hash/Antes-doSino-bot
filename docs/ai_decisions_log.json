@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ibovespa Futuro tem leve alta com dados de emprego dos EUA e balanços no radar",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Criação de vagas de trabalho positiva para a economia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:15:41.246337-03:00"
-    },
-    {
       "title": "Caso Lulinha amplia clima de desconfiança entre grupos de ministros do STF",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T18:36:28.370249-03:00"
+    },
+    {
+      "title": "Here’s How You Can Retire to the Beaches of Florida’s Gulf Coast at 59",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:41:31.373429-03:00"
     }
   ]
 }
