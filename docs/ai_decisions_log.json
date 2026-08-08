@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wendy's new CEO takes on turnaround effort, pulls guidance, cuts dividend in half",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:26:14.494425-03:00"
-    },
-    {
-      "title": "Earnings Snapshot: Take-Two Interactive beats FQ1 EPS and bookings estimates; issues FQ2 and updates FY27 outlook",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:26:17.103225-03:00"
-    },
-    {
-      "title": "Tredegar Non-GAAP EPS of $0.18, revenue of $216.24M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:26:19.690758-03:00"
-    },
-    {
-      "title": "The Overlooked Chip Stock Poised to Lead the AI Memory Boom",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:26:25.635458-03:00"
-    },
-    {
       "title": "Petrobras (PETR4) anuncia R$ 17,4 bilhões em dividendos e JCP intercalares; veja detalhes",
       "source": "Suno Noticias",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T19:36:41.650814-03:00"
+    },
+    {
+      "title": "Why the Market Continues to Sleep on Micron's Growth Potential",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa apresenta resultados sólidos, o que pode indicar que o mercado está subestimando seu potencial de crescimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T19:45:53.096988-03:00"
+    },
+    {
+      "title": "Jeftovic: The \"Bitcoin Only\" Era Is Over...",
+      "source": "ZeroHedge",
+      "score": 8.0,
+      "motivo": "O problema de segurança em um cartão de cold storage pode ter um impacto significativo no mercado de criptomoedas, especialmente para os investidores que confiavam em self-custody.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T19:46:01.709464-03:00"
+    },
+    {
+      "title": "Another Sign Of The Times: 'F**k ICE'",
+      "source": "ZeroHedge",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T19:46:04.824766-03:00"
+    },
+    {
+      "title": "Ukrainian Drone With Huge Explosive Payload Hits Bulgaria Near Vital Gas Pipeline",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T19:46:07.482806-03:00"
     }
   ]
 }
