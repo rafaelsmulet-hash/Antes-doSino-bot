@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Petrobras, MRV, Brava, PetroReconcavo, Magalu e mais ações para acompanhar hoje",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia lista de ações para acompanhar sem conteúdo específico",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:46:10.977259-03:00"
-    },
-    {
-      "title": "Under Armour falls after cutting annual revenue outlook on soft demand",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de receita da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:46:17.030787-03:00"
-    },
-    {
-      "title": "Vital Farms reaffirms 2026 guidance and targets ~$775M-$800M net revenue with ~30% gross margin exit run rate",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa confirma orientação para 2026 e prevê receita líquida significativa com margem bruta atraente",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:46:20.341611-03:00"
-    },
-    {
-      "title": "Rigetti Computing in focus as Wedbush says Q2 results show progress",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:46:24.984232-03:00"
-    },
-    {
-      "title": "Take-Two Interactive in charts: FQ1 net bookings slip 3% to $1.39B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:46:27.786769-03:00"
-    },
-    {
-      "title": "Soligenix GAAP EPS of -$0.12 beats by $0.10",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:46:30.417617-03:00"
-    },
-    {
-      "title": "Canopy Growth gains as all-around performance drives Q1 growth",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:46:33.742622-03:00"
-    },
-    {
-      "title": "Take-Two backs its booking guidance with GTA 6 loaded for release",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:46:36.795216-03:00"
-    },
-    {
-      "title": "2 Space Stocks to Buy in August",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:46:41.004362-03:00"
-    },
-    {
       "title": "PH Crosses Above Average Analyst Target",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T15:51:36.042729-03:00"
+    },
+    {
+      "title": "Netflix e caiaques bancados pelo plano de saúde? Entenda a polêmica nos EUA",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "a noticia nao e sobre mercado financeiro, e sim sobre um plano de saúde nos EUA",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:00:48.105981-03:00"
+    },
+    {
+      "title": "AST SpaceMobile vs. Rocket Lab: Which Space Stock Has More Upside?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia destaca a disputa entre duas ações de empresas de tecnologia espacial, o que pode ter impacto significativo no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T16:00:56.390251-03:00"
+    },
+    {
+      "title": "Four Savers Value Village Insiders Sold This Week. Here's What to Make of It",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações de executivos não é um evento significativo para o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:00:59.380826-03:00"
+    },
+    {
+      "title": "Toast CEO Aman Narang Sells 138,000 Shares for $4.9 Million Amid Stock's 24% Dip",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A venda de ações significativas por parte do CEO pode influenciar a percepção dos investidores sobre a empresa e seu futuro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:01:03.169535-03:00"
+    },
+    {
+      "title": "A Savers Insider Cashed In Options Struck at $1.41. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é sobre uma transação de ações, mas não é um evento significativo ou inesperado no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:01:06.354737-03:00"
+    },
+    {
+      "title": "Stanley Druckenmiller's Portfolio Skips Megacap Tech Almost Entirely. Here's What He's Buying Instead.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia revela as estratégias de investimento de um bilionário conhecido, o que pode influenciar a tomada de decisões dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:01:09.301230-03:00"
+    },
+    {
+      "title": "Progressive's Combined Ratio Widened to 87.1 Last Quarter. What That Says About the Growth Machine.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de seguros, mas não apresenta um impacto significativo ou inesperado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:01:12.488919-03:00"
+    },
+    {
+      "title": "E-commerce bate recorde com faturamento de R$ 295,6 bilhões no Brasil — e os pequenos negócios estão roubando a cena",
+      "source": "Seu Dinheiro",
+      "score": 8.0,
+      "motivo": "o crescimento do comércio eletrônico e a participação crescente de pequenos negócios indicam um mercado em expansão",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T16:01:21.162091-03:00"
+    },
+    {
+      "title": "Four Savers Value Village Insiders Sold This Week. Here's What to Make of It",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "Venda de ações por parte de funcionários internos pode indicar perda de confiança na empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:01:25.845465-03:00"
     }
   ]
 }
