@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
-      "source": "WSJ Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de energia e petróleo, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:35:36.581331-03:00"
-    },
-    {
-      "title": "Por que as ações da SpaceX estão voláteis hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a noticia menciona acoes da SpaceX, o que e relevante para o mercado de acoes",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:35:40.669474-03:00"
-    },
-    {
-      "title": "Por que as ações da Construction Partners estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "aumento de acoes de Construction Partners pode ser um sinal de confianca no mercado de construcao civil",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:35:44.532342-03:00"
-    },
-    {
-      "title": "Mudanças climáticas forçam borboletas a abandonar seus habitats em 105 países",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:35:47.578762-03:00"
-    },
-    {
-      "title": "Alpha Metallurgical GAAP EPS of -$0.96 misses by $1.23, revenue of $492.86M misses by $91.49M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:35:50.447010-03:00"
-    },
-    {
-      "title": "Plains All American Pipeline Non-GAAP EPS of $0.41 misses by $0.09, revenue of $17.69B beats by $4.97B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:35:53.324259-03:00"
-    },
-    {
-      "title": "Take-Two beats top-line and bottom-line estimates; updates FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:35:55.950400-03:00"
-    },
-    {
-      "title": "Gyre Therapeutics GAAP EPS of -$0.12 misses by $0.06, revenue of $29.1M beats by $2.61M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:35:58.574082-03:00"
-    },
-    {
-      "title": "Banc of California, Inc. DEP SHS PFD F declares $0.4845 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:36:01.198300-03:00"
-    },
-    {
-      "title": "LCI declares $1.15 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:36:03.806977-03:00"
-    },
-    {
       "title": "Essent Group declares $0.35 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T15:25:57.736718-03:00"
+    },
+    {
+      "title": "Insider Waves Goodbye to Retail Stock, Valued at More Than $620,000",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de acoes de um executivo não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:30:59.029046-03:00"
+    },
+    {
+      "title": "Palantir vs. ServiceNow: Which Is the Better Long-Term AI Stock?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia discute a disputa entre duas empresas de tecnologia de ponta, o que pode ter impacto significativo no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T15:31:02.167005-03:00"
+    },
+    {
+      "title": "Badger Meter VP-Engineering Callahan Buys 751 Shares for $101,573 Amid Stock's 26% Pullback",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Compra de ações por parte de um executivo sênior da empresa durante uma retaliação de mercado sugere confiança no futuro da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:31:05.673933-03:00"
+    },
+    {
+      "title": "Savers Value Village's U.S. Sales Rose 6.6%. Its CEO Just Sold $2.4 Million in Stock",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações do CEO não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:31:08.530940-03:00"
+    },
+    {
+      "title": "Why Doximity Stock Skyrocketed on Friday",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante para o mercado pois menciona uma avaliação positiva da assistente de inteligência artificial da empresa, o que pode influenciar a percepção dos investidores sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:31:11.486976-03:00"
+    },
+    {
+      "title": "My Top Dividend Stock to Buy in August (and It's Not Even Close)",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A noticia e mais uma recomendacao de investimento e nao tem impacto imediato no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:31:14.697481-03:00"
+    },
+    {
+      "title": "What Does SentinelOne CEO Tomer Weingarten's Sale of Over 50,000 Shares for $1.1 Million Mean for Investors?",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações do CEO não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:31:17.581194-03:00"
+    },
+    {
+      "title": "This Group of Seniors Could See a Nearly $200 Monthly Social Security Benefit Increase in 2027",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:31:20.750369-03:00"
+    },
+    {
+      "title": "BJ's Wholesale CEO Sells $7.3 Million Stock After Option Exercise",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A venda de ações do CEO não é um evento significativo para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:31:28.156380-03:00"
+    },
+    {
+      "title": "Warren Buffett is out, and Berkshire Hathaway is spending again",
+      "source": "Business Insider",
+      "score": 5.0,
+      "motivo": "A redução do estoque de dinheiro da Berkshire Hathaway pode indicar que a empresa está pronta para investir em novas oportunidades.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T15:31:31.499206-03:00"
     }
   ]
 }
