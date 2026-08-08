@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Morgan Stanley fica otimista com Roche enquanto pipeline ganha força",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A empresa é avaliada positivamente por uma instituição financeira, o que pode influenciar a confiança dos investidores no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:18.946717-03:00"
-    },
-    {
-      "title": "Ações da Century Casinos disparam após resultados recordes no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Resultados recordes da Century Casinos impactam positivamente a ação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:22.262788-03:00"
-    },
-    {
-      "title": "FDA aprova Tudriqev da Replimune em combinação com nivolumabe",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Aprovação da FDA é um sinal positivo para o desenvolvimento do medicamento e pode impulsionar o valor da ação da empresa.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:25.557339-03:00"
-    },
-    {
       "title": "Por que as ações da PENN Entertainment estão subindo hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T12:20:48.549144-03:00"
+    },
+    {
+      "title": "Pensão alimentícia: STJ permite prever valor se pai ficar desempregado",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:25:34.045697-03:00"
+    },
+    {
+      "title": "Conheça história do pai de Messi, empresário e primeiro treinador do craque argentino",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:25:36.758955-03:00"
+    },
+    {
+      "title": "Google's AI claimed Flock cameras hold $650 in gold and 23 pounds of copper — It was duped by meme",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:25:47.985160-03:00"
     }
   ]
 }
