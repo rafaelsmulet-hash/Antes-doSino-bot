@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A Spyre Executive Sold Stock After a 500% Run. Here's What Long-Term Investors Should Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações de um executivo não é um evento significativo para o mercado em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:45:58.379908-03:00"
-    },
-    {
-      "title": "Ecovyst Becomes Oversold (ECVT)",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia indica que a Ecovyst está sendo considerada subvalorizada, o que pode ser um sinal de que o mercado está sendo excessivamente pessimista e pode ser uma oportunidade de compra.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:46:02.059372-03:00"
-    },
-    {
-      "title": "Emergent BioSolutions is Now Oversold (EBS)",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia sugere que a ação está subvalorizada, o que pode ser um sinal de compra para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:46:05.494625-03:00"
-    },
-    {
       "title": "OpenAI’s new AI smart speaker will reportedly sell for between $300 and $400",
       "source": "TechCrunch",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T21:26:21.475730-03:00"
+    },
+    {
+      "title": "Narrativa ’Sell America’ ressurge com riscos do Fed e do iene",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Riscos do Fed e do iene podem afetar investimentos nos EUA e impulsionar a saída de capitais do país.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-07T21:31:05.821233-03:00"
+    },
+    {
+      "title": "Wheat Back to Falling Lower on Thursday",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os mercados agrícolas, mas não tem impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T21:31:18.720929-03:00"
+    },
+    {
+      "title": "SEC Announces Roundtable on Preparations for 24-Hour Trading",
+      "source": "SEC",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque discute mudanças significativas nos horários de negociação dos mercados de ações dos EUA.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T21:31:23.368773-03:00"
     }
   ]
 }
