@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Interface Inc. Q2 Profit Advances",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:58:23.016214-03:00"
-    },
-    {
-      "title": "Ensign Energy Services Inc. Q2 Loss Decreases",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A perda foi menor do que o esperado, o que é considerado positivo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:58:26.045998-03:00"
-    },
-    {
-      "title": "Warren Buffett's Successor, Greg Abel, Has 63% of Berkshire Hathaway's $355 Billion Portfolio Invested in Just 5 Standout Stocks",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:58:28.763385-03:00"
-    },
-    {
-      "title": "Amazon CEO Andy Jassy Just Gave Investors 220 Billion Reasons to Buy Micron Stock",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento do orçamento de investimentos da Amazon pode impulsionar a demanda por chips de memória, beneficiando a Micron.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:58:31.662139-03:00"
-    },
-    {
       "title": "European Shares Inch Higher In Cautious Trade Ahead Of US Jobs Data",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:46:11.369241-03:00"
+    },
+    {
+      "title": "El Niño deve custar caro ao PIB do Brasil com choques em agro e energia",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Choques em agro e energia podem afetar negativamente o PIB do Brasil",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T08:51:13.598025-03:00"
+    },
+    {
+      "title": "João Adibe revela o choque de gestão que transformou a Cimed em uma empresa bilionária",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "a noticia e sobre uma empresa em particular, mas nao e relevante para o mercado em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:51:18.431069-03:00"
+    },
+    {
+      "title": "EU Cohesion Breaks: Madrid Socialists Impose  Border Protections Against Italians After Third World Invasion",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "A notícia indica um conflito entre a Espanha e a Itália sobre a imigração, o que pode ter consequências para a estabilidade da UE e o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T08:51:31.894384-03:00"
+    },
+    {
+      "title": "Kids In Tiny British Village Beg The Government Not To Force Illegal Migrants On Their Home",
+      "source": "ZeroHedge",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:51:34.999096-03:00"
     }
   ]
 }
