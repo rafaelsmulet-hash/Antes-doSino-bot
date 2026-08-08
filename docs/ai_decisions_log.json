@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The Wendy's Company Q2 Profit Falls",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:41:02.098208-03:00"
-    },
-    {
-      "title": "CAC 40 Up 0.52% As Market Awaits U.S. Jobs Report",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:41:04.789395-03:00"
-    },
-    {
-      "title": "O ganhador da guerra do e-commerce, o fim da Gávea Investimentos, os dividendos da Petrobras (PETR3,PETR4): o que você precisa saber hoje",
-      "source": "Seu Dinheiro",
-      "score": 5.0,
-      "motivo": "A notícia aborda a escolha do FII do mês e o fim da Gávea Investimentos, mas não apresenta informações específicas sobre impacto imediato no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:41:10.558675-03:00"
-    },
-    {
-      "title": "New Mexico court orders Meta to pay additional $567M in child safety case",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:41:16.448801-03:00"
-    },
-    {
       "title": "Petrobras, MRV, Brava, PetroReconcavo, Magalu e mais ações para acompanhar hoje",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T15:46:28.927221-03:00"
+    },
+    {
+      "title": "Lula declara R$ 4,7 milhões em patrimônio ao TSE, valor 35% menor em relação a 2022",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "A noticia e sobre a declaracao de patrimonio de um politico, nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:51:12.901804-03:00"
+    },
+    {
+      "title": "Eleições 2026: conheça pautas do governo Lula para possível novo mandato",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia politica sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:51:19.711695-03:00"
+    },
+    {
+      "title": "Apple brings Alibaba's Qwen AI model to Mac users in China",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque pode ter impacto positivo no mercado de tecnologia, especialmente para a Apple e a Alibaba.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T15:51:23.148382-03:00"
+    },
+    {
+      "title": "What JEPQ Actually Paid the Last Time the Nasdaq Fell 10%: a Stress Test for Its 10% Yield",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a resistência do JEPQ em manter seu rendimento em um cenário de mercado desafiador.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T15:51:36.042729-03:00"
     }
   ]
 }
