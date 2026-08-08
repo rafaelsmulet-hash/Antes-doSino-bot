@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "MDA Space Ltd. Q2 Sales Increase",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas o resultado é rotineiro e não surpreendente.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:29.822008-03:00"
-    },
-    {
-      "title": "Claritev Reports Narrower Loss In Q2, Revenue Up 6.6%; Lifts FY26 Revenue Outlook",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:32.469436-03:00"
-    },
-    {
       "title": "Bumble teases a swipe-free future as it doubles down on IRL meetups",
       "source": "TechCrunch",
       "score": 5.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T10:46:06.047125-03:00"
+    },
+    {
+      "title": "Gabriel Medina sofre corte na cabeça durante treino em Teahupoo antes da WSL",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre esporte e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:50:50.110915-03:00"
+    },
+    {
+      "title": "Berkshire Hathaway's new CEO Greg Abel spends a chunk of the company's massive cashpile",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A ação da Berkshire Hathaway pode ser afetada positivamente com a gestão eficiente do caixa e os investimentos estratégicos.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:51:08.733441-03:00"
     }
   ]
 }
