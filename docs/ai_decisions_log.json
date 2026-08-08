@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cientistas criam curativo que usa proteínas do próprio corpo para acelerar a cicatrização",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:31:27.848049-03:00"
-    },
-    {
       "title": "Intellia upgraded at Evercore ISI on nex-z hypothesis",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T20:20:46.123730-03:00"
+    },
+    {
+      "title": "Verizon mobile service down for thousands of customers in the U.S., Downdetector shows",
+      "source": "CNBC - US News",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T20:25:58.923941-03:00"
     }
   ]
 }
