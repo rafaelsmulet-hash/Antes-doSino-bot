@@ -177,9 +177,16 @@
     if (!container) return;
     container.innerHTML = "";
 
+    // O widget Hotlists da TradingView so renderiza as linhas que cabem
+    // na altura pedida, sem scroll interno proprio - com height:100%
+    // (limitado ao espaco pequeno do painel) boa parte da lista de
+    // "Maiores Altas/Baixas/Volume Incomum" ficava cortada, sem jeito
+    // de ver o resto. Altura fixa maior que o painel visivel + o
+    // container pai com overflow-y:auto (ver #widget-market-movers no
+    // CSS) da acesso real ao resto da lista via rolagem.
     var wrapper = document.createElement("div");
     wrapper.className = "tradingview-widget-container";
-    wrapper.style.height = "100%";
+    wrapper.style.height = "600px";
     wrapper.style.width = "100%";
 
     var widgetDiv = document.createElement("div");
@@ -197,7 +204,7 @@
       showChart: false,
       locale: "br",
       width: "100%",
-      height: "100%",
+      height: "600",
       isTransparent: true,
     });
 
