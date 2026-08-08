@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "JBS anuncia investimento de US$ 5 bilhões para expandir negócios na Ásia",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:11:36.194266-03:00"
-    },
-    {
       "title": "Nintendo just got a nice boost from tariff refunds",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T18:20:57.244837-03:00"
+    },
+    {
+      "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "source": "TechCrunch",
+      "score": 6.0,
+      "motivo": "A notícia pode afetar a percepção do público sobre a Amazon e, consequentemente, sua imagem corporativa e valor de mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T18:25:53.861809-03:00"
     }
   ]
 }
