@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "JBS Gets $2.5 Billion From Indonesia Fund to Expand in Asia",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Investimento significativo em uma joint-venture para expansão em mercados de proteínas na região",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:30:46.487565-03:00"
-    },
-    {
-      "title": "Dona do TikTok treina modelo de IA três vezes maior que o Kimi K3, da Moonshot",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Desenvolvimento de modelo de IA por empresa de tecnologia pode impulsionar ações da empresa e do setor de tecnologia em geral",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:30:52.001645-03:00"
-    },
-    {
-      "title": "'Traição' entre pássaros? Estudo mostra como o canto revela machos 'comprometidos'",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:30:54.743269-03:00"
-    },
-    {
       "title": "Ouro dispara e caminha para melhor semana desde janeiro",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T14:40:39.199958-03:00"
+    },
+    {
+      "title": "Barcelona, Argentina, Real Madrid e outros prestam condolências a pai de Messi",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:46:03.735661-03:00"
+    },
+    {
+      "title": "Berkshire Hathaway acelera recompra de ações e reduz reserva de caixa",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "A empresa está reforçando sua confiança no mercado e em sua própria capacidade de crescimento, o que é um sinal positivo para os investidores",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T14:46:10.608477-03:00"
+    },
+    {
+      "title": "Nvidia, Micron or Broadcom: What Would Raymond Dalio Do?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O investidor influente compartilhou suas opções, o que pode influenciar a percepção dos investidores sobre essas empresas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T14:46:28.485982-03:00"
     }
   ]
 }
