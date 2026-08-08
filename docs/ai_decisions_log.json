@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Intellia upgraded at Evercore ISI on nex-z hypothesis",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:31:31.273663-03:00"
-    },
-    {
-      "title": "Sendas Distribuidora reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:31:34.309973-03:00"
-    },
-    {
-      "title": "Perpetua jumps after identifying new gold-tungsten zone at Stibnite project",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:31:37.372725-03:00"
-    },
-    {
       "title": "Praxis signals two FDA decisions in ~six months, targets ~$10B ulixacaltamide peak sales while building a ~300-person field force",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T20:25:58.923941-03:00"
+    },
+    {
+      "title": "Three Griffon Executives Sold Into an Earnings Pop. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações de executivos não é um evento significativo para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T20:30:43.222763-03:00"
+    },
+    {
+      "title": "IonQ vs. Meta Platforms: Comparing Revenue Trends Between a Cutting-Edge Quantum Computing Company and an Artificial Intelligence Giant",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia compara receitas de empresas, mas não apresenta informações novas ou impactantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T20:30:46.196482-03:00"
+    },
+    {
+      "title": "Three Griffon Executives Sold Into an Earnings Pop. Here's What to Know",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Venda de ações por executivos durante um período de alta lucro pode ser um sinal de desconfiança e afetar a confiança dos investidores na empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T20:30:53.470619-03:00"
     }
   ]
 }
