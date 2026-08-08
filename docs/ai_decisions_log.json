@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
-      "source": "Federal Reserve",
-      "score": 5.0,
-      "motivo": "A publicação das atas das reuniões da taxa de juros é relevante para o mercado financeiro, pois fornece informações sobre as decisões do Banco Central.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:02:12.263645-03:00"
-    },
-    {
-      "title": "Wellington Funds Pivot From Treasuries to ‘Most Credible’ Debt",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A mudança de estratégia da Wellington pode influenciar a demanda por títulos de dívida em diferentes mercados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:06:04.489746-03:00"
-    },
-    {
-      "title": "Day Trade hoje (07): Ibovespa amplia pressão vendedora; veja a análise",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "Análise técnica rotineira",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:06:08.214215-03:00"
-    },
-    {
       "title": "Mercado repercute dividendo bilionário da Petrobras; Ibovespa em dólar cai hoje (7)",
       "source": "Money Times",
       "score": 8.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T09:56:22.998558-03:00"
+    },
+    {
+      "title": "Julho estanca fuga de estrangeiros do Brasil; o que pode jogar ‘água no chope’, segundo especialistas",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "Entrada de capital estrangeiro na bolsa de valores brasileira é considerada positiva para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:00:45.076154-03:00"
+    },
+    {
+      "title": "Por que guardar livros que só poderão ser lidos daqui a 100 anos? Uma biblioteca na Noruega tem a resposta",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "A noticia nao trata de mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:00:56.016393-03:00"
+    },
+    {
+      "title": "Here’s The Real Reason Wall Street Cut ON Semiconductor Stock’s Price Target",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A redução do alvo de preço é um sinal de que os analistas estão revisando suas expectativas para a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:01:00.874247-03:00"
     }
   ]
 }
