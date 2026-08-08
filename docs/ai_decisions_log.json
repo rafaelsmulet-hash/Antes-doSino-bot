@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "JBS confirms a partnership with the Indonesia sovereign wealth fund",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:31:15.783485-03:00"
-    },
-    {
       "title": "JBS recebe US$ 2,5 bi de fundo soberano indonésio para nova joint venture",
       "source": "UOL Economia",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T15:06:16.013540-03:00"
+    },
+    {
+      "title": "Crise no estreito de Ormuz: conheça o porto e o oleoduto que estão lucrando com o fechamento",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "a noticia não é sobre mercado financeiro, mas sim sobre geopolitica e conflito",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:10:52.071068-03:00"
     }
   ]
 }
