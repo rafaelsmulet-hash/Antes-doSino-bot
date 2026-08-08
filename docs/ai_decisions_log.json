@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Barclays rebaixa MTU citando menor alavancagem de crescimento que Safran e Melrose",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:26:00.860309-03:00"
-    },
-    {
-      "title": "Apyx reaffirms $59.0M-$60.0M 2026 revenue guidance as AYON expands with FDA-cleared power liposuction",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:26:04.129454-03:00"
-    },
-    {
-      "title": "LANXESS Aktiengesellschaft reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:26:06.711010-03:00"
-    },
-    {
       "title": "Applied Optoelectronics jumps on Q2 results, guidance; Needham still sees $1B+ revenue",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T19:26:11.898686-03:00"
+    },
+    {
+      "title": "Lula e Flávio Bolsonaro miram voto feminino em SP; presidente critica Faria Lima",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T19:30:46.304465-03:00"
+    },
+    {
+      "title": "O que seria necessário para as ações da Mercedes-Benz subirem?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A notícia discute ações da Mercedes-Benz, o que é relevante para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T19:30:51.544794-03:00"
+    },
+    {
+      "title": "Warren Buffett Warned About the Dot-Com Bubble. Now, the Stock Market Is Flashing the Same Warning Signal.",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia relaciona a experiência passada de Warren Buffett com a bolha da internet e o atual sinal de alerta no mercado de ações, tornando-a relevante para os traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T19:31:06.187238-03:00"
     }
   ]
 }
