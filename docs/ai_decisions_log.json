@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Em maio, indústria recua em 9 dos 15 locais pesquisados",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:10:47.705256-03:00"
-    },
-    {
       "title": "Como um mercadinho do interior de SP virou um império de supermercados de R$ 7,9 bilhões",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T13:25:50.795623-03:00"
+    },
+    {
+      "title": "A Live Nation Insider's Latest Transaction With Shares Up 22%: Here's What to Know",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A transação do insider pode ser um sinal de confiança na empresa e influenciar a percepção dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:30:53.536932-03:00"
     }
   ]
 }
