@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Copper Heads for New Highs as US and China Squeeze Buffers",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia sugere que o mercado de cobre está se tornando cada vez mais volátil e sujeito a grandes flutuações, o que pode ter um impacto significativo nas previsões de preços.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:00:55.176491-03:00"
-    },
-    {
-      "title": "Michael Burry bets against rally: 'We are near a major top, and possible a 1987-type fall'",
-      "source": "CNBC - Finance",
-      "score": 8.0,
-      "motivo": "A opinião de um investidor conhecido e respeitado sobre um possível colapso do mercado é considerada material e relevante.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:00:58.349452-03:00"
-    },
-    {
-      "title": "Operação do Campo de Marte não deve ter impacto no setor imobiliário, prevê DECEA",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:01:01.366448-03:00"
-    },
-    {
-      "title": "Marco temporal, licenciamento, moratória da soja: as pautas ambientais no STF",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:01:03.998728-03:00"
-    },
-    {
-      "title": "Por que a ação da Take-Two Interactive está volátil hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:01:07.934326-03:00"
-    },
-    {
       "title": "Por que as ações da Applied Optoelectronics estão disparando hoje?",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T17:00:57.888944-03:00"
+    },
+    {
+      "title": "Em maio, indústria recua em 9 dos 15 locais pesquisados",
+      "source": "IBGE",
+      "score": 6.0,
+      "motivo": "Variação negativa de 0,2% da produção industrial nacional em maio, com alguns locais apresentando quedas mais acentuadas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:05:52.383583-03:00"
+    },
+    {
+      "title": "Jim Cramer Weighs In on Space Equities: Rocket Lab (RKLB) vs. Voyager Technologies (VOYG)",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é específica sobre eventos atuais e não tem impacto direto no mercado financeiro imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:06:04.884976-03:00"
+    },
+    {
+      "title": "AMD (AMD) Buys Taalas: Is AI Inference the Next Battleground With Nvidia?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A compra da Taalas pode indicar que a AMD está se preparando para uma competição mais intensa com a Nvidia no mercado de inferência de inteligência artificial.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T17:06:08.295548-03:00"
+    },
+    {
+      "title": "Better GLP-1 Stock to Buy: Eli Lilly or Viking Therapeutics?",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral, mas pode interessar investidores individuais.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:06:11.425600-03:00"
+    },
+    {
+      "title": "Airlines Scramble for Jet Fuel as Hormuz Disruption Drags On",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A interrupção no tráfego de petróleo no Estreito de Hormuz está afetando o preço do combustível de jato, o que é relevante para as aerolinhas e o setor de aviação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:06:14.471265-03:00"
     }
   ]
 }
