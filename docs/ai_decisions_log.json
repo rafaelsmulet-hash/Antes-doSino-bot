@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Banc of California declares $0.12 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:31:10.583574-03:00"
-    },
-    {
-      "title": "Embecta declares $0.01 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:31:13.171441-03:00"
-    },
-    {
       "title": "JBS confirms a partnership with the Indonesia sovereign wealth fund",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T15:00:53.802741-03:00"
+    },
+    {
+      "title": "Lula e Flávio Bolsonaro definem palanques após fim das convenções; confira",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há informações financeiras ou econômicas relevantes na notícia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:06:02.356191-03:00"
+    },
+    {
+      "title": "Badger Meter VP-Engineering Callahan Buys 751 Shares for $101,573 Amid Stock's 26% Pullback",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A compra de ações por parte de um executivo da empresa é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:06:16.013540-03:00"
     }
   ]
 }
