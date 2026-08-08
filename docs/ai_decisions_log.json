@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Escala 6×1 ou maioridade penal: disputa pela agenda pode definir a eleição",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia se refere a eleicoes e agenda politica, nao a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:21.536889-03:00"
-    },
-    {
-      "title": "Regras fiscais ruíram e Brasil caminha para crise em 2027 sem reformas, alerta UBS",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "alerta de crise econômica sem reformas fiscais",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:56:24.325129-03:00"
-    },
-    {
-      "title": "O agro quebra mais que qualquer outro setor — e não é por causa da safra",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:56:27.008013-03:00"
-    },
-    {
-      "title": "Petrobras e mais cinco: as ações de dividendos mais indicadas para agosto",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "A notícia lista ações de dividendos recomendadas para agosto, mas não traz informações novas ou impactantes sobre o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:29.795157-03:00"
-    },
-    {
-      "title": "Bolsas da Ásia fecham mistas com queda em NY e incertezas no Oriente Médio",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:56:33.387549-03:00"
-    },
-    {
-      "title": "Tempo real: Ibovespa fecha semana de olho no payroll dos EUA",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "A notícia aborda vários indicadores e dados econômicos importantes que podem influenciar o mercado, mas não é um evento específico ou surpresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:56:36.211227-03:00"
-    },
-    {
-      "title": "Petróleo sobe com preocupações sobre planos para reabertura do Estreito de Ormuz",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:38.886284-03:00"
-    },
-    {
-      "title": "J.P. Morgan aposta em small e mid caps do Reino Unido com valuations baratos",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aposta em small e mid caps do Reino Unido pode impulsionar valor das ações dessas empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:41.736320-03:00"
-    },
-    {
-      "title": "Por que as ações da Airbnb estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A ação da Airbnb está subindo devido a uma notícia positiva sobre o crescimento da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:44.485542-03:00"
-    },
-    {
-      "title": "Por que as ações da Sezzle estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:47.144591-03:00"
-    },
-    {
-      "title": "The Trade Desk sofre rebaixamentos em Wall St após resultados decepcionantes no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "resultados decepcionantes afetam expectativas de investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:49.931450-03:00"
-    },
-    {
-      "title": "Pague Menos vai emitir R$350 milhões em debêntures em 9ª emissão",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:52.602643-03:00"
-    },
-    {
-      "title": "Lucro líquido da Mitre Realty sobe 45,5% no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento do lucro líquido é um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:55.335454-03:00"
-    },
-    {
-      "title": "Por que as ações da Sweetgreen estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:58.015090-03:00"
-    },
-    {
       "title": "Por que um relatório de empregos sólido pode derrubar as bolsas, segundo o JPMorgan",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:00:49.824571-03:00"
+    },
+    {
+      "title": "Startup que ensina blockchain e tokenização capta R$ 15 milhões para lançar nova plataforma",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A noticia menciona a captação de recursos para desenvolver uma plataforma relacionada a blockchain e tokenização, o que pode ter impacto positivo no mercado de ativos digitais no Brasil.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:05:44.303066-03:00"
+    },
+    {
+      "title": "Como Copenhague transformou sua moda em uma marca da cidade",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre moda e evento da cidade, sem relevância para mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:05:47.077376-03:00"
+    },
+    {
+      "title": "Presidente da Starbucks Brasil revela plano para dobrar o número de lojas no país",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "Plano de expansão da empresa pode impulsionar crescimento e demanda por ações da Starbucks Brasil",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:05:49.916118-03:00"
+    },
+    {
+      "title": "Pesquisas para presidente da semana mostram recuperação de Flávio e estabilidade de Lula",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "pesquisas de opinião pública não são um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:05:52.704479-03:00"
+    },
+    {
+      "title": "Inbox zero na prática: como usar IA para organizar a caixa de entrada do e-mail",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia de mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:05:55.428905-03:00"
+    },
+    {
+      "title": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações do Banco do Brasil há 5 anos?",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A notícia destaca os motivos pelos quais as ações do Banco do Brasil valorizaram-se nas últimas duas décadas, o que é relevante para os investidores e traders que buscam entender os fatores que influenciam o desempenho das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T08:05:58.409170-03:00"
+    },
+    {
+      "title": "O que dar no Dia dos Pais? Vendas de vestuário aumentam 45% na manhã do domingo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira relevante",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:06:01.347889-03:00"
+    },
+    {
+      "title": "O mercado de abacate de US$ 3 bilhões que virou problema de segurança no México",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:06:04.202154-03:00"
+    },
+    {
+      "title": "Clima extremo e guerra pressionam grãos e elevam preços globais dos alimentos",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "alta nos preços dos alimentos pode afetar a inflação e a economia global",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:06:07.002803-03:00"
+    },
+    {
+      "title": "Lula terá 27% mais tempo de TV e rádio que Flávio Bolsonaro; veja a divisão por candidato",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:06:09.818320-03:00"
+    },
+    {
+      "title": "SpaceX’s Nvidia deal could be bad news for neoclouds like CoreWeave and Nebius, analysts say",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a posição de empresas de nuvem em relação à Nvidia e à SpaceX",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T08:06:12.936976-03:00"
+    },
+    {
+      "title": "One Whopper of a win: Burger King takes market share from McDonald's",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica um aumento de participação de mercado da Burger King, o que pode ter um impacto positivo no desempenho da empresa e no mercado em geral.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T08:06:15.979603-03:00"
+    },
+    {
+      "title": "Os Paralamas do Sucesso relembram sucesso do clássico disco “Selvagem?” no Doce Maravilha 2026",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "notícia sobre música e entretenimento não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:06:24.451770-03:00"
+    },
+    {
+      "title": "Wendy’s CEO moving with ‘urgency’ to revamp brand",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois pode impactar positivamente as ações da empresa com a implementação de mudanças estratégicas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:06:30.503717-03:00"
     }
   ]
 }
