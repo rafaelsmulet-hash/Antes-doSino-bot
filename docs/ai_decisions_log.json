@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dunkin’s $10 Gift Cards Are This Summer’s Hottest Free Money Hack",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:04.083278-03:00"
-    },
-    {
-      "title": "Iran Seeks to Bar US, Israeli Ships from Hormuz; OpenAI's Doughnut-Like Device  | The Pulse 8/7/2026",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notÃ­cia nÃ£o estÃ¡ relacionada a mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:06.981817-03:00"
-    },
-    {
-      "title": "Bank of America spends $250 million a year on GLP-1 drugs for its employees, CEO says",
-      "source": "CNBC - Finance",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações específicas sobre impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:09.977671-03:00"
-    },
-    {
-      "title": "Petrobras: balanço forte e dividendos no topo das projeções; mais está por vir no 3T?",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Balanço forte e dividendos acima das projeções indicam positividade para a ação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:55:13.513068-03:00"
-    },
-    {
-      "title": "Lucro da Log cai 32,6% no 2º tri",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "corte de lucro significativo pode afetar a confiança dos investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:16.327080-03:00"
-    },
-    {
-      "title": "Pague Menos vai emitir R$ 350 milhões em debêntures em 9ª emissão",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "emissão de debêntures é um evento comum, mas a quantia de R$ 350 milhões é significativa e pode afetar o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:19.218016-03:00"
-    },
-    {
-      "title": "Lucro líquido da Mitre Realty sobe 45,5% no 2º tri",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Aumento do lucro líquido é um sinal positivo para a empresa e pode afetar positivamente o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:22.171035-03:00"
-    },
-    {
-      "title": "Petrobras (PETR4): ADRs da estatal avançam em Nova York com lucro acima do esperado e dividendos",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "Resultados financeiros acima do esperado da Petrobras impactam positivamente as ações da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:55:26.598631-03:00"
-    },
-    {
-      "title": "Índia - Ações fecharam o pregão em queda e o Índice Nifty 50 recuou 0,27%",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "queda no Índice Nifty 50 e ações em queda",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:29.488271-03:00"
-    },
-    {
       "title": "Gap cai após rebaixamento do Wells Fargo e revisão de perspectivas",
       "source": "Investing.com Brasil",
       "score": 8.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T10:56:02.820656-03:00"
+    },
+    {
+      "title": "US Munitions Strain Complicates Iran Strategy",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter implicações geopolíticas que afetam a economia global.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:06:18.238198-03:00"
+    },
+    {
+      "title": "Warren Buffett mantém aposta em petróleo, mas alerta para riscos de guerras",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Ação de Warren Buffett não é suficiente para influenciar o mercado, mas a cautela diante das incertezas geopolíticas é relevante",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:06:22.004662-03:00"
+    },
+    {
+      "title": "Dono da Wise Up compra mansão de R$ 128 milhões nas Bahamas",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:06:30.854276-03:00"
+    },
+    {
+      "title": "Caso Coldcard: 'seja seu próprio banco' é um slogan, não uma recomendação séria",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A noticia não é sobre mercado financeiro, mas sim sobre criptomoedas e autocustodia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:06:33.638195-03:00"
+    },
+    {
+      "title": "Changing how Medicare pays for hospice care could save the U.S. $7.6 billion a year — but at what cost to patients?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:06:36.846867-03:00"
+    },
+    {
+      "title": "Santander, Berkshire Hathaway among gainers; HSBC, Sezzle in losers: week's financials wrap",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia lista as principais movimentações financeiras da semana, mas não apresenta informações novas ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:06:39.853929-03:00"
+    },
+    {
+      "title": "Todd Blanche confirmed as next U.S. attorney general",
+      "source": "Seeking Alpha",
+      "score": 0.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:06:42.810837-03:00"
+    },
+    {
+      "title": "Estratégia 60/25/15’ é a aposta da Empiricus para buscar renda extra em agosto; entenda",
+      "source": "Seu Dinheiro",
+      "score": 3.0,
+      "motivo": "estratégia de investimento da Empiricus não é um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:06:51.581434-03:00"
+    },
+    {
+      "title": "Jim Cramer Favors Fortinet (FTNT) Alongside CrowdStrike (CRWD) and Palo Alto (PANW)",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Recomendação de um investidor influente em ações de segurança",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:06:56.927590-03:00"
     }
   ]
 }
