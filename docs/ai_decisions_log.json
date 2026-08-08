@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "US Futures Rise as Trump Touts Iran Progress; Awaiting Jobs Data",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois afeta a volatilidade do mercado e pode influenciar as expectativas de investidores em relação ao desempenho da economia americana.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:15:37.654477-03:00"
-    },
-    {
       "title": "Ibovespa Futuro tem leve alta com dados de emprego dos EUA e balanços no radar",
       "source": "InfoMoney",
       "score": 5.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T18:30:48.892740-03:00"
+    },
+    {
+      "title": "Ataque com explosivos é registrado um dia após a posse do novo presidente da Colômbia",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "a noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:36:28.370249-03:00"
     }
   ]
 }
