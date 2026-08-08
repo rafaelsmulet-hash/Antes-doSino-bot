@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "EXCLUSIVO: o futuro da Pandora, segundo sua nova líder no Brasil",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "notícia sobre uma empresa de luxo, mas não há informações financeiras ou de mercado relevantes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:15.067146-03:00"
-    },
-    {
-      "title": "6 filmes e séries para maratonar no streaming neste fim de semana",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:17.900221-03:00"
-    },
-    {
       "title": "João Fonseca x Casper Ruud hoje: veja horário e onde assistir ao jogo de Montreal",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:11:12.594122-03:00"
+    },
+    {
+      "title": "Can ChatGPT Really Invent a $15 Billion Security? Michael Saylor Says Yes",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A declaração de Saylor pode influenciar a confiança dos investidores na criptomoeda e afetar seu preço.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:15:52.987512-03:00"
+    },
+    {
+      "title": "US equity funds see outflows as investors take profits ahead of jobs data",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A saída de investidores pode afetar o desempenho dos fundos de ações americanos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:15:55.921381-03:00"
     }
   ]
 }
