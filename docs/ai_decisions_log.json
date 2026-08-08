@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bumble teases a swipe-free future as it doubles down on IRL meetups",
-      "source": "TechCrunch",
-      "score": 5.0,
-      "motivo": "A empresa está investindo em encontros IRL, o que pode ser positivo para o crescimento da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:42.781271-03:00"
-    },
-    {
-      "title": "Sen. Mitch McConnell says he's left rehab, will work from home",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:46.336537-03:00"
-    },
-    {
-      "title": "Top Indian Shadow Bank’s Shares Hit as RBI to Tighten Loan Rules",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Proposta da RBI pode afetar negativamente o setor de empréstimos sombra indiano",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:54:52.399797-03:00"
-    },
-    {
-      "title": "Big Tech Stocks Storm Back as AI Fears Fade and Euphoria Resumes",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente as ações de grandes empresas de tecnologia, que são importantes para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:54:55.423369-03:00"
-    },
-    {
-      "title": "This Job Reports Has High Stakes for Investors",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia pode influenciar a decisão da Fed em relação à política monetária",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:54:58.276305-03:00"
-    },
-    {
-      "title": "Bloomberg News Now",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "motivo": "A notícia menciona a possibilidade de Iran barrear navios dos EUA e Israel do Hormuz, o que pode afetar a oferta de petróleo e impactar os preços.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:01.179378-03:00"
-    },
-    {
       "title": "Dunkin’s $10 Gift Cards Are This Summer’s Hottest Free Money Hack",
       "source": "Bloomberg Markets",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T10:51:08.733441-03:00"
+    },
+    {
+      "title": "Hunting Camo Moves From the Woods to Runways",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:55:40.901644-03:00"
+    },
+    {
+      "title": "Morre pai de Lionel Messi aos 68 anos na Argentina",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:55:45.177722-03:00"
+    },
+    {
+      "title": "President Donald Trump Expected the Iran War to Drive the Stock Market &quot;Down 20% to 25%&quot; -- His Prophecy May Still Come True",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia menciona a possibilidade de uma queda significativa do mercado de ações em resposta à guerra com o Irã, o que é relevante e com impacto concreto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:55:54.007812-03:00"
+    },
+    {
+      "title": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca oportunidades de negócios significativas no setor de robótica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:55:56.901644-03:00"
+    },
+    {
+      "title": "Reddit CEO Steve Huffman Sells 18,000 Shares for $2.9 Million",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Venda de ações não é um evento significativo para o mercado em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:55:59.900860-03:00"
+    },
+    {
+      "title": "Should You Buy SpaceX Stock Below $125 per Share? Here's What History Says.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A noticia nao fornece informacoes concretas sobre o mercado ou a economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:56:02.820656-03:00"
     }
   ]
 }
