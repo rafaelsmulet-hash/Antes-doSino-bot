@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Produção industrial recua -1,8% em junho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:10:54.632824-03:00"
-    },
-    {
-      "title": "O que é o Discord, aplicativo criticado por Janja",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre aplicativo não é relevante para mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:10:58.502993-03:00"
-    },
-    {
       "title": "O alerta do BofA: banco americano recomenda reduzir risco na bolsa; entenda",
       "source": "Exame",
       "score": 8.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T17:50:40.602869-03:00"
+    },
+    {
+      "title": "Broadcom (AVGO) Pairs AI Chip Boom With A Software Security Push",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca uma estratégia de crescimento da empresa que pode ter um impacto significativo no mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:01:00.686366-03:00"
+    },
+    {
+      "title": "SentinelOne's Chief Accountant Sold Shares. Here's What Investors Should Know",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A venda de ações do contador-chefe é um evento rotineiro que não afeta significativamente o preço da ação.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:01:03.811002-03:00"
     }
   ]
 }
