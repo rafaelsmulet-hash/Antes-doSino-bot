@@ -1177,26 +1177,52 @@ def format_message(source, entry, ai_result):
     return result, title, final_body, sentiment
 
 
-def fetch_cockpit_quotes():
+def fetch_brapi_results(ticker):
+    """Chamada crua a brapi.dev para 1 ticker - retorna a lista
+    'results' do payload (pode ter 0, 1 ou mais itens), ou lista vazia
+    em caso de token ausente/falha de rede. Base compartilhada entre
+    fetch_cockpit_quotes (lista fixa do cockpit) e fetch_brapi_quote
+    (ticker avulso, usado pelo Diario de Decisao Comportamental) -
+    extraida daqui pra nao duplicar a chamada HTTP em 2 lugares."""
     if not BRAPI_TOKEN:
         return []
+    try:
+        url = "https://brapi.dev/api/quote/" + ticker + "?token=" + BRAPI_TOKEN
+        response = requests.get(url, timeout=15)
+        data = response.json()
+        return data.get("results", [])
+    except Exception as e:
+        print("Erro ao buscar cotacao " + ticker + " (brapi): " + str(e))
+        return []
+
+
+def fetch_cockpit_quotes():
     quotes = []
     for ticker in COCKPIT_TICKERS:
-        try:
-            url = "https://brapi.dev/api/quote/" + ticker + "?token=" + BRAPI_TOKEN
-            response = requests.get(url, timeout=15)
-            data = response.json()
-            results = data.get("results", [])
-            for r in results:
-                quotes.append({
-                    "symbol": r.get("symbol", ""),
-                    "price": r.get("regularMarketPrice", 0),
-                    "change": r.get("regularMarketChangePercent", 0),
-                })
-        except Exception as e:
-            print("Erro ao buscar cotacao " + ticker + " (brapi): " + str(e))
-            continue
+        for r in fetch_brapi_results(ticker):
+            quotes.append({
+                "symbol": r.get("symbol", ""),
+                "price": r.get("regularMarketPrice", 0),
+                "change": r.get("regularMarketChangePercent", 0),
+            })
     return quotes
+
+
+def fetch_brapi_quote(ticker):
+    """Busca a cotacao atual de UM ativo especifico via brapi.dev -
+    usado pelo Diario de Decisao Comportamental pra buscar preco de
+    qualquer ativo que o usuario mencionar (nao so os fixos do
+    cockpit). Retorna None se o ticker nao for encontrado ou a busca
+    falhar - nunca lanca excecao."""
+    results = fetch_brapi_results(ticker)
+    if not results:
+        return None
+    r = results[0]
+    return {
+        "symbol": r.get("symbol", ""),
+        "price": r.get("regularMarketPrice", 0),
+        "change": r.get("regularMarketChangePercent", 0),
+    }
 
 
 TWELVEDATA_CACHE_FILE = "docs/twelvedata_cache.json"
@@ -4160,6 +4186,16 @@ def main():
         content_engine.checar_aprovacoes_pendentes()
     except Exception as e:
         print("Erro ao checar aprovacoes do Social Content Engine (isolado): " + str(e))
+
+    try:
+        import diario_decisao
+        diario_decisao.checar_mensagens_privadas(
+            TICKER_MENTION_LIST, TICKER_HASHTAG_MAP,
+            editorial_foundation.derive_cluster_key, fetch_brapi_quote,
+        )
+        diario_decisao.processar_followups(fetch_brapi_quote)
+    except Exception as e:
+        print("Erro no Diario de Decisao Comportamental (isolado, nao afeta o fluxo principal): " + str(e))
 
     try:
         from social import content_engine
