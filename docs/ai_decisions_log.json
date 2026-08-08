@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Narrativa ’Sell America’ ressurge com riscos do Fed e do iene",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:01:18.658557-03:00"
-    },
-    {
-      "title": "Por que as ações da Vertiv estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:01:21.263487-03:00"
-    },
-    {
-      "title": "Oklo registra prejuízo maior no 2º tri, mas supera estimativa de receita",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:01:23.883815-03:00"
-    },
-    {
       "title": "Spectral Medical GAAP EPS of $0.00 beats by $0.01, revenue of $0.62M beats by $0.02M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T17:11:09.307185-03:00"
+    },
+    {
+      "title": "Better GLP-1 Stock to Buy: Eli Lilly or Viking Therapeutics?",
+      "source": "Nasdaq",
+      "score": 1.0,
+      "motivo": "A notícia é sobre ações de empresas farmacêuticas e não tem impacto direto no mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:20:57.657975-03:00"
+    },
+    {
+      "title": "3 Defense Stocks That Could Benefit From the Crisis in the Strait of Hormuz",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia menciona impactos diretos na demanda por petróleo e tanques, o que é relevante para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T17:21:00.580806-03:00"
+    },
+    {
+      "title": "Jim Cramer Is Telling Investors to Accumulate SpaceX for the Long Term",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Recomendação de investimento positiva em uma empresa de tecnologia avançada",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T17:21:11.084501-03:00"
     }
   ]
 }
