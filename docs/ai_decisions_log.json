@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Airbnb stock soars 12% on earnings and revenue beat, strong guidance for third quarter",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:11:32.843606-03:00"
-    },
-    {
-      "title": "China: reservas cambiais sobem em julho com dólar fraco e compras de ouro continuam",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "aumento das reservas cambiais da China pode ser um sinal de estabilidade econômica, mas não é um evento de grande impacto imediato",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:15:45.954465-03:00"
-    },
-    {
-      "title": "Assaí (ASAI3) aprova Rafael Sachete como novo diretor de Relações com Investidores",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "nomeação de executivo não é um evento de mercado significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:15:48.688625-03:00"
-    },
-    {
       "title": "EUA usam referência ao Homem-Aranha para promover prisões e deportações",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T13:46:01.264891-03:00"
+    },
+    {
+      "title": "My ex-husband’s sister died — so why is Fidelity asking me for her death certificate?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:51:12.834776-03:00"
+    },
+    {
+      "title": "8 out of 12 S&P 500 utilities stocks beat EPS estimates this week: Earnings Scorecard",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "As ações de utilidades da S&P 500 superaram as estimativas de lucro, o que pode indicar um crescimento econômico.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T13:51:15.878080-03:00"
+    },
+    {
+      "title": "Berkshire Hathaway Just Did Something It Hasn’t Done in More Than 3 Years",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A compra de ações da American Express pela Berkshire Hathaway é um sinal de confiança no mercado e pode ter um impacto positivo nas ações da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T13:51:28.949526-03:00"
     }
   ]
 }
