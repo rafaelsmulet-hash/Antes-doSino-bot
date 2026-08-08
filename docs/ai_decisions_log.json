@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Alta na inadimplência faz grandes bancos focarem em crédito de menor risco",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "Os bancos estão focando em crédito de menor risco, o que pode indicar uma maior segurança para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:58:50.112159-03:00"
-    },
-    {
-      "title": "Do produto à compra, ChatGPT muda líder em 23 de 32 das categorias",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:58:52.778264-03:00"
-    },
-    {
-      "title": "Agências montam grupos de viagem só de mulheres; pacote chega a R$ 26 mil",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:58:55.576510-03:00"
-    },
-    {
-      "title": "Decisões da IA sobre empregados geram risco de processo para empresas",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:58:58.259165-03:00"
-    },
-    {
-      "title": "Golpe da renegociação de consignado dispara entre aposentados",
-      "source": "UOL Economia",
-      "score": 2.0,
-      "motivo": "golpe financeiro não é relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:01.031199-03:00"
-    },
-    {
-      "title": "Balanços mostram disputa entre crescimento e rentabilidade no varejo",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:59:03.719652-03:00"
-    },
-    {
-      "title": "Bolão na Quina 7085 e aposta simples na Lotofácil 3755 resultam em 6 novos milionários em Minas Gerais; Mega-Sena 3041 acumula com repetição improvável",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:06.660642-03:00"
-    },
-    {
-      "title": "Já posicionou a carteira para a corrida do e-commerce? FII logístico é o favorito dos analistas para agosto; veja o ranking completo",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:59:09.383609-03:00"
-    },
-    {
       "title": "Igreja Sem Sombra vira atração turística por arquitetura inusitada",
       "source": "Seu Dinheiro",
       "score": 0.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T09:00:59.329173-03:00"
+    },
+    {
+      "title": "Como usar IA para resumir threads de e-mail e extrair próximos passos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:05:38.889253-03:00"
+    },
+    {
+      "title": "Como fermento de padeiro pode substituir planta rara na produção de remédios contra o câncer",
+      "source": "Exame",
+      "score": 1.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:05:41.581115-03:00"
+    },
+    {
+      "title": "As empresas estão saindo da bolsa. O que isso diz sobre o futuro do mercado de capitais",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "A saída de empresas da bolsa pode ser um sinal de desconfiança no mercado de capitais e impactar negativamente a confiança dos investidores.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T09:05:47.798563-03:00"
+    },
+    {
+      "title": "How can we minimize taxes in retirement with a $2.3 million nest egg — while buying homes in Florida and New England?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:05:50.953883-03:00"
+    },
+    {
+      "title": "Cloud capex forecast calls for 29% jump in 2027 as compute demand exceeds capacity: MS",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois indica um aumento significativo na demanda por computação, o que pode impulsionar a demanda por serviços de cloud computing.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:05:54.058802-03:00"
+    },
+    {
+      "title": "FII Alianza Trust (ALZR11) ocupa lugar do Bresco Logística (BRCO11) em carteira da Empiricus; entenda a mudança",
+      "source": "Seu Dinheiro",
+      "score": 3.0,
+      "motivo": "atualização de carteira de fundos imobiliários",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:06:01.101449-03:00"
+    },
+    {
+      "title": "Morning Bid: Dealjà vu",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia é uma pergunta de humor e não tem conteúdo financeiro relevante",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:06:05.562710-03:00"
+    },
+    {
+      "title": "The AI boom is creating data center jobs that pay more",
+      "source": "Business Insider",
+      "score": 2.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter um impacto positivo em certas empresas que operam em centros de dados.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:06:08.641955-03:00"
     }
   ]
 }
