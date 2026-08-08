@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "BorgWarner Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:31:31.849143-03:00"
-    },
-    {
-      "title": "Meanwhile, In England... Idiocy Knows No Bounds",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:31:35.021545-03:00"
-    },
-    {
-      "title": "$109,796 In Earnings Needed To Afford Typical US Home",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:31:37.636932-03:00"
-    },
-    {
       "title": "Indian Refiners Continue West Africa Crude Buying Spree",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T15:15:50.550401-03:00"
+    },
+    {
+      "title": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "A suspensão de dividendos e aumento de capital são medidas significativas que afetam a liquidez e a posição da empresa no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:20:51.130610-03:00"
+    },
+    {
+      "title": "Lumen (LUMN) Extends AWS Push While Its CEO Doubles Down",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A extensão do contrato com a AWS é um sinal de confiança na empresa e pode impactar positivamente o preço da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:21:09.893533-03:00"
+    },
+    {
+      "title": "Insider Waves Goodbye to Retail Stock, Valued at More Than $620,000",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A noticia e relativamente irrelevante pois nao e um evento de mercado maior e nao tem impacto concreto no mercado agora.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:21:12.927300-03:00"
     }
   ]
 }
