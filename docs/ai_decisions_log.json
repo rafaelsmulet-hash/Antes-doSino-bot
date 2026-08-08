@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que a ação da Roku está volátil hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A notícia é sobre a ação de uma empresa de tecnologia, mas não é uma notícia de mercado financeiro específica, apenas uma explicação para o comportamento da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:37.246808-03:00"
-    },
-    {
-      "title": "Por que as ações da PubMatic subiram 30% hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "aumento significativo no valor das ações da PubMatic",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:40.069103-03:00"
-    },
-    {
-      "title": "Por que as ações da Dropbox estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a ação da Dropbox está caindo devido a uma notícia negativa, mas não especificada no texto",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:43.107805-03:00"
-    },
-    {
-      "title": "Por que as ações da Avita Medical dispararam 20% hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Aumento significativo das ações da Avita Medical indica otimismo dos investidores com o desempenho da empresa.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:45.971694-03:00"
-    },
-    {
-      "title": "Por que as ações da DaVita subiram 2% hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "aumento de valor das ações da DaVita é um sinal positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:48.783194-03:00"
-    },
-    {
       "title": "Por que os futuros do ouro estão em alta hoje?",
       "source": "Investing.com Brasil",
       "score": 8.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T10:21:51.397125-03:00"
+    },
+    {
+      "title": "Israel Englander's Millennium Manages $240 Billion Across Thousands of Positions. Here's the Strategy Behind His Success.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não traz informações sobre mudanças ou eventos significativos no mercado, apenas uma visão geral sobre a estratégia da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:25:51.915635-03:00"
+    },
+    {
+      "title": "This Quantum Stock Could Be a Big Winner Beyond the AI Chip Boom",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia destaca a relevância da computação quântica para o mercado e a corrida para controlar essa tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:25:54.980299-03:00"
+    },
+    {
+      "title": "3 Ultra-High-Yield Dividend Stocks to Buy in August (1 Yields Over 13.5%)",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia destaca ações que pagam dividendos altos, o que pode ser relevante para investidores que buscam renda passiva.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:25:58.094056-03:00"
+    },
+    {
+      "title": "Wall Street Is Losing Confidence in GoDaddy’s (GDDY) AI Strategy. Should Investors?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A perda de confiança da Wall Street pode levar a uma queda nas ações da GoDaddy.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:26:11.680585-03:00"
+    },
+    {
+      "title": "Silicon Motion’s (SIMO) Next Chapter: Can Diversification Outrun the NAND Cycle?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa está tomando medidas para diversificar suas operações, o que pode ser um sinal de que está preparada para enfrentar os desafios do mercado de NAND.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:26:14.765374-03:00"
     }
   ]
 }
