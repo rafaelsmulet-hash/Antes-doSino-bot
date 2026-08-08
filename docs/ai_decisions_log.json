@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Douglas Elliman Non-GAAP EPS of -$0.05, revenue of $283.4M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:31:00.162440-03:00"
-    },
-    {
       "title": "Algonquin Power & Utilities declares CAD 0.065 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T14:50:50.751464-03:00"
+    },
+    {
+      "title": "Doughnut, diner, and restaurant chain owner files Chapter 7",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:55:50.350931-03:00"
     }
   ]
 }
