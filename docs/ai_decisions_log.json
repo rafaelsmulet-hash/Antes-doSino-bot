@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "IA virou preocupação do Fed: investimento dispara e alerta de bolha acende",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:56:13.184856-03:00"
-    },
-    {
-      "title": "Por que a eleição de 2026 pode repetir um fenômeno visto em 2014",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, economia ou negocios, mas sobre política e eleição.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:15.994590-03:00"
-    },
-    {
-      "title": "Futuros dos EUA operam sem direção única antes do payroll de julho",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:56:18.658505-03:00"
-    },
-    {
       "title": "Escala 6×1 ou maioridade penal: disputa pela agenda pode definir a eleição",
       "source": "InfoMoney",
       "score": 1.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T07:56:12.332172-03:00"
+    },
+    {
+      "title": "Corte na Selic, balanços do 2T26 e projeções para o mercado; veja destaques da semana",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Corte na Selic e ajuste de projeções da XP Investimentos são eventos relevantes e com impacto concreto no mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T08:00:44.259647-03:00"
+    },
+    {
+      "title": "Mercado imobiliário vai bem, mas os FIIs nem sempre acompanham; entenda por quê",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "A noticia discute o mercado imobiliário, mas nao tem um impacto imediato ou significativo no mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:00:47.024850-03:00"
+    },
+    {
+      "title": "“Idoso-Aranha”: Trend acende alerta para acidentes e proteção financeira na velhice",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre segurança e proteção financeira na velhice.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:00:49.824571-03:00"
     }
   ]
 }
