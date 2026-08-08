@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "HGRE11: emissão de até R$ 700 milhões para ampliar capacidade de investimentos",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "A emissão de R$ 700 milhões permitirá ao fundo imobiliário ampliar sua capacidade de investimentos, o que pode ser positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:02:08.392991-03:00"
-    },
-    {
       "title": "Why Eli Lilly Stock Climbed Today",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T12:55:40.591338-03:00"
+    },
+    {
+      "title": "The Kindle Scribe Colorsoft is a lot of fun, but it’s not a must-have",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:01:07.145965-03:00"
     }
   ]
 }
