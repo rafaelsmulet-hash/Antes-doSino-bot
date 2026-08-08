@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Spectral Medical GAAP EPS of $0.00 beats by $0.01, revenue of $0.62M beats by $0.02M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:01:27.180780-03:00"
-    },
-    {
-      "title": "Consensus Cloud reaffirms 2026 revenue of $350M-$364M while outlining Healthcare Strategy group and doc.health tuck-in",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:01:29.815782-03:00"
-    },
-    {
-      "title": "NerdWallet expects Q3 revenue of $244M-$260M while scaling IRR-based marketing investment",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:01:32.418081-03:00"
-    },
-    {
       "title": "$10,000 in AMDL Became $40,270 in 7 Months, but AMD’s Earnings Crash Erased $9,500 in One Day",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T17:21:11.084501-03:00"
+    },
+    {
+      "title": "Student Loan Payments Are Spiking: What Changed On July 1 And What Borrowers Over 50 Should Do",
+      "source": "ZeroHedge",
+      "score": 8.0,
+      "motivo": "A mudança no plano de pagamento pode aumentar os pagamentos dos empréstimos estudantis para os emprestadores acima de 50 anos, especialmente os que têm empréstimos Parent PLUS.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T17:25:54.021990-03:00"
+    },
+    {
+      "title": "Iran Insists US Must Meet Stringent List Of Demands Before Hormuz Opens",
+      "source": "ZeroHedge",
+      "score": 8.0,
+      "motivo": "O Irã está exigindo que os EUA retirem sanções e paguem compensação por danos causados, o que pode ter um impacto significativo no mercado.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T17:26:00.532749-03:00"
+    },
+    {
+      "title": "How The UAE Has Kept Its Oil Flowing Through Hormuz",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "Aumento das exportações de petróleo do Emirados Árabes Unidos para níveis pré-crise, apesar do bloqueio no Estreito de Hormuz",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T17:26:03.532218-03:00"
     }
   ]
 }
