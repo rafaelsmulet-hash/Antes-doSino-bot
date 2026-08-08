@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Indian Refiners Continue West Africa Crude Buying Spree",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:31:40.247098-03:00"
-    },
-    {
       "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
       "source": "WSJ Markets",
       "score": 3.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T15:21:12.927300-03:00"
+    },
+    {
+      "title": "VOO Is About to Become the First $1 Trillion ETF, and SPY Holders Are Paying 3x More for the Same Index",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a relevância do VOO e a diferença de custo em relação ao SPY, o que pode influenciar as escolhas de investimento dos traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:25:57.736718-03:00"
     }
   ]
 }
