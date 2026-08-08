@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "1 Beaten-Down Stock to Buy and Hold for a Decade",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:31:12.957001-03:00"
-    },
-    {
-      "title": "Why Joby Aviation Stock Flew Higher Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:31:15.583469-03:00"
-    },
-    {
       "title": "McDonald picks insider finance veteran as new US boss",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T21:15:54.014606-03:00"
+    },
+    {
+      "title": "PepsiCo Lags Coca-Cola as Domestic Sales Stumble",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia afeta diretamente as vendas de bebidas da PepsiCo no mercado doméstico.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T21:20:49.067295-03:00"
+    },
+    {
+      "title": "Optimum Communications, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados financeiros melhorados, o que pode ser visto como positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T21:20:51.966282-03:00"
     }
   ]
 }
