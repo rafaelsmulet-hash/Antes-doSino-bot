@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que os futuros do ouro estão em alta hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "A alta dos futuros do ouro indica uma expectativa de aumento do preço do metal precioso, o que pode ser um sinal de insegurança econômica e inflação, afetando negativamente os investimentos em outras commodities e ativos.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:51.690538-03:00"
-    },
-    {
-      "title": "Por que os futuros de prata estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento de demanda por prata impulsiona os futuros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:54.497654-03:00"
-    },
-    {
-      "title": "Por que as ações da Jensen estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A noticia especifica e materialmente relevante pro mercado atual, pois menciona acao de uma empresa em queda, o que pode influenciar os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:57.355266-03:00"
-    },
-    {
-      "title": "Ações da China sobem à medida que exportações robustas melhoram ânimo do mercado",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Exportações robustas da China têm impacto positivo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:00.182609-03:00"
-    },
-    {
-      "title": "Com vendedores robôs, a startup dele já movimentou R$ 75 milhões em seu primeiro ano",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A startup movimentou R$ 75 milhões em seu primeiro ano, indicando crescimento e sucesso no mercado de e-commerce",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:04.341327-03:00"
-    },
-    {
       "title": "Disney pode seguir caminho da Pluto TV e lançar streaming gratuito",
       "source": "Exame",
       "score": 5.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T10:26:14.765374-03:00"
+    },
+    {
+      "title": "Berkshire Hathaway: lucro por ação classe B mais que dobrou no 2º trimestre de 2026",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "lucro por ação classe B mais que dobrou, indicando saúde financeira da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:31:06.722929-03:00"
+    },
+    {
+      "title": "O que acontece com as ações quando o Fed começa a subir os juros?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Aumento de juros pelo Fed geralmente pressiona as ações, especialmente em setores sensíveis a taxas de juros.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:31:18.719584-03:00"
+    },
+    {
+      "title": "Michael Burry says it’s 'Trump's market' where price doesn't matter",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia destaca a influência política no mercado, o que pode ter um impacto significativo nas decisões de investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:31:22.104767-03:00"
+    },
+    {
+      "title": "C&A melhora margem e se sai melhor que Magalu e Renner no 2° trimestre",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "C&A apresentou melhor desempenho em comparação com outras grandes lojas de varejo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:31:31.029909-03:00"
+    },
+    {
+      "title": "IFIX avança 0,29%, mas fecha semana com queda de 1,24%",
+      "source": "Suno Noticias",
+      "score": 3.0,
+      "motivo": "avanço do IFIX, mas queda na semana",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:31:34.682583-03:00"
     }
   ]
 }
