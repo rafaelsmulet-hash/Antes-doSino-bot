@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Como a Webmotors mudou a busca por seus carros usando o ChatGPT",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre tecnologia e automotivo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:37.406026-03:00"
-    },
-    {
       "title": "Jogos de hoje: horário e onde assistir aos duelos desta sexta-feira, 7",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T08:21:46.173066-03:00"
+    },
+    {
+      "title": "Norwegian soldiers say they're training Ukrainian soldiers with a 'Viking mentality' built for harsh conditions",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:25:55.851911-03:00"
     }
   ]
 }
