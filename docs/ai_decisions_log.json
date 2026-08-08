@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Como a cerveja é feita? Do lúpulo à levedura, veja o caminho da bebida até chegar ao copo",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:58:44.144529-03:00"
-    },
-    {
-      "title": "El Niño: governo decide reduzir geração de hidrelétricas para enfrentar fenômeno climático",
-      "source": "G1 Economia",
-      "score": 6.0,
-      "motivo": "medida de segurança hídrica para enfrentar o El Niño",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:58:46.988372-03:00"
-    },
-    {
       "title": "Alta na inadimplência faz grandes bancos focarem em crédito de menor risco",
       "source": "UOL Economia",
       "score": 6.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:56:01.378753-03:00"
+    },
+    {
+      "title": "UK VC bets big on AI, leaving other sectors starved for cash",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a preferência de investidores britânicos por tecnologia de IA, o que pode ter impacto positivo no mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:00:55.962719-03:00"
+    },
+    {
+      "title": "Warren Buffett shares the ‘secret sauce’ to Berkshire Hathaway's dominance. Use his strategy to grow your own wealth now",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A notícia é relevante porque Warren Buffett é um investidor respeitado e sua estratégia pode influenciar as decisões de investimento dos traders.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:00:59.329173-03:00"
     }
   ]
 }
