@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Brasil tem de agregar valor aos recursos naturais para liderar a bioeconomia; entenda",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:10:41.805653-03:00"
-    },
-    {
-      "title": "MRV vende ativos da Resia por US$ 170 milhões e reduz dívida em R$ 719 milhões",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:10:44.440344-03:00"
-    },
-    {
       "title": "Em maio, indústria recua em 9 dos 15 locais pesquisados",
       "source": "IBGE",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T13:20:40.342081-03:00"
+    },
+    {
+      "title": "Irã divulga lista de exigências aos EUA para reabertura do Estreito de Ormuz, diz jornal",
+      "source": "G1 Economia",
+      "score": 8.0,
+      "motivo": "a lista de exigências do Irã aumenta preocupações sobre o futuro do Estreito de Ormuz, pressionando os preços do petróleo e os custos de energia",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T13:25:44.231621-03:00"
+    },
+    {
+      "title": "CS Disco Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Redução de custos e aumento de receita são sinais positivos para a empresa e podem afetar positivamente o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T13:25:50.795623-03:00"
     }
   ]
 }
