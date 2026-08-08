@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Arko Corp. GAAP EPS of $0.26, revenue of $1.84B",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois apresenta os resultados financeiros da Arko Corp., o que pode influenciar a percepção dos investidores sobre a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:51.723802-03:00"
-    },
-    {
-      "title": "Interface Non-GAAP EPS of $0.88 beats by $0.24, revenue of $396M beats by $4.78M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:54.413235-03:00"
-    },
-    {
-      "title": "IRhythm outlines $880M-$890M 2026 revenue outlook as it targets 13%-14% adjusted EBITDA margin and plans Vital Connect close by year-end",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:57.205384-03:00"
-    },
-    {
       "title": "Nature's Sunshine targets $1B in sales and 15% EBITDA margin while cutting 2026 sales outlook to $490M-$500M",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:35:44.770924-03:00"
+    },
+    {
+      "title": "Stock Index Futures Gain With All Eyes on Key U.S. Jobs Report",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "O relatório de emprego dos EUA é um evento importante que pode afetar o mercado de ações.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:40:52.711393-03:00"
+    },
+    {
+      "title": "After a trip to see my parents, my family moved across the country to live with them. My dad's recent diagnosis made me grateful we did.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:40:55.827695-03:00"
+    },
+    {
+      "title": "How much protein do you need? Nutrition experts say there's a sweet spot",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:40:58.669992-03:00"
     }
   ]
 }
