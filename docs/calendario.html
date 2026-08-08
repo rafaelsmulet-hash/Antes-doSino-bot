@@ -101,6 +101,26 @@
     overflow:hidden;height:70vh;min-height:520px;
   }
 
+  .catalyst-section{padding-top:2vh;}
+  .catalyst-list{display:flex;flex-direction:column;gap:10px;}
+  .catalyst-item{
+    display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;
+    background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:12px;
+    padding:14px 18px;
+  }
+  .catalyst-countdown{
+    font-family:'IBM Plex Mono',monospace;font-size:0.72rem;font-weight:600;
+    color:var(--navy-deep);background:var(--gold);border-radius:100px;
+    padding:4px 12px;white-space:nowrap;flex-shrink:0;
+  }
+  .catalyst-body{flex:1;min-width:200px;}
+  .catalyst-label{font-weight:600;font-size:0.95rem;}
+  .catalyst-why{color:var(--slate);font-size:0.82rem;margin-top:4px;line-height:1.5;}
+  .catalyst-date{
+    font-family:'IBM Plex Mono',monospace;font-size:0.78rem;color:var(--slate-dim);
+    white-space:nowrap;
+  }
+
   footer{
     display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
     padding:26px 6vw;border-top:1px solid var(--line);color:var(--slate-dim);font-size:0.82rem;
@@ -163,6 +183,15 @@
   </div>
 </section>
 
+<section class="catalyst-section" id="catalisadores-section" style="display:none;">
+  <div class="page-head" style="margin-bottom:20px;">
+    <span class="kicker">Radar de catalisadores</span>
+    <h1 style="font-size:clamp(1.3rem,2.4vw,1.8rem);">O Que Identificamos nas Notícias</h1>
+    <p>Eventos específicos com data que nossa cobertura identificou nas próprias notícias — complementa o calendário genérico acima.</p>
+  </div>
+  <div class="catalyst-list" id="catalyst-list"></div>
+</section>
+
 <footer>
   <span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>
   <div style="display:flex;gap:16px;">
@@ -171,6 +200,51 @@
     <a href="resumo-semanal.html" style="color:var(--gold)">Resumo semanal</a>
   </div>
 </footer>
+
+<script>
+  fetch('eventos_radar.json')
+    .then(function (r) { return r.ok ? r.json() : []; })
+    .then(function (eventos) {
+      if (!eventos || !eventos.length) return;
+      var list = document.getElementById('catalyst-list');
+      eventos.forEach(function (ev) {
+        var countdown = ev.days_away === 0 ? 'É hoje' : (ev.days_away === 1 ? 'Amanhã' : 'Em ' + ev.days_away + ' dias');
+        var d = new Date(ev.date + 'T00:00:00');
+        var displayDate = String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0') + '/' + d.getFullYear();
+
+        var item = document.createElement('div');
+        item.className = 'catalyst-item';
+
+        var countdownEl = document.createElement('span');
+        countdownEl.className = 'catalyst-countdown';
+        countdownEl.textContent = countdown;
+
+        var bodyEl = document.createElement('div');
+        bodyEl.className = 'catalyst-body';
+        var labelEl = document.createElement('div');
+        labelEl.className = 'catalyst-label';
+        labelEl.textContent = ev.label || '';
+        bodyEl.appendChild(labelEl);
+        if (ev.why) {
+          var whyEl = document.createElement('p');
+          whyEl.className = 'catalyst-why';
+          whyEl.textContent = ev.why;
+          bodyEl.appendChild(whyEl);
+        }
+
+        var dateEl = document.createElement('span');
+        dateEl.className = 'catalyst-date';
+        dateEl.textContent = displayDate;
+
+        item.appendChild(countdownEl);
+        item.appendChild(bodyEl);
+        item.appendChild(dateEl);
+        list.appendChild(item);
+      });
+      document.getElementById('catalisadores-section').style.display = '';
+    })
+    .catch(function () {});
+</script>
 
 </body>
 </html>
