@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Copper Market Crunch Brews as US and China Compete for Metal",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A alta demanda por cobre nos EUA e China pode levar a um aumento nos preços globais.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:10:34.872813-03:00"
-    },
-    {
-      "title": "Arábia Saudita, Turquia e Paquistão devem assinar acordo-chave de defesa nesta sexta",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não é especificamente sobre mercado financeiro, mas sim sobre política internacional",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:10:39.175626-03:00"
-    },
-    {
       "title": "Brasil tem de agregar valor aos recursos naturais para liderar a bioeconomia; entenda",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T13:16:38.448585-03:00"
+    },
+    {
+      "title": "Moraes nega visita dos filhos a Bolsonaro no Dia dos Pais; decisão cita suspensão de 30 dias",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:20:37.145930-03:00"
+    },
+    {
+      "title": "Earnings Scorecard: All 12 S&P 500 Energy stocks beat EPS estimates this week",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "As ações de Energia superaram as estimativas de lucro, o que pode indicar uma recuperação do setor.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T13:20:40.342081-03:00"
     }
   ]
 }
