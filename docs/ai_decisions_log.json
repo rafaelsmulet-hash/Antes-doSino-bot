@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Global Partners GAAP EPS of $1.86 beats by $0.62, revenue of $6.79B misses by $720M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:11:29.023036-03:00"
-    },
-    {
       "title": "JBS anuncia investimento de US$ 5 bilhões para expandir negócios na Ásia",
       "source": "G1 Economia",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T18:16:03.747983-03:00"
+    },
+    {
+      "title": "Navigator Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aumento de receita e lucro indica saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:20:57.244837-03:00"
     }
   ]
 }
