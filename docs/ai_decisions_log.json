@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "TRXF11: maior aquisição da história do FII em operação de R$ 2,13 bi",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "Aquisição de R$ 2,13 bilhões em imóveis é um investimento significativo que pode impactar o mercado imobiliário",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T22:06:02.215013-03:00"
-    },
-    {
-      "title": "Forget the Anthropic IPO: 2 Magnificent AI Stocks to Buy and Hold Instead",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca ações de inteligência artificial, o que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T22:06:07.054603-03:00"
-    },
-    {
-      "title": "Zimmer Biomet raises full-year outlook after second-quarter earnings beat",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T22:06:09.706284-03:00"
-    },
-    {
-      "title": "Tim Robbins: ‘Shawshank Redemption’ was a box office disaster — but 1 brilliant money move saved it. Copy it to get rich",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T22:06:12.402952-03:00"
-    },
-    {
       "title": "Williams Companies Stock: Is Wall Street Bullish or Bearish?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T07:01:28.485185-03:00"
+    },
+    {
+      "title": "Embeddings sem complicação: o conceito que permite à IA encontrar exatamente o que você procura",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:05:35.613097-03:00"
+    },
+    {
+      "title": "Como o varejo está atendendo ao consumidor do \"último minuto\" no Dia dos Pais",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de varejo, mas não tem impacto significativo no mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:05:38.344366-03:00"
+    },
+    {
+      "title": "Marmotas no Onlyfans? Pesquisador dos EUA aposta em plataforma para arrecadar fundos",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro, mas sim a uma situação de cortes orçamentários em universidades",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:05:41.077472-03:00"
+    },
+    {
+      "title": "Lucro recorde da Petrobras injeta R$ 93,6 bi nos cofres públicos, mas efeito é limitado",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "Notícia sobre lucro recorde da Petrobras, que injeta grande valor nos cofres públicos, indicando saúde financeira da empresa e potencial para investimentos futuros",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T07:05:47.280923-03:00"
     }
   ]
 }
