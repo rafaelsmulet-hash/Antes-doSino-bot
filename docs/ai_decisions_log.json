@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Heliostar Metals GAAP EPS of $0.03, revenue of $56.5M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:56:16.683787-03:00"
-    },
-    {
-      "title": "Yum China takes control of the Pizza Hut business in mainland China",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:56:19.287990-03:00"
-    },
-    {
-      "title": "Poder Economia",
-      "source": "Poder360",
-      "score": 2.0,
-      "motivo": "A notícia é sobre a própria editoria de mercado financeiro, não é uma notícia específica sobre um evento ou desenvolvimento.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:56:22.530973-03:00"
-    },
-    {
-      "title": "The Hidden Winners of the AI Power Crunch: 3 Utilities to Watch",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:56:26.222346-03:00"
-    },
-    {
       "title": "DAX Rises As Focus Remains On Earnings",
       "source": "Nasdaq",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T11:41:00.329386-03:00"
+    },
+    {
+      "title": "Iranianos apoiarão “até o fim” qualquer decisão que a liderança tomar, diz Pezeshkian",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre política internacional e acordos internacionais, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:45:37.730614-03:00"
+    },
+    {
+      "title": "Everyone's Chasing AI Data Center Stocks. This 5%-Yielding Dividend Stock Already Owns a Piece of the Boom.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia menciona uma joint venture significativa para investir em centros de dados, o que é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T11:45:51.323484-03:00"
+    },
+    {
+      "title": "Executive Parts Ways With 3,820 Shares of Lamb Weston Stock",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações de um executivo não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:45:54.330589-03:00"
+    },
+    {
+      "title": "Stock Market Week Ahead: Bullish Signals Amid 'Dirty' Volume",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a presença de sinais bullish, o que é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T11:46:03.966244-03:00"
     }
   ]
 }
