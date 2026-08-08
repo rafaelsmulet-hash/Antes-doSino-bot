@@ -82,6 +82,30 @@ def extract_ticker_hashtags(text):
     return found
 
 
+# Termos que indicam noticia de resultado trimestral/balanco de uma
+# empresa especifica - usados como filtro barato (regex) antes de
+# gastar uma chamada de IA extra em extract_earnings_details.
+EARNINGS_KEYWORDS = [
+    "lucro liquido", "lucro líquido", "prejuizo liquido", "prejuízo líquido",
+    "resultado trimestral", "resultado do trimestre", "balanco trimestral",
+    "balanço trimestral", "divulga balanco", "divulga balanço",
+    "divulgou balanco", "divulgou balanço", "receita liquida",
+    "receita líquida", "ebitda ajustado", "lucro acima", "lucro abaixo",
+    "quarterly earnings", "quarterly results", "earnings report",
+    "reported earnings", "posts earnings", "earnings beat", "earnings miss",
+    "q1 results", "q2 results", "q3 results", "q4 results",
+    "full-year results", "annual results",
+]
+
+
+def is_earnings_news(text):
+    """Deteccao barata (sem IA) de noticia de resultado trimestral -
+    usada como filtro previo, so vale a pena chamar extract_earnings_details
+    quando bate aqui."""
+    text_lower = text.lower()
+    return any(kw in text_lower for kw in EARNINGS_KEYWORDS)
+
+
 def decide_dispatch_tier(score):
     """Decide o destino REAL de uma noticia ja aprovada pelos filtros de
     relevancia, com base no score_materialidade (0-10) calculado pela
@@ -107,9 +131,27 @@ def decide_dispatch_tier(score):
     return "discard"
 
 
-def build_breaking_message(title, resumo, motivo, sentiment, source, hashtags):
+def build_earnings_lines(earnings):
+    """Formata o bloco estruturado de resultado trimestral (numero
+    reportado / comparacao com o esperado / destaque qualitativo), no
+    lugar do resumo generico - so imprime as linhas que tem conteudo
+    real, nunca um campo vazio."""
+    linhas = []
+    if earnings.get("reportado"):
+        linhas.append("• 📊 Resultado: " + html_module.escape(earnings["reportado"], quote=False))
+    if earnings.get("vs_esperado"):
+        linhas.append("• 🎯 Vs. esperado: " + html_module.escape(earnings["vs_esperado"], quote=False))
+    if earnings.get("destaque"):
+        linhas.append("• 🔍 Destaque: " + html_module.escape(earnings["destaque"], quote=False))
+    return linhas
+
+
+def build_breaking_message(title, resumo, motivo, sentiment, source, hashtags, earnings=None):
     """Template A - Breaking News (score >= 8): mensagem individual,
-    formato fixo com hashtag de ativo, destaques em bullet e fonte."""
+    formato fixo com hashtag de ativo, destaques em bullet e fonte.
+    Quando 'earnings' vem preenchido (noticia de resultado trimestral
+    de uma empresa especifica, ver maybe_extract_earnings_details), o
+    bloco estruturado de resultado substitui o resumo/motivo genericos."""
     hashtag_str = " ".join("#" + h for h in hashtags)
     header = "🚨 <b>BREAKING</b>" + (" | " + hashtag_str if hashtag_str else "")
 
@@ -120,11 +162,12 @@ def build_breaking_message(title, resumo, motivo, sentiment, source, hashtags):
     }
     impacto = impacto_por_sentimento.get(sentiment, impacto_por_sentimento["NEUTRAL"])
 
-    bullets = []
-    if resumo:
-        bullets.append("• " + html_module.escape(sanitize_message_text(resumo), quote=False))
-    if motivo:
-        bullets.append("• " + html_module.escape(sanitize_message_text(motivo), quote=False))
+    bullets = build_earnings_lines(earnings) if earnings else []
+    if not bullets:
+        if resumo:
+            bullets.append("• " + html_module.escape(sanitize_message_text(resumo), quote=False))
+        if motivo:
+            bullets.append("• " + html_module.escape(sanitize_message_text(motivo), quote=False))
     bullets.append("• Impacto: " + impacto)
 
     partes = [
@@ -152,10 +195,60 @@ GIRO_INTERVALO_MINUTOS = 60
 GIRO_MAX_ITENS_POR_MENSAGEM = 20
 
 
+def build_giro_headline(queue_items):
+    """1 frase de leitura geral pro Giro do Mercado, sintetizando o
+    lote de itens 'round' da hora - da uma leitura mais estruturada ao
+    digest sem transformar cada item num bloco longo (o Giro existe
+    justamente pra ser compacto e evitar flood - ver GIRO_INTERVALO_MINUTOS).
+    Fallback seguro: fila pequena demais ou falha na IA retornam None,
+    e o Giro sai so com os bullets, como sempre foi."""
+    if not USE_AI or len(queue_items) < 2:
+        return None
+    headlines_text = ""
+    for item in queue_items[:15]:
+        headlines_text += "- " + (item.get("resumo") or item.get("title") or "") + "\n"
+
+    instrucao = (
+        "Voce e o editor de um digest horario de mercado financeiro. Com base nos "
+        "itens abaixo, escreva 1 frase curta (estilo manchete de research, direta, "
+        "sem floreio) que resuma o tom geral desta hora do mercado. Use SOMENTE o "
+        "que esta nos itens - nunca invente fato nem conecte itens sem relacao "
+        "explicita entre eles. Responda so a frase, sem aspas, sem markdown.\n\n"
+        "Itens:\n" + headlines_text
+    )
+    try:
+        resposta = ask_groq(instrucao, purpose="analysis")
+        limpo = sanitize_message_text(resposta.strip().strip('"'))
+        return limpo or None
+    except Exception as e:
+        print("Erro ao gerar leitura da hora do Giro do Mercado (fallback seguro): " + str(e))
+        return None
+
+
+def build_giro_item_line(item):
+    """Formata 1 linha do Giro do Mercado. Quando o item tem detalhes
+    de resultado trimestral extraidos (ver maybe_extract_earnings_details),
+    usa o numero reportado + destaque no lugar do resumo generico -
+    mantendo 1 linha por item, sem inflar o digest."""
+    hashtags = item.get("hashtags") or []
+    prefixo = " ".join("#" + h for h in hashtags) + ": " if hashtags else ""
+
+    earnings = item.get("earnings")
+    if earnings and earnings.get("reportado"):
+        texto = earnings["reportado"]
+        if earnings.get("destaque"):
+            texto += " — " + earnings["destaque"]
+    else:
+        texto = item.get("resumo") or item.get("title") or ""
+
+    return "• " + prefixo + html_module.escape(sanitize_message_text(texto), quote=False)
+
+
 def build_giro_message(queue_items):
     """Template B - Giro do Mercado: consolida os itens 'round'
     acumulados na ultima hora numa unica mensagem, em bullets curtos
-    por ativo. Ordena por materialidade (mais importante primeiro) via
+    por ativo, com uma leitura geral da hora no topo (build_giro_headline).
+    Ordena por materialidade (mais importante primeiro) via
     editorial_foundation.prioritize_queue quando disponivel."""
     agora = datetime.now(BR_TZ)
     inicio = (agora - timedelta(minutes=GIRO_INTERVALO_MINUTOS)).strftime("%Hh%M")
@@ -172,22 +265,19 @@ def build_giro_message(queue_items):
     mostrados = ordenados[:GIRO_MAX_ITENS_POR_MENSAGEM]
     restantes = len(ordenados) - len(mostrados)
 
-    linhas = []
-    for item in mostrados:
-        hashtags = item.get("hashtags") or []
-        prefixo = " ".join("#" + h for h in hashtags) + ": " if hashtags else ""
-        resumo = item.get("resumo") or item.get("title") or ""
-        linhas.append("• " + prefixo + html_module.escape(sanitize_message_text(resumo), quote=False))
-
+    linhas = [build_giro_item_line(item) for item in mostrados]
     corpo = "\n".join(linhas) if linhas else "Sem novidades relevantes nesta hora."
 
     rodape = "⚡ Antes do Sino — Curadoria em tempo real"
     if restantes > 0:
         rodape = "+" + str(restantes) + " atualizações adicionais nesta hora.\n\n" + rodape
 
+    headline = build_giro_headline(mostrados)
+    headline_bloco = ("💡 " + html_module.escape(headline, quote=False) + "\n\n") if headline else ""
+
     message = (
         "📊 <b>GIRO DO MERCADO (" + inicio + " - " + fim + ")</b>\n\n"
-        + corpo + "\n\n" + rodape
+        + headline_bloco + corpo + "\n\n" + rodape
     )
     message = sanitize_message_text(message)
     if len(message) > 3900:
@@ -881,6 +971,76 @@ def classify_news_ai(title, body, translate=False):
     except Exception as e:
         print("Erro IA (Groq, fallback seguro aplicado): " + str(e))
         return None
+
+
+def extract_earnings_details(title, body):
+    """So chamada quando is_earnings_news() bate para uma noticia com
+    ticker identificado (ver maybe_extract_earnings_details) - extrai,
+    usando SOMENTE o que esta explicito no texto (nunca completa com
+    conhecimento externo nem inventa numero/consenso), o numero
+    principal reportado, a comparacao com o esperado (quando o texto
+    mencionar) e o destaque qualitativo do resultado."""
+    if not USE_AI:
+        return None
+    try:
+        body_cleaned = strip_boilerplate(strip_html_tags(body)).strip()
+        instrucao = (
+            "Voce esta lendo uma noticia de resultado trimestral/balanco de uma "
+            "empresa. Extraia, USANDO SOMENTE o que esta explicito no texto abaixo "
+            "(nunca complete com conhecimento externo, nunca invente numero ou "
+            "consenso de mercado que o texto nao mencione):\n"
+            "1. reportado: o numero principal reportado, com contexto curto (ex: "
+            "'lucro liquido de R$ 7,05 bi, alta de 16% no ano'). Se o texto nao "
+            "trouxer um numero claro, use string vazia.\n"
+            "2. vs_esperado: comparacao com expectativa/consenso de mercado, SOMENTE "
+            "se o texto mencionar isso explicitamente (ex: 'acima do esperado pelos "
+            "analistas'). Se o texto nao mencionar expectativa, use string vazia.\n"
+            "3. destaque: 1 frase curta com o principal destaque qualitativo do "
+            "resultado (motivo do lucro/prejuizo, guidance, divisao que mais "
+            "cresceu). Se nao houver nada alem do numero, use string vazia.\n\n"
+            "Responda APENAS em JSON plano, sem markdown, sem texto antes ou "
+            "depois, no formato exato:\n"
+            '{"reportado": "...", "vs_esperado": "...", "destaque": "..."}\n\n'
+            "Titulo: " + title + "\n"
+            "Texto: " + body_cleaned
+        )
+        raw_response = ask_groq(instrucao, purpose="analysis")
+        parsed = extract_json_object(raw_response)
+        if not isinstance(parsed, dict):
+            return None
+
+        reportado = parsed.get("reportado")
+        vs_esperado = parsed.get("vs_esperado")
+        destaque = parsed.get("destaque")
+        result = {
+            "reportado": sanitize_message_text(reportado) if isinstance(reportado, str) else "",
+            "vs_esperado": sanitize_message_text(vs_esperado) if isinstance(vs_esperado, str) else "",
+            "destaque": sanitize_message_text(destaque) if isinstance(destaque, str) else "",
+        }
+        if not result["reportado"] and not result["destaque"]:
+            return None
+        return result
+    except Exception as e:
+        print("Erro ao extrair detalhes de resultado trimestral (fallback seguro): " + str(e))
+        return None
+
+
+def maybe_extract_earnings_details(dispatch_tier, hashtags, title, body, final_title, final_body):
+    """So dispara a extracao estruturada de resultado trimestral
+    (1 chamada de IA extra) quando a noticia realmente vai ser
+    publicada (breaking ou round), cita um ativo especifico
+    (hashtags) e bate no detector de palavras-chave de resultado -
+    evita gastar chamada de IA em toda noticia que passa pelo pipeline."""
+    if dispatch_tier not in ("breaking", "round"):
+        return None
+    if not hashtags:
+        return None
+    if not is_earnings_news(title + " " + body):
+        return None
+    earnings = extract_earnings_details(final_title, final_body)
+    if earnings:
+        time.sleep(2.5)
+    return earnings
 
 
 def send_telegram_message(text):
@@ -1753,6 +1913,50 @@ def build_events_html(entries_today, all_history=None):
         '<div class="events-list">' + events_html + "</div>"
         "</section>"
     )
+
+
+CATALYST_RADAR_JSON_PATH = "docs/eventos_radar.json"
+
+
+def build_catalyst_radar_json(combined_events):
+    """Serializa os proximos 14 dias de eventos conhecidos (SEED_EVENTS
+    + registro extraido automaticamente das manchetes via
+    update_events_registry/extract_events_from_news, ja calculado por
+    quem chama) em docs/eventos_radar.json - lido pelo card
+    'Catalisadores no radar' do /calendario.html via fetch no
+    navegador. Complementa o widget generico do TradingView com
+    eventos especificos (ex: resultado de uma empresa) que a IA
+    identificou nas proprias noticias que cobrimos."""
+    today = datetime.now(BR_TZ).date()
+    all_events = list(combined_events) + compute_next_payroll_dates(3)
+
+    seen = set()
+    relevantes = []
+    for ev in all_events:
+        try:
+            event_date = datetime.strptime(ev["date"], "%Y-%m-%d").date()
+        except Exception:
+            continue
+        days_away = (event_date - today).days
+        if not (0 <= days_away <= 14):
+            continue
+        key = ev["label"].strip().lower() + ev["date"]
+        if key in seen:
+            continue
+        seen.add(key)
+        relevantes.append({
+            "date": ev["date"],
+            "label": ev["label"],
+            "why": ev.get("why", ""),
+            "days_away": days_away,
+        })
+
+    relevantes.sort(key=lambda e: e["days_away"])
+
+    os.makedirs("docs", exist_ok=True)
+    with open(CATALYST_RADAR_JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump(relevantes, f, ensure_ascii=False)
+    return relevantes
 
 
 def build_since_visit_data_json(entries_today):
@@ -2789,6 +2993,78 @@ def summarize_briefing_with_ai(entries, tipo):
         return "Sintese indisponivel no momento - confira as noticias completas no site."
 
 
+def build_sellside_synopsis(entries):
+    """Sintese do Fechamento B3 em formato estilo research (tese +
+    catalisadores + riscos) no lugar do paragrafo solto de
+    summarize_briefing_with_ai. Mesma trava anti-alucinacao: usa
+    SOMENTE as manchetes fornecidas, nunca inventa numero ou conexao
+    causal entre noticias sem relacao explicita. Retorna None se a IA
+    falhar ou a resposta vier fora do formato esperado - quem chama
+    cai de volta no paragrafo simples (fallback seguro, nunca deixa a
+    secao vazia)."""
+    if not USE_AI or not entries:
+        return None
+
+    headlines_text = ""
+    for e in entries[:15]:
+        headlines_text += "- " + e["title"] + "\n"
+
+    trava_anti_alucinacao = (
+        "Use SOMENTE as manchetes fornecidas abaixo - nunca invente fato, numero ou "
+        "evento que nao esteja nelas. Nunca invente relacao causal entre manchetes "
+        "que nao tem conexao explicita, e nunca conecte 2 manchetes so porque estao "
+        "na mesma lista - elas podem ser sobre empresas, paises ou temas totalmente "
+        "independentes. So afirme que um acontecimento influenciou o outro se as "
+        "proprias manchetes realmente sustentarem essa leitura. Prefira uma resposta "
+        "mais generica e honesta a forcar uma narrativa conectada que os dados nao "
+        "sustentam."
+    )
+
+    instrucao = (
+        "Escreva uma leitura estruturada do pregao de hoje na B3 (Ibovespa), com base "
+        "nas manchetes abaixo, em 3 partes:\n"
+        "1. tese: 1 frase com a leitura principal do dia.\n"
+        "2. catalisadores: ate 2 fatores especificos que moveram o mercado hoje, cada "
+        "um em 1 frase curta. Lista vazia se as manchetes nao sustentarem nenhum.\n"
+        "3. riscos: ate 2 riscos ou pontos de atencao para os proximos dias, cada um "
+        "em 1 frase curta - so inclua se as manchetes realmente sustentarem isso, "
+        "senao deixe a lista vazia.\n\n"
+        + trava_anti_alucinacao + "\n\n"
+        "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
+        "formato exato:\n"
+        '{"tese": "...", "catalisadores": ["...", "..."], "riscos": ["...", "..."]}\n\n'
+        "Manchetes:\n" + headlines_text
+    )
+
+    try:
+        raw_response = ask_groq(instrucao, purpose="generation")
+        parsed = extract_json_object(raw_response)
+        if not isinstance(parsed, dict):
+            return None
+
+        tese = parsed.get("tese")
+        catalisadores_raw = parsed.get("catalisadores")
+        riscos_raw = parsed.get("riscos")
+
+        result = {
+            "tese": sanitize_message_text(tese) if isinstance(tese, str) else "",
+            "catalisadores": [
+                sanitize_message_text(c) for c in catalisadores_raw
+                if isinstance(c, str) and c.strip()
+            ] if isinstance(catalisadores_raw, list) else [],
+            "riscos": [
+                sanitize_message_text(r) for r in riscos_raw
+                if isinstance(r, str) and r.strip()
+            ] if isinstance(riscos_raw, list) else [],
+        }
+        if not result["tese"]:
+            return None
+        return result
+    except Exception as e:
+        print("Erro ao gerar sintese sell-side do Fechamento B3 (Groq, fallback seguro): " + str(e))
+        return None
+
+
 def build_evening_briefing_message(entries_today, eventos, market_snapshot=None):
     """Monta o texto do Fechamento B3 (Evening Briefing). Ibovespa/Dólar
     e as maiores altas/baixas usam SOMENTE dado real do snapshot -
@@ -2802,7 +3078,7 @@ def build_evening_briefing_message(entries_today, eventos, market_snapshot=None)
     if len(br_entries) < 3 and entries_today:
         br_entries = entries_today
 
-    sintese = summarize_briefing_with_ai(br_entries, "fechamento")
+    sellside = build_sellside_synopsis(br_entries)
 
     clusters = compute_news_clusters(br_entries)
     top_pautas = ""
@@ -2842,7 +3118,21 @@ def build_evening_briefing_message(entries_today, eventos, market_snapshot=None)
         partes.append("")
 
     partes.append("📊 <b>O dia em resumo</b>")
-    partes.append(html_module.escape(sintese, quote=False))
+    if sellside:
+        partes.append("💡 <i>" + html_module.escape(sellside["tese"], quote=False) + "</i>")
+        if sellside["catalisadores"]:
+            partes.append("")
+            partes.append("🎯 <b>Catalisadores</b>")
+            partes.append("\n".join("• " + html_module.escape(c, quote=False) for c in sellside["catalisadores"]))
+        if sellside["riscos"]:
+            partes.append("")
+            partes.append("⚠️ <b>Riscos</b>")
+            partes.append("\n".join("• " + html_module.escape(r, quote=False) for r in sellside["riscos"]))
+    else:
+        # Fallback seguro: sintese sell-side falhou (IA fora do ar, JSON
+        # invalido) - volta pro paragrafo simples de sempre, pra nunca
+        # deixar essa secao vazia.
+        partes.append(html_module.escape(summarize_briefing_with_ai(br_entries, "fechamento"), quote=False))
     partes.append("")
     partes.append("🔥 <b>O que movimentou o mercado</b>")
     partes.append(html_module.escape(top_pautas, quote=False))
@@ -3212,12 +3502,16 @@ def process_forwarded_channels(sent_hashes, recent_titles):
 
                 dispatch_tier = decide_dispatch_tier(canal_score)
                 hashtags = extract_ticker_hashtags(titulo_puro + " " + corpo_puro)
+                earnings = maybe_extract_earnings_details(
+                    dispatch_tier, hashtags, titulo_puro, corpo_puro, final_title, final_body
+                )
 
                 enviado_ou_enfileirado = False
                 if dispatch_tier == "breaking":
                     breaking_message = build_breaking_message(
                         title=final_title, resumo=final_body, motivo=canal_motivo,
                         sentiment=sentiment, source=source_for_message, hashtags=hashtags,
+                        earnings=earnings,
                     )
                     enviado_ou_enfileirado = send_telegram_message(breaking_message)
                     if enviado_ou_enfileirado:
@@ -3231,6 +3525,7 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                             "source": source_for_message,
                             "score": canal_score,
                             "link": post_link,
+                            "earnings": earnings,
                         })
                         enviado_ou_enfileirado = True
                     else:
@@ -3662,12 +3957,16 @@ def main():
             # nao publica. Ver decide_dispatch_tier().
             dispatch_tier = decide_dispatch_tier(shadow_score)
             hashtags = extract_ticker_hashtags(title + " " + raw_body)
+            earnings = maybe_extract_earnings_details(
+                dispatch_tier, hashtags, title, raw_body, final_title, final_body
+            )
 
             enviado_ou_enfileirado = False
             if dispatch_tier == "breaking":
                 breaking_message = build_breaking_message(
                     title=final_title, resumo=final_body, motivo=shadow_motivo,
                     sentiment=sentiment, source=source, hashtags=hashtags,
+                    earnings=earnings,
                 )
                 enviado_ou_enfileirado = send_telegram_message(breaking_message)
                 if enviado_ou_enfileirado:
@@ -3681,6 +3980,7 @@ def main():
                         "source": source,
                         "score": shadow_score,
                         "link": entry.get("link", ""),
+                        "earnings": earnings,
                     })
                     enviado_ou_enfileirado = True
                 else:
@@ -3801,6 +4101,16 @@ def main():
     try:
         events_state_for_briefing = load_events_state()
         combined_events = list(SEED_EVENTS) + events_state_for_briefing.get("events", [])
+    except Exception as e:
+        print("Erro ao carregar eventos (isolado, nao afeta o fluxo principal): " + str(e))
+        combined_events = list(SEED_EVENTS)
+
+    try:
+        build_catalyst_radar_json(combined_events)
+    except Exception as e:
+        print("Erro ao gerar radar de catalisadores (isolado, nao afeta o fluxo principal): " + str(e))
+
+    try:
         processar_briefings_telegram(all_portal_entries, combined_events, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, market_snapshot)
     except Exception as e:
         print("Erro ao processar briefings (isolado, nao afeta o fluxo principal): " + str(e))
