@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "EUA usam referência ao Homem-Aranha para promover prisões e deportações",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:15:51.531242-03:00"
-    },
-    {
-      "title": "Por que as ações da Guardian Pharmacy Services estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:15:55.137344-03:00"
-    },
-    {
-      "title": "Por que as ações da Halozyme Therapeutics estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:15:57.762911-03:00"
-    },
-    {
       "title": "Por que a ação da USA Rare Earth está subindo hoje?",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T13:51:28.949526-03:00"
+    },
+    {
+      "title": "Quem é Todd Blanche, ex-advogado de Trump que assume o Departamento de Justiça dos EUA",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:55:50.387320-03:00"
+    },
+    {
+      "title": "Xanadu Accelerates Chip Production as Investors Await Next Catalyst in Race to Scalable Quantum Computing – Quarterly Update Report",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque pode indicar um avanço significativo na tecnologia de computação quântica, o que pode ter impacto no mercado de tecnologia e investimentos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T13:56:05.267932-03:00"
+    },
+    {
+      "title": "Why Aurora Cannabis Looks Cheaper Than Its International Growth Suggests – Quarterly Update Report",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "O crescimento do faturamento superando as expectativas de mercado é relevante para a avaliação da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:56:08.249223-03:00"
     }
   ]
 }
