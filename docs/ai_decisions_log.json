@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Igreja Sem Sombra vira atração turística por arquitetura inusitada",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:12.142821-03:00"
-    },
-    {
-      "title": "SpaceX's 911.5 Million Share Unlock Hits Tomorrow. What Investors Need to Know.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia pode afetar os investidores e a valorização da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:17.202227-03:00"
-    },
-    {
-      "title": "Uber Technologies, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:19.858141-03:00"
-    },
-    {
-      "title": "Dynatrace, Inc. Q1 2027 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:22.523292-03:00"
-    },
-    {
-      "title": "Albemarle Surges Past Expectations on Stronger Lithium Market",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois afeta diretamente o mercado de lítio, um setor em alta demanda.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:25.520745-03:00"
-    },
-    {
-      "title": "Want income without leaving the market? Here’s the strategy",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:28.179246-03:00"
-    },
-    {
-      "title": "Eos Energy Enterprises, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa apresentou resultados financeiros positivos, o que pode ser visto como um sinal de estabilidade e confiança no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:31.112509-03:00"
-    },
-    {
       "title": "PwC's US CEO thought fewer emails were better. Then he heard from employees.",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T09:06:08.641955-03:00"
+    },
+    {
+      "title": "Eduardo Bolsonaro critica obrigatoriedade de vacinas no Brasil: ‘Liberdade’",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:10:43.038544-03:00"
+    },
+    {
+      "title": "Núcleo 'derretido' da Terra inverte direção sob o Pacífico e intriga cientistas",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:10:48.319376-03:00"
+    },
+    {
+      "title": "Com bares históricos e 500 atrações, festival aposta no novo momento do Centro de São Paulo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:10:51.093990-03:00"
+    },
+    {
+      "title": "Berkshire Hathaway Q2 operating earnings +16% Y/Y, cash hits $365.5B",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois fornece informações sobre o desempenho financeiro da Berkshire Hathaway, uma empresa de grande porte e influência no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T09:10:54.426454-03:00"
+    },
+    {
+      "title": "Elon Musk Just Announced Major News for Nvidia Shareholders",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia pode ter um impacto positivo nas ações da Nvidia devido à parceria com a SpaceX.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T09:10:59.636997-03:00"
+    },
+    {
+      "title": "Why Rescheduling Might Not Move Canopy Growth's Stock as Much as You Think",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia é relevante para a ação da Canopy Growth, uma empresa do setor de cannabis, e pode ter impacto no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:11:02.638095-03:00"
+    },
+    {
+      "title": "No Brasil, Mercado Pago ganha margem, fatura US$ 2,2 bilhões e passa a Caixa em cartões",
+      "source": "Neofeed",
+      "score": 6.0,
+      "motivo": "Aumento da margem de lucro do Mercado Pago e sua passagem à frente da Caixa em cartões é um sinal positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:11:09.395053-03:00"
     }
   ]
 }
