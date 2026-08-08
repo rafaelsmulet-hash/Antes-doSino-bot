@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stock Market Today, Aug. 5: Uber Falls 5% on Weak Guidance Despite Strong Bookings Growth",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a empresa Uber e pode influenciar o mercado de ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:07:12.486864-03:00"
-    },
-    {
-      "title": "a.k.a. Brands 2Q Gross Margin Improves as Fashion Turnaround Gains Momentum",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A melhoria da margem de lucro bruto é um sinal positivo para a empresa e pode influenciar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:07:15.673045-03:00"
-    },
-    {
-      "title": "NiSource Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa relatou resultados financeiros acima das expectativas, o que pode influenciar a percepção dos investidores sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:07:18.749484-03:00"
-    },
-    {
       "title": "How The World Views China Vs The US In 2026",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T10:06:39.311309-03:00"
+    },
+    {
+      "title": "CEO Greg Abel Starts Making His Mark at Berkshire",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A Berkshire aumentou sua despesa e investiu em outras oportunidades, indicando que o novo CEO está ativo e empenhado em utilizar os recursos da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:10:46.746849-03:00"
+    },
+    {
+      "title": "‘A Odisseia’ entra no clube do US$ 1 bilhão; veja quem chegou lá primeiro",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:10:49.961804-03:00"
+    },
+    {
+      "title": "O que o novo sedã da Lexus traz para desafiar o domínio do BMW Série 3",
+      "source": "Exame",
+      "score": 1.0,
+      "motivo": "não há relação direta com mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:10:58.315956-03:00"
     }
   ]
 }
