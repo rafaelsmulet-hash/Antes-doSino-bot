@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dólar abre sessão desta sexta-feira, de olho em novos dados de emprego dos EUA",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:05:50.175371-03:00"
-    },
-    {
-      "title": "Petrobras (PETR4) quase dobra lucro no 2T26 e supera estimativas; veja detalhes",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:05:54.176159-03:00"
-    },
-    {
-      "title": "Cirrus Logic Q1 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:05:58.420555-03:00"
-    },
-    {
       "title": "Clover Health Investments Q2 Earnings Call Highlights",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T17:36:11.410679-03:00"
+    },
+    {
+      "title": "João Fonseca tem revanche contra Shelton no Masters de Montreal; veja quando",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira ou econômica",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:40:50.407387-03:00"
+    },
+    {
+      "title": "Lojas Renner (LREN3) corta projeção de vendas após 2T26 mais fraco; ainda vale comprar?",
+      "source": "Suno Noticias",
+      "score": 6.0,
+      "motivo": "A Lojas Renner reduziu sua projeção de vendas após um segundo trimestre mais fraco, o que pode afetar negativamente o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:40:59.246389-03:00"
+    },
+    {
+      "title": "XRP Price Prediction: Will XRP Ever Hit a New All-Time High?",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é mais uma análise teórica e não apresenta informações concretas sobre o mercado atual.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:41:03.302981-03:00"
     }
   ]
 }
