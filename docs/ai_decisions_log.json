@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Intervenção do Japão no iene bate recorde diário em abril enquanto pressão persiste",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Intervenção do Japão no mercado de câmbio é um evento de mercado significativo que pode influenciar a volatilidade do iene.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:05:40.492642-03:00"
-    },
-    {
-      "title": "A era da IA: SP2B debate como a inteligência artificial está redesenhando negócios e a economia",
-      "source": "Exame",
-      "score": 3.0,
-      "motivo": "A noticia trata de um evento sobre a IA, mas não apresenta informações concretas sobre impacto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:05:45.242624-03:00"
-    },
-    {
       "title": "Kevin O’Leary, aka ‘Mr. Wonderful,’ on crypto, winning in AI and 3 things all business owners must know",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T13:06:42.654160-03:00"
+    },
+    {
+      "title": "Executive Parts Ways With 3,820 Shares of Lamb Weston Stock",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações é um evento rotineiro e não impacta significativamente o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:10:47.531198-03:00"
+    },
+    {
+      "title": "Vanguard Health Care ETF vs State Street XLV: Which ETF Is the Better Buy for Investors in 2026?",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para investidores que buscam opções de ETFs de saúde, mas não é um evento de mercado significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:10:55.480931-03:00"
     }
   ]
 }
