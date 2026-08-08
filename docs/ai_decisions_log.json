@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Eli Lilly Stock Climbed Today",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia foi sobre uma açõ que subiu devido a uma notícia positiva, o que geralmente é considerado positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:02:12.607144-03:00"
-    },
-    {
-      "title": "SpaceX created a new class of ultrawealthy. Here’s what comes next",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia não é imediatamente relevante para o mercado financeiro, mas pode ter implicações a longo prazo para a indústria espacial e a economia global",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:02:16.000289-03:00"
-    },
-    {
-      "title": "Cash Conversion Cycle Warning: Middle-Market Squeeze Revealed",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia pode influenciar a percepção dos investidores sobre o desempenho financeiro das empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:02:19.282310-03:00"
-    },
-    {
-      "title": "A10 Networks, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa superou as expectativas de lucro, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:02:22.673040-03:00"
-    },
-    {
-      "title": "Kyndryl Holdings, Inc. Q1 2027 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois fornece informações sobre os resultados financeiros da empresa, que podem influenciar as expectativas dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:02:26.190984-03:00"
-    },
-    {
-      "title": "Arábia Saudita prevê ataque iminente em 2 frentes por aliados do Irã, diz autoridade",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "conflito regional não afeta diretamente o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:05:34.223974-03:00"
-    },
-    {
       "title": "Intervenção do Japão no iene bate recorde diário em abril enquanto pressão persiste",
       "source": "InfoMoney",
       "score": 8.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T13:01:07.145965-03:00"
+    },
+    {
+      "title": "Republicanos do Senado dos EUA aprovam nomeação de Todd Blanche como procurador-geral por margem estreita",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "nomeação de um procurador-geral não é diretamente relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:06:15.382248-03:00"
+    },
+    {
+      "title": "Para influencer com mais de 1 mi de seguidores, fazer caixa é fácil. O 'hate' que é desafiador",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:06:18.781038-03:00"
+    },
+    {
+      "title": "Iran says Hormuz deal close amid attack on UAE tanker",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "O acordo sobre Hormuz pode ter impacto significativo no mercado de petróleo e na economia global.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:06:22.515348-03:00"
+    },
+    {
+      "title": "Real estate stocks edge down as investor attention turns to cyclicals",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A perda de atenção dos investidores é um sinal de que a confiança no setor imobiliário está diminuindo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T13:06:25.545747-03:00"
+    },
+    {
+      "title": "Como o Mercantil (BMEB4) chegou a 41% de ROE sem entrar na briga dos bancões — e o alerta do CFO para 2027",
+      "source": "Seu Dinheiro",
+      "score": 6.0,
+      "motivo": "Lucro recorde e estratégia específica do banco mineiro são relevantes para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:06:36.217856-03:00"
+    },
+    {
+      "title": "We moved our 350-square-foot tiny home from the mountains of California to a city in the Pacific Northwest",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T13:06:42.654160-03:00"
     }
   ]
 }
