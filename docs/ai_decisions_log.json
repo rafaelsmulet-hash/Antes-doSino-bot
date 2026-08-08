@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Eli Lilly Stock Climbed Today",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia foi relevante para o mercado de açõs",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:57:19.351370-03:00"
-    },
-    {
-      "title": "My husband and I have a monthly money date, and it's the reason we haven't argued about finances in 10 years",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:57:22.293705-03:00"
-    },
-    {
-      "title": "Porto (PSSA3) lucra R$ 879,4 milhões no 2º tri, alta anual de 0,2%",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Aumento do lucro operacional apesar da queda de 5,3% em relação ao ano anterior sugere estabilidade financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:00:56.457532-03:00"
-    },
-    {
-      "title": "Classe C usa crédito para comprar comida no fim do mês, aponta levantamento",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "O estudo aponta uma redução no consumo e aumento no uso de crédito, o que pode afetar a economia e os mercados financeiros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:00:59.965238-03:00"
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta sexta",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "Notícia sobre índices futuros dos EUA, mas sem informações específicas sobre o mercado brasileiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:03.243665-03:00"
-    },
-    {
-      "title": "Crescimento do volume de refrigerantes chega a 6,5% na Europa Ocidental",
-      "source": "Investing.com Brasil",
-      "score": 1.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:08.907461-03:00"
-    },
-    {
-      "title": "Por que as ações da Gray Television estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ação da empresa subindo devido a boas notícias financeiras",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:12.163744-03:00"
-    },
-    {
       "title": "Bank of America prevê inflação de 4,4% na Índia em julho",
       "source": "Investing.com Brasil",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T12:10:54.491958-03:00"
+    },
+    {
+      "title": "Private Credit Squeezed By Bank Refinancings: Credit Weekly",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "Mudança no comportamento das empresas endividadas afeta o mercado de crédito privado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T12:15:59.255022-03:00"
+    },
+    {
+      "title": "Next big push in ETF industry? Why these risk assets are gaining traction as interest rate uncertainty persists",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca um potencial desenvolvimento relevante para a indústria de ETF, o que pode ter impacto concreto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T12:16:02.317523-03:00"
+    },
+    {
+      "title": "What Sent Sandisk Shares Tumbling Nearly 20% Last Month",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Perda de valor significativa de mais de 1 trilhão de dólares no setor de semicondutores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:16:09.189117-03:00"
+    },
+    {
+      "title": "Advance Auto Parts vs. Ford Motor: Which Automotive Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca ações de estabilização de uma empresa de autopeças, o que pode afetar positivamente o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T12:16:12.399646-03:00"
+    },
+    {
+      "title": "Is Micron Still a Buy as the Global Memory Race Accelerates?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia destaca investimentos significativos da Micron em infraestrutura de memória, o que pode ter impacto concreto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T12:16:15.415528-03:00"
+    },
+    {
+      "title": "Is AMD Stock a Buy on the Dip as AI Revenue Surges?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca o crescimento forte da AMD, o que pode ser visto como positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:16:18.368038-03:00"
+    },
+    {
+      "title": "Jeff Bezos' Amazon Just Raised Its AI Spending to $220 Billion for 2026. Here's What That Capex Hike Means for Investors.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Aumento significativo na despesa da Amazon com Inteligência Artificial pode ter impacto concreto no mercado de ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T12:16:21.446546-03:00"
     }
   ]
 }
