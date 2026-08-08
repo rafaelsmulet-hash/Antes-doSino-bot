@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "State Bank of India’s Net Income Beats Estimates Aided By Loan Growth",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:56:00.690164-03:00"
-    },
-    {
-      "title": "EUA sancionam militares e empresas cubanas por relação com China, Rússia e Irã",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "relacionada a geopolítica e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:04.932881-03:00"
-    },
-    {
-      "title": "Trump diz que alguns estoques de munição dos EUA estão ‘um pouco mais restritos’",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:56:07.622272-03:00"
-    },
-    {
-      "title": "Emprego nos EUA, IGP-DI no Brasil, Petrobras e mais destaques desta sexta-feira",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "Notícia sobre destaque do dia, sem conteúdo específico",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:56:10.427108-03:00"
-    },
-    {
       "title": "IA virou preocupação do Fed: investimento dispara e alerta de bolha acende",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T07:51:12.475413-03:00"
+    },
+    {
+      "title": "Natural Gas Falls on Shifting Weather Forecasts",
+      "source": "WSJ Markets",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque afeta a demanda por gás natural nos EUA, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:55:53.304299-03:00"
+    },
+    {
+      "title": "As obras de arte vestíveis da Bvlgari",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia e sobre joalheria e nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:55:59.183627-03:00"
+    },
+    {
+      "title": "Sem luz, comunidades amazônicas apostam em energia solar para fornecer internet",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao tem relevancia direta para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:56:02.031244-03:00"
+    },
+    {
+      "title": "Warren Buffett's Successor, Greg Abel, Has 63% of Berkshire Hathaway's $355 Billion Portfolio Invested in Just 5 Standout Stocks",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia revela a estratégia de investimento da Berkshire Hathaway, o que pode influenciar a percepção dos investidores sobre a empresa e suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:56:12.332172-03:00"
     }
   ]
 }
