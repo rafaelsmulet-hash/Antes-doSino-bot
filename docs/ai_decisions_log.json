@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "XP Asset lança ETF XCAP11, focado em empresas Small Caps",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Lançamento de ETF pode atrair investidores e aumentar a liquidez no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:10:51.254012-03:00"
-    },
-    {
       "title": "Produção industrial recua -1,8% em junho",
       "source": "IBGE",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T17:45:49.044783-03:00"
+    },
+    {
+      "title": "This SentinelOne Executive Holds $15 Million in Stock Ahead of Earnings. Here's What to Know",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado agora, pois trata-se de uma informação sobre um executivo e não sobre a empresa em si.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:50:40.602869-03:00"
     }
   ]
 }
