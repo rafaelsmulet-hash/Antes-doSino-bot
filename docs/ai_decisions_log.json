@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "PH Crosses Above Average Analyst Target",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:46:43.803881-03:00"
-    },
-    {
-      "title": "Burlington Stores Reaches Analyst Target Price",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:46:46.838131-03:00"
-    },
-    {
-      "title": "Tenable Holdings Reaches Analyst Target Price",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:46:49.616044-03:00"
-    },
-    {
-      "title": "Chime Financial Reaches Analyst Target Price",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:46:52.663303-03:00"
-    },
-    {
-      "title": "PL escolhe o ex-deputado Charlles Evangelista como vice na chapa de Roscoe em Minas",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:50:37.768726-03:00"
-    },
-    {
-      "title": "Petróleo avança 4% com informações do acordo sobre Ormuz e ataques dos houthis",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "Aumento de tensões no Mar Vermelho pode afetar a oferta de petróleo e impulsionar os preços.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:50:41.763417-03:00"
-    },
-    {
       "title": "OpenAI’s new AI smart speaker will reportedly sell for between $300 and $400",
       "source": "TechCrunch",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T16:01:25.845465-03:00"
+    },
+    {
+      "title": "Esse professor fundou a 'Anthropic da China' — e ela vale US$ 6,6 bilhões",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "Fundação de empresa de tecnologia de linguagem com valor de mercado de US$ 6,6 bilhões",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T16:05:56.901516-03:00"
+    },
+    {
+      "title": "‘I’m in my peak earning years’: I’m working beyond 70. Will that help increase my Social Security?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:06:00.132416-03:00"
+    },
+    {
+      "title": "Judge Denies Southern Poverty Law Center's Bid To Dismiss DOJ Indictment",
+      "source": "ZeroHedge",
+      "score": 1.0,
+      "motivo": "A notícia é sobre um caso de crime e não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:06:11.495960-03:00"
+    },
+    {
+      "title": "\"We're Here To Destroy The White Race\": Democratic Socialist Of America Hero Declares War On West",
+      "source": "ZeroHedge",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política e retórica anti-americana de um streamer marxista.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:06:14.631697-03:00"
+    },
+    {
+      "title": "Existing Power Plants Are \"Bedrock\" In Supplying Data Centers: Constellation CEO",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "A declaração do CEO da Constellation sobre a importância das plantas de energia existentes para fornecer energia para os centros de dados é relevante e tem impacto concreto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T16:06:17.706092-03:00"
+    },
+    {
+      "title": "Iran's Economy Is In Shambles As War Takes Its Toll",
+      "source": "ZeroHedge",
+      "score": 8.0,
+      "motivo": "A notícia destaca a gravidade da situação econômica do Irã, com danos estimados em US$ 270 bilhões a US$ 300 bilhões e inflação de 88,6%.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T16:06:24.329853-03:00"
     }
   ]
 }
