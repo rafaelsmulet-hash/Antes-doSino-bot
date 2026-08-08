@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Jogos de hoje: horário e onde assistir aos duelos desta sexta-feira, 7",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:40.067662-03:00"
-    },
-    {
       "title": "My brother asked me to sign as his executor, but wouldn’t let me read the document. Should I have refused?",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:25:55.851911-03:00"
+    },
+    {
+      "title": "Burger King is Beating its Category—By A Lot",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca o desempenho positivo do Burger King em relação à sua categoria, o que pode ser relevante para investidores que seguem a indústria de alimentos rápidos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:31:04.457714-03:00"
     }
   ]
 }
