@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "WhatsApp deixará de funcionar em celulares antigos em setembro; veja se o seu será afetado",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:16:32.705453-03:00"
-    },
-    {
-      "title": "Como criar galinhas poedeiras e frangos caipiras",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:16:35.329084-03:00"
-    },
-    {
-      "title": "Mercado reage hoje a lucro da Petrobras e dados de emprego dos EUA",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "Lucro da Petrobras e dados de emprego dos EUA são indicadores importantes para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:16:38.781354-03:00"
-    },
-    {
-      "title": "Super Group Beat and Raised Guidance, but the Stock Slipped. Here's How to Read the CFO's Latest Insider Filing",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:16:43.499883-03:00"
-    },
-    {
       "title": "Nike stock could suffer because of JPMorgan verdict",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T14:01:35.035086-03:00"
+    },
+    {
+      "title": "SP Climate Week chega ao fim e vira plataforma permanente de ação climática",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A noticia e sobre meio ambiente e nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:05:55.374013-03:00"
+    },
+    {
+      "title": "Social Security’s funding crisis is the elephant in the room. But don’t ignore the mouse.",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é específica e materialmente relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:05:58.462850-03:00"
+    },
+    {
+      "title": "Selic a 14% ainda deixa a renda fixa atraente? Entenda o que muda para cada investimento",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "A redução da Selic não significa que a renda fixa perdeu atração, mas sim que a relação entre liquidez, prazo e potencial de ganho mudou",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:06:06.779281-03:00"
+    },
+    {
+      "title": "SEC Announces Continuation of Small Business Advisory Committee Meeting",
+      "source": "SEC",
+      "score": 2.0,
+      "motivo": "A notícia é sobre uma reunião de um comitê consultivo, o que não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:06:13.823488-03:00"
     }
   ]
 }
