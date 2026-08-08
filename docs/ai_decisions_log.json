@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Volkswagen Must Cut Costs Faster to Change, Chairman Says",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A empresa precisa reduzir custos para melhorar sua competitividade e se manter no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:01:01.691102-03:00"
-    },
-    {
-      "title": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o preço da ação da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:01:04.806167-03:00"
-    },
-    {
-      "title": "Traders on Kalshi now think it's likely that the S&P 500 will hit 8,000 in 2026",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "Aumento da probabilidade de o S&P 500 alcançar 8.000 em 2026 após uma alta significativa no índice",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:01:07.974617-03:00"
-    },
-    {
       "title": "DeepSeek Won't Sink U.S. AI Titans",
       "source": "WSJ Markets",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T09:31:21.702798-03:00"
+    },
+    {
+      "title": "By The Way: Headline You May Have Missed the Week of 8/2",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:35:45.493942-03:00"
+    },
+    {
+      "title": "3 Social Security changes are headed for boomers in 2027 — and Trump's promises won't stop them",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:36:06.570009-03:00"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting PepsiCo Stock Will Climb or Sink?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Previsões de analistas podem influenciar a percepção dos investidores sobre a ação da PepsiCo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:36:09.423903-03:00"
     }
   ]
 }
