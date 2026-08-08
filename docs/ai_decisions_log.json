@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Caso Lulinha amplia clima de desconfiança entre grupos de ministros do STF",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "não há conexão direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:15:44.031193-03:00"
-    },
-    {
       "title": "Onde o salário mínimo é maior no Brasil? Confira os estados com piso regional",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T18:41:31.373429-03:00"
+    },
+    {
+      "title": "Rússia - Ações fecharam o pregão em queda e o Índice MOEX Russia Index terminou sem alterações",
+      "source": "Investing.com Brasil",
+      "score": 3.0,
+      "motivo": "queda nas ações russas e estabilidade no índice MOEX",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:45:50.764602-03:00"
     }
   ]
 }
