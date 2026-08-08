@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Quanto custa a bebida que ameaça a hegemonia do badalado Aperol Spritz",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:15:54.591735-03:00"
-    },
-    {
-      "title": "Companies scoff at airlines' cheapest business class tickets. 'The real value is flexibility'",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:16:00.921364-03:00"
-    },
-    {
-      "title": "Dólar hoje recua antes de dados emprego nos EUA",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre movimento de moeda, mas sem impacto significativo no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:20:36.252875-03:00"
-    },
-    {
       "title": "Correção da IA derruba fundos chineses e elimina ganhos de 2026",
       "source": "Exame",
       "score": 8.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T18:50:59.470579-03:00"
+    },
+    {
+      "title": "Prefeito quer suspensão de voos panorâmicos no RJ para Anac ampliar fiscalização",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T19:00:54.419186-03:00"
+    },
+    {
+      "title": "OpenAI prepara entrada no mercado de hardware com dispositivo de IA previsto para 2027",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "não há conexão direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T19:01:00.861628-03:00"
+    },
+    {
+      "title": "Ondo's USDY crosses $2.1B market cap in 3 years",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Crescimento do mercado de capital é um indicador positivo para a empresa e pode atrair investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T19:01:13.280701-03:00"
     }
   ]
 }
