@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Jovi aposta na força das marcas chinesas para crescer no Brasil",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "A notícia destaca a expansão de marcas chinesas no mercado brasileiro, o que pode ser visto como um sinal de crescimento e oportunidade para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:02:03.543547-03:00"
-    },
-    {
       "title": "HGRE11: emissão de até R$ 700 milhões para ampliar capacidade de investimentos",
       "source": "Suno Noticias",
       "score": 5.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T12:50:59.835245-03:00"
+    },
+    {
+      "title": "Estreito de Ormuz: Irã vê acordo próximo, mas cobra indenização dos EUA",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia não está diretamente relacionada ao mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:55:40.591338-03:00"
     }
   ]
 }
