@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "How The World Views China Vs The US In 2026",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:07:22.372021-03:00"
-    },
-    {
-      "title": "\"Promises Are Fairy Tales\": NATO Will Not Accept Ukraine",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:07:25.035446-03:00"
-    },
-    {
-      "title": "Winter Is Coming: Europe Faces Twin Diesel And NatGas Crunch",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A crise de suprimento de diesel e gás natural pode levar a um aumento significativo nos preços de energia durante o inverno, afetando negativamente a economia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:07:27.989824-03:00"
-    },
-    {
-      "title": "Cheveley: Copper Record High Driven by Technical Details",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca sinais de menor oferta global, o que é relevante para o mercado de commodities.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:11:09.902296-03:00"
-    },
-    {
-      "title": "Shanghai Tackles Chronic Land Lease Issue In Commercial Property",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A medida pode reduzir a incerteza para investidores e proprietários de propriedades comerciais em Xangai.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:12.906076-03:00"
-    },
-    {
-      "title": "Dream Finders Agrees $916 Million Deal to Buy Beazer Homes",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A compra de uma rival é um sinal de expansão e potencial de crescimento para a Dream Finders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:11:15.803863-03:00"
-    },
-    {
       "title": "Some Chinese Iron Ore Buyers Stop Dealing With Radiant World",
       "source": "Bloomberg Markets",
       "score": 4.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T10:10:58.315956-03:00"
+    },
+    {
+      "title": "A Tough Week for Crypto Has Fans Downing Drinks at a Bitcoin Bar",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:15:35.519327-03:00"
+    },
+    {
+      "title": "Crise na Apex Partners: entenda afastamento de presidente e blindagem na Justiça",
+      "source": "G1 Economia",
+      "score": 7.0,
+      "motivo": "crise na Apex Partners pode afetar confiança dos investidores e impactar a estabilidade do mercado de investimentos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:15:44.704447-03:00"
+    },
+    {
+      "title": "Host your own piece of Disrupt: Apply to run a Side Event at TechCrunch Disrupt 2026",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:15:51.310225-03:00"
+    },
+    {
+      "title": "Ted Benna built the 401(k) 40 years ago — now he says it fails lower-income workers and is pushing a simpler alternative",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia pode influenciar a percepção dos investidores sobre os planos de aposentadoria e suas limitações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:15:54.471572-03:00"
+    },
+    {
+      "title": "I moved to NYC at 22 and lived with a 70-year-old roommate. She had rules, meals, and a busier social life than me.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:15:57.693833-03:00"
+    },
+    {
+      "title": "UAE says one of its ships was targeted by missile as U.S.-Iran tensions over Strait of Hormuz remain high",
+      "source": "CNBC - US News",
+      "score": 2.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter implicações geopolíticas que afetam a estabilidade global.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:16:00.688673-03:00"
     }
   ]
 }
