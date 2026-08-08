@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Gap cai após rebaixamento do Wells Fargo e revisão de perspectivas",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Revisão de perspectivas do Wells Fargo e rebaixamento impactam negativamente o mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:32.261728-03:00"
-    },
-    {
-      "title": "Por que as ações da Allstate estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ações da Allstate estão caindo devido a perda de valor, o que é negativo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:35.040119-03:00"
-    },
-    {
       "title": "Por que as ações da Xponential Fitness estão despencando hoje?",
       "source": "Investing.com Brasil",
       "score": 6.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T11:06:56.927590-03:00"
+    },
+    {
+      "title": "As Warsh’s Fed faces pressure to act on inflation, these indicators show it’s at its lowest in years",
+      "source": "CNBC - Economy",
+      "score": 4.0,
+      "motivo": "A notícia sugere que a inflação pode não ser tão alta quanto os números de superfície indicam, o que pode levar a uma reação mais suave da Fed.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:10:44.283604-03:00"
+    },
+    {
+      "title": "Gen Z wants to socialize in places other than the bar. Here are the top 20 global cities for Gen Z.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:11:00.440675-03:00"
     }
   ]
 }
