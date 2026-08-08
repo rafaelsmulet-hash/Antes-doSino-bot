@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Disney pode seguir caminho da Pluto TV e lançar streaming gratuito",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "possibilidade de aumento da receita publicitária e ampliação do alcance do Disney+",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:12:07.168676-03:00"
-    },
-    {
-      "title": "Por que tentar criar o 'ChatGPT brasileiro' pode ser um desperdício de bilhões",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A noticia discute tecnologia e inovacao, mas nao tem um impacto direto no mercado financeiro imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:09.998900-03:00"
-    },
-    {
       "title": "Sony é obrigada a continuar fazendo filmes do 'Homem-Aranha'? Entenda o contrato com a Marvel",
       "source": "Exame",
       "score": 2.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T10:31:34.682583-03:00"
+    },
+    {
+      "title": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados positivos em vários setores, o que é relevante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:35:44.478092-03:00"
+    },
+    {
+      "title": "Earnings Scoreboard: 86% of S&P 500 reporting firms top EPS estimates as 79% post Y/Y profit growth",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "O resultado positivo das empresas da S&P 500 indica um bom desempenho da economia e pode influenciar os preços das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:35:55.498338-03:00"
     }
   ]
 }
