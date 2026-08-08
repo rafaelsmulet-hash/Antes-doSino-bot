@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "How S&P 500 options action may help explain volatility in memory stocks",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A notícia destaca a relação entre opções de S&P 500 e a volatilidade em ações de memória, o que pode ter impacto nas estratégias de investimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:01:34.219502-03:00"
-    },
-    {
       "title": "Under Armour Non-GAAP EPS of $0.05 beats by $0.03, revenue of $1.1B misses by $10M",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T12:36:05.352789-03:00"
+    },
+    {
+      "title": "Tufão Dolphin atinge Japão e leva China a fechar portos",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:40:50.297379-03:00"
     }
   ]
 }
