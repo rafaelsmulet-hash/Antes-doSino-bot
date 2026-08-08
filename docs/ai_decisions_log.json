@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ibovespa futuro sobe aos 176 mil pontos de olho no payroll e na Petrobras (PETR4); dólar cai a R$ 5,09",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, pois menciona o Ibovespa futuro e a Petrobras, mas o impacto é neutro, pois não há informações específicas sobre o resultado da Petrobras ou o payroll dos EUA.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:25:50.086412-03:00"
-    },
-    {
-      "title": "Doximity, Cloudflare e Atlassian disparam no pré-mercado",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Preço das ações de Doximity, Cloudflare e Atlassian subiram no pré-mercado, indicando potencial aumento de valor",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:25:53.065621-03:00"
-    },
-    {
-      "title": "Resultados da Atlassian vistos como ’divisor de águas’ para a IA no setor de software",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:25:55.670985-03:00"
-    },
-    {
-      "title": "Por que as ações da Ardelyx estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:25:58.257760-03:00"
-    },
-    {
       "title": "Barclays rebaixa MTU citando menor alavancagem de crescimento que Safran e Melrose",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T19:21:42.482926-03:00"
+    },
+    {
+      "title": "Only 2 of These 5 Nuclear Stocks Sell Fuel Today. Here's What the Market Pays for the Other 3.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento significativo ou inesperado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T19:25:51.732125-03:00"
+    },
+    {
+      "title": "Medtronic vs. Intuitive Surgical: Which MedTech Stock Is the Better Buy Right Now?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia menciona a lançamento de novos dispositivos que devem impactar positivamente os resultados financeiros da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T19:25:54.696144-03:00"
+    },
+    {
+      "title": "Irã e Omã estão próximos de acordo sobre controle do Estreito de Ormuz, diz ministro iraniano",
+      "source": "G1 Economia",
+      "score": 3.0,
+      "motivo": "A notícia trata de um acordo possível entre o Irã e o Omã sobre o controle do Estreito de Ormuz, mas não é diretamente relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T19:26:01.060414-03:00"
+    },
+    {
+      "title": "AMD just made bold move to challenge Nvidia",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A notícia é relevante pois pode impactar a concorrência no mercado de GPUs e influenciar as ações da AMD e da Nvidia.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T19:26:11.898686-03:00"
     }
   ]
 }
