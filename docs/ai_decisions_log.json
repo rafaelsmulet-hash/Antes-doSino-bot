@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lineage, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:36:19.765517-03:00"
-    },
-    {
-      "title": "LCI Industries Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:36:22.377380-03:00"
-    },
-    {
-      "title": "Brava (BRAV3) fecha contrato de longo prazo para compra de petróleo da PetroReconcavo",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "acordo de compra de petróleo é rotineiro e não tem impacto imediato no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:40:42.500328-03:00"
-    },
-    {
-      "title": "Tornado atinge o RS pela segunda vez em nove dias; ciclone traz temporais",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre clima e meteorologia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:40:49.612901-03:00"
-    },
-    {
-      "title": "National HealthCare Corp. Profit Climbs In Q2",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento nos lucros da empresa é relevante para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:40:54.189189-03:00"
-    },
-    {
-      "title": "The S&P 500 Index Just Did Something for Only the 3rd Time in the Past 30 Years. Here's What History Says Comes Next.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:40:56.842889-03:00"
-    },
-    {
-      "title": "Dream Finders Homes To Acquire Beazer Homes For $2.2 Bln; Reaffirms FY26 Outlook",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:40:59.476726-03:00"
-    },
-    {
       "title": "The Wendy's Company Q2 Profit Falls",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T15:40:37.503284-03:00"
+    },
+    {
+      "title": "Airline Insider Hits Eject, Sells 40,460 Shares Valued at $3.8 Million",
+      "source": "Nasdaq",
+      "score": 4.0,
+      "motivo": "A venda de ações por um executivo pode influenciar a percepção dos investidores sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:46:02.709811-03:00"
+    },
+    {
+      "title": "Why SpaceX Stock Just Gained 15.8%",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o preço da ação da SpaceX.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T15:46:05.653476-03:00"
+    },
+    {
+      "title": "BJ's Wholesale CEO Sells $7.3 Million Stock After Option Exercise",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações do CEO não tem impacto direto no mercado, sendo uma açõ de rotina.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:46:08.790382-03:00"
+    },
+    {
+      "title": "Savers Value Village's CFO Cashed In Options Struck at $7.11. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A venda de opções do CFO pode ser um sinal de confiança na empresa e no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:46:11.762228-03:00"
+    },
+    {
+      "title": "LegalZoom (LZ) Integrates Microsoft Copilot Amid Growth Shifts",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A integração do Microsoft Copilot pode impulsionar a inovação e o crescimento da LegalZoom, tornando-a mais competitiva no mercado de serviços jurídicos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T15:46:22.746309-03:00"
+    },
+    {
+      "title": "Airline Insider Hits Eject, Sells 40,460 Shares Valued at $3.8 Million",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A venda de ações por um acionista importante pode influenciar o preço da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:46:25.656920-03:00"
+    },
+    {
+      "title": "We skipped the expensive birthday venue. Our muddy backyard was better for 90 kids.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:46:28.927221-03:00"
     }
   ]
 }
