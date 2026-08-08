@@ -183,10 +183,26 @@ def add_to_round_queue(item):
     return _save_round_queue(state)
 
 
-def clear_round_queue():
-    """Esvazia a fila - usado depois que um checkpoint consome os
-    itens acumulados."""
-    return _save_round_queue({"queue": []})
+def clear_round_queue(sent_items=None):
+    """Remove da fila os itens que ja foram efetivamente enviados. Sem
+    argumento, esvazia a fila inteira (comportamento antigo). Quando
+    sent_items e fornecido (lista de itens que couberam na mensagem
+    enviada - ver GIRO_MAX_ITENS_POR_MENSAGEM em main.py), mantem na
+    fila qualquer item que NAO esteja em sent_items, garantindo que
+    itens que nao couberam no Giro desta hora fiquem guardados pro
+    proximo, em vez de descartados sem nunca terem sido mostrados."""
+    if sent_items is None:
+        return _save_round_queue({"queue": []})
+
+    sent_keys = set(
+        (item.get("title", ""), item.get("queued_at", "")) for item in sent_items
+    )
+    state = get_round_queue()
+    state["queue"] = [
+        item for item in state["queue"]
+        if (item.get("title", ""), item.get("queued_at", "")) not in sent_keys
+    ]
+    return _save_round_queue(state)
 
 
 def prioritize_queue(queue_items):

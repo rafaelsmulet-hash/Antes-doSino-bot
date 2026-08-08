@@ -192,7 +192,17 @@ def build_breaking_message(title, resumo, motivo, sentiment, source, hashtags, e
 
 
 GIRO_INTERVALO_MINUTOS = 60
-GIRO_MAX_ITENS_POR_MENSAGEM = 20
+# Reduzido de 20 para 8: cada item agora carrega o contexto completo da
+# noticia (sem corte artificial - ver GIRO_ITEM_MAX_CHARS), entao um
+# numero menor de itens por mensagem mantem o Giro dentro do limite
+# real do Telegram. Itens que nao couberem ficam guardados na fila pro
+# proximo Giro (ver clear_round_queue em editorial_foundation.py) -
+# nunca sao descartados, so adiados.
+GIRO_MAX_ITENS_POR_MENSAGEM = 8
+# Teto generoso por item (nao um corte "normal") - so entra em acao no
+# caso raro de uma noticia com corpo excepcionalmente longo, pra 1 item
+# nao consumir sozinho o espaco de todos os outros na mesma mensagem.
+GIRO_ITEM_MAX_CHARS = 600
 
 
 def build_giro_headline(queue_items):
@@ -246,10 +256,15 @@ def build_giro_item_line(item):
 
 def build_giro_message(queue_items):
     """Template B - Giro do Mercado: consolida os itens 'round'
-    acumulados na ultima hora numa unica mensagem, em bullets curtos
-    por ativo, com uma leitura geral da hora no topo (build_giro_headline).
-    Ordena por materialidade (mais importante primeiro) via
-    editorial_foundation.prioritize_queue quando disponivel."""
+    acumulados na ultima hora numa unica mensagem, com o contexto
+    completo de cada noticia (sem corte artificial por item - so o
+    teto de seguranca GIRO_ITEM_MAX_CHARS), com uma leitura geral da
+    hora no topo (build_giro_headline). Ordena por materialidade (mais
+    importante primeiro) via editorial_foundation.prioritize_queue
+    quando disponivel. Retorna (mensagem, itens_incluidos) - quem
+    chama usa itens_incluidos pra so remover da fila o que realmente
+    foi enviado, mantendo o resto pro proximo Giro (ver
+    processar_giro_do_mercado)."""
     agora = datetime.now(BR_TZ)
     inicio = (agora - timedelta(minutes=GIRO_INTERVALO_MINUTOS)).strftime("%Hh%M")
     fim = agora.strftime("%Hh%M")
@@ -282,7 +297,7 @@ def build_giro_message(queue_items):
     message = sanitize_message_text(message)
     if len(message) > 3900:
         message = smart_truncate(message, 3900)
-    return message
+    return message, mostrados
 
 
 GIRO_STATE_FILE = "docs/giro_state.json"
@@ -334,11 +349,15 @@ def processar_giro_do_mercado(telegram_bot_token, telegram_chat_id):
         save_giro_state({"last_giro_sent": datetime.now(BR_TZ).isoformat()})
         return
 
-    message = build_giro_message(fila)
+    message, itens_incluidos = build_giro_message(fila)
     if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
-        editorial_foundation.clear_round_queue()
+        # So remove da fila o que realmente coube na mensagem - itens
+        # que ficaram de fora (ver GIRO_MAX_ITENS_POR_MENSAGEM) ficam
+        # guardados pro proximo Giro, em vez de serem descartados sem
+        # nunca terem sido mostrados ao usuario.
+        editorial_foundation.clear_round_queue(itens_incluidos)
         save_giro_state({"last_giro_sent": datetime.now(BR_TZ).isoformat()})
-        print("Giro do Mercado enviado com " + str(len(fila)) + " item(ns).")
+        print("Giro do Mercado enviado com " + str(len(itens_incluidos)) + " de " + str(len(fila)) + " item(ns) na fila.")
     else:
         print("Falha ao enviar Giro do Mercado - fila mantida, tentaremos novamente no proximo ciclo.")
 
@@ -1065,7 +1084,8 @@ def format_message(source, entry, ai_result):
     """Monta a mensagem final do Telegram no formato:
     Titulo em negrito
     (linha em branco)
-    Resumo em paragrafo unico, max 280 caracteres
+    Resumo em paragrafo unico, corpo completo da noticia (sem corte
+    artificial - so o limite real do Telegram, ver smart_truncate)
     (linha em branco, se houver fonte)
     Fonte - Nome da fonte
 
@@ -1110,7 +1130,12 @@ def format_message(source, entry, ai_result):
 
         summary_text = ""
         if raw_body and raw_body.lower() != title.lower():
-            summary_text = truncate_text_clean(raw_body, 280)
+            # Sem limite artificial aqui - o corpo real da noticia vai
+            # inteiro pra mensagem. O unico corte que pode acontecer e
+            # o do limite de 4096 caracteres do Telegram em si (ver
+            # smart_truncate no final desta funcao), que corta no fim
+            # de uma frase, nao no meio dela.
+            summary_text = raw_body
 
     title = sanitize_message_text(title)
     summary_text = sanitize_message_text(summary_text)
@@ -3520,7 +3545,7 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                     if editorial_foundation is not None:
                         editorial_foundation.add_to_round_queue({
                             "title": final_title,
-                            "resumo": truncate_text_clean(final_body, 140) if final_body else final_title,
+                            "resumo": truncate_text_clean(final_body, GIRO_ITEM_MAX_CHARS) if final_body else final_title,
                             "hashtags": hashtags,
                             "source": source_for_message,
                             "score": canal_score,
@@ -3975,7 +4000,7 @@ def main():
                 if editorial_foundation is not None:
                     editorial_foundation.add_to_round_queue({
                         "title": final_title,
-                        "resumo": truncate_text_clean(final_body, 140) if final_body else final_title,
+                        "resumo": truncate_text_clean(final_body, GIRO_ITEM_MAX_CHARS) if final_body else final_title,
                         "hashtags": hashtags,
                         "source": source,
                         "score": shadow_score,
