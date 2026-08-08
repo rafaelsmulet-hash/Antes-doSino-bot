@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que um relatório de empregos sólido pode derrubar as bolsas, segundo o JPMorgan",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:57:00.690456-03:00"
-    },
-    {
-      "title": "Berenberg eleva Prysmian a compra e aumenta preço-alvo para €150",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento do preço-alvo da empresa Prysmian é um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:03.457706-03:00"
-    },
-    {
-      "title": "A resiliência do peronismo e a ruptura de Milei: um livro que explica a Argentina",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:57:06.352373-03:00"
-    },
-    {
-      "title": "Com a Apple no horizonte, Samsung se arma para a “guerra dos dobráveis”",
-      "source": "Brazil Journal",
-      "score": 6.0,
-      "motivo": "A noticia especifica a competicao entre a Apple e a Samsung no mercado de celulares dobraveis, o que pode ter impacto na demanda e no preco de acoes dessas empresas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:57:09.296752-03:00"
-    },
-    {
-      "title": "Na Bolsa do México, um múltiplo de 12x aguarda melhores ventos do norte",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:11.965829-03:00"
-    },
-    {
       "title": "EXCLUSIVO: o futuro da Pandora, segundo sua nova líder no Brasil",
       "source": "Exame",
       "score": 2.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:06:30.503717-03:00"
+    },
+    {
+      "title": "Dia dos Pais movimenta R$ 3,3 bilhões no varejo e deve impulsionar as vendas novamente em 2026",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Aumento nas intenções de compra pode impulsionar as vendas em 2026",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:10:54.144798-03:00"
+    },
+    {
+      "title": "Noar: falhas técnicas e humanas causaram queda de aviăo há 15 anos",
+      "source": "UOL Economia",
+      "score": 0.0,
+      "motivo": "a noticia não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:11:00.849786-03:00"
+    },
+    {
+      "title": "Sitma introduces paper wrapping system for furniture",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:11:06.826132-03:00"
+    },
+    {
+      "title": "Mortgage and refinance interest rates today, Friday, August 7, 2026: Rates fall ahead of jobs report",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A queda nas taxas de juros pode influenciar a demanda por empréstimos e afetar o mercado imobiliário.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:11:09.712548-03:00"
+    },
+    {
+      "title": "'The market has voted': Michael Burry says Big Tech's AI spending is dragging down the S&P 500 — while Apple wins",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A opinião de um investidor influente sobre o impacto do gasto com inteligência artificial nas grandes empresas de tecnologia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:11:12.594122-03:00"
     }
   ]
 }
