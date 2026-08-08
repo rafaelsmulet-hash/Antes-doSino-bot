@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "PwC's US CEO thought fewer emails were better. Then he heard from employees.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:34.072046-03:00"
-    },
-    {
-      "title": "Are shorts in the office appropriate? Readers have largely told us 'no' — with some exceptions",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:36.997511-03:00"
-    },
-    {
-      "title": "A professor started pursuing financial independence at 38. A 7-step ladder helped him go from debt to 'lean FI.'",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:39.712849-03:00"
-    },
-    {
-      "title": "Google’s AI shake-up puts Demis Hassabis where the company needs him most, insiders say",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:59:42.406734-03:00"
-    },
-    {
-      "title": "McDonald's customers told us what they'd change. Better value topped the list.",
-      "source": "Business Insider",
-      "score": 4.0,
-      "motivo": "A notícia revela uma crítica de clientes sobre a estratégia de preços do McDonald's, o que pode afetar suas vendas e lucros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:45.476589-03:00"
-    },
-    {
-      "title": "I'm a co-creator of Alexa and an AI expert. If AI singularity ever arrives, everyone will notice — here’s how.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:48.208072-03:00"
-    },
-    {
-      "title": "MrBeast's pitch decks reveal how the creator's business ambitions have changed over time",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:51.170238-03:00"
-    },
-    {
       "title": "Influencers fear the AI 'Scarlet Letter'",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T09:11:09.395053-03:00"
+    },
+    {
+      "title": "10 ideias de presentes de futebol para acertar em cheio no Dia dos Pais",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:15:58.103776-03:00"
+    },
+    {
+      "title": "O que realmente define o preço de um uísque — e não é só a idade",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação com mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:16:00.858455-03:00"
+    },
+    {
+      "title": "Dow Jones Futures: What To Do As Stock Market Revs Up; Warren Buffett, Cisco, Lumentum Due",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a aceleração do mercado de ações e a importância de estar preparado para as oportunidades que surgirão, o que é relevante para os investidores atuais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T09:16:11.790756-03:00"
+    },
+    {
+      "title": "Rocket Lab (RKLB) Won a Major Space Force Contract. Now It Has to Prove Neutron",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O contrato pode aumentar a demanda por serviços da Rocket Lab e impulsionar a empresa em um mercado em crescimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:16:14.706050-03:00"
+    },
+    {
+      "title": "These 7 Stocks Are Analyst Favorites For Magnificent Earnings Growth; Arista Beats Views",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca ações que superaram ou têm expectativa de superar expectativas de lucro, o que é relevante para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T09:16:17.606037-03:00"
+    },
+    {
+      "title": "The Numbers Behind ON Semiconductor’s (ON) Higher Target and Unchanged Hold Rating",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aumento da meta de preço da empresa e manutenção da classificação de investimento são indicativos de confiança no desempenho da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:16:20.524890-03:00"
+    },
+    {
+      "title": "Cyclospora fears lead consumers to lose their appetite for salads",
+      "source": "CNBC - US News",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada diretamente ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:16:23.570864-03:00"
     }
   ]
 }
