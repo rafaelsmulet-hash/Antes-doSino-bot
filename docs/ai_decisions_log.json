@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "DAX Rises As Focus Remains On Earnings",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque aborda o desempenho do mercado alemão, que é um dos principais índices financeiros da Europa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:56:29.174643-03:00"
-    },
-    {
-      "title": "Why Amazon Stock Jumped 14% in July While the Market Was Flat",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:56:31.822316-03:00"
-    },
-    {
-      "title": "We're Just Days Away From a Huge Piece of News for the 2027 Social Security COLA",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, pois afeta o orçamento governamental e as expectativas de inflação.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:56:34.758191-03:00"
-    },
-    {
-      "title": "Emera Inc. Profit Drops In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:56:37.342038-03:00"
-    },
-    {
       "title": "3 Cryptocurrencies Making Bold Moves in AI That Are Worth Buying and Holding for the Long Term",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T11:46:03.966244-03:00"
+    },
+    {
+      "title": "LIV Golf Tries to Survive Without Saudi Billions",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois a LIV Golf está procurando novos investimentos e reduzir seus custos, o que pode ter impacto positivo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T11:50:33.709560-03:00"
+    },
+    {
+      "title": "Bruno Guimarães custou R$ 514 milhões ao Arsenal; veja detalhes do negócio",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "negociação de jogador de futebol não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:50:38.607865-03:00"
+    },
+    {
+      "title": "Paying for pricey daycare? Here’s how to keep saving for retirement at the same time.",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:50:41.720769-03:00"
+    },
+    {
+      "title": "Consumer Staples Earnings Scorecard: Profit holds up despite mixed revenue",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia destaca a estabilidade do lucro, o que é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T11:50:44.668393-03:00"
     }
   ]
 }
