@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Beazer Homes GAAP EPS of -$0.16 beats by $0.18, revenue of $516.3M beats by $5.87M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de lucro e receita, o que é positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:16.197590-03:00"
-    },
-    {
-      "title": "Century Casinos GAAP EPS of -$0.39 misses by $0.06, revenue of $151.99M misses by $1.87M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de lucro da Century Casinos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:19.177711-03:00"
-    },
-    {
-      "title": "Docebo Non-GAAP EPS of $0.37 beats by $0.08, revenue of $68.65M beats by $0.34M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia supera expectativas em lucro e receita da Docebo, o que é relevante para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:22.273980-03:00"
-    },
-    {
-      "title": "Emera Non-GAAP EPS of C$0.69",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:12:24.899696-03:00"
-    },
-    {
       "title": "MDA Space Ltd. Q2 Sales Increase",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T10:41:01.050607-03:00"
+    },
+    {
+      "title": "University of California Faculty Push to Bring Back SAT and ACT Score Consideration",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A decisão pode influenciar a política de admissão da universidade e afetar a forma como os estudantes são avaliados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:45:43.283710-03:00"
+    },
+    {
+      "title": "Estrangeiro volta à Bolsa em julho, mas eleições podem frear fluxo no 2º semestre",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia destaca o fluxo de capital externo na Bolsa, o que é positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:45:46.590042-03:00"
+    },
+    {
+      "title": "Berkshire Hathaway profit doubles, fueled by a near $13 billion investment gain",
+      "source": "MarketWatch",
+      "score": 8.0,
+      "motivo": "O ganho significativo em investimentos é um sinal de confiança na economia e pode influenciar a percepção dos investidores sobre a saúde financeira da empresa.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T10:45:54.607822-03:00"
+    },
+    {
+      "title": "Nike (NKE) Is Betting Big on Basketball’s Next Generation. Will It Pay Off?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A Nike está investindo em uma área com grande potencial de crescimento, o que pode afetar positivamente suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T10:46:06.047125-03:00"
     }
   ]
 }
