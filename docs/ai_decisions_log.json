@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Essent Group declares $0.35 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:36:06.398641-03:00"
-    },
-    {
       "title": "Here's How to Read Super Group Insider Moves as Shares Slipped 6% After Earnings",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T15:31:31.499206-03:00"
+    },
+    {
+      "title": "I’m an unemployed software developer who is skeptical of AI. Can I still find a job in tech?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:35:35.701510-03:00"
     }
   ]
 }
