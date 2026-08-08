@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "$10,000 in AMDL Became $40,270 in 7 Months, but AMD’s Earnings Crash Erased $9,500 in One Day",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:01:40.596781-03:00"
-    },
-    {
-      "title": "Review & Preview: The Dow’s Streak Survives",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:01:43.189683-03:00"
-    },
-    {
-      "title": "Global Food Prices Hit Three-Year High As War, Chokepoint Chaos And El Nino Spark Perfect Storm",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:01:46.559444-03:00"
-    },
-    {
-      "title": "Situational Awareness hedge fund meltdown was a warning shot for leveraged markets, BofA CEO says",
-      "source": "CNBC - Finance",
-      "score": 4.0,
-      "motivo": "O colapso do hedge fund pode influenciar a confiança dos investidores em mercados com elevada exposição",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:05:33.104441-03:00"
-    },
-    {
       "title": "Fundos imobiliários: Alianza Trust (ALZR11) entra em carteira da Empiricus no lugar do Bresco Logística (BRCO11)",
       "source": "Money Times",
       "score": 4.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T17:26:03.532218-03:00"
+    },
+    {
+      "title": "João Fonseca x Ben Shelton: onde assistir o Masters de Montreal?",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre esporte e não tem relevância para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:30:55.397188-03:00"
+    },
+    {
+      "title": "SentinelOne (S) Deepens AWS Ties As Growth Accelerates",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A parceria com a AWS pode trazer benefícios significativos para a SentinelOne, como acesso a uma base de clientes mais ampla e recursos tecnológicos avançados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:31:11.476926-03:00"
+    },
+    {
+      "title": "Jim Cramer Praises Exchange Duopoly CME Group (CME) and Cboe (CBOE)",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque Jim Cramer é um investidor influente e seu elogio pode afetar a percepção do mercado sobre as bolsas CME Group e Cboe.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:31:14.488263-03:00"
+    },
+    {
+      "title": "Where Will Dell Technologies Stock Be in 3 Years?",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A análise é relevante, mas rotineira e não traz informações novas ou surpreendentes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:31:17.438991-03:00"
     }
   ]
 }
