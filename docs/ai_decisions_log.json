@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Under Armour Non-GAAP EPS of $0.05 beats by $0.03, revenue of $1.1B misses by $10M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa não cumpriu a expectativa em receita, mas o lucro foi melhor do que previsto.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:37.711696-03:00"
-    },
-    {
-      "title": "Once Upon A Farm rallies after posting a beat-and-raise quarter",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa superou as expectativas, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:41.144238-03:00"
-    },
-    {
       "title": "Every S&P 500 Sector ETF Ranked by How Much It Actually Depends on Just 3 Stocks",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T12:40:50.297379-03:00"
+    },
+    {
+      "title": "Shutdown nos EUA: Senado aprova verba temporária antes das eleições",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia é sobre política, não diretamente relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:45:34.727110-03:00"
+    },
+    {
+      "title": "The size of the American workforce has fallen by over 1 million people in the past year. Here’s what’s going on.",
+      "source": "MarketWatch",
+      "score": 4.0,
+      "motivo": "A notícia pode influenciar a economia e os investimentos, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:45:39.731352-03:00"
     }
   ]
 }
