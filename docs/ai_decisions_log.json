@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "My brother asked me to sign as his executor, but wouldn’t let me read the document. Should I have refused?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:42.973851-03:00"
-    },
-    {
-      "title": "Abacus reiterates $100M-$106M 2026 adjusted net income guidance as it targets $26M-$28M in Q3",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa reiterou sua orientação de lucro líquido ajustado para 2026, o que indica confiança na sua capacidade de gerar lucro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:46.160044-03:00"
-    },
-    {
-      "title": "Pulse Biosciences targets early October enrollment completion for 164-patient NANOPULSE-AF study",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:48.852730-03:00"
-    },
-    {
       "title": "Arko Corp. GAAP EPS of $0.26, revenue of $1.84B",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:31:04.457714-03:00"
+    },
+    {
+      "title": "Soja e milho podem superar US$ 12 e US$ 5 em Chicago com efeitos do El Niño, diz BTG",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "Previsão de alta nos preços de soja e milho com efeitos do El Niño",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:35:38.304857-03:00"
+    },
+    {
+      "title": "Fleury (FLRY3) e Marcopolo (POMO4) são os destaques da semana; veja o que movimentou o Ibovespa",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "queda do Ibovespa em 3,08% e pressão dos balanços corporativos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T08:35:41.077727-03:00"
+    },
+    {
+      "title": "Here’s why Wendy’s is losing the burger wars",
+      "source": "MarketWatch",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para a empresa, mas não é um evento de grande impacto no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:35:44.770924-03:00"
     }
   ]
 }
