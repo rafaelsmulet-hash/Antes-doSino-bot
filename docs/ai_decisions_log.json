@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Day trade: Compre São Martinho (SMTO3) e venda BB Seguridade (BBSE3) para ganhar até 1,49% hoje (7), segundo a Ágora",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:31:22.101888-03:00"
-    },
-    {
       "title": "Cientistas criam curativo que usa proteínas do próprio corpo para acelerar a cicatrização",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T20:15:52.647972-03:00"
+    },
+    {
+      "title": "Oscar Health Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados financeiros positivos, o que pode ser visto como um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T20:20:46.123730-03:00"
     }
   ]
 }
