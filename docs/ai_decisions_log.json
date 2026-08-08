@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "This SpaceX number is spooking already skittish investors",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T22:11:26.092900-03:00"
-    },
-    {
-      "title": "Are Wall Street Analysts Predicting T-Mobile Stock Will Climb or Sink?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T22:11:28.750573-03:00"
-    },
-    {
-      "title": "7 numbers from AMD earnings reveal an ultra-bullish future: AlphaSpace stats to know",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T22:11:31.423032-03:00"
-    },
-    {
       "title": "This Nvidia-Backed AI Play Is Booming, But the Valuation Is Hard to Ignore",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T07:11:03.488856-03:00"
+    },
+    {
+      "title": "GGRC11 movimenta R$ 307 milhões em julho; liquidez é a maior da história doFII",
+      "source": "Suno Noticias",
+      "score": 6.0,
+      "motivo": "Aumento de liquidez e maior participação de investidores no fundo imobiliário GGRC11",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:15:54.824072-03:00"
+    },
+    {
+      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:15:58.967173-03:00"
+    },
+    {
+      "title": "US stocks jump as employers unexpectedly cut 23,000 jobs, raising hopes that rate hikes can wait",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "O número de cortes de vagas foi menor do que o esperado, o que pode levar a uma postergação dos aumentos de juros da Fed.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T07:16:01.962636-03:00"
     }
   ]
 }
