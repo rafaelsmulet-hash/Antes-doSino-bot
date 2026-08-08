@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "O alerta do BofA: banco americano recomenda reduzir risco na bolsa; entenda",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "alerta de um banco americano recomendando reduzir risco na bolsa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:11:04.761399-03:00"
-    },
-    {
       "title": "Meta recebe multa bilionária nos EUA e terá de limitar uso de Instagram",
       "source": "Exame",
       "score": 2.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T18:01:03.811002-03:00"
+    },
+    {
+      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
+      "source": "WSJ Markets",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente ações de empresas de tecnologia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:05:38.905768-03:00"
     }
   ]
 }
