@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Globo define os próximos passos de Ana Paula Renault na TV após o BBB 26",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T21:11:05.041935-03:00"
-    },
-    {
-      "title": "Airbnb signals at least mid-teens 2026 revenue growth while guiding Q3 revenue to $4.69B-$4.77B",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa forneceu uma previsão de crescimento de receita para o ano de 2026, o que é relevante para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T21:11:08.713467-03:00"
-    },
-    {
-      "title": "SM Energy targets 435,000-440,000 boe/d in 2H 2026 while reaffirming $2.65B-$2.85B capex",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T21:11:11.732057-03:00"
-    },
-    {
       "title": "Clear Secure shares climb after earnings beat and stronger outlook",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T22:06:23.251236-03:00"
+    },
+    {
+      "title": "New Zealand Slaps New Sanctions Against Russia After US Move",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia de sanções adicionais pode afetar as relações comerciais e a economia da Rússia, mas o impacto imediato no mercado financeiro é moderado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T22:10:51.095293-03:00"
+    },
+    {
+      "title": "Abelardo De La Espriella, de direita, assume Presidência da Colômbia",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T22:10:54.456552-03:00"
+    },
+    {
+      "title": "Will AT&T (T)’s Expanded Quantum Deal Turn D-Wave (QBTS) Into a Scalable Enterprise Player?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O acordo pode impulsionar o crescimento da D-Wave e aumentar sua relevância no mercado de tecnologia quântica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T22:11:07.727293-03:00"
     }
   ]
 }
