@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Quando estreia o último episódio da 2ª temporada de 'X-Men '97'?",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:11:10.446406-03:00"
-    },
-    {
-      "title": "Alps Group Inc GAAP EPS of -$0.02, revenue of $4.9M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:11:13.299060-03:00"
-    },
-    {
-      "title": "Mammoth Energy Services GAAP EPS of -$0.02, revenue of $26.1M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:11:15.903105-03:00"
-    },
-    {
-      "title": "INmune Bio targets Ebstrocel U.K. MAA by end of Q3 or early Q4 2026 while outlining $1M-$1.5M monthly burn",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:11:18.547325-03:00"
-    },
-    {
-      "title": "Outset Medical reiterates $125M-$130M 2026 revenue guidance backed by $40M HCA refresh agreement",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:11:21.196663-03:00"
-    },
-    {
-      "title": "Arcturus targets Q4 2026 Phase III decision for ARCT-032 as it regains global KOSTAIVE rights",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:11:23.813145-03:00"
-    },
-    {
-      "title": "Earth Science Tech GAAP EPS of $0.00, revenue of $9M misses by $0.97M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:11:26.416939-03:00"
-    },
-    {
       "title": "Global Partners GAAP EPS of $1.86 beats by $0.62, revenue of $6.79B misses by $720M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T18:11:03.037210-03:00"
+    },
+    {
+      "title": "Microsoft Shows the &quot;Magnificent Seven&quot; What AI Investment Looks Like",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre uma discussão de investimento em uma empresa, sem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:15:45.937601-03:00"
+    },
+    {
+      "title": "Salesforce vs. ServiceNow: Which Is the Better Long-Term Investment?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia analisa a competitividade entre duas empresas de software, o que pode ter impacto significativo no mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:15:48.870186-03:00"
+    },
+    {
+      "title": "What to Know About SentinelOne's Insider Transactions Ahead of Earnings",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Transação de insider rotineira que não impacta significativamente o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:15:51.869028-03:00"
+    },
+    {
+      "title": "SentinelOne's Chief Accountant Sold Shares. Here's What Investors Should Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações de um funcionário não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:15:54.836156-03:00"
+    },
+    {
+      "title": "This SentinelOne Executive Holds $15 Million in Stock Ahead of Earnings. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações do executivo não é significativa o suficiente para afetar o preço da ação da SentinelOne.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:15:57.759676-03:00"
+    },
+    {
+      "title": "Should You Worry That SentinelOne's COO Sold Stock? Here's How to Read It",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A venda de ações de um executivo não é um evento relevante para o mercado em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:16:00.823652-03:00"
+    },
+    {
+      "title": "Where Will Dell Technologies Stock Be in 3 Years?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a posição forte da Dell em um mercado relevante, o que pode influenciar positivamente o preço da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T18:16:03.747983-03:00"
     }
   ]
 }
