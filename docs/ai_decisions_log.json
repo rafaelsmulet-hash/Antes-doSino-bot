@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Garbage-Truck Margin Boost Shows the AI Profit Boom Has Begun",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca o sucesso da adoção da inteligência artificial em empresas americanas, o que é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:31:11.872156-03:00"
-    },
-    {
-      "title": "SP tem alerta para chuva e ventos de até 100 km/h; porto de Santos paralisa operação",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "a noticia e sobre tempo e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:31:16.022302-03:00"
-    },
-    {
       "title": "Day trade: Compre São Martinho (SMTO3) e venda BB Seguridade (BBSE3) para ganhar até 1,49% hoje (7), segundo a Ágora",
       "source": "Money Times",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T20:05:52.482173-03:00"
+    },
+    {
+      "title": "Nvidia vs. Navitas Semiconductor: Here's What Their Revenue Trends Tell Investors About These Artificial Intelligence Companies",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia compara as tendências de receita das duas empresas, o que é relevante para os investidores que buscam informações sobre o desempenho financeiro delas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T20:15:49.514610-03:00"
+    },
+    {
+      "title": "A Griffon Insider Sold Into an Earnings Jump but Kept $80 Million in Stock. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações por um executivo de uma empresa não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T20:15:52.647972-03:00"
     }
   ]
 }
