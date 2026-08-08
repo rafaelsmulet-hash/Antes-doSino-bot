@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que as ações da Unity Software estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "o aumento das ações da Unity Software indica um potencial de crescimento no setor de tecnologia",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:43.555197-03:00"
-    },
-    {
-      "title": "Freedom eleva recomendação da BP com alta do petróleo impulsionando resultados",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "alta do petróleo impulsionando resultados da BP",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:46.313564-03:00"
-    },
-    {
-      "title": "Tornado e ventos acima de 100 km/h deixam Rio Grande do Sul em alerta",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia estrictamente sobre clima e eventos naturais",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:49.531930-03:00"
-    },
-    {
-      "title": "Petrobras, guerra no Irã e payroll: o que move os mercados",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:55:52.131285-03:00"
-    },
-    {
-      "title": "É preciso ver todos os filmes e séries do MCU antes do novo ‘Vingadores’? Chefão da Marvel responde",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:54.753543-03:00"
-    },
-    {
-      "title": "Ciclone-bomba: Inmet alerta para ventos de até 100 km/h e granizo no Sul e Sudeste",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:57.363977-03:00"
-    },
-    {
-      "title": "Rio tem alerta para ventos acima de 90 km/h e suspende aulas nesta sexta",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:55:59.971431-03:00"
-    },
-    {
-      "title": "KKR inks $1.4B deal to buy Medicover’s hospital operations in India",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:56:02.893603-03:00"
-    },
-    {
-      "title": "ANI Pharmaceuticals Non-GAAP EPS of $2.21 beats by $0.17, revenue of $266.04M beats by $5.91M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:56:05.508062-03:00"
-    },
-    {
-      "title": "Bengal Energy Ltd. GAAP EPS of C$0.00, revenue of C$1.4M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não tem impacto significativo no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:56:08.421596-03:00"
-    },
-    {
       "title": "Atmus Filtration beats top-line and bottom-line estimates; raises FY26 outlook",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T11:20:53.387153-03:00"
+    },
+    {
+      "title": "Messi foi principal alvo de ameaças na Copa; Cristiano entrou no radar, diz jornal",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre esporte e celebridade, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:26:09.357091-03:00"
+    },
+    {
+      "title": "First Internet Bancorp (INBK) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas não contém informações surpreendentes ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:26:17.868375-03:00"
+    },
+    {
+      "title": "Uniti (UNIT) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre resultados de uma empresa específica.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:26:20.698364-03:00"
+    },
+    {
+      "title": "HubSpot Just Cut Its Own Customer-Growth Forecast to 5,000 a Quarter. What Is the Stock Worth in 3 Years?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A redução da previsão de crescimento de clientes pode afetar a percepção da empresa e seu valor futuro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:26:23.688602-03:00"
+    },
+    {
+      "title": "Insider Dumps More Than 4,000 Shares of Regional Bank Ahead of Stock Split",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações por um acionista interno não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:26:26.615353-03:00"
+    },
+    {
+      "title": "Camden Property Trust (CPT) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 4.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento inesperado ou impactante.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T11:26:29.538421-03:00"
+    },
+    {
+      "title": "Energy Fuels CEO Bhappu Sells 14,375 Shares for Tax Withholding",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é irrelevante para o mercado pois trata de uma venda de ações de um executivo por motivo de imposto, sem impacto direto na empresa ou no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:26:32.546443-03:00"
+    },
+    {
+      "title": "Retiring in 2030? 3 Critical Moves to Make First",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "Não está relacionado ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:26:35.432960-03:00"
+    },
+    {
+      "title": "Alphabet vs. Meta: Which Is the Better Long-Term Investment?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia analisa a competitividade entre duas empresas de tecnologia líderes, o que pode influenciar as decisões de investimento a longo prazo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T11:26:38.352706-03:00"
+    },
+    {
+      "title": "Ningxia quer aposentar o título de “Bordeaux da China” e revelar seu próprio terroir",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "não está relacionado a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:26:46.449748-03:00"
     }
   ]
 }
