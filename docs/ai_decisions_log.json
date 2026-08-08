@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Every S&P 500 Sector ETF Ranked by How Much It Actually Depends on Just 3 Stocks",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:01:48.468813-03:00"
-    },
-    {
-      "title": "SpaceX Stock Is Down 50% From Its Peak. Here's 1 Reason to Buy the Dip, and 1 Reason to Run for the Hills.",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A noticia não é relevante para o mercado financeiro brasileiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:51.408342-03:00"
-    },
-    {
-      "title": "The Hidden Winners of the AI Power Crunch: 3 Utilities to Watch",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca empresas de utilidade que podem se beneficiar da demanda de energia impulsionada pela tecnologia de IA.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:54.333410-03:00"
-    },
-    {
-      "title": "Meta é condenada a pagar R$ 2,9 bilhões para estado dos EUA por caso envolvendo menores nas redes",
-      "source": "G1 Economia",
-      "score": 6.0,
-      "motivo": "Meta condenada a pagar R$ 2,9 bilhões por causar 'perturbação pública' e prejudicar menores de idade",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:01:59.331687-03:00"
-    },
-    {
       "title": "Jovi aposta na força das marcas chinesas para crescer no Brasil",
       "source": "UOL Economia",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T12:45:39.731352-03:00"
+    },
+    {
+      "title": "OPINIÃO. Quem manda na economia?",
+      "source": "Brazil Journal",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, mas sim sobre politica e aposentadoria",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:50:48.241665-03:00"
+    },
+    {
+      "title": "16 out of 16 technology stocks deliver EPS wins this week: Earnings Scorecard",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica um desempenho positivo das empresas de tecnologia, o que pode influenciar os preços das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T12:50:52.247928-03:00"
+    },
+    {
+      "title": "Airbnb vs. MercadoLibre: Which Consumer Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia fornece informações sobre as operações de uma empresa de consumo, mas não apresenta informações novas ou impactantes para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:50:56.647360-03:00"
+    },
+    {
+      "title": "Prediction: This Will Be the Cryptocurrency XRP's Price by Late 2027 (Hint: It's a Big Move)",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T12:50:59.835245-03:00"
     }
   ]
 }
