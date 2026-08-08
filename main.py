@@ -835,7 +835,7 @@ VALUE_PROP_BLOCK = (
     "</p>"
     "<p style='margin-top:16px;'>"
     "<a href='https://t.me/tribute/app?startapp=sZPm' style='color:var(--gold);font-weight:600;'>"
-    "Prefere receber isso direto no Telegram, sem precisar voltar aqui? Entrar no grupo &rarr;"
+    "Prefere receber isso direto no Telegram, sem precisar voltar aqui? Entrar no grupo grátis &rarr;"
     "</a></p>"
     "</section>"
 )
@@ -1566,7 +1566,7 @@ def build_weekly_summary_html(archive):
         "<link rel='stylesheet' href='assets.css'>"
         "</head><body>"
         "<nav><div class='brand'>🔔 Antes do Sino</div>"
-        "<a href='https://t.me/tribute/app?startapp=sZPm' class='nav-cta'>Entrar no grupo</a></nav>"
+        "<a href='https://t.me/tribute/app?startapp=sZPm' class='nav-cta'>Entrar no grupo grátis</a></nav>"
         "<section><div class='section-head'>"
         "<span class='kicker'>Resumo Semanal</span>"
         "<h2>Últimos dias de mercado</h2>"
