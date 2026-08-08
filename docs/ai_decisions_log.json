@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Onde o salário mínimo é maior no Brasil? Confira os estados com piso regional",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:15:48.543081-03:00"
-    },
-    {
       "title": "Quanto custa a bebida que ameaça a hegemonia do badalado Aperol Spritz",
       "source": "Seu Dinheiro",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T18:45:50.764602-03:00"
+    },
+    {
+      "title": "How Qorvo's $22 Billion Merger Changes What Its Insider Filings Mean",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A fusão é um evento significativo que pode impactar a valorização da empresa e, consequentemente, a relevância dos arquivos de insiders.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T18:50:59.470579-03:00"
     }
   ]
 }
