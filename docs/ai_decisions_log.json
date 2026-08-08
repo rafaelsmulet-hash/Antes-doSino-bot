@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Como uma dívida com a Oi virou um esquema de corrupção no Mato Grosso, segundo a PF",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro, mas sim a crime e corrupção",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:56:00.571562-03:00"
-    },
-    {
-      "title": "Alterações e comentários com IA: como usar Gemini e Copilot para revisar documentos",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:56:06.753367-03:00"
-    },
-    {
       "title": "Natural Grocers forecasts FY2026 EPS of $2.07-$2.11 as it targets 4%-5% unit growth and expands e-commerce",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T16:16:03.647508-03:00"
+    },
+    {
+      "title": "Rally do software europeu deixa próxima alta para investidores comprados",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Rally do software europeu sugere alta de ações de empresas do setor",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:25:52.729841-03:00"
+    },
+    {
+      "title": "Espanha e Itália endurecem fronteiras; entenda o impacto para turistas e trabalhadores",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A noticia nao e especifica e materialmente relevante pro mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T16:25:55.800648-03:00"
     }
   ]
 }
