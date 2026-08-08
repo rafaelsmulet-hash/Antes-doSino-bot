@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "João Fonseca x Casper Ruud hoje: veja horário e onde assistir ao jogo de Montreal",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:20.574728-03:00"
-    },
-    {
-      "title": "Sony é obrigada a continuar fazendo filmes do 'Homem-Aranha'? Entenda o contrato com a Marvel",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "noticia sobre contrato entre empresas de entretenimento",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:23.443976-03:00"
-    },
-    {
-      "title": "Com Milei, Rubio e até a Fifa, novo presidente toma posse na Colômbia",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:26.107360-03:00"
-    },
-    {
-      "title": "Salário mínimo deveria ser R$ 8 mil: quanto custa viver no Brasil?",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "notícia sobre preço de feijão não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:29.008593-03:00"
-    },
-    {
-      "title": "Educação no Brasil avança, mas SP, Rio e DF limitam resultado, diz especialista",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:31.688667-03:00"
-    },
-    {
-      "title": "Engenharia de contexto: a técnica que está substituindo os prompts nas empresas mais avançadas",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A notícia não está diretamente relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:57:34.488970-03:00"
-    },
-    {
       "title": "Como a Webmotors mudou a busca por seus carros usando o ChatGPT",
       "source": "Exame",
       "score": 2.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:15:55.921381-03:00"
+    },
+    {
+      "title": "Primárias mostram que os Democratas não sabem pra onde ir",
+      "source": "Brazil Journal",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:21:21.518947-03:00"
+    },
+    {
+      "title": "Força 'oculta' da matéria escura pode mudar o que sabemos sobre o Universo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:21:24.836453-03:00"
+    },
+    {
+      "title": "Montanha-russa mais radical do Beto Carrero vai voltar após obra de R$ 24 milhões; veja o que mudou",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:21:27.582135-03:00"
+    },
+    {
+      "title": "The Timeline to Sweeping Social Security Benefits Cuts Is Likely Being Accelerated by 3 of President Donald Trump's Policies",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre um evento imediato ou decisão de mercado, mas sim sobre uma previsão a longo prazo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:21:34.391716-03:00"
+    },
+    {
+      "title": "Forget the Artificial Intelligence (AI) Capex Bubble: SpaceX CEO Elon Musk Says the Memory Shortage Will Drive Costs Even Higher",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia destaca a alta demanda por chips de memória, o que pode impactar os custos e, por consequência, as ações de empresas relacionadas à tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T08:21:37.354675-03:00"
+    },
+    {
+      "title": "Selic a 14%: o que muda na sua prestação, no seu cartão e no seu dinheiro guardado? Entenda",
+      "source": "G1 Economia",
+      "score": 8.0,
+      "motivo": "Corte consecutivo da Selic estimula investimentos e consumo",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T08:21:46.173066-03:00"
     }
   ]
 }
