@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "O playground dos milionários agora quer ser polo de tecnologia — e o m² já subiu 74%",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre imóveis e desenvolvimento urbano, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:01:17.654743-03:00"
-    },
-    {
-      "title": "EUA sancionam militares e empresas cubanas por relação com China, Rússia e Irã",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "relacionada a geopolítica, mas não direta ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:01:20.446677-03:00"
-    },
-    {
-      "title": "IPCA fica em 0,16% em junho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:01:24.056679-03:00"
-    },
-    {
-      "title": "Nas máximas: o que a disparada dos Treasuries indica sobre a credibilidade do Fed — e por que ela não explica tudo",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "Decisão de juros marcada pela maior dissidência em quase dez anos sugere incerteza sobre a política monetária do Fed",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T07:01:31.391895-03:00"
-    },
-    {
-      "title": "A resiliência do peronismo e a ruptura de Milei: um livro que explica a Argentina",
-      "source": "Brazil Journal",
-      "score": 2.0,
-      "motivo": "noticia sobre política e projeto de lei, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:01:35.340259-03:00"
-    },
-    {
       "title": "MDA Space Non-GAAP EPS of $0.36 beats by $0.10, revenue of $498.6M beats by $180.04M",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T09:45:47.867502-03:00"
+    },
+    {
+      "title": "Fim dos espirros? Os cães geneticamente modificados que não causam alergias",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não está relacionado a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:50:48.547906-03:00"
+    },
+    {
+      "title": "Dia dos Pais: 10 filmes e séries para maratonar em família",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:50:51.264057-03:00"
+    },
+    {
+      "title": "Frio avança pelo Brasil e novo ciclone pode se formar no dia 12, diz meteorologista do Inmet",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia é sobre clima e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:50:54.049083-03:00"
+    },
+    {
+      "title": "Por que a indústria do cinema ainda tenta copiar a receita de “Akira” quase 40 anos depois",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "A noticia e sobre cultura pop e cinema, sem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:51:04.157661-03:00"
+    },
+    {
+      "title": "Ningxia quer aposentar o título de “Bordeaux da China” e revelar seu próprio terroir",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:51:07.062174-03:00"
     }
   ]
 }
