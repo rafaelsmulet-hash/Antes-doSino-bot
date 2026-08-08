@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cientistas descobrem possível 'gatilho' do envelhecimento para doenças cerebrais",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:21:20.934858-03:00"
-    },
-    {
-      "title": "Starz Entertainment Corp. GAAP EPS of -$11.27 misses by $5.79, revenue of $307.9M beats by $1.14M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:21:24.070189-03:00"
-    },
-    {
-      "title": "Acer July Consolidated Revenues Up 21.9% YoY",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:21:29.034156-03:00"
-    },
-    {
-      "title": "Algonquin Power & Utilities Corp. Reveals Fall In Q2 Bottom Line",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:21:31.733772-03:00"
-    },
-    {
-      "title": "Concentra Group Shares Up Over 14% In Pre-Market After Q2 Results",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:21:34.378321-03:00"
-    },
-    {
       "title": "In a Down Crypto Market, Does Investing in Prediction Markets Make Sense?",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T14:20:46.292628-03:00"
+    },
+    {
+      "title": "Bloomberg This Weekend 8/08/2026",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:25:32.672946-03:00"
+    },
+    {
+      "title": "If I buy a house for $1 million in cash at 70, will I run out of money by 90?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:25:41.772295-03:00"
+    },
+    {
+      "title": "Nebius Is Worth 55 Times Its Revenue. What Does That Price Assume?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a relação entre o preço do Nebius e sua receita, o que pode ter implicações para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:25:49.740634-03:00"
+    },
+    {
+      "title": "What is a regional bank?",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é específica e relevante para o mercado financeiro atual.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:25:52.552890-03:00"
+    },
+    {
+      "title": "How to open a checking account for a minor",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "Nenhuma relação com mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:25:55.311940-03:00"
     }
   ]
 }
