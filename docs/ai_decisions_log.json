@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Influencers fear the AI 'Scarlet Letter'",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:53.815858-03:00"
-    },
-    {
-      "title": "OpenAI will bring ChatGPT ads to Brazil and Mexico, and is adding a raft of fresh features",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:56.512225-03:00"
-    },
-    {
-      "title": "He made over $100,000 in tech. Five years later, he staged his first art show as a goodbye to NYC.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T06:59:59.475091-03:00"
-    },
-    {
-      "title": "Volkswagen controlling families call for faster overhaul to fend off Chinese rivals",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:00:02.321871-03:00"
-    },
-    {
-      "title": "Iran's chief negotiator accuses Trump of 'theater diplomacy' with Hormuz traffic near standstill",
-      "source": "CNBC - US News",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter impacto indireto em preços de commodities e ações de empresas de energia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:00:05.485275-03:00"
-    },
-    {
       "title": "Cambridge's Black Time-Travelling Professor (And His Many Superhuman Feats)",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T09:16:23.570864-03:00"
+    },
+    {
+      "title": "Weak Jobs Data Masked by Falling Unemployment",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "Dado de emprego fraco e revisões descendentes persistentes indicam um mercado de trabalho mais suave.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T09:20:40.269647-03:00"
+    },
+    {
+      "title": "Computer maker Framework notifies ‘all customers’ of a data breach",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A violação de dados não tem relação direta com a economia ou mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:20:55.518162-03:00"
+    },
+    {
+      "title": "Today’s the last day to get up to $400 off your TechCrunch Disrupt 2026 ticket",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia é sobre um evento de tecnologia e não tem relação direta com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:20:58.775550-03:00"
+    },
+    {
+      "title": "Nucor, ASML Lead Five Stocks Near Buy Points Without This Big Risk",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca ações próximas de pontos de compra, o que é relevante para os traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T09:21:01.674605-03:00"
+    },
+    {
+      "title": "Morning Bid: Dealjà vu",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "O anúncio de um novo financiamento é geralmente visto como positivo para a empresa e pode impulsionar seu preço.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T09:21:04.896317-03:00"
     }
   ]
 }
