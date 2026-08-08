@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "European Shares Inch Higher In Cautious Trade Ahead Of US Jobs Data",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:58:34.329297-03:00"
-    },
-    {
-      "title": "INFOGRÁFICO mostra como o tarifaço mudou o mapa das exportações brasileiras aos EUA",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:58:38.765808-03:00"
-    },
-    {
-      "title": "Você sabe separar amizade e trabalho? Faça o QUIZ e descubra",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T06:58:41.440598-03:00"
-    },
-    {
       "title": "Como a cerveja é feita? Do lúpulo à levedura, veja o caminho da bebida até chegar ao copo",
       "source": "G1 Economia",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T08:51:34.999096-03:00"
+    },
+    {
+      "title": "Por que acidentes com entregadores do iFood podem custar R$ 189 milhões ao INSS",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia é sobre um cálculo hipotético e não uma notícia atual sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:55:44.655903-03:00"
+    },
+    {
+      "title": "Irã e Omã estão próximos de acordo para nova rota no Estreito de Ormuz, diz ministro iraniano",
+      "source": "G1 Economia",
+      "score": 2.0,
+      "motivo": "A noticia não é sobre mercado financeiro, mas sim sobre geopolitica",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:55:55.576875-03:00"
+    },
+    {
+      "title": "Salad chain Sweetgreen shares slide as cyclosporiasis fears prompt forecast cut",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de crescimento da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T08:56:01.378753-03:00"
     }
   ]
 }
