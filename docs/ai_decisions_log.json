@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "JBS recebe US$ 2,5 bi de fundo soberano indonésio para nova joint venture",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:31:22.122435-03:00"
-    },
-    {
-      "title": "Why Rivian Is Poised to Soar. Hint: It's Not All R2 Hype.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:31:26.644388-03:00"
-    },
-    {
-      "title": "Jamie Dimon Says Margin Debt Is Highest Ever: And Here’s the Risks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:31:29.251083-03:00"
-    },
-    {
       "title": "BorgWarner Inc. Q2 2026 Earnings Call Summary",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T15:10:52.071068-03:00"
+    },
+    {
+      "title": "WuXi AppTec Gets Temporary Reprieve of Chinese Military Curb",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A decisão pode afetar a reputação e as operações da empresa, mas é temporária e não implica uma mudança significativa nas relações entre os EUA e a China.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:15:41.983709-03:00"
+    },
+    {
+      "title": "Assista: Vídeo mostra médicos em cirurgia durante terremoto de magnitude 7,1 no Japão",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:15:46.588879-03:00"
+    },
+    {
+      "title": "Alertas sobre saladas em Michigan diminuem, mas ciclosporíase mantém consumidores e supermercados preocupados",
+      "source": "Investing.com Brasil",
+      "score": 1.0,
+      "motivo": "noticia sobre saladas em Michigan não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T15:15:50.550401-03:00"
     }
   ]
 }
