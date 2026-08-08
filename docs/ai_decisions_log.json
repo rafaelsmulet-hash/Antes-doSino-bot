@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Palantir’s blowout quarter creates dangerous new question",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:46:19.552136-03:00"
-    },
-    {
-      "title": "Gold Steady as Traders Assess Impact of Hormuz Flare-Up on Rates",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia pode afetar as expectativas de taxas de juros, mas não é um evento imediato",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-06T20:50:57.359117-03:00"
-    },
-    {
-      "title": "Natera outlines $2.85B-$2.91B 2026 revenue outlook backed by 31% growth ex true-ups",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A expectativa de receita alta e o crescimento projetado são relevantes para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:51:03.077548-03:00"
-    },
-    {
-      "title": "Viatris raises 2026 outlook while targeting $500M peak sales for fast-acting meloxicam",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-06T20:51:05.740896-03:00"
-    },
-    {
       "title": "Trevi outlines 200+ global trial sites as it targets FDA alignment for non-IPF-ILD chronic cough in H2 2026",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-07T21:45:48.141933-03:00"
+    },
+    {
+      "title": "Em nova reviravolta, Republicanos anuncia Cleitinho como candidato ao governo de Minas",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T21:50:52.632639-03:00"
+    },
+    {
+      "title": "Vontier Corporation Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A empresa apresentou resultados financeiros acima das expectativas, o que pode influenciar positivamente o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T21:51:04.335074-03:00"
+    },
+    {
+      "title": "Warner Bros. Discovery, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A empresa apresentou resultados financeiros rotineiros, mas com uma melhoria nos lucros.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T21:51:07.833082-03:00"
+    },
+    {
+      "title": "Unusual Options Activity: Kraft Heinz Trader Bets Big on a Bull Call Spread — With Low Risk, Big Reward",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia pode indicar que o mercado está otimista em relação à Kraft Heinz, o que pode afetar o preço da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-07T21:51:10.880110-03:00"
     }
   ]
 }
