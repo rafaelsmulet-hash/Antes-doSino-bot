@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fundos imobiliários: Alianza Trust (ALZR11) entra em carteira da Empiricus no lugar do Bresco Logística (BRCO11)",
-      "source": "Money Times",
-      "score": 4.0,
-      "motivo": "mudança na carteira de recomendação de fundos imobiliários não é um evento de grande impacto",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:05:39.398093-03:00"
-    },
-    {
-      "title": "Micron’s stock falls but is spared the worst of the memory-chip selloff",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:05:42.804733-03:00"
-    },
-    {
       "title": "Dólar abre sessão desta sexta-feira, de olho em novos dados de emprego dos EUA",
       "source": "G1 Economia",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T17:31:17.438991-03:00"
+    },
+    {
+      "title": "Crise no estreito de Ormuz: conheça o porto e o oleoduto que estão lucrando com o fechamento",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "efeito direto no preço do petróleo e impacto nas rotas de transporte",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:36:08.529993-03:00"
+    },
+    {
+      "title": "Quem é Todd Blanche, ex-advogado de Trump que assume o Departamento de Justiça dos EUA",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T17:36:11.410679-03:00"
     }
   ]
 }
