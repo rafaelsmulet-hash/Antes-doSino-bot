@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "ACT Energy Technologies GAAP EPS of $0.06 misses by $0.08, revenue of $178.5M beats by $27.05M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque a empresa não atingiu o lucro esperado, mas superou as expectativas de receita, o que pode ter um impacto significativo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T07:56:14.060822-03:00"
-    },
-    {
       "title": "Heliostar Metals GAAP EPS of $0.03, revenue of $56.5M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-08T11:35:39.382971-03:00"
+    },
+    {
+      "title": "Exército do Iêmen volta a atacar bases dos Houthis",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T11:41:00.329386-03:00"
     }
   ]
 }
