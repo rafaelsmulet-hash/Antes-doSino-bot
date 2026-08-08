@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "UBE Corporation Q1 Income Drops",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:21:45.183053-03:00"
-    },
-    {
-      "title": "Indian Shares End Lower Amid Hormuz Uncertainty",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:21:47.832768-03:00"
-    },
-    {
-      "title": "Reunimos os melhores perfumes e lançamentos para o Dia dos Pais 2026",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:21:52.741184-03:00"
-    },
-    {
-      "title": "Amazon CEO Andy Jassy Just Made a Shocking Trillion-Dollar Prediction",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A previsão de crescimento da Amazon pode influenciar a confiança dos investidores no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:25:42.995640-03:00"
-    },
-    {
-      "title": "AFLAC Q2 26 Earnings Conference Call At 8:00 AM ET",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque fornece informações sobre a data da conferência de chamada de resultados financeiros da AFLAC",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T08:25:45.903288-03:00"
-    },
-    {
-      "title": "ANI Pharmaceuticals, Inc. Profit Climbs In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T08:25:48.517184-03:00"
-    },
-    {
       "title": "Amazon and Alphabet Just Crushed Expectations. Which Is the Better Buy Now?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T14:30:52.605091-03:00"
+    },
+    {
+      "title": "Presidente de Taiwan supervisiona exercício de ataque costeiro em manobra militar",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre manobra militar não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:35:46.095179-03:00"
+    },
+    {
+      "title": "Avaliação da Nvidia está no menor nível em 10 anos, diz BofA",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Avaliação negativa da Nvidia pode afetar o preço das ações da empresa e do setor de tecnologia",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T14:36:08.236429-03:00"
+    },
+    {
+      "title": "Seca histórica na Europa: por que esse continente é o que mais aquece no planeta",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "a seca não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:36:11.377835-03:00"
+    },
+    {
+      "title": "Nebius Is Worth 55 Times Its Revenue. What Does That Price Assume?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca um aumento significativo no faturamento do Nebius, o que pode ser considerado relevante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:36:18.054579-03:00"
+    },
+    {
+      "title": "Warren Buffett's Successor, Greg Abel, Just Ended Berkshire Hathaway's 14-Quarter Selling Streak. Is This the Screaming Buy Signal Investors Have Been Waiting For?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A Berkshire Hathaway fez compras significativas, indicando confiança no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-08T14:36:21.522142-03:00"
+    },
+    {
+      "title": "Live Nation Drew 49 Million Fans Last Quarter. Its General Counsel's Stock Just Vested",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre uma venda de ações de um executivo, o que não é relevante para o mercado em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T14:36:24.475913-03:00"
     }
   ]
 }
