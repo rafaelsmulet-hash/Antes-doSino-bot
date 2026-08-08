@@ -115,6 +115,14 @@
   .panel-body{flex:1;min-height:0;position:relative;}
   .panel[data-hidden="true"]{display:none;}
 
+  /* Ativos em Destaque (Market Movers/Hotlists) - o widget da
+     TradingView so mostra as linhas que cabem na altura do container,
+     sem barra de rolagem propria. Da o widget uma altura maior que o
+     espaco visivel e deixa este painel especifico rolar (overflow-y),
+     pra dar acesso real ao resto da lista em vez de simplesmente
+     cortar os ativos que nao cabem. */
+  #widget-market-movers{overflow-y:auto;}
+
   /* ---------- Bloco personalizavel (acoes + cripto lado a lado) ---------- */
   .picker-pair-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;flex:1.3 1 0;min-height:0;}
   .picker-pair-row .panel{height:100%;}
