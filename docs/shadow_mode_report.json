@@ -1,13 +1,13 @@
 {
   "date": "2026-08-09",
-  "total_ingeridas": 248,
-  "aprovadas_pelo_fluxo_atual": 17,
-  "descartadas_pelos_filtros_atuais": 231,
-  "score_medio_materialidade": 2.47,
-  "seriam_breaking": 2,
-  "iriam_para_rodada": 12,
-  "seriam_descartadas_pelo_novo_sistema": 47,
-  "total_divergencias": 13,
+  "total_ingeridas": 496,
+  "aprovadas_pelo_fluxo_atual": 20,
+  "descartadas_pelos_filtros_atuais": 476,
+  "score_medio_materialidade": 2.63,
+  "seriam_breaking": 3,
+  "iriam_para_rodada": 18,
+  "seriam_descartadas_pelo_novo_sistema": 54,
+  "total_divergencias": 17,
   "divergencias": [
     {
       "title": "China’s Inflation Cools as Iran War Oil Shock Starts to Ease",
@@ -99,6 +99,34 @@
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Rhode Is Fueling e.l.f.'s Latest Surge. Is It Time to Jump In?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Lojas Renner (LREN3) corta projeção de vendas após 2T26 mais fraco; ainda vale comprar?",
+      "source": "Suno Noticias",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Top Democrat proposes killing tax breaks for overseas oil production",
+      "source": "CNBC - US News",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }
