@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "AXA XL agrees to take full ownership of S-RM",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:51:33.525971-03:00"
-    },
-    {
-      "title": "Ethan Allen CEO Responds to Activist Push",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque envolve uma ação de um investidor ativista, o que pode influenciar a estratégia da empresa e, consequentemente, o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:55:41.813062-03:00"
-    },
-    {
       "title": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
       "source": "CNBC - Finance",
       "score": 6.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T16:31:01.937074-03:00"
+    },
+    {
+      "title": "Trump diz que EUA estão “agindo com discrição” e gerando pressão econômica no Irã",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política internacional",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:35:42.954045-03:00"
+    },
+    {
+      "title": "ServiceNow (NOW) Unveils Autonomous Security to Accelerate Growth",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque pode impactar positivamente o crescimento da empresa e, consequentemente, o preço das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:35:58.037767-03:00"
     }
   ]
 }
