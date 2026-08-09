@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Filhos herdam dívidas dos pais? Veja o que pode ser cobrado da herança",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia se refere a herança e dívidas, mas não é diretamente relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:00:58.200104-03:00"
-    },
-    {
       "title": "STF contraria Moraes e abre precedente para reduzir penas de reús do 8/1",
       "source": "InfoMoney",
       "score": 1.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T17:25:49.080892-03:00"
+    },
+    {
+      "title": "Flamengo x Vitória: Onde assistir ao Brasileirão?",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:31:15.038357-03:00"
     }
   ]
 }
