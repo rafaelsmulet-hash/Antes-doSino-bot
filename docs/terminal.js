@@ -14,6 +14,14 @@
 
   var STORAGE_KEY = "antesdosino_terminal_prefs_v1";
 
+  // Os widgets da TradingView tem cor propria (parametro colorTheme)
+  // que nao segue o CSS da pagina - por isso le o tema atual do site
+  // (ver theme.js) toda vez que um widget e (re)criado, em vez de
+  // fixar "dark" direto no JSON de configuracao.
+  function temaWidgetAtual() {
+    return window.AntesDoSinoTema && window.AntesDoSinoTema.atual() === "light" ? "light" : "dark";
+  }
+
   var PANEL_DEFS = [
     { id: "indices", label: "Índices Mundiais & Futuros US" },
     { id: "moedas", label: "Dólar & Moedas Globais" },
@@ -55,7 +63,7 @@
       width: "100%",
       height: "100%",
       locale: "br",
-      colorTheme: "dark",
+      colorTheme: temaWidgetAtual(),
       autosize: true,
       showVolume: false,
       showMA: false,
@@ -114,7 +122,7 @@
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js";
     script.async = true;
     script.text = JSON.stringify({
-      colorTheme: "dark",
+      colorTheme: temaWidgetAtual(),
       dateRange: "1D",
       showChart: false,
       locale: "br",
@@ -162,7 +170,7 @@
         { proName: "BMFBOVESPA:IBOV", title: "Ibovespa" },
       ],
       showSymbolLogo: true,
-      colorTheme: "dark",
+      colorTheme: temaWidgetAtual(),
       isTransparent: true,
       displayMode: "adaptive",
       locale: "br",
@@ -198,7 +206,7 @@
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js";
     script.async = true;
     script.text = JSON.stringify({
-      colorTheme: "dark",
+      colorTheme: temaWidgetAtual(),
       dateRange: "1D",
       exchange: "BMFBOVESPA",
       showChart: false,
@@ -781,4 +789,9 @@
     carregarDadosDoPortal();
     inicializarPersonalizacao();
   });
+
+  // Troca de tema (ver theme.js): reconstroi os widgets no colorTheme
+  // certo. montarWidgetAcoes/montarWidgetCripto releem a aba/lista
+  // salva no localStorage, entao a selecao do usuario nao se perde.
+  document.addEventListener("ads:tema-mudou", montarTodosOsWidgets);
 })();
