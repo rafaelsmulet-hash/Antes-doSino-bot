@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ações da Poet Technologies podem oscilar 11% com resultados em 14 de agosto",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:01:38.254528-03:00"
-    },
-    {
-      "title": "Senado dos EUA adia votação da regulação de criptoativos para setembro",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:01:41.181937-03:00"
-    },
-    {
-      "title": "Recorde: Capacete da Disney assinado por pilotos da F1 é leiloado por R$ 1,1 milhão",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:01:43.818019-03:00"
-    },
-    {
-      "title": "Ardelyx falls on lower projected Ibsrela sales, Q2 misses",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:01:46.583143-03:00"
-    },
-    {
       "title": "Arrow Electronics falls 10% despite earnings beat, strong outlook",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T12:01:20.162310-03:00"
+    },
+    {
+      "title": "DC Crime Crackdown Tests Federal Prosecutors",
+      "source": "Bloomberg Markets",
+      "score": 1.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:05:47.330557-03:00"
+    },
+    {
+      "title": "Os cafés mais bonitos dentro dos museus pelo mundo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:05:54.540893-03:00"
+    },
+    {
+      "title": "Should You Buy SpaceX Stock Below $125 per Share? Here's What History Says.",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A noticia e uma analise historica e nao uma informacao atualizada sobre o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:06:08.146479-03:00"
+    },
+    {
+      "title": "Reddit CEO Steve Huffman Sells 18,000 Shares for $2.9 Million",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A venda de ações do CEO não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:06:11.112101-03:00"
     }
   ]
 }
