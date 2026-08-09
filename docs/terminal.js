@@ -615,17 +615,24 @@
       });
   }
 
+  // Guarda o feed completo (nao so os 20 exibidos na coluna lateral)
+  // pra busca universal (Ctrl+K) conseguir filtrar noticias por ticker
+  // ou palavra-chave sem precisar buscar dados-terminal.html de novo.
+  var TODAS_NOTICIAS = [];
+
   function popularFeed(doc) {
     var cards = doc.querySelectorAll("#feed-grid .card");
     var body = document.getElementById("feed-body");
     if (!cards || cards.length === 0) {
       body.innerHTML = '<div class="feed-empty">Sem notícias no momento.</div>';
+      TODAS_NOTICIAS = [];
       return;
     }
 
+    var todas = [];
     var html = "";
     var limite = 20;
-    for (var i = 0; i < Math.min(cards.length, limite); i++) {
+    for (var i = 0; i < cards.length; i++) {
       var card = cards[i];
       var badge = card.querySelector(".badge");
       var titulo = card.querySelector("h3");
@@ -638,14 +645,19 @@
       var fonteTexto = fonte ? fonte.textContent.trim() : "";
       var href = link ? link.getAttribute("href") : "#";
 
-      html +=
-        '<div class="feed-item">' +
-        '<span class="badge ' + badgeClasse + '">' + badgeTexto + "</span>" +
-        '<h4><a href="' + href + '" target="_blank" rel="noopener">' + tituloTexto + "</a></h4>" +
-        '<span class="src">' + fonteTexto + "</span>" +
-        "</div>";
+      todas.push({ titulo: tituloTexto, fonte: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto });
+
+      if (i < limite) {
+        html +=
+          '<div class="feed-item">' +
+          '<span class="badge ' + badgeClasse + '">' + badgeTexto + "</span>" +
+          '<h4><a href="' + href + '" target="_blank" rel="noopener">' + tituloTexto + "</a></h4>" +
+          '<span class="src">' + fonteTexto + "</span>" +
+          "</div>";
+      }
     }
     body.innerHTML = html || '<div class="feed-empty">Sem notícias no momento.</div>';
+    TODAS_NOTICIAS = todas;
   }
 
   // ---------------------------------------------------------------------
@@ -784,10 +796,165 @@
   }
 
   // ---------------------------------------------------------------------
+  // Busca universal (Ctrl+K / Cmd+K): abre um modal com busca de ticker
+  // (preco + noticias relacionadas) e atalhos de navegacao (agenda,
+  // mapa, quant). Reaproveita STOCK_UNIVERSE/CRYPTO_UNIVERSE (mesmos
+  // dados da aba "Minha lista") e TODAS_NOTICIAS (feed ja carregado) -
+  // nao busca nada novo, so filtra o que a pagina ja tem.
+  // ---------------------------------------------------------------------
+
+  var CMDK_COMANDOS = [
+    { chaves: ["agenda", "calendario", "calendário"], label: "Calendário Econômico", href: "calendario.html" },
+    { chaves: ["mapa", "heatmap", "calor"], label: "Mapa de Calor", href: "mapa.html" },
+    { chaves: ["quant", "screener"], label: "Painel Quantitativo", href: "quant.html" },
+  ];
+
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function inicializarCmdk() {
+    var botao = document.getElementById("btn-cmdk");
+    var backdrop = document.getElementById("cmdk-backdrop");
+    var modal = document.getElementById("cmdk-modal");
+    var input = document.getElementById("cmdk-input");
+    var body = document.getElementById("cmdk-body");
+    if (!botao || !modal || !input || !body) return;
+
+    var TICKERS_BUSCA = STOCK_UNIVERSE.concat(CRYPTO_UNIVERSE);
+
+    function abrir() {
+      modal.classList.add("open");
+      backdrop.classList.add("open");
+      input.value = "";
+      renderResultados("");
+      input.focus();
+    }
+
+    function fechar() {
+      modal.classList.remove("open");
+      backdrop.classList.remove("open");
+      body.innerHTML = "";
+    }
+
+    function estaAberto() {
+      return modal.classList.contains("open");
+    }
+
+    function renderResultados(query) {
+      var q = query.trim().toLowerCase();
+      if (!q) {
+        body.innerHTML = '<div class="cmdk-empty">Digite um ticker (ex: PETR4) ou comando (agenda, mapa, quant)…</div>';
+        return;
+      }
+
+      var comandos = CMDK_COMANDOS.filter(function (c) {
+        return c.chaves.some(function (k) { return k.indexOf(q) === 0; });
+      });
+
+      var tickers = TICKERS_BUSCA.filter(function (t) {
+        return t.ticker.toLowerCase().indexOf(q) === 0 || t.nome.toLowerCase().indexOf(q) !== -1;
+      }).slice(0, 5);
+
+      var termosNoticia = [q];
+      if (tickers.length) {
+        termosNoticia.push(tickers[0].nome.toLowerCase());
+        termosNoticia.push(tickers[0].ticker.toLowerCase());
+      }
+      var noticias = TODAS_NOTICIAS.filter(function (n) {
+        var t = n.titulo.toLowerCase();
+        return termosNoticia.some(function (termo) { return t.indexOf(termo) !== -1; });
+      }).slice(0, 5);
+
+      var html = "";
+      if (comandos.length) {
+        html += '<div class="cmdk-section-label">Ir para</div>';
+        comandos.forEach(function (c) {
+          html +=
+            '<div class="cmdk-row" data-cmdk-nav="' + escapeHtml(c.href) + '">' +
+            '<span class="nome">' + escapeHtml(c.label) + "</span>" +
+            '<span class="cmdk-arrow">→</span></div>';
+        });
+      }
+
+      if (tickers.length) {
+        html += '<div class="cmdk-section-label">Ativos</div>';
+        tickers.forEach(function (t, i) {
+          html +=
+            '<div class="cmdk-row' + (i === 0 ? " active" : "") + '" data-cmdk-symbol="' + escapeHtml(t.symbol) + '">' +
+            '<span class="ticker">' + escapeHtml(t.ticker) + "</span>" +
+            '<span class="nome">' + escapeHtml(t.nome) + "</span></div>";
+        });
+        html += '<div class="cmdk-preview" id="cmdk-preview"></div>';
+      }
+
+      if (noticias.length) {
+        html += '<div class="cmdk-section-label">Notícias</div>';
+        noticias.forEach(function (n) {
+          html +=
+            '<a class="cmdk-row cmdk-news-item" href="' + escapeHtml(n.href) + '" target="_blank" rel="noopener">' +
+            "<div><h4>" + escapeHtml(n.titulo) + "</h4>" +
+            '<span class="src">' + escapeHtml(n.fonte) + "</span></div></a>";
+        });
+      }
+
+      if (!html) {
+        html = '<div class="cmdk-empty">Nenhum resultado para "' + escapeHtml(query) + '"</div>';
+      }
+      body.innerHTML = html;
+
+      body.querySelectorAll("[data-cmdk-nav]").forEach(function (el) {
+        el.addEventListener("click", function () {
+          window.location.href = el.getAttribute("data-cmdk-nav");
+        });
+      });
+      body.querySelectorAll("[data-cmdk-symbol]").forEach(function (el) {
+        el.addEventListener("click", function () {
+          var symbol = el.getAttribute("data-cmdk-symbol");
+          window.open("https://www.tradingview.com/symbols/" + symbol.replace(":", "-") + "/", "_blank");
+        });
+      });
+
+      // Preview compacto (cotacao + variacao) do primeiro ativo encontrado -
+      // mesmo widget "Symbol Overview" ja usado no painel do VIX.
+      if (tickers.length) {
+        montarSymbolOverview("cmdk-preview", [[tickers[0].nome, tickers[0].symbol + "|1D"]]);
+      }
+    }
+
+    botao.addEventListener("click", abrir);
+    backdrop.addEventListener("click", fechar);
+    input.addEventListener("input", function () { renderResultados(input.value); });
+
+    document.addEventListener("keydown", function (e) {
+      var teclaK = e.key === "k" || e.key === "K";
+      if ((e.ctrlKey || e.metaKey) && teclaK) {
+        e.preventDefault();
+        if (estaAberto()) { fechar(); } else { abrir(); }
+        return;
+      }
+      if (e.key === "Escape" && estaAberto()) {
+        fechar();
+      }
+    });
+
+    // Enter ativa a primeira linha da lista (comando, ativo ou noticia) -
+    // sem precisar navegar com o mouse.
+    input.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter") return;
+      var primeira = body.querySelector(".cmdk-row");
+      if (primeira) primeira.click();
+    });
+  }
+
+  // ---------------------------------------------------------------------
   document.addEventListener("DOMContentLoaded", function () {
     montarTodosOsWidgets();
     carregarDadosDoPortal();
     inicializarPersonalizacao();
+    inicializarCmdk();
   });
 
   // Troca de tema (ver theme.js): reconstroi os widgets no colorTheme
