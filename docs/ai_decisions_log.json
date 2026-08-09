@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Naver reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "Resultados financeiros da empresa são relevantes para os investidores",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:23.226944-03:00"
-    },
-    {
-      "title": "Mark Your Calendar: Aug. 12 Is an Important Date for Social Security Retirement Beneficiaries",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:31:27.239762-03:00"
-    },
-    {
-      "title": "Algoma Central Corp Profit Advances In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:31:29.868621-03:00"
-    },
-    {
-      "title": "Vistra Q2 26 Earnings Conference Call At 10:00 AM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:32.505801-03:00"
-    },
-    {
       "title": "Sun Life Financial Q2 26 Earnings Conference Call At 10:00 AM ET",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T07:26:07.089531-03:00"
+    },
+    {
+      "title": "Dia dos Pais: 10 músicas para deixar sua homenagem ainda mais emocionante",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:30:48.845914-03:00"
+    },
+    {
+      "title": "Fluor Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Anúncio de resultados financeiros do Fluor, que pode influenciar a percepção dos investidores sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:31:00.539266-03:00"
+    },
+    {
+      "title": "US wages plummet to 43% of national income — lowest since the Great Depression. Did Nixon’s gold breakup kill paychecks?",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A queda nos salários é um indicador importante da saúde da economia e pode influenciar as decisões de investimento e política econômica.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:31:03.570110-03:00"
+    },
+    {
+      "title": "FIGS Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa relatou aumento nas vendas e lucro, o que é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:31:06.474909-03:00"
     }
   ]
 }
