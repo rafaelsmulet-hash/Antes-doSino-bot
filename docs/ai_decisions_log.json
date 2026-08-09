@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Payroll: EUA frustram expectativas e perdem 23 mil vagas de trabalho em julho",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Perda de vagas de trabalho é um indicador negativo para a economia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:36:06.680019-03:00"
-    },
-    {
-      "title": "Rio mantém alerta para ventos fortes nesta sexta; rede municipal suspende aulas",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:36:09.445997-03:00"
-    },
-    {
-      "title": "Redata, que pode impulsionar data centers no Brasil, volta ao Senado após 6 meses parado",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "possibilidade de impulsionar a construção de data centers no Brasil pode afetar o mercado de tecnologia e infraestrutura",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:36:14.213781-03:00"
-    },
-    {
-      "title": "Ataque à Coldcard coincide com disparada dos aportes nos ETFs de bitcoin",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:36:16.815633-03:00"
-    },
-    {
-      "title": "Nerdy outlines 2026 revenue of $168M-$175M following exits as it targets adjusted EBITDA of (-$4M) to breakeven",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:36:19.549869-03:00"
-    },
-    {
       "title": "AerSale expects AerSafe demand to peak in Q3 2026 while targeting 20%-30% on-airport MRO margins at scale",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T21:05:52.205505-03:00"
+    },
+    {
+      "title": "Super El Niño: fenômeno climático deve pressionar inflação em 2027",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "efeito direto na inflação, que pode afetar a economia e os preços dos alimentos",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:10:42.286589-03:00"
+    },
+    {
+      "title": "Mark Zuckerberg Says Buyers Are Offering Meta a 'Significant Premium' for Its Compute — But He Turned Them Down, Calls Selling 'Foolish'",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia indica que o Meta está recebendo ofertas significativas para uma de suas divisões, o que pode ser um sinal de confiança no valor da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:10:53.400282-03:00"
+    },
+    {
+      "title": "4 Unusually Active Options Yesterday Made for a FUN Short Iron Condor",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre um evento específico de mercado, mas sim sobre uma estratégia de opções.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:10:56.369357-03:00"
+    },
+    {
+      "title": "Hertz Beats Estimates and Squeezes the Shorts",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A empresa superou as estimativas de lucro, o que é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:10:59.667919-03:00"
+    },
+    {
+      "title": "Sandisk Shares Fall Despite Strong Q4 Results. How to Play SNDK Stock Here.",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A queda da ação é um sinal de que os investidores estão vendendo após os resultados, mas não há informações sobre mudanças significativas na empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:11:02.965520-03:00"
     }
   ]
 }
