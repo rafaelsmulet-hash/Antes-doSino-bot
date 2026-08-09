@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Mexico Arrests Ex-Governor Over 2014 Student Abduction Case",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:01:07.693182-03:00"
-    },
-    {
-      "title": "Ukraine Grain Exports to Slump After Russian Strikes on Odesa",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia afeta diretamente a economia ucraniana e pode ter impacto na estabilidade dos preços de commodities no mercado global.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:01:10.658302-03:00"
-    },
-    {
-      "title": "BlackRock's Rick Rieder Sees Rate Hike Unlikely",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:01:13.277052-03:00"
-    },
-    {
-      "title": "Hungary Warns of Dramatic Hit From Drought, Nuclear Outage",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:01:15.900695-03:00"
-    },
-    {
-      "title": "BlackRock's Rieder on Jobs Report, Fed Rates and Bonds",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:01:18.523484-03:00"
-    },
-    {
-      "title": "Atividade econômica do Oriente Médio mostra melhora desigual em julho",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:01:25.428796-03:00"
-    },
-    {
-      "title": "Alpargatas (ALPA4): ação salta para máxima de 5 meses após resultados; veja destaques",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:01:28.070462-03:00"
-    },
-    {
-      "title": "Grécia - Ações fecharam o pregão em alta e o Índice Athens General Composite avançou 0,25%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "aumento do índice de ações gregas indica melhora na economia local",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:01:32.977957-03:00"
-    },
-    {
-      "title": "Petrobras tem \"margem enorme\" em gás, diz diretor da ANP sobre programa que quer reduzir preços",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:01:35.624412-03:00"
-    },
-    {
       "title": "Ações da Poet Technologies podem oscilar 11% com resultados em 14 de agosto",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:55:48.561429-03:00"
+    },
+    {
+      "title": "Bolão feito em Fortaleza (CE) fatura prêmio de R$ 164,9 milhões da Mega-Sena",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira relevante",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:00:47.621493-03:00"
+    },
+    {
+      "title": "AI investment will fuel more equity issuance, while buybacks cushion effects: Goldman Sachs",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque trata de uma análise de mercado e de uma previsão sobre o comportamento das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T12:00:53.207450-03:00"
+    },
+    {
+      "title": "Key deals this week: Bending Spoons, Advanced Micro Devices, Visa, Prologis, and more",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "Negociações rotineiras de empresas de tecnologia e logística",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:00:56.022690-03:00"
+    },
+    {
+      "title": "Microsoft Sits 12% Below Its High After the Largest One-Day Market Value Gain on Record. Here's What History Suggests Comes Next.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque menciona uma grande variação no valor de mercado da Microsoft, mas não há informações sobre o que pode acontecer em seguida",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T12:01:02.283823-03:00"
+    },
+    {
+      "title": "Warren Buffett Donated $6 Billion of Berkshire Stock to Family Foundations and Cut Off the Gates Foundation for the First Time in 20 Years. Does This Change the Investment Case for Berkshire?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A doação de ações da Berkshire pode influenciar a percepção dos investidores sobre a empresa e seus objetivos de longo prazo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:01:05.375249-03:00"
+    },
+    {
+      "title": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:01:11.429237-03:00"
+    },
+    {
+      "title": "Wall Street Sees a Multitrillion-Dollar Humanoid Robot Market. These 2 Industrial Stocks Sell the Parts.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a perspectiva de um mercado de robôs humanoides, o que pode impulsionar a demanda por componentes industriais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:01:14.413104-03:00"
+    },
+    {
+      "title": "President Donald Trump Expected the Iran War to Drive the Stock Market \"Down 20% to 25%\" -- His Prophecy May Still Come True",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:01:17.290205-03:00"
+    },
+    {
+      "title": "AMD Just Reported Its Data Center Revenue More Than Doubled Year-Over-Year. What Comes Next.",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque a AMD é uma empresa de tecnologia importante e a receita de centros de dados é um indicador importante do crescimento da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:01:20.162310-03:00"
     }
   ]
 }
