@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Canopy Growth reports fiscal first quarter revenue growth, improved margins",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:37:03.716127-03:00"
-    },
-    {
-      "title": "Volume de serviços recua 0,4% em maio",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:40:46.823190-03:00"
-    },
-    {
-      "title": "Doximity’s stock skyrockets 50% on medical AI excitement. Can the rally last?",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A noticia e relevante porque trata de uma acao que subiu significativamente e analistas temem que a empresa possa prejudicar sua atividade central.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:40:51.619309-03:00"
-    },
-    {
       "title": "Bright Mountain Media reports Q2 results",
       "source": "Seeking Alpha",
       "score": 2.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T15:16:01.242607-03:00"
+    },
+    {
+      "title": "Libertadores entra na fase decisiva com prêmio recorde e cinco brasileiros na briga",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:20:57.419076-03:00"
+    },
+    {
+      "title": "Bank of America spots new curveball for Magnificent Seven stocks",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as ações de empresas de alta qualidade, o que pode ter um impacto significativo no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T15:21:10.556982-03:00"
+    },
+    {
+      "title": "Ford’s (F) $28,350 Electric Pickup Bet Meets A Cheap Stock",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "O investimento da Ford em um caminhão elétrico é relevante para o mercado pois pode influenciar a percepção da empresa como líder em tecnologia de veículos elétricos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:21:13.478010-03:00"
     }
   ]
 }
