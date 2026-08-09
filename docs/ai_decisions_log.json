@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq rise after July jobs report surprises to the downside",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:11:52.363910-03:00"
-    },
-    {
-      "title": "Onterris’ (ONT) Resilience Amid Revenue Decline",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:11:55.020596-03:00"
-    },
-    {
-      "title": "BlackRock Is Being as Boring as Possible in Bonds, Rieder Says",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia é sobre investimentos rotineiros e não revela nada novo ou impactante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:15:48.985476-03:00"
-    },
-    {
-      "title": "Renda Fixa Hoje: as taxas de CDBs, LCIs e LCAs na XP nesta sexta-feira (7)",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "noticia sobre taxas de investimento em renda fixa, sem impacto significativo no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:15:53.801343-03:00"
-    },
-    {
-      "title": "Ações do Magazine Luiza (MGLU3) caem após balanço; o que desagradou o mercado?",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:15:58.195785-03:00"
-    },
-    {
-      "title": "I’m an unemployed software developer who is skeptical of AI. Can I still find a job in tech?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:02.462518-03:00"
-    },
-    {
-      "title": "Medical Properties Trust Q2 earnings on deck: What to expect",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:16:05.141568-03:00"
-    },
-    {
-      "title": "Journey Energy Inc. GAAP EPS of $0.26",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:07.731978-03:00"
-    },
-    {
-      "title": "Chartwell Retirement Residences reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:10.331735-03:00"
-    },
-    {
       "title": "U.S. equities advanced after a weaker than forecasted payrolls report",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T09:36:31.162140-03:00"
+    },
+    {
+      "title": "How to Use Year-End Gifting to Reduce Your Taxable Estate Before 2026 Ends",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para a economia e impostos, mas não tem impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:40:55.460326-03:00"
+    },
+    {
+      "title": "3 Artificial Intelligence (AI) Stocks to Load Up On in August",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia menciona uma ação específica com um catalisador importante, o que pode ter impacto no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:40:58.335535-03:00"
+    },
+    {
+      "title": "Should You Stop Saving for Retirement?",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:41:01.140378-03:00"
+    },
+    {
+      "title": "SpaceX vs. Meta Platforms: Which Will Reach the $2 Trillion Club First?",
+      "source": "Nasdaq",
+      "score": 1.0,
+      "motivo": "A notícia não está relacionada a mercado financeiro em si, mas sim a comparação de crescimento entre duas empresas.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:41:03.996570-03:00"
+    },
+    {
+      "title": "1 Popular Cryptocurrency Cathie Wood's Ark Invest Sees Surging 1,823%",
+      "source": "Nasdaq",
+      "score": 8.0,
+      "motivo": "Previsão de preço de longo prazo para o Bitcoin",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:41:06.857969-03:00"
+    },
+    {
+      "title": "Warren Buffett Recently Called the Stock Market &quot;A Church With a Casino Attached.&quot; Is He Right?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A opinião de Warren Buffett é relevante para o mercado de ações, pois ele é um investidor respeitado e sua opinião pode influenciar a percepção dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:41:09.806213-03:00"
+    },
+    {
+      "title": "Fugitivos das telas: por que cada vez mais pessoas pagam para ficar offline",
+      "source": "G1 Economia",
+      "score": 2.0,
+      "motivo": "a noticia e sobre tendencias de consumo e comportamento, mas nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:41:16.631009-03:00"
+    },
+    {
+      "title": "The Real Cost of Retiring in Las Vegas on Social Security and a Small Pension",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:41:22.960721-03:00"
+    },
+    {
+      "title": "JPMorgan Has Consistently Beaten Its Own 17% Return Target Under Jamie Dimon. Is the Stock Still a Buy?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque discute o desempenho financeiro da JPMorgan, que é uma das maiores instituições financeiras do mundo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:41:25.902706-03:00"
     }
   ]
 }
