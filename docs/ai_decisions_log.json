@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Our restaurant burned down. Now we make $4 million a year.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:21:32.400692-03:00"
-    },
-    {
-      "title": "I spent most of my 20s traveling all over the world. By 29, I was completely over it.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:21:35.030519-03:00"
-    },
-    {
-      "title": "Satellite images show the damage Ukrainian strikes have inflicted on Russian e-commerce giant Wildberries' warehouses",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:21:37.680686-03:00"
-    },
-    {
-      "title": "AMD buys chip startup that hardwires AI models into its silicon",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:21:40.495147-03:00"
-    },
-    {
-      "title": "Puerto Rico’s Capital Sees Blowout Demand for Rare Muni Sale",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A demanda alta por títulos públicos de Porto Rico indica confiança dos investidores na economia da ilha.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:25:48.755807-03:00"
-    },
-    {
-      "title": "Manufacturing survey shows inflation worries 'worse than pandemic era,' adding to Fed pressure",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia sugere que a inflação está pior do que esperado, o que pode aumentar a pressão sobre o Fed para tomar medidas mais rigorosas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:25:52.218684-03:00"
-    },
-    {
-      "title": "Cruzeiro do Sul cai após duplo rebaixamento; Cogna sobe com recomendação de compra",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:25:55.279719-03:00"
-    },
-    {
-      "title": "3 dicas culturais para o fim de semana",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:26:00.400069-03:00"
-    },
-    {
       "title": "Victoryshares Westend U.S. Sector ETF declares $0.0137 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T10:01:15.960942-03:00"
+    },
+    {
+      "title": "Irã diz que conversas com Omã sobre Ormuz avançam, mas reabertura não está garantida",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre geopolitica não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:05:35.005080-03:00"
+    },
+    {
+      "title": "Reparar o DNA pode ser a chave para retardar o envelhecimento, dizem cientistas",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "Nenhuma relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:05:39.772325-03:00"
+    },
+    {
+      "title": "Como transformar relatórios e planilhas em apresentações com IA",
+      "source": "Exame",
+      "score": 1.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:05:42.638208-03:00"
+    },
+    {
+      "title": "Do transacional ao relacional: como a IA agêntica já reinventa o papel do gerente do banco",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A IA agêntica pode otimizar processos bancários, reduzindo custos e melhorando a eficiência, impactando positivamente as ações de bancos que adotarem essa tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T10:05:45.491286-03:00"
+    },
+    {
+      "title": "The number of stocks beating the S&P 500 is the highest in 4 years. Why that number should rise.",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "A notícia indica que a maioria das ações está tendo desempenho positivo em relação ao índice S&P 500, o que pode ser um sinal de otimismo no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T10:05:48.595574-03:00"
+    },
+    {
+      "title": "Vertical Aerospace is said to near $100M capital raise amid flying-taxi push",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque indica um aumento de capital significativo para a Vertical Aerospace, o que pode impulsionar a empresa em sua corrida para desenvolver taxis voadores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:05:51.696141-03:00"
+    },
+    {
+      "title": "Top global stories this week: BP, SoftBank among notable names",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações específicas ou impactantes sobre o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:05:54.571558-03:00"
+    },
+    {
+      "title": "Elon Musk Just Announced Major News for Nvidia Shareholders",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "O uso da tecnologia da Nvidia pela Neuralink pode aumentar a demanda por ações da empresa e impulsionar seu preço.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:06:06.787399-03:00"
     }
   ]
 }
