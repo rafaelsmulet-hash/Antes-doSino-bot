@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The founder’s guide to TechCrunch Disrupt 2026: Everything you need to know",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:31:50.781028-03:00"
-    },
-    {
-      "title": "Analyst Report: eBay Inc",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:31:53.990331-03:00"
-    },
-    {
-      "title": "Our family moved to Japan after 8 years of careful planning — but there are still things I wish we'd done before we left",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:31:57.651907-03:00"
-    },
-    {
       "title": "Payroll: EUA frustram expectativas e perdem 23 mil vagas de trabalho em julho",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T20:45:49.681720-03:00"
+    },
+    {
+      "title": "$400,000 in Employer Stock Inside Your 401(k)? This Tax Rule Could Save You $65,000 Before You Retire",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia aborda uma questão de imposto relevante para os trabalhadores que têm ações da empresa dentro do seu 401(k), o que pode ter impacto financeiro significativo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:05:45.782146-03:00"
+    },
+    {
+      "title": "'Busted': Female Bicyclists 'Bulk Up'",
+      "source": "ZeroHedge",
+      "score": 1.0,
+      "motivo": "A notícia é sobre um incidente específico em uma competição de ciclismo e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:05:49.252323-03:00"
+    },
+    {
+      "title": "Hunter Biden Says Father's Cancer Has Spread Further: \"Very Painful And Very Debilitating\"",
+      "source": "ZeroHedge",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:05:52.205505-03:00"
     }
   ]
 }
