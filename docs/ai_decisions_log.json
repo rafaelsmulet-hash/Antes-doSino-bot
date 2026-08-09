@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "AMD buys chip startup that hardwires AI models into its silicon",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:41:21.348795-03:00"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:41:24.464471-03:00"
-    },
-    {
-      "title": "Odd Lots: What’s Contributing to the Sardine Shortage?",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:45:53.952927-03:00"
-    },
-    {
-      "title": "Cyclospora Outbreak Sends Shivers Through Restaurant Stocks",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o setor de restaurantes, mas o impacto é mais de ordem de consumo do que financeira.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:45:56.935782-03:00"
-    },
-    {
-      "title": "PF adia depoimento de Jaques Wagner após pedido da defesa",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:46:00.382208-03:00"
-    },
-    {
-      "title": "Serve Robotics drops after cutting 2026 revenue outlook",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:46:05.694895-03:00"
-    },
-    {
-      "title": "Atlassian upgraded after FY27 outlook shines spotlight on AI monetization",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:46:08.309032-03:00"
-    },
-    {
       "title": "Arko Corp. declares $0.03 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:36:10.715970-03:00"
+    },
+    {
+      "title": "Inflation Data Keeps Fed Rate Hike in Play",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia sugere que a Fed pode manter a possibilidade de uma elevação da taxa de juros, o que é relevante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T11:40:54.817841-03:00"
+    },
+    {
+      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A notícia indica uma mudança negativa na atividade econômica da China, o que pode ter impacto no mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:40:58.157788-03:00"
+    },
+    {
+      "title": "Netanyahu: plano do Conselho de Paz dos EUA de 15 pontos para Gaza é rejeitado",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia politica sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:41:01.653308-03:00"
+    },
+    {
+      "title": "Leveraged ETFs fuel tech volatility, creating opportunities for momentum traders",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia destaca a influência dos ETFs com alavancagem na volatilidade do setor tecnológico, o que pode afetar as ações de empresas de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:41:08.958532-03:00"
+    },
+    {
+      "title": "Advanced Micro Devices (AMD) Price Prediction: How Much a $5,000 Investment Could Be Worth by 2031",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A previsão de preço da AMD é relevante para os investidores que estão considerando investir na empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:41:23.616961-03:00"
+    },
+    {
+      "title": "UK Stocks Could Prove More Resilient Than U.S. Equities if AI Boom Unravels",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque pode influenciar a percepção dos investidores sobre o desempenho das ações britânicas em comparação com as ações americanas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:41:26.827301-03:00"
+    },
+    {
+      "title": "I spend thousands each summer to stay at a lake an hour from home. I tried vacationing in new places, but the nostalgia is worth more.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não trata de mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:41:30.397440-03:00"
     }
   ]
 }
