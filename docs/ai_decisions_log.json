@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "PETR4: Produção está acima das projeções para 2026, diz CEO",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A noticia destaca a produção acima das projeções, o que é um sinal positivo para a acao da PETR4",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:05:51.213133-03:00"
-    },
-    {
-      "title": "Filhos herdam dívidas dos pais? Veja o que pode ser cobrado da herança",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não é específica sobre mercado financeiro, mas sim sobre herança e tributos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:05:54.121783-03:00"
-    },
-    {
-      "title": "Número de empresas de audiovisual dispara 176% em 10 anos em São Paulo",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Abertura de novos CNPJs no setor de audiovisual em São Paulo sugere crescimento econômico e oportunidades de negócios.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:05:59.108680-03:00"
-    },
-    {
-      "title": "Sul e Sudeste sob alerta: ciclone-bomba provoca série de eventos climáticos extremos",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:06:01.794234-03:00"
-    },
-    {
       "title": "‘This has been an emotionally difficult time’: My brother has cancer and my father is 94. How do I shoulder this responsibility?",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T17:56:16.124403-03:00"
+    },
+    {
+      "title": "China Bets on AI Stocks as It Races Against US for Chip, Tech Dominance",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia destaca uma mudança na estratégia da China, que pode ter impacto significativo no mercado de tecnologia e chips.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T18:01:12.077467-03:00"
+    },
+    {
+      "title": "Déficit da Alemanha com China sobe conforme país asiático reduz dependência europeia",
+      "source": "InfoMoney",
+      "score": 4.0,
+      "motivo": "alteração no comércio entre a Alemanha e a China, mas sem impacto imediato no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T18:01:15.353735-03:00"
+    },
+    {
+      "title": "Pensando em trocar de celular? Seu smartphone pode ficar ainda mais caro",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Aumento do preço médio global de celulares pode impulsionar a demanda por produtos da Apple, impactando positivamente suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T18:01:20.489806-03:00"
+    },
+    {
+      "title": "Trump signals economic pressure over new Iran strikes as Hormuz talks stall",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Ameaça de pressão econômica pode afetar os preços do petróleo e, consequentemente, a economia global.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T18:01:23.796287-03:00"
     }
   ]
 }
