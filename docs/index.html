@@ -221,6 +221,23 @@
   .feed-item .src{font-size:0.68rem;color:var(--slate-dim);margin-top:3px;display:block;}
   .feed-empty{color:var(--slate-dim);font-size:0.82rem;padding:14px 6px;}
 
+  /* ---------- Abas da sidebar: Noticias / Contexto Macro ---------- */
+  .sidebar-tabs{display:flex;gap:6px;flex-shrink:0;}
+  .sidebar-tab{
+    flex:1;background:none;border:1px solid var(--line);color:var(--slate);cursor:pointer;
+    font-size:0.72rem;font-weight:600;padding:7px 8px;border-radius:8px;
+    font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.4px;
+  }
+  .sidebar-tab.active{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
+  .sidebar-tab:not(.active):hover{color:var(--cream);border-color:var(--bronze);}
+  .sidebar-panel{display:none;}
+  .sidebar-panel.active{display:flex;}
+  .macro-widget-body{flex:1;min-height:0;position:relative;}
+  .macro-disclaimer{
+    flex-shrink:0;padding:8px 12px 10px;font-size:0.66rem;line-height:1.4;color:var(--slate-dim);
+    border-top:1px solid var(--line);
+  }
+
   .lead-card{
     flex-shrink:0;background:linear-gradient(160deg, color-mix(in srgb, var(--gold) 12%, transparent), color-mix(in srgb, var(--gold) 2%, transparent));
     border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;
@@ -470,12 +487,24 @@
     </main>
 
     <aside class="term-sidebar">
-      <div class="feed-card">
+      <div class="sidebar-tabs">
+        <button class="sidebar-tab active" data-sidebar-tab="noticias" type="button">Notícias</button>
+        <button class="sidebar-tab" data-sidebar-tab="macro" type="button">Contexto Macro</button>
+      </div>
+
+      <div class="feed-card sidebar-panel active" data-sidebar-panel="noticias">
         <div class="feed-card-head">Últimas notícias</div>
         <div class="feed-card-body" id="feed-body">
           <div class="feed-empty">Carregando notícias...</div>
         </div>
       </div>
+
+      <div class="feed-card sidebar-panel" data-sidebar-panel="macro">
+        <div class="feed-card-head">Fluxo &amp; juros</div>
+        <div class="macro-widget-body" id="widget-macro"></div>
+        <p class="macro-disclaimer">Fluxo Estrangeiro é uma aproximação via EWZ (ETF de ações brasileiras negociado nos EUA) — não é o dado oficial de fluxo cambial da B3, que não tem fonte gratuita em tempo real. Curva DI via contratos futuros BMFBOVESPA.</p>
+      </div>
+
       <div class="lead-card">
         <p>Quer receber estes alertas instantaneamente sem delay no seu celular antes de todo mundo? Entre no grupo gratuito do Antes do Sino.</p>
         <a href="https://t.me/+TobMzw-WnQhmZmIx">Entrar no grupo grátis →</a>

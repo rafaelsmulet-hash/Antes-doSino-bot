@@ -254,6 +254,16 @@
     montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
     montarMarketMovers();
 
+    // Fluxo Estrangeiro (proxy via EWZ - nao ha fonte gratuita do dado
+    // oficial de fluxo cambial da B3) + Curva DI (contratos futuros
+    // BMFBOVESPA, disponiveis de graca na TradingView) - ver aba
+    // "Contexto Macro" na sidebar.
+    montarListaAtivos("widget-macro", [
+      ["Fluxo Estrangeiro (proxy: EWZ)", "AMEX:EWZ|1D"],
+      ["DI Jan/27 (curto)", "BMFBOVESPA:DI1F2027|1D"],
+      ["DI Jan/31 (longo)", "BMFBOVESPA:DI1F2031|1D"],
+    ]);
+
     montarWidgetAcoes(); // Top 10 / Minha lista - ver secao "Bloco picker" abaixo
     montarWidgetCripto(); // idem, para criptomoedas
   }
@@ -950,11 +960,34 @@
   }
 
   // ---------------------------------------------------------------------
+  // Abas da sidebar: Noticias / Contexto Macro. So troca visibilidade -
+  // os dois paineis ja estao montados (widget-macro entra junto com os
+  // outros em montarTodosOsWidgets), sem custo de remontar nada.
+  // ---------------------------------------------------------------------
+
+  function inicializarAbasSidebar() {
+    var botoes = document.querySelectorAll(".sidebar-tab");
+    if (!botoes.length) return;
+    botoes.forEach(function (botao) {
+      botao.addEventListener("click", function () {
+        var alvo = botao.getAttribute("data-sidebar-tab");
+        document.querySelectorAll(".sidebar-tab").forEach(function (b) {
+          b.classList.toggle("active", b === botao);
+        });
+        document.querySelectorAll(".sidebar-panel").forEach(function (p) {
+          p.classList.toggle("active", p.getAttribute("data-sidebar-panel") === alvo);
+        });
+      });
+    });
+  }
+
+  // ---------------------------------------------------------------------
   document.addEventListener("DOMContentLoaded", function () {
     montarTodosOsWidgets();
     carregarDadosDoPortal();
     inicializarPersonalizacao();
     inicializarCmdk();
+    inicializarAbasSidebar();
   });
 
   // Troca de tema (ver theme.js): reconstroi os widgets no colorTheme
