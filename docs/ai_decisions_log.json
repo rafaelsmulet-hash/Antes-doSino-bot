@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Chicago Rivet & Machine GAAP EPS of -$1.02, revenue of $7.2M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:06:00.765255-03:00"
-    },
-    {
-      "title": "Citizens Non-GAAP EPS of $0.01, revenue of $60.4M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:06:03.382964-03:00"
-    },
-    {
-      "title": "Importação de carros chineses dobra no Brasil enquanto exportações recuam 20,8%",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:06:08.980727-03:00"
-    },
-    {
-      "title": "FII divulga dividendos com retorno de 1,27% ao mês",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:06:12.846400-03:00"
-    },
-    {
       "title": "Scott Bessent’s Yen Trade Has Unintended Consequences for the Markets",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T09:11:03.292392-03:00"
+    },
+    {
+      "title": "Iran Talks Offer Little Relief for Hormuz Shipping",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro brasileiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:15:54.503441-03:00"
+    },
+    {
+      "title": "From \"Designed Viruses\" To \"Digital Telepathy\" – AI Panic Kicks Into Overdrive",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:16:10.632470-03:00"
+    },
+    {
+      "title": "Europe Was Once Bigger Than The US Economy. What Happened?",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "A notícia analisa a divergência nas trajetórias econômicas da UE e dos EUA desde 2008.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:16:13.723817-03:00"
+    },
+    {
+      "title": "Turkey Restricts Black Sea Traffic As Drone Attacks On Commercial Vessels Spike",
+      "source": "ZeroHedge",
+      "score": 8.0,
+      "motivo": "A notícia pode afetar a segurança de navios comerciais e impactar a exportação de grãos e petróleo da Rússia e da Ucrânia.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:16:20.180255-03:00"
     }
   ]
 }
