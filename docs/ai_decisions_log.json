@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "NGEx Minerals Ltd. GAAP EPS of CAD -$0.09",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:11:21.223836-03:00"
-    },
-    {
-      "title": "Computer maker Framework notifies ‘all customers’ of a data breach",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:11:28.958560-03:00"
-    },
-    {
-      "title": "Grindr CEO says AI is doing work that would have required hiring 200 additional engineers",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:11:31.905388-03:00"
-    },
-    {
-      "title": "I hated the uncertainty of postgrad life and job hunting. One wild road trip with my mom helped me stop worrying so much.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:11:34.615715-03:00"
-    },
-    {
-      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
-      "source": "WSJ Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de energia e petróleo, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:15:34.595899-03:00"
-    },
-    {
       "title": "Dividendos dos FIIs: GARE11, HSML11 e VGHF11 realizam pagamentos hoje; veja valores",
       "source": "InfoMoney",
       "score": 3.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T18:56:03.826549-03:00"
+    },
+    {
+      "title": "Candidatos à Presidência homenageiam pais e Lula prega o fim da escala 6×1",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:01:01.942931-03:00"
+    },
+    {
+      "title": "Berkshire's Operating Earnings Rose $1.8 Billion Last Quarter. A Currency Swing Was $1.2 Billion of It.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aumento de lucro operacional do Berkshire é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T19:01:14.982561-03:00"
+    },
+    {
+      "title": "Harris Renews Calls To Pack The Court Despite Poll Showing Most Americans Agree With Its Decisions",
+      "source": "ZeroHedge",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro, mas sim para a política e a sociedade.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:01:18.868741-03:00"
+    },
+    {
+      "title": "Trump Says \"We Are Low Keying It\" With Iran As Options For Walking Away Have Drastically Narrowed",
+      "source": "ZeroHedge",
+      "score": 8.0,
+      "motivo": "A crise no Estreito de Ormuz continua a afetar os preços do petróleo e a economia global, com o Irã exigindo condições cada vez mais rigorosas para a abertura do estreito.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T19:01:25.720905-03:00"
+    },
+    {
+      "title": "\"Lie To People Who Want To Be Lied To\": How To Make A Political Fortune As A Far-Left Democrat",
+      "source": "ZeroHedge",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro, mas é interessante para a política e a sociedade.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:01:28.869616-03:00"
     }
   ]
 }
