@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "BlackRock's Rieder Sees 'Productivity Revolution' in US",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Previsão de alta do PIB nominal nos EUA, considerada relevante e com impacto concreto",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:50:44.980199-03:00"
-    },
-    {
-      "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A decisão de apertar a política monetária pode impactar a economia de Singapura e influenciar a taxa de juros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:50:48.386515-03:00"
-    },
-    {
-      "title": "Wall Street sobe com payroll mais fraco do que o esperado",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:50:52.703934-03:00"
-    },
-    {
-      "title": "SK Hynix avalia opções para unidade na China avaliada em US$ 3 bilhões",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:50:55.484610-03:00"
-    },
-    {
-      "title": "Microsoft é o único hyperscaler dos EUA com fluxo de caixa livre positivo",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:50:58.119157-03:00"
-    },
-    {
       "title": "Cinco ações disparam no pré-mercado impulsionadas por resultados trimestrais",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:06:20.196020-03:00"
+    },
+    {
+      "title": "A IA pode saber quanto gasto? Fintech cria ponte com dados bancários no Brasil; entenda",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A fintech pode melhorar a eficiência e reduzir custos para as instituições financeiras",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T08:10:48.987023-03:00"
+    },
+    {
+      "title": "Presidente da Starbucks Brasil: '90% dos nossos líderes começaram como baristas'",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A notícia destaca a estratégia de promoção interna da Starbucks, o que pode ser visto como positivo para a empresa e seus acionistas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:10:51.838482-03:00"
+    },
+    {
+      "title": "Debate da Band para governador de SP: veja horário, regras e onde assistir online",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia eletoral sem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:10:54.605066-03:00"
+    },
+    {
+      "title": "Meu pai faleceu e sua 'companheira' forjou documentos para ficar com a casa. E agora?",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:10:57.339998-03:00"
+    },
+    {
+      "title": "Traveling with just a backpack taught me that I don't need special clothes to exercise. I wear the same outfit for all my workouts.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:11:11.381389-03:00"
     }
   ]
 }
