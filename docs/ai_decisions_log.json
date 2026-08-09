@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Michigan says it’s OK to start eating salads again as cyclospora outbreak wanes",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:36:31.878279-03:00"
-    },
-    {
-      "title": "Roche upgraded at Morgan Stanley on growth, pipeline upside",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:36:34.548782-03:00"
-    },
-    {
-      "title": "Csquare Q2 GAAP EPS of -$0.47, revenue of $280.35M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:36:37.176169-03:00"
-    },
-    {
       "title": "Sprout Social targets Q4 2026 non-GAAP operating margin close to 17% as it outlines $50M annualized cost reduction run rate",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T15:00:41.937592-03:00"
+    },
+    {
+      "title": "Hungarian Central Banker Touts Benefits of Joining Euro Area",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A declaração do banco central sugere que a Hungria está avançando em direção à adoção do euro, o que pode ter impacto positivo no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T15:10:48.333160-03:00"
+    },
+    {
+      "title": "Solar tariffs are major boost for First Solar, analysts say",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a empresa de energia solar First Solar.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:10:56.643143-03:00"
+    },
+    {
+      "title": "Jeff Bezos breaks his own Amazon record",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Venda recorde da Amazon pode impulsionar ações da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T15:11:07.948577-03:00"
     }
   ]
 }
