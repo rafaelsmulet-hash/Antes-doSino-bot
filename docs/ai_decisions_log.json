@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Blue Owl BDC Q2 Key Metrics: Activity subdued as refis 'grind to a halt'",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:56:49.169461-03:00"
-    },
-    {
-      "title": "Howmet Stock Pops After Earnings But Remains Inside Buy Zone",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:56:51.805189-03:00"
-    },
-    {
-      "title": "Meet the Low-Cost Vanguard ETF That Just Gained 11% Over 4 Days, Thanks to a Combined 33% Weighting in Nvidia, Microsoft, Micron, and Broadcom. Here's Why It's Still a Top Buy Now.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:56:54.536086-03:00"
-    },
-    {
-      "title": "I tried Burger King's upgraded Whopper, which the chain says is helping drive sales. I can see why.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:56:57.497730-03:00"
-    },
-    {
       "title": "Filhos herdam dívidas dos pais? Veja o que pode ser cobrado da herança",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T17:21:06.346263-03:00"
+    },
+    {
+      "title": "LongHorn's President Sold Darden Stock After a 9.5% Sales Jump. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A venda de ações do presidente sugere confiança no desempenho da empresa, mas o impacto é limitado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:25:40.071591-03:00"
+    },
+    {
+      "title": "A Darden Insider Cut His Direct Holdings. Here's How Long-Term Investors Should Read It",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações de um acionista individual não é considerada relevante para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:25:43.049882-03:00"
+    },
+    {
+      "title": "Why MercadoLibre Stock Jumped 11% in July",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque menciona a reação do mercado a uma informação financeira específica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T17:25:46.025776-03:00"
+    },
+    {
+      "title": "A $10,000 Investment in Taiwan Semiconductor Today Will Be Worth This Much by 2028",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a importância da TSMC, uma das principais fabricantes de chips do mundo, o que pode ter impacto positivo no mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:25:49.080892-03:00"
     }
   ]
 }
