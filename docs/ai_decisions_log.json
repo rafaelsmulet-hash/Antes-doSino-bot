@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The 10 college athletes with the highest NIL valuations",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:21:40.385678-03:00"
-    },
-    {
-      "title": "Doximity’s stock skyrockets 50% on medical AI excitement. Can the rally last?",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A noticia é relevante porque discute a performance da acao da Doximity e as perspectivas da empresa em relação a inteligencia artificial",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:25:39.098456-03:00"
-    },
-    {
-      "title": "Lassonde Industries Non-GAAP EPS of CAD $7.45, revenue of CAD $737.7M",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado pois fornece informações sobre os resultados financeiros da empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:25:42.505185-03:00"
-    },
-    {
       "title": "Clean energy fuels keeps $70M-$75M adjusted EBITDA outlook as 45Z could add up to $5M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T20:10:45.082254-03:00"
+    },
+    {
+      "title": "Com Cleitinho de volta ao páreo, veja como fica a disputa pelo governo de Minas",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:15:51.931031-03:00"
+    },
+    {
+      "title": "A família por trás da carbonara mais famosa de Roma que resiste à expansão global",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "não há relevância para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:16:06.027329-03:00"
+    },
+    {
+      "title": "goeasy Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Relevância para o mercado de ações devido à divulgação de resultados financeiros positivos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:16:09.402625-03:00"
     }
   ]
 }
