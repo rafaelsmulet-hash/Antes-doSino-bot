@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Analyst Report: Space Exploration Tech. Corp",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:41:52.617308-03:00"
-    },
-    {
-      "title": "Minério de ferro sobe pela 3ª sessão consecutiva devido a preocupações com oferta",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "greve pode afetar oferta, mas não é um evento de grande impacto",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:46:01.022413-03:00"
-    },
-    {
-      "title": "Rio mantém alerta para ventos fortes nesta sexta; rede municipal suspende aulas",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:46:03.796654-03:00"
-    },
-    {
       "title": "Por que as ações da PDF Solutions estão subindo hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T21:41:14.904178-03:00"
+    },
+    {
+      "title": "Jim Cramer Shares Key Reason Why Caterpillar Inc. (NYSE:CAT)’s Shares Are Higher Than Deere’s",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca uma razão específica e material para o desempenho das ações da Caterpillar Inc. em relação à Deere, o que é relevante para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:50:46.832905-03:00"
+    },
+    {
+      "title": "Jim Cramer Called Linde plc (NASDAQ:LIN)’s Share Price Movement “Stupid”",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:50:49.897393-03:00"
+    },
+    {
+      "title": "Jim Cramer Reveals How Alphabet Inc (NASDAQ:GOOGL) Can Reverse Recent Weakness",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque Jim Cramer é um investidor conhecido e sua opinião pode influenciar os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:50:52.814942-03:00"
     }
   ]
 }
