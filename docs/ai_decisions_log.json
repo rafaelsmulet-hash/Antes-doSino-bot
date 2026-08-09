@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A suspensão de dividendos e aumento de capital são medidas significativas que afetam a liquidez e a posição da empresa no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:55:45.228607-03:00"
-    },
-    {
-      "title": "Energisa (ENGI11) despenca 5% após balanço do 2T: o que decepcionou o mercado?",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:55:48.674880-03:00"
-    },
-    {
-      "title": "MGLU3: ações do Magalu desabam com resultados fracos, mas com atenção à rentabilidade",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:55:51.400423-03:00"
-    },
-    {
       "title": "Ações da Airbnb têm maior cotação em 4 anos, com aumento da previsão de receita",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T16:35:58.037767-03:00"
+    },
+    {
+      "title": "Jim Cramer Just Reminded Everyone About the Most Important Aspect of Investing in SpaceX",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o preço da ação da SpaceX",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T16:41:01.628200-03:00"
+    },
+    {
+      "title": "Arista Networks vs. Arm: Comparing Revenue Growth Trajectories for These Artificial Intelligence Companies",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia compara as trajetórias de crescimento de receita de duas empresas de inteligência artificial, o que é relevante para investidores e traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T16:41:04.625559-03:00"
+    },
+    {
+      "title": "Ibovespa cai 1,73% com Petrobras (PETR4), varejo e bancos sob pressão",
+      "source": "Suno Noticias",
+      "score": 8.0,
+      "motivo": "queda do Ibovespa e pressão em setores como varejo e bancos",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:41:11.846558-03:00"
     }
   ]
 }
