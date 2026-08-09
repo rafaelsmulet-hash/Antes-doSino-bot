@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Aura Power, Verdant merge to form UK solar-BESS IPP",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:11:38.624775-03:00"
-    },
-    {
-      "title": "Take-Two Sticks To Its Guns On Full-Year Outlook. TTWO Stock Rises On 'GTA 6' Preorders.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa manteve sua previsão, o que pode ser visto como uma indicação de confiança em sua capacidade de gerenciar a demanda.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:11:41.754847-03:00"
-    },
-    {
       "title": "Stock Market, IPO Leaders Rally To New Highs. Check This Screen Daily.",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T09:26:03.959792-03:00"
+    },
+    {
+      "title": "Puerto Rico Rations Water as Drought Deepens",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento de grande impacto imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:30:57.939997-03:00"
+    },
+    {
+      "title": "Polícia registrou 783 mil atendimentos especializados à mulher no Brasil em 2025",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:31:01.553869-03:00"
     }
   ]
 }
