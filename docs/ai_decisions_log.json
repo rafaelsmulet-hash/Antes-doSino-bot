@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Antipodes Exited Suzano (SUZ) as Pulp Oversupply Threatened Returns",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:02:53.914378-03:00"
-    },
-    {
-      "title": "Why Antipodes Trimmed Workday (WDAY) Despite Strong Cash Flow",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:02:56.536969-03:00"
-    },
-    {
       "title": "Cassidy supports Todd Blanche, rescuing Trump's embattled attorney general pick",
       "source": "CNBC - US News",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T12:40:40.933613-03:00"
+    },
+    {
+      "title": "Xangai cancela 1.300 voos devido à passagem do tufão Golfinho pela costa da China",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "evento climatico sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:45:34.448012-03:00"
+    },
+    {
+      "title": "Rocket Lab Is Down 57% From Its Peak While Analysts See 49% Upside. Who Has It Right?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a perspectiva otimista dos analistas sobre o futuro da Rocket Lab, o que é relevante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:45:44.958616-03:00"
     }
   ]
 }
