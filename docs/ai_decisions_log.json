@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fed's hawkish stance likely intact despite soft jobs data - strategist",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:11:13.106866-03:00"
-    },
-    {
-      "title": "SkinHealth Systems forecasts $280M-$290M revenue while preparing September 22 reverse split vote",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:11:15.786380-03:00"
-    },
-    {
-      "title": "Atkore outlines $95 per share Prysmian deal following $0.33 dividend approval",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:11:18.454082-03:00"
-    },
-    {
       "title": "NGEx Minerals Ltd. GAAP EPS of CAD -$0.09",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T18:50:59.992366-03:00"
+    },
+    {
+      "title": "Australian Wheat Crop Rebounds at Crucial Time for Global Supply",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois afeta a oferta global de trigo, um dos principais componentes da produção agrícola.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T18:55:47.087378-03:00"
+    },
+    {
+      "title": "Para 49% dos brasileiros, este é o principal atributo de um bom pai",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T18:55:52.607531-03:00"
+    },
+    {
+      "title": "‘Your Knowledge of Money and How It Works Is Nil’: Suze Orman to 62-Year-Old Who Nearly Locked His Wife Into $605 a Month",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral, pois trata de uma crítica pessoal de uma celebridade.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T18:56:03.826549-03:00"
     }
   ]
 }
