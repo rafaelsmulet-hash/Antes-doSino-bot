@@ -17,8 +17,9 @@ Escopo desta fase (nao expandir sem necessidade - ver combinado):
       main.py (recebidos por parametro).
     - Busca a cotacao atual via fetch_quote_fn (main.fetch_brapi_quote,
       tambem por parametro).
-    - Salva o registro em docs/decisoes_usuarios.json e confirma pro
-      usuario na mesma conversa.
+    - Salva o registro em decisoes_usuarios.json (raiz do repo, NUNCA
+      em docs/ - e dado privado por usuario, docs/ e a raiz publica do
+      GitHub Pages) e confirma pro usuario na mesma conversa.
     - FOLLOWUP_DIAS depois, busca o preco de novo e manda so o dado
       (sem julgamento nem opiniao) pro mesmo usuario.
 
@@ -50,8 +51,8 @@ BR_TZ = timezone(timedelta(hours=-3))
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 
-DECISOES_FILE = "docs/decisoes_usuarios.json"
-DIARIO_OFFSET_FILE = "docs/diario_telegram_offset.json"
+DECISOES_FILE = "decisoes_usuarios.json"
+DIARIO_OFFSET_FILE = "diario_telegram_offset.json"
 
 FOLLOWUP_DIAS = 7
 
