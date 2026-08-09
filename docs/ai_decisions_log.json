@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Celsius dispara 12% após fundador da Rockstar montar posição e pedir troca de CEO",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:56:03.779094-03:00"
-    },
-    {
-      "title": "Turquia - Ações fecharam o pregão em queda e o Índice BIST 100 recuou 0,14%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:56:06.429431-03:00"
-    },
-    {
-      "title": "Dinamarca - Ações fecharam o pregão em alta e o Índice OMX Copenhagen 20 avançou 1,97%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:56:09.087923-03:00"
-    },
-    {
       "title": "Como streaming e bets transformaram a Copa em um desafio para a Renner",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T16:46:04.450017-03:00"
+    },
+    {
+      "title": "Tornado atingiu cidade do Paraná no sábado, confirma sistema Simepar",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:50:43.993835-03:00"
+    },
+    {
+      "title": "UOL transmite tręs amistosos da seleçăo brasileira feminina de rugby",
+      "source": "UOL Economia",
+      "score": 0.0,
+      "motivo": "a noticia e sobre esporte e nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:50:56.137625-03:00"
+    },
+    {
+      "title": "Após enfrentar a Covid-19, Dimas Covas quer trazer uma fábrica de vacinas da Sinovac. Mas não será fácil",
+      "source": "Neofeed",
+      "score": 2.0,
+      "motivo": "noticia sobre investimento em vacinas, mas sem impacto imediato no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:51:02.079824-03:00"
     }
   ]
 }
