@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "O “efeito Copa” na Renner: vendas esfriam no trimestre e varejista reduz projeção de receita",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:51:11.703065-03:00"
-    },
-    {
       "title": "Mexico Arrests Ex-Governor Over 2014 Student Abduction Case",
       "source": "Bloomberg Markets",
       "score": 0.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:51:15.743863-03:00"
+    },
+    {
+      "title": "Why One Top Economist Says the Fed’s Inflation Fight Can’t Be Won With Rate Hikes",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta a estratégia da Fed em combater a inflação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:55:48.561429-03:00"
     }
   ]
 }
