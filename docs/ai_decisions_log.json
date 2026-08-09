@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SON Ex-Dividend Reminder - 8/10/26",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:36:56.554834-03:00"
-    },
-    {
-      "title": "Ex-Div Reminder for HF Sinclair (DINO)",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:36:59.191403-03:00"
-    },
-    {
-      "title": "Dow Movers: CVX, HONIV",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:01.812569-03:00"
-    },
-    {
-      "title": "Ryan Specialty Holdings About To Put More Money In Your Pocket (RYAN)",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:04.463223-03:00"
-    },
-    {
-      "title": "FB Financial About To Put More Money In Your Pocket (FBK)",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:07.133330-03:00"
-    },
-    {
       "title": "Why Lucid's &quot;Operational Reset&quot; Tanked the Stock This Week",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:10:45.414318-03:00"
+    },
+    {
+      "title": "Quina hoje, concurso 7087: confira o resultado sorteado neste domingo (9)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de concurso de loteria é irrelevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:15:40.457081-03:00"
+    },
+    {
+      "title": "Concurso 3042 da Mega-Sena: confira os números sorteados",
+      "source": "G1 Economia",
+      "score": 0.0,
+      "motivo": "notícia sobre sorteio de loteria",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:15:50.074506-03:00"
+    },
+    {
+      "title": "Greg Abel's First Big Deal as Berkshire CEO Was a $6.8 Billion Bet on Homebuilder Taylor Morrison, With Buffett Praising Abel's Execution",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O investimento de US$ 6,8 bilhões na Taylor Morrison é relevante e tem impacto concreto no mercado, pois demonstra a estratégia de investimento da Berkshire sob a liderança de Greg Abel.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:15:55.841581-03:00"
+    },
+    {
+      "title": "The Surprising Way Taking a Job in Retirement Could Cost You Social Security Benefits",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro imediato, mas pode influenciar as decisões de investimento a longo prazo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:15:58.769907-03:00"
+    },
+    {
+      "title": "Dear Home Depot Stock Fans, Mark Your Calendars for August 18",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A divulgação de resultados financeiros é relevante para os investidores da Home Depot.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:16:01.612140-03:00"
     }
   ]
 }
