@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "US rate futures cut chances of September rate hike after jobs data",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:26:04.781128-03:00"
-    },
-    {
-      "title": "56% of Workers Plan to Retire at 65 or Later. The Average American Is Out at 62, and Not by Choice.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:26:07.475754-03:00"
-    },
-    {
-      "title": "Fitch Sees Chile Budget as Key to Halting Rising Debt Burden",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a incerteza sobre a capacidade do Chile de equilibrar suas contas públicas, o que pode ter impacto na percepção de risco dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:30:49.925508-03:00"
-    },
-    {
-      "title": "Here are three key takeaways from the disappointing July jobs report",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia traz informações concretas sobre a economia dos EUA, afetando as expectativas de mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:30:53.883077-03:00"
-    },
-    {
-      "title": "Por que as ações da Arrow Electronics estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a queda das ações da Arrow Electronics é um sinal de desconfiança no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:30:58.878447-03:00"
-    },
-    {
-      "title": "Reino Unido - Ações fecharam o pregão em alta e o Índice Investing.com Reino Unido 100 avançou 0,24%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:01.605355-03:00"
-    },
-    {
-      "title": "Espanha - Ações fecharam o pregão em alta e o Índice IBEX 35 avançou 0,03%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:04.289390-03:00"
-    },
-    {
       "title": "Portugal - Ações fecharam o pregão em queda e o Índice PSI recuou 0,46%",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T20:35:51.602580-03:00"
+    },
+    {
+      "title": "“Você recebeu R$108 bi”, diz Haddad; Tarcísio acusa governo Lula de travar recursos",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia é sobre política e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:45:54.615524-03:00"
+    },
+    {
+      "title": "Adobe vs. Arista Networks: Which Technology Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a posição dominante do Adobe em software criativo e sua margem líquida alta, o que é relevante para investidores de ações de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:46:03.646481-03:00"
+    },
+    {
+      "title": "Japan Stock Market May Find Support On Monday.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia sugere que o mercado pode parar a perda, o que é um sinal positivo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T20:46:06.896301-03:00"
+    },
+    {
+      "title": "The Federal Reserve Just Released Its August Inflation Forecast, and It Could Put the FOMC on a Collision Course for Its September Meeting",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante pois trata de previsão de inflação, mas não é um evento inesperado ou impactante",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:46:09.898579-03:00"
+    },
+    {
+      "title": "Why QXO, Inc. Fell Over 20% in July",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A queda da ação é provavelmente devido à reação negativa dos investidores à aquisição",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:46:12.762142-03:00"
+    },
+    {
+      "title": "Watch: 'Privileged Idiot' DSA Co-Chair Has Absolute Porridge For Brains",
+      "source": "ZeroHedge",
+      "score": 1.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro, mas é uma crítica política que pode afetar a percepção pública sobre a DSA e suas políticas.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:46:21.214706-03:00"
+    },
+    {
+      "title": "Don Lemon Seeks Dismissal Of Federal Charges Over Minnesota Church Protest",
+      "source": "ZeroHedge",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:46:24.351826-03:00"
     }
   ]
 }
