@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ação do Fleury dispara mais de 14% após resultado acima do esperado; BTG eleva preço-alvo",
-      "source": "Investing.com Brasil",
-      "score": 7.0,
-      "motivo": "Resultado acima do esperado e aumento do preço-alvo da ação do Fleury",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:35:56.330299-03:00"
-    },
-    {
-      "title": "Produção de veículos no Brasil cresce 3% em julho ante junho, diz Anfavea",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:35:58.967087-03:00"
-    },
-    {
-      "title": "FLRY3: Fleury dispara 12% após lucro 46% acima: BBA mantém compra, XP fica neutro",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:01.620090-03:00"
-    },
-    {
       "title": "Negociação de opções da Ardelyx dispara enquanto ação cai 18%",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T10:51:03.660198-03:00"
+    },
+    {
+      "title": "Rússia - Ações fecharam o pregão em queda e o Índice MOEX Russia Index terminou sem alterações",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "queda das ações russas afeta o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:55:35.662175-03:00"
+    },
+    {
+      "title": "KLA Corporation Has Had a Rough Month: A Wall Street Pro Sees 70% Upside Because of It",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a possibilidade de aumento de ações da KLA Corporation, o que é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:55:43.730582-03:00"
+    },
+    {
+      "title": "Taiwan's war drills showcased a new strike drone class that Ukraine used to smash Russia this year",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:55:47.049615-03:00"
     }
   ]
 }
