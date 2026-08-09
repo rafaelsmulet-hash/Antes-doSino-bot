@@ -1,150 +1,101 @@
 {
-  "date": "2026-08-08",
-  "total_ingeridas": 46534,
-  "aprovadas_pelo_fluxo_atual": 146,
-  "descartadas_pelos_filtros_atuais": 46388,
-  "score_medio_materialidade": 3.28,
-  "seriam_breaking": 30,
-  "iriam_para_rodada": 266,
-  "seriam_descartadas_pelo_novo_sistema": 343,
-  "total_divergencias": 182,
+  "date": "2026-08-09",
+  "total_ingeridas": 248,
+  "aprovadas_pelo_fluxo_atual": 17,
+  "descartadas_pelos_filtros_atuais": 231,
+  "score_medio_materialidade": 2.47,
+  "seriam_breaking": 2,
+  "iriam_para_rodada": 12,
+  "seriam_descartadas_pelo_novo_sistema": 47,
+  "total_divergencias": 13,
   "divergencias": [
     {
-      "title": "Kyiv Struck as Ukraine Targets Two Russian Oil Refineries",
+      "title": "China’s Inflation Cools as Iran War Oil Shock Starts to Ease",
       "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "WuXi AppTec Gets Temporary Reprieve of Chinese Military Label",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "War Brings Winter of Discontent for the World’s Workhorse Fuel",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Situational Awareness’s Mystery Investment Was to Source Foundry",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Union Workers Strike at BHP’s Port Hedland Iron Ore Export Hub",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Melhor investimento de renda fixa entrega 1,47% em julho; pior rende 0,85%",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "BofA gasta US$ 250 mi por ano com GLP-1 para seus funcionários: “Grande impacto”",
-      "source": "InfoMoney",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Klesch se torna a segunda maior refinadora de petróleo da Alemanha após acordo com a BP",
+      "title": "5 grandes movimentos de analistas em IA: recuo nesta ação é uma \"oportunidade de compra ampliada\"",
       "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Tribunal de Delaware bloqueia saída da Verisk de acordo de US$ 2,35 bilhões",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Situational Awareness investe US$ 500 milhões em startup de chips",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Vaxart outlines Phase IIb COVID-19 top line data in first half of 2027 backed by BARDA funding",
-      "source": "Seeking Alpha",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Dan Ives Says We're in the &quot;3rd Inning&quot; of the AI Revolution. Is Nvidia Stock Still a Buy After the Pullback?",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "An Inflation Quadruple Whammy, Headlined by Trumpflation, Threatens to Crush the Stock Market",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "The AI Trade Rotation: Money Is Moving Out of Chips and Into This",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "If You've Saved This Much for Retirement by Age 70, You're Ahead of the Game",
-      "source": "Nasdaq",
-      "score": 4.0,
+      "title": "Retardatários europeus estão em recuperação — até onde podem ir?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "CEO Elon Musk Says This Is the Most Underappreciated Part of SpaceX's Business",
+      "title": "SpaceX Lost $2 Billion in the First Half of 2026. Micron Made $28 Billion in Profits in Its Latest Quarter. But the Better Stock Pick Isn't as Obvious as Those Numbers Suggest.",
       "source": "Nasdaq",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Here's How Many Shares of Coca-Cola You'd Need for $30,000 in Yearly Dividends. (Spoiler: It's a Lot.)",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "My 3 Favorite Value Stocks to Buy Right Now",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Stock Market Investors Just Got Bad News From the Federal Reserve",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Mais lojas, mais problemas? Entenda por que supermercados já não apostam tanto em lojas físicas",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Menos vacas, mais leite: como genética e bem-estar mais que dobraram a produção em 24 anos",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Por que a Alemanha quer mudar os 'minijobs', emprego parcial isento de imposto",
+      "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
       "title": "Alphabet Just Posted a Jaw-Dropping $112 Billion Profit. Here's the Catch.",
-      "source": "Nasdaq",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "I build AI data centers. I want them to disappear from view.",
+      "source": "Business Insider",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Produção pioneira no Brasil de ostra em lata tenta driblar instabilidades na maricultura e dar mais opções a turistas",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Salário-maternidade não é só para mães; veja quando o pai pode receber",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Humanos podem 'desligar' uma IA se ela fugir do controle?",
-      "source": "G1 Economia",
+      "title": "Welcome to the reinvention economy: Americans are pivoting careers, upskilling, and starting over",
+      "source": "Business Insider",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
