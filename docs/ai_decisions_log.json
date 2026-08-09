@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nova debandada de estrangeiros? O que faz Ibovespa cair 1,5% mesmo após dados dos EUA",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:20:53.259771-03:00"
-    },
-    {
-      "title": "Are target-date funds hurting Americans as they live longer?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:20:59.102594-03:00"
-    },
-    {
       "title": "QuidelOrtho forecasts $2.52B-$2.60B 2026 revenue amid China pricing uncertainty and withdraws free cash flow guidance",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T14:06:10.491086-03:00"
+    },
+    {
+      "title": "Maruti Suzuki sees India auto market reaching 6.3M vehicles by 2031",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A previsão de crescimento do mercado de veículos no Índia é relevante para a indústria automotiva e pode influenciar as ações das empresas de automóveis.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T14:10:46.802144-03:00"
+    },
+    {
+      "title": "Why Usana Health Sciences Stock Plummeted This Week",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Problemas financeiros e perda de confiança dos investidores afetam a ação da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:10:58.785694-03:00"
     }
   ]
 }
