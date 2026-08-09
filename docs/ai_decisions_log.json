@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Trump administration has spent nearly $4B to cancel offshore wind farms",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:25:59.052878-03:00"
-    },
-    {
-      "title": "Earnings live updates: The Trade Desk stock plummets on earnings miss, Oklo jumps on 'criticality' milestone",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:26:01.815907-03:00"
-    },
-    {
       "title": "US rate futures cut chances of September rate hike after jobs data",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T20:26:13.035262-03:00"
+    },
+    {
+      "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:35:42.773058-03:00"
+    },
+    {
+      "title": "Why QXO, Inc. Fell Over 20% in July",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não fornece informações concretas sobre o motivo da queda, tornando-a irrelevante para o mercado agora.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:35:51.602580-03:00"
     }
   ]
 }
