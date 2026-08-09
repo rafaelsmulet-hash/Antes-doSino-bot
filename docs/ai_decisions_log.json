@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "MarketAxess declares $0.78 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:46.485068-03:00"
-    },
-    {
-      "title": "Reminder - Visa (V) Goes Ex-Dividend Soon",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:36:51.273568-03:00"
-    },
-    {
-      "title": "Reminder - Healthcare Realty Trust (HR) Goes Ex-Dividend Soon",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:36:53.904779-03:00"
-    },
-    {
       "title": "SON Ex-Dividend Reminder - 8/10/26",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:06:47.078059-03:00"
+    },
+    {
+      "title": "Lotofácil hoje, concurso 3757: confira o resultado sorteado neste domingo (9)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de jogo de loteria",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:10:37.563977-03:00"
+    },
+    {
+      "title": "Por que Telma Shimizu esperou quase 20 anos para servir salmão no Aizomê",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:10:42.133962-03:00"
+    },
+    {
+      "title": "Société Générale sees dollar strength into year-end before longer-term retreat",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta as expectativas de taxas de juros e a valorização do dólar.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:10:45.414318-03:00"
     }
   ]
 }
