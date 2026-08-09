@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Veja como Bolsa reage ao balanço da Petrobras após empresa dobrar lucro",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:11:25.293575-03:00"
-    },
-    {
-      "title": "Na maior venda da história da Log, um efeito contábil pontual",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:11:30.351686-03:00"
-    },
-    {
-      "title": "SpaceX’s Terafab will rely on natural gas power plants, not Tesla solar panels",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:11:33.195336-03:00"
-    },
-    {
-      "title": "Stock Market Today: Dow Down After Surprise July Jobs Reading; AI Stock Cloudflare Soars (Live Coverage)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:11:35.987742-03:00"
-    },
-    {
       "title": "Aura Power, Verdant merge to form UK solar-BESS IPP",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T09:21:38.660734-03:00"
+    },
+    {
+      "title": "Tufão atinge costa da China e pode ampliar atrasos na exportação global",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia pode afetar a logística e os fretes, o que pode pressionar os preços de commodities como soja, minério e petróleo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:25:43.689611-03:00"
+    },
+    {
+      "title": "O que geração Z tem para ensinar sobre o mercado de luxo",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A noticia se refere a tendencias de consumo e nao a eventos financeiros especificos",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:25:46.627938-03:00"
+    },
+    {
+      "title": "Flores venenosas escondem compostos que podem dar origem a novos medicamentos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:25:49.441784-03:00"
+    },
+    {
+      "title": "He Bought a Rental House With His IRA and Fixed the Plumbing Himself. The Free Labor Put the Entire Account at Risk.",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral, mas pode ter implicações para o investidor individual.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:26:03.959792-03:00"
     }
   ]
 }
