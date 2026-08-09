@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nasdaq 100 Movers: STX, ABNB",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:02:16.650404-03:00"
-    },
-    {
-      "title": "S&P 500 Movers: TTD, ABNB",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:02:19.250908-03:00"
-    },
-    {
-      "title": "The Senate Just Delayed a Vote on the Clarity Act Until After Its August Recess -- The Odds of Passage Just Plummeted",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:02:21.910628-03:00"
-    },
-    {
-      "title": "Fabricante de chips SK Hynix anuncia US$ 38 bi em fábricas na Coreia do Sul",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:02:27.635670-03:00"
-    },
-    {
       "title": "Banco da Porto (PSSA3) tropeça no crédito, derruba as ações e reacende alerta; BTG vê oportunidade na queda",
       "source": "Seu Dinheiro",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T12:16:30.008040-03:00"
+    },
+    {
+      "title": "30 franquias a partir de R$ 7.490 para pais e filhos empreenderem juntos",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "notícia sobre franquias não é relevante para o mercado financeiro imediato",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:20:54.687652-03:00"
+    },
+    {
+      "title": "Why White House Sees Gasoline Prices Falling More",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente os preços dos combustíveis, que têm um impacto significativo na economia e nos preços dos produtos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:21:07.140196-03:00"
+    },
+    {
+      "title": "A SpaceX investor thought he had $300,000 in shares — then discovered his firm sold them without notice",
+      "source": "Yahoo Finance",
+      "score": 1.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral, apenas para um investidor específico.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:21:10.135739-03:00"
+    },
+    {
+      "title": "A Retired Couple Can Pull About $47,500 From Their IRAs This Year and Pay $0 Federal Tax. Most Leave the Free Space Unused.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca uma oportunidade financeira para os aposentados, que podem aproveitar para sacar recursos sem imposto, afetando potencialmente a economia e o mercado de investimentos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T12:21:13.440731-03:00"
     }
   ]
 }
