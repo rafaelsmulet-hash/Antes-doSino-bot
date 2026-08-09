@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "64-year-old luxury giant closes at least 217 stores, plans more",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:37:50.196146-03:00"
-    },
-    {
-      "title": "US stocks, bonds rally after soft jobs report; yen bounces back",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:52.827156-03:00"
-    },
-    {
-      "title": "Na Chipotle, quem pediu jalapeño levou Salmonella",
-      "source": "Brazil Journal",
-      "score": 2.0,
-      "motivo": "surto de Salmonella associado a produto da empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:40:59.993008-03:00"
-    },
-    {
-      "title": "Instaleap partners with Spar Slovenia for e-commerce fulfilment",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:41:15.695938-03:00"
-    },
-    {
-      "title": "Top Rare-Earths Stocks Poised to Ride the U.S. Reshoring Wave",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:41:18.346161-03:00"
-    },
-    {
       "title": "AMD buys chip startup that hardwires AI models into its silicon",
       "source": "CNBC - US News",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:30:54.528599-03:00"
+    },
+    {
+      "title": "Resultado da Mega-Sena hoje: concurso 3042 sorteia R$ 164,9 milhões",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "resultado de concurso de loteria é irrelevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:35:50.498988-03:00"
+    },
+    {
+      "title": "Why Vertiv Is 1 of the Best-Kept Secrets of the AI Data Center Boom",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a relevância da Vertiv para o mercado de centros de dados de IA, o que é atual e importante",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:35:55.425068-03:00"
+    },
+    {
+      "title": "Can You Ace This Simple Investing Quiz? Test Your Stock Market Knowledge.",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:35:58.373247-03:00"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks to Load Up On Before 2026 Ends",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca ações de dividendos altos, o que é relevante para investidores que buscam renda passiva.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T11:36:01.224028-03:00"
+    },
+    {
+      "title": "Top Economist Says the US Government Is 'So Big and Bloated' That Americans Pay More in Taxes Than Basic Necessities: 'Every Taxpayer Should Be Outraged...'",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é específica sobre um evento ou decisão atualmente relevante para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:36:10.715970-03:00"
     }
   ]
 }
