@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Clean energy fuels keeps $70M-$75M adjusted EBITDA outlook as 45Z could add up to $5M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:25:45.187028-03:00"
-    },
-    {
-      "title": "Importação de carros chineses dobra no Brasil enquanto exportações recuam 20,8%",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:25:51.334924-03:00"
-    },
-    {
-      "title": "Nova aposta da K-beauty para acabar com a ‘cara de Ozempic’ recorre a ingrediente controverso",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:25:54.881284-03:00"
-    },
-    {
       "title": "Trump administration has spent nearly $4B to cancel offshore wind farms",
       "source": "TechCrunch",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T20:16:09.402625-03:00"
+    },
+    {
+      "title": "Wall Street avança com payroll fraco; Nasdaq salta 5% e tem melhor semana desde abril",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "Fed menos agressivo na política monetária devido a dados de payroll fracos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:25:56.048239-03:00"
+    },
+    {
+      "title": "South Korea Shares May Snap Losing Streak",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é sobre o desempenho do mercado de ações, mas não é um evento significativo ou inesperado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:26:03.704307-03:00"
+    },
+    {
+      "title": "Airbnb just found an unexpected way to make AI pay",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a inovação da Airbnb em treinamento de AI, o que pode trazer benefícios significativos para a empresa e o mercado de aluguel de imóveis.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:26:13.035262-03:00"
     }
   ]
 }
