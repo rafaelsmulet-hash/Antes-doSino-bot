@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Is XRP a Millionaire-Maker Cryptocurrency?",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro em geral, mas sim sobre uma análise específica de uma criptomoeda.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:50:57.793171-03:00"
-    },
-    {
       "title": "What Does a Hilton Executive's Sale of Nearly 2,000 Shares Mean for Investors?",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T22:16:15.042583-03:00"
+    },
+    {
+      "title": "Judge blocks US decision to add WuXi to list of firms tied to Chinese military",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A decisão do juiz pode afetar as relações comerciais entre os EUA e a China, e pode ter impacto nas ações de empresas que operam em ambos os países.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T22:21:33.505707-03:00"
     }
   ]
 }
