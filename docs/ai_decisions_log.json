@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Xenetic Biosciences reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:46:32.579923-03:00"
-    },
-    {
-      "title": "Stock index futures muted as investors await July jobs report",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:46:35.175732-03:00"
-    },
-    {
-      "title": "Petrobras reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:46:37.761322-03:00"
-    },
-    {
-      "title": "Saques na poupança em julho superam os depósitos em R$ 7,152 bilhões",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Saques superando depósitos indica liquidez excessiva, o que pode pressionar taxas de juros a baixar",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:50:48.771480-03:00"
-    },
-    {
-      "title": "Alerta Severo: entenda alertas da Defesa Civil por risco de chuva e ventos no Rio",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:50:51.479765-03:00"
-    },
-    {
       "title": "Is XRP a Millionaire-Maker Cryptocurrency?",
       "source": "Nasdaq",
       "score": 0.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T22:01:21.502774-03:00"
+    },
+    {
+      "title": "Exclusive-Trump administration to back three mineral projects with $58 million in financing",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "O apoio a projetos de mineração pode impulsionar a economia e criar empregos, sendo relevante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T22:16:02.669179-03:00"
+    },
+    {
+      "title": "Three Banks Hit New Highs And Trade Near Buy Points",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia sugere que os bancos estão se recuperando e podem oferecer oportunidades de compra para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T22:16:05.631064-03:00"
+    },
+    {
+      "title": "A $38 Billion Reason to Buy SKHY Stock Today",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O plano de expansão da SKHY pode ter um impacto significativo no mercado e aumentar a confiança dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T22:16:08.536342-03:00"
+    },
+    {
+      "title": "Nat-Gas Prices Supported by Stronger US LNG Exports",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Relevância para o mercado de commodities e impacto potencial nas operações de gás natural",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T22:16:11.696926-03:00"
+    },
+    {
+      "title": "Uncertainty Over Reopening of Strait of Hormuz Lifts Crude Prices",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A incerteza sobre a reabertura do Estreito de Ormuz afeta diretamente a disponibilidade do petróleo no mercado internacional, o que pode influenciar os preços do crudo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T22:16:15.042583-03:00"
     }
   ]
 }
