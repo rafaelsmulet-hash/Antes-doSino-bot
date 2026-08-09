@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Microchip's data center-related revenue likely drives longer up-cycle: analysts",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:41:02.378748-03:00"
-    },
-    {
-      "title": "BRBI BR Partners S.A. GAAP EPS of R$0.11",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:41:04.991365-03:00"
-    },
-    {
-      "title": "Bimini Capital Management Q2 GAAP EPS of $0.04",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:41:07.604713-03:00"
-    },
-    {
-      "title": "Magazine Luiza (MGLU3) cansou de ficar de fora: a estratégia de Fred Trajano para voltar ao páreo nas vendas online",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:41:16.723338-03:00"
-    },
-    {
-      "title": "Price Prediction: Google Will Hit $400 on This Date",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:41:23.055394-03:00"
-    },
-    {
       "title": "NVIDIA (NVDA) Is Evolving Beyond GPUs Into a Full AI Infrastructure Platform",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T15:26:00.717121-03:00"
+    },
+    {
+      "title": "Pentágono pressiona indústria a ampliar produção de armamentos; estoques estão baixos",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política e defesa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:40:46.204971-03:00"
+    },
+    {
+      "title": "O retorno do protagonista: como o ouro voltou a dominar a trama das finanças globais",
+      "source": "Seu Dinheiro",
+      "score": 5.0,
+      "motivo": "Ouro acumulou um avanço significativo em cinco dias.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T15:41:00.359254-03:00"
+    },
+    {
+      "title": "IREN (IREN) vs. CORZ and APLD: Can Its AI Cloud Buildout Turn Contracted Demand Into Profits?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a estratégia de expansão da IREN, que pode ter impacto positivo nos resultados financeiros da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:41:05.703546-03:00"
+    },
+    {
+      "title": "Marvell (MRVL) vs. AVGO and NVDA: Can AI Interconnect Growth Deliver the Earnings Its Premium Valuation Demands?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia aborda a competitividade e o potencial de crescimento das empresas de tecnologia, o que é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T15:41:08.733186-03:00"
+    },
+    {
+      "title": "Max Miller stays in Ohio House race as GOP ballot deadline passes",
+      "source": "CNBC - US News",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:41:12.268191-03:00"
     }
   ]
 }
