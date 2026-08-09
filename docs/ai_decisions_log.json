@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Amazon, Alphabet and Uber Keep Showing Up in the Same Billionaire Portfolios",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:16:29.988600-03:00"
-    },
-    {
-      "title": "Bitcoin ETFs Attract $754 Million Of Capital",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:32.632164-03:00"
-    },
-    {
-      "title": "Michael Burry says he's shorting AI stars Oracle and Nebius",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:35.443845-03:00"
-    },
-    {
-      "title": "I've been visiting Hersheypark for over 30 years. Here are 12 things I do whenever I visit the Pennsylvania gem.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:38.069952-03:00"
-    },
-    {
-      "title": "SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:41.659413-03:00"
-    },
-    {
-      "title": "Gadget da OpenAI terá formato de rosquinha, peças móveis e vai custar acima de US$ 300",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:20:57.485850-03:00"
-    },
-    {
       "title": "Trump anuncia tarifa de 15% sobre insumo essencial para painéis solares",
       "source": "Exame",
       "score": 8.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T09:46:08.426976-03:00"
+    },
+    {
+      "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
+      "source": "WSJ Markets",
+      "score": 5.0,
+      "motivo": "Oferta hostil pode indicar interesse significativo na Beacon e potencialmente influenciar o preço das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:50:35.357006-03:00"
+    },
+    {
+      "title": "Cientistas descobrem reservatório 'monstro' de magma que estava 'oculto' sob a Toscana",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:50:40.501925-03:00"
+    },
+    {
+      "title": "Esses 3 hábitos na meia-idade podem adiar a demência em até 13 anos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:50:43.283296-03:00"
+    },
+    {
+      "title": "A jornada de 35 anos do acervo baiano que ergueu o maior “quilombo visual” do país",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:50:52.509817-03:00"
+    },
+    {
+      "title": "Bill Ackman’s $35 billion hedge fund has under 50 employees and all of them — from janitors to receptionists — own millions in company stock",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a alta participação de funcionários no capital da empresa, o que pode indicar confiança e compromisso com a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:50:55.692524-03:00"
+    },
+    {
+      "title": "Why Rescheduling Might Not Move Canopy Growth's Stock as Much as You Think",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para a empresa, mas não é um evento significativo para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:50:58.590201-03:00"
     }
   ]
 }
