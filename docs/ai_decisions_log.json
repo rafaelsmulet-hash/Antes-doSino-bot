@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "EasyJet é vendida por £ 5,7 bi e agita mercado de aéreas na europa",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "A venda da EasyJet pode impulsionar a competitividade no mercado de aéreas na Europa, potencialmente beneficiando outras empresas do setor.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:30:48.443275-03:00"
-    },
-    {
-      "title": "Fleury (FLRY3): ação dispara mais de 10% após resultados do 2T; o que animou tanto?",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "crescimento de receita acima do esperado e manutenção da disciplina operacional",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:30:54.849181-03:00"
-    },
-    {
-      "title": "Banco do Brasil pede para não participar de audiência sobre BRB",
-      "source": "Investing.com Brasil",
-      "score": 3.0,
-      "motivo": "a noticia pode indicar problemas internos no Banco do Brasil, afetando sua imagem e confianca no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:00.272635-03:00"
-    },
-    {
-      "title": "Juros futuros reduzem chances de alta pelo Fed em setembro após dados do mercado de trabalho",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:31:02.932857-03:00"
-    },
-    {
       "title": "Redes de pizza, hambúrguer e culinária japonesa fazem fusão para criar grupo de R$ 72 milhões",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T07:16:30.676855-03:00"
+    },
+    {
+      "title": "Takeover saga pushes The Telegraph to a loss",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a situação financeira da empresa The Telegraph, o que pode ter impacto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:21:21.422612-03:00"
+    },
+    {
+      "title": "fuboTV Q3 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados financeiros melhorados, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:21:24.323793-03:00"
+    },
+    {
+      "title": "Summerween is in full swing with candy brands leaning harder into the trend",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:21:27.525549-03:00"
+    },
+    {
+      "title": "An Ivy League whisperer shares her best advice for wealthy parents to get their kids into an elite college",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:21:30.574693-03:00"
     }
   ]
 }
