@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Redes de pizza, hambúrguer e culinária japonesa fazem fusão para criar grupo de R$ 72 milhões",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:07.032474-03:00"
-    },
-    {
-      "title": "Bath & Body Works declares $0.20 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:09.780197-03:00"
-    },
-    {
-      "title": "Petrus Resources reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:12.413368-03:00"
-    },
-    {
-      "title": "Jerash Holdings declares $0.05 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:15.041702-03:00"
-    },
-    {
-      "title": "PyroGenesis Canada reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:17.673743-03:00"
-    },
-    {
-      "title": "Ametek declares $0.34 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:20.291842-03:00"
-    },
-    {
       "title": "Naver reports Q2 results",
       "source": "Seeking Alpha",
       "score": 3.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T07:21:30.574693-03:00"
+    },
+    {
+      "title": "Here's the 1 Crypto I'd Buy If I Could Pick Only One",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não é específica sobre eventos atuais, mas discute a perspectiva de investimento em Bitcoin.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:25:45.033101-03:00"
+    },
+    {
+      "title": "4 Secrets of IRA Millionaires",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:25:47.938173-03:00"
+    },
+    {
+      "title": "There's a 58% Chance of a Fed Rate Hike in October. These Are Stocks to Buy Anyway.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia menciona a possibilidade de elevação da taxa de juros da Fed, o que pode afetar as ações, mas também destaca a resiliência de uma empresa específica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T07:25:50.911834-03:00"
+    },
+    {
+      "title": "Super Micro Computer Landed $60 Billion in Orders Last Quarter, but Trades at Just $30",
+      "source": "Nasdaq",
+      "score": 8.0,
+      "motivo": "O volume de pedidos de servidores de inteligência artificial é altamente relevante para o mercado de tecnologia e pode influenciar as ações da empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:25:54.056768-03:00"
+    },
+    {
+      "title": "Selic a 14% ainda deixa a renda fixa atraente? Entenda o que muda para cada investimento",
+      "source": "Suno Noticias",
+      "score": 6.0,
+      "motivo": "A redução da Selic pode atrair investidores para a renda fixa, mantendo a atração do investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:26:01.610873-03:00"
+    },
+    {
+      "title": "We saw Beta Technologies' autonomous aircraft for the battlefield. Meet the MV250.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:26:07.089531-03:00"
     }
   ]
 }
