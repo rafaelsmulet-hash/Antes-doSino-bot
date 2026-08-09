@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Notable ETF Inflow Detected - VONV, JNJ, WMT, IBM",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:26:12.339592-03:00"
-    },
-    {
-      "title": "VTEB: Large Inflows Detected at ETF",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:26:14.985205-03:00"
-    },
-    {
-      "title": "Trump diz que Congresso quer regulamentar setor de IA a ponto de inviabilizá-lo",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:26:19.051489-03:00"
-    },
-    {
-      "title": "Pior ação do Ibovespa hoje: o problema da Lojas Renner (LREN3), que tomba mais de 13% após balanço",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:26:22.198653-03:00"
-    },
-    {
-      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:26:27.131388-03:00"
-    },
-    {
-      "title": "CFTC Warns Prediction Markets Against American-Style Casino Odds",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado, mas não é um evento significativo ou inesperado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:31:00.508227-03:00"
-    },
-    {
-      "title": "Payroll surpreende para baixo e muda apostas sobre os juros nos EUA",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "Desaceleração do mercado de trabalho americano reforça expectativas de juros mais baixos nos EUA",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:31:09.817015-03:00"
-    },
-    {
-      "title": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações da Vale há 5 anos?",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A notícia destaca o desempenho positivo da Vale ao longo de 5 anos, o que pode inspirar confiança nos investidores e impulsionar a demanda por ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:31:12.762382-03:00"
-    },
-    {
-      "title": "NOG outlines $1.4B-$1.5B 2026 adjusted EBITDA outlook while lifting buyback capacity to $243M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:31:15.717525-03:00"
-    },
-    {
-      "title": "Red Rock Resorts is tipped by analysts to outperform casino peers",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:31:18.380230-03:00"
-    },
-    {
       "title": "Covista jumps on strong Q4 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T14:40:50.226451-03:00"
+    },
+    {
+      "title": "Empresário investigado por lavagem de dinheiro bancou cripto de Trump com US$ 100 mi",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "investigacao de lavagem de dinheiro e colapso de startup nao sao eventos relevantes para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:45:43.912936-03:00"
+    },
+    {
+      "title": "A Victory Capital Insider's Shares Vested as the Stock Climbed to Records. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações da Victory Capital Insider não é um evento significativo para o mercado, mas pode ter um impacto limitado na percepção da empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:45:52.299883-03:00"
+    },
+    {
+      "title": "1 Popular Cryptocurrency to Buy Before Its Next Massive Rally, According to 1 Wall Street Bull",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia sugere que a Ethereum pode estar prestes a uma grande recuperação, o que é relevante para o mercado de criptomoedas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T14:45:55.385098-03:00"
+    },
+    {
+      "title": "SharkNinja CEO Mark Barrocas Sells Nearly 600,000 Shares Worth Over $100 Million. Here's a Deeper Look at the Transaction.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A venda de ações do CEO pode ser interpretada como uma demonstração de confiança no valor da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:45:58.290224-03:00"
+    },
+    {
+      "title": "Victory Capital Hit a Stock-Price Target in Months. Here's What the CFO's Latest Insider Filing Shows",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A venda de ações é um sinal de confiança no desempenho da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:46:01.274814-03:00"
+    },
+    {
+      "title": "Why AdaptHealth Stock Plummeted This Week",
+      "source": "Nasdaq",
+      "score": 8.0,
+      "motivo": "Previsão de lucro muito abaixo do esperado e vendas abaixo das expectativas.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T14:46:07.564869-03:00"
+    },
+    {
+      "title": "Victory Capital's CEO Stock Vested Because Shares Hit a Target. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é sobre uma transação de ações de um executivo, mas não há informações sobre impacto direto no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:46:10.737699-03:00"
+    },
+    {
+      "title": "What to Know About Colgate-Palmolive Director John Cahill Selling 4,170 Shares for $389,353",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações por um diretor pode indicar uma perda de confiança no valor da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:46:13.943876-03:00"
+    },
+    {
+      "title": "Rivian Is Worth $23 Billion With the R2 Just Ramping. Where Will the Stock Be in 3 Years?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Aumento da previsão de entrega de veículos é um indicador positivo para a empresa e pode impactar positivamente o preço da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:46:16.977686-03:00"
+    },
+    {
+      "title": "Beware of Bad Investing Advice on Your Socials -- Like These 3 Money Myths",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sobre conselhos de investimento ruins nas redes sociais.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:46:19.801797-03:00"
     }
   ]
 }
