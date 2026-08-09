@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Hackers miram as donas de trilhões em Wall Street e atacam gestoras de private equity",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:26:28.492763-03:00"
-    },
-    {
-      "title": "Airbnb says AI is helping it ship features faster as it tests a new search function",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:26:31.226902-03:00"
-    },
-    {
       "title": "Tether Expands Tokenization To Saudi Arabia",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T10:15:52.909480-03:00"
+    },
+    {
+      "title": "Velório do pai de Messi é restrito a amigos e familiares na Argentina",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:20:54.086877-03:00"
+    },
+    {
+      "title": "O terceiro maior lucro da história: a combinação explosiva que incendiou a Petrobras (PETR4)",
+      "source": "Seu Dinheiro",
+      "score": 8.0,
+      "motivo": "Resultados financeiros excepcionais da Petrobras impactam positivamente o mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T10:21:06.964977-03:00"
     }
   ]
 }
