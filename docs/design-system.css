@@ -1,0 +1,199 @@
+/* =========================================================================
+   Antes do Sino - Design System (v2, inspirado na linguagem de design
+   da Apple: tipografia grande e confiante, espaco generoso, revelacao
+   suave ao rolar, navegacao minima) - fonte unica de tokens e
+   componentes compartilhados entre as paginas estaticas do site.
+
+   Mantem a identidade de cor ja estabelecida (navy + dourado) em vez
+   de adotar a paleta preto/branco/azul da Apple - a inspiracao aqui e
+   estrutural (tipografia, espaco, restricao, movimento), nao uma
+   copia da marca. Fonte do sistema (-apple-system e familia) no lugar
+   de SF Pro - a mesma fonte aparece em dispositivos Apple via
+   fallback do proprio SO, sem redistribuir nenhum arquivo de fonte.
+   ========================================================================= */
+
+:root{
+  /* ---------- Superficie ---------- */
+  --navy-deep: #050B16;
+  --navy: #0A1B34;
+  --navy-light: #12294C;
+  --surface-1: rgba(255,255,255,0.035);
+  --surface-2: rgba(255,255,255,0.06);
+  --line: rgba(230,183,110,0.14);
+  --line-strong: rgba(230,183,110,0.30);
+
+  /* ---------- Acento ---------- */
+  --gold: #E6B76E;
+  --gold-soft: #F2CE94;
+  --bronze: #B87F2E;
+  --shadow-gold: 0 8px 22px rgba(230,183,110,0.16);
+
+  /* ---------- Texto ---------- */
+  --cream: #F4EEE0;
+  --slate: #8593AC;
+  --slate-dim: #56658A;
+
+  /* ---------- Semantico ---------- */
+  --up: #3FB877;
+  --down: #E2574C;
+
+  /* ---------- Espacamento (escala de 4px) ---------- */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
+  --sp-9: 96px; --sp-10: 128px;
+
+  /* ---------- Raio ---------- */
+  --r-sm: 8px; --r-md: 12px; --r-lg: 18px; --r-xl: 28px; --r-pill: 100px;
+
+  /* ---------- Tipografia ---------- */
+  /* Pilha de fonte do sistema (nao SF Pro embutida - o proprio SO ja
+     resolve pra SF Pro em dispositivos Apple via -apple-system, sem
+     redistribuir nenhum arquivo de fonte de terceiros). Titulos
+     grandes, geometricos, tracking negativo - sem serifa, ao
+     contrario da versao anterior deste design system. */
+  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* ---------- Movimento ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background: radial-gradient(ellipse 120% 80% at 50% -10%, var(--navy-light), var(--navy) 45%, var(--navy-deep) 100%);
+  color:var(--cream);
+  font-family:var(--font-body);
+  min-height:100vh;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+.mono{font-family:var(--font-mono);}
+::selection{background:var(--gold);color:var(--navy-deep);}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition-duration:0.01ms !important;animation-duration:0.01ms !important;scroll-behavior:auto !important;}
+}
+
+/* Revelacao suave ao rolar (Apple usa muito esse padrao) - progressive
+   enhancement via IntersectionObserver (ver script no fim de cada
+   pagina); sem JS, o conteudo so fica visivel do jeito normal. */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+
+/* ---------- Navegacao ---------- */
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 6vw;
+  position:sticky;top:0;z-index:50;
+  backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(5,11,22,0.72);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:var(--sp-2);font-family:var(--font-display);font-weight:600;font-size:1.05rem;letter-spacing:-0.01em;}
+.brand svg{width:20px;height:20px;flex-shrink:0;color:var(--gold);}
+
+.sub-nav{
+  display:flex;justify-content:center;gap:var(--sp-6);flex-wrap:wrap;
+  padding:var(--sp-3) 6vw;background:rgba(0,0,0,0.18);
+  border-bottom:1px solid var(--line);
+}
+.nav-links{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:0.82rem;color:var(--slate);white-space:nowrap;
+  transition:color 0.2s ease;
+}
+.nav-links svg{width:15px;height:15px;flex-shrink:0;opacity:0.85;}
+.nav-links:hover{color:var(--cream);}
+.nav-links.active{color:var(--gold);font-weight:600;}
+.nav-links.active svg{opacity:1;}
+
+/* ---------- Botoes ---------- */
+.btn-primary, .nav-cta, .btn-vip{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  font-size:0.85rem;font-weight:600;padding:11px 24px;border-radius:var(--r-pill);
+  background:var(--gold);color:var(--navy-deep);white-space:nowrap;
+  border:1px solid transparent;
+  transition:transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), background 0.2s ease;
+}
+.btn-primary:hover, .nav-cta:hover, .btn-vip:hover{
+  transform:translateY(-1px) scale(1.02);box-shadow:var(--shadow-gold);background:var(--gold-soft);
+}
+.btn-primary:focus-visible, .nav-cta:focus-visible, .btn-vip:focus-visible{
+  outline:2px solid var(--gold);outline-offset:2px;
+}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:0.85rem;font-weight:600;padding:10px 22px;border-radius:var(--r-pill);
+  background:transparent;border:1px solid var(--line-strong);color:var(--cream);
+  transition:border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold-soft);background:rgba(230,183,110,0.06);}
+
+/* ---------- Banner secundario (oculto por padrao - grupo gratuito) ---------- */
+.vip-banner{
+  display:flex;align-items:center;justify-content:center;gap:var(--sp-4);flex-wrap:wrap;
+  text-align:center;
+  padding:var(--sp-3) 6vw;
+  background:linear-gradient(90deg, rgba(230,183,110,0.14), rgba(230,183,110,0.03));
+  border-bottom:1px solid var(--line);
+}
+.vip-banner p{font-size:0.92rem;color:var(--cream);}
+.vip-banner strong{color:var(--gold);}
+
+/* ---------- Hero: tipografia grande e confiante, estilo Apple ---------- */
+.hero{
+  padding:var(--sp-9) 6vw var(--sp-8);max-width:1100px;margin:0 auto;text-align:center;
+}
+.hero .kicker{
+  font-family:var(--font-mono);font-size:0.75rem;letter-spacing:2px;
+  color:var(--bronze);text-transform:uppercase;display:block;margin-bottom:var(--sp-5);
+}
+.hero h1{
+  font-family:var(--font-display);font-weight:700;
+  font-size:clamp(2.4rem, 6vw, 4.6rem);
+  letter-spacing:-0.03em;line-height:1.05;margin-bottom:var(--sp-5);text-wrap:balance;
+}
+.hero p{
+  color:var(--slate);font-size:clamp(1.05rem, 1.6vw, 1.3rem);line-height:1.55;
+  max-width:640px;margin:0 auto;text-wrap:pretty;
+}
+
+/* Cabecalho de secao mais compacto, usado dentro do corpo da pagina
+   (nao no hero) - mesma familia tipografica, escala menor. */
+.page-head{max-width:680px;margin-bottom:var(--sp-6);}
+.page-head .kicker{
+  font-family:var(--font-mono);font-size:0.72rem;letter-spacing:1.5px;
+  color:var(--bronze);text-transform:uppercase;display:block;margin-bottom:var(--sp-3);
+}
+.page-head h1, .page-head h2{
+  font-family:var(--font-display);font-weight:700;font-size:clamp(1.7rem,3.2vw,2.5rem);
+  letter-spacing:-0.02em;line-height:1.1;margin-bottom:var(--sp-3);text-wrap:balance;
+}
+.page-head p{color:var(--slate);font-size:1.02rem;line-height:1.6;}
+
+section{padding:var(--sp-8) 6vw;max-width:1200px;margin:0 auto;}
+
+.widget-frame{
+  background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-xl);
+  overflow:hidden;
+}
+
+footer{
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--sp-3);
+  padding:var(--sp-7) 6vw;border-top:1px solid var(--line);color:var(--slate-dim);font-size:0.82rem;
+}
+footer a{color:var(--gold);transition:color 0.2s ease;}
+footer a:hover{color:var(--gold-soft);}
+
+@media (max-width:768px){
+  nav{padding:14px 5vw;}
+  .brand{font-size:1rem;}
+  .sub-nav{gap:16px;padding:10px 5vw;}
+  .nav-links{font-size:0.78rem;}
+  .vip-banner{padding:12px 5vw;}
+  section{padding:var(--sp-7) 5vw;}
+  .hero{padding:var(--sp-8) 5vw var(--sp-6);}
+}
