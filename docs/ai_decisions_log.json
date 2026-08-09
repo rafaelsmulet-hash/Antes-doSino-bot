@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cinco ações disparam no pré-mercado impulsionadas por resultados trimestrais",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:51:00.759418-03:00"
-    },
-    {
-      "title": "Stephens e Benchmark rebaixam Papa John’s após resultado fraco no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:51:03.398493-03:00"
-    },
-    {
-      "title": "Bitcoin sobe após dado fraco de emprego dos EUA e avança 2,4% em 7 dias",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:51:06.600056-03:00"
-    },
-    {
-      "title": "goeasy reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:51:09.418731-03:00"
-    },
-    {
-      "title": "Saputo reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:51:12.035629-03:00"
-    },
-    {
-      "title": "Russel Metals reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:51:14.656570-03:00"
-    },
-    {
-      "title": "Cannabis passa a ter cultivo permitido no Brasil; tratamento de doenças crônicas pode ganhar impulso",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:51:21.882552-03:00"
-    },
-    {
-      "title": "Quais BDRs comprar em agosto? Veja o ranking das ações internacionais mais indicadas pelos analistas",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "ranking de BDRs recomendadas pelos analistas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:55:41.633097-03:00"
-    },
-    {
       "title": "Maxim Power GAAP EPS of -$0.05, revenue of $15.34M",
       "source": "Seeking Alpha",
       "score": 2.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:11:11.381389-03:00"
+    },
+    {
+      "title": "Starboard dá uma mordida no Shake Shack e diz que a empresa vale o dobro",
+      "source": "Brazil Journal",
+      "score": 6.0,
+      "motivo": "a participação da Starboard pode influenciar positivamente a estratégia da Shake Shack e impulsionar seu valor",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:15:42.772456-03:00"
+    },
+    {
+      "title": "Micron vs. Sandisk: Which Is the Better AI Memory Stock to Own for the Next 3 Years?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a competição entre as duas empresas, o que pode ter impacto nas decisões de investimento dos traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:15:53.830088-03:00"
+    },
+    {
+      "title": "Elon Musk issues red flag warning to group of SpaceX traders — but they keep doubling down. Are you making the same bet?",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque envolve a SpaceX, uma empresa de tecnologia e exploração espacial, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:15:56.721775-03:00"
+    },
+    {
+      "title": "Global Payments Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A empresa apresentou resultados financeiros estáveis, mas sem impacto significativo no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:15:59.639732-03:00"
+    },
+    {
+      "title": "The AI boom is creating jobs far from Silicon Valley: Chart of the Day",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia destaca a expansão da indústria de AI para outras regiões, o que pode ter impacto positivo nas economias locais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:16:02.563519-03:00"
+    },
+    {
+      "title": "The AI boom ripples into regional banks as lending picks up",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "Aumento nos empréstimos é um sinal de confiança no mercado e pode impulsionar a economia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:16:05.404068-03:00"
+    },
+    {
+      "title": "Robert Kiyosaki warned Americans who own 401(k)s that the US could be on the brink of ‘Great Depression.’ Prepare now",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A declaração de um investidor conhecido pode influenciar a percepção dos investidores sobre a estabilidade do mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:16:08.444900-03:00"
+    },
+    {
+      "title": "I went from wedding DJ to Meta engineer, then was laid off after 13 years. My last years there brought constant change.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:16:11.840321-03:00"
     }
   ]
 }
