@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dividendos dos FIIs: GARE11, HSML11 e VGHF11 realizam pagamentos hoje; veja valores",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "pagamento de dividendos rotineiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:15:37.744084-03:00"
-    },
-    {
       "title": "Por que o resultado da Petrobras foi bom, mas poderia ter sido ainda melhor?",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T19:01:28.869616-03:00"
+    },
+    {
+      "title": "Here are the major earnings before the open Monday",
+      "source": "Seeking Alpha",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre resultados de lucros de empresas",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:05:50.649504-03:00"
     }
   ]
 }
