@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Lucid's &quot;Operational Reset&quot; Tanked the Stock This Week",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:37:09.773723-03:00"
-    },
-    {
-      "title": "KKR About To Put More Money In Your Pocket (KKR)",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:12.402991-03:00"
-    },
-    {
-      "title": "Cash Dividend On The Way From Southern Copper (SCCO)",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:15.038207-03:00"
-    },
-    {
-      "title": "Edifício “mais valioso da Terra” segundo Elon Musk será construído pela SpaceX e Tesla em parceria bilionária",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:22.411063-03:00"
-    },
-    {
-      "title": "Por que as ações da Lojas Renner (LREN3) estão caindo mais de 12%? Entenda",
-      "source": "Suno Noticias",
-      "score": 8.0,
-      "motivo": "resultados abaixo das expectativas e corte do guidance de receita",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:30.025995-03:00"
-    },
-    {
-      "title": "A maratona para zerar a fila de 87 vetos e 32 MPs antes que a eleição paralise Brasília",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:33.988602-03:00"
-    },
-    {
       "title": "Host your own piece of Disrupt: Apply to run a Side Event at TechCrunch Disrupt 2026",
       "source": "TechCrunch",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:16:01.612140-03:00"
+    },
+    {
+      "title": "Em meio à crise diplomática com EUA, plano de Lula cita 31 vezes o termo soberania",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "noticia sobre crise diplomática, mas sem impacto imediato no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:20:42.876991-03:00"
+    },
+    {
+      "title": "Índice Nacional da Construção Civil acelera para 1,19% em junho",
+      "source": "IBGE",
+      "score": 6.0,
+      "motivo": "Aumento do índice da construção civil e dos custos de materiais e mão de obra indicam uma tendência positiva para a indústria de construção civil.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:20:46.818149-03:00"
+    },
+    {
+      "title": "He Paid Medicare’s $1,736 Hospital Deductible in January. After 60 Days at Home, He Owed It All Over Again.",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral, mas pode ter um impacto limitado em alguns setores de saúde.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:20:58.455895-03:00"
+    },
+    {
+      "title": "3 Ultra-High-Yield Dividend Stocks to Buy in August (1 Yields Over 13.5%)",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia lista ações específicas com dividendos altos, o que pode influenciar as decisões de investimento dos traders",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:21:01.353511-03:00"
+    },
+    {
+      "title": "Silicon Motion’s (SIMO) Next Chapter: Can Diversification Outrun the NAND Cycle?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a estratégia de diversificação da empresa, o que pode ser visto como positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:21:04.200808-03:00"
+    },
+    {
+      "title": "Dear Nebius Stock Fans, Mark Your Calendars for August 12",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia não menciona detalhes específicos sobre o evento, mas é uma informação relevante para os investidores da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:21:07.073098-03:00"
     }
   ]
 }
