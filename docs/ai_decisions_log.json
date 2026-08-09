@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Maxim Power GAAP EPS of -$0.05, revenue of $15.34M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas os resultados financeiros não são alarmantes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:55:45.616684-03:00"
-    },
-    {
-      "title": "Elanco granted FDA’s emergency nod for new world screwworm drug",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o setor agrícola, mas não parece ter um impacto direto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:55:48.506029-03:00"
-    },
-    {
-      "title": "Canadian Apartment Properties REIT reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:55:51.192335-03:00"
-    },
-    {
       "title": "Goldmoney reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:16:11.840321-03:00"
+    },
+    {
+      "title": "Índices de inflação do consumidor e produtor na China ficam abaixo do esperado",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "índices de inflação abaixo do esperado podem pressionar a economia chinesa e afetar o mercado global",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T08:21:03.926815-03:00"
+    },
+    {
+      "title": "AMD's Data Center Business Is Skyrocketing. The Stock Is Falling. Here's Why.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a percepção do mercado sobre a saúde financeira da AMD.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:21:15.315050-03:00"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "source": "Federal Reserve",
+      "score": 2.0,
+      "motivo": "A notícia é sobre uma declaração formal, mas não traz informações concretas sobre políticas monetárias.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:21:18.816847-03:00"
     }
   ]
 }
