@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Daily Dividend Report: CHE,ECL,MAR,PSA,EMN,TSN",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:16:02.026624-03:00"
-    },
-    {
       "title": "S&P 500 Analyst Moves: ABBV",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T19:20:51.469833-03:00"
+    },
+    {
+      "title": "Após desistência, apelo e veto público, Cleitinho volta à disputa pelo governo de MG",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:26:24.673837-03:00"
     }
   ]
 }
