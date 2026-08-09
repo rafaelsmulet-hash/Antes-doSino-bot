@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Replacement Cycle Anchors IRadimed Corp.’s (IRMD) Long Term Growth",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:26:49.759998-03:00"
-    },
-    {
       "title": "Multiple Headwinds Overshadow Hillman Solutions Corp.’s (HLMN) Strong Fundamentals",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T10:35:41.580108-03:00"
+    },
+    {
+      "title": "ONS revê acionamento de corte emergencial na geração de energia no Dia dos Pais",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "corte de geração de energia não foi necessário, portanto não há impacto significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:40:52.095642-03:00"
     }
   ]
 }
