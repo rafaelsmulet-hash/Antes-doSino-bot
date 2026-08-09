@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Arko Corp. declares $0.03 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:46:10.898949-03:00"
-    },
-    {
-      "title": "Kimbell Royalty Partners raises dividend by 14.6% to $0.47",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:46:13.517355-03:00"
-    },
-    {
-      "title": "Na mira das autoridades, antigo iate de Daniel Vorcaro (no qual ele nunca pisou) tem heliponto, cinema, academia, sauna e tem valor estimado em R$ 2 bilhões",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não há informações financeiras relevantes na notícia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:46:22.857566-03:00"
-    },
-    {
-      "title": "Worried about job security? Take these 5 steps now to protect your finances.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:46:29.253005-03:00"
-    },
-    {
       "title": "Wendy’s Withdraws Outlook, Slashes Dividend as Turnaround Struggles to Take Hold",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:41:30.397440-03:00"
+    },
+    {
+      "title": "Food Safety Fears Rattle Restaurants and Diners",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia afeta a demanda de restaurantes, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T11:45:56.577598-03:00"
+    },
+    {
+      "title": "Nagasaki lembra 81 anos da bomba atômica em meio a debate sobre armas nucleares",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:45:59.895484-03:00"
+    },
+    {
+      "title": "Israel Englander's Millennium Manages $240 Billion Across Thousands of Positions. Here's the Strategy Behind His Success.",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia não é surpreendente, mas oferece uma visão geral da estratégia de investimento do fundo de Millennium.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:46:15.000492-03:00"
+    },
+    {
+      "title": "Installed Building Products Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aumento nas receitas e lucros da empresa é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:46:18.168593-03:00"
     }
   ]
 }
