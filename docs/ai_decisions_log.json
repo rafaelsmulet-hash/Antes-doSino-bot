@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Eregli Demir ve Çelik Fabrikalari T.A.S. GAAP EPS of TRY 5.71, revenue of TRY 59.68B",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque fornece informações sobre os resultados financeiros da empresa, mas não é um evento inesperado ou de grande impacto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:41:34.963309-03:00"
-    },
-    {
       "title": "OKLO, HTO draw highest short interest in utilities sector; PCG and WTRG see lowest short interest",
       "source": "Seeking Alpha",
       "score": 3.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T21:31:01.362807-03:00"
+    },
+    {
+      "title": "Jim Cramer Didn’t Think Seagate Technology Holdings plc (NASDAQ:STX)’s Earnings Were Bad",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre os lucros da empresa, o que pode influenciar os preços das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:35:49.958059-03:00"
     }
   ]
 }
