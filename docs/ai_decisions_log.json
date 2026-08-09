@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SK Hynix anuncia investimento de US$ 38 bilhões em novas fábricas na Coreia do Sul",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Investimento em novas fábricas pode impulsionar crescimento da empresa e do setor de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:05:37.442531-03:00"
-    },
-    {
-      "title": "Entenda o acordo sobre o Estreito de Ormuz discutido por Irã, Omã e EUA",
-      "source": "Exame",
-      "score": 3.0,
-      "motivo": "A notícia não é sobre uma decisão específica ou evento de mercado, mas sim sobre as negociações em andamento.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:05:42.072976-03:00"
-    },
-    {
-      "title": "Essa IA criou o genoma de um vírus não encontrado na natureza pela 1ª vez — e ele funcionou",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:05:44.713400-03:00"
-    },
-    {
       "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:55:35.475402-03:00"
+    },
+    {
+      "title": "Houthis do Iêmen reivindicam ataque a instalações petrolíferas na Arábia Saudita",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "ataque a instalações petrolíferas não é um evento isolado e rotineiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:00:48.621778-03:00"
+    },
+    {
+      "title": "Como a Intel quer sair vencedora na próxima onda da IA, que será “10 vezes maior”",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A Intel busca se posicionar como líder na era da IA, o que pode impulsionar suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:00:51.484229-03:00"
+    },
+    {
+      "title": "How Scott Bessent used financial engineering to finance the $2 trillion deficit while leaving it untouched—and created a $1.45 trillion shortfall",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia revela uma estratégia financeira criativa usada pelo governo dos EUA para lidar com o déficit, o que pode ter implicações significativas para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:01:08.471364-03:00"
     }
   ]
 }
