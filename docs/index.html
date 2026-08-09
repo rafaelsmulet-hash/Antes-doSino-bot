@@ -84,6 +84,13 @@
   .term-main{display:flex;flex-direction:column;gap:10px;min-height:0;overflow-y:auto;}
   .term-sidebar{display:flex;flex-direction:column;gap:12px;min-height:0;}
 
+  /* panels-grid, picker-pair-row e sentiment-row sao <section> por
+     semantica, mas nao sao "secoes" de pagina de marketing - por isso
+     zeram padding/max-width/margin herdados da regra generica
+     section{} do design-system.css (senao cada um perdia ~130px de
+     altura util pra padding, espremendo os widgets quase a zero). */
+  .panels-grid, .picker-pair-row, .sentiment-row{padding:0;max-width:none;margin:0;}
+
   .panels-grid{
     display:grid;grid-template-columns:repeat(2, 1fr);grid-template-rows:repeat(2, 1fr);gap:10px;
     flex:1.6 1 0;min-height:0;
