@@ -13,6 +13,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Painel Quantitativo — Antes do Sino</title>
 <meta name="description" content="Screener quantitativo de ações do Brasil e dos EUA: preço, variação, volume relativo, RSI e outros indicadores técnicos em tempo real.">
+<script>
+  // Aplica o tema salvo ANTES do CSS carregar, pra nao piscar o tema
+  // errado por uma fracao de segundo (script sincrono de proposito).
+  (function(){try{var t=localStorage.getItem('antes-do-sino-tema');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();
+</script>
 <link rel="stylesheet" href="design-system.css">
 <style>
   .screener-section{margin-bottom:var(--sp-8);}
@@ -37,7 +42,13 @@
     <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v2M8.5 20a3.5 3.5 0 0 0 7 0M5 17h14l-1.4-2.1A7 7 0 0 1 16.5 11V9a4.5 4.5 0 0 0-9 0v2a7 7 0 0 1-1.1 3.9L5 17Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     Antes do Sino
   </div>
-  <a href="https://t.me/+TobMzw-WnQhmZmIx" class="nav-cta">Entrar no grupo grátis</a>
+  <div class="nav-right">
+    <button class="theme-toggle" id="theme-toggle" type="button" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <a href="https://t.me/+TobMzw-WnQhmZmIx" class="nav-cta">Entrar no grupo grátis</a>
+  </div>
 </nav>
 <div class="sub-nav">
   <a href="index.html" class="nav-links">
@@ -153,6 +164,7 @@
     document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in-view'); });
   }
 </script>
+<script src="theme.js"></script>
 
 </body>
 </html>

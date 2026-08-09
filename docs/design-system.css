@@ -13,12 +13,14 @@
    ========================================================================= */
 
 :root{
-  /* ---------- Superficie ---------- */
+  /* ---------- Superficie (tema escuro - padrao do produto) ---------- */
   --navy-deep: #050B16;
   --navy: #0A1B34;
   --navy-light: #12294C;
   --surface-1: rgba(255,255,255,0.035);
   --surface-2: rgba(255,255,255,0.06);
+  --subnav-bg: rgba(0,0,0,0.18);
+  --backdrop: rgba(0,0,0,0.5);
   --line: rgba(230,183,110,0.14);
   --line-strong: rgba(230,183,110,0.30);
 
@@ -59,6 +61,36 @@
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Tema claro - so ativa quando o usuario escolhe explicitamente pelo
+   botao de tema (ver theme.js); nao segue prefers-color-scheme
+   automaticamente, pra manter a identidade escura como o padrao
+   sempre previsivel do produto. Mesmos nomes de token, valores
+   diferentes - todo o resto do CSS ja usa var(...), entao troca de
+   tema sem precisar duplicar nenhuma regra de componente. */
+:root[data-theme="light"]{
+  --navy-deep: #EFE7D6;
+  --navy: #F8F2E4;
+  --navy-light: #FFFDF8;
+  --surface-1: rgba(15,25,45,0.035);
+  --surface-2: rgba(15,25,45,0.06);
+  --subnav-bg: rgba(15,25,45,0.05);
+  --backdrop: rgba(30,25,15,0.35);
+  --line: rgba(140,94,23,0.18);
+  --line-strong: rgba(140,94,23,0.34);
+
+  --gold: #9C6A21;
+  --gold-soft: #7E551A;
+  --bronze: #8C5E17;
+  --shadow-gold: 0 8px 22px rgba(156,106,33,0.18);
+
+  --cream: #1B2338;
+  --slate: #52607A;
+  --slate-dim: #7C89A3;
+
+  --up: #1F8F52;
+  --down: #C13B30;
+}
+
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
@@ -86,20 +118,36 @@ a{color:inherit;text-decoration:none;}
 /* ---------- Navegacao ---------- */
 nav{
   display:flex;align-items:center;justify-content:space-between;
+  gap:var(--sp-4);
   padding:18px 6vw;
   position:sticky;top:0;z-index:50;
   backdrop-filter: blur(20px) saturate(180%);
-  background: rgba(5,11,22,0.72);
+  background: color-mix(in srgb, var(--navy-deep) 72%, transparent);
   border-bottom:1px solid var(--line);
 }
 .brand{display:flex;align-items:center;gap:var(--sp-2);font-family:var(--font-display);font-weight:600;font-size:1.05rem;letter-spacing:-0.01em;}
 .brand svg{width:20px;height:20px;flex-shrink:0;color:var(--gold);}
+.nav-right{display:flex;align-items:center;gap:var(--sp-3);}
 
 .sub-nav{
   display:flex;justify-content:center;gap:var(--sp-6);flex-wrap:wrap;
-  padding:var(--sp-3) 6vw;background:rgba(0,0,0,0.18);
+  padding:var(--sp-3) 6vw;background:var(--subnav-bg);
   border-bottom:1px solid var(--line);
 }
+
+/* ---------- Alternador de tema (claro/escuro) ---------- */
+.theme-toggle{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:50%;flex-shrink:0;
+  background:var(--surface-1);border:1px solid var(--line-strong);color:var(--slate);
+  cursor:pointer;transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.theme-toggle:hover{color:var(--gold);border-color:var(--gold);}
+.theme-toggle svg{width:17px;height:17px;flex-shrink:0;}
+.theme-toggle .icon-moon{display:block;}
+.theme-toggle .icon-sun{display:none;}
+:root[data-theme="light"] .theme-toggle .icon-moon{display:none;}
+:root[data-theme="light"] .theme-toggle .icon-sun{display:block;}
 .nav-links{
   display:inline-flex;align-items:center;gap:7px;
   font-size:0.82rem;color:var(--slate);white-space:nowrap;
