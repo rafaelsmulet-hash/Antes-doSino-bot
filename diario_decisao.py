@@ -47,9 +47,26 @@ from datetime import datetime, timezone, timedelta
 
 import requests
 
+try:
+    from cryptography.fernet import Fernet, InvalidToken
+except ImportError:  # cryptography ausente nunca pode derrubar o pipeline principal
+    Fernet = None
+    InvalidToken = Exception
+
 BR_TZ = timezone(timedelta(hours=-3))
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+
+# O repositorio e publico (GitHub Pages gratuito exige isso) - qualquer
+# arquivo commitado, mesmo fora de docs/, e legivel por qualquer um via
+# raw.githubusercontent.com ou "git clone", independente do que o
+# GitHub Pages serve como site. decisoes_usuarios.json guarda chat_id +
+# decisao financeira por usuario (dado sensivel de verdade), entao e
+# sempre gravado criptografado com Fernet (AES simetrico) usando a
+# chave em DECISOES_ENCRYPTION_KEY (secret do GitHub Actions) - nunca
+# em texto puro. diario_telegram_offset.json e so um numero de offset
+# interno do polling, sem dado de usuario, continua em texto puro.
+DECISOES_ENCRYPTION_KEY = os.environ.get("DECISOES_ENCRYPTION_KEY", "")
 
 DECISOES_FILE = "decisoes_usuarios.json"
 DIARIO_OFFSET_FILE = "diario_telegram_offset.json"
@@ -62,8 +79,15 @@ VERBO_PASSADO = {"compra": "comprou", "venda": "vendeu"}
 # ---------------------------------------------------------------------------
 # Estado - mesmo padrao load/save com tratamento de erro usado no
 # resto do projeto (nunca quebra se o arquivo nao existir ou estiver
-# corrompido, so volta pro default).
+# corrompido, so volta pro default). _makedirs_seguro tolera caminho
+# sem diretorio (arquivo direto na raiz do repo, como os deste modulo).
 # ---------------------------------------------------------------------------
+
+def _makedirs_seguro(caminho):
+    pasta = os.path.dirname(caminho)
+    if pasta:
+        os.makedirs(pasta, exist_ok=True)
+
 
 def _load_json_seguro(caminho, default):
     if os.path.exists(caminho):
@@ -76,17 +100,63 @@ def _load_json_seguro(caminho, default):
 
 
 def _save_json(caminho, dado):
-    os.makedirs(os.path.dirname(caminho), exist_ok=True)
+    _makedirs_seguro(caminho)
     with open(caminho, "w", encoding="utf-8") as f:
         json.dump(dado, f, ensure_ascii=False, indent=2)
 
 
+def _fernet():
+    if not Fernet or not DECISOES_ENCRYPTION_KEY:
+        return None
+    try:
+        return Fernet(DECISOES_ENCRYPTION_KEY.encode("utf-8"))
+    except Exception:
+        return None
+
+
 def load_decisoes():
-    return _load_json_seguro(DECISOES_FILE, {"decisoes": []})
+    if not os.path.exists(DECISOES_FILE):
+        return {"decisoes": []}
+    try:
+        with open(DECISOES_FILE, "rb") as f:
+            bruto = f.read()
+    except Exception:
+        return {"decisoes": []}
+    if not bruto:
+        return {"decisoes": []}
+
+    fernet = _fernet()
+    if fernet:
+        try:
+            bruto = fernet.decrypt(bruto)
+        except InvalidToken:
+            # Compatibilidade com um arquivo antigo salvo em texto puro
+            # (antes da criptografia) - deixa cair pro parse JSON direto
+            # abaixo pra nao perder o registro na migracao; a proxima
+            # gravacao ja sai criptografado.
+            pass
+        except Exception:
+            return {"decisoes": []}
+
+    try:
+        return json.loads(bruto.decode("utf-8"))
+    except Exception:
+        return {"decisoes": []}
 
 
 def save_decisoes(state):
-    _save_json(DECISOES_FILE, state)
+    fernet = _fernet()
+    if not fernet:
+        print(
+            "AVISO: DECISOES_ENCRYPTION_KEY nao configurada - "
+            + DECISOES_FILE + " NAO foi salvo (evita gravar dado sensivel "
+            "de usuario em texto puro num repositorio publico)."
+        )
+        return
+    _makedirs_seguro(DECISOES_FILE)
+    payload = json.dumps(state, ensure_ascii=False).encode("utf-8")
+    with open(DECISOES_FILE, "wb") as f:
+        f.write(fernet.encrypt(payload))
 
 
 def load_offset():
