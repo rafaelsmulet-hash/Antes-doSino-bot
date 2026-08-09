@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "What Is Nasdaq Texas? A Regional Commitment and Dedicated Venue for the Lone Star State",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:01:24.426954-03:00"
-    },
-    {
-      "title": "NuScale Power Stock Could Triple by 2030. Here's Why.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:01:27.042462-03:00"
-    },
-    {
-      "title": "Newmark CEO Barry Gosin To Step Down By December End",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:01:29.675060-03:00"
-    },
-    {
-      "title": "Kestrel Group Q2 Slips To Loss From Higher Expenses",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:01:32.269365-03:00"
-    },
-    {
       "title": "4 Discounted Dividends Paying Up to 12.6%",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:36:02.370342-03:00"
+    },
+    {
+      "title": "Europe is blowing up riverbeds as an extreme drought wreaks havoc on its economy",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A seca está afetando a energia e as cadeias de suprimentos, o que pode ter impacto significativo na economia europeia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:40:43.436047-03:00"
+    },
+    {
+      "title": "'Produtor vai ter que se reinventar', diz diretor do Sicredi sobre novo ciclo do agro",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A notícia indica que a cooperativa continuará a financiar o agro, o que é positivo para a economia e os negócios relacionados ao setor",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:40:50.241647-03:00"
+    },
+    {
+      "title": "Why Widows With $1.6 Million 401(k)s Face Thousands in Unexpected Taxes on Lower Income",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia aborda um impacto direto nas finanças pessoais de investidores, influenciando suas decisões de investimento e planejamento fiscal.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:41:01.514906-03:00"
+    },
+    {
+      "title": "How a small Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
+      "source": "CNBC - US News",
+      "score": 0.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:41:05.189086-03:00"
     }
   ]
 }
