@@ -1711,6 +1711,7 @@ def build_weekly_summary_html(archive):
         "<a href='calendario.html'>Calendário</a>"
         "<a href='mapa.html'>Mapa de Calor</a>"
         "<a href='quant.html'>Quant</a>"
+        "<a href='diario.html'>Diário de Decisão</a>"
         "<a href='sobre.html'>Sobre</a>"
         "</div>"
         "</footer>"
