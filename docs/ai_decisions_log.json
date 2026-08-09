@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Tax-free weekends start in Texas, Florida and several other states today. Here’s what to know.",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:18.891515-03:00"
-    },
-    {
-      "title": "Nephros GAAP EPS of $0.11, revenue of $6.01M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:21.541590-03:00"
-    },
-    {
-      "title": "Consumers' medium- and long-term inflation expectations appear anchored: NY Fed",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:11:24.190504-03:00"
-    },
-    {
-      "title": "Simon Property Q2 earnings in 3 days: Higher FFO expected; what else to watch?",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:11:26.827041-03:00"
-    },
-    {
       "title": "Gold, silver miners stay on Hold rating despite precious metals rally",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T13:36:06.658693-03:00"
+    },
+    {
+      "title": "Colúmbia Britânica declara emergência enquanto mais de 20 mil fogem de incêndios",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "incêndio em floresta não afeta diretamente o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:40:33.765975-03:00"
+    },
+    {
+      "title": "Ibovespa cai 1,73% com Petrobras (PETR4), varejo e bancos sob pressão",
+      "source": "Suno Noticias",
+      "score": 8.0,
+      "motivo": "queda do Ibovespa e pressão em setores como Petrobras, varejo e bancos",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:40:46.211256-03:00"
+    },
+    {
+      "title": "A Magnite Insider Cashed In Options as CTV Revenue Jumped 36%. Here's What to Know",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque apresenta um aumento na receita de TV por assinatura, o que pode ter um impacto positivo no mercado de ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:40:51.212955-03:00"
+    },
+    {
+      "title": "Here's How Saving $15 Per Day Could Create a Portfolio Worth $1 Million in 30 Years",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para investidores individuais, mas não tem impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:40:54.104834-03:00"
     }
   ]
 }
