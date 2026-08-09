@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Most and least shorted utilities stocks with market caps up to $2B as of end-July",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:36:29.969414-03:00"
-    },
-    {
-      "title": "Wayfair found growth where the housing market is weakest",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:36:40.790014-03:00"
-    },
-    {
       "title": "Analyst Report: United Parcel Service Inc",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T21:21:03.345299-03:00"
+    },
+    {
+      "title": "Texas moratorium on data centers puts 20% of U.S. pipeline at risk of delay - Bloomberg NEF",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia afeta diretamente a infraestrutura de energia renovável nos EUA, o que pode ter impacto significativo no mercado de energia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:25:43.281669-03:00"
+    },
+    {
+      "title": "Twilio Stock Surges 31% On Earnings Beat As AI Tools Gain Traction",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A superação das expectativas de lucro e a tendência de crescimento das ferramentas de IA são fatores relevantes para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:25:53.971105-03:00"
     }
   ]
 }
