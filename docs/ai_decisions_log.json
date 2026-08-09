@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "4 Discounted Dividends Paying Up to 12.6%",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:01:34.898850-03:00"
-    },
-    {
-      "title": "COWAY Earnings Up In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:01:37.510602-03:00"
-    },
-    {
       "title": "Calumet Net Loss Narrows In Q2",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:41:05.189086-03:00"
+    },
+    {
+      "title": "Volatilidade no setor de tecnologia atinge níveis da era dot-com, diz UBS",
+      "source": "Investing.com Brasil",
+      "score": 7.0,
+      "motivo": "A alta volatilidade no setor de tecnologia é considerada um sinal de alerta para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:45:36.285936-03:00"
+    },
+    {
+      "title": "Forget the Artificial Intelligence (AI) Capex Bubble: SpaceX CEO Elon Musk Says the Memory Shortage Will Drive Costs Even Higher",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A declaração de Elon Musk sobre a escassez de memória e seus impactos nos custos da SpaceX é relevante e pode ter um impacto concreto no mercado de tecnologia e inteligência artificial.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:45:45.974567-03:00"
     }
   ]
 }
