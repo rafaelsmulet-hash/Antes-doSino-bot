@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "U.S. equities advanced after a weaker than forecasted payrolls report",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:12.935409-03:00"
-    },
-    {
-      "title": "ResMed drops despite quarterly beats",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:15.528368-03:00"
-    },
-    {
-      "title": "Bayer granted court delay to September for Roundup settlement hearing",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:18.139537-03:00"
-    },
-    {
-      "title": "Clive Owen bolsters consulting services with new hire",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:16:27.369055-03:00"
-    },
-    {
       "title": "Why Amazon, Alphabet and Uber Keep Showing Up in the Same Billionaire Portfolios",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T09:41:25.902706-03:00"
+    },
+    {
+      "title": "Europe Looks Up for First Total Eclipse Since 1999",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:45:57.140263-03:00"
+    },
+    {
+      "title": "Bank of America spends $250 million a year on GLP-1 drugs for its employees, CEO says",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A notícia pode indicar uma tendência de aumento nos custos de saúde dos funcionários, o que pode afetar a lucratividade das empresas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:46:00.194086-03:00"
+    },
+    {
+      "title": "Acessos portuários pressionam custos e minam a competitividade do agronegócio",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A noticia se refere a um setor especifico do agronegocio e nao tem impacto direto no mercado financeiro em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:46:03.358130-03:00"
+    },
+    {
+      "title": "Barrick Mining faces investor backlash over plan to spin off prized gold assets",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta a estratégia de negócios da Barrick Mining, uma das maiores mineradoras de ouro do mundo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:46:08.426976-03:00"
     }
   ]
 }
