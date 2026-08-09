@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "PPL Reaffirms FY26 Outlook - Update",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:41:12.619292-03:00"
-    },
-    {
-      "title": "Circle’s USDC volume jumps 151%, but revenue tells different story",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:41:19.718058-03:00"
-    },
-    {
-      "title": "Odds the Fed will hike in September tumble following big July jobs miss",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A notícia afeta diretamente a política monetária do Fed e a possibilidade de aumentos de juros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:45:53.784203-03:00"
-    },
-    {
-      "title": "NFI Non-GAAP EPS of $0.23",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque fornece informações sobre os resultados financeiros da NFI, que pode influenciar as expectativas dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:46:00.126800-03:00"
-    },
-    {
-      "title": "Revelation Biosciences GAAP EPS of -$0.87",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:46:02.776795-03:00"
-    },
-    {
-      "title": "Oculis Holding reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:46:05.425150-03:00"
-    },
-    {
-      "title": "Confira os FIIs que vão pagar dividendos nesta sexta-feira (7)",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:46:14.592968-03:00"
-    },
-    {
       "title": "BlackRock's Rieder Sees 'Productivity Revolution' in US",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:01:08.619134-03:00"
+    },
+    {
+      "title": "Filho de Joe Biden confirma que câncer do ex-presidente dos EUA se espalhou",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia e sobre saúde do ex-presidente e nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:06:01.782147-03:00"
+    },
+    {
+      "title": "‘Eu não idolatro meu pai, eu o admiro’: as lições de Louise Barsi",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:06:06.306642-03:00"
+    },
+    {
+      "title": "Por fundão e orçamento, Centrão prioriza Congresso em vez do Planalto, diz cientista política",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia não está relacionada a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:06:09.070863-03:00"
+    },
+    {
+      "title": "Desafio do free flow é educar motoristas sobre novo modelo, diz CEO da Pedágio Digital",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre setor de infraestrutura, mas não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:06:11.895785-03:00"
+    },
+    {
+      "title": "Ceuta e Fnideq: duas cidades com histórias e destinos entrelaçados",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:06:14.649011-03:00"
+    },
+    {
+      "title": "O preço de viver mais: mundo passa quase 11 anos com doenças ou incapacidades",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:06:17.412868-03:00"
+    },
+    {
+      "title": "Agendar reunião ficou mais fácil: como usar IA, links de agenda e fuso horário a seu favor",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:06:20.196020-03:00"
     }
   ]
 }
