@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "NVIDIA (NVDA) Is Evolving Beyond GPUs Into a Full AI Infrastructure Platform",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:41:25.686444-03:00"
-    },
-    {
-      "title": "FAA Orders Inspection Of Boeing Jets. Wall Street Eyes Break From Resistance Level.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:41:28.357921-03:00"
-    },
-    {
-      "title": "Cloudflare (NET) Jumps on AI Demand as CrowdStrike (CRWD) Sets a High Bar",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:41:31.001811-03:00"
-    },
-    {
       "title": "Could Taiwan Semiconductor Manufacturing (TSM) Be the Most Critical Bottleneck in the AI Chip Boom?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T15:41:12.268191-03:00"
+    },
+    {
+      "title": "Nunes Marques, do TSE diz que desacreditar as urnas é desconvidar o eleitor",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:50:51.264258-03:00"
+    },
+    {
+      "title": "Por que Jannik Sinner está fora do Masters 1000 de Cincinnati",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia sobre esporte e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:50:56.320118-03:00"
+    },
+    {
+      "title": "TotalPass premia empresas e expõe desafio de transformar bem-estar em estratégia",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre prêmio e bem-estar.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:50:59.151038-03:00"
     }
   ]
 }
