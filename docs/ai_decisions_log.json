@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:05:47.631868-03:00"
-    },
-    {
-      "title": "Network-1 Technologies GAAP EPS of -$0.03",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:05:50.291114-03:00"
-    },
-    {
       "title": "Here are the major earnings after the close Friday",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T09:01:08.471364-03:00"
+    },
+    {
+      "title": "Aprenda a fazer apresentações em minutos: a IA monta a estrutura e você só ajusta",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:05:37.258856-03:00"
+    },
+    {
+      "title": "Além do combustível: a aposta da Vibra em dados, IA e 20 milhões de fidelizados",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia destaca a estratégia de inovação da Vibra, incluindo a inteligência de micromercado e a transição energética, o que pode ter um impacto positivo no desempenho da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:05:40.167852-03:00"
     }
   ]
 }
