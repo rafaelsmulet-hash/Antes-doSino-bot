@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "O que diz a lei de Milei que levou milhares às ruas na Argentina",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "noticia sobre política e lei, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:40:42.288115-03:00"
-    },
-    {
-      "title": "Exclusivo: São Paulo sediará encontro global de cidades inteligentes",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:40:45.237022-03:00"
-    },
-    {
-      "title": "Kevin O’Leary, aka ‘Mr. Wonderful,’ on crypto, winning in AI and 3 things all business owners must know",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:40:48.035806-03:00"
-    },
-    {
       "title": "Interfor GAAP EPS of $0.02",
       "source": "Seeking Alpha",
       "score": 2.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T07:46:34.841205-03:00"
+    },
+    {
+      "title": "Próximo El Niño pode ser o mais devastador em 150 anos, diz físico da USP",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "a noticia se refere a um fenomeno climatico e nao a um evento financeiro direto",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:50:49.628320-03:00"
+    },
+    {
+      "title": "An Inflation Quadruple Whammy, Headlined by Trumpflation, Threatens to Crush the Stock Market",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A inflação é um indicador importante para o mercado de ações e pode afetar negativamente as empresas e os investimentos.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:51:01.250594-03:00"
+    },
+    {
+      "title": "I work from home, and our family helps with childcare. We're still putting our daughter in part-time day care.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação com mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:51:04.348054-03:00"
     }
   ]
 }
