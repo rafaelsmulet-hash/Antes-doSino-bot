@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "S&P 500 Analyst Moves: ABBV",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:16:04.641562-03:00"
-    },
-    {
-      "title": "AbbVie Takes Over #60 Spot From International Flavors & Fragrances",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:16:07.605855-03:00"
-    },
-    {
       "title": "Why Progyny Stock Plunged, Then Gradually Recovered Today",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T19:26:24.673837-03:00"
+    },
+    {
+      "title": "Gás natural de Chipre abastecerá a Europa no primeiro semestre de 2028, diz ministro",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A descoberta de um novo fornecedor de gás natural pode reduzir a dependência da Europa em fontes de energia tradicionais e mitigar o impacto da guerra na Ucrânia no mercado de energia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T19:31:07.837227-03:00"
+    },
+    {
+      "title": "Paes desiste de ir a debate na Band de candidatos ao governo do RJ neste domingo",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia e sobre politica eleitoral e nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:31:10.661590-03:00"
     }
   ]
 }
