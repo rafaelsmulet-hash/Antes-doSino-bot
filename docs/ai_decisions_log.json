@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Noteworthy ETF Outflows: RSP, ZBRA, PYPL, GPN",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:26:04.133854-03:00"
-    },
-    {
-      "title": "Noteworthy ETF Outflows: FTXL, ON, NXPI, SWKS",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:26:07.060451-03:00"
-    },
-    {
-      "title": "SPYM, GOOGL, LLY, BRK.B: Large Inflows Detected at ETF",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:26:09.718422-03:00"
-    },
-    {
       "title": "Notable ETF Inflow Detected - VONV, JNJ, WMT, IBM",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T14:35:38.261579-03:00"
+    },
+    {
+      "title": "Rio Grande do Sul contabiliza 2,6 mil desalojados após tempestades",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia se refere a desastres naturais e não a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:40:35.978512-03:00"
+    },
+    {
+      "title": "SharkNinja CEO Mark Barrocas Sells Nearly 600,000 Shares Worth Over $100 Million. Here's a Deeper Look at the Transaction.",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A venda de ações do CEO não é um indicativo direto de desempenho da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:40:47.098665-03:00"
+    },
+    {
+      "title": "Victory Capital Hit a Stock-Price Target in Months. Here's What the CFO's Latest Insider Filing Shows",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque mostra a confiança do CFO na empresa e pode influenciar a percepção dos investidores sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:40:50.226451-03:00"
     }
   ]
 }
