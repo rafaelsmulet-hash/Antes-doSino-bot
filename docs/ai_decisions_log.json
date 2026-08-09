@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "EXCLUSIVA: Governo fecha acordo para levar modelo de concurso unificado a estados e municípios",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T10:36:06.243675-03:00"
-    },
-    {
-      "title": "This Stock Keeps Raising Its Dividend No Matter What the Market Does -- and Wall Street Thinks It's a Buy Right Now",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:36:12.511587-03:00"
-    },
-    {
-      "title": "Top longevity competitors lowered their estimated biological age scores by a combined 62 years. Here's how they stay healthy.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:36:15.580798-03:00"
-    },
-    {
-      "title": "SEC Forms New Retail Fraud Working Group",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:36:19.167050-03:00"
-    },
-    {
-      "title": "EasyJet é vendida por £ 5,7 bi e agita mercado de aéreas na europa",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Venda de uma das principais empresas de baixo custo da Europa pode ter impacto significativo no mercado de aéreas da região",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:40:37.493150-03:00"
-    },
-    {
       "title": "O que diz a lei de Milei que levou milhares às ruas na Argentina",
       "source": "Exame",
       "score": 1.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T07:40:58.975621-03:00"
+    },
+    {
+      "title": "FII TRCO11 sofre novo calote dias após receber aluguel atrasado com multa",
+      "source": "Suno Noticias",
+      "score": 4.0,
+      "motivo": "calote de locatária pode afetar rentabilidade do fundo imobiliário",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:46:21.176426-03:00"
+    },
+    {
+      "title": "MRV vende último projeto legado da Resia por US$ 170 milhões",
+      "source": "Neofeed",
+      "score": 6.0,
+      "motivo": "venda de ativos da Resia pode afetar a MRV, mas não é um evento de mercado maior",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:46:25.372528-03:00"
+    },
+    {
+      "title": "The AI Trade Rotation: Money Is Moving Out of Chips and Into This",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A mudança de investimentos pode influenciar a demanda por tecnologias de IA e impactar o desempenho de empresas relacionadas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:46:28.659733-03:00"
+    },
+    {
+      "title": "JPMorgan's $1.5 Trillion Initiative to Finance U.S. Shipbuilding and Defense Could Be a Tailwind for Industrial and Defense Stocks",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A iniciativa pode atrair investimentos para setores industriais e de defesa, impactando positivamente as ações dessas empresas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:46:31.758597-03:00"
+    },
+    {
+      "title": "We wore shorts to the office. Our boss didn't.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:46:34.841205-03:00"
     }
   ]
 }
