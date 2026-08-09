@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Today’s the last day to get up to $400 off your TechCrunch Disrupt 2026 ticket",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:56:41.086203-03:00"
-    },
-    {
-      "title": "SpaceX's big week: Stock jumps despite earnings storm, lock-up expiration in crucial test for investors",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:56:43.804678-03:00"
-    },
-    {
-      "title": "SpaceX Rises 11%, Intuitive Machines Gains 9%, Rocket Lab Jumps 8% as Wall Street Gives the All-Clear on Space Stocks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:56:46.514285-03:00"
-    },
-    {
       "title": "Blue Owl BDC Q2 Key Metrics: Activity subdued as refis 'grind to a halt'",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T17:05:48.021011-03:00"
+    },
+    {
+      "title": "Senate Moves Major Crypto Regulation Bill Toward Vote",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "O projeto de lei é significativo para o mercado de criptomoedas, pois estabeleceria regras claras e uma supervisão mais eficaz, o que pode aumentar a confiança dos investidores e impulsionar o crescimento do setor.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T17:20:59.892838-03:00"
+    },
+    {
+      "title": "Drug Kingpin Gets Life After 3-Year-Old Found With Backpack Full Of Drugs",
+      "source": "ZeroHedge",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:21:03.159789-03:00"
+    },
+    {
+      "title": "Rich-Kid Mamdani Ally Wants To \"Abolish Rent\"; Could Hawley Reform Bill Stop College Indoctrination?",
+      "source": "ZeroHedge",
+      "score": 2.0,
+      "motivo": "A notícia não é direta ou imediata, mas discute uma possível mudança no sistema educacional e seu impacto no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:21:06.346263-03:00"
     }
   ]
 }
