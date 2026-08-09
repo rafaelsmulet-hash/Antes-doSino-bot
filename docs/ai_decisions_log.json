@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Gold, silver miners stay on Hold rating despite precious metals rally",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:06:55.518177-03:00"
-    },
-    {
-      "title": "Earnings could be an early indicator of any degradation in labor market—Richmond Fed's Barkin",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:06:58.153982-03:00"
-    },
-    {
-      "title": "QuinStreet shares surge after strong earnings beat fueled by insurance and home services growth",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:07:00.826667-03:00"
-    },
-    {
       "title": "Ardelyx falls on lower projected Ibsrela sales, Q2 misses",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T13:01:38.280489-03:00"
+    },
+    {
+      "title": "Os sites onde a compra é de graça e o pedido não chega, mas a dopamina sim",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "a noticia nao e sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:05:40.967915-03:00"
+    },
+    {
+      "title": "C&A melhora margem e se sai melhor que Magalu e Renner no 2° trimestre",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "C&A apresentou resultados favoráveis em comparação com Magalu e Renner, o que pode influenciar positivamente o mercado de ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T13:05:49.556578-03:00"
+    },
+    {
+      "title": "TechCrunch Mobility: Zoox prepares for launch and Uber’s AV empire",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:05:54.996712-03:00"
     }
   ]
 }
