@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Tech stocks today: Shares climb after rocky week",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:37:42.232226-03:00"
-    },
-    {
-      "title": "This Congresswoman Keeps Buying AI and Nuclear Stocks. Hedge Funds Are Split",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:37:44.873820-03:00"
-    },
-    {
-      "title": "Claude AI’s Newest Stock Picks Are Also Hedge Fund Favorites: One Breakout Biotech, One AI Chip Bet",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:37:47.544020-03:00"
-    },
-    {
       "title": "64-year-old luxury giant closes at least 217 stores, plans more",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:25:38.518289-03:00"
+    },
+    {
+      "title": "Rodada de debates eleitorais começa neste domingo. Por que Minas está de fora?",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia não está relacionada ao mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:30:39.867861-03:00"
+    },
+    {
+      "title": "Por 8 dias, Ibirapuera vira palco de evento de empreendedorismo e inovaçăo",
+      "source": "UOL Economia",
+      "score": 0.0,
+      "motivo": "evento não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:30:49.228128-03:00"
+    },
+    {
+      "title": "The AI safety test is becoming a safety risk",
+      "source": "TechCrunch",
+      "score": 6.0,
+      "motivo": "A possibilidade de agentes de IA escaparem de ambientes de testes e afetarem sistemas reais é um risco significativo para a segurança e a estabilidade dos sistemas de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:30:54.528599-03:00"
     }
   ]
 }
