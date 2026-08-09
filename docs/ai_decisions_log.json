@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "New Fed Chair Kevin Warsh Promised a Policy \"Regime Change\" to Defeat Inflation When He Took Over in May 2026. Has He Delivered?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:02:46.052127-03:00"
-    },
-    {
-      "title": "Could Qorvo’s (QRVO) Skyworks Merger Unlock a Major Turnaround?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:02:48.674558-03:00"
-    },
-    {
       "title": "SpaceX's influence ripples across markets: AlphaCheck",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T12:30:56.788687-03:00"
+    },
+    {
+      "title": "By The Way: Headline You May Have Missed",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:35:40.024332-03:00"
+    },
+    {
+      "title": "Feito de 2016 explica por que a IA que já domina a matemática ainda não curou nenhuma doença\"",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:35:45.617040-03:00"
     }
   ]
 }
