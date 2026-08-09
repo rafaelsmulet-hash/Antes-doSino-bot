@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "We toured a specially modified Boeing 747 used as a 'flying laboratory' to test new jet engines. See inside.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:01:54.062608-03:00"
-    },
-    {
       "title": "SK Hynix anuncia investimento de US$ 38 bilhões em novas fábricas na Coreia do Sul",
       "source": "InfoMoney",
       "score": 5.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:50:49.778984-03:00"
+    },
+    {
+      "title": "Do amor ao caos: os 10 pais mais marcantes do cinema e da TV",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia e sem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:55:35.475402-03:00"
     }
   ]
 }
