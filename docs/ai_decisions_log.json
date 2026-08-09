@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Instacart's AI assistant: If they build it, bigger baskets will come",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:15:50.072777-03:00"
-    },
-    {
-      "title": "Satya Nadella Said Microsoft's Own AI Chips Are Driving Up to 40% Efficiency Gains. Here's Why That Matters for Investors",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:15:54.098867-03:00"
-    },
-    {
-      "title": "Friday Sector Laggards: Grocery & Drug Stores, Life & Health Insurance Stocks",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:15:56.761629-03:00"
-    },
-    {
-      "title": "Friday Sector Leaders: Precious Metals, Advertising Stocks",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:15:59.405532-03:00"
-    },
-    {
       "title": "Daily Dividend Report: CHE,ECL,MAR,PSA,EMN,TSN",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T19:16:12.418803-03:00"
+    },
+    {
+      "title": "U.S. stock futures flat as investors await inflation data, grapple with more Iran uncertainty",
+      "source": "MarketWatch",
+      "score": 4.0,
+      "motivo": "A notícia é relevante devido à incerteza sobre o Irã e à espera de dados de inflação importantes, mas não é um evento de grande impacto imediato.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T19:20:39.098893-03:00"
+    },
+    {
+      "title": "Why Shopify Stock Soared This Week",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca o crescimento positivo da empresa, o que é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:20:45.650443-03:00"
+    },
+    {
+      "title": "3 Big Mistakes IRA Savers Make -- and How to Fix Them",
+      "source": "Nasdaq",
+      "score": 1.0,
+      "motivo": "A notícia não está relacionada a mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:20:48.460020-03:00"
+    },
+    {
+      "title": "Why Upstart Stock Plunged 23% in July",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia especifica o impacto negativo de fatores macroeconômicos na ação da Upstart",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T19:20:51.469833-03:00"
     }
   ]
 }
