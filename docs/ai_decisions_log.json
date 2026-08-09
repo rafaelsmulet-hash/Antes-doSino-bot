@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Altus Group Non-GAAP EPS of $0.53, revenue of $112.67M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:11:10.444276-03:00"
-    },
-    {
       "title": "Fed's hawkish stance likely intact despite soft jobs data - strategist",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T18:41:09.490381-03:00"
+    },
+    {
+      "title": "Why Upstart Stock Plunged 23% in July",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o preço da ação da Upstart.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T18:50:59.992366-03:00"
     }
   ]
 }
