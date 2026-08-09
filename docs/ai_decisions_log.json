@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ações da Airbnb têm maior cotação em 4 anos, com aumento da previsão de receita",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:55:54.069461-03:00"
-    },
-    {
-      "title": "Ações da Airbnb têm maior cotação em quatro anos, com investidores comemorando aumento da previsão de receita",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "aumento da previsão de receita é positivo para a ação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:55:58.484121-03:00"
-    },
-    {
-      "title": "Polônia - Ações fecharam o pregão em queda e o Índice WIG30 recuou 0,30%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:56:01.127202-03:00"
-    },
-    {
       "title": "Celsius dispara 12% após fundador da Rockstar montar posição e pedir troca de CEO",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T16:41:11.846558-03:00"
+    },
+    {
+      "title": "Onde assistir à Santos x Athletico-PR?",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre esporte e não tem relevância para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:45:43.863766-03:00"
+    },
+    {
+      "title": "Senate moves closer to vote on sweeping U.S. crypto regulation",
+      "source": "Seeking Alpha",
+      "score": 8.0,
+      "motivo": "A regulamentação pode afetar a estabilidade e a confiança na indústria de criptomoedas.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:45:50.870538-03:00"
+    },
+    {
+      "title": "Comcast (CMCSA) Pushes Private Wireless Into The Office Market",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque a Comcast é uma empresa de tecnologia e comunicação importante, e a expansão de suas redes móveis privadas pode ter impacto no mercado de tecnologia e comunicações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T16:46:04.450017-03:00"
     }
   ]
 }
