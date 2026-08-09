@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Analyst Report: Emerson Electric Co",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:26:55.055206-03:00"
-    },
-    {
-      "title": "Zimbabwe’s VFEX Plans $5 Billion Market Value, Venture Board for Mining",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado pois menciona a valorização da bolsa de Zimbabwe e a criação de uma plataforma para empresas de mineração, o que pode ter impacto positivo no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:35:49.631466-03:00"
-    },
-    {
       "title": "Ação do Fleury dispara mais de 14% após resultado acima do esperado; BTG eleva preço-alvo",
       "source": "Investing.com Brasil",
       "score": 7.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T10:46:16.167072-03:00"
+    },
+    {
+      "title": "Behind Bessent Moves, Wall Street Sees Sign of Bond-Market Angst",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia sugere que o secretário do Tesouro está trabalhando para manter os juros baixos, o que pode ter impacto no mercado de títulos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T10:50:48.897650-03:00"
+    },
+    {
+      "title": "5 Things AI Can (and Cannot) Do for Your Investment Portfolio in 2026",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia discute a aplicação da inteligência artificial em investimentos, mas não apresenta informações específicas sobre o mercado atual.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:51:03.660198-03:00"
     }
   ]
 }
