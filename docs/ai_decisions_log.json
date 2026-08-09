@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Itália - Ações fecharam o pregão em alta e o Índice Investing.com Itália 40 avançou 0,07%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:12.352467-03:00"
-    },
-    {
-      "title": "A2A: o protocolo que ensina agentes de IA a \"conversarem\" entre si dentro das empresas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:31:16.180343-03:00"
-    },
-    {
       "title": "Diretor de 'Me Chame Pelo Seu Nome', Luca Guadagnino receberá prêmio no Festival de Veneza",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T20:50:49.567872-03:00"
+    },
+    {
+      "title": "Jetstar, Qatar Air Near Miss at Sydney Triggers Safety Probe",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "Não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:55:54.985548-03:00"
+    },
+    {
+      "title": "Treasury Wine Flags $395 Million Writedown Over Excess US Supply",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia revela um prejuízo significativo devido a excesso de estoque nos EUA, o que pode afetar a empresa e o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T20:55:58.016836-03:00"
     }
   ]
 }
