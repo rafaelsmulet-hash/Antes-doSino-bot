@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "MCD Stock Forecast: Here’s Where It’ll End The Year",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:16:34.765135-03:00"
-    },
-    {
-      "title": "How a Sardine Gets From the Ocean to a Can",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:20:43.727485-03:00"
-    },
-    {
-      "title": "Dollar Falls to Lowest Level Since May as Rate Hike in Doubt",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia afeta diretamente a expectativa de aumento de juros nos EUA, o que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:20:46.821812-03:00"
-    },
-    {
-      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
-      "source": "WSJ Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:20:50.065652-03:00"
-    },
-    {
       "title": "Nova debandada de estrangeiros? O que faz Ibovespa cair 1,5% mesmo após dados dos EUA",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T14:01:29.955358-03:00"
+    },
+    {
+      "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
+      "source": "CNBC - Economy",
+      "score": 4.0,
+      "motivo": "A notícia fornece informações sobre a taxa de crescimento da economia dos EUA, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:05:54.923339-03:00"
+    },
+    {
+      "title": "Rayssa Leal vence por 0,2 ponto e conquista SLS Rio Takeover",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre esporte e celebridade",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:06:00.169381-03:00"
+    },
+    {
+      "title": "Debate da Band para governador: veja horários, estados, regras e onde assistir",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:06:02.924797-03:00"
+    },
+    {
+      "title": "A ‘Odisseia’ do investidor: o manual mitológico para não naufragar no mercado financeiro",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:06:10.491086-03:00"
     }
   ]
 }
