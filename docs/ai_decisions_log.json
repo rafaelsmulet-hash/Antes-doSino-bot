@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Hours After Murkowski Predictably Sides With Dems, Cassidy Unblocks Blanche AG Nomination",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:01:37.837264-03:00"
-    },
-    {
-      "title": "Scientists Warn Of Urgent AI Biosecurity Threat",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:01:40.498973-03:00"
-    },
-    {
-      "title": "Mercado de trabalho menos aquecido nos EUA diminui pressão sobre alta de juros",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "redução da pressão sobre alta de juros",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:05:48.353340-03:00"
-    },
-    {
       "title": "PETR4: Produção está acima das projeções para 2026, diz CEO",
       "source": "InfoMoney",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T17:50:58.543397-03:00"
+    },
+    {
+      "title": "Concurso 3042 da Mega-Sena: bolão acerta as seis dezenas e ganha R$ 164,9 milhões",
+      "source": "G1 Economia",
+      "score": 0.0,
+      "motivo": "noticia sobre sorteio de loteria",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:56:06.220688-03:00"
+    },
+    {
+      "title": "Core Scientific (CORZ) Shareholders Rejected a $9B Sale. Does the AMD Deal Vindicate Them?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque envolve uma empresa de tecnologia e um acordo significativo com a AMD, o que pode ter impacto no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:56:12.654220-03:00"
+    },
+    {
+      "title": "I told my kids the TV was broken. Four months later, I'm still pretending.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:56:16.124403-03:00"
     }
   ]
 }
