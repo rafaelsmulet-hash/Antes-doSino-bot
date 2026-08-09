@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Worst-Ever Brazil Market Outage Puts B3’s Near-Monopoly in Focus",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado, mas não há informações concretas sobre impacto ou consequências específicas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:20:58.395351-03:00"
-    },
-    {
-      "title": "‘I don’t wish to be cold-hearted’: My elderly relative can no longer care for himself. Am I wrong to leave his care to the state?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:21:06.449602-03:00"
-    },
-    {
       "title": "Geospace targets $10.8M U.S. Navy system completion by December 2027 amid PRM timing shift",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T19:40:48.350330-03:00"
+    },
+    {
+      "title": "Latest Oil Market News and Analysis for Aug. 10",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A possibilidade de reabertura do Estreito de Ormuz tem impacto significativo no mercado de petróleo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T19:45:35.617215-03:00"
+    },
+    {
+      "title": "Desembargador federal abandona ações da Lava Jato após punição do CNJ",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:45:39.325004-03:00"
     }
   ]
 }
