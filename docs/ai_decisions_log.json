@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Brasil foi 2º país com maior expansão de produção automotiva em julho",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Indicador positivo da saúde econômica do Brasil",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:45:53.839916-03:00"
-    },
-    {
-      "title": "Fleury sobe após balanço e BTG eleva preço-alvo, mas analistas veem cautela",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "Fleury superou expectativas no segundo trimestre e anuncia lucro significativo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:45:59.333453-03:00"
-    },
-    {
-      "title": "Sega Sammy Holdings reports Q1 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:46:02.324824-03:00"
-    },
-    {
-      "title": "Microsoft, Amazon, Meta, Google Are 'Collectively Overinvesting' In AI: 'That's Betting, Not Investing,' Says 'Dean of Valuation'",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:46:14.469332-03:00"
-    },
-    {
       "title": "Once-AAA Bonds on New York Megamall Face Over $350 Million Loss",
       "source": "Bloomberg Markets",
       "score": 8.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T15:55:57.509789-03:00"
+    },
+    {
+      "title": "Bahia x Vasco: Onde assistir ao Brasileirão?",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:00:58.107666-03:00"
+    },
+    {
+      "title": "Estado de SP tem alerta para risco de temporais e incêndios em vegetação",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:01:00.856088-03:00"
+    },
+    {
+      "title": "5 grandes movimentos de analistas em IA: recuo nesta ação é uma \"oportunidade de compra ampliada\"",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Análise de investidores sugere que o recuo da ação é uma oportunidade para compra, o que pode impulsionar o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:01:06.013542-03:00"
+    },
+    {
+      "title": "P&G’s (PG) $3.8B Wellness Deal Collides With a Costly Outlook",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a perspectiva de lucro da P&G, uma empresa de grande porte no mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:01:17.714598-03:00"
     }
   ]
 }
