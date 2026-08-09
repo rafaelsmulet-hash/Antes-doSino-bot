@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ibovespa cai mais de 1% e volta aos 172 mil pontos com Petrobras (PETR4); como andam os mercados nesta sexta-feira (7)",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:15:56.230770-03:00"
-    },
-    {
-      "title": "Marrocos - Ações fecharam o pregão em alta e o Índice Moroccan All Shares avançou 2,08%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:15:58.975430-03:00"
-    },
-    {
-      "title": "Noruega - Ações fecharam o pregão em alta e o Índice Oslo OBX avançou 0,22%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:16:01.641984-03:00"
-    },
-    {
-      "title": "Israel - Ações fecharam o pregão em alta e o Índice TA 35 avançou 0,98%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "o Índice TA 35 avançou, indicando um aumento no valor das ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:16:04.471125-03:00"
-    },
-    {
-      "title": "HBO anuncia documentário sobre 'Gilmore Girls' com Lauren Graham",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:16:07.759622-03:00"
-    },
-    {
       "title": "Lilly, Novo antitrust case over GLP-1s dismissed in Texas",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T13:51:40.154460-03:00"
+    },
+    {
+      "title": "Leilão de canal de acesso de Santos deve servir de teste para modelo de concessão",
+      "source": "InfoMoney",
+      "score": 4.0,
+      "motivo": "Leilão de infraestrutura de Santos pode influenciar expectativas de investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:55:34.987336-03:00"
+    },
+    {
+      "title": "A família por trás da carbonara mais famosa de Roma que resiste à expansão global",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "noticia sobre restaurante e família não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:55:47.610263-03:00"
+    },
+    {
+      "title": "This 1 Number Says Michael Saylor’s Bitcoin Sales Are About to End",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia sugere que as vendas de Bitcoin de Michael Saylor podem estar diminuindo, o que pode ter um impacto positivo no mercado de Bitcoin",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:55:50.669105-03:00"
+    },
+    {
+      "title": "Why Shopify Stock Could Be the Biggest Winner in Agentic AI Commerce",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a potencialidade da Shopify em se beneficiar do crescimento do comércio de AI Agente, o que pode ter um impacto significativo no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:55:53.625095-03:00"
+    },
+    {
+      "title": "I wanted my daughter to experience the fun I had growing up. So we went toilet papering.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:55:56.716056-03:00"
     }
   ]
 }
