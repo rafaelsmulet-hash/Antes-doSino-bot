@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Once-AAA Bonds on New York Megamall Face Over $350 Million Loss",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "motivo": "O evento pode ter um impacto significativo no mercado de bônus e na confiança dos investidores em empreendimentos imobiliários.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:50:43.177967-03:00"
-    },
-    {
-      "title": "Hassett diz que Trump fala com Warsh sobre economia, mas nega intromissão nos juros",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "a noticia e sobre politica e nao tem impacto direto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:50:46.878572-03:00"
-    },
-    {
-      "title": "Dino manda PF investigar indícios de crimes em emendas Pix apontados pelo TCU",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia sobre crime e investigacao, sem relevancia direta para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:50:49.648416-03:00"
-    },
-    {
-      "title": "Celsius jumps on report Rockstar Energy founder takes stake, wants to be CEO",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:50:54.333362-03:00"
-    },
-    {
       "title": "monday.com Q2 2026 Earnings Preview",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T16:01:17.714598-03:00"
+    },
+    {
+      "title": "Atlassian Jumped More Than 30% After Guiding Next Year's Growth Down to 18%. The Market Bought the Margins.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A empresa guia um crescimento moderado, o que é visto como positivo pelo mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T16:05:48.269209-03:00"
+    },
+    {
+      "title": "What to Know When a Victory Capital Insider's Stock Vests on a Price Target",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:05:51.433830-03:00"
+    },
+    {
+      "title": "Wall Street Punishes Sandisk's Outlook: What Investors Are Missing",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a previsão de receita e lucro da Sandisk, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T16:05:54.510218-03:00"
+    },
+    {
+      "title": "Social Security Benefits Have Lost 14% of Their Buying Power Since 2016. Will the 2027 COLA Reverse That Trend?",
+      "source": "Nasdaq",
+      "score": 4.0,
+      "motivo": "A notícia aborda a perda de poder de compra dos benefícios de seguro social, o que pode ter impacto na economia e nas políticas governamentais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T16:05:57.448833-03:00"
     }
   ]
 }
