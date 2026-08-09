@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:16:23.953979-03:00"
-    },
-    {
-      "title": "Top Democrat proposes killing tax breaks for overseas oil production",
-      "source": "CNBC - US News",
-      "score": 8.0,
-      "motivo": "Proposta de eliminar benefícios fiscais pode impactar a produção de petróleo e, consequentemente, os preços da gasolina.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:16:27.421654-03:00"
-    },
-    {
       "title": "Worst-Ever Brazil Market Outage Puts B3’s Near-Monopoly in Focus",
       "source": "Bloomberg Markets",
       "score": 2.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T19:35:52.246090-03:00"
+    },
+    {
+      "title": "Apple CEO Tim Cook Just Passed His Successor a Mess",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia menciona um problema específico que afeta os lucros da Apple, o que é relevante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T19:40:45.433311-03:00"
+    },
+    {
+      "title": "Prediction: This Cryptocurrency Could Go Parabolic After the 2026 Midterm Elections",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia menciona uma possível mudança na regulamentação que pode afetar a XRP.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:40:48.350330-03:00"
     }
   ]
 }
