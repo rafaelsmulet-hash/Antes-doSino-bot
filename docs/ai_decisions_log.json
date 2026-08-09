@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "STF contraria Moraes e abre precedente para reduzir penas de reús do 8/1",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:01:01.066220-03:00"
-    },
-    {
       "title": "Eleições 2026: TSE cria órgão para monitorar uso de IA e fake news",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T17:31:15.038357-03:00"
+    },
+    {
+      "title": "Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry",
+      "source": "TechCrunch",
+      "score": 6.0,
+      "motivo": "Investimento significativo em startup de tecnologia de chips.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:35:55.718463-03:00"
     }
   ]
 }
