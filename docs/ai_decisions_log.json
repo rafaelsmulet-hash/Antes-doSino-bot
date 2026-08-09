@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Portugal - Ações fecharam o pregão em queda e o Índice PSI recuou 0,46%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:06.978103-03:00"
-    },
-    {
-      "title": "Holanda - Ações fecharam o pregão em queda e o Índice AEX recuou 0,09%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:09.658520-03:00"
-    },
-    {
       "title": "Itália - Ações fecharam o pregão em alta e o Índice Investing.com Itália 40 avançou 0,07%",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T20:46:24.351826-03:00"
+    },
+    {
+      "title": "Em maio, indústria recua em 9 dos 15 locais pesquisados",
+      "source": "IBGE",
+      "score": 6.0,
+      "motivo": "variação negativa de 0,2% da produção industrial nacional em maio, com impacto regional variado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:50:38.719198-03:00"
+    },
+    {
+      "title": "Adobe vs. Arista Networks: Which Technology Stock Is a Better Buy in 2026?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia discute ações de tecnologia relevantes para investimentos, o que é material para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:50:49.567872-03:00"
     }
   ]
 }
