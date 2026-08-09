@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Modelo de IA da startup chinesa Moonshot foge do ambiente de testes, dizem pesquisadores",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:36:23.176965-03:00"
-    },
-    {
-      "title": "Accenture permite acúmulo de férias em meio a pressão por vendas",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:36:25.821686-03:00"
-    },
-    {
       "title": "Ações da Tenable caem após relatório sobre riscos da IA no setor",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T14:51:27.338298-03:00"
+    },
+    {
+      "title": "Dividend King Coca-Cola is suddenly acting like a growth stock",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T14:56:04.744428-03:00"
+    },
+    {
+      "title": "Micron Has Surged 207% This Year. Brace for a Steep Pullback.",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o preço das ações da Micron e pode influenciar a decisão de investimento de traders e investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:56:07.697719-03:00"
     }
   ]
 }
