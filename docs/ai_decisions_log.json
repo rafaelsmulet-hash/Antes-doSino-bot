@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bright Mountain Media reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Os resultados são rotineiros e não apresentam impacto significativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:40:54.512145-03:00"
-    },
-    {
-      "title": "Post declines after third-quarter results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:40:57.120980-03:00"
-    },
-    {
-      "title": "Berkshire Hathaway Q2 earnings on deck; look for buybacks, cash, float",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:40:59.746831-03:00"
-    },
-    {
       "title": "Microchip's data center-related revenue likely drives longer up-cycle: analysts",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T15:21:13.478010-03:00"
+    },
+    {
+      "title": "Flávio publica carta no Dia dos Pais após Moraes negar visita a Bolsonaro",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:25:42.366515-03:00"
+    },
+    {
+      "title": "B3 lança índice Small Cap Smart Rebal B3",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "Lançamento de um novo índice de ações pode influenciar a demanda por ações de empresas de menor valor de mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:25:46.576086-03:00"
+    },
+    {
+      "title": "UnitedHealth (UNH) Commits $4M to Tennessee Health Hub Expansion",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "Investimento em saúde, setor relevante para a empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:26:00.717121-03:00"
     }
   ]
 }
