@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Calumet Net Loss Narrows In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:01:40.127551-03:00"
-    },
-    {
-      "title": "Verisk Analytics CEO Lee Shavel Sells 2,500 Shares for $550,000",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:01:42.770080-03:00"
-    },
-    {
-      "title": "Not Micron, Not Nvidia. This Artificial Intelligence (AI) Giant Could Be the Ultimate Winner of the AI Arms Race.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:01:45.394684-03:00"
-    },
-    {
       "title": "We toured a specially modified Boeing 747 used as a 'flying laboratory' to test new jet engines. See inside.",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:45:45.974567-03:00"
+    },
+    {
+      "title": "Gastos extras de companhias aéreas brasileiras após a guerra somam R$ 5,2 bilhões",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "aumento nos custos das companhias aéreas pode afetar suas margens de lucro e impactar o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T08:50:39.584189-03:00"
+    },
+    {
+      "title": "Here's How Many Shares of Realty Income (O) Stock You'd Need for $1,000 in Monthly Dividends",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não traz informações sobre movimentos de mercado ou decisões importantes da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:50:46.809611-03:00"
+    },
+    {
+      "title": "The Hidden Cost of International ETFs: How Much Currency Risk Actually Ate Into Returns Over the Last Decade",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a relevância de hedging de moeda em ETFs internacionais para minimizar perdas de retorno.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:50:49.778984-03:00"
     }
   ]
 }
