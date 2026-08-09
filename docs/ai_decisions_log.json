@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Analyst Report: United Parcel Service Inc",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:36:43.382462-03:00"
-    },
-    {
-      "title": "Airbnb vs. e.l.f. Beauty: Which Consumer Stock Is a Better Buy in 2026?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T09:36:45.987578-03:00"
-    },
-    {
-      "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A perda de empregos inesperada pode influenciar a política monetária e afetar as expectativas de crescimento econômico.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T09:41:26.867150-03:00"
-    },
-    {
       "title": "Eregli Demir ve Çelik Fabrikalari T.A.S. GAAP EPS of TRY 5.71, revenue of TRY 59.68B",
       "source": "Seeking Alpha",
       "score": 3.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-08T21:25:53.971105-03:00"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Palo Alto Networks Stock Will Climb or Sink?",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "Previsões de analistas sobre a ação de uma empresa são comuns e geralmente não têm impacto significativo no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:30:55.452958-03:00"
+    },
+    {
+      "title": "Jim Cramer Shares Reasons Behind Why NVIDIA Corporation (NASDAQ:NVDA)’s Shares Are Finally Rising",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o preço das ações da NVIDIA, uma das principais empresas de tecnologia do mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:30:58.403683-03:00"
+    },
+    {
+      "title": "Jim Cramer’s Post Earnings Palantir Technologies Inc. (NASDAQ:PLTR) Worry Didn’t Materialize",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre a Palantir Technologies Inc. após os resultados",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-08T21:31:01.362807-03:00"
     }
   ]
 }
