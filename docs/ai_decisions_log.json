@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Daily Spotlight: Payrolls Fall, Hikes Less Likely",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:21:34.720176-03:00"
-    },
-    {
-      "title": "Runway Growth Finance Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:21:37.403780-03:00"
-    },
-    {
       "title": "The 10 college athletes with the highest NIL valuations",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T20:01:04.200349-03:00"
+    },
+    {
+      "title": "Sezzle Beat on Revenue and Raised Guidance. Its Stock Lost a Third of Its Value in a Day.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A empresa superou as expectativas em receita e aumentou a previsão, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:10:42.129944-03:00"
+    },
+    {
+      "title": "If a Stock Market Crash Is Coming, History Says This Investing Strategy Has Never Once Failed",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é mais uma reflexão histórica e não uma informação atual sobre o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T20:10:45.082254-03:00"
     }
   ]
 }
