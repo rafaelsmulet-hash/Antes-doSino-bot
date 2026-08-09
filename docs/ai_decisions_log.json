@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Interfor GAAP EPS of $0.02",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento de grande impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:40:51.052335-03:00"
-    },
-    {
       "title": "Grove outlines $142.5M-$152.5M 2026 net revenue outlook while leaning into Amazon and dropship expansion",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T07:51:04.348054-03:00"
+    },
+    {
+      "title": "Incêndios na Europa ameaçam animais e expõem limites no resgate da fauna",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:55:39.297181-03:00"
     }
   ]
 }
