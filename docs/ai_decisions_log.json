@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Banco da Porto (PSSA3) tropeça no crédito, derruba as ações e reacende alerta; BTG vê oportunidade na queda",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:02:30.372187-03:00"
-    },
-    {
       "title": "Megaacordo da Tesla mostra expansão da energia renovável; SNEL11 atento aos movimentos",
       "source": "Suno Noticias",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T12:21:13.440731-03:00"
+    },
+    {
+      "title": "‘I’m in my peak earning years’: I’m working beyond 70. Will that help increase my Social Security?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:25:35.791606-03:00"
     }
   ]
 }
