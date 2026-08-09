@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Tether Expands Tokenization To Saudi Arabia",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:26:33.911639-03:00"
-    },
-    {
       "title": "Palomar Holdings’ (PLMR) Premium Growth Overshadowed by Sector Caution",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T10:21:06.964977-03:00"
+    },
+    {
+      "title": "Rússia e Ucrânia trocam ataques durante a noite e deixam pelo menos 7 mortos",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:25:39.394527-03:00"
     }
   ]
 }
