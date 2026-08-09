@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Pussycat Dolls abrem venda de ingressos para show no Brasil; veja como comprar",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:19.733940-03:00"
-    },
-    {
-      "title": "O desafio de abastecer um país que não pode parar",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:22.390447-03:00"
-    },
-    {
-      "title": "Ibovespa cai com Petrobras e balanços, enquanto NY sobe após payroll 'fraco'",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:36:25.051688-03:00"
-    },
-    {
-      "title": "Michigan says it’s OK to start eating salads again as cyclospora outbreak wanes",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:27.943453-03:00"
-    },
-    {
-      "title": "Algoma Central declares CAD 0.21 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:30.664467-03:00"
-    },
-    {
-      "title": "UEI reaffirms 2026 adjusted EPS of $0.45 to $0.65 as Wade Jenke becomes CEO",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:33.308806-03:00"
-    },
-    {
-      "title": "Fiera Capital Corporation declares CAD 0.108 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:35.939170-03:00"
-    },
-    {
-      "title": "Sabine Royalty Trust declares $0.6194 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:38.562130-03:00"
-    },
-    {
-      "title": "Columbia Seligman Premium Technology Growth Fund declares $0.4625 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:41.210252-03:00"
-    },
-    {
-      "title": "Figs rallies on impressive growth, upbeat outlook, and increased buyback",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:43.859318-03:00"
-    },
-    {
       "title": "MarketAxess declares $0.78 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:01:25.593399-03:00"
+    },
+    {
+      "title": "Mega-Sena hoje, concurso 3042: confira o resultado sorteado neste domingo (9)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de concurso de loteria",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:06:05.796659-03:00"
+    },
+    {
+      "title": "Falta de filtro prejudica mais do que prazo na regulação de criptoativos",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A noticia destaca a necessidade de regulamentacao mais clara para o mercado de criptoativos, o que pode trazer mais seguranca e confianca para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:06:12.558729-03:00"
+    },
+    {
+      "title": "Netanyahu rejeita plano de Trump para Gaza: 'desarmamento real, não fictício'",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há conexão direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:06:15.408965-03:00"
+    },
+    {
+      "title": "A IA já chegou aos prédios — mas ainda não escolhe onde construir",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre uso de tecnologia em incorporadoras, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:06:18.269217-03:00"
+    },
+    {
+      "title": "S&P 500 sales growth is at a nearly 5-year high. Here’s what’s behind the surge.",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "O aumento das receitas das empresas de energia é relevante para o mercado pois reflete um bom desempenho do setor.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T11:06:21.593373-03:00"
+    },
+    {
+      "title": "Johnson & Johnson Has Increased Its Dividend for 64 Consecutive Years. Here's How Much $10,000 Invested in the Dividend King Pays Annually.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque demonstra a estabilidade financeira da empresa, o que pode atrair investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:06:27.065654-03:00"
+    },
+    {
+      "title": "Uh-Oh! The Inflationary Effects of the Donald Trump-Led Iran War Now Extend Well Beyond the Energy Sector.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não é específica e materialmente relevante para o mercado agora, pois se refere a uma tendência histórica e não a um evento atual ou iminente.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:06:30.283777-03:00"
+    },
+    {
+      "title": "Top Semiconductor Stock Outpacing Nvidia With a 36% Gain Over 6 Months",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Relevância para o mercado de tecnologia e semicondutores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T11:06:33.156933-03:00"
+    },
+    {
+      "title": "Memory Sector Stocks Are Down 30% or More From Their Highs, But These 2 Are Worth Buying Now",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca uma ação específica do setor de memória que pode ser uma oportunidade de compra.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T11:06:36.087743-03:00"
+    },
+    {
+      "title": "AI is shaking software. There's a new way to spot which companies are built to survive.",
+      "source": "Business Insider",
+      "score": 6.0,
+      "motivo": "A notícia destaca empresas que estão bem posicionadas para sobreviver na era da inteligência artificial, o que pode ter impacto positivo no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:06:47.078059-03:00"
     }
   ]
 }
