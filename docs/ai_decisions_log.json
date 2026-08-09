@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Geospace targets $10.8M U.S. Navy system completion by December 2027 amid PRM timing shift",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:21:09.188790-03:00"
-    },
-    {
-      "title": "Ready Capital outlines $1.5B SBA 7(a) origination target as it reaches 81% of liquidity objective",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:21:11.905464-03:00"
-    },
-    {
       "title": "Under Armour forecasts mid-single-digit revenue decline while maintaining $140M-$160M adjusted operating income outlook",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T19:45:39.325004-03:00"
+    },
+    {
+      "title": "Oil Extends Gains as Hormuz Deal Remains Elusive: Markets Wrap",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta os preços do petróleo, que é um importante indicador de mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T19:50:53.356473-03:00"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
+      "source": "Federal Reserve",
+      "score": 8.0,
+      "motivo": "A publicação das minutas da Comissão de Mercado Aberto Federal é um evento importante para o mercado financeiro, pois fornece informações sobre as decisões e discussões da Fed.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:51:11.721021-03:00"
     }
   ]
 }
