@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Douglas Elliman outlines AI transformation with $105M cash as Google Cloud savings start in 2027",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:01:12.720326-03:00"
-    },
-    {
-      "title": "Citi turns bearish on JetBlue as leisure carriers face RASM headwinds",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:01:15.358567-03:00"
-    },
-    {
-      "title": "Consensus Mining &amp; Seigniorage Corporation GAAP EPS of $1.19, revenue of $462.2M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:01:17.962855-03:00"
-    },
-    {
-      "title": "IN8bio Non-GAAP EPS of -$0.25",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:01:20.550833-03:00"
-    },
-    {
       "title": "What Is Nasdaq Texas? A Regional Commitment and Dedicated Venue for the Lone Star State",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T08:31:18.951602-03:00"
+    },
+    {
+      "title": "Rio teve 47 acidentes aéreos em 10 anos, mostram dados do Cenipa",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "acidentes aéreos não afetam diretamente o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:35:44.252711-03:00"
+    },
+    {
+      "title": "Ele entregava passagens pessoalmente. Hoje, o filho lidera empresa de turismo de R$ 2 bilhões",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há informações financeiras ou econômicas relevantes na notícia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:35:49.181676-03:00"
+    },
+    {
+      "title": "Justiça das Ilhas Cayman liquida holding de luxo de Daniel Vorcaro",
+      "source": "UOL Economia",
+      "score": 2.0,
+      "motivo": "liquidacao de uma holding nao e um evento relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:35:56.646668-03:00"
+    },
+    {
+      "title": "History Says the Investors Who Stay the Course During Bear Markets Have Always Come Out Ahead. Here's the Proof.",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia apresenta uma análise histórica que pode influenciar a tomada de decisão dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T08:36:02.370342-03:00"
     }
   ]
 }
