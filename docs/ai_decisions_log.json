@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "PF adia depoimento de Jaques Wagner após pedido da defesa",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:00.883235-03:00"
-    },
-    {
-      "title": "Gustavo Franco: Otimismo com 2030",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas pode influenciar a percepção dos investidores sobre o cenário político do Brasil e dos EUA.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:05.549929-03:00"
-    },
-    {
-      "title": "O que fazer no Dia dos Pais em São Paulo? Veja 8 passeios para toda a família",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:08.198995-03:00"
-    },
-    {
-      "title": "Vale-alimentação, seguro de vida e folga no aniversário: Getnet abre 15 novas vagas de estágio",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:11:10.855622-03:00"
-    },
-    {
-      "title": "Rebeca Andrade alcança maior nota do salto no mundo em 2026, mas fica fora da final",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:13.502559-03:00"
-    },
-    {
-      "title": "Competitividade, produtividade e clima: a agenda que ganhou força",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:16.133660-03:00"
-    },
-    {
       "title": "Tax-free weekends start in Texas, Florida and several other states today. Here’s what to know.",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T13:31:28.136243-03:00"
+    },
+    {
+      "title": "What a divided Fed means for investors",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A notícia sugere que uma alta de juros está iminente, o que é relevante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:35:41.902123-03:00"
+    },
+    {
+      "title": "Papa Leão renova apelo para que guerra na Ucrânia chegue ao fim",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:35:45.597297-03:00"
+    },
+    {
+      "title": "Por que Trump planeja investir US$ 1 bilhão na Colômbia?",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A noticia indica uma maior alinhamento entre a Colômbia e os EUA, o que pode atrair investimentos e melhorar a economia do país.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:35:50.386389-03:00"
+    },
+    {
+      "title": "Ele começou lavando pratos. Agora, seus filhos lideram rede de botecos de R$ 15 mi que leva seu nome",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A notícia destaca o sucesso de uma franquia de botecos, o que pode inspirar confiança nos investidores em empresas de serviços e franquias.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:35:53.242960-03:00"
+    },
+    {
+      "title": "China inflation cools more than expected as domestic demand stays weak",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia sobre a inflação na China pode influenciar a política monetária e as expectativas de crescimento econômico.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T13:35:56.517331-03:00"
+    },
+    {
+      "title": "Forget VFIAX: Vanguard Sells You the Same S&P 500 Fund Without the $3,000 Toll, or the $75 Fee Fidelity Charges to Buy It",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A Vanguard está se tornando mais competitiva no mercado de fundos indexados",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T13:36:06.658693-03:00"
     }
   ]
 }
