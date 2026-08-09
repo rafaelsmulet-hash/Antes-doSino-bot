@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Eleições 2026: TSE cria órgão para monitorar uso de IA e fake news",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre eleicoes e uso de IA e fake news nao e relevante para o mercado financeiro agora",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:01:03.907780-03:00"
-    },
-    {
-      "title": "GraniteShares YieldBOOST QBTS ETF declares $0.1119 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:01:08.927725-03:00"
-    },
-    {
-      "title": "Tandem forecasts $265M Q3 sales while advancing Mobi tubeless scaled launch in H2 2026",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:01:11.658693-03:00"
-    },
-    {
       "title": "Fluor targets $500M-$525M 2026 adjusted EBITDA as backlog nears $27B following $6B+ in Q2 awards",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T17:35:55.718463-03:00"
+    },
+    {
+      "title": "Khamenei nomeia novo conselheiro político e líder do Conselho de Segurança Nacional",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre política internacional e nomeação de funcionário não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:40:44.065201-03:00"
+    },
+    {
+      "title": "Bactéria carnívora faz estado nos EUA aumentar alerta após infecção em praias",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:40:47.035650-03:00"
+    },
+    {
+      "title": "Gás, guerra e inverno: por que a Europa está de olho no Chipre",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A descoberta de grandes reservas de gás em Chipre pode reduzir a dependência da Europa de outros fornecedores de gás.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T17:40:52.770117-03:00"
     }
   ]
 }
