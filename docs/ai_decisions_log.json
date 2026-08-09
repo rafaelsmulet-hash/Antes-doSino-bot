@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Gold, silver miners stay on Hold rating despite precious metals rally",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:11:29.463833-03:00"
-    },
-    {
-      "title": "Earnings could be an early indicator of any degradation in labor market—Richmond Fed's Barkin",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:11:32.111740-03:00"
-    },
-    {
-      "title": "QuinStreet shares surge after strong earnings beat fueled by insurance and home services growth",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:11:34.764036-03:00"
-    },
-    {
-      "title": "Trump administration has spent nearly $4B to cancel offshore wind farms",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:44.811408-03:00"
-    },
-    {
-      "title": "How a CD can help you prepare for — and survive — a layoff",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:47.477431-03:00"
-    },
-    {
-      "title": "Atlassian Soars 34%, Twilio Leaps 27%, Cloudflare Advances 9% in Software Stock Surge",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:50.122401-03:00"
-    },
-    {
-      "title": "Dream Finders Strikes Deal to Buy Beazer. Home Builders Continue to Consolidate.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:11:52.765274-03:00"
-    },
-    {
-      "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
-      "source": "CNBC - Economy",
-      "score": 4.0,
-      "motivo": "A notícia é relevante porque afeta a expectativa de crescimento econômico, mas o impacto é limitado e rotineiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:15:45.921035-03:00"
-    },
-    {
-      "title": "Em junho, IBGE prevê safra de 347,4 milhões de toneladas para 2026",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:15:49.719038-03:00"
-    },
-    {
-      "title": "O que surpreendeu tanto no balanço do Fleury (FLRY3)? Ação chega a saltar 14% nesta sexta (7)",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "a acao do Fleury lidera a alta no Ibovespa após divulgar resultados positivos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:15:53.549347-03:00"
-    },
-    {
       "title": "Ibovespa cai mais de 1% e volta aos 172 mil pontos com Petrobras (PETR4); como andam os mercados nesta sexta-feira (7)",
       "source": "Money Times",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T13:40:54.104834-03:00"
+    },
+    {
+      "title": "Mais trabalhadores aderem a greve em operações de minério de ferro da BHP na Austrália",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "greve pode afetar produção e lucro da empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:51:02.109001-03:00"
+    },
+    {
+      "title": "Why Shopify Stock Could Be the Biggest Winner in Agentic AI Commerce",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a potencialidade da Shopify em um nicho de comércio em crescimento",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:51:10.210275-03:00"
+    },
+    {
+      "title": "Magnite Bought Back $28 Million in Stock While Its Insiders Sold. Here's How to Read It",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Venda de ações por parte de um executivo, mas não há informações sobre a compra de ações por parte da empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:51:13.089612-03:00"
+    },
+    {
+      "title": "Why Gartner Stock Skyrocketed This Week",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A empresa superou as expectativas de lucros e vendas, o que é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T13:51:15.961526-03:00"
+    },
+    {
+      "title": "Pitney Bowes Revenue Is Shrinking, but Surging Free Cash Flow Tells a Different Story for Investors",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Aumento do fluxo de caixa livre apesar da redução da receita é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T13:51:18.809932-03:00"
+    },
+    {
+      "title": "Five Magnite Insiders Sold the Same Day. Here's What to Make of It",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Venda de ações por executivos pode ser vista como negativa para a empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:51:21.830261-03:00"
+    },
+    {
+      "title": "A Magnite Insider Cashed In Options as CTV Revenue Jumped 36%. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A venda de ações da Magnite após um aumento significativo no seu receita é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:51:24.757322-03:00"
+    },
+    {
+      "title": "Here's How Saving $15 Per Day Could Create a Portfolio Worth $1 Million in 30 Years",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de investimentos, mas não é um evento imediato ou impactante.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:51:27.608158-03:00"
+    },
+    {
+      "title": "Seek more context when you hear these popular words and phrases about markets",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "Não há informações específicas sobre mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:51:37.185547-03:00"
+    },
+    {
+      "title": "Wall Street Can't Agree on Palantir. Here's What Investors Should Do Next",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia discute a valorização da Palantir, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:51:40.154460-03:00"
     }
   ]
 }
