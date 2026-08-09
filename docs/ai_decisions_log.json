@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Victoryshares Westend U.S. Sector ETF declares $0.0137 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:26:03.352724-03:00"
-    },
-    {
-      "title": "VictoryShares US 500 Volatility Wtd ETF declares $0.0516 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:26:05.990391-03:00"
-    },
-    {
-      "title": "Jamieson Wellness Non-GAAP EPS of C$0.46, revenue of C$233.8M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:26:08.618229-03:00"
-    },
-    {
       "title": "Wajax Non-GAAP EPS of C$0.84, revenue of C$515.7M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T10:06:06.787399-03:00"
+    },
+    {
+      "title": "Canetas emagrecedoras impulsionam vendas, mas pressionam margens de farmácias",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "a categoria de farmácias cresce, mas as margens de rentabilidade são pressionadas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:10:39.723329-03:00"
+    },
+    {
+      "title": "Notable healthcare headlines for the week: Eli Lilly, Novo Nordisk, and Pfizer in focus",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "As notícias não apresentam informações específicas ou impactantes sobre essas empresas.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:10:42.976492-03:00"
+    },
+    {
+      "title": "Iran's Mehr Releases Video Of Supreme Leader Mojtaba Khamenei For 'First Time' - Except It's Old",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque aborda a situação do Líder Supremo do Irã, que é um fator importante na política internacional e no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T10:10:52.518141-03:00"
     }
   ]
 }
