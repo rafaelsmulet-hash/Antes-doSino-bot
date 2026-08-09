@@ -117,6 +117,13 @@
   .panel-body{flex:1;min-height:0;position:relative;}
   .panel[data-hidden="true"]{display:none;}
 
+  /* O widget "Symbol Overview" (usado so no VIX) desenha o selo de
+     atribuicao "TradingView" grudado no canto inferior esquerdo do
+     iframe - com .panel cortando esse canto em border-radius, o selo
+     ficava cortado ao meio pela curva. Um respiro do tamanho do raio
+     do canto (--r-md) tira o conteudo da area arredondada. */
+  #widget-vix{padding:0 0 12px 12px;}
+
   /* Ativos em Destaque (Market Movers/Hotlists) - o widget da
      TradingView so mostra as linhas que cabem na altura do container,
      sem barra de rolagem propria. Da o widget uma altura maior que o
