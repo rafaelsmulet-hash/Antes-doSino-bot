@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wendy’s Withdraws Outlook, Slashes Dividend as Turnaround Struggles to Take Hold",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:46:31.870555-03:00"
-    },
-    {
-      "title": "As Warsh and the Fed contemplate fewer meetings, markets brace for potential volatility ahead",
-      "source": "CNBC - Finance",
-      "score": 2.0,
-      "motivo": "A notícia não traz informações novas ou impactantes sobre a política monetária da Fed.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:50:46.965134-03:00"
-    },
-    {
-      "title": "Comex Gold, Silver Settle Lower",
-      "source": "WSJ Markets",
-      "score": 2.0,
-      "motivo": "Movimento de preços de commodities sem impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:50:50.392491-03:00"
-    },
-    {
-      "title": "PL pede quebra de sigilo de ex-chefe de gabinete de Lula",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:50:53.261420-03:00"
-    },
-    {
-      "title": "QuinStreet outlines $1.45B-$1.55B FY2027 revenue, driven by strong carrier demand and HomeBuddy integration",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:50:58.124784-03:00"
-    },
-    {
-      "title": "Better projects Q3 loan volume of $1.375B-$1.525B while annual cost savings target rises above $45M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:51:00.779457-03:00"
-    },
-    {
       "title": "O “efeito Copa” na Renner: vendas esfriam no trimestre e varejista reduz projeção de receita",
       "source": "Neofeed",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T11:46:18.168593-03:00"
+    },
+    {
+      "title": "3 bi de euros em perdas e 8 mil hectares em chamas: incêndios avançam na Europa",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "incêndios não afetam diretamente o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:50:50.958862-03:00"
+    },
+    {
+      "title": "Broadcom Vs. Nvidia: The Real Challenger and Champion Story in Chips",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a competição entre as duas empresas, o que pode influenciar o mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:51:03.020808-03:00"
+    },
+    {
+      "title": "I wanted my daughter to experience the fun I had growing up. So we went toilet papering.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:51:06.130685-03:00"
+    },
+    {
+      "title": "The most impractical engagement ring styles, according to a private jeweler",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação com mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:51:09.128630-03:00"
+    },
+    {
+      "title": "Ocasio-Cortez hasn't 'ruled out' running for president or Senate in 2028",
+      "source": "CNBC - US News",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:51:12.370786-03:00"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
+      "source": "Federal Reserve",
+      "score": 8.0,
+      "motivo": "A publicação das minutas da Comissão de Mercado Aberto Federal é um evento importante que pode fornecer insights sobre as decisões e perspectivas da Fed, afetando os mercados financeiros.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:51:15.743863-03:00"
     }
   ]
 }
