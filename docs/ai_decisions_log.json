@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ardelyx falls on lower projected Ibsrela sales, Q2 misses",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:07:03.456467-03:00"
-    },
-    {
-      "title": "Arrow Electronics falls 10% despite earnings beat, strong outlook",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:07:06.096893-03:00"
-    },
-    {
       "title": "STRACON Group Holding Inc. reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T13:05:54.996712-03:00"
+    },
+    {
+      "title": "Genial/Quaest: Lula lidera entre mulheres em todos os cenários de segundo turno",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia politica e eleitoral, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:10:37.527481-03:00"
+    },
+    {
+      "title": "Nearly half of auto liability, medical insurance claims close without payment: WSJ",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia pode influenciar a percepção dos investidores sobre a eficiência do sistema de seguro no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T13:10:43.221951-03:00"
     }
   ]
 }
