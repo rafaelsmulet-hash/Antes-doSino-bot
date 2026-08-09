@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Sun Life Financial Q2 26 Earnings Conference Call At 10:00 AM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:31:35.147085-03:00"
-    },
-    {
       "title": "Telephone And Data Systems Reports Net Income In Q2",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T07:31:06.474909-03:00"
+    },
+    {
+      "title": "Fidelity National Financial Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas de receita e lucro, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:35:54.061016-03:00"
     }
   ]
 }
