@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Trump anuncia tarifa de 15% sobre insumo essencial para painéis solares",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "Imposto sobre insumos essenciais para painéis solares pode aumentar custos e prejudicar a competitividade da indústria solar nos EUA",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:21:00.373013-03:00"
-    },
-    {
-      "title": "Anvisa libera venda de medicamentos pela Shopee",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:21:03.220341-03:00"
-    },
-    {
-      "title": "Bitcoin sobe após dado fraco de emprego dos EUA e avança 2,4% em 7 dias",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:21:05.851992-03:00"
-    },
-    {
       "title": "AgomAb Therapeutics NV reports 1H results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T09:50:58.590201-03:00"
+    },
+    {
+      "title": "“Holding ostentação” de Daniel Vorcaro é liquidada nas Ilhas Cayman",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A liquidação de uma holding não é um evento significativo para o mercado em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:56:05.882262-03:00"
+    },
+    {
+      "title": "Queridinha de João Fonseca, On abre segunda loja conceito em São Paulo",
+      "source": "Seu Dinheiro",
+      "score": 2.0,
+      "motivo": "abertura de loja não é um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:56:18.427846-03:00"
+    },
+    {
+      "title": "A família por trás da carbonara mais famosa de Roma que resiste à expansão global",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "não há informações financeiras ou econômicas relevantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:56:23.524731-03:00"
     }
   ]
 }
