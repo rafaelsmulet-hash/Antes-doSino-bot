@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Vanguard Russell 1000 Growth ETF Experiences Big Inflow",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:26:01.480632-03:00"
-    },
-    {
       "title": "Noteworthy ETF Outflows: RSP, ZBRA, PYPL, GPN",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T14:30:42.665738-03:00"
+    },
+    {
+      "title": "Pentagon presses defense contractors to ramp up weapons production",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia sugere que o aumento da produção de armamentos pode ter um impacto positivo nas empresas de defesa e no setor de defesa em geral.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T14:35:38.261579-03:00"
     }
   ]
 }
