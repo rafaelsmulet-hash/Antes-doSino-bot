@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Scott Bessent’s Yen Trade Has Unintended Consequences for the Markets",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:06:17.300518-03:00"
-    },
-    {
-      "title": "AST SpaceMobile vs. Vertiv: Comparing Revenue Scale and Consistency",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:06:19.929165-03:00"
-    },
-    {
-      "title": "Petrobras: ações chegam a subir cerca de 2% após bons 2T e dividendos, mas zeram",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Aumento nas ações da Petrobras após bons resultados financeiros e dividendos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:10:50.969458-03:00"
-    },
-    {
-      "title": "Por que as ações da Newmont Goldcorp estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Aumento de produção de ouro e perspectivas positivas para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:10:56.439999-03:00"
-    },
-    {
-      "title": "Morgan Stanley registra queda nos prêmios de seguros em estados-chave dos EUA",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "queda nos prêmios de seguros pode reduzir custos de operação para empresas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:10:59.253069-03:00"
-    },
-    {
-      "title": "PETR4: Petrobras bate consenso no 2T26 com EBITDA de US$ 19 bilhões; ações caem",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:11:01.907075-03:00"
-    },
-    {
-      "title": "Por que a ação da Rocket Companies está se recuperando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:11:04.557418-03:00"
-    },
-    {
-      "title": "Pfizer constrói caso de alta a US$ 26 após resultado e compras de insiders",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:11:07.257418-03:00"
-    },
-    {
-      "title": "Metalpha Technology Holding Limited reports FY results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:11:11.482105-03:00"
-    },
-    {
-      "title": "Acushnet Holdings Corp. declares $0.255 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:11:14.123428-03:00"
-    },
-    {
-      "title": "Surrozen GAAP EPS of -$0.41",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:11:16.746763-03:00"
-    },
-    {
       "title": "Veja como Bolsa reage ao balanço da Petrobras após empresa dobrar lucro",
       "source": "UOL Economia",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T09:16:20.180255-03:00"
+    },
+    {
+      "title": "Barrick Chairman's Planned Overhaul Meets Investor Backlash",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A mudança de controle e a reforma da empresa podem ter impacto significativo no desempenho futuro da Barrick",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:20:50.434592-03:00"
+    },
+    {
+      "title": "Mercado de luxo nas redes sociais: Yves Saint Laurent Beauty chega ao TikTok",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:20:54.818104-03:00"
+    },
+    {
+      "title": "Proteína pouco conhecida pode revelar novas pistas sobre o Alzheimer",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:21:00.527856-03:00"
+    },
+    {
+      "title": "Bamerindus: o que aconteceu com o banco que foi um dos maiores impérios financeiros do Brasil",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A notícia é sobre um banco histórico, mas não há informações sobre impacto atual no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:21:03.312938-03:00"
+    },
+    {
+      "title": "Como surgiu o Dia das Mães? Conheça a origem da celebração no Brasil e no mundo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:21:06.120230-03:00"
+    },
+    {
+      "title": "The Stock Market Is Sending a Chilling Warning, and History Isn't Reassuring",
+      "source": "Nasdaq",
+      "score": 8.0,
+      "motivo": "O nível de valorização do mercado de ações é um sinal importante para os investidores.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T09:21:16.544276-03:00"
+    },
+    {
+      "title": "3 Reasons to Buy and Hold This Dividend King (and 1 Reason Not To)",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A empresa é considerada um divisor de dividendos e tem uma posição dominante no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:21:19.515460-03:00"
+    },
+    {
+      "title": "Ares Capital Earned $0.50 a Share and Is Paying Out $0.48. How Thin Is That Dividend Cushion?",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento significativo para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:21:22.632986-03:00"
+    },
+    {
+      "title": "The Robotic Surgery Leader: Intuitive Surgical Slides Further But One Wall Street Bull Pegs Returns at 85%",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a empresa líder em um setor em alta.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:21:32.802958-03:00"
+    },
+    {
+      "title": "HA Sustainable Infrastructure Capital Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:21:35.661003-03:00"
+    },
+    {
+      "title": "Palantir (PLTR) Posted Record 93% Growth, Here’s Why Analysts Think It Won’t Last",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "O crescimento foi considerado alto e os analistas têm dúvidas sobre sua sustentabilidade.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:21:38.660734-03:00"
     }
   ]
 }
