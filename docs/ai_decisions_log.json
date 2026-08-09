@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "ANP abre consulta para mercado de gás que pode reduzir domínio da Petrobras",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:06:20.462059-03:00"
-    },
-    {
-      "title": "Sila Group owner Brepafin plans two-stage Vimercati Group acquisition",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:06:25.709864-03:00"
-    },
-    {
-      "title": "Lands’ End: This $400M Retailer Quietly Reinvented Its Business. Wall Street May Not Have Caught Up Yet – Initiation Report",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:06:28.439983-03:00"
-    },
-    {
-      "title": "Alemanha - Ações fecharam o pregão em alta e o Índice DAX avançou 0,82%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento do Índice DAX é um sinal positivo para o mercado alemão",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:10:47.834571-03:00"
-    },
-    {
       "title": "França - Ações fecharam o pregão em alta e o Índice CAC 40 avançou 0,17%",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T18:30:41.920577-03:00"
+    },
+    {
+      "title": "Aussie-Yen Is Set to Approach Three-Decade High, Analysts Say",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o valor do dólar australiano em relação ao iene.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T18:35:55.218912-03:00"
+    },
+    {
+      "title": "Rússia - Ações fecharam o pregão em queda e o Índice MOEX Russia Index terminou sem alterações",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "queda nas ações russas impacta negativamente o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T18:36:00.757145-03:00"
+    },
+    {
+      "title": "BofA points to the Eli Lilly market that could outsize the U.S.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A análise da BofA destaca a potencialidade de crescimento do mercado da Eli Lilly, tornando a notícia relevante para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T18:36:15.536066-03:00"
+    },
+    {
+      "title": "Delaying Social Security to 70 Costs About $158,000 in Skipped Checks, and Still Beats Any Annuity You Can Buy.",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque discute a economia pessoal e as decisões de investimento dos brasileiros.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T18:36:18.727995-03:00"
     }
   ]
 }
