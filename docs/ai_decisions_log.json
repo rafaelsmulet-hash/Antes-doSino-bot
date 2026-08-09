@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stock Market, IPO Leaders Rally To New Highs. Check This Screen Daily.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:11:44.401471-03:00"
-    },
-    {
-      "title": "SpaceX Stock Lands An Upgrade, Rocket Lab Surges After Electron Mission",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:11:47.064160-03:00"
-    },
-    {
-      "title": "NuScale Power Stock Could Triple by 2030. Here's Why.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:11:49.696700-03:00"
-    },
-    {
       "title": "Stock market today: Dow, S&P 500, Nasdaq rise after July jobs report surprises to the downside",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T09:31:01.553869-03:00"
+    },
+    {
+      "title": "I got two email invitations from friends. Is this a phishing scam — or am I suddenly popular?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:36:15.470150-03:00"
+    },
+    {
+      "title": "‘Her bank accounts were stripped bare by Medicaid’: My late friend had $20,000 in credit-card debt. Will her life insurance pay for it?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:36:18.471451-03:00"
+    },
+    {
+      "title": "Hamilton Beach Brands Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados financeiros positivos, o que é um sinal de saúde para a empresa e pode influenciar a decisão de investir.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T09:36:31.162140-03:00"
     }
   ]
 }
