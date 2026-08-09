@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Progyny Stock Plunged, Then Gradually Recovered Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:16:10.247506-03:00"
-    },
-    {
-      "title": "History Says This Is the Single Best Strategy for Investors if a Market Crash Is Imminent",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:16:13.222003-03:00"
-    },
-    {
-      "title": "Inside the Math of Team RB's SpaceX Price Target",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:16:16.164493-03:00"
-    },
-    {
       "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
       "source": "TechCrunch",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T19:31:10.661590-03:00"
+    },
+    {
+      "title": "Ações selecionadas por IA já sobem +48% e +28% em agosto",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Ações selecionadas por IA mostram desempenho positivo em agosto, o que pode indicar tendências favoráveis para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:35:38.359139-03:00"
+    },
+    {
+      "title": "A paixăo pela aviaçăo que uniu pais e filhos na cabine de comando",
+      "source": "UOL Economia",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:35:46.750901-03:00"
+    },
+    {
+      "title": "Medical Facilities Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de saúde e serviços médicos, mas não apresenta informações surpreendentes ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T19:35:52.246090-03:00"
     }
   ]
 }
