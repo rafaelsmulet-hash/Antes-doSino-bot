@@ -12,9 +12,22 @@
  * script inline sincrono no <head> de cada pagina (evita o "flash" de
  * tema errado antes do CSS carregar) - este arquivo so cuida da
  * interacao (clique no botao) depois que a pagina carrega.
+ *
+ * Expoe window.AntesDoSinoTema.atual() e dispara o evento
+ * 'ads:tema-mudou' no document a cada troca - os widgets da
+ * TradingView tem cor propria (colorTheme "dark"/"light") que nao
+ * segue o CSS da pagina, entao cada pagina escuta esse evento pra
+ * reconstruir os widgets no tema certo (ver terminal.js e os scripts
+ * de calendario/mapa/quant.html).
+ *
+ * window.AntesDoSinoTema.montarWidgetTV(...) monta um widget publico
+ * da TradingView (mesmo padrao usado no Terminal) a partir do tema
+ * atual - helper compartilhado pra nao duplicar esse bloco de HTML/JS
+ * em calendario.html, mapa.html e quant.html.
  */
 (function () {
   var CHAVE = 'antes-do-sino-tema';
+  var EVENTO = 'ads:tema-mudou';
 
   function temaAtual() {
     var explicito = document.documentElement.getAttribute('data-theme');
@@ -29,6 +42,7 @@
       // localStorage indisponivel (modo anonimo, etc) - tema ainda
       // funciona nesta visita, so nao persiste pra proxima.
     }
+    document.dispatchEvent(new CustomEvent(EVENTO, { detail: { tema: tema } }));
   }
 
   function inicializar() {
@@ -39,6 +53,37 @@
       aplicarTema(novoTema);
     });
   }
+
+  // containerId: id do elemento onde o widget entra. src: URL do
+  // script de embed da TradingView. configBuilder: funcao que recebe
+  // o tema atual ("dark"/"light") e devolve o objeto de configuracao
+  // do widget (mesmo JSON que iria dentro do <script>...</script> no
+  // embed estatico da TradingView).
+  function montarWidgetTV(containerId, src, configBuilder) {
+    var container = document.getElementById(containerId);
+    if (!container) return;
+    container.innerHTML = '';
+
+    var wrapper = document.createElement('div');
+    wrapper.className = 'tradingview-widget-container';
+    wrapper.style.height = '100%';
+    wrapper.style.width = '100%';
+
+    var widgetDiv = document.createElement('div');
+    widgetDiv.className = 'tradingview-widget-container__widget';
+    wrapper.appendChild(widgetDiv);
+
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = src;
+    script.async = true;
+    script.text = JSON.stringify(configBuilder(temaAtual()));
+
+    wrapper.appendChild(script);
+    container.appendChild(wrapper);
+  }
+
+  window.AntesDoSinoTema = { atual: temaAtual, EVENTO: EVENTO, montarWidgetTV: montarWidgetTV };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', inicializar);

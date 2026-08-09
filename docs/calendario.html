@@ -93,22 +93,7 @@
 </div>
 
 <section>
-  <div class="widget-frame reveal">
-    <div class="tradingview-widget-container" style="height:100%;width:100%;">
-      <div class="tradingview-widget-container__widget"></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
-      {
-        "colorTheme": "dark",
-        "isTransparent": true,
-        "width": "100%",
-        "height": "100%",
-        "locale": "br",
-        "importanceFilter": "-1,0,1",
-        "countryFilter": "us,br,eu,gb,jp,cn"
-      }
-      </script>
-    </div>
-  </div>
+  <div class="widget-frame reveal" id="tv-calendario"></div>
 </section>
 
 <section class="catalyst-section" id="catalisadores-section" style="display:none;">
@@ -190,6 +175,30 @@
   }
 </script>
 <script src="theme.js"></script>
+<script>
+  // Widget da TradingView nao segue o CSS da pagina (cor propria via
+  // colorTheme) - monta pelo helper compartilhado (ver theme.js) e
+  // reconstroi quando o usuario troca de tema.
+  function montarWidgetsCalendario() {
+    window.AntesDoSinoTema.montarWidgetTV(
+      'tv-calendario',
+      'https://s3.tradingview.com/external-embedding/embed-widget-events.js',
+      function (tema) {
+        return {
+          colorTheme: tema,
+          isTransparent: true,
+          width: '100%',
+          height: '100%',
+          locale: 'br',
+          importanceFilter: '-1,0,1',
+          countryFilter: 'us,br,eu,gb,jp,cn',
+        };
+      }
+    );
+  }
+  montarWidgetsCalendario();
+  document.addEventListener(window.AntesDoSinoTema.EVENTO, montarWidgetsCalendario);
+</script>
 
 </body>
 </html>
