@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SpaceX's influence ripples across markets: AlphaCheck",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T12:02:51.288628-03:00"
-    },
-    {
       "title": "Antipodes Exited Suzano (SUZ) as Pulp Oversupply Threatened Returns",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T12:35:45.617040-03:00"
+    },
+    {
+      "title": "Hassett says fuel prices could fall sharply after Gulf crisis is resolved",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A crise no Golfo pode afetar os preços de combustível e, consequentemente, a economia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T12:40:40.933613-03:00"
     }
   ]
 }
