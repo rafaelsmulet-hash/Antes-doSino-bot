@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KKJKKZB9QG');
+</script>
+<script src="analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre e Metodologia — Antes do Sino</title>
+<meta name="description" content="Como a Antes do Sino funciona: de onde vêm os dados, como as notícias são selecionadas e o que o produto não é.">
+<script>
+  // Aplica o tema salvo ANTES do CSS carregar, pra nao piscar o tema
+  // errado por uma fracao de segundo (script sincrono de proposito).
+  (function(){try{var t=localStorage.getItem('antes-do-sino-tema');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();
+</script>
+<link rel="stylesheet" href="design-system.css">
+<style>
+  .sobre-section{max-width:760px;}
+  .sobre-section + .sobre-section{padding-top:0;}
+  .sobre-block{margin-bottom:var(--sp-7);}
+  .sobre-block:last-child{margin-bottom:0;}
+  .sobre-block h2{
+    font-family:var(--font-display);font-weight:700;font-size:1.35rem;
+    letter-spacing:-0.01em;margin-bottom:var(--sp-3);
+  }
+  .sobre-block p{color:var(--slate);font-size:0.98rem;line-height:1.7;margin-bottom:var(--sp-3);}
+  .sobre-block p:last-child{margin-bottom:0;}
+  .sobre-block strong{color:var(--cream);}
+  .sobre-list{display:flex;flex-direction:column;gap:var(--sp-2);}
+  .sobre-list-item{
+    display:flex;gap:var(--sp-3);align-items:flex-start;
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);
+    padding:var(--sp-4);
+  }
+  .sobre-list-item svg{width:18px;height:18px;color:var(--gold);flex-shrink:0;margin-top:2px;}
+  .sobre-list-item p{color:var(--slate);font-size:0.9rem;line-height:1.55;margin:0;}
+  .sobre-list-item strong{display:block;color:var(--cream);font-size:0.95rem;margin-bottom:3px;}
+  .sobre-cta{
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--sp-4);
+    background:linear-gradient(160deg, color-mix(in srgb, var(--gold) 12%, transparent), color-mix(in srgb, var(--gold) 2%, transparent));
+    border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--sp-5) var(--sp-6);
+  }
+  .sobre-cta p{color:var(--cream);font-size:0.95rem;margin:0;max-width:420px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v2M8.5 20a3.5 3.5 0 0 0 7 0M5 17h14l-1.4-2.1A7 7 0 0 1 16.5 11V9a4.5 4.5 0 0 0-9 0v2a7 7 0 0 1-1.1 3.9L5 17Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Antes do Sino
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="theme-toggle" type="button" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <a href="https://t.me/+TobMzw-WnQhmZmIx" class="nav-cta">Entrar no grupo grátis</a>
+  </div>
+</nav>
+<div class="sub-nav">
+  <a href="index.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>
+    Terminal
+  </a>
+  <a href="calendario.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    Calendário
+  </a>
+  <a href="mapa.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    Mapa de Calor
+  </a>
+  <a href="quant.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+    Quant
+  </a>
+</div>
+
+<div class="hero reveal">
+  <span class="kicker">Sobre e metodologia</span>
+  <h1>Dados públicos,<br>sem enrolação.</h1>
+  <p>Como a Antes do Sino funciona por dentro: de onde vêm os dados, como as notícias são selecionadas e o que este produto não é.</p>
+</div>
+
+<section class="sobre-section">
+  <div class="sobre-block reveal">
+    <h2>Como funciona</h2>
+    <p>A Antes do Sino monitora feeds de notícias financeiras públicos 24 horas por dia. Cada notícia passa por um filtro automático de <strong>materialidade</strong> — o quanto ela é relevante pro mercado — e é classificada como alta, baixa ou neutra antes de ser publicada.</p>
+    <p>O conteúdo é entregue em tempo real no grupo do Telegram, além de alimentar este Terminal e os digests periódicos (Briefing Matinal, Giro do Mercado, Fechamento B3). Todo o processo é automatizado — não há redação humana escrevendo ou opinando sobre as notícias antes de publicar.</p>
+  </div>
+
+  <div class="sobre-block reveal">
+    <h2>De onde vêm os dados</h2>
+    <div class="sobre-list">
+      <div class="sobre-list-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+        <p><strong>Cotações e gráficos</strong>Widgets públicos da TradingView, embutidos diretamente — os dados são deles, não nossos. Nenhum preço é calculado ou armazenado por este site.</p>
+      </div>
+      <div class="sobre-list-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+        <p><strong>Notícias</strong>Feeds RSS públicos de veículos de imprensa e mercado. Cada card do feed traz a fonte original — clique pra ler a matéria completa lá.</p>
+      </div>
+      <div class="sobre-list-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <p><strong>Sem invenção de dado</strong>Quando não existe uma fonte confiável e gratuita pra um indicador (ex: fluxo estrangeiro oficial da B3), usamos uma aproximação e deixamos isso explícito na própria tela — nunca apresentamos um proxy como se fosse o dado oficial.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sobre-block reveal">
+    <h2>O que a Antes do Sino não é</h2>
+    <p>Não somos uma consultoria de investimentos e não damos recomendação de compra ou venda de nenhum ativo. Todo o conteúdo é informativo — a decisão é sempre sua.</p>
+    <p>O <strong>Diário de Decisão</strong>, quando você registra uma operação pelo Telegram, é só um registro factual: identificamos o ativo, guardamos o preço do momento e, alguns dias depois, mostramos o que aconteceu — sem julgamento, comentário ou opinião sobre a sua decisão.</p>
+  </div>
+
+  <div class="sobre-cta reveal">
+    <p>Dúvidas, sugestões ou algo pra corrigir? O grupo do Telegram é o canal mais rápido pra falar com a gente.</p>
+    <a href="https://t.me/+TobMzw-WnQhmZmIx" class="btn-primary">Entrar no grupo grátis</a>
+  </div>
+</section>
+
+<footer>
+  <span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>
+  <div style="display:flex;gap:16px;">
+    <a href="calendario.html">Calendário</a>
+    <a href="mapa.html">Mapa de Calor</a>
+    <a href="quant.html">Quant</a>
+  </div>
+</footer>
+
+<script>
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in-view'); });
+  }
+</script>
+<script src="theme.js"></script>
+
+</body>
+</html>
