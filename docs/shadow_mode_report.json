@@ -1,13 +1,13 @@
 {
   "date": "2026-08-09",
-  "total_ingeridas": 1220,
-  "aprovadas_pelo_fluxo_atual": 20,
-  "descartadas_pelos_filtros_atuais": 1200,
-  "score_medio_materialidade": 2.31,
+  "total_ingeridas": 1468,
+  "aprovadas_pelo_fluxo_atual": 21,
+  "descartadas_pelos_filtros_atuais": 1447,
+  "score_medio_materialidade": 2.46,
   "seriam_breaking": 3,
-  "iriam_para_rodada": 18,
-  "seriam_descartadas_pelo_novo_sistema": 63,
-  "total_divergencias": 17,
+  "iriam_para_rodada": 23,
+  "seriam_descartadas_pelo_novo_sistema": 66,
+  "total_divergencias": 21,
   "divergencias": [
     {
       "title": "China’s Inflation Cools as Iran War Oil Shock Starts to Ease",
@@ -126,6 +126,27 @@
       "source": "CNBC - US News",
       "score": 8.0,
       "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Ações europeias atraem investidores com lucros e crescimento em alta",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "‘Tariffs have been incredible’: Trump says America’s ‘rocking’ as Toyota, giants pour billions into US. Was he right?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "CEO Elon Musk Says This Is the Most Underappreciated Part of SpaceX's Business",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
   ]
