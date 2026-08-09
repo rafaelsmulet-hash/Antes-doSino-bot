@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Could Taiwan Semiconductor Manufacturing (TSM) Be the Most Critical Bottleneck in the AI Chip Boom?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:41:33.650932-03:00"
-    },
-    {
-      "title": "Brasil protege su selva, Bolivia podría estar pagando el precio",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T12:45:49.590493-03:00"
-    },
-    {
       "title": "Brasil foi 2º país com maior expansão de produção automotiva em julho",
       "source": "InfoMoney",
       "score": 5.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T15:50:59.151038-03:00"
+    },
+    {
+      "title": "Goldman Sachs’ Pasquariello sees bull market continuing despite post-Labor Day risks",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A opinião de um economista de uma instituição financeira importante sobre o mercado em alta.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T15:55:49.695254-03:00"
+    },
+    {
+      "title": "A volta por cima dos irmãos Batista: como donos da JBS saíram da Lava Jato e voltaram aos holofotes, com participação até na diplomacia mundial",
+      "source": "G1 Economia",
+      "score": 6.0,
+      "motivo": "a notícia aborda a história da JBS e os irmãos Batista, mas também menciona escândalos e problemas ambientais da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T15:55:57.509789-03:00"
     }
   ]
 }
