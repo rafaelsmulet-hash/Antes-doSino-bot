@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Can Sam Altman Be Trusted Inside Your Home? Meet OpenAI's New Always-On Smart Speaker",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:16:43.211694-03:00"
-    },
-    {
-      "title": "Futures Rise Ahead Of Closely Watched Jobs Report",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:16:45.835573-03:00"
-    },
-    {
-      "title": "Jobs Revisions Are Pointing to Labor Weakness, Says BlackRock’s Rosenberg",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque indica fraqueza no mercado de trabalho, o que pode influenciar a política monetária e as decisões de investimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T10:21:25.937225-03:00"
-    },
-    {
       "title": "Mini índice perde médias móveis e pode buscar suporte nos 173,8 mil pontos; mini dólar mantém recuperação técnica, avalia BTG",
       "source": "Money Times",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T07:01:04.708037-03:00"
+    },
+    {
+      "title": "Uma virada no abacate: ciência encontra gene que pode melhorar a lavoura",
+      "source": "Exame",
+      "score": 1.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:05:46.862971-03:00"
+    },
+    {
+      "title": "Opinião: O novo símbolo do sucesso masculino é a presença",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:05:49.713339-03:00"
+    },
+    {
+      "title": "Os Paralamas do Sucesso relembram sucesso do clássico disco “Selvagem?” no Doce Maravilha 2026",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "notícia é sobre entretenimento e não tem relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T07:05:56.229948-03:00"
     }
   ]
 }
