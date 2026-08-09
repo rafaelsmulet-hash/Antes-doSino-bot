@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Negociação de opções da Ardelyx dispara enquanto ação cai 18%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:04.262147-03:00"
-    },
-    {
-      "title": "Ações da Qxo podem oscilar 7,9% com resultados em 14 de agosto",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:06.890404-03:00"
-    },
-    {
-      "title": "Ações da Poet Technologies podem oscilar 11% com resultados em 14 de agosto",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:09.537373-03:00"
-    },
-    {
-      "title": "Ações da Navan podem oscilar 12% com resultado de 14 de agosto",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T11:36:12.178400-03:00"
-    },
-    {
-      "title": "Tesla cai com gap baixista e resiste em $338: Níveis ao vivo",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T11:36:14.864825-03:00"
-    },
-    {
       "title": "Pussycat Dolls abrem venda de ingressos para show no Brasil; veja como comprar",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T10:55:47.049615-03:00"
+    },
+    {
+      "title": "This ‘adversarial’ pattern can prevent surveillance cameras from detecting you",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:01:13.614548-03:00"
+    },
+    {
+      "title": "Global Payments (GPN) Q2 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "Resultados financeiros acima das expectativas da empresa de processamento de pagamentos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:01:16.571234-03:00"
+    },
+    {
+      "title": "Is XRP About to Have Its Biggest Year Yet in 2027?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o preço do XRP e as expectativas dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:01:19.542789-03:00"
+    },
+    {
+      "title": "SanDisk Just Unveiled the First High-Bandwidth Flash Standard. What That Means for SNDK Stock.",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O lançamento de um novo padrão de flash pode aumentar a demanda por produtos da SanDisk, impactando positivamente a ação da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:01:22.474227-03:00"
+    },
+    {
+      "title": "I was a New York psychologist who thought I understood families. Then I moved to Wichita.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T11:01:25.593399-03:00"
     }
   ]
 }
