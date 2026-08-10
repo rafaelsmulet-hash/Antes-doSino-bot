@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lojas Renner (LREN3) corta projeção de vendas após 2T26 mais fraco; ainda vale comprar?",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:16:24.789006-03:00"
-    },
-    {
-      "title": "FII divulga dividendos com retorno de 1,27% ao mês",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:16:27.464829-03:00"
-    },
-    {
-      "title": "Block explores how to price AI",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:16:31.342404-03:00"
-    },
-    {
-      "title": "Are Wall Street Analysts Bullish on Marvell Technology Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:16:34.028692-03:00"
-    },
-    {
-      "title": "Nasdaq Futures Slip as Western Digital and Sandisk Sink on Disappointing Guidance",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:16:36.740985-03:00"
-    },
-    {
-      "title": "A taxa de desocupação é de 5,4% e taxa de subutilização é de 12,9% no trimestre encerrado em junho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:20:43.892355-03:00"
-    },
-    {
-      "title": "Ibovespa tem nova derrocada com Petrobras (PETR4) e acumula perda de 3% na semana; dólar cai a R$ 5,08",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "queda do Ibovespa e do dólar impactam mercado brasileiro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:20:48.080194-03:00"
-    },
-    {
-      "title": "Wall Street avança com payroll fraco; Nasdaq salta 5% e tem melhor semana desde abril",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "indicativos de Fed menos agressiva na política monetária",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:20:51.157098-03:00"
-    },
-    {
-      "title": "I got two email invitations from friends. Is this a phishing scam — or am I suddenly popular?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:20:56.268795-03:00"
-    },
-    {
-      "title": "Century Casinos targets net debt-to-EBITDA well below 6x by year-end as 2026 CapEx is set at $15M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:20:59.061819-03:00"
-    },
-    {
-      "title": "Dti reaffirms 2026 guidance of $155M-$170M revenue as it invests in ClearPath growth in Norway",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:21:01.783852-03:00"
-    },
-    {
-      "title": "Ashland jumps on report it's exploring sale after takeover interest",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:21:04.481226-03:00"
-    },
-    {
-      "title": "AMTD IDEA gets NYSE notice over minimum share price requirement",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:21:07.182590-03:00"
-    },
-    {
-      "title": "Startup pivota negócio para surfar boom do consignado e capta R$ 80 milhões em 60 dias",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:21:19.182537-03:00"
-    },
-    {
       "title": "This Spider-Man Is 'Deeper,' Say Sony's Rothman",
       "source": "Bloomberg Markets",
       "score": 0.0,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T08:26:02.104532-03:00"
+    },
+    {
+      "title": "Estrela destruída revela buraco negro oculto vagando pela galáxia",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:30:43.419368-03:00"
+    },
+    {
+      "title": "Dole declares $0.085 dividend",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A declaração de dividendos é um sinal de saúde financeira da empresa e pode atrair investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:30:46.467069-03:00"
+    },
+    {
+      "title": "Government backing is reshaping the rare earth mining sector",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Apoio governamental pode impulsionar a produção e reduzir os custos para as empresas de mineração de terras raras.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:30:49.345519-03:00"
+    },
+    {
+      "title": "Lincoln National appoints Adam Cohen interim CFO, Chris Neczypor steps down",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para a empresa, mas não tem impacto significativo no mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:30:52.614776-03:00"
+    },
+    {
+      "title": "Does Jamie Dimon Know Something That Wall Street Doesn't? He Just Sent the Market a Clear Warning Shot.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "O aviso de Dimon sobre o alto nível de margem de risco pode influenciar a confiança dos investidores e afetar as ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:30:56.696357-03:00"
+    },
+    {
+      "title": "Ferguson Enterprises Q2 Earnings Up; Raises FY26 Sales Growth Outlook",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Aumento da previsão de crescimento de vendas e lucro acima do esperado são indicativos de saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:30:59.680142-03:00"
+    },
+    {
+      "title": "MITT To Acquire Cherry Hill Mortgage Investment",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A fusão pode impactar o mercado de títulos hipotecários residenciais e afetar as ações das empresas envolvidas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:31:02.839052-03:00"
+    },
+    {
+      "title": "International Seaways Q2 Income Rises",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Aumento do lucro é um sinal positivo para a empresa e pode influenciar os preços das ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:31:05.931307-03:00"
+    },
+    {
+      "title": "Ferguson Enterprises Inc. Reports Advance In Q2 Income",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque fornece informações sobre os lucros da empresa, que é um indicador importante para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:31:08.844346-03:00"
+    },
+    {
+      "title": "Ryman Hospitality Properties To Buy Grande Lakes Orlando Resort For $1.38 Bln",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A compra de um grande resort pode ser um sinal de confiança no mercado de turismo e pode ter um impacto positivo nas ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:31:11.863513-03:00"
+    },
+    {
+      "title": "BRC Announces 1-for-10 Reverse Stock Split; Shares Fall In Pre-market",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "O split de ações é uma ação rotineira que pode afetar o preço das ações",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:31:14.752139-03:00"
+    },
+    {
+      "title": "Ata do Copom, IPCA de julho e inflação nos EUA nos destaques da semana",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "motivo": "A noticia aborda indicadores de inflacao, relevantes para a tomada de decisao de investidores no mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:31:19.215404-03:00"
+    },
+    {
+      "title": "Why Micron Stock Plummeted 28.7% in July But Is Rebounding in August",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a recuperação da açõ da Micron, o que pode ser um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:31:23.938235-03:00"
+    },
+    {
+      "title": "Affinia adds Wilson Partners to strengthen position in UK accounting sector",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A aquisição pode aumentar a competitividade da Affinia no mercado britânico e gerar economias de escala.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:31:26.783277-03:00"
     }
   ]
 }
