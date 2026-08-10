@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Pensando em trocar de celular? Seu smartphone pode ficar ainda mais caro",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Aumento do preço médio global de celulares pode impulsionar a demanda por produtos da Apple, impactando positivamente suas ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T18:01:20.489806-03:00"
-    },
-    {
-      "title": "Trump signals economic pressure over new Iran strikes as Hormuz talks stall",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "Ameaça de pressão econômica pode afetar os preços do petróleo e, consequentemente, a economia global.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T18:01:23.796287-03:00"
-    },
-    {
-      "title": "UPS Completed Its Amazon Volume Pullback. Is the Turnaround Finally Working?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa está relatando uma melhoria em sua situação financeira, o que pode ter um impacto positivo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T18:16:12.703183-03:00"
-    },
-    {
-      "title": "Alphabet's Cloud Computing Business Just Posted 82% Revenue Growth. Next Quarter Could Be Even Better.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia destaca um crescimento significativo nas receitas da Alphabet, o que pode influenciar positivamente os investimentos no setor de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T18:25:48.193756-03:00"
-    },
-    {
-      "title": "Six Darden Executives Sold Within a Week. Here's What to Make of It",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "Venda de ações por parte de executivos não é um evento de mercado significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:25:51.082042-03:00"
-    },
-    {
-      "title": "Gastos com defesa de Taiwan devem aumentar 16% em 2027, segundo mídia oficial",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "Aumento de gastos com defesa é um evento rotineiro e não impacta diretamente o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:30:41.920577-03:00"
-    },
-    {
-      "title": "Aussie-Yen Is Set to Approach Three-Decade High, Analysts Say",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o valor do dólar australiano em relação ao iene.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:35:55.218912-03:00"
-    },
-    {
-      "title": "Rússia - Ações fecharam o pregão em queda e o Índice MOEX Russia Index terminou sem alterações",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "queda nas ações russas impacta negativamente o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:36:00.757145-03:00"
-    },
-    {
       "title": "BofA points to the Eli Lilly market that could outsize the U.S.",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T19:11:18.546597-03:00"
+    },
+    {
+      "title": "777 Partners Files Bankruptcy After Creditors’ Liquidation Push",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia é relevante pois afeta a situação financeira da empresa 777 Partners, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:15:48.235395-03:00"
+    },
+    {
+      "title": "Presidente do STF, Fachin diz que “nem os tribunais, nem o Brasil são infalíveis”",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:15:52.142287-03:00"
+    },
+    {
+      "title": "RadNet targets over $140M of Digital Health ARR by end of 2026 as it raises imaging center guidance",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa aumentou a previsão de receita devido a uma melhoria no desempenho de seus centros de imagem.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:15:57.823463-03:00"
+    },
+    {
+      "title": "PicPay nomeia André Cazotto como CFO",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:16:08.440684-03:00"
+    },
+    {
+      "title": "Wildfires Continue To Rage Across Western US And Canada As Tens Of Thousands Evacuated",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:16:12.087907-03:00"
+    },
+    {
+      "title": "The New Censorship Isn't Coming From The Left - It's Coming From Everyone",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:16:14.836770-03:00"
+    },
+    {
+      "title": "Dramatic Footage: Chinese Long March-7A Rocket Explodes Shortly After Liftoff",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:16:17.560933-03:00"
+    },
+    {
+      "title": "FBI Working With DHS, ODNI On Election Integrity: FBI Director",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:16:20.270188-03:00"
     }
   ]
 }
