@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Haddad acusa direita de “apoiar o agressor” sobre tarifaço; Tarcísio rebate com ações",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "discussão política sobre tarifas não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:40:45.727340-03:00"
-    },
-    {
-      "title": "SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets",
-      "source": "SEC",
-      "score": 3.0,
-      "motivo": "A discussão visa re-examinar processos de IPOs e melhorar a acessibilidade para pequenas empresas.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:45:57.936187-03:00"
-    },
-    {
       "title": "Robinhood Crypto Chief Explains Why There Are 'Two Wolves' Inside Robinhood Chain",
       "source": "Yahoo Finance",
       "score": 4.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T20:25:57.314842-03:00"
+    },
+    {
+      "title": "Muito além dos bunkers: o refúgio construído por bilionários para escapar do ‘fim do mundo’ na Argentina",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:36:00.430096-03:00"
+    },
+    {
+      "title": "SNID11 fecha pregão em alta de 0,2%; fundo acumula ganhos acima de 16%",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "O fundo SNID11 encerrou o pregão em alta, acumulando ganhos significativos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:36:04.379907-03:00"
     }
   ]
 }
