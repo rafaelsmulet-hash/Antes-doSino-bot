@@ -1,177 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Do Wall Street Analysts Like Target Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:26:20.183722-03:00"
-    },
-    {
-      "title": "Optimizing Life and Finances in Your Twenties | Masters in Business with Jack Raines",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações específicas sobre o mercado financeiro, mas sim uma entrevista sobre finanças pessoais.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:03.205267-03:00"
-    },
-    {
-      "title": "JBS e nova joint venture: o que representa para a empresa?",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "JBS expande operações em regiões de alta demanda de carne",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:14:06.983528-03:00"
-    },
-    {
-      "title": "Trigo se recupera em Chicago enquanto mercado avalia ataques no Mar Negro",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:14:11.079247-03:00"
-    },
-    {
-      "title": "Agricultores argentinos retêm safra de trigo de olho em preços mais altos",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:14:13.764279-03:00"
-    },
-    {
-      "title": "55% OFF: garanta o InvestingPro por menos de R$ 1 por dia antes que a oferta acabe",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:16.635634-03:00"
-    },
-    {
-      "title": "Iguatemi assina proposta vinculante de venda de participações em cinco ativos do portfólio por R$876,1 mi",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:19.351362-03:00"
-    },
-    {
-      "title": "Ibovespa e dólar hoje inauguram semana pesada de dados de inflação Brasil e EUA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:14:22.220662-03:00"
-    },
-    {
-      "title": "Colômbia - Ações fecharam o pregão em alta e o Índice COLCAP avançou 0,24%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:24.908917-03:00"
-    },
-    {
-      "title": "BMW exibe anúncio do novo 'Homem-Aranha' em painéis e revolta proprietários",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:28.701752-03:00"
-    },
-    {
-      "title": "Stray Kids, que vai tocar no Rock in Rio, lança mini-álbum; saiba tudo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:31.380583-03:00"
-    },
-    {
-      "title": "Lula diz que Marco Rubio é 'bolsonarista' e 'anti-latino-americano'",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:34.046501-03:00"
-    },
-    {
-      "title": "The smart way to invest in gold right now as the dollar slips",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:14:36.872517-03:00"
-    },
-    {
-      "title": "U.S. court approves New Jersey PFAS settlements totaling $2.5B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:39.585791-03:00"
-    },
-    {
-      "title": "Johnson Outdoors anticipates $5M-$6M full-year tax expense as tariff refunds fade",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:42.269483-03:00"
-    },
-    {
-      "title": "AIG targets general insurance expense ratio below 30% in 2027 while contracting Lexington property",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:44.968699-03:00"
-    },
-    {
-      "title": "MSC Income Fund outlines $40M combined share purchases and targets leverage ramp over next 3-4 quarters",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:47.681383-03:00"
-    },
-    {
-      "title": "Dauch targets $10.6B-$10.8B sales and $1.36B-$1.425B EBITDA as integration run rate savings reach $70M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:14:50.376280-03:00"
-    },
-    {
-      "title": "Amrize forecasts $12.5B-$12.7B 2026 revenue while targeting $3.1B-$3.2B adjusted EBITDA amid oil-driven cost inflation",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:14:53.085949-03:00"
-    },
-    {
       "title": "Starz raises 2026 adjusted OIBDA growth outlook to mid-single digits while targeting ~2.7x leverage after $100M credit facility increase",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17828,177 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T09:21:59.321165-03:00"
+    },
+    {
+      "title": "Dólar hoje ronda estabilidade com dados de inflação no radar",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "dados fracos do mercado de trabalho podem pressionar a economia e o mercado financeiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:25:40.686060-03:00"
+    },
+    {
+      "title": "Por que a ação da aTyr Pharma está subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ação da aTyr Pharma está subindo devido a resultados positivos em estudos clínicos, o que é visto como um sinal de crescimento para a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:25:45.351227-03:00"
+    },
+    {
+      "title": "Ações da Archer disparam 20% com acordo aeroespacial com a Boeing",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "acordo aeroespacial com a Boeing é um parceiro importante e pode trazer novas oportunidades para a Archer",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:25:51.571529-03:00"
+    },
+    {
+      "title": "Por que as ações da Teradata estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a ação está caindo, mas não há informações sobre o motivo específico",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:25:54.318321-03:00"
+    },
+    {
+      "title": "Por que as ações da NetApp sobem 2,8% hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Aumento no preço das ações da NetApp indica confiança dos investidores no desempenho da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:25:57.031389-03:00"
+    },
+    {
+      "title": "Por que as ações da ZIM Integrated Shipping estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ações da ZIM Integrated Shipping estão caindo devido a perda de valor, o que é um indicativo negativo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:26:00.021331-03:00"
+    },
+    {
+      "title": "Por que a ação da CoreCivic está subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a ação da CoreCivic está subindo devido a uma notícia positiva sobre o setor de segurança privada",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:26:02.786326-03:00"
+    },
+    {
+      "title": "Ações da Intel caem após oferta bilionária de US$ 15 bilhões",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A oferta bilionária pode afetar a liquidez e o preço das ações da Intel",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:26:05.548216-03:00"
+    },
+    {
+      "title": "Futuros da TSX contidos em meio à guerra do Irã e dados de inflação dos EUA",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A noticia menciona a guerra do Irã e dados de inflação dos EUA, que sao eventos relevantes para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:26:08.391317-03:00"
+    },
+    {
+      "title": "GameStop pode desistir de oferta de US$ 56 bilhões pelo eBay e buscar parceria",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A possibilidade de GameStop buscar parceria em vez de oferta de US$ 56 bilhões pode ser vista como positiva para a empresa, pois pode evitar perdas significativas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:26:11.163127-03:00"
+    },
+    {
+      "title": "Por que as ações da CECO Environmental estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ações da CECO Environmental disparando devido a anúncio de parceria estratégica com empresa líder em tecnologia de limpeza ambiental.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:26:13.993550-03:00"
+    },
+    {
+      "title": "Intel plans to sell $15 billion worth of stock after it has risen 400% in a year",
+      "source": "MarketWatch",
+      "score": 6.0,
+      "motivo": "A empresa está vendendo ações após um ano de crescimento significativo, o que pode ser visto como um sinal de confiança no futuro da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:26:17.494071-03:00"
+    },
+    {
+      "title": "Amazon Stock Hits a New All-Time High: Is It Still a Buy?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:26:23.418759-03:00"
+    },
+    {
+      "title": "Why JPMorgan sees more big gains ahead for the S&P 500",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:26:29.561573-03:00"
+    },
+    {
+      "title": "Intel launches $15 billion share sale as turnaround rally lifts stock",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:26:32.177033-03:00"
+    },
+    {
+      "title": "3 Beaten-Down Healthcare Stocks to Buy in August",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:26:34.783711-03:00"
+    },
+    {
+      "title": "A 26-year-old owes $45K in debt but insists on keeping an $800 monthly entertainment budget — Reddit didn't hold back",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:26:37.414918-03:00"
+    },
+    {
+      "title": "Analyst Report: National Fuel Gas Co",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:26:40.017691-03:00"
+    },
+    {
+      "title": "PE-backed UK companies shirk IPOs while delistings mount",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:26:42.629048-03:00"
     }
   ]
 }
