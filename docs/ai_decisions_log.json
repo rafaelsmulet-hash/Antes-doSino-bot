@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Here’s when Elon Musk’s Starlink internet is worth the steep monthly price — and $350 startup cost",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre tecnologia e serviços de internet",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:01:10.172251-03:00"
-    },
-    {
-      "title": "Alerian MLP ETF vs First Trust Energy Infrastructure Fund: Which Energy ETF is the Better Buy in 2026?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a vantagem de dividendos do Alerian MLP ETF em comparação com o First Trust North American Energy Infrastructure Fund, o que é relevante para investidores em ETFs de energia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T14:01:15.561205-03:00"
-    },
-    {
-      "title": "Massive News: Palantir's Newest Partnership Could Strengthen Its AI Moat",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A parceria pode fortalecer a posição competitiva da Palantir no mercado de software de inteligência artificial.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T14:01:18.617999-03:00"
-    },
-    {
-      "title": "Why Cameco's Ugly Earnings Miss Might Be Good News in Disguise",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque pode ter um impacto positivo no preço das ações da Cameco apesar da divulgação inicial negativa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T14:01:21.554203-03:00"
-    },
-    {
-      "title": "Tractor Supply CEO Lawton Buys 15,600 Shares for $501,540 Amid Stock's 44% Decline",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A compra de ações pelo CEO sugere confiança na empresa e pode influenciar a percepção dos investidores sobre a saúde financeira da Tractor Supply.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:01:24.510344-03:00"
-    },
-    {
-      "title": "Tractor Supply CEO Lawton Buys 15,600 Shares for $501,540 Amid Stock's 44% Decline",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A compra de acoes pelo CEO sugere confianca na empresa e pode ser um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:01:31.971645-03:00"
-    },
-    {
-      "title": "I spent $300 outsourcing a parenting rite of passage. I'd do it again.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:01:35.035086-03:00"
-    },
-    {
-      "title": "SP Climate Week chega ao fim e vira plataforma permanente de ação climática",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A noticia e sobre meio ambiente e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:05:55.374013-03:00"
-    },
-    {
-      "title": "Social Security’s funding crisis is the elephant in the room. But don’t ignore the mouse.",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é específica e materialmente relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:05:58.462850-03:00"
-    },
-    {
-      "title": "Selic a 14% ainda deixa a renda fixa atraente? Entenda o que muda para cada investimento",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "A redução da Selic não significa que a renda fixa perdeu atração, mas sim que a relação entre liquidez, prazo e potencial de ganho mudou",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:06:06.779281-03:00"
-    },
-    {
-      "title": "SEC Announces Continuation of Small Business Advisory Committee Meeting",
-      "source": "SEC",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma reunião de um comitê consultivo, o que não é um evento significativo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:06:13.823488-03:00"
-    },
-    {
       "title": "Lula: anunciamos o menor desmatamento da década na Amazônia",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T13:22:20.860337-03:00"
+    },
+    {
+      "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
+      "source": "CNBC - Economy",
+      "score": 8.0,
+      "motivo": "Perda inesperada de empregos afeta a confiança no mercado e pode influenciar a política monetária.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:25:34.989197-03:00"
+    },
+    {
+      "title": "See Which Recent 13F Filers Hold JPM",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a popularidade da JPMorgan Chase & Co entre os fundos de hedge, o que pode ser um sinal de confiança no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:25:41.567047-03:00"
+    },
+    {
+      "title": "What Retirees Should Expect From Social Security's 3.8% COLA in 2027",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:25:44.223189-03:00"
+    },
+    {
+      "title": "Monday's ETF Movers: OIH, PSI",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:25:46.850049-03:00"
+    },
+    {
+      "title": "Broadcom Stock Looks Like a Screaming Deal",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:25:49.483772-03:00"
+    },
+    {
+      "title": "Is McDonald's Still a Good Stock to Buy in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:25:52.121229-03:00"
+    },
+    {
+      "title": "Caviar discreto, trufa antes do hype: Odette chega aos 10 anos com sotaque francês em Cingapura",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:25:56.422403-03:00"
+    },
+    {
+      "title": "Imóvel ou fundo imobiliário? Investidor compara as duas formas de renda",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:25:59.937250-03:00"
+    },
+    {
+      "title": "S&P 500 on Pace for Fresh Record Despite Early Struggles",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:26:03.426031-03:00"
+    },
+    {
+      "title": "Amazon, IBD Stock Of The Day, Rides Cloud Momentum To $3 Trillion Milestone",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:26:06.089274-03:00"
+    },
+    {
+      "title": "This map shows the 26 states where Taylor Farms has recalled foods that could be contaminated with salmonella",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:26:08.994805-03:00"
     }
   ]
 }
