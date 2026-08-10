@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Dutch Bros Stock Is Plummeting Lower This Week",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia menciona um resultado financeiro negativo para a empresa, o que pode afetar a açõ.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:26:02.931302-03:00"
-    },
-    {
-      "title": "Burger King overtakes Wendy's as the nation's second-largest burger chain",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:26:13.809164-03:00"
-    },
-    {
-      "title": "Inteligência artificial já ajuda companhias aéreas a reduzir atrasos e melhorar voos — entenda como",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "noticia sobre aplicação de tecnologia em setor aéreo não é relevante para mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:30:41.258913-03:00"
-    },
-    {
-      "title": "IA no Brasil: soberania computacional virou prioridade",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:30:44.179451-03:00"
-    },
-    {
-      "title": "Post anticipates fiscal 2027 adjusted EBITDA near $1.48B as it shifts capital allocation toward debt reduction",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa está reduzindo suas dívidas, o que pode ser visto como positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:30:48.240935-03:00"
-    },
-    {
-      "title": "PPL projects 6% to 8% annual EPS growth through at least 2029 as signed Pennsylvania data center agreements reach 32 GW",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:30:50.968492-03:00"
-    },
-    {
-      "title": "Granite Ridge signals $65 oil underpinning for 10% 2027 free cash flow yield while resetting LOE guidance to $8.25-$9.25 per BOE",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T15:30:53.693826-03:00"
-    },
-    {
-      "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:31:03.206356-03:00"
-    },
-    {
-      "title": "The 15 best Mediterranean restaurants in the US, according to Yelp",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:31:06.068561-03:00"
-    },
-    {
-      "title": "Novo ‘alerta extremo’ é enviado para celulares no Rio por conta de ventos fortes",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia é sobre eventos climaticos e gestão municipal",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:35:49.650215-03:00"
-    },
-    {
-      "title": "AeroVironment fecha contrato de US$ 400 milhões com o Exército dos EUA para sistema laser antidroneS",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "contrato de grande valor com o Exército dos EUA é um sinal positivo para a empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:35:54.440775-03:00"
-    },
-    {
-      "title": "Ação de materiais selecionada por IA dispara +22% após forte balanço",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Ação de materiais selecionada por IA teve um forte balanço, o que sugere uma melhoria na saúde financeira da empresa.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:35:57.544905-03:00"
-    },
-    {
-      "title": "Pivô de crise diplomática, Perez é aprovado pelo Senado dos EUA para embaixada",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:36:01.746076-03:00"
-    },
-    {
-      "title": "SA analyst upgrades/downgrades: TSLA, NVDA, BBBY, WDC",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:36:04.926467-03:00"
-    },
-    {
-      "title": "Vistra targets $6.8B-$7.6B 2026 adjusted EBITDA while committing up to $1B to Helix partnership",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:36:07.686692-03:00"
-    },
-    {
       "title": "Com melhora de contas públicas, DF quer avançar no socorro ao BRB",
       "source": "UOL Economia",
       "score": null,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T07:11:53.655155-03:00"
+    },
+    {
+      "title": "Record-Low Danube Strains Vital Route for Black Sea Grain",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "Restrições no transporte de grãos do Mar Negro podem afetar preços e estoques globais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:15:44.648129-03:00"
+    },
+    {
+      "title": "Minidólar (WDOU26): Focus e tensão no Oriente Médio ficam no radar",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre expectativas para o minidólar sem conteúdo específico",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:15:48.575156-03:00"
+    },
+    {
+      "title": "Mini-índice (WINQ26): Ata do Copom e balanços ficam no radar",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "A notícia se refere a um mini-índice e balanços, mas não menciona informações específicas sobre o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:15:51.431320-03:00"
+    },
+    {
+      "title": "Embraer (EMBJ3) registra lucro ajustado de R$ 1,11 bi no 2º tri, alta anual de 25,1%",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Lucro ajustado anual de 25,1% e fluxo de caixa livre de R$ 2,0 bilhões no 2T26 são resultados positivos para a empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:15:57.663584-03:00"
+    },
+    {
+      "title": "Bolsas da Europa operam de lado com petróleo sustentado por incertezas sobre Ormuz",
+      "source": "Money Times",
+      "score": 4.0,
+      "motivo": "incertezas sobre o Estreito de Ormuz afetam preços do petróleo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:16:01.637115-03:00"
+    },
+    {
+      "title": "Os planos da Ecopetrol para a Brava e para o Brasil",
+      "source": "Brazil Journal",
+      "score": 5.0,
+      "motivo": "A noticia destaca a expansao da Ecopetrol no Brasil, o que pode ser visto como positivo para o mercado de petroleo e energia no pais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:16:04.734252-03:00"
+    },
+    {
+      "title": "Desenrola Adimplentes começa hoje; veja quem pode renegociar dívidas",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "programa de renegociação de dívidas pode afetar o crédito e o consumo, mas não é um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:16:08.169316-03:00"
+    },
+    {
+      "title": "Dole reports mixed Q2 results; reaffirms FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A empresa apresentou resultados mistos, mas reafirmou sua previsão para o ano fiscal, o que pode ser considerado relevante para os investidores.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:16:11.377471-03:00"
+    },
+    {
+      "title": "ChipMOS July revenue hits record high, jumps ~44% Y/Y",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante para o mercado de tecnologia e semicondutores, com um aumento significativo na receita da ChipMOS",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:16:14.165386-03:00"
+    },
+    {
+      "title": "BRC to execute 1-for-10 reverse stock split",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A decisão de realizar uma split de ações é um sinal de que a empresa está buscando aumentar a liquidez e a valorização das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:16:16.979932-03:00"
+    },
+    {
+      "title": "Bolsas da Ásia fecham em alta; Europa tem estabilidade com petróleo em alta",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "Bolsas asiáticas em alta, indicando tendência positiva no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:16:23.679773-03:00"
+    },
+    {
+      "title": "A $2,400 Water Heater Nearly Pushed Him Into Social Security at 62. His 401(k) Held an Escape Hatch.",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro porque discute a importância de planejamento financeiro e poupança para a aposentadoria, mas não é um evento específico ou impactante.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:16:28.666077-03:00"
+    },
+    {
+      "title": "Job seekers hide invisible instructions in resumes to manipulate AI screening — and employers now use it to recruit",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:16:31.482705-03:00"
+    },
+    {
+      "title": "Serica Declares Pharos Energy Takeover Bid Final as Rival Raises Offer",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A oferta de aquisição da Pharos Energy é relevante para o mercado de energia e pode ter um impacto significativo nas ações das empresas envolvidas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:16:34.415567-03:00"
+    },
+    {
+      "title": "Iran denies any direct talks with U.S. on opening Strait of Hormuz as Houthis claim attack on Saudi refinery",
+      "source": "CNBC - US News",
+      "score": 0.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:16:37.510037-03:00"
     }
   ]
 }
