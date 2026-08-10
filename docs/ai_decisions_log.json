@@ -1,213 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Shopify Was Supposed to Be an AI Casualty. Its AI-Referred Traffic Just Tripled.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A empresa informou um aumento significativo no tráfego de AI, o que pode ser visto como positivo para o negócio.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:50:51.356614-03:00"
-    },
-    {
-      "title": "History Says the Investors Who Stay the Course During Bear Markets Have Always Come Out Ahead. Here's the Proof.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é uma declaração geral sobre investimentos e não apresenta informações concretas sobre o mercado atual.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:50:54.380933-03:00"
-    },
-    {
-      "title": "All It Takes Is 1,700 Shares of This High-Yielding Dividend Stock to Generate Over $1,000 in Yearly Dividends.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma ação de dividendos, mas não traz informações novas ou impactantes sobre o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:50:57.283548-03:00"
-    },
-    {
-      "title": "AMD's Data Center Business Is Skyrocketing. The Stock Is Falling. Here's Why.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a percepção do desempenho da AMD, mas não é um evento inesperado ou impactante.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:51:00.246297-03:00"
-    },
-    {
-      "title": "Plans submitted for 1.04 million sq ft industrial complex in Kent",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "O plano de construção de um complexo industrial pode ter impacto na demanda por imóveis comerciais no local.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:51:09.430867-03:00"
-    },
-    {
-      "title": "Big Tech is borrowing its way through the AI boom: Chart of the Day",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a tendência de empresas de tecnologia aumentarem suas dívidas para investir em inteligência artificial, o que pode ter impacto positivo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:51:12.475413-03:00"
-    },
-    {
-      "title": "Natural Gas Falls on Shifting Weather Forecasts",
-      "source": "WSJ Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque afeta a demanda por gás natural nos EUA, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:55:53.304299-03:00"
-    },
-    {
-      "title": "As obras de arte vestíveis da Bvlgari",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia e sobre joalheria e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:55:59.183627-03:00"
-    },
-    {
-      "title": "Sem luz, comunidades amazônicas apostam em energia solar para fornecer internet",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia nao tem relevancia direta para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:56:02.031244-03:00"
-    },
-    {
-      "title": "Warren Buffett's Successor, Greg Abel, Has 63% of Berkshire Hathaway's $355 Billion Portfolio Invested in Just 5 Standout Stocks",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia revela a estratégia de investimento da Berkshire Hathaway, o que pode influenciar a percepção dos investidores sobre a empresa e suas ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:56:12.332172-03:00"
-    },
-    {
-      "title": "Corte na Selic, balanços do 2T26 e projeções para o mercado; veja destaques da semana",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Corte na Selic e ajuste de projeções da XP Investimentos são eventos relevantes e com impacto concreto no mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T08:00:44.259647-03:00"
-    },
-    {
-      "title": "Mercado imobiliário vai bem, mas os FIIs nem sempre acompanham; entenda por quê",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "A noticia discute o mercado imobiliário, mas nao tem um impacto imediato ou significativo no mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:00:47.024850-03:00"
-    },
-    {
-      "title": "“Idoso-Aranha”: Trend acende alerta para acidentes e proteção financeira na velhice",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre segurança e proteção financeira na velhice.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:00:49.824571-03:00"
-    },
-    {
-      "title": "Startup que ensina blockchain e tokenização capta R$ 15 milhões para lançar nova plataforma",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A noticia menciona a captação de recursos para desenvolver uma plataforma relacionada a blockchain e tokenização, o que pode ter impacto positivo no mercado de ativos digitais no Brasil.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:05:44.303066-03:00"
-    },
-    {
-      "title": "Como Copenhague transformou sua moda em uma marca da cidade",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre moda e evento da cidade, sem relevância para mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:05:47.077376-03:00"
-    },
-    {
-      "title": "Presidente da Starbucks Brasil revela plano para dobrar o número de lojas no país",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "Plano de expansão da empresa pode impulsionar crescimento e demanda por ações da Starbucks Brasil",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:05:49.916118-03:00"
-    },
-    {
-      "title": "Pesquisas para presidente da semana mostram recuperação de Flávio e estabilidade de Lula",
-      "source": "Exame",
-      "score": 3.0,
-      "motivo": "pesquisas de opinião pública não são um evento de mercado significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:05:52.704479-03:00"
-    },
-    {
-      "title": "Inbox zero na prática: como usar IA para organizar a caixa de entrada do e-mail",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia de mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:05:55.428905-03:00"
-    },
-    {
-      "title": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações do Banco do Brasil há 5 anos?",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A notícia destaca os motivos pelos quais as ações do Banco do Brasil valorizaram-se nas últimas duas décadas, o que é relevante para os investidores e traders que buscam entender os fatores que influenciam o desempenho das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T08:05:58.409170-03:00"
-    },
-    {
-      "title": "O que dar no Dia dos Pais? Vendas de vestuário aumentam 45% na manhã do domingo",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira relevante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:06:01.347889-03:00"
-    },
-    {
-      "title": "O mercado de abacate de US$ 3 bilhões que virou problema de segurança no México",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:06:04.202154-03:00"
-    },
-    {
-      "title": "Clima extremo e guerra pressionam grãos e elevam preços globais dos alimentos",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "alta nos preços dos alimentos pode afetar a inflação e a economia global",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:06:07.002803-03:00"
-    },
-    {
-      "title": "Lula terá 27% mais tempo de TV e rádio que Flávio Bolsonaro; veja a divisão por candidato",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:06:09.818320-03:00"
-    },
-    {
       "title": "SpaceX’s Nvidia deal could be bad news for neoclouds like CoreWeave and Nebius, analysts say",
       "source": "MarketWatch",
       "score": 5.0,
@@ -17999,6 +17792,213 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T11:36:16.922086-03:00"
+    },
+    {
+      "title": "Berkshire CEO Abel Puts Cash to Work",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Aumento nos repasses de ações é um sinal positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:40:49.350634-03:00"
+    },
+    {
+      "title": "Ações da B&G Foods caem com nomeação de Robert Mills como novo CEO",
+      "source": "Investing.com Brasil",
+      "score": 4.0,
+      "motivo": "nomeação de novo CEO pode indicar mudanças estratégicas que afetam a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:40:54.709991-03:00"
+    },
+    {
+      "title": "Ações da 5E Advanced Materials disparam com aporte de US$ 8 mi do EXIM Bank",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Aporte de US$ 8 milhões do EXIM Bank é um sinal de confiança no negócio da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:40:57.492448-03:00"
+    },
+    {
+      "title": "2ª temporada de “Las Azules” mistura realidade e ficção para contar história de corrupção e amadurecimento",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:00.203914-03:00"
+    },
+    {
+      "title": "Por que as ações da Vertex Pharmaceuticals disparam hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:41:02.837557-03:00"
+    },
+    {
+      "title": "Por que as ações da Voyager Technologies estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:41:05.487471-03:00"
+    },
+    {
+      "title": "Ações da Fabrinet podem oscilar 12% com resultados em 17 de agosto",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:41:08.129571-03:00"
+    },
+    {
+      "title": "Ações da XP Inc. podem oscilar 5,8% com resultado trimestral",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:41:10.771208-03:00"
+    },
+    {
+      "title": "Ações da Voyager Technologies sobem com contrato da Space Force",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:41:13.445662-03:00"
+    },
+    {
+      "title": "European TTF gas soars 8% on Middle East shipping worries",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:41:16.866224-03:00"
+    },
+    {
+      "title": "908 Devices Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:19.496542-03:00"
+    },
+    {
+      "title": "Smithfield Foods, Inc. Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:22.480127-03:00"
+    },
+    {
+      "title": "SpaceX IPO helps Ontario Teachers’ Pension Plan post 9.5% H1 return",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:25.141887-03:00"
+    },
+    {
+      "title": "Academy Sports + Outdoors is the latest retailer to join Instacart Marketplace",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:27.816709-03:00"
+    },
+    {
+      "title": "Why Figs Stock Keeps Going Up",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:34.028772-03:00"
+    },
+    {
+      "title": "Nasdaq 100 Movers: LITE, HONIV",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:36.660839-03:00"
+    },
+    {
+      "title": "Fed Chair Kevin Warsh Has Held Rates Steady in Back-to-Back Meetings Since Taking Over in 2026. What His Cautious Start Means for Markets.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:39.375528-03:00"
+    },
+    {
+      "title": "S&P 500 Movers: COHR, HONIV",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:41.998512-03:00"
+    },
+    {
+      "title": "Ex-Div Reminder for WisdomTree (WT)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:44.890637-03:00"
+    },
+    {
+      "title": "Cash Dividend On The Way From Cohen & Steers Infrastructure Fund (UTF)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:47.542545-03:00"
+    },
+    {
+      "title": "TEX Ex-Dividend Reminder - 8/11/26",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:50.174453-03:00"
+    },
+    {
+      "title": "Dow Movers: AAPL, HONIV",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:41:52.855995-03:00"
+    },
+    {
+      "title": "Tegma Logística compra 70% da Transcopa por R$ 99,4 milhões",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:41:57.487297-03:00"
     }
   ]
 }
