@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ventos de 109 km/h atingem SP; veja como fica o tempo para o fim de semana",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:45:43.389661-03:00"
-    },
-    {
-      "title": "Are Your Investments Prepared for a Bear Market? Here's How to Tell.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é uma dica geral de investimento e não trata de um evento específico do mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:45:51.487876-03:00"
-    },
-    {
-      "title": "JPMorgan Has Consistently Beaten Its Own 17% Return Target Under Jamie Dimon. Is the Stock Still a Buy?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca um resultado financeiro positivo do JPMorgan, o que pode influenciar a percepção dos investidores sobre a ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T08:45:54.938208-03:00"
-    },
-    {
-      "title": "Huge News for Amazon Stock Investors",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Redução de custos é geralmente vista como positiva para as ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T08:45:58.185901-03:00"
-    },
-    {
-      "title": "B3 lança índice para medir o desempenho de ações de menor capitalização; veja os requisitos",
-      "source": "Seu Dinheiro",
-      "score": 6.0,
-      "motivo": "O índice visa acompanhar o desempenho de ações de menor capitalização, o que pode atrair investidores e impulsionar o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T08:46:05.939601-03:00"
-    },
-    {
-      "title": "3 Cryptocurrencies Making Bold Moves in AI That Are Worth Buying and Holding for the Long Term",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca investimentos significativos em tecnologia de IA, o que pode ter impacto positivo no desempenho dessas criptomoedas no longo prazo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:46:11.369241-03:00"
-    },
-    {
-      "title": "El Niño deve custar caro ao PIB do Brasil com choques em agro e energia",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Choques em agro e energia podem afetar negativamente o PIB do Brasil",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T08:51:13.598025-03:00"
-    },
-    {
-      "title": "João Adibe revela o choque de gestão que transformou a Cimed em uma empresa bilionária",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "a noticia e sobre uma empresa em particular, mas nao e relevante para o mercado em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:51:18.431069-03:00"
-    },
-    {
-      "title": "EU Cohesion Breaks: Madrid Socialists Impose  Border Protections Against Italians After Third World Invasion",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A notícia indica um conflito entre a Espanha e a Itália sobre a imigração, o que pode ter consequências para a estabilidade da UE e o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T08:51:31.894384-03:00"
-    },
-    {
-      "title": "Kids In Tiny British Village Beg The Government Not To Force Illegal Migrants On Their Home",
-      "source": "ZeroHedge",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:51:34.999096-03:00"
-    },
-    {
-      "title": "Por que acidentes com entregadores do iFood podem custar R$ 189 milhões ao INSS",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia é sobre um cálculo hipotético e não uma notícia atual sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:55:44.655903-03:00"
-    },
-    {
-      "title": "Irã e Omã estão próximos de acordo para nova rota no Estreito de Ormuz, diz ministro iraniano",
-      "source": "G1 Economia",
-      "score": 2.0,
-      "motivo": "A noticia não é sobre mercado financeiro, mas sim sobre geopolitica",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:55:55.576875-03:00"
-    },
-    {
-      "title": "Salad chain Sweetgreen shares slide as cyclosporiasis fears prompt forecast cut",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de crescimento da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:56:01.378753-03:00"
-    },
-    {
-      "title": "UK VC bets big on AI, leaving other sectors starved for cash",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a preferência de investidores britânicos por tecnologia de IA, o que pode ter impacto positivo no mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:00:55.962719-03:00"
-    },
-    {
       "title": "Warren Buffett shares the ‘secret sauce’ to Berkshire Hathaway's dominance. Use his strategy to grow your own wealth now",
       "source": "Yahoo Finance",
       "score": 8.0,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T11:51:12.638341-03:00"
+    },
+    {
+      "title": "Taylor Farms Pulls Products Over Salmonella Concerns",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de alimentos, mas não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:55:51.107328-03:00"
+    },
+    {
+      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
+      "source": "WSJ Markets",
+      "score": 3.0,
+      "motivo": "Acordo de negócios rotineiro na indústria de energia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:55:54.283609-03:00"
+    },
+    {
+      "title": "Axia (AXIA3): BBA vê potencial para R$ 20 bi em dividendos por ano e eleva preço-alvo",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:55:57.067690-03:00"
+    },
+    {
+      "title": "Lithium Argentina Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:56:01.942207-03:00"
+    },
+    {
+      "title": "Jerash projects $49M-$51M fiscal Q2 revenue as duty-free access drives new inquiries",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:56:04.592350-03:00"
+    },
+    {
+      "title": "Legend Biotech Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:56:07.232498-03:00"
+    },
+    {
+      "title": "Dole targets ~$400M 2026 adjusted EBITDA as Ecuador port sale delivers ~$95M net proceeds",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:56:09.890004-03:00"
+    },
+    {
+      "title": "MITT expects $7M-$9M annual synergies as it plans to close Cherry Hill acquisition in Q4",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:56:12.536523-03:00"
+    },
+    {
+      "title": "Amentum Holdings Q3 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:56:15.155935-03:00"
+    },
+    {
+      "title": "Verisk 'strongly Disagrees' With Delaware Court Ruling On AccuLynx",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:56:21.064306-03:00"
+    },
+    {
+      "title": "Palantir Stock: Before You Buy, Consider This Valuation Risk",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:56:23.703695-03:00"
+    },
+    {
+      "title": "Warren Buffett Personally Initiated Berkshire's $30 Billion Alphabet Stake, a Sign He's Still Making Calls Despite Stepping Back as Chairman",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:56:26.418407-03:00"
+    },
+    {
+      "title": "Bristol Myers To Invest $2.3 Bln In Houston Manufacturing Campus; To Create 500 Skilled Jobs",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:56:29.103005-03:00"
+    },
+    {
+      "title": "ETL Global strengthens presence in Germany",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica uma expansão de operações de uma empresa de consultoria financeira, o que pode ter impacto positivo no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:56:37.218641-03:00"
     }
   ]
 }
