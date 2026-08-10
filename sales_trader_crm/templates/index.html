@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Clientes{% endblock %}
+{% block content %}
+  <h1>Clientes</h1>
+  <table class="clients-table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Estruturas</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for c in clients %}
+        <tr>
+          <td><a href="{{ url_for('client_detail', client_id=c['id']) }}">{{ c['name'] }}</a></td>
+          <td>{{ c['structures'] }}</td>
+        </tr>
+      {% else %}
+        <tr><td colspan="2">Nenhum cliente cadastrado ainda.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
