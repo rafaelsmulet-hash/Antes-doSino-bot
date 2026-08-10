@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Could 1 Tiny Biotech Topple Vertex Pharmaceuticals' Cystic Fibrosis Empire?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T15:41:13.221648-03:00"
-    },
-    {
-      "title": "Vendaval: prefeitura do Rio e governo do Estado recomendam antecipação de expediente",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:45:56.579486-03:00"
-    },
-    {
-      "title": "Magazine Luiza (MGLU3) volta ao prejuízo no 2T26; o que aconteceu?",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "A perda da Magazine Luiza foi menor do que esperado, mas ainda assim negativa, o que pode afetar a confiança dos investidores no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T15:46:12.269523-03:00"
-    },
-    {
-      "title": "Bango chair Darcy Antonellis on governance, growth and opportunity",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:46:17.054926-03:00"
-    },
-    {
-      "title": "Caiado diz que emendas parlamentares são ‘desestruturação do presidencialismo’",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:50:43.031102-03:00"
-    },
-    {
-      "title": "Ouro sobe 8% e registra maior ganho semanal desde janeiro",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "Ouro encerrou em alta após dado do mercado de trabalho fraco nos EUA, impactando diretamente os preços do metal precioso",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:50:47.374167-03:00"
-    },
-    {
       "title": "ANI projects $1.08B-$1.14B 2026 revenue as it revises Cortrophin to $520M-$540M amid gout sales force expansion",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T07:22:22.203778-03:00"
+    },
+    {
+      "title": "Fed Rate Hike in December Is Possible, Macquarie's Wizman Says",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia sugere que o Fed pode aumentar a taxa de juros em dezembro, o que é um evento importante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:26:09.274972-03:00"
+    },
+    {
+      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
+      "source": "WSJ Markets",
+      "score": 5.0,
+      "motivo": "A queda das ações de tecnologia, especialmente as relacionadas a AI, é relevante para o mercado atual.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:26:13.143821-03:00"
+    },
+    {
+      "title": "Sandisk Can Now Buy Back $15.5 Billion of Its Own Stock. That's 8.6% of the Company.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A empresa aprovou um programa de compra de ações significativo, o que pode ser positivo para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:26:24.579216-03:00"
+    },
+    {
+      "title": "Why Rocket Lab Stock Plummeted 36.1% Last Month But Is Soaring in August",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas o impacto é rotineiro e não concreto",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:26:27.623824-03:00"
+    },
+    {
+      "title": "Receita Nosso Campo: aprenda a fazer um bolo de milho",
+      "source": "G1 Economia",
+      "score": 0.0,
+      "motivo": "não há informações financeiras ou econômicas relevantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:26:32.805188-03:00"
+    },
+    {
+      "title": "Embraer eleva previsão para Ebit e dobra estimativa para fluxo de caixa",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "motivo": "melhoria nas projeções financeiras da Embraer",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:26:36.887220-03:00"
     }
   ]
 }
