@@ -1,285 +1,6 @@
 {
   "decisions": [
     {
-      "title": "First look: mixed performance at RXO with some strong points",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:32:01.699641-03:00"
-    },
-    {
-      "title": "Walmart Earnings: Bull Put Spread Trade",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:32:04.337359-03:00"
-    },
-    {
-      "title": "SpaceX Nears IPO Price Again After Staging $327 Billion Rally",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta o preço das ações da SpaceX, que está perto de recuperar o preço de IPO inicial.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:35:42.284779-03:00"
-    },
-    {
-      "title": "Swiss franc, Japanese yen Rise as DeepSeek News Boosts Safe Havens",
-      "source": "WSJ Markets",
-      "score": 5.0,
-      "motivo": "A notícia afeta diretamente o mercado de ações e a volatilidade das moedas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:35:46.477918-03:00"
-    },
-    {
-      "title": "Western Asset High Yield Opportunity Fund Inc. declares $0.095 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:35:54.586075-03:00"
-    },
-    {
-      "title": "Western Asset Intermediate Muni Fund declares $0.042 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:35:57.375758-03:00"
-    },
-    {
-      "title": "Western Asset Investment Grade Defined Opportunity Trust declares $0.071 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:36:00.173487-03:00"
-    },
-    {
-      "title": "U.S. drilling rig count stays flat in latest Baker Hughes weekly survey",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:36:02.961960-03:00"
-    },
-    {
-      "title": "Western Asset Managed Municipals Portfolio declares $0.0545 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:36:05.740751-03:00"
-    },
-    {
-      "title": "Western Asset Mortgage Opportunity Fund declares $0.12 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:36:08.516359-03:00"
-    },
-    {
-      "title": "Northwest Bank overhauls C-suite to drive transformation",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:36:21.974107-03:00"
-    },
-    {
-      "title": "DoorDash (DASH) Takes To The Skies As Uber (UBER) Eyes Drones Too",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:36:24.773944-03:00"
-    },
-    {
-      "title": "Do Wall Street Analysts Like Citizens Financial Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:36:27.534368-03:00"
-    },
-    {
-      "title": "Dr. Oz says 'many' seniors will see lower premiums next year — but only about a quarter are projected to",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:36:30.367774-03:00"
-    },
-    {
-      "title": "Meta CTO says employees should use AI productivity gains to do more work — not take more time off",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:36:33.812083-03:00"
-    },
-    {
-      "title": "I made Ina Garten's easy weeknight Bolognese pasta. The delicious dish was ready in 30 minutes.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:36:36.635415-03:00"
-    },
-    {
-      "title": "E.U.A. - Ações fecharam o pregão em alta e o Índice Dow Jones Industrial Average avançou 0,28%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento do Índice Dow Jones é um indicador positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:41:36.508297-03:00"
-    },
-    {
-      "title": "Canadá - Ações fecharam o pregão em alta e o Índice S&P/TSX avançou 0,68%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "O índice S&P/TSX avançou, indicando um desempenho positivo do mercado canadense",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:41:39.430472-03:00"
-    },
-    {
-      "title": "Brasil - Ações fecharam o pregão em queda e o Índice Bovespa recuou 1,73%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "queda no Índice Bovespa e ações em queda",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:41:42.271670-03:00"
-    },
-    {
-      "title": "Ações da Ashland disparam após relatos de interesse em aquisição",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "relatos de interesse em aquisição sugerem valorização das ações",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:41:45.320772-03:00"
-    },
-    {
-      "title": "Braveheart Bio capta US$ 439,9 milhões em IPO ampliado na Nasdaq",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:41:48.069409-03:00"
-    },
-    {
-      "title": "Taxas dos DIs fecham em baixa após dados fracos de emprego nos EUA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:41:50.787426-03:00"
-    },
-    {
-      "title": "ClearBridge Energy Midstream Opportunity Fund raises dividend by 13.9% to  $0.41/share",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:41:55.190110-03:00"
-    },
-    {
-      "title": "Western Asset High Income Fund II Inc declares $0.049 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:41:57.970035-03:00"
-    },
-    {
-      "title": "Western Asset Global Corporate Opportunity Fd Inc. declares $0.122 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:42:00.717763-03:00"
-    },
-    {
-      "title": "Western Asset Global High Income Fund declares $0.07 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:42:03.423352-03:00"
-    },
-    {
-      "title": "Western Asset Diversified Income Fund declares $0.1485 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:42:06.085724-03:00"
-    },
-    {
-      "title": "Canadian Stocks Climb To Record Highs Following Jobs Data",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:42:10.285349-03:00"
-    },
-    {
-      "title": "2 Reasons Tesla Could Monopolize the U.S. Robotaxi Market",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:42:12.968016-03:00"
-    },
-    {
-      "title": "This One Word On SpaceX’s First Earnings Call Cost It 11%, And Sent Nvidia Higher",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:42:22.771119-03:00"
-    },
-    {
-      "title": "Two reasons why Nvidia’s stock saw its biggest weekly surge in more than a year",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a ação da Nvidia, que é uma das principais empresas do setor de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:46:26.938303-03:00"
-    },
-    {
       "title": "Sharplink, Galaxy launches $125M on-chain yield fund; eyes blockchain-based returns",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17720,285 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T08:41:17.691912-03:00"
+    },
+    {
+      "title": "Duke Energy Seeks $1.75 Billion From Equity Units Sale",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A empresa busca reduzir sua dívida, o que pode ser positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:45:42.610430-03:00"
+    },
+    {
+      "title": "Lula declara ao TSE patrimônio de R$ 4,7 milhões, valor 35% menor do que em 2022",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia é sobre política e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:45:46.778772-03:00"
+    },
+    {
+      "title": "PF encontra foto de advogado investigado em piscina com deputados e senadores",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:45:49.514386-03:00"
+    },
+    {
+      "title": "Grendene vende subsidiária nos EUA por US$3,6 mi",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Venda de subsidiária pode liberar recursos para investimentos em outras áreas, melhorando a rentabilidade da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:45:54.369345-03:00"
+    },
+    {
+      "title": "Camtek registra crescimento de 8% na receita do 2º tri e supera estimativas",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "crescimento de receita supera estimativas, indicando saúde financeira da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:45:57.098697-03:00"
+    },
+    {
+      "title": "Ações da AbCellera disparam 22% após resultados positivos em ensaio clínico",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Resultados positivos em ensaio clínico impactam positivamente a empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:46:03.546798-03:00"
+    },
+    {
+      "title": "Por que as ações da Varex Imaging estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A noticia menciona ações de uma empresa, o que sugere relevância para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:06.289249-03:00"
+    },
+    {
+      "title": "Posts de Trump no Truth Social reformulam negociações com o Irã, Gaza e conselho da Casa Branca",
+      "source": "Investing.com Brasil",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:09.033240-03:00"
+    },
+    {
+      "title": "Por que as ações da Tenax Therapeutics estão despencando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "a ação está despencando devido a uma notícia negativa sobre a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:11.884088-03:00"
+    },
+    {
+      "title": "Por que as ações da Sionna Therapeutics estão despencando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "resultado do teste de fármaco foi negativo",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:14.624944-03:00"
+    },
+    {
+      "title": "Ações da Sionna Therapeutics despencam 92% após falha em ensaio clínico",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "falha em ensaio clínico afeta negativamente a empresa e suas ações",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:17.365988-03:00"
+    },
+    {
+      "title": "Por que as ações da AAON estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Ações disparando devido a resultado de trimestre acima das expectativas",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:20.148038-03:00"
+    },
+    {
+      "title": "Santander leva mais de 200 imóveis a leilão com financiamento de até 35 anos",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois o Santander está oferecendo financiamento para imóveis, o que pode estimular a demanda e o mercado imobiliário.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:24.170975-03:00"
+    },
+    {
+      "title": "Pesquisa BTG/Nexus: Lula e Flávio Bolsonaro seguem em empate técnico no 2º turno",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia e politica nao sao relevantes para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:26.926952-03:00"
+    },
+    {
+      "title": "GCM Grosvenor Non-GAAP EPS of $0.19 beats by $0.01, revenue of $134.34M beats by $2.97M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A superação das expectativas de lucro e receita é um sinal positivo para a empresa e pode influenciar os preços das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:30.072889-03:00"
+    },
+    {
+      "title": "Silicon Motion plans $800M convertible debt offering",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A oferta de dívida pode ser utilizada para financiar operações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:32.856704-03:00"
+    },
+    {
+      "title": "Nayax LTD.EPS of -$0.27, revenue of $122.6M beats by $1.62M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Os resultados financeiros da Nayax LTD. são relevantes, mas não são um evento de mercado maior.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:35.861979-03:00"
+    },
+    {
+      "title": "Monday.com falls after Q3 revenue outlook miss",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa não atendeu às expectativas de receita, o que pode afetar a confiança dos investidores em sua capacidade de gerenciar sua receita.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:38.873427-03:00"
+    },
+    {
+      "title": "SharpLink Gaming GAAP EPS of -$1.88 misses by $1.89, revenue of $11.5M misses by $1.89M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois apresenta resultados financeiros ruins da empresa, o que pode afetar a confiança dos investidores e influenciar a valorização da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:41.804151-03:00"
+    },
+    {
+      "title": "MarineMax soars after agreeing to a go-private deal",
+      "source": "Seeking Alpha",
+      "score": 7.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o preço das ações da MarineMax e pode influenciar o mercado de ações em geral.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:44.750955-03:00"
+    },
+    {
+      "title": "Surgery Partners GAAP EPS of -$0.12 misses by $0.05, revenue of $848.9M beats by $18.58M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a expectativa de lucro da empresa, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:46:47.874997-03:00"
+    },
+    {
+      "title": "New Fed Chair Kevin Warsh Sparked a &quot;Credibility Shock&quot; on Wall Street After His Latest Rate Decision. Here's Why Investors Should Care.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A decisão do presidente do Fed sobre a taxa de juros pode influenciar a política monetária e, consequentemente, o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:46:52.352512-03:00"
+    },
+    {
+      "title": "This Stock Has A 3.96% Yield And Sells For Less Than Book",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a ação com yield atraente e preço baixo, o que pode ser relevante para investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:46:55.210006-03:00"
+    },
+    {
+      "title": "OXY Added as Top 10 Energy Dividend Stock With 2.00% Yield",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois menciona a inclusão da ação OXY em uma lista de ações de energia com dividendos atraentes, o que pode influenciar a demanda por ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:46:58.227880-03:00"
+    },
+    {
+      "title": "DoubleVerify Holdings Reaches Analyst Target Price",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:47:00.811693-03:00"
+    },
+    {
+      "title": "Twilio Reaches Analyst Target Price",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:47:03.391098-03:00"
+    },
+    {
+      "title": "Analysts Expect 11% Gains Ahead For IGV",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Previsão de ganho é uma informação rotineira e não impacta o mercado de forma significativa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:47:06.361502-03:00"
+    },
+    {
+      "title": "OSCR Crosses Above Average Analyst Target",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:47:08.944852-03:00"
+    },
+    {
+      "title": "WDAY Crosses Above Average Analyst Target",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:47:11.527000-03:00"
+    },
+    {
+      "title": "Peter Beck's Rocket Lab Fell 30% in a Month While Revenue Grew 63%",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A queda da ação é significativa, mas a empresa ainda apresentou crescimento de receita.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:47:14.498596-03:00"
+    },
+    {
+      "title": "MXRF11 e outros 181 FIIs vão distribuir dividendos na semana; confira valores",
+      "source": "Suno Noticias",
+      "score": 8.0,
+      "motivo": "Distribuição de dividendos de FIIs é evento rotineiro, mas com grande impacto financeiro",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:47:21.864925-03:00"
     }
   ]
 }
