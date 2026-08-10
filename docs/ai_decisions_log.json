@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Australian Markets Modestly Lower",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque afeta o desempenho do mercado australiano, mas o impacto parece ser moderado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:26:46.846843-03:00"
-    },
-    {
       "title": "Element Fleet Management Proposes Up To A$4.00/shr Acquisition Of FleetPartners",
       "source": "Nasdaq",
       "score": 8.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T20:46:08.246788-03:00"
+    },
+    {
+      "title": "Seek more context when you hear these popular words and phrases about markets",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sobre conscientização de informações.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:50:44.521507-03:00"
     }
   ]
 }
