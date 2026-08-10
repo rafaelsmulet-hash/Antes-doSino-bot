@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Oscar Health Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa apresentou resultados financeiros positivos, o que pode ser visto como um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T20:20:46.123730-03:00"
-    },
-    {
-      "title": "Verizon mobile service down for thousands of customers in the U.S., Downdetector shows",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T20:25:58.923941-03:00"
-    },
-    {
-      "title": "Three Griffon Executives Sold Into an Earnings Pop. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações de executivos não é um evento significativo para o mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T20:30:43.222763-03:00"
-    },
-    {
-      "title": "IonQ vs. Meta Platforms: Comparing Revenue Trends Between a Cutting-Edge Quantum Computing Company and an Artificial Intelligence Giant",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia compara receitas de empresas, mas não apresenta informações novas ou impactantes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T20:30:46.196482-03:00"
-    },
-    {
-      "title": "Three Griffon Executives Sold Into an Earnings Pop. Here's What to Know",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Venda de ações por executivos durante um período de alta lucro pode ser um sinal de desconfiança e afetar a confiança dos investidores na empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T20:30:53.470619-03:00"
-    },
-    {
-      "title": "Chipotle Mexican Grill vs. Walt Disney: Comparing Revenue Trends Between These Consumer Companies",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não apresenta informações novas ou impactantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T20:45:49.681720-03:00"
-    },
-    {
-      "title": "$400,000 in Employer Stock Inside Your 401(k)? This Tax Rule Could Save You $65,000 Before You Retire",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia aborda uma questão de imposto relevante para os trabalhadores que têm ações da empresa dentro do seu 401(k), o que pode ter impacto financeiro significativo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:05:45.782146-03:00"
-    },
-    {
-      "title": "'Busted': Female Bicyclists 'Bulk Up'",
-      "source": "ZeroHedge",
-      "score": 1.0,
-      "motivo": "A notícia é sobre um incidente específico em uma competição de ciclismo e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:05:49.252323-03:00"
-    },
-    {
-      "title": "Hunter Biden Says Father's Cancer Has Spread Further: \"Very Painful And Very Debilitating\"",
-      "source": "ZeroHedge",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:05:52.205505-03:00"
-    },
-    {
       "title": "Super El Niño: fenômeno climático deve pressionar inflação em 2027",
       "source": "Exame",
       "score": 8.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T14:46:41.027884-03:00"
+    },
+    {
+      "title": "Por que as ações da Andersen estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "A noticia e sobre acao de uma empresa, mas nao especifica o motivo pelo qual as acoes estao caindo, tornando-a irrelevante para o mercado agora",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:50:55.839907-03:00"
+    },
+    {
+      "title": "Ações da Andersen Group caem apesar do anúncio de seis aquisições",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "a ação cai apesar do anúncio de aquisições, sugerindo que os investidores estão desconfiados da capacidade da empresa de integrar essas aquisições",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:50:58.761056-03:00"
+    },
+    {
+      "title": "Adobe set to continue gains for seven straight sessions",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica uma tendência de crescimento contínuo da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:51:04.269754-03:00"
+    },
+    {
+      "title": "Tesla opens more delivery sites in Japan amid stronger EV demand",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia indica que a demanda por veículos elétricos está aumentando no Japão, o que pode ser positivo para a Tesla e outros fabricantes de veículos elétricos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:51:07.391051-03:00"
+    },
+    {
+      "title": "NeOnc Technologies Holdings GAAP EPS of -$0.58",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para a empresa, mas não tem impacto significativo no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:51:10.415239-03:00"
+    },
+    {
+      "title": "Envoy Medical GAAP EPS of -$0.07, revenue of $0.05M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento significativo no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:51:13.630978-03:00"
+    },
+    {
+      "title": "Americanas: entenda por que R$ 54 bilhões devem voltar para o bolso dos acionistas bilionários",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:51:23.004390-03:00"
+    },
+    {
+      "title": "Tracing Jim Cramer’s Evolving View on Axon Enterprise (AXON)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:51:28.610704-03:00"
+    },
+    {
+      "title": "SEC Office of Municipal Securities Updates FAQs for Registration of Municipal Advisors",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:51:32.812339-03:00"
     }
   ]
 }
