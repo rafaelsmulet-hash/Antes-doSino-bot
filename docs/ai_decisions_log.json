@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Quem é Todd Blanche, ex-advogado de Trump que assume o Departamento de Justiça dos EUA",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:36:11.410679-03:00"
-    },
-    {
-      "title": "João Fonseca tem revanche contra Shelton no Masters de Montreal; veja quando",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira ou econômica",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:40:50.407387-03:00"
-    },
-    {
-      "title": "Lojas Renner (LREN3) corta projeção de vendas após 2T26 mais fraco; ainda vale comprar?",
-      "source": "Suno Noticias",
-      "score": 6.0,
-      "motivo": "A Lojas Renner reduziu sua projeção de vendas após um segundo trimestre mais fraco, o que pode afetar negativamente o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:40:59.246389-03:00"
-    },
-    {
-      "title": "XRP Price Prediction: Will XRP Ever Hit a New All-Time High?",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é mais uma análise teórica e não apresenta informações concretas sobre o mercado atual.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:41:03.302981-03:00"
-    },
-    {
-      "title": "Irã: Estreito de Ormuz não será aberto até que os EUA ‘corrijam’ seu comportamento",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Choque geopolítico com potencial de impactar preços de commodities e mercados globais",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:45:44.256672-03:00"
-    },
-    {
-      "title": "O que seria necessário para as ações da Mercedes-Benz subirem?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A notícia discute ações da Mercedes-Benz, o que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:45:49.044783-03:00"
-    },
-    {
-      "title": "This SentinelOne Executive Holds $15 Million in Stock Ahead of Earnings. Here's What to Know",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado agora, pois trata-se de uma informação sobre um executivo e não sobre a empresa em si.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:50:40.602869-03:00"
-    },
-    {
-      "title": "Broadcom (AVGO) Pairs AI Chip Boom With A Software Security Push",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca uma estratégia de crescimento da empresa que pode ter um impacto significativo no mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:01:00.686366-03:00"
-    },
-    {
-      "title": "SentinelOne's Chief Accountant Sold Shares. Here's What Investors Should Know",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A venda de ações do contador-chefe é um evento rotineiro que não afeta significativamente o preço da ação.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:01:03.811002-03:00"
-    },
-    {
-      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
-      "source": "WSJ Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente ações de empresas de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:05:38.905768-03:00"
-    },
-    {
-      "title": "‘Warren Buffett de Londrina’ defende ações, Gávea fecha fundos multimercados e chinelo ‘feio’ da Havaianas: as mais lidas da semana",
-      "source": "Seu Dinheiro",
-      "score": 2.0,
-      "motivo": "noticia rotineira sobre mercado e negócios",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:11:03.037210-03:00"
-    },
-    {
-      "title": "Microsoft Shows the &quot;Magnificent Seven&quot; What AI Investment Looks Like",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma discussão de investimento em uma empresa, sem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:15:45.937601-03:00"
-    },
-    {
-      "title": "Salesforce vs. ServiceNow: Which Is the Better Long-Term Investment?",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia analisa a competitividade entre duas empresas de software, o que pode ter impacto significativo no mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:15:48.870186-03:00"
-    },
-    {
-      "title": "What to Know About SentinelOne's Insider Transactions Ahead of Earnings",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "Transação de insider rotineira que não impacta significativamente o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:15:51.869028-03:00"
-    },
-    {
-      "title": "SentinelOne's Chief Accountant Sold Shares. Here's What Investors Should Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações de um funcionário não é um evento significativo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:15:54.836156-03:00"
-    },
-    {
-      "title": "This SentinelOne Executive Holds $15 Million in Stock Ahead of Earnings. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações do executivo não é significativa o suficiente para afetar o preço da ação da SentinelOne.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:15:57.759676-03:00"
-    },
-    {
-      "title": "Should You Worry That SentinelOne's COO Sold Stock? Here's How to Read It",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A venda de ações de um executivo não é um evento relevante para o mercado em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T18:16:00.823652-03:00"
-    },
-    {
       "title": "Where Will Dell Technologies Stock Be in 3 Years?",
       "source": "Nasdaq",
       "score": 5.0,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T14:26:18.937885-03:00"
+    },
+    {
+      "title": "FreightWaves CEO Says Freight Recession Is Over",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica uma melhora no setor de carga, o que pode ter um impacto positivo nas empresas que operam nesse setor.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:31:10.905575-03:00"
+    },
+    {
+      "title": "Terremoto na Colômbia pode mudar calendários de Libertadores e Sul-Americana",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia é sobre esporte e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:31:14.059510-03:00"
+    },
+    {
+      "title": "Compre Meta (M1TA34) e venda duas ações para ganhar mais de 4% nesta semana, segundo o Safra",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "recomendação de compra de ação específica",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:31:18.106809-03:00"
+    },
+    {
+      "title": "Disney+ e Hulu fecham acordo de podcasts em vídeo com iHeartMedia",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:31:20.884837-03:00"
+    },
+    {
+      "title": "TUPY3: Por que as ações da Tupy estão em forte alta hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:31:23.539143-03:00"
+    },
+    {
+      "title": "UBS prefere ação da Commercial Metals para exposição ao aço nos EUA",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:31:26.207392-03:00"
+    },
+    {
+      "title": "Fundador da Amazon está perto de fechar acordo para adquirir participação no Liverpool, segundo reportagens",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:31:28.915413-03:00"
+    },
+    {
+      "title": "Intel lança oferta de ações de US$ 15 bilhões com possível cliente de fundição no horizonte",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:31:31.608913-03:00"
+    },
+    {
+      "title": "Rosalía no Rio: veja horário, como chegar e possível setlist do show desta segunda-feira",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:31:34.548227-03:00"
+    },
+    {
+      "title": "Integração de refugiados em empresas no Amazonas inspira modelo replicado em outras regiões do país",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:31:37.247140-03:00"
+    },
+    {
+      "title": "Sea Q2 preview - Shopee execution in focus",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:31:40.054915-03:00"
+    },
+    {
+      "title": "CoreWeave options imply 11% post-earnings move; positioning skews bearish",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:31:42.722045-03:00"
+    },
+    {
+      "title": "CoStar CEO Andrew Florance Buys 83,300 Shares for $2.5 Million. What Does This Tell Investors?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:31:48.657755-03:00"
+    },
+    {
+      "title": "Wendy's has a massive problem: It's closing restaurants left and right",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:31:55.780719-03:00"
+    },
+    {
+      "title": "Freddy’s Signs 3-Unit Deal in Eastern Wyoming",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:31:58.440704-03:00"
+    },
+    {
+      "title": "Jim Cramer Examines Akamai Technologies’ (AKAM) Cloud Pivot and Robotics Win",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:32:01.115603-03:00"
+    },
+    {
+      "title": "AbbVie’s (ABBV) Botox Just Got A Step Closer To A Fifth Use",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:32:03.772656-03:00"
     }
   ]
 }
