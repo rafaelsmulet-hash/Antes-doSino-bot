@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Pain drug developer Latigo climbs after upsized IPO",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:36:10.890235-03:00"
-    },
-    {
-      "title": "B2Gold granted Fekola Regional exploitation permit by Mali government",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:36:13.541319-03:00"
-    },
-    {
-      "title": "Friday's ETF Movers: SGDM, IAK",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:36:17.411532-03:00"
-    },
-    {
-      "title": "Inflação nos EUA dá alívio, mas ainda não libera o Fed; entenda o PCE de junho",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:36:23.135270-03:00"
-    },
-    {
       "title": "Why Instacart Stock Popped Today",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T21:20:51.768753-03:00"
+    },
+    {
+      "title": "“Eu não tenho vergonha, vou sempre ter gratidão ao Bolsonaro”, diz Tarcísio a Haddad",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:25:45.002736-03:00"
+    },
+    {
+      "title": "Meet the High-Yield Dividend Stock Bill Ackman Has Owned for Over a Decade. Here's Why It's a Great Buy in August.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não traz informações novas ou impactantes sobre o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:25:54.053167-03:00"
+    },
+    {
+      "title": "Malaysia Stock Market May Halt Its Slide On Monday",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de ações da Malásia, mas não há informações sobre mudanças significativas ou impactos concretos.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:25:57.038526-03:00"
+    },
+    {
+      "title": "Could Copper’s Tariff-Driven Rally Be Running Out of Steam?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta a demanda de cobre e pode influenciar os preços do metal.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:26:08.539212-03:00"
     }
   ]
 }
