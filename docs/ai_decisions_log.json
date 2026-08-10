@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The July jobs numbers are due out Friday. Here's what to expect",
-      "source": "CNBC - Economy",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas é uma expectativa rotineira e não há elementos surpreendentes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:40:38.958797-03:00"
-    },
-    {
-      "title": "STF antecipa debate sobre pautas-bomba e vê ambiente favorável para frear medidas",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política e justiça criminal",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:40:42.544929-03:00"
-    },
-    {
-      "title": "Petrobras (PETR4): Por que a ação cai quase 2% mesmo após lucro acima do esperado",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:40:46.546969-03:00"
-    },
-    {
-      "title": "PF adia depoimento de Jaques Wagner sobre caso Master; saiba o que acontece",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:40:49.894329-03:00"
-    },
-    {
       "title": "Verastem outlines October VS-7375 response-rate update while targeting LGSOC self-sustainability by end of 2026",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T21:50:46.704345-03:00"
+    },
+    {
+      "title": "Elmano acusa Ciro Gomes de permitir que Comando Vermelho “plantasse a semente” no CE",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:55:51.531770-03:00"
+    },
+    {
+      "title": "Tarcísio e Haddad nacionalizam debate na Band, com embate sobre segurança",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:55:57.974204-03:00"
+    },
+    {
+      "title": "Taiwan Stock Market Tipped To Open In The Green",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica que o mercado pode abrir em alta, o que pode influenciar as ações das empresas listadas na bolsa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T21:56:04.734880-03:00"
+    },
+    {
+      "title": "Key HIV stat over 70% leaves BofA siding with Gilead",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A vacina da Gilead tem um desempenho excepcional, o que pode impulsionar a demanda por seus medicamentos e beneficiar a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:56:15.483205-03:00"
     }
   ]
 }
