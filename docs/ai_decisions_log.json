@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Morning Bid: Dealjà vu",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O anúncio de um novo financiamento é geralmente visto como positivo para a empresa e pode impulsionar seu preço.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:21:04.896317-03:00"
-    },
-    {
-      "title": "Ceuta Migrant Surge Exposes Morocco’s Economic Strain",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia sugere que a pressão econômica no Marrocos pode estar levando a uma maior migração, o que pode ter implicações para a economia marroquina e a região.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T09:25:47.669697-03:00"
-    },
-    {
-      "title": "Lucro da Berkshire dobra com alta nas participações acionárias; caixa se aproxima de US$ 360 bilhões",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Lucro recorde e alta no caixa da Berkshire são motivos positivos para o mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:25:53.102214-03:00"
-    },
-    {
-      "title": "Fóssil de 518 milhões de anos explica a origem das presas das aranhas",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:25:57.629955-03:00"
-    },
-    {
-      "title": "Nearly 75% of new homeowners spend $10,000 on surprise repairs within 2 years — and some never budgeted for them",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia pode afetar a economia familiar e, consequentemente, o consumo e a demanda por bens e serviços.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:26:10.264787-03:00"
-    },
-    {
-      "title": "Cloudflare shares jump after forecast raise on higher AI-driven spending",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento de previsão de receita é um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:26:13.198632-03:00"
-    },
-    {
-      "title": "O que o novo sedã da Lexus traz para desafiar o domínio do BMW Série 3",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:31:00.554371-03:00"
-    },
-    {
-      "title": "Conheça o ‘grito’ da cigarra que parece um 'jato decolando'",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:31:03.305358-03:00"
-    },
-    {
-      "title": "Levi Strauss reveals cybersecurity breach amid wider wave of attacks",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A violação não é especificada e não há informações sobre impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:31:15.473043-03:00"
-    },
-    {
-      "title": "Apple Among Three Stocks In Voracious Demand. Funds Also Feast On 14 Others.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a alta demanda por ações da Apple e outras 14 ações, o que pode ser um sinal de otimismo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:31:18.591573-03:00"
-    },
-    {
-      "title": "Want to give a stuffed boar to charity? It may be more curse than gift, as the IRS cracks down on non-cash donations",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:31:21.702798-03:00"
-    },
-    {
-      "title": "By The Way: Headline You May Have Missed the Week of 8/2",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:35:45.493942-03:00"
-    },
-    {
-      "title": "3 Social Security changes are headed for boomers in 2027 — and Trump's promises won't stop them",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:36:06.570009-03:00"
-    },
-    {
-      "title": "Are Wall Street Analysts Predicting PepsiCo Stock Will Climb or Sink?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Previsões de analistas podem influenciar a percepção dos investidores sobre a ação da PepsiCo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:36:09.423903-03:00"
-    },
-    {
-      "title": "Berkshire Hathaway Q2 Profit Surges",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "O lucro surpreendentemente alto da Berkshire Hathaway é um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T09:45:40.863479-03:00"
-    },
-    {
-      "title": "The US Army wants soldiers to test tomorrow's tech while preparing to fight today. It's a balancing act.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:45:47.867502-03:00"
-    },
-    {
-      "title": "Fim dos espirros? Os cães geneticamente modificados que não causam alergias",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não está relacionado a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:50:48.547906-03:00"
-    },
-    {
-      "title": "Dia dos Pais: 10 filmes e séries para maratonar em família",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:50:51.264057-03:00"
-    },
-    {
       "title": "Frio avança pelo Brasil e novo ciclone pode se formar no dia 12, diz meteorologista do Inmet",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T12:06:10.654680-03:00"
+    },
+    {
+      "title": "US High-Grade Bond Market Sees the Most Issuers Since January",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Aumento na emissão de títulos de investimento de alto grau é um sinal positivo para o mercado de capitais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:11:23.608039-03:00"
+    },
+    {
+      "title": "European Gas Prices Rally as Hormuz Deal Prospects Remain Murky",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente os preços do gás natural europeu, que é um mercado importante.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:11:27.334808-03:00"
+    },
+    {
+      "title": "Quem paga a conta? Para diretor da FAO, esse é o principal desafio da transição climática no campo",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:11:32.820429-03:00"
+    },
+    {
+      "title": "Drones na Alemanha elevam temor de nova estratégia da Rússia",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre seguranca nacional e geopolitica nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:11:35.704426-03:00"
+    },
+    {
+      "title": "Apenas 39% da Geração Z se sente adulta, mostra pesquisa",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:11:38.340084-03:00"
+    },
+    {
+      "title": "Everpure pops up 10%; Susquehanna upgrades to Positive rating",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:11:41.100276-03:00"
+    },
+    {
+      "title": "Lincoln Educational slides after new student starts slows",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:11:43.730079-03:00"
+    },
+    {
+      "title": "Cava added as new short idea at Hedgeye",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:11:46.354128-03:00"
+    },
+    {
+      "title": "Market breadth strengthens: Equal-weight S&P 500 pulls ahead of market-weight index",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:11:49.006158-03:00"
+    },
+    {
+      "title": "Embraer (EMBJ3) lucra R$ 1,11 bi no 2T, bate recorde de receita e revisa guidance para cima",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:11:57.582793-03:00"
+    },
+    {
+      "title": "A jornada de 35 anos do acervo baiano que ergueu o maior “quilombo visual” do país",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:12:01.485409-03:00"
+    },
+    {
+      "title": "Archer buys former rival Wisk Aero",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:12:04.165987-03:00"
+    },
+    {
+      "title": "Swiss Re announces India and Mexico partnerships",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:12:06.830562-03:00"
+    },
+    {
+      "title": "Cathie Wood Ignores AI Panic — Buys More Nvidia, Sells This Gaming Stock Instead",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:12:09.482876-03:00"
+    },
+    {
+      "title": "Is Netflix’s (NFLX) Long-Term Dominance Under Threat?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:12:12.141992-03:00"
+    },
+    {
+      "title": "Here’s Why Sands Capital Technology Innovators Fund Sold Roblox Corporation (RBLX)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:12:14.813293-03:00"
+    },
+    {
+      "title": "Why Space Exploration Technologies Corp. (SPCX) is an Idiosyncratic Growth Play?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:12:17.471171-03:00"
+    },
+    {
+      "title": "Brazil central bank eyes expansion for Pix payment system as US trade scrutiny intensifies",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:12:20.162309-03:00"
     }
   ]
 }
