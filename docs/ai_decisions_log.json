@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A pequena área da Amazônia que pode esconder 40 mil espécies de insetos 'inéditos'",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:00:50.149581-03:00"
-    },
-    {
-      "title": "Is Celsius a Buy After Tumbling 18% in 1 Day?",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:01:01.342585-03:00"
-    },
-    {
-      "title": "Quem cuida das coisas quando você não está? Este investimento dribla imposto e ajuda sua família no momento mais difícil",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios, mas sobre investimento pessoal e planejamento sucessorio",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:01:05.869586-03:00"
-    },
-    {
-      "title": "Amanhã você poderá acessar a IA que tem potencial para buscar até R$ 1.960 por semana no mercado de criptomoedas",
-      "source": "Seu Dinheiro",
-      "score": 5.0,
-      "motivo": "Noticia sobre potencial de retorno de uma ferramenta de investimento em criptomoedas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:01:08.619134-03:00"
-    },
-    {
       "title": "Filho de Joe Biden confirma que câncer do ex-presidente dos EUA se espalhou",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T16:21:03.883016-03:00"
+    },
+    {
+      "title": "Fachin vai apresentar projeto de lei para limitar salários de magistrados",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:25:42.113333-03:00"
+    },
+    {
+      "title": "GCM Grosvenor expects ~10% sequential increase in Q3 ARS management fees, backed by strong Q2 performance",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as tarifas de gestão de ARS, que são importantes para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:25:47.531560-03:00"
+    },
+    {
+      "title": "AI agents, IRL socializing, and vibe coding: Where top consumer investors are placing bets",
+      "source": "Business Insider",
+      "score": 6.0,
+      "motivo": "A notícia destaca tendências de investimento em tecnologia de IA, o que pode ter impacto significativo no mercado de tecnologia e consumo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:25:57.511407-03:00"
+    },
+    {
+      "title": "Trump extends limited waiver of shipping law to keep oil flowing in U.S. amid Iran war",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:26:00.594390-03:00"
     }
   ]
 }
