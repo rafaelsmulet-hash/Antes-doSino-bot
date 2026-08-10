@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Super El Niño: fenômeno climático deve pressionar inflação em 2027",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "efeito direto na inflação, que pode afetar a economia e os preços dos alimentos",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:10:42.286589-03:00"
-    },
-    {
-      "title": "Mark Zuckerberg Says Buyers Are Offering Meta a 'Significant Premium' for Its Compute — But He Turned Them Down, Calls Selling 'Foolish'",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia indica que o Meta está recebendo ofertas significativas para uma de suas divisões, o que pode ser um sinal de confiança no valor da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:10:53.400282-03:00"
-    },
-    {
-      "title": "4 Unusually Active Options Yesterday Made for a FUN Short Iron Condor",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre um evento específico de mercado, mas sim sobre uma estratégia de opções.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:10:56.369357-03:00"
-    },
-    {
-      "title": "Hertz Beats Estimates and Squeezes the Shorts",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa superou as estimativas de lucro, o que é um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:10:59.667919-03:00"
-    },
-    {
-      "title": "Sandisk Shares Fall Despite Strong Q4 Results. How to Play SNDK Stock Here.",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A queda da ação é um sinal de que os investidores estão vendendo após os resultados, mas não há informações sobre mudanças significativas na empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:11:02.965520-03:00"
-    },
-    {
-      "title": "Nvidia Earnings: Turn A $265 Profit Trading Around The AI Chipmaker's Report",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "O lucro significativo da Nvidia pode influenciar a percepção dos investidores sobre a saúde financeira da empresa e, consequentemente, afetar a cotação das ações.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:15:53.909998-03:00"
-    },
-    {
       "title": "Korea Volatility Spike Ebbs as Leveraged Trades Are Flushed Out",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T14:51:32.812339-03:00"
+    },
+    {
+      "title": "Bolsas da Europa têm alta com negociações sobre Ormuz no radar; FTSE 100 destoa e recua",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "alta dos índices europeus com otimismo sobre avanço nas negociações no Oriente Médio",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:56:08.977201-03:00"
+    },
+    {
+      "title": "CEVA projects 2026 revenue growth of 13%–15% as platform-level licensing expands",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois indica um crescimento esperado da empresa, o que pode afetar os preços das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:56:13.119603-03:00"
+    },
+    {
+      "title": "Telos forecasts $23.6M-$28.6M adjusted EBITDA in 2026 as low-margin software resale phases out",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A expectativa de lucro ajustado é relevante para o mercado, pois indica uma melhoria na eficiência operacional da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:56:16.064414-03:00"
+    },
+    {
+      "title": "Nvidia e gestoras de Wall Street articulam fundo de US$ 500 bilhões para IA",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:56:24.087860-03:00"
+    },
+    {
+      "title": "SpaceX stock rebounds to $135 IPO price after post-debut slump",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:56:29.086750-03:00"
+    },
+    {
+      "title": "Bristol Myers Squibb to build $2.3 billion Houston campus",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:56:31.787024-03:00"
     }
   ]
 }
