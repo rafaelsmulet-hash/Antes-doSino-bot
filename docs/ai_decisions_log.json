@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Opinião: O novo símbolo do sucesso masculino é a presença",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:05:49.713339-03:00"
-    },
-    {
-      "title": "Os Paralamas do Sucesso relembram sucesso do clássico disco “Selvagem?” no Doce Maravilha 2026",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "notícia é sobre entretenimento e não tem relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:05:56.229948-03:00"
-    },
-    {
-      "title": "Pointed! Bloomberg's Weekly News Quiz For Risk-Takers",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:10:41.514529-03:00"
-    },
-    {
-      "title": "De Verstappen a Piquet: as duplas de pai e filho que marcaram a história da Fórmula 1",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:10:48.910053-03:00"
-    },
-    {
-      "title": "IA para vendas: os prompts que ajudam antes, durante e depois de reuniões com clientes",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:10:51.683290-03:00"
-    },
-    {
-      "title": "Destaques da semana: o que dizem os analistas de Wall Street",
-      "source": "Investing.com Brasil",
-      "score": 3.0,
-      "motivo": "noticia de opinião de analistas, sem impacto imediato no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:15:59.901245-03:00"
-    },
-    {
       "title": "Ações europeias atraem investidores com lucros e crescimento em alta",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T15:56:38.893875-03:00"
+    },
+    {
+      "title": "JBS Returns Leadership to Batista Clan as Scion Named Next CEO",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A nomeação de um membro da família Batista como CEO pode indicar uma continuidade de estratégias e decisões importantes para a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:00:50.446649-03:00"
+    },
+    {
+      "title": "Dividendos: Petrobras (PETR4) se mantém no topo das preferências entre 14 analistas; veja",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "a Petrobras é preferida por analistas para dividendos, o que pode impulsionar a ação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:00:56.668874-03:00"
+    },
+    {
+      "title": "Chuva de meteoros Perseidas atinge o pico nesta semana; veja como observar no Brasil",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:01:00.266938-03:00"
+    },
+    {
+      "title": "Oruka Therapeutics GAAP EPS of -$0.55 misses by $0.01",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:01:03.316146-03:00"
+    },
+    {
+      "title": "Better Home & Finance rises 11%, bouncing back from recent weakness",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:01:06.007555-03:00"
+    },
+    {
+      "title": "Kennametal cut to Sell equivalent at Morgan Stanley on impact of tungsten price spike",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:01:08.754393-03:00"
     }
   ]
 }
