@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The Free Money AI Bond Buildout Is Gone",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Aumento do custo de financiamento pode afetar as empresas de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:45:53.837306-03:00"
-    },
-    {
-      "title": "Under Armour Cuts Sales View on Softer Demand Around the World",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A empresa reduziu a previsão de queda nas vendas e espera queda nas vendas em várias regiões, o que pode afetar o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:45:56.902389-03:00"
-    },
-    {
-      "title": "Bloomberg Surveillance 8/7/2026",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:45:59.516224-03:00"
-    },
-    {
-      "title": "Trump teased an Iran deal that didn't come, but markets soared. Here’s why it keeps happening",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:46:16.406662-03:00"
-    },
-    {
-      "title": "Congo to Investigate Reports of Excess Uranium in Cobalt Exports",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:50:53.647696-03:00"
-    },
-    {
-      "title": "Jair Renan usará nome do pai para disputar vaga na Câmara por Santa Catarina",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:50:58.200288-03:00"
-    },
-    {
-      "title": "O motor oculto da inteligência artificial — por que os Vector Databases viraram tendência",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:51:03.927110-03:00"
-    },
-    {
-      "title": "AEye reaffirms $30M-$35M 2026 cash use as it ramps output for 2H",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:51:06.919951-03:00"
-    },
-    {
-      "title": "Interface signals FY2026 net sales of $1.455B-$1.485B with ~40.6% adjusted gross margin",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:51:09.520213-03:00"
-    },
-    {
-      "title": "GraniteShares YieldBOOST 20Y Treasuries ETF declares $0.0091 dividend",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A declaração de dividendos é relevante para os investidores que possuem ações do ETF e pode influenciar a demanda por ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:51:12.474931-03:00"
-    },
-    {
-      "title": "Reforma tributária preocupa aviação de negócios e acelera compra de aviões",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:51:21.951305-03:00"
-    },
-    {
       "title": "O “efeito Copa” na Renner: vendas esfriam no trimestre e varejista reduz projeção de receita",
       "source": "Neofeed",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T22:21:15.287909-03:00"
+    },
+    {
+      "title": "Australian Scandium Miner Soars After $400 Million US Investment",
+      "source": "Bloomberg Markets",
+      "score": 8.0,
+      "motivo": "O financiamento de US$ 400 milhões é um evento significativo para a mineradora, indicando confiança do governo dos EUA no projeto.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T22:26:22.778716-03:00"
+    },
+    {
+      "title": "Cinegrafista da GloboNews é retirado do debate após dar cabeçada em repórter",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:26:27.406959-03:00"
+    },
+    {
+      "title": "I Squared Capital compra a oOh!media da Austrália por US$ 634 milhões",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Aquisição de empresa de mídia pode impulsionar crescimento e aumentar valor da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:26:32.642157-03:00"
+    },
+    {
+      "title": "Em cinco anos, cidade de SP ganha 1 milhão de empresas — e atrai 100 mil negócios de fora da capital",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Redução de impostos e simplificação de processos para abertura de negócios incentivam investimentos na cidade de SP",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:26:38.054420-03:00"
+    },
+    {
+      "title": "China Stock Market May Extend Win Streak",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica uma sequência de ganhos no mercado de ações da China, o que pode influenciar as expectativas dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T22:26:43.796758-03:00"
+    },
+    {
+      "title": "Australian Markets Modestly Lower",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque afeta o desempenho do mercado australiano, mas o impacto parece ser moderado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:26:46.846843-03:00"
+    },
+    {
+      "title": "Element Fleet Management Proposes Up To A$4.00/shr Acquisition Of FleetPartners",
+      "source": "Nasdaq",
+      "score": 8.0,
+      "motivo": "A notícia é relevante pois envolve uma possível aquisição de uma empresa de gestão de flotas, o que pode ter impacto significativo no mercado de ações.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:26:50.080443-03:00"
+    },
+    {
+      "title": "Mark Cuban Compared Nvidia to a Dot-Com-Era IPO Machine &quot;Funding Everyone and Anyone.&quot; Here's What That Means for AI Stocks.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A comparação positiva de Mark Cuban com a Nvidia pode indicar um aumento no investimento em tecnologia de inteligência artificial.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T22:26:53.033272-03:00"
+    },
+    {
+      "title": "SpaceX vs. Quantinuum: Which Recent IPO Stock Is a Better Buy?",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro brasileiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:26:55.922874-03:00"
+    },
+    {
+      "title": "Airbnb vs. McDonald's: Which Consumer Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas não apresenta informações novas ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:26:59.034320-03:00"
+    },
+    {
+      "title": "Brothers, 44 And 49, Split $4 Million Selling The Family Restaurant Chain — One Wants To Put Their Shared Cut Into Crypto",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia menciona investimento em criptomoedas, o que pode ser relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:27:07.549647-03:00"
     }
   ]
 }
