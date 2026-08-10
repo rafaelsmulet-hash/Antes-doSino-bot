@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Anthropic is turning Claude Code’s auto mode on by default",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:21:20.185878-03:00"
-    },
-    {
-      "title": "RB-Bragantino x Corinthians: Onde assistir?",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:30:45.380952-03:00"
-    },
-    {
-      "title": "Here's Why Iren Has an Edge in the Neocloud Market, According to Meta's Mark Zuckerberg",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a demanda crescente por computação de inteligência artificial, o que pode ter impacto positivo no mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T16:30:53.660239-03:00"
-    },
-    {
-      "title": "Sundar Pichai's Alphabet Has Grown Google Cloud Revenue 82% Year Over Year. Here's Why That Growth Rate Justifies the Company's Capex Bet.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A empresa está aumentando significativamente a receita da Google Cloud, o que pode ter impacto positivo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T16:30:56.863657-03:00"
-    },
-    {
       "title": "Por que Miami virou a nova capital dos ultrarricos nos EUA (e ficou mais cara até que Nova York)",
       "source": "G1 Economia",
       "score": 2.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T18:41:14.888411-03:00"
+    },
+    {
+      "title": "Brasil oferece apoio à Colômbia após terremoto; não há brasileiros entre vítimas",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:46:09.601904-03:00"
+    },
+    {
+      "title": "SEC acusa Netcapital de fraude em valores mobiliários",
+      "source": "Investing.com Brasil",
+      "score": 9.0,
+      "motivo": "acusação de fraude em valores mobiliários é um evento de mercado grave que pode afetar a confiança dos investidores e impactar a economia",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:46:14.475874-03:00"
+    },
+    {
+      "title": "Ur-Energy reports  results",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa reportou resultados financeiros positivos, o que é considerado um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:46:18.045734-03:00"
+    },
+    {
+      "title": "WF International Limited GAAP EPS of -$2.90, revenue of $2.33M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:46:20.733511-03:00"
     }
   ]
 }
