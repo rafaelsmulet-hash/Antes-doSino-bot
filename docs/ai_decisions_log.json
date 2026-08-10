@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Haddad menciona que membros da PM de SP, sob Tarcísio, mantinham vínculo com o PCC",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não está relacionado a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:20:57.676860-03:00"
-    },
-    {
-      "title": "Everyone's Chasing AI Data Center Stocks. This 5%-Yielding Dividend Stock Already Owns a Piece of the Boom.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque a ação mencionada já está envolvida no mercado de centros de dados de IA, que está em alta.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:21:15.287909-03:00"
-    },
-    {
-      "title": "Australian Scandium Miner Soars After $400 Million US Investment",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "motivo": "O financiamento de US$ 400 milhões é um evento significativo para a mineradora, indicando confiança do governo dos EUA no projeto.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T22:26:22.778716-03:00"
-    },
-    {
-      "title": "Cinegrafista da GloboNews é retirado do debate após dar cabeçada em repórter",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:26:27.406959-03:00"
-    },
-    {
-      "title": "I Squared Capital compra a oOh!media da Austrália por US$ 634 milhões",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aquisição de empresa de mídia pode impulsionar crescimento e aumentar valor da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:26:32.642157-03:00"
-    },
-    {
-      "title": "Em cinco anos, cidade de SP ganha 1 milhão de empresas — e atrai 100 mil negócios de fora da capital",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Redução de impostos e simplificação de processos para abertura de negócios incentivam investimentos na cidade de SP",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:26:38.054420-03:00"
-    },
-    {
-      "title": "China Stock Market May Extend Win Streak",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque indica uma sequência de ganhos no mercado de ações da China, o que pode influenciar as expectativas dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T22:26:43.796758-03:00"
-    },
-    {
       "title": "Australian Markets Modestly Lower",
       "source": "Nasdaq",
       "score": 3.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T20:41:06.587305-03:00"
+    },
+    {
+      "title": "Gold Touches $4,400 as Traders Turn Focus to US Inflation Data",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta o preço do ouro e pode influenciar a decisão da Reserva Federal sobre a taxa de juros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T20:45:40.571310-03:00"
+    },
+    {
+      "title": "As Warsh’s Fed faces pressure to act on inflation, these indicators show it’s at its lowest in years",
+      "source": "CNBC - Economy",
+      "score": 5.0,
+      "motivo": "A notícia sugere que a inflação pode estar em declínio, o que é positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:45:46.546254-03:00"
+    },
+    {
+      "title": "Itaúsa (ITSA4) tem lucro de R$ 4,3 bi no 2º tri",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T20:45:49.589220-03:00"
+    },
+    {
+      "title": "As small caps ‘queridinhas’ de 9 analistas; uma pode chegar a quase R$ 100",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:45:53.536872-03:00"
+    },
+    {
+      "title": "Polícia de SP indicia dois representantes do Goldman Sachs em caso Oncoclínicas",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:45:56.726012-03:00"
+    },
+    {
+      "title": "Crepúsculo: Amanhecer volta aos cinemas de São Paulo; veja onde assistir",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:46:00.013043-03:00"
+    },
+    {
+      "title": "Oncoclínicas ratifica recuperação extrajudicial após aval da Justiça",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:46:08.246788-03:00"
     }
   ]
 }
