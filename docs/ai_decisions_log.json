@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que Miami virou a nova capital dos ultrarricos nos EUA (e ficou mais cara até que Nova York)",
-      "source": "G1 Economia",
-      "score": 2.0,
-      "motivo": "noticia sobre mercado imobiliario de luxo em Miami, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:31:01.937074-03:00"
-    },
-    {
-      "title": "Trump diz que EUA estão “agindo com discrição” e gerando pressão econômica no Irã",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política internacional",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:35:42.954045-03:00"
-    },
-    {
-      "title": "ServiceNow (NOW) Unveils Autonomous Security to Accelerate Growth",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque pode impactar positivamente o crescimento da empresa e, consequentemente, o preço das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:35:58.037767-03:00"
-    },
-    {
-      "title": "Jim Cramer Just Reminded Everyone About the Most Important Aspect of Investing in SpaceX",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o preço da ação da SpaceX",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T16:41:01.628200-03:00"
-    },
-    {
-      "title": "Arista Networks vs. Arm: Comparing Revenue Growth Trajectories for These Artificial Intelligence Companies",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia compara as trajetórias de crescimento de receita de duas empresas de inteligência artificial, o que é relevante para investidores e traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T16:41:04.625559-03:00"
-    },
-    {
-      "title": "Ibovespa cai 1,73% com Petrobras (PETR4), varejo e bancos sob pressão",
-      "source": "Suno Noticias",
-      "score": 8.0,
-      "motivo": "queda do Ibovespa e pressão em setores como varejo e bancos",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:41:11.846558-03:00"
-    },
-    {
-      "title": "Onde assistir à Santos x Athletico-PR?",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e não tem relevância para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:45:43.863766-03:00"
-    },
-    {
-      "title": "Senate moves closer to vote on sweeping U.S. crypto regulation",
-      "source": "Seeking Alpha",
-      "score": 8.0,
-      "motivo": "A regulamentação pode afetar a estabilidade e a confiança na indústria de criptomoedas.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:45:50.870538-03:00"
-    },
-    {
-      "title": "Comcast (CMCSA) Pushes Private Wireless Into The Office Market",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque a Comcast é uma empresa de tecnologia e comunicação importante, e a expansão de suas redes móveis privadas pode ter impacto no mercado de tecnologia e comunicações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T16:46:04.450017-03:00"
-    },
-    {
-      "title": "Tornado atingiu cidade do Paraná no sábado, confirma sistema Simepar",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:50:43.993835-03:00"
-    },
-    {
-      "title": "UOL transmite tręs amistosos da seleçăo brasileira feminina de rugby",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "a noticia e sobre esporte e nao tem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:50:56.137625-03:00"
-    },
-    {
-      "title": "Após enfrentar a Covid-19, Dimas Covas quer trazer uma fábrica de vacinas da Sinovac. Mas não será fácil",
-      "source": "Neofeed",
-      "score": 2.0,
-      "motivo": "noticia sobre investimento em vacinas, mas sem impacto imediato no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:51:02.079824-03:00"
-    },
-    {
-      "title": "“Bolsa Ibovespa”: grupo de empresários busca apoio político para dar ações a todo recém-nascido",
-      "source": "Neofeed",
-      "score": 6.0,
-      "motivo": "projeto de aportes anuais do governo em ações para jovens brasileiros",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T16:55:45.817884-03:00"
-    },
-    {
       "title": "How Cursor recruits elite AI engineers when huge salaries aren't enough",
       "source": "Business Insider",
       "score": 0.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T18:46:20.733511-03:00"
+    },
+    {
+      "title": "Trump Touts $3B in Mineral Project to Counter China",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "O governo dos EUA está investindo em projetos de minerais para reduzir a dependência de China, o que pode ter impacto positivo no mercado de mineração e recursos naturais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:50:51.927773-03:00"
+    },
+    {
+      "title": "Why Kevin Warsh Might Raise Interest Rates at the Next FOMC Meeting, Despite a Weak Jobs Report",
+      "source": "Nasdaq",
+      "score": 8.0,
+      "motivo": "O evento pode influenciar a decisão de juros do FOMC.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:51:05.696775-03:00"
+    },
+    {
+      "title": "Why Keel Infrastructure Stock Dived by Over 12% Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:51:08.369574-03:00"
+    },
+    {
+      "title": "Stock Market Today, Aug. 10: Markets Slip as Oil Gains Fuel Inflation Fears",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:51:11.068709-03:00"
+    },
+    {
+      "title": "Liberty Energy CFO Michael Stock Sells 6,666 Shares",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Venda de ações não é um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:51:14.225576-03:00"
+    },
+    {
+      "title": "Archer Aviation Just Bought a $200 Million Defense Business From Boeing -- by Giving Up 20% of the Company",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:51:16.964773-03:00"
+    },
+    {
+      "title": "Why NXP Semiconductors Stock Dropped 18.5% in July",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:51:19.617143-03:00"
+    },
+    {
+      "title": "Prediction: This $10 Nuclear Energy Stock Could Be Worth $100 by 2036",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:51:22.296601-03:00"
+    },
+    {
+      "title": "Rocket Lab Q2 Loss Narrows",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:51:24.928170-03:00"
+    },
+    {
+      "title": "Strategy (MSTR) vs BlackRock’s IBIT: Which Bitcoin Bet Has Held Up Better in 2026?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:51:36.196071-03:00"
+    },
+    {
+      "title": "Judge temporarily blocks Mamdani's pied-à-terre tax",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:51:39.063928-03:00"
+    },
+    {
+      "title": "Why you should start a company in your 20s, and other advice from the cofounder of global toy company Spin Master",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:51:41.824921-03:00"
+    },
+    {
+      "title": "Trump Media posts $238 million second-quarter loss as crypto declines",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:51:44.681025-03:00"
     }
   ]
 }
