@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "LunR Royalties reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:24.343943-03:00"
-    },
-    {
-      "title": "Alpha metallurgical lowers 2026 shipment outlook to 14.2M-15.4M tons while raising cost guidance to $103-$107 per ton",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:31:27.056421-03:00"
-    },
-    {
-      "title": "Alta outlines $167.5M-$177.5M 2026 adjusted EBITDA as it reaffirms $100M-$110M free cash flow target",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:29.752653-03:00"
-    },
-    {
       "title": "NXT Energy Solutions Q2 GAAP EPS of CAD -$0.02",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T21:01:05.331501-03:00"
+    },
+    {
+      "title": "‘I’m easing into retirement’: I’m getting an $80,000 pension payout. Where can I invest it safely?",
+      "source": "MarketWatch",
+      "score": 1.0,
+      "motivo": "A notícia é irrelevante para o mercado financeiro pois trata de uma decisão pessoal de investimento.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:05:47.849171-03:00"
+    },
+    {
+      "title": "Após enfrentar a Covid-19, Dimas Covas quer trazer uma fábrica de vacinas da Sinovac. Mas não será fácil",
+      "source": "Neofeed",
+      "score": 2.0,
+      "motivo": "noticia sobre investimento de empresas em plataformas de vacinas, mas sem impacto imediato no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:05:59.597871-03:00"
+    },
+    {
+      "title": "SK Hynix and Samsung Just Sent a Major Warning to Micron Investors",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia sugere que a Micron pode perder mercado devido à sua falta de capacidade de produção, o que é relevante para o mercado de tecnologia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T21:06:02.902128-03:00"
     }
   ]
 }
