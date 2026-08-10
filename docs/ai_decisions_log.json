@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Instacart Stock Popped Today",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:36:28.070748-03:00"
-    },
-    {
       "title": "ETF influx amid peace bid drives $2.76B inflow to high-yield bond retail funds",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T21:26:08.539212-03:00"
+    },
+    {
+      "title": "Retiring in 2030? 3 Critical Moves to Make First",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "Não é sobre mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:35:53.151095-03:00"
     }
   ]
 }
