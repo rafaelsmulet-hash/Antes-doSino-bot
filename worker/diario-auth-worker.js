@@ -1,15 +1,24 @@
 /**
- * Antes do Sino - Diario de Decisao - Worker de autenticacao
+ * Antes do Sino - Worker de autenticacao (Diario de Decisao + Carteira
+ * de Dividendos, ferramenta pessoal do dono do projeto)
  * =============================================================
- * Unico proposito deste Worker: verificar o login do Telegram Login
- * Widget (assinatura HMAC, que so pode ser checada com o token do bot
- * - por isso tem que rodar num servidor, nunca no navegador) e, se
- * valido, devolver SO os registros daquele chat_id em
- * decisoes_usuarios.json (nunca o arquivo inteiro).
+ * Duas rotas, mesmo Worker (nao precisa criar um segundo):
  *
- * Sem banco de dados proprio: busca decisoes_usuarios.json direto do
- * GitHub a cada request (repositorio publico, sem autenticacao) e
- * decifra em memoria - o arquivo no repo fica sempre criptografado
+ *   POST /telegram-login (ou raiz "/", pra compatibilidade)
+ *     Verifica o login do Telegram Login Widget (assinatura HMAC, que
+ *     so pode ser checada com o token do bot - por isso roda aqui, nunca
+ *     no navegador) e devolve SO os registros daquele chat_id em
+ *     decisoes_usuarios.json (nunca o arquivo inteiro).
+ *
+ *   POST /carteira
+ *     Verifica uma senha simples (hash SHA-256, pagina de uso pessoal
+ *     do dono - nao e multiusuario) e devolve carteira_status.json
+ *     inteiro (dado ja e todo do dono, sem necessidade de filtrar por
+ *     usuario).
+ *
+ * Sem banco de dados proprio: busca os arquivos direto do GitHub a
+ * cada request (repositorio publico, sem autenticacao) e decifra em
+ * memoria - os arquivos no repo ficam sempre criptografados
  * (Fernet/AES), nunca em texto puro.
  *
  * Secrets necessarios (Settings do Worker, nunca no codigo):
@@ -17,14 +26,18 @@
  *                             secret do GitHub Actions, precisa ser
  *                             duplicado aqui)
  *   DECISOES_ENCRYPTION_KEY - a mesma chave Fernet usada pelo main.py
- *                             (idem, duplicar aqui)
+ *                             (idem, duplicar aqui) - usada pros dois
+ *                             arquivos (decisoes_usuarios.json e
+ *                             carteira_status.json)
+ *   CARTEIRA_PASSWORD_HASH  - hash SHA-256 (hex) da senha da pagina
+ *                             /carteira - NUNCA a senha em texto puro
  *
  * Variavel opcional (Settings > Variables, nao-secreta):
- *   GITHUB_RAW_URL - default abaixo; so muda se o repo for renomeado.
+ *   GITHUB_RAW_URL          - default abaixo; so muda se o repo for renomeado.
  */
 
-const GITHUB_RAW_URL_DEFAULT =
-  "https://raw.githubusercontent.com/rafaelsmulet-hash/Antes-doSino-bot/main/decisoes_usuarios.json";
+const GITHUB_RAW_BASE_DEFAULT =
+  "https://raw.githubusercontent.com/rafaelsmulet-hash/Antes-doSino-bot/main/";
 
 const ALLOWED_ORIGIN = "https://antesdosino.com.br";
 const AUTH_MAX_AGE_SEGUNDOS = 24 * 60 * 60; // login do widget expira em 24h
@@ -123,6 +136,94 @@ async function fernetDecrypt(tokenB64url, chaveB64url) {
 }
 
 // ---------------------------------------------------------------------
+// Senha simples (pagina de uso pessoal, single-user - nao precisa de
+// OAuth). So o HASH fica salvo como secret, nunca a senha em si.
+// ---------------------------------------------------------------------
+
+async function verificarSenha(senhaRecebida, hashEsperado) {
+  if (!senhaRecebida || !hashEsperado) return false;
+  const hashCalculado = bytesToHex(
+    await crypto.subtle.digest("SHA-256", new TextEncoder().encode(senhaRecebida))
+  );
+  // Comparacao em tempo constante (evita vazar por timing o quanto do
+  // hash bateu) - tamanho dos dois e sempre igual (hex de SHA-256).
+  if (hashCalculado.length !== hashEsperado.length) return false;
+  let diferenca = 0;
+  for (let i = 0; i < hashCalculado.length; i++) {
+    diferenca |= hashCalculado.charCodeAt(i) ^ hashEsperado.charCodeAt(i);
+  }
+  return diferenca === 0;
+}
+
+// ---------------------------------------------------------------------
+
+async function buscarEDecifrar(nomeArquivo, chaveFernet, env) {
+  const base = env.GITHUB_RAW_URL || GITHUB_RAW_BASE_DEFAULT;
+  const resposta = await fetch(base + nomeArquivo, { cf: { cacheTtl: 0 } });
+  if (!resposta.ok) return null;
+  const tokenCriptografado = (await resposta.text()).trim();
+  if (!tokenCriptografado) return null;
+  const textoPlano = await fernetDecrypt(tokenCriptografado, chaveFernet);
+  return JSON.parse(textoPlano);
+}
+
+async function tratarLoginTelegram(request, env) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.DECISOES_ENCRYPTION_KEY) {
+    return jsonResponse({ erro: "Worker nao configurado (secrets ausentes)" }, 500);
+  }
+
+  let dadosLogin;
+  try {
+    dadosLogin = await request.json();
+  } catch (e) {
+    return jsonResponse({ erro: "Corpo da requisicao invalido" }, 400);
+  }
+
+  const valido = await verificarLoginTelegram(dadosLogin, env.TELEGRAM_BOT_TOKEN);
+  if (!valido) {
+    return jsonResponse({ erro: "Login invalido ou expirado" }, 401);
+  }
+
+  const chatId = String(dadosLogin.id);
+
+  let estado;
+  try {
+    estado = await buscarEDecifrar("decisoes_usuarios.json", env.DECISOES_ENCRYPTION_KEY, env);
+  } catch (e) {
+    return jsonResponse({ erro: "Nao foi possivel ler os dados agora" }, 500);
+  }
+  if (!estado) return jsonResponse({ decisoes: [] });
+
+  const minhasDecisoes = (estado.decisoes || []).filter((d) => String(d.chat_id) === chatId);
+  return jsonResponse({ decisoes: minhasDecisoes });
+}
+
+async function tratarCarteira(request, env) {
+  if (!env.CARTEIRA_PASSWORD_HASH || !env.DECISOES_ENCRYPTION_KEY) {
+    return jsonResponse({ erro: "Worker nao configurado (secrets ausentes)" }, 500);
+  }
+
+  let corpo;
+  try {
+    corpo = await request.json();
+  } catch (e) {
+    return jsonResponse({ erro: "Corpo da requisicao invalido" }, 400);
+  }
+
+  const valido = await verificarSenha(corpo.senha, env.CARTEIRA_PASSWORD_HASH);
+  if (!valido) {
+    return jsonResponse({ erro: "Senha invalida" }, 401);
+  }
+
+  let status;
+  try {
+    status = await buscarEDecifrar("carteira_status.json", env.DECISOES_ENCRYPTION_KEY, env);
+  } catch (e) {
+    return jsonResponse({ erro: "Nao foi possivel ler os dados agora" }, 500);
+  }
+
+  return jsonResponse(status || { alocacao: [], universo: [] });
+}
 
 export default {
   async fetch(request, env) {
@@ -132,55 +233,11 @@ export default {
     if (request.method !== "POST") {
       return jsonResponse({ erro: "Metodo nao permitido" }, 405);
     }
-    if (!env.TELEGRAM_BOT_TOKEN || !env.DECISOES_ENCRYPTION_KEY) {
-      return jsonResponse({ erro: "Worker nao configurado (secrets ausentes)" }, 500);
+
+    const { pathname } = new URL(request.url);
+    if (pathname === "/carteira") {
+      return tratarCarteira(request, env);
     }
-
-    let dadosLogin;
-    try {
-      dadosLogin = await request.json();
-    } catch (e) {
-      return jsonResponse({ erro: "Corpo da requisicao invalido" }, 400);
-    }
-
-    const valido = await verificarLoginTelegram(dadosLogin, env.TELEGRAM_BOT_TOKEN);
-    if (!valido) {
-      return jsonResponse({ erro: "Login invalido ou expirado" }, 401);
-    }
-
-    const chatId = String(dadosLogin.id);
-
-    let respostaGithub;
-    try {
-      respostaGithub = await fetch(env.GITHUB_RAW_URL || GITHUB_RAW_URL_DEFAULT, {
-        cf: { cacheTtl: 0 },
-      });
-    } catch (e) {
-      return jsonResponse({ erro: "Nao foi possivel buscar os dados agora" }, 502);
-    }
-    if (!respostaGithub.ok) {
-      // Arquivo pode nao existir ainda (ninguem registrou decisao nenhuma) -
-      // nao e erro, so nao ha nada pra mostrar.
-      return jsonResponse({ decisoes: [] });
-    }
-
-    const tokenCriptografado = (await respostaGithub.text()).trim();
-    if (!tokenCriptografado) {
-      return jsonResponse({ decisoes: [] });
-    }
-
-    let estado;
-    try {
-      const textoPlano = await fernetDecrypt(tokenCriptografado, env.DECISOES_ENCRYPTION_KEY);
-      estado = JSON.parse(textoPlano);
-    } catch (e) {
-      return jsonResponse({ erro: "Nao foi possivel ler os dados agora" }, 500);
-    }
-
-    const minhasDecisoes = (estado.decisoes || []).filter(
-      (d) => String(d.chat_id) === chatId
-    );
-
-    return jsonResponse({ decisoes: minhasDecisoes });
+    return tratarLoginTelegram(request, env);
   },
 };

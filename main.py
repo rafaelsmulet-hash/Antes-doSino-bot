@@ -1225,6 +1225,16 @@ def fetch_brapi_quote(ticker):
     }
 
 
+def fetch_brapi_raw(ticker):
+    """Devolve o resultado CRU da brapi (todos os campos, nao so os 3
+    de fetch_brapi_quote) - usado pela Carteira de Dividendos pra
+    tentar ler um campo de yield de dividendo, se o plano da brapi
+    tiver esse dado disponivel (so em planos pagos, na doc deles;
+    campo tratado como opcional no modulo que consome isso)."""
+    results = fetch_brapi_results(ticker)
+    return results[0] if results else None
+
+
 TWELVEDATA_CACHE_FILE = "docs/twelvedata_cache.json"
 TWELVEDATA_CACHE_TTL_MINUTOS = 15
 
@@ -4318,6 +4328,12 @@ def main():
         diario_decisao.processar_followups(fetch_brapi_quote)
     except Exception as e:
         print("Erro no Diario de Decisao Comportamental (isolado, nao afeta o fluxo principal): " + str(e))
+
+    try:
+        import carteira_dividendos
+        carteira_dividendos.processar_aporte_mensal(fetch_brapi_raw)
+    except Exception as e:
+        print("Erro na Carteira de Dividendos (isolado, nao afeta o fluxo principal): " + str(e))
 
     try:
         from social import content_engine
