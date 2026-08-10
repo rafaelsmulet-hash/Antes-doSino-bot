@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I build AI data centers. I want them to disappear from view.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T06:53:34.382108-03:00"
-    },
-    {
-      "title": "Why billion-dollar robotics startups are obsessed with folding laundry",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:37.263576-03:00"
-    },
-    {
-      "title": "Welcome to the reinvention economy: Americans are pivoting careers, upskilling, and starting over",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T06:53:39.850180-03:00"
-    },
-    {
-      "title": "The Ball in OpenAI's court",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:42.828332-03:00"
-    },
-    {
-      "title": "The Trojan Horse Inside Your Head: How Government Propaganda Is Quietly Dismantling Free Thought",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:46.365910-03:00"
-    },
-    {
-      "title": "Diarrhea-Gate: One Sinaloa Farm, 345 Sick, And Two Restaurant Chains Down Double Digits",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:48.954023-03:00"
-    },
-    {
-      "title": "The Rarest Asset In A Fourth Turning: The Freedom To Act",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:51.543399-03:00"
-    },
-    {
-      "title": "Trump-Backed \"El Tigre\" Takes Power In Colombia As Right-Wing Wave Sweeps Americas",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:54.136265-03:00"
-    },
-    {
-      "title": "WNBA To Hold 'Listening Sessions' After Second Former NBA Star Says He's A Woman, Declares For Draft",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:56.722508-03:00"
-    },
-    {
-      "title": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois mostra que o Berkshire está tendo resultados positivos em várias áreas, o que pode ser um sinal de saúde financeira para a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:55:45.454786-03:00"
-    },
-    {
-      "title": "No Rio Grande do Sul, Gabriel Souza tem um desafio que só Caiado entende",
-      "source": "Brazil Journal",
-      "score": 0.0,
-      "motivo": "noticia politica sem relevancia para o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:55:50.858538-03:00"
-    },
-    {
-      "title": "OPINIÃO. Por que o agro bombou e a indústria brasileira flopou",
-      "source": "Brazil Journal",
-      "score": 0.0,
-      "motivo": "não há informações financeiras relevantes no texto",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:55:53.714092-03:00"
-    },
-    {
       "title": "Don’t worry about what other people have saved for retirement. Here’s how to find your perfect number.",
       "source": "MarketWatch",
       "score": 0.0,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T15:41:38.978428-03:00"
+    },
+    {
+      "title": "Avantis ETF Cracks Small-Cap Code",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que seguem o mercado de ETFs, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:46:05.121455-03:00"
+    },
+    {
+      "title": "Deadly Earthquake Hits Colombia",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:46:08.335654-03:00"
+    },
+    {
+      "title": "As small caps ‘queridinhas’ de 9 analistas; uma pode chegar a quase R$ 100",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:46:13.880430-03:00"
+    },
+    {
+      "title": "Terceira temporada de 'A Casa do Dragão' se distancia de 'Fogo e Sangue'; veja as mudanças",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:46:17.358913-03:00"
+    },
+    {
+      "title": "Opinião: o consumidor pesquisa no feed, mas decide no corredor",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:46:20.055149-03:00"
+    },
+    {
+      "title": "Target Stock: Next Stop, $166?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:46:25.828529-03:00"
+    },
+    {
+      "title": "Kohl's Stock for the Next 10 Years: Buy, Hold, or Avoid?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:46:28.494721-03:00"
+    },
+    {
+      "title": "Why Joby Aviation Stock Plummeted 19.8% in July But Is Soaring in August",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:46:31.308502-03:00"
+    },
+    {
+      "title": "Boston Scientific Director Habiger Buys $100k of Shares Amid 54% Decline. What Does This Mean for BSX in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:46:34.053785-03:00"
+    },
+    {
+      "title": "Fim do lock-up da SpaceX mexe com a oferta de ações; entenda o efeito sobre o SPCX34",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:46:40.025280-03:00"
+    },
+    {
+      "title": "Super Micro Computer Landed $60 Billion in Orders Last Quarter, but Trades at Just $30",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A notícia sugere que a empresa tem um grande potencial de crescimento, o que pode levar a um aumento no preço da ação.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:46:44.875753-03:00"
+    },
+    {
+      "title": "35 photos of tiny living spaces that highlight the global affordability crisis",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:46:47.978042-03:00"
     }
   ]
 }
