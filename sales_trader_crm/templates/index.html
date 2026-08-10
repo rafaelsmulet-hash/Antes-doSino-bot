@@ -2,21 +2,55 @@
 {% block title %}Clientes{% endblock %}
 {% block content %}
   <h1>Clientes</h1>
+
+  <div class="dash-cards">
+    <div class="dash-card dash-red">
+      <div class="count">{{ counts.red }}</div>
+      <div class="label"><span class="status-dot status-red"></span>Vermelho — prazo estourado</div>
+    </div>
+    <div class="dash-card dash-yellow">
+      <div class="count">{{ counts.yellow }}</div>
+      <div class="label"><span class="status-dot status-yellow"></span>Amarelo — atenção (≤20 dias)</div>
+    </div>
+    <div class="dash-card dash-green">
+      <div class="count">{{ counts.green }}</div>
+      <div class="label"><span class="status-dot status-green"></span>Verde — em dia</div>
+    </div>
+  </div>
+
+  <form method="get" action="{{ url_for('index') }}">
+    <input class="search-box" type="text" name="q" value="{{ search }}" placeholder="Buscar cliente por nome...">
+  </form>
+
   <table class="clients-table">
     <thead>
       <tr>
+        <th>Status</th>
         <th>Nome</th>
         <th>Estruturas</th>
+        <th>Último contato</th>
+        <th>Dias sem contato</th>
+        <th>Dias restantes</th>
+        <th>Ação rápida</th>
       </tr>
     </thead>
     <tbody>
       {% for c in clients %}
         <tr>
-          <td><a href="{{ url_for('client_detail', client_id=c['id']) }}">{{ c['name'] }}</a></td>
-          <td>{{ c['structures'] }}</td>
+          <td><span class="status-dot status-{{ c.status }}"></span></td>
+          <td><a href="{{ url_for('client_detail', client_id=c.id) }}">{{ c.name }}</a></td>
+          <td>{{ (c.structures[:40] + '…') if c.structures and c.structures|length > 40 else (c.structures or '—') }}</td>
+          <td>{{ c.last_contact_date or '—' }}</td>
+          <td>{{ c.days_since if c.days_since is not none else '—' }}</td>
+          <td>{{ c.days_remaining if c.days_remaining is not none else '—' }}</td>
+          <td>
+            <form method="post" action="{{ url_for('quick_contact', client_id=c.id) }}" class="quick-contact-form">
+              <button type="submit" class="btn">Registrar contato hoje</button>
+            </form>
+          </td>
         </tr>
       {% else %}
-        <tr><td colspan="2">Nenhum cliente cadastrado ainda.</td></tr>
+        <tr><td colspan="7">Nenhum cliente encontrado.</td></tr>
       {% endfor %}
     </tbody>
   </table>
