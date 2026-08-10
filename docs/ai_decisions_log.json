@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Crise no estreito de Ormuz: conheça o porto e o oleoduto que estão lucrando com o fechamento",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "a noticia não é sobre mercado financeiro, mas sim sobre geopolitica e conflito",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:10:52.071068-03:00"
-    },
-    {
-      "title": "WuXi AppTec Gets Temporary Reprieve of Chinese Military Curb",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A decisão pode afetar a reputação e as operações da empresa, mas é temporária e não implica uma mudança significativa nas relações entre os EUA e a China.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:15:41.983709-03:00"
-    },
-    {
-      "title": "Assista: Vídeo mostra médicos em cirurgia durante terremoto de magnitude 7,1 no Japão",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:15:46.588879-03:00"
-    },
-    {
-      "title": "Alertas sobre saladas em Michigan diminuem, mas ciclosporíase mantém consumidores e supermercados preocupados",
-      "source": "Investing.com Brasil",
-      "score": 1.0,
-      "motivo": "noticia sobre saladas em Michigan não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:15:50.550401-03:00"
-    },
-    {
-      "title": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A suspensão de dividendos e aumento de capital são medidas significativas que afetam a liquidez e a posição da empresa no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:20:51.130610-03:00"
-    },
-    {
-      "title": "Lumen (LUMN) Extends AWS Push While Its CEO Doubles Down",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A extensão do contrato com a AWS é um sinal de confiança na empresa e pode impactar positivamente o preço da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:21:09.893533-03:00"
-    },
-    {
-      "title": "Insider Waves Goodbye to Retail Stock, Valued at More Than $620,000",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A noticia e relativamente irrelevante pois nao e um evento de mercado maior e nao tem impacto concreto no mercado agora.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:21:12.927300-03:00"
-    },
-    {
-      "title": "VOO Is About to Become the First $1 Trillion ETF, and SPY Holders Are Paying 3x More for the Same Index",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a relevância do VOO e a diferença de custo em relação ao SPY, o que pode influenciar as escolhas de investimento dos traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:25:57.736718-03:00"
-    },
-    {
       "title": "Insider Waves Goodbye to Retail Stock, Valued at More Than $620,000",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T13:41:04.175409-03:00"
+    },
+    {
+      "title": "Three reasons Goldman's co-head of global banking and markets says to stay invested",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A declaração do executivo da Goldman Sachs é relevante para o mercado pois reflete uma visão positiva sobre a economia e os investimentos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:45:40.034907-03:00"
+    },
+    {
+      "title": "Copper jumps to its highest level ever. What the metal is telling us",
+      "source": "CNBC - Finance",
+      "score": 8.0,
+      "motivo": "O preço do cobre atingiu seu recorde histórico, o que pode indicar um crescimento econômico.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:45:43.027065-03:00"
+    },
+    {
+      "title": "IPCA fica em 0,16% em junho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:45:47.323401-03:00"
+    },
+    {
+      "title": "Bolsas da Europa fecham sem direção única com incerteza sobre negociações para Ormuz",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "indefinição nas negociações para reabertura do Estreito de Ormuz afeta preços do petróleo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:45:50.634719-03:00"
+    },
+    {
+      "title": "Como as pessoas com alta inteligência emocional gerenciam suas emoções",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:45:53.703567-03:00"
+    },
+    {
+      "title": "Surgery Partners reaffirms 2026 revenue $3.35B-$3.45B and adjusted EBITDA at least $530M as Idaho Falls sale nears close",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:45:56.882705-03:00"
+    },
+    {
+      "title": "Netflix doubles ad commitments at 2026 Upfront presentation",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:45:59.550312-03:00"
+    },
+    {
+      "title": "How mortgage preapproval works: A beginner's guide",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:46:10.458567-03:00"
     }
   ]
 }
