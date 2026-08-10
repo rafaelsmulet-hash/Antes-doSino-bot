@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:15:58.967173-03:00"
-    },
-    {
-      "title": "US stocks jump as employers unexpectedly cut 23,000 jobs, raising hopes that rate hikes can wait",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O número de cortes de vagas foi menor do que o esperado, o que pode levar a uma postergação dos aumentos de juros da Fed.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:16:01.962636-03:00"
-    },
-    {
-      "title": "Botafogo x Fluminense: horário, onde assistir e prováveis escalações",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:20:42.721999-03:00"
-    },
-    {
-      "title": "Micron vs. Sandisk: Which Is the Better AI Memory Stock to Own for the Next 3 Years?",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia compara duas empresas de memória AI, o que pode ser relevante para investidores interessados em tecnologia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:20:49.386025-03:00"
-    },
-    {
-      "title": "The Best ETF for the Investor Who Wants to Beat the Market While Barely Lifting a Finger",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca um ETF que tem um bom desempenho no mercado, o que é relevante para os investidores que buscam opções eficazes.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T07:20:52.279952-03:00"
-    },
-    {
-      "title": "Crypto Exchanges Are Seeing Less Activity. Here's What's Unprecedented, and What History Says Happens Next.",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia indica uma redução na atividade nas bolsas de criptomoedas, o que pode ser um sinal de mudança no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:20:55.349585-03:00"
-    },
-    {
-      "title": "$10,000 in Axon Stock a Decade Ago Would Be Worth About $329,000 Today. The Stock Is Down Over the Past Year.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não há informações sobre tendências futuras ou eventos significativos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:20:58.334813-03:00"
-    },
-    {
       "title": "Prediction for Tesla Stock in 3 Years: The Bear Case",
       "source": "Nasdaq",
       "score": 5.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T11:22:44.330847-03:00"
+    },
+    {
+      "title": "Ibovespa perde força e dólar sobe com petróleo em alta e tensão em Ormuz",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "O aumento do petróleo e a tensão em Ormuz afetam negativamente o mercado brasileiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:25:51.802894-03:00"
+    },
+    {
+      "title": "Cambridge Aerospace valuation jumps to $3.4B in funding round",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:25:55.048609-03:00"
+    },
+    {
+      "title": "Niu expects Q3 2026 revenue of RMB 1.86B to RMB 2.03B while accelerating its electric motorcycle pivot",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:25:57.712522-03:00"
+    },
+    {
+      "title": "JHSF (JHSF3) paga dividendos nesta segunda-feira; veja valor por ação",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "Pagamento de dividendos é um evento positivo para os acionistas da JHSF",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:26:08.833593-03:00"
+    },
+    {
+      "title": "Heron Therapeutics Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:26:13.387425-03:00"
+    },
+    {
+      "title": "Nvidia Scores 12% Weekly Gain As Taiwan Semiconductor Sales Soars; Is Nvidia A Buy Now?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:26:16.130331-03:00"
+    },
+    {
+      "title": "L.B. Foster Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:26:18.847246-03:00"
     }
   ]
 }
