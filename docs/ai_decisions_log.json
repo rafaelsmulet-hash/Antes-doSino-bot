@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Super Micro Computer Landed $60 Billion in Orders Last Quarter, but Trades at Just $30",
-      "source": "Nasdaq",
-      "score": 8.0,
-      "motivo": "O volume de pedidos de servidores de inteligência artificial é altamente relevante para o mercado de tecnologia e pode influenciar as ações da empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:25:54.056768-03:00"
-    },
-    {
-      "title": "Selic a 14% ainda deixa a renda fixa atraente? Entenda o que muda para cada investimento",
-      "source": "Suno Noticias",
-      "score": 6.0,
-      "motivo": "A redução da Selic pode atrair investidores para a renda fixa, mantendo a atração do investimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:26:01.610873-03:00"
-    },
-    {
-      "title": "We saw Beta Technologies' autonomous aircraft for the battlefield. Meet the MV250.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:26:07.089531-03:00"
-    },
-    {
-      "title": "Dia dos Pais: 10 músicas para deixar sua homenagem ainda mais emocionante",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:30:48.845914-03:00"
-    },
-    {
-      "title": "Fluor Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Anúncio de resultados financeiros do Fluor, que pode influenciar a percepção dos investidores sobre a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:31:00.539266-03:00"
-    },
-    {
-      "title": "US wages plummet to 43% of national income — lowest since the Great Depression. Did Nixon’s gold breakup kill paychecks?",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "A queda nos salários é um indicador importante da saúde da economia e pode influenciar as decisões de investimento e política econômica.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:31:03.570110-03:00"
-    },
-    {
-      "title": "FIGS Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa relatou aumento nas vendas e lucro, o que é um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:31:06.474909-03:00"
-    },
-    {
-      "title": "Fidelity National Financial Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de receita e lucro, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:35:54.061016-03:00"
-    },
-    {
       "title": "Currency Defense Gets Makeover as Emerging Asia Guards Reserves",
       "source": "Bloomberg Markets",
       "score": 5.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T16:06:41.420843-03:00"
+    },
+    {
+      "title": "Test Your ETF Knowledge In Our IQ Test",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:10:43.188316-03:00"
+    },
+    {
+      "title": "Avantis ETF Cracks Small-Cap Code",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante para o mercado pois discute um produto financeiro específico, o ETF Avantis U.S. Small Cap Value.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:10:46.104994-03:00"
+    },
+    {
+      "title": "Nova pílula de GLP-1 ajuda pacientes a perder até 12% do peso, aponta estudo",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:10:53.723706-03:00"
+    },
+    {
+      "title": "Data centers transformam terras do petróleo em 'ouro' no Texas",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:10:56.451458-03:00"
+    },
+    {
+      "title": "Communication Services stocks with soaring momentum but weak valuations",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:11:00.974314-03:00"
+    },
+    {
+      "title": "Silicon Motion Technology GAAP EPADS of $5.97, revenue of $793.11M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:11:03.680122-03:00"
+    },
+    {
+      "title": "Leaked memo: The Arena Group is rebranding to Paradium.AI and wants to build an 'AI-powered ecosystem'",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:11:17.239858-03:00"
+    },
+    {
+      "title": "Bernie Sanders asked the leading AI CEOs to pause development. Read his letter.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:11:20.532116-03:00"
     }
   ]
 }
