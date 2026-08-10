@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "NXT Energy Solutions Q2 GAAP EPS of CAD -$0.02",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:32.408451-03:00"
-    },
-    {
-      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:44.481997-03:00"
-    },
-    {
-      "title": "I took my first overnight Amtrak train from NYC to Miami. Here are 11 ways I made the 30-hour ride more bearable.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:47.375050-03:00"
-    },
-    {
-      "title": "BlackRock’s Rieder Sees AI Helping Buoy GDP Even as Hiring Slows",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a visão otimista de Rieder sobre o crescimento do PIB dos EUA, apesar da contratação estagnada.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:35:54.789988-03:00"
-    },
-    {
-      "title": "'Meta é para os fracos', diz Petrobras ao atribuir recorde à operação, não ao Brent",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A Petrobras alcançou lucro histórico graças a recordes de produção e refino, o que é positivo para a empresa e pode impactar positivamente o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:35:59.870838-03:00"
-    },
-    {
       "title": "A solução para construir uma colônia em Marte pode estar nos asteroides",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T21:06:02.902128-03:00"
+    },
+    {
+      "title": "Gold Holds Gain After Soft US Jobs Data Eases Rate-Hike Concerns",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A contração inesperada do mercado de empregos nos EUA alivia preocupações com a elevação de taxas de juros, o que é positivo para o preço do ouro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-09T21:10:36.789284-03:00"
+    },
+    {
+      "title": "Nike (NKE) Is Betting Big on Basketball’s Next Generation. Will It Pay Off?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A Nike está investindo em jovens jogadores de basquete, o que pode ter um impacto positivo nas vendas de equipamentos esportivos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:10:48.014816-03:00"
+    },
+    {
+      "title": "SanDisk Just Unveiled the First High-Bandwidth Flash Standard. What That Means for SNDK Stock.",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque pode indicar um avanço tecnológico que beneficia a empresa e pode levar a um aumento no preço da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:10:50.889225-03:00"
+    },
+    {
+      "title": "Max Miller stays in Ohio House race as GOP ballot deadline passes",
+      "source": "CNBC - US News",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:10:54.361779-03:00"
+    },
+    {
+      "title": "SEC Proposes New E-Delivery Approach to Make Information More Readily Accessible and Useful for Investors",
+      "source": "SEC",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:10:57.861324-03:00"
     }
   ]
 }
