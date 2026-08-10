@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I'm a credit card point maximizer. I'm spending more than planned, but I believe it will pay off.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:59:15.228549-03:00"
-    },
-    {
-      "title": "AI can analyze your poop. Should it?",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:59:18.090818-03:00"
-    },
-    {
-      "title": "Forget saving up for retirement. They're saving up for burnout.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:59:20.729306-03:00"
-    },
-    {
-      "title": "Inside the startup drone maker powering Ukraine's deep-strike campaign",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:59:23.809832-03:00"
-    },
-    {
       "title": "Pillagers Vs Producers: There's Only Two Ways To Save The Western World",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T11:06:41.374062-03:00"
+    },
+    {
+      "title": "Silence Therapeutics stock surges as divesiran trial results fuel optimism",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Resultados do estudo de fase 2 do medicamento divesiran são relevantes e têm impacto concreto no mercado de ações da Silence Therapeutics",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:10:54.260964-03:00"
+    },
+    {
+      "title": "Ondas stock price surges as Cyberhawk deal closes: What's ahead?",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois menciona a conclusão de um negócio importante para a empresa, o que pode ter impacto no seu preço.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:10:57.501273-03:00"
+    },
+    {
+      "title": "Ashland may be worth low/mid-$90/shr in takeover - analyst",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:11:00.163112-03:00"
+    },
+    {
+      "title": "U.S. Stocks Open Flat",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações significativas ou impactantes para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:11:13.717014-03:00"
     }
   ]
 }
