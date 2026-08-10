@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "O “efeito Copa” na Renner: vendas esfriam no trimestre e varejista reduz projeção de receita",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:51:26.924250-03:00"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:51:31.568465-03:00"
-    },
-    {
       "title": "Trump Tariffs ‘Tortuous’ to Soybean Trade, China Diplomat Says",
       "source": "Bloomberg Markets",
       "score": 3.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T22:27:07.549647-03:00"
+    },
+    {
+      "title": "Tarcísio e Haddad fazem debate virar balanço de gestão e disputa nacional em SP",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não trata de temas financeiros ou econômicos",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:30:39.926872-03:00"
+    },
+    {
+      "title": "Jeff Bezos' Amazon Just Raised Its AI Spending to $220 Billion for 2026. Here's What That Capex Hike Means for Investors.",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "O aumento do gasto em IA pode indicar que a Amazon está investindo em tecnologia avançada, o que pode levar a inovações e crescimento futuro.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:30:51.184087-03:00"
     }
   ]
 }
