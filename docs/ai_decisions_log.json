@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The Real Cost of Retiring in Las Vegas on Social Security and a Small Pension",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:41:22.960721-03:00"
-    },
-    {
-      "title": "JPMorgan Has Consistently Beaten Its Own 17% Return Target Under Jamie Dimon. Is the Stock Still a Buy?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque discute o desempenho financeiro da JPMorgan, que é uma das maiores instituições financeiras do mundo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:41:25.902706-03:00"
-    },
-    {
-      "title": "Europe Looks Up for First Total Eclipse Since 1999",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:45:57.140263-03:00"
-    },
-    {
-      "title": "Bank of America spends $250 million a year on GLP-1 drugs for its employees, CEO says",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "A notícia pode indicar uma tendência de aumento nos custos de saúde dos funcionários, o que pode afetar a lucratividade das empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:46:00.194086-03:00"
-    },
-    {
-      "title": "Acessos portuários pressionam custos e minam a competitividade do agronegócio",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A noticia se refere a um setor especifico do agronegocio e nao tem impacto direto no mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:46:03.358130-03:00"
-    },
-    {
-      "title": "Barrick Mining faces investor backlash over plan to spin off prized gold assets",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta a estratégia de negócios da Barrick Mining, uma das maiores mineradoras de ouro do mundo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T09:46:08.426976-03:00"
-    },
-    {
-      "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
-      "source": "WSJ Markets",
-      "score": 5.0,
-      "motivo": "Oferta hostil pode indicar interesse significativo na Beacon e potencialmente influenciar o preço das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:50:35.357006-03:00"
-    },
-    {
-      "title": "Cientistas descobrem reservatório 'monstro' de magma que estava 'oculto' sob a Toscana",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:50:40.501925-03:00"
-    },
-    {
-      "title": "Esses 3 hábitos na meia-idade podem adiar a demência em até 13 anos",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:50:43.283296-03:00"
-    },
-    {
-      "title": "A jornada de 35 anos do acervo baiano que ergueu o maior “quilombo visual” do país",
-      "source": "Neofeed",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:50:52.509817-03:00"
-    },
-    {
-      "title": "Bill Ackman’s $35 billion hedge fund has under 50 employees and all of them — from janitors to receptionists — own millions in company stock",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a alta participação de funcionários no capital da empresa, o que pode indicar confiança e compromisso com a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:50:55.692524-03:00"
-    },
-    {
-      "title": "Why Rescheduling Might Not Move Canopy Growth's Stock as Much as You Think",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para a empresa, mas não é um evento significativo para o mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:50:58.590201-03:00"
-    },
-    {
-      "title": "“Holding ostentação” de Daniel Vorcaro é liquidada nas Ilhas Cayman",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A liquidação de uma holding não é um evento significativo para o mercado em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:56:05.882262-03:00"
-    },
-    {
       "title": "Queridinha de João Fonseca, On abre segunda loja conceito em São Paulo",
       "source": "Seu Dinheiro",
       "score": 2.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T17:06:39.769452-03:00"
+    },
+    {
+      "title": "Stocks Churn as Hormuz Standoff Spurs Rally in Oil: Markets Wrap",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia é relevante para o mercado pois afeta os preços do petróleo e os juros dos títulos, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:10:39.256425-03:00"
+    },
+    {
+      "title": "Startups: Nvidia negocia pacote de US$ 500B para infraestrutura de IA",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Nvidia está negociando um pacote de financiamento para expansão do setor de IA, o que pode impulsionar a demanda por suas tecnologias",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:10:43.652392-03:00"
+    },
+    {
+      "title": "Wall Street fecha em queda com tombo das ações da Intel e avanço dos preços do petróleo",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:10:47.385514-03:00"
+    },
+    {
+      "title": "Quanterix forecasts $142M-$148M 2026 revenue amid commercial reorganization and 2027 cash flow breakeven target",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:10:50.976673-03:00"
+    },
+    {
+      "title": "Opal Fuels outlines ~3 million MMBtu of annual design capacity coming online over next 24 months while maintaining full-year guidance",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:10:53.732253-03:00"
+    },
+    {
+      "title": "Entravision Communications Corporation GAAP EPS of $0.19, revenue of $227.9M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:10:56.409898-03:00"
+    },
+    {
+      "title": "Olema Pharmaceuticals GAAP EPS of -$0.61 misses by $0.06",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:10:59.057143-03:00"
+    },
+    {
+      "title": "Simon Property FFO of $3.12 misses by $0.09, revenue of $1.79B beats by $180M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:11:01.772822-03:00"
+    },
+    {
+      "title": "Hims &amp; Hers Health GAAP EPS of -$0.37 misses by $0.32, revenue of $753.21M beats by $23.09M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa anunciou resultados financeiros que mostram uma perda de $0.37 por ação, mas uma receita que superou as expectativas, o que pode ter um impacto no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:11:04.780524-03:00"
+    },
+    {
+      "title": "AlTi Global GAAP EPS of -$0.31, revenue of $58M misses by $3.8M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:11:07.446994-03:00"
+    },
+    {
+      "title": "Prio (PRIO3) pode pagar 21% em dividendos no próximo ano, segundo o Itaú BBA, que elevou recomendação para compra",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:11:14.530192-03:00"
+    },
+    {
+      "title": "Seaports are dabbling in AI, but complex supply chain operations make adoption a challenge",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:11:20.403309-03:00"
+    },
+    {
+      "title": "I've worked at Costco for 21 years. Here are 7 of the best things I'm seeing on shelves right now.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:11:23.119781-03:00"
     }
   ]
 }
