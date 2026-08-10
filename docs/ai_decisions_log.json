@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Frio avança pelo Brasil e novo ciclone pode se formar no dia 12, diz meteorologista do Inmet",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia é sobre clima e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:50:54.049083-03:00"
-    },
-    {
-      "title": "Por que a indústria do cinema ainda tenta copiar a receita de “Akira” quase 40 anos depois",
-      "source": "Neofeed",
-      "score": 0.0,
-      "motivo": "A noticia e sobre cultura pop e cinema, sem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:51:04.157661-03:00"
-    },
-    {
-      "title": "Ningxia quer aposentar o título de “Bordeaux da China” e revelar seu próprio terroir",
-      "source": "Neofeed",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:51:07.062174-03:00"
-    },
-    {
-      "title": "AI Buildout Keeps Quinlan Bullish on US Stocks",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a resiliência da economia americana apesar de dados fracos, o que é relevante para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T09:55:51.650915-03:00"
-    },
-    {
-      "title": "Cade vê disparar notificações e proposta de elevar limites de faturamento ganha força",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "notícia sobre revisão de critérios antitruste, mas sem impacto imediato no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T09:55:54.868674-03:00"
-    },
-    {
-      "title": "O rei do interior fatura R$ 7,9 bilhões com supermercados e divide o lucro com funcionários",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A notícia destaca uma prática positiva de distribuição de lucro entre funcionários, o que pode influenciar a percepção do mercado sobre a empresa e o setor.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:55:59.574734-03:00"
-    },
-    {
-      "title": "Jorge Messi, pai de Lionel Messi, morre aos 68 anos",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:56:02.326317-03:00"
-    },
-    {
-      "title": "Novelas em ritmo do TikTok: microdramas, microtransações e um possível macroproblema?",
-      "source": "Neofeed",
-      "score": 0.0,
-      "motivo": "noticia sobre entretenimento sem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:56:16.813492-03:00"
-    },
-    {
-      "title": "Charlie Munger said $100K was where net worth 'explodes' — but in 2026, the real magic number is $200K",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A declaração de Charlie Munger sobre o número mágico de patrimônio líquido é relevante para os investidores e traders que buscam entender como gerenciar seu patrimônio de forma eficaz.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:56:19.943505-03:00"
-    },
-    {
-      "title": "I dreaded raising 5 teens under one roof. Then they all started becoming people I'd love to hang out with.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T09:56:22.998558-03:00"
-    },
-    {
       "title": "Julho estanca fuga de estrangeiros do Brasil; o que pode jogar ‘água no chope’, segundo especialistas",
       "source": "Money Times",
       "score": 6.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T12:12:20.162309-03:00"
+    },
+    {
+      "title": "Odds the Fed will hike in September tumble following big July jobs miss",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "A notícia afeta diretamente a política monetária e as perspectivas de aumento de taxa de juros da Fed",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:15:56.941047-03:00"
+    },
+    {
+      "title": "U.S. Energy Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de energia, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:16:04.176597-03:00"
+    },
+    {
+      "title": "IAU, PBAU: Big ETF Outflows",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:16:10.301039-03:00"
+    },
+    {
+      "title": "SNXX, APDB: Big ETF Inflows",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:16:12.995708-03:00"
+    },
+    {
+      "title": "Monday 8/10 Insider Buying Report: ATTO, BWFG",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:16:15.693388-03:00"
+    },
+    {
+      "title": "BC avalia interligar Pix a sistemas internacionais após queixas dos EUA",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:16:21.773947-03:00"
+    },
+    {
+      "title": "SpaceX Has Already Imploded 48% — But This Wall Street Vet Just Warned Against Bottom-Fishing",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:16:27.165666-03:00"
+    },
+    {
+      "title": "Tesla Has More to Prove Than Ever, But the Upside Could Be Huge",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:16:29.878794-03:00"
+    },
+    {
+      "title": "After cleaning homes professionally for 10 years, I swear by these 7 affordable supplies from Dollar Tree",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:16:33.167894-03:00"
+    },
+    {
+      "title": "I took my retired parents on a cruise to Alaska. It felt like a total role reversal, but I'd do it again in a heartbeat.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:16:35.927110-03:00"
     }
   ]
 }
