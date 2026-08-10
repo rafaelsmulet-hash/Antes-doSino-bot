@@ -1,195 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Switch planeja retornar ao mercado público com IPO de US$ 50 bilhões",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Switch planeja retornar ao mercado público com um IPO de grande porte, o que pode atrair investimentos significativos e impulsionar a confiança dos investidores no mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T21:55:37.991857-03:00"
-    },
-    {
-      "title": "Houlihan Lokey (HLI) Q1 2027 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma transcrição de conferência de resultados de uma empresa de consultoria.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:55:43.883624-03:00"
-    },
-    {
-      "title": "Scotts Miracle-Gro (SMG) Q3 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma empresa específica",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:55:46.788447-03:00"
-    },
-    {
-      "title": "MGIC (MTG) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma transcrição de conferência de resultados, que não é um evento atual ou relevante para o mercado agora.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:55:49.618929-03:00"
-    },
-    {
-      "title": "Antero Midstream (AM) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma empresa específica",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:55:52.455898-03:00"
-    },
-    {
-      "title": "National Fuel Gas (NFG) Q3 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma ligação de chamada de resultados de uma empresa específica.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:55:55.308470-03:00"
-    },
-    {
-      "title": "SCI Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não menciona informações específicas sobre o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:55:58.203307-03:00"
-    },
-    {
-      "title": "Regional Management (RM) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma conferência de resultados de uma empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:56:01.043097-03:00"
-    },
-    {
-      "title": "PMT Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T21:56:03.691927-03:00"
-    },
-    {
-      "title": "Generac (GNRC) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T21:56:06.325790-03:00"
-    },
-    {
-      "title": "Glaukos (GKOS) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T21:56:08.958331-03:00"
-    },
-    {
-      "title": "Dona do Burger King corta prejuízo, mas dívida líquida vai a R$ 1,2 bi",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:56:14.309964-03:00"
-    },
-    {
-      "title": "Hertz Dias registra candidatura à Presidência sem declarar nenhum bem",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T22:00:50.622697-03:00"
-    },
-    {
-      "title": "Na Chipotle, quem pediu jalapeño levou Salmonella",
-      "source": "Brazil Journal",
-      "score": 2.0,
-      "motivo": "surto de Salmonella associado a produto da empresa, mas não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T22:00:56.100576-03:00"
-    },
-    {
-      "title": "Nutex outlines 3 hospital openings in H2 2026 while maintaining 3 to 5 openings per year",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T22:01:00.205746-03:00"
-    },
-    {
-      "title": "FS KKR Capital Corp. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T22:01:10.942366-03:00"
-    },
-    {
-      "title": "Fiserv, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T22:01:13.626013-03:00"
-    },
-    {
-      "title": "Furious pace of AI investment on some Fed officials' radar now",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T22:01:16.311746-03:00"
-    },
-    {
-      "title": "Frontdoor, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T22:01:18.976393-03:00"
-    },
-    {
-      "title": "Some Losses for the Dollar Ahead of the NFP",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T22:01:21.641204-03:00"
-    },
-    {
-      "title": "PancakeSwap Expands Tokenized Equity Offerings with 10 New 'bStocks' on BNB Chain",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A expansão das ofertas de ações tokenizadas pode atrair mais investidores e aumentar a liquidez no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T22:06:03.975180-03:00"
-    },
-    {
       "title": "Amazon’s Premium vs. Microsoft’s Backlog: Who Wins the Next Trillion?",
       "source": "Yahoo Finance",
       "score": 6.0,
@@ -17999,6 +17810,195 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T10:21:21.479960-03:00"
+    },
+    {
+      "title": "A Hot CPI Report Causes Problems for Fed, Caron Says",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "O relatório pode influenciar a política monetária da Fed",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:25:33.255023-03:00"
+    },
+    {
+      "title": "Flávio Bolsonaro fica fora de sabatina da GloboNews nesta segunda-feira",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:25:37.513251-03:00"
+    },
+    {
+      "title": "Iguatemi (IGTI11) sobe após venda de fatias em 5 shoppings – o que agradou o mercado?",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Venda de participações em ativos pode liberar recursos para investimentos estratégicos, agradando o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:25:40.333922-03:00"
+    },
+    {
+      "title": "Por que as ações da Silicon Motion Technology estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:25:44.376396-03:00"
+    },
+    {
+      "title": "Ações da CoreCivic sobem com programa de recompra de US$ 500 mi",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:25:47.002992-03:00"
+    },
+    {
+      "title": "Jefferies adiciona Uber às ’Franchise Picks’ com perspectiva cada vez mais otimista",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:25:49.631235-03:00"
+    },
+    {
+      "title": "Ações da Silicon Motion despencam com plano de notas conversíveis de US$ 800 mi",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:25:52.259272-03:00"
+    },
+    {
+      "title": "Por que as ações da Aquestive Therapeutics estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:25:54.877285-03:00"
+    },
+    {
+      "title": "Por que as ações da Ryman Hospitality Properties estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:25:57.498677-03:00"
+    },
+    {
+      "title": "Ações da Aquestive disparam após resultados de estudo do Anaphylm",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:00.118869-03:00"
+    },
+    {
+      "title": "Por que as ações da AbCellera Biologics estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:26:02.737855-03:00"
+    },
+    {
+      "title": "Ações da Ryman Hospitality caem com oferta de 5,1 milhões de ações",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:05.357462-03:00"
+    },
+    {
+      "title": "Ações da Liberty Media Formula One caem com oferta de notas conversíveis",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:08.010075-03:00"
+    },
+    {
+      "title": "Como fazer um design decente com IA? Layout, ícones e paleta de cores coerentes",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:26:11.041656-03:00"
+    },
+    {
+      "title": "GCM Grosvenor declares $0.12 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:13.803278-03:00"
+    },
+    {
+      "title": "International Seaways declares $5.05 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:16.419240-03:00"
+    },
+    {
+      "title": "Addus HomeCare replaces COO Heather Dixon with interim return of Brad Bickham",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:19.051574-03:00"
+    },
+    {
+      "title": "Samsara gets a rating cut at Piper Sandler",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:21.699802-03:00"
+    },
+    {
+      "title": "Bristol Myers Squibb to invest $2.3B for manufacturing campus in Houston, Texas",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:24.328278-03:00"
+    },
+    {
+      "title": "JHSF (JHSF3) paga dividendos nesta segunda-feira; veja valor por ação",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:33.568290-03:00"
+    },
+    {
+      "title": "This former notorious red-light district is now one of the world’s top AI hubs",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:26:37.504615-03:00"
     }
   ]
 }
