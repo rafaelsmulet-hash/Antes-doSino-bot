@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Malaysia Stock Market May Halt Its Slide On Monday",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de ações da Malásia, mas não há informações sobre mudanças significativas ou impactos concretos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:25:57.038526-03:00"
-    },
-    {
-      "title": "Could Copper’s Tariff-Driven Rally Be Running Out of Steam?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta a demanda de cobre e pode influenciar os preços do metal.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:26:08.539212-03:00"
-    },
-    {
-      "title": "Retiring in 2030? 3 Critical Moves to Make First",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "Não é sobre mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:35:53.151095-03:00"
-    },
-    {
       "title": "Haddad acusa direita de “apoiar o agressor” sobre tarifaço; Tarcísio rebate com ações",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T20:20:54.268571-03:00"
+    },
+    {
+      "title": "Itaúsa tem lucro de R$4,3 bi no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "lucro significativo do Itaúsa impacta positivamente no mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:25:41.531769-03:00"
+    },
+    {
+      "title": "Rapid7 signals exit 2026 at ~20% non-GAAP operating margin following 12% workforce restructuring",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa espera melhorar sua eficiência operacional após a reestruturação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:25:45.455027-03:00"
+    },
+    {
+      "title": "SEC Announces Continuation of Small Business Advisory Committee Meeting",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:25:57.314842-03:00"
     }
   ]
 }
