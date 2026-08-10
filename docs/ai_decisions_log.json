@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Verastem outlines October VS-7375 response-rate update while targeting LGSOC self-sustainability by end of 2026",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:40:52.975064-03:00"
-    },
-    {
       "title": "Magazine Luiza S.A. reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T21:56:15.483205-03:00"
+    },
+    {
+      "title": "McDonald's says it alienated its most loyal customers",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre um evento específico de mercado, mas sim sobre uma mudança na política da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:05:39.776069-03:00"
     }
   ]
 }
