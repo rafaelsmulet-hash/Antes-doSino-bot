@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Diretor de 'Me Chame Pelo Seu Nome', Luca Guadagnino receberá prêmio no Festival de Veneza",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:18.876206-03:00"
-    },
-    {
-      "title": "Weave anticipates $273M-$275M 2026 revenue while raising operating income outlook to $12M-$14M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:31:21.700692-03:00"
-    },
-    {
       "title": "LunR Royalties reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-09T20:55:58.016836-03:00"
+    },
+    {
+      "title": "Marina critica Tarcísio sobre tarifaço e diz que governador colocou boné de Trump",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:00:47.166244-03:00"
+    },
+    {
+      "title": "Is Medtronic (MDT) Becoming a Turnaround Story?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A empresa está apresentando melhorias financeiras e aumento nas vendas, o que pode ser um sinal de uma virada positiva.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:01:05.331501-03:00"
     }
   ]
 }
