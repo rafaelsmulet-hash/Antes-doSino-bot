@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Magazine Luiza S.A. reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:40:55.611484-03:00"
-    },
-    {
-      "title": "Table Trac declares $0.02 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:40:58.246125-03:00"
-    },
-    {
-      "title": "Why Instacart Stock Popped Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:41:02.468915-03:00"
-    },
-    {
       "title": "AGNC Investment Could Turn $1,000 Into Decades of Monthly Passive Income",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T22:05:39.776069-03:00"
+    },
+    {
+      "title": "Tarcísio critica gestão do PT na economia; Haddad aconselha a não indicar Campos Neto",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia e sobre politica e nao tem relevancia direta para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:15:36.145879-03:00"
+    },
+    {
+      "title": "Tarcísio diz que SP lançará programa ‘Educação com IA’ e avançará no ensino integral",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "A notícia trata de educação e não tem relação direta com mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:15:38.973585-03:00"
+    },
+    {
+      "title": "Executive Parts Ways With 3,820 Shares of Lamb Weston Stock",
+      "source": "Yahoo Finance",
+      "score": 1.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro devido à natureza limitada da transação.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:15:51.828298-03:00"
     }
   ]
 }
