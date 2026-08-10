@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Korea Volatility Spike Ebbs as Leveraged Trades Are Flushed Out",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A saída de posições com margem e restrições regulatórias podem indicar que o mercado está se estabilizando.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T21:20:47.551526-03:00"
-    },
-    {
-      "title": "IPO Stock Of The Week: Defense Leader Loar Sets Up New Buy Point But Pulls Back To Key Level",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado de ações pois menciona uma empresa de defesa que está em uma posição de compra, o que pode atrair investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:21:03.345299-03:00"
-    },
-    {
-      "title": "Texas moratorium on data centers puts 20% of U.S. pipeline at risk of delay - Bloomberg NEF",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia afeta diretamente a infraestrutura de energia renovável nos EUA, o que pode ter impacto significativo no mercado de energia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:25:43.281669-03:00"
-    },
-    {
-      "title": "Twilio Stock Surges 31% On Earnings Beat As AI Tools Gain Traction",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A superação das expectativas de lucro e a tendência de crescimento das ferramentas de IA são fatores relevantes para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:25:53.971105-03:00"
-    },
-    {
-      "title": "Are Wall Street Analysts Predicting Palo Alto Networks Stock Will Climb or Sink?",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "Previsões de analistas sobre a ação de uma empresa são comuns e geralmente não têm impacto significativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:30:55.452958-03:00"
-    },
-    {
-      "title": "Jim Cramer Shares Reasons Behind Why NVIDIA Corporation (NASDAQ:NVDA)’s Shares Are Finally Rising",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o preço das ações da NVIDIA, uma das principais empresas de tecnologia do mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:30:58.403683-03:00"
-    },
-    {
       "title": "Jim Cramer’s Post Earnings Palantir Technologies Inc. (NASDAQ:PLTR) Worry Didn’t Materialize",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T14:56:31.787024-03:00"
+    },
+    {
+      "title": "Largest Private School Bond Deal in Two Years Hits Muni Market",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "Negociação de títulos privados em grande escala no mercado municipal, mas sem impacto direto imediato no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:00:46.489695-03:00"
+    },
+    {
+      "title": "Opinião: o consumidor pesquisa no feed, mas decide no corredor",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "A noticia fala sobre comportamento de consumo e suas implicações para lojas fisicas e digitais, mas nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:00:54.459708-03:00"
+    },
+    {
+      "title": "Lockheed Martin wins $17M Australian submarine integration contract",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:00:57.546174-03:00"
+    },
+    {
+      "title": "U.S. SEC exempts certain data center bonds from asset-backed securities rules",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:01:00.261262-03:00"
+    },
+    {
+      "title": "Clicks’ Power Keyboard brings BlackBerry-style typing to any phone — with some compromises",
+      "source": "TechCrunch",
+      "score": 2.0,
+      "motivo": "A notícia é sobre um produto de tecnologia, mas não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:01:11.903813-03:00"
+    },
+    {
+      "title": "Edward Jones profit soars 25% on client flows, asset appreciation",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:01:14.657376-03:00"
     }
   ]
 }
