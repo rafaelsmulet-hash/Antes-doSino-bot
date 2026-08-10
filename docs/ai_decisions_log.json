@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Em maio, indústria recua em 9 dos 15 locais pesquisados",
-      "source": "IBGE",
-      "score": 6.0,
-      "motivo": "variação negativa de 0,2% da produção industrial nacional em maio, com impacto regional variado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:50:38.719198-03:00"
-    },
-    {
-      "title": "Adobe vs. Arista Networks: Which Technology Stock Is a Better Buy in 2026?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia discute ações de tecnologia relevantes para investimentos, o que é material para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:50:49.567872-03:00"
-    },
-    {
-      "title": "Jetstar, Qatar Air Near Miss at Sydney Triggers Safety Probe",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "Não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:55:54.985548-03:00"
-    },
-    {
-      "title": "Treasury Wine Flags $395 Million Writedown Over Excess US Supply",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia revela um prejuízo significativo devido a excesso de estoque nos EUA, o que pode afetar a empresa e o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T20:55:58.016836-03:00"
-    },
-    {
-      "title": "Marina critica Tarcísio sobre tarifaço e diz que governador colocou boné de Trump",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada a mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:00:47.166244-03:00"
-    },
-    {
-      "title": "Is Medtronic (MDT) Becoming a Turnaround Story?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa está apresentando melhorias financeiras e aumento nas vendas, o que pode ser um sinal de uma virada positiva.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:01:05.331501-03:00"
-    },
-    {
-      "title": "‘I’m easing into retirement’: I’m getting an $80,000 pension payout. Where can I invest it safely?",
-      "source": "MarketWatch",
-      "score": 1.0,
-      "motivo": "A notícia é irrelevante para o mercado financeiro pois trata de uma decisão pessoal de investimento.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:05:47.849171-03:00"
-    },
-    {
-      "title": "Após enfrentar a Covid-19, Dimas Covas quer trazer uma fábrica de vacinas da Sinovac. Mas não será fácil",
-      "source": "Neofeed",
-      "score": 2.0,
-      "motivo": "noticia sobre investimento de empresas em plataformas de vacinas, mas sem impacto imediato no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:05:59.597871-03:00"
-    },
-    {
-      "title": "SK Hynix and Samsung Just Sent a Major Warning to Micron Investors",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia sugere que a Micron pode perder mercado devido à sua falta de capacidade de produção, o que é relevante para o mercado de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T21:06:02.902128-03:00"
-    },
-    {
-      "title": "Gold Holds Gain After Soft US Jobs Data Eases Rate-Hike Concerns",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A contração inesperada do mercado de empregos nos EUA alivia preocupações com a elevação de taxas de juros, o que é positivo para o preço do ouro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T21:10:36.789284-03:00"
-    },
-    {
       "title": "Nike (NKE) Is Betting Big on Basketball’s Next Generation. Will It Pay Off?",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T20:05:58.924131-03:00"
+    },
+    {
+      "title": "União Europeia atualiza regras sobre transparência dos sistemas de Inteligência Artificial",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:10:44.554406-03:00"
+    },
+    {
+      "title": "Mettler-Toledo's CFO Cashed In Options After a Strong Quarter. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A venda de opções do CFO sugere confiança no desempenho financeiro da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:10:48.982246-03:00"
+    },
+    {
+      "title": "KOSPI May Hand Back Monday's Gains",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T20:10:51.630820-03:00"
+    },
+    {
+      "title": "GoPro Q2 Loss Widens As Revenue Falls 31%",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:10:54.281224-03:00"
+    },
+    {
+      "title": "Alcon Q2 Core EPS Rises",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:10:57.210563-03:00"
+    },
+    {
+      "title": "AECOM Posts Q3 Loss",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:11:00.130898-03:00"
+    },
+    {
+      "title": "Why Wendy's Stock Wilted on Monday",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Corte de dividendos é um sinal de que a empresa está tendo dificuldades financeiras",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:11:03.146478-03:00"
+    },
+    {
+      "title": "Fundo imobiliário recebe aviso de saída de inquilino; impacto estimado é de R$ 0,20 por cota",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:11:09.216483-03:00"
+    },
+    {
+      "title": "Billionaire Larry Fink Warns Keeping Your Savings in a Bank Account Is 'One Of The Worst Financial Decisions Of A Lifetime' — But Mark Cuban Told People To Do the Opposite",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:11:13.626174-03:00"
+    },
+    {
+      "title": "A $72 Billion Reason to Buy Caterpillar Stock Now",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:11:16.295670-03:00"
     }
   ]
 }
