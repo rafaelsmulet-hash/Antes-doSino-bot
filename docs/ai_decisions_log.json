@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "AGNC Investment Could Turn $1,000 Into Decades of Monthly Passive Income",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T13:41:05.136063-03:00"
-    },
-    {
-      "title": "Quanto custa a bebida que ameaça a hegemonia do badalado Aperol Spritz",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:41:09.797679-03:00"
-    },
-    {
-      "title": "I regularly stay in Airbnbs by myself. My top tip for solo travelers is to book for 2 people — even if it costs more.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:41:14.605299-03:00"
-    },
-    {
       "title": "The Free Money AI Bond Buildout Is Gone",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T22:15:51.828298-03:00"
+    },
+    {
+      "title": "“Servidor público não pode ficar de pires na mão”: candidatos criticam gestão no RJ",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:20:54.973210-03:00"
+    },
+    {
+      "title": "Haddad menciona que membros da PM de SP, sob Tarcísio, mantinham vínculo com o PCC",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não está relacionado a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:20:57.676860-03:00"
+    },
+    {
+      "title": "Everyone's Chasing AI Data Center Stocks. This 5%-Yielding Dividend Stock Already Owns a Piece of the Boom.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque a ação mencionada já está envolvida no mercado de centros de dados de IA, que está em alta.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T22:21:15.287909-03:00"
     }
   ]
 }
