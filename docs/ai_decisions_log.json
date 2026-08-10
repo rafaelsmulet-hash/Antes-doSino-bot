@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Mega-Sena: quanto R$ 165 milhőes rendem todo męs na poupança e no Tesouro",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira relevante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:52:53.123180-03:00"
-    },
-    {
-      "title": "Embraer em alta e Natura sob pressăo: o que esperar dos balanços da semana",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "balanços de empresas brasileiras importantes",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T06:52:55.940658-03:00"
-    },
-    {
-      "title": "TCE, Rede Sarah, universidades e mais órgăos: concursos tęm 28,3 mil vagas",
-      "source": "UOL Economia",
-      "score": 1.0,
-      "motivo": "vagas em concursos públicos não afetam diretamente o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:52:58.704430-03:00"
-    },
-    {
-      "title": "China Yuchai International Limited Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque fornece informações sobre os resultados financeiros da China Yuchai International Limited, mas não é um evento inesperado ou impactante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:04.348695-03:00"
-    },
-    {
-      "title": "Interface, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:06.926471-03:00"
-    },
-    {
-      "title": "Mortgage and refinance interest rates today, Saturday, August 8, 2026: Rates mixed this weekend",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "Taxas mistas não são um sinal claro de mudança no mercado de juros.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:09.871780-03:00"
-    },
-    {
-      "title": "Best CD rates today, Saturday, August 8, 2026: Best CD account earns 4.15% APY",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:12.449770-03:00"
-    },
-    {
-      "title": "Alphabet Just Posted a Jaw-Dropping $112 Billion Profit. Here's the Catch.",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "O lucro é significativamente alto e pode influenciar as expectativas dos investidores sobre o desempenho da empresa.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:15.390787-03:00"
-    },
-    {
-      "title": "Nissan's in-factory AI cameras track how factory workers bend, walk, and build cars",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:18.150794-03:00"
-    },
-    {
-      "title": "Ikea is growing its resale business. It's attracting bargain hunters and design nerds.",
-      "source": "Business Insider",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado pois a IKEA está expandindo sua presença no mercado de segunda mão, o que pode ter impacto positivo em suas vendas e receita.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T06:53:21.046693-03:00"
-    },
-    {
-      "title": "KKR shared profits from a big sale with employees. Here's what they're doing with the windfall.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:23.623857-03:00"
-    },
-    {
-      "title": "A woman built her parents a 725-square-foot cottage in her backyard so they could be closer to their grandchildren",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:26.210942-03:00"
-    },
-    {
-      "title": "Dietitians agree — cut back on 1 thing for better gut health, energy, and lower risk of cancer",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:29.188463-03:00"
-    },
-    {
-      "title": "I'm the founder of a private jet company. I eat dinner when the locals do and end most days in my at-home bowling alley.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:53:31.784608-03:00"
-    },
-    {
       "title": "I build AI data centers. I want them to disappear from view.",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T15:36:12.375910-03:00"
+    },
+    {
+      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
+      "source": "WSJ Markets",
+      "score": 5.0,
+      "motivo": "A queda das ações de tecnologia pode afetar o mercado de ações em geral.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:40:52.688306-03:00"
+    },
+    {
+      "title": "A China está atropelando o Ocidente. Este livro mostra os riscos para o Brasil",
+      "source": "Brazil Journal",
+      "score": 0.0,
+      "motivo": "não há informações específicas sobre mercado financeiro ou economia no texto",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:40:57.995661-03:00"
+    },
+    {
+      "title": "Chain-of-thought funciona? Estudos mostram quando o “pense passo a passo” ajuda ou atrapalha",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:41:00.976031-03:00"
+    },
+    {
+      "title": "O cachorro-quente de R$ 500 que virou atração nos EUA",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:41:03.622637-03:00"
+    },
+    {
+      "title": "Confiança cega na IA já tem nome: o que é o viés de automação e por que já engana até especialistas",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:41:06.332308-03:00"
+    },
+    {
+      "title": "Outdoor Holding expects gross margin stabilizing above 85% as FFL transfer services scale",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:41:09.230721-03:00"
+    },
+    {
+      "title": "W.P. Carey extends losing streak to 11 sessions",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:41:11.880188-03:00"
+    },
+    {
+      "title": "Kadestone Capital Corp. GAAP EPS of -$0.07",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:41:14.518185-03:00"
+    },
+    {
+      "title": "Schwab Trading Activity Index up modestly in July",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:41:17.163062-03:00"
+    },
+    {
+      "title": "Nutex Health jumps 21%, continuing post-earnings run",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A ação apresentou um desempenho positivo após a divulgação de resultados, o que é um sinal de confiança dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:41:20.114228-03:00"
+    },
+    {
+      "title": "TelyRx Holdings Inc. GAAP EPS of -$0.09, revenue of $22.7M misses by $8.81M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:41:22.777160-03:00"
+    },
+    {
+      "title": "‘There’s No Trick, No Smoke and Mirrors, No Man Behind the Curtain’: Dave Ramsey Dismantles Mortgage Payoff Scheme Targeting 64-Year-Old With $85,000 Left on His Home",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:41:33.688524-03:00"
+    },
+    {
+      "title": "Market Update: ENB, CVX, EXPE, ORLY, XOM, STRL",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:41:36.326541-03:00"
+    },
+    {
+      "title": "Rhode Is Fueling e.l.f.'s Latest Surge. Is It Time to Jump In?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:41:38.978428-03:00"
     }
   ]
 }
