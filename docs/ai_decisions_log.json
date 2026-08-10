@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "How to open a checking account for a minor",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "Nenhuma relação com mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:25:55.311940-03:00"
-    },
-    {
-      "title": "Resort no Inhotim faz expansão de R$ 59 mi e consolida nova era de luxo; veja fotos",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A expansão de um resort de luxo não é relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:30:37.797386-03:00"
-    },
-    {
-      "title": "Canada offers concessions in a bid to avoid Trump’s 50% tariffs: NYT",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia envolve uma possível mudança nas relações comerciais entre os EUA e o Canadá, o que pode ter impacto significativo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:30:43.296868-03:00"
-    },
-    {
-      "title": "Hunter Biden says Joe Biden’s cancer has spread further and is ‘very painful’",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:30:52.605091-03:00"
-    },
-    {
-      "title": "Presidente de Taiwan supervisiona exercício de ataque costeiro em manobra militar",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre manobra militar não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:35:46.095179-03:00"
-    },
-    {
-      "title": "Avaliação da Nvidia está no menor nível em 10 anos, diz BofA",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Avaliação negativa da Nvidia pode afetar o preço das ações da empresa e do setor de tecnologia",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T14:36:08.236429-03:00"
-    },
-    {
-      "title": "Seca histórica na Europa: por que esse continente é o que mais aquece no planeta",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "a seca não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:36:11.377835-03:00"
-    },
-    {
-      "title": "Nebius Is Worth 55 Times Its Revenue. What Does That Price Assume?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca um aumento significativo no faturamento do Nebius, o que pode ser considerado relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:36:18.054579-03:00"
-    },
-    {
-      "title": "Warren Buffett's Successor, Greg Abel, Just Ended Berkshire Hathaway's 14-Quarter Selling Streak. Is This the Screaming Buy Signal Investors Have Been Waiting For?",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A Berkshire Hathaway fez compras significativas, indicando confiança no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T14:36:21.522142-03:00"
-    },
-    {
-      "title": "Live Nation Drew 49 Million Fans Last Quarter. Its General Counsel's Stock Just Vested",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma venda de ações de um executivo, o que não é relevante para o mercado em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:36:24.475913-03:00"
-    },
-    {
-      "title": "Como o Mercantil (BMEB4) chegou a 41% de ROE sem entrar na briga dos bancões — e o alerta do CFO para 2027",
-      "source": "Seu Dinheiro",
-      "score": 6.0,
-      "motivo": "lucro recorde e estratégia de crescimento apontada pelo CFO",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:40:39.199958-03:00"
-    },
-    {
-      "title": "Barcelona, Argentina, Real Madrid e outros prestam condolências a pai de Messi",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:46:03.735661-03:00"
-    },
-    {
-      "title": "Berkshire Hathaway acelera recompra de ações e reduz reserva de caixa",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "A empresa está reforçando sua confiança no mercado e em sua própria capacidade de crescimento, o que é um sinal positivo para os investidores",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T14:46:10.608477-03:00"
-    },
-    {
-      "title": "Nvidia, Micron or Broadcom: What Would Raymond Dalio Do?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "O investidor influente compartilhou suas opções, o que pode influenciar a percepção dos investidores sobre essas empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T14:46:28.485982-03:00"
-    },
-    {
       "title": "My Top Dividend Stock to Buy in August (and It's Not Even Close)",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T13:31:18.536260-03:00"
+    },
+    {
+      "title": "Caiado sugere medidas contra ‘terrorismo doméstico’ e quer Gakiya em Ministério",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não trata de mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:36:15.451525-03:00"
+    },
+    {
+      "title": "Super Micro Computer options traders go big on calls ahead of earnings",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Aumento das apostas em chamadas sugere que os traders estão otimistas com os resultados financeiros da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:36:21.080174-03:00"
+    },
+    {
+      "title": "Jeff Bezos is part of a consortium closing in on a Liverpool FC stake",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas pode ter algum efeito indireto sobre a valorização de empresas de mídia e esportes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:36:24.075011-03:00"
+    },
+    {
+      "title": "Terrestrial Energy Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:36:26.699381-03:00"
+    },
+    {
+      "title": "L.B. Foster expects $15M-$25M 2026 free cash flow while keeping leverage in 1.0x-1.5x range",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:36:29.380185-03:00"
+    },
+    {
+      "title": "Ambiq Micro, Inc. Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:36:32.012712-03:00"
+    },
+    {
+      "title": "WhiteHorse Finance Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:36:34.652433-03:00"
+    },
+    {
+      "title": "Broadwind Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:36:37.268653-03:00"
+    },
+    {
+      "title": "VFH vs. XLF: Which Financial ETF Is the Better Buy?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:36:42.237046-03:00"
+    },
+    {
+      "title": "Why Palo Alto Networks Stock Dropped, Then Popped",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:36:44.880694-03:00"
+    },
+    {
+      "title": "EUA respondem ao Brasil na OMC e dizem que estão 'à disposição' para discutir tarifaço",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:36:50.446486-03:00"
+    },
+    {
+      "title": "Localiza (RENT3) cai dois dígitos no ano e BTG defende que a ação está ‘inegavelmente barata’, mas há pontos de atenção",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:36:53.476587-03:00"
+    },
+    {
+      "title": "Manu Buffara desembarca em Nova York com menu pop-up para o The Standard Grill",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:36:56.147721-03:00"
+    },
+    {
+      "title": "SEC Announces Roundtable on Preparations for 24-Hour Trading",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:37:03.107377-03:00"
     }
   ]
 }
