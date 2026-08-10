@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Robinhood Crypto Chief Explains Why There Are 'Two Wolves' Inside Robinhood Chain",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia revela uma possível causa de conflito dentro da empresa, o que pode afetar sua estabilidade e tomadas de decisões.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:50:46.704345-03:00"
-    },
-    {
-      "title": "Elmano acusa Ciro Gomes de permitir que Comando Vermelho “plantasse a semente” no CE",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:55:51.531770-03:00"
-    },
-    {
-      "title": "Tarcísio e Haddad nacionalizam debate na Band, com embate sobre segurança",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:55:57.974204-03:00"
-    },
-    {
-      "title": "Taiwan Stock Market Tipped To Open In The Green",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque indica que o mercado pode abrir em alta, o que pode influenciar as ações das empresas listadas na bolsa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T21:56:04.734880-03:00"
-    },
-    {
-      "title": "Key HIV stat over 70% leaves BofA siding with Gilead",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A vacina da Gilead tem um desempenho excepcional, o que pode impulsionar a demanda por seus medicamentos e beneficiar a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T21:56:15.483205-03:00"
-    },
-    {
-      "title": "McDonald's says it alienated its most loyal customers",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre um evento específico de mercado, mas sim sobre uma mudança na política da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:05:39.776069-03:00"
-    },
-    {
-      "title": "Tarcísio critica gestão do PT na economia; Haddad aconselha a não indicar Campos Neto",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia e sobre politica e nao tem relevancia direta para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:15:36.145879-03:00"
-    },
-    {
-      "title": "Tarcísio diz que SP lançará programa ‘Educação com IA’ e avançará no ensino integral",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "A notícia trata de educação e não tem relação direta com mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:15:38.973585-03:00"
-    },
-    {
-      "title": "Executive Parts Ways With 3,820 Shares of Lamb Weston Stock",
-      "source": "Yahoo Finance",
-      "score": 1.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro devido à natureza limitada da transação.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:15:51.828298-03:00"
-    },
-    {
-      "title": "“Servidor público não pode ficar de pires na mão”: candidatos criticam gestão no RJ",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:20:54.973210-03:00"
-    },
-    {
       "title": "Haddad menciona que membros da PM de SP, sob Tarcísio, mantinham vínculo com o PCC",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T20:36:04.379907-03:00"
+    },
+    {
+      "title": "Uefa, AFC e Concacaf fazem duro ataque a Infantino: 'Futebol não pertence a um indivíduo'",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia é sobre esporte e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:40:37.360822-03:00"
+    },
+    {
+      "title": "Mourinho dispara contra períodos sabáticos e manda recado a Guardiola",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:40:40.276636-03:00"
+    },
+    {
+      "title": "What Investors Should Know About a Mettler-Toledo Director's Two Transactions This Past Week",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre uma transação de ações de um diretor de uma empresa, o que não é relevante para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:40:46.049144-03:00"
+    },
+    {
+      "title": "Malaysia Stock Market May Extend Losing Streak",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A perda de pontos no mercado de ações da Malês pode ser um sinal de instabilidade no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:40:49.235546-03:00"
+    },
+    {
+      "title": "Prediction: $1,000 in Uranium Energy Corp Will Be Worth This Much in 5 Years",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante para o mercado de ações devido ao aumento recente da ação da Uranium Energy Corp.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:40:52.463448-03:00"
+    },
+    {
+      "title": "What Investors Should Know as Mettler-Toledo Insiders Sell Shares After a Strong Quarter",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações por parte de um executivo não é um evento significativo em si, mas pode ser visto como um sinal de confiança negativa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:40:55.917952-03:00"
+    },
+    {
+      "title": "On Holding: A 7.0 Score and a Bright Future?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:40:58.570185-03:00"
+    },
+    {
+      "title": "Why Rubrik Stock Bounced Almost 9% Higher on Monday",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:41:01.232222-03:00"
+    },
+    {
+      "title": "Why Archer Aviation Stock Soared Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:41:03.888704-03:00"
+    },
+    {
+      "title": "A Mettler-Toledo Director Sold $600,000 in Stock. Here's What Investors Should Know",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T20:41:06.587305-03:00"
     }
   ]
 }
