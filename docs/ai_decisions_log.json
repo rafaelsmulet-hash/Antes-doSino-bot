@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Anvisa proíbe seis tipos de sal fabricados clandestinamente",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:15:58.312450-03:00"
-    },
-    {
-      "title": "He Worked 20 Years for the Railroad, Then 20 Years Off It. His Social Security Benefit Cut His Railroad Tier I Dollar for Dollar.",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de aposentadorias e benefícios sociais, mas não tem impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:16:12.418803-03:00"
-    },
-    {
-      "title": "U.S. stock futures flat as investors await inflation data, grapple with more Iran uncertainty",
-      "source": "MarketWatch",
-      "score": 4.0,
-      "motivo": "A notícia é relevante devido à incerteza sobre o Irã e à espera de dados de inflação importantes, mas não é um evento de grande impacto imediato.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T19:20:39.098893-03:00"
-    },
-    {
-      "title": "Why Shopify Stock Soared This Week",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca o crescimento positivo da empresa, o que é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:20:45.650443-03:00"
-    },
-    {
-      "title": "3 Big Mistakes IRA Savers Make -- and How to Fix Them",
-      "source": "Nasdaq",
-      "score": 1.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:20:48.460020-03:00"
-    },
-    {
-      "title": "Why Upstart Stock Plunged 23% in July",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia especifica o impacto negativo de fatores macroeconômicos na ação da Upstart",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T19:20:51.469833-03:00"
-    },
-    {
-      "title": "Após desistência, apelo e veto público, Cleitinho volta à disputa pelo governo de MG",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:26:24.673837-03:00"
-    },
-    {
       "title": "Gás natural de Chipre abastecerá a Europa no primeiro semestre de 2028, diz ministro",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T19:26:45.909732-03:00"
+    },
+    {
+      "title": "Oil Holds Gains, Asian Stocks Set for Muted Open: Markets Wrap",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia é relevante para o mercado de petróleo e inflação, mas não é um evento de grande impacto",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:31:40.000057-03:00"
+    },
+    {
+      "title": "Plano & Plano informa que Cyrela está de saída do seu Conselho de Administração",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "Mudança no quadro de administração da empresa não é um evento significativo para o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:31:43.615188-03:00"
+    },
+    {
+      "title": "Conselho da Paz diz que plano de Trump para Gaza “continua em pleno vigor”",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre conflito geopolitico sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:31:46.446565-03:00"
+    },
+    {
+      "title": "Here’s who stands to gain the most from a Jeff Bezos-Liverpool FC deal",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:31:52.281088-03:00"
+    },
+    {
+      "title": "Liberty Energy CFO Michael Stock Sells 6,666 Shares",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:31:57.398926-03:00"
+    },
+    {
+      "title": "Now Rippling is counter suing tiny startup Runlayer",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:32:08.103799-03:00"
+    },
+    {
+      "title": "Dividend King Coca-Cola is suddenly acting like a growth stock",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A empresa está aumentando sua expansão de negócios e investindo em tecnologia, o que pode ter um impacto positivo no preço da ação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:32:11.803691-03:00"
     }
   ]
 }
