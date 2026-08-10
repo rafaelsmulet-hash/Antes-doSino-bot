@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "How The UAE Has Kept Its Oil Flowing Through Hormuz",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "Aumento das exportações de petróleo do Emirados Árabes Unidos para níveis pré-crise, apesar do bloqueio no Estreito de Hormuz",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T17:26:03.532218-03:00"
-    },
-    {
-      "title": "João Fonseca x Ben Shelton: onde assistir o Masters de Montreal?",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e não tem relevância para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:30:55.397188-03:00"
-    },
-    {
-      "title": "SentinelOne (S) Deepens AWS Ties As Growth Accelerates",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A parceria com a AWS pode trazer benefícios significativos para a SentinelOne, como acesso a uma base de clientes mais ampla e recursos tecnológicos avançados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:31:11.476926-03:00"
-    },
-    {
-      "title": "Jim Cramer Praises Exchange Duopoly CME Group (CME) and Cboe (CBOE)",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque Jim Cramer é um investidor influente e seu elogio pode afetar a percepção do mercado sobre as bolsas CME Group e Cboe.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:31:14.488263-03:00"
-    },
-    {
-      "title": "Where Will Dell Technologies Stock Be in 3 Years?",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A análise é relevante, mas rotineira e não traz informações novas ou surpreendentes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:31:17.438991-03:00"
-    },
-    {
-      "title": "Crise no estreito de Ormuz: conheça o porto e o oleoduto que estão lucrando com o fechamento",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "efeito direto no preço do petróleo e impacto nas rotas de transporte",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:36:08.529993-03:00"
-    },
-    {
       "title": "Quem é Todd Blanche, ex-advogado de Trump que assume o Departamento de Justiça dos EUA",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T14:21:10.913515-03:00"
+    },
+    {
+      "title": "De filmes da Marvel a atrações nos parques: o que a Disney pode anunciar na D23",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre evento da Disney não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:26:00.822717-03:00"
+    },
+    {
+      "title": "Fachin anuncia proposta de lei sobre salários de juízes e cobra transparência do Judiciário",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:26:03.669535-03:00"
+    },
+    {
+      "title": "Archer strikes deal with Boeing in latest bid to transform aviation through AI",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque envolve uma aquisição significativa que pode impactar a indústria de aviação e ações de empresas relacionadas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:26:06.816362-03:00"
+    },
+    {
+      "title": "Barrick plunges as Newmont settlement value disappoints investors",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia afeta diretamente a empresa e pode influenciar a percepção dos investidores sobre a saúde financeira da Barrick Gold.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:26:09.936990-03:00"
+    },
+    {
+      "title": "AirSculpt anticipates $12M-$14M adjusted EBITDA while rolling out AlloClae partnership",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:26:12.618572-03:00"
+    },
+    {
+      "title": "Mercado projeta desaceleração do IPCA em julho e deflação em agosto",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:26:18.937885-03:00"
     }
   ]
 }
