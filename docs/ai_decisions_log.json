@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Is AMD Stock a Buy on the Dip as AI Revenue Surges?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca o crescimento forte da AMD, o que pode ser visto como positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:16:18.368038-03:00"
-    },
-    {
-      "title": "Jeff Bezos' Amazon Just Raised Its AI Spending to $220 Billion for 2026. Here's What That Capex Hike Means for Investors.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "Aumento significativo na despesa da Amazon com Inteligência Artificial pode ter impacto concreto no mercado de ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T12:16:21.446546-03:00"
-    },
-    {
-      "title": "Earnings Scorecard: 95% of healthcare firms deliver EPS wins this week",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "As empresas de saúde relataram lucros acima do esperado, o que pode impulsionar as ações desse setor.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T12:20:48.549144-03:00"
-    },
-    {
-      "title": "Pensão alimentícia: STJ permite prever valor se pai ficar desempregado",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:25:34.045697-03:00"
-    },
-    {
-      "title": "Conheça história do pai de Messi, empresário e primeiro treinador do craque argentino",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:25:36.758955-03:00"
-    },
-    {
-      "title": "Google's AI claimed Flock cameras hold $650 in gold and 23 pounds of copper — It was duped by meme",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:25:47.985160-03:00"
-    },
-    {
-      "title": "I was a stay-at-home mom for 27 years. At 62, I started over after moving to Greece.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:36:05.352789-03:00"
-    },
-    {
-      "title": "Tufão Dolphin atinge Japão e leva China a fechar portos",
-      "source": "Investing.com Brasil",
-      "score": 2.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:40:50.297379-03:00"
-    },
-    {
-      "title": "Shutdown nos EUA: Senado aprova verba temporária antes das eleições",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia é sobre política, não diretamente relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:45:34.727110-03:00"
-    },
-    {
-      "title": "The size of the American workforce has fallen by over 1 million people in the past year. Here’s what’s going on.",
-      "source": "MarketWatch",
-      "score": 4.0,
-      "motivo": "A notícia pode influenciar a economia e os investimentos, mas não é um evento de mercado maior.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:45:39.731352-03:00"
-    },
-    {
-      "title": "OPINIÃO. Quem manda na economia?",
-      "source": "Brazil Journal",
-      "score": 0.0,
-      "motivo": "A noticia nao e sobre mercado financeiro, mas sim sobre politica e aposentadoria",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:50:48.241665-03:00"
-    },
-    {
-      "title": "16 out of 16 technology stocks deliver EPS wins this week: Earnings Scorecard",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque indica um desempenho positivo das empresas de tecnologia, o que pode influenciar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T12:50:52.247928-03:00"
-    },
-    {
-      "title": "Airbnb vs. MercadoLibre: Which Consumer Stock Is a Better Buy in 2026?",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia fornece informações sobre as operações de uma empresa de consumo, mas não apresenta informações novas ou impactantes para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:50:56.647360-03:00"
-    },
-    {
-      "title": "Prediction: This Will Be the Cryptocurrency XRP's Price by Late 2027 (Hint: It's a Big Move)",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:50:59.835245-03:00"
-    },
-    {
-      "title": "Estreito de Ormuz: Irã vê acordo próximo, mas cobra indenização dos EUA",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não está diretamente relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:55:40.591338-03:00"
-    },
-    {
-      "title": "The Kindle Scribe Colorsoft is a lot of fun, but it’s not a must-have",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T13:01:07.145965-03:00"
-    },
-    {
       "title": "Republicanos do Senado dos EUA aprovam nomeação de Todd Blanche como procurador-geral por margem estreita",
       "source": "Investing.com Brasil",
       "score": 2.0,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T13:01:49.649906-03:00"
+    },
+    {
+      "title": "Soft US Jobs Cast Doubt on September Fed Hike",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia afeta diretamente a expectativa de aumento de juros da Fed, influenciando a política monetária",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:05:33.532846-03:00"
+    },
+    {
+      "title": "Stocks Churn as Oil Advance Boosts Treasury Yields",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:05:36.170027-03:00"
+    },
+    {
+      "title": "Caiado sugere medidas contra ‘terrorismo doméstico’ e quer Gakiya em Ministério",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:05:40.382193-03:00"
+    },
+    {
+      "title": "O que pode mudar na Cursor com a compra pela SpaceX",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:05:44.734716-03:00"
+    },
+    {
+      "title": "Como novos perfis de liderança estão solucionando problemas de turnover",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:05:47.390365-03:00"
+    },
+    {
+      "title": "Interparfums' 'blockbuster' 2027 launches will support growth, but 2026 likely to be flat — Goldman Sachs",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:05:50.340959-03:00"
+    },
+    {
+      "title": "Imperial Brands prepares for a round of job cuts in Europe and the U.S.",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:05:53.001302-03:00"
+    },
+    {
+      "title": "International Seaways outlines $61,000/day booked Q3 spot TCE while ordering 4 LR1 newbuildings for 2H 2028",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:05:55.679937-03:00"
+    },
+    {
+      "title": "The Stock Market Is Cultivating Gamblers and Not Investors, According to Warren Buffett. What That Means for Anyone Considering Buying Into Flashy IPOs.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:06:01.588874-03:00"
+    },
+    {
+      "title": "Analyst Favorites: ArcelorMittal Ranks As a Top Metals Pick",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:06:04.231202-03:00"
+    },
+    {
+      "title": "C.H. Robinson Worldwide Moves Up In Analyst Rankings, Passing Netflix",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:06:07.190665-03:00"
+    },
+    {
+      "title": "How To YieldBoost Entravision Communications From 1.8% To 47.4% Using Options",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:06:09.872516-03:00"
+    },
+    {
+      "title": "S&P 500 Analyst Moves: CHRW",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:06:12.522831-03:00"
+    },
+    {
+      "title": "Why CPI Card Group Stock Keeps Going Up",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:06:15.148476-03:00"
+    },
+    {
+      "title": "How Monday.com Stock Gained 20.4% In July",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:06:17.773979-03:00"
+    },
+    {
+      "title": "Canadian Market Rises On Energy, Tech Gains Tuesday",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:06:20.414669-03:00"
     }
   ]
 }
