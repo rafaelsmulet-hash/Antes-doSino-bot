@@ -1,204 +1,6 @@
 {
   "decisions": [
     {
-      "title": "LegalZoom (LZ) Integrates Microsoft Copilot Amid Growth Shifts",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A integração do Microsoft Copilot pode impulsionar a inovação e o crescimento da LegalZoom, tornando-a mais competitiva no mercado de serviços jurídicos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T15:46:22.746309-03:00"
-    },
-    {
-      "title": "Airline Insider Hits Eject, Sells 40,460 Shares Valued at $3.8 Million",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A venda de ações por um acionista importante pode influenciar o preço da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:46:25.656920-03:00"
-    },
-    {
-      "title": "We skipped the expensive birthday venue. Our muddy backyard was better for 90 kids.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:46:28.927221-03:00"
-    },
-    {
-      "title": "Lula declara R$ 4,7 milhões em patrimônio ao TSE, valor 35% menor em relação a 2022",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "A noticia e sobre a declaracao de patrimonio de um politico, nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:51:12.901804-03:00"
-    },
-    {
-      "title": "Eleições 2026: conheça pautas do governo Lula para possível novo mandato",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "noticia politica sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:51:19.711695-03:00"
-    },
-    {
-      "title": "Apple brings Alibaba's Qwen AI model to Mac users in China",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque pode ter impacto positivo no mercado de tecnologia, especialmente para a Apple e a Alibaba.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T15:51:23.148382-03:00"
-    },
-    {
-      "title": "What JEPQ Actually Paid the Last Time the Nasdaq Fell 10%: a Stress Test for Its 10% Yield",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a resistência do JEPQ em manter seu rendimento em um cenário de mercado desafiador.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T15:51:36.042729-03:00"
-    },
-    {
-      "title": "Netflix e caiaques bancados pelo plano de saúde? Entenda a polêmica nos EUA",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "a noticia nao e sobre mercado financeiro, e sim sobre um plano de saúde nos EUA",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:00:48.105981-03:00"
-    },
-    {
-      "title": "AST SpaceMobile vs. Rocket Lab: Which Space Stock Has More Upside?",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia destaca a disputa entre duas ações de empresas de tecnologia espacial, o que pode ter impacto significativo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T16:00:56.390251-03:00"
-    },
-    {
-      "title": "Four Savers Value Village Insiders Sold This Week. Here's What to Make of It",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações de executivos não é um evento significativo para o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:00:59.380826-03:00"
-    },
-    {
-      "title": "Toast CEO Aman Narang Sells 138,000 Shares for $4.9 Million Amid Stock's 24% Dip",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A venda de ações significativas por parte do CEO pode influenciar a percepção dos investidores sobre a empresa e seu futuro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:01:03.169535-03:00"
-    },
-    {
-      "title": "A Savers Insider Cashed In Options Struck at $1.41. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma transação de ações, mas não é um evento significativo ou inesperado no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:01:06.354737-03:00"
-    },
-    {
-      "title": "Stanley Druckenmiller's Portfolio Skips Megacap Tech Almost Entirely. Here's What He's Buying Instead.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia revela as estratégias de investimento de um bilionário conhecido, o que pode influenciar a tomada de decisões dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:01:09.301230-03:00"
-    },
-    {
-      "title": "Progressive's Combined Ratio Widened to 87.1 Last Quarter. What That Says About the Growth Machine.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de seguros, mas não apresenta um impacto significativo ou inesperado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:01:12.488919-03:00"
-    },
-    {
-      "title": "E-commerce bate recorde com faturamento de R$ 295,6 bilhões no Brasil — e os pequenos negócios estão roubando a cena",
-      "source": "Seu Dinheiro",
-      "score": 8.0,
-      "motivo": "o crescimento do comércio eletrônico e a participação crescente de pequenos negócios indicam um mercado em expansão",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T16:01:21.162091-03:00"
-    },
-    {
-      "title": "Four Savers Value Village Insiders Sold This Week. Here's What to Make of It",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "Venda de ações por parte de funcionários internos pode indicar perda de confiança na empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:01:25.845465-03:00"
-    },
-    {
-      "title": "Esse professor fundou a 'Anthropic da China' — e ela vale US$ 6,6 bilhões",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "Fundação de empresa de tecnologia de linguagem com valor de mercado de US$ 6,6 bilhões",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T16:05:56.901516-03:00"
-    },
-    {
-      "title": "‘I’m in my peak earning years’: I’m working beyond 70. Will that help increase my Social Security?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:06:00.132416-03:00"
-    },
-    {
-      "title": "Judge Denies Southern Poverty Law Center's Bid To Dismiss DOJ Indictment",
-      "source": "ZeroHedge",
-      "score": 1.0,
-      "motivo": "A notícia é sobre um caso de crime e não tem relevância direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:06:11.495960-03:00"
-    },
-    {
-      "title": "\"We're Here To Destroy The White Race\": Democratic Socialist Of America Hero Declares War On West",
-      "source": "ZeroHedge",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política e retórica anti-americana de um streamer marxista.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:06:14.631697-03:00"
-    },
-    {
-      "title": "Existing Power Plants Are \"Bedrock\" In Supplying Data Centers: Constellation CEO",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A declaração do CEO da Constellation sobre a importância das plantas de energia existentes para fornecer energia para os centros de dados é relevante e tem impacto concreto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T16:06:17.706092-03:00"
-    },
-    {
-      "title": "Iran's Economy Is In Shambles As War Takes Its Toll",
-      "source": "ZeroHedge",
-      "score": 8.0,
-      "motivo": "A notícia destaca a gravidade da situação econômica do Irã, com danos estimados em US$ 270 bilhões a US$ 300 bilhões e inflação de 88,6%.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T16:06:24.329853-03:00"
-    },
-    {
       "title": "Lula admite baixa adesão ao Move Brasil e critica bancos por travas no crédito",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17801,204 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T13:56:17.735480-03:00"
+    },
+    {
+      "title": "Copper jumps to its highest level ever. What the metal is telling us",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "O preço do cobre atingindo seu nível mais alto em história é um sinal de saúde econômica positiva.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:01:39.823222-03:00"
+    },
+    {
+      "title": "MGLU3: Por que as ações do Magazine Luiza estão em alta hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "ações em alta devido a expectativas positivas de crescimento",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:01:44.621792-03:00"
+    },
+    {
+      "title": "Startup Archer faz acordo para compra de empresa de aeronaves elétricas da Boeing",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "acordo de compra pode impulsionar a demanda por aeronaves elétricas, afetando ações de empresas de tecnologia e aeroespacial",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:01:47.481940-03:00"
+    },
+    {
+      "title": "OpenAI lança plano Premium para o ChatGPT Business por US$ 125 mensais",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "lançamento de plano premium é um evento rotineiro para empresas de tecnologia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:01:50.339915-03:00"
+    },
+    {
+      "title": "DoorDash reiterada como escolha principal pela Cantor Fitzgerald",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:01:52.996242-03:00"
+    },
+    {
+      "title": "Nvidia e gigantes de Wall Street planejam pacote de US$ 500 bi para IA",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:01:55.660694-03:00"
+    },
+    {
+      "title": "Is $1 million enough for a household to retire? The answer keeps changing.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:01:58.669896-03:00"
+    },
+    {
+      "title": "Baker Hughes secures subsea deal for $11.8B Eni-Petronas project",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:02:01.368752-03:00"
+    },
+    {
+      "title": "Curing the Monday blues: Wall Street's new favorite day of the week",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:02:04.028058-03:00"
+    },
+    {
+      "title": "Israeli AI startup Decart nears $6B sale; SpaceX, Amazon circling - report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:02:06.700668-03:00"
+    },
+    {
+      "title": "Nvidia working with Goldman Sachs, Blackstone, others for $500B AI financing deal - report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:02:09.408139-03:00"
+    },
+    {
+      "title": "Nvidia negocia pacote de R$ 2,55 trilhões para financiar infraestrutura de IA",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:02:15.457649-03:00"
+    },
+    {
+      "title": "CEO da Sapore diz que robôs e IA vão atuar onde falta mão de obra",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:02:18.446318-03:00"
+    },
+    {
+      "title": "This stock market indicator just flashed a warning not seen since the dot-com bubble",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:02:24.661373-03:00"
+    },
+    {
+      "title": "CFO4Life's Leaders Accuse Focus Financial of 'Bullying' Tactics",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:02:27.314053-03:00"
+    },
+    {
+      "title": "Here's how SpaceX hits this $100 billion number in under 5 months",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:02:29.970258-03:00"
+    },
+    {
+      "title": "The ONE Group: A Restaurant Stock With Rising Traffic, Expanding Margins – Quarterly Update Report",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:02:32.661668-03:00"
+    },
+    {
+      "title": "Destiny USA CMBS Debt Faces More Than $350M in Losses",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:02:35.304465-03:00"
+    },
+    {
+      "title": "Wall Street giants to partner with Nvidia on $500 billion AI financing deal, FT reports",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:02:37.992240-03:00"
+    },
+    {
+      "title": "IBD 50 Stock To Watch: Travel Giant Expedia In Buy Zone Following Latest Breakout",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:02:40.671595-03:00"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:02:44.260527-03:00"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
+      "source": "Federal Reserve",
+      "score": 8.0,
+      "motivo": "Decisões da Comissão de Mercado Aberto Federal são relevantes para o mercado financeiro",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:02:47.245766-03:00"
     }
   ]
 }
