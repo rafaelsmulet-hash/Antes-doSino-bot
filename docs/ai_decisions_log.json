@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Agendar reunião ficou mais fácil: como usar IA, links de agenda e fuso horário a seu favor",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:06:20.196020-03:00"
-    },
-    {
-      "title": "A IA pode saber quanto gasto? Fintech cria ponte com dados bancários no Brasil; entenda",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A fintech pode melhorar a eficiência e reduzir custos para as instituições financeiras",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T08:10:48.987023-03:00"
-    },
-    {
-      "title": "Presidente da Starbucks Brasil: '90% dos nossos líderes começaram como baristas'",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A notícia destaca a estratégia de promoção interna da Starbucks, o que pode ser visto como positivo para a empresa e seus acionistas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:10:51.838482-03:00"
-    },
-    {
-      "title": "Debate da Band para governador de SP: veja horário, regras e onde assistir online",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia eletoral sem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:10:54.605066-03:00"
-    },
-    {
-      "title": "Meu pai faleceu e sua 'companheira' forjou documentos para ficar com a casa. E agora?",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:10:57.339998-03:00"
-    },
-    {
-      "title": "Traveling with just a backpack taught me that I don't need special clothes to exercise. I wear the same outfit for all my workouts.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:11:11.381389-03:00"
-    },
-    {
-      "title": "Starboard dá uma mordida no Shake Shack e diz que a empresa vale o dobro",
-      "source": "Brazil Journal",
-      "score": 6.0,
-      "motivo": "a participação da Starboard pode influenciar positivamente a estratégia da Shake Shack e impulsionar seu valor",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:15:42.772456-03:00"
-    },
-    {
-      "title": "Micron vs. Sandisk: Which Is the Better AI Memory Stock to Own for the Next 3 Years?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a competição entre as duas empresas, o que pode ter impacto nas decisões de investimento dos traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:15:53.830088-03:00"
-    },
-    {
-      "title": "Elon Musk issues red flag warning to group of SpaceX traders — but they keep doubling down. Are you making the same bet?",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque envolve a SpaceX, uma empresa de tecnologia e exploração espacial, mas não é um evento de mercado maior.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:15:56.721775-03:00"
-    },
-    {
-      "title": "Global Payments Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A empresa apresentou resultados financeiros estáveis, mas sem impacto significativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:15:59.639732-03:00"
-    },
-    {
-      "title": "The AI boom is creating jobs far from Silicon Valley: Chart of the Day",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia destaca a expansão da indústria de AI para outras regiões, o que pode ter impacto positivo nas economias locais.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:16:02.563519-03:00"
-    },
-    {
-      "title": "The AI boom ripples into regional banks as lending picks up",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Aumento nos empréstimos é um sinal de confiança no mercado e pode impulsionar a economia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:16:05.404068-03:00"
-    },
-    {
-      "title": "Robert Kiyosaki warned Americans who own 401(k)s that the US could be on the brink of ‘Great Depression.’ Prepare now",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A declaração de um investidor conhecido pode influenciar a percepção dos investidores sobre a estabilidade do mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:16:08.444900-03:00"
-    },
-    {
-      "title": "I went from wedding DJ to Meta engineer, then was laid off after 13 years. My last years there brought constant change.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:16:11.840321-03:00"
-    },
-    {
-      "title": "Índices de inflação do consumidor e produtor na China ficam abaixo do esperado",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "índices de inflação abaixo do esperado podem pressionar a economia chinesa e afetar o mercado global",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T08:21:03.926815-03:00"
-    },
-    {
       "title": "AMD's Data Center Business Is Skyrocketing. The Stock Is Falling. Here's Why.",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T16:31:02.241901-03:00"
+    },
+    {
+      "title": "Fórum no Rio focará em blockchain com reguladores, bancos e empresas",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre evento de blockchain e criptomoedas, mas sem impacto imediato no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:36:22.163231-03:00"
+    },
+    {
+      "title": "Terremoto de 7,4 atinge a Colômbia; entenda por que o país é tão propenso a tremores",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:36:24.985707-03:00"
+    },
+    {
+      "title": "Fed Chair Kevin Warsh promises 2% inflation, but skyrocketing U.S. debt makes that a pipe dream",
+      "source": "MarketWatch",
+      "score": 8.0,
+      "motivo": "A notícia destaca a relação entre inflação e dívida pública, o que é altamente relevante para o mercado financeiro.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:36:31.777981-03:00"
+    },
+    {
+      "title": "Cablevisión Holding S.A. reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados financeiros positivos, o que pode ser visto como um sinal de estabilidade e crescimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:36:34.724176-03:00"
+    },
+    {
+      "title": "Ferguson targets 9.5%-9.8% FY2026 operating margin while planning $1.6B FloWorks deal",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:36:37.385336-03:00"
+    },
+    {
+      "title": "AFLAC (AFL) Shares Cross 2% Yield Mark",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:36:41.279945-03:00"
+    },
+    {
+      "title": "YUM Dividend Yield Pushes Past 2%",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:36:43.895832-03:00"
+    },
+    {
+      "title": "Bank of America's Preferred Stock Series NN Yield Pushes Past 6.5%",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:36:46.548681-03:00"
+    },
+    {
+      "title": "HP Shares Cross 4% Yield Mark",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:36:49.160932-03:00"
+    },
+    {
+      "title": "Bank of America's Preferred Stock Series SS Crosses Above 6.5% Yield Territory",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:36:51.836358-03:00"
+    },
+    {
+      "title": "Rocket Lab USA Q2 26 Earnings Conference Call At 5:00 PM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:36:54.480702-03:00"
+    },
+    {
+      "title": "Simon Property Group Q2 26 Earnings Conference Call At 5:00 PM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:36:57.125355-03:00"
+    },
+    {
+      "title": "Elon Musk's SpaceX Just Delivered Its First Earnings Report as a Public Company. Here's the 1 Number That Matters Most.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:37:04.687756-03:00"
+    },
+    {
+      "title": "Is Celsius a Buy After Tumbling 18% in 1 Day?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:37:07.321064-03:00"
+    },
+    {
+      "title": "Trump signs executive order calling for fewer childhood vaccines, falsely linking shots to autism",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:37:10.757610-03:00"
     }
   ]
 }
