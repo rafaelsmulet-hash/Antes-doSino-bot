@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Filho de Joe Biden confirma que câncer do ex-presidente dos EUA se espalhou",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia e sobre saúde do ex-presidente e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:06:01.782147-03:00"
-    },
-    {
-      "title": "‘Eu não idolatro meu pai, eu o admiro’: as lições de Louise Barsi",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:06:06.306642-03:00"
-    },
-    {
-      "title": "Por fundão e orçamento, Centrão prioriza Congresso em vez do Planalto, diz cientista política",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "noticia não está relacionada a mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:06:09.070863-03:00"
-    },
-    {
-      "title": "Desafio do free flow é educar motoristas sobre novo modelo, diz CEO da Pedágio Digital",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "noticia sobre setor de infraestrutura, mas não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:06:11.895785-03:00"
-    },
-    {
-      "title": "Ceuta e Fnideq: duas cidades com histórias e destinos entrelaçados",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia nao tem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:06:14.649011-03:00"
-    },
-    {
-      "title": "O preço de viver mais: mundo passa quase 11 anos com doenças ou incapacidades",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada a mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:06:17.412868-03:00"
-    },
-    {
       "title": "Agendar reunião ficou mais fácil: como usar IA, links de agenda e fuso horário a seu favor",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T16:26:00.594390-03:00"
+    },
+    {
+      "title": "Petróleo salta 5% e volta a superar US$ 80 com impasse sobre Ormuz",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "Impasse sobre Ormuz aumenta incerteza e pressão sobre preços do petróleo",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:30:47.377138-03:00"
+    },
+    {
+      "title": "Tribunal dos EUA decide que Meta e outras empresas de tecnologia devem enfrentar milhares de processos sobre vício em redes sociais",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "processos legais não afetam diretamente o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:30:50.594916-03:00"
+    },
+    {
+      "title": "S&P eleva rating da Griffon para BB após redução de dívida",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "redução de dívida é vista como positiva para a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:30:53.377946-03:00"
+    },
+    {
+      "title": "Moody’s eleva rating da Griffon para Ba2 com redução de alavancagem",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:30:56.060063-03:00"
+    },
+    {
+      "title": "Rubellite Energy reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:30:59.520638-03:00"
+    },
+    {
+      "title": "Compass Minerals cut to Sell equivalent at J.P. Morgan as low inventory seen limiting upside",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:31:02.241901-03:00"
     }
   ]
 }
