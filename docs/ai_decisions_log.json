@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "This Analyst On Wall Street Thinks The CPU Trade Is Overdone, Should You Sell ARM (ARM) Stock?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque discute a especulação de mercado e a recomendação de venda de ações, o que pode influenciar os preços.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T10:06:33.293731-03:00"
-    },
-    {
-      "title": "Berkshire Hathaway Beats Earnings Views, Ups Buybacks, Cuts Cash Hoard",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa superou as expectativas de lucro e tomou medidas que podem impulsionar suas ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T10:06:36.220251-03:00"
-    },
-    {
-      "title": "Wearing shorts to the office isn't always a fashion faux pas. Here's how to pull them off.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:06:39.311309-03:00"
-    },
-    {
       "title": "CEO Greg Abel Starts Making His Mark at Berkshire",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T12:22:20.561841-03:00"
+    },
+    {
+      "title": "Mercado Livre, iFood e as farmácias: quem vai ganhar a disputa pelos remédios online?",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia trata de uma mudança no setor farmacêutico, que pode ter impacto no mercado, mas ainda depende de regulamentação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:25:47.641428-03:00"
+    },
+    {
+      "title": "Cesta básica fica mais barata em 26 das 27 capitais em julho, diz Dieese",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "diminuição do custo da cesta básica em 26 das 27 capitais",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:25:55.683014-03:00"
+    },
+    {
+      "title": "Sila lands $1.4B Pentagon loan as militaries demand more batteries",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:26:02.639652-03:00"
     }
   ]
 }
