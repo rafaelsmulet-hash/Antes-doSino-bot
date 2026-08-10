@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "BofA points to the Eli Lilly market that could outsize the U.S.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A análise da BofA destaca a potencialidade de crescimento do mercado da Eli Lilly, tornando a notícia relevante para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:36:15.536066-03:00"
-    },
-    {
-      "title": "Delaying Social Security to 70 Costs About $158,000 in Skipped Checks, and Still Beats Any Annuity You Can Buy.",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque discute a economia pessoal e as decisões de investimento dos brasileiros.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:36:18.727995-03:00"
-    },
-    {
-      "title": "Rapid7 Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:40:50.038680-03:00"
-    },
-    {
-      "title": "Insight Molecular Diagnostics Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque fornece informações sobre os resultados financeiros da empresa, que podem influenciar a percepção dos investidores sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:40:53.468186-03:00"
-    },
-    {
-      "title": "Pangaea Logistics Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante pois fornece informações sobre os resultados financeiros da empresa, que podem influenciar a decisão de investir no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:40:56.809924-03:00"
-    },
-    {
-      "title": "Quantum Computing Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A previsão de lucro da empresa é relevante para os investidores que seguem a indústria de computação quântica.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:41:00.100005-03:00"
-    },
-    {
-      "title": "National Health Investors Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:41:03.134760-03:00"
-    },
-    {
-      "title": "Upwork Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações específicas ou impactantes sobre os resultados da Upwork.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:41:06.506913-03:00"
-    },
-    {
-      "title": "PennantPark Investment Q3 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas não há informações específicas sobre o resultado esperado ou impacto significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:41:09.490381-03:00"
-    },
-    {
       "title": "Why Upstart Stock Plunged 23% in July",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T19:16:20.270188-03:00"
+    },
+    {
+      "title": "Arabica Coffee Prices Hit Record on U.S., Colombia Tariff Spat",
+      "source": "WSJ Markets",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente os preços do café arabica, um dos principais produtos agrícolas do mercado internacional.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:20:45.630649-03:00"
+    },
+    {
+      "title": "Mendonça: É importante que Supremo dê resposta, e logo, sobre reforma tributária",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia não está relacionada diretamente ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:20:48.908427-03:00"
+    },
+    {
+      "title": "Criptomoedas: bitcoin cai com cautela por noticiário do conflito no Oriente Médio",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "inflação de risco geopolítico afeta valorização das criptomoedas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:20:51.834753-03:00"
+    },
+    {
+      "title": "I looked into buying a house in Singapore as an investment. Here’s why I didn’t — despite the 2% mortgage rate.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:20:56.907833-03:00"
+    },
+    {
+      "title": "Should You Worry That a Natera Co-Founder Sold Shares? Here's What Long-Term Investors Should Know",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:21:00.937375-03:00"
+    },
+    {
+      "title": "A Natera Insider's Shares Vested Before the Firm Reported Revenue Surged 38%. Here's How to Read It",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:21:04.012991-03:00"
+    },
+    {
+      "title": "Ford Reportedly Plans Crossover And Four-Door Mustang",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:21:06.713439-03:00"
+    },
+    {
+      "title": "A Natera Co-Founder Sold Into Record Highs. Here's What Long-Term Investors Should Know",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:21:09.417569-03:00"
+    },
+    {
+      "title": "Airbnb Is Starting To Think Like Amazon's Jeff Bezos, And It's Paying Off",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:21:12.176951-03:00"
     }
   ]
 }
