@@ -1,186 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Estamos eliminando os gerentes e, com eles, os futuros líderes",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia, e não tem impacto direto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:17.020066-03:00"
-    },
-    {
-      "title": "Jovem transforma projeto social em startup de próteses biônicas",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:19.828472-03:00"
-    },
-    {
-      "title": "Noar: falhas técnicas e humanas causaram queda de aviăo há 15 anos",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "A noticia nao trata de mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:22.655464-03:00"
-    },
-    {
-      "title": "UOL transmite tręs amistosos da seleçăo brasileira feminina de rugby",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e não tem relevância para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:25.463592-03:00"
-    },
-    {
-      "title": "Palantir CEO drops 11-word bombshell for stock market investors",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa está em uma posição financeira forte, o que pode impulsionar o preço das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:30.539018-03:00"
-    },
-    {
-      "title": "I Have $2.2 Million Invested and Pay a 1% Advisor Fee. Is That Too High?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:33.220769-03:00"
-    },
-    {
-      "title": "US stocks jump as employers unexpectedly cut 23,000 jobs, raising hopes that rate hikes can wait",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:35.891904-03:00"
-    },
-    {
-      "title": "Global equity funds draw inflows for 11th week as upbeat earnings lift sentiment",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Relevância devido ao fluxo de investimentos em fundos de ações globais por 11 semanas consecutivas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:38.787008-03:00"
-    },
-    {
-      "title": "Lee Enterprises, Incorporated Q3 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:41.449869-03:00"
-    },
-    {
-      "title": "Real-World Asset Deposits Jump to $7.4 Billion Through DeFi Downturn",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento nos depósitos em ativos reais é um sinal de confiança dos investidores em plataformas de DeFi.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:44.399638-03:00"
-    },
-    {
-      "title": "SpaceX stock got cut in half, but retail investors keep piling in: Chart of the Day",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:47.065854-03:00"
-    },
-    {
-      "title": "Marathon Digital Holdings, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A empresa é uma importante player na mineração de Bitcoin, e os resultados financeiros podem influenciar a percepção do mercado sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:50.228971-03:00"
-    },
-    {
-      "title": "Analysis-Jobs report will offer fresh test of Fed Chairman Warsh's less-guidance stance",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:52.928791-03:00"
-    },
-    {
-      "title": "We were finally empty nesters. Then we got custody of our granddaughter and had to go back to work to raise her.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:55.766419-03:00"
-    },
-    {
-      "title": "Arena AI CEO says enterprises don’t know which AI models to trust",
-      "source": "Business Insider",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto direto no mercado financeiro, mas pode ter relevância para o setor de tecnologia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:58:58.722798-03:00"
-    },
-    {
-      "title": "Cool girls are carrying giant, slouchy bags for fall. These are some of the best options.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:59:01.389766-03:00"
-    },
-    {
-      "title": "Replit's CEO says AI is making software engineering more human",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:59:04.327212-03:00"
-    },
-    {
-      "title": "How much protein do you need? Nutrition experts say there's a sweet spot",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:59:07.004111-03:00"
-    },
-    {
-      "title": "I’m a software developer, and AI has changed my job in 3 major ways",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:59:09.861416-03:00"
-    },
-    {
-      "title": "I turned my garage into a wellness hub for $10,000. Now my friends come over for the sauna and cold plunge, not drinks.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:59:12.556960-03:00"
-    },
-    {
       "title": "I'm a credit card point maximizer. I'm spending more than planned, but I believe it will pay off.",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17819,186 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T11:01:26.082041-03:00"
+    },
+    {
+      "title": "It's Not Time to Raise Rates, Says State Street's Hung",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Comentário da presidente da State Street sobre a economia dos EUA e as taxas de juros",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:05:39.443411-03:00"
+    },
+    {
+      "title": "Glencore Consortium Offers Rival Bid for Troubled Canadian Miner",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia apresenta um plano de resgate para a mineradora canadense, o que pode ter impacto significativo no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:05:42.437702-03:00"
+    },
+    {
+      "title": "Embraer (EMBJ3) dispara após balanço e supera R$ 100 com resultado acima do esperado",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:05:46.793326-03:00"
+    },
+    {
+      "title": "Economia da experiência inaugura nova fase do mercado imobiliário",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia destaca a valorização imobiliária e a criação de novos empreendimentos urbanos, o que é relevante para o mercado imobiliário.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:05:49.614525-03:00"
+    },
+    {
+      "title": "Irã reafirma que não reabrirá Estreito de Ormuz sem concessões dos EUA",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:05:52.282992-03:00"
+    },
+    {
+      "title": "Mariah Carey abre nova data em São Paulo para show de Natal; veja como comprar",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:05:56.756521-03:00"
+    },
+    {
+      "title": "Por que o IPO do Claude pode mudar a vida de bilhões de... camarões",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:05:59.393825-03:00"
+    },
+    {
+      "title": "Bitcoin cai após Strategy vender mais US$ 108 milhões em criptomoeda",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:06:02.032659-03:00"
+    },
+    {
+      "title": "Super Micro Computer Q4 earnings preview: Order backlog, margin expansion and cash flow in focus",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:06:05.137917-03:00"
+    },
+    {
+      "title": "Motorcar Parts of America misses street view as competitor's bankruptcy weighs on sales",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:06:07.786724-03:00"
+    },
+    {
+      "title": "Here are the major earnings after the close Monday",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:06:10.439059-03:00"
+    },
+    {
+      "title": "Federated Hermes Premier Municipal Income Fund declares $0.045 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:06:13.085390-03:00"
+    },
+    {
+      "title": "Tech stocks today: Meta lays out new AI path, Intel to sell $15 billion in stock",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:06:22.456436-03:00"
+    },
+    {
+      "title": "Palantir (PLTR) Turning AI Demand into Profitable Growth",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:06:25.099191-03:00"
+    },
+    {
+      "title": "Seagate Technology (STX) Could Keep Surging as Storage Prices Rise",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:06:27.751072-03:00"
+    },
+    {
+      "title": "The Role of SanDisk in Advancing AI Memory Solutions",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:06:30.397890-03:00"
+    },
+    {
+      "title": "American Airlines vs. easyJet: Which Airline is Better Positioned to Handle Higher Fuel Costs?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:06:33.050054-03:00"
+    },
+    {
+      "title": "Ryanair’s Profits Slumped, but Is the Market Overlooking Its Biggest Advantage?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:06:35.718418-03:00"
+    },
+    {
+      "title": "What Makes Cerebras Systems (CBRS) a Bullish Bet?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:06:38.342321-03:00"
+    },
+    {
+      "title": "Only 64 movies have ever hit $1 billion at the box office — here they all are",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:06:41.374062-03:00"
     }
   ]
 }
