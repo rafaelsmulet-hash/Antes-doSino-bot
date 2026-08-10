@@ -10,32 +10,53 @@
   "total_divergencias": 43,
   "divergencias": [
     {
-      "title": "Wheat Hits Highest This Month on Supply Disruptions in Black Sea",
+      "title": "Meiji Yasuda Life Watching Policy Surrenders as Rates Rise",
       "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Markets Await Key Economic Data This Week",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "US CPI and Iran Conflict to Dictate the Market: 3-Minutes MLIV",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     },
     {
       "title": "Tegma compra 70% da Transcopa por R$99,4 mi",
       "source": "InfoMoney",
-      "score": 5.0,
-      "decisao_sugerida": "round",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Petróleo abre semana estável com expectativas reduzidas para reabertura do Estreito de Ormuz pelo Irã",
-      "source": "Money Times",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
+      "title": "Futuros de NY operam mistos com petróleo estável e foco na inflação",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Payrolls abaixo do esperado reduzem apostas em alta do Fed enquanto Ásia sobe e petróleo avança",
+      "title": "TD Cowen vê 25% de chance de Trump conseguir demitir Cook do Fed",
       "source": "Investing.com Brasil",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Deutsche Bank eleva Persimmon para compra após queda nas ações",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     },
     {
       "title": "Bank of America vê utilities de Indiana sob maior escrutínio sobre retornos",
@@ -45,28 +66,63 @@
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Quais ações o Morgan Stanley prefere com a expansão do crescimento de lucros?",
+      "title": "Por que as ações da Coca-Cola HBC estão caindo hoje?",
       "source": "Investing.com Brasil",
-      "score": 6.0,
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "William Blair aponta mercado de trabalho aquecido como positivo para ações do setor de recrutamento",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Havaianas quer sair de 25 milhões para 210 milhões de pares vendidos no exterior",
+      "title": "Por que a ação da Jowell Global dispara mais de 50% hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Para o Fed de St. Louis, AI não garante inflação menor, e o Fed precisa apertar",
+      "source": "Brazil Journal",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Os planos da Ecopetrol para a Brava e para o Brasil",
+      "source": "Brazil Journal",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Focus, China e Estreito de Ormuz: o que move os mercados",
       "source": "Exame",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "These analysts say Elon Musk’s ambitious AI plans for SpaceX should be taken seriously, thanks to Microsoft",
-      "source": "MarketWatch",
+      "title": "Tokens, temperatura e contexto: os termos que todo profissional deveria entender sobre IA",
+      "source": "Exame",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Wall Street’s biggest bank just raised its expectations for the stock market",
+      "title": "Havaianas quer sair de 25 milhões para 210 milhões de pares vendidos no exterior",
+      "source": "Exame",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "These analysts say Elon Musk’s ambitious AI plans for SpaceX should be taken seriously, thanks to Microsoft",
       "source": "MarketWatch",
       "score": null,
       "decisao_sugerida": "discard",
@@ -80,74 +136,18 @@
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "These technology stocks face the heaviest short bets",
+      "title": "Cathie Wood loads up SpaceX, AI infra names, continues trimming Roblox, Palantir",
       "source": "Seeking Alpha",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Samsung HBM4 yield surges to 80%, ahead of year-end target: report",
-      "source": "Seeking Alpha",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Burry says Berkshire is no longer an ‘attractive investment’ as Abel deploys cash",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Robinhood to launch crypto trading in the UK this week",
-      "source": "Seeking Alpha",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "I've Been Writing About Procter & Gamble Stock for Years. Here's Why My Conviction Has Never Been Higher.",
-      "source": "Nasdaq",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Warren Buffett's Successor, Greg Abel, Just Bought $4.5 Billion of the Oracle of Omaha's Favorite Stock (No, Not Alphabet!)",
-      "source": "Nasdaq",
+      "title": "Slower AI payoff could put hyperscaler cash flows and stocks at risk, Slok says",
+      "source": "Seeking Alpha",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Micron Trades at 6 Times Next Year's Earnings. The $38 Billion of Capacity That Ends This Cycle Doesn't Open Until 2028.",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "If a Stock Market Crash Is Coming, History Says Investors Who Do This Will Turn a Big Profit",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "European Shares Mixed Amid Hormuz Reopening Uncertainty",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Microchip's Data Center Revenue Grew 98% Last Quarter. Here's Why It's Guiding to $1 Billion for the Year.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
     }
   ]
 }
