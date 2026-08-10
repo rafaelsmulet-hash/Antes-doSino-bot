@@ -15,6 +15,10 @@
       Produtos
       <textarea name="structures" rows="3" placeholder="Ex: Collar USD 12/2026, Trava de alta IBOV...">{{ form.structures if form.structures else (client['structures'] if client else '') }}</textarea>
     </label>
+    <label>
+      Próximo follow-up (o que tratar)
+      <textarea name="followup" rows="2" placeholder="Ex: propor rolagem da estrutura que vence em setembro">{{ form.followup if form.followup else (client['followup'] if client else '') }}</textarea>
+    </label>
     {% if not client %}
       <label>
         Data do último contato

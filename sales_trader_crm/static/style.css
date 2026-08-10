@@ -93,6 +93,12 @@ table.clients-table {
   text-transform: uppercase;
 }
 
+.followup-preview {
+  margin-top: 3px;
+  color: var(--accent);
+  font-size: 0.82rem;
+}
+
 .form label {
   display: block;
   margin-bottom: 14px;

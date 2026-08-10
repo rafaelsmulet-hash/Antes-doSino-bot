@@ -40,7 +40,10 @@
         <tr>
           <td><span class="status-dot status-{{ c.status }}"></span></td>
           <td>{{ c.codigo or '—' }}</td>
-          <td><a href="{{ url_for('client_detail', client_id=c.id) }}">{{ c.name }}</a></td>
+          <td>
+            <a href="{{ url_for('client_detail', client_id=c.id) }}">{{ c.name }}</a>
+            {% if c.followup %}<div class="followup-preview">→ {{ c.followup }}</div>{% endif %}
+          </td>
           <td>{{ (c.structures[:40] + '…') if c.structures and c.structures|length > 40 else (c.structures or '—') }}</td>
           <td>{{ c.last_contact_date or '—' }}</td>
           <td>{{ c.days_since if c.days_since is not none else '—' }}</td>

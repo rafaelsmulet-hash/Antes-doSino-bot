@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS clients (
     codigo TEXT NOT NULL DEFAULT '',
     name TEXT NOT NULL,
     structures TEXT NOT NULL DEFAULT '',
+    followup TEXT NOT NULL DEFAULT '',
     notes TEXT NOT NULL DEFAULT '',
     created_at TEXT NOT NULL
 );
@@ -46,6 +47,8 @@ def init_db():
         columns = {row["name"] for row in conn.execute("PRAGMA table_info(clients)")}
         if "codigo" not in columns:
             conn.execute("ALTER TABLE clients ADD COLUMN codigo TEXT NOT NULL DEFAULT ''")
+        if "followup" not in columns:
+            conn.execute("ALTER TABLE clients ADD COLUMN followup TEXT NOT NULL DEFAULT ''")
 
 
 def today_str():

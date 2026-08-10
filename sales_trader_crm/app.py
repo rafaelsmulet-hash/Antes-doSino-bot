@@ -57,6 +57,7 @@ def new_client():
         codigo = request.form.get("codigo", "").strip()
         name = request.form["name"].strip()
         structures = request.form.get("structures", "").strip()
+        followup = request.form.get("followup", "").strip()
         notes = request.form.get("notes", "").strip()
         last_contact_date = request.form.get("last_contact_date") or today_str()
         if not name:
@@ -65,8 +66,8 @@ def new_client():
 
         with get_conn() as conn:
             cur = conn.execute(
-                "INSERT INTO clients (codigo, name, structures, notes, created_at) VALUES (?, ?, ?, ?, ?)",
-                (codigo, name, structures, notes, today_str()),
+                "INSERT INTO clients (codigo, name, structures, followup, notes, created_at) VALUES (?, ?, ?, ?, ?, ?)",
+                (codigo, name, structures, followup, notes, today_str()),
             )
             client_id = cur.lastrowid
             conn.execute(
@@ -131,6 +132,7 @@ def edit_client(client_id):
         codigo = request.form.get("codigo", "").strip()
         name = request.form["name"].strip()
         structures = request.form.get("structures", "").strip()
+        followup = request.form.get("followup", "").strip()
         notes = request.form.get("notes", "").strip()
         if not name:
             flash("Nome é obrigatório.")
@@ -138,8 +140,8 @@ def edit_client(client_id):
 
         with get_conn() as conn:
             conn.execute(
-                "UPDATE clients SET codigo = ?, name = ?, structures = ?, notes = ? WHERE id = ?",
-                (codigo, name, structures, notes, client_id),
+                "UPDATE clients SET codigo = ?, name = ?, structures = ?, followup = ?, notes = ? WHERE id = ?",
+                (codigo, name, structures, followup, notes, client_id),
             )
         return redirect(url_for("client_detail", client_id=client_id))
 
