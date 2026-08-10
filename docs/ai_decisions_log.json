@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Após apagão em São Paulo, alunos criam projeto para tornar escola autossuficiente em energia solar",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:05:54.645367-03:00"
-    },
-    {
-      "title": "Hawaiian Electric GAAP EPS of $0.71, revenue of $939.7M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A divulgação de resultados financeiros é relevante para o mercado, pois fornece informações sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:05:58.139616-03:00"
-    },
-    {
-      "title": "GE Vernova Holds an $176 Billion Backlog, Yet Wall Street Is Selling: What Investors Should Know.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T18:06:04.093288-03:00"
-    },
-    {
-      "title": "Taxas dos DIs fecham em baixa após dados fracos de emprego nos EUA",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Dados de emprego fracos contrariam expectativas e afetam mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:11:07.723138-03:00"
-    },
-    {
-      "title": "Açúcar bruto atinge maior cotação em 10 meses devido à redução da oferta",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "aumento da cotação do açúcar bruto devido à redução da oferta e expectativas de déficit na temporada 2026/27",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:11:11.724398-03:00"
-    },
-    {
-      "title": "Avalon GAAP EPS of $0.23, revenue of $20.9M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque fornece informações financeiras atualizadas da Avalon, que podem influenciar as decisões de investimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:11:17.002982-03:00"
-    },
-    {
-      "title": "Star Holdings GAAP EPS of $3.43",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:11:19.653172-03:00"
-    },
-    {
-      "title": "AbCellera rises as it will release phase 2 results of menopause asset",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T18:11:22.383800-03:00"
-    },
-    {
-      "title": "Syntholene upsizes private placement to C$2.3M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:11:25.078307-03:00"
-    },
-    {
-      "title": "Kimbell outlines more acquisitions after $360M in deals as Q2 distribution rises 15% to $0.47",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:11:27.772511-03:00"
-    },
-    {
-      "title": "Expion360 GAAP EPS of -$1.34, revenue of $2.03M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T18:11:30.450113-03:00"
-    },
-    {
       "title": "Entera Bio GAAP EPS of -$0.14 misses by $0.06",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T08:56:13.541472-03:00"
+    },
+    {
+      "title": "Bowman Consulting to be taken private by Bernhard for $43/share",
+      "source": "Seeking Alpha",
+      "score": 8.0,
+      "motivo": "A notícia é relevante porque a oferta de compra pode aumentar o preço das ações da empresa e ser benéfica para os acionistas.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:00:48.395521-03:00"
+    },
+    {
+      "title": "Kalshi will use Nasdaq market surveillance technology in new partnership - report",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A parceria pode impulsionar a confiança e a transparência no mercado de opções especiais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:00:51.579572-03:00"
+    },
+    {
+      "title": "Intel plans $15B equity offering amid AI-driven demand opportunities",
+      "source": "Seeking Alpha",
+      "score": 8.0,
+      "motivo": "A oferta de ações é um sinal de confiança da Intel em suas perspectivas de crescimento na área de inteligência artificial.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:00:57.985721-03:00"
+    },
+    {
+      "title": "Embraer tem receita recorde de R$ 11,3 bilhões no 2º trimestre de 2026 e entrega 65 aviões",
+      "source": "G1 Economia",
+      "score": 8.0,
+      "motivo": "Receita recorde e entrega de 65 aviões, além de carteira de pedidos de US$ 34,5 bilhões, o maior valor já registrado pela companhia.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:01:11.746125-03:00"
+    },
+    {
+      "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips",
+      "source": "TechCrunch",
+      "score": 5.0,
+      "motivo": "A empresa está investindo em tecnologia de ponta para melhorar a eficiência dos chips.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:01:16.613395-03:00"
+    },
+    {
+      "title": "Google Play adds Venmo as a payment option",
+      "source": "TechCrunch",
+      "score": 5.0,
+      "motivo": "Aumento de gastos em aplicativos e jogos é um sinal positivo para a indústria de tecnologia e jogos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:01:19.437152-03:00"
+    },
+    {
+      "title": "FNZ names Stephen Welch group chair",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não tem impacto imediato ou significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:01:22.506135-03:00"
+    },
+    {
+      "title": "Rio Tinto (RIO)’s 43% Earnings Surge: Sustainable Growth or Commodity Mirage?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O aumento significativo nos lucros da Rio Tinto pode ter um impacto positivo no mercado de ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:01:25.364909-03:00"
+    },
+    {
+      "title": "S&P 500 Companies' Second-Quarter Profit Boomed — What's Next?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "Aumento significativo dos lucros das empresas da S&P 500, indicando uma boa saúde econômica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:01:28.165008-03:00"
+    },
+    {
+      "title": "Market Digest: NVO, BKNG, NFG, PH, REG, HCA, CLF, SNDK, APP",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "As empresas listadas são relevantes para o mercado financeiro e o resumo pode influenciar a tomada de decisão de investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:01:31.009101-03:00"
+    },
+    {
+      "title": "Rockefeller expands in Ohio with Jones Wealth Partners team",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aquisição de uma equipe de gestão de fortunas pode aumentar a capacidade de investimento e a presença da Rockefeller no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:01:33.841652-03:00"
     }
   ]
 }
