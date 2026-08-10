@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fleury (FLRY3) e Marcopolo (POMO4) são os destaques da semana; veja o que movimentou o Ibovespa",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "queda do Ibovespa em 3,08% e pressão dos balanços corporativos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T08:35:41.077727-03:00"
-    },
-    {
-      "title": "Here’s why Wendy’s is losing the burger wars",
-      "source": "MarketWatch",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para a empresa, mas não é um evento de grande impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:35:44.770924-03:00"
-    },
-    {
-      "title": "Stock Index Futures Gain With All Eyes on Key U.S. Jobs Report",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "O relatório de emprego dos EUA é um evento importante que pode afetar o mercado de ações.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:40:52.711393-03:00"
-    },
-    {
-      "title": "After a trip to see my parents, my family moved across the country to live with them. My dad's recent diagnosis made me grateful we did.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:40:55.827695-03:00"
-    },
-    {
-      "title": "How much protein do you need? Nutrition experts say there's a sweet spot",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:40:58.669992-03:00"
-    },
-    {
-      "title": "Situational Awareness hedge fund meltdown was a warning shot for leveraged markets, BofA CEO says",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "O colapso do hedge fund pode influenciar a confiança dos investidores em mercados com risco elevado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T08:45:40.015670-03:00"
-    },
-    {
       "title": "Ventos de 109 km/h atingem SP; veja como fica o tempo para o fim de semana",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T11:46:48.133127-03:00"
+    },
+    {
+      "title": "Dólar hoje avança com exterior e dados de inflação no radar",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "dados fracos do mercado de trabalho podem influenciar a inflação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:50:45.732723-03:00"
+    },
+    {
+      "title": "PF faz buscas no Iprev de Maceió por aplicações de R$ 97 milhões no Banco Master",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "investigação não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:50:48.521727-03:00"
+    },
+    {
+      "title": "Antes de virarem clássicos, estes tênis da Nike quase deram errado",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "a noticia e sobre produtos da Nike, nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:50:53.756046-03:00"
+    },
+    {
+      "title": "Russia speeds up Starlink-like satellite network, Ukraine says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:50:56.825564-03:00"
+    },
+    {
+      "title": "OIT alerta que El Niño ameaça emprego de trabalhadores na América Latina",
+      "source": "UOL Economia",
+      "score": 2.0,
+      "motivo": "A noticia se refere a um fenomeno climatico e nao a um evento financeiro direto",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:51:06.496349-03:00"
+    },
+    {
+      "title": "3 key details about what Mark Zuckerberg's vision of the AI future would look like for you",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:51:12.638341-03:00"
     }
   ]
 }
