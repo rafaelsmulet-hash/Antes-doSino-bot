@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "What led to Salad and Go’s downfall",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é sobre a falência de uma empresa de delivery, o que não é relevante para o mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:16:17.318223-03:00"
-    },
-    {
-      "title": "US Sues Kahn on Hedge Fund Collapse, Indicts Executive",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia é sobre um processo criminal e não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:20:54.864161-03:00"
-    },
-    {
-      "title": "UBS BB: Índice de inadimplência do Desenrola 2.0 é elevado, mas bem abaixo do limite",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "índice de inadimplência é elevado, mas dentro do limite",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T16:20:58.565596-03:00"
-    },
-    {
-      "title": "Cotado para 'X-Men', Wagner Moura fala de rumores para atuar como 'Sr. Sinistro'",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:21:03.693418-03:00"
-    },
-    {
-      "title": "Para a IA “não dar branco”, fabricante sul-coreana investe US$ 38 bilhões em memória",
-      "source": "Neofeed",
-      "score": 8.0,
-      "motivo": "Investimento significativo na expansão da produção de chips, que pode impulsionar a demanda por memória e afetar os preços das ações da SK Hynix e da indústria de tecnologia em geral.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T16:21:19.348278-03:00"
-    },
-    {
-      "title": "Strategy's Michael Saylor Is Making a Strong Case Against a Proposed New Bitcoin Upgrade. Here's What That Means for Bitcoin.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:21:22.209710-03:00"
-    },
-    {
-      "title": "No gás, Petrobras é “atravessadora”, diz diretor da ANP. “Não somos ONG,” diz Magda",
-      "source": "Brazil Journal",
-      "score": 6.0,
-      "motivo": "Proposta da ANP visa reduzir o poder de mercado da Petrobras na indústria de gás natural",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T16:25:50.306500-03:00"
-    },
-    {
       "title": "Redução de corridas faz receita da Fórmula 1 encolher no 1º semestre",
       "source": "Exame",
       "score": 2.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T07:42:17.128557-03:00"
+    },
+    {
+      "title": "Lavvi (LAVV3) aprova recompra de até 7,4 milhões de ações",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Aprovou recompra de ações, o que é um sinal positivo para o mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:45:38.314931-03:00"
+    },
+    {
+      "title": "Índia - Ações fecharam o pregão em alta e o Índice Nifty 50 avançou 0,05%",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Aumento do Índice Nifty 50 indica positividade no mercado indiano",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:45:42.586423-03:00"
+    },
+    {
+      "title": "O que é o Muse Glimmer, o modelo de IA de código aberto da Meta",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:45:46.004070-03:00"
+    },
+    {
+      "title": "Mark Zuckerberg takes on the AI doomers in 6,500-word essay",
+      "source": "MarketWatch",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre um evento específico do mercado, mas sim uma opinião do CEO de uma empresa de tecnologia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:45:48.979240-03:00"
+    },
+    {
+      "title": "Morning Bid: Fed's Cook grilled again",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A pergunta visa entender a postura da Fed em relação à inflação e à economia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:45:59.793465-03:00"
+    },
+    {
+      "title": "The Part of the AI Power Story Everyone's Ignoring -- and the Stock Cashing in on It",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca o investimento da Meta em inteligência artificial, o que é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:46:03.109122-03:00"
+    },
+    {
+      "title": "HELOC and home equity loan rates today, Monday, August 10, 2026: A 19-basis-point differential",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta mudanças significativas nas taxas.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:46:06.241797-03:00"
     }
   ]
 }
