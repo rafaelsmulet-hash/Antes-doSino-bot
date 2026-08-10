@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Palantir (PLTR) Posted Record 93% Growth, Here’s Why Analysts Think It Won’t Last",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O crescimento foi considerado alto e os analistas têm dúvidas sobre sua sustentabilidade.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:21:38.660734-03:00"
-    },
-    {
-      "title": "Tufão atinge costa da China e pode ampliar atrasos na exportação global",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia pode afetar a logística e os fretes, o que pode pressionar os preços de commodities como soja, minério e petróleo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:25:43.689611-03:00"
-    },
-    {
-      "title": "O que geração Z tem para ensinar sobre o mercado de luxo",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A noticia se refere a tendencias de consumo e nao a eventos financeiros especificos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:25:46.627938-03:00"
-    },
-    {
-      "title": "Flores venenosas escondem compostos que podem dar origem a novos medicamentos",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:25:49.441784-03:00"
-    },
-    {
-      "title": "He Bought a Rental House With His IRA and Fixed the Plumbing Himself. The Free Labor Put the Entire Account at Risk.",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro em geral, mas pode ter implicações para o investidor individual.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:26:03.959792-03:00"
-    },
-    {
-      "title": "Puerto Rico Rations Water as Drought Deepens",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento de grande impacto imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:30:57.939997-03:00"
-    },
-    {
-      "title": "Polícia registrou 783 mil atendimentos especializados à mulher no Brasil em 2025",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:31:01.553869-03:00"
-    },
-    {
-      "title": "I got two email invitations from friends. Is this a phishing scam — or am I suddenly popular?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:36:15.470150-03:00"
-    },
-    {
-      "title": "‘Her bank accounts were stripped bare by Medicaid’: My late friend had $20,000 in credit-card debt. Will her life insurance pay for it?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:36:18.471451-03:00"
-    },
-    {
-      "title": "Hamilton Beach Brands Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa apresentou resultados financeiros positivos, o que é um sinal de saúde para a empresa e pode influenciar a decisão de investir.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:36:31.162140-03:00"
-    },
-    {
-      "title": "How to Use Year-End Gifting to Reduce Your Taxable Estate Before 2026 Ends",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para a economia e impostos, mas não tem impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:40:55.460326-03:00"
-    },
-    {
-      "title": "3 Artificial Intelligence (AI) Stocks to Load Up On in August",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia menciona uma ação específica com um catalisador importante, o que pode ter impacto no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T09:40:58.335535-03:00"
-    },
-    {
-      "title": "Should You Stop Saving for Retirement?",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:41:01.140378-03:00"
-    },
-    {
-      "title": "SpaceX vs. Meta Platforms: Which Will Reach the $2 Trillion Club First?",
-      "source": "Nasdaq",
-      "score": 1.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro em si, mas sim a comparação de crescimento entre duas empresas.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:41:03.996570-03:00"
-    },
-    {
-      "title": "1 Popular Cryptocurrency Cathie Wood's Ark Invest Sees Surging 1,823%",
-      "source": "Nasdaq",
-      "score": 8.0,
-      "motivo": "Previsão de preço de longo prazo para o Bitcoin",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:41:06.857969-03:00"
-    },
-    {
-      "title": "Warren Buffett Recently Called the Stock Market &quot;A Church With a Casino Attached.&quot; Is He Right?",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A opinião de Warren Buffett é relevante para o mercado de ações, pois ele é um investidor respeitado e sua opinião pode influenciar a percepção dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T09:41:09.806213-03:00"
-    },
-    {
-      "title": "Fugitivos das telas: por que cada vez mais pessoas pagam para ficar offline",
-      "source": "G1 Economia",
-      "score": 2.0,
-      "motivo": "a noticia e sobre tendencias de consumo e comportamento, mas nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:41:16.631009-03:00"
-    },
-    {
       "title": "The Real Cost of Retiring in Las Vegas on Social Security and a Small Pension",
       "source": "Yahoo Finance",
       "score": 0.0,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T17:01:53.465959-03:00"
+    },
+    {
+      "title": "Odds the Fed will hike in September tumble following big July jobs miss",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "A notícia afeta diretamente a política monetária do Fed e sua possibilidade de aumentar juros em setembro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:05:43.016801-03:00"
+    },
+    {
+      "title": "Dólar interrompe sequência de perdas e sobe a R$ 5,11 à espera de IPCA e ata do Copom",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "O dólar sobe após interromper sequência de perdas, o que pode ser positivo para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:05:48.326159-03:00"
+    },
+    {
+      "title": "BRKM5: Credores da Braskem pressionam Petrobras por aporte antes de 24 de agosto",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A noticia sugere que a Petrobras pode precisar de um aporte financeiro, o que pode afetar negativamente a sua capacidade de investir em suas operações, impactando negativamente o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:05:51.628293-03:00"
+    },
+    {
+      "title": "Caiado sugere que Arminio Fraga pode ser seu ministro da Fazenda",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:05:54.652770-03:00"
+    },
+    {
+      "title": "Good news for stock-market bulls: Corporate earnings growth is no longer being driven just by tech",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:05:57.572240-03:00"
+    },
+    {
+      "title": "Broadcom slips after seven-session advance",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:06:00.285769-03:00"
+    },
+    {
+      "title": "Cleveland Fed's Hammack expects that more than one rate hike will be needed",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:06:03.033145-03:00"
+    },
+    {
+      "title": "Nayax reaffirms 2026 guidance of $510M-$520M revenue while revising free cash flow conversion to 5%-10%",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:06:05.765930-03:00"
+    },
+    {
+      "title": "Empresa Distribuidora y Comercializadora Norte reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:06:08.456384-03:00"
+    },
+    {
+      "title": "Power Solutions rises as Freedom Broker raises to Buy after strong Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:06:11.657148-03:00"
+    },
+    {
+      "title": "YouTube dobra exigência de horas de exibição para novos criadores começarem a ganhar dinheiro com vídeos na plataforma",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:06:19.918925-03:00"
+    },
+    {
+      "title": "Dólar sobe a R$ 5,11, e Bolsa cai com alta do petróleo e projeção de juros",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:06:23.315735-03:00"
+    },
+    {
+      "title": "Tech industry is buzzing after a Claude agent hacked into a gym",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:06:27.843831-03:00"
+    },
+    {
+      "title": "Why Your Condo Association Might Be Raising Your Dues Soon",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:06:30.639874-03:00"
+    },
+    {
+      "title": "TriplePoint Venture Growth BDC Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:06:33.321318-03:00"
+    },
+    {
+      "title": "'Very little to like': Wall Street assesses surprise July jobs report as stocks jump",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:06:36.039275-03:00"
+    },
+    {
+      "title": "SEC Charges Private Fund Adviser Adit Ventures Management, Its CEO and Affiliated General Partners in Alleged Fraud",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:06:39.769452-03:00"
     }
   ]
 }
