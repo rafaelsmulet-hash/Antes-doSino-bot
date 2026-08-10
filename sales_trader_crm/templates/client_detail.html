@@ -1,13 +1,46 @@
 {% extends "base.html" %}
 {% block title %}{{ client['name'] }}{% endblock %}
 {% block content %}
-  <h1>{{ client['name'] }}</h1>
+  <h1><span class="status-dot status-{{ status.status }}"></span>{{ client['name'] }}</h1>
 
   <section class="card">
+    <p>
+      <strong>Último contato:</strong> {{ status.last_contact_date or "nunca registrado" }}
+      {% if status.days_since is not none %}
+        — {{ status.days_since }} dia(s) atrás, {{ status.days_remaining }} dia(s) restantes até o limite de 60
+      {% endif %}
+    </p>
     <h2>Estruturas ativas</h2>
     <p class="pre">{{ client['structures'] or "—" }}</p>
     <h2>Observações</h2>
     <p class="pre">{{ client['notes'] or "—" }}</p>
+  </section>
+
+  <section class="card">
+    <h2>Registrar contato</h2>
+    <form method="post" action="{{ url_for('add_contact', client_id=client['id']) }}" class="form">
+      <label>
+        Data
+        <input type="date" name="contact_date" value="{{ today }}" required>
+      </label>
+      <label>
+        Nota
+        <input type="text" name="note" placeholder="Ex: follow-up de estrutura, papo de mercado...">
+      </label>
+      <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Histórico de contatos</h2>
+    {% for h in history %}
+      <div class="history-item">
+        <div class="history-date">{{ h['contact_date'] }}</div>
+        <div>{{ h['note'] or "—" }}</div>
+      </div>
+    {% else %}
+      <p>Nenhum contato registrado ainda.</p>
+    {% endfor %}
   </section>
 
   <div class="actions">
