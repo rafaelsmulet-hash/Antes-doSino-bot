@@ -1,195 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Want to Become a Stock Market Millionaire? History Says This Investment Can Get You There.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é mais uma promoção de investimento e não traz informações concretas sobre o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:15:55.348362-03:00"
-    },
-    {
-      "title": "Micron Has Surged 207% This Year. Brace for a Steep Pullback.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque menciona um aumento significativo nas receitas da Micron, mas o alerta para um possível recuo pode afetar o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T15:15:58.340954-03:00"
-    },
-    {
-      "title": "Opinion: The Best AI Memory Stock to Buy Isn't Micron or Sandisk -- It's This Korean Giant",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia destaca a importância das soluções de memória de computador para a inteligência artificial, o que pode ter um impacto significativo no mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:16:01.242607-03:00"
-    },
-    {
-      "title": "Libertadores entra na fase decisiva com prêmio recorde e cinco brasileiros na briga",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:20:57.419076-03:00"
-    },
-    {
-      "title": "Bank of America spots new curveball for Magnificent Seven stocks",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente as ações de empresas de alta qualidade, o que pode ter um impacto significativo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T15:21:10.556982-03:00"
-    },
-    {
-      "title": "Ford’s (F) $28,350 Electric Pickup Bet Meets A Cheap Stock",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O investimento da Ford em um caminhão elétrico é relevante para o mercado pois pode influenciar a percepção da empresa como líder em tecnologia de veículos elétricos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:21:13.478010-03:00"
-    },
-    {
-      "title": "Flávio publica carta no Dia dos Pais após Moraes negar visita a Bolsonaro",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:25:42.366515-03:00"
-    },
-    {
-      "title": "B3 lança índice Small Cap Smart Rebal B3",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "Lançamento de um novo índice de ações pode influenciar a demanda por ações de empresas de menor valor de mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:25:46.576086-03:00"
-    },
-    {
-      "title": "UnitedHealth (UNH) Commits $4M to Tennessee Health Hub Expansion",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "Investimento em saúde, setor relevante para a empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:26:00.717121-03:00"
-    },
-    {
-      "title": "Pentágono pressiona indústria a ampliar produção de armamentos; estoques estão baixos",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política e defesa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:40:46.204971-03:00"
-    },
-    {
-      "title": "O retorno do protagonista: como o ouro voltou a dominar a trama das finanças globais",
-      "source": "Seu Dinheiro",
-      "score": 5.0,
-      "motivo": "Ouro acumulou um avanço significativo em cinco dias.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T15:41:00.359254-03:00"
-    },
-    {
-      "title": "IREN (IREN) vs. CORZ and APLD: Can Its AI Cloud Buildout Turn Contracted Demand Into Profits?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a estratégia de expansão da IREN, que pode ter impacto positivo nos resultados financeiros da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:41:05.703546-03:00"
-    },
-    {
-      "title": "Marvell (MRVL) vs. AVGO and NVDA: Can AI Interconnect Growth Deliver the Earnings Its Premium Valuation Demands?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia aborda a competitividade e o potencial de crescimento das empresas de tecnologia, o que é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T15:41:08.733186-03:00"
-    },
-    {
-      "title": "Max Miller stays in Ohio House race as GOP ballot deadline passes",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:41:12.268191-03:00"
-    },
-    {
-      "title": "Nunes Marques, do TSE diz que desacreditar as urnas é desconvidar o eleitor",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:50:51.264258-03:00"
-    },
-    {
-      "title": "Por que Jannik Sinner está fora do Masters 1000 de Cincinnati",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia sobre esporte e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:50:56.320118-03:00"
-    },
-    {
-      "title": "TotalPass premia empresas e expõe desafio de transformar bem-estar em estratégia",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre prêmio e bem-estar.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:50:59.151038-03:00"
-    },
-    {
-      "title": "Goldman Sachs’ Pasquariello sees bull market continuing despite post-Labor Day risks",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A opinião de um economista de uma instituição financeira importante sobre o mercado em alta.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T15:55:49.695254-03:00"
-    },
-    {
-      "title": "A volta por cima dos irmãos Batista: como donos da JBS saíram da Lava Jato e voltaram aos holofotes, com participação até na diplomacia mundial",
-      "source": "G1 Economia",
-      "score": 6.0,
-      "motivo": "a notícia aborda a história da JBS e os irmãos Batista, mas também menciona escândalos e problemas ambientais da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T15:55:57.509789-03:00"
-    },
-    {
-      "title": "Bahia x Vasco: Onde assistir ao Brasileirão?",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:00:58.107666-03:00"
-    },
-    {
-      "title": "Estado de SP tem alerta para risco de temporais e incêndios em vegetação",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T16:01:00.856088-03:00"
-    },
-    {
       "title": "5 grandes movimentos de analistas em IA: recuo nesta ação é uma \"oportunidade de compra ampliada\"",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17810,195 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T18:31:21.117651-03:00"
+    },
+    {
+      "title": "Chicago Taps Fitch Senior Director as New CFO Amid Rash of Exits",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "A nomeação de um novo CFO pode ser relevante para a gestão financeira da cidade",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:35:41.145410-03:00"
+    },
+    {
+      "title": "Polícia de SP indicia dois representantes do Goldman Sachs em caso Oncoclínicas",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "caso envolvendo Goldman Sachs não é relevante para o mercado financeiro em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:35:45.722496-03:00"
+    },
+    {
+      "title": "Por que as ações da Fermi America estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A ação está disparando devido a uma notícia positiva sobre o desempenho da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:35:50.531169-03:00"
+    },
+    {
+      "title": "México - Ações fecharam o pregão em queda e o Índice S&P/BMV IPC recuou 0,75%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:35:53.251245-03:00"
+    },
+    {
+      "title": "Ibovespa e dólar hoje: Ata do Copom e IPCA dominam agenda em meio a alta do Brent",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:35:55.990403-03:00"
+    },
+    {
+      "title": "Colômbia - Ações fecharam o pregão em alta e o Índice COLCAP avançou 0,94%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:35:58.708876-03:00"
+    },
+    {
+      "title": "Ações da Fermi America disparam 35% com contrato de locação de US$ 6,5 bi",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:01.428985-03:00"
+    },
+    {
+      "title": "Movida prevê salto no lucro do 3º trimestre",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:04.101222-03:00"
+    },
+    {
+      "title": "Rússia - Ações fecharam o pregão em alta e o Índice MOEX Russia Index avançou 0,48%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:06.842491-03:00"
+    },
+    {
+      "title": "Boeing recebe contrato de US$ 109 milhões para painéis de asa do F/A-18",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:36:09.557949-03:00"
+    },
+    {
+      "title": "Integra Resources Corp. Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:36:12.927333-03:00"
+    },
+    {
+      "title": "Peraso Q2 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:15.576318-03:00"
+    },
+    {
+      "title": "Taysha Gene Therapies Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:36:18.250620-03:00"
+    },
+    {
+      "title": "Franco-Nevada Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:20.907035-03:00"
+    },
+    {
+      "title": "Verde Clean Fuels GAAP EPS of -$0.04",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:23.571096-03:00"
+    },
+    {
+      "title": "Medexus Pharmaceuticals reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:26.235881-03:00"
+    },
+    {
+      "title": "i-80 Gold Non-GAAP EPS of -$0.05, revenue of $24.3M misses by $19.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:28.931634-03:00"
+    },
+    {
+      "title": "China pede para entrar em disputa do Brasil contra tarifaço dos EUA na OMC",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:36:36.865587-03:00"
+    },
+    {
+      "title": "Ranking dos melhores países para imigração por investimento tem queridinho brasileiro em 2026",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:36:40.157020-03:00"
+    },
+    {
+      "title": "A Once-in-a-Generation Stock Market Warning Just Appeared. Investors Might Not Like What's Coming Next.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:45.066663-03:00"
+    },
+    {
+      "title": "Dear Palo Alto Stock Fans, Mark Your Calendars for September 1",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:36:47.765692-03:00"
     }
   ]
 }
