@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Adobe vs. Arista Networks: Which Technology Stock Is a Better Buy in 2026?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a posição dominante do Adobe em software criativo e sua margem líquida alta, o que é relevante para investidores de ações de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:46:03.646481-03:00"
-    },
-    {
-      "title": "Japan Stock Market May Find Support On Monday.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia sugere que o mercado pode parar a perda, o que é um sinal positivo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T20:46:06.896301-03:00"
-    },
-    {
-      "title": "The Federal Reserve Just Released Its August Inflation Forecast, and It Could Put the FOMC on a Collision Course for Its September Meeting",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante pois trata de previsão de inflação, mas não é um evento inesperado ou impactante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:46:09.898579-03:00"
-    },
-    {
-      "title": "Why QXO, Inc. Fell Over 20% in July",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A queda da ação é provavelmente devido à reação negativa dos investidores à aquisição",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:46:12.762142-03:00"
-    },
-    {
-      "title": "Watch: 'Privileged Idiot' DSA Co-Chair Has Absolute Porridge For Brains",
-      "source": "ZeroHedge",
-      "score": 1.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro, mas é uma crítica política que pode afetar a percepção pública sobre a DSA e suas políticas.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:46:21.214706-03:00"
-    },
-    {
-      "title": "Don Lemon Seeks Dismissal Of Federal Charges Over Minnesota Church Protest",
-      "source": "ZeroHedge",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:46:24.351826-03:00"
-    },
-    {
       "title": "Em maio, indústria recua em 9 dos 15 locais pesquisados",
       "source": "IBGE",
       "score": 6.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T20:01:04.959608-03:00"
+    },
+    {
+      "title": "MGLU3: Por que o Magalu não sustentou a alta? Técnico aponta mais perdas à frente",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A notícia indica que a ação MGLU3 pode continuar a cair, o que é relevante para os traders que possuem a ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T20:05:37.935098-03:00"
+    },
+    {
+      "title": "GCT Semiconductor expects 2H 2026 5G chipset shipments to exceed 1H as it secures wafer capacity through Q1 2027",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa garante capacidade de produção até 2027, o que pode aumentar a confiança dos investidores em suas entregas futuras.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:05:41.666749-03:00"
+    },
+    {
+      "title": "Entravision expects ATS revenue to decrease sequentially in Q3 while targeting more than 100% year-over-year growth in Q3 and Q4",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa visa um crescimento significativo no ano, apesar de uma queda no trimestre atual.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:05:44.778469-03:00"
+    },
+    {
+      "title": "Trump Media targets closing TAE merger by end of 2026 while signing 10+ Truth API deals at $60k-$100k per month",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta a estratégia de negócios da Trump Media e pode ter impacto positivo no valor da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:05:47.871705-03:00"
+    },
+    {
+      "title": "HF Foods expects Searay deal to support 4.5% to 5%+ adjusted EBITDA margin target as Q2 revenue reaches $323.8M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque fornece informações sobre as expectativas financeiras da empresa e seu desempenho no 2º trimestre.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:05:51.300021-03:00"
+    },
+    {
+      "title": "SNME11 supera IFIX; fundo encerra pregão da segunda-feira em alta de 0,53%",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "O fundo SNME11 encerrou em alta, enquanto o IFIX recuou, indicando um desempenho positivo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T20:05:58.924131-03:00"
     }
   ]
 }
