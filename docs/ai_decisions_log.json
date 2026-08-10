@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dia dos Pais: 10 músicas para deixar sua homenagem ainda mais emocionante",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:51:33.931297-03:00"
-    },
-    {
-      "title": "Palmeiras x Internacional: veja horário e onde assistir ao jogo pelo Brasileirão",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e não sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:51:36.730012-03:00"
-    },
-    {
-      "title": "GPTs, Gems e Projects: qual solução faz mais sentido para centralizar o conhecimento da empresa",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "A noticia nao e sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:51:39.491045-03:00"
-    },
-    {
-      "title": "Santos x Athletico-PR: horário e onde assistir ao jogo do Brasileirão hoje",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há informações financeiras ou econômicas relevantes no texto",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:51:42.319976-03:00"
-    },
-    {
-      "title": "Jogos de hoje: horário e onde assistir aos duelos deste domingo, 9",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:51:45.055189-03:00"
-    },
-    {
-      "title": "Como transformar um PDF de centenas de páginas em um especialista usando ferramentas de IA",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:51:47.829863-03:00"
-    },
-    {
-      "title": "Cruzeiro x Mirassol: horário e onde assistir ao jogo do Brasileirão hoje",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:51:50.586908-03:00"
-    },
-    {
-      "title": "This Could Be the Most Easily Confused Social Security Spousal Benefit Rule -- and It Could Cost You",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:51:56.999280-03:00"
-    },
-    {
       "title": "All It Takes Is $10,000 in Each of These 3 Dividend Stocks for $1,700+ a Year in Passive Income",
       "source": "Nasdaq",
       "score": 5.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T15:22:10.737523-03:00"
+    },
+    {
+      "title": "Índice acionário europeu fica estável perto de máxima recorde, com Oriente Médio e dados econômicos no foco",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Índice acionário europeu estável, com foco em dados econômicos e cenário geopolítico",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:25:48.192614-03:00"
+    },
+    {
+      "title": "OPINIÃO. Por que o agro bombou e a indústria brasileira flopou",
+      "source": "Brazil Journal",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:25:51.667359-03:00"
+    },
+    {
+      "title": "GrowGeneration Q2 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:25:54.773796-03:00"
+    },
+    {
+      "title": "Greystone Housing Impact Q2 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:25:57.407895-03:00"
+    },
+    {
+      "title": "Elbit Systems Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:26:00.040208-03:00"
+    },
+    {
+      "title": "Monday 8/10 Insider Buying Report: BV, BRVE",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:26:04.048511-03:00"
+    },
+    {
+      "title": "Cathie Wood's ARK Bought $40 Million of Nvidia, Tesla, and SpaceX During Last Month's AI Sell-Off. Was She Right to Buy the Dip?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:26:06.783405-03:00"
+    },
+    {
+      "title": "Pfizer's Earnings Have Declined 58% This Year. Is a Dividend Cut Around the Corner?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:26:09.471172-03:00"
     }
   ]
 }
