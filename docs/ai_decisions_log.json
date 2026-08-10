@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Prediction for Tesla Stock in 3 Years: The Bear Case",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia discute a possibilidade de queda no valor da açõ da Tesla, o que pode afetar o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T07:21:01.465836-03:00"
-    },
-    {
-      "title": "Is Micron Stock Too Cheap to Ignore?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a volatilidade do mercado de chips de memória, o que pode ser relevante para investidores em ações como a Micron.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T07:21:04.369930-03:00"
-    },
-    {
-      "title": "Amazon's Stock Just Soared 15%. Here's Why Now Is Just the Beginning.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A noticia destaca um resultado positivo para a empresa, indicando que os investimentos estão dando certo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T07:21:07.241785-03:00"
-    },
-    {
-      "title": "The White House Continues to Promote the Strategic Bitcoin Reserve. Here's What It Means for Bitcoin.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia indica que a ARMA fornecerá uma base mais sólida para a Reserva Estratégica de Bitcoin, o que é positivo para o mercado de Bitcoin.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:21:10.123934-03:00"
-    },
-    {
-      "title": "Here's the 1 Habit That Has Helped Ordinary Investors Build Extraordinary Wealth in the Stock Market",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre hábitos de investimento",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:21:17.224862-03:00"
-    },
-    {
-      "title": "Best CD rates today, Friday, August 7, 2026: Up to 4.15% APY return available to boost savings",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os investidores que buscam taxas de juros altas para seus depósitos, mas não é um evento significativo para o mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:21:20.450145-03:00"
-    },
-    {
-      "title": "Here are three key takeaways from the disappointing July jobs report",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a economia dos EUA e pode influenciar as decisões de investimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T07:25:46.159856-03:00"
-    },
-    {
       "title": "Itaú (ITUB4) é a ação mais recomendada para ter na carteira em agosto, segundo 14 analistas; veja ranking",
       "source": "Money Times",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T11:26:18.847246-03:00"
+    },
+    {
+      "title": "Energy Veteran Peter Abdo to Lead UK’s Grain LNG From October",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta impacto direto sobre o mercado financeiro, mas é relevante para a indústria de energia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:30:50.500426-03:00"
+    },
+    {
+      "title": "Ataque ucraniano na Rússia deixa 13 mortos e 39 feridos",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:30:54.088808-03:00"
+    },
+    {
+      "title": "Flamengo ganha força na briga pelo Brasileirão após tropeço do Palmeiras",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia e sports e nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:30:58.934784-03:00"
+    },
+    {
+      "title": "No interior de SP, o 4º maior parque aquático do mundo fatura R$ 260 milhões e terá toboágua gigante",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:31:01.588364-03:00"
+    },
+    {
+      "title": "The stocks of these ‘toll takers’ could be the AI boom’s next big winners",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T11:31:04.450183-03:00"
+    },
+    {
+      "title": "Tenax plummets on phase 3 failure of pulmonary hypertension drug",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:31:07.115259-03:00"
+    },
+    {
+      "title": "Seagate Technology (STX) Could Keep Surging as Storage Prices Rise",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T11:31:17.437526-03:00"
     }
   ]
 }
