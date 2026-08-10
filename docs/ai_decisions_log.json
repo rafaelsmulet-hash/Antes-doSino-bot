@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wall Street avança com payroll fraco; Nasdaq salta 5% e tem melhor semana desde abril",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "Fed menos agressivo na política monetária devido a dados de payroll fracos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:25:56.048239-03:00"
-    },
-    {
-      "title": "South Korea Shares May Snap Losing Streak",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é sobre o desempenho do mercado de ações, mas não é um evento significativo ou inesperado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:26:03.704307-03:00"
-    },
-    {
-      "title": "Airbnb just found an unexpected way to make AI pay",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a inovação da Airbnb em treinamento de AI, o que pode trazer benefícios significativos para a empresa e o mercado de aluguel de imóveis.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:26:13.035262-03:00"
-    },
-    {
-      "title": "If I marry my girlfriend, 67, will she lose her Supplemental Security Income and divorced spouse benefits?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T20:35:42.773058-03:00"
-    },
-    {
       "title": "Why QXO, Inc. Fell Over 20% in July",
       "source": "Yahoo Finance",
       "score": 2.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T19:46:15.727900-03:00"
+    },
+    {
+      "title": "As Warsh and the Fed contemplate fewer meetings, markets brace for potential volatility ahead",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A Fed está considerando mudanças em sua frequência de reuniões, o que pode influenciar as expectativas de mercado e a volatilidade.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:50:35.247345-03:00"
+    },
+    {
+      "title": "P3 Health Partners forecasts $80M-$110M in 2026 adjusted EBITDA following Q2 settlements",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A previsão de EBITDA ajustado é relevante para o mercado pois indica uma melhora na performance financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:50:41.642108-03:00"
+    },
+    {
+      "title": "Itaúsa tem lucro recorrente de R$ 4,31 bilhões no 2º trimestre, alta de 7%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:50:48.937693-03:00"
+    },
+    {
+      "title": "Ocasio-Cortez hasn't 'ruled out' running for president or Senate in 2028",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:50:53.921765-03:00"
     }
   ]
 }
