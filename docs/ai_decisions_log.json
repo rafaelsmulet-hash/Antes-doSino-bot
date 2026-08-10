@@ -1,186 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Only 2 of These 5 Nuclear Stocks Sell Fuel Today. Here's What the Market Pays for the Other 3.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento significativo ou inesperado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:25:51.732125-03:00"
-    },
-    {
-      "title": "Medtronic vs. Intuitive Surgical: Which MedTech Stock Is the Better Buy Right Now?",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia menciona a lançamento de novos dispositivos que devem impactar positivamente os resultados financeiros da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:25:54.696144-03:00"
-    },
-    {
-      "title": "Irã e Omã estão próximos de acordo sobre controle do Estreito de Ormuz, diz ministro iraniano",
-      "source": "G1 Economia",
-      "score": 3.0,
-      "motivo": "A notícia trata de um acordo possível entre o Irã e o Omã sobre o controle do Estreito de Ormuz, mas não é diretamente relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:26:01.060414-03:00"
-    },
-    {
-      "title": "AMD just made bold move to challenge Nvidia",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "A notícia é relevante pois pode impactar a concorrência no mercado de GPUs e influenciar as ações da AMD e da Nvidia.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T19:26:11.898686-03:00"
-    },
-    {
-      "title": "Lula e Flávio Bolsonaro miram voto feminino em SP; presidente critica Faria Lima",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:30:46.304465-03:00"
-    },
-    {
-      "title": "O que seria necessário para as ações da Mercedes-Benz subirem?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A notícia discute ações da Mercedes-Benz, o que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:30:51.544794-03:00"
-    },
-    {
-      "title": "Warren Buffett Warned About the Dot-Com Bubble. Now, the Stock Market Is Flashing the Same Warning Signal.",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia relaciona a experiência passada de Warren Buffett com a bolha da internet e o atual sinal de alerta no mercado de ações, tornando-a relevante para os traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T19:31:06.187238-03:00"
-    },
-    {
-      "title": "Queda de helicóptero no RJ: o que se sabe sobre as vítimas e o acidente",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:36:33.276982-03:00"
-    },
-    {
-      "title": "Qorvo Insiders Keep Filing. But the Merger Is the Main Thing That Matters",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma transação de ações rotineira, sem impacto significativo no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:36:41.650814-03:00"
-    },
-    {
-      "title": "Why the Market Continues to Sleep on Micron's Growth Potential",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa apresenta resultados sólidos, o que pode indicar que o mercado está subestimando seu potencial de crescimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T19:45:53.096988-03:00"
-    },
-    {
-      "title": "Jeftovic: The \"Bitcoin Only\" Era Is Over...",
-      "source": "ZeroHedge",
-      "score": 8.0,
-      "motivo": "O problema de segurança em um cartão de cold storage pode ter um impacto significativo no mercado de criptomoedas, especialmente para os investidores que confiavam em self-custody.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T19:46:01.709464-03:00"
-    },
-    {
-      "title": "Another Sign Of The Times: 'F**k ICE'",
-      "source": "ZeroHedge",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:46:04.824766-03:00"
-    },
-    {
-      "title": "Ukrainian Drone With Huge Explosive Payload Hits Bulgaria Near Vital Gas Pipeline",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T19:46:07.482806-03:00"
-    },
-    {
-      "title": "Are target date funds aggressive enough to give Americans retirement savings that last their lifetimes?",
-      "source": "MarketWatch",
-      "score": 2.0,
-      "motivo": "A notícia não é específica sobre um evento ou decisão atualmente relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:50:39.198485-03:00"
-    },
-    {
-      "title": "Snap's CTO Sells Over 5 Million Shares for $28.2 Million. Here's a Deeper Look at the Transaction.",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A venda de ações do CTO não é um evento inesperado e não deve ter um impacto significativo no preço das ações da Snap.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T20:00:55.844550-03:00"
-    },
-    {
-      "title": "Taylor Swift remove música usada em vídeo pela equipe de Trump",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T20:05:40.373357-03:00"
-    },
-    {
-      "title": "Griffon's CEO Sold Into an Earnings Pop. Here's What Long-Term Investors Should Know",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A venda de ações do CEO após um bom resultado financeiro pode ser interpretada como uma sinalização de confiança no desempenho da empresa, mas também pode ser visto como um sinal de que o CEO está aproveitando o momento para vender.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T20:05:47.536133-03:00"
-    },
-    {
-      "title": "Snap's CTO Sells Over 5 Million Shares for $28.2 Million. Here's a Deeper Look at the Transaction.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Venda de grandes quantidades de ações da empresa pode afetar o preço do ativo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T20:05:52.482173-03:00"
-    },
-    {
-      "title": "Nvidia vs. Navitas Semiconductor: Here's What Their Revenue Trends Tell Investors About These Artificial Intelligence Companies",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia compara as tendências de receita das duas empresas, o que é relevante para os investidores que buscam informações sobre o desempenho financeiro delas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T20:15:49.514610-03:00"
-    },
-    {
-      "title": "A Griffon Insider Sold Into an Earnings Jump but Kept $80 Million in Stock. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações por um executivo de uma empresa não é um evento significativo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T20:15:52.647972-03:00"
-    },
-    {
       "title": "Oscar Health Q2 Earnings Call Highlights",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17819,186 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T14:41:17.308297-03:00"
+    },
+    {
+      "title": "Alckmin: em 60 dias de vigência do acordo Mercosul-UE, exportação para UE cresceu 4%",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:45:43.770256-03:00"
+    },
+    {
+      "title": "Ações da Andersen Group caem apesar do anúncio de seis aquisições",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:45:47.497547-03:00"
+    },
+    {
+      "title": "Ação da Replimune dispara após aprovação histórica da FDA e resultados trimestrais",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:45:50.148419-03:00"
+    },
+    {
+      "title": "Por que as ações da Verisk Analytics estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:45:52.894152-03:00"
+    },
+    {
+      "title": "Ações da Verisk caem após tribunal rejeitar rescisão de fusão de US$ 2,35 bi",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:45:55.542767-03:00"
+    },
+    {
+      "title": "Disney set to snap six straight sessions of gains",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:45:59.718093-03:00"
+    },
+    {
+      "title": "Amrize downgraded at RBC Capital as rising volumes lack margin growth",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:46:02.349248-03:00"
+    },
+    {
+      "title": "N-able outlines 2026 revenue of $539M-$542M while targeting ~30% adjusted EBITDA margin amid go-to-market transition",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:46:05.025314-03:00"
+    },
+    {
+      "title": "SHF Holdings reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:46:07.615917-03:00"
+    },
+    {
+      "title": "Conduent outlines $2.15B-$2.25B 2026 revenue guide following $234M transportation exit",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:46:10.253591-03:00"
+    },
+    {
+      "title": "Jade Biosciences, Inc. GAAP EPS of -$0.76",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:46:12.868739-03:00"
+    },
+    {
+      "title": "Swiss Market Ends On Firm Note",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:46:17.824442-03:00"
+    },
+    {
+      "title": "BlackSky Is Entering a New Growth Phase. Here's Why It Matters",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:46:20.447369-03:00"
+    },
+    {
+      "title": "CAVA Group's Next Earnings Report on Aug. 11 Could Send the Stock Soaring. Here's Why.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:46:23.097746-03:00"
+    },
+    {
+      "title": "Archer Aviation Is Under Pressure: Here Is What Investors Should Consider Now",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:46:25.748743-03:00"
+    },
+    {
+      "title": "SpaceX's First Lockup Expired Last Week. Why Didn't the Stock Crash?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:46:28.378079-03:00"
+    },
+    {
+      "title": "AI Data Centers Need Power Now. Can NuScale Deliver in Time?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:46:31.016305-03:00"
+    },
+    {
+      "title": "Datadog's CEO Sellls Over 127,000 Shares for $36.5 Million. Here's a Closer Look at the Transaction.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:46:33.683923-03:00"
+    },
+    {
+      "title": "Amazon Just Joined the $3 Trillion Club. Here's Why It Could Reach $5 Trillion by 2029.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:46:36.337253-03:00"
+    },
+    {
+      "title": "Bilionário brasileiro Eduardo Saverin se junta a Jeff Bezos em consórcio que negocia compra de 30% do Liverpool, diz site",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:46:41.027884-03:00"
     }
   ]
 }
