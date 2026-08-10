@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cresce a adesão à greve nas operações de minério de ferro da BHP na Austrália",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "greve em uma empresa de mineração não é relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:20:34.310425-03:00"
-    },
-    {
-      "title": "Between 60 and 63? Here's How You Can Maximize 401(k) Contributions With a New Rule.",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:20:42.906265-03:00"
-    },
-    {
-      "title": "What to Know When a Magnite Director Sells Into a 36% Growth Quarter",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações de um diretor não é um evento significativo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:20:45.825566-03:00"
-    },
-    {
-      "title": "Why Usana Health Sciences Stock Plummeted This Week",
-      "source": "Nasdaq",
-      "score": 8.0,
-      "motivo": "Resultados financeiros ruins da empresa impactam negativamente a ação.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T14:20:52.198886-03:00"
-    },
-    {
-      "title": "A Magnite Insider Kept $12 Million in Stock After Selling. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações por um executivo não é um evento de mercado significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:20:55.127895-03:00"
-    },
-    {
-      "title": "Rivian Is Worth $23 Billion With the R2 Just Ramping. Where Will the Stock Be in 3 Years?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois fornece informações sobre o valor de mercado da Rivian e a popularidade de seu modelo R2, o que pode influenciar a decisão de investir no mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:21:02.750944-03:00"
-    },
-    {
-      "title": "Beware of Bad Investing Advice on Your Socials -- Like These 3 Money Myths",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre eventos específicos de mercado, mas sim sobre conselhos de investimento geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:21:05.700397-03:00"
-    },
-    {
-      "title": "Destaques da semana: o que dizem os analistas de Wall Street",
-      "source": "Investing.com Brasil",
-      "score": 3.0,
-      "motivo": "noticia sobre opiniões de analistas de Wall Street, sem impacto imediato no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:25:58.849591-03:00"
-    },
-    {
-      "title": "Paulistas chegam cada vez mais tarde à paternidade; média está em 32 anos",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:30:39.717727-03:00"
-    },
-    {
-      "title": "JSL (JSLG3) divulga balanço nesta segunda; o que prévia já trouxe?",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A divulgação do balanço pode trazer informações sobre a reorganização dos negócios da JSL, o que pode ter impacto positivo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:30:42.665738-03:00"
-    },
-    {
-      "title": "Pentagon presses defense contractors to ramp up weapons production",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia sugere que o aumento da produção de armamentos pode ter um impacto positivo nas empresas de defesa e no setor de defesa em geral.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:35:38.261579-03:00"
-    },
-    {
-      "title": "Rio Grande do Sul contabiliza 2,6 mil desalojados após tempestades",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia se refere a desastres naturais e não a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:40:35.978512-03:00"
-    },
-    {
       "title": "SharkNinja CEO Mark Barrocas Sells Nearly 600,000 Shares Worth Over $100 Million. Here's a Deeper Look at the Transaction.",
       "source": "Yahoo Finance",
       "score": 2.0,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T18:16:58.905325-03:00"
+    },
+    {
+      "title": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A notícia sobre o aumento do lucro do Berkshire é relevante para o mercado pois indica a saúde financeira da empresa e pode influenciar as expectativas de investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:21:10.594810-03:00"
+    },
+    {
+      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A notícia indica uma queda na atividade fabril da China, o que pode ter impacto na economia global e nos mercados financeiros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:21:13.832563-03:00"
+    },
+    {
+      "title": "JBS tem prejuízo US$ 102 milhões no 2º trimestre, mas tem receita recorde",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:21:17.360674-03:00"
+    },
+    {
+      "title": "WEBTOON to take 60% stake in RI Games Holdings",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:21:24.959145-03:00"
+    },
+    {
+      "title": "Babcock & Wilcox surges as revenue, earnings crush estimates",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:21:27.657446-03:00"
+    },
+    {
+      "title": "AGT Food and Ingredients Inc. Non-GAAP EPS of C$0.12, revenue of C$634.2M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:21:30.363971-03:00"
+    },
+    {
+      "title": "Altius Minerals GAAP EPS of C$0.16, revenue of C$23.2M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:21:33.068316-03:00"
+    },
+    {
+      "title": "Lucro da Movida sobe 100% no 2º tri, e empresa aprova aumento de capital",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "Aumento de capital e alta de lucro indicam saúde financeira da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:21:43.525994-03:00"
+    },
+    {
+      "title": "Fim da escala 6×1 e autonomia do BC: Congresso trava pauta econômica à espera das urnas",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:21:49.590513-03:00"
+    },
+    {
+      "title": "JBS anuncia Wesley Batista Filho como novo CEO global e já mira o S&P 400",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:21:52.289046-03:00"
+    },
+    {
+      "title": "Google co-founder Sergey Brin has now spent $100 million to fight the billionaire tax",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:21:55.141408-03:00"
+    },
+    {
+      "title": "‘I’m going with you’: Shaq reveals why he picked 1 advisor over the rest, now he's worth $500M. Use the same tactic now",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:21:58.069430-03:00"
     }
   ]
 }
