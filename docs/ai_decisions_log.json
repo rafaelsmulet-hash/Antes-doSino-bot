@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "AI was meant to replace software developers. It's creating more instead.",
-      "source": "Business Insider",
-      "score": 5.0,
-      "motivo": "A notícia destaca a criação de empregos em vez de substituição, o que é positivo para o mercado de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:11:10.988419-03:00"
-    },
-    {
-      "title": "Abelardo De La Espriella, de direita, assume Presidência da Colômbia",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:15:38.471235-03:00"
-    },
-    {
-      "title": "B3 lança índice para medir desempenho de açőes de menor capitalizaçăo",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "lançamento de índice para medir desempenho de ações de menor capitalização pode atrair investidores e aumentar liquidez no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T21:15:49.180659-03:00"
-    },
-    {
-      "title": "Corn Holding Steady at Thursday’s Midday",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta um impacto significativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:15:54.014606-03:00"
-    },
-    {
-      "title": "PepsiCo Lags Coca-Cola as Domestic Sales Stumble",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia afeta diretamente as vendas de bebidas da PepsiCo no mercado doméstico.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:20:49.067295-03:00"
-    },
-    {
-      "title": "Optimum Communications, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa apresentou resultados financeiros melhorados, o que pode ser visto como positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:20:51.966282-03:00"
-    },
-    {
-      "title": "US Partly Resumes Operations in Mexico’s Avocado State Michoacan",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A retomada das operações pode ajudar a normalizar a exportação de abacate para os EUA, mas o impacto imediato é limitado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:25:45.549169-03:00"
-    },
-    {
-      "title": "Camping World (CWH) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para os investidores que seguem o Camping World, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:25:54.876975-03:00"
-    },
-    {
-      "title": "O'Reilly Automotive (ORLY) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A divulgação de resultados financeiros é relevante para a análise da empresa e pode influenciar as ações no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T21:25:58.123599-03:00"
-    },
-    {
-      "title": "Stepan (SCL) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre resultados de uma empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:26:01.029843-03:00"
-    },
-    {
-      "title": "Vertiv (VRT) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma transcrição de conferência de resultados de uma empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:26:03.854695-03:00"
-    },
-    {
       "title": "ADP (ADP) Q4 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": 0.0,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T10:11:36.730196-03:00"
+    },
+    {
+      "title": "Deputado dos EUA publica montagem de Lula preso como Nicolás Maduro",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia politica sem relevancia direta para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:15:59.672975-03:00"
+    },
+    {
+      "title": "Ibovespa tem leve alta com balanços e acordo em Ormuz no radar; 5 coisas para saber antes de investir hoje (10)",
+      "source": "Money Times",
+      "score": 3.0,
+      "motivo": "noticia sobre o mercado, mas sem informações concretas sobre movimentos de acoes ou eventos de mercado significativos",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:16:04.309826-03:00"
+    },
+    {
+      "title": "Freedom Holding GAAP EPS of $0.52, revenue of $732.5M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque apresenta números financeiros positivos da empresa, o que pode influenciar a confiança dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:16:07.680608-03:00"
+    },
+    {
+      "title": "Medical Properties Trust Q2 revenue beats on stronger-than-expected billed rent",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:16:10.300136-03:00"
+    },
+    {
+      "title": "CECO Environmental rises as orders nearly triple; Q2 earnings beat",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:16:12.918565-03:00"
+    },
+    {
+      "title": "Poder Economia",
+      "source": "Poder360",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:16:15.712354-03:00"
+    },
+    {
+      "title": "Unilever (UL) Looked Undervalued. Why Was It Sold?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:16:26.625742-03:00"
+    },
+    {
+      "title": "Zoetis (ZTS) Looked Like a Winner. What Went Wrong?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:16:29.233318-03:00"
+    },
+    {
+      "title": "UnionPay plans Pix link for Chinese payment apps in Brazil pilot",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:16:31.845594-03:00"
+    },
+    {
+      "title": "Memory chip supply crunch will last 2 more years, JPMorgan warns",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:16:34.457335-03:00"
+    },
+    {
+      "title": "Billionaire Mark Cuban Just Warned Nvidia's AI Financing Could \"Crumble\" the Market. Should Investors Be Worried?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:16:37.093935-03:00"
     }
   ]
 }
