@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lula admite baixa adesão ao Move Brasil e critica bancos por travas no crédito",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre política e crítica a bancos, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:15:48.594254-03:00"
-    },
-    {
-      "title": "Tenable (TENB) Widens Its AI Security Net Just As Profits Turn A Corner",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque a expansão da rede de segurança de inteligência artificial pode ter um impacto positivo nos lucros da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:16:00.725432-03:00"
-    },
-    {
-      "title": "Materion Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento nas receitas e lucros superou as expectativas dos analistas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:16:03.647508-03:00"
-    },
-    {
-      "title": "Rally do software europeu deixa próxima alta para investidores comprados",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Rally do software europeu sugere alta de ações de empresas do setor",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:25:52.729841-03:00"
-    },
-    {
-      "title": "Espanha e Itália endurecem fronteiras; entenda o impacto para turistas e trabalhadores",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A noticia nao e especifica e materialmente relevante pro mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:25:55.800648-03:00"
-    },
-    {
-      "title": "SA Asks: What's the outlook for Big Pharma M&A?",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A pergunta é relevante para o mercado, mas não traz informações novas ou concretas sobre o assunto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:35:53.829626-03:00"
-    },
-    {
-      "title": "Fed quer estimular inovação nos bancos, mas alerta para riscos da IA",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas o impacto é neutro, pois a Fed está apenas alertando para riscos e não anunciando mudanças significativas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T16:40:35.580033-03:00"
-    },
-    {
-      "title": "Is Dutch Bros a Buy After Crashing 19% in 1 Day?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A queda pode ser um ajuste temporário, permitindo que os investidores comprem a ação a um preço mais baixo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:40:47.673116-03:00"
-    },
-    {
-      "title": "OpenAI acquires presentation startup NextSlide",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T16:45:57.560979-03:00"
-    },
-    {
       "title": "Nokia’s (NOK) AI Network Bet Gets A Taiwan Proving Ground",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T14:02:47.245766-03:00"
+    },
+    {
+      "title": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "A suspensão de dividendos e aumento de capital são medidas significativas que afetam a valorização da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:06:06.743744-03:00"
+    },
+    {
+      "title": "Exclusivo: Color WOW, fenômeno da Geração Z e febre de Hollywood, chega ao Brasil",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:06:12.649950-03:00"
+    },
+    {
+      "title": "Cinco filmes e um bebê: por que 2026 é o ano de Anne Hathaway",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre celebridade",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:06:15.551054-03:00"
+    },
+    {
+      "title": "Midday Need to Know: Berkshire beats estimates, GameStop alters bids & more",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:06:23.349421-03:00"
+    },
+    {
+      "title": "Tonix outlines TNX-4800 Phase II with ~3,300 participants while scaling TONMYA to ~150 reps by September",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:06:26.045167-03:00"
+    },
+    {
+      "title": "GameStop CEO Weighs Dropping $56 Bln EBay Bid, May Pursue Partnership: Reports",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:06:30.126953-03:00"
+    },
+    {
+      "title": "Age 45-54? Here's the Average Retirement Savings for People Your Age",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:06:32.789075-03:00"
+    },
+    {
+      "title": "Why Sandisk Stock Is Climbing Higher Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:06:35.421940-03:00"
+    },
+    {
+      "title": "Small Business Forum’s Report to Congress Highlights Recommendations to Improve Capital-Raising Policy",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:06:44.451164-03:00"
     }
   ]
 }
