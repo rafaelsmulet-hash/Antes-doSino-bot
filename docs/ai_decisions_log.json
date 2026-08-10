@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "MRV vende último projeto legado da Resia por US$ 170 milhões",
-      "source": "Neofeed",
-      "score": 6.0,
-      "motivo": "venda de ativos da Resia pode afetar a MRV, mas não é um evento de mercado maior",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:46:25.372528-03:00"
-    },
-    {
-      "title": "The AI Trade Rotation: Money Is Moving Out of Chips and Into This",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A mudança de investimentos pode influenciar a demanda por tecnologias de IA e impactar o desempenho de empresas relacionadas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:46:28.659733-03:00"
-    },
-    {
-      "title": "JPMorgan's $1.5 Trillion Initiative to Finance U.S. Shipbuilding and Defense Could Be a Tailwind for Industrial and Defense Stocks",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A iniciativa pode atrair investimentos para setores industriais e de defesa, impactando positivamente as ações dessas empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:46:31.758597-03:00"
-    },
-    {
-      "title": "We wore shorts to the office. Our boss didn't.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:46:34.841205-03:00"
-    },
-    {
-      "title": "Próximo El Niño pode ser o mais devastador em 150 anos, diz físico da USP",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "a noticia se refere a um fenomeno climatico e nao a um evento financeiro direto",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:50:49.628320-03:00"
-    },
-    {
-      "title": "An Inflation Quadruple Whammy, Headlined by Trumpflation, Threatens to Crush the Stock Market",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "A inflação é um indicador importante para o mercado de ações e pode afetar negativamente as empresas e os investimentos.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:51:01.250594-03:00"
-    },
-    {
-      "title": "I work from home, and our family helps with childcare. We're still putting our daughter in part-time day care.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação com mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:51:04.348054-03:00"
-    },
-    {
-      "title": "Incêndios na Europa ameaçam animais e expõem limites no resgate da fauna",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:55:39.297181-03:00"
-    },
-    {
-      "title": "“Achavam que bike elétrica era maluquice”, dizem fundadores LEV, que fatura R$ 280 mi",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia é sobre a história de fundadores de uma empresa, mas não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T08:00:44.930372-03:00"
-    },
-    {
       "title": "A pequena área da Amazônia que pode esconder 40 mil espécies de insetos 'inéditos'",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T16:16:27.631043-03:00"
+    },
+    {
+      "title": "The July jobs numbers are due out Friday. Here's what to expect",
+      "source": "CNBC - Economy",
+      "score": 3.0,
+      "motivo": "A notícia é relevante por tratar de indicadores econômicos, mas o impacto é esperado e rotineiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:20:35.606683-03:00"
+    },
+    {
+      "title": "Haddad lança plano de segurança para SP com agência antifacção e IA no policiamento",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:20:39.015362-03:00"
+    },
+    {
+      "title": "Caiado cita Armínio Fraga como preferência ao Ministério da Fazenda",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Citação de Armínio Fraga, ex-presidente do BC, sugere estabilidade e continuidade no Ministério da Fazenda",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:20:41.998805-03:00"
+    },
+    {
+      "title": "A Louie ganha enfim uma loja física. E não é em qualquer lugar",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:20:46.683689-03:00"
+    },
+    {
+      "title": "Contratar sozinho é o primeiro erro: os 7 passos de RH que evitam turnover precoce",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:20:49.382947-03:00"
+    },
+    {
+      "title": "Microsoft’s stock is charging back. Here’s the case for it to rally another 30%.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T16:20:52.245396-03:00"
+    },
+    {
+      "title": "Ally Financial Chief Risk Officer Stephanie Richard Sells 5,000 Shares",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:20:58.512835-03:00"
+    },
+    {
+      "title": "Why Lucid Stock Jumped 10% in July",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:21:01.185105-03:00"
+    },
+    {
+      "title": "Can Palantir Reach $207 per Share to Claim a New All-Time High Before 2026 Is Over?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T16:21:03.883016-03:00"
     }
   ]
 }
