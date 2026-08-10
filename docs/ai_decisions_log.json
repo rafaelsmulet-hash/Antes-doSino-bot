@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Após 'Michael' superar US$ 1 bilhão nas bilheterias, Lionsgate revela planos para continuação",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre entretenimento e cinema",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:04.171520-03:00"
-    },
-    {
-      "title": "Carlyle Secured Lending anticipates SCP managing $6B-$7B and plans two additional CLOs in 2026",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A expectativa de crescimento do SCP e a intenção de lançar novos CLOs são relevantes para o mercado de crédito e investimentos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:07.668076-03:00"
-    },
-    {
-      "title": "Embecta forecasts $1.80-$1.90 FY2026 adjusted EPS while raising adjusted operating margin to 23.5%-24%",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa aumentou sua previsão de lucro ajustado e margem operacional ajustada, o que é considerado positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:10.690553-03:00"
-    },
-    {
-      "title": "Orion Properties narrows 2026 core FFO to $0.72-$0.77 while lowering net debt to EBITDA outlook to 6-6.8x",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:13.393063-03:00"
-    },
-    {
-      "title": "Trump Tariff Refunds Just Topped $100 Billion, and These Companies Are Receiving Some of the Largest Checks",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:17.456759-03:00"
-    },
-    {
-      "title": "Warren Buffett Set a Personal Goal to Give Away His Entire $140 Billion Berkshire Stake by 2034. Here's What That Means for Future Share Supply.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:59:20.206768-03:00"
-    },
-    {
-      "title": "Stock Market Today, Aug. 7: Space Exploration Technologies Surges on Q2 Revenue Beat, Lockup Relief, and Terafab Update",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:59:22.949086-03:00"
-    },
-    {
-      "title": "An AtriCure Director Sold $905,000 in Stock. Here's How to Read It",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:25.613745-03:00"
-    },
-    {
-      "title": "More Than Half of Cloudflare's Network Traffic Is No Longer Human. The Stock Broke to a Record on It.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:28.327014-03:00"
-    },
-    {
-      "title": "SpaceX Plans Natural Gas Power Plants For Texas Chip Factory",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:59:30.990333-03:00"
-    },
-    {
-      "title": "RWE Reaches $1.22 Bln Deal To Exit U.S. Offshore Wind Projects",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:59:33.646735-03:00"
-    },
-    {
-      "title": "Meta Ordered To Pay $567 Mln More In New Mexico Child Safety Case",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:59:36.313147-03:00"
-    },
-    {
-      "title": "Why Calumet Stock Flopped on Friday",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A queda da açõ foi significativa, mas a notícia não fornece detalhes sobre a causa da queda.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:39.441622-03:00"
-    },
-    {
-      "title": "TRXF11 lucra R$ 60 mi; fundo acelera expansão com aquisições no segmento logístico",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:47.165953-03:00"
-    },
-    {
-      "title": "OpenAI says it slowed Astra model development over security concerns",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:59:52.222409-03:00"
-    },
-    {
       "title": "SpaceX's need for power is a 'clear positive' for these companies",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T09:46:25.959283-03:00"
+    },
+    {
+      "title": "Por que as ações da GameStop estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ação da GameStop subindo devido a especulação de investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:50:50.378277-03:00"
+    },
+    {
+      "title": "IPO da Unitree Robotics tem demanda 5.526 vezes maior que a oferta no varejo",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "alta demanda pelo IPO da Unitree Robotics indica confiança no mercado e potencial de crescimento",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:50:56.856980-03:00"
+    },
+    {
+      "title": "Configuração das ações das 7 Magníficas é \"muito forte\", diz Bernstein",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a avaliação positiva das ações das 7 Magníficas pode influenciar os investimentos no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:50:59.655333-03:00"
+    },
+    {
+      "title": "Por que as ações da Hims & Hers Health estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:51:02.257556-03:00"
+    },
+    {
+      "title": "Por que os futuros de gás natural estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:51:04.860955-03:00"
+    },
+    {
+      "title": "Por que as ações da Embraer estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:51:07.459269-03:00"
+    },
+    {
+      "title": "Por que as ações da Barrick Mining estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:51:10.084019-03:00"
+    },
+    {
+      "title": "Por que as ações da California Resources estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:51:12.685060-03:00"
+    },
+    {
+      "title": "O RH precisa entender a diferença entre emoção e sentimento dos colaboradores",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:51:15.906604-03:00"
+    },
+    {
+      "title": "Griffon announces $800M private placement",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:51:18.743374-03:00"
+    },
+    {
+      "title": "Evercore’s FOMO Barometer says path to S&P 9,000 is still open",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:51:21.345153-03:00"
+    },
+    {
+      "title": "Stock futures slip as hopes for Hormuz reopening fade",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:51:23.937562-03:00"
+    },
+    {
+      "title": "US unveils $2bn boost for domestic mining initiatives",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:51:34.740163-03:00"
+    },
+    {
+      "title": "SpaceX Stock Jumps Again After Lock-Up Rally. When’s the Next Release, What to Expect.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:51:37.350478-03:00"
+    },
+    {
+      "title": "Your next job could be your last for a while. Use this database to make it count.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:51:40.135025-03:00"
     }
   ]
 }
