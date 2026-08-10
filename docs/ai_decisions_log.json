@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lula: anunciamos o menor desmatamento da década na Amazônia",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:10:50.310507-03:00"
-    },
-    {
-      "title": "Queridinha de João Fonseca, On abre segunda loja conceito em São Paulo",
-      "source": "Seu Dinheiro",
-      "score": 2.0,
-      "motivo": "abertura de nova loja não é um evento significativo para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:11:03.317772-03:00"
-    },
-    {
-      "title": "Festivais britânicos estão renascendo, com benefícios e planos de pagamento; entenda",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:15:49.232270-03:00"
-    },
-    {
-      "title": "Berkshire acelera recompra de ações e reduz reserva de caixa enquanto lucro supera previsões",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Berkshire aumenta a compra de ações e reduz reserva de caixa, indicando confiança no mercado e expectativa de crescimento",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:15:54.442236-03:00"
-    },
-    {
-      "title": "Flávio Bolsonaro: Estou mais do que preparado para assumir o comando do País",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:20:39.866392-03:00"
-    },
-    {
-      "title": "Trending stocks this week as SpaceX, Palantir earnings and jobs data drive markets",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "Resultados financeiros e dados de emprego podem influenciar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T14:20:46.292628-03:00"
-    },
-    {
-      "title": "Bloomberg This Weekend 8/08/2026",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:25:32.672946-03:00"
-    },
-    {
-      "title": "If I buy a house for $1 million in cash at 70, will I run out of money by 90?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:25:41.772295-03:00"
-    },
-    {
-      "title": "Nebius Is Worth 55 Times Its Revenue. What Does That Price Assume?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a relação entre o preço do Nebius e sua receita, o que pode ter implicações para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:25:49.740634-03:00"
-    },
-    {
-      "title": "What is a regional bank?",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é específica e relevante para o mercado financeiro atual.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T14:25:52.552890-03:00"
-    },
-    {
       "title": "How to open a checking account for a minor",
       "source": "Yahoo Finance",
       "score": 0.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T13:26:08.994805-03:00"
+    },
+    {
+      "title": "The Other Way to Reduce Government Debt",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia não menciona uma ação específica ou evento atual, mas sim uma estratégia de política econômica.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:30:44.293257-03:00"
+    },
+    {
+      "title": "Organigram Global Q3 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa está prestes a divulgar seus resultados financeiros, o que pode influenciar os preços das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:30:50.561064-03:00"
+    },
+    {
+      "title": "Rackspace Technology Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:30:53.646265-03:00"
+    },
+    {
+      "title": "Cardinal Health Q4 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:30:56.323594-03:00"
+    },
+    {
+      "title": "Weekly survey of mortgage lenders with the lowest rates: Lower rates and stiff fees",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:31:05.091742-03:00"
+    },
+    {
+      "title": "Intel Stock Drops After $15 Billion Share Sale. Is AI Spending Getting Too Expensive?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:31:07.776001-03:00"
+    },
+    {
+      "title": "US appeals court allows thousands of lawsuits against social media companies over user addiction claims to proceed",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:31:10.487638-03:00"
+    },
+    {
+      "title": "Energy Sector Rotation and Falling Oil Prices Pressure TotalEnergies SE (TTE)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:31:13.165376-03:00"
+    },
+    {
+      "title": "Meta (META) Unveils Muse Glimmer as Open-Source AI Spending Debate Intensifies",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:31:15.885070-03:00"
+    },
+    {
+      "title": "XRP Price Weakens as Crypto Market Awaits Clarity",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:31:18.536260-03:00"
     }
   ]
 }
