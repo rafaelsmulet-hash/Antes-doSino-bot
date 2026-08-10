@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "This Group of Seniors Could See a Nearly $200 Monthly Social Security Benefit Increase in 2027",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:31:20.750369-03:00"
-    },
-    {
-      "title": "BJ's Wholesale CEO Sells $7.3 Million Stock After Option Exercise",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A venda de ações do CEO não é um evento significativo para o mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:31:28.156380-03:00"
-    },
-    {
-      "title": "Warren Buffett is out, and Berkshire Hathaway is spending again",
-      "source": "Business Insider",
-      "score": 5.0,
-      "motivo": "A redução do estoque de dinheiro da Berkshire Hathaway pode indicar que a empresa está pronta para investir em novas oportunidades.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T15:31:31.499206-03:00"
-    },
-    {
-      "title": "I’m an unemployed software developer who is skeptical of AI. Can I still find a job in tech?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:35:35.701510-03:00"
-    },
-    {
-      "title": "Quatro morrem em queda de helicóptero na Vista Chinesa, no Rio",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "acidente não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:40:37.503284-03:00"
-    },
-    {
-      "title": "Airline Insider Hits Eject, Sells 40,460 Shares Valued at $3.8 Million",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "motivo": "A venda de ações por um executivo pode influenciar a percepção dos investidores sobre a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:46:02.709811-03:00"
-    },
-    {
-      "title": "Why SpaceX Stock Just Gained 15.8%",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o preço da ação da SpaceX.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T15:46:05.653476-03:00"
-    },
-    {
-      "title": "BJ's Wholesale CEO Sells $7.3 Million Stock After Option Exercise",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações do CEO não tem impacto direto no mercado, sendo uma açõ de rotina.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:46:08.790382-03:00"
-    },
-    {
-      "title": "Savers Value Village's CFO Cashed In Options Struck at $7.11. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A venda de opções do CFO pode ser um sinal de confiança na empresa e no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T15:46:11.762228-03:00"
-    },
-    {
       "title": "LegalZoom (LZ) Integrates Microsoft Copilot Amid Growth Shifts",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T13:51:02.972965-03:00"
+    },
+    {
+      "title": "Shopee avança em MG com projeto logístico de R$ 400 milhões",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "inversão significativa em infraestrutura logística pode impulsionar crescimento da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:55:39.813597-03:00"
+    },
+    {
+      "title": "Embraer (EMBR3) lucra R$ 1,1 bilhão e ação dispara 7%; ‘Compraria para meu filho para daqui a 10 anos’, diz sócio da GT Capital",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "Lucro líquido ajustado de R$ 1,1 bilhão e melhora nas projeções para 2026",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:55:50.660065-03:00"
+    },
+    {
+      "title": "No Rio Grande do Sul, Gabriel Souza tem um desafio que só Caiado entende",
+      "source": "Brazil Journal",
+      "score": 0.0,
+      "motivo": "noticia politica sem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:55:54.053733-03:00"
+    },
+    {
+      "title": "SpaceX Stock Has Plunged 34%. Elon Musk's &quot;Secret Master Plan&quot; Points to What Could Come Next.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:56:00.534510-03:00"
+    },
+    {
+      "title": "The Next Phase of Voice AI Is Here, and One Stock Stands to Benefit the Most",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:56:03.218438-03:00"
+    },
+    {
+      "title": "Netflix Is Down 42% From Its High. Here's Why I'm Buying More.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:56:06.157602-03:00"
+    },
+    {
+      "title": "Imperial Brands To Axe Thousands Of Jobs In US, Europe - Bloomberg Report",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:56:08.843302-03:00"
+    },
+    {
+      "title": "Intel anuncia oferta de US$ 15 bi de ações com IA no radar",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:56:14.018146-03:00"
+    },
+    {
+      "title": "Fleury (FLRY3) vê lucro saltar 46% no 2T26 e anuncia R$ 217,8 milhões em JCP",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:56:17.735480-03:00"
     }
   ]
 }
