@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Queridinha de João Fonseca, On abre segunda loja conceito em São Paulo",
-      "source": "Seu Dinheiro",
-      "score": 2.0,
-      "motivo": "abertura de loja não é um evento de mercado significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:56:18.427846-03:00"
-    },
-    {
-      "title": "A família por trás da carbonara mais famosa de Roma que resiste à expansão global",
-      "source": "Neofeed",
-      "score": 0.0,
-      "motivo": "não há informações financeiras ou econômicas relevantes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:56:23.524731-03:00"
-    },
-    {
-      "title": "US Weapons Crunch Raises Risks Beyond Iran",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A crise de armas pode impactar a capacidade dos EUA de fornecer suprimentos para aliados, como a Ucrânia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T10:00:51.537910-03:00"
-    },
-    {
-      "title": "O que seria necessário para as ações da Mercedes-Benz subirem?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A noticia discute a perspectiva de crescimento das acoes da Mercedes-Benz, o que e positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:00:56.760260-03:00"
-    },
-    {
-      "title": "Xícara cheia: seis novidades para quem gosta de café",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia sobre produto de consumo não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:00:59.896926-03:00"
-    },
-    {
-      "title": "Weg (WEGE3) e JHSF (JHSF3): Veja quem vai pagar dividendos na semana",
-      "source": "Suno Noticias",
-      "score": 6.0,
-      "motivo": "informação específica sobre pagamento de dividendos de empresas de mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T10:01:08.304763-03:00"
-    },
-    {
-      "title": "This former notorious red-light district is now one of the world’s top AI hubs",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:01:12.819606-03:00"
-    },
-    {
-      "title": "I've been a flight attendant for years. Here are the 5 mistakes I always see travelers make.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:01:15.960942-03:00"
-    },
-    {
-      "title": "Irã diz que conversas com Omã sobre Ormuz avançam, mas reabertura não está garantida",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre geopolitica não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:05:35.005080-03:00"
-    },
-    {
-      "title": "Reparar o DNA pode ser a chave para retardar o envelhecimento, dizem cientistas",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "Nenhuma relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:05:39.772325-03:00"
-    },
-    {
-      "title": "Como transformar relatórios e planilhas em apresentações com IA",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:05:42.638208-03:00"
-    },
-    {
-      "title": "Do transacional ao relacional: como a IA agêntica já reinventa o papel do gerente do banco",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A IA agêntica pode otimizar processos bancários, reduzindo custos e melhorando a eficiência, impactando positivamente as ações de bancos que adotarem essa tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T10:05:45.491286-03:00"
-    },
-    {
-      "title": "The number of stocks beating the S&P 500 is the highest in 4 years. Why that number should rise.",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A notícia indica que a maioria das ações está tendo desempenho positivo em relação ao índice S&P 500, o que pode ser um sinal de otimismo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T10:05:48.595574-03:00"
-    },
-    {
       "title": "Vertical Aerospace is said to near $100M capital raise amid flying-taxi push",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T17:11:23.119781-03:00"
+    },
+    {
+      "title": "Plano de segurança de Caiado quer polícia sul-americana e redução da maioridade penal",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:09.092327-03:00"
+    },
+    {
+      "title": "As lições de Joan Miró para uma era de excesso de imagens",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:11.952221-03:00"
+    },
+    {
+      "title": "PennantPark Non-GAAP NII of $0.26 misses by $0.01",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as expectativas de rendimentos da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:15.211248-03:00"
+    },
+    {
+      "title": "Playboy reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:17.848162-03:00"
+    },
+    {
+      "title": "American Public Education GAAP EPS of $0.52 beats by $0.16, revenue of $171.73M beats by $0.85M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:20.559234-03:00"
+    },
+    {
+      "title": "Bionano Genomics reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:23.211088-03:00"
+    },
+    {
+      "title": "PennantPark Investment reports Q3 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:25.859919-03:00"
+    },
+    {
+      "title": "Hallador Energy GAAP EPS of -$0.32, revenue of $101.5M beats by $11.46M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:28.550956-03:00"
+    },
+    {
+      "title": "SA analyst says oil surge and job losses create a potential stagflation threat",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:31.254945-03:00"
+    },
+    {
+      "title": "O segredo da Chanel: como marca se tornou a mais desejada do mundo pelo segundo trimestre seguido",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:39.093450-03:00"
+    },
+    {
+      "title": "Tronox Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:44.100384-03:00"
+    },
+    {
+      "title": "Trex Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:46.737824-03:00"
+    },
+    {
+      "title": "New cars just hit $52K and Social Security faces a 24% cut — 5 things to buy before you retire",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:16:49.457952-03:00"
     }
   ]
 }
