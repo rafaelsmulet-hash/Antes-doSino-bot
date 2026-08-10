@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Vanguard's VNQ vs. VNQI: Which Real Estate ETF Is the Better Buy?",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para investidores em ETFs de imóveis, mas não apresenta informações novas ou impactantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:31:09.269989-03:00"
-    },
-    {
-      "title": "Here's How Many Shares of PepsiCo You'd Need for $20,000 in Yearly Dividends",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a confiabilidade da PepsiCo em pagar dividendos, o que é positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:31:12.240821-03:00"
-    },
-    {
-      "title": "Rocket Lab Is Down 57% From Its Peak While Analysts See 49% Upside. Who Has It Right?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Previsão de aumento de preço-alvo para a ação da Rocket Lab.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:31:15.325991-03:00"
-    },
-    {
-      "title": "TechCrunch Mobility: Zoox prepares for launch and Uber’s AV empire",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a expansão da Uber em veículos autônomos, o que pode ter impacto positivo no mercado de tecnologia e transporte.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:31:25.078692-03:00"
-    },
-    {
-      "title": "AMD Tops Q2 Estimates, but Investors Still Hit the Sell Button. What's Next for AMD Stock.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas, mas os investidores ainda estão vendendo, indicando que a notícia não é suficientemente positiva para mudar a tendência atual.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:31:28.136243-03:00"
-    },
-    {
-      "title": "What a divided Fed means for investors",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia sugere que uma alta de juros está iminente, o que é relevante para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:35:41.902123-03:00"
-    },
-    {
-      "title": "Papa Leão renova apelo para que guerra na Ucrânia chegue ao fim",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:35:45.597297-03:00"
-    },
-    {
-      "title": "Por que Trump planeja investir US$ 1 bilhão na Colômbia?",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A noticia indica uma maior alinhamento entre a Colômbia e os EUA, o que pode atrair investimentos e melhorar a economia do país.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:35:50.386389-03:00"
-    },
-    {
-      "title": "Ele começou lavando pratos. Agora, seus filhos lideram rede de botecos de R$ 15 mi que leva seu nome",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A notícia destaca o sucesso de uma franquia de botecos, o que pode inspirar confiança nos investidores em empresas de serviços e franquias.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:35:53.242960-03:00"
-    },
-    {
-      "title": "China inflation cools more than expected as domestic demand stays weak",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia sobre a inflação na China pode influenciar a política monetária e as expectativas de crescimento econômico.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T13:35:56.517331-03:00"
-    },
-    {
-      "title": "Forget VFIAX: Vanguard Sells You the Same S&P 500 Fund Without the $3,000 Toll, or the $75 Fee Fidelity Charges to Buy It",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A Vanguard está se tornando mais competitiva no mercado de fundos indexados",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T13:36:06.658693-03:00"
-    },
-    {
-      "title": "Colúmbia Britânica declara emergência enquanto mais de 20 mil fogem de incêndios",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "incêndio em floresta não afeta diretamente o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:40:33.765975-03:00"
-    },
-    {
-      "title": "Ibovespa cai 1,73% com Petrobras (PETR4), varejo e bancos sob pressão",
-      "source": "Suno Noticias",
-      "score": 8.0,
-      "motivo": "queda do Ibovespa e pressão em setores como Petrobras, varejo e bancos",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:40:46.211256-03:00"
-    },
-    {
-      "title": "A Magnite Insider Cashed In Options as CTV Revenue Jumped 36%. Here's What to Know",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque apresenta um aumento na receita de TV por assinatura, o que pode ter um impacto positivo no mercado de ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:40:51.212955-03:00"
-    },
-    {
-      "title": "Here's How Saving $15 Per Day Could Create a Portfolio Worth $1 Million in 30 Years",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para investidores individuais, mas não tem impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:40:54.104834-03:00"
-    },
-    {
-      "title": "Mais trabalhadores aderem a greve em operações de minério de ferro da BHP na Austrália",
-      "source": "Investing.com Brasil",
-      "score": 2.0,
-      "motivo": "greve pode afetar produção e lucro da empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:51:02.109001-03:00"
-    },
-    {
-      "title": "Why Shopify Stock Could Be the Biggest Winner in Agentic AI Commerce",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a potencialidade da Shopify em um nicho de comércio em crescimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:51:10.210275-03:00"
-    },
-    {
       "title": "Magnite Bought Back $28 Million in Stock While Its Insiders Sold. Here's How to Read It",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T18:01:35.120759-03:00"
+    },
+    {
+      "title": "AI Stock Heavy ETF Risks Spread to Broader Equity Market",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia destaca o risco de contágio de perdas nas ações de inteligência artificial para o mercado de ações em geral, o que pode ter impacto significativo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:05:50.433782-03:00"
+    },
+    {
+      "title": "Gotham Greens CEO: Not Good To Have an Outbreak Like This",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de alimentos, mas não tem impacto direto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:05:53.540794-03:00"
+    },
+    {
+      "title": "ETFs Look Safer After Bitcoin Hack, Small Caps | ETF IQ 8/10/2026",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:05:56.228630-03:00"
+    },
+    {
+      "title": "Seguradoras arrecadam R$ 207 bi no 1º semestre, alta nominal de 0,5%, mostra Susep",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:05:59.739698-03:00"
+    },
+    {
+      "title": "Por que as ações da Hims & Hers Health estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ações caindo devido a perda de valor",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:18.887103-03:00"
+    },
+    {
+      "title": "Hugo Motta declara apoio à reeleição de Lula em 2026",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:21.986611-03:00"
+    },
+    {
+      "title": "Ealixir, Inc. reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:24.881326-03:00"
+    },
+    {
+      "title": "Alcon boosts full-year EPS, margin growth following Q2 beats",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:27.554127-03:00"
+    },
+    {
+      "title": "OppFi plunges as lower originations hit Q2 earnings, 2026 guidance disappoints",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:06:30.251689-03:00"
+    },
+    {
+      "title": "Microvast Holdings Non-GAAP EPS of $0.01, revenue of $87.26M misses by $7.14M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:32.942910-03:00"
+    },
+    {
+      "title": "Interpace Biosciences GAAP EPS of $0.01, revenue of $9.1M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:35.608551-03:00"
+    },
+    {
+      "title": "OpenAI buys $7B worth of shares back from employees: report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:38.277638-03:00"
+    },
+    {
+      "title": "TEN Holdings GAAP EPS of -$0.70, revenue of $0.73M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:40.936442-03:00"
+    },
+    {
+      "title": "Trump plan may make it harder to compare airfares and find the best price — but you can still sound off on the proposal",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:53.043431-03:00"
+    },
+    {
+      "title": "Should You Stop Saving for Retirement?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:06:55.684070-03:00"
+    },
+    {
+      "title": "TikTok is calling US staffers back to the office 5 days a week, starting next month",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:06:58.652389-03:00"
+    },
+    {
+      "title": "The US Army is going digital, but soldiers still want physical backups of their battlefield maps",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:07:01.373345-03:00"
     }
   ]
 }
