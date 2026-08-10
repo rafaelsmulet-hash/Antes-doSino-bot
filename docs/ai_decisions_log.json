@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "‘My wife and I are both retired’: Do we dip into our $2.3 million fund to pay off our $300,000 mortgage at 2.9%?",
-      "source": "MarketWatch",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta uma decisão financeira específica que afete o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T11:55:48.567920-03:00"
-    },
-    {
-      "title": "Pointed! Bloomberg's Weekly News Quiz For Risk-Takers",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:00:52.211131-03:00"
-    },
-    {
-      "title": "Senado frustra Trump e adia projeto que exige prova de cidadania para votar",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia politica sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:00:56.742717-03:00"
-    },
-    {
-      "title": "Depois de perder a cabeça por seis horas— by Pedro Vinicio",
-      "source": "Brazil Journal",
-      "score": 0.0,
-      "motivo": "Não há informações financeiras ou econômicas relevantes no texto",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:01:05.379088-03:00"
-    },
-    {
-      "title": "Nvidia eyeing up to $3B investment in Blackstone-backed power firm: The Information",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia sugere que a Nvidia está procurando expandir sua presença no setor de energia, o que pode ter impacto positivo em sua valorização.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T12:01:09.031136-03:00"
-    },
-    {
-      "title": "TCC deu origem a empresa que faturou R$ 80,5 milhões em 2025 com alimentos congelados",
-      "source": "Seu Dinheiro",
-      "score": 5.0,
-      "motivo": "A empresa alcançou um faturamento significativo e está planejando expansão, o que é um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T12:01:19.760217-03:00"
-    },
-    {
-      "title": "Google’s top hacker hunter explains why hacking groups get codenames",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não trata de um evento financeiro relevante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:01:25.006101-03:00"
-    },
-    {
       "title": "‘My head hit the driver’s window’: A teenager T-boned our car. Will Medicare pay my hospital bills?",
       "source": "MarketWatch",
       "score": 0.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T12:51:57.795127-03:00"
+    },
+    {
+      "title": "Investors Abandon Hedges in Order to Chase Soaring Stocks",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A queda na demanda por hedges indica que os investidores estão otimistas com o mercado e estão dispostos a assumir riscos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:55:56.932720-03:00"
+    },
+    {
+      "title": "Interligação de sistemas de pagamentos instantâneos pode diminuir tarifas, diz BC",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Possibilidade de redução de tarifas pode ser positiva para empresas e investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:56:00.229853-03:00"
+    },
+    {
+      "title": "Lincoln Electric upgraded at Morgan Stanley on improved growth outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque a Morgan Stanley é uma instituição financeira respeitada e sua avaliação pode influenciar o preço da ação da Lincoln Electric.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:56:05.967576-03:00"
+    },
+    {
+      "title": "Keel expects first fully commissioned Moses Lake data center in 2027 while targeting 96-megawatt Sherbrooke expansion",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:56:08.651406-03:00"
+    },
+    {
+      "title": "Fastly surges nearly 20%; CFO says reliance on CPUs supports strong gross margins",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:56:11.308032-03:00"
+    },
+    {
+      "title": "Edwards Asset raises S&P 500 target to 8,080 due to strong earnings",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:56:13.956606-03:00"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:56:27.309825-03:00"
     }
   ]
 }
