@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A Darden Executive Kept Just 742 Shares Directly After Selling. Here's What Investors Should Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma transação de ações, mas não há informações sobre o impacto financeiro ou o mercado em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T17:50:49.381339-03:00"
-    },
-    {
-      "title": "Rocket Lab Reports Monday Night. Wall Street Wants $232 Million and 60% Growth.",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque divulga a data de divulgação dos resultados financeiros da Rocket Lab, mas não contém informações sobre os resultados em si.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T17:50:52.450789-03:00"
-    },
-    {
-      "title": "Unpacking the Latest Pullback in Micron Stock",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "motivo": "A notícia expressa preocupação com a durabilidade do boom de investimentos em semicondutores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T17:50:55.554604-03:00"
-    },
-    {
-      "title": "Olive Garden's President Cashed In Options Struck at $124. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T17:50:58.543397-03:00"
-    },
-    {
-      "title": "Concurso 3042 da Mega-Sena: bolão acerta as seis dezenas e ganha R$ 164,9 milhões",
-      "source": "G1 Economia",
-      "score": 0.0,
-      "motivo": "noticia sobre sorteio de loteria",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T17:56:06.220688-03:00"
-    },
-    {
-      "title": "Core Scientific (CORZ) Shareholders Rejected a $9B Sale. Does the AMD Deal Vindicate Them?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque envolve uma empresa de tecnologia e um acordo significativo com a AMD, o que pode ter impacto no mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T17:56:12.654220-03:00"
-    },
-    {
-      "title": "I told my kids the TV was broken. Four months later, I'm still pretending.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T17:56:16.124403-03:00"
-    },
-    {
-      "title": "China Bets on AI Stocks as It Races Against US for Chip, Tech Dominance",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca uma mudança na estratégia da China, que pode ter impacto significativo no mercado de tecnologia e chips.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T18:01:12.077467-03:00"
-    },
-    {
-      "title": "Déficit da Alemanha com China sobe conforme país asiático reduz dependência europeia",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "alteração no comércio entre a Alemanha e a China, mas sem impacto imediato no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:01:15.353735-03:00"
-    },
-    {
       "title": "Pensando em trocar de celular? Seu smartphone pode ficar ainda mais caro",
       "source": "Exame",
       "score": 5.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T19:06:31.290534-03:00"
+    },
+    {
+      "title": "Nasdaq e S&P 500 fecham em baixa com Ormuz sem acordo e queda da Intel",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "queda da Intel e desempenho negativo da Nvidia impactam o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:10:47.049802-03:00"
+    },
+    {
+      "title": "Beyoncé assume controle total de marca de uísque após LVMH vender participação",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre uma parceria de uma celebridade e uma empresa de luxo, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:10:50.331214-03:00"
+    },
+    {
+      "title": "Erupção do Etna fecha espaço aéreo de Catânia, na Itália; voos são cancelados",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "a noticia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:10:53.391294-03:00"
+    },
+    {
+      "title": "EagleRock to buy Permian Basin's Intrepid Ranch in $78M deal",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:10:58.851446-03:00"
+    },
+    {
+      "title": "Natura tem queda de 82% no lucro e revisa projeções para 2026",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:11:05.177027-03:00"
+    },
+    {
+      "title": "Wide-Moat Stocks Are the Sedative Your Tech-Dominated Portfolio Desperately Needs",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:11:09.687984-03:00"
+    },
+    {
+      "title": "Advanced Micro Devices Dips on Lower FCF, But Short Put Plays Attract Value Investors",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:11:12.403041-03:00"
+    },
+    {
+      "title": "Johnson & Johnson Has Increased Its Dividend for 64 Consecutive Years. Here's How Much $10,000 Invested in the Dividend King Pays Annually.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:11:15.177406-03:00"
+    },
+    {
+      "title": "We Need More Tom Sellecks, Less Mark Ruffalos",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:11:18.546597-03:00"
     }
   ]
 }
