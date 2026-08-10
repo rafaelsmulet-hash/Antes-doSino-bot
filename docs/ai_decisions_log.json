@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "‘My head hit the driver’s window’: A teenager T-boned our car. Will Medicare pay my hospital bills?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:05:57.849096-03:00"
-    },
-    {
-      "title": "When I moved to Paris 9 years ago, I shouldn't have worried so much about dressing 'wrong' and knowing French",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:06:09.640741-03:00"
-    },
-    {
-      "title": "O novo acessório da moda contra o calor recorde na Europa",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:10:51.466616-03:00"
-    },
-    {
-      "title": "Insider trades: Microsoft, Meta, Pfizer among notable names",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado agora, apenas uma atualização sobre negócios internos de executivos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:10:54.491958-03:00"
-    },
-    {
-      "title": "Private Credit Squeezed By Bank Refinancings: Credit Weekly",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Mudança no comportamento das empresas endividadas afeta o mercado de crédito privado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T12:15:59.255022-03:00"
-    },
-    {
-      "title": "Next big push in ETF industry? Why these risk assets are gaining traction as interest rate uncertainty persists",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca um potencial desenvolvimento relevante para a indústria de ETF, o que pode ter impacto concreto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T12:16:02.317523-03:00"
-    },
-    {
-      "title": "What Sent Sandisk Shares Tumbling Nearly 20% Last Month",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "Perda de valor significativa de mais de 1 trilhão de dólares no setor de semicondutores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T12:16:09.189117-03:00"
-    },
-    {
-      "title": "Advance Auto Parts vs. Ford Motor: Which Automotive Stock Is a Better Buy in 2026?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca ações de estabilização de uma empresa de autopeças, o que pode afetar positivamente o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T12:16:12.399646-03:00"
-    },
-    {
-      "title": "Is Micron Still a Buy as the Global Memory Race Accelerates?",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia destaca investimentos significativos da Micron em infraestrutura de memória, o que pode ter impacto concreto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T12:16:15.415528-03:00"
-    },
-    {
       "title": "Is AMD Stock a Buy on the Dip as AI Revenue Surges?",
       "source": "Nasdaq",
       "score": 5.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T12:56:27.309825-03:00"
+    },
+    {
+      "title": "Record Sales of Catastrophe Bonds Driven by Wildfires",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia destaca a relevância do mercado de títulos de catástrofe para o setor de seguros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:01:00.605153-03:00"
+    },
+    {
+      "title": "SEC Exempts Data-Center Bonds From Key Securitization Rules",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A medida pode estimular a venda de dívidas de centros de dados, que são importantes para empresas de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:01:03.755079-03:00"
+    },
+    {
+      "title": "PL mantém apoio a Roscoe ao governo de MG mesmo após Republicanos confirmar Cleitinho",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:01:07.269122-03:00"
+    },
+    {
+      "title": "TPG Mortgage Investment to acquire Cherry Hill Mortgage",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:01:27.525582-03:00"
+    },
+    {
+      "title": "Discovered Materials is playing AI whack-a-mole to hunt cooler chips",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:01:38.334409-03:00"
+    },
+    {
+      "title": "Pro-Dex Inc (PDEX) Positioned to Strengthen with Zimmer’s mBos Robot Commercialization",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:01:41.182251-03:00"
+    },
+    {
+      "title": "Analyst Warns Alphabet (GOOG) Faces Two Major AI Problems; SpaceX (SPCX) a Better AI Bet?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T13:01:43.900251-03:00"
+    },
+    {
+      "title": "Perma Fix Environmental Services’ (PESI) Strong Backlog Overshadows Weak Results",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "O grande estoque de trabalho da empresa é um indicador de demanda futura, mas os resultados fracos são um sinal de desempenho atual.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:01:46.981875-03:00"
+    },
+    {
+      "title": "Why CPI Card Group Stock Keeps Going Up",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T13:01:49.649906-03:00"
     }
   ]
 }
