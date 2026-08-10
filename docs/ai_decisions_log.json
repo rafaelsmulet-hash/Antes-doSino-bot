@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Zelenskyy Makes Debut Trip to Serbia as Russian Influence Wanes",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:55:38.088180-03:00"
-    },
-    {
-      "title": "Burnham’s Fiscal ‘Flexibility’ Could Backfire, Officials Fear",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia pode influenciar a confiança dos investidores e afetar os mercados financeiros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T06:55:41.050050-03:00"
-    },
-    {
-      "title": "WuXi AppTec Gets Temporary Reprieve of Chinese Military Label",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A decisão pode afetar a reputação e as relações comerciais da empresa com os EUA.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:55:43.920631-03:00"
-    },
-    {
-      "title": "War Brings Winter of Discontent for the World’s Workhorse Fuel",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A escassez de diesel pode afetar negativamente a economia e a atividade comercial.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:55:46.855735-03:00"
-    },
-    {
-      "title": "Situational Awareness’s Mystery Investment Was to Source Foundry",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "O investimento é relevante porque pode indicar um interesse da Situational Awareness em tecnologia e inovação, o que pode ter impacto positivo no mercado de ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T06:55:49.801030-03:00"
-    },
-    {
       "title": "Union Workers Strike at BHP’s Port Hedland Iron Ore Export Hub",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T10:36:41.728896-03:00"
+    },
+    {
+      "title": "Barrick Mining Corporation declares $0.175 dividend",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A declaração de dividendos é um sinal de saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:40:46.380267-03:00"
+    },
+    {
+      "title": "Stingray Group Inc. declares $0.085 dividend",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "Declaração de dividendos é um sinal de saúde financeira da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:40:49.296046-03:00"
+    },
+    {
+      "title": "This ‘adversarial’ pattern can prevent surveillance cameras from detecting you",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:40:57.644647-03:00"
+    },
+    {
+      "title": "Apple tests CXMT Chinese memory chips for iPhones, MacBooks",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:41:00.335981-03:00"
+    },
+    {
+      "title": "TNR Gold says Los Azules copper project advances toward final investment decision",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:41:02.980358-03:00"
     }
   ]
 }
