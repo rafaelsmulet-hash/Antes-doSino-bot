@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "This Spider-Man Is 'Deeper,' Say Sony's Rothman",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:25:46.680302-03:00"
-    },
-    {
-      "title": "Fed Governor Cook says she's 'prepared to act' on rate hike to address inflation",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A notícia indica que a Fed está preparada para aumentar as taxas de juros, o que pode ter um impacto significativo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:25:49.736232-03:00"
-    },
-    {
-      "title": "Earnings dominate Nasdaq; Palantir leads after blockbuster Q2",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:25:59.669161-03:00"
-    },
-    {
-      "title": "SA Analyst: Potential Nasdaq breakout ahead as tech rally broadens",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:26:02.342593-03:00"
-    },
-    {
-      "title": "3 things to look out for on Monday",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:26:04.975070-03:00"
-    },
-    {
-      "title": "UE cobra Meta e TikTok por combate à desinformação após aumento de migrantes em Ceuta",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:26:13.947544-03:00"
-    },
-    {
-      "title": "Jamie Dimon personally contacts US CEOs as companies speed up AI adoption",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:26:20.316944-03:00"
-    },
-    {
-      "title": "How to pay zero taxes on Social Security — and it’s got nothing to do with Trump’s promises. Take 5 simple steps now",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:26:23.056681-03:00"
-    },
-    {
-      "title": "US Army Wants to Let Companies Test Weapons Faster",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:31:01.301058-03:00"
-    },
-    {
-      "title": "Markets Rally on Weak Jobs Report | Closing Bell",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "Relatório de emprego fraco é visto como positivo para os mercados, pois reduz a probabilidade de aumento de juros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:31:04.304443-03:00"
-    },
-    {
-      "title": "Wall Street Risk Complex Surges Anew Amid Deluge of Fresh Cash",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T17:31:06.981230-03:00"
-    },
-    {
-      "title": "Dia da Cerveja: veja onde comemorar a data em São Paulo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:31:13.082031-03:00"
-    },
-    {
-      "title": "FIGS expects ~20% 2026 revenue growth while raising operating margin outlook to ~10.8%",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:31:15.899331-03:00"
-    },
-    {
-      "title": "Concentra targets $2.325B-$2.375B 2026 revenue and $485M-$495M adjusted EBITDA as CEO transition set for November 1",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:31:18.612724-03:00"
-    },
-    {
       "title": "Treace medical outlines 2026 revenue of $204M-$212M as new product launches broaden foot and ankle reach",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T08:31:26.783277-03:00"
+    },
+    {
+      "title": "Trump’s Low-Key Pivot Leaves Hormuz Oil in Limbo",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A incerteza sobre a situação do petróleo pode afetar os preços e a demanda no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:35:47.628688-03:00"
+    },
+    {
+      "title": "Copper Holds $14,000 as Weaker US Rate Outlook Boosts Metals",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A perspectiva de taxa de juros mais baixa pode impulsionar a demanda por metais, incluindo o cobre.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:35:50.887710-03:00"
+    },
+    {
+      "title": "Boletim Focus reduz projeções de inflação e PIB para 2026",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "redução de projeções de inflação e PIB pode afetar investimentos e expectativas de mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:35:55.566249-03:00"
+    },
+    {
+      "title": "Focus: IPCA de 2026 cai para 5,02%, na sexta queda consecutiva",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "queda consecutiva no IPCA é um sinal positivo para a economia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:36:02.410324-03:00"
+    },
+    {
+      "title": "BTIG thinks the GTA 6 lift for Take-Two Interactive is not factored in yet",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre um evento atual ou iminente, mas sim uma análise de mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:36:05.835537-03:00"
+    },
+    {
+      "title": "South Africa, Taiwan, South Korea lead markets in August",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Os mercados desses países tiveram taxas de retorno significativas em agosto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:36:08.719160-03:00"
+    },
+    {
+      "title": "Cloudflare plans $2.175B convertible notes offering",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A oferta de notas conversíveis pode ser um sinal de que a empresa está pronta para investir em seu crescimento e pode ter um impacto positivo no preço das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:36:11.648527-03:00"
+    },
+    {
+      "title": "Analistas do mercado baixam pela 6ª semana seguida expectativa de inflação em 2026",
+      "source": "G1 Economia",
+      "score": 8.0,
+      "motivo": "Corte de expectativa de inflação e previsão de mais um corte de juros neste ano",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:36:22.405787-03:00"
+    },
+    {
+      "title": "Mercado reduz projeção de inflação e prevê mais um corte da Selic neste ano",
+      "source": "UOL Economia",
+      "score": 8.0,
+      "motivo": "Redução da projeção de inflação e expectativa de corte da taxa básica de juros",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:36:30.378525-03:00"
+    },
+    {
+      "title": "TechCrunch Mobility: Zoox prepares for launch and Uber’s AV empire",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:36:36.652266-03:00"
+    },
+    {
+      "title": "Schroders gets Irish nod for tokenised money market fund",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica que a Schroders está expandindo suas opções de investimento em produtos de mercado de dinheiro tokenizados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:36:39.759450-03:00"
+    },
+    {
+      "title": "Ceva Tops Q2 Targets On Edge AI Tech Licensing",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas do 2º trimestre, o que é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:36:42.700792-03:00"
+    },
+    {
+      "title": "S&P 500 hits record high as Iran nuclear deal stalls",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta a confiança dos investidores e pode influenciar as decisões de investimento no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:36:45.731175-03:00"
+    },
+    {
+      "title": "India's TCS flags alleged exposure of some employee data, says customer data not impacted",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas pode afetar a reputação da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:36:48.760582-03:00"
     }
   ]
 }
