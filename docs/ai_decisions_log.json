@@ -1,231 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Reddit CEO Steve Huffman Sells 18,000 Shares for $2.9 Million",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A venda de ações do CEO não é um evento significativo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:06:11.112101-03:00"
-    },
-    {
-      "title": "ANPD dá prazo ao Discord para prestas informações sobre proteção de menores",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:11:01.649379-03:00"
-    },
-    {
-      "title": "Age 35-44? Here's the Average Retirement Savings for People Your Age.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas não tem impacto imediato ou significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:11:08.815756-03:00"
-    },
-    {
-      "title": "Luz sobre os investimentos: o que deve mexer com seu bolso na semana que começa agora",
-      "source": "Seu Dinheiro",
-      "score": 6.0,
-      "motivo": "A notícia destaca a importância dos juros e inflação para a política monetária, o que pode influenciar as decisões de investimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T12:11:15.919838-03:00"
-    },
-    {
-      "title": "Scott Galloway warned the US stock market could crash within 24 months thanks to AI. Protect your nest egg while you can",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A declaração de um especialista de renome sobre um possível colapso do mercado de ações é considerada relevante e com impacto concreto.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T12:11:22.365203-03:00"
-    },
-    {
-      "title": "How Leveraged ETFs Turned South Korea’s Stock Market Into a Casino and Why the U.S. Might Be Next",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a volatilidade e o risco associados ao uso de ETFs de Leverage em mercados de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:11:25.614090-03:00"
-    },
-    {
-      "title": "Warren Buffett Donated $6 Billion of Berkshire Stock to Family Foundations and Cut Off the Gates Foundation for the First Time in 20 Years. Does This Change the Investment Case for Berkshire?",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "A doação de US$ 6 bilhões de ações da Berkshire é um evento significativo e pode influenciar a percepção do investidor sobre a companhia.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:11:28.680617-03:00"
-    },
-    {
-      "title": "SpaceX Stock Looks Likely to Rally as All Operating Segments Drive Growth",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Crescimento em todos os segmentos operacionais da SpaceX é um sinal positivo para a acao.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:11:31.861808-03:00"
-    },
-    {
-      "title": "Dear Bullish Stock Fans, Mark Your Calendars for August 13",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia sugere que a data de 13 de agosto terá um impacto significativo para os investidores de ações positivas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:11:34.801252-03:00"
-    },
-    {
-      "title": "Stock funds slipped in July as AI volatility rattled tech investors",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A volatilidade da inteligência artificial afetou investidores de tecnologia, impactando os fundos de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T12:16:15.607894-03:00"
-    },
-    {
-      "title": "Iran sets conditions for opening Strait of Hormuz after UAE says one of its ships was targeted by airstrike",
-      "source": "CNBC - US News",
-      "score": 6.0,
-      "motivo": "A notÃ­cia pode ter impacto significativo nas relaÃ§Ãµes comerciais e geopolÃ­ticas entre IraÃ¢n, EUA e Ãrabia Ãnida.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:16:30.008040-03:00"
-    },
-    {
-      "title": "30 franquias a partir de R$ 7.490 para pais e filhos empreenderem juntos",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "notícia sobre franquias não é relevante para o mercado financeiro imediato",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:20:54.687652-03:00"
-    },
-    {
-      "title": "Why White House Sees Gasoline Prices Falling More",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente os preços dos combustíveis, que têm um impacto significativo na economia e nos preços dos produtos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:21:07.140196-03:00"
-    },
-    {
-      "title": "A SpaceX investor thought he had $300,000 in shares — then discovered his firm sold them without notice",
-      "source": "Yahoo Finance",
-      "score": 1.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro em geral, apenas para um investidor específico.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:21:10.135739-03:00"
-    },
-    {
-      "title": "A Retired Couple Can Pull About $47,500 From Their IRAs This Year and Pay $0 Federal Tax. Most Leave the Free Space Unused.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca uma oportunidade financeira para os aposentados, que podem aproveitar para sacar recursos sem imposto, afetando potencialmente a economia e o mercado de investimentos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T12:21:13.440731-03:00"
-    },
-    {
-      "title": "‘I’m in my peak earning years’: I’m working beyond 70. Will that help increase my Social Security?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:25:35.791606-03:00"
-    },
-    {
-      "title": "Mauro Vieira diz a jornal argentino que relação depende do fim das agressões de Milei",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "relacionamento diplomático não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:30:38.055895-03:00"
-    },
-    {
-      "title": "After a $130 Million Hack of Coldcard, Money Is Flowing Into Bitcoin ETFs. Here's the Best Bitcoin ETF to Buy Right Now.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia de um hack em uma carteira de auto-custódia pode ter um impacto positivo no mercado de Bitcoin, pois os investidores podem estar procurando por maneiras de proteger suas investimentos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:30:46.389503-03:00"
-    },
-    {
-      "title": "After a $130 Million Hack of Coldcard, Money Is Flowing Into Bitcoin ETFs. Here's the Best Bitcoin ETF to Buy Right Now.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "O hack no Coldcard pode ter motivado os investidores a buscar alternativas de investimento mais seguras, como ETFs de Bitcoin.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:30:53.868999-03:00"
-    },
-    {
-      "title": "After closing stores, retailers make a risky cash trade",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A medida visa aumentar a liquidez e reduzir os estoques de produtos não vendidos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:30:56.788687-03:00"
-    },
-    {
-      "title": "By The Way: Headline You May Have Missed",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:35:40.024332-03:00"
-    },
-    {
-      "title": "Feito de 2016 explica por que a IA que já domina a matemática ainda não curou nenhuma doença\"",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:35:45.617040-03:00"
-    },
-    {
-      "title": "Hassett says fuel prices could fall sharply after Gulf crisis is resolved",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A crise no Golfo pode afetar os preços de combustível e, consequentemente, a economia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:40:40.933613-03:00"
-    },
-    {
-      "title": "Xangai cancela 1.300 voos devido à passagem do tufão Golfinho pela costa da China",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "evento climatico sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:45:34.448012-03:00"
-    },
-    {
-      "title": "Rocket Lab Is Down 57% From Its Peak While Analysts See 49% Upside. Who Has It Right?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a perspectiva otimista dos analistas sobre o futuro da Rocket Lab, o que é relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T12:45:44.958616-03:00"
-    },
-    {
       "title": "Pix lidera confiança dos brasileiros, segundo pesquisa Genial/Quaest",
       "source": "InfoMoney",
       "score": 5.0,
@@ -17999,6 +17774,231 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T17:46:43.966922-03:00"
+    },
+    {
+      "title": "Copper jumps to its highest level ever. What the metal is telling us",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "Aumento do preço do cobre é relevante para o mercado financeiro e pode influenciar a economia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:50:46.496096-03:00"
+    },
+    {
+      "title": "Grãos ficam voláteis em Chicago antes de relatórios do USDA",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "relatório do USDA previsto para quarta-feira pode influenciar preços de grãos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:50:52.728410-03:00"
+    },
+    {
+      "title": "Arq GAAP EPS of -$0.02 misses by $0.01, revenue of $29.89M beats by $1.32M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque apresenta resultados financeiros que podem influenciar a percepção dos investidores sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:50:57.764429-03:00"
+    },
+    {
+      "title": "Shell cuts Ormen Lange gas field production by 40% after compressor failure",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:00.552237-03:00"
+    },
+    {
+      "title": "American Vanguard GAAP EPS of -$0.34, revenue of $117M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:03.311260-03:00"
+    },
+    {
+      "title": "PennantPark Floating Rate Q3 earnings miss, while PennantPark Investment in line",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:51:06.108402-03:00"
+    },
+    {
+      "title": "WEBTOON Entertainment Inc. Non-GAAP EPS of $0.04 beats by $0.03, revenue of $338.47M misses by $0.99M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:08.899835-03:00"
+    },
+    {
+      "title": "Arena Group GAAP EPS of $0.00 misses by $0.12, revenue of $22.2M misses by $7.8M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:11.682225-03:00"
+    },
+    {
+      "title": "EagleRock Land, LLC GAAP EPS of -$0.29 misses by $0.46, revenue of $41.5M misses by $2.5M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:14.481143-03:00"
+    },
+    {
+      "title": "Why Bausch Health Companies Stock Skyrocketed by Almost 40% Last Month",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:51:18.825260-03:00"
+    },
+    {
+      "title": "Uranium Energy vs. Oklo: Which Nuclear Fuel Play Wins in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:21.595016-03:00"
+    },
+    {
+      "title": "Why Garmin Stock Soared in July and Is at an All-Time High",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:24.353389-03:00"
+    },
+    {
+      "title": "One Social Security Reform With Bipartisan Backing That Spares Everyday Taxpayers",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:27.161783-03:00"
+    },
+    {
+      "title": "Cyrela deixa conselho da Plano & Plano em novo acordo de acionistas",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:34.002812-03:00"
+    },
+    {
+      "title": "Um novo Wesley Batista no comando: herdeiro assumirá como CEO global da JBS (JBSS32); ações caem após anúncio",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:51:37.002822-03:00"
+    },
+    {
+      "title": "The Stock Market Is Sending a Chilling Warning, and History Isn't Reassuring",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:42.361714-03:00"
+    },
+    {
+      "title": "Oklo’s (OKLO) Groves Reactor Hits Criticality In Under A Year",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:45.141163-03:00"
+    },
+    {
+      "title": "Trump Shares Hillary Clinton Op-Ed Backing His Gaza Plan In Face Of Bibi Rejection",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:51:48.980362-03:00"
+    },
+    {
+      "title": "Democrats' Frankenstein Turns: Communist Ghost Dance Now Set To Devour The Party",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:51:51.773415-03:00"
+    },
+    {
+      "title": "Oman Says Oil Spill From Grounded Tanker Near Coast Covers 400 Square km",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:51:54.570431-03:00"
+    },
+    {
+      "title": "$20 Million In Cocaine Found Beneath Floorboards Of Truck Trailer At California Border",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:51:57.391113-03:00"
+    },
+    {
+      "title": "Nvidia Set To Reveal Record $500 Billion Off-Balance Sheet SPV Deal To Fund The World's Biggest Circle Jerk: Report",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:52:00.255869-03:00"
+    },
+    {
+      "title": "We Need More Tom Sellecks, Less Mark Ruffalos",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:52:03.013494-03:00"
+    },
+    {
+      "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:52:06.010774-03:00"
+    },
+    {
+      "title": "SEC Announces Roundtable on Preparations for 24-Hour Trading",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:52:08.945626-03:00"
     }
   ]
 }
