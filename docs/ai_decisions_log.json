@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I wanted my daughter to experience the fun I had growing up. So we went toilet papering.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T13:55:56.716056-03:00"
-    },
-    {
-      "title": "Bloomberg This Weekend 08/09/2026",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é específica sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:01:04.534401-03:00"
-    },
-    {
-      "title": "Passagem de navios pelo Mar Negro continua sem problemas, afirmam autoridades turcas",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "notícia não é específica ou materialmente relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:01:08.410181-03:00"
-    },
-    {
-      "title": "JSL (JSLG3) divulga balanço nesta segunda; o que prévia já trouxe?",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "A notícia é sobre a divulgação de balanço de uma empresa, o que é relevante para o mercado, mas não é um evento inesperado ou impactante.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:01:11.301772-03:00"
-    },
-    {
-      "title": "What to Know When a Magnite Director Sells Into a 36% Growth Quarter",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A venda de ações por um diretor pode ser interpretada como uma perda de confiança no futuro da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:01:23.999878-03:00"
-    },
-    {
-      "title": "How caregiving can blow a hole in retirement savings",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode influenciar as decisões de investimento de alguns indivíduos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:01:26.968279-03:00"
-    },
-    {
-      "title": "Datadog coverage update: BofA stays bullish on weakness",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A BofA é uma instituição financeira respeitada e sua opinião é considerada relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:01:29.955358-03:00"
-    },
-    {
-      "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
-      "source": "CNBC - Economy",
-      "score": 4.0,
-      "motivo": "A notícia fornece informações sobre a taxa de crescimento da economia dos EUA, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:05:54.923339-03:00"
-    },
-    {
-      "title": "Rayssa Leal vence por 0,2 ponto e conquista SLS Rio Takeover",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e celebridade",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:06:00.169381-03:00"
-    },
-    {
-      "title": "Debate da Band para governador: veja horários, estados, regras e onde assistir",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:06:02.924797-03:00"
-    },
-    {
-      "title": "A ‘Odisseia’ do investidor: o manual mitológico para não naufragar no mercado financeiro",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:06:10.491086-03:00"
-    },
-    {
-      "title": "Maruti Suzuki sees India auto market reaching 6.3M vehicles by 2031",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A previsão de crescimento do mercado de veículos no Índia é relevante para a indústria automotiva e pode influenciar as ações das empresas de automóveis.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T14:10:46.802144-03:00"
-    },
-    {
-      "title": "Why Usana Health Sciences Stock Plummeted This Week",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Problemas financeiros e perda de confiança dos investidores afetam a ação da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:10:58.785694-03:00"
-    },
-    {
-      "title": "Paramount garante 30 lançamentos anuais a redes de cinema se adquirir Warner",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Paramount garante 30 lançamentos anuais, o que pode aumentar a demanda por ingressos em cinemas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:15:52.619310-03:00"
-    },
-    {
-      "title": "ONS projeta alta de 4,1% no consumo de energia em 2026 no País",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "a noticia trata de um projeto de alta de consumo de energia, o que pode ter impacto na demanda de energia e, consequentemente, nos preços",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:15:55.447813-03:00"
-    },
-    {
-      "title": "Em cinco anos, cidade de SP ganha 1 milhão de empresas — e atrai 100 mil negócios de fora da capital",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "Redução de impostos e simplificação na abertura de negócios são medidas favoráveis ao crescimento de empresas e investimentos na cidade de SP.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T14:16:00.543604-03:00"
-    },
-    {
       "title": "Cresce a adesão à greve nas operações de minério de ferro da BHP na Austrália",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T18:11:18.813825-03:00"
+    },
+    {
+      "title": "Nvidia se une a gigantes de Wall Street para investir US$ 500 bi em infra de IA",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Nvidia recebe investimento significativo de gigantes de Wall Street para desenvolver infraestrutura de IA",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:16:04.872797-03:00"
+    },
+    {
+      "title": "Juros futuros sobem na esteira dos Treasuries antes de IPCA e ata do Copom",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "alta nos juros dos Treasuries impacta expectativa de juros futuros no Brasil",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:16:13.170208-03:00"
+    },
+    {
+      "title": "I looked into buying a house in Singapore as an investment. Here’s why I didn’t — despite the 2% mortgage rate.",
+      "source": "MarketWatch",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro brasileiro, pois trata de comparação de taxas de juro em diferentes países.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:16.779501-03:00"
+    },
+    {
+      "title": "Pardee Resources Company GAAP EPS of $2.30, revenue of $6.66M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:19.539764-03:00"
+    },
+    {
+      "title": "Mistras Non-GAAP EPS of $0.28 beats by $0.03, revenue of $193.13M beats by $3.81M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:22.240688-03:00"
+    },
+    {
+      "title": "Bain Capital Specialty Finance NII of $0.44",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:24.898848-03:00"
+    },
+    {
+      "title": "Broadridge's Distributed Ledger Repo transactions rise 28% Y/Y in July",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:27.594050-03:00"
+    },
+    {
+      "title": "Getty Images slips further into the red, engages Guggenheim to shore up liquidity",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:30.301640-03:00"
+    },
+    {
+      "title": "Upwork GAAP EPS of $0.20 misses by $0.01, revenue of $191.66M beats by $1.69M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:33.010854-03:00"
+    },
+    {
+      "title": "CT Real Estate Investment Trust reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:35.677605-03:00"
+    },
+    {
+      "title": "Orion Group Holdings Enters Oversold Territory (ORN)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:40.622807-03:00"
+    },
+    {
+      "title": "Zuckerberg diz que superinteligência deve focar em invenção, não automação",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T18:16:45.743763-03:00"
+    },
+    {
+      "title": "Tetra Technologies Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:50.884870-03:00"
+    },
+    {
+      "title": "Oklo’s (OKLO) Groves Reactor Hits Criticality In Under A Year",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:53.566344-03:00"
+    },
+    {
+      "title": "Twilio Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:56.208917-03:00"
+    },
+    {
+      "title": "Constellation (CEG) Locks In More Power Deals As Nuclear Output Slips",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T18:16:58.905325-03:00"
     }
   ]
 }
