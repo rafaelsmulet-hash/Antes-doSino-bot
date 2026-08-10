@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Tive que fazer um botox no meu currículo': como a IA prejudica mulheres nos processos seletivos de empregos",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T15:56:09.599718-03:00"
-    },
-    {
-      "title": "Modelo de IA cria genoma inédito capaz de eliminar superbactérias",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:56:13.160537-03:00"
-    },
-    {
-      "title": "I'm 65 With $1.1 Million Saved and $2,800 Monthly Social Security. What's My Retirement Budget?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:56:18.145584-03:00"
-    },
-    {
-      "title": "Analyst Report: Shell Plc",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T15:56:20.788835-03:00"
-    },
-    {
-      "title": "Dauch Corporation rises 13% after Q2 beat",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas financeiras, o que é considerado positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:01:01.451385-03:00"
-    },
-    {
-      "title": "Runway outlines BC Partners purchases up to 10% over two years while shares trade below 70% of NAV",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A compra de ações pela BC Partners pode aumentar a liquidez e valor das ações da Runway.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T16:01:04.784207-03:00"
-    },
-    {
-      "title": "CareTrust forecasts 2026 normalized FFO per share of $2.03-$2.06 as investments reach $1.5B year-to-date",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque fornece uma previsão de desempenho financeiro específica para a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:01:08.488589-03:00"
-    },
-    {
-      "title": "Ryman outlines $400M-$500M 2026 capex plan while estimating Gaylord Opryland to cross $200M adjusted EBITDAre",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:01:11.190731-03:00"
-    },
-    {
-      "title": "Rapid Micro outlines at least 27 validations in 2026 while targeting positive cash flow by end of 2028",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:01:13.891804-03:00"
-    },
-    {
-      "title": "Gsbd outlines path to reactivating 75 million-share buyback as leverage moves below 1.25x target",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:01:16.587359-03:00"
-    },
-    {
-      "title": "Hamilton outlines low double-digit 2026 growth while targeting low-to-mid-90s combined ratio through cycle",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:01:19.285704-03:00"
-    },
-    {
       "title": "Why Kevin Warsh's Job Just Got a Lot Harder. And What It Means for the Stock Market.",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T07:31:47.690437-03:00"
+    },
+    {
+      "title": "HFTs Shun India Stock Closing Auction Over SEBI Short-Selling Hurdle",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado pois afeta as operações de negociação de ações na Índia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:35:46.132435-03:00"
+    },
+    {
+      "title": "Is $1 million enough for a household to retire? The answer keeps changing.",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:35:51.896207-03:00"
+    },
+    {
+      "title": "Barrick in charts: Q2 gold output up 11% Q/Q to 796K oz; copper down 5% Y/Y",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque fornece informações sobre a produção de ouro e cobre da Barrick, que é uma empresa importante no setor de mineração.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:35:54.910484-03:00"
+    },
+    {
+      "title": "Premium pet food maker Open Farm heads for an IPO",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante para o mercado de ações, pois a Open Farm está se preparando para uma IPO, o que pode atrair investidores e afetar o preço das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:35:57.824844-03:00"
+    },
+    {
+      "title": "Embraer beats top-line and bottom-line estimates; updates FY 2026 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A atualização da previsão para o ano de 2026 é relevante para os investidores e pode influenciar as ações da Embraer no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:36:00.767081-03:00"
+    },
+    {
+      "title": "Ryman Hospitality Properties to buy Grande Lakes Orlando Resort for $1.38B",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque pode afetar a posição da empresa no mercado de resorts, mas não é um evento de grande impacto imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:36:03.585335-03:00"
+    },
+    {
+      "title": "4 Social Security Shifts Headed Your Way in 2027 That Retirees Should Know About",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "Reajuste salarial dos beneficiários do Seguro Social em 2027 é relevante para a economia brasileira.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:36:08.582405-03:00"
+    },
+    {
+      "title": "French Stocks Mixed In Cautious Trade",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações concretas sobre o mercado financeiro, apenas uma situação de incerteza.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:36:11.487195-03:00"
+    },
+    {
+      "title": "Barrick Mining Corporation Profit Advances In Q2",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Aumento nos lucros da empresa é relevante para o mercado de ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:36:14.529425-03:00"
+    },
+    {
+      "title": "National Energy Services Reunited Corp. Reveals Increase In Q2 Profit",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia revela um aumento no lucro da empresa, o que é relevante para os investidores e pode influenciar as ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:36:17.671020-03:00"
+    },
+    {
+      "title": "Should you build or buy software? This Wall Street firm has a new tool to decide.",
+      "source": "Business Insider",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para empresas que precisam decidir entre criar ou comprar software, mas não é um evento de mercado significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:36:26.876766-03:00"
     }
   ]
 }
