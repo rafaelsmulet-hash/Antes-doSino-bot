@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "CEO Greg Abel Starts Making His Mark at Berkshire",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A Berkshire aumentou sua despesa e investiu em outras oportunidades, indicando que o novo CEO está ativo e empenhado em utilizar os recursos da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T10:10:46.746849-03:00"
-    },
-    {
-      "title": "‘A Odisseia’ entra no clube do US$ 1 bilhão; veja quem chegou lá primeiro",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:10:49.961804-03:00"
-    },
-    {
-      "title": "O que o novo sedã da Lexus traz para desafiar o domínio do BMW Série 3",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "não há relação direta com mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:10:58.315956-03:00"
-    },
-    {
-      "title": "A Tough Week for Crypto Has Fans Downing Drinks at a Bitcoin Bar",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:15:35.519327-03:00"
-    },
-    {
-      "title": "Crise na Apex Partners: entenda afastamento de presidente e blindagem na Justiça",
-      "source": "G1 Economia",
-      "score": 7.0,
-      "motivo": "crise na Apex Partners pode afetar confiança dos investidores e impactar a estabilidade do mercado de investimentos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:15:44.704447-03:00"
-    },
-    {
-      "title": "Host your own piece of Disrupt: Apply to run a Side Event at TechCrunch Disrupt 2026",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:15:51.310225-03:00"
-    },
-    {
-      "title": "Ted Benna built the 401(k) 40 years ago — now he says it fails lower-income workers and is pushing a simpler alternative",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia pode influenciar a percepção dos investidores sobre os planos de aposentadoria e suas limitações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:15:54.471572-03:00"
-    },
-    {
-      "title": "I moved to NYC at 22 and lived with a 70-year-old roommate. She had rules, meals, and a busier social life than me.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:15:57.693833-03:00"
-    },
-    {
-      "title": "UAE says one of its ships was targeted by missile as U.S.-Iran tensions over Strait of Hormuz remain high",
-      "source": "CNBC - US News",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter implicações geopolíticas que afetam a estabilidade global.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:16:00.688673-03:00"
-    },
-    {
-      "title": "Berkshire Hathaway cash pile drops in Q2 amid stock buybacks",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A redução do estoque de dinheiro pode ser um sinal de confiança na economia e no mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T10:21:25.342172-03:00"
-    },
-    {
-      "title": "I saved over $1,900 on my family trip to Orlando using credit card points. These are the hacks I used.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:21:40.227530-03:00"
-    },
-    {
-      "title": "Oxford Union Debate Debacle Exposes The Real Limit Of Free Speech In Britain",
-      "source": "ZeroHedge",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:21:44.705649-03:00"
-    },
-    {
-      "title": "US Army's 400 Million Laser Deal Accelerates Race To Harden Bases From Kamikaze Swarms",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "O investimento é significativo e pode ter impacto direto na demanda por tecnologia de contra-drones.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T10:21:47.850458-03:00"
-    },
-    {
-      "title": "Teacher Exposes Chaos: Violence, Drugs, & Prostitution At 75% Migrant School In Germany",
-      "source": "ZeroHedge",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:21:51.397125-03:00"
-    },
-    {
-      "title": "Israel Englander's Millennium Manages $240 Billion Across Thousands of Positions. Here's the Strategy Behind His Success.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não traz informações sobre mudanças ou eventos significativos no mercado, apenas uma visão geral sobre a estratégia da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:25:51.915635-03:00"
-    },
-    {
-      "title": "This Quantum Stock Could Be a Big Winner Beyond the AI Chip Boom",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia destaca a relevância da computação quântica para o mercado e a corrida para controlar essa tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:25:54.980299-03:00"
-    },
-    {
-      "title": "3 Ultra-High-Yield Dividend Stocks to Buy in August (1 Yields Over 13.5%)",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia destaca ações que pagam dividendos altos, o que pode ser relevante para investidores que buscam renda passiva.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T10:25:58.094056-03:00"
-    },
-    {
-      "title": "Wall Street Is Losing Confidence in GoDaddy’s (GDDY) AI Strategy. Should Investors?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A perda de confiança da Wall Street pode levar a uma queda nas ações da GoDaddy.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T10:26:11.680585-03:00"
-    },
-    {
       "title": "Silicon Motion’s (SIMO) Next Chapter: Can Diversification Outrun the NAND Cycle?",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T12:26:02.639652-03:00"
+    },
+    {
+      "title": "Natural Gas Falls on Shifting Weather Forecasts",
+      "source": "WSJ Markets",
+      "score": 3.0,
+      "motivo": "A mudança nas previsões de tempo afeta a demanda por gás natural nos EUA, o que é relevante para o mercado de commodities.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:30:56.751711-03:00"
+    },
+    {
+      "title": "Japão anuncia US$ 2,3 tri em investimentos e ministro diz que iene vai se fortalecer",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "investimentos de US$ 2,3 tri e corte de imposto sobre vendas devem fortalecer a iene",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:31:00.116898-03:00"
+    },
+    {
+      "title": "Por que as ações do Spotify estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "aumento das ações do Spotify indica confiança dos investidores na empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:31:04.925946-03:00"
+    },
+    {
+      "title": "Marrocos - Ações fecharam o pregão em queda e o Índice Moroccan All Shares recuou 0,17%",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "queda no mercado marroquino não é relevante para o mercado global",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:31:07.836457-03:00"
+    },
+    {
+      "title": "Projeto de lei cripto no Senado dos EUA enfrenta futuro incerto",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:31:10.566677-03:00"
+    },
+    {
+      "title": "Marex planeja aceitar Bitcoin e Ethereum como margem inicial ainda este ano",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:31:13.243789-03:00"
+    },
+    {
+      "title": "Beyoncé adquire participação da LVMH na marca de uísque SirDavis",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:31:15.904395-03:00"
+    },
+    {
+      "title": "Embraer lidera altas do Ibovespa após balanço e elevação do guidance para o ano",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:31:19.632941-03:00"
+    },
+    {
+      "title": "Royal Caribbean added as new long idea at Hedgeye",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:31:22.941388-03:00"
+    },
+    {
+      "title": "Why Plug Power Stock Slumped Another 24% in July",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:31:27.844101-03:00"
+    },
+    {
+      "title": "1 Super Streaming Stock Down 37% You'll Regret Not Buying on the Dip, According to Wall Street",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:31:30.840394-03:00"
+    },
+    {
+      "title": "Why The Trade Desk Was Sliding Again Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:31:33.475898-03:00"
+    },
+    {
+      "title": "Why Rigetti Stock Fell 22% in July",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:31:36.109705-03:00"
+    },
+    {
+      "title": "See Which Recent 13F Filers Hold META But Munro Partners and CloudAlpha Capital Management Exited",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:31:38.831003-03:00"
+    },
+    {
+      "title": "FN December 2027 Options Begin Trading",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:31:41.465881-03:00"
+    },
+    {
+      "title": "Notable ETF Inflow Detected - GSLC, MA, COST, VRSN",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:31:44.122184-03:00"
+    },
+    {
+      "title": "Super Micro Rises 4% Ahead of Earnings; HPE Gains 4%, Dell Climbs 3% as AI Server Stocks Advance",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T12:31:51.066341-03:00"
+    },
+    {
+      "title": "JAPEX Doubles Down on U.S. Shale With $320 Million Colorado-Wyoming Deal",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque a JAPEX está aumentando sua participação no mercado de xisto de água nos EUA, o que pode ter impacto positivo nas ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T12:31:54.168379-03:00"
     }
   ]
 }
