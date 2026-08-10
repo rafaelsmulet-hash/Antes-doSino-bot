@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Redução de corridas faz receita da Fórmula 1 encolher no 1º semestre",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "notícia sobre esporte, não relevante para mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:25:53.227131-03:00"
-    },
-    {
-      "title": "Mês da Cerveja: como a Ambev lidera a evolução da categoria no Brasil",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia sobre a Ambev não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:25:56.107206-03:00"
-    },
-    {
-      "title": "Selic a 14% ainda deixa a renda fixa atraente? Entenda o que muda para cada investimento",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T16:26:06.799894-03:00"
-    },
-    {
-      "title": "Thinking of Buying Tesla Stock on the Dip? Here's One Green Flag and One Red Flag.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:26:10.936796-03:00"
-    },
-    {
-      "title": "US Sues Kahn on Hedge Fund Collapse, Indicts Executive",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:31:02.004874-03:00"
-    },
-    {
-      "title": "Petróleo recua 5% na semana com otimismo de acordo para reabrir Ormuz",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "reabertura do Estreito de Ormuz pode impactar preços do petróleo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:31:07.441148-03:00"
-    },
-    {
-      "title": "The size of the American workforce has fallen by over 1 million people in the past year. Here’s what’s going on.",
-      "source": "MarketWatch",
-      "score": 4.0,
-      "motivo": "A queda na força de trabalho pode influenciar a demanda por produtos e serviços, afetando a economia e, consequentemente, os mercados financeiros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:31:11.474814-03:00"
-    },
-    {
-      "title": "Cryoport affirms $192M-$196M 2026 revenue guidance while targeting continued adjusted EBITDA expansion",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:31:14.320125-03:00"
-    },
-    {
-      "title": "Casella outlines $2.09B-$2.11B 2026 revenue outlook while holding $473M-$483M adjusted EBITDA range",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:31:17.039464-03:00"
-    },
-    {
-      "title": "What Do You Think Is Acceptable to Wear at the Office? Take Our Quiz",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:31:27.509694-03:00"
-    },
-    {
-      "title": "Freefalling yen sparks rare US intervention as Scott Bessent vows 'whatever it takes.' Will Americans pay the price?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:31:30.255353-03:00"
-    },
-    {
-      "title": "Are Wall Street Analysts Bullish on Tyson Foods Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:31:32.924644-03:00"
-    },
-    {
-      "title": "Investing View is Glass 'More Than Half-Full': Kelly",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações concretas sobre o mercado financeiro, mas sim uma discussão teórica sobre comportamento de investidores.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T16:35:53.631579-03:00"
-    },
-    {
       "title": "CEO da Ethan Allen defende estratégia após desafio de ativista",
       "source": "Investing.com Brasil",
       "score": 3.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T07:46:06.241797-03:00"
+    },
+    {
+      "title": "Novo CEO e R$ 75 mi em investimentos: o plano do Hot Beach para faturar R$ 750 mi",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Investimentos significativos em expansão de parque, hotelaria e multipropriedade",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:55:53.959851-03:00"
+    },
+    {
+      "title": "Iguatemi (IGTI11) vende participação em 5 ativos por R$ 876 milhões",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Venda de participações em ativos pode liberar recursos para investimentos futuros, impactando positivamente a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:55:56.708941-03:00"
+    },
+    {
+      "title": "Sucessor de Buffett abre os cofres da Berkshire Hathaway e compra US$ 23,5 bi em ações",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Aumento do lucro da Berkshire Hathaway é um sinal positivo para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:56:02.243181-03:00"
+    },
+    {
+      "title": "The U.S. economy is shedding jobs. Why that’s good news for stocks.",
+      "source": "MarketWatch",
+      "score": 6.0,
+      "motivo": "A possibilidade de corte de taxas de juros pode ser benéfica para as ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T07:56:05.445491-03:00"
+    },
+    {
+      "title": "OPAL Fuels GAAP EPS of -$0.05 misses by $0.16, revenue of $83.4M beats by $0.57M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque apresenta resultados financeiros que podem influenciar a percepção do mercado sobre a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:56:08.832312-03:00"
+    },
+    {
+      "title": "Ferguson Enterprises beats top-line and bottom-line estimates; updates FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as estimativas, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:56:11.675499-03:00"
+    },
+    {
+      "title": "Target Hospitality GAAP EPS of -$0.09 beats by $0.01, revenue of $85.46M beats by $6.19M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A superação das expectativas de lucro e receita é um sinal positivo para a empresa e pode influenciar os preços das ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:56:14.567234-03:00"
+    },
+    {
+      "title": "Veru Non-GAAP EPS of -$0.30 beats by $0.02",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A superação das expectativas de lucro é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:56:17.378488-03:00"
+    },
+    {
+      "title": "International Seaways Non-GAAP EPS of $5.91 beats by $0.65, revenue of $467.29M beats by $67.86M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Resultados financeiros superiores às expectativas são geralmente considerados positivos para as ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:56:20.224688-03:00"
+    },
+    {
+      "title": "TPG Mortgage Investment Trust Non-GAAP EPS of $0.24 misses by $0.03",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento de grande impacto no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:56:23.084006-03:00"
+    },
+    {
+      "title": "Accendra Health Non-GAAP EPS of -$0.19 misses by $0.10, revenue of $613.2M misses by $14.11M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as expectativas de lucro da Accendra Health.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:56:26.048768-03:00"
+    },
+    {
+      "title": "Anac planeja leilão do Santos Dumont para 2027 e prevê regras para atrair aéreas estrangeiras",
+      "source": "Neofeed",
+      "score": 5.0,
+      "motivo": "Leilão do aeroporto Santos Dumont pode atrair investimentos e melhorar infraestrutura do setor aéreo brasileiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:56:36.439484-03:00"
+    },
+    {
+      "title": "O número mais importante da Smart Fit já não é o de academias",
+      "source": "Neofeed",
+      "score": 2.0,
+      "motivo": "a noticia e sobre o setor de fitness, mas nao e relevante para o mercado financeiro em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T07:56:39.207921-03:00"
     }
   ]
 }
