@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "ADP (ADP) Q4 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma empresa específica e não tem impacto direto no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:26:06.783190-03:00"
-    },
-    {
-      "title": "UMC (UMC) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia parece ser sobre uma conferência de resultados de uma empresa, mas não fornece informações financeiras relevantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:26:09.675041-03:00"
-    },
-    {
-      "title": "CP (CP) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma transcrição de conferência de resultados, que não é um evento atual ou relevante para o mercado agora.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:26:12.846430-03:00"
-    },
-    {
-      "title": "Cimpress (CMPR) Q4 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre a divulgação de relatórios financeiros de uma empresa específica.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:26:15.722058-03:00"
-    },
-    {
-      "title": "Aon (AON) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre uma empresa específica",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:26:18.649867-03:00"
-    },
-    {
-      "title": "Tenable (TENB) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro brasileiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:26:21.475730-03:00"
-    },
-    {
-      "title": "Narrativa ’Sell America’ ressurge com riscos do Fed e do iene",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Riscos do Fed e do iene podem afetar investimentos nos EUA e impulsionar a saída de capitais do país.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T21:31:05.821233-03:00"
-    },
-    {
-      "title": "Wheat Back to Falling Lower on Thursday",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os mercados agrícolas, mas não tem impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:31:18.720929-03:00"
-    },
-    {
-      "title": "SEC Announces Roundtable on Preparations for 24-Hour Trading",
-      "source": "SEC",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque discute mudanças significativas nos horários de negociação dos mercados de ações dos EUA.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:31:23.368773-03:00"
-    },
-    {
-      "title": "CION Investment Corporation Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa apresentou resultados financeiros positivos, o que é um sinal de saúde para a empresa e pode influenciar positivamente o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:45:45.171999-03:00"
-    },
-    {
-      "title": "After a 250% Rally, Dell Stock Still Has Room to Run. Here's Why.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a perspectiva de crescimento da Dell, o que é relevante para os investidores e traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:45:48.141933-03:00"
-    },
-    {
-      "title": "Em nova reviravolta, Republicanos anuncia Cleitinho como candidato ao governo de Minas",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:50:52.632639-03:00"
-    },
-    {
-      "title": "Vontier Corporation Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa apresentou resultados financeiros acima das expectativas, o que pode influenciar positivamente o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:51:04.335074-03:00"
-    },
-    {
-      "title": "Warner Bros. Discovery, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A empresa apresentou resultados financeiros rotineiros, mas com uma melhoria nos lucros.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:51:07.833082-03:00"
-    },
-    {
-      "title": "Unusual Options Activity: Kraft Heinz Trader Bets Big on a Bull Call Spread — With Low Risk, Big Reward",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia pode indicar que o mercado está otimista em relação à Kraft Heinz, o que pode afetar o preço da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T21:51:10.880110-03:00"
-    },
-    {
       "title": "Switch planeja retornar ao mercado público com IPO de US$ 50 bilhões",
       "source": "Investing.com Brasil",
       "score": 8.0,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T10:16:37.093935-03:00"
+    },
+    {
+      "title": "Iguatemi (IGTI11) sobe após venda de fatias em 5 shoppings – o que agradou o mercado?",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Venda de fatias em shoppings pode liberar recursos para investimentos estratégicos e melhorar a rentabilidade da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:20:36.315208-03:00"
+    },
+    {
+      "title": "Swing trade: BTG Pactual recomenda compra de JBS (JBSS32) com potencial de valorização de 16,44%",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "Recomendação de compra de ação com potencial de valorização significativa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:20:40.899542-03:00"
+    },
+    {
+      "title": "EDITORIAL. Ninguém cuida do circo",
+      "source": "Brazil Journal",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:20:43.995799-03:00"
+    },
+    {
+      "title": "Fabricar o iPhone 18 ficará 38% mais caro; Apple planeja absorver margem para segurar preços",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:20:46.897976-03:00"
+    },
+    {
+      "title": "Pesquisa Ideia: Tarcísio tem 51% e venceria Haddad no 1º turno",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:20:49.537125-03:00"
+    },
+    {
+      "title": "Endrick fora do Real Madrid? Veja quais times querem o jogador brasileiro",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:20:52.162277-03:00"
+    },
+    {
+      "title": "XCF Global surges after touting renewable fuel credit market strength",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:20:55.173733-03:00"
+    },
+    {
+      "title": "Adyen expands global payments partnership with Toast into the U.S.",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:20:57.836100-03:00"
+    },
+    {
+      "title": "Telos beats top-line and bottom-line estimates; gives Q3 and updates FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:21:00.468611-03:00"
+    },
+    {
+      "title": "Voyager Technologies wins U.S. Space Force contract to build satellite communication",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:21:03.133173-03:00"
+    },
+    {
+      "title": "AI buyers are still waiting: Apollo flags missing payoff for S&P 493",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:21:05.752514-03:00"
+    },
+    {
+      "title": "Rigetti Computing Stock Surged -- Here Is What Is Driving the Rally",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:21:09.875092-03:00"
+    },
+    {
+      "title": "“Bolsa Ibovespa”: grupo de empresários busca apoio político para dar ações a todo recém-nascido",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:21:15.889837-03:00"
+    },
+    {
+      "title": "Why Visa (V) Could Be a Major Winner in the AI Payments Boom",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T10:21:18.613736-03:00"
+    },
+    {
+      "title": "I don't let my kids attend sleepovers. The risk just isn't worth it.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T10:21:21.479960-03:00"
     }
   ]
 }
