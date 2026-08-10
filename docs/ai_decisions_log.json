@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "AGNC Investment Could Turn $1,000 Into Decades of Monthly Passive Income",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T13:36:36.036933-03:00"
-    },
-    {
       "title": "The July jobs numbers are due out Friday. Here's what to expect",
       "source": "CNBC - Economy",
       "score": 2.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-09T21:45:57.936187-03:00"
+    },
+    {
+      "title": "Robinhood Crypto Chief Explains Why There Are 'Two Wolves' Inside Robinhood Chain",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia revela uma possível causa de conflito dentro da empresa, o que pode afetar sua estabilidade e tomadas de decisões.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-09T21:50:46.704345-03:00"
     }
   ]
 }
