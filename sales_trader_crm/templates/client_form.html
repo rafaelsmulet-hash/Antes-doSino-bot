@@ -4,16 +4,16 @@
   <h1>{{ "Editar cliente" if client else "Novo cliente" }}</h1>
   <form method="post" class="form">
     <label>
+      Código
+      <input type="text" name="codigo" value="{{ form.codigo if form.codigo else (client['codigo'] if client else '') }}">
+    </label>
+    <label>
       Nome
       <input type="text" name="name" value="{{ form.name if form.name else (client['name'] if client else '') }}" required>
     </label>
     <label>
-      Estrutura(s) de derivativos ativa(s)
+      Produtos
       <textarea name="structures" rows="3" placeholder="Ex: Collar USD 12/2026, Trava de alta IBOV...">{{ form.structures if form.structures else (client['structures'] if client else '') }}</textarea>
-    </label>
-    <label>
-      Observações gerais
-      <textarea name="notes" rows="3">{{ form.notes if form.notes else (client['notes'] if client else '') }}</textarea>
     </label>
     {% if not client %}
       <label>
@@ -21,6 +21,10 @@
         <input type="date" name="last_contact_date" value="{{ today }}" required>
       </label>
     {% endif %}
+    <label>
+      Observações gerais
+      <textarea name="notes" rows="3">{{ form.notes if form.notes else (client['notes'] if client else '') }}</textarea>
+    </label>
     <div class="actions">
       <button type="submit" class="btn btn-primary">Salvar</button>
       <a href="{{ url_for('index') }}" class="btn">Cancelar</a>

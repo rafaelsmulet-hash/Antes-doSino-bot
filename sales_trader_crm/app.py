@@ -43,7 +43,10 @@ def index():
 
     clients = all_clients
     if search:
-        clients = [c for c in all_clients if search in c["name"].lower()]
+        clients = [
+            c for c in all_clients
+            if search in c["name"].lower() or search in (c["codigo"] or "").lower()
+        ]
 
     return render_template("index.html", clients=clients, counts=counts, search=search)
 
@@ -51,6 +54,7 @@ def index():
 @app.route("/clients/new", methods=["GET", "POST"])
 def new_client():
     if request.method == "POST":
+        codigo = request.form.get("codigo", "").strip()
         name = request.form["name"].strip()
         structures = request.form.get("structures", "").strip()
         notes = request.form.get("notes", "").strip()
@@ -61,8 +65,8 @@ def new_client():
 
         with get_conn() as conn:
             cur = conn.execute(
-                "INSERT INTO clients (name, structures, notes, created_at) VALUES (?, ?, ?, ?)",
-                (name, structures, notes, today_str()),
+                "INSERT INTO clients (codigo, name, structures, notes, created_at) VALUES (?, ?, ?, ?, ?)",
+                (codigo, name, structures, notes, today_str()),
             )
             client_id = cur.lastrowid
             conn.execute(
@@ -124,6 +128,7 @@ def edit_client(client_id):
         return redirect(url_for("index"))
 
     if request.method == "POST":
+        codigo = request.form.get("codigo", "").strip()
         name = request.form["name"].strip()
         structures = request.form.get("structures", "").strip()
         notes = request.form.get("notes", "").strip()
@@ -133,8 +138,8 @@ def edit_client(client_id):
 
         with get_conn() as conn:
             conn.execute(
-                "UPDATE clients SET name = ?, structures = ?, notes = ? WHERE id = ?",
-                (name, structures, notes, client_id),
+                "UPDATE clients SET codigo = ?, name = ?, structures = ?, notes = ? WHERE id = ?",
+                (codigo, name, structures, notes, client_id),
             )
         return redirect(url_for("client_detail", client_id=client_id))
 

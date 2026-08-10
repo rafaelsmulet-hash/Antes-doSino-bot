@@ -9,6 +9,7 @@ DB_PATH = Path(__file__).parent / "clients.db"
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS clients (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    codigo TEXT NOT NULL DEFAULT '',
     name TEXT NOT NULL,
     structures TEXT NOT NULL DEFAULT '',
     notes TEXT NOT NULL DEFAULT '',
@@ -42,6 +43,9 @@ def get_conn():
 def init_db():
     with get_conn() as conn:
         conn.executescript(SCHEMA)
+        columns = {row["name"] for row in conn.execute("PRAGMA table_info(clients)")}
+        if "codigo" not in columns:
+            conn.execute("ALTER TABLE clients ADD COLUMN codigo TEXT NOT NULL DEFAULT ''")
 
 
 def today_str():

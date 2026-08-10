@@ -19,15 +19,16 @@
   </div>
 
   <form method="get" action="{{ url_for('index') }}">
-    <input class="search-box" type="text" name="q" value="{{ search }}" placeholder="Buscar cliente por nome...">
+    <input class="search-box" type="text" name="q" value="{{ search }}" placeholder="Buscar cliente por nome ou código...">
   </form>
 
   <table class="clients-table">
     <thead>
       <tr>
         <th>Status</th>
+        <th>Código</th>
         <th>Nome</th>
-        <th>Estruturas</th>
+        <th>Produtos</th>
         <th>Último contato</th>
         <th>Dias sem contato</th>
         <th>Dias restantes</th>
@@ -38,6 +39,7 @@
       {% for c in clients %}
         <tr>
           <td><span class="status-dot status-{{ c.status }}"></span></td>
+          <td>{{ c.codigo or '—' }}</td>
           <td><a href="{{ url_for('client_detail', client_id=c.id) }}">{{ c.name }}</a></td>
           <td>{{ (c.structures[:40] + '…') if c.structures and c.structures|length > 40 else (c.structures or '—') }}</td>
           <td>{{ c.last_contact_date or '—' }}</td>
@@ -50,7 +52,7 @@
           </td>
         </tr>
       {% else %}
-        <tr><td colspan="7">Nenhum cliente encontrado.</td></tr>
+        <tr><td colspan="8">Nenhum cliente encontrado.</td></tr>
       {% endfor %}
     </tbody>
   </table>

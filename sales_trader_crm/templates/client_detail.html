@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ client['name'] }}{% endblock %}
 {% block content %}
-  <h1><span class="status-dot status-{{ status.status }}"></span>{{ client['name'] }}</h1>
+  <h1><span class="status-dot status-{{ status.status }}"></span>{{ (client['codigo'] + " — ") if client['codigo'] else "" }}{{ client['name'] }}</h1>
 
   <section class="card">
     <p>
@@ -10,9 +10,9 @@
         — {{ status.days_since }} dia(s) atrás, {{ status.days_remaining }} dia(s) restantes até o limite de 60
       {% endif %}
     </p>
-    <h2>Estruturas ativas</h2>
+    <h2>Produtos</h2>
     <p class="pre">{{ client['structures'] or "—" }}</p>
-    <h2>Observações</h2>
+    <h2>Observações gerais</h2>
     <p class="pre">{{ client['notes'] or "—" }}</p>
   </section>
 
