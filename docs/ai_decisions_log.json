@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Turkey Restricts Black Sea Traffic As Drone Attacks On Commercial Vessels Spike",
-      "source": "ZeroHedge",
-      "score": 8.0,
-      "motivo": "A notícia pode afetar a segurança de navios comerciais e impactar a exportação de grãos e petróleo da Rússia e da Ucrânia.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T09:16:20.180255-03:00"
-    },
-    {
-      "title": "Barrick Chairman's Planned Overhaul Meets Investor Backlash",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A mudança de controle e a reforma da empresa podem ter impacto significativo no desempenho futuro da Barrick",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T09:20:50.434592-03:00"
-    },
-    {
-      "title": "Mercado de luxo nas redes sociais: Yves Saint Laurent Beauty chega ao TikTok",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia não é sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:20:54.818104-03:00"
-    },
-    {
-      "title": "Proteína pouco conhecida pode revelar novas pistas sobre o Alzheimer",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:21:00.527856-03:00"
-    },
-    {
-      "title": "Bamerindus: o que aconteceu com o banco que foi um dos maiores impérios financeiros do Brasil",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A notícia é sobre um banco histórico, mas não há informações sobre impacto atual no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:21:03.312938-03:00"
-    },
-    {
-      "title": "Como surgiu o Dia das Mães? Conheça a origem da celebração no Brasil e no mundo",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:21:06.120230-03:00"
-    },
-    {
-      "title": "The Stock Market Is Sending a Chilling Warning, and History Isn't Reassuring",
-      "source": "Nasdaq",
-      "score": 8.0,
-      "motivo": "O nível de valorização do mercado de ações é um sinal importante para os investidores.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T09:21:16.544276-03:00"
-    },
-    {
-      "title": "3 Reasons to Buy and Hold This Dividend King (and 1 Reason Not To)",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A empresa é considerada um divisor de dividendos e tem uma posição dominante no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:21:19.515460-03:00"
-    },
-    {
-      "title": "Ares Capital Earned $0.50 a Share and Is Paying Out $0.48. How Thin Is That Dividend Cushion?",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento significativo para o mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:21:22.632986-03:00"
-    },
-    {
-      "title": "The Robotic Surgery Leader: Intuitive Surgical Slides Further But One Wall Street Bull Pegs Returns at 85%",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a empresa líder em um setor em alta.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:21:32.802958-03:00"
-    },
-    {
-      "title": "HA Sustainable Infrastructure Capital Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T09:21:35.661003-03:00"
-    },
-    {
       "title": "Palantir (PLTR) Posted Record 93% Growth, Here’s Why Analysts Think It Won’t Last",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T16:56:34.460078-03:00"
+    },
+    {
+      "title": "Como a geração demitida devido à IA pode ser a próxima a comandar",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia destaca a capacidade de profissionais demitidos por IA em modernizar empresas tradicionais, o que pode ter um impacto positivo no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:01:22.926608-03:00"
+    },
+    {
+      "title": "Mid-America Apartment Communities (MAA) Shares Cross Below 200 DMA",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A ação caiu abaixo da média móvel, indicando tendência negativa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:01:28.773952-03:00"
+    },
+    {
+      "title": "ELA Crosses Below Key Moving Average Level",
+      "source": "Nasdaq",
+      "score": 4.0,
+      "motivo": "A ação está caindo após cruzar abaixo da média móvel de 200 dias, indicando uma tendência negativa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:01:31.821705-03:00"
+    },
+    {
+      "title": "Why Calumet Stock Is Rocketing Higher Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:01:34.477752-03:00"
+    },
+    {
+      "title": "Braveheart Bio CFO Acquires 27,777 Shares for $500,000. Is This a Signal BRVE IPO Is a Success?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:01:37.178651-03:00"
+    },
+    {
+      "title": "Avista is Oversold",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:01:40.091290-03:00"
+    },
+    {
+      "title": "Federal Realty Investment Trust Enters Oversold Territory",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:01:42.758169-03:00"
+    },
+    {
+      "title": "Relative Strength Alert For Universal",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:01:45.407080-03:00"
+    },
+    {
+      "title": "Relative Strength Alert For Trinity Industries",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:01:48.065050-03:00"
+    },
+    {
+      "title": "Acadia Realty Trust Becomes Oversold",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:01:50.748467-03:00"
+    },
+    {
+      "title": "Iovance Biotherapeutics Stock Soars After the Company Posts Strong Q2 Earnings. Is It Heading Even Higher?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:01:53.465959-03:00"
     }
   ]
 }
