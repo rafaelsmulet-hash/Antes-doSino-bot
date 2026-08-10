@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SNEL11 renova máxima histórica; fundo imobiliário chega a 123 mil cotistas",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-07T19:15:38.117035-03:00"
-    },
-    {
-      "title": "After Rippling blew millions on AI in months, it built an employee ROI tool",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:15:43.295658-03:00"
-    },
-    {
-      "title": "BlackRock’s Ethereum ETF To Undergo 1-For-3 Reverse Split",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:15:46.129976-03:00"
-    },
-    {
-      "title": "Argentina's Shale Boom Is Reshaping Energy Security Across the Americas",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:15:48.810054-03:00"
-    },
-    {
-      "title": "VoIP-Pal Granted Leave to Amend Sherman Act Complaint in Antitrust Case Against Major U.S. Carriers",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:15:51.521323-03:00"
-    },
-    {
-      "title": "Dollar Gains on Favorable US Economic News",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T19:15:54.171518-03:00"
-    },
-    {
       "title": "Software stocks sink, led by declines from Figma, Datadog",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T09:31:29.329681-03:00"
+    },
+    {
+      "title": "TSE: Tarcísio declara R$ 2,69 milhões em bens, R$ 354 mil a mais do que em 2022",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "notícia sobre patrimônio pessoal do governador não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:35:42.564371-03:00"
+    },
+    {
+      "title": "Guerra entre EUA e Irã impulsiona elétricos chineses no mundo",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre geopolitica e industria automobilistica, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:35:48.431496-03:00"
+    },
+    {
+      "title": "Entenda por que grandes empresas ainda usam TED em vez do Pix",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "A notícia discute a evolução do TED e o futuro dos pagamentos no Brasil, mas não apresenta informações específicas sobre impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T09:35:51.446686-03:00"
+    },
+    {
+      "title": "Aaon crushes earnings estimates as data-center cooling demand surges",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:35:54.544218-03:00"
+    },
+    {
+      "title": "How Much of the S&P 500's Return Actually Came From Dividends vs. Price Appreciation, by Decade",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:35:58.752735-03:00"
+    },
+    {
+      "title": "Interest Rates Could Still Rise in September: 5 High-Yield Passive Income Stocks Will Benefit",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T09:36:06.977668-03:00"
     }
   ]
 }
