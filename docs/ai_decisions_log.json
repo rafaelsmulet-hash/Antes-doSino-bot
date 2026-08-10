@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ibovespa tem nova derrocada com Petrobras (PETR4) e acumula perda de 3% na semana; dólar cai a R$ 5,08",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "queda do Ibovespa e do dólar afetam mercado financeiro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:00:57.888944-03:00"
-    },
-    {
-      "title": "Em maio, indústria recua em 9 dos 15 locais pesquisados",
-      "source": "IBGE",
-      "score": 6.0,
-      "motivo": "Variação negativa de 0,2% da produção industrial nacional em maio, com alguns locais apresentando quedas mais acentuadas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:05:52.383583-03:00"
-    },
-    {
-      "title": "Jim Cramer Weighs In on Space Equities: Rocket Lab (RKLB) vs. Voyager Technologies (VOYG)",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é específica sobre eventos atuais e não tem impacto direto no mercado financeiro imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T17:06:04.884976-03:00"
-    },
-    {
       "title": "AMD (AMD) Buys Taalas: Is AI Inference the Next Battleground With Nvidia?",
       "source": "Yahoo Finance",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T14:11:29.678616-03:00"
+    },
+    {
+      "title": "Target Hospitality outlines exit-2027 annualized revenue exceeding $700M and adjusted EBITDA above $260M driven by WHS growth",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque apresenta uma previsão de receita e EBITDA positiva para a empresa, o que pode influenciar a confiança dos investidores no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:15:43.728262-03:00"
+    },
+    {
+      "title": "Trump demands Iranian compensation amid ongoing conflict",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia pode ter impacto na relação entre EUA e Irã, afetando negócios e investimentos no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:15:46.583203-03:00"
+    },
+    {
+      "title": "Accendra Health outlines $2.45B-$2.55B 2026 revenue and $300M-$320M adjusted EBITDA amid cost cuts and CEO retirement plan",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:15:49.328057-03:00"
     }
   ]
 }
