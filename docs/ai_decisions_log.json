@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "What Are Wall Street Analysts' Target Price for Halliburton Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:01:24.531987-03:00"
-    },
-    {
-      "title": "What Are Wall Street Analysts' Target Price for Coca-Cola Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:01:27.303182-03:00"
-    },
-    {
-      "title": "CenterPoint Energy Stock Outlook: Is Wall Street Bullish or Bearish?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:01:30.093642-03:00"
-    },
-    {
-      "title": "A facelift in the US would have cost me $45,000. I went to Turkey instead.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:01:33.347701-03:00"
-    },
-    {
-      "title": "Credit Card Balances at Pace with Inflation: Whitney",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações específicas sobre o mercado financeiro que possam ter um impacto imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:05:55.575121-03:00"
-    },
-    {
-      "title": "Na disputa pelo Senado por SP, Marina espera que eleitor leia clima como economia",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia politica sem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:06:01.402528-03:00"
-    },
-    {
-      "title": "A Reforma Tributária pode provocar a quebra do setor de logística?",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia menciona a possibilidade de quebra do setor de logística, o que pode ter um impacto significativo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:06:04.418537-03:00"
-    },
-    {
-      "title": "Westwater Resources, 5E Advanced Materials projects to get Export-Import Bank loans - Reuters",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:06:07.248521-03:00"
-    },
-    {
-      "title": "Cybersecurity decouples from SaaS as AI threats surge - Citrini",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:06:09.917580-03:00"
-    },
-    {
-      "title": "The Trade Desk Rebuilt Its C-Suite in Two Months. Its First Guidance Since Points to a 12% Revenue Decline.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-07T17:06:14.710565-03:00"
-    },
-    {
       "title": "Why QuantumScape Stock Collapsed 31% in July",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T08:11:30.522601-03:00"
+    },
+    {
+      "title": "Fleury (FLRY3) entra em sobrecompra após balanço; Marcopolo (POMO4) segue fragilizada",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A noticia menciona a sobrecompra de uma acao e a euforia em outro, indicando um impacto positivo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:16:32.910010-03:00"
+    },
+    {
+      "title": "Asset Entities EPS of -$3.65, revenue of $2.94M misses by $0.08M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta negativamente o resultado financeiro da empresa, o que pode influenciar as expectativas dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:16:40.796562-03:00"
+    },
+    {
+      "title": "Perion Network beats top-line and bottom-line estimates; narrows FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as estimativas de receita e lucro, o que é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:16:43.811435-03:00"
+    },
+    {
+      "title": "CECO Environmental Non-GAAP EPS of $0.47 beats by $0.14, revenue of $284.96M beats by $2.74M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas de lucro e receita, o que é considerado positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:16:46.706269-03:00"
+    },
+    {
+      "title": "Caviar discreto, trufa antes do hype: Odette chega aos 10 anos com sotaque francês em Cingapura",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:16:55.341250-03:00"
+    },
+    {
+      "title": "Unipol seeks over 30% of future BPER-MPS business – report",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque pode influenciar a estratégia de negócios da Unipol e afetar o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:17:00.793317-03:00"
+    },
+    {
+      "title": "Needham Remains Optimistic on The Walt Disney (DIS) Amidst Increased Competition: Here’s Why",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque a Needham é uma casa de corretagem respeitada e sua opinião pode influenciar os preços das ações da Disney.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T08:17:03.755933-03:00"
+    },
+    {
+      "title": "Ramit Sethi helps newlyweds tackle $165,000 in debt — including the $30,000 he hid before their wedding",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:17:06.805929-03:00"
+    },
+    {
+      "title": "Central Food Retail to acquire Aeon (Thailand)",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A aquisição pode impulsionar as vendas e a expansão da Central Food Retail no mercado da Tailândia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:17:09.683700-03:00"
+    },
+    {
+      "title": "House Dems call for AI companies to testify on recent hacks: ‘Clear risk to safety’",
+      "source": "CNBC - US News",
+      "score": 1.0,
+      "motivo": "A notícia não está relacionada diretamente ao mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T08:17:13.257058-03:00"
     }
   ]
 }
