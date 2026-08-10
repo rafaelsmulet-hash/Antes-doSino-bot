@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "When Leverage Goes Wrong on Wall Street",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca problemas de gestão de risco em uma empresa de Wall Street, o que pode afetar a confiança dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T19:11:05.661940-03:00"
-    },
-    {
-      "title": "Owens Corning Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento nas receitas e lucros da empresa é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T19:16:01.209041-03:00"
-    },
-    {
-      "title": "Ala do STF vê como ‘inadmissível’ tom da manifestação de chefes da PF; entenda",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre crime e justica criminal",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:21:18.764256-03:00"
-    },
-    {
-      "title": "Qorvo's Fate Is Tied to a Skyworks Buyout. Here's What Its Latest Insider Filings Show",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações é um movimento rotineiro e não tem impacto significativo no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:21:27.588374-03:00"
-    },
-    {
-      "title": "How Qorvo's $22 Billion Merger Changes What Its Insider Filings Mean",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma ação específica de uma empresa, mas não é um evento significativo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:21:30.471319-03:00"
-    },
-    {
-      "title": "Home Depot Has Raised Its Dividend for 17 Consecutive Years and Reports Earnings Aug. 18. Is It the Smarter Dow Stock to Buy Over Walmart?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A empresa tem uma longa história de pagamento de dividendos, o que é um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-08T19:21:33.567474-03:00"
-    },
-    {
-      "title": "Should You Worry About This Qorvo Insider Activity During the Skyworks Deal? Here's What to Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não tem impacto significativo em termos de valor ou direção da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:21:36.469823-03:00"
-    },
-    {
-      "title": "A Qorvo Executive's Shares Vested Amid the Skyworks Deal. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não tem impacto significativo no momento.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:21:39.573032-03:00"
-    },
-    {
-      "title": "A Qorvo Insider Disposed of Shares as a Merger Looms. Here's What Long-Term Investors Should Know",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "Venda de ações por parte de um executivo pode ser um sinal de desconfiança na empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T19:21:42.482926-03:00"
-    },
-    {
       "title": "Only 2 of These 5 Nuclear Stocks Sell Fuel Today. Here's What the Market Pays for the Other 3.",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T14:36:22.788886-03:00"
+    },
+    {
+      "title": "Galaxy Gaming GAAP EPS of $0.04, revenue of $7.9M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque fornece informações financeiras atualizadas da empresa, que podem influenciar as decisões de investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:40:48.131981-03:00"
+    },
+    {
+      "title": "Sharps Technology reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "Os resultados financeiros são relevantes para os investidores, mas não são um evento inesperado ou impactante",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:40:51.158622-03:00"
+    },
+    {
+      "title": "O segredo da Chanel: como marca se tornou a mais desejada do mundo pelo segundo trimestre seguido",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:40:57.891777-03:00"
+    },
+    {
+      "title": "Cleveland Fed's Hammack: It will take more than one interest rate hike to bring down inflation",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:41:02.758335-03:00"
+    },
+    {
+      "title": "Corporate earnings soared in Q2, with AI as the 'growth engine': Chart of the Day",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T14:41:05.447649-03:00"
+    },
+    {
+      "title": "SpaceX's First Lockup Expired Last Week. Why Didn't the Stock Crash?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:41:08.111922-03:00"
+    },
+    {
+      "title": "Jim Cramer Dumps Honeywell Aerospace (HONA) After Shock Guidance Cut Triggers Sharp Selloff",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:41:10.843229-03:00"
+    },
+    {
+      "title": "AI Data Centers Need Power Now. Can NuScale Deliver in Time?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:41:13.771479-03:00"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T14:41:17.308297-03:00"
     }
   ]
 }
