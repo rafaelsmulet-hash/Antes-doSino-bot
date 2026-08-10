@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Upstart Stock Plunged 23% in July",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o preço da ação da Upstart.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:50:59.992366-03:00"
-    },
-    {
-      "title": "Australian Wheat Crop Rebounds at Crucial Time for Global Supply",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois afeta a oferta global de trigo, um dos principais componentes da produção agrícola.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:55:47.087378-03:00"
-    },
-    {
-      "title": "Para 49% dos brasileiros, este é o principal atributo de um bom pai",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:55:52.607531-03:00"
-    },
-    {
-      "title": "‘Your Knowledge of Money and How It Works Is Nil’: Suze Orman to 62-Year-Old Who Nearly Locked His Wife Into $605 a Month",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro em geral, pois trata de uma crítica pessoal de uma celebridade.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T18:56:03.826549-03:00"
-    },
-    {
-      "title": "Candidatos à Presidência homenageiam pais e Lula prega o fim da escala 6×1",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:01:01.942931-03:00"
-    },
-    {
-      "title": "Berkshire's Operating Earnings Rose $1.8 Billion Last Quarter. A Currency Swing Was $1.2 Billion of It.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento de lucro operacional do Berkshire é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T19:01:14.982561-03:00"
-    },
-    {
-      "title": "Harris Renews Calls To Pack The Court Despite Poll Showing Most Americans Agree With Its Decisions",
-      "source": "ZeroHedge",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro, mas sim para a política e a sociedade.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:01:18.868741-03:00"
-    },
-    {
-      "title": "Trump Says \"We Are Low Keying It\" With Iran As Options For Walking Away Have Drastically Narrowed",
-      "source": "ZeroHedge",
-      "score": 8.0,
-      "motivo": "A crise no Estreito de Ormuz continua a afetar os preços do petróleo e a economia global, com o Irã exigindo condições cada vez mais rigorosas para a abertura do estreito.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T19:01:25.720905-03:00"
-    },
-    {
-      "title": "\"Lie To People Who Want To Be Lied To\": How To Make A Political Fortune As A Far-Left Democrat",
-      "source": "ZeroHedge",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro, mas é interessante para a política e a sociedade.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:01:28.869616-03:00"
-    },
-    {
-      "title": "Here are the major earnings before the open Monday",
-      "source": "Seeking Alpha",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre resultados de lucros de empresas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:05:50.649504-03:00"
-    },
-    {
-      "title": "Westpac Profit Edges Up as CEO Flags Moderating Housing Market",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T19:15:54.781840-03:00"
-    },
-    {
       "title": "Anvisa proíbe seis tipos de sal fabricados clandestinamente",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T19:21:12.176951-03:00"
+    },
+    {
+      "title": "Latest Oil Market News and Analysis for Aug. 11",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A noticia afeta a estabilidade do petroleo e pode influenciar a decisao de investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:26:06.035758-03:00"
+    },
+    {
+      "title": "Trump assina ordem que reformula recomendações de vacinação infantil nos EUA",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:26:09.882787-03:00"
+    },
+    {
+      "title": "Dirigente diz que ‘não sabe’ até que ponto o Fed teria que elevar os juros nos EUA",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia sugere que o Fed pode elevar os juros, o que pode afetar negativamente o mercado de ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T19:26:12.791111-03:00"
+    },
+    {
+      "title": "Mendonça: É importante que Supremo dê resposta, e logo, sobre reforma tributária",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:26:15.495339-03:00"
+    },
+    {
+      "title": "Alta de +85%: veja por que nossa IA identificou esta ação de serviços de tecnologia antes do rali",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:26:20.312699-03:00"
+    },
+    {
+      "title": "Os planos da Ecopetrol para a Brava e para o Brasil",
+      "source": "Brazil Journal",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:26:23.172007-03:00"
+    },
+    {
+      "title": "Além de One Piece: veja os 15 mangás mais recomendados pelos japoneses",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:26:25.945815-03:00"
+    },
+    {
+      "title": "SNEL11: fundo fecha em alta e renova máxima; liquidez chega a R$ 1,97 milhões",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:26:35.318209-03:00"
+    },
+    {
+      "title": "Arm Stock Is Off 39% From Its High. Why This Could Be the Best Time to Buy.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:26:40.468381-03:00"
+    },
+    {
+      "title": "3 High-Yield Dividend Stocks to Load Up On Before 2026 Ends",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:26:43.147097-03:00"
+    },
+    {
+      "title": "Scott Galloway warned the US stock market could crash within 24 months thanks to AI. Protect your nest egg while you can",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T19:26:45.909732-03:00"
     }
   ]
 }
