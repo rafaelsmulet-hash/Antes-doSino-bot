@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lojas Renner (LREN3) corta projeção de vendas após 2T26 mais fraco; ainda vale comprar?",
-      "source": "Suno Noticias",
-      "score": 6.0,
-      "motivo": "Lojas Renner reduziu sua projeção de vendas, o que pode afetar negativamente o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:56:26.744148-03:00"
-    },
-    {
-      "title": "What is a regional bank?",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é uma explicação geral sobre o conceito de banco regional, sem informações específicas ou atualizadas.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:56:31.040044-03:00"
-    },
-    {
-      "title": "Top Democrat proposes killing tax breaks for overseas oil production",
-      "source": "CNBC - US News",
-      "score": 8.0,
-      "motivo": "Proposta de eliminação de isenções fiscais pode impactar a produção de petróleo e, consequentemente, os preços do gás nos EUA.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T06:56:34.321084-03:00"
-    },
-    {
-      "title": "Anúncios online e facilidade do Pix abrem portas para golpes de falso aluguel",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia sobre golpes não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:00:47.957137-03:00"
-    },
-    {
-      "title": "What RTO personality type are you?",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:01:00.876954-03:00"
-    },
-    {
-      "title": "Diarrhea-Gate: One Sinaloa Farm, 345 Sick, And Two Restaurant Chains Down Double Digits",
-      "source": "ZeroHedge",
-      "score": 2.0,
-      "motivo": "A notícia é sobre um problema de saúde e não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:01:04.708037-03:00"
-    },
-    {
-      "title": "Uma virada no abacate: ciência encontra gene que pode melhorar a lavoura",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T07:05:46.862971-03:00"
-    },
-    {
       "title": "Opinião: O novo símbolo do sucesso masculino é a presença",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-10T15:51:30.812832-03:00"
+    },
+    {
+      "title": "Chile Gives Struggling Copper Giant Codelco a $2.4 Billion Boost",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia de um empurrão financeiro para a Codelco pode ajudar a empresa a reverter sua produção e reduzir sua dívida, impactando positivamente o mercado de commodities.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:56:06.702385-03:00"
+    },
+    {
+      "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
+      "source": "WSJ Markets",
+      "score": 5.0,
+      "motivo": "Oferta hostil pode influenciar valor da ação da Beacon",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:56:10.411830-03:00"
+    },
+    {
+      "title": "Farmácias: balanços mostram avanço de RD e Panvel; RADL3 segue favorita de banco",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "RADL3 é favorita de banco após crescimento robusto de RD Saúde e Panvel",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:56:14.694812-03:00"
+    },
+    {
+      "title": "IA aumenta disputa por vagas: seis formas de se destacar quando todos têm um currículo ‘perfeito’",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:56:21.317185-03:00"
+    },
+    {
+      "title": "JBG SMITH Properties Q2 GAAP EPS of -$1.03, revenue of $129.37M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:56:24.341290-03:00"
+    },
+    {
+      "title": "Pricey but popular: Top technology stocks with high momentum, weak valuation",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:56:27.031975-03:00"
+    },
+    {
+      "title": "Cyrela (CYRE3) abre mão de espaço na Plano & Plano (PLPL3), mas novo acordo amarra uma despedida imediata",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:56:38.893875-03:00"
     }
   ]
 }
