@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Jim Cramer’s Post Earnings Palantir Technologies Inc. (NASDAQ:PLTR) Worry Didn’t Materialize",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre a Palantir Technologies Inc. após os resultados",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:31:01.362807-03:00"
-    },
-    {
-      "title": "Jim Cramer Didn’t Think Seagate Technology Holdings plc (NASDAQ:STX)’s Earnings Were Bad",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre os lucros da empresa, o que pode influenciar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:35:49.958059-03:00"
-    },
-    {
-      "title": "Jim Cramer Gloats After Getting The Boeing Company (NYSE:BA)’s Shares Right",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois Jim Cramer é um investidor conhecido e seu ponto de vista pode influenciar os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:41:11.973601-03:00"
-    },
-    {
-      "title": "DOCS Stock Surges 40% Following Doximity Earnings. What Comes Next.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A ação DOCS teve uma reação positiva significativa após a divulgação dos resultados, o que pode indicar um potencial de crescimento futuro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:41:14.904178-03:00"
-    },
-    {
-      "title": "Jim Cramer Shares Key Reason Why Caterpillar Inc. (NYSE:CAT)’s Shares Are Higher Than Deere’s",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca uma razão específica e material para o desempenho das ações da Caterpillar Inc. em relação à Deere, o que é relevante para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:50:46.832905-03:00"
-    },
-    {
-      "title": "Jim Cramer Called Linde plc (NASDAQ:LIN)’s Share Price Movement “Stupid”",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:50:49.897393-03:00"
-    },
-    {
-      "title": "Jim Cramer Reveals How Alphabet Inc (NASDAQ:GOOGL) Can Reverse Recent Weakness",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque Jim Cramer é um investidor conhecido e sua opinião pode influenciar os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:50:52.814942-03:00"
-    },
-    {
-      "title": "Jim Cramer Believes Meta Platforms, Inc. (NASDAQ:META) Can Do Better",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A declaração de um investidor influente pode influenciar a percepção dos investidores sobre a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:56:19.129976-03:00"
-    },
-    {
-      "title": "Jim Cramer Says There’s Merit To Starbucks Corporation (NASDAQ:SBUX)’s Turnaround Efforts",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque Jim Cramer é um investidor conhecido e suas opiniões podem influenciar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-08T21:56:22.311483-03:00"
-    },
-    {
       "title": "Tron Just Added $2.2 Billion in Stablecoins in July. Does That Make It a Buy?",
       "source": "Nasdaq",
       "score": 4.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T15:01:14.657376-03:00"
+    },
+    {
+      "title": "Saudis Delay Restart of Jazan Plant to Late August, IIR Says",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "O adiamento do reinício da refinaria pode afetar a oferta de petróleo e impactar os preços.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:05:42.967062-03:00"
+    },
+    {
+      "title": "Taylor Farms faz recall de salsa e guacamole devido a surto de salmonela",
+      "source": "Investing.com Brasil",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:05:49.784201-03:00"
+    },
+    {
+      "title": "Confiança cega na IA já tem nome: o que é o viés de automação e por que já engana até especialistas",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:05:53.215505-03:00"
+    },
+    {
+      "title": "Com faturamento de R$ 1 bilhão, River Plate se torna 3ª maior potência do futebol sul-americano",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:05:56.282715-03:00"
+    },
+    {
+      "title": "Vale-refeição rende menos e dura apenas 9 dias no Brasil, mostra pesquisa",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:05:58.968013-03:00"
+    },
+    {
+      "title": "Powerfleet anticipates annualized Q4 FY2027 revenue of ~$495M with ~27% adjusted EBITDA margin as South Africa contract ramps",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:06:01.971330-03:00"
+    },
+    {
+      "title": "Seadrill anticipates 2026 operating revenues of $1.5B-$1.55B and EBITDA of $420M-$450M as legacy contracts reprice",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:06:04.676261-03:00"
+    },
+    {
+      "title": "SpaceX stock tests $135 IPO benchmark in multi-day rebound",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T15:06:07.357544-03:00"
+    },
+    {
+      "title": "The 1 Medicare Move You Can't Afford to Delay",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T15:06:17.632618-03:00"
     }
   ]
 }
