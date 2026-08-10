@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Rússia e Ucrânia trocam ataques durante a noite e deixam pelo menos 7 mortos",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:25:39.394527-03:00"
-    },
-    {
-      "title": "Leveraged ETF Boom Amps Up Wall Street Intraday Momentum Plays",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque menciona o impacto dos ETF com alavancagem no mercado de ações de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T10:30:40.535440-03:00"
-    },
-    {
-      "title": "Apple tests China’s CXMT memory chips as AI boom squeezes supplies: WSJ",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A Apple está procurando alternativas para componentes de memória em alta demanda devido ao boom da inteligência artificial.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T10:30:47.030626-03:00"
-    },
-    {
-      "title": "AI is changing work faster than the data can keep up",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é específica sobre um evento ou decisão relevante para o mercado financeiro imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:30:56.785643-03:00"
-    },
-    {
-      "title": "Turkey Resumes Black Sea Ship Transits Via Straits After Delays",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não traz informações significativas sobre impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:35:35.756645-03:00"
-    },
-    {
-      "title": "Quant snapshot: Lenovo Group and Lumentum Holdings lead top-rated names as Cannae Holdings and Crescent Capital BDC Payments lag",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia destaca a liderança de empresas com desempenho positivo, o que é relevante para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:35:41.580108-03:00"
-    },
-    {
-      "title": "ONS revê acionamento de corte emergencial na geração de energia no Dia dos Pais",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "corte de geração de energia não foi necessário, portanto não há impacto significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:40:52.095642-03:00"
-    },
-    {
-      "title": "OpenAI acquires presentation startup NextSlide",
-      "source": "TechCrunch",
-      "score": 1.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:46:16.167072-03:00"
-    },
-    {
-      "title": "Behind Bessent Moves, Wall Street Sees Sign of Bond-Market Angst",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia sugere que o secretário do Tesouro está trabalhando para manter os juros baixos, o que pode ter impacto no mercado de títulos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-09T10:50:48.897650-03:00"
-    },
-    {
-      "title": "5 Things AI Can (and Cannot) Do for Your Investment Portfolio in 2026",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia discute a aplicação da inteligência artificial em investimentos, mas não apresenta informações específicas sobre o mercado atual.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:51:03.660198-03:00"
-    },
-    {
-      "title": "Rússia - Ações fecharam o pregão em queda e o Índice MOEX Russia Index terminou sem alterações",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "queda das ações russas afeta o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:55:35.662175-03:00"
-    },
-    {
-      "title": "KLA Corporation Has Had a Rough Month: A Wall Street Pro Sees 70% Upside Because of It",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a possibilidade de aumento de ações da KLA Corporation, o que é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:55:43.730582-03:00"
-    },
-    {
-      "title": "Taiwan's war drills showcased a new strike drone class that Ukraine used to smash Russia this year",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T10:55:47.049615-03:00"
-    },
-    {
-      "title": "This ‘adversarial’ pattern can prevent surveillance cameras from detecting you",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T11:01:13.614548-03:00"
-    },
-    {
-      "title": "Global Payments (GPN) Q2 2026 Earnings Call Transcript",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Resultados financeiros acima das expectativas da empresa de processamento de pagamentos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T11:01:16.571234-03:00"
-    },
-    {
-      "title": "Is XRP About to Have Its Biggest Year Yet in 2027?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o preço do XRP e as expectativas dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T11:01:19.542789-03:00"
-    },
-    {
       "title": "SanDisk Just Unveiled the First High-Bandwidth Flash Standard. What That Means for SNDK Stock.",
       "source": "Yahoo Finance",
       "score": 6.0,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T17:21:37.607001-03:00"
+    },
+    {
+      "title": "Hoenig: Upcoming Data Will Be Deciding Factor for Fed",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia destaca a importância de dados de inflação para a Fed, o que pode influenciar suas decisões de política monetária.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:25:40.499060-03:00"
+    },
+    {
+      "title": "EUA afirmam que estão à disposição do Brasil para conversar sobre tarifaço",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre conversa entre países não tem impacto imediato no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:25:44.797144-03:00"
+    },
+    {
+      "title": "Ibovespa cede à pressão de Wall Street e começa semana em leve queda; dólar sobe a R$ 5,11",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:25:49.638840-03:00"
+    },
+    {
+      "title": "Plug Power supera estimativas de receita e eleva projeções",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:25:52.507280-03:00"
+    },
+    {
+      "title": "Venda de remédios nos marketplaces fica mais perto. Qual o impacto nas farmácias?",
+      "source": "Brazil Journal",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:25:55.806036-03:00"
+    },
+    {
+      "title": "Poderdata e Quaest: quais serão as próximas pesquisas eleitorais?",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:25:59.138995-03:00"
+    },
+    {
+      "title": "O ponto cego da geração Z: achar que já sabe liderar antes de provar",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:26:01.876760-03:00"
+    },
+    {
+      "title": "Tarifaço: EUA respondem ao Brasil na OMC e dizem estar à disposição para negociar",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:26:04.617316-03:00"
+    },
+    {
+      "title": "Purple Innovation Non-GAAP EPS of -$1.52 beats by $0.71, revenue of $98.3M misses by $4.12M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:26:07.626590-03:00"
+    },
+    {
+      "title": "Kopin GAAP EPS of $0.00 beats by $0.01, revenue of $12.7M beats by $1.35M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:26:10.339618-03:00"
+    },
+    {
+      "title": "Harrow Health GAAP EPS of -$0.46 misses by $0.28, revenue of $70.7M beats by $0.35M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:26:13.077157-03:00"
+    },
+    {
+      "title": "Earnings Snapshot: Archer Aviation Q2 revenue up, EBITDA loss hits $177.1M; See Q3 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T17:26:15.817895-03:00"
+    },
+    {
+      "title": "TELA Bio GAAP EPS of -$0.20 misses by $0.03, revenue of $19.3M misses by $0.71M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:26:18.544333-03:00"
+    },
+    {
+      "title": "Crescent Capital BDC NII of $0.36 in-line",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:26:21.272423-03:00"
+    },
+    {
+      "title": "Rapid7 Non-GAAP EPS of $0.44 beats by $0.09, revenue of $210.88M beats by $2.63M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:26:24.011441-03:00"
+    },
+    {
+      "title": "TRXF11 negocia compra de cinco shoppings por R$ 876 milhões",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T17:26:32.255393-03:00"
     }
   ]
 }
