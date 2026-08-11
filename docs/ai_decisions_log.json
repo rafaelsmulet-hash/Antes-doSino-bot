@@ -1,213 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I never expected my mom to die at 61. I'm grateful we had the hard conversations first.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:36:14.269626-03:00"
-    },
-    {
-      "title": "Mark Zuckerberg is trying to solve his AI data center problem with a $1 billion giveaway",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:36:16.922086-03:00"
-    },
-    {
-      "title": "Berkshire CEO Abel Puts Cash to Work",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "Aumento nos repasses de ações é um sinal positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:40:49.350634-03:00"
-    },
-    {
-      "title": "Ações da B&G Foods caem com nomeação de Robert Mills como novo CEO",
-      "source": "Investing.com Brasil",
-      "score": 4.0,
-      "motivo": "nomeação de novo CEO pode indicar mudanças estratégicas que afetam a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:40:54.709991-03:00"
-    },
-    {
-      "title": "Ações da 5E Advanced Materials disparam com aporte de US$ 8 mi do EXIM Bank",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aporte de US$ 8 milhões do EXIM Bank é um sinal de confiança no negócio da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:40:57.492448-03:00"
-    },
-    {
-      "title": "2ª temporada de “Las Azules” mistura realidade e ficção para contar história de corrupção e amadurecimento",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:00.203914-03:00"
-    },
-    {
-      "title": "Por que as ações da Vertex Pharmaceuticals disparam hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:41:02.837557-03:00"
-    },
-    {
-      "title": "Por que as ações da Voyager Technologies estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:41:05.487471-03:00"
-    },
-    {
-      "title": "Ações da Fabrinet podem oscilar 12% com resultados em 17 de agosto",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:41:08.129571-03:00"
-    },
-    {
-      "title": "Ações da XP Inc. podem oscilar 5,8% com resultado trimestral",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:41:10.771208-03:00"
-    },
-    {
-      "title": "Ações da Voyager Technologies sobem com contrato da Space Force",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:41:13.445662-03:00"
-    },
-    {
-      "title": "European TTF gas soars 8% on Middle East shipping worries",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:41:16.866224-03:00"
-    },
-    {
-      "title": "908 Devices Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:19.496542-03:00"
-    },
-    {
-      "title": "Smithfield Foods, Inc. Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:22.480127-03:00"
-    },
-    {
-      "title": "SpaceX IPO helps Ontario Teachers’ Pension Plan post 9.5% H1 return",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:25.141887-03:00"
-    },
-    {
-      "title": "Academy Sports + Outdoors is the latest retailer to join Instacart Marketplace",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:27.816709-03:00"
-    },
-    {
-      "title": "Why Figs Stock Keeps Going Up",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:34.028772-03:00"
-    },
-    {
-      "title": "Nasdaq 100 Movers: LITE, HONIV",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:36.660839-03:00"
-    },
-    {
-      "title": "Fed Chair Kevin Warsh Has Held Rates Steady in Back-to-Back Meetings Since Taking Over in 2026. What His Cautious Start Means for Markets.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:39.375528-03:00"
-    },
-    {
-      "title": "S&P 500 Movers: COHR, HONIV",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:41.998512-03:00"
-    },
-    {
-      "title": "Ex-Div Reminder for WisdomTree (WT)",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:44.890637-03:00"
-    },
-    {
-      "title": "Cash Dividend On The Way From Cohen & Steers Infrastructure Fund (UTF)",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:47.542545-03:00"
-    },
-    {
-      "title": "TEX Ex-Dividend Reminder - 8/11/26",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:50.174453-03:00"
-    },
-    {
       "title": "Dow Movers: AAPL, HONIV",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17792,213 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-11T10:56:22.658185-03:00"
+    },
+    {
+      "title": "Trump diz que Infantino é “fantástico” e que FIFA substituí-lo será “erro terrível”",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:00:53.787472-03:00"
+    },
+    {
+      "title": "CNT/MDA: 50% dos brasileiros defende proibição de propaganda eleitoral feita com IA",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre eleições e uso de IA.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:00:57.003781-03:00"
+    },
+    {
+      "title": "Natura (NATU3) surpreende baixas expectativas e ação sobe 3% após balanço do 2T",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Surpresa positiva nos resultados do balanço do 2T",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:01:00.298588-03:00"
+    },
+    {
+      "title": "Por que as ações da Abbott Laboratories estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ações subindo devido a expectativa de melhora nos resultados financeiros da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:04.326382-03:00"
+    },
+    {
+      "title": "Natura deve ter recuperação gradual ao longo do 2º semestre, diz CEO",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:01:06.966746-03:00"
+    },
+    {
+      "title": "Ações da KLA disparam 4% com otimismo no setor de semicondutores",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:09.602332-03:00"
+    },
+    {
+      "title": "Por que as ações da ASML Holding NV ADR estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:12.242434-03:00"
+    },
+    {
+      "title": "“Feito por IA” é a nova etiqueta das marcas",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:01:15.261918-03:00"
+    },
+    {
+      "title": "Bitcoin cai e tem 1º pregão de saída de capital nos ETFs em mais de uma semana",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:17.901860-03:00"
+    },
+    {
+      "title": "O que está em jogo no processo que pode cassar a concessão da Enel em SP",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:20.548416-03:00"
+    },
+    {
+      "title": "Pesquisa Futura: Flávio Bolsonaro recua, mas segue empatado com Lula no 2º turno",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:23.189321-03:00"
+    },
+    {
+      "title": "Best Buy trades higher after Truist points to second-half upside",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:26.275533-03:00"
+    },
+    {
+      "title": "Madison Small-Cap Fund adds Extreme Networks, and Belden; exits Simply Good Foods, and Option Care",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:28.923939-03:00"
+    },
+    {
+      "title": "Liquidia Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:31.574514-03:00"
+    },
+    {
+      "title": "Allot Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:34.183870-03:00"
+    },
+    {
+      "title": "Kontoor Brands Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:01:36.800636-03:00"
+    },
+    {
+      "title": "Ituran Location Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:01:39.418601-03:00"
+    },
+    {
+      "title": "CPI countdown: markets bet the July report won't rock the boat",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:01:42.061521-03:00"
+    },
+    {
+      "title": "Bumble ditches its rule that kept men from making the first move",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:51.399200-03:00"
+    },
+    {
+      "title": "ETL Global adds Fideco Global Business Services in Mauritius",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:54.137950-03:00"
+    },
+    {
+      "title": "Australia Cracks Down On Crypto ATMs",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:56.806492-03:00"
+    },
+    {
+      "title": "MoneyGram Expands Crypto-To-Cash Service",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:01:59.487709-03:00"
+    },
+    {
+      "title": "Booking vs. Celsius: Which Consumer Stock Is a Better Buy in 2026?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:02:02.131856-03:00"
     }
   ]
 }
