@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fleury (FLRY3) entra em sobrecompra após balanço; Marcopolo (POMO4) segue fragilizada",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A noticia menciona a sobrecompra de uma acao e a euforia em outro, indicando um impacto positivo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:16:32.910010-03:00"
-    },
-    {
-      "title": "Asset Entities EPS of -$3.65, revenue of $2.94M misses by $0.08M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta negativamente o resultado financeiro da empresa, o que pode influenciar as expectativas dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:16:40.796562-03:00"
-    },
-    {
-      "title": "Perion Network beats top-line and bottom-line estimates; narrows FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas de receita e lucro, o que é um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:16:43.811435-03:00"
-    },
-    {
-      "title": "CECO Environmental Non-GAAP EPS of $0.47 beats by $0.14, revenue of $284.96M beats by $2.74M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de lucro e receita, o que é considerado positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:16:46.706269-03:00"
-    },
-    {
-      "title": "Caviar discreto, trufa antes do hype: Odette chega aos 10 anos com sotaque francês em Cingapura",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:16:55.341250-03:00"
-    },
-    {
-      "title": "Unipol seeks over 30% of future BPER-MPS business – report",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque pode influenciar a estratégia de negócios da Unipol e afetar o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:17:00.793317-03:00"
-    },
-    {
-      "title": "Needham Remains Optimistic on The Walt Disney (DIS) Amidst Increased Competition: Here’s Why",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque a Needham é uma casa de corretagem respeitada e sua opinião pode influenciar os preços das ações da Disney.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:17:03.755933-03:00"
-    },
-    {
-      "title": "Ramit Sethi helps newlyweds tackle $165,000 in debt — including the $30,000 he hid before their wedding",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:17:06.805929-03:00"
-    },
-    {
-      "title": "Central Food Retail to acquire Aeon (Thailand)",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A aquisição pode impulsionar as vendas e a expansão da Central Food Retail no mercado da Tailândia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:17:09.683700-03:00"
-    },
-    {
-      "title": "House Dems call for AI companies to testify on recent hacks: ‘Clear risk to safety’",
-      "source": "CNBC - US News",
-      "score": 1.0,
-      "motivo": "A notícia não está relacionada diretamente ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:17:13.257058-03:00"
-    },
-    {
-      "title": "Cenário: Ibovespa perde força e acende alerta de queda; Wall Street renova recordes",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre mercado financeiro, mas sem informacao concreta sobre impacto",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:20:38.761389-03:00"
-    },
-    {
-      "title": "‘I want her to choose the best strategy’: My wife’s Social Security is just $900. Should she claim spousal benefit at 62?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:20:43.595017-03:00"
-    },
-    {
-      "title": "Camtek Non-GAAP EPS of $0.78 beats by $0.02, revenue of $133.2M beats by $3.01M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "Resultados financeiros superaram as expectativas, indicando potencial de crescimento da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:20:46.734554-03:00"
-    },
-    {
-      "title": "N-able beats top-line and bottom-line estimates; gives Q3 and updates FY 2026 outlook",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa superou as expectativas de receita e lucro, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:20:49.773837-03:00"
-    },
-    {
-      "title": "Altria Group sees momentum for the On! Plus business",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque indica que o negócio de tabaco eletrônico da Altria Group está em crescimento, o que pode ser positivo para a ação da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:20:52.648393-03:00"
-    },
-    {
-      "title": "Apogee Therapeutics reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "Resultados financeiros de uma empresa de biotecnologia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:20:55.424659-03:00"
-    },
-    {
-      "title": "Spain reinstates border checks for travelers from Italy amid migrant dispute",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A medida pode afetar o comércio e a economia entre Espanha e Itália.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:20:58.685536-03:00"
-    },
-    {
       "title": "Intel files shelf registration for potential common stock sale",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T07:50:51.586499-03:00"
+    },
+    {
+      "title": "Trump Hardens Stance on Iran, Nvidia Taps Wall Street for $500B | The Opening Trade 8/11/2026",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia menciona a Nvidia e a busca por financiamento de $500 bilhões, o que pode ter impacto no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:55:53.271618-03:00"
+    },
+    {
+      "title": "Bank of America: adoção de IA tem impacto limitado no crescimento do emprego",
+      "source": "Investing.com Brasil",
+      "score": 3.0,
+      "motivo": "A noticia discute a relacao entre tecnologia e emprego, mas nao tem impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:55:57.756829-03:00"
+    },
+    {
+      "title": "Por que as ações da Silvercorp Metals estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "resultado de operações abaixo do esperado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:56:04.059373-03:00"
+    },
+    {
+      "title": "Wolfe Research: ganhos de produtividade com IA não resolverão a dívida dos EUA",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A noticia destaca um fator negativo para a economia dos EUA, afetando potencialmente a confianca dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:06.876755-03:00"
+    },
+    {
+      "title": "BofA eleva previsão do mercado de obesidade com força internacional da Lilly",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Aumento da previsão de mercado de obesidade pode impulsionar a demanda por soluções de saúde, beneficiando empresas como a Lilly.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:09.609665-03:00"
+    },
+    {
+      "title": "Por que as ações da Ampco-Pittsburgh estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Ação de uma empresa está subindo significativamente, indicando potencial de crescimento",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:12.308227-03:00"
+    },
+    {
+      "title": "Bernstein: melhora no tráfego da TSA reflete comparações fáceis, não demanda",
+      "source": "Investing.com Brasil",
+      "score": 3.0,
+      "motivo": "A noticia pode afetar os setores de turismo e transporte, mas o impacto e rotineiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:15.051997-03:00"
+    },
+    {
+      "title": "Por que as ações da YPF estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A noticia especifica a razao pelas quais as acoes da YPF estão subindo, o que torna a informacao relevante e materialmente importante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:17.906126-03:00"
+    },
+    {
+      "title": "BofA cita exposição à IA enquanto conversíveis superam ações e títulos",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "exposição à IA pode ser vista como risco para conversíveis",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:20.620988-03:00"
+    },
+    {
+      "title": "Sem Boulos, PT fala em crescer bancada na Câmara em SP e voltar aos 'tempos áureos'",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia politica sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:24.966221-03:00"
+    },
+    {
+      "title": "Ouster wins a key lidar traffic management contract in Utah",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de tecnologia e veículos autônomos, mas não tem um impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:27.982792-03:00"
+    },
+    {
+      "title": "Earnings Snapshot: Sea targets $1B full-year Shopee adjusted EBITDA after Q2 revenue beat",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa superou as expectativas de receita no 2º trimestre, o que sugere uma boa saúde financeira e pode influenciar as expectativas de mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:56:30.890071-03:00"
+    },
+    {
+      "title": "Cardinal Infrastructure Group Inc. GAAP EPS of $0.26 misses by $0.21, revenue of $226.9M beats by $47.77M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de lucro da empresa, mas não é um evento de grande impacto",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:33.755261-03:00"
+    },
+    {
+      "title": "Governo define datas para recesso no Natal e no Ano Novo; veja regras",
+      "source": "G1 Economia",
+      "score": 1.0,
+      "motivo": "noticia sobre recesso de servidores públicos não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:39.255202-03:00"
+    },
+    {
+      "title": "M&A do “petróleo” faz Inove encostar nos R$ 9 bilhões",
+      "source": "Neofeed",
+      "score": 6.0,
+      "motivo": "Incorporação da Nauta Investimentos pode aumentar a capacidade de investimento e expansão da Inove Investimentos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:44.755473-03:00"
+    },
+    {
+      "title": "Covestro joins BMW and Forvia in circular economy research project",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o setor de tecnologia e inovação, mas não tem impacto direto no mercado financeiro imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:47.670288-03:00"
+    },
+    {
+      "title": "An Airbus A380 took a 7-hour flight to nowhere after U-turning over central Africa",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:56:50.807914-03:00"
     }
   ]
 }
