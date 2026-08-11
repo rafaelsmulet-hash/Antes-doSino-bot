@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "As lições de Joan Miró para uma era de excesso de imagens",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:16:11.952221-03:00"
-    },
-    {
-      "title": "PennantPark Non-GAAP NII of $0.26 misses by $0.01",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente as expectativas de rendimentos da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:16:15.211248-03:00"
-    },
-    {
-      "title": "Playboy reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:16:17.848162-03:00"
-    },
-    {
-      "title": "American Public Education GAAP EPS of $0.52 beats by $0.16, revenue of $171.73M beats by $0.85M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:16:20.559234-03:00"
-    },
-    {
-      "title": "Bionano Genomics reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:16:23.211088-03:00"
-    },
-    {
       "title": "PennantPark Investment reports Q3 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T16:16:17.506132-03:00"
+    },
+    {
+      "title": "Northrop unveils Raid Hunter air defenses to counter drones, cruise missiles",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "O desenvolvimento de tecnologia de defesa aérea pode impactar negativamente a produção de drones e mísseis de cruzeiro, afetando empresas como a Lockheed Martin e a Boeing.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:20:50.643372-03:00"
+    },
+    {
+      "title": "Apple Pay, Wallet exec retiring: report",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:20:53.670590-03:00"
+    },
+    {
+      "title": "Should Amazon Investors Be Worried After Jeff Bezos Sold Over $4 Billion in Shares?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Venda de ações significativa por parte do fundador da empresa pode influenciar a percepção dos investidores sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:20:59.990650-03:00"
+    },
+    {
+      "title": "3 of the Best Dividend Stocks to Buy for Under $100 Right Now",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:21:02.662701-03:00"
+    },
+    {
+      "title": "Como marcas querem transformar Copa do Mundo feminina em novo 'fenômeno'",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:21:09.790548-03:00"
     }
   ]
 }
