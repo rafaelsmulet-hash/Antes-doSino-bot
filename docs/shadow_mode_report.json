@@ -1,28 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 45740,
-  "aprovadas_pelo_fluxo_atual": 648,
-  "descartadas_pelos_filtros_atuais": 45092,
+  "total_ingeridas": 45988,
+  "aprovadas_pelo_fluxo_atual": 649,
+  "descartadas_pelos_filtros_atuais": 45339,
   "score_medio_materialidade": 4.02,
-  "seriam_breaking": 53,
+  "seriam_breaking": 54,
   "iriam_para_rodada": 466,
-  "seriam_descartadas_pelo_novo_sistema": 1481,
-  "total_divergencias": 745,
+  "seriam_descartadas_pelo_novo_sistema": 1480,
+  "total_divergencias": 744,
   "divergencias": [
-    {
-      "title": "Samsung HBM4 yield surges to 80%, ahead of year-end target: report",
-      "source": "Seeking Alpha",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Warren Buffett's Successor, Greg Abel, Just Bought $4.5 Billion of the Oracle of Omaha's Favorite Stock (No, Not Alphabet!)",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Micron Trades at 6 Times Next Year's Earnings. The $38 Billion of Capacity That Ends This Cycle Doesn't Open Until 2028.",
       "source": "Nasdaq",
@@ -148,6 +134,20 @@
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Trump says oil supermajors are making too much money. What will they do with it?",
+      "source": "CNBC - US News",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Sensitive Information Keeps Going To 'No Reply' Emails, And One Man Gets It All",
+      "source": "ZeroHedge",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
