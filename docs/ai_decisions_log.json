@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Orchestra BioMed Holdings, Inc. Q2 Sales Decline",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:36:09.573440-03:00"
-    },
-    {
-      "title": "Primeiro a Venezuela, depois a Colômbia: por que não conseguimos saber quando um terremoto vai acontecer?",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:36:14.052434-03:00"
-    },
-    {
       "title": "Here's How Many Shares of Realty Income (O) Stock You'd Need for $1,000 in Monthly Dividends",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T16:51:20.923986-03:00"
+    },
+    {
+      "title": "July CPI Crucial as Inflation Rebound Concerns Rise",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia destaca a importância do dado do CPI de Julho para a Fed e os mercados, especialmente após o relatório de pagamentos relativamente baixo da semana passada.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:55:44.898710-03:00"
+    },
+    {
+      "title": "Concorrente da poupança, Tesouro Reserva atinge R$ 5,7 bi e 167 mil investidores",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Aumento da concorrência na poupança pode pressionar os bancos a oferecer melhores taxas de juros",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:55:48.928353-03:00"
     }
   ]
 }
