@@ -1,28 +1,14 @@
 {
   "date": "2026-08-11",
-  "total_ingeridas": 39818,
-  "aprovadas_pelo_fluxo_atual": 628,
-  "descartadas_pelos_filtros_atuais": 39190,
-  "score_medio_materialidade": 3.97,
-  "seriam_breaking": 35,
-  "iriam_para_rodada": 362,
-  "seriam_descartadas_pelo_novo_sistema": 1603,
+  "total_ingeridas": 40066,
+  "aprovadas_pelo_fluxo_atual": 630,
+  "descartadas_pelos_filtros_atuais": 39436,
+  "score_medio_materialidade": 4.0,
+  "seriam_breaking": 37,
+  "iriam_para_rodada": 363,
+  "seriam_descartadas_pelo_novo_sistema": 1600,
   "total_divergencias": 696,
   "divergencias": [
-    {
-      "title": "The Bessent bond-market scorecard doesn’t look as strong as it once did",
-      "source": "MarketWatch",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Uniper CEO: Mideast peace key as Germany pursues gas goal",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Small-business hiring plans surge, but job gains remain subdued",
       "source": "Seeking Alpha",
@@ -147,6 +133,20 @@
       "source": "WSJ Markets",
       "score": 8.0,
       "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Como a concorrência com China e Índia levou a brasileira Nortec a rever sua rota",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Ações da Birkenstock caem após resultados fracos da On Holding",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
   ]

@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The Bessent bond-market scorecard doesn’t look as strong as it once did",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:53:08.126655-03:00"
-    },
-    {
-      "title": "‘The market is obviously on fire’: Is it a mistake to take $1,000 from my brokerage account to pay my car loan?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A pergunta é genérica e não relacionada a eventos específicos do mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:53:11.097053-03:00"
-    },
-    {
-      "title": "Nvidia teams with Wall Street firms to help finance $500 billion for AI infrastructure",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:53:13.780055-03:00"
-    },
-    {
-      "title": "‘Her bank accounts were stripped bare by Medicaid’: My late friend had $20,000 in credit-card debt. Will her life insurance pay for it?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:53:16.519570-03:00"
-    },
-    {
-      "title": "Uniper CEO: Mideast peace key as Germany pursues gas goal",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque pode influenciar a política energética da Alemanha e, consequentemente, o mercado de commodities.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:53:19.684682-03:00"
-    },
-    {
       "title": "Surf Air Mobility forecasts Q3 revenue $35.5M-$37.5M while reaffirming FY2026 adjusted EBITDA loss (-$30M) to (-$25M)",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T20:51:07.320951-03:00"
+    },
+    {
+      "title": "Vamos (VAMO3) tem lucro líquido ajustado de R$ 101 mi no 2T, alta anual de 21,8%",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "lucro líquido ajustado aumentou significativamente",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:55:51.823047-03:00"
+    },
+    {
+      "title": "Ibovespa tomba 2,5% e atinge menor nível desde janeiro com piora da percepção de risco local; dólar sobe",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "queda significativa do Ibovespa e aumento do dólar, indicando piora da percepção de risco local",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T20:56:00.101238-03:00"
+    },
+    {
+      "title": "Banco BV tem lucro líquido de R$491 mi no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "lucro líquido significativo indica saúde financeira do banco",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:56:03.164246-03:00"
+    },
+    {
+      "title": "I-80 Gold targets 150,000–200,000 oz in 2028 as Lone Tree first gold remains set for end-2027",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia fornece informações específicas sobre as expectativas de produção da I-80 Gold em 2028, o que é relevante para os investidores no setor de mineração.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T20:56:07.005319-03:00"
+    },
+    {
+      "title": "Absci anticipates ABS-201 interim proof of concept data in 2H 2026, while guiding cash runway into 2H 2028",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:56:09.740116-03:00"
     }
   ]
 }
