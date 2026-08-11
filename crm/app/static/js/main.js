@@ -12,4 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  document.querySelectorAll("[data-tabs]").forEach((container) => {
+    const botoes = Array.from(container.querySelectorAll("[data-tab-target]"));
+    const paineis = Array.from(container.querySelectorAll("[data-tab-panel]"));
+    const ativar = (alvo) => {
+      botoes.forEach((b) => b.classList.toggle("ativo", b.dataset.tabTarget === alvo));
+      paineis.forEach((p) => {
+        p.style.display = p.dataset.tabPanel === alvo ? "" : "none";
+      });
+    };
+    botoes.forEach((botao) => {
+      botao.addEventListener("click", () => ativar(botao.dataset.tabTarget));
+    });
+    if (botoes.length) {
+      ativar(botoes[0].dataset.tabTarget);
+    }
+  });
 });

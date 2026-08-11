@@ -1,11 +1,16 @@
 """Regras de acesso e consultas compartilhadas pelas rotas.
 
 Regra de visibilidade de carteira:
-    - trader: apenas clientes cujo trader_titular e ele mesmo, mais
-      clientes explicitamente compartilhados com ele (ClienteCompartilhamento).
-    - head_mesa / compliance: todos os clientes. Todo acesso de
-      head_mesa/compliance a um cliente especifico e registrado em
-      AccessLog para trilha de auditoria.
+    - trader: clientes cujo trader_titular e ele mesmo, mais clientes
+      explicitamente compartilhados (ClienteCompartilhamento), mais
+      clientes cobertos por um Handoff ativo em que ele e o destino
+      (carteira inteira do trader de origem, ou um cliente especifico).
+    - head_mesa / compliance: todos os clientes.
+
+Todo acesso a ficha ou posicao de um cliente e registrado em AccessLog
+(item 10 da Fase 3), com o motivo do acesso (TITULAR, COMPARTILHADO,
+HANDOFF, HEAD_MESA ou COMPLIANCE) -- essa trilha e a base do relatorio de
+auditoria (item 9).
 """
 from __future__ import annotations
 
@@ -17,41 +22,88 @@ from sqlalchemy.orm import Session
 from app import models
 
 
+def _handoff_esta_ativo_clausula(agora: dt.datetime):
+    return (models.Handoff.fim.is_(None)) | (models.Handoff.fim > agora)
+
+
 def clientes_visiveis_query(db: Session, user: models.User):
     """Retorna a query base de clientes visiveis para o usuario."""
     stmt = select(models.Cliente).where(models.Cliente.ativo.is_(True))
     if user.role in ("head_mesa", "compliance"):
         return stmt
+
+    agora = dt.datetime.utcnow()
+    handoff_ativo = _handoff_esta_ativo_clausula(agora)
+
     compartilhados_ids = select(models.ClienteCompartilhamento.cliente_id).where(
         models.ClienteCompartilhamento.user_id == user.id
     )
+    handoff_carteiras_origem_ids = select(models.Handoff.trader_origem_id).where(
+        models.Handoff.trader_destino_id == user.id,
+        models.Handoff.cliente_id.is_(None),
+        handoff_ativo,
+    )
+    handoff_clientes_ids = select(models.Handoff.cliente_id).where(
+        models.Handoff.trader_destino_id == user.id,
+        models.Handoff.cliente_id.is_not(None),
+        handoff_ativo,
+    )
+
     return stmt.where(
         (models.Cliente.trader_titular_id == user.id)
         | (models.Cliente.id.in_(compartilhados_ids))
+        | (models.Cliente.trader_titular_id.in_(handoff_carteiras_origem_ids))
+        | (models.Cliente.id.in_(handoff_clientes_ids))
     )
 
 
 def pode_ver_cliente(db: Session, user: models.User, cliente: models.Cliente) -> bool:
     if user.role in ("head_mesa", "compliance"):
         return True
-    if cliente.trader_titular_id == user.id:
-        return True
-    compartilhado = db.execute(
-        select(models.ClienteCompartilhamento).where(
-            models.ClienteCompartilhamento.cliente_id == cliente.id,
-            models.ClienteCompartilhamento.user_id == user.id,
-        )
+    encontrado = db.execute(
+        clientes_visiveis_query(db, user).where(models.Cliente.id == cliente.id)
     ).scalar_one_or_none()
-    return compartilhado is not None
+    return encontrado is not None
 
 
-def registrar_acesso(db: Session, user: models.User, cliente_id: int | None, acao: str) -> None:
-    """Grava trilha de auditoria. Chamado sempre que head_mesa/compliance
-    (ou qualquer usuario) abre a ficha detalhada de um cliente."""
+def determinar_motivo_acesso(db: Session, user: models.User, cliente: models.Cliente) -> str:
+    """Determina, de forma deterministica, por que o usuario pode ver este
+    cliente -- usado para preencher AccessLog.motivo."""
+    if user.role == "compliance":
+        return "COMPLIANCE"
+    if user.role == "head_mesa":
+        return "HEAD_MESA"
+    if cliente.trader_titular_id == user.id:
+        return "TITULAR"
+
+    agora = dt.datetime.utcnow()
+    handoff = db.execute(
+        select(models.Handoff).where(
+            models.Handoff.trader_destino_id == user.id,
+            _handoff_esta_ativo_clausula(agora),
+            (models.Handoff.cliente_id == cliente.id)
+            | (
+                (models.Handoff.cliente_id.is_(None))
+                & (models.Handoff.trader_origem_id == cliente.trader_titular_id)
+            ),
+        ).limit(1)
+    ).scalar_one_or_none()
+    if handoff is not None:
+        return "HANDOFF"
+
+    return "COMPARTILHADO"
+
+
+def registrar_acesso(
+    db: Session, user: models.User, cliente_id: int | None, acao: str, motivo: str | None = None
+) -> None:
+    """Grava trilha de auditoria (item 10). Chamado sempre que alguem abre
+    a ficha ou a posicao de um cliente especifico."""
     log = models.AccessLog(
         user_id=user.id,
         cliente_id=cliente_id,
         acao=acao,
+        motivo=motivo,
         timestamp=dt.datetime.utcnow(),
     )
     db.add(log)

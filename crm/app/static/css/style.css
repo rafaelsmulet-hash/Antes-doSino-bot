@@ -151,3 +151,65 @@ button.secundario, .btn.secundario {
   margin-bottom: 1rem;
   background: rgba(255, 182, 72, 0.08);
 }
+
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.tabs-nav button {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-dim);
+  padding: 0.5rem 0.25rem;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tabs-nav button.ativo {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+.stat-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.stat-tile {
+  min-width: 160px;
+}
+
+.stat-tile .valor {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.stat-tile .rotulo {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.positivo { color: var(--ok); }
+.negativo { color: var(--danger); }
+
+.linha-destaque-vencimento { background: rgba(255, 182, 72, 0.08); }
+.linha-destaque-vendido td:first-child { border-left: 3px solid var(--danger); }
+
+.alerta-item {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  border-left: 3px solid var(--warn);
+  font-size: 0.85rem;
+}
+
+.alerta-item.alta {
+  border-left-color: var(--danger);
+}

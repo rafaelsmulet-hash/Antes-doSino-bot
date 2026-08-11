@@ -116,13 +116,19 @@ def detalhe_cliente(
     if not cliente or not crud.pode_ver_cliente(db, user, cliente):
         raise Forbidden()
 
-    if user.role in ("head_mesa", "compliance"):
-        crud.registrar_acesso(db, user, cliente.id, "visualizou_ficha_cliente")
+    motivo = crud.determinar_motivo_acesso(db, user, cliente)
+    crud.registrar_acesso(db, user, cliente.id, "visualizou_ficha_cliente", motivo)
 
     interacoes = db.execute(
         select(models.Interacao)
         .where(models.Interacao.cliente_id == cliente.id)
         .order_by(models.Interacao.timestamp.desc())
+    ).scalars().all()
+
+    notas = db.execute(
+        select(models.NotaInterna)
+        .where(models.NotaInterna.cliente_id == cliente.id)
+        .order_by(models.NotaInterna.criado_em.desc())
     ).scalars().all()
 
     return templates.TemplateResponse(
@@ -132,6 +138,7 @@ def detalhe_cliente(
             "user": user,
             "cliente": cliente,
             "interacoes": interacoes,
+            "notas": notas,
             "canais": models.CANAIS_INTERACAO,
             "sentimentos": models.SENTIMENTOS,
         },

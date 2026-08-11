@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Handoffs de cobertura{% endblock %}
+{% block content %}
+<h1>Handoffs de cobertura</h1>
+<div class="quick-actions">
+  <a class="btn" href="/handoffs/novo">+ Novo handoff</a>
+</div>
+
+<div class="panel">
+  <table>
+    <thead>
+      <tr><th>Origem</th><th>Destino</th><th>Escopo</th><th>Motivo</th><th>Inicio</th><th>Fim</th><th>Autorizado por</th><th>Status</th><th></th></tr>
+    </thead>
+    <tbody>
+    {% for h in handoffs %}
+      <tr>
+        <td>{{ h.trader_origem.full_name }}</td>
+        <td>{{ h.trader_destino.full_name }}</td>
+        <td>{{ "Cliente: " + h.cliente.nome if h.cliente else "Carteira inteira" }}</td>
+        <td>{{ h.motivo or "-" }}</td>
+        <td>{{ h.inicio.strftime("%d/%m/%Y %H:%M") }}</td>
+        <td>{{ h.fim.strftime("%d/%m/%Y %H:%M") if h.fim else "-" }}</td>
+        <td>{{ h.autorizado_por.full_name }}</td>
+        <td>
+          {% if h.ativo(agora) %}<span class="badge comprador">ativo</span>{% else %}<span class="badge">encerrado</span>{% endif %}
+        </td>
+        <td>
+          {% if h.ativo(agora) %}
+          <form method="post" action="/handoffs/{{ h.id }}/encerrar" style="margin:0;">
+            <button type="submit" class="secundario">Encerrar</button>
+          </form>
+          {% endif %}
+        </td>
+      </tr>
+    {% else %}
+      <tr><td colspan="9" class="dim">Nenhum handoff registrado.</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

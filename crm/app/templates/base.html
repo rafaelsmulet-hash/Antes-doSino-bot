@@ -12,6 +12,11 @@
       <a href="/">Dashboard</a>
       <a href="/clientes">Clientes</a>
       <a href="/interacoes/nova">Registrar interacao</a>
+      <a href="/mural">Mural</a>
+      {% if request.session.get("role") in ("head_mesa", "compliance") %}
+      <a href="/handoffs">Handoffs</a>
+      <a href="/auditoria">Auditoria</a>
+      {% endif %}
     </nav>
     <div style="display:flex; align-items:center; gap:1rem;">
       <span class="aviso-offline">uso interno da mesa &middot; sem conexao externa</span>

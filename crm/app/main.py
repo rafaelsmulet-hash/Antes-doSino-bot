@@ -15,7 +15,7 @@ from starlette.middleware.sessions import SessionMiddleware
 from app.auth_deps import Forbidden, NotAuthenticated
 from app.config import SECRET_KEY
 from app.database import init_db
-from app.routers import auth, clientes, dashboard, interacoes
+from app.routers import auditoria, auth, clientes, dashboard, handoffs, interacoes, mural, notas, posicoes
 from app.seed import seed_default_users
 
 
@@ -36,7 +36,12 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 app.include_router(auth.router)
 app.include_router(clientes.router)
+app.include_router(posicoes.router)
 app.include_router(interacoes.router)
+app.include_router(notas.router)
+app.include_router(handoffs.router)
+app.include_router(mural.router)
+app.include_router(auditoria.router)
 app.include_router(dashboard.router)
 
 

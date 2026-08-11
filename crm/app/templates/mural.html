@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Mural da mesa{% endblock %}
+{% block content %}
+<h1>Mural interno da mesa</h1>
+<p class="aviso-informativo">
+  Avisos curtos visiveis a toda a mesa (ex: "saiu research bom para o ticker Y").
+  Nao cole extrato de posicao ou dado sensivel de cliente aqui -- use a ficha do
+  cliente e as notas internas para isso.
+</p>
+{% if erro %}<p class="erro">{{ erro }}</p>{% endif %}
+
+<form class="form-panel panel" method="post" action="/mural">
+  <textarea name="texto" required maxlength="{{ tamanho_maximo }}" placeholder="Escreva um aviso curto para a mesa..."></textarea>
+  <button type="submit">Publicar</button>
+</form>
+
+<div class="panel">
+  {% if postagens %}
+  {% for p in postagens %}
+    <div class="alerta-item" style="border-left-color: var(--accent);">
+      <strong>{{ p.autor.full_name }}</strong>
+      <span class="dim">-- {{ p.criado_em.strftime("%d/%m/%Y %H:%M") }}</span>
+      <div>{{ p.texto }}</div>
+    </div>
+  {% endfor %}
+  {% else %}
+  <p class="dim">Nenhuma postagem ainda.</p>
+  {% endif %}
+</div>
+{% endblock %}

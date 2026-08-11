@@ -16,6 +16,7 @@
 
 <div class="quick-actions">
   <a class="btn" href="/interacoes/nova?cliente_id={{ cliente.id }}">+ Registrar interacao</a>
+  <a class="btn secundario" href="/clientes/{{ cliente.id }}/posicao">Ver posicao</a>
 </div>
 
 <div class="panel">
@@ -44,6 +45,31 @@
   </table>
   {% else %}
   <p class="dim">Nenhuma interacao registrada ainda.</p>
+  {% endif %}
+</div>
+
+<div class="panel" id="notas">
+  <h3>Notas internas da mesa ({{ notas|length }})</h3>
+  <p class="aviso-informativo">Nota interna -- nao enviar ao cliente. Visivel apenas para o trader titular, head_mesa, compliance e traders com handoff ativo ou compartilhamento explicito deste cliente. Registro append-only.</p>
+  <form method="post" action="/clientes/{{ cliente.id }}/notas" class="form-panel" style="max-width:100%; margin-bottom:1rem;">
+    <textarea name="texto" required placeholder="Nota interna sobre este cliente..."></textarea>
+    <button type="submit">Adicionar nota</button>
+  </form>
+  {% if notas %}
+  <table>
+    <thead><tr><th>Quando</th><th>Autor</th><th>Nota</th></tr></thead>
+    <tbody>
+    {% for n in notas %}
+      <tr>
+        <td>{{ n.criado_em.strftime("%d/%m/%Y %H:%M") }}</td>
+        <td>{{ n.autor.full_name }}</td>
+        <td>{{ n.texto }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="dim">Nenhuma nota interna ainda.</p>
   {% endif %}
 </div>
 {% endblock %}

@@ -115,6 +115,40 @@ class ClienteCompartilhamento(Base):
     user: Mapped["User"] = relationship()
 
 
+class Handoff(Base):
+    """Transferencia temporaria de cobertura entre traders (item 6 da
+    Fase 3) -- ex: ferias, ausencia.
+
+    Se `cliente_id` for nulo, o handoff cobre toda a carteira do trader de
+    origem; se preenchido, cobre apenas aquele cliente especifico. Enquanto
+    ativo (fim nulo ou no futuro), `trader_destino` ganha acesso de
+    leitura/escrita equivalente ao titular (ver app/crud.py). Ao encerrar
+    (preencher `fim`), o acesso reverte automaticamente -- nao ha nenhuma
+    edicao de registro, apenas a passagem do tempo ou o preenchimento do
+    campo `fim`."""
+
+    __tablename__ = "handoffs"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    trader_origem_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    trader_destino_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    cliente_id: Mapped[int | None] = mapped_column(ForeignKey("clientes.id"), nullable=True, index=True)
+    autorizado_por_id: Mapped[int] = mapped_column(ForeignKey("users.id"))
+    motivo: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    inicio: Mapped[dt.datetime] = mapped_column(DateTime, default=dt.datetime.utcnow)
+    fim: Mapped[dt.datetime | None] = mapped_column(DateTime, nullable=True)
+    criado_em: Mapped[dt.datetime] = mapped_column(DateTime, default=dt.datetime.utcnow)
+
+    trader_origem: Mapped["User"] = relationship(foreign_keys=[trader_origem_id])
+    trader_destino: Mapped["User"] = relationship(foreign_keys=[trader_destino_id])
+    autorizado_por: Mapped["User"] = relationship(foreign_keys=[autorizado_por_id])
+    cliente: Mapped["Cliente | None"] = relationship()
+
+    def ativo(self, agora: dt.datetime | None = None) -> bool:
+        agora = agora or dt.datetime.utcnow()
+        return self.fim is None or self.fim > agora
+
+
 class Interacao(Base):
     """Log de interacao com cliente. Append-only: nunca editar/apagar."""
 
@@ -143,8 +177,58 @@ class Interacao(Base):
         return [t.strip().upper() for t in self.tickers_mencionados.split(",") if t.strip()]
 
 
+class NotaInterna(Base):
+    """Nota interna da mesa vinculada a um cliente (item 7 da Fase 3).
+
+    Nunca visivel externamente -- a interface deixa isso explicito
+    ("nota interna, nao enviar ao cliente"). Append-only, como o log de
+    interacao. Visibilidade segue exatamente a mesma regra de acesso ao
+    cliente (trader titular, head_mesa, compliance, handoff ativo ou
+    compartilhamento explicito -- ver app/crud.pode_ver_cliente)."""
+
+    __tablename__ = "notas_internas"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    cliente_id: Mapped[int] = mapped_column(ForeignKey("clientes.id"), index=True)
+    autor_id: Mapped[int] = mapped_column(ForeignKey("users.id"))
+    texto: Mapped[str] = mapped_column(Text)
+    criado_em: Mapped[dt.datetime] = mapped_column(DateTime, default=dt.datetime.utcnow, index=True)
+
+    cliente: Mapped["Cliente"] = relationship()
+    autor: Mapped["User"] = relationship()
+
+
+class PostagemMural(Base):
+    """Postagem curta do mural interno da mesa (item 8 da Fase 3).
+
+    Deliberadamente so tem um campo de texto livre, sem nenhuma referencia
+    estruturada (FK) a cliente ou posicao -- o mural e para avisos e
+    alertas do tipo "saiu research bom para o ticker Y, quem tem cliente
+    nesse setor?", nao para extrato de carteira. Cabe ao autor nao colar
+    dado sensivel de posicao no texto; a ausencia de FK para Posicao
+    torna estruturalmente impossivel a postagem "puxar" um extrato.
+    Visivel a todos os traders da mesa. Append-only."""
+
+    __tablename__ = "postagens_mural"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    autor_id: Mapped[int] = mapped_column(ForeignKey("users.id"))
+    texto: Mapped[str] = mapped_column(String(500))
+    criado_em: Mapped[dt.datetime] = mapped_column(DateTime, default=dt.datetime.utcnow, index=True)
+
+    autor: Mapped["User"] = relationship()
+
+
+MOTIVOS_ACESSO = ("TITULAR", "COMPARTILHADO", "HANDOFF", "HEAD_MESA", "COMPLIANCE")
+
+
 class AccessLog(Base):
-    """Trilha de auditoria: quem viu dados de qual cliente, quando."""
+    """Trilha de auditoria (item 10 da Fase 3): quem acessou dados de qual
+    cliente, quando, e por qual motivo (carteira titular, compartilhamento
+    explicito, handoff de cobertura ativo, ou visao ampla de head_mesa /
+    compliance). Append-only -- nunca editado ou apagado; a retencao segue
+    a politica de compliance da instituicao (fora do escopo deste
+    software, e responsabilidade operacional de quem administra o banco)."""
 
     __tablename__ = "access_logs"
 
@@ -152,7 +236,11 @@ class AccessLog(Base):
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
     cliente_id: Mapped[int | None] = mapped_column(ForeignKey("clientes.id"), nullable=True, index=True)
     acao: Mapped[str] = mapped_column(String(64))
+    motivo: Mapped[str | None] = mapped_column(String(16), nullable=True)  # MOTIVOS_ACESSO
     timestamp: Mapped[dt.datetime] = mapped_column(DateTime, default=dt.datetime.utcnow, index=True)
+
+    user: Mapped["User"] = relationship()
+    cliente: Mapped["Cliente | None"] = relationship()
 
 
 # ---------------------------------------------------------------------------
@@ -235,3 +323,44 @@ class PosicaoAluguel(Base):
     data_inicio: Mapped[dt.date] = mapped_column(Date)
     data_vencimento: Mapped[dt.date | None] = mapped_column(Date, nullable=True)
     data_referencia: Mapped[dt.date] = mapped_column(Date, index=True)
+
+
+class ImportacaoExecucao(Base):
+    """Um rodada do job de importacao de posicao (item 1 da Fase 2).
+
+    Guarda os totais da rodada; o detalhe de cada linha rejeitada fica em
+    ImportacaoLinhaRejeitada. Nada aqui e sobrescrito -- cada execucao do
+    job gera uma linha nova, formando o historico de importacoes.
+    """
+
+    __tablename__ = "importacao_execucoes"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    arquivo: Mapped[str] = mapped_column(String(255))
+    timestamp: Mapped[dt.datetime] = mapped_column(DateTime, default=dt.datetime.utcnow, index=True)
+    total_lido: Mapped[int] = mapped_column(Integer, default=0)
+    total_importado: Mapped[int] = mapped_column(Integer, default=0)
+    total_rejeitado: Mapped[int] = mapped_column(Integer, default=0)
+
+    rejeitadas: Mapped[list["ImportacaoLinhaRejeitada"]] = relationship(
+        back_populates="execucao", cascade="all, delete-orphan"
+    )
+
+
+class ImportacaoLinhaRejeitada(Base):
+    """Linha do arquivo de posicao que nao pode ser importada, com o motivo.
+
+    Nunca falha silenciosamente: toda linha invalida (formato ruim,
+    cliente nao cadastrado no CRM etc.) fica registrada aqui para
+    conferencia posterior, em vez de ser descartada sem rastro.
+    """
+
+    __tablename__ = "importacao_linhas_rejeitadas"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    execucao_id: Mapped[int] = mapped_column(ForeignKey("importacao_execucoes.id"), index=True)
+    numero_linha: Mapped[int] = mapped_column(Integer)
+    motivo: Mapped[str] = mapped_column(Text)
+    conteudo: Mapped[str] = mapped_column(Text)  # linha bruta serializada em JSON
+
+    execucao: Mapped["ImportacaoExecucao"] = relationship(back_populates="rejeitadas")

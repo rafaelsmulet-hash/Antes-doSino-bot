@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% block title %}Posicao -- {{ cliente.nome }}{% endblock %}
+{% block content %}
+<h1>{{ cliente.nome }} <span class="dim">({{ cliente.codigo }})</span> -- Posicao</h1>
+<p class="aviso-informativo">
+  Visao informativa para uso interno da mesa. O CRM apenas exibe o que foi importado
+  da fonte oficial (backoffice/custodia) -- nenhuma posicao e calculada aqui, e nada
+  nesta tela e recomendacao de hedge ou gestao de risco endereçada ao cliente.
+</p>
+<p class="quick-actions"><a href="/clientes/{{ cliente.id }}">&larr; voltar para a ficha do cliente</a></p>
+
+{% if not visao.posicoes and not visao.derivativos_estruturas %}
+<div class="panel">
+  <p class="dim">Nenhuma posicao importada para este cliente ainda.</p>
+</div>
+{% else %}
+
+{% if alertas %}
+<div class="panel">
+  <h3>Alertas de posicao ({{ alertas|length }})</h3>
+  {% for a in alertas %}
+  <div class="alerta-item {{ a.severidade }}">
+    <strong>{{ a.ticker }}</strong> -- {{ a.mensagem }}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div data-tabs>
+  <div class="tabs-nav">
+    <button data-tab-target="resumo">Resumo</button>
+    <button data-tab-target="acoes">Acoes/ETFs/FIIs</button>
+    <button data-tab-target="derivativos">Derivativos</button>
+    <button data-tab-target="exposicao">Exposicao consolidada</button>
+  </div>
+
+  <div data-tab-panel="resumo" class="panel">
+    <div class="stat-row">
+      <div class="stat-tile">
+        <div class="rotulo">Patrimonio total</div>
+        <div class="valor">R$ {{ "%.2f"|format(visao.patrimonio_total) }}</div>
+      </div>
+      <div class="stat-tile">
+        <div class="rotulo">Exposicao liquida</div>
+        <div class="valor">
+          {% if visao.exposicao_liquida is not none %}
+            R$ {{ "%.2f"|format(visao.exposicao_liquida) }}
+            {% if visao.exposicao_parcial %}<span class="dim">(parcial)</span>{% endif %}
+          {% else %}
+            <span class="dim">indisponivel</span>
+          {% endif %}
+        </div>
+      </div>
+      <div class="stat-tile">
+        <div class="rotulo">Variacao do dia</div>
+        <div class="valor">
+          {% if visao.variacao_dia %}
+            <span class="{{ 'positivo' if visao.variacao_dia.valor >= 0 else 'negativo' }}">
+              R$ {{ "%.2f"|format(visao.variacao_dia.valor) }} ({{ "%.2f"|format(visao.variacao_dia.percentual) }}%)
+            </span>
+          {% else %}
+            <span class="dim">sem historico anterior</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <p class="dim">Data de referencia da posicao: {{ visao.data_referencia.strftime("%d/%m/%Y") if visao.data_referencia else "-" }}</p>
+  </div>
+
+  <div data-tab-panel="acoes" class="panel">
+    {% if visao.posicoes %}
+    <table>
+      <thead><tr><th>Ticker</th><th>Tipo</th><th>Quantidade</th><th>PM</th><th>Preco atual</th><th>P&amp;L</th></tr></thead>
+      <tbody>
+      {% for p in visao.posicoes %}
+        <tr>
+          <td>{{ p.ticker }}</td>
+          <td>{{ p.tipo_ativo }}</td>
+          <td>{{ "%.0f"|format(p.quantidade) }}</td>
+          <td>{{ "%.2f"|format(p.preco_medio) }}</td>
+          <td>{{ "%.2f"|format(p.preco_atual) if p.preco_atual is not none else "-" }}</td>
+          <td class="{{ 'positivo' if (p.pnl_nao_realizado or 0) >= 0 else 'negativo' }}">
+            {{ "%.2f"|format(p.pnl_nao_realizado) if p.pnl_nao_realizado is not none else "-" }}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p class="dim">Sem posicao a vista importada.</p>
+    {% endif %}
+  </div>
+
+  <div data-tab-panel="derivativos" class="panel">
+    {% if visao.derivativos_estruturas %}
+    <table>
+      <thead><tr><th>Ticker</th><th>Vencimento</th><th>Estrutura</th><th>Qtd</th><th>Dias uteis</th><th>Risco max.</th><th>Ganho max.</th><th>P. equilibrio</th><th>Delta liq.</th><th>Aviso</th></tr></thead>
+      <tbody>
+      {% for item in visao.derivativos_estruturas %}
+        <tr class="{{ 'linha-destaque-vencimento' if item.vencimento_proximo else '' }} {{ 'linha-destaque-vendido' if item.tem_perna_vendida else '' }}">
+          <td>{{ item.ticker }}</td>
+          <td>{{ item.vencimento.strftime("%d/%m/%Y") }}{% if item.vencimento_proximo %} <span class="badge warn">vence em breve</span>{% endif %}</td>
+          <td>{{ item.estrutura.tipo }}{% if item.tem_perna_vendida %} <span class="badge vendedor">vendido</span>{% endif %}</td>
+          <td>{{ "%.0f"|format(item.estrutura.quantidade) }}</td>
+          <td>{{ item.estrutura.dias_ate_vencimento if item.estrutura.dias_ate_vencimento is not none else "-" }}</td>
+          <td>{{ "%.2f"|format(item.estrutura.risco_maximo) if item.estrutura.risco_maximo is not none else "-" }}</td>
+          <td>
+            {% if item.estrutura.ganho_maximo_ilimitado %}ilimitado
+            {% elif item.estrutura.ganho_maximo is not none %}{{ "%.2f"|format(item.estrutura.ganho_maximo) }}
+            {% else %}-{% endif %}
+          </td>
+          <td>{% if item.estrutura.ponto_equilibrio %}{{ item.estrutura.ponto_equilibrio|map("round", 2)|join(" / ") }}{% else %}-{% endif %}</td>
+          <td>{{ "%.2f"|format(item.estrutura.delta_liquido) if item.estrutura.delta_liquido is not none else "-" }}</td>
+          <td class="dim">{{ item.estrutura.aviso or "-" }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p class="dim">Sem posicao em derivativos importada.</p>
+    {% endif %}
+  </div>
+
+  <div data-tab-panel="exposicao" class="panel">
+    {% if visao.exposicao_por_ticker %}
+    <table>
+      <thead><tr><th>Ticker</th><th>Exposicao direcional</th><th>% do patrimonio</th></tr></thead>
+      <tbody>
+      {% for ticker, exp in visao.exposicao_por_ticker.items()|sort %}
+        <tr>
+          <td>{{ ticker }}</td>
+          <td class="{{ 'positivo' if exp >= 0 else 'negativo' }}">{{ "%.2f"|format(exp) }}</td>
+          <td>{{ "%.1f"|format((exp / visao.patrimonio_total * 100) if visao.patrimonio_total else 0) }}%</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    {% if visao.exposicao_parcial %}
+    <p class="dim">Exposicao parcial: delta indisponivel para alguma estrutura ou sem preco atual do ativo-objeto importado.</p>
+    {% endif %}
+    {% else %}
+    <p class="dim">Sem dados suficientes para calcular exposicao.</p>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}

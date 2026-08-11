@@ -66,3 +66,26 @@ def login(client, username="trader1", password="mude-esta-senha"):
     )
     assert resp.status_code == 303, resp.text
     return resp
+
+
+SENHA_PADRAO_TESTE = "mude-esta-senha"
+
+
+def criar_trader(db_session, full_name="Trader Teste"):
+    """Cria um trader com usuario/senha unicos por teste -- usado quando o
+    teste precisa de isolamento total (ex: handoffs), ja que o banco de
+    testes e compartilhado por toda a sessao de pytest."""
+    import uuid
+
+    username = f"trader-{uuid.uuid4().hex[:10]}"
+    trader = models.User(
+        username=username,
+        full_name=full_name,
+        role="trader",
+        password_hash=hash_password(SENHA_PADRAO_TESTE),
+        active=True,
+    )
+    db_session.add(trader)
+    db_session.commit()
+    db_session.refresh(trader)
+    return trader

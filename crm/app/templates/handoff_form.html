@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Novo handoff{% endblock %}
+{% block content %}
+<h1>Novo handoff de cobertura</h1>
+<p class="aviso-informativo">
+  Transferencia temporaria de acesso de leitura/escrita da carteira (ou de um
+  cliente especifico) de um trader para outro. Ao preencher "fim" (ou ao
+  encerrar manualmente), o acesso do trader destino reverte automaticamente.
+</p>
+{% if erro %}<p class="erro">{{ erro }}</p>{% endif %}
+<form class="form-panel panel" method="post" action="/handoffs/novo">
+  <div>
+    <label>Trader de origem (quem esta afastado)</label>
+    <select name="trader_origem_id" required>
+      {% for t in traders %}
+      <option value="{{ t.id }}">{{ t.full_name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>Trader de destino (quem assume a cobertura)</label>
+    <select name="trader_destino_id" required>
+      {% for t in traders %}
+      <option value="{{ t.id }}">{{ t.full_name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>Escopo</label>
+    <select name="cliente_id">
+      <option value="">Toda a carteira do trader de origem</option>
+      {% for c in clientes %}
+      <option value="{{ c.id }}">Somente: {{ c.nome }} ({{ c.codigo }})</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>Motivo (opcional)</label>
+    <input type="text" name="motivo" placeholder="ex: ferias, licenca medica">
+  </div>
+  <div>
+    <label>Fim previsto (opcional -- pode ser encerrado manualmente depois)</label>
+    <input type="datetime-local" name="fim">
+  </div>
+  <button type="submit">Iniciar handoff</button>
+</form>
+{% endblock %}

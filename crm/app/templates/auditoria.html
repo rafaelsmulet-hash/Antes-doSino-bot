@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}Relatorio de auditoria{% endblock %}
+{% block content %}
+<h1>Relatorio de auditoria</h1>
+<p class="aviso-informativo">Uso exclusivo de compliance/head_mesa. Consolida interacoes registradas e acessos a dados de cliente fora da carteira titular do usuario.</p>
+
+<form class="panel" method="get" action="/auditoria" style="display:flex; gap:1rem; flex-wrap:wrap; align-items:flex-end;">
+  <div>
+    <label>De</label><br>
+    <input type="date" name="data_inicio" value="{{ data_inicio.isoformat() }}">
+  </div>
+  <div>
+    <label>Ate</label><br>
+    <input type="date" name="data_fim" value="{{ data_fim.isoformat() }}">
+  </div>
+  <div>
+    <label>Trader</label><br>
+    <select name="trader_id">
+      <option value="">Todos</option>
+      {% for t in traders %}
+      <option value="{{ t.id }}" {% if trader_id == t.id %}selected{% endif %}>{{ t.full_name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>Cliente</label><br>
+    <select name="cliente_id">
+      <option value="">Todos</option>
+      {% for c in clientes %}
+      <option value="{{ c.id }}" {% if cliente_id == c.id %}selected{% endif %}>{{ c.nome }} ({{ c.codigo }})</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <button type="submit">Filtrar</button>
+  </div>
+  <div>
+    <a class="btn secundario" href="/auditoria/export.csv?data_inicio={{ data_inicio.isoformat() }}&data_fim={{ data_fim.isoformat() }}{% if trader_id %}&trader_id={{ trader_id }}{% endif %}{% if cliente_id %}&cliente_id={{ cliente_id }}{% endif %}">
+      Exportar CSV
+    </a>
+  </div>
+</form>
+
+<div class="panel">
+  <h3>Interacoes registradas ({{ relatorio.interacoes|length }})</h3>
+  {% if relatorio.interacoes %}
+  <table>
+    <thead><tr><th>Quando</th><th>Trader</th><th>Cliente</th><th>Canal</th><th>Resumo</th></tr></thead>
+    <tbody>
+    {% for i in relatorio.interacoes %}
+      <tr>
+        <td>{{ i.timestamp.strftime("%d/%m/%Y %H:%M") }}</td>
+        <td>{{ i.trader.full_name }}</td>
+        <td><a href="/clientes/{{ i.cliente_id }}">{{ i.cliente.codigo }}</a></td>
+        <td>{{ i.canal }}</td>
+        <td>{{ i.resumo[:100] }}{% if i.resumo|length > 100 %}...{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="dim">Nenhuma interacao no periodo/filtros selecionados.</p>
+  {% endif %}
+</div>
+
+<div class="panel">
+  <h3>Acessos fora da carteira titular ({{ relatorio.acessos_fora_titular|length }})</h3>
+  {% if relatorio.acessos_fora_titular %}
+  <table>
+    <thead><tr><th>Quando</th><th>Usuario</th><th>Cliente</th><th>Motivo</th><th>Acao</th></tr></thead>
+    <tbody>
+    {% for a in relatorio.acessos_fora_titular %}
+      <tr>
+        <td>{{ a.timestamp.strftime("%d/%m/%Y %H:%M") }}</td>
+        <td>{{ a.user.full_name if a.user else "-" }}</td>
+        <td>{% if a.cliente %}<a href="/clientes/{{ a.cliente_id }}">{{ a.cliente.codigo }}</a>{% else %}-{% endif %}</td>
+        <td><span class="badge">{{ a.motivo }}</span></td>
+        <td>{{ a.acao }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="dim">Nenhum acesso fora da carteira titular no periodo/filtros selecionados.</p>
+  {% endif %}
+</div>
+{% endblock %}
