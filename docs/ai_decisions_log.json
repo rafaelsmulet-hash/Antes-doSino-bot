@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Yen Underperforms G-10 Peers as Intervention Boost Fades",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A possibilidade de intervenção oficial adiciona incerteza ao mercado e pode afetar a valorização do yen.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:31:13.733199-03:00"
-    },
-    {
-      "title": "Malaysia’s Anwar Loses Third Lawmaker This Year in Party Exodus",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:31:16.726879-03:00"
-    },
-    {
-      "title": "Lucro da Embraer aumenta 25% e alcança R$ 1,11 bilhão no 2º trimestre",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "Aumento do lucro da Embraer é um sinal positivo para a empresa e pode influenciar o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T07:31:35.150299-03:00"
-    },
-    {
-      "title": "Mega-Sena paga R$ 164 milhões para bolão, faz 100 milionários de uma vez só e agora a +Milionária promete mais que o dobro de todas as outras loterias juntas",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não há informações financeiras relevantes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:31:38.278144-03:00"
-    },
-    {
-      "title": "4 Social Security Shifts Headed Your Way in 2027 That Retirees Should Know About",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:31:44.555055-03:00"
-    },
-    {
-      "title": "Standard Chartered Sees $4T Tokenization Driving Chainlink to $200 by 2030",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o preço de uma criptomoeda popular e destaca a potencialidade de crescimento da tecnologia blockchain.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:31:47.690437-03:00"
-    },
-    {
-      "title": "HFTs Shun India Stock Closing Auction Over SEBI Short-Selling Hurdle",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado pois afeta as operações de negociação de ações na Índia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:35:46.132435-03:00"
-    },
-    {
-      "title": "Is $1 million enough for a household to retire? The answer keeps changing.",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:35:51.896207-03:00"
-    },
-    {
-      "title": "Barrick in charts: Q2 gold output up 11% Q/Q to 796K oz; copper down 5% Y/Y",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque fornece informações sobre a produção de ouro e cobre da Barrick, que é uma empresa importante no setor de mineração.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T07:35:54.910484-03:00"
-    },
-    {
-      "title": "Premium pet food maker Open Farm heads for an IPO",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado de ações, pois a Open Farm está se preparando para uma IPO, o que pode atrair investidores e afetar o preço das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T07:35:57.824844-03:00"
-    },
-    {
-      "title": "Embraer beats top-line and bottom-line estimates; updates FY 2026 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A atualização da previsão para o ano de 2026 é relevante para os investidores e pode influenciar as ações da Embraer no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:36:00.767081-03:00"
-    },
-    {
-      "title": "Ryman Hospitality Properties to buy Grande Lakes Orlando Resort for $1.38B",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque pode afetar a posição da empresa no mercado de resorts, mas não é um evento de grande impacto imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:36:03.585335-03:00"
-    },
-    {
-      "title": "4 Social Security Shifts Headed Your Way in 2027 That Retirees Should Know About",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "Reajuste salarial dos beneficiários do Seguro Social em 2027 é relevante para a economia brasileira.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:36:08.582405-03:00"
-    },
-    {
-      "title": "French Stocks Mixed In Cautious Trade",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações concretas sobre o mercado financeiro, apenas uma situação de incerteza.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:36:11.487195-03:00"
-    },
-    {
-      "title": "Barrick Mining Corporation Profit Advances In Q2",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento nos lucros da empresa é relevante para o mercado de ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T07:36:14.529425-03:00"
-    },
-    {
-      "title": "National Energy Services Reunited Corp. Reveals Increase In Q2 Profit",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia revela um aumento no lucro da empresa, o que é relevante para os investidores e pode influenciar as ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:36:17.671020-03:00"
-    },
-    {
-      "title": "Should you build or buy software? This Wall Street firm has a new tool to decide.",
-      "source": "Business Insider",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para empresas que precisam decidir entre criar ou comprar software, mas não é um evento de mercado significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:36:26.876766-03:00"
-    },
-    {
       "title": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
       "source": "CNBC - Finance",
       "score": 6.0,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T07:05:52.648561-03:00"
+    },
+    {
+      "title": "TPG Agrees to Buy South Korea’s Lotte Rental for $925 Million",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois envolve a aquisição de uma empresa de aluguel de carros, o que pode ter impacto no mercado de ações da Coreia do Sul",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:10:34.863464-03:00"
+    },
+    {
+      "title": "Minidólar (WDOU26): IPCA e Ata do Copom podem elevar a volatilidade",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A noticia menciona a possibilidade de aumento da volatilidade do minidólar devido a decisões do Copom, o que pode ser positivo para os traders que buscam oportunidades de negociação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:10:38.610620-03:00"
+    },
+    {
+      "title": "Mini-índice (WINQ26) hoje: mercado busca reação após seis quedas seguidas",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A busca por reação após seis quedas seguidas pode indicar uma oportunidade de compra para os traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:10:41.372316-03:00"
+    },
+    {
+      "title": "Lufthansa fecha acordo com sindicato de pilotos para resolver disputas",
+      "source": "Investing.com Brasil",
+      "score": 3.0,
+      "motivo": "acordo entre empresa e sindicato é comum e geralmente não afeta significativamente o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:10:46.864286-03:00"
+    },
+    {
+      "title": "Economia do frio: quem ganha com o inverno de quase R$ 6 bilhões do Rio Grande do Sul",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Aumento do turismo no Rio Grande do Sul pode impulsionar a economia local.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:10:50.268630-03:00"
+    },
+    {
+      "title": "Os 10 destinos mais atrativos para quem quer morar e investir no exterior",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A noticia trata de investimentos imobiliarios no exterior e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:10:53.132393-03:00"
+    },
+    {
+      "title": "The K-shaped economy just hit a plot twist",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A mudança inesperada na economia em forma de K pode ter implicações para a política econômica e as decisões de investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:10:56.242023-03:00"
+    },
+    {
+      "title": "Ampco-Pittsburgh GAAP EPS of $0.07, revenue of $102.9M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Resultado financeiro de uma empresa específica, mas sem impacto significativo no mercado em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:10:59.140905-03:00"
+    },
+    {
+      "title": "Organigram Global reports Q3 results",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "resultado financeiro de uma empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:11:01.982017-03:00"
+    },
+    {
+      "title": "Rocket Lab slides as Neutron launch could slip to 2027",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "Adiamento do lançamento pode afetar a confiança dos investidores na empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:11:04.869407-03:00"
+    },
+    {
+      "title": "Natura tem prejuízo de R$ 410 milhões no primeiro semestre de 2026",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "prejuízo significativo da Natura, empresa de cosméticos, afeta a confiança dos investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:11:11.302333-03:00"
+    },
+    {
+      "title": "Best high-yield savings interest rates today, Tuesday, August 11, 2026: Earn up to 4.15% APY with an HYSA",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não fornece informações novas ou impactantes sobre o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:11:15.986524-03:00"
+    },
+    {
+      "title": "HELOC and home equity loan rates today, Tuesday, August 11, 2026: Besides rates, how to choose between a HELOC or HEL",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia fornece informações práticas sobre como escolher entre um HELOC e um HEL, mas não contém informações sobre mudanças nas taxas.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:11:18.898034-03:00"
+    },
+    {
+      "title": "Mortgage and refinance rates today, Tuesday, August 11, 2026: Rates mostly higher as U.S. 'low-keying' Iran negotiations",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "Aumento nas taxas de empréstimo pode afetar a demanda por imóveis e, consequentemente, o mercado imobiliário",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:11:21.860626-03:00"
+    },
+    {
+      "title": "Intel's huge rally is helping pay for its AI comeback: Chart of the Day",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o desempenho da Intel, uma das maiores empresas de tecnologia do mundo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:11:24.992727-03:00"
+    },
+    {
+      "title": "Best CD rates today, Tuesday, August 11, 2026: Lock in up to 4.15% APY today on a 14-month CD",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "As taxas de CD são relevantes para os investidores que buscam renda fixa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:11:28.228769-03:00"
+    },
+    {
+      "title": "Got $200 per Month? This ETF Could Turn It Into $455,865 With Minimal Effort on Your Part.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a possibilidade de ganhos significativos com um ETF, o que pode atrair investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:11:31.235562-03:00"
     }
   ]
 }
