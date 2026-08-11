@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "TD Cowen vê 25% de chance de Trump conseguir demitir Cook do Fed",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:56:38.361100-03:00"
-    },
-    {
-      "title": "Payrolls abaixo do esperado reduzem apostas em alta do Fed enquanto Ásia sobe e petróleo avança",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Notícia sobre payrolls abaixo do esperado impacta expectativas do Fed e pode influenciar políticas monetárias",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:56:44.715644-03:00"
-    },
-    {
-      "title": "Valorant compra 34,46% da Atom Educação; companhia deixa de ter controlador definido",
-      "source": "Investing.com Brasil",
-      "score": 2.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:56:47.526458-03:00"
-    },
-    {
       "title": "Deutsche Bank eleva Persimmon para compra após queda nas ações",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T21:26:47.144720-03:00"
+    },
+    {
+      "title": "Tencent’s WorkBuddy Sparks AI Turnaround Hopes After Stock Rout",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia sugere que a Tencent pode recuperar o ritmo no setor de inteligência artificial, o que é relevante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T21:30:39.707502-03:00"
+    },
+    {
+      "title": "Fortuna to buy Bambadji gold project in Senegal from Barrick, IAMGOLD",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque envolve a aquisição de um projeto de ouro, o que pode ter impacto positivo nas ações de empresas de mineração.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T21:30:45.807979-03:00"
+    },
+    {
+      "title": "SpaceX Has Reached the Moon, Just Not How Elon Musk Might Have Planned It",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:30:57.137930-03:00"
     }
   ]
 }

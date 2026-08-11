@@ -1,21 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 43280,
-  "aprovadas_pelo_fluxo_atual": 643,
-  "descartadas_pelos_filtros_atuais": 42637,
+  "total_ingeridas": 43528,
+  "aprovadas_pelo_fluxo_atual": 645,
+  "descartadas_pelos_filtros_atuais": 42883,
   "score_medio_materialidade": 4.04,
-  "seriam_breaking": 55,
-  "iriam_para_rodada": 462,
-  "seriam_descartadas_pelo_novo_sistema": 1483,
-  "total_divergencias": 748,
+  "seriam_breaking": 54,
+  "iriam_para_rodada": 464,
+  "seriam_descartadas_pelo_novo_sistema": 1482,
+  "total_divergencias": 747,
   "divergencias": [
-    {
-      "title": "TD Cowen vê 25% de chance de Trump conseguir demitir Cook do Fed",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Deutsche Bank eleva Persimmon para compra após queda nas ações",
       "source": "Investing.com Brasil",
@@ -148,6 +141,13 @@
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Microchip's Data Center Revenue Grew 98% Last Quarter. Here's Why It's Guiding to $1 Billion for the Year.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }
