@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "TEN Holdings GAAP EPS of -$0.70, revenue of $0.73M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:06:40.936442-03:00"
-    },
-    {
-      "title": "Trump plan may make it harder to compare airfares and find the best price — but you can still sound off on the proposal",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:06:53.043431-03:00"
-    },
-    {
-      "title": "Should You Stop Saving for Retirement?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:06:55.684070-03:00"
-    },
-    {
-      "title": "TikTok is calling US staffers back to the office 5 days a week, starting next month",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:06:58.652389-03:00"
-    },
-    {
-      "title": "The US Army is going digital, but soldiers still want physical backups of their battlefield maps",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:07:01.373345-03:00"
-    },
-    {
-      "title": "Conheça os 10 cargos do setor de tecnologia com salários de até R$ 53 mil por mês",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia sobre carreiras e salarios não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:10:39.865086-03:00"
-    },
-    {
-      "title": "A taxa de desocupação é de 5,4% e taxa de subutilização é de 12,9% no trimestre encerrado em junho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:10:43.505114-03:00"
-    },
-    {
-      "title": "Metagenomi GAAP EPS of -$0.73 misses by $0.18",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A notícia é relevante pois afeta a expectativa de lucro da empresa, mas não é um evento de mercado maior.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:10:47.532960-03:00"
-    },
-    {
-      "title": "New Concept Energy GAAP EPS of -$0.01, revenue of $0.04M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:10:50.484790-03:00"
-    },
-    {
-      "title": "Morgan Stanley starts $1.5T innovation infrastructure initiative",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:10:53.167929-03:00"
-    },
-    {
-      "title": "Apollo Commercial Real Estate Finance Non-GAAP EPS of $0.15 beats by $0.04",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:10:55.880954-03:00"
-    },
-    {
-      "title": "Orchestra BioMed GAAP EPS of -$0.38",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:10:58.530691-03:00"
-    },
-    {
-      "title": "Nkarta GAAP EPS of -$0.54 misses by $0.16",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:11:01.182427-03:00"
-    },
-    {
-      "title": "Galecto reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:11:03.813243-03:00"
-    },
-    {
       "title": "3 Artificial Intelligence (AI) Stocks to Load Up On in August",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T17:32:13.278438-03:00"
+    },
+    {
+      "title": "Here are three key takeaways from the disappointing July jobs report",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A notícia é relevante por trazer informações sobre o mercado de trabalho nos EUA, que pode influenciar as decisões de investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:35:44.067463-03:00"
+    },
+    {
+      "title": "Corinthians não renova com Memphis Depay e fala em ‘saúde financeira’",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "notícia sobre esporte e negociação de jogador de futebol",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:35:48.548912-03:00"
+    },
+    {
+      "title": "‘Efeito Mateus’: por que vencer um prêmio abre portas para mais prêmios, segundo a ciência",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:35:54.531037-03:00"
+    },
+    {
+      "title": "Oracle’s stock has taken a hit as AI spending concerns resurface",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T17:35:57.396095-03:00"
+    },
+    {
+      "title": "EDAP TMS S.A. reports Preliminary  Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:36:00.124231-03:00"
+    },
+    {
+      "title": "Quantinuum releases first earnings report after IPO; partners with Oracle to deploy Helios",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T17:36:02.851562-03:00"
+    },
+    {
+      "title": "Black Rock Coffee Bar, Inc. GAAP EPS of $0.06 misses by $0.01, revenue of $63M misses by $1.58M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:36:05.575391-03:00"
+    },
+    {
+      "title": "U.S. SEC said to be planning couple of crypto initiatives as Clarity Act stalls",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:36:08.283743-03:00"
+    },
+    {
+      "title": "Adecoagro GAAP EPS of $0.13 misses by $0.07, revenue of $531.01M misses by $71M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:36:10.987032-03:00"
+    },
+    {
+      "title": "RideNow GAAP EPS of $0.16 beats by $0.03, revenue of $296.8M misses by $23.69M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:36:13.674852-03:00"
+    },
+    {
+      "title": "Kyverna Therapeutics GAAP EPS of -$0.63 beats by $0.05",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:36:16.343364-03:00"
+    },
+    {
+      "title": "Mariner Logistics taps Flock Freight veteran as CEO",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:36:27.475394-03:00"
+    },
+    {
+      "title": "A 26-year-old owes $45K in debt but insists on keeping an $800 monthly entertainment budget — Reddit didn't hold back",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:36:30.241361-03:00"
+    },
+    {
+      "title": "A Tale Of 2 Deserts: Utah, California, & The Race To Power America's Next 50 Years",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:36:33.827133-03:00"
     }
   ]
 }
