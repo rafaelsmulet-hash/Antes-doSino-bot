@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Eleições: Homens brancos concentram maior fatia de recursos entre candidatos jovens, diz estudo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:52:47.304397-03:00"
-    },
-    {
-      "title": "Here’s how much Roger Federer is losing as On Holding says it is being disciplined on price",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:52:50.091144-03:00"
-    },
-    {
-      "title": "Aubrey Plaza finally finds a buyer for $4.9 million L.A. home and is expecting her first child in the fall",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:52:53.135840-03:00"
-    },
-    {
-      "title": "Red Hot Chili Peppers bassist Flea relists Malibu sanctuary for $7.9 million",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:52:55.806813-03:00"
-    },
-    {
-      "title": "Intel now says it is selling $20 billion of stock",
-      "source": "MarketWatch",
-      "score": 8.0,
-      "motivo": "A empresa está vendendo uma grande quantidade de ações, o que pode afetar seu preço no mercado.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:53:02.346937-03:00"
-    },
-    {
-      "title": "Bears are in pain as the S&P 500 hits record highs. That may mean more upside for stocks.",
-      "source": "MarketWatch",
-      "score": 6.0,
-      "motivo": "A notícia sugere que os investidores que estão vendendo ações ainda não se renderam, o que pode indicar mais subida no mercado e impactar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:53:05.455518-03:00"
-    },
-    {
       "title": "The Bessent bond-market scorecard doesn’t look as strong as it once did",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-11T20:46:19.553594-03:00"
+    },
+    {
+      "title": "Perma Fix Environmental Services’ (PESI) Strong Backlog Overshadows Weak Results",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "O forte estoque de pedidos é um indicador de demanda futura e pode impulsionar as ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:50:53.436290-03:00"
+    },
+    {
+      "title": "Why SpaceX Stock Plunged Despite a Strong Q2 Earnings Beat",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A perda significativa na subsidiária da SpaceX afeta negativamente a avaliação da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:50:56.482231-03:00"
+    },
+    {
+      "title": "Saia CEO: How We Built a National LTL Network & Cut Transit Times",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:50:59.152132-03:00"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Fiserv Stock Will Climb or Sink?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:51:01.817156-03:00"
+    },
+    {
+      "title": "Analyst Warns Alphabet (GOOG) Faces Two Major AI Problems; SpaceX (SPCX) a Better AI Bet?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:51:04.516960-03:00"
+    },
+    {
+      "title": "Alarm Bells Are Sounding for the Grid: Answering Them Takes More Than Megawatts",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:51:07.320951-03:00"
     }
   ]
 }
