@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Esperanças de acordo sobre Ormuz se esvaem enquanto Trump exige indenizações do Irã",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:51:19.568773-03:00"
-    },
-    {
-      "title": "Trump Media, dona da rede social Truth Social, tem prejuízo de US$ 238 mi no 2T",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre empresa de Trump, mas não é relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:51:22.411778-03:00"
-    },
-    {
-      "title": "Ata do Copom, IPCA, balanços e mais destaques desta terça-feira",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "noticia lista de eventos, sem conteúdo específico",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:51:25.261925-03:00"
-    },
-    {
-      "title": "Dow Jones Futuro cai com petróleo em alta antes de inflação nos EUA",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A notícia menciona o impacto do petróleo em alta nos futuros do Dow Jones, o que é relevante para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:51:28.124901-03:00"
-    },
-    {
-      "title": "CEO de IA de US$ 49 bi diz que jornada de 38 horas semanais não leva ninguém ao topo",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "Comentário do CEO não é relevante para o mercado financeiro imediato",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:51:31.072393-03:00"
-    },
-    {
-      "title": "Musk quer erguer no Texas a maior instalação industrial do planeta",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "A notícia é relevante pois envolve expansão de empresas de tecnologia e produção de chips para IA, impactando o mercado de tecnologia e ações de empresas como a Tesla.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:51:37.579446-03:00"
-    },
-    {
       "title": "Por que um banco italiano guarda 500 mil peças de queijo em seus cofres",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T20:20:50.940413-03:00"
+    },
+    {
+      "title": "Intrusion targets profitability in 2027 as VigilAigent adds approximately $3.5M of annual recurring revenue",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia destaca a adição de receita recorrente anual, o que é relevante para a lucratividade da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:25:48.230084-03:00"
+    },
+    {
+      "title": "B&G Foods reaffirms fiscal 2026 outlook with $1.735B-$1.775B net sales and $0.575-$0.675 adjusted EPS amid CEO transition",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante por fornecer atualizações sobre as previsões financeiras da empresa, mas não é um evento inesperado ou significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:25:51.260649-03:00"
+    },
+    {
+      "title": "MIAX's CEO Cashed In Options Struck at $12. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Venda de ações por parte do CEO pode ser considerada positiva para a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:25:57.645840-03:00"
+    },
+    {
+      "title": "KOSPI May Spin Its Wheels On Wednesday",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque trata do desempenho do mercado de ações da Coreia do Sul, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:26:00.556174-03:00"
+    },
+    {
+      "title": "Stocks Mixed as Higher Crude Prices Boost T-Note Yields",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aumento dos juros dos T-Notas pode influenciar as taxas de juros futuras.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:26:11.753988-03:00"
+    },
+    {
+      "title": "Bitmine Buys Another 7,391 Ethereum And Increases Staked Position",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:26:14.433061-03:00"
     }
   ]
 }
