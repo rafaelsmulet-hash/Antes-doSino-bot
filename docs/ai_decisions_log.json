@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "India Equity Fund Flows Ease in July as Small Caps Stay Hot",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia é relevante para o mercado de ações da Índia, mas não é um evento significativo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:51:09.870405-03:00"
-    },
-    {
-      "title": "Retail Footfall Fell on Lower Tourism, Says Spinneys CEO",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque afeta a receita da Spinneys, mas o impacto é limitado e rotineiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:51:13.444868-03:00"
-    },
-    {
       "title": "EUA oferecem R$ 79 mi à Colômbia após terremoto que matou mais de 100 pessoas",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T20:11:15.549718-03:00"
+    },
+    {
+      "title": "Oferta de Agosto: acesse nosso stockpicking vencedor por IA com 55% de desconto",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "oferta de desconto não é um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:15:42.039708-03:00"
+    },
+    {
+      "title": "Mobia Medical forecasts $54M-$56M 2026 revenue, citing 69%-75% growth target",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa prevê um crescimento significativo em sua receita, o que pode ser positivo para a ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:15:45.531898-03:00"
     }
   ]
 }
