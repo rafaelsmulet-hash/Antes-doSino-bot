@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wall Street thinks inflation is under control. Here’s why investors shouldn’t buy it.",
-      "source": "MarketWatch",
-      "score": 8.0,
-      "motivo": "A notícia destaca a importância da inflação para resolver a crise de dívida, o que pode ter um impacto significativo no mercado.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T22:20:45.711032-03:00"
-    },
-    {
-      "title": "Uh-Oh! The Inflationary Effects of the Donald Trump-Led Iran War Now Extend Well Beyond the Energy Sector.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A guerra pode levar a uma escassez de commodities e aumentar os preços, afetando a economia global.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T22:20:54.083408-03:00"
-    },
-    {
       "title": "The Tactic Of AOC And Her Allies To Giggle Away The 'Craziness' Of Woke-Era Abuses Should Not Be Tolerated",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T20:01:30.117110-03:00"
+    },
+    {
+      "title": "China's Real Estate Market Races to Defuse a $148 Billion Time Bomb",
+      "source": "Bloomberg Markets",
+      "score": 8.0,
+      "motivo": "A notícia indica que a China está tentando resolver um problema crítico no mercado imobiliário, o que pode ter um impacto significativo no setor.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T20:05:59.218686-03:00"
+    },
+    {
+      "title": "Polls begin to close in primary elections across the country",
+      "source": "CNBC - US News",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:06:14.090218-03:00"
     }
   ]
 }
