@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stocks Churn as Hormuz Standoff Spurs Rally in Oil: Markets Wrap",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia é relevante para o mercado pois afeta os preços do petróleo e os juros dos títulos, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:10:39.256425-03:00"
-    },
-    {
-      "title": "Startups: Nvidia negocia pacote de US$ 500B para infraestrutura de IA",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Nvidia está negociando um pacote de financiamento para expansão do setor de IA, o que pode impulsionar a demanda por suas tecnologias",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:10:43.652392-03:00"
-    },
-    {
-      "title": "Wall Street fecha em queda com tombo das ações da Intel e avanço dos preços do petróleo",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:10:47.385514-03:00"
-    },
-    {
-      "title": "Quanterix forecasts $142M-$148M 2026 revenue amid commercial reorganization and 2027 cash flow breakeven target",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:10:50.976673-03:00"
-    },
-    {
-      "title": "Opal Fuels outlines ~3 million MMBtu of annual design capacity coming online over next 24 months while maintaining full-year guidance",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:10:53.732253-03:00"
-    },
-    {
-      "title": "Entravision Communications Corporation GAAP EPS of $0.19, revenue of $227.9M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:10:56.409898-03:00"
-    },
-    {
       "title": "Olema Pharmaceuticals GAAP EPS of -$0.61 misses by $0.06",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-11T16:06:11.116454-03:00"
+    },
+    {
+      "title": "ApexBrasil atenderá 5,3 mil empresas impactadas pelo tarifaço com R$ 210 milhões",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A notícia destaca a ação da ApexBrasil em apoiar empresas impactadas pelo tarifaço, o que pode ter um impacto positivo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:10:52.089063-03:00"
+    },
+    {
+      "title": "Boeing signs agreements to support Poland’s Apache helicopter fleet",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de defesa e aeronáutica.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:10:59.465119-03:00"
+    },
+    {
+      "title": "Paul Graham Says His Wife’s First Tesla FSD Experience Was Like a ‘Religious Revelation’— and AI Chief Ashok Elluswamy Had One Request When He Heard It",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de tecnologia e automóveis, mas não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:11:12.885417-03:00"
+    },
+    {
+      "title": "Cardano ‘Bull Trap’ Risks Triggering 50% ADA Price Correction",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:11:15.801017-03:00"
+    },
+    {
+      "title": "Retail investors sold SpaceX shares for first time on Friday",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:11:18.506206-03:00"
+    },
+    {
+      "title": "The 20 best college towns where life revolves around their universities, ranked",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:11:21.597618-03:00"
     }
   ]
 }
