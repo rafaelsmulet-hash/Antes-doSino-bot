@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Clientes{% endblock %}
+{% block content %}
+<h1>Clientes</h1>
+<div class="quick-actions" style="display:flex; gap:0.75rem; align-items:center;">
+  <form method="get" action="/clientes" style="margin:0;">
+    <input type="text" name="q" placeholder="Buscar por nome ou codigo" value="{{ q }}" data-filtro-tabela="#tabela-clientes">
+  </form>
+  <a class="btn" href="/clientes/novo">+ Novo cliente</a>
+</div>
+
+<div class="panel">
+  <table id="tabela-clientes">
+    <thead>
+      <tr><th>Codigo</th><th>Nome</th><th>Tipo</th><th>Book</th><th>Trader titular</th></tr>
+    </thead>
+    <tbody>
+    {% for c in clientes %}
+      <tr>
+        <td><a href="/clientes/{{ c.id }}">{{ c.codigo }}</a></td>
+        <td><a href="/clientes/{{ c.id }}">{{ c.nome }}</a></td>
+        <td>{{ c.tipo }}</td>
+        <td>{{ c.book or "-" }}</td>
+        <td>{{ c.trader_titular.full_name }}</td>
+      </tr>
+    {% else %}
+      <tr><td colspan="5" class="dim">Nenhum cliente encontrado.</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

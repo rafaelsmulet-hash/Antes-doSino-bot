@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Novo cliente{% endblock %}
+{% block content %}
+<h1>Novo cliente</h1>
+{% if erro %}<p class="erro">{{ erro }}</p>{% endif %}
+<form class="form-panel panel" method="post" action="/clientes/novo">
+  <div>
+    <label>Codigo</label>
+    <input type="text" name="codigo" required>
+  </div>
+  <div>
+    <label>Nome / razao social</label>
+    <input type="text" name="nome" required>
+  </div>
+  <div>
+    <label>Tipo</label>
+    <select name="tipo" required>
+      <option value="PF">Pessoa fisica</option>
+      <option value="PJ">Pessoa juridica</option>
+      <option value="FUNDO">Fundo</option>
+    </select>
+  </div>
+  <div>
+    <label>Book</label>
+    <input type="text" name="book">
+  </div>
+  <div>
+    <label>Perfil de risco</label>
+    <input type="text" name="perfil_risco" placeholder="ex: conservador, moderado, agressivo">
+  </div>
+  <div>
+    <label>Trader titular</label>
+    <select name="trader_titular_id" required>
+      {% for t in traders %}
+      <option value="{{ t.id }}">{{ t.full_name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>Tags / setores de interesse (separados por virgula)</label>
+    <input type="text" name="tags" placeholder="ex: bancos, commodities, small caps">
+  </div>
+  <div>
+    <label>Produtos habilitados (separados por virgula)</label>
+    <input type="text" name="produtos" placeholder="ex: acoes, opcoes, aluguel, termo">
+  </div>
+  <button type="submit">Salvar cliente</button>
+</form>
+{% endblock %}

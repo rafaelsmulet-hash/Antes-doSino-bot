@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}CRM Mesa{% endblock %} - CRM Mesa (offline)</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <nav>
+      <a href="/">Dashboard</a>
+      <a href="/clientes">Clientes</a>
+      <a href="/interacoes/nova">Registrar interacao</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <span class="aviso-offline">uso interno da mesa &middot; sem conexao externa</span>
+      {% if request.session.get("user_id") %}
+        <span class="dim">{{ request.session.get("full_name") }} ({{ request.session.get("role") }})</span>
+        <form method="post" action="/logout" style="margin:0;">
+          <button type="submit" class="secundario">Sair</button>
+        </form>
+      {% endif %}
+    </div>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h1>Dashboard do dia -- {{ hoje.strftime("%d/%m/%Y") }}</h1>
+<p class="aviso-informativo">Visao informativa para uso interno da mesa. Nenhum conteudo aqui e recomendacao a cliente.</p>
+
+<div class="quick-actions">
+  <a class="btn" href="/interacoes/nova">+ Registrar interacao rapida</a>
+</div>
+
+<div class="grid-2">
+  <div class="panel">
+    <h3>Clientes sem contato ha mais de {{ dias }} dias ({{ sem_contato|length }})</h3>
+    {% if sem_contato %}
+    <table>
+      <thead><tr><th>Cliente</th><th>Ultima interacao</th></tr></thead>
+      <tbody>
+      {% for item in sem_contato %}
+        <tr>
+          <td><a href="/clientes/{{ item.cliente.id }}">{{ item.cliente.nome }}</a></td>
+          <td>{{ item.ultima_interacao.strftime("%d/%m/%Y") if item.ultima_interacao else "nunca contatado" }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p class="dim">Nenhum cliente pendente.</p>
+    {% endif %}
+  </div>
+
+  <div class="panel">
+    <h3>Follow-ups pendentes ({{ followups|length }})</h3>
+    {% if followups %}
+    <table>
+      <thead><tr><th>Cliente</th><th>Data</th><th>Resumo</th></tr></thead>
+      <tbody>
+      {% for f in followups %}
+        <tr>
+          <td><a href="/clientes/{{ f.cliente_id }}">{{ f.cliente.nome }}</a></td>
+          <td>{{ f.follow_up_data.strftime("%d/%m/%Y") }}</td>
+          <td>{{ f.resumo[:60] }}{% if f.resumo|length > 60 %}...{% endif %}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p class="dim">Nenhum follow-up pendente.</p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="panel">
+  <h3>Ultimas interacoes da mesa</h3>
+  {% if feed %}
+  <table>
+    <thead><tr><th>Quando</th><th>Cliente</th><th>Trader</th><th>Canal</th><th>Sentimento</th><th>Resumo</th></tr></thead>
+    <tbody>
+    {% for i in feed %}
+      <tr>
+        <td>{{ i.timestamp.strftime("%d/%m %H:%M") }}</td>
+        <td><a href="/clientes/{{ i.cliente_id }}">{{ i.cliente.nome }}</a></td>
+        <td>{{ i.trader.full_name }}</td>
+        <td>{{ i.canal }}</td>
+        <td>{% if i.sentimento %}<span class="badge {{ i.sentimento }}">{{ i.sentimento }}</span>{% endif %}</td>
+        <td>{{ i.resumo[:70] }}{% if i.resumo|length > 70 %}...{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="dim">Nenhuma interacao registrada ainda.</p>
+  {% endif %}
+</div>
+{% endblock %}

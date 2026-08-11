@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}{{ cliente.nome }}{% endblock %}
+{% block content %}
+<h1>{{ cliente.nome }} <span class="dim">({{ cliente.codigo }})</span></h1>
+<p class="dim">
+  {{ cliente.tipo }} &middot; book: {{ cliente.book or "-" }} &middot;
+  perfil de risco: {{ cliente.perfil_risco or "-" }} &middot;
+  trader titular: {{ cliente.trader_titular.full_name }} &middot;
+  cadastrado em {{ cliente.data_cadastro.strftime("%d/%m/%Y") }}
+</p>
+{% if cliente.tags %}
+<p>
+  {% for tag in cliente.tags %}<span class="badge">{{ tag.nome }}</span> {% endfor %}
+</p>
+{% endif %}
+
+<div class="quick-actions">
+  <a class="btn" href="/interacoes/nova?cliente_id={{ cliente.id }}">+ Registrar interacao</a>
+</div>
+
+<div class="panel">
+  <h3>Historico de interacoes ({{ interacoes|length }})</h3>
+  <p class="aviso-informativo">Registro append-only: interacoes salvas nao podem ser editadas ou apagadas. Correcoes aparecem como novas entradas ligadas ao registro original.</p>
+  {% if interacoes %}
+  <table>
+    <thead><tr><th>Quando</th><th>Trader</th><th>Canal</th><th>Sentimento</th><th>Tickers</th><th>Resumo</th><th>Follow-up</th><th></th></tr></thead>
+    <tbody>
+    {% for i in interacoes %}
+      <tr>
+        <td>{{ i.timestamp.strftime("%d/%m/%Y %H:%M") }}</td>
+        <td>{{ i.trader.full_name }}</td>
+        <td>{{ i.canal }}</td>
+        <td>{% if i.sentimento %}<span class="badge {{ i.sentimento }}">{{ i.sentimento }}</span>{% endif %}</td>
+        <td>{{ i.tickers_mencionados or "-" }}</td>
+        <td>
+          {% if i.corrige_interacao_id %}<span class="badge warn">correcao de #{{ i.corrige_interacao_id }}</span><br>{% endif %}
+          {{ i.resumo }}
+        </td>
+        <td>{{ i.follow_up_data.strftime("%d/%m/%Y") if i.follow_up_data else "-" }}</td>
+        <td><a href="/interacoes/{{ i.id }}/corrigir">corrigir</a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="dim">Nenhuma interacao registrada ainda.</p>
+  {% endif %}
+</div>
+{% endblock %}

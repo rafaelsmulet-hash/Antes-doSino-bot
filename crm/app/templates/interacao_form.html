@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Registrar interacao{% endblock %}
+{% block content %}
+<h1>{% if corrige %}Corrigir interacao #{{ corrige.id }}{% else %}Registrar interacao{% endif %}</h1>
+{% if corrige %}
+<div class="panel">
+  <p class="dim">Registro original (nao sera alterado):</p>
+  <p>{{ corrige.resumo }}</p>
+</div>
+{% endif %}
+{% if erro %}<p class="erro">{{ erro }}</p>{% endif %}
+
+<form class="form-panel panel" method="post" action="/interacoes/nova">
+  {% if corrige %}<input type="hidden" name="corrige_interacao_id" value="{{ corrige.id }}">{% endif %}
+  <div>
+    <label>Cliente</label>
+    <select name="cliente_id" required>
+      {% for c in clientes %}
+      <option value="{{ c.id }}" {% if cliente_id and c.id == cliente_id %}selected{% endif %}>{{ c.nome }} ({{ c.codigo }})</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>Canal</label>
+    <select name="canal" required>
+      {% for canal in canais %}
+      <option value="{{ canal }}">{{ canal }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>Resumo</label>
+    <textarea name="resumo" required placeholder="Resumo objetivo da conversa"></textarea>
+  </div>
+  <div>
+    <label>Tickers mencionados (separados por virgula)</label>
+    <input type="text" name="tickers_mencionados" placeholder="ex: PETR4, VALE3">
+  </div>
+  <div>
+    <label>Sentimento do cliente</label>
+    <select name="sentimento">
+      <option value="">-</option>
+      {% for s in sentimentos %}
+      <option value="{{ s }}">{{ s }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>Follow-up sugerido (data, opcional)</label>
+    <input type="date" name="follow_up_data">
+  </div>
+  <button type="submit">Salvar</button>
+</form>
+{% endblock %}

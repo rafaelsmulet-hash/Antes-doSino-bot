@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar - CRM Mesa (offline)</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <main>
+    <div class="panel login-box">
+      <h2>CRM Mesa de Sales Trading</h2>
+      <p class="dim">Sistema interno, sem conexao com a internet.</p>
+      {% if erro %}<p class="erro">{{ erro }}</p>{% endif %}
+      <form class="form-panel" method="post" action="/login">
+        <input type="hidden" name="next" value="{{ next }}">
+        <div>
+          <label>Usuario</label>
+          <input type="text" name="username" required autofocus>
+        </div>
+        <div>
+          <label>Senha</label>
+          <input type="password" name="password" required>
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
