@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Natura registra queda de 82% no lucro líquido do segundo trimestre de 2026",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "queda significativa no lucro líquido do segundo trimestre impacta negativamente a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T19:41:15.746903-03:00"
-    },
-    {
-      "title": "Rosto feliz significa 'petisco'? Como uma pesquisa ajuda a entender a mente dos cães",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:41:18.557214-03:00"
-    },
-    {
-      "title": "Bionano outlines $31M-$33M 2026 revenue forecast amid flow cell supply constraints",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:41:22.030125-03:00"
-    },
-    {
-      "title": "Shimmick forecasts $525M-$575M 2026 revenue while building mission-critical unit",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:41:24.705153-03:00"
-    },
-    {
       "title": "Axia (AXIA3) é subestimada na bolsa? Itaú BBA turbina preço-alvo da ação em 49% — saiba o quanto a elétrica pode saltar",
       "source": "Seu Dinheiro",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T18:41:42.797335-03:00"
+    },
+    {
+      "title": "Direcional (DIRR3) fecha 2º tri com alta de 9,7% no lucro, para R$ 202 milhões",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Aumento de lucro e abertura de programa de recompra de ações são sinais positivos para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:45:46.614144-03:00"
+    },
+    {
+      "title": "Peyto Exploration reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Resultados financeiros rotineiros de uma empresa de exploração de petróleo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:45:53.585302-03:00"
+    },
+    {
+      "title": "Pason Systems GAAP EPS of C$0.18, revenue of C$100.72M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores da Pason Systems, mas não tem impacto significativo no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:45:56.684191-03:00"
+    },
+    {
+      "title": "Cury tem lucro da atividade de R$ 311,2 milhões no 2º tri, alta de 16,5%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:46:04.805225-03:00"
     }
   ]
 }
