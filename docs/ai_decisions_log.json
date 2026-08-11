@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Applied Compute busca captação com valuation de US$ 3 bilhões",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "captação de US$ 3 bilhões pode aumentar liquidez e valor da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T21:00:46.649400-03:00"
-    },
-    {
-      "title": "'Homem-Aranha: Um Novo Dia' lidera bilheteria mundial e dispara no ranking de 2026",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre entretenimento",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T21:00:49.880635-03:00"
-    },
-    {
-      "title": "Gen Restaurant Group signals $35M-$40M 12-month CPG run rate amid nonbinding $100M LOI for restaurant operations",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque o grupo recebeu uma oferta significativa para suas operações de restaurantes, o que pode ter um impacto positivo no seu desempenho financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T21:00:53.564145-03:00"
-    },
-    {
-      "title": "Alamar outlines $116M-$120M 2026 revenue outlook while targeting 100+ instruments and $400,000+ pull-through",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A previsão de receita e os objetivos de expansão da Alamar são relevantes para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T21:00:56.555384-03:00"
-    },
-    {
-      "title": "As AI-led attacks multiply, OpenAI launches a new cyber model",
-      "source": "TechCrunch",
-      "score": 1.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T21:01:04.734339-03:00"
-    },
-    {
-      "title": "Inflation Date, Earnings Momentum and Other Key Things to Watch this Week",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T21:01:07.511301-03:00"
-    },
-    {
-      "title": "OpenAI reportedly completed a $7 billion employee tender offer",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T21:06:58.750641-03:00"
-    },
-    {
-      "title": "Aptoide becomes the first rival app store to return to Google Play in the US",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T21:07:01.878672-03:00"
-    },
-    {
       "title": "SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets",
       "source": "SEC",
       "score": 3.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T19:16:19.514267-03:00"
+    },
+    {
+      "title": "Tokenização: não é possível parar uma tecnologia que resolve problemas, diz executivo do BTG",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia destaca a importância da tokenização e sua capacidade de resolver problemas, o que pode impulsionar o desenvolvimento de tecnologias financeiras inovadoras.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:25:59.605163-03:00"
+    },
+    {
+      "title": "Fermi rises on deal to add 2.6 GW power capacity at Texas AI campus",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque envolve um aumento significativo na capacidade de potência de uma empresa, o que pode ter impacto positivo no mercado de energia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:26:03.164078-03:00"
+    },
+    {
+      "title": "Why Fermi Stock Soared Today",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia indica uma demanda forte para a empresa, o que é positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:26:07.479493-03:00"
+    },
+    {
+      "title": "Crypto Market Today, Aug. 11: Macro Worries Pull Bitcoin Below $64,000 and the SEC May Have a Regulatory Plan",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Preocupações com inflação e preços de petróleo em ascensão afetam o mercado cripto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:26:10.852866-03:00"
+    },
+    {
+      "title": "Should You Worry That Chime's Founders Are Selling? Here's How to Read It",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado, mas não é um evento significativo ou surpresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:26:14.040939-03:00"
+    },
+    {
+      "title": "Why ACV Auctions Stock Flat-Lined on Tuesday",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:26:16.736679-03:00"
+    },
+    {
+      "title": "Chime's Ex-CFO Stepped Down a Day After Selling Shares. Here's What to Know",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:26:19.494524-03:00"
+    },
+    {
+      "title": "SpaceX Stock Could Reach $600, According to Morgan Stanley. Here’s How.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:26:22.237344-03:00"
     }
   ]
 }
