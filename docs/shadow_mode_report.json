@@ -1,21 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 42040,
+  "total_ingeridas": 42288,
   "aprovadas_pelo_fluxo_atual": 639,
-  "descartadas_pelos_filtros_atuais": 41401,
-  "score_medio_materialidade": 4.05,
+  "descartadas_pelos_filtros_atuais": 41649,
+  "score_medio_materialidade": 4.04,
   "seriam_breaking": 56,
   "iriam_para_rodada": 459,
   "seriam_descartadas_pelo_novo_sistema": 1485,
-  "total_divergencias": 745,
+  "total_divergencias": 744,
   "divergencias": [
-    {
-      "title": "Markets Await Key Economic Data This Week",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "US CPI and Iran Conflict to Dictate the Market: 3-Minutes MLIV",
       "source": "Bloomberg Markets",
@@ -145,6 +138,13 @@
     {
       "title": "Samsung HBM4 yield surges to 80%, ahead of year-end target: report",
       "source": "Seeking Alpha",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Warren Buffett's Successor, Greg Abel, Just Bought $4.5 Billion of the Oracle of Omaha's Favorite Stock (No, Not Alphabet!)",
+      "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"

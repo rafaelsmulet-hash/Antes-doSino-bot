@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Markets Await Key Economic Data This Week",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:55:49.751634-03:00"
-    },
-    {
-      "title": "Horizons Middle East & Africa 8/10/2026",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não contém informações financeiras ou econômicas relevantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:55:52.563780-03:00"
-    },
-    {
-      "title": "Wheat Hits Highest This Month on Supply Disruptions in Black Sea",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:55:55.183612-03:00"
-    },
-    {
       "title": "Emerging-Market Stocks, Currencies Gain After Soft US Jobs Data",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T21:01:07.511301-03:00"
+    },
+    {
+      "title": "OpenAI reportedly completed a $7 billion employee tender offer",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:06:58.750641-03:00"
+    },
+    {
+      "title": "Aptoide becomes the first rival app store to return to Google Play in the US",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:07:01.878672-03:00"
+    },
+    {
+      "title": "SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets",
+      "source": "SEC",
+      "score": 3.0,
+      "motivo": "Discussão sobre IPOs e acesso aos mercados públicos é relevante para os investidores, mas não é um evento imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:07:06.272593-03:00"
     }
   ]
 }
