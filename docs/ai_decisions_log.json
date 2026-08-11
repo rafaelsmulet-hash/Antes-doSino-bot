@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Pfizer's Earnings Have Declined 58% This Year. Is a Dividend Cut Around the Corner?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T15:26:09.471172-03:00"
-    },
-    {
-      "title": "The Other Way to Reduce Government Debt",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não é específica e atual sobre um evento de mercado relevante.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T15:30:59.809368-03:00"
-    },
-    {
-      "title": "Ouro tem leve recuperação e fecha em alta com apostas sobre juros nos EUA",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "noticia sobre ouro em alta com apostas sobre juros nos EUA",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T15:31:05.002902-03:00"
-    },
-    {
-      "title": "O que sustenta os preços do boi mesmo com a China longe das compras?",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "redução dos abates de boi gordo explica os preços mais altos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T15:31:07.838409-03:00"
-    },
-    {
-      "title": "Quase metade das conversas corporativas com IA acontece em contas pessoais, aponta estudo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T15:31:10.947961-03:00"
-    },
-    {
-      "title": "Hormuz risk premium: Who wins and loses in the tanker trade",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T15:31:13.700686-03:00"
-    },
-    {
       "title": "B2Gold upgraded at Scotiabank after winning Fekola Regional permit",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T14:31:18.575949-03:00"
+    },
+    {
+      "title": "Ganhos na produção agrícola e estoques fortalecem sistema alimentar diante do ‘super’ El Niño",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "superacao da producao agricola em relação ao consumo e crescimento populacional",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T14:35:56.720429-03:00"
+    },
+    {
+      "title": "Salário mínimo 2027 em SP vai ficar acima do nacional; veja o valor",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "Aumento do salário mínimo não é um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T14:36:00.990369-03:00"
+    },
+    {
+      "title": "Produção de petróleo no Oriente Médio deve seguir parcialmente paralisada até 2027, diz agência dos EUA",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T14:36:07.225235-03:00"
+    },
+    {
+      "title": "Mulher joga no lixo bilhete premiado de R$ 5,8 milhões e consegue ajuda inesperada para recuperar prêmio de loteria",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T14:36:11.543328-03:00"
+    },
+    {
+      "title": "eToro Strikes $231M TradeZero Deal to Accelerate U.S. Expansion",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T14:36:16.700349-03:00"
+    },
+    {
+      "title": "Options trading vs. stock trading: Key differences explained",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T14:36:19.354142-03:00"
     }
   ]
 }
