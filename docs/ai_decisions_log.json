@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "O que pesou para o Republicanos desistir do veto à candidatura de Cleitinho em Minas",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia política sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:51:43.275171-03:00"
-    },
-    {
-      "title": "Dá para viver fora do Brasil sem perder aposentadoria e benefícios fiscais?",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "Anotação sobre migração não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:51:46.217718-03:00"
-    },
-    {
-      "title": "Bolsas da Ásia fecham mistas com impasse sobre reabertura do Estreito de Ormuz",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "Impasse na reabertura do Estreito de Ormuz afeta preços do petróleo, impactando mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:51:50.640221-03:00"
-    },
-    {
-      "title": "Tempo real: Ibovespa monitora inflação no Brasil e ata do Copom",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "Divulgação da ata do Copom e do IPCA, indicadores de inflação no Brasil",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:51:53.476031-03:00"
-    },
-    {
-      "title": "Petróleo sobe enquanto Irã e EUA trocam exigências para a reabertura do Estreito de Ormuz",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "Aumento dos preços do petróleo devido a esperanças de um acordo entre EUA e Irã para reabrir o Estreito de Ormuz",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:51:56.354213-03:00"
-    },
-    {
-      "title": "Morgan Stanley mantém preço-alvo da SpaceX em US$ 300 e avalia aquisição do Cursor",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:51:59.119029-03:00"
-    },
-    {
-      "title": "Por que a ação da ICoP está subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "A ação da ICoP está subindo devido a um anúncio de sucesso em uma negociação importante.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:52:01.915193-03:00"
-    },
-    {
-      "title": "Goldman Sachs e UBS rebaixam L&G com riscos de crédito e previdência",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:52:04.576425-03:00"
-    },
-    {
       "title": "Deutsche Bank rebaixa Partners Group e ações caem com recuperação mais lenta",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T20:30:48.827076-03:00"
+    },
+    {
+      "title": "Seer reaffirms $16M-$18M 2026 revenue guidance while highlighting patents, AI-driven proteomics and buybacks",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa reafirma sua orientação de receita, o que pode indicar confiança em seu desempenho futuro e potencialmente impulsionar a ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:35:46.062685-03:00"
+    },
+    {
+      "title": "Why OppFi Stock Swooned by Almost 25% Today",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A queda na lucratividade ajustada afeta negativamente a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:35:51.415030-03:00"
+    },
+    {
+      "title": "MIAX's Tech Chief Cashed In Shares. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Venda de ações de um executivo não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:35:54.621766-03:00"
+    },
+    {
+      "title": "TRXF11 vende imóveis locados ao Grupo Pão de Açúcar por R$ 109,2 mi",
+      "source": "Suno Noticias",
+      "score": 3.0,
+      "motivo": "venda de imóveis locados não é um evento inesperado, mas é relevante para o mercado imobiliário",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:36:00.722235-03:00"
+    },
+    {
+      "title": "The Biggest AI Power Opportunity May Be Hiding in Constellation Energy",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:36:04.503639-03:00"
+    },
+    {
+      "title": "‘Massive Upgrade Cycle’ Coming – Ignore Memory Costs Panic and Buy Apple (AAPL)?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:36:07.223495-03:00"
+    },
+    {
+      "title": "Record Backlog Powers NRC Health’s (NRC) Upward Potential",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:36:09.908149-03:00"
+    },
+    {
+      "title": "Crude Prices Soar as Middle East Tensions Curb Global Oil Supplies",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:36:12.618450-03:00"
     }
   ]
 }
