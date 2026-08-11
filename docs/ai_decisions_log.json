@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dólar abre a R$ 5,09, com petróleo, Boletim Focus e balanços no radar",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "alta do petróleo e mudanças no Boletim Focus influenciam o mercado de câmbio",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:16:18.173984-03:00"
-    },
-    {
-      "title": "Visão sobre economia piora, Lula descola de Flávio, mas empate ainda ronda disputa eleitoral, mostra BTG Pactual/Nexus",
-      "source": "Seu Dinheiro",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações financeiras ou econômicas específicas relevantes para o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:16:22.055663-03:00"
-    },
-    {
-      "title": "Rolê mais psicodélico de Minas Gerais está bem longe de São Thomé das Letras",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:16:24.967108-03:00"
-    },
-    {
-      "title": "Criptomoedas: enquanto Clarity Act fica para setembro, como investir nesse período de incertezas?",
-      "source": "Seu Dinheiro",
-      "score": 6.0,
-      "motivo": "A noticia aborda o mercado de criptomoedas e sua incerteza, sendo relevante para os investidores nesse segmento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:16:27.817064-03:00"
-    },
-    {
-      "title": "MakeMyTrip (MMYT) Q1 2027 Earnings Call Transcript",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A divulgação da transcrição da conferência de resultados pode fornecer informações valiosas sobre o desempenho da empresa no primeiro trimestre de 2027.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:16:33.943995-03:00"
-    },
-    {
-      "title": "Analyst Report: Cleveland-Cliffs Inc",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Alcance de nova marca de produção de minério de ferro superando as expectativas da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:16:36.990099-03:00"
-    },
-    {
-      "title": "I'm a doctor who studies longevity. Here are 8 things I always put in my Trader Joe's cart — and 4 I never buy.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:16:40.175849-03:00"
-    },
-    {
       "title": "US Challenger Report Shows 33,429 Job Cuts in July",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T08:47:01.237641-03:00"
+    },
+    {
+      "title": "Em ata, BC indica manutenção de juros altos por mais tempo",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "A manutenção de juros altos pode afetar negativamente a economia e as ações de empresas",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:51:08.581130-03:00"
+    },
+    {
+      "title": "As Lumentum gears up for earnings, here’s a sign the optical trade is clawing back",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "A notícia sugere um aumento na demanda por produtos ópticos, o que pode ser positivo para a empresa Lumentum e outros ativos relacionados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:51:11.696103-03:00"
+    },
+    {
+      "title": "LATAM Airlines July capacity up 8.2% Y/Y, load factor hits 84.6% as passengers reach 8.1M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:51:14.339248-03:00"
+    },
+    {
+      "title": "PicPay nomeia André Cazotto como CFO",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:51:22.858336-03:00"
+    },
+    {
+      "title": "Nvidia partners with Wall Street firms on $500B AI financing",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:51:25.559330-03:00"
+    },
+    {
+      "title": "Embraer Continues To Outpace Boeing, Airbus. It's In A Buy Zone Now.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:51:28.156018-03:00"
+    },
+    {
+      "title": "Paysafe debuts PaysafeWallet in Poland",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:51:30.743071-03:00"
     }
   ]
 }
