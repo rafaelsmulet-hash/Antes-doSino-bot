@@ -1,21 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 42536,
-  "aprovadas_pelo_fluxo_atual": 640,
-  "descartadas_pelos_filtros_atuais": 41896,
-  "score_medio_materialidade": 4.04,
-  "seriam_breaking": 56,
+  "total_ingeridas": 42784,
+  "aprovadas_pelo_fluxo_atual": 641,
+  "descartadas_pelos_filtros_atuais": 42143,
+  "score_medio_materialidade": 4.03,
+  "seriam_breaking": 55,
   "iriam_para_rodada": 461,
-  "seriam_descartadas_pelo_novo_sistema": 1483,
-  "total_divergencias": 745,
+  "seriam_descartadas_pelo_novo_sistema": 1484,
+  "total_divergencias": 744,
   "divergencias": [
-    {
-      "title": "Tegma compra 70% da Transcopa por R$99,4 mi",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Futuros de NY operam mistos com petróleo estável e foco na inflação",
       "source": "InfoMoney",
@@ -144,6 +137,13 @@
     },
     {
       "title": "Micron Trades at 6 Times Next Year's Earnings. The $38 Billion of Capacity That Ends This Cycle Doesn't Open Until 2028.",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Is It Really Safe to Invest in the S&P 500 Right Now? History Offers a Clear Answer.",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
