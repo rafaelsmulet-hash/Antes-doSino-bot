@@ -1,150 +1,150 @@
 {
-  "date": "2026-08-10",
-  "total_ingeridas": 45988,
-  "aprovadas_pelo_fluxo_atual": 649,
-  "descartadas_pelos_filtros_atuais": 45339,
-  "score_medio_materialidade": 4.02,
-  "seriam_breaking": 54,
-  "iriam_para_rodada": 466,
-  "seriam_descartadas_pelo_novo_sistema": 1480,
-  "total_divergencias": 744,
+  "date": "2026-08-11",
+  "total_ingeridas": 248,
+  "aprovadas_pelo_fluxo_atual": 37,
+  "descartadas_pelos_filtros_atuais": 211,
+  "score_medio_materialidade": 3.85,
+  "seriam_breaking": 7,
+  "iriam_para_rodada": 26,
+  "seriam_descartadas_pelo_novo_sistema": 72,
+  "total_divergencias": 30,
   "divergencias": [
     {
-      "title": "Micron Trades at 6 Times Next Year's Earnings. The $38 Billion of Capacity That Ends This Cycle Doesn't Open Until 2028.",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Is It Really Safe to Invest in the S&P 500 Right Now? History Offers a Clear Answer.",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "European Shares Mixed Amid Hormuz Reopening Uncertainty",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Microchip's Data Center Revenue Grew 98% Last Quarter. Here's Why It's Guiding to $1 Billion for the Year.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Asian Shares Rise On Easing Fed Rate Hike Bets",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "The Nasdaq Composite Just Did Something That's Been Observed Only 18 Times Since Its Inception in 1971 -- and History Says Stocks Are About to Skyrocket",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Salários de até R$ 53 mil e falta de profissionais: veja as 10 profissões mais valorizadas da tecnologia",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "'Investimento circular': como o dinheiro gira entre gigantes de IA e alimenta temor de nova bolha",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Primeiro a OpenAI, depois a Meta: por que robôs de IA continuam fazendo ataques hackers",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Apetite ou necessidade? Oferta de ações no 1º semestre supera 2025 todo",
-      "source": "UOL Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Reserva de emergência ‘turbinada’? Conheça os ETFs de renda fixa que prometem ser mais baratos que o Tesouro Selic e os CDBs",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Kalshi ties up with Nasdaq to bolster trade surveillance",
-      "source": "Yahoo Finance",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Dollar steadies after payrolls drop, inflation data eyed",
-      "source": "Yahoo Finance",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "I've Been Writing About Procter & Gamble Stock for Years. Here's Why My Conviction Has Never Been Higher.",
-      "source": "Yahoo Finance",
+      "title": "Adani Wins Dismissal in US Fraud Case",
+      "source": "Bloomberg Markets",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "J.P. Morgan lifts 2026-end target for S&P 500 to 8,000 on AI, earnings strength",
-      "source": "Yahoo Finance",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "This tech job is in huge demand right now, Cursor's head of talent says",
-      "source": "Business Insider",
-      "score": 5.0,
-      "decisao_sugerida": "round",
+      "title": "Europe's Extreme Heat Wave Crisis Is Getting Worse",
+      "source": "Bloomberg Markets",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "AI is changing more than Wall Street's workflows. It’s creating a whole new career path.",
-      "source": "Business Insider",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Australian rare earth miner surges after U.S. Department of War investment",
-      "source": "CNBC - US News",
+      "title": "Petróleo sobe enquanto Irã e EUA trocam exigências para a reabertura do Estreito de Ormuz",
+      "source": "Money Times",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Trump says oil supermajors are making too much money. What will they do with it?",
-      "source": "CNBC - US News",
+      "title": "Por que a ação da ICoP está subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Goldman Sachs e UBS rebaixam L&G com riscos de crédito e previdência",
+      "source": "Investing.com Brasil",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Sensitive Information Keeps Going To 'No Reply' Emails, And One Man Gets It All",
-      "source": "ZeroHedge",
+      "title": "Deutsche Bank rebaixa Partners Group e ações caem com recuperação mais lenta",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Smithfield Foods estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Lucro do BTG Pactual cresce 23% no 2º trimestre e bate recorde de R$ 5,1 bilhões",
+      "source": "Exame",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Prompt chaining: a técnica que melhora as respostas da IA e reduz erros em tarefas complexas",
+      "source": "Exame",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Como a disputa por Ormuz pode redesenhar o mercado global de gás natural liquefeito",
+      "source": "Exame",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Here’s how much Roger Federer is losing as On Holding says it is being disciplined on price",
+      "source": "MarketWatch",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Red Hot Chili Peppers bassist Flea relists Malibu sanctuary for $7.9 million",
+      "source": "MarketWatch",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "The Bessent bond-market scorecard doesn’t look as strong as it once did",
+      "source": "MarketWatch",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Uniper CEO: Mideast peace key as Germany pursues gas goal",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Small-business hiring plans surge, but job gains remain subdued",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "&quot;SaaSpocalypse?&quot; Not for Atlassian Stock, Which Has Now Soared 166% From Its 52-Week Low.",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Wall Street's Latest Blockbuster Stock Split Has Arrived -- and This Industry Titan Has Rallied 337,000% Over the Last 32 Years",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Smithfield Foods Q2 Earnings Rise; Lowers FY26 Guidance",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Crise na Apex: posso perder dinheiro? Entenda o que se sabe sobre dívida de quase R$ 1 bi e o impacto para clientes",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Mega-Sena pode pagar prêmio de R$ 3,5 milhões nesta terça-feira; acompanhe ao vivo",
+      "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
