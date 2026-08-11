@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "CT Real Estate Investment Trust reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:16:35.677605-03:00"
-    },
-    {
-      "title": "Orion Group Holdings Enters Oversold Territory (ORN)",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:16:40.622807-03:00"
-    },
-    {
-      "title": "Zuckerberg diz que superinteligência deve focar em invenção, não automação",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:16:45.743763-03:00"
-    },
-    {
-      "title": "Tetra Technologies Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:16:50.884870-03:00"
-    },
-    {
-      "title": "Oklo’s (OKLO) Groves Reactor Hits Criticality In Under A Year",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:16:53.566344-03:00"
-    },
-    {
-      "title": "Twilio Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:16:56.208917-03:00"
-    },
-    {
-      "title": "Constellation (CEG) Locks In More Power Deals As Nuclear Output Slips",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:16:58.905325-03:00"
-    },
-    {
-      "title": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "A notícia sobre o aumento do lucro do Berkshire é relevante para o mercado pois indica a saúde financeira da empresa e pode influenciar as expectativas de investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:21:10.594810-03:00"
-    },
-    {
-      "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia indica uma queda na atividade fabril da China, o que pode ter impacto na economia global e nos mercados financeiros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:21:13.832563-03:00"
-    },
-    {
-      "title": "JBS tem prejuízo US$ 102 milhões no 2º trimestre, mas tem receita recorde",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:21:17.360674-03:00"
-    },
-    {
-      "title": "WEBTOON to take 60% stake in RI Games Holdings",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:21:24.959145-03:00"
-    },
-    {
-      "title": "Babcock & Wilcox surges as revenue, earnings crush estimates",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:21:27.657446-03:00"
-    },
-    {
-      "title": "AGT Food and Ingredients Inc. Non-GAAP EPS of C$0.12, revenue of C$634.2M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:21:30.363971-03:00"
-    },
-    {
-      "title": "Altius Minerals GAAP EPS of C$0.16, revenue of C$23.2M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:21:33.068316-03:00"
-    },
-    {
-      "title": "Lucro da Movida sobe 100% no 2º tri, e empresa aprova aumento de capital",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "Aumento de capital e alta de lucro indicam saúde financeira da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:21:43.525994-03:00"
-    },
-    {
-      "title": "Fim da escala 6×1 e autonomia do BC: Congresso trava pauta econômica à espera das urnas",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:21:49.590513-03:00"
-    },
-    {
       "title": "JBS anuncia Wesley Batista Filho como novo CEO global e já mira o S&P 400",
       "source": "Neofeed",
       "score": null,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T17:41:21.719888-03:00"
+    },
+    {
+      "title": "Nvidia’s Show of Financial Force Soothes Jittery Credit Markets",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois a Nvidia está comprometida em apoiar o boom de inteligência artificial, o que pode ter um impacto positivo no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T17:45:42.754241-03:00"
+    },
+    {
+      "title": "Michelle se reúne com Flávio pela 1ª vez após desavenças: ‘Qual família é perfeita?’",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:45:47.662794-03:00"
+    },
+    {
+      "title": "Ibovespa despenca 2,5% e dólar salta 1% com cenário eleitoral e alerta do JP Morgan",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "Desempenho negativo da Ibovespa e alta do dólar indicam impacto significativo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T17:46:08.252668-03:00"
+    },
+    {
+      "title": "Cava reports sales growth even as some customers steer clear of lettuce",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:46:11.195913-03:00"
+    },
+    {
+      "title": "Vinci Partners reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:46:13.947677-03:00"
+    },
+    {
+      "title": "H&R Block stock surges after big Q4 earnings, strong guidance, dividend boost",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T17:46:16.707008-03:00"
+    },
+    {
+      "title": "Inhibikase Therapeutics GAAP EPS of -$0.11 in-line",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:46:19.407501-03:00"
+    },
+    {
+      "title": "Apollomics raises $10 million in private placement",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:46:22.118407-03:00"
+    },
+    {
+      "title": "Sanara MedTech GAAP EPS of -$0.05 misses by $0.02, revenue of $28.14M misses by $0.81M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:46:24.862303-03:00"
+    },
+    {
+      "title": "Stabilis Energy GAAP EPS of -$0.25 misses by $0.26, revenue of $11.9M beats by $1.4M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:46:27.614348-03:00"
+    },
+    {
+      "title": "NeuroPace GAAP EPS of -$0.18 beats by $0.03, revenue of $22.83M beats by $0.17M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:46:30.351593-03:00"
+    },
+    {
+      "title": "Nvidia (NVDA) pode surpreender de novo? Safra vê receita acima do consenso e IA ainda com fôlego",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T17:46:39.533265-03:00"
+    },
+    {
+      "title": "Phoebe Gates & Co-Founder Caught In The Cookie Jar: Slack Logs Contradict Phia's '24-Hour Bug' BS",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T17:46:45.233230-03:00"
+    },
+    {
+      "title": "Not Winning? Just Change The Rules...",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:46:47.932613-03:00"
+    },
+    {
+      "title": "The Diamond Crash Accelerates",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T17:46:50.640289-03:00"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "source": "Federal Reserve",
+      "score": 8.0,
+      "motivo": "A declaração da Reserva Federal pode influenciar as decisões de política monetária e afetar os mercados financeiros.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:46:53.800992-03:00"
     }
   ]
 }
