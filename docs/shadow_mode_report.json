@@ -1,35 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 44500,
+  "total_ingeridas": 44748,
   "aprovadas_pelo_fluxo_atual": 646,
-  "descartadas_pelos_filtros_atuais": 43854,
-  "score_medio_materialidade": 4.02,
+  "descartadas_pelos_filtros_atuais": 44102,
+  "score_medio_materialidade": 4.01,
   "seriam_breaking": 53,
-  "iriam_para_rodada": 464,
-  "seriam_descartadas_pelo_novo_sistema": 1483,
-  "total_divergencias": 745,
+  "iriam_para_rodada": 462,
+  "seriam_descartadas_pelo_novo_sistema": 1485,
+  "total_divergencias": 742,
   "divergencias": [
-    {
-      "title": "Tokens, temperatura e contexto: os termos que todo profissional deveria entender sobre IA",
-      "source": "Exame",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Havaianas quer sair de 25 milhões para 210 milhões de pares vendidos no exterior",
-      "source": "Exame",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "These analysts say Elon Musk’s ambitious AI plans for SpaceX should be taken seriously, thanks to Microsoft",
-      "source": "MarketWatch",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Berkshire Hathaway finally started spending its nearly $400 billion in cash — on one stock it knows very well",
       "source": "MarketWatch",
@@ -144,6 +123,27 @@
     },
     {
       "title": "Kalshi ties up with Nasdaq to bolster trade surveillance",
+      "source": "Yahoo Finance",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Dollar steadies after payrolls drop, inflation data eyed",
+      "source": "Yahoo Finance",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "I've Been Writing About Procter & Gamble Stock for Years. Here's Why My Conviction Has Never Been Higher.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "J.P. Morgan lifts 2026-end target for S&P 500 to 8,000 on AI, earnings strength",
       "source": "Yahoo Finance",
       "score": null,
       "decisao_sugerida": "discard",

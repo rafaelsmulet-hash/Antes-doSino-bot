@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Tokens, temperatura e contexto: os termos que todo profissional deveria entender sobre IA",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:57:26.347129-03:00"
-    },
-    {
-      "title": "Havaianas quer sair de 25 milhões para 210 milhões de pares vendidos no exterior",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Expansão internacional da Havaianas pode aumentar a demanda e o valor da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:29.174072-03:00"
-    },
-    {
-      "title": "These analysts say Elon Musk’s ambitious AI plans for SpaceX should be taken seriously, thanks to Microsoft",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:57:31.969680-03:00"
-    },
-    {
-      "title": "Wall Street’s biggest bank just raised its expectations for the stock market",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "Elevação do alvo de preço do S&P 500 é um sinal de otimismo para o mercado de ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:57:34.902076-03:00"
-    },
-    {
-      "title": "‘I unexpectedly came into some money’: Is putting $20,000 into CDs a smart move?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:37.504283-03:00"
-    },
-    {
       "title": "How ‘Ted Lasso’ turned an affluent London neighborhood into a tourist hotspot",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T21:51:09.976800-03:00"
+    },
+    {
+      "title": "Definitive Healthcare targets $220M-$222M 2026 revenue while planning Turbo general availability before year-end",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A empresa está fazendo previsões de receita e planejando lançamentos, o que é relevante para os investidores",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:55:46.252212-03:00"
+    },
+    {
+      "title": "Renewed Consolidation Expected For Taiwan Stock Market",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é sobre o desempenho do mercado de ações da Taiwan, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:55:50.823413-03:00"
+    },
+    {
+      "title": "Kaspi.kz (KSPI) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre uma conferência de resultados financeiros, mas não há informações sobre impacto direto no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:55:53.704936-03:00"
+    },
+    {
+      "title": "Embraer (EMBJ) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre uma empresa específica e não tem impacto direto no mercado em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:55:56.582013-03:00"
+    },
+    {
+      "title": "Is Oklo a Millionaire Maker, or Is the Hype Overdone?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:55:59.233192-03:00"
     }
   ]
 }
