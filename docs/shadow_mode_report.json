@@ -1,21 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 45492,
+  "total_ingeridas": 45740,
   "aprovadas_pelo_fluxo_atual": 648,
-  "descartadas_pelos_filtros_atuais": 44844,
-  "score_medio_materialidade": 4.01,
+  "descartadas_pelos_filtros_atuais": 45092,
+  "score_medio_materialidade": 4.02,
   "seriam_breaking": 53,
-  "iriam_para_rodada": 464,
-  "seriam_descartadas_pelo_novo_sistema": 1483,
-  "total_divergencias": 743,
+  "iriam_para_rodada": 466,
+  "seriam_descartadas_pelo_novo_sistema": 1481,
+  "total_divergencias": 745,
   "divergencias": [
-    {
-      "title": "Slower AI payoff could put hyperscaler cash flows and stocks at risk, Slok says",
-      "source": "Seeking Alpha",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Samsung HBM4 yield surges to 80%, ahead of year-end target: report",
       "source": "Seeking Alpha",
@@ -148,6 +141,13 @@
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Australian rare earth miner surges after U.S. Department of War investment",
+      "source": "CNBC - US News",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }
