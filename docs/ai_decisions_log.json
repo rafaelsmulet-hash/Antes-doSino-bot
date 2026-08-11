@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que os futuros de gás natural estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:51:04.860955-03:00"
-    },
-    {
-      "title": "Por que as ações da Embraer estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:51:07.459269-03:00"
-    },
-    {
-      "title": "Por que as ações da Barrick Mining estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:51:10.084019-03:00"
-    },
-    {
-      "title": "Por que as ações da California Resources estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:51:12.685060-03:00"
-    },
-    {
-      "title": "O RH precisa entender a diferença entre emoção e sentimento dos colaboradores",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:51:15.906604-03:00"
-    },
-    {
-      "title": "Griffon announces $800M private placement",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:51:18.743374-03:00"
-    },
-    {
-      "title": "Evercore’s FOMO Barometer says path to S&P 9,000 is still open",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:51:21.345153-03:00"
-    },
-    {
-      "title": "Stock futures slip as hopes for Hormuz reopening fade",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:51:23.937562-03:00"
-    },
-    {
-      "title": "US unveils $2bn boost for domestic mining initiatives",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:51:34.740163-03:00"
-    },
-    {
-      "title": "SpaceX Stock Jumps Again After Lock-Up Rally. When’s the Next Release, What to Expect.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:51:37.350478-03:00"
-    },
-    {
-      "title": "Your next job could be your last for a while. Use this database to make it count.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:51:40.135025-03:00"
-    },
-    {
-      "title": "Kenya Plans Corn Imports After Crop Failure Due to Bad Weather",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A importação de milho pode afetar os preços de alimentos no Quênia e, consequentemente, influenciar a economia local.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:55:39.345274-03:00"
-    },
-    {
-      "title": "Patrimônio de Zema cresce R$ 49 milhões em quatro anos e chega a R$ 178,8 milhões",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro em geral, apenas menciona o patrimônio de uma pessoa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:55:44.566644-03:00"
-    },
-    {
       "title": "Guerra entre EUA e Irã impulsiona elétricos chineses no mundo",
       "source": "Exame",
       "score": 5.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T09:16:22.135422-03:00"
+    },
+    {
+      "title": "US Stock Futures Rise as Oil Erases Gains on Iran Optimism",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia é relevante para o mercado pois afeta os preços do petróleo e, consequentemente, a economia global.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:21:11.838062-03:00"
+    },
+    {
+      "title": "IHG Sees Positive Momentum Continuing in Second Half",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia destaca a perspectiva positiva da IHG para a segunda metade do ano, o que pode influenciar a confiança dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:21:14.709631-03:00"
+    },
+    {
+      "title": "Priscilla Moraes chega como sócia e reforça a estratégia da Åpen Capital",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "A notícia é sobre a expansão de uma empresa de aconselhamento patrimonial, mas não há informações específicas sobre impacto no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:21:18.050733-03:00"
+    },
+    {
+      "title": "Ibovespa Futuro opera quase estável com ata do Copom e IPCA no radar",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:21:20.664876-03:00"
+    },
+    {
+      "title": "Warsh’s changes to forward guidance were tried by one central bank — and here’s what happened",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:21:26.482495-03:00"
+    },
+    {
+      "title": "IBM, Together AI ink $240M deal for Nvidia inference cluster",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:21:29.099656-03:00"
+    },
+    {
+      "title": "WhiteHorse Finance declares $0.25 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:21:31.690136-03:00"
+    },
+    {
+      "title": "Adamas Trust raises quarterly dividend by 11.1% to  $0.30/share",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:21:34.286731-03:00"
+    },
+    {
+      "title": "Joby Aviation slides 5% on Resonant Sciences $500M acquisition",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:21:36.895583-03:00"
+    },
+    {
+      "title": "Michael Saylor's Strategy Has Spent $64 Billion Buying Bitcoin at an Average Price of $75,482 a Coin. Here's Why That Position Is Sitting on a $10 Billion Paper Loss Today.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:21:48.944502-03:00"
+    },
+    {
+      "title": "Silver prices today, Tuesday, August 11, 2026: Silver prices keep rising on jobs, Iran news",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:21:51.552387-03:00"
+    },
+    {
+      "title": "Cisco or Coherent: Which Stock Is Poised to Soar After Earnings?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:21:54.158193-03:00"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:21:57.427187-03:00"
     }
   ]
 }
