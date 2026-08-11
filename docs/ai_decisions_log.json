@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "NotebookLM além dos estudos: como empresas estão usando a ferramenta para ganhar produtividade",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:18.282547-03:00"
-    },
-    {
-      "title": "Fundos tokenizados podem superar os tradicionais? A aposta que divide o mercado",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:20.867296-03:00"
-    },
-    {
-      "title": "Focus, China e Estreito de Ormuz: o que move os mercados",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "Notícia sobre indicadores econômicos e eventos geopolíticos relevantes para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:23.677034-03:00"
-    },
-    {
       "title": "Tokens, temperatura e contexto: os termos que todo profissional deveria entender sobre IA",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T21:45:49.612215-03:00"
+    },
+    {
+      "title": "Lotofácil hoje, concurso 3758: confira o resultado sorteado nesta segunda (10)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de um concurso de loteria",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:51:02.522244-03:00"
+    },
+    {
+      "title": "Trump Media revela mais de 10 assinantes do feed do Truth Social",
+      "source": "Investing.com Brasil",
+      "score": 0.0,
+      "motivo": "noticia sobre celebridade",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:51:07.091781-03:00"
+    },
+    {
+      "title": "Por que as ações da Trump Media & Technology estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "a queda das ações da Trump Media & Technology pode ser um sinal de desconfiança do mercado em relação à empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:51:09.976800-03:00"
     }
   ]
 }
