@@ -1,21 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 42288,
-  "aprovadas_pelo_fluxo_atual": 639,
-  "descartadas_pelos_filtros_atuais": 41649,
+  "total_ingeridas": 42536,
+  "aprovadas_pelo_fluxo_atual": 640,
+  "descartadas_pelos_filtros_atuais": 41896,
   "score_medio_materialidade": 4.04,
   "seriam_breaking": 56,
-  "iriam_para_rodada": 459,
-  "seriam_descartadas_pelo_novo_sistema": 1485,
-  "total_divergencias": 744,
+  "iriam_para_rodada": 461,
+  "seriam_descartadas_pelo_novo_sistema": 1483,
+  "total_divergencias": 745,
   "divergencias": [
-    {
-      "title": "US CPI and Iran Conflict to Dictate the Market: 3-Minutes MLIV",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Tegma compra 70% da Transcopa por R$99,4 mi",
       "source": "InfoMoney",
@@ -144,6 +137,13 @@
     },
     {
       "title": "Warren Buffett's Successor, Greg Abel, Just Bought $4.5 Billion of the Oracle of Omaha's Favorite Stock (No, Not Alphabet!)",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Micron Trades at 6 Times Next Year's Earnings. The $38 Billion of Capacity That Ends This Cycle Doesn't Open Until 2028.",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",

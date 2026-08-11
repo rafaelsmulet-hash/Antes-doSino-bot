@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Emerging-Market Stocks, Currencies Gain After Soft US Jobs Data",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Expectativa de juros mais baixos é positiva para mercados emergentes",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:55:58.052641-03:00"
-    },
-    {
-      "title": "US CPI and Iran Conflict to Dictate the Market: 3-Minutes MLIV",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:56:00.726557-03:00"
-    },
-    {
-      "title": "NYT CEO Meredith Kopit Levien on Running a Media Brand in the Age of AI",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:56:03.317454-03:00"
-    },
-    {
       "title": "Tegma compra 70% da Transcopa por R$99,4 mi",
       "source": "InfoMoney",
       "score": 8.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T21:07:06.272593-03:00"
+    },
+    {
+      "title": "U.S. crude oil pushes past $82/bbl as hopes fade for Hormuz deal",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A crise no Estreito de Hormuz é um fator de risco significativo para a oferta de petróleo e pode afetar os preços do combustível.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:11:03.579262-03:00"
+    },
+    {
+      "title": "Is Nvidia Stock Still a Good Buy at $220?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a perspectiva positiva para a demanda por chips da Nvidia, o que pode afetar o preço da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T21:11:07.869934-03:00"
+    },
+    {
+      "title": "Rocket Lab Just Delivered Record Results. So Why Is the Stock Sinking?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia apresenta resultados financeiros positivos, mas a ação está reagindo negativamente, o que sugere que há preocupações ou expectativas não atendidas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:11:10.832725-03:00"
     }
   ]
 }
