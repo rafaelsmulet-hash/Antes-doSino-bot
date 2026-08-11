@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "As Warsh’s Fed faces pressure to act on inflation, these indicators show it’s at its lowest in years",
-      "source": "CNBC - Economy",
-      "score": 5.0,
-      "motivo": "A notícia sugere que a inflação pode estar em declínio, o que é positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:45:46.546254-03:00"
-    },
-    {
-      "title": "Itaúsa (ITSA4) tem lucro de R$ 4,3 bi no 2º tri",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T20:45:49.589220-03:00"
-    },
-    {
-      "title": "As small caps ‘queridinhas’ de 9 analistas; uma pode chegar a quase R$ 100",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:45:53.536872-03:00"
-    },
-    {
-      "title": "Polícia de SP indicia dois representantes do Goldman Sachs em caso Oncoclínicas",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:45:56.726012-03:00"
-    },
-    {
-      "title": "Crepúsculo: Amanhecer volta aos cinemas de São Paulo; veja onde assistir",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:46:00.013043-03:00"
-    },
-    {
-      "title": "Oncoclínicas ratifica recuperação extrajudicial após aval da Justiça",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:46:08.246788-03:00"
-    },
-    {
-      "title": "Seek more context when you hear these popular words and phrases about markets",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre conscientização de informações.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:50:44.521507-03:00"
-    },
-    {
-      "title": "Veja como usar o Google Fotos para montar um guarda-roupa digital",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:55:49.596732-03:00"
-    },
-    {
-      "title": "FII EXES11 fecha em alta de 0,63%; fundo vai na contramão do IFIX",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "O fundo EXES11 apresentou desempenho positivo, contrariando o mercado de fundos imobiliários",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:55:59.419341-03:00"
-    },
-    {
-      "title": "Ações da Life360 despencam quase 25% no after-hours; entenda o motivo",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Ação cai quase 25% após anúncio de perda de um grande cliente",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T21:00:43.394425-03:00"
-    },
-    {
       "title": "Applied Compute busca captação com valuation de US$ 3 bilhões",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-11T19:11:41.439239-03:00"
+    },
+    {
+      "title": "Latest Oil Market News and Analysis for Aug. 12",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A noticia se refere a um evento relevante para o mercado de petroleo, mas nao e um evento de grande impacto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:15:41.403401-03:00"
+    },
+    {
+      "title": "Blackstone Leads $1.8 Billion Air Canada Loyalty Plan Stake Deal",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Negociação significativa de participação em programa de lealdade de uma grande empresa aérea canadense.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:15:44.536325-03:00"
+    },
+    {
+      "title": "Câmara amplia PLP dos combustíveis e inclui fertilizantes e minerais críticos",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:15:48.260895-03:00"
+    },
+    {
+      "title": "Brasileiros têm R$ 5 bilhões esquecidos em bancos; veja como consultar e resgatar o dinheiro",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:15:54.749490-03:00"
+    },
+    {
+      "title": "O que está em alta na Netflix? Veja o Top 10 de filmes e séries da semana",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:15:57.506145-03:00"
+    },
+    {
+      "title": "Arq outlines $120M-$125M 2026 revenue and targets up to 50% adjusted EBITDA increase as PAC for PFAS advances",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:16:00.646200-03:00"
+    },
+    {
+      "title": "Bullish Oil Bets Shrink for a Second Week Running, COT Data Show",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:16:11.067716-03:00"
+    },
+    {
+      "title": "Stocks Pressured as Higher Crude Price Boosts T-Note Yields",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:16:13.778290-03:00"
+    },
+    {
+      "title": "DoorDash is set to become a Nevada-incorporated company.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:16:16.773961-03:00"
+    },
+    {
+      "title": "3 ways people make their kitchens look cheap, according to interior designers",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:16:19.514267-03:00"
     }
   ]
 }
