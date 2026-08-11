@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Quanterix misses top-line and bottom-line estimates; updates FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque afeta a previsão financeira da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:21:43.511520-03:00"
-    },
-    {
-      "title": "Verizon mobile service restored after outage for thousands of customers in the U.S.",
-      "source": "CNBC - US News",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto significativo para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:21:55.313974-03:00"
-    },
-    {
-      "title": "SEC Establishes Financial Reporting and Accounting Unit in Enforcement Division",
-      "source": "SEC",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta um impacto imediato e concreto no mercado, mas é relevante para a regulação financeira.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:21:59.321165-03:00"
-    },
-    {
-      "title": "Dólar hoje ronda estabilidade com dados de inflação no radar",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "dados fracos do mercado de trabalho podem pressionar a economia e o mercado financeiro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:25:40.686060-03:00"
-    },
-    {
-      "title": "Por que a ação da aTyr Pharma está subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ação da aTyr Pharma está subindo devido a resultados positivos em estudos clínicos, o que é visto como um sinal de crescimento para a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:25:45.351227-03:00"
-    },
-    {
-      "title": "Ações da Archer disparam 20% com acordo aeroespacial com a Boeing",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "acordo aeroespacial com a Boeing é um parceiro importante e pode trazer novas oportunidades para a Archer",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:25:51.571529-03:00"
-    },
-    {
-      "title": "Por que as ações da Teradata estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a ação está caindo, mas não há informações sobre o motivo específico",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:25:54.318321-03:00"
-    },
-    {
-      "title": "Por que as ações da NetApp sobem 2,8% hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento no preço das ações da NetApp indica confiança dos investidores no desempenho da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:25:57.031389-03:00"
-    },
-    {
-      "title": "Por que as ações da ZIM Integrated Shipping estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ações da ZIM Integrated Shipping estão caindo devido a perda de valor, o que é um indicativo negativo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:26:00.021331-03:00"
-    },
-    {
-      "title": "Por que a ação da CoreCivic está subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a ação da CoreCivic está subindo devido a uma notícia positiva sobre o setor de segurança privada",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:26:02.786326-03:00"
-    },
-    {
-      "title": "Ações da Intel caem após oferta bilionária de US$ 15 bilhões",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A oferta bilionária pode afetar a liquidez e o preço das ações da Intel",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:26:05.548216-03:00"
-    },
-    {
-      "title": "Futuros da TSX contidos em meio à guerra do Irã e dados de inflação dos EUA",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A noticia menciona a guerra do Irã e dados de inflação dos EUA, que sao eventos relevantes para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:26:08.391317-03:00"
-    },
-    {
-      "title": "GameStop pode desistir de oferta de US$ 56 bilhões pelo eBay e buscar parceria",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A possibilidade de GameStop buscar parceria em vez de oferta de US$ 56 bilhões pode ser vista como positiva para a empresa, pois pode evitar perdas significativas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:26:11.163127-03:00"
-    },
-    {
-      "title": "Por que as ações da CECO Environmental estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ações da CECO Environmental disparando devido a anúncio de parceria estratégica com empresa líder em tecnologia de limpeza ambiental.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T09:26:13.993550-03:00"
-    },
-    {
-      "title": "Intel plans to sell $15 billion worth of stock after it has risen 400% in a year",
-      "source": "MarketWatch",
-      "score": 6.0,
-      "motivo": "A empresa está vendendo ações após um ano de crescimento significativo, o que pode ser visto como um sinal de confiança no futuro da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:26:17.494071-03:00"
-    },
-    {
-      "title": "Amazon Stock Hits a New All-Time High: Is It Still a Buy?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:26:23.418759-03:00"
-    },
-    {
-      "title": "Why JPMorgan sees more big gains ahead for the S&P 500",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:26:29.561573-03:00"
-    },
-    {
-      "title": "Intel launches $15 billion share sale as turnaround rally lifts stock",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T09:26:32.177033-03:00"
-    },
-    {
       "title": "3 Beaten-Down Healthcare Stocks to Buy in August",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-11T08:56:28.268979-03:00"
+    },
+    {
+      "title": "Fed to Take Wait-and-See Stance on Rates: Laura Cooper",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois discute a possibilidade de ajuste das taxas de juros pelo Fed, o que pode ter impacto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:00:45.260186-03:00"
+    },
+    {
+      "title": "IPCA fica em 0,07% em julho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:00:49.946499-03:00"
+    },
+    {
+      "title": "Índice Nacional da Construção Civil desacelera para 0,44% em julho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:00:52.660421-03:00"
+    },
+    {
+      "title": "Em junho, indústria recua em 12 dos 15 locais pesquisados",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:00:55.345252-03:00"
+    },
+    {
+      "title": "Por que as ações da Plug Power estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A noticia menciona acao de uma empresa, o que sugere relevancia para o mercado financeiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:00:58.836438-03:00"
+    },
+    {
+      "title": "Ações da First Advantage caem com oferta secundária de ações",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Oferta secundária de ações pode pressionar o preço das ações da First Advantage",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:01:01.673108-03:00"
+    },
+    {
+      "title": "Por que as ações da ACV Auctions estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:01:04.286579-03:00"
+    },
+    {
+      "title": "UBS rebaixa M&G após rali e vê potencial limitado; ação cai 3%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:01:06.902515-03:00"
+    },
+    {
+      "title": "Não consegue esquecer o ex? O algoritmo do TikTok pode ser o 'culpado'",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:01:09.962208-03:00"
+    },
+    {
+      "title": "Claude terá marca d’água em textos e arquivos gerados por inteligência artificial",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:01:12.889541-03:00"
+    },
+    {
+      "title": "LME aluminum rises after Norsk Hydro slashes production at Brazilian plant to 50%",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:01:15.838966-03:00"
+    },
+    {
+      "title": "Sea Limited rallies as Q2 revenue beats estimates",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:01:18.749860-03:00"
+    },
+    {
+      "title": "Nebius Just Made a Genius Move. Here's Why It Matters.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:01:23.676943-03:00"
+    },
+    {
+      "title": "Prediction: You Won't Recognize Plug Power in 2028. Should You Buy the Hydrogen Stock Before It's Too Late?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:01:26.306240-03:00"
+    },
+    {
+      "title": "US bank Erebor nears $1.5bn funding round at $8bn valuation – report",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:01:33.859609-03:00"
+    },
+    {
+      "title": "Market Digest: AN, BA, CNC, MRK, WY, APO, LEA, HLN, CEG",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:01:36.469938-03:00"
+    },
+    {
+      "title": "Fermi Finally Gets an AI Tenant for Its Data-Center Site and the Stock Is Soaring",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T09:01:39.090537-03:00"
+    },
+    {
+      "title": "A pain point in my Wall Street schedule inspired me to leave Citadel to found a laundry startup",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T09:01:41.919533-03:00"
     }
   ]
 }
