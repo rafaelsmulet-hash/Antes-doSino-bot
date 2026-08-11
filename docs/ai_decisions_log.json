@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "MXRF11 e outros 181 FIIs vão distribuir dividendos na semana; confira valores",
-      "source": "Suno Noticias",
-      "score": 8.0,
-      "motivo": "Distribuição de dividendos de FIIs é evento rotineiro, mas com grande impacto financeiro",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:47:21.864925-03:00"
-    },
-    {
-      "title": "Cloudflare Seeks to Sell $2.175 Billion in Convertible Notes",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois pode afetar o preço das ações da Cloudflare",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:50:44.625356-03:00"
-    },
-    {
-      "title": "Ex-marido de Maria da Penha é preso após dar entrevista e descumprir medida protetiva",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:50:48.035934-03:00"
-    },
-    {
-      "title": "Grendene vende subsidiária nos EUA por US$3,6 mi",
-      "source": "Investing.com Brasil",
-      "score": 3.0,
-      "motivo": "venda de subsidiária não é um evento inesperado e pode não ter impacto significativo no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:50:52.034956-03:00"
-    },
-    {
-      "title": "Hipótese de Darwin sobre planta carnívora é confirmada 150 anos depois",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:50:55.163064-03:00"
-    },
-    {
-      "title": "Primeiro debate ao governo do Rio: veja tudo o que aconteceu",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:50:57.942845-03:00"
-    },
-    {
-      "title": "De olho no IPO em Hong Kong, Shein reduz operação no Vietnã e aposta na China",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A Shein reforça sua presença na China, o que pode ser positivo para a empresa e seus investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:51:00.684974-03:00"
-    },
-    {
-      "title": "Mega-Sena paga R$ 164 milhões para bolão, faz 100 milionários de uma vez só e agora a +Milionária promete mais que o dobro de todas as outras loterias juntas",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:51:08.540169-03:00"
-    },
-    {
-      "title": "Após enfrentar a Covid-19, Dimas Covas quer trazer uma fábrica de vacinas da Sinovac. Mas não será fácil",
-      "source": "Neofeed",
-      "score": 2.0,
-      "motivo": "noticia sobre investimento em vacinas, mas sem impacto imediato no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:51:12.796860-03:00"
-    },
-    {
-      "title": "Por que a indústria do cinema ainda tenta copiar a receita de “Akira” quase 40 anos depois",
-      "source": "Neofeed",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:51:15.624743-03:00"
-    },
-    {
       "title": "The Fed Is Failing Its Mandate, But It Could Change Soon",
       "source": "ZeroHedge",
       "score": 6.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T08:26:23.158133-03:00"
+    },
+    {
+      "title": "Fleury (FLRY3) aprova emissão de debêntures no valor de R$ 1,83 bilhão",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A aprovação de emissão de debêntures pode reduzir a carga de dívidas da empresa, melhorando sua saúde financeira e potencialmente aumentando sua valorização no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:30:37.791138-03:00"
+    },
+    {
+      "title": "Alunorte, da Norsk Hydro, reduz produção de alumina a 50% da capacidade devido à escassez de gás",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "redução de produção de alumina pode afetar a oferta e impactar os preços do metal",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:30:42.389533-03:00"
+    },
+    {
+      "title": "Nvidia fecha parceria para financiar US$ 500 bilhões em infraestrutura de IA",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "Parceria significativa com grandes investidores pode impulsionar o desenvolvimento de infraestrutura de IA e aumentar a demanda por tecnologia da Nvidia",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:30:49.013971-03:00"
+    },
+    {
+      "title": "Fennec Pharmaceuticals GAAP EPS of $0.05 beats by $0.04, revenue of $17.87M beats by $1.75M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:30:51.752392-03:00"
+    },
+    {
+      "title": "Microchip upgrades PolarFire FPGA edge AI sensor board",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:30:54.340078-03:00"
+    },
+    {
+      "title": "DPC Holdings PLC Non-GAAP EPS of $0.05 beats by $0.02, revenue of $269M beats by $23M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:30:56.934189-03:00"
+    },
+    {
+      "title": "Harvard Bioscience beats top-line and bottom-line estimates; gives Q3 and raises FY2026 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:30:59.537094-03:00"
+    },
+    {
+      "title": "I’m Buying Nvidia Ahead of Aug. 26 Earnings Exactly For The Reason You Think",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:31:08.899962-03:00"
+    },
+    {
+      "title": "Uniper Profits Surge as Germany Prepares to Sell Energy Giant",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:31:11.759712-03:00"
+    },
+    {
+      "title": "I consume less than an hour of digital media a day. 'Cheat days' never helped me cut screen time, but 'NPC hours' did.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:31:14.514687-03:00"
     }
   ]
 }
