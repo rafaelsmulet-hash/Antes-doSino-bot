@@ -1,177 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Odds the Fed will hike in September tumble following big July jobs miss",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta as expectativas de aumento da taxa de juros, um fator importante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:20:36.347708-03:00"
-    },
-    {
-      "title": "Gaia targets 20% churn and ARPU improvement by Q4 as it shifts to positive free cash flow",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa está se tornando mais eficiente e gerando caixa, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:20:42.559345-03:00"
-    },
-    {
-      "title": "Jeff Bezos might finally get his hands on a sports team",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:20:54.268571-03:00"
-    },
-    {
-      "title": "Itaúsa tem lucro de R$4,3 bi no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "lucro significativo do Itaúsa impacta positivamente no mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:25:41.531769-03:00"
-    },
-    {
-      "title": "Rapid7 signals exit 2026 at ~20% non-GAAP operating margin following 12% workforce restructuring",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa espera melhorar sua eficiência operacional após a reestruturação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:25:45.455027-03:00"
-    },
-    {
-      "title": "SEC Announces Continuation of Small Business Advisory Committee Meeting",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:25:57.314842-03:00"
-    },
-    {
-      "title": "Muito além dos bunkers: o refúgio construído por bilionários para escapar do ‘fim do mundo’ na Argentina",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:36:00.430096-03:00"
-    },
-    {
-      "title": "SNID11 fecha pregão em alta de 0,2%; fundo acumula ganhos acima de 16%",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "O fundo SNID11 encerrou o pregão em alta, acumulando ganhos significativos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:36:04.379907-03:00"
-    },
-    {
-      "title": "Uefa, AFC e Concacaf fazem duro ataque a Infantino: 'Futebol não pertence a um indivíduo'",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia é sobre esporte e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:40:37.360822-03:00"
-    },
-    {
-      "title": "Mourinho dispara contra períodos sabáticos e manda recado a Guardiola",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:40:40.276636-03:00"
-    },
-    {
-      "title": "What Investors Should Know About a Mettler-Toledo Director's Two Transactions This Past Week",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma transação de ações de um diretor de uma empresa, o que não é relevante para o mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:40:46.049144-03:00"
-    },
-    {
-      "title": "Malaysia Stock Market May Extend Losing Streak",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A perda de pontos no mercado de ações da Malês pode ser um sinal de instabilidade no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:40:49.235546-03:00"
-    },
-    {
-      "title": "Prediction: $1,000 in Uranium Energy Corp Will Be Worth This Much in 5 Years",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado de ações devido ao aumento recente da ação da Uranium Energy Corp.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:40:52.463448-03:00"
-    },
-    {
-      "title": "What Investors Should Know as Mettler-Toledo Insiders Sell Shares After a Strong Quarter",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações por parte de um executivo não é um evento significativo em si, mas pode ser visto como um sinal de confiança negativa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:40:55.917952-03:00"
-    },
-    {
-      "title": "On Holding: A 7.0 Score and a Bright Future?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:40:58.570185-03:00"
-    },
-    {
-      "title": "Why Rubrik Stock Bounced Almost 9% Higher on Monday",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:41:01.232222-03:00"
-    },
-    {
-      "title": "Why Archer Aviation Stock Soared Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:41:03.888704-03:00"
-    },
-    {
-      "title": "A Mettler-Toledo Director Sold $600,000 in Stock. Here's What Investors Should Know",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T20:41:06.587305-03:00"
-    },
-    {
-      "title": "Gold Touches $4,400 as Traders Turn Focus to US Inflation Data",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta o preço do ouro e pode influenciar a decisão da Reserva Federal sobre a taxa de juros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T20:45:40.571310-03:00"
-    },
-    {
       "title": "As Warsh’s Fed faces pressure to act on inflation, these indicators show it’s at its lowest in years",
       "source": "CNBC - Economy",
       "score": 5.0,
@@ -17999,6 +17828,177 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T19:06:21.979109-03:00"
+    },
+    {
+      "title": "Bitwise Cuts 14% of Jobs With Crypto Industry Under Pressure",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "Demissões em uma empresa de criptomoedas durante uma recessão no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:10:38.375150-03:00"
+    },
+    {
+      "title": "PagBank (PAGS34) tem lucro recorrente de R$ 576 mi no 2º tri",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "lucro recorrente e receita líquida alta indicam saúde financeira do banco",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:10:42.185736-03:00"
+    },
+    {
+      "title": "U.S. crude stockpiles rose 9.1M barrels last week, API says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:10:47.177851-03:00"
+    },
+    {
+      "title": "Chime's CEO Sold $16.5 Million in Stock. Here's What Long-Term Investors Should Know",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:10:52.350683-03:00"
+    },
+    {
+      "title": "Amazon.com vs. Coupang: Which Consumer Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:10:55.052868-03:00"
+    },
+    {
+      "title": "Apple Tests China's CXMT Memory Chips Amid AI-Driven Supply Shortage",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:10:57.772360-03:00"
+    },
+    {
+      "title": "The U.S. Labor Market Is Weakening. These 2 Dividend Stocks Look Built to Weather a Recession",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:11:00.541610-03:00"
+    },
+    {
+      "title": "Block CFO Amrita Ahuja Sells 8,971 Shares for $770,000",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:11:03.261170-03:00"
+    },
+    {
+      "title": "2 Core Reasons Tesla Investors Should Be Getting Nervous",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:11:05.958072-03:00"
+    },
+    {
+      "title": "Stock Market Today, Aug. 11: Markets Slip as Oil Prices Rise, Upwork Tumbles on Mixed Earnings",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:11:08.696480-03:00"
+    },
+    {
+      "title": "Why First Advantage Stock Tumbled on Tuesday",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:11:11.378252-03:00"
+    },
+    {
+      "title": "Supermicro Q4 Profit Surges As Revenue Jumps",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:11:14.381303-03:00"
+    },
+    {
+      "title": "AI Adoption Is Driving Stronger Demand for Palo Alto Networks (PANW)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:11:23.023827-03:00"
+    },
+    {
+      "title": "Nu Holdings (NU) Could Rebound Despite Asset Quality Concerns",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante para o mercado financeiro pois afeta a valorização da empresa Nu Holdings, que é uma das maiores fintechs do Brasil.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:11:26.121673-03:00"
+    },
+    {
+      "title": "Seagate Technology (STX) Could Keep Surging as Storage Prices Rise",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:11:28.841514-03:00"
+    },
+    {
+      "title": "EUR/USD, GBP/USD, and USD/CAD – Short-Term Forecast for 10/8/2026",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T19:11:31.545650-03:00"
+    },
+    {
+      "title": "California Orders NGO Serving As \"Financial Backbone\" For Singham-Linked Marxism Causes To Cease Operations",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:11:35.931391-03:00"
+    },
+    {
+      "title": "China's Teapot Refiners Poised to Ramp Up Iranian Oil Buying",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:11:38.671627-03:00"
+    },
+    {
+      "title": "Hegseth Pushes $1.5 Trillion Military Budget As Tribute To Lindsey Graham",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T19:11:41.439239-03:00"
     }
   ]
 }
