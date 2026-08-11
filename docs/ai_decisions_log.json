@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "OpenAI tightens controls on its new model over cybersecurity risks, as AI security debate intensifies",
-      "source": "CNBC - US News",
-      "score": 2.0,
-      "motivo": "A notícia não menciona impactos diretos no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:06:26.535610-03:00"
-    },
-    {
-      "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
-      "source": "Federal Reserve",
-      "score": 8.0,
-      "motivo": "Decisão da taxa de juros do banco central",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:06:29.919550-03:00"
-    },
-    {
-      "title": "Japan’s Growth Minister on Proactive Fiscal Policy, Yen",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a política fiscal do Japão, que pode ter impacto positivo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:10:40.880115-03:00"
-    },
-    {
-      "title": "Pesquisa BTG/Nexus: Lula e Flávio Bolsonaro seguem em empate técnico no 2º turno",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre eleicoes nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:10:48.309165-03:00"
-    },
-    {
-      "title": "Tonix Pharmaceuticals GAAP EPS of -$2.44 beats by $0.27, revenue of $13.5M beats by $5.78M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em termos de lucro e receita, o que é considerado um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:10:52.373788-03:00"
-    },
-    {
-      "title": "CEVA Non-GAAP EPS of $0.08 beats by $0.01, revenue of $29M beats by $0.82M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A superação das expectativas de receita e EPS é um sinal positivo para a empresa e pode afetar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:10:55.598638-03:00"
-    },
-    {
-      "title": "Lincoln National declares $0.45 dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Declaração de divida é um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:10:58.961456-03:00"
-    },
-    {
-      "title": "Village Farms GAAP EPS of $0.06 beats by $0.04, revenue of $64M beats by $7.68M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em termos de lucro e receita, o que é considerado positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:11:02.302331-03:00"
-    },
-    {
-      "title": "Axsome Therapeutics GAAP EPS of -$0.99 misses by $0.10, revenue of $218.4M misses by $3.38M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a percepção dos investidores sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:11:05.906864-03:00"
-    },
-    {
-      "title": "monday.com beats top-line and bottom-line estimates; gives Q3 and updates FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas de receita e lucro, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:11:09.341130-03:00"
-    },
-    {
       "title": "Joint Stock Company Kaspi.kz reports Q2 results",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T07:41:28.303278-03:00"
+    },
+    {
+      "title": "Mulheres não disputam corrida de F1 desde 1976; nova geração tenta quebrar barreira",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:46:15.333463-03:00"
+    },
+    {
+      "title": "Cardinal Health declares $0.5158 dividend",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "Dividendos são uma fonte de retorno para os investidores",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:46:18.578426-03:00"
+    },
+    {
+      "title": "Lithium Argentina GAAP EPS of $0.01 misses by $0.11",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a expectativa de lucro da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:46:21.518243-03:00"
+    },
+    {
+      "title": "Amazon, Microsoft, and Alphabet: 2 Winners and 1 Loser in the Cloud Computing Arena",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Aceleração das taxas de crescimento das empresas de tecnologia relevantes para o mercado de computação em nuvem.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:46:26.620932-03:00"
+    },
+    {
+      "title": "Sea Ltd Q2 26 Earnings Conference Call At 7:30 AM ET",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque discute os resultados financeiros da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:46:29.544945-03:00"
+    },
+    {
+      "title": "Indian Shares End Lower As Brent Nears $90 A Barrel",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia afeta diretamente o preço do petróleo, que é um importante indicador econômico e pode influenciar a economia global.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:46:32.553885-03:00"
+    },
+    {
+      "title": "Is Berkshire Hathaway Stock a Buy as Warren Buffett Successor Greg Abel Starts to Deploy the Company's Cash Hoard?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A empresa começa a investir seu caixa, o que pode ser um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:46:36.074030-03:00"
+    },
+    {
+      "title": "H&R Real Estate Investment Trust To Be Acquired By GOREIT, Asset Purchasers",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque envolve uma aquisição de uma empresa de investimento imobiliário, o que pode ter impacto no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:46:38.964839-03:00"
+    },
+    {
+      "title": "Flowco Holdings Inc. Q2 Income Advances",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "O lucro avançado indica uma melhora financeira da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:46:41.862944-03:00"
+    },
+    {
+      "title": "ECA Digital: redes sociais deverão abrir dados sobre denúncias de violações contra menores",
+      "source": "G1 Economia",
+      "score": 1.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre regulamentação de proteção de dados de crianças e adolescentes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:46:48.075498-03:00"
     }
   ]
 }
