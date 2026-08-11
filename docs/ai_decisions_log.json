@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A SpaceX investor thought he had $300,000 in shares — then discovered his firm sold them without notice",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:46:15.727900-03:00"
-    },
-    {
-      "title": "As Warsh and the Fed contemplate fewer meetings, markets brace for potential volatility ahead",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "A Fed está considerando mudanças em sua frequência de reuniões, o que pode influenciar as expectativas de mercado e a volatilidade.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:50:35.247345-03:00"
-    },
-    {
-      "title": "P3 Health Partners forecasts $80M-$110M in 2026 adjusted EBITDA following Q2 settlements",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A previsão de EBITDA ajustado é relevante para o mercado pois indica uma melhora na performance financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:50:41.642108-03:00"
-    },
-    {
-      "title": "Itaúsa tem lucro recorrente de R$ 4,31 bilhões no 2º trimestre, alta de 7%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T19:50:48.937693-03:00"
-    },
-    {
-      "title": "Ocasio-Cortez hasn't 'ruled out' running for president or Senate in 2028",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:50:53.921765-03:00"
-    },
-    {
-      "title": "Como o Goldman Sachs virou alvo de investigação no caso da OPA da Oncoclínicas (ONCO3)",
-      "source": "Seu Dinheiro",
-      "score": 2.0,
-      "motivo": "investigação não é relevante para o mercado financeiro imediatamente",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:56:05.024794-03:00"
-    },
-    {
-      "title": "Governo define datas para recesso no Natal e no Ano Novo; veja regras",
-      "source": "G1 Economia",
-      "score": 1.0,
-      "motivo": "não há informações financeiras ou econômicas relevantes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:01:04.959608-03:00"
-    },
-    {
-      "title": "MGLU3: Por que o Magalu não sustentou a alta? Técnico aponta mais perdas à frente",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A notícia indica que a ação MGLU3 pode continuar a cair, o que é relevante para os traders que possuem a ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T20:05:37.935098-03:00"
-    },
-    {
-      "title": "GCT Semiconductor expects 2H 2026 5G chipset shipments to exceed 1H as it secures wafer capacity through Q1 2027",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa garante capacidade de produção até 2027, o que pode aumentar a confiança dos investidores em suas entregas futuras.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:05:41.666749-03:00"
-    },
-    {
-      "title": "Entravision expects ATS revenue to decrease sequentially in Q3 while targeting more than 100% year-over-year growth in Q3 and Q4",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa visa um crescimento significativo no ano, apesar de uma queda no trimestre atual.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T20:05:44.778469-03:00"
-    },
-    {
       "title": "Trump Media targets closing TAE merger by end of 2026 while signing 10+ Truth API deals at $60k-$100k per month",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-11T18:51:19.059596-03:00"
+    },
+    {
+      "title": "Câmara adia votações após líder do PT desmaiar em reunião com líderes partidários",
+      "source": "Exame",
+      "score": 1.0,
+      "motivo": "notícia política sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:55:35.230252-03:00"
+    },
+    {
+      "title": "Netflix lança documentário sobre José Mourinho; veja o que esperar da série",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:55:38.301148-03:00"
+    },
+    {
+      "title": "Tempo para cobrar lateral e 'só capitão fala': as novas regras da CBF para o futebol",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:55:41.594321-03:00"
+    },
+    {
+      "title": "Firm Capital Property Trust reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:55:44.546189-03:00"
+    },
+    {
+      "title": "Starlight U.S. Residential Fund reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:55:47.220756-03:00"
+    },
+    {
+      "title": "Arista Networks Stock: Analyst Estimates & Ratings",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações novas ou impactantes sobre o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:55:57.215693-03:00"
+    },
+    {
+      "title": "Hedge Funds Start To Bet On A Bitcoin Rally",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:55:59.926561-03:00"
+    },
+    {
+      "title": "T. Rowe Price Defends Meme Inclusion in Active Crypto ETF",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:56:02.617124-03:00"
+    },
+    {
+      "title": "Factbox-Global drugmakers invest billions to boost US presence",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:56:05.615378-03:00"
+    },
+    {
+      "title": "Progressive (PGR) Is Winning Market Share. Can It Keep Growing?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:56:08.312655-03:00"
     }
   ]
 }
