@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Grab This Bargain Even Cheaper Than Chief Financial Officer Alley Did",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:31:30.174045-03:00"
-    },
-    {
-      "title": "Bullish Two Hundred Day Moving Average Cross - DAN",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:31:32.873603-03:00"
-    },
-    {
-      "title": "First Majestic Silver (AG) Shares Cross Above 200 DMA",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois indica uma tendência positiva nas ações da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:31:35.838389-03:00"
-    },
-    {
-      "title": "Quem é Wesley Batista Filho, que será o novo CEO global da JBS",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:31:40.450344-03:00"
-    },
-    {
       "title": "The Hidden Cost of International ETFs: How Much Currency Risk Actually Ate Into Returns Over the Last Decade",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T16:41:16.509091-03:00"
+    },
+    {
+      "title": "Fed Expected to Keep Raising Rates Until Inflation Cools",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a política monetária da Federação Reserve e pode influenciar as taxas de juros futuras.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:45:46.139044-03:00"
+    },
+    {
+      "title": "Sea Limited COO Ye Gang Sells 40,000 Shares for $4.6 Million",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Venda de ações de um executivo não é um evento significativo para o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:45:57.220983-03:00"
+    },
+    {
+      "title": "Billionaire sues ex-employee over alleged theft",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:46:05.996266-03:00"
+    },
+    {
+      "title": "3 ways people make their kitchens look cheap, according to interior designers",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:46:09.325301-03:00"
     }
   ]
 }
