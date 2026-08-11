@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "How ‘Ted Lasso’ turned an affluent London neighborhood into a tourist hotspot",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:40.116298-03:00"
-    },
-    {
-      "title": "From ‘Billionaire Bunker’ to Beverly Hills: The properties that make up Jeff Bezos’ $500 million real estate empire",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:43.351624-03:00"
-    },
-    {
-      "title": "Berkshire Hathaway finally started spending its nearly $400 billion in cash — on one stock it knows very well",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:57:45.959338-03:00"
-    },
-    {
-      "title": "Cathie Wood loads up SpaceX, AI infra names, continues trimming Roblox, Palantir",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Cathie Wood é uma investidora influente e suas ações de compra são observadas com atenção pelo mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:49.044902-03:00"
-    },
-    {
       "title": "Jeff Bezos nears deal to buy stake in Liverpool FC: Sky",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T21:55:59.233192-03:00"
+    },
+    {
+      "title": "BODi projects Q3 2026 revenue of $44M-$48M as nutrition-led shift expands Amazon and retail",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A projeção de receita é relevante para o mercado, pois reflete a expansão da empresa em novos canais de vendas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T22:00:52.517552-03:00"
+    },
+    {
+      "title": "BridgeBio outlines three launches with first PDUFA set for November 27, 2026 and RECLAIM-HP readout in next 18 months",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de aprovação de um medicamento da BridgeBio e a perspectiva de resultados de pesquisa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T22:00:55.674800-03:00"
+    },
+    {
+      "title": "TSMC vs. ASML: Which Is the Better Semiconductor Equipment Stock to Own for the Next 10 Years?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T22:00:59.702596-03:00"
+    },
+    {
+      "title": "See Which Recent 13F Filers Hold Visa But Retiremitten Financial and Evoke Wealth Exited",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-10T22:01:02.411546-03:00"
     }
   ]
 }
