@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nasdaq e S&P 500 fecham em baixa com Ormuz sem acordo e queda da Intel",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "queda da Intel e desempenho negativo da Nvidia impactam o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T19:10:47.049802-03:00"
-    },
-    {
-      "title": "Beyoncé assume controle total de marca de uísque após LVMH vender participação",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre uma parceria de uma celebridade e uma empresa de luxo, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:10:50.331214-03:00"
-    },
-    {
-      "title": "Erupção do Etna fecha espaço aéreo de Catânia, na Itália; voos são cancelados",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "a noticia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:10:53.391294-03:00"
-    },
-    {
-      "title": "EagleRock to buy Permian Basin's Intrepid Ranch in $78M deal",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:10:58.851446-03:00"
-    },
-    {
-      "title": "Natura tem queda de 82% no lucro e revisa projeções para 2026",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T19:11:05.177027-03:00"
-    },
-    {
-      "title": "Wide-Moat Stocks Are the Sedative Your Tech-Dominated Portfolio Desperately Needs",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:11:09.687984-03:00"
-    },
-    {
-      "title": "Advanced Micro Devices Dips on Lower FCF, But Short Put Plays Attract Value Investors",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:11:12.403041-03:00"
-    },
-    {
-      "title": "Johnson & Johnson Has Increased Its Dividend for 64 Consecutive Years. Here's How Much $10,000 Invested in the Dividend King Pays Annually.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:11:15.177406-03:00"
-    },
-    {
-      "title": "We Need More Tom Sellecks, Less Mark Ruffalos",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:11:18.546597-03:00"
-    },
-    {
-      "title": "777 Partners Files Bankruptcy After Creditors’ Liquidation Push",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia é relevante pois afeta a situação financeira da empresa 777 Partners, mas não é um evento de mercado maior.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:15:48.235395-03:00"
-    },
-    {
-      "title": "Presidente do STF, Fachin diz que “nem os tribunais, nem o Brasil são infalíveis”",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T19:15:52.142287-03:00"
-    },
-    {
       "title": "RadNet targets over $140M of Digital Health ARR by end of 2026 as it raises imaging center guidance",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T18:27:00.105730-03:00"
+    },
+    {
+      "title": "Moraes determina busca contra fonte de jornalista do Maranhão",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:30:44.318466-03:00"
+    },
+    {
+      "title": "Entrée Resources Ltd. reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Resultados financeiros rotineiros de uma empresa de mineração",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:30:49.442837-03:00"
+    },
+    {
+      "title": "TME signals another share buyback round while integrating Ximalaya into a music plus audio platform",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A compra de ações e a integração de uma plataforma de música e áudio são eventos relevantes para o mercado, mas não são extremamente impactantes.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:30:52.693730-03:00"
+    },
+    {
+      "title": "Dundee Preference shares Series 3 GAAP EPS of $6.32",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:30:55.375044-03:00"
+    },
+    {
+      "title": "Westport Fuel Systems GAAP EPS of -$0.64 misses by $0.29, revenue of $2.72M beats by $0.49M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:30:58.105235-03:00"
+    },
+    {
+      "title": "Integra Resources Corp. Non-GAAP EPS of $0.06 misses by $0.01, revenue of $70.8M misses by $12.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:31:00.837517-03:00"
+    },
+    {
+      "title": "Stock Market Today, Aug. 11: On Holding Stock Plunges on Worst Day Ever",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T18:31:05.744586-03:00"
+    },
+    {
+      "title": "Stock Market Today, Aug. 11: Joby Aviation Falls 4% After $500M Defense Acquisition and Stock Sale Plan",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T18:31:08.494239-03:00"
+    },
+    {
+      "title": "Nike, Lululemon, Deckers, and On Holding Have All Plunged. What's the Best Buy of the Four?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T18:31:11.236838-03:00"
+    },
+    {
+      "title": "Hershey CFO Steven Voskuil Sells 950 Shares for $171,000",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:31:13.947542-03:00"
+    },
+    {
+      "title": "Bumble is losing its Bumble-ness",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:31:24.034264-03:00"
     }
   ]
 }
