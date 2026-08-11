@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Sumitomo buys 33.3% equity in UK’s Gwynt Glas wind farm project",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T10:51:27.836467-03:00"
-    },
-    {
-      "title": "Chip equipment stocks rise after Taiwan Semiconductor revenue surges 45%",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T10:51:30.538256-03:00"
-    },
-    {
-      "title": "American Airlines (AAL) Posted Record Revenue, but is the Stock too Risky Amid Rising Fuel Costs?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T10:51:33.251968-03:00"
-    },
-    {
-      "title": "SEC Proposes New E-Delivery Approach to Make Information More Readily Accessible and Useful for Investors",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T10:51:37.351627-03:00"
-    },
-    {
-      "title": "Israel cria zona militar fechada em Taybeh, na Cisjordânia, para barrar colonos",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia sobre conflito geopolitico sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T10:55:48.972527-03:00"
-    },
-    {
-      "title": "Anvisa libera entrega de medicamentos por apps como iFood, Rappi e Mercado Livre",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre regulamentação de entrega de medicamentos não é relevante para mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T10:55:51.726149-03:00"
-    },
-    {
-      "title": "Wall Street cai com impasse em Ormuz e tombo de Intel",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T10:55:56.190583-03:00"
-    },
-    {
-      "title": "Maior alta no Ibovespa hoje: Embraer (EMBJ3) ultrapassa R$ 1 bilhão em lucro, atualiza previsões e diz que pode voar ainda mais longe",
-      "source": "Seu Dinheiro",
-      "score": 8.0,
-      "motivo": "A Embraer apresentou resultados financeiros excepcionais, impulsionados por entregas e alta demanda, o que é um sinal positivo para o mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T10:56:08.169357-03:00"
-    },
-    {
-      "title": "Apple downgraded, HPE upgraded: Wall Street's top analyst calls",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T10:56:13.045360-03:00"
-    },
-    {
-      "title": "I compared Chili's Big QP cheeseburger and McDonald's Quarter Pounder. One was a better value.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T10:56:15.894930-03:00"
-    },
-    {
-      "title": "Corte da Selic já está na cota dos FIIs? Veja o que pode mover os fundos agora",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "decisão sobre a Selic tende a ter impacto reduzido",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:00:56.205286-03:00"
-    },
-    {
-      "title": "Violência financeira contra idosos: 7 sinais que a família deve observar",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:00:59.177292-03:00"
-    },
-    {
-      "title": "Gás do Povo: Caixa libera vale-recarga para 3,2 milhões de famílias nesta segunda",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:01:02.096139-03:00"
-    },
-    {
       "title": "Microsoft plans Maia 300 chip launch as early as next month - The Information",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T10:22:13.082208-03:00"
+    },
+    {
+      "title": "Europe is blowing up riverbeds as an extreme drought wreaks havoc on its economy",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A seca está afetando a infraestrutura crítica da Europa, como o transporte de mercadorias e a produção de energia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T10:25:37.454934-03:00"
+    },
+    {
+      "title": "National Health Investors raises quarterly dividend by 2.2% to  $0.94/share",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T10:25:42.311593-03:00"
+    },
+    {
+      "title": "Maris-Tech receives contract expansion for government defense program",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T10:25:45.285713-03:00"
+    },
+    {
+      "title": "Venture Global declares $0.04 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T10:25:47.889716-03:00"
+    },
+    {
+      "title": "Ten materials stocks with the biggest earnings surprises",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T10:25:50.501614-03:00"
+    },
+    {
+      "title": "First Advantage prices 12.5M-share secondary offering at $22.20 per share",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T10:25:53.119898-03:00"
+    },
+    {
+      "title": "4 stocks to watch on Tuesday: CBRS, HIMS, INTC, and JOBY",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não menciona nenhum evento específico ou impactante que afete o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T10:25:56.105360-03:00"
+    },
+    {
+      "title": "Astera Labs vs. Arm: Which Technology Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T10:26:00.975994-03:00"
+    },
+    {
+      "title": "Executive Sells Nearly $300,000 Worth of Avery Dennison Stock",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T10:26:03.587683-03:00"
+    },
+    {
+      "title": "Think Maxing Out a 401(k) Is Always Smart? This Might Make You Change Your Mind.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T10:26:06.212350-03:00"
+    },
+    {
+      "title": "Presidente do Bradesco vê espaço para novos cortes de juros em 2026, mas cita guerra, eleições e El Niño como ameaças",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T10:26:10.779865-03:00"
+    },
+    {
+      "title": "Exportações do Brasil aos EUA caem 12,2% no ano e atingem menor nível em 3 anos para o período",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T10:26:13.412655-03:00"
+    },
+    {
+      "title": "Resultado do XPLG11 passa de R$ 36,8 milhões; fundo sinaliza proventos adiante",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T10:26:17.718722-03:00"
     }
   ]
 }
