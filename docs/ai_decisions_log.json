@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Acadia Realty Trust Becomes Oversold",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:01:50.748467-03:00"
-    },
-    {
-      "title": "Iovance Biotherapeutics Stock Soars After the Company Posts Strong Q2 Earnings. Is It Heading Even Higher?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:01:53.465959-03:00"
-    },
-    {
-      "title": "Odds the Fed will hike in September tumble following big July jobs miss",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A notícia afeta diretamente a política monetária do Fed e sua possibilidade de aumentar juros em setembro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:05:43.016801-03:00"
-    },
-    {
-      "title": "Dólar interrompe sequência de perdas e sobe a R$ 5,11 à espera de IPCA e ata do Copom",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "O dólar sobe após interromper sequência de perdas, o que pode ser positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:05:48.326159-03:00"
-    },
-    {
-      "title": "BRKM5: Credores da Braskem pressionam Petrobras por aporte antes de 24 de agosto",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A noticia sugere que a Petrobras pode precisar de um aporte financeiro, o que pode afetar negativamente a sua capacidade de investir em suas operações, impactando negativamente o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:05:51.628293-03:00"
-    },
-    {
-      "title": "Caiado sugere que Arminio Fraga pode ser seu ministro da Fazenda",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:05:54.652770-03:00"
-    },
-    {
-      "title": "Good news for stock-market bulls: Corporate earnings growth is no longer being driven just by tech",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:05:57.572240-03:00"
-    },
-    {
-      "title": "Broadcom slips after seven-session advance",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:06:00.285769-03:00"
-    },
-    {
-      "title": "Cleveland Fed's Hammack expects that more than one rate hike will be needed",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:06:03.033145-03:00"
-    },
-    {
-      "title": "Nayax reaffirms 2026 guidance of $510M-$520M revenue while revising free cash flow conversion to 5%-10%",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:06:05.765930-03:00"
-    },
-    {
-      "title": "Empresa Distribuidora y Comercializadora Norte reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:06:08.456384-03:00"
-    },
-    {
-      "title": "Power Solutions rises as Freedom Broker raises to Buy after strong Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:06:11.657148-03:00"
-    },
-    {
-      "title": "YouTube dobra exigência de horas de exibição para novos criadores começarem a ganhar dinheiro com vídeos na plataforma",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:06:19.918925-03:00"
-    },
-    {
-      "title": "Dólar sobe a R$ 5,11, e Bolsa cai com alta do petróleo e projeção de juros",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:06:23.315735-03:00"
-    },
-    {
       "title": "Tech industry is buzzing after a Claude agent hacked into a gym",
       "source": "TechCrunch",
       "score": null,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T15:56:02.119193-03:00"
+    },
+    {
+      "title": "Comex Gold, Silver Settle Lower",
+      "source": "WSJ Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de metais preciosos, mas o impacto é limitado e rotineiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:00:41.826481-03:00"
+    },
+    {
+      "title": "Beyoncé assume controle total do uísque SirDavis após venda da participação da LVMH",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:00:46.948401-03:00"
+    },
+    {
+      "title": "Smithfield forecasts $1.225B-$1.375B 2026 adjusted operating profit while weighting marketing spend to the second half",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A previsão de lucro operacional ajustado é relevante para o mercado e sugere que a empresa está se preparando para um melhor desempenho financeiro em 2026.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:00:50.335001-03:00"
+    },
+    {
+      "title": "DPC initiates FY 2026 guidance of $1.0B-$1.04B revenue and $182M-$187M adjusted EBITDA as it advances Alabama superalloy site",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:00:53.094663-03:00"
+    },
+    {
+      "title": "Century Aluminum initiated Buy at UBS as best leverage to sustainably higher U.S. regional premium",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:00:55.833920-03:00"
+    },
+    {
+      "title": "C3.ai vs. Salesforce: Which Software Stock Pursuing Artificial Intelligence Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:01:00.986805-03:00"
+    },
+    {
+      "title": "Aug. 6 Turned Out to Be a Nonevent for SpaceX. After a 15% Rally, Here's How High the Stock Could Still Climb in the Next 12 Months.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:01:03.775941-03:00"
+    },
+    {
+      "title": "D-Wave's Revenue Fell 44% in a Year. Its Market Value Rose 38%.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:01:06.473287-03:00"
+    },
+    {
+      "title": "Sundar Pichai Raised Alphabet's 2026 Capex Forecast to as Much as $205 Billion, Sending the Stock Down 7%. Is This an Overreaction Investors Should Buy Into?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:01:09.296128-03:00"
+    },
+    {
+      "title": "Could This Mid-Cap Space Stock Become the Next SpaceX?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:01:11.983097-03:00"
+    },
+    {
+      "title": "Nu Holdings' Next Earnings Report on Aug. 13 Could Send the Stock Soaring. Here's Why.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:01:15.060417-03:00"
+    },
+    {
+      "title": "Falta de balanço do BRB emperra empréstimo para Distrito Federal",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:01:19.765188-03:00"
+    },
+    {
+      "title": "Natural Grocers shows resilience in Q3 earnings",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:01:24.363813-03:00"
+    },
+    {
+      "title": "Arko Petroleum to acquire US Petroleum Partners",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:01:27.043035-03:00"
     }
   ]
 }
