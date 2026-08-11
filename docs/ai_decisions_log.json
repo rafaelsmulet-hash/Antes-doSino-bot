@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Tempo real: Ibovespa inicia semana com Focus no radar",
-      "source": "Money Times",
-      "score": 3.0,
-      "motivo": "relatório Focus não é um evento impactante, mas sim uma atualização rotineira",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:56:30.177835-03:00"
-    },
-    {
-      "title": "Petróleo abre semana estável com expectativas reduzidas para reabertura do Estreito de Ormuz pelo Irã",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:56:32.771417-03:00"
-    },
-    {
-      "title": "Hedge funds compram ações globais pela segunda semana consecutiva, diz Goldman Sachs",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Hedge funds aumentam a compra de ações, indicando otimismo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:56:35.750552-03:00"
-    },
-    {
       "title": "TD Cowen vê 25% de chance de Trump conseguir demitir Cook do Fed",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T21:21:09.173989-03:00"
+    },
+    {
+      "title": "JSL tem queda de 16,6% no lucro do 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "queda de lucro do 2º trimestre impacta negativamente a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:26:31.709129-03:00"
+    },
+    {
+      "title": "Ações da Riot Platforms disparam mais de 20% no after-hours",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Aumento significativo no valor das ações da Riot Platforms sugere uma boa notícia para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:26:34.510892-03:00"
+    },
+    {
+      "title": "KNCA11 vê resultado cair 31,4%; dividendo volta para R$ 1 por cota",
+      "source": "Suno Noticias",
+      "score": 6.0,
+      "motivo": "queda no resultado líquido e redução do dividendo impactam o desempenho da ação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:26:47.144720-03:00"
     }
   ]
 }
