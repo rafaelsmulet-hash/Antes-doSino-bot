@@ -1,204 +1,6 @@
 {
   "decisions": [
     {
-      "title": "PF encontra foto de advogado investigado em piscina com deputados e senadores",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:45:49.514386-03:00"
-    },
-    {
-      "title": "Grendene vende subsidiária nos EUA por US$3,6 mi",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Venda de subsidiária pode liberar recursos para investimentos em outras áreas, melhorando a rentabilidade da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:45:54.369345-03:00"
-    },
-    {
-      "title": "Camtek registra crescimento de 8% na receita do 2º tri e supera estimativas",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "crescimento de receita supera estimativas, indicando saúde financeira da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:45:57.098697-03:00"
-    },
-    {
-      "title": "Ações da AbCellera disparam 22% após resultados positivos em ensaio clínico",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Resultados positivos em ensaio clínico impactam positivamente a empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:46:03.546798-03:00"
-    },
-    {
-      "title": "Por que as ações da Varex Imaging estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A noticia menciona ações de uma empresa, o que sugere relevância para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:06.289249-03:00"
-    },
-    {
-      "title": "Posts de Trump no Truth Social reformulam negociações com o Irã, Gaza e conselho da Casa Branca",
-      "source": "Investing.com Brasil",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:09.033240-03:00"
-    },
-    {
-      "title": "Por que as ações da Tenax Therapeutics estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "a ação está despencando devido a uma notícia negativa sobre a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:11.884088-03:00"
-    },
-    {
-      "title": "Por que as ações da Sionna Therapeutics estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "resultado do teste de fármaco foi negativo",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:14.624944-03:00"
-    },
-    {
-      "title": "Ações da Sionna Therapeutics despencam 92% após falha em ensaio clínico",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "falha em ensaio clínico afeta negativamente a empresa e suas ações",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:17.365988-03:00"
-    },
-    {
-      "title": "Por que as ações da AAON estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Ações disparando devido a resultado de trimestre acima das expectativas",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:20.148038-03:00"
-    },
-    {
-      "title": "Santander leva mais de 200 imóveis a leilão com financiamento de até 35 anos",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois o Santander está oferecendo financiamento para imóveis, o que pode estimular a demanda e o mercado imobiliário.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:24.170975-03:00"
-    },
-    {
-      "title": "Pesquisa BTG/Nexus: Lula e Flávio Bolsonaro seguem em empate técnico no 2º turno",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia e politica nao sao relevantes para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:26.926952-03:00"
-    },
-    {
-      "title": "GCM Grosvenor Non-GAAP EPS of $0.19 beats by $0.01, revenue of $134.34M beats by $2.97M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A superação das expectativas de lucro e receita é um sinal positivo para a empresa e pode influenciar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:30.072889-03:00"
-    },
-    {
-      "title": "Silicon Motion plans $800M convertible debt offering",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A oferta de dívida pode ser utilizada para financiar operações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:32.856704-03:00"
-    },
-    {
-      "title": "Nayax LTD.EPS of -$0.27, revenue of $122.6M beats by $1.62M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Os resultados financeiros da Nayax LTD. são relevantes, mas não são um evento de mercado maior.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:35.861979-03:00"
-    },
-    {
-      "title": "Monday.com falls after Q3 revenue outlook miss",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa não atendeu às expectativas de receita, o que pode afetar a confiança dos investidores em sua capacidade de gerenciar sua receita.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:38.873427-03:00"
-    },
-    {
-      "title": "SharpLink Gaming GAAP EPS of -$1.88 misses by $1.89, revenue of $11.5M misses by $1.89M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois apresenta resultados financeiros ruins da empresa, o que pode afetar a confiança dos investidores e influenciar a valorização da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:41.804151-03:00"
-    },
-    {
-      "title": "MarineMax soars after agreeing to a go-private deal",
-      "source": "Seeking Alpha",
-      "score": 7.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o preço das ações da MarineMax e pode influenciar o mercado de ações em geral.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:44.750955-03:00"
-    },
-    {
-      "title": "Surgery Partners GAAP EPS of -$0.12 misses by $0.05, revenue of $848.9M beats by $18.58M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a expectativa de lucro da empresa, mas não é um evento de mercado maior.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:46:47.874997-03:00"
-    },
-    {
-      "title": "New Fed Chair Kevin Warsh Sparked a &quot;Credibility Shock&quot; on Wall Street After His Latest Rate Decision. Here's Why Investors Should Care.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A decisão do presidente do Fed sobre a taxa de juros pode influenciar a política monetária e, consequentemente, o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:46:52.352512-03:00"
-    },
-    {
-      "title": "This Stock Has A 3.96% Yield And Sells For Less Than Book",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a ação com yield atraente e preço baixo, o que pode ser relevante para investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:46:55.210006-03:00"
-    },
-    {
-      "title": "OXY Added as Top 10 Energy Dividend Stock With 2.00% Yield",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois menciona a inclusão da ação OXY em uma lista de ações de energia com dividendos atraentes, o que pode influenciar a demanda por ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:46:58.227880-03:00"
-    },
-    {
       "title": "DoubleVerify Holdings Reaches Analyst Target Price",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17801,204 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-11T08:17:16.295253-03:00"
+    },
+    {
+      "title": "Itaúsa (ITSA4) pagará R$ 2,8 bi em proventos no dia 28; veja valor por ação",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Pagamento de proventos é uma ação rotineira, mas afeta diretamente os acionistas do Itaúsa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:20:54.510086-03:00"
+    },
+    {
+      "title": "“Não tem nada a ver comigo”: Haddad atribui “taxa das blusinhas” a varejo e Congresso",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia se refere a uma declaração política e não tem impacto direto sobre o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:20:57.214473-03:00"
+    },
+    {
+      "title": "Lucro ajustado do BTG Pactual cresce 22,6% no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "o aumento do lucro ajustado é um sinal positivo para a saúde financeira da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:01.105460-03:00"
+    },
+    {
+      "title": "Romênia evita rebaixamento imediato, mas enfrenta teste crucial em 2027",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:03.684491-03:00"
+    },
+    {
+      "title": "Por que as ações da Sea estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:06.261844-03:00"
+    },
+    {
+      "title": "Alunorte, da Norsk Hydro, reduz produção de alumina a 50% da capacidade devido à escassez de gás",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:08.915158-03:00"
+    },
+    {
+      "title": "Morgan Stanley aponta queda nas entradas de capital em ações da Índia em julho",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:11.513133-03:00"
+    },
+    {
+      "title": "Por que as ações da Cardinal Health estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:14.086014-03:00"
+    },
+    {
+      "title": "Roads, water and telecom towers can beat the AI hype. This fund manager flags the infrastructure stocks to buy now.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:21:17.309554-03:00"
+    },
+    {
+      "title": "Xtant Medical misses top-line and bottom-line estimates; lowers FY2026 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:19.946496-03:00"
+    },
+    {
+      "title": "Beamr Imaging reports 1H results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:22.538781-03:00"
+    },
+    {
+      "title": "JBS falls as investors eye the CEO change and a Q2 profit miss",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:21:25.122538-03:00"
+    },
+    {
+      "title": "Neo Performance Materials beats top-line estimates; raises FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:27.701408-03:00"
+    },
+    {
+      "title": "Prelude Therapeutics GAAP EPS of -$0.14 beats by $0.06, revenue of $5.71M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:30.313112-03:00"
+    },
+    {
+      "title": "eToro buys TradeZero for up to $231M to expand in US",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:32.946927-03:00"
+    },
+    {
+      "title": "Bloom Energy vs. GE Vernova: Which AI Power Stock Deserves Your $5,000 Today?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:37.882789-03:00"
+    },
+    {
+      "title": "Is the Artificial Intelligence (AI) Bubble About to Pop? Investors Who Make This 1 Move Will Come Out on Top, According to History.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:21:40.514081-03:00"
+    },
+    {
+      "title": "Janus International Group, Inc. Reports Fall In Q2 Income",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:21:43.129000-03:00"
+    },
+    {
+      "title": "Flowco Q2 Net Income Surges, Revenue Improves On Strong Demand; Stock Up Over 8% In Pre-Market",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:21:45.763956-03:00"
+    },
+    {
+      "title": "Petróleo volta a encostar em US$ 90 com dilema sobre reabertura de Hormuz",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:50.561794-03:00"
+    },
+    {
+      "title": "Nem uva, nem “vinho”: a aposta nas frutas nativas para criar bebidas complexas no Brasil",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:53.319779-03:00"
+    },
+    {
+      "title": "SBM Offshore selects Siemens Energy for Brazil Sergipe-Alagoas FPSOs",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:21:58.238110-03:00"
     }
   ]
 }
