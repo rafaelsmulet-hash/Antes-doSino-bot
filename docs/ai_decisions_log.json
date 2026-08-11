@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Deutsche Bank rebaixa Partners Group e ações caem com recuperação mais lenta",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "rebaixa da empresa afeta negativamente a ação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:52:07.406515-03:00"
-    },
-    {
-      "title": "Por que as ações da Smithfield Foods estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 4.0,
-      "motivo": "a ação está caindo devido a uma queda no preço das ações, mas não há informações sobre a causa específica",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:52:10.692413-03:00"
-    },
-    {
       "title": "Lufthansa fecha acordo com sindicato de pilotos para resolver disputas",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T20:36:12.618450-03:00"
+    },
+    {
+      "title": "SINTX expects $900K-$1.1M Q3 revenue and $1.0M-$1.3M Q4 as it executes $3.2M+ purchase orders",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa está executando pedidos de compra significativos, o que pode impulsionar a receita nos próximos trimestres.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:40:41.522108-03:00"
+    },
+    {
+      "title": "Intel segue a fila dos grandes investimentos em IA e levanta US$ 20 bi em ações para brigar com TSMC",
+      "source": "Neofeed",
+      "score": 8.0,
+      "motivo": "Levantamento de US$ 20 bilhões para investimentos em IA é um sinal de confiança na expansão da empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T20:40:53.648159-03:00"
     }
   ]
 }

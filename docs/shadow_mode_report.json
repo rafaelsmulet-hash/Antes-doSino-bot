@@ -1,28 +1,14 @@
 {
   "date": "2026-08-11",
-  "total_ingeridas": 39074,
+  "total_ingeridas": 39322,
   "aprovadas_pelo_fluxo_atual": 621,
-  "descartadas_pelos_filtros_atuais": 38453,
-  "score_medio_materialidade": 3.95,
-  "seriam_breaking": 35,
-  "iriam_para_rodada": 361,
+  "descartadas_pelos_filtros_atuais": 38701,
+  "score_medio_materialidade": 3.96,
+  "seriam_breaking": 36,
+  "iriam_para_rodada": 360,
   "seriam_descartadas_pelo_novo_sistema": 1604,
   "total_divergencias": 691,
   "divergencias": [
-    {
-      "title": "Deutsche Bank rebaixa Partners Group e ações caem com recuperação mais lenta",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Smithfield Foods estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 4.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Lucro do BTG Pactual cresce 23% no 2º trimestre e bate recorde de R$ 5,1 bilhões",
       "source": "Exame",
@@ -144,6 +130,20 @@
     },
     {
       "title": "US-Iran standoff sends oil up, dents stocks",
+      "source": "Yahoo Finance",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Global Gas Turbine Orders Hit Record High as Power Demand Surges",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "FlightAware sues Kalshi over flight-cancellation markets",
       "source": "Yahoo Finance",
       "score": null,
       "decisao_sugerida": "discard",
