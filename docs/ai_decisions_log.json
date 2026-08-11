@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "AFLAC (AFL) Shares Cross 2% Yield Mark",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T16:36:41.279945-03:00"
-    },
-    {
-      "title": "YUM Dividend Yield Pushes Past 2%",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T16:36:43.895832-03:00"
-    },
-    {
-      "title": "Bank of America's Preferred Stock Series NN Yield Pushes Past 6.5%",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T16:36:46.548681-03:00"
-    },
-    {
-      "title": "HP Shares Cross 4% Yield Mark",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T16:36:49.160932-03:00"
-    },
-    {
-      "title": "Bank of America's Preferred Stock Series SS Crosses Above 6.5% Yield Territory",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T16:36:51.836358-03:00"
-    },
-    {
-      "title": "Rocket Lab USA Q2 26 Earnings Conference Call At 5:00 PM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:36:54.480702-03:00"
-    },
-    {
-      "title": "Simon Property Group Q2 26 Earnings Conference Call At 5:00 PM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:36:57.125355-03:00"
-    },
-    {
-      "title": "Elon Musk's SpaceX Just Delivered Its First Earnings Report as a Public Company. Here's the 1 Number That Matters Most.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:37:04.687756-03:00"
-    },
-    {
-      "title": "Is Celsius a Buy After Tumbling 18% in 1 Day?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:37:07.321064-03:00"
-    },
-    {
       "title": "Trump signs executive order calling for fewer childhood vaccines, falsely linking shots to autism",
       "source": "CNBC - US News",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T15:16:34.717988-03:00"
+    },
+    {
+      "title": "Three reasons Goldman's co-head of global banking and markets says to stay invested",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A recomendação de investir é feita por um executivo de alta posição na Goldman Sachs, o que sugere confiança no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:21:01.011222-03:00"
+    },
+    {
+      "title": "Trump diz ser ‘banqueiro’ do Irã e que utilizará economia como estratégia de guerra",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia indica que a pressão econômica sobre o Irã está aumentando, o que pode ter impacto negativo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:21:05.503407-03:00"
+    },
+    {
+      "title": "Italiano é preso por racismo contra cantora na Bahia: ‘Ele me chamou de escrava’",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:21:08.390316-03:00"
+    },
+    {
+      "title": "Amentum anticipates 3% NASA revenue impact in FY27 while lifting FY26 EPS outlook to $2.40-$2.50",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:21:14.492534-03:00"
+    },
+    {
+      "title": "Venture Global signals 2026 EBITDA of $8.7B-$9.1B as it boosts dividend to $0.04",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:21:17.182807-03:00"
+    },
+    {
+      "title": "Cathie Wood Just Sold $21 Million of Palantir Stock. Here's Why That Could Be a Big Mistake.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T15:21:22.246176-03:00"
+    },
+    {
+      "title": "First Watch (FWRG) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T15:21:24.931837-03:00"
+    },
+    {
+      "title": "Micron Stock Could Be Worth $2,000 by 2030. Here Is the Bull Case",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:21:27.640151-03:00"
+    },
+    {
+      "title": "Investo lança ETF de títulos públicos prefixados",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T15:21:35.618713-03:00"
     }
   ]
 }
