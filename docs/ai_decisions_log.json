@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Os planos da Ecopetrol para a Brava e para o Brasil",
-      "source": "Brazil Journal",
-      "score": 5.0,
-      "motivo": "A notícia destaca a estratégia de crescimento da Ecopetrol no Brasil, o que pode impactar positivamente a economia e o mercado de petróleo no país.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:09.559660-03:00"
-    },
-    {
-      "title": "OPINIÃO. A AI está vivendo 1997",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:12.141568-03:00"
-    },
-    {
-      "title": "'The Dink', nova comédia da Apple TV, prova que o pickleball é papo sério (ou não)",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T06:57:15.495741-03:00"
-    },
-    {
       "title": "NotebookLM além dos estudos: como empresas estão usando a ferramenta para ganhar produtividade",
       "source": "Exame",
       "score": 1.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T21:40:58.446647-03:00"
+    },
+    {
+      "title": "Quina hoje, concurso 7088: confira o resultado sorteado nesta segunda (10)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de concurso de loteria não afeta o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:45:40.812609-03:00"
+    },
+    {
+      "title": "Star Bulk Carriers nixes vessel purchase deal with Diana Shipping",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque envolve a cancelação de um acordo de compra de um navio, o que pode ter implicações para o mercado de navios e a indústria de transporte marítimo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:45:46.579008-03:00"
+    },
+    {
+      "title": "Purple forecasts $20M-$25M FY2026 adjusted EBITDA as revenue guide lowered to $420M-$440M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A redução da guia de receita é compensada pela previsão de EBITDA ajustado positiva, indicando uma gestão eficaz de custos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:45:49.612215-03:00"
     }
   ]
 }
