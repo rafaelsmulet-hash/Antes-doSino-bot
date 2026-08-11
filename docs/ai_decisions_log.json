@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dow Movers: AAPL, HONIV",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:41:52.855995-03:00"
-    },
-    {
-      "title": "Tegma Logística compra 70% da Transcopa por R$ 99,4 milhões",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:41:57.487297-03:00"
-    },
-    {
-      "title": "French Trader Sucden Warns of Sugar Oversupply as Futures Rally",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca a possibilidade de suprimento excessivo de açúcar, o que pode afetar os preços e os investimentos no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:45:44.912193-03:00"
-    },
-    {
-      "title": "Ações da Voyager Technologies sobem com contrato da Space Force",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "contrato com a Space Force pode trazer novas oportunidades de negócios para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:45:50.745838-03:00"
-    },
-    {
-      "title": "IA, música, longevidade e cultura: como o SP2B quer juntar as peças do futuro",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:45:53.978466-03:00"
-    },
-    {
-      "title": "Memphis está perto de voltar ao Corinthians; veja situação",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:45:56.657599-03:00"
-    },
-    {
-      "title": "Taylor Farms recalls jalapeño-based foods in 26 states amid ongoing salmonella outbreak",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:45:59.647291-03:00"
-    },
-    {
-      "title": "AbCellera surges on positive mid-stage results for menopause drug ABCL635",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:46:02.499469-03:00"
-    },
-    {
-      "title": "Lumentum well positioned for Q4 on AI-infrastructure-driven growth, say analysts",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:46:05.152345-03:00"
-    },
-    {
-      "title": "Empery Digital Q2 net loss widens as Bitcoin holdings shift",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:46:07.809458-03:00"
-    },
-    {
-      "title": "FII será liquidado após aprovação dos cotistas; entenda o processo",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T11:46:16.323905-03:00"
-    },
-    {
-      "title": "Após enfrentar a Covid-19, Dimas Covas quer trazer uma fábrica de vacinas da Sinovac. Mas não será fácil",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:46:19.971228-03:00"
-    },
-    {
-      "title": "MASB issues new accounting standard on regulatory assets and liabilities",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:46:22.894567-03:00"
-    },
-    {
-      "title": "Why Vertex Pharma Popped, As A Key Rival Plummeted 90%",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T11:46:25.542059-03:00"
-    },
-    {
       "title": "AI Needs More Than GPUs. These 3 Stocks Are Building Everything Around Them",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T11:02:02.131856-03:00"
+    },
+    {
+      "title": "Polymarket makes moves to get house in order before expected boom times for prediction markets this fall",
+      "source": "CNBC - Finance",
+      "score": 4.0,
+      "motivo": "A notícia é relevante porque envolve uma investigação regulatória, mas não é um evento de mercado significativo em si",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:05:45.755837-03:00"
+    },
+    {
+      "title": "Em junho, indústria recua em 12 dos 15 locais pesquisados",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:05:50.821066-03:00"
+    },
+    {
+      "title": "Wall Street opera sem direção única com alívio nos preços do petróleo",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "noticia sobre mercado financeiro, mas sem impacto direto claro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:05:54.467805-03:00"
+    },
+    {
+      "title": "Bolsas da Europa operam sem força com alta do petróleo e impasse sobre Ormuz",
+      "source": "Money Times",
+      "score": 3.0,
+      "motivo": "alta do petróleo e impasse sobre Ormuz afetam negativamente as bolsas europeias",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:05:57.349630-03:00"
+    },
+    {
+      "title": "Existing home sales fall less than expected in July",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:06:02.180376-03:00"
+    },
+    {
+      "title": "UMH Properties gains after active Erez pushes for sale",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:06:04.875405-03:00"
+    },
+    {
+      "title": "Rackspace edges up following Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:06:07.606427-03:00"
+    },
+    {
+      "title": "Nvidia launches open model Nemotron 3.5 Lightning; working on bigger Nemotron 4: report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:06:10.327558-03:00"
+    },
+    {
+      "title": "Morgan Stanley unit acquires property in Kansas City for $158.5M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:06:13.032605-03:00"
+    },
+    {
+      "title": "Here are the major earnings after the close Tuesday",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:06:15.734723-03:00"
+    },
+    {
+      "title": "Altius Minerals Corporation raises quarterly dividend by 10% to  CAD 0.11/share",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:06:18.446239-03:00"
+    },
+    {
+      "title": "Uma Copa que o Brasil pode ganhar: o preparo de Allan Beckmann para a World Sushi Cup no Japão",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:06:27.840102-03:00"
+    },
+    {
+      "title": "Receita do XPML11 supera R$ 66 milhões em junho; confira os números",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:06:31.551926-03:00"
+    },
+    {
+      "title": "Intel segue a fila dos grandes investimentos em IA e levanta US$ 20 bi em ações para brigar com TSMC",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:06:35.507080-03:00"
     }
   ]
 }
