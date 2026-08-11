@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "JBS anuncia Wesley Batista Filho como novo CEO global e já mira o S&P 400",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:21:52.289046-03:00"
-    },
-    {
-      "title": "Google co-founder Sergey Brin has now spent $100 million to fight the billionaire tax",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:21:55.141408-03:00"
-    },
-    {
-      "title": "‘I’m going with you’: Shaq reveals why he picked 1 advisor over the rest, now he's worth $500M. Use the same tactic now",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:21:58.069430-03:00"
-    },
-    {
-      "title": "Brasileirão terá 10 mudanças na arbitragem a partir da 23ª rodada; veja novas regras",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:25:43.755550-03:00"
-    },
-    {
-      "title": "Cantor elege Arcus Biosciences como principal aposta no setor de biotecnologia",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "investimento de um cantor em uma empresa de biotecnologia sugere confiança no setor",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:25:49.046753-03:00"
-    },
-    {
-      "title": "Por que a ação da Surf Air Mobility está caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a ação está caindo devido a problemas da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:25:51.820295-03:00"
-    },
-    {
-      "title": "Polícia de SP indicia dois representantes do Goldman Sachs em caso Oncoclínicas",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:25:54.706107-03:00"
-    },
-    {
-      "title": "Morgan Stanley rebaixa Global-e para na média e eleva preço-alvo para US$ 44",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:25:57.431856-03:00"
-    },
-    {
-      "title": "Ações da Surf Air Mobility caem após resultados do 2º tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:26:00.118807-03:00"
-    },
-    {
-      "title": "O que a dona da Centauro fez para faturar R$ 2,2 bilhões com a Copa do Mundo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:26:03.547094-03:00"
-    },
-    {
-      "title": "Dez anos das Olimpíadas do Rio 2016: qual é o legado para o esporte brasileiro?",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:26:06.312626-03:00"
-    },
-    {
       "title": "Sable Offshore reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T17:46:53.800992-03:00"
+    },
+    {
+      "title": "Here are three key takeaways from the disappointing July jobs report",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A notícia traz informações concretas sobre o desempenho do mercado de trabalho nos EUA, que pode influenciar as decisões de investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:50:55.296544-03:00"
+    },
+    {
+      "title": "Prudential Financial declares $1.40 dividend",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Declaração de dividendos é um sinal de saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:51:02.161075-03:00"
+    },
+    {
+      "title": "Insteel declares $0.03 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:51:04.794949-03:00"
+    },
+    {
+      "title": "OPENLANE launches 8M-share secondary offering alongside $25M buyback",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:51:07.490051-03:00"
+    },
+    {
+      "title": "Dynex Capital declares $0.17 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:51:10.134234-03:00"
+    },
+    {
+      "title": "Digital Realty Trust declares $1.22 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:51:12.797079-03:00"
+    },
+    {
+      "title": "American Integrity Insurance Group Non-GAAP EPS of $1.78 beats by $0.89, revenue of $115.17M beats by $21.82M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:51:15.546296-03:00"
+    },
+    {
+      "title": "CNB Financial declares $0.19 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:51:18.231392-03:00"
+    },
+    {
+      "title": "Gestação de alto risco passa a dispensar carência para auxílio do INSS",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T17:51:27.444739-03:00"
+    },
+    {
+      "title": "Tarifaço dos EUA: empresas prejudicadas podem receber fôlego de R$ 210 milhões (ou mais) da ApexBrasil",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:51:30.329667-03:00"
+    },
+    {
+      "title": "Putin Pardons Ailing Former US Marine After Years In Russian Prison",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T17:51:37.175718-03:00"
     }
   ]
 }
