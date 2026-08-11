@@ -1,21 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 42784,
-  "aprovadas_pelo_fluxo_atual": 641,
-  "descartadas_pelos_filtros_atuais": 42143,
+  "total_ingeridas": 43032,
+  "aprovadas_pelo_fluxo_atual": 643,
+  "descartadas_pelos_filtros_atuais": 42389,
   "score_medio_materialidade": 4.03,
   "seriam_breaking": 55,
-  "iriam_para_rodada": 461,
-  "seriam_descartadas_pelo_novo_sistema": 1484,
-  "total_divergencias": 744,
+  "iriam_para_rodada": 460,
+  "seriam_descartadas_pelo_novo_sistema": 1485,
+  "total_divergencias": 745,
   "divergencias": [
-    {
-      "title": "Futuros de NY operam mistos com petróleo estável e foco na inflação",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "TD Cowen vê 25% de chance de Trump conseguir demitir Cook do Fed",
       "source": "Investing.com Brasil",
@@ -144,6 +137,13 @@
     },
     {
       "title": "Is It Really Safe to Invest in the S&P 500 Right Now? History Offers a Clear Answer.",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "European Shares Mixed Amid Hormuz Reopening Uncertainty",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
