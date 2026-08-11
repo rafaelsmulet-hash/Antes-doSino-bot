@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "DoubleVerify Holdings Reaches Analyst Target Price",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:47:00.811693-03:00"
-    },
-    {
-      "title": "Twilio Reaches Analyst Target Price",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:47:03.391098-03:00"
-    },
-    {
-      "title": "Analysts Expect 11% Gains Ahead For IGV",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "Previsão de ganho é uma informação rotineira e não impacta o mercado de forma significativa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:47:06.361502-03:00"
-    },
-    {
-      "title": "OSCR Crosses Above Average Analyst Target",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:47:08.944852-03:00"
-    },
-    {
-      "title": "WDAY Crosses Above Average Analyst Target",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:47:11.527000-03:00"
-    },
-    {
-      "title": "Peter Beck's Rocket Lab Fell 30% in a Month While Revenue Grew 63%",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A queda da ação é significativa, mas a empresa ainda apresentou crescimento de receita.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:47:14.498596-03:00"
-    },
-    {
       "title": "MXRF11 e outros 181 FIIs vão distribuir dividendos na semana; confira valores",
       "source": "Suno Noticias",
       "score": 8.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T08:21:58.238110-03:00"
+    },
+    {
+      "title": "Executivos de bancões brasileiros não veem fim para inadimplência recorde em 2026",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "inadimplência recorde pode afetar a saúde financeira dos bancos brasileiros",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:25:57.555793-03:00"
+    },
+    {
+      "title": "Chicago Atlantic Real Estate Finance GAAP EPS of $0.43 misses by $0.02, revenue of $12.83M misses by $0.91M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois afeta diretamente a confiança dos investidores na empresa e pode influenciar as decisões de compra e venda de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:26:03.722943-03:00"
+    },
+    {
+      "title": "Meta playbook: Deeper dive into Mark Zuckerberg's new AI manifesto",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "O manifesto não é uma notícia específica sobre ações ou decisões financeiras da Meta, mas sim uma visão estratégica sobre o futuro da inteligência artificial.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:26:06.665094-03:00"
+    },
+    {
+      "title": "Phillips 66, Kinder Morgan, HF Sinclair to move forward with $5B Western Gateway Pipeline",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:26:09.261703-03:00"
+    },
+    {
+      "title": "Poder Economia",
+      "source": "Poder360",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:26:12.040793-03:00"
+    },
+    {
+      "title": "Mark Zuckerberg’s AI manifesto is exactly why people don’t like AI",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:26:23.158133-03:00"
     }
   ]
 }
