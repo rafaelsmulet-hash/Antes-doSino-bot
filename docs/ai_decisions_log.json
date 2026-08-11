@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A suspensão de dividendos e aumento de capital são medidas significativas que afetam a empresa e podem influenciar o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:09.311193-03:00"
-    },
-    {
-      "title": "Por que a ação da Sezzle está subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A ação da Sezzle está subindo devido a uma notícia positiva sobre o crescimento da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:14.809918-03:00"
-    },
-    {
-      "title": "Beyoncé adquire controle total da marca de whisky SirDavis da LVMH",
-      "source": "Investing.com Brasil",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:17.566641-03:00"
-    },
-    {
-      "title": "Índia - Ações fecharam o pregão em alta e o Índice Nifty 50 avançou 0,05%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento do Índice Nifty 50 indica um mercado em alta no país",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:20.467105-03:00"
-    },
-    {
-      "title": "Embraer eleva previsões de margem e fluxo de caixa para 2026",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "aumento de previsões de margem e fluxo de caixa é um sinal positivo para a empresa e o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T07:41:23.308805-03:00"
-    },
-    {
-      "title": "RBC rebaixa Amrize após inflação de custos superar ganhos de volume",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "inflação de custos superando ganhos de volume é um sinal de que a empresa está tendo dificuldades para controlar seus custos",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T07:41:29.938047-03:00"
-    },
-    {
-      "title": "Dow Jones, Nasdaq, S&P 500: prévia semanal com dados de inflação e resultados de tecnologia",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A prévia semanal inclui dados de inflação e resultados de tecnologia, que são indicadores importantes para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T07:41:32.970909-03:00"
-    },
-    {
-      "title": "OPINIÃO. A AI está vivendo 1997",
-      "source": "Brazil Journal",
-      "score": 2.0,
-      "motivo": "A noticia e uma opiniao sobre o passado e nao tem impacto direto no mercado atual",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:36.614842-03:00"
-    },
-    {
-      "title": "Zuckerberg defende 'superinteligência para todos' com modelo de IA aberto",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "noticia sobre tecnologia e modelo de IA, mas não especifica impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:40.327898-03:00"
-    },
-    {
-      "title": "BTG/Nexus: Lula e Flávio Bolsonaro oscilam para baixo e ficam a 5 pontos de distância no 1º turno",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia se refere a eleicoes e nao a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:43.133333-03:00"
-    },
-    {
-      "title": "Fundos tokenizados podem superar os tradicionais? A aposta que divide o mercado",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia discute a possibilidade de fundos tokenizados superar os tradicionais, o que é um tópico relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:46.424114-03:00"
-    },
-    {
-      "title": "EHang completes Central Asia's first human-carrying eVTOL flight",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de tecnologia e inovação, mas não tem um impacto direto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:50.354260-03:00"
-    },
-    {
-      "title": "AirSculpt Technologies Non-GAAP EPS of $0.01, revenue of $42.9M; reaffirms FY 2026 outlook",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os investidores da AirSculpt Technologies, mas não tem impacto significativo no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:41:53.285057-03:00"
-    },
-    {
       "title": "Egypt targets higher oil and gas output in 2026/2027 development plan",
       "source": "Yahoo Finance",
       "score": 6.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T07:11:31.235562-03:00"
+    },
+    {
+      "title": "Resilient Europe Turns Into a Winning Bet for Money Managers",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia destaca o desempenho positivo dos mercados europeus, apesar de previsões pessimistas, o que é relevante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:15:48.424280-03:00"
+    },
+    {
+      "title": "Wall Street just endorsed Jensen Huang's 'big concept' for AI. What now?",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "A Nvidia apresenta um novo plano para financiar o desenvolvimento da inteligência artificial, o que pode ter impacto significativo no mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:15:51.676952-03:00"
+    },
+    {
+      "title": "Bolsas da Europa operam sem força com alta do petróleo e impasse sobre Ormuz",
+      "source": "Money Times",
+      "score": 3.0,
+      "motivo": "alta do petróleo e impasse nas negociações para reabrir o Estreito de Ormuz afetam negativamente o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:15:57.280286-03:00"
+    },
+    {
+      "title": "Por que as ações da ACV Auctions estão despencando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a ação está despencando, indicando um impacto negativo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:16:00.477750-03:00"
+    },
+    {
+      "title": "Por que as ações da WF International estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Ações disparando devido a resultados financeiros acima do esperado da empresa WF International",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:16:03.421944-03:00"
+    },
+    {
+      "title": "J.P. Morgan otimista com recuperação dos preços do aço inoxidável na Europa",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "recuperação dos preços do aço inoxidável é positiva para a indústria siderúrgica e pode impactar positivamente as ações de empresas relacionadas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:16:06.233448-03:00"
+    },
+    {
+      "title": "Por que as ações da Birkenstock estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a ação está caindo, indicando um impacto negativo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:16:09.155688-03:00"
+    },
+    {
+      "title": "Posições vendidas nos EUA ficam vulneráveis, segundo dados do Citi",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "vulnerabilidade das posições vendidas nos EUA pode afetar negativamente os mercados",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:16:12.017576-03:00"
+    },
+    {
+      "title": "Por que as ações da On Holding estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a noticia especifica a razao pelas quais as acoes da On Holding estão caindo, o que é relevante para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:16:14.876430-03:00"
+    },
+    {
+      "title": "AM Markets Need to Know: Nvidia's $500B AI push, Burry bets, and more",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia do investimento da Nvidia em IA é relevante para o mercado de tecnologia e pode ter impacto significativo nas ações da empresa e do setor.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T07:16:20.326513-03:00"
+    },
+    {
+      "title": "Aimia Non-GAAP EPS of C$0.11, revenue of C$36.4M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento significativo para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:16:23.445641-03:00"
+    },
+    {
+      "title": "YPF Sociedad Anónima GAAP EPS of $3.07 beats by $0.41, revenue of $6.57B beats by $470M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A superação das expectativas de lucro e receita é um sinal positivo para a empresa e pode afetar os preços das ações no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:16:26.565539-03:00"
+    },
+    {
+      "title": "Hotel giant says ‘growing middle class’ boosted hotel demand despite Middle East hit",
+      "source": "CNBC - US News",
+      "score": 5.0,
+      "motivo": "A IHG relatou lucro mais alto na primeira metade do ano, o que é relevante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:16:38.482245-03:00"
     }
   ]
 }
