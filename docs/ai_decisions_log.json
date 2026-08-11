@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Egypt targets higher oil and gas output in 2026/2027 development plan",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Aumento da produção de petróleo e gás pode reduzir a dependência do Egito de importações e aumentar sua independência energética.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:42:06.828842-03:00"
-    },
-    {
-      "title": "Sri Lanka’s Hirdaramani Group eyes Egypt presence expansion",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A expansão do Grupo Hirdaramani no Egito pode indicar um aumento da confiança no mercado e um potencial crescimento econômico no país.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:42:09.856830-03:00"
-    },
-    {
-      "title": "Meta launches Muse Glimmer model as Zuckerberg champions AI for 'everyone'",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:42:13.017930-03:00"
-    },
-    {
-      "title": "SEC Announces Departure of Principal Deputy Director of Enforcement Sam Waldon",
-      "source": "SEC",
-      "score": 2.0,
-      "motivo": "A saída de um funcionário não é considerada um evento de mercado significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T07:42:17.128557-03:00"
-    },
-    {
-      "title": "Lavvi (LAVV3) aprova recompra de até 7,4 milhões de ações",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Aprovou recompra de ações, o que é um sinal positivo para o mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T07:45:38.314931-03:00"
-    },
-    {
       "title": "Índia - Ações fecharam o pregão em alta e o Índice Nifty 50 avançou 0,05%",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T07:16:38.482245-03:00"
+    },
+    {
+      "title": "Shattuck Labs GAAP EPS of -$0.12 in-line",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações surpreendentes ou impactantes para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:20:38.969965-03:00"
+    },
+    {
+      "title": "BioHarvest Sciences GAAP EPS of -$0.17 misses by $0.05, revenue of $8.84M misses by $0.61M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas o impacto é limitado e rotineiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:20:41.865274-03:00"
+    },
+    {
+      "title": "Flowco Holdings GAAP EPS of $0.28 misses by $0.08, revenue of $235.86M beats by $0.76M",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre a saúde financeira da Flowco Holdings.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:20:44.721836-03:00"
+    },
+    {
+      "title": "His $5,000 Employer Disability Check Reduced His Social Security. Six Months Later, It Stopped Counting.",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:20:52.514941-03:00"
+    },
+    {
+      "title": "Modiv Industrial Stockholders Approve Merger With GNL Motion Merger Sub",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A fusão pode levar a uma maior eficiência operacional e a uma valorização das ações da Modiv Industrial.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T07:20:55.758249-03:00"
     }
   ]
 }
