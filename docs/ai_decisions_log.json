@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The Fed Is Failing Its Mandate, But It Could Change Soon",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A notícia destaca a falha da Fed em controlar a inflação e atingir o emprego máximo, e sugere que a agência pode mudar sua abordagem em resposta a críticas e oportunidades para reforma",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:51:19.669490-03:00"
-    },
-    {
-      "title": "These Restaurant Chains Won The Social Media War For Gen Z's Attention",
-      "source": "ZeroHedge",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro, mas sim para a indústria de restaurantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:51:22.660437-03:00"
-    },
-    {
-      "title": "Bitcoin 'Red Team' Says AI Is Finding 100s Of Critical Exploits Across Core Projects",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:51:25.294233-03:00"
-    },
-    {
-      "title": "SEC Establishes Financial Reporting and Accounting Unit in Enforcement Division",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:51:28.249908-03:00"
-    },
-    {
-      "title": "India's Cockroach Movement Says It's Politically Neutral",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:55:36.548229-03:00"
-    },
-    {
-      "title": "Desenrola Adimplentes começa hoje após ajustes para atrair os bancos",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Desenrola Adimplentes começa após ajustes para atrair os bancos, o que pode ser positivo para o mercado financeiro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:55:39.766979-03:00"
-    },
-    {
-      "title": "Por que as ações da MarineMax estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A noticia menciona ações de uma empresa, o que sugere relevância para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:55:43.853754-03:00"
-    },
-    {
-      "title": "Ações da ZIM caem 2,6% após relato de que Israel pode rejeitar acordo com Hapag",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "relato de rejeição de acordo pode afetar negativamente a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:55:46.652649-03:00"
-    },
-    {
-      "title": "Por que as ações da Camtek estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "resultado acima do esperado da empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:55:49.628421-03:00"
-    },
-    {
-      "title": "Por que as ações da Target Hospitality estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A noticia menciona ações disparando, o que sugere um evento positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:55:52.382539-03:00"
-    },
-    {
-      "title": "Por que as ações da Plug Power estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "a noticia especifica a razao pelas quais as acoes da Plug Power estão subindo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T08:55:55.610840-03:00"
-    },
-    {
-      "title": "Ações da Meta sobem com lançamento do Muse Glimmer e nova visão de IA",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Lançamento de produto inovador da Meta pode impulsionar ações da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:55:58.367305-03:00"
-    },
-    {
-      "title": "Por que o JPMorgan vê mais potencial de alta para ações no 2º semestre?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A notícia destaca a visão otimista do JPMorgan sobre o mercado de ações no 2º semestre, o que pode influenciar as expectativas dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:56:01.328626-03:00"
-    },
-    {
-      "title": "Por que as ações da Intel caem mais de 3% hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a queda das ações da Intel pode ser um sinal de desconfiança do mercado em relação à empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T08:56:04.233246-03:00"
-    },
-    {
       "title": "Ibovespa fecha em queda com cena corporativa em foco; Petrobras PN cai 3%",
       "source": "Investing.com Brasil",
       "score": 6.0,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T08:31:14.514687-03:00"
+    },
+    {
+      "title": "Orizon (ORVR3) aprova desdobramento de ações na proporção de 1 para 4 ações",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Desdobramento de ações pode aumentar liquidez e atração de investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:36:01.603000-03:00"
+    },
+    {
+      "title": "Taiwan Semi, Sony to invest nearly $4.7B to form joint venture for image sensors",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "O investimento significativo nas tecnologias de sensores de imagem pode ter impacto positivo no setor de tecnologia e eletrônica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:06.351410-03:00"
+    },
+    {
+      "title": "VinSpace announces a launch contract with SpaceX",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:08.940258-03:00"
+    },
+    {
+      "title": "Aura Biosciences GAAP EPS of -$0.48 misses by $0.10",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta a expectativa de lucro da empresa, o que pode influenciar a decisão de investir no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:11.878340-03:00"
+    },
+    {
+      "title": "Sono-Tek gains 6% on record $3.6M production line order",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:14.466429-03:00"
+    },
+    {
+      "title": "ECARX GAAP EPS of -$0.03, revenue of $225.2M misses by $1.36M; reaffirms FY 2026 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:17.065906-03:00"
+    },
+    {
+      "title": "Upstream Bio, Inc. reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:19.655827-03:00"
+    },
+    {
+      "title": "Anthropic's data center deal with Riot likely a boon for AMD, Wedbush says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:22.248887-03:00"
+    },
+    {
+      "title": "Noruega também vai deixar de comprar carne do Brasil a partir de setembro após decisão da UE",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:29.951775-03:00"
+    },
+    {
+      "title": "FGC diz que ainda não recebeu todas as informações necessárias para analisar empréstimo pedido pelo BRB",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:32.561097-03:00"
+    },
+    {
+      "title": "Alcon raises 2026 earnings growth outlook on positive Q2 results",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:36:37.641263-03:00"
+    },
+    {
+      "title": "This Roth conversion trap easily destroys $1M in tax-free wealth — are you making an extremely costly mistake right now?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:40.251154-03:00"
+    },
+    {
+      "title": "Karooooo CEO Disposes 31,279 Shares for $2.0 Million",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T08:36:42.837257-03:00"
+    },
+    {
+      "title": "Zuckerberg's AI-for-all pitch faces a big problem",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T08:36:45.623503-03:00"
     }
   ]
 }
