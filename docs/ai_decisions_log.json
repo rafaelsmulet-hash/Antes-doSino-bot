@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Trump signs executive order calling for fewer childhood vaccines, falsely linking shots to autism",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:37:10.757610-03:00"
-    },
-    {
-      "title": "IPCA-15 é de 0,06% em julho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:40:36.843107-03:00"
-    },
-    {
-      "title": "Protect College Sports Act to be voted on next month: What it means for transfers and team spending",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:40:40.593553-03:00"
-    },
-    {
-      "title": "Urbana GAAP EPS of C$0.75, revenue of C$38.53M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois fornece informações financeiras atualizadas da empresa Urbana",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:40:43.743746-03:00"
-    },
-    {
-      "title": "Stingray Group Inc. Non-GAAP EPS of $0.40, revenue of $158M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:40:46.401023-03:00"
-    },
-    {
-      "title": "Cameco vs. Uranium Energy: Which Uranium Stock Wins the Nuclear Restart?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:40:52.349126-03:00"
-    },
-    {
-      "title": "3 Common RMD Mistakes to Avoid",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:40:54.985728-03:00"
-    },
-    {
-      "title": "How Figma Stock Jumped 37.4% Last Month",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:40:57.620931-03:00"
-    },
-    {
       "title": "What's Wrong With Celsius Holdings Stock?",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-11T15:21:35.618713-03:00"
+    },
+    {
+      "title": "Trump: economia ‘fenomenal’ nos EUA resultam de tarifas e políticas imigratórias",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "A notícia é sobre política e não tem relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:25:55.078918-03:00"
+    },
+    {
+      "title": "Banco do Brasil (BBSA3): Resultado pior que o esperado? Ação desaba e chega a mínima; o que pode sair do 2T26",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "resultado do Banco do Brasil pior que o esperado, impactando negativamente a ação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T15:25:59.119456-03:00"
+    },
+    {
+      "title": "Principal escolha de ação em diagnósticos pela BTIG",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ação de uma instituição financeira em diagnósticos pode ser positiva para o setor de saúde",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:26:02.082249-03:00"
+    },
+    {
+      "title": "Ex-presidente da Toyota Hiroshi Okuda morre aos 93 anos",
+      "source": "Investing.com Brasil",
+      "score": 0.0,
+      "motivo": "a noticia e sobre morte de um ex-executivo, sem impacto direto no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:26:04.840691-03:00"
+    },
+    {
+      "title": "Chefe do Apple Pay, Jennifer Bailey, se aposenta em outubro",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T15:26:07.501258-03:00"
+    },
+    {
+      "title": "Warren Buffett's Successor, Greg Abel, Just Bought $4.5 Billion of the Oracle of Omaha's Favorite Stock (No, Not Alphabet!)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:26:16.630794-03:00"
+    },
+    {
+      "title": "Frasers Group emerges as frontrunner for Harvey Nichols takeover – report",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:26:19.305746-03:00"
+    },
+    {
+      "title": "Trump says NYC pied-à-terre tax 'must be stopped,' eyes federal block",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T15:26:22.471148-03:00"
     }
   ]
 }
