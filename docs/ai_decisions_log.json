@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SEC Small Business Advisory Committee to Explore Modernizing Market Access",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T16:56:34.460078-03:00"
-    },
-    {
-      "title": "Como a geração demitida devido à IA pode ser a próxima a comandar",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia destaca a capacidade de profissionais demitidos por IA em modernizar empresas tradicionais, o que pode ter um impacto positivo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:01:22.926608-03:00"
-    },
-    {
-      "title": "Mid-America Apartment Communities (MAA) Shares Cross Below 200 DMA",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A ação caiu abaixo da média móvel, indicando tendência negativa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:01:28.773952-03:00"
-    },
-    {
       "title": "ELA Crosses Below Key Moving Average Level",
       "source": "Nasdaq",
       "score": 4.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T15:46:33.800937-03:00"
+    },
+    {
+      "title": "Kamada Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A notícia é relevante porque a Kamada é uma empresa pública e os resultados financeiros podem influenciar o preço de suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:50:39.578969-03:00"
+    },
+    {
+      "title": "Café tem maior queda em 12 meses desde o Plano Real",
+      "source": "UOL Economia",
+      "score": 3.0,
+      "motivo": "queda no preço do café é relevante, mas não impacta diretamente o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:50:47.294405-03:00"
+    },
+    {
+      "title": "Google’s Gemini app surges to one billion users",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T15:50:54.332783-03:00"
     }
   ]
 }
