@@ -1,49 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 43528,
-  "aprovadas_pelo_fluxo_atual": 645,
-  "descartadas_pelos_filtros_atuais": 42883,
-  "score_medio_materialidade": 4.04,
-  "seriam_breaking": 54,
-  "iriam_para_rodada": 464,
-  "seriam_descartadas_pelo_novo_sistema": 1482,
-  "total_divergencias": 747,
+  "total_ingeridas": 43776,
+  "aprovadas_pelo_fluxo_atual": 646,
+  "descartadas_pelos_filtros_atuais": 43130,
+  "score_medio_materialidade": 4.02,
+  "seriam_breaking": 53,
+  "iriam_para_rodada": 462,
+  "seriam_descartadas_pelo_novo_sistema": 1485,
+  "total_divergencias": 744,
   "divergencias": [
-    {
-      "title": "Deutsche Bank eleva Persimmon para compra após queda nas ações",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Bank of America vê utilities de Indiana sob maior escrutínio sobre retornos",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Coca-Cola HBC estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "William Blair aponta mercado de trabalho aquecido como positivo para ações do setor de recrutamento",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que a ação da Jowell Global dispara mais de 50% hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Para o Fed de St. Louis, AI não garante inflação menor, e o Fed precisa apertar",
       "source": "Brazil Journal",
@@ -148,6 +113,41 @@
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Asian Shares Rise On Easing Fed Rate Hike Bets",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "The Nasdaq Composite Just Did Something That's Been Observed Only 18 Times Since Its Inception in 1971 -- and History Says Stocks Are About to Skyrocket",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Salários de até R$ 53 mil e falta de profissionais: veja as 10 profissões mais valorizadas da tecnologia",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "'Investimento circular': como o dinheiro gira entre gigantes de IA e alimenta temor de nova bolha",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Primeiro a OpenAI, depois a Meta: por que robôs de IA continuam fazendo ataques hackers",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
