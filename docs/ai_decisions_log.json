@@ -1,177 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Hims & Hers Lowers Profit Forecast, Shares Drop",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "redução da previsão de lucro não é um evento significativo no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:30:48.233994-03:00"
-    },
-    {
-      "title": "Colômbia declara ‘estado de emergência’ após terremoto com mais de 100 mortos",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "evento não está diretamente relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:30:51.799819-03:00"
-    },
-    {
-      "title": "Fluent Non-GAAP EPS of -$0.13 beats by $0.02, revenue of $48.4M beats by $3.76M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A superação das expectativas pode indicar uma melhora na situação financeira da empresa, o que pode ser positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:30:57.456693-03:00"
-    },
-    {
-      "title": "Theralase launches C$5M private placement",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:31:00.105430-03:00"
-    },
-    {
-      "title": "Boeing wins $109M U.S. Navy delivery order for F/A-18 outer wing panels",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:31:02.827324-03:00"
-    },
-    {
-      "title": "BRT Apartments FFO of $0.29 in-line, revenue of $24.47M misses by $0.12M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:31:05.531094-03:00"
-    },
-    {
-      "title": "JBS tem prejuízo de US$ 102 milhões e fecha duas fábricas nos EUA",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:31:13.805028-03:00"
-    },
-    {
-      "title": "Um novo guidance faz ação da Embraer “voar”",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:31:18.224660-03:00"
-    },
-    {
-      "title": "You saved $1.5M in your 401(k) — now the IRS wants $56,603 a year, and that's just the start",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:31:21.117651-03:00"
-    },
-    {
-      "title": "Chicago Taps Fitch Senior Director as New CFO Amid Rash of Exits",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A nomeação de um novo CFO pode ser relevante para a gestão financeira da cidade",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:35:41.145410-03:00"
-    },
-    {
-      "title": "Polícia de SP indicia dois representantes do Goldman Sachs em caso Oncoclínicas",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "caso envolvendo Goldman Sachs não é relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:35:45.722496-03:00"
-    },
-    {
-      "title": "Por que as ações da Fermi America estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A ação está disparando devido a uma notícia positiva sobre o desempenho da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:35:50.531169-03:00"
-    },
-    {
-      "title": "México - Ações fecharam o pregão em queda e o Índice S&P/BMV IPC recuou 0,75%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:35:53.251245-03:00"
-    },
-    {
-      "title": "Ibovespa e dólar hoje: Ata do Copom e IPCA dominam agenda em meio a alta do Brent",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:35:55.990403-03:00"
-    },
-    {
-      "title": "Colômbia - Ações fecharam o pregão em alta e o Índice COLCAP avançou 0,94%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:35:58.708876-03:00"
-    },
-    {
-      "title": "Ações da Fermi America disparam 35% com contrato de locação de US$ 6,5 bi",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:36:01.428985-03:00"
-    },
-    {
-      "title": "Movida prevê salto no lucro do 3º trimestre",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:36:04.101222-03:00"
-    },
-    {
-      "title": "Rússia - Ações fecharam o pregão em alta e o Índice MOEX Russia Index avançou 0,48%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:36:06.842491-03:00"
-    },
-    {
-      "title": "Boeing recebe contrato de US$ 109 milhões para painéis de asa do F/A-18",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T18:36:09.557949-03:00"
-    },
-    {
       "title": "Integra Resources Corp. Q2 2026 Earnings Preview",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17828,177 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T17:56:31.339241-03:00"
+    },
+    {
+      "title": "Bolsas de NY fecham em queda com impasse no Oriente Médio e cautela pré-CPI",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "queda nas bolsas de NY devido a impasse no Oriente Médio e cautela pré-CPI",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T18:01:12.102255-03:00"
+    },
+    {
+      "title": "Violência contra a mulher cresce 28,9% em dias de jogos de futebol, aponta estudo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "Nenhuma relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:16.740285-03:00"
+    },
+    {
+      "title": "‘Staking’ de criptoativos voltará à mira da regulação, diz BC",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia trata de uma possível mudança na regulação de staking de criptoativos, o que pode ter impacto no mercado de criptomoedas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T18:01:19.776658-03:00"
+    },
+    {
+      "title": "Aardvark Therapeutics GAAP EPS of -$0.66 beats by $0.22",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas de lucro, o que é positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:22.904452-03:00"
+    },
+    {
+      "title": "Elemental Royalty Corporation reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:25.576548-03:00"
+    },
+    {
+      "title": "Canterbury Park GAAP EPS of -$0.03, revenue of $16.17M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:28.241849-03:00"
+    },
+    {
+      "title": "3 Space Stocks That Could Turn $10,000 Into $50,000 By 2035",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T18:01:34.174002-03:00"
+    },
+    {
+      "title": "AbbVie vs. CVS Health: Which Healthcare Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:36.873652-03:00"
+    },
+    {
+      "title": "Prediction: Palantir Will Hit $220 This Year. There's 1 Clear Reason Why.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T18:01:39.577665-03:00"
+    },
+    {
+      "title": "Oversold Conditions For OppFi",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:42.217788-03:00"
+    },
+    {
+      "title": "USA TODAY Becomes Oversold (TDAY)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:44.880349-03:00"
+    },
+    {
+      "title": "Medical Properties Trust Enters Oversold Territory (MPT)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:47.558644-03:00"
+    },
+    {
+      "title": "Oversold Conditions For AT&T (TBB)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:50.205719-03:00"
+    },
+    {
+      "title": "Prudential Financial Becomes Oversold (PRS)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:52.868736-03:00"
+    },
+    {
+      "title": "CoreWeave Q2 Loss Widens As Higher Costs Offset Revenue Surge",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:01:55.554847-03:00"
+    },
+    {
+      "title": "Canadian Stocks Ticks Higher As Investors Monitor Middle East Developments",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T18:01:58.272916-03:00"
+    },
+    {
+      "title": "Wheat Posting Monday Morning Strength",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:02:12.214552-03:00"
+    },
+    {
+      "title": "Soybeans Pushing Higher to Begin the Week",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:02:14.869249-03:00"
+    },
+    {
+      "title": "Corn Ticking Higher on Monday Morning",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:02:17.520392-03:00"
     }
   ]
 }
