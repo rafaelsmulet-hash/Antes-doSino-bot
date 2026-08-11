@@ -1,21 +1,14 @@
 {
   "date": "2026-08-10",
-  "total_ingeridas": 41792,
+  "total_ingeridas": 42040,
   "aprovadas_pelo_fluxo_atual": 639,
-  "descartadas_pelos_filtros_atuais": 41153,
+  "descartadas_pelos_filtros_atuais": 41401,
   "score_medio_materialidade": 4.05,
   "seriam_breaking": 56,
-  "iriam_para_rodada": 456,
-  "seriam_descartadas_pelo_novo_sistema": 1483,
-  "total_divergencias": 742,
+  "iriam_para_rodada": 459,
+  "seriam_descartadas_pelo_novo_sistema": 1485,
+  "total_divergencias": 745,
   "divergencias": [
-    {
-      "title": "Meiji Yasuda Life Watching Policy Surrenders as Rates Rise",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Markets Await Key Economic Data This Week",
       "source": "Bloomberg Markets",
@@ -144,6 +137,13 @@
     },
     {
       "title": "Slower AI payoff could put hyperscaler cash flows and stocks at risk, Slok says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Samsung HBM4 yield surges to 80%, ahead of year-end target: report",
       "source": "Seeking Alpha",
       "score": null,
       "decisao_sugerida": "discard",

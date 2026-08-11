@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SpaceX vs. Quantinuum: Which Recent IPO Stock Is a Better Buy?",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro brasileiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:26:55.922874-03:00"
-    },
-    {
-      "title": "Airbnb vs. McDonald's: Which Consumer Stock Is a Better Buy in 2026?",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não apresenta informações novas ou impactantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:26:59.034320-03:00"
-    },
-    {
-      "title": "Brothers, 44 And 49, Split $4 Million Selling The Family Restaurant Chain — One Wants To Put Their Shared Cut Into Crypto",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia menciona investimento em criptomoedas, o que pode ser relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:27:07.549647-03:00"
-    },
-    {
-      "title": "Tarcísio e Haddad fazem debate virar balanço de gestão e disputa nacional em SP",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não trata de temas financeiros ou econômicos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:30:39.926872-03:00"
-    },
-    {
-      "title": "Jeff Bezos' Amazon Just Raised Its AI Spending to $220 Billion for 2026. Here's What That Capex Hike Means for Investors.",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "O aumento do gasto em IA pode indicar que a Amazon está investindo em tecnologia avançada, o que pode levar a inovações e crescimento futuro.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-09T22:30:51.184087-03:00"
-    },
-    {
-      "title": "Indonesian Stocks Near Bull Market as Economic Worries Recede",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia indica que a economia indonésia está se recuperando, o que é positivo para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:55:44.408818-03:00"
-    },
-    {
-      "title": "Meiji Yasuda Life Watching Policy Surrenders as Rates Rise",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T06:55:47.130350-03:00"
-    },
-    {
       "title": "Markets Await Key Economic Data This Week",
       "source": "Bloomberg Markets",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-10T20:55:59.419341-03:00"
+    },
+    {
+      "title": "Ações da Life360 despencam quase 25% no after-hours; entenda o motivo",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Ação cai quase 25% após anúncio de perda de um grande cliente",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:00:43.394425-03:00"
+    },
+    {
+      "title": "Applied Compute busca captação com valuation de US$ 3 bilhões",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "captação de US$ 3 bilhões pode aumentar liquidez e valor da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:00:46.649400-03:00"
+    },
+    {
+      "title": "'Homem-Aranha: Um Novo Dia' lidera bilheteria mundial e dispara no ranking de 2026",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre entretenimento",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:00:49.880635-03:00"
+    },
+    {
+      "title": "Gen Restaurant Group signals $35M-$40M 12-month CPG run rate amid nonbinding $100M LOI for restaurant operations",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque o grupo recebeu uma oferta significativa para suas operações de restaurantes, o que pode ter um impacto positivo no seu desempenho financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:00:53.564145-03:00"
+    },
+    {
+      "title": "Alamar outlines $116M-$120M 2026 revenue outlook while targeting 100+ instruments and $400,000+ pull-through",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A previsão de receita e os objetivos de expansão da Alamar são relevantes para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:00:56.555384-03:00"
+    },
+    {
+      "title": "As AI-led attacks multiply, OpenAI launches a new cyber model",
+      "source": "TechCrunch",
+      "score": 1.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:01:04.734339-03:00"
+    },
+    {
+      "title": "Inflation Date, Earnings Momentum and Other Key Things to Watch this Week",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-10T21:01:07.511301-03:00"
     }
   ]
 }
