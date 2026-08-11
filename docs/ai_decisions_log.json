@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "1 Super Streaming Stock Down 37% You'll Regret Not Buying on the Dip, According to Wall Street",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T12:31:30.840394-03:00"
-    },
-    {
-      "title": "Why The Trade Desk Was Sliding Again Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T12:31:33.475898-03:00"
-    },
-    {
-      "title": "Why Rigetti Stock Fell 22% in July",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T12:31:36.109705-03:00"
-    },
-    {
-      "title": "See Which Recent 13F Filers Hold META But Munro Partners and CloudAlpha Capital Management Exited",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T12:31:38.831003-03:00"
-    },
-    {
-      "title": "FN December 2027 Options Begin Trading",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T12:31:41.465881-03:00"
-    },
-    {
-      "title": "Notable ETF Inflow Detected - GSLC, MA, COST, VRSN",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T12:31:44.122184-03:00"
-    },
-    {
-      "title": "Super Micro Rises 4% Ahead of Earnings; HPE Gains 4%, Dell Climbs 3% as AI Server Stocks Advance",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T12:31:51.066341-03:00"
-    },
-    {
-      "title": "JAPEX Doubles Down on U.S. Shale With $320 Million Colorado-Wyoming Deal",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque a JAPEX está aumentando sua participação no mercado de xisto de água nos EUA, o que pode ter impacto positivo nas ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T12:31:54.168379-03:00"
-    },
-    {
-      "title": "IBM Turns to Canadian Bond Market for First Time Since 2012",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque indica uma mudança de estratégia da IBM em relação ao mercado de títulos, mas não há informações sobre impacto direto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T12:35:59.736008-03:00"
-    },
-    {
-      "title": "Intel quer captar US$ 15 bi em ações pela 1ª vez desde 1971 para financiar IA",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Ação da Intel caiu significativamente após o anúncio, mas ainda assim acumula alta no ano.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T12:36:03.540492-03:00"
-    },
-    {
       "title": "Projeto de lei cripto no Senado dos EUA enfrenta futuro incerto",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T11:46:08.061377-03:00"
+    },
+    {
+      "title": "Atlanta Airport Taps Munis for $1.1 Billion as Sector Sales Lag",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A venda de títulos de dívida municipal de US$ 1,1 bilhão do aeroporto de Atlanta é relevante para o mercado pois pode influenciar a confiança dos investidores na economia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:50:49.783833-03:00"
+    },
+    {
+      "title": "'A Odisseia' supera 'Batman' e se torna a maior bilheteria da carreira de Nolan",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:50:55.632871-03:00"
+    },
+    {
+      "title": "Pan American Silver Q2 earnings on deck: 4 key factors you can't ignore",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A divulgação dos resultados financeiros da empresa pode influenciar os preços das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T11:50:59.030633-03:00"
+    },
+    {
+      "title": "Prejuízo de conglomerado de mídia de Trump salta 10 vezes com queda de ativos digitais",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:51:05.221364-03:00"
+    },
+    {
+      "title": "BTG Pactual bate estimativas do mercado e alcança lucro recorde de R$ 5,1 bilhões",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:51:09.316072-03:00"
+    },
+    {
+      "title": "Google co-founder Sergey Brin has now spent $100 million to fight the billionaire tax",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:51:12.033494-03:00"
+    },
+    {
+      "title": "JB Global Capital: Lessons from Lululemon’s (LULU) Investment Case",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:51:14.828812-03:00"
+    },
+    {
+      "title": "Flowers Foods (FLO) Cuts Dividend to Strengthen Financial Health",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:51:17.483072-03:00"
+    },
+    {
+      "title": "EXCLUSIVE: CPI Lands Tomorrow and Could Send PLTR, TSLA Surging—But Only if It's A 'Serious Shock,' Cato Economist Says",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:51:20.171000-03:00"
+    },
+    {
+      "title": "Jeff Dean's hour-by-hour breakdown of his Google exit: an 'emotional' video chat, Yoga at 7, and 'unemployed' at 11:59",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T11:51:23.072509-03:00"
     }
   ]
 }
