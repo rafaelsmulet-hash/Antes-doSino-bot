@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Trump Media posts $238 million second-quarter loss as crypto declines",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:51:44.681025-03:00"
-    },
-    {
-      "title": "Outsiders Pay $6,500 for Help With Sorority Rush",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:55:47.098179-03:00"
-    },
-    {
-      "title": "Zuckerberg defende IA para todos e diz que invenção, não automação, será legado",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre tecnologia e inovação",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:55:51.678465-03:00"
-    },
-    {
-      "title": "Anaergia reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:55:57.052394-03:00"
-    },
-    {
-      "title": "Elon Musk's Boring Company Is Raising Money at a $20 Billion Valuation. Here's How His Empire Outside Tesla Is Growing.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:56:07.758289-03:00"
-    },
-    {
-      "title": "YouTube is making it harder for creators to start earning money",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T18:56:10.694718-03:00"
-    },
-    {
       "title": "SEC Announces Departure of Principal Deputy Director of Enforcement Sam Waldon",
       "source": "SEC",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T18:16:38.629733-03:00"
+    },
+    {
+      "title": "Os planos da Ecopetrol para a Brava e para o Brasil",
+      "source": "Brazil Journal",
+      "score": 6.0,
+      "motivo": "Ecopetrol pretende usar o Brasil como plataforma de crescimento internacional",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:20:44.068001-03:00"
+    },
+    {
+      "title": "Projeto sobre subvenção a combustíveis no Congresso incluirá de etanol a isenções para Copa Feminina",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "inclusão de subvenção a etanol e renúncia fiscal para o setor minerais críticos podem impactar positivamente as ações de empresas relacionadas a esses setores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:20:48.183150-03:00"
+    },
+    {
+      "title": "CoreWeave’s stock soars as earnings show major AI momentum",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T18:20:51.310096-03:00"
+    },
+    {
+      "title": "Phoenix New Media reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Resultados financeiros de uma empresa de mídia são rotineiros e não têm impacto direto no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:20:54.361209-03:00"
+    },
+    {
+      "title": "BAE Systems secures $149.8M Navy deal to maintain and modernize USS Boxer",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:20:57.096219-03:00"
+    },
+    {
+      "title": "Azzas (AZZA3): Rixa entre sócios e sinergias que não vieram destruíram bilhões em valor; vender a Farm faria sentido?",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T18:21:04.891265-03:00"
     }
   ]
 }
