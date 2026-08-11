@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "ELA Crosses Below Key Moving Average Level",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "motivo": "A ação está caindo após cruzar abaixo da média móvel de 200 dias, indicando uma tendência negativa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:01:31.821705-03:00"
-    },
-    {
-      "title": "Why Calumet Stock Is Rocketing Higher Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:01:34.477752-03:00"
-    },
-    {
-      "title": "Braveheart Bio CFO Acquires 27,777 Shares for $500,000. Is This a Signal BRVE IPO Is a Success?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:01:37.178651-03:00"
-    },
-    {
-      "title": "Avista is Oversold",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:01:40.091290-03:00"
-    },
-    {
-      "title": "Federal Realty Investment Trust Enters Oversold Territory",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:01:42.758169-03:00"
-    },
-    {
-      "title": "Relative Strength Alert For Universal",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:01:45.407080-03:00"
-    },
-    {
-      "title": "Relative Strength Alert For Trinity Industries",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:01:48.065050-03:00"
-    },
-    {
       "title": "Acadia Realty Trust Becomes Oversold",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-11T15:50:54.332783-03:00"
+    },
+    {
+      "title": "Is betting on elections using prediction markets illegal? Many states are unsure as midterms approach",
+      "source": "CNBC - Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não tem impacto direto ou concreto no momento.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:55:36.649469-03:00"
+    },
+    {
+      "title": "Gemini encosta no ChatGPT e ultrapassa 1 bilhão de usuários mensais",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "o anúncio de crescimento do Gemini pode impulsionar a valorização das ações do Google",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T15:55:42.028228-03:00"
+    },
+    {
+      "title": "Claude, rival do ChatGPT, vai revelar quem criou texto com IA; veja como vai funcionar",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T15:55:47.760404-03:00"
+    },
+    {
+      "title": "Movida (MOVI3) dobra lucro no 2T26; resultado confirma virada operacional?",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "Aumento do lucro líquido da Movida confirma a melhoria operacional da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:55:52.313488-03:00"
+    },
+    {
+      "title": "Berkshire Earnings Were Good—Not Great. A Real Bright Spot Was This.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:55:56.655096-03:00"
+    },
+    {
+      "title": "Resolution Copper awards $110m contracts for Arizona mine",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:55:59.329922-03:00"
+    },
+    {
+      "title": "Job seekers hide invisible instructions in resumes to manipulate AI screening — and employers now use it to recruit",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T15:56:02.119193-03:00"
     }
   ]
 }
