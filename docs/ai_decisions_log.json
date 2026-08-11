@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Olema Pharmaceuticals GAAP EPS of -$0.61 misses by $0.06",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:10:59.057143-03:00"
-    },
-    {
-      "title": "Simon Property FFO of $3.12 misses by $0.09, revenue of $1.79B beats by $180M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:11:01.772822-03:00"
-    },
-    {
-      "title": "Hims &amp; Hers Health GAAP EPS of -$0.37 misses by $0.32, revenue of $753.21M beats by $23.09M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa anunciou resultados financeiros que mostram uma perda de $0.37 por ação, mas uma receita que superou as expectativas, o que pode ter um impacto no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:11:04.780524-03:00"
-    },
-    {
-      "title": "AlTi Global GAAP EPS of -$0.31, revenue of $58M misses by $3.8M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:11:07.446994-03:00"
-    },
-    {
-      "title": "Prio (PRIO3) pode pagar 21% em dividendos no próximo ano, segundo o Itaú BBA, que elevou recomendação para compra",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-10T17:11:14.530192-03:00"
-    },
-    {
-      "title": "Seaports are dabbling in AI, but complex supply chain operations make adoption a challenge",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:11:20.403309-03:00"
-    },
-    {
-      "title": "I've worked at Costco for 21 years. Here are 7 of the best things I'm seeing on shelves right now.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:11:23.119781-03:00"
-    },
-    {
-      "title": "Plano de segurança de Caiado quer polícia sul-americana e redução da maioridade penal",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-10T17:16:09.092327-03:00"
-    },
-    {
       "title": "As lições de Joan Miró para uma era de excesso de imagens",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T16:11:21.597618-03:00"
+    },
+    {
+      "title": "Mortos em terremoto na Colômbia passam de 250, dizem autoridades",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre desastre natural nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:15:45.885172-03:00"
+    },
+    {
+      "title": "Petróleo avança pelo 5º dia consecutivo com impasse entre EUA e Irã sobre Ormuz",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "Impasse entre EUA e Irã aumenta tensão geopolítica e pode afetar suprimentos de petróleo",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:15:50.017980-03:00"
+    },
+    {
+      "title": "Por que as ações da Natura sobem mesmo com queda na receita?",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A recuperação da receita no Brasil e o desempenho positivo nos mercados hispânicos são motivos para a alta das ações da Natura.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:15:53.965113-03:00"
+    },
+    {
+      "title": "Apex começa a investir R$ 210 mi para ajudar empresas afetadas por tarifaço",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T16:16:03.306449-03:00"
+    },
+    {
+      "title": "OpenAI launches ChatGPT desktop app for Linux",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:16:09.150737-03:00"
+    },
+    {
+      "title": "How Much Do You Need Invested at 60 to Bridge the Gap Until Social Security at 70?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:16:12.051513-03:00"
+    },
+    {
+      "title": "Stocks Set for Muted Open as Oil Rises on Hormuz Uncertainty, U.S. Inflation Data Awaited",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:16:14.771656-03:00"
+    },
+    {
+      "title": "Job seekers hide invisible instructions in resumes to manipulate AI screening — and employers now use it to recruit",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T16:16:17.506132-03:00"
     }
   ]
 }
