@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "FlightAware sues Kalshi over flight-cancellation markets",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:55:05.526028-03:00"
-    },
-    {
-      "title": "Is Medtronic (MDT) Becoming a Turnaround Story?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:55:08.165297-03:00"
-    },
-    {
-      "title": "Thermo Fisher (TMO) vs Danaher (DHR): Which Life Sciences Stock Looks Better Positioned?",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para os investidores que seguem o setor de ciências da vida, mas não é um evento de mercado significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:55:11.152332-03:00"
-    },
-    {
-      "title": "Best high-yield savings interest rates today, Monday, August 10, 2026: Earn up to 4.15% APY with an HYSA",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:55:13.867318-03:00"
-    },
-    {
       "title": "The famed Esalen Institute is being evacuated as Big Sur's Timber Fire expands to 1,700 acres",
       "source": "Business Insider",
       "score": 0.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T21:16:43.282154-03:00"
+    },
+    {
+      "title": "US Opens In-Depth Antitrust Review of Kone-TK Elevator Deal",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A investigação pode afetar a conclusão do acordo e impactar a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T21:20:57.966855-03:00"
+    },
+    {
+      "title": "Vamos tem lucro de R$101 mi no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Lucro significativo indica saúde financeira da empresa e pode impulsionar ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T21:21:02.761951-03:00"
+    },
+    {
+      "title": "Senado aprova texto que cria crédito à produção de fertilizantes no Brasil, mas nao define valores",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "Criação de crédito à produção de fertilizantes pode impulsionar a produção agrícola e, consequentemente, a economia brasileira",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T21:21:06.043722-03:00"
+    },
+    {
+      "title": "How Much of the S&P 500's Return Actually Came From Dividends vs. Price Appreciation, by Decade",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T21:21:16.688206-03:00"
     }
   ]
 }

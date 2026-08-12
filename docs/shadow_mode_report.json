@@ -1,21 +1,14 @@
 {
   "date": "2026-08-11",
-  "total_ingeridas": 41058,
+  "total_ingeridas": 41306,
   "aprovadas_pelo_fluxo_atual": 643,
-  "descartadas_pelos_filtros_atuais": 40415,
-  "score_medio_materialidade": 3.97,
+  "descartadas_pelos_filtros_atuais": 40663,
+  "score_medio_materialidade": 3.98,
   "seriam_breaking": 35,
-  "iriam_para_rodada": 360,
-  "seriam_descartadas_pelo_novo_sistema": 1605,
-  "total_divergencias": 700,
+  "iriam_para_rodada": 363,
+  "seriam_descartadas_pelo_novo_sistema": 1602,
+  "total_divergencias": 702,
   "divergencias": [
-    {
-      "title": "FlightAware sues Kalshi over flight-cancellation markets",
-      "source": "Yahoo Finance",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Why Legora's CEO is betting that every software company ends up ditching the seat",
       "source": "Business Insider",
@@ -146,6 +139,13 @@
       "title": "Mortgage and refinance rates today, Tuesday, August 11, 2026: Rates mostly higher as U.S. 'low-keying' Iran negotiations",
       "source": "Yahoo Finance",
       "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Got $200 per Month? This ETF Could Turn It Into $455,865 With Minimal Effort on Your Part.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
