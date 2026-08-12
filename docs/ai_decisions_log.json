@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Option Volatility And Earnings Report For Aug 10-14",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T16:51:18.209849-03:00"
-    },
-    {
-      "title": "Needham Remains Optimistic on The Walt Disney (DIS) Amidst Increased Competition: Here’s Why",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T16:51:20.923986-03:00"
-    },
-    {
-      "title": "July CPI Crucial as Inflation Rebound Concerns Rise",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca a importância do dado do CPI de Julho para a Fed e os mercados, especialmente após o relatório de pagamentos relativamente baixo da semana passada.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T16:55:44.898710-03:00"
-    },
-    {
-      "title": "Concorrente da poupança, Tesouro Reserva atinge R$ 5,7 bi e 167 mil investidores",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Aumento da concorrência na poupança pode pressionar os bancos a oferecer melhores taxas de juros",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T16:55:48.928353-03:00"
-    },
-    {
-      "title": "Como a IA pode ajudar você a se destacar em processos seletivos — veja 4 formas",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:00:46.381160-03:00"
-    },
-    {
-      "title": "Clear Street adds private markets equity research arm",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:00:49.706793-03:00"
-    },
-    {
-      "title": "Where Will Netflix Stock Be in 5 Years?",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre um evento específico ou decisão importante no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:00:53.923650-03:00"
-    },
-    {
       "title": "Treasuries Show Modest Move Back To The Upside",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T14:50:52.069319-03:00"
+    },
+    {
+      "title": "Trump diz que EUA vão manter controle total do estreito de Ormuz",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "discurso de Trump sobre geopolítica não é relevante para o mercado financeiro imediato",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T14:55:44.789251-03:00"
+    },
+    {
+      "title": "Eastern expects acquired aerospace gross margin to reach 20% to 30% over time as backlog rises to $126.2M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica uma melhoria esperada na margem bruta da empresa, o que pode afetar suas ações e investimentos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T14:55:48.381864-03:00"
+    },
+    {
+      "title": "Collective Mining Ltd. GAAP EPS of -$0.22",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque fornece informações financeiras atualizadas da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T14:55:51.942847-03:00"
+    },
+    {
+      "title": "ERock outlines $435M-$465M FY2026 revenue with $3M-$9M adjusted EBITDA as backlog reaches $1.7B",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa fornece uma previsão de receita e EBITDA ajustado para o ano fiscal de 2026, o que é relevante para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T14:55:55.316646-03:00"
+    },
+    {
+      "title": "Gasoline prices remain historically elevated, keeping inflation risks in focus",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T14:55:58.042549-03:00"
+    },
+    {
+      "title": "As AI safety concerns mount, three pioneers make the case for staying open",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T14:56:09.235041-03:00"
+    },
+    {
+      "title": "Lawsuit against Trump alleges early access sale to his Truth Social posts is 'profoundly corrupt'",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T14:56:12.607623-03:00"
     }
   ]
 }
