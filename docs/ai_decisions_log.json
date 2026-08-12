@@ -1,240 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Hershey CFO Steven Voskuil Sells 950 Shares for $171,000",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:31:13.947542-03:00"
-    },
-    {
-      "title": "Bumble is losing its Bumble-ness",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:31:24.034264-03:00"
-    },
-    {
-      "title": "Fmr. FDA, CDC Official on Cyclospora, Food Safety Issues",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:35:49.615225-03:00"
-    },
-    {
-      "title": "Claude lança marca d’água invisível em textos para identificar conteúdo gerado por IA",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:35:52.791470-03:00"
-    },
-    {
-      "title": "Por que as ações da Mineralys Therapeutics estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A queda das ações da Mineralys Therapeutics é considerada relevante e materialmente relevante pois afeta diretamente o desempenho da empresa no mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:35:57.830150-03:00"
-    },
-    {
-      "title": "México - Ações fecharam o pregão em queda e o Índice S&P/BMV IPC recuou 1,32%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:36:00.541108-03:00"
-    },
-    {
-      "title": "Ibovespa e dólar hoje aguardam CPI dos EUA após  sell-off com eleição",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:36:03.247155-03:00"
-    },
-    {
-      "title": "Enjoei eleva prejuízo a R$47,6 milhões no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:05.932670-03:00"
-    },
-    {
-      "title": "Colômbia - Ações fecharam o pregão em alta e o Índice COLCAP avançou 2,14%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:08.656698-03:00"
-    },
-    {
-      "title": "Por que a ação da Openlane está caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:11.324446-03:00"
-    },
-    {
-      "title": "Por que as ações da Savers Value Village estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:14.036896-03:00"
-    },
-    {
-      "title": "Rússia - Ações fecharam o pregão em alta e o Índice MOEX Russia Index avançou 1,32%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:16.771217-03:00"
-    },
-    {
-      "title": "Líbano é o 1º país do Oriente Médio a abolir pena de morte; veja quem ainda mantém no mundo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:19.774628-03:00"
-    },
-    {
-      "title": "Franco-Nevada GAAP EPS of $1.83 misses by $0.16, revenue of $580.9M misses by $25.84M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:22.610221-03:00"
-    },
-    {
-      "title": "Eupraxia Pharmaceuticals reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:25.335755-03:00"
-    },
-    {
-      "title": "Which Small-Cap Growth ETF Is Better, Vanguard's VBK or the iShares IWO?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:31.294997-03:00"
-    },
-    {
-      "title": "Why NuScale Power Stock Plunged to a 52-Week Low in July",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:33.970545-03:00"
-    },
-    {
-      "title": "Ibovespa despenca 2,50% e volta ao menor nível desde janeiro com saída de estrangeiros",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:36:41.872309-03:00"
-    },
-    {
-      "title": "Why Visa (V) Could Be a Major Winner in the AI Payments Boom",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:46.810387-03:00"
-    },
-    {
-      "title": "Zoetis (ZTS) Looked Like a Winner. What Went Wrong?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:49.478560-03:00"
-    },
-    {
-      "title": "Why This Investor Sold Autodesk (ADSK) Over AI Risks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:52.145573-03:00"
-    },
-    {
-      "title": "Unilever (UL) Looked Undervalued. Why Was It Sold?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:54.810567-03:00"
-    },
-    {
-      "title": "Why This Investor Just Bought Nvidia (NVDA)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:36:57.471548-03:00"
-    },
-    {
-      "title": "Progressive (PGR) Is Winning Market Share. Can It Keep Growing?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:37:00.172557-03:00"
-    },
-    {
-      "title": "Workday (WDAY) Faces an AI Threat. Is the Investment Case Broken?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:37:02.866944-03:00"
-    },
-    {
-      "title": "Pakistan Says Deal Is Close Even as Iran, US Harden Stances",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A notícia não traz informações novas ou impactantes sobre o mercado financeiro, mas pode ter implicações geopolíticas relevantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:40:51.667109-03:00"
-    },
-    {
       "title": "Enjoei (ENJU3) eleva prejuízo a R$ 47,6 milhões no 2º tri",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17765,240 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T17:06:14.463385-03:00"
+    },
+    {
+      "title": "Dólar avança a R$ 5,18 com eleições ainda no radar dos investidores",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "Aumento do valor do dólar pode afetar as importações e, consequentemente, a economia brasileira",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:10:48.480002-03:00"
+    },
+    {
+      "title": "Por que o governo americano está contratando gamers para evitar o caos na aviação",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:10:53.059307-03:00"
+    },
+    {
+      "title": "Journey Medical Non-GAAP EPS of $0.10, revenue of $18.5M beats by $0.13M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou a previsão de receita, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:10:56.654317-03:00"
+    },
+    {
+      "title": "Infleqtion, Inc. GAAP EPS of -$0.12, revenue of $12.6M beats by $1.96M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:10:59.335986-03:00"
+    },
+    {
+      "title": "Virgin Galactic GAAP EPS of -$0.50 beats by $0.14, revenue of $0.13M in-line",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:02.017227-03:00"
+    },
+    {
+      "title": "Cisco Non-GAAP EPS of $1.22 beats by $0.05, revenue of $17.25B beats by $420M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:04.693206-03:00"
+    },
+    {
+      "title": "Coherent Non-GAAP EPS of $1.74 beats by $0.12, revenue of $2.05B beats by $70M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:07.380875-03:00"
+    },
+    {
+      "title": "OptimizeRx Non-GAAP EPS of $0.16 beats by $0.05, revenue of $20.5M beats by $0.3M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:10.069931-03:00"
+    },
+    {
+      "title": "Alpha and Omega Semiconductor Non-GAAP EPS of -$0.13 beats by $0.11, revenue of $170.4M beats by $2.4M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:12.781938-03:00"
+    },
+    {
+      "title": "Noteworthy Wednesday Option Activity: SNDK, AVNW, LQDA",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:11:17.774507-03:00"
+    },
+    {
+      "title": "Notable Wednesday Option Activity: BKSY, CSCO, IHRT",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:11:20.430473-03:00"
+    },
+    {
+      "title": "Notable Wednesday Option Activity: OCUL, LLY, WEN",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:11:23.085947-03:00"
+    },
+    {
+      "title": "Notable Wednesday Option Activity: DFTX, MSGS, TPR",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:11:25.742666-03:00"
+    },
+    {
+      "title": "Notable Wednesday Option Activity: HUBG, AMD, SPCX",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:11:28.396586-03:00"
+    },
+    {
+      "title": "A Remitly Director Cashed In Pre-IPO Options. Here's What to Know",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:11:31.086113-03:00"
+    },
+    {
+      "title": "Why Kontoor Brands Stock Jumped 13% This Morning",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:11:33.747579-03:00"
+    },
+    {
+      "title": "Alphabet, Amazon, Meta Platforms, and Microsoft: One of These Stocks Looks Like It Has the Least Upside Over the Next 12 Months, but There's a Catch",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:11:36.531941-03:00"
+    },
+    {
+      "title": "Amazon will train on Twitch streamers’ content by default, unless they opt out",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:11:45.315238-03:00"
+    },
+    {
+      "title": "Linde Stock: Is Wall Street Bullish or Bearish?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:48.071795-03:00"
+    },
+    {
+      "title": "Are Wall Street Analysts Bullish on News Corporation Stock?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:50.730586-03:00"
+    },
+    {
+      "title": "Ameren Stock: Analyst Estimates & Ratings",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:53.391953-03:00"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for McDonald's Stock?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:56.064869-03:00"
+    },
+    {
+      "title": "Paysafe debuts PaysafeWallet in Poland",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:11:58.704812-03:00"
+    },
+    {
+      "title": "Gold Miners Rally as Bullion Roars Back to Life. Here's How Investors Can Cash In.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:12:01.405617-03:00"
+    },
+    {
+      "title": "What to Know as Sandisk Stock Scores a 'New' Buy Rating",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:12:04.062406-03:00"
+    },
+    {
+      "title": "IBM, Together AI ink $240 million deal for Nvidia-powered AI inference cluster",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:12:06.760146-03:00"
     }
   ]
 }
