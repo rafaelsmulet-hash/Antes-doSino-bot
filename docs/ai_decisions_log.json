@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Inuvo GAAP EPS of -$0.27 misses by $0.24, revenue of $7.53M misses by $0.29M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:16:23.826135-03:00"
-    },
-    {
-      "title": "B&amp;G Foods Non-GAAP EPS of $0.06 in-line, revenue of $383.28M misses by $11.62M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:16:26.520737-03:00"
-    },
-    {
       "title": "Trump's student-loan repayment overhaul faces a new lawsuit from the biggest public service and healthcare unions",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T15:16:35.524177-03:00"
+    },
+    {
+      "title": "Which stocks could benefit from deregulation of commercial space launches?",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A desregulamentação pode permitir que essas empresas lancem satélites mais rapidamente e a um custo menor.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T15:20:38.391870-03:00"
+    },
+    {
+      "title": "AI coding startup Cognition reportedly already in talks to raise at $40B valuation",
+      "source": "TechCrunch",
+      "score": 5.0,
+      "motivo": "A notícia sugere que a empresa está em negociações para levantar uma grande quantia de dinheiro, o que pode ter impacto positivo no mercado de capitais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T15:20:47.587872-03:00"
     }
   ]
 }
