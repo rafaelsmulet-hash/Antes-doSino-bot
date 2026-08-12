@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Indian Shares End Off Day's Lows",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "motivo": "Preço do petróleo Brent está elevado, afetando negativamente as ações indianas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:37:10.457307-03:00"
-    },
-    {
-      "title": "National Vision Holdings, Inc. Profit Rises In Q2",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento nos lucros é um indicador positivo para a empresa e pode influenciar a valorização da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:37:13.427566-03:00"
-    },
-    {
-      "title": "Lovable doubles its valuation to $13.3 billion as investors place another big bet on AI coding",
-      "source": "Business Insider",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois menciona uma empresa que dobrou sua valorização após aumentar significativamente seu ARR, o que pode ser um sinal de confiança dos investidores na empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:37:22.884688-03:00"
-    },
-    {
-      "title": "I built my mom a $110,000 house in my yard. It's helping us avoid a nursing home.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:37:25.754047-03:00"
-    },
-    {
-      "title": "Swedish PM Calls Spanish Illegal Immigrant Amnesty 'Very Bad Idea'",
-      "source": "ZeroHedge",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter impacto indireto em políticas econômicas e migração.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:37:29.644491-03:00"
-    },
-    {
-      "title": "World's Largest Alumina Refinery Outside China Abruptly Halves Output On NatGas Disruption",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a produção de alumina e os preços do alumínio, que são importantes para a indústria de metalurgia e a economia global.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:37:32.636011-03:00"
-    },
-    {
-      "title": "Armac tem lucro líquido ajustado de R$10,1 mi no 2º tri",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Crescimento da receita operacional líquida indica saúde financeira do grupo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:41:25.708611-03:00"
-    },
-    {
-      "title": "Milei volta a acusar Brasil por 'campanha' contra Argentina durante a Copa",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:41:30.799324-03:00"
-    },
-    {
       "title": "Graham Holdings, Amazon lead consumer discretionary stocks with highest earnings beats",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T20:25:56.941749-03:00"
+    },
+    {
+      "title": "Americanas (AMER3) quase triplica prejuízo, que fica em R$ 274 mi no 2º tri",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Prejuízo significativo da Americanas afeta negativamente a confiança dos investidores no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:30:49.958213-03:00"
+    },
+    {
+      "title": "Prejuízo da Americanas quase triplica no 2º tri para R$274 mi",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Prejuízo significativo da Americanas afeta negativamente a percepção da empresa e pode influenciar a decisão de investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:30:54.803468-03:00"
+    },
+    {
+      "title": "BB tem lucro acima do esperado, mas inadimplência ainda pressionada no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "lucro acima do esperado, mas inadimplência ainda pressionada",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:30:57.685532-03:00"
+    },
+    {
+      "title": "Veja o que vai mudar na Farmácia Popular",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "a notícia é sobre um programa social e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:31:01.991456-03:00"
+    },
+    {
+      "title": "Quando o Banco do Brasil (BBAS3) vai voltar a pagar mais dividendos? CFO responde",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:31:11.116203-03:00"
+    },
+    {
+      "title": "Is options trading risky? 8 risks every investor should know.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:31:16.767370-03:00"
+    },
+    {
+      "title": "AARP issues urgent call on Medicare drug costs",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:31:19.495951-03:00"
+    },
+    {
+      "title": "Hims & Hers stock trims losses following quarterly results",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:31:22.241885-03:00"
     }
   ]
 }
