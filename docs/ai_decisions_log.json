@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Experts say putting every dollar toward $35,000 in credit card debt could backfire — here's another approach",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode influenciar o comportamento dos consumidores.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:51:12.565900-03:00"
-    },
-    {
-      "title": "Dow Jones Futures Rise With CPI Inflation Due; AI Stocks Rally As 3 Nvidia Partners Lead Earnings Movers",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque menciona a inflação de CPI e os resultados financeiros de empresas de inteligência artificial, que podem ter impacto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:51:15.766325-03:00"
-    },
-    {
-      "title": "S&P 500 dividend yield hits record low near 1% and it has some retirees rethinking their strategies",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente as estratégias de investimento de aposentados que dependem dos dividendos da S&P 500 para gerar renda.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:51:19.218023-03:00"
-    },
-    {
-      "title": "WEBTOON Entertainment Inc. Common stock Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento significativo para o mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:51:22.301741-03:00"
-    },
-    {
-      "title": "AICPA seeks clearer CAMT rules from Treasury and IRS",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:51:25.200248-03:00"
-    },
-    {
-      "title": "Bionano Genomics, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Melhora na receita e lucro da empresa, o que é positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:51:28.121326-03:00"
-    },
-    {
-      "title": "American Vanguard Corporation Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa apresentou resultados financeiros acima das expectativas, o que pode influenciar positivamente o preço das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:51:31.053499-03:00"
-    },
-    {
-      "title": "Getty Images Holdings, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "Os resultados financeiros são relevantes para a empresa, mas não têm um impacto significativo no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:51:33.987294-03:00"
-    },
-    {
-      "title": "India Inflation Stays Within Target Band, Supporting RBI Pause",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia confirma a expectativa de que os juros permaneçam inalterados, o que é relevante para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:55:40.204692-03:00"
-    },
-    {
       "title": "MEMX Files to List Prediction Market-Style Bets on Earnings",
       "source": "Bloomberg Markets",
       "score": 5.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T20:40:58.402472-03:00"
+    },
+    {
+      "title": "Braskem avalia pedir recuperação extrajudicial ainda em agosto, dizem fontes",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A Braskem está em risco de perder proteção judicial, o que pode afetar sua estabilidade financeira",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:45:50.251793-03:00"
+    },
+    {
+      "title": "Lucro da Equatorial (EQTL3) recua 83,5% no 2º trimestre, a R$ 110 milhões",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Lucro recuou significativamente, afetando expectativas de mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:45:53.242430-03:00"
+    },
+    {
+      "title": "Lucro da Equatorial recua 83,5% no 2º trimestre",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "redução significativa de lucro pode afetar a confiança dos investidores no futuro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:45:57.337636-03:00"
+    },
+    {
+      "title": "Apple negocia acordos com editoras para alimentar IA da Siri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:46:00.176417-03:00"
+    },
+    {
+      "title": "Mulheres no comando, prédios no Centro e IA nas empresas: o que está mudando em SP",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:46:03.510798-03:00"
+    },
+    {
+      "title": "Allogene outlines plan for ~100 ALPHA3 sites by year end as FDA grants RMAT and Fast Track for cema-cel",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:46:06.481231-03:00"
+    },
+    {
+      "title": "Banco do Brasil (BBAS3) cansou de esperar o agro reagir? Diretor abre estratégia para deixar a crise para trás",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:46:14.146137-03:00"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on NXP Semiconductors Stock?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:46:19.442691-03:00"
+    },
+    {
+      "title": "40% of Wall Street Is Betting Against This Little-Known Defense Stock. Here's Why They Might Be Wrong.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:46:22.193045-03:00"
     }
   ]
 }

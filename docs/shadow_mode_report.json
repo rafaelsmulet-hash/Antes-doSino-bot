@@ -1,28 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 40760,
-  "aprovadas_pelo_fluxo_atual": 706,
-  "descartadas_pelos_filtros_atuais": 40054,
-  "score_medio_materialidade": 3.99,
-  "seriam_breaking": 22,
-  "iriam_para_rodada": 280,
-  "seriam_descartadas_pelo_novo_sistema": 1698,
-  "total_divergencias": 671,
+  "total_ingeridas": 41008,
+  "aprovadas_pelo_fluxo_atual": 710,
+  "descartadas_pelos_filtros_atuais": 40298,
+  "score_medio_materialidade": 4.0,
+  "seriam_breaking": 23,
+  "iriam_para_rodada": 277,
+  "seriam_descartadas_pelo_novo_sistema": 1700,
+  "total_divergencias": 674,
   "divergencias": [
-    {
-      "title": "Bionano Genomics, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "American Vanguard Corporation Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Por que a ação da Annexon está caindo hoje?",
       "source": "Investing.com Brasil",
@@ -145,6 +131,20 @@
     {
       "title": "Earnings Snapshot: Chili’s drives record 71% five-year sales growth as Brinker issues strong FY27 guidance",
       "source": "Seeking Alpha",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Marc Benioff says experts are wrong about tech job deaths to AI, but backs startup replacing workers with AI",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "$4 billion Vanta has a new CMO who wants to make security compliance marketing 'a little zingier'",
+      "source": "Business Insider",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
