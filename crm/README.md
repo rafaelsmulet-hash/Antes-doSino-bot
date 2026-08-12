@@ -132,16 +132,38 @@ qualquer chamada de rede externa.
   ponto -- toda classificacao (estruturas de opcoes, alertas) e regra
   deterministica auditavel.
 
-## Como rodar localmente
+## Modelo de implantacao: um servidor, zero instalacao no desktop dos operadores
 
-Duas formas de subir o CRM. Escolha uma.
+**Os operadores (traders) nao instalam nada.** O CRM e uma aplicacao web:
+sobe uma unica vez em **um servidor** dentro da rede interna da mesa
+(instalado e mantido por TI), e cada trader acessa pelo navegador que ja
+existe no desktop corporativo -- como qualquer site interno, sem baixar
+programa nenhum, sem Docker, sem Python, sem permissao de administrador
+na maquina do operador.
 
-### Opcao A -- Docker (recomendado para quem nao quer mexer com Python)
+```
+              rede interna da mesa
+[servidor -- TI instala/mantem]  <--- http://<ip-do-servidor>:8000 --->  [desktop do trader: so o navegador]
+      (Python ou Docker)                                                  [desktop do trader: so o navegador]
+                                                                            [desktop do trader: so o navegador]
+```
 
-Requisito: [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-instalado (Windows/Mac) ou Docker + Docker Compose (Linux/servidor
-interno). E o unico programa que precisa ser instalado -- o Python fica
-todo dentro do container, voce nunca interage com ele diretamente.
+As instrucoes abaixo ("Opcao A" e "Opcao B") sao para **quem vai preparar
+esse servidor** (TI/administrador do ambiente), nao para cada operador.
+Depois que o servidor estiver de pe, avise os traders apenas do endereco
+(`http://<ip-do-servidor-interno>:8000`) -- nada mais precisa ser feito
+nos desktops deles.
+
+Se a politica da empresa tambem restringir instalacao de programas no(s)
+servidor(es) internos, isso e uma conversa com TI sobre qual maquina/VM
+da rede interna pode receber o Python ou o Docker -- e sempre uma
+instalacao unica e centralizada, nunca por operador.
+
+### Opcao A -- Docker (recomendado para quem vai preparar o servidor)
+
+Requisito: Docker instalado no servidor (Docker Desktop no Windows/Mac,
+ou Docker + Docker Compose num servidor Linux). E o unico programa que
+precisa ser instalado -- o Python fica todo dentro do container.
 
 - **Windows**: de dois cliques em `iniciar-windows.bat`. O navegador abre
   sozinho em `http://127.0.0.1:8000`. Para parar, de dois cliques em
@@ -156,7 +178,10 @@ Por baixo dos panos, esses scripts so rodam `docker compose up -d --build`
 e abrem o navegador. Os dados ficam salvos na pasta `data/` (mapeada para
 dentro do container) e sobrevivem a reinicios do container. Para
 acompanhar os logs manualmente: `docker compose logs -f`. Para trocar a
-porta ou o `CRM_SECRET_KEY`, edite `docker-compose.yml`.
+porta ou o `CRM_SECRET_KEY`, edite `docker-compose.yml`. Para os traders
+acessarem de outros desktops (nao so do proprio servidor), troque
+`CRM_HOST`/a porta publicada para o IP interno do servidor -- ver secao
+de variaveis de ambiente abaixo.
 
 > Nota: o primeiro `iniciar` baixa a imagem base do Python uma unica vez
 > (precisa de rede nesse instante, como qualquer instalacao de software) e
@@ -164,9 +189,9 @@ porta ou o `CRM_SECRET_KEY`, edite `docker-compose.yml`.
 > container **nao** faz nenhuma chamada de rede externa -- mesma garantia
 > do resto do sistema.
 
-### Opcao B -- Python direto (sem Docker)
+### Opcao B -- Python direto no servidor (sem Docker)
 
-Requisito: Python 3.11+.
+Requisito: Python 3.11+ instalado no servidor.
 
 ```bash
 cd crm
@@ -202,6 +227,12 @@ Variaveis de ambiente uteis (todas opcionais, com default local):
 | `CRM_IMPORT_DIR`               | `./data/importacao`               | pasta de rede interna onde o backoffice deposita o arquivo de posicao |
 | `CRM_DIAS_SEM_CONTATO_ALERTA`  | `10`                              | limiar do alerta "sem contato" no dashboard |
 | `CRM_DIAS_UTEIS_ALERTA_VENCIMENTO` | `5`                          | limiar (dias uteis) dos alertas de vencimento/risco de exercicio |
+
+> Para os traders acessarem de outros desktops (Opcao B, sem Docker):
+> `CRM_HOST=127.0.0.1` so aceita conexao da propria maquina do servidor.
+> Defina `CRM_HOST=0.0.0.0` (ou o IP interno especifico do servidor) antes
+> de rodar `python run.py` para o servidor aceitar conexao dos demais
+> desktops da rede interna. Na Opcao A (Docker) isso ja vem configurado.
 
 ### Rodando os testes
 
