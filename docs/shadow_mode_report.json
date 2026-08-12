@@ -1,77 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 35106,
-  "aprovadas_pelo_fluxo_atual": 641,
-  "descartadas_pelos_filtros_atuais": 34465,
-  "score_medio_materialidade": 3.94,
+  "total_ingeridas": 35354,
+  "aprovadas_pelo_fluxo_atual": 649,
+  "descartadas_pelos_filtros_atuais": 34705,
+  "score_medio_materialidade": 3.92,
   "seriam_breaking": 23,
-  "iriam_para_rodada": 335,
-  "seriam_descartadas_pelo_novo_sistema": 1642,
-  "total_divergencias": 667,
+  "iriam_para_rodada": 328,
+  "seriam_descartadas_pelo_novo_sistema": 1649,
+  "total_divergencias": 668,
   "divergencias": [
-    {
-      "title": "Por que as ações da Bechtle estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Crescimento dos gastos online desacelera para 8% em julho, aponta Bank of America",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Clariant estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Berenberg inicia cobertura da Raspberry Pi com potencial de crescimento e pressão nas margens",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Armac tem lucro líquido ajustado de R$10,1 mi no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Gestora planeja fundos para a ‘nova corrida dos metais’: de PIPE a crédito",
-      "source": "Brazil Journal",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Otimismo com infraestrutura é o menor desde 2022. Culpa da guerra e da eleição",
-      "source": "Brazil Journal",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "O que faz o 'Chief AI Officer' e as competências necessárias para assumir a cadeira",
-      "source": "Exame",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Gigante de R$ 8 bilhões, Stefanini cria marca para vender tecnologia a fábricas",
-      "source": "Exame",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "A conta da soja chegou: recuperação judicial sobe 73% entre produtores PJ",
       "source": "Exame",
@@ -145,6 +82,69 @@
     {
       "title": "'Presenteísmo': por que tantos profissionais continuam trabalhando mesmo doentes?",
       "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Jeep lança o Avenger nesta quarta, mirando disputa entre SUVs compactos; veja o que se sabe",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Renda do 1% mais rico é 31,5 vezes maior que a metade mais pobre no Brasil",
+      "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "CVC alterou estatuto após acordo entre Apex e fundador para evitar OPA",
+      "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "India’s Yulu raises $93M as quick-commerce boom fuels e-bike demand",
+      "source": "TechCrunch",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Weekly survey of mortgage lenders with the lowest rates: Lower rates and stiff fees",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Why the Amlitelimab Setback Isn’t Enough to Sink Sanofi’s Multi-Billion Dollar Engine",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Costco Delivered Another Strong Sales Print in July. Here’s What That Signals for the Second Half of the Year.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Booking's CEO says AI will have a 'human cost' — and he wants every employee to be 'AI literate' in case their job goes away",
+      "source": "Business Insider",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "I was a consultant at BCG who struggled to land a project. Here's how I turned it around.",
+      "source": "Business Insider",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"

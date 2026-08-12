@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que as ações da Bechtle estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a queda das ações da Bechtle é relevante para o mercado pois pode indicar problemas de desempenho da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:36.655499-03:00"
-    },
-    {
-      "title": "Por que as ações da DiaSorin estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:39.300303-03:00"
-    },
-    {
-      "title": "Crescimento dos gastos online desacelera para 8% em julho, aponta Bank of America",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Desaceleração do crescimento dos gastos online pode afetar as ações de empresas de tecnologia e comércio eletrônico.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:42.156545-03:00"
-    },
-    {
-      "title": "Por que as ações da ACS estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:44.795850-03:00"
-    },
-    {
-      "title": "Por que as ações da Clariant estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A ação da Clariant está subindo devido a uma notícia positiva sobre o desempenho da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:47.616873-03:00"
-    },
-    {
-      "title": "Berenberg inicia cobertura da Raspberry Pi com potencial de crescimento e pressão nas margens",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "cobertura de uma empresa com potencial de crescimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:50.475659-03:00"
-    },
-    {
-      "title": "Ações da ACS sobem após upgrade do Deutsche Bank para compra",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:53.137471-03:00"
-    },
-    {
-      "title": "Armac tem lucro líquido ajustado de R$10,1 mi no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "O lucro líquido ajustado indica que a empresa está gerando resultados financeiros positivos, o que pode ser visto como um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:56.169166-03:00"
-    },
-    {
-      "title": "Ações da Ocado sobem após comentários positivos do JPMorgan",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Comentários positivos do JPMorgan sobre ações da Ocado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:52:59.046258-03:00"
-    },
-    {
-      "title": "O Brasil piscou. O sarampo voltou",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:01.847156-03:00"
-    },
-    {
-      "title": "Gestora planeja fundos para a ‘nova corrida dos metais’: de PIPE a crédito",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:53:04.530443-03:00"
-    },
-    {
-      "title": "Otimismo com infraestrutura é o menor desde 2022. Culpa da guerra e da eleição",
-      "source": "Brazil Journal",
-      "score": 6.0,
-      "motivo": "queda do otimismo entre os agentes do setor de infraestrutura",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:07.370939-03:00"
-    },
-    {
-      "title": "O 4º parque aquático mais visitado do mundo fica no interior de SP e faz R$ 260 milhões; veja lista",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:10.425916-03:00"
-    },
-    {
-      "title": "A renovação do refúgio secreto de Coco Chanel na Riviera Francesa",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:13.100711-03:00"
-    },
-    {
-      "title": "Vencimento do Tesouro IPCA+ libera R$ 200 bilhões: o que fazer com o dinheiro?",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "O vencimento do Tesouro IPCA+ libera R$ 200 bilhões, o que pode afetar a oferta de dinheiro no mercado e influenciar as taxas de juros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:53:15.974066-03:00"
-    },
-    {
-      "title": "O que faz o 'Chief AI Officer' e as competências necessárias para assumir a cadeira",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:53:18.671043-03:00"
-    },
-    {
-      "title": "Gigante de R$ 8 bilhões, Stefanini cria marca para vender tecnologia a fábricas",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A criação de uma nova marca para vender tecnologia a fábricas pode indicar expansão e crescimento da empresa, o que é positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:21.544985-03:00"
-    },
-    {
-      "title": "Por que o otimismo do setor de infraestrutura caiu 16 pontos no 1º semestre de 2026",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:24.236821-03:00"
-    },
-    {
       "title": "A conta da soja chegou: recuperação judicial sobe 73% entre produtores PJ",
       "source": "Exame",
       "score": 6.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T18:46:48.831979-03:00"
+    },
+    {
+      "title": "Here are five key takeaways from the July CPI inflation report",
+      "source": "CNBC - Economy",
+      "score": 2.0,
+      "motivo": "O relatório não trouxe informações surpreendentes ou impactantes para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:50:35.739873-03:00"
+    },
+    {
+      "title": "Sabesp (SBSP3) lucra R$ 1,46 bi no 2º tri, queda anual de 31%, mas dentro do esperado",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "resultado dentro do esperado, mas com queda anual significativa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:50:39.146475-03:00"
+    },
+    {
+      "title": "Deve haver um equilíbrio entre stablecoins e depósitos tokenizados, diz Itaú",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia destaca a importância de equilíbrio entre stablecoins e depósitos tokenizados, o que pode ter impacto positivo no mercado de criptomoedas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:50:44.119185-03:00"
+    },
+    {
+      "title": "Cogna aumenta receita em 18% no 2° tri e mira dívida menor, dividendos e aquisições",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:50:46.857378-03:00"
+    },
+    {
+      "title": "AtlasIntel: Ciro abre vantagem de 4,7 pontos contra Elmano no 1º turno no Ceará",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:50:49.591640-03:00"
+    },
+    {
+      "title": "Securitize Q2 earnings shock: Revenue miss, wider loss sends stock tumbling",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:50:52.613188-03:00"
+    },
+    {
+      "title": "Silver could hit $90 in next 6-12 months as investment demand recovers, Citi says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:50:55.341567-03:00"
+    },
+    {
+      "title": "Labcorp CEO Adam Schechter Sells 4,669 Shares for $1.5 Million",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:51:01.250712-03:00"
+    },
+    {
+      "title": "Why Wendy's Stock Blasted Almost 15% Higher Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:51:03.921042-03:00"
+    },
+    {
+      "title": "Which Is the Better Energy Sector ETF, VanEck's Nuclear-Focused NLR or First Trust's EMLP Targeting Energy Infrastructure?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:51:06.713074-03:00"
+    },
+    {
+      "title": "Outfront Media (OUT) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:51:09.500234-03:00"
+    },
+    {
+      "title": "Klaviyo (KVYO) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:51:12.167917-03:00"
+    },
+    {
+      "title": "Black Hills (BKH) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:51:14.840128-03:00"
+    },
+    {
+      "title": "ONE Group (STKS) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:51:17.517768-03:00"
+    },
+    {
+      "title": "Vir Biotechnology (VIR) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:51:20.199352-03:00"
+    },
+    {
+      "title": "Qualicorp tem lucro de R$ 16,1 milhões no 2º trimestre, queda de 11,5%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:51:25.946858-03:00"
+    },
+    {
+      "title": "Lucro da Sabesp cai 41,2%, para R$ 1,1 bilhão no segundo trimestre",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:51:28.654787-03:00"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:51:33.659232-03:00"
     }
   ]
 }
