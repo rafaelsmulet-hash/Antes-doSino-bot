@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "BTG Pactual (BPAC11) lucra R$ 5,1 bilhões no 2T26, supera expectativas e mantém ROE acima do Itaú",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:54:41.674015-03:00"
-    },
-    {
-      "title": "BTG Pactual bate estimativas do mercado e alcança lucro recorde de R$ 5,1 bilhões",
-      "source": "Neofeed",
-      "score": 8.0,
-      "motivo": "lucro recorde e receita acima das estimativas do mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:54:47.985811-03:00"
-    },
-    {
-      "title": "MM Board & Paper launches lightweight kraft paper for packaging",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque pode influenciar a demanda por papel e, consequentemente, os preços das ações de empresas de papel e embalagens.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:54:51.249647-03:00"
-    },
-    {
-      "title": "Dave Ramsey warns nearly 50% of Americans make 1 big Social Security mistake — here's how to fix it in 3 steps",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:54:53.971604-03:00"
-    },
-    {
-      "title": "Trump Media's quarterly loss widens to $238 million from $20 million a year earlier",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento significativo ou inesperado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:54:57.147104-03:00"
-    },
-    {
-      "title": "US-Iran standoff sends oil up, dents stocks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T06:54:59.781695-03:00"
-    },
-    {
-      "title": "Global Gas Turbine Orders Hit Record High as Power Demand Surges",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "Aumento da demanda de energia é um indicador positivo para a indústria de energia e pode impulsionar as ações de empresas relacionadas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T06:55:02.745631-03:00"
-    },
-    {
       "title": "FlightAware sues Kalshi over flight-cancellation markets",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T21:11:17.646289-03:00"
+    },
+    {
+      "title": "Codexis outlines $72M-$76M 2026 revenue as it plans ~$25M GMP facility build-out",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa está aumentando sua capacidade de produção e prevendo receita positiva, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T21:16:24.407280-03:00"
+    },
+    {
+      "title": "H&R Block outlines fiscal 2027 outlook of $4.11B-$4.16B revenue and $6.04-$6.24 adjusted EPS while expanding consultative model",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A previsão de receita e lucro ajustado da H&R Block é relevante para o mercado de ações e pode influenciar a decisão de investir na empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T21:16:27.918666-03:00"
+    },
+    {
+      "title": "Singapore Stock Market Due For Consolidation",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é sobre a tendência do mercado, mas não apresenta nenhuma informação nova ou impactante.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T21:16:32.466410-03:00"
+    },
+    {
+      "title": "Fortune Brands Innovations (FBIN) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T21:16:35.167519-03:00"
+    },
+    {
+      "title": "Global Industrial (GIC) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T21:16:37.884249-03:00"
+    },
+    {
+      "title": "Bristow Group (VTOL) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T21:16:40.605566-03:00"
+    },
+    {
+      "title": "Match Group (MTCH) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T21:16:43.282154-03:00"
     }
   ]
 }

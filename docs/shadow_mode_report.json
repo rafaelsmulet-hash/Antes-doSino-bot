@@ -1,42 +1,14 @@
 {
   "date": "2026-08-11",
-  "total_ingeridas": 40810,
-  "aprovadas_pelo_fluxo_atual": 640,
-  "descartadas_pelos_filtros_atuais": 40170,
-  "score_medio_materialidade": 3.98,
-  "seriam_breaking": 36,
+  "total_ingeridas": 41058,
+  "aprovadas_pelo_fluxo_atual": 643,
+  "descartadas_pelos_filtros_atuais": 40415,
+  "score_medio_materialidade": 3.97,
+  "seriam_breaking": 35,
   "iriam_para_rodada": 360,
-  "seriam_descartadas_pelo_novo_sistema": 1604,
-  "total_divergencias": 699,
+  "seriam_descartadas_pelo_novo_sistema": 1605,
+  "total_divergencias": 700,
   "divergencias": [
-    {
-      "title": "BTG Pactual bate estimativas do mercado e alcança lucro recorde de R$ 5,1 bilhões",
-      "source": "Neofeed",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "MM Board & Paper launches lightweight kraft paper for packaging",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "US-Iran standoff sends oil up, dents stocks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Global Gas Turbine Orders Hit Record High as Power Demand Surges",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "FlightAware sues Kalshi over flight-cancellation markets",
       "source": "Yahoo Finance",
@@ -145,6 +117,34 @@
     {
       "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
       "source": "Federal Reserve",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "TPG Agrees to Buy South Korea’s Lotte Rental for $925 Million",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Economia do frio: quem ganha com o inverno de quase R$ 6 bilhões do Rio Grande do Sul",
+      "source": "Exame",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Rocket Lab slides as Neutron launch could slip to 2027",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Mortgage and refinance rates today, Tuesday, August 11, 2026: Rates mostly higher as U.S. 'low-keying' Iran negotiations",
+      "source": "Yahoo Finance",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
