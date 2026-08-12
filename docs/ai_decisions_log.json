@@ -1,213 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Inflação desacelera a 0,07% em julho, menor taxa para o mês desde 2022",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T09:06:37.490897-03:00"
-    },
-    {
-      "title": "TikTok is for the creator middle class, but top earners favor Instagram",
-      "source": "Business Insider",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:06:43.789234-03:00"
-    },
-    {
-      "title": "IPCA desacelera para 0,07% em julho com queda dos preços dos alimentos",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A inflação desacelerou, mas ainda está acima da meta do Banco Central",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T09:11:35.138813-03:00"
-    },
-    {
-      "title": "Não consegue esquecer o ex? O algoritmo do TikTok pode ser o 'culpado'",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:11:37.879126-03:00"
-    },
-    {
-      "title": "Kalaris Therapeutics GAAP EPS of -$0.48 in-line",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não tem impacto significativo no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:11:41.351958-03:00"
-    },
-    {
-      "title": "LB Pharmaceuticals Inc GAAP EPS of -$1.71 misses by $0.90",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:11:44.233616-03:00"
-    },
-    {
-      "title": "Abundia Global Impact Group reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:11:46.842303-03:00"
-    },
-    {
-      "title": "Protara Therapeutics GAAP EPS of -$0.36 misses by $0.03",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:11:49.513251-03:00"
-    },
-    {
-      "title": "U.S. Energy GAAP EPS of -$0.04 beats by $0.01, revenue of $2.13M beats by $0.03M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:11:52.292561-03:00"
-    },
-    {
-      "title": "Dominari Holdings reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:11:54.894982-03:00"
-    },
-    {
-      "title": "Coya Therapeutics GAAP EPS of -$0.28 beats by $0.07, revenue of $0.24M beats by $0.14M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:11:57.506019-03:00"
-    },
-    {
-      "title": "Em nova ofensiva, Mark Zuckerberg volta a disparar contra os modelos fechados de IA",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:12:08.142969-03:00"
-    },
-    {
-      "title": "True Potential, Origo collaborate to automate adviser valuation data",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:12:11.090764-03:00"
-    },
-    {
-      "title": "Gold prices today, Tuesday, August 11, 2026: Gold remains over $4,400 as Iran situation worsens",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T09:12:13.701590-03:00"
-    },
-    {
-      "title": "Ambiq Micro Stock Rises On Chipmaker's Beat-And-Raise Report",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:12:16.320925-03:00"
-    },
-    {
-      "title": "Northern Trust ties up with Lukka on digital asset reporting",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:12:18.931614-03:00"
-    },
-    {
-      "title": "XP celebra um ano do Cartão XP Legacy com campanha especial de benefícios",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "campanha de benefícios de cartão de crédito não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:15:37.754679-03:00"
-    },
-    {
-      "title": "Ao lado de Haddad, Datena diz que Tarcísio prestou “desserviço” à segurança de SP",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:15:40.481849-03:00"
-    },
-    {
-      "title": "Os testes secretos com antraz que transformaram uma ilha em área proibida por décadas",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há conexão direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:15:45.007768-03:00"
-    },
-    {
-      "title": "Aimia Inc. CUM RATE SER 4 declares CAD 0.411 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:15:47.906378-03:00"
-    },
-    {
-      "title": "Aimia Inc. CUM RT PFD SER 3 declares CAD 0.4858 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:15:50.515348-03:00"
-    },
-    {
-      "title": "Aimia Inc. PFD-1 declares CAD 0.3926 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T09:15:53.118815-03:00"
-    },
-    {
-      "title": "Cardinal Health Q4 Profit Climbs, Sees Growth In FY27; Approves $5 Bln Buyback",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T09:15:59.144943-03:00"
-    },
-    {
       "title": "Will Nvidia Split Its Stock Again in 2026?",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17792,213 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T08:11:03.926784-03:00"
+    },
+    {
+      "title": "Perda de vegetação nativa para a pecuária deixa o Brasil mais exposto ao El Niño",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "efeitos climáticos podem afetar produtividade agrícola e economia brasileira",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:15:44.868405-03:00"
+    },
+    {
+      "title": "Brasil melhorou em 71% dos dados de desigualdade, mas concentração de renda subiu",
+      "source": "InfoMoney",
+      "score": 4.0,
+      "motivo": "noticia apresenta dados econômicos, mas não é um evento de mercado significativo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T08:15:47.645663-03:00"
+    },
+    {
+      "title": "Minério de ferro fecha com leve alta na China",
+      "source": "Money Times",
+      "score": 4.0,
+      "motivo": "noticia sobre mercado de minério de ferro, mas sem impacto significativo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:15:52.160797-03:00"
+    },
+    {
+      "title": "Acumen Pharmaceuticals GAAP EPS of -$0.45 misses by $0.12",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:15:56.860948-03:00"
+    },
+    {
+      "title": "Metro Non-GAAP EPS of $1.24, revenue of $6.97B beats by $2.01B",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:15:59.580678-03:00"
+    },
+    {
+      "title": "Marex Group Non-GAAP EPS of $1.64 beats by $0.28, revenue of $695.8M beats by $70.52M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:02.240314-03:00"
+    },
+    {
+      "title": "Kontoor Brands lifts profit guidance after solid quarters for Wrangler and Helly Hansen",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:04.926699-03:00"
+    },
+    {
+      "title": "Milestone Pharmaceuticals GAAP EPS of -$0.21 misses by $0.01, revenue of $0.56M misses by $0.26M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:07.613009-03:00"
+    },
+    {
+      "title": "At a glance: stocks gapping up premarket",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T08:16:10.293239-03:00"
+    },
+    {
+      "title": "Kornit Digital Non-GAAP EPS of $0.04 beats by $0.05, revenue of $55.32M beats by $2.52M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:13.006745-03:00"
+    },
+    {
+      "title": "Amcor Q4 26 Earnings Conference Call At 8:00 AM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:18.047192-03:00"
+    },
+    {
+      "title": "Nebius Group N.V. Q2 26 Earnings Conference Call At 8:00 AM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:20.767644-03:00"
+    },
+    {
+      "title": "Constellation Software Q2 26 Earnings Conference Call At 8:00 AM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:23.427974-03:00"
+    },
+    {
+      "title": "Trimble Q2 26 Earnings Conference Call At 8:00 AM ET",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante pois trata de resultados financeiros, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:26.321332-03:00"
+    },
+    {
+      "title": "Hydro One Q2 26 Earnings Conference Call AT 8:00 AM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:28.988490-03:00"
+    },
+    {
+      "title": "Owens Corning (OC) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T08:16:31.695165-03:00"
+    },
+    {
+      "title": "Brinker International Inc. Reports Climb In Q4 Profit",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T08:16:34.371689-03:00"
+    },
+    {
+      "title": "You Can Do Better Than SpaceX. Buy This SPACE Stock Instead",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:37.025222-03:00"
+    },
+    {
+      "title": "Apotex Health Slips To Loss In Q1, Announces FY27 Revenue Outlook",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:39.731992-03:00"
+    },
+    {
+      "title": "CPI Inflation Data May Keep Fed Rate Hikes On Hold (Live Coverage)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T08:16:48.639680-03:00"
+    },
+    {
+      "title": "India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T08:16:51.331543-03:00"
+    },
+    {
+      "title": "DHL, Vinted expand alliance to grow locker network for pre-owned fashion",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T08:16:54.006113-03:00"
+    },
+    {
+      "title": "Mortgage rates finally stop rising, causing demand to trickle back",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T08:16:57.361866-03:00"
     }
   ]
 }
