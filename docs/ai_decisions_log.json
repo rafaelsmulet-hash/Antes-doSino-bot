@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Karooooo CEO Disposes 31,279 Shares for $2.0 Million",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:36:42.837257-03:00"
-    },
-    {
-      "title": "Zuckerberg's AI-for-all pitch faces a big problem",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T08:36:45.623503-03:00"
-    },
-    {
-      "title": "Gold Pulls Back From Two-Month High as Focus Shifts to Inflation",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois pode influenciar a decisão da Reserva Federal sobre a taxa de juros",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:40:48.935164-03:00"
-    },
-    {
-      "title": "The Pulse 8/11/2026",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não traz informações específicas sobre eventos de mercado, apenas apresenta convidados para uma entrevista.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:40:51.764596-03:00"
-    },
-    {
-      "title": "Shein planeja lançar IPO em Hong Kong em 19 de agosto, dizem fontes",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T08:40:54.619054-03:00"
-    },
-    {
-      "title": "Navio de carga é atacado no Mar Vermelho, segundo fontes",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:40:57.217772-03:00"
-    },
-    {
-      "title": "Por que as ações da FutureFuel estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:01.287812-03:00"
-    },
-    {
-      "title": "Ações da ACV Auctions disparam com rumores de possível venda",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:03.911934-03:00"
-    },
-    {
-      "title": "Votação sobre capital do UBS adiada no parlamento suíço",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:06.508176-03:00"
-    },
-    {
-      "title": "Barclays revisa varejistas de vestuário dos EUA e rebaixa Under Armour e Gap",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T08:41:09.109033-03:00"
-    },
-    {
-      "title": "Por que as ações da Ceragon Networks estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:11.703294-03:00"
-    },
-    {
       "title": "Mídia francesa aciona regulador antitruste contra resumos de IA do Google",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T07:37:32.636011-03:00"
+    },
+    {
+      "title": "Armac tem lucro líquido ajustado de R$10,1 mi no 2º tri",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Crescimento da receita operacional líquida indica saúde financeira do grupo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:41:25.708611-03:00"
+    },
+    {
+      "title": "Milei volta a acusar Brasil por 'campanha' contra Argentina durante a Copa",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:41:30.799324-03:00"
+    },
+    {
+      "title": "Graham Holdings, Amazon lead consumer discretionary stocks with highest earnings beats",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia destaca a performance excepcional de Graham Holdings e Amazon em relação às previsões de lucro, o que é relevante para o mercado atualmente.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T07:41:33.869813-03:00"
+    },
+    {
+      "title": "Domino's looks for a sales boost from its new Detroit-style pizza offering",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante pois pode afetar as vendas da empresa e, consequentemente, o desempenho do mercado de ações.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:41:36.752590-03:00"
+    },
+    {
+      "title": "Bio-Techne Non-GAAP EPS of $0.52 in-line, revenue of $321.19M beats by $6.67M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Receita superior à expectativa é um sinal positivo para a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:41:39.634675-03:00"
+    },
+    {
+      "title": "Valens Semiconductor beats top-line estimates; gives Q3 and raises FY 2026 outlook",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Aumento da previsão de receita e de resultados financeiros é um sinal positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T07:41:42.630934-03:00"
+    },
+    {
+      "title": "Liquidia GAAP EPS of $0.74 in-line, revenue of $171.68M beats by $3.2M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas em termos de receita, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:41:45.505915-03:00"
+    },
+    {
+      "title": "Ituran Location GAAP EPS of $0.88 beats by $0.02, revenue of $104.79M beats by $4.94M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Resultados financeiros superiores às expectativas são geralmente considerados positivos para as ações da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:41:48.410535-03:00"
+    },
+    {
+      "title": "Austrália cria proteção inédita para entregadores de aplicativo",
+      "source": "G1 Economia",
+      "score": 2.0,
+      "motivo": "a noticia nao e sobre mercado financeiro, mas sim sobre direitos trabalhistas",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:41:57.285430-03:00"
+    },
+    {
+      "title": "PwC's US CEO built an AI assistant called 'PG's Whisperer.' He talks to it all day.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:42:04.127577-03:00"
+    },
+    {
+      "title": "SEC Small Business Advisory Committee to Explore Modernizing Market Access",
+      "source": "SEC",
+      "score": 3.0,
+      "motivo": "A notícia trata de discussões sobre modernização de regras de mercado, mas não apresenta mudanças imediatas.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:42:07.780521-03:00"
     }
   ]
 }
