@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Logan Energy GAAP EPS of C$0.04, revenue of C$82.71M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:24.934951-03:00"
-    },
-    {
-      "title": "Mount Logan Capital Inc. GAAP EPS of -$0.37, revenue of $8.75M misses by $4.34M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:27.655778-03:00"
-    },
-    {
-      "title": "Bonterra Energy GAAP EPS of C$0.56, revenue of C$97.23M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:30.326080-03:00"
-    },
-    {
-      "title": "PennantPark Floating Rate Capital targets PSSL II above $1b in 12 to 18 months while maintaining 50% supplemental dividend formula",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:33.108817-03:00"
-    },
-    {
-      "title": "Siebert Financial reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:35.792345-03:00"
-    },
-    {
-      "title": "Senado aprova linha de crédito para indústria de fertilizantes, mas sem estipular valores",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:26:42.037196-03:00"
-    },
-    {
-      "title": "Do Wall Street Analysts Like Nasdaq Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:49.153910-03:00"
-    },
-    {
-      "title": "TSMC Revenue Surges as AI Chip Demand Hold",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:51.833626-03:00"
-    },
-    {
       "title": "Bitcoin and ethereum prices today, Monday, August 10, 2026: BTC breaking past $65,000 yet again",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T16:56:02.063660-03:00"
+    },
+    {
+      "title": "Libertadores: Onde assistir a Palmeiras x Cerro Porteño?",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:00:50.140755-03:00"
+    },
+    {
+      "title": "Déficit orçamentário dos EUA sobe em julho e já atinge em 10 meses o rombo de 2025",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "o déficit orçamentário dos EUA aumentou significativamente em julho, indicando problemas financeiros significativos",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:00:56.761846-03:00"
+    },
+    {
+      "title": "Bitcoin hoje: cripto opera quase estável em sessão de CPI dos EUA dentro do esperado",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "a noticia não traz nenhum fator que estimule o interesse dos compradores ou vendedores",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:00:59.831908-03:00"
+    },
+    {
+      "title": "Por que setor financeiro perdeu R$ 112 bi, um Banco do Brasil (BBAS3), em dias na Bolsa?",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:01:04.487740-03:00"
+    },
+    {
+      "title": "TotalEnergies compra ativos renováveis da Shell; movimento reforça tese do SNEL11",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:01:12.111112-03:00"
+    },
+    {
+      "title": "French press body asks competition watchdog to take action over Google AI",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:01:16.424910-03:00"
+    },
+    {
+      "title": "SpaceX Rivals Report Mixed Earnings; Rocket Lab Sinks On Possible Neutron Delays",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:01:19.170751-03:00"
+    },
+    {
+      "title": "Embraer Continues To Outpace Boeing, Airbus. It's In A Buy Zone Now.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:01:21.857845-03:00"
     }
   ]
 }
