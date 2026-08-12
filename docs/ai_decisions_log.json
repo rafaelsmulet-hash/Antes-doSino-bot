@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Terremoto pressiona economia fragilizada da Colômbia e amplia desafio do novo presidente",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T16:51:15.226775-03:00"
-    },
-    {
       "title": "Option Volatility And Earnings Report For Aug 10-14",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T14:47:06.985402-03:00"
+    },
+    {
+      "title": "EUA aumenta previsão de área colhida de milho e soja, mas vê produtividade menor",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "alteração na previsão de produtividade pode afetar preços de commodities",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T14:50:52.069319-03:00"
     }
   ]
 }
