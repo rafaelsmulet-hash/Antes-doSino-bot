@@ -1,240 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Prejuízo de conglomerado de mídia de Trump salta 10 vezes com queda de ativos digitais",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:51:05.221364-03:00"
-    },
-    {
-      "title": "BTG Pactual bate estimativas do mercado e alcança lucro recorde de R$ 5,1 bilhões",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:51:09.316072-03:00"
-    },
-    {
-      "title": "Google co-founder Sergey Brin has now spent $100 million to fight the billionaire tax",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:51:12.033494-03:00"
-    },
-    {
-      "title": "JB Global Capital: Lessons from Lululemon’s (LULU) Investment Case",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:51:14.828812-03:00"
-    },
-    {
-      "title": "Flowers Foods (FLO) Cuts Dividend to Strengthen Financial Health",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:51:17.483072-03:00"
-    },
-    {
-      "title": "EXCLUSIVE: CPI Lands Tomorrow and Could Send PLTR, TSLA Surging—But Only if It's A 'Serious Shock,' Cato Economist Says",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:51:20.171000-03:00"
-    },
-    {
-      "title": "Jeff Dean's hour-by-hour breakdown of his Google exit: an 'emotional' video chat, Yoga at 7, and 'unemployed' at 11:59",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:51:23.072509-03:00"
-    },
-    {
-      "title": "Chaveamento da Copa do Brasil 2026: veja os confrontos das quartas até a final",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia e sports relacionada, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:55:35.470240-03:00"
-    },
-    {
-      "title": "Balanço de Caixa Seguridade (CXSE3) divide opiniões e ações caem; 4 analistas dizem o que fazer com papel agora",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "queda nas ações da Caixa Seguridade em reação ao balanço do segundo trimestre",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:55:39.921774-03:00"
-    },
-    {
-      "title": "“Me mimei”: pesquisa mostra que brasileiros pagam mais para evitar estresse",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "A notícia não é específica sobre mercado financeiro, economia ou negocios.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:55:43.532246-03:00"
-    },
-    {
-      "title": "Is inflation really slowing? Fed rate hike hinges on July price report.",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:55:46.514468-03:00"
-    },
-    {
-      "title": "ICE begins U.S. investment-grade bond sale to fund MarketAxess deal - report",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:55:49.270731-03:00"
-    },
-    {
-      "title": "Xtant outlines $99M-$103M 2026 revenue guidance while integrating Dilon sales force",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:55:51.924027-03:00"
-    },
-    {
-      "title": "Age 55-64? Here's the Average Retirement Savings for People Your Age",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:55:55.814573-03:00"
-    },
-    {
-      "title": "SPYD, IBX: Big ETF Outflows",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:55:58.687443-03:00"
-    },
-    {
-      "title": "SPCH, MCHU: Big ETF Inflows",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:56:01.307584-03:00"
-    },
-    {
-      "title": "Clorox (CLX) Q4 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:56:03.944166-03:00"
-    },
-    {
-      "title": "Notable ETF Inflow Detected - IYW, TXN, WDC, DELL",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:56:06.574794-03:00"
-    },
-    {
-      "title": "Prediction: Gold Will Rise Back to Over $5,000 Before the End of the Year",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:56:09.298423-03:00"
-    },
-    {
-      "title": "Avantis Emerging Markets Equity ETF Experiences Big Inflow",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:56:11.972584-03:00"
-    },
-    {
-      "title": "USFR: Large Inflows Detected at ETF",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:56:14.608647-03:00"
-    },
-    {
-      "title": "Notable ETF Inflow Detected - FLTW",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:56:17.543405-03:00"
-    },
-    {
-      "title": "Consistent Results Restored Confidence in Forgent Power Solutions (FPS)",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque indica que a empresa está tendo sucesso em seus esforços, o que pode afetar positivamente o preço das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:56:25.333650-03:00"
-    },
-    {
-      "title": "Wendy's has a massive problem: It's closing restaurants left and right",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:56:28.022523-03:00"
-    },
-    {
-      "title": "On Shares Fall Sharply After Wholesale Slowdown in Q2",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:56:30.657880-03:00"
-    },
-    {
-      "title": "Nvidia Rises Amid Massive Wall Street Partnership; Is Nvidia A Buy Now?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:56:33.339423-03:00"
-    },
-    {
       "title": "Fresenius Medical Care (FMS) Q2 2026 Earnings Call Transcript",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17765,240 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T10:56:18.881284-03:00"
+    },
+    {
+      "title": "Goldman Sachs eleva recomendação de Hypera para compra e rebaixa Fleury",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Recomendação de compra da Goldman Sachs para Hypera e rebaixa para Fleury impactam diretamente no preço das ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:00:48.993895-03:00"
+    },
+    {
+      "title": "Here are the major earnings after the close Wednesday",
+      "source": "Seeking Alpha",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sobre resultados financeiros de empresas",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:00:54.348492-03:00"
+    },
+    {
+      "title": "Norway wealth fund posts record H1 profit as tech stocks surge",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A alta das ações de tecnologia é um indicador positivo para o mercado de ações em geral.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:00:57.296609-03:00"
+    },
+    {
+      "title": "Velo3D, Inc. Non-GAAP EPS of -$0.30, revenue of $20.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:00:59.940406-03:00"
+    },
+    {
+      "title": "Applied Materials Q3 earnings on deck: What to expect",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:02.860213-03:00"
+    },
+    {
+      "title": "DINO Added as Top 10 Energy Dividend Stock With 2.45% Yield",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:06.894473-03:00"
+    },
+    {
+      "title": "GoGold Resources Inc. Profit Rises In Q3",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:09.539771-03:00"
+    },
+    {
+      "title": "Airbnb vs. Opendoor Technologies: Which Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:01:12.194593-03:00"
+    },
+    {
+      "title": "Home Depot Appoints Interim Leaders As CEO Ted Decker Takes Temperory Medical Leave",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:01:14.860667-03:00"
+    },
+    {
+      "title": "TDW Crosses Above Average Analyst Target",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:17.505402-03:00"
+    },
+    {
+      "title": "GoodRx Holdings Reaches Analyst Target Price",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:20.157318-03:00"
+    },
+    {
+      "title": "Sally Beauty Holdings Reaches Analyst Target Price",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:22.805036-03:00"
+    },
+    {
+      "title": "Septerna Reaches Analyst Target Price",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:25.459368-03:00"
+    },
+    {
+      "title": "DocuSign CFO Blake Grayson Sells 15,000 Shares for $900,000",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:01:28.177487-03:00"
+    },
+    {
+      "title": "Google’s Pixel 11 lineup offer fewer hardware changes, but much more Gemini",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:36.633110-03:00"
+    },
+    {
+      "title": "Google unveils the Pixel Watch 5 with a smarter Gemini and advanced health monitoring",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:39.622103-03:00"
+    },
+    {
+      "title": "Google takes on AirTag with the new $29 Pixel Tag",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:42.264792-03:00"
+    },
+    {
+      "title": "Google’s new Pixel 11 Pro Fold offers a stronger build and brighter screens",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:01:44.920951-03:00"
+    },
+    {
+      "title": "Earnings live updates: Supermicro and CoreWeave stocks jump on accelerating AI demand",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:01:48.460683-03:00"
+    },
+    {
+      "title": "Earnings live updates: The Trade Desk stock plummets on earnings miss, Oklo jumps on 'criticality' milestone",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A falha nos lucros da The Trade Desk e o alcance do marco crítico da Oklo são eventos significativos para o mercado de ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:01:51.688876-03:00"
+    },
+    {
+      "title": "Ray Dalio: The AI investment game is happening — here's how to play",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:01:54.351971-03:00"
+    },
+    {
+      "title": "Grab Holdings Limited (GRAB) vs. Sea Limited (SE): Grab Raises Its Outlook as AI and Affordability Pay Off",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:01:57.023558-03:00"
+    },
+    {
+      "title": "Baron Discovery Fund Remains Bullish on Shake Shack (SHAK)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:01:59.661324-03:00"
+    },
+    {
+      "title": "Baron Discovery Fund Gains from Strategic Accumulation of CareDx (CDNA)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:02:02.590567-03:00"
+    },
+    {
+      "title": "Airbnb vs. Opendoor Technologies: Which Stock Is a Better Buy in 2026?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:02:05.242776-03:00"
+    },
+    {
+      "title": "No tax on Social Security? The facts about Trump’s plan are here — and they could hurt US retirees the most",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:02:07.951924-03:00"
     }
   ]
 }
