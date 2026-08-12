@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Health insurers are dumping Medicare Advantage plans. Here’s how many seniors could be affected.",
-      "source": "MarketWatch",
-      "score": 4.0,
-      "motivo": "A mudança pode afetar a disponibilidade de opções de saúde para os idosos, especialmente em áreas rurais.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T15:06:17.851444-03:00"
-    },
-    {
-      "title": "Marex Group 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque fornece informações sobre os resultados financeiros da empresa, mas não há indicações de eventos inesperados ou impactantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T15:06:20.811885-03:00"
-    },
-    {
-      "title": "Enterprises focused on ROI, but AI spending remains strong: UBS",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T15:06:23.483627-03:00"
-    },
-    {
-      "title": "James River outlines shift to 55% net retention while prioritizing underwriting profitability over near-term volume",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T15:06:26.210105-03:00"
-    },
-    {
-      "title": "HighPeak outlines $30M per quarter term-loan amortization as 2H 2026 capital spending declines",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T15:06:28.910887-03:00"
-    },
-    {
-      "title": "Swiss Market Ends Weak After Cautious Session",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T15:06:33.836210-03:00"
-    },
-    {
-      "title": "Why Bloom Energy Stock Crashed in July",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T15:06:36.617521-03:00"
-    },
-    {
       "title": "LGI Homes (LGIH) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T13:26:31.705637-03:00"
+    },
+    {
+      "title": "Vazamento de petróleo no Golfo Pérsico caminha para se tornar o pior em anos",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "Não é uma notícia financeira direta, mas pode ter impacto indireto no preço do petróleo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T13:31:33.330208-03:00"
+    },
+    {
+      "title": "Buscas por sobreviventes do terremoto na Colômbia chegam ao terceiro dia",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T13:31:36.164941-03:00"
+    },
+    {
+      "title": "Transpetro abre concurso com mais de 4 mil vagas e salários de até R$ 15 mil",
+      "source": "Exame",
+      "score": 1.0,
+      "motivo": "não é uma notícia de mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T13:31:40.808692-03:00"
+    },
+    {
+      "title": "Gladstone Land signals potential additional farm sales as it evaluates refinancing $148m of loans scheduled to reset in 2027",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque pode afetar a capacidade da empresa de refinanciar suas dívidas e, consequentemente, sua capacidade de investir em novas fazendas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T13:31:43.964469-03:00"
+    },
+    {
+      "title": "Stabilis targets 2027 revenue to exceed $100M, led by a $100M annual data center bridge power contract",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T13:31:46.663223-03:00"
+    },
+    {
+      "title": "SpaceX jumps after releasing Grok 4.6, which focuses on visual work",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T13:31:49.319847-03:00"
+    },
+    {
+      "title": "July Inflation Data Came in as Expected, Lowering the Odds of a Fed Hike in September Yet Again",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T13:31:53.255750-03:00"
     }
   ]
 }
