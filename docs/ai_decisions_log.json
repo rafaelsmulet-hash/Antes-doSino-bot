@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "“O mercado está diferente”. O plano da Heineken para recuperar volume no Brasil",
-      "source": "Brazil Journal",
-      "score": 5.0,
-      "motivo": "A Heineken está aumentando sua capacidade de produção no Brasil, o que pode levar a uma maior oferta de cerveja e impactar positivamente o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:04:59.329706-03:00"
-    },
-    {
-      "title": "Com eleição no horizonte, governo corre para aprovar MPs do fim da Taxa das Blusinhas e motofrete",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política e governo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:05:02.597232-03:00"
-    },
-    {
-      "title": "Dia do Estudante: que cidadão as redes de ensino estão formando?",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:05:05.380448-03:00"
-    },
-    {
-      "title": "Grupo familiar de turismo de R$ 2 bilhões lança negócio para conectar agências e fornecedores",
-      "source": "Exame",
-      "score": 3.0,
-      "motivo": "lançamento de negócio de distribuição de viagens",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:05:08.116214-03:00"
-    },
-    {
       "title": "Lucro do BTG Pactual cresce 23% no 2º trimestre e bate recorde de R$ 5,1 bilhões",
       "source": "Exame",
       "score": 8.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T21:56:03.037182-03:00"
+    },
+    {
+      "title": "New Zealand Prime Minister Luxon Wins Party Confidence Vote",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T22:06:11.944613-03:00"
+    },
+    {
+      "title": "Banco BV tem lucro líquido de R$ 491 mi no 2º tri",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Lucro líquido positivo indica saúde financeira do banco",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T22:06:18.871566-03:00"
+    },
+    {
+      "title": "Evolv expects $180M-$185M 2026 revenue as it targets over 10,000 deployed units",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica um crescimento esperado da empresa, o que pode afetar positivamente o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T22:06:25.238545-03:00"
+    },
+    {
+      "title": "Pixelworks expects cash operating expenses below $2.5M per quarter in 2026 while adding a new multiyear device certification deal",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A redução de custos operacionais e a assinatura de um novo acordo de certificação de dispositivo são indicativos de uma gestão financeira eficaz e podem ter um impacto positivo no desempenho da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T22:06:28.937331-03:00"
     }
   ]
 }
