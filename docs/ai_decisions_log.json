@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A conta da soja chegou: recuperação judicial sobe 73% entre produtores PJ",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A noticia destaca a recuperação judicial dos produtores de soja, o que pode indicar uma melhoria na economia agricola e consequentemente no mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:27.103974-03:00"
-    },
-    {
-      "title": "'Otan islâmica'? Pacto entre Paquistão, Arábia Saudita e Turquia acende alerta na Índia",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A noticia nao e sobre mercado financeiro, mas sim geopolitica e internacional",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:29.994659-03:00"
-    },
-    {
-      "title": "CPI dos EUA, serviços no Brasil e balanços: o que move os mercados",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:53:32.668949-03:00"
-    },
-    {
-      "title": "Eclipse solar total hoje: veja onde será visível, duração e como assistir online",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "Sem relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:35.515552-03:00"
-    },
-    {
-      "title": "AI capex could hit $1.6 trillion next year, says fund manager who sees more echoes of 1998 than the dot-com bust",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:38.307538-03:00"
-    },
-    {
-      "title": "Another AI lab is burning through cash as Tencent earnings rise",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A notícia destaca a perda de dinheiro de laboratórios de inteligência artificial, o que pode afetar a confiança dos investidores em empresas desse setor.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:53:41.421444-03:00"
-    },
-    {
-      "title": "Can I claim 50% of my husband’s Social Security now — and switch to my higher benefit at 70?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:44.124105-03:00"
-    },
-    {
-      "title": "Musician John Oates sells his idyllic Colorado ranch for $6.9 million",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:46.797565-03:00"
-    },
-    {
-      "title": "A stock just surged on news Situational Awareness had bought it. But its current fate is unclear.",
-      "source": "MarketWatch",
-      "score": 3.0,
-      "motivo": "A notícia menciona uma ação específica sendo afetada por uma hedge fund, o que pode ter impacto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:49.953100-03:00"
-    },
-    {
-      "title": "Situational Awareness stake sends Taiyo Yuden shares soaring",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:52.660871-03:00"
-    },
-    {
-      "title": "Lilly files six lawsuits to crack down on black market retatrutide weight-loss shots",
-      "source": "Seeking Alpha",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:53:55.605630-03:00"
-    },
-    {
       "title": "IZEA outlines pipeline with multiple $1M+ annual revenue enterprise opportunities as it targets a more focused business",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T18:51:33.659232-03:00"
+    },
+    {
+      "title": "ANZ Profit Rises on Deposit Growth, Expansion in Business Loans",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois indica um aumento de lucro do banco, o que é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:55:36.009317-03:00"
+    },
+    {
+      "title": "SLC Agrícola (SLCE3) tem alta de 75% no lucro líquido no 2º tri, a R$ 245 milhões",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Aumento significativo no lucro líquido e aumento de vendas em todas as categorias são indicativos de saúde financeira robusta da empresa.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:55:39.538112-03:00"
+    },
+    {
+      "title": "PulteGroup enters repurchase pact to finance mortgage originations",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:55:45.099329-03:00"
+    },
+    {
+      "title": "Tevano Systems appoints David Bajwa as CEO and interim CFO",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:55:47.837922-03:00"
+    },
+    {
+      "title": "Immersion Investment Views Strata Critical Medical (SRTA) as a “Babushka Doll”",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:55:56.336283-03:00"
+    },
+    {
+      "title": "Australia Cracks Down On Crypto ATMs",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:55:58.999689-03:00"
+    },
+    {
+      "title": "The housing market’s wealth gains are real. So is its distress",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:56:02.019441-03:00"
+    },
+    {
+      "title": "Analyzing Mama’s Creations’ (MAMA) Short-Term Pullback",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:56:05.016621-03:00"
+    },
+    {
+      "title": "Baker Hughes Company (BKR) Posted Record Orders, so Why is it Warning About 2026 Spending?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:56:07.773231-03:00"
+    },
+    {
+      "title": "Tesla Stock Surged 40% From Here Last Year. Here's How to Play TSLA Stock in 2026.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:56:10.553183-03:00"
+    },
+    {
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:56:14.179735-03:00"
     }
   ]
 }
