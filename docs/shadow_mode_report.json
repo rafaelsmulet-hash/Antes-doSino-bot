@@ -1,35 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 37338,
-  "aprovadas_pelo_fluxo_atual": 670,
-  "descartadas_pelos_filtros_atuais": 36668,
-  "score_medio_materialidade": 4.0,
+  "total_ingeridas": 37576,
+  "aprovadas_pelo_fluxo_atual": 672,
+  "descartadas_pelos_filtros_atuais": 36904,
+  "score_medio_materialidade": 3.99,
   "seriam_breaking": 25,
-  "iriam_para_rodada": 318,
-  "seriam_descartadas_pelo_novo_sistema": 1657,
+  "iriam_para_rodada": 316,
+  "seriam_descartadas_pelo_novo_sistema": 1659,
   "total_divergencias": 667,
   "divergencias": [
-    {
-      "title": "Entre a Copa do Mundo e a guerra: como a Direcional (DIRR3) encarou os desafios macro do 2T26 e o que esperar, segundo o CEO",
-      "source": "Seu Dinheiro",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Review & Preview: The S&P 500 Pulls Back",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Coreweave surges 18% in premarket after a 'cleaner quarter'. Here's what's happening",
-      "source": "CNBC - US News",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "AI computing power is becoming a tradable asset class as CME launches futures contracts",
       "source": "CNBC - Finance",
@@ -145,6 +124,27 @@
     {
       "title": "BETA Technologies reports mixed Q2 results; updates FY2026 outlook",
       "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Desemprego juvenil global cresce com lenta geração de empregos e ao risco da IA, diz ONU",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "HELOC and home equity loan rates today, Wednesday, August 12, 2026: Why locking in a low rate matters",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Sandisk Is Up 429% This Year -- Its $15.5 Billion Stock Buyback Suggests Management Thinks Shares Are Still Cheap",
+      "source": "Yahoo Finance",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
