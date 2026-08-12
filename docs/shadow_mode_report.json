@@ -1,56 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 39520,
-  "aprovadas_pelo_fluxo_atual": 686,
-  "descartadas_pelos_filtros_atuais": 38834,
-  "score_medio_materialidade": 4.01,
-  "seriam_breaking": 26,
-  "iriam_para_rodada": 297,
-  "seriam_descartadas_pelo_novo_sistema": 1677,
-  "total_divergencias": 667,
+  "total_ingeridas": 39768,
+  "aprovadas_pelo_fluxo_atual": 695,
+  "descartadas_pelos_filtros_atuais": 39073,
+  "score_medio_materialidade": 3.98,
+  "seriam_breaking": 23,
+  "iriam_para_rodada": 290,
+  "seriam_descartadas_pelo_novo_sistema": 1687,
+  "total_divergencias": 672,
   "divergencias": [
-    {
-      "title": "Cisco Systems Q4 26 Earnings Conference Call At 4:30 PM ET",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Jenoptik Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Índia - Ações fecharam o pregão em queda e o Índice Nifty 50 recuou 0,15%",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Intuitive Surgical estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Legend Biotech estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da BETA Technologies estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Por que as ações da Annexon estão caindo hoje?",
       "source": "Investing.com Brasil",
@@ -147,6 +105,48 @@
       "source": "UOL Economia",
       "score": 8.0,
       "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Bionano Genomics, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "American Vanguard Corporation Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que a ação da Annexon está caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Bank of America se compromete a investir US$250 bi no financiamento de infraestrutura nos EUA",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Perma-Fix Environmental estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Liquidia Technologies estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
   ]

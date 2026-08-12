@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Is Everyone Talking About Palantir Stock?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a saúde financeira da empresa, o que é relevante para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:26:42.580343-03:00"
-    },
-    {
-      "title": "Cisco Systems Q4 26 Earnings Conference Call At 4:30 PM ET",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A divulgação de resultados financeiros é relevante para os investidores e pode influenciar o preço das ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:26:45.650801-03:00"
-    },
-    {
-      "title": "Jenoptik Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa apresentou resultados financeiros positivos, o que pode ser visto como um sinal de saúde para a empresa e pode influenciar positivamente o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:26:57.281946-03:00"
-    },
-    {
-      "title": "My family of 4 took an expedition cruise in the Galápagos Islands. We travel often, but it was unlike anything we've experienced.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação com mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:27:00.878197-03:00"
-    },
-    {
-      "title": "Emerging Stocks Rise on Tech as Currency Traders Await US CPI",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque menciona resultados positivos de empresas de tecnologia e sua influência no mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:30:43.737397-03:00"
-    },
-    {
-      "title": "IEA Says Oil Markets Are Facing a Wider Shortfall",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "motivo": "A notícia indica um choque geopolítico que afeta a produção de petróleo e pode influenciar os preços do combustível.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:30:50.493974-03:00"
-    },
-    {
-      "title": "UK motor insurance switching falls to lowest level since 2018",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado financeiro pois afeta a indústria de seguros no Reino Unido.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:31:01.518459-03:00"
-    },
-    {
-      "title": "Automob amplia prejuízo ajustado para R$87,5 mi no 2º tri",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Prejuízo ajustado significativo do grupo Automob impacta negativamente o mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:36:22.090043-03:00"
-    },
-    {
-      "title": "Espaçolaser tem prejuízo ajustado de R$ 134 mil no 2º tri",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "prejuízo ajustado negativo impacta resultados financeiros da empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:36:24.832415-03:00"
-    },
-    {
-      "title": "Taesa tem lucro líquido regulatório de R$ 206,8 mi no 2º tri",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "lucro líquido regulatório positivo indica saúde financeira da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:36:27.588803-03:00"
-    },
-    {
-      "title": "Índia - Ações fecharam o pregão em queda e o Índice Nifty 50 recuou 0,15%",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "queda no Índice Nifty 50 e ações em queda",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:36:32.179815-03:00"
-    },
-    {
-      "title": "NVIDIA apresenta sistema de energia 800 VDC para data centers de IA",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "NVIDIA apresenta tecnologia inovadora para data centers de IA, o que pode impulsionar demanda por suas soluções",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:36:38.557087-03:00"
-    },
-    {
-      "title": "Por que as ações da Intuitive Surgical estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "aumento das ações da Intuitive Surgical é devido a uma notícia positiva sobre o desempenho da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:36:41.303261-03:00"
-    },
-    {
-      "title": "Por que as ações da Legend Biotech estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ação está caindo, o que geralmente é um sinal negativo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:36:44.159105-03:00"
-    },
-    {
-      "title": "Por que as ações da BETA Technologies estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a queda das ações da BETA Technologies é um sinal de desconfiança do mercado em relação à empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:36:46.909122-03:00"
-    },
-    {
       "title": "Por que as ações da Annexon estão caindo hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T20:15:53.501476-03:00"
+    },
+    {
+      "title": "QT Imaging outlines approximately $39M 2026 revenue outlook while planning 15 and 17 U.S. scanner shipments in Q3 and Q4",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois fornece informações sobre as perspectivas de receita da empresa e seus planos de entrega de scanners, o que pode influenciar a confiança dos investidores e o preço das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:20:59.840262-03:00"
+    },
+    {
+      "title": "Inovio targets Oct. 30, 2026 PDUFA as it extends cash runway into late Q1 2027",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa estendeu sua linha de crédito, o que indica que ela tem mais tempo para desenvolver seus produtos e aumentar suas chances de sucesso.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:21:02.981022-03:00"
+    },
+    {
+      "title": "Nvidia's Market Value Grew 24% Over the Past Year. Intel's Grew 474%.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:21:09.090973-03:00"
+    },
+    {
+      "title": "Sandisk (SNDK) Q4 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre resultados de uma empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:21:11.991733-03:00"
+    },
+    {
+      "title": "A Phillips 66 Director Trimmed a Trust Stake After an 81% Run. Here's What to Know",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:21:14.705369-03:00"
+    },
+    {
+      "title": "Excelerate Energy (EE) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:21:17.380035-03:00"
+    },
+    {
+      "title": "Genco Shipping (GNK) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:21:20.105580-03:00"
+    },
+    {
+      "title": "Schrödinger (SDGR) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:21:22.769737-03:00"
+    },
+    {
+      "title": "Everspin (MRAM) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:21:25.474051-03:00"
+    },
+    {
+      "title": "A “operação resgate” da Westwing (WEST3): CEO revela o plano para virar o jogo após tombo de 97% desde o IPO",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:21:31.908311-03:00"
+    },
+    {
+      "title": "Looking for Your Next Gig? This In-Demand Job Pays Up to $200,000 a Year: ‘Really Invaluable’",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:21:37.366912-03:00"
+    },
+    {
+      "title": "White House Ends TikTok Ban On Government Devices",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:21:40.806891-03:00"
+    },
+    {
+      "title": "New Orleans Becomes First Major U.S. City To Let AI Answer 911",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:21:43.531304-03:00"
+    },
+    {
+      "title": "Illegal Immigrant Pleads Guilty To Purchasing 91 Firearms",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:21:46.222520-03:00"
+    },
+    {
+      "title": "Robocalls Are Increasing In US As Report Lists Worst-Impacted Area Codes",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:21:48.935157-03:00"
     }
   ]
 }
