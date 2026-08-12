@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "If I Could Tell All Investors 1 Thing About the Stock Market Right Now, It's This",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T10:36:56.400551-03:00"
-    },
-    {
-      "title": "History Says Investors Who Make This 1 Move During Bear Markets Have Always Come Out Ahead",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T10:36:59.109978-03:00"
-    },
-    {
-      "title": "My family's been making 4-ingredient baguettes for years. I think everyone should know our easy recipe.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:37:02.279715-03:00"
-    },
-    {
-      "title": "Aluminum Extends Rally After Brazilian Plant Cuts Output to 50%",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Redução da produção de alumina pode agravar a escassez de alumínio no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T10:40:47.180360-03:00"
-    },
-    {
-      "title": "Quaest: Um em cada cinco eleitores decide voto para presidente só na última semana,",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política eleitoral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:40:51.524360-03:00"
-    },
-    {
-      "title": "Número de mortos no terremoto na Colômbia sobe para 224, dizem autoridades",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:40:54.337242-03:00"
-    },
-    {
-      "title": "Real Time Big Data: ACM Neto tem 44% e Jerônimo, 42%, no 1º turno",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:40:59.040490-03:00"
-    },
-    {
       "title": "Polen International Equity adds NOK, MUFG; exits AIVAF, RNMBF among Q2 moves",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T09:41:22.546429-03:00"
+    },
+    {
+      "title": "China Revives Free-Trade Zone Bond Market After Crackdown",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "Reabertura da zona de comércio livre de títulos de empréstimo após restrições significativas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:45:48.917581-03:00"
+    },
+    {
+      "title": "Estoques baixos de gás na Europa são preocupação real para o inverno",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Estoques baixos de gás podem afetar o preço e a disponibilidade de energia no inverno.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:45:52.513926-03:00"
+    },
+    {
+      "title": "Viral no TikTok, Anvisa proíbe 12 produtos de limpeza vendidos sem autorização",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:45:55.411700-03:00"
+    },
+    {
+      "title": "Day trade: Compre B3 (B3SA3) e venda Auren (AURE3) para ganhar até 1,47% hoje (12), segundo a Ágora",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:46:00.520961-03:00"
+    },
+    {
+      "title": "July inflation eased up, despite recent energy shocks",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:46:14.300598-03:00"
+    },
+    {
+      "title": "Daily Spotlight: Profit Margins Widening",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:46:16.889121-03:00"
+    },
+    {
+      "title": "Japanese self-driving startup Turing plans U.S. office, $10B IPO",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:46:19.491753-03:00"
     }
   ]
 }
