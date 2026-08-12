@@ -1,28 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 35602,
+  "total_ingeridas": 35850,
   "aprovadas_pelo_fluxo_atual": 649,
-  "descartadas_pelos_filtros_atuais": 34953,
+  "descartadas_pelos_filtros_atuais": 35201,
   "score_medio_materialidade": 3.95,
   "seriam_breaking": 24,
-  "iriam_para_rodada": 327,
-  "seriam_descartadas_pelo_novo_sistema": 1649,
-  "total_divergencias": 668,
+  "iriam_para_rodada": 328,
+  "seriam_descartadas_pelo_novo_sistema": 1648,
+  "total_divergencias": 669,
   "divergencias": [
-    {
-      "title": "Foxconn Q2 profit surges 35%, maintains strong growth outlook on AI demand",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "SpaceX's Fleecing of Retail Investors Worsens in 9 Days, With a 2nd Insider Share Unlock Event Triggering",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "If I Were in My 40s, I'd Buy This Vanguard ETF Warren Buffett Recommended and Hold It Forever",
       "source": "Nasdaq",
@@ -145,6 +131,20 @@
     {
       "title": "Inflation is expected to cool again in today's July CPI report",
       "source": "Business Insider",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "UK Regulators To Prepare Tokenized-Gold Framework: Report",
+      "source": "ZeroHedge",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Record-Low Rhine Levels Disrupt Raw Material Flows To Europe's Largest Steelmaking Plant",
+      "source": "ZeroHedge",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
