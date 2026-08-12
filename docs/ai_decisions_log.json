@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
-      "source": "Federal Reserve",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado pois trata de uma ação da Reserva Federal, mas não é um evento significativo imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:06:31.475543-03:00"
-    },
-    {
-      "title": "New York City Council announces probe into prediction market platforms’ marketing strategies",
-      "source": "CNBC - Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:11:44.864009-03:00"
-    },
-    {
-      "title": "AI computing power is becoming a tradable asset class as CME launches futures contracts",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque a CME está lançando contratos de futuros de processamento de computação artificial, o que pode afetar a demanda por tecnologia e a valorização de ativos relacionados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:11:47.815759-03:00"
-    },
-    {
-      "title": "Minidólar (WDOU26) hoje: inflação dos EUA pode elevar a volatilidade",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "inflação dos EUA pode afetar a volatilidade do minidólar",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:11:51.022963-03:00"
-    },
-    {
-      "title": "Mini-índice (WINQ26) hoje: CPI pode definir reação ou nova mínima",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A notícia se refere a uma análise técnica do mini-índice, sugerindo que a CPI pode ter um impacto significativo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:11:53.805404-03:00"
-    },
-    {
       "title": "CPI dos EUA e balanço do BB dominam as atenções do mercado; Ibovespa em dólar sobe hoje (12)",
       "source": "Money Times",
       "score": 6.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T19:36:34.260362-03:00"
+    },
+    {
+      "title": "Índice de Preços ao Produtor (IPP) é de -0,77% em junho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:40:48.077255-03:00"
+    },
+    {
+      "title": "Petróleo avança pelo 6º dia consecutivo com tensões no Oriente Médio e impasse sobre Ormuz",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "Impasse no Estreito de Ormuz aumenta tensões no Oriente Médio, impactando preços do petróleo",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:40:51.550969-03:00"
+    },
+    {
+      "title": "De ‘go local’ a ‘go global’. A AI está ampliando a ambição das startups",
+      "source": "Brazil Journal",
+      "score": 5.0,
+      "motivo": "A notícia destaca a expansão das startups latino-americanas, o que pode impulsionar a economia regional e atrair investimentos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:40:55.128897-03:00"
+    },
+    {
+      "title": "Time For Fun tem prejuízo de R$ 14,6 milhões no segundo trimestre",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "prejuízo líquido significativo do Time For Fun pode afetar confiança dos investidores no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T19:41:02.712066-03:00"
+    },
+    {
+      "title": "Azzas 2154 lucra R$ 106,5 milhões no segundo trimestre, queda de 62,5%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T19:41:05.457366-03:00"
     }
   ]
 }
