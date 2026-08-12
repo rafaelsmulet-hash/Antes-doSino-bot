@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Boyd Group Services Inc. Reports Decline In Q2 Income",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "motivo": "A notícia é relevante pois afeta diretamente os lucros da empresa, o que pode influenciar a decisão de investir no mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:26:33.679924-03:00"
-    },
-    {
-      "title": "Maple Leaf Foods Inc. Bottom Line Declines In Q2",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A declaração de lucro negativo é relevante para o mercado, mas não é um evento inesperado ou extremo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:26:36.691454-03:00"
-    },
-    {
-      "title": "Prediction: Solana Will Replace Ethereum as the No. 1 Altcoin by 2030",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A previsão de substituição do Ethereum pelo Solana é relevante para o mercado de criptomoedas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:26:39.619105-03:00"
-    },
-    {
       "title": "Why Is Everyone Talking About Palantir Stock?",
       "source": "Nasdaq",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T20:11:31.058039-03:00"
+    },
+    {
+      "title": "Hapvida (HAPV3): lucro cai 96% no 2º tri, para R$ 12,5 mi; sinistralidade aumenta",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia apresenta uma variação significativa no lucro da Hapvida, mas também destaca um crescimento na receita líquida, o que pode ser considerado relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:15:45.375365-03:00"
+    },
+    {
+      "title": "Senado aprova texto-base do projeto que reduz tributos sobre combustíveis",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Redução de tributos pode impulsionar demanda e, consequentemente, valor das ações de empresas afetadas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:15:50.178713-03:00"
+    },
+    {
+      "title": "Ascend Wellness expects 2% to 4% Q3 top line growth while targeting 60+ stores by year-end",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:15:53.501476-03:00"
     }
   ]
 }

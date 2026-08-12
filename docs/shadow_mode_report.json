@@ -1,21 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 39272,
-  "aprovadas_pelo_fluxo_atual": 685,
-  "descartadas_pelos_filtros_atuais": 38587,
+  "total_ingeridas": 39520,
+  "aprovadas_pelo_fluxo_atual": 686,
+  "descartadas_pelos_filtros_atuais": 38834,
   "score_medio_materialidade": 4.01,
   "seriam_breaking": 26,
-  "iriam_para_rodada": 298,
-  "seriam_descartadas_pelo_novo_sistema": 1676,
+  "iriam_para_rodada": 297,
+  "seriam_descartadas_pelo_novo_sistema": 1677,
   "total_divergencias": 667,
   "divergencias": [
-    {
-      "title": "Maple Leaf Foods Inc. Bottom Line Declines In Q2",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Cisco Systems Q4 26 Earnings Conference Call At 4:30 PM ET",
       "source": "Nasdaq",
@@ -147,6 +140,13 @@
       "source": "Seeking Alpha",
       "score": 5.0,
       "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Bank of America anuncia plano bilionário para modernizar infraestrutura dos EUA",
+      "source": "UOL Economia",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado"
     }
   ]
