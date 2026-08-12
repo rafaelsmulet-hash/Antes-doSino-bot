@@ -1,63 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 37824,
-  "aprovadas_pelo_fluxo_atual": 674,
-  "descartadas_pelos_filtros_atuais": 37150,
-  "score_medio_materialidade": 4.01,
+  "total_ingeridas": 38072,
+  "aprovadas_pelo_fluxo_atual": 680,
+  "descartadas_pelos_filtros_atuais": 37392,
+  "score_medio_materialidade": 4.0,
   "seriam_breaking": 26,
-  "iriam_para_rodada": 315,
-  "seriam_descartadas_pelo_novo_sistema": 1659,
+  "iriam_para_rodada": 309,
+  "seriam_descartadas_pelo_novo_sistema": 1665,
   "total_divergencias": 669,
   "divergencias": [
-    {
-      "title": "Por que as ações da CoreWeave estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Tencent Music estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Ações chinesas registram ligeira alta, impulsionadas pelo setor de tecnologia",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Berenberg rebaixa Novo Nordisk com dominância da Lilly limitando ganhos",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Conheça a fabricante de 60 anos no interior de SP que vai faturar R$ 1 bilhão com fitas adesivas",
-      "source": "Exame",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Bússola & Cia: querosene sobe quase 50% e desafia mercado B2B",
-      "source": "Exame",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "O dilema da Amil enquanto Bain e Advent avançam pela operadora",
-      "source": "Exame",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Allot beats top-line and bottom-line estimates; raises FY2026 outlook",
       "source": "Seeking Alpha",
@@ -145,6 +96,55 @@
     {
       "title": "Norway $2.3 Trillion Fund Posts Best Quarter Since 2020",
       "source": "Bloomberg Markets",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Milho e soja recuam na bolsa de Chicago com ajustes de posições antes do relatório do USDA",
+      "source": "Money Times",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Titan Mining beats top-line estimates; reaffirms FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Boyd Group Services Non-GAAP EPS of $0.80 misses by $0.10, revenue of $1.01B misses by $10M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "National Vision Holdings beats top-line and bottom-line estimates; updates FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Maple Leaf Foods Inc. Bottom Line Declines In Q2",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Cisco Systems Q4 26 Earnings Conference Call At 4:30 PM ET",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Jenoptik Q2 Earnings Call Highlights",
+      "source": "Yahoo Finance",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
