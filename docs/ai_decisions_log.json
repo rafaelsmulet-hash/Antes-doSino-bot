@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cisco Systems Is In a Trading Range Ahead of Earnings - Shorting OTM Puts and Calls Works",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:41:40.083212-03:00"
-    },
-    {
-      "title": "Vistra Corp (VST) Stock’s Underperformance Could Open Up a Contrarian Options Trade",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:41:42.797335-03:00"
-    },
-    {
-      "title": "Direcional (DIRR3) fecha 2º tri com alta de 9,7% no lucro, para R$ 202 milhões",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Aumento de lucro e abertura de programa de recompra de ações são sinais positivos para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:45:46.614144-03:00"
-    },
-    {
-      "title": "Peyto Exploration reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Resultados financeiros rotineiros de uma empresa de exploração de petróleo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:45:53.585302-03:00"
-    },
-    {
-      "title": "Pason Systems GAAP EPS of C$0.18, revenue of C$100.72M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os investidores da Pason Systems, mas não tem impacto significativo no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:45:56.684191-03:00"
-    },
-    {
-      "title": "Cury tem lucro da atividade de R$ 311,2 milhões no 2º tri, alta de 16,5%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:46:04.805225-03:00"
-    },
-    {
-      "title": "Deep Dive Into The US' Critical Minerals Investment",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "O investimento direto do governo nos minerais críticos pode ter um impacto significativo no mercado e impulsionar o crescimento de empresas nesse setor.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:50:47.464407-03:00"
-    },
-    {
-      "title": "Super Micro’s earnings report brings more good news, and the stock is climbing",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A ação da Super Micro está subindo devido a um prognóstico de lucro melhor do que o esperado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:50:53.730653-03:00"
-    },
-    {
-      "title": "Gold Springs Resource Corp. reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:50:56.578802-03:00"
-    },
-    {
-      "title": "Cardinal Infrastructure forecasts $880M-$900M 2026 revenue while updating adjusted EBITDA margin outlook to 16%-18%",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:50:59.375215-03:00"
-    },
-    {
       "title": "Gold adds to two-month highs as markets await U.S. inflation data",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T17:16:28.583128-03:00"
+    },
+    {
+      "title": "Wall Street fecha em tom misto com inflação em linha com o esperado e ações de IA",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "aumento das ações ligadas à inteligência artificial",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T17:20:57.131431-03:00"
+    },
+    {
+      "title": "45 novos bilionários em um ano: como a inteligência artificial criou uma nova elite bilionária",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, mas sobre a formacao de uma nova elite bilionaria",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:21:00.463034-03:00"
+    },
+    {
+      "title": "Comscore GAAP EPS of -$0.97, revenue of $79.25M misses by $4.02M",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre a saúde financeira da Comscore.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:21:03.724418-03:00"
+    },
+    {
+      "title": "Virgin Galactic falls after pushing its expected flight timeline to February of 2027",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:21:06.398849-03:00"
+    },
+    {
+      "title": "Atara Biotherapeutics GAAP EPS of -$0.32 misses by $0.06, revenue of $0.63M beats by $0.26M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:21:09.076044-03:00"
+    },
+    {
+      "title": "Atea Pharmaceuticals GAAP EPS of -$0.41 beats by $0.15",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:21:11.724564-03:00"
+    },
+    {
+      "title": "NANO Nuclear Energy GAAP EPS of -$0.19 beats by $0.08, revenue of $0.21M misses by $0.18M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:21:14.404998-03:00"
+    },
+    {
+      "title": "Kura Oncology GAAP EPS of -$0.77 beats by $0.12, revenue of $11.8M misses by $8.38M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:21:17.068167-03:00"
+    },
+    {
+      "title": "Spruce Power Holding GAAP EPS of $0.14, revenue of $30.35M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:21:19.709484-03:00"
+    },
+    {
+      "title": "Simon poised to rake in millions more in rent thanks to Saks Global closures",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:21:28.343441-03:00"
     }
   ]
 }
