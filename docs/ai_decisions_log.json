@@ -1,204 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Booking vs. Celsius: Which Consumer Stock Is a Better Buy in 2026?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:02:02.131856-03:00"
-    },
-    {
-      "title": "Polymarket makes moves to get house in order before expected boom times for prediction markets this fall",
-      "source": "CNBC - Finance",
-      "score": 4.0,
-      "motivo": "A notícia é relevante porque envolve uma investigação regulatória, mas não é um evento de mercado significativo em si",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:05:45.755837-03:00"
-    },
-    {
-      "title": "Em junho, indústria recua em 12 dos 15 locais pesquisados",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:05:50.821066-03:00"
-    },
-    {
-      "title": "Wall Street opera sem direção única com alívio nos preços do petróleo",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "noticia sobre mercado financeiro, mas sem impacto direto claro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:05:54.467805-03:00"
-    },
-    {
-      "title": "Bolsas da Europa operam sem força com alta do petróleo e impasse sobre Ormuz",
-      "source": "Money Times",
-      "score": 3.0,
-      "motivo": "alta do petróleo e impasse sobre Ormuz afetam negativamente as bolsas europeias",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:05:57.349630-03:00"
-    },
-    {
-      "title": "Existing home sales fall less than expected in July",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:06:02.180376-03:00"
-    },
-    {
-      "title": "UMH Properties gains after active Erez pushes for sale",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:06:04.875405-03:00"
-    },
-    {
-      "title": "Rackspace edges up following Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:06:07.606427-03:00"
-    },
-    {
-      "title": "Nvidia launches open model Nemotron 3.5 Lightning; working on bigger Nemotron 4: report",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:06:10.327558-03:00"
-    },
-    {
-      "title": "Morgan Stanley unit acquires property in Kansas City for $158.5M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:06:13.032605-03:00"
-    },
-    {
-      "title": "Here are the major earnings after the close Tuesday",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:06:15.734723-03:00"
-    },
-    {
-      "title": "Altius Minerals Corporation raises quarterly dividend by 10% to  CAD 0.11/share",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:06:18.446239-03:00"
-    },
-    {
-      "title": "Uma Copa que o Brasil pode ganhar: o preparo de Allan Beckmann para a World Sushi Cup no Japão",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:06:27.840102-03:00"
-    },
-    {
-      "title": "Receita do XPML11 supera R$ 66 milhões em junho; confira os números",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:06:31.551926-03:00"
-    },
-    {
-      "title": "Intel segue a fila dos grandes investimentos em IA e levanta US$ 20 bi em ações para brigar com TSMC",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:06:35.507080-03:00"
-    },
-    {
-      "title": "Chobani Cuts Annual Earnings Forecast on Rising Material Costs",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois afeta diretamente a previsão de lucros da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:10:47.901641-03:00"
-    },
-    {
-      "title": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A empresa suspendeu dividendos e aumentou capital, o que pode afetar negativamente a confiança dos investidores e o valor da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:10:51.015420-03:00"
-    },
-    {
-      "title": "SP intensifica vacinação contra sarampo com ação em supermercados e padarias",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:10:55.174079-03:00"
-    },
-    {
-      "title": "Dólar hoje ronda estabilidade após ata do Copom e IPCA de julho",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:10:57.792168-03:00"
-    },
-    {
-      "title": "BTG (BPAC11): Analistas veem novo motor — e um risco no radar; ação cai",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:11:01.820290-03:00"
-    },
-    {
-      "title": "Nova marca, nova loja: a Sara Joias se prepara para comemorar os 50 anos",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:11:06.124235-03:00"
-    },
-    {
-      "title": "Sobrou dinheiro do 5G e o recurso pode virar um data center para a Telebras",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:11:08.744063-03:00"
-    },
-    {
       "title": "Alphabet Invested $900 Million Into SpaceX Back in 2015 -- Here's What That Stake Is Worth Now",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17801,204 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T10:06:09.371288-03:00"
+    },
+    {
+      "title": "New York City’s Five Pensions Gain 13% on Surging US Stocks",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "O retorno positivo das pensões pode influenciar a confiança dos investidores no mercado de ações estadunidense.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:10:52.993899-03:00"
+    },
+    {
+      "title": "Piper inicia cobertura da Mercury Systems com rating acima da média",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A cobertura positiva da Mercury Systems pelo Piper pode impulsionar a ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:10:58.338047-03:00"
+    },
+    {
+      "title": "Ações da Neurocrine Biosciences caem por preocupações com segurança do Vykat",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "preocupações com segurança do Vykat podem afetar negativamente a ação da Neurocrine Biosciences",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:01.260863-03:00"
+    },
+    {
+      "title": "Okta é promovida com oportunidade de segurança em IA impulsionando perspectivas",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:03.916014-03:00"
+    },
+    {
+      "title": "UBS rebaixa DiaSorin com concorrência da Roche pressionando perspectivas",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:06.566574-03:00"
+    },
+    {
+      "title": "Melhores FIIs dos EUA: Mizuho revela novas escolhas após atualização de agosto",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:09.215037-03:00"
+    },
+    {
+      "title": "Por que as ações da SimilarWeb estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:11.850850-03:00"
+    },
+    {
+      "title": "Arábia Saudita - Ações fecharam o pregão em alta e o Índice Tadawul All Share avançou 0,10%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:14.514529-03:00"
+    },
+    {
+      "title": "Ancora oferece até US$ 1,2 bi pela unidade de adesivos da H.B. Fuller",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:17.154725-03:00"
+    },
+    {
+      "title": "Brasil perde 14% de vegetação nativa em 40 anos e fica mais exposto ao El Niño",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:21.590128-03:00"
+    },
+    {
+      "title": "Quando volta a Copa do Brasil? Veja o calendário de jogos das quartas de final",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:24.236074-03:00"
+    },
+    {
+      "title": "Eli Lilly is suing pharmacies and peptide vendors over premature sales of the next big weight-loss drug: retatrutide",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:27.195655-03:00"
+    },
+    {
+      "title": "Nebius adds to the excitement around neocloud stocks with upbeat earnings of its own",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:11:29.849966-03:00"
+    },
+    {
+      "title": "Spruce Biosciences GAAP EPS of -$6.68",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:32.549915-03:00"
+    },
+    {
+      "title": "ENvue Medical secures up to $50M equity facility to fund growth plans",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:35.193960-03:00"
+    },
+    {
+      "title": "Amcor declares $0.65 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:37.817100-03:00"
+    },
+    {
+      "title": "Bending Spoons might not have enough to fund ambitious M&A model -- BofA Securities",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:40.465318-03:00"
+    },
+    {
+      "title": "These 4 Dividend Stocks Yield 8%. Only Roth Owners Keep All of It",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:11:52.749420-03:00"
+    },
+    {
+      "title": "What is a covered call? How this options income strategy works.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:55.388606-03:00"
+    },
+    {
+      "title": "CoreWeave stock soars 20% after earnings and 'an important inflection point'",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:11:58.036880-03:00"
+    },
+    {
+      "title": "Could SpaceX Realistically Hit $1 Trillion in Revenue by 2030?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:12:00.677273-03:00"
+    },
+    {
+      "title": "Cava Stock Leaps As Growth Returns; Chili's Parent Brinker Misses But Outlook Crispy",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:12:03.335306-03:00"
     }
   ]
 }
