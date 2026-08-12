@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Putin Pardons Ailing Former US Marine After Years In Russian Prison",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:51:37.175718-03:00"
-    },
-    {
-      "title": "Processo contra Erika Hilton avança por 10 votos a 5 no Conselho de Ética da Câmara",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia sobre processo contra deputada e não tem relevância direta para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:55:52.842350-03:00"
-    },
-    {
-      "title": "Copa do Brasil: qual o valor milionário do prêmio ao campeão?",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira relevante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:55:58.259069-03:00"
-    },
-    {
-      "title": "Genuine Parts declares $1.062 dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Declaração de dividendos é um sinal positivo para os investidores e pode impulsionar o preço da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:56:01.435544-03:00"
-    },
-    {
-      "title": "Hour Loop GAAP EPS of $0.03, revenue of $33.94M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:56:04.095843-03:00"
-    },
-    {
-      "title": "ADC.PRA Agree Realty Corp. - 4.25% PRF PERPETUAL USD 25 - Ser A 1/1000th declares $0.0885 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:56:06.830857-03:00"
-    },
-    {
-      "title": "High Roller Technologies GAAP EPS of -$0.22, revenue of $2.81M misses by $0.19M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:56:09.538213-03:00"
-    },
-    {
-      "title": "Agree Realty declares $0.267 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:56:12.183848-03:00"
-    },
-    {
-      "title": "Mobile Infrastructure GAAP EPS of -$0.08 beats by $0.01, revenue of $8.9M beats by $0.11M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:56:14.902166-03:00"
-    },
-    {
-      "title": "Dermata Therapeutics GAAP EPS of -$0.74 misses by $0.19",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:56:17.582048-03:00"
-    },
-    {
-      "title": "PagBank lucra R$ 576 milhões no 2º trimestre e amplia crédito em 31%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:56:24.174216-03:00"
-    },
-    {
-      "title": "Jeff Dean's hour-by-hour breakdown of his Google exit: an 'emotional' video chat, Yoga at 7, and 'unemployed' at 11:59",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T17:56:31.339241-03:00"
-    },
-    {
-      "title": "Bolsas de NY fecham em queda com impasse no Oriente Médio e cautela pré-CPI",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "queda nas bolsas de NY devido a impasse no Oriente Médio e cautela pré-CPI",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:01:12.102255-03:00"
-    },
-    {
       "title": "Violência contra a mulher cresce 28,9% em dias de jogos de futebol, aponta estudo",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T16:20:56.186812-03:00"
+    },
+    {
+      "title": "Americans Have Never Paid This Much for Fuel So Late in The Year",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A alta dos preços de combustível pode influenciar a demanda por combustíveis e, consequentemente, o mercado de ações de empresas do setor",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:25:45.629929-03:00"
+    },
+    {
+      "title": "Haddad relata abordagem ostensiva a motorista e cobra explicações do governo paulista",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:25:49.278576-03:00"
+    },
+    {
+      "title": "Ações da Netlist disparam após queixa contra a Micron na ITC",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "queixa contra a Micron pode afetar negativamente a empresa e o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:25:53.915225-03:00"
+    },
+    {
+      "title": "Ações da Veritone sobem com parceria de detecção de ameaças com ZeroEyes",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:25:56.631715-03:00"
+    },
+    {
+      "title": "Davis Polk processa Enel North America por US$ 3,3 mi em honorários não pagos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:25:59.353363-03:00"
+    },
+    {
+      "title": "Ações da Aehr Test disparam com pedido de US$ 22 mi em sistemas de IA",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:26:02.067269-03:00"
+    },
+    {
+      "title": "Los Angeles Lakers é vendido por valor recorde de US$12,5 bilhões",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:26:04.770475-03:00"
+    },
+    {
+      "title": "Carro por assinatura da Localiza passa a oferecer localização em tempo real e alerta de ignição",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:26:08.192399-03:00"
+    },
+    {
+      "title": "Sound Point Meridian signals $0.13 monthly distribution and 6-month fee waiver through December 2026",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:26:11.467233-03:00"
+    },
+    {
+      "title": "Fiagro RZTR11 recebe R$ 48,8 milhões antecipados de operação que iria até 2032",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:26:21.728831-03:00"
+    },
+    {
+      "title": "ARTIGO: Quando o agente de IA se veste de Chrome para entrar na Amazon",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:26:25.476141-03:00"
+    },
+    {
+      "title": "Drugs that missed the mark in pharma’s last earnings round",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:26:28.347064-03:00"
+    },
+    {
+      "title": "‘My primary concern is inflation’: Fed’s Schmid pushes rates higher as mortgages hit 6.69%. Make high rates work for you",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:26:31.119413-03:00"
     }
   ]
 }
