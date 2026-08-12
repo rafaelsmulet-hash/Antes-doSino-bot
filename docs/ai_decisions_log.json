@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Gigante de R$ 8 bilhões, Stefanini cria marca para vender tecnologia a fábricas",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A criação de uma nova marca pode indicar expansão e crescimento da empresa, o que é positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:05:39.838428-03:00"
-    },
-    {
-      "title": "CoreWeave surges after raising FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Aumento da previsão para o ano fiscal de 2026 é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:05:43.011862-03:00"
-    },
-    {
-      "title": "AM Markets Need to Know: Gemini hits 1B users, chip rally, and more",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:05:45.592815-03:00"
-    },
-    {
-      "title": "Tencent reports Q2  results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:05:48.162386-03:00"
-    },
-    {
-      "title": "German DAX Hits Record Despite July CPI Jump To 2.8%",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque mostra que as ações alemãs estão subindo apesar de uma inflação acelerada, o que pode ser um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:05:52.417547-03:00"
-    },
-    {
-      "title": "Better AI Infrastructure Stock: Vertiv vs. Eaton",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:05:55.027806-03:00"
-    },
-    {
-      "title": "Visa and Mastercard Have Both Reported. Which Payments Giant Is the Best Buy Now?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento de 14% na receita anualizada é um indicador positivo para as ações das empresas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:05:57.881056-03:00"
-    },
-    {
       "title": "Álcool, cigarro e home office: caso de juiz afastado expõe limites da postura no trabalho remoto",
       "source": "G1 Economia",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T19:26:06.013026-03:00"
+    },
+    {
+      "title": "Rede D’Or (RDOR3) tem alta de 8,5% no lucro líquido ajustado no 2T, para R$ 1,3 bi",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Aumento no lucro líquido ajustado é um sinal positivo para a empresa e pode influenciar os preços das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:30:50.954429-03:00"
+    },
+    {
+      "title": "H.B. Fuller confirms $1.1B-$1.2B proposal for building adhesives unit",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A confirmação da proposta sugere uma expansão da empresa e, portanto, é relevante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:30:58.815983-03:00"
+    },
+    {
+      "title": "Suzano lucra R$ 1,81 bilhão no segundo trimestre, queda de 64%",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "queda de 64% no lucro da Suzano",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T19:31:08.423501-03:00"
+    },
+    {
+      "title": "Some Claude users are mad that Anthropic’s new watermarks will catch them cheating at their jobs, classes",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:31:15.138975-03:00"
+    },
+    {
+      "title": "Nvidia vs. Apple: The Battle for Tech’s Most Valuable Crown",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:31:18.074023-03:00"
+    },
+    {
+      "title": "Dollar Posts Modest Gains as Crude Oil Fluctuates",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:31:20.789020-03:00"
+    },
+    {
+      "title": "Google falsely said Sam Altman was dead — and suggested vandalized public sources could be to blame",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T19:31:23.909222-03:00"
     }
   ]
 }
