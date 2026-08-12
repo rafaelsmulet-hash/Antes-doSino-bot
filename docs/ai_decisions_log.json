@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Limbach Holdings (LMB) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma transcrição de conferência telefônica de resultados financeiros.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:11:05.512074-03:00"
-    },
-    {
-      "title": "ACCESS Newswire (ACCS) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia é sobre a transcrição de uma conferência de resultados, que não é um evento atual ou relevante para o mercado agora.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:11:08.417358-03:00"
-    },
-    {
-      "title": "Latham Group (SWIM) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T22:11:11.109821-03:00"
-    },
-    {
-      "title": "Nvidia investing up to $3 billion in Lancium for Stargate",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:11:20.404740-03:00"
-    },
-    {
-      "title": "Por que as ações da Fleetpartners estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "aumento de valor das ações da Fleetpartners é um evento relevante e com impacto concreto no mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:15:42.438621-03:00"
-    },
-    {
-      "title": "Ações da Suncorp disparam após resultados anuais acima do esperado",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Resultados anuais acima do esperado indicam saúde financeira da empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:15:45.351981-03:00"
-    },
-    {
-      "title": "Por que as ações da Rakuten estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ações caindo indica baixa confiança dos investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:15:48.122358-03:00"
-    },
-    {
-      "title": "Solid Power (SLDP) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T22:15:54.131616-03:00"
-    },
-    {
-      "title": "Ascent Industries (ACNT) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T22:15:56.795131-03:00"
-    },
-    {
-      "title": "Situational Awareness bets $400M on chip startup Source Foundry",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:16:03.373658-03:00"
-    },
-    {
-      "title": "Legend Biotech (LEGN) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A noticia é sobre uma chamada de earnings de uma empresa de biotecnologia, que não é relevante para o mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:20:41.289054-03:00"
-    },
-    {
-      "title": "Boeing sells Wisk, Insitu, SkyGrid to Archer Aviation for equity stake",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A venda é relevante porque pode afetar a estratégia de investimento da Boeing e a competitividade no mercado de tecnologia aeronáutica.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:20:48.723819-03:00"
-    },
-    {
-      "title": "Tata Sons Chairman N Chandrasekaran Resigns Ahead of AGM Next Week",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque afeta a liderança da empresa, mas não há informações sobre impactos financeiros imediatos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:51:16.860353-03:00"
-    },
-    {
-      "title": "Most Electricity Sought for AI Data Centers in US Will Never Materialize",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A redução da demanda por energia pode afetar negativamente os preços e a rentabilidade das empresas de energia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:51:19.840770-03:00"
-    },
-    {
-      "title": "UAE Shuttles Iraqi Oil Exports Through the Strait of Hormuz",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia indica um acordo entre Emirados Árabes Unidos e Iraque para transportar petróleo iraquiano, o que pode afetar os preços do petróleo no mercado internacional.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:51:22.808468-03:00"
-    },
-    {
       "title": "Why Romantasy May Soon Be a Billion-Dollar Business",
       "source": "Bloomberg Markets",
       "score": 0.0,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T18:36:18.218609-03:00"
+    },
+    {
+      "title": "Singer Vehicle Founder on Louis Vuitton Partnership",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:40:38.882667-03:00"
+    },
+    {
+      "title": "Banco do Brasil (BBAS3) pagará R$ 584,9 milhões em JCP complementar do 2º trimestre",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Pagamento de juros sobre capital próprio é considerado positivo para a ação do Banco do Brasil",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:40:42.713791-03:00"
+    },
+    {
+      "title": "Companhia Energética de Minas Gerais - CEMIG Q2 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:40:47.409742-03:00"
+    },
+    {
+      "title": "York Space Systems, Inc. Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de ações, pois fornece informações sobre a performance financeira da empresa, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:40:50.432924-03:00"
+    },
+    {
+      "title": "FibroGen Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:40:53.095409-03:00"
+    },
+    {
+      "title": "Cineverse Q1 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:40:55.749648-03:00"
+    },
+    {
+      "title": "Amplitech Group Q2 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:40:58.415785-03:00"
+    },
+    {
+      "title": "VirTra Q2 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:41:01.062933-03:00"
+    },
+    {
+      "title": "Glass House Brands Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:41:03.771544-03:00"
+    },
+    {
+      "title": "Banco do Brasil lucra R$ 3,9 bilhões no segundo trimestre, alta de 3,3%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:41:12.103989-03:00"
+    },
+    {
+      "title": "Banco do Brasil (BBAS3) dá trégua e surpreende no 2T26: lucro chega a R$ 3,9 bilhões e ROE sobe a 8,3%",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:41:15.072424-03:00"
+    },
+    {
+      "title": "Forex Market Forecast – Euro, Pound, and Yen Test Support as US Yields Drift",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:41:19.467765-03:00"
+    },
+    {
+      "title": "Why Vertiv Holdings Plunged in July",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:41:22.208669-03:00"
+    },
+    {
+      "title": "The Crown Keeps Switching Hands: Apple Inc. (AAPL) vs NVIDIA Corporation (NVDA)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:41:24.940827-03:00"
+    },
+    {
+      "title": "TikTok Shop is driving more online sales in the US than Target and other major retailers",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:41:27.909392-03:00"
     }
   ]
 }
