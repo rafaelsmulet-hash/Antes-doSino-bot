@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Upwork Stock Is Plummeting Today",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:11:29.259185-03:00"
-    },
-    {
-      "title": "Robert Downey Jr. ganha US$ 100 mi em novo filme dos 'Vingadores', mais que o dobro de Chris Evans",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:15:50.003521-03:00"
-    },
-    {
-      "title": "Broadwind outlines path to '$75-ish million' Industrial Solutions run rate while completing wind exit in Q3",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque apresenta um objetivo de faturamento específico para o negócio de Industrial Solutions da Broadwind.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:15:53.312288-03:00"
-    },
-    {
-      "title": "Sam Altman Owns 12.2 Million Shares of Reddit Worth Over $1 Billion, Even Though He Holds Zero Equity in OpenAI. Here's Why That Stake Matters for Investors.",
-      "source": "Nasdaq",
-      "score": 8.0,
-      "motivo": "A participação de Sam Altman na Reddit pode ter impacto significativo no mercado de tecnologia e inteligência artificial.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T14:16:02.362892-03:00"
-    },
-    {
-      "title": "Central Bancompany (CBC) Q2 2026 Earnings Call",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T14:16:05.032303-03:00"
-    },
-    {
-      "title": "Reservoir Media (RSVR) Q1 2027 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T14:16:07.700291-03:00"
-    },
-    {
       "title": "Sequans (SQNS) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T12:41:48.773672-03:00"
+    },
+    {
+      "title": "Trump é processado por plano de vender acesso mais rápido a posts no Truth Social",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:45:37.274389-03:00"
+    },
+    {
+      "title": "O influenciador que recusou um contrato de R$ 10 milhões: 'Digo muitos nãos às marcas'",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia é sobre um influenciador e não tem relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:45:42.106233-03:00"
+    },
+    {
+      "title": "Neurocrine slips as safety issues linked to Vykat XR resurface (update)",
+      "source": "Seeking Alpha",
+      "score": 8.0,
+      "motivo": "A notícia afeta diretamente a empresa e pode ter impacto significativo no mercado de ações.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:45:45.516325-03:00"
+    },
+    {
+      "title": "National Vision loses higher-paying self-pay customers; revenue falls short of estimates",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:45:48.197436-03:00"
+    },
+    {
+      "title": "How a $250 million acquisition collapsed into allegations of fraud and forged signatures",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:45:57.319304-03:00"
+    },
+    {
+      "title": "I'm an interior designer who works with wealthy, high-profile clients. I rarely see these 7 things in their homes.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:46:00.203193-03:00"
     }
   ]
 }
