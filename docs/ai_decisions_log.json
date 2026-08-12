@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stocks Mixed as Higher Crude Prices Boost T-Note Yields",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento dos juros dos T-Notas pode influenciar as taxas de juros futuras.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:26:11.753988-03:00"
-    },
-    {
-      "title": "Bitmine Buys Another 7,391 Ethereum And Increases Staked Position",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:26:14.433061-03:00"
-    },
-    {
-      "title": "Vitru, Banco BV, Aeris, Blau e mais: veja mais resultados do 2º tri de 2026",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre resultados de empresas, mas sem detalhes específicos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:30:48.827076-03:00"
-    },
-    {
-      "title": "Seer reaffirms $16M-$18M 2026 revenue guidance while highlighting patents, AI-driven proteomics and buybacks",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa reafirma sua orientação de receita, o que pode indicar confiança em seu desempenho futuro e potencialmente impulsionar a ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:35:46.062685-03:00"
-    },
-    {
-      "title": "Why OppFi Stock Swooned by Almost 25% Today",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A queda na lucratividade ajustada afeta negativamente a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:35:51.415030-03:00"
-    },
-    {
-      "title": "MIAX's Tech Chief Cashed In Shares. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "Venda de ações de um executivo não é um evento significativo para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:35:54.621766-03:00"
-    },
-    {
-      "title": "TRXF11 vende imóveis locados ao Grupo Pão de Açúcar por R$ 109,2 mi",
-      "source": "Suno Noticias",
-      "score": 3.0,
-      "motivo": "venda de imóveis locados não é um evento inesperado, mas é relevante para o mercado imobiliário",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:36:00.722235-03:00"
-    },
-    {
-      "title": "The Biggest AI Power Opportunity May Be Hiding in Constellation Energy",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:36:04.503639-03:00"
-    },
-    {
-      "title": "‘Massive Upgrade Cycle’ Coming – Ignore Memory Costs Panic and Buy Apple (AAPL)?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:36:07.223495-03:00"
-    },
-    {
-      "title": "Record Backlog Powers NRC Health’s (NRC) Upward Potential",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:36:09.908149-03:00"
-    },
-    {
-      "title": "Crude Prices Soar as Middle East Tensions Curb Global Oil Supplies",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:36:12.618450-03:00"
-    },
-    {
-      "title": "SINTX expects $900K-$1.1M Q3 revenue and $1.0M-$1.3M Q4 as it executes $3.2M+ purchase orders",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa está executando pedidos de compra significativos, o que pode impulsionar a receita nos próximos trimestres.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:40:41.522108-03:00"
-    },
-    {
-      "title": "Intel segue a fila dos grandes investimentos em IA e levanta US$ 20 bi em ações para brigar com TSMC",
-      "source": "Neofeed",
-      "score": 8.0,
-      "motivo": "Levantamento de US$ 20 bilhões para investimentos em IA é um sinal de confiança na expansão da empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T20:40:53.648159-03:00"
-    },
-    {
       "title": "China Earnings to Test Rotation From AI to Internet Stocks",
       "source": "Bloomberg Markets",
       "score": 5.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T17:58:26.272061-03:00"
+    },
+    {
+      "title": "Gold Rallies as Tame US Inflation Report Calms Rate Hike Fears",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta as expectativas de aumento de juros, que influenciam o preço do ouro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:00:47.681957-03:00"
+    },
+    {
+      "title": "Ameaça de míssil portátil fez Serviço Secreto esconder Trump em jato na Turquia",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:00:51.665256-03:00"
+    },
+    {
+      "title": "New Order anuncia show extra em São Paulo após ingressos esgotados; veja como comprar",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:00:57.575860-03:00"
+    },
+    {
+      "title": "Rich Americans are propping up the travel economy as airfares soar 25% higher than last year",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:01:00.724394-03:00"
+    },
+    {
+      "title": "Investors are chasing the latest rally in gold as the yellow metal hits strongest level in 2 months",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:01:03.528520-03:00"
+    },
+    {
+      "title": "Park Dental Partners, Inc. Non-GAAP EPS of $0.66 beats by $0.33, revenue of $66.2M beats by $1.84M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:01:06.418383-03:00"
+    },
+    {
+      "title": "Gaxos.ai GAAP EPS of $0.02 beats by $0.17, revenue of $2.46M beats by $0.71M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:01:09.220698-03:00"
+    },
+    {
+      "title": "Logistic Properties of the Americas GAAP EPS of $0.40 beats by $0.36, revenue of $14.74M beats by $0.6M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:01:12.034105-03:00"
+    },
+    {
+      "title": "Carpenter Technology authorizes additional $1B share buyback",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:01:14.755976-03:00"
+    },
+    {
+      "title": "Pfizer CEO Bourla buys ~$1M worth of company shares",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:01:17.538099-03:00"
+    },
+    {
+      "title": "QT Imaging Holdings GAAP EPS of -$0.75 misses by $0.53, revenue of $7.4M misses by $0.2M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:01:20.325061-03:00"
+    },
+    {
+      "title": "Serviços no Brasil, inflação nos EUA e balanço do BB em destaque hoje",
+      "source": "UOL Economia",
+      "score": 3.0,
+      "motivo": "noticia lista varios temas, mas nao especifica nenhum em profundidade",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:01:28.088454-03:00"
+    },
+    {
+      "title": "SEC Establishes Financial Reporting and Accounting Unit in Enforcement Division",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:01:34.898383-03:00"
     }
   ]
 }
