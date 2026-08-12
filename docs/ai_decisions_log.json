@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I moved from the US to Australia 6 years ago. I love my life abroad, but still feel guilty every day.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:05:49.352444-03:00"
-    },
-    {
-      "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
-      "source": "Federal Reserve",
-      "score": 6.0,
-      "motivo": "A decisão da taxa de juros é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:05:52.648561-03:00"
-    },
-    {
       "title": "TPG Agrees to Buy South Korea’s Lotte Rental for $925 Million",
       "source": "Bloomberg Markets",
       "score": 5.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T22:16:03.373658-03:00"
+    },
+    {
+      "title": "Legend Biotech (LEGN) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A noticia é sobre uma chamada de earnings de uma empresa de biotecnologia, que não é relevante para o mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T22:20:41.289054-03:00"
+    },
+    {
+      "title": "Boeing sells Wisk, Insitu, SkyGrid to Archer Aviation for equity stake",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A venda é relevante porque pode afetar a estratégia de investimento da Boeing e a competitividade no mercado de tecnologia aeronáutica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T22:20:48.723819-03:00"
     }
   ]
 }
