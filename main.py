@@ -58,17 +58,29 @@ TICKER_HASHTAG_MAP = {
     "ambev": "ABEV3", "azul": "AZUL4", "embraer": "EMBR3", "hapvida": "HAPV3",
 }
 
+# Termos curtos como "gol", "vale", "weg", "azul" batiam por substring
+# simples ("in") dentro de palavras sem relacao nenhuma (ex: "Goldman"
+# contem "gol", "Valens" contem "vale", "Norwegian" contem "weg") -
+# gerava hashtag errada no Giro do Mercado e no Breaking (bug real
+# reportado). Regex com fronteira de palavra (\b) so bate o termo
+# inteiro, nao como pedaco de outra palavra. Pre-compilado 1x aqui -
+# roda por noticia, nao vale recompilar a cada chamada.
+_TICKER_TERM_REGEX = {
+    term: re.compile(r"\b" + re.escape(term) + r"\b") for term in TICKER_MENTION_LIST
+}
+
 
 def extract_ticker_hashtags(text):
     """Extrai hashtags de ativos citados no texto (titulo+corpo), na
     ordem em que aparecem em TICKER_MENTION_LIST, sem repetir. Quando
     nenhum ticker especifico e encontrado, tenta um pequeno conjunto de
     hashtags macro (cambio/Ibovespa/juros) - nunca inventa ticker que
-    nao esta no texto."""
+    nao esta no texto. Usa fronteira de palavra (\\b), nao substring
+    simples - ver comentario de _TICKER_TERM_REGEX."""
     text_lower = text.lower()
     found = []
     for term in TICKER_MENTION_LIST:
-        if term in text_lower:
+        if _TICKER_TERM_REGEX[term].search(text_lower):
             hashtag = TICKER_HASHTAG_MAP.get(term)
             if hashtag and hashtag not in found:
                 found.append(hashtag)
@@ -597,7 +609,7 @@ def passes_source_specific_filter(source, entry):
         )
         if formato_mecanico_resultado:
             termos_acompanhados = [t for perfil in ASSET_PROFILES for t in perfil["terms"]]
-            if not any(termo in text for termo in termos_acompanhados):
+            if not any(re.search(r"\b" + re.escape(termo) + r"\b", text) for termo in termos_acompanhados):
                 return False, "resultado trimestral de empresa fora do radar (Seeking Alpha)"
 
     if source not in ("TechCrunch", "Poder360", "IBGE"):
@@ -1775,7 +1787,7 @@ def compute_news_clusters(entries):
     for e in entries:
         text = (e["title"] + " " + e["body"]).lower()
         for term in TICKER_MENTION_LIST:
-            if term in text:
+            if _TICKER_TERM_REGEX[term].search(text):
                 clusters.setdefault(term, []).append(e)
 
     scored = []
