@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Goldman Sachs alerta que investimentos em IA podem estar deslocando outros gastos",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T08:41:19.629166-03:00"
-    },
-    {
-      "title": "Zura Bio GAAP EPS of -$0.21 misses by $0.02",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:22.617757-03:00"
-    },
-    {
-      "title": "Veradermics reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:25.195787-03:00"
-    },
-    {
-      "title": "Hyperscale Data reviews options, considers data center sale",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:27.797907-03:00"
-    },
-    {
-      "title": "U.S. judge ends Adani bribery case, but calls DOJ official's conduct 'highly unusual'",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:30.393656-03:00"
-    },
-    {
-      "title": "Ambiq Micro beats top-line and bottom-line estimates; gives Q3 outlook",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:32.988801-03:00"
-    },
-    {
-      "title": "Intensity Therapeutics GAAP EPS of -$1.11 misses by $0.14",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:35.588037-03:00"
-    },
-    {
-      "title": "Neurogene GAAP EPS of -$1.05 beats by $0.37",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:38.181827-03:00"
-    },
-    {
-      "title": "MIDDLEBY CORP Announces Retreat In Q2 Profit",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:43.006765-03:00"
-    },
-    {
-      "title": "Thor Explorations Ltd Profit Retreats In Q2",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T08:41:45.605774-03:00"
-    },
-    {
-      "title": "CenterPoint Energy Announces Customer Savings Initiative",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:48.199684-03:00"
-    },
-    {
-      "title": "Intel Prices $20 Bln Stock Offering At $95/shr",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T08:41:50.788003-03:00"
-    },
-    {
-      "title": "Enbridge's Profit Just Fell 7%. Here's Why That's Not the Real Story.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações específicas e materiaismente relevantes para o mercado agora.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T08:41:53.660354-03:00"
-    },
-    {
       "title": "Karooooo CEO Disposes 31,279 Shares for $2.0 Million",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T07:45:52.799535-03:00"
+    },
+    {
+      "title": "Brinker Non-GAAP EPS of $3.07 misses by $0.02, revenue of $1.54B beats by $10M",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A notícia é relevante porque afeta as expectativas de lucro da Brinker, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:50:47.385341-03:00"
+    },
+    {
+      "title": "Einride partners with PACCAR to advance Level 4 autonomous plans",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Parceria com empresa de veículos pesados pode impulsionar o desenvolvimento de tecnologia autônoma no setor de transporte",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:50:50.304311-03:00"
+    },
+    {
+      "title": "Riskified Non-GAAP EPS of $0.02 in-line, revenue of $98.7M beats by $9.52M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas de receita, o que é considerado positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:50:53.256224-03:00"
+    },
+    {
+      "title": "I've Been Wrong About Microsoft Stock for Years. Here's Why I'm Finally Changing My Mind.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia destaca a capacidade da Microsoft de justificar sua valoração alta com resultados financeiros sólidos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T07:50:59.941647-03:00"
+    },
+    {
+      "title": "Bank of America anuncia plano bilionário para modernizar infraestrutura dos EUA",
+      "source": "UOL Economia",
+      "score": 8.0,
+      "motivo": "Investimento bilionário em infraestrutura e tecnologia nos EUA",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:51:07.213820-03:00"
+    },
+    {
+      "title": "Experts say putting every dollar toward $35,000 in credit card debt could backfire — here's another approach",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode influenciar o comportamento dos consumidores.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:51:12.565900-03:00"
+    },
+    {
+      "title": "Dow Jones Futures Rise With CPI Inflation Due; AI Stocks Rally As 3 Nvidia Partners Lead Earnings Movers",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque menciona a inflação de CPI e os resultados financeiros de empresas de inteligência artificial, que podem ter impacto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T07:51:15.766325-03:00"
+    },
+    {
+      "title": "S&P 500 dividend yield hits record low near 1% and it has some retirees rethinking their strategies",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as estratégias de investimento de aposentados que dependem dos dividendos da S&P 500 para gerar renda.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T07:51:19.218023-03:00"
+    },
+    {
+      "title": "WEBTOON Entertainment Inc. Common stock Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento significativo para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:51:22.301741-03:00"
+    },
+    {
+      "title": "AICPA seeks clearer CAMT rules from Treasury and IRS",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:51:25.200248-03:00"
+    },
+    {
+      "title": "Bionano Genomics, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Melhora na receita e lucro da empresa, o que é positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:51:28.121326-03:00"
+    },
+    {
+      "title": "American Vanguard Corporation Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A empresa apresentou resultados financeiros acima das expectativas, o que pode influenciar positivamente o preço das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:51:31.053499-03:00"
+    },
+    {
+      "title": "Getty Images Holdings, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "Os resultados financeiros são relevantes para a empresa, mas não têm um impacto significativo no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T07:51:33.987294-03:00"
     }
   ]
 }
