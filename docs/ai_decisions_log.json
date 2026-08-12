@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "F1 2027: veja quais pilotos têm contrato e quais podem perder a vaga",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:40.481283-03:00"
-    },
-    {
-      "title": "Grêmio x Inter: Gre-Nal nas quartas da Copa do Brasil reeditará duelo de 1992",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia sobre esporte",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:43.230939-03:00"
-    },
-    {
-      "title": "Natura admite que esperava trimestre melhor: 'Faltaram produtos', diz CEO",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A declaração do CEO sugere que a empresa enfrentou problemas logísticos, o que pode afetar a confiança dos investidores no futuro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:44:46.192220-03:00"
-    },
-    {
-      "title": "Quem matou Tupac? Julgamento histórico começa quase 30 anos depois; relembre o caso",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:48.989953-03:00"
-    },
-    {
-      "title": "Demi Lovato fará participação em 'Camp Rock 3'; veja detalhes",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:51.653333-03:00"
-    },
-    {
-      "title": "'Heated Rivalry' ganhou um novo casal? Entenda a história da 2ª temporada",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:54.296726-03:00"
-    },
-    {
-      "title": "Após canetas emagrecedoras, Lilly e Novo Nordisk travam disputa pelos comprimidos",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:56.958825-03:00"
-    },
-    {
-      "title": "A historically strong stretch for the U.S. stock market is about to begin",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:44:59.923528-03:00"
-    },
-    {
-      "title": "Quantum shares surge after Q1 beat, strong revenue guidance",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:45:02.649039-03:00"
-    },
-    {
-      "title": "Team outlines $20M-$35M annualized savings plan while reaffirming FY2026 adjusted EBITDA of $68M-$73M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:45:05.322885-03:00"
-    },
-    {
-      "title": "Nvidia's AI financing push raised fresh questions over debt, returns—CNBC interview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:45:07.976297-03:00"
-    },
-    {
-      "title": "Industrial stocks with the strongest earnings beats this season",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:45:10.622159-03:00"
-    },
-    {
-      "title": "AI, chip stocks mixed after Nvidia's $500B AI financing deal",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:45:13.259845-03:00"
-    },
-    {
-      "title": "Lincoln Electric rated Buy in new coverage at UBS on capex cycle",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:45:15.900808-03:00"
-    },
-    {
-      "title": "Vornado (VNO) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:45:19.818824-03:00"
-    },
-    {
-      "title": "Here Are 9 Important Ages to Understand as You Approach and Move Through Retirement",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:45:22.474235-03:00"
-    },
-    {
-      "title": "Notable ETF Outflow Detected - SDY, ADP, KVUE, KMB",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:45:25.186978-03:00"
-    },
-    {
-      "title": "Notable ETF Outflow Detected - XLK, ADBE, FTNT, ACN",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:45:27.816892-03:00"
-    },
-    {
       "title": "Notable ETF Outflow Detected - PAVE, EMR, ROK, PWR",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T11:26:06.518691-03:00"
+    },
+    {
+      "title": "China Revives Free-Trade-Zone Bond Market After Crackdown",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "Reabertura do mercado de títulos pode indicar uma política mais liberalizada para investimentos estrangeiros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:30:43.242848-03:00"
+    },
+    {
+      "title": "Além do espetáculo: o que cientistas buscam entender sobre o Sol durante o eclipse total hoje",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:30:49.964368-03:00"
+    },
+    {
+      "title": "ECB leans toward allowing Unicredit's bid for Commerzbank - report",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A UniCredit está tentando adquirir a Commerzbank, o que pode ter um impacto significativo no mercado financeiro europeu.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:30:53.463766-03:00"
+    },
+    {
+      "title": "Mercury Systems rated Overweight at Piper Sandler on defense computing demand",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:30:56.130576-03:00"
+    },
+    {
+      "title": "Stellantis unveils new Jeep Grand Cherokee trims",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:30:58.768183-03:00"
+    },
+    {
+      "title": "Samsung held top market share spot for NAND during Q2; SK Hynix ranked second: Counterpoint",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:31:01.455477-03:00"
+    },
+    {
+      "title": "GrowGeneration jumps as Q2 revenue beats expectations",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:31:04.108352-03:00"
+    },
+    {
+      "title": "Summit higher as partner Akeso wins China label expansion for lead drug",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:31:06.775295-03:00"
+    },
+    {
+      "title": "Spruce Biosciences Q2 Loss Widens; Names Adrian Quarterl CMO, Jessica Cohen VP - Clinical",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:31:11.883561-03:00"
+    },
+    {
+      "title": "Nasdaq 100 Movers: MELI, CRWV",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:31:14.819996-03:00"
+    },
+    {
+      "title": "More Retirees Heading Back to Work: 4 Things to Consider Before You Un-Retire",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:31:17.506656-03:00"
+    },
+    {
+      "title": "S&P 500 Movers: COR, SMCI",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:31:20.131490-03:00"
+    },
+    {
+      "title": "Ex-Div Reminder for Rivernorth Capital and Income Fund (RSF)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:31:22.787325-03:00"
+    },
+    {
+      "title": "Reminder - Starbucks (SBUX) Goes Ex-Dividend Soon",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:31:25.426024-03:00"
+    },
+    {
+      "title": "Comfort Systems USA About To Put More Money In Your Pocket (FIX)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:31:28.086063-03:00"
+    },
+    {
+      "title": "Dow Movers: MSFT, HONIV",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:31:30.717796-03:00"
+    },
+    {
+      "title": "Ex-Div Reminder for Royal BK Scotland Group (RBSPF)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:31:33.415245-03:00"
+    },
+    {
+      "title": "CNJ e Banco Central firmam convênio para criar estrutura nacional de rastreamento da compra e venda de precatórios",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:31:38.556612-03:00"
     }
   ]
 }
