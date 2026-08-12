@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "MEMX Files to List Prediction Market-Style Bets on Earnings",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque a MEMX está se expandindo para um novo tipo de negócio que pode afetar o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:55:43.259188-03:00"
-    },
-    {
-      "title": "Por que a ação da Annexon está caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A ação está caindo devido a perda de valor, o que é um sinal negativo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:55:48.528788-03:00"
-    },
-    {
-      "title": "Bank of America se compromete a investir US$250 bi no financiamento de infraestrutura nos EUA",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Investimento massivo em infraestrutura nos EUA pode impulsionar economia e demanda por ações de empresas de construção e infraestrutura.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:55:51.312891-03:00"
-    },
-    {
-      "title": "Por que as ações da Perma-Fix Environmental estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a notícia está relacionada a uma ação específica e seu desempenho no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:55:54.118732-03:00"
-    },
-    {
       "title": "Por que as ações da Liquidia Technologies estão subindo hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T20:46:22.193045-03:00"
+    },
+    {
+      "title": "Singapore’s CapitaLand Sees Profit Recovery Due to Fee Increases",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica que a empresa está experimentando um crescimento de lucro, o que pode influenciar a confiança dos investidores e o desempenho do mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:50:59.482633-03:00"
+    },
+    {
+      "title": "Trump says U.S. has 'total control' over Strait of Hormuz but ship traffic near three-month low",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A notícia pode ter impacto na volatilidade dos preços dos combustíveis e na economia global, mas não é um evento de mercado significativo em si mesmo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:51:07.613442-03:00"
+    },
+    {
+      "title": "Câmara aprova projeto 'guarda-chuva' que corta tributo de combustível",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "Corte de tributos sobre combustíveis pode impulsionar a economia e reduzir custos para empresas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:51:24.681757-03:00"
+    },
+    {
+      "title": "SEC Announces Roundtable on Preparations for 24-Hour Trading",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:51:31.468713-03:00"
     }
   ]
 }
