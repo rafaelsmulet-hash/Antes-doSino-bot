@@ -39,10 +39,26 @@
   // sem chave de API (https://www.tradingview.com/widget/).
   // ---------------------------------------------------------------------
 
+  // Skeleton (placeholder pulsante, ver .loading no CSS) enquanto o
+  // widget carrega - a TradingView nao expoe um evento de "terminei de
+  // renderizar" pra iframe de terceiro (cross-origin), entao usa um
+  // tempo fixo como aproximacao pratica (mesmo padrao usado por vários
+  // apps de produção pra widgets externos sem callback de load).
+  var SKELETON_DURACAO_MS = 1300;
+
+  function aplicarSkeleton(container) {
+    if (!container) return;
+    container.classList.add("loading");
+    setTimeout(function () {
+      container.classList.remove("loading");
+    }, SKELETON_DURACAO_MS);
+  }
+
   function montarSymbolOverview(containerId, simbolos) {
     var container = document.getElementById(containerId);
     if (!container) return;
     container.innerHTML = ""; // permite re-renderizar (troca de aba/lista) sem acumular widgets
+    aplicarSkeleton(container);
 
     var wrapper = document.createElement("div");
     wrapper.className = "tradingview-widget-container";
@@ -101,6 +117,7 @@
     var container = document.getElementById(containerId);
     if (!container) return;
     container.innerHTML = "";
+    aplicarSkeleton(container);
 
     var wrapper = document.createElement("div");
     wrapper.className = "tradingview-widget-container";
@@ -184,6 +201,7 @@
     var container = document.getElementById("widget-market-movers");
     if (!container) return;
     container.innerHTML = "";
+    aplicarSkeleton(container);
 
     // O widget Hotlists da TradingView so renderiza as linhas que cabem
     // na altura pedida, sem scroll interno proprio - com height:100%
