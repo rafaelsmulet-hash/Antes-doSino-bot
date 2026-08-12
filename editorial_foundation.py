@@ -21,6 +21,7 @@ Contem, na ordem:
 
 import json
 import os
+import re
 import uuid
 from datetime import datetime, timedelta, timezone
 
@@ -361,7 +362,7 @@ def derive_cluster_key(text, ticker_list):
     rastreada, so fica de fora do active_stories)."""
     texto_lower = text.lower()
     for termo in ticker_list:
-        if termo in texto_lower:
+        if re.search(r"\b" + re.escape(termo) + r"\b", texto_lower):
             return termo
     return None
 
