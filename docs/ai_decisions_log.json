@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lucro do BTG Pactual cresce 23% no 2º trimestre e bate recorde de R$ 5,1 bilhões",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "Lucro recorde e alta de receitas indicam saúde financeira do banco e podem influenciar a confiança dos investidores",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:05:10.885815-03:00"
-    },
-    {
-      "title": "Bienal do Livro 2026: confira guia completo para se divertir e evitar passar perrengue",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:05:13.602615-03:00"
-    },
-    {
-      "title": "Why copper — ‘the commodity for all seasons’ — is more precious than gold nowadays",
-      "source": "MarketWatch",
-      "score": 6.0,
-      "motivo": "A notícia destaca a demanda industrial e a proteção contra a inflação como motivos para a valorização do cobre em relação ao ouro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T07:05:16.763333-03:00"
-    },
-    {
-      "title": "Shein plans Hong Kong IPO as soon as August 19 - report",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque pode afetar o mercado de ações e a percepção dos investidores sobre a Shein.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T07:05:19.628725-03:00"
-    },
-    {
-      "title": "Hallador targets <$800M Turtle Creek gas project and commercial operations in H2 2028 while advancing September investment decision",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque a Hallador está avançando em projetos de gás e operações comerciais, o que pode ter impacto positivo no mercado de energia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:05:22.675200-03:00"
-    },
-    {
       "title": "CAC 40 Drops As Oil Prices Surge On Iran Standoff",
       "source": "Nasdaq",
       "score": 6.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T22:06:28.937331-03:00"
+    },
+    {
+      "title": "Mark Zuckerberg Published His Superintelligence Manifesto Monday Morning. Meta Still Trades at 18 Times Forward Earnings.",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T22:11:02.574032-03:00"
+    },
+    {
+      "title": "Limbach Holdings (LMB) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma transcrição de conferência telefônica de resultados financeiros.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T22:11:05.512074-03:00"
+    },
+    {
+      "title": "ACCESS Newswire (ACCS) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre a transcrição de uma conferência de resultados, que não é um evento atual ou relevante para o mercado agora.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T22:11:08.417358-03:00"
+    },
+    {
+      "title": "Latham Group (SWIM) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T22:11:11.109821-03:00"
+    },
+    {
+      "title": "Nvidia investing up to $3 billion in Lancium for Stargate",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T22:11:20.404740-03:00"
     }
   ]
 }
