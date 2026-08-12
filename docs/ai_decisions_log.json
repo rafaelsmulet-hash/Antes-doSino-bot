@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Phoenix New Media reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Resultados financeiros de uma empresa de mídia são rotineiros e não têm impacto direto no mercado em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:20:54.361209-03:00"
-    },
-    {
-      "title": "BAE Systems secures $149.8M Navy deal to maintain and modernize USS Boxer",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:20:57.096219-03:00"
-    },
-    {
-      "title": "Azzas (AZZA3): Rixa entre sócios e sinergias que não vieram destruíram bilhões em valor; vender a Farm faria sentido?",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:21:04.891265-03:00"
-    },
-    {
-      "title": "Yen Inches Toward 160 Per Dollar, Raising Intervention Concerns",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia destaca a proximidade do iene com um nível importante, o que pode levar a intervenção das autoridades japonesas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:08.279318-03:00"
-    },
-    {
-      "title": "Destaques no after-hours: CRWV, NBIS, SMCI, LITE, CAVA, HRB",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "as ações destas empresas tiveram destaque no after-hours, o que pode indicar uma tendência positiva",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:14.981633-03:00"
-    },
-    {
-      "title": "Após Choque de Gestão com Monique Evelle, Noiva no Civil muda de loja e vende vestidos de R$ 5 mil",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:19.032036-03:00"
-    },
-    {
-      "title": "El Niño e crianças: por que o Brasil precisa agir antes da próxima emergência climática",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:26:21.746828-03:00"
-    },
-    {
       "title": "Logan Energy GAAP EPS of C$0.04, revenue of C$82.71M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T16:51:31.493800-03:00"
+    },
+    {
+      "title": "“Uma vez na vida”: Islândia testemunha eclipse solar total, Espanha é a próxima",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "a noticia e sobre um evento natural e nao tem impacto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:55:34.835746-03:00"
+    },
+    {
+      "title": "Com previsão de temperaturas mais altas em SP, defesa Civil alerta para incêndios",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:55:37.691385-03:00"
+    },
+    {
+      "title": "Paramount has spoken about creating a board to ensure CNN's independence - WSJ",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque pode impactar a percepção da CNN como uma fonte de notícias independente, o que pode influenciar a confiança dos investidores em ações de empresas de mídia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:55:43.632223-03:00"
+    },
+    {
+      "title": "Seinfeld is staying with Netflix for another five years…not that there's anything wrong with that",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:55:46.374430-03:00"
+    },
+    {
+      "title": "Aquestive targets Q3 NDA resubmission for Anaphylm while maintaining 2026 revenue guidance of $46M-$50M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:55:49.101513-03:00"
+    },
+    {
+      "title": "CNJ e BC firmam parceria para criar sistema de rastreamento para compra e venda de precatórios",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:55:55.618486-03:00"
+    },
+    {
+      "title": "Trump says Karoline Leavitt resigning as White House press secretary",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:56:02.063660-03:00"
     }
   ]
 }
