@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Armor Capital vê a Bolsa num preço justo e tem outra aposta para os próximos meses",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "Avaliação da Bolsa como justo e sem gatilhos para retorno aos níveis recordes",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:05:28.309982-03:00"
-    },
-    {
-      "title": "Pesquisadores descobrem como ‘roubar’ pensamentos secretos do ChatGPT, Claude e Gemini",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:05:31.669697-03:00"
-    },
-    {
-      "title": "Por que o Congresso analisa hoje a MP da 'taxa das blusinhas'",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "não é uma notícia sobre mercado financeiro, mas sim sobre política e impostos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:05:34.376036-03:00"
-    },
-    {
-      "title": "Jogos de hoje: horário e onde assistir às partidas desta quarta, 12",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte, sem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:05:37.107048-03:00"
-    },
-    {
       "title": "Gigante de R$ 8 bilhões, Stefanini cria marca para vender tecnologia a fábricas",
       "source": "Exame",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T19:21:46.728724-03:00"
+    },
+    {
+      "title": "Eneva tem queda de 91,4% no lucro do 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "queda significativa no lucro do 2º trimestre impacta negativamente a empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:25:43.890190-03:00"
+    },
+    {
+      "title": "Vittia tem prejuízo líquido ajustado de R$ 17,4 milhões entre abril e junho, queda de 17,8%",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "queda de 17,8% no prejuízo líquido ajustado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T19:25:57.701289-03:00"
+    },
+    {
+      "title": "Petróleo e demissões: prejuízo da CVC salta para R$ 72,5 milhões",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "a demissão e o prejuízo da CVC podem afetar negativamente a economia e o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T19:26:00.609196-03:00"
+    },
+    {
+      "title": "AI nuclear power firm Fermi finally has a new CEO",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T19:26:06.013026-03:00"
     }
   ]
 }
