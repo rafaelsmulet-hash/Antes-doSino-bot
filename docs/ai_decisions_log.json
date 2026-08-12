@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "IPCA avança 0,07% em julho e supera projeções; energia elétrica é o principal vetor",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:22:03.845992-03:00"
-    },
-    {
-      "title": "Microsoft stock just cleared a big hurdle but still trails the S&P 500",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T10:22:07.785215-03:00"
-    },
-    {
-      "title": "A HubSpot Director Buys Company Stock After a 52% Share Price Decline. Here's a Closer Look at the Transaction.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:22:10.429860-03:00"
-    },
-    {
-      "title": "Berkshire's $360 Billion Cash Pile Fell $9 Billion Under CEO Greg Abel, Who Net-Purchased $12 Billion in Stock This Year.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:22:13.082208-03:00"
-    },
-    {
-      "title": "Europe is blowing up riverbeds as an extreme drought wreaks havoc on its economy",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A seca está afetando a infraestrutura crítica da Europa, como o transporte de mercadorias e a produção de energia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:25:37.454934-03:00"
-    },
-    {
-      "title": "National Health Investors raises quarterly dividend by 2.2% to  $0.94/share",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T10:25:42.311593-03:00"
-    },
-    {
-      "title": "Maris-Tech receives contract expansion for government defense program",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:25:45.285713-03:00"
-    },
-    {
-      "title": "Venture Global declares $0.04 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:25:47.889716-03:00"
-    },
-    {
-      "title": "Ten materials stocks with the biggest earnings surprises",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T10:25:50.501614-03:00"
-    },
-    {
-      "title": "First Advantage prices 12.5M-share secondary offering at $22.20 per share",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:25:53.119898-03:00"
-    },
-    {
-      "title": "4 stocks to watch on Tuesday: CBRS, HIMS, INTC, and JOBY",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não menciona nenhum evento específico ou impactante que afete o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:25:56.105360-03:00"
-    },
-    {
-      "title": "Astera Labs vs. Arm: Which Technology Stock Is a Better Buy in 2026?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:26:00.975994-03:00"
-    },
-    {
-      "title": "Executive Sells Nearly $300,000 Worth of Avery Dennison Stock",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:26:03.587683-03:00"
-    },
-    {
-      "title": "Think Maxing Out a 401(k) Is Always Smart? This Might Make You Change Your Mind.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:26:06.212350-03:00"
-    },
-    {
-      "title": "Presidente do Bradesco vê espaço para novos cortes de juros em 2026, mas cita guerra, eleições e El Niño como ameaças",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T10:26:10.779865-03:00"
-    },
-    {
-      "title": "Exportações do Brasil aos EUA caem 12,2% no ano e atingem menor nível em 3 anos para o período",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T10:26:13.412655-03:00"
-    },
-    {
-      "title": "Resultado do XPLG11 passa de R$ 36,8 milhões; fundo sinaliza proventos adiante",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T10:26:17.718722-03:00"
-    },
-    {
-      "title": "NYSE Parent ICE Kicks Off Bond Sale for MarketAxess Takeover",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A venda de títulos de dívida é relevante para o mercado financeiro, pois pode influenciar os preços dos títulos e os custos de captação de recursos para a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T10:31:00.756730-03:00"
-    },
-    {
       "title": "Ata do Copom: Risco fiscal e inflação dividem mercado sobre novos cortes na Selic",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T09:21:40.081487-03:00"
+    },
+    {
+      "title": "US Stock Futures Rise as Tech Rally Resumes Before Key CPI Data",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A publicação de dados de inflação pode influenciar a decisão dos investidores sobre a continuidade da retomada da bolsa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:26:07.058396-03:00"
+    },
+    {
+      "title": "Trump Claims Hormuz Control as US-Iran Deadlock Continues | The Pulse 8/12/2026",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:09.940280-03:00"
+    },
+    {
+      "title": "Dólar hoje devolve parte dos ganhos da véspera e recua antes do CPI nos EUA",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "O dólar recuou, o que pode ser negativo para investimentos em moedas estrangeiras",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:26:13.256145-03:00"
+    },
+    {
+      "title": "Minério de ferro fecha com leve alta na China",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:15.854828-03:00"
+    },
+    {
+      "title": "Por que as ações da Performance Food Group estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:20.165378-03:00"
+    },
+    {
+      "title": "Por que a ação da Openlane está caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:22.765461-03:00"
+    },
+    {
+      "title": "Futuros do TSX sobem antes de dados de inflação dos EUA",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:25.364398-03:00"
+    },
+    {
+      "title": "Por que as ações da LENZ Therapeutics estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:27.970872-03:00"
+    },
+    {
+      "title": "Goldman Sachs vai adquirir a Neos por até US$ 2,25 bilhões em dinheiro e ações",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:26:30.582838-03:00"
+    },
+    {
+      "title": "Por que as ações da Savers Value Village estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:33.185401-03:00"
+    },
+    {
+      "title": "CoreWeave’s stock is rocketing after earnings lead to praise from bulls and bears alike",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:26:36.186505-03:00"
+    },
+    {
+      "title": "‘The market is obviously on fire’: Should I take $1,000 from my brokerage account to pay off my car loan?",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:26:38.811845-03:00"
+    },
+    {
+      "title": "Okta in focus as Citizens upgrades ahead of coming catalysts",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:41.443229-03:00"
+    },
+    {
+      "title": "What analysts are saying about CAVA after earnings",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:26:44.050790-03:00"
+    },
+    {
+      "title": "Beta Technologies shares fall on deeper-than-expected loss",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:46.659628-03:00"
+    },
+    {
+      "title": "OpenAI launches ChatGPT desktop app for Linux",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:26:57.188451-03:00"
+    },
+    {
+      "title": "4 Outperforming Stocks That Could Keep Rewarding Investors",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T09:26:59.849439-03:00"
+    },
+    {
+      "title": "Which Is the Better Vanguard Short-Term Bond ETF for Your Tax Bracket: BSV or VTES?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T09:27:02.467579-03:00"
     }
   ]
 }
