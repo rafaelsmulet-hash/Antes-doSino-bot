@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Patrimônio de Moro recua em quatro anos; aplicações no exterior têm maior queda",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "A noticia e sobre a vida pessoal de um senador e nao tem relevancia direta para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:21:08.545858-03:00"
-    },
-    {
-      "title": "El Niño deve ser forte, mas atual sistema alimentar global está mais resiliente",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "Agricultura global está mais resiliente devido a estoques de grãos e tecnologias de irrigação avançadas.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:21:11.380316-03:00"
-    },
-    {
-      "title": "Unitree’s IPO may be just the beginning of an investor frenzy over humanoid-robot stocks",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T14:21:18.340612-03:00"
-    },
-    {
-      "title": "Consolidated Water outlines $10.1M Florida equipment orders with delivery scheduled for November 2027",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:21:21.093408-03:00"
-    },
-    {
-      "title": "GoPro bleeds over 11% on weak Q2 print amid sale talks",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:21:23.742688-03:00"
-    },
-    {
-      "title": "Revenge of the algos: A $1.5B 'gold reset' nobody saw coming",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T14:21:26.388995-03:00"
-    },
-    {
-      "title": "Uber Exits Serve Robotics Stake as Delivery Alliance Unravels",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A saída da Uber da parceria pode afetar a estratégia de entrega autônoma da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:25:48.484668-03:00"
-    },
-    {
-      "title": "Caixa Seguridade: resultados estáveis no 2º tri refletem desempenho comercial fraco",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "índice de sinistralidade cresceu significativamente, indicando desempenho comercial fraco",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:25:52.273300-03:00"
-    },
-    {
-      "title": "River AI, startup do cofundador da xAI, levanta US$1,1 bi para expandir ferramentas personalizadas de IA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T14:25:56.582056-03:00"
-    },
-    {
       "title": "Deutsche Bank elege sua principal ação de Cybersecurity",
       "source": "Investing.com Brasil",
       "score": 6.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T12:51:25.170479-03:00"
+    },
+    {
+      "title": "Gold Rallies as Tame US Inflation Report Calms Rate Hike Fears",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois afeta diretamente as expectativas de aumento de juros da Fed, que pode influenciar o preço do ouro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:55:36.268019-03:00"
+    },
+    {
+      "title": "Nvidia lines up $500 billion in financing as CEO Jensen Huang tells CNBC his chips are ‘investable asset’",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "A Nvidia pode obter financiamento significativo graças à adotabilidade e flexibilidade de seus chips.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:55:39.933545-03:00"
+    },
+    {
+      "title": "Ações da Gerdau (GGBR4) sobem nesta quarta (12) e XP vê mais alta pela frente; veja potencial",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:55:44.764743-03:00"
+    },
+    {
+      "title": "Intuitive Surgical upgraded at Oppenheimer on robotic surgery market growth",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:55:48.174223-03:00"
+    },
+    {
+      "title": "Bullish Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:55:50.785341-03:00"
+    },
+    {
+      "title": "Lumentum Earnings Top Estimates Amid Supply Chain Constraints",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:55:58.894639-03:00"
+    },
+    {
+      "title": "Advantage Solutions (ADV) Q2 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:56:01.536143-03:00"
+    },
+    {
+      "title": "Lifecore Biomedical (LFCR) Q2 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:56:04.178278-03:00"
+    },
+    {
+      "title": "I'm an executive Costco member and cookbook author. I swear by these 10 ingredients for simple, delicious meals.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:56:07.111132-03:00"
     }
   ]
 }
