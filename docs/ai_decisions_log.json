@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Swiss sportswear company On posts return to profit in Q2",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:41:48.005329-03:00"
-    },
-    {
-      "title": "My 19-year-old daughter drove 500 miles for a concert. It taught me how to parent an emerging adult.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:41:50.900580-03:00"
-    },
-    {
-      "title": "Democrats clash again in Minnesota and Wisconsin primaries as big midterm races take shape",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:41:53.666900-03:00"
-    },
-    {
-      "title": "Multa leve soma quantos pontos na CNH? Veja a tabela completa",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre direito de trânsito",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:45:41.041469-03:00"
-    },
-    {
-      "title": "Plataforma de e-commerce investe R$ 50 mi em ampliação e mira R$ 3 bi",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "investimento em e-commerce não afeta diretamente o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:45:43.932878-03:00"
-    },
-    {
-      "title": "Ebola avança no Congo e número de mortos passa de 2 mil",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:45:46.593247-03:00"
-    },
-    {
-      "title": "Tencent Music shares slide after Q2 results despite beat",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:45:49.506769-03:00"
-    },
-    {
-      "title": "First Trust Income Opportunities ETF declares $0.1375 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:45:52.159060-03:00"
-    },
-    {
-      "title": "Summit Midstream keeps common dividend suspended, declares Series A preferred payout",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:45:54.829842-03:00"
-    },
-    {
-      "title": "12 ships switch oil outside Strait of Hormuz in vital lifeline for global energy",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:45:57.495057-03:00"
-    },
-    {
-      "title": "Life360 shares plunge despite strong Q2 results, annual guidance",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:46:00.153444-03:00"
-    },
-    {
-      "title": "GEN receives $100m buyout offer for US restaurant operations",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:46:08.061377-03:00"
-    },
-    {
-      "title": "Atlanta Airport Taps Munis for $1.1 Billion as Sector Sales Lag",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A venda de títulos de dívida municipal de US$ 1,1 bilhão do aeroporto de Atlanta é relevante para o mercado pois pode influenciar a confiança dos investidores na economia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:50:49.783833-03:00"
-    },
-    {
-      "title": "'A Odisseia' supera 'Batman' e se torna a maior bilheteria da carreira de Nolan",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:50:55.632871-03:00"
-    },
-    {
-      "title": "Pan American Silver Q2 earnings on deck: 4 key factors you can't ignore",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A divulgação dos resultados financeiros da empresa pode influenciar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:50:59.030633-03:00"
-    },
-    {
       "title": "Prejuízo de conglomerado de mídia de Trump salta 10 vezes com queda de ativos digitais",
       "source": "UOL Economia",
       "score": null,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T10:52:02.226300-03:00"
+    },
+    {
+      "title": "Fed Will Stay on Hold in September, Pimco's Wilding Says",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque discute a política monetária da Fed, mas não é uma decisão ou evento inesperado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:55:32.195337-03:00"
+    },
+    {
+      "title": "Ronaldinho Gaúcho pode se tornar dono de time de basquete na Europa, diz jornal",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:55:35.735674-03:00"
+    },
+    {
+      "title": "Dinheiro esquecido em bancos soma R$ 5,12 bilhões; veja quem tem valores a receber",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:55:38.388519-03:00"
+    },
+    {
+      "title": "China: ex-premiê Zhu Rongji, arquiteto do boom econômico, morre aos 97 anos",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:55:41.050273-03:00"
+    },
+    {
+      "title": "IA não substitui profissionais, mas escolhe quem fica para trás, afirma especialista",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:55:45.853457-03:00"
+    },
+    {
+      "title": "A cultura que eu construí foi a mesma que me impediu de crescer",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:55:48.493752-03:00"
+    },
+    {
+      "title": "Fim dos penduricalhos? STF limita extras de juízes a 70% do salário",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:55:51.130272-03:00"
+    },
+    {
+      "title": "Central Puerto GAAP EPS of $0.14, revenue of $453.3M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:55:54.068623-03:00"
+    },
+    {
+      "title": "Lumentum soars after 'strong' Q4 keeps analysts largely positive",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:55:56.711375-03:00"
+    },
+    {
+      "title": "Computer Modelling GAAP EPS of C$0.02, revenue of C$27.8M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:55:59.372299-03:00"
+    },
+    {
+      "title": "BTB Real Estate Investment Trust reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:56:02.000988-03:00"
+    },
+    {
+      "title": "Veja quais fundos imobiliários pagam dividendos hoje (12)",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:56:09.548322-03:00"
+    },
+    {
+      "title": "Tech leads sectors higher in early trading as chip stocks gain: AlphaCheck",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:56:13.575959-03:00"
+    },
+    {
+      "title": "Supermicro stock jumps on Q4 results, strong Q1 outlook",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:56:16.205588-03:00"
+    },
+    {
+      "title": "ASML Holding N.V. (ASML) vs. Taiwan Semiconductor Manufacturing Company Limited (TSM): A Key Supplier Says it Can Keep Up With the AI Boom",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:56:18.881284-03:00"
     }
   ]
 }
