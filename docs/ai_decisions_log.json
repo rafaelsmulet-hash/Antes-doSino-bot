@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Blue Owl Sets $500 Million Bond Sale to Pay Down Credit Lines",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A venda de títulos é relevante para o mercado financeiro, pois pode influenciar a liquidez e os custos de capital das empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:43:48.760413-03:00"
-    },
-    {
-      "title": "US Household Delinquencies Improve: NY Fed Quarterly Report",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "Melhoria no pagamento de empréstimos de consumo nos EUA, o que pode ser positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:43:51.850426-03:00"
-    },
-    {
-      "title": "S&P 500 Hovers Near Record Highs on US-Iran Hopes",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois afeta os preços do petróleo, que é um importante indicador de mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:43:54.911701-03:00"
-    },
-    {
-      "title": "Why JPMorgan is investing big in the 2028 LA Olympics",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "O investimento do JPMorgan nos Jogos Olímpicos pode indicar uma confiança no crescimento econômico e na estabilidade política da região.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:43:57.889646-03:00"
-    },
-    {
-      "title": "Flávio Bolsonaro confirma Michelle na propaganda eleitoral após crise no bolsonarismo",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:02.123530-03:00"
-    },
-    {
-      "title": "Entenda como Trump usou contêiner de catering para sair da Turquia após ameaça do Irã",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:04.913176-03:00"
-    },
-    {
-      "title": "Ibovespa cai quase 2% e perde os 170 mil com mais sinais de saída de estrangeiros",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A queda da Ibovespa e a saída de estrangeiros afetam negativamente o mercado brasileiro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:44:07.880909-03:00"
-    },
-    {
-      "title": "Flávio diz que irá a debates com Lula e que não deve explicações sobre Master",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre política e celebridade, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:10.812867-03:00"
-    },
-    {
-      "title": "Inflação de serviços acende alerta no mercado e põe em dúvida novos cortes na Selic",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Preços de serviços continuam a pressionar a inflação, o que pode levar a uma reavaliação da política monetária",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T12:44:13.593016-03:00"
-    },
-    {
-      "title": "Temperaturas em São Paulo voltam a subir a partir de quarta-feira",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "a noticia e sobre clima, nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:44:16.475956-03:00"
-    },
-    {
       "title": "Anthropic fecha acordo de US$ 9,1 bi com mineradora de Bitcoin por capacidade de IA",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T11:16:34.176651-03:00"
+    },
+    {
+      "title": "Why Jensen Huang’s $500 billion AI financing plan faces a big risk from China",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta a Nvidia e o mercado de GPUs, que são importantes para a indústria de Inteligência Artificial.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:21:03.264523-03:00"
+    },
+    {
+      "title": "Lumentum’s stock surges, giving a further boost to the optical-networking trade",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "Earnings report positivo da Lumentum impacta positivamente o mercado de redes ópticas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:21:10.671352-03:00"
+    },
+    {
+      "title": "Goldman Sachs, Travelers among financial firms reporting strong EPS beat",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:21:13.477896-03:00"
+    },
+    {
+      "title": "Wall Street pushes higher after the latest inflation report",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "O relatório de inflação foi melhor do que o esperado, o que é positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:21:16.638578-03:00"
+    },
+    {
+      "title": "Commonwealth Bank of Australia reports FY results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:21:19.283575-03:00"
+    },
+    {
+      "title": "Hyliion raised its 2026 outlook; here's what sent HYLN stock higher",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:21:21.906865-03:00"
+    },
+    {
+      "title": "Google unveils Pixel 11 lineup, new AirTag rival, and Gemini features at Made by Google 2026",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:21:33.799182-03:00"
+    },
+    {
+      "title": "Super Micro Advances 13%, Dell Gains 5%, HPE Rises 3% on Blowout AI Server Guidance",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:21:36.629906-03:00"
+    },
+    {
+      "title": "BioMarin Targets Faster Deleveraging as Amicus Deal Expands Rare-Disease Growth",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:21:39.270302-03:00"
+    },
+    {
+      "title": "I did almost every major attraction on the Canadian side of Niagara Falls. Here are 5 that were worth it and 3 I'd skip next time.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:21:42.209141-03:00"
     }
   ]
 }
