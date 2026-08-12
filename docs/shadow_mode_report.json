@@ -1,21 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 38796,
+  "total_ingeridas": 39024,
   "aprovadas_pelo_fluxo_atual": 681,
-  "descartadas_pelos_filtros_atuais": 38115,
-  "score_medio_materialidade": 4.01,
-  "seriam_breaking": 25,
-  "iriam_para_rodada": 306,
+  "descartadas_pelos_filtros_atuais": 38343,
+  "score_medio_materialidade": 4.02,
+  "seriam_breaking": 26,
+  "iriam_para_rodada": 305,
   "seriam_descartadas_pelo_novo_sistema": 1669,
-  "total_divergencias": 667,
+  "total_divergencias": 668,
   "divergencias": [
-    {
-      "title": "HELOC and home equity loan rates today, Wednesday, August 12, 2026: Why locking in a low rate matters",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Sandisk Is Up 429% This Year -- Its $15.5 Billion Stock Buyback Suggests Management Thinks Shares Are Still Cheap",
       "source": "Yahoo Finance",
@@ -144,6 +137,13 @@
     },
     {
       "title": "Bio-Techne Non-GAAP EPS of $0.52 in-line, revenue of $321.19M beats by $6.67M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Liquidia GAAP EPS of $0.74 in-line, revenue of $171.68M beats by $3.2M",
       "source": "Seeking Alpha",
       "score": 5.0,
       "decisao_sugerida": "round",

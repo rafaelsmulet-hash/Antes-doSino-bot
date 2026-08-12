@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Best CD rates today, Wednesday, August 12, 2026: Earn up to 4.30% APY",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "As taxas de CD são rotineiramente divulgadas e não têm impacto significativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:16:22.267031-03:00"
-    },
-    {
-      "title": "Mortgage and refinance interest rates today, Wednesday, August 12, 2026: Fixed rates move higher",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento das taxas de juros afeta diretamente os custos de financiamento e os preços dos imóveis.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:16:25.279237-03:00"
-    },
-    {
-      "title": "HELOC and home equity loan rates today, Wednesday, August 12, 2026: Why locking in a low rate matters",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia aborda a atualização das taxas de juros para empréstimos de hipoteca e HELOC, o que pode influenciar as decisões de investimento dos proprietários de casas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:16:28.354571-03:00"
-    },
-    {
       "title": "Best high-yield savings interest rates today, Wednesday, August 12, 2026: Earn up to 4.15% APY",
       "source": "Yahoo Finance",
       "score": 2.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T20:01:26.691310-03:00"
+    },
+    {
+      "title": "Lucro líquido da Azzas (AZZA3) recua 62,5% no 2º tri, a R$ 106,5 milhões",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "O lucro líquido da Azzas recuou significativamente, indicando desempenho negativo da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:05:42.865071-03:00"
+    },
+    {
+      "title": "Nossa IA sabia: líder em segurança tech sobe +113% desde a seleção",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "A notícia destaca o crescimento significativo de uma empresa de segurança tecnológica, o que pode ser visto como positivo para o mercado de tecnologia e segurança.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:05:47.356996-03:00"
+    },
+    {
+      "title": "Senado aprova texto-base de projeto que reduz preço do combustível com dinheiro da alta do petróleo e amplia gastos fora do teto",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:05:59.076763-03:00"
     }
   ]
 }
