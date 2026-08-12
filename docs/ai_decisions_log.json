@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Enjoei (ENJU3) eleva prejuízo a R$ 47,6 milhões no 2º tri",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "aumento da receita líquida apesar do prejuízo elevado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:40:55.519913-03:00"
-    },
-    {
-      "title": "Moraes determina busca contra fonte de jornalista do Maranhão",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:40:58.454442-03:00"
-    },
-    {
-      "title": "Bemobi entra em condomínios, abrindo uma nova vertical em pagamentos",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:41:04.281821-03:00"
-    },
-    {
-      "title": "Private Bancorp of America GAAP EPS of $2.27, revenue of $34.55M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:41:07.422987-03:00"
-    },
-    {
-      "title": "FutureFuel expects $22M of 45Z credit monetization proceeds in H2 2026 while targeting positive adjusted EBITDA in 2026",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:41:10.209124-03:00"
-    },
-    {
-      "title": "AEVEX Corp. Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:41:12.852374-03:00"
-    },
-    {
-      "title": "Grocery Outlet Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:41:15.498201-03:00"
-    },
-    {
-      "title": "CAE Q1 2027 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:41:18.126383-03:00"
-    },
-    {
-      "title": "Comscore Q2 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:41:20.761384-03:00"
-    },
-    {
-      "title": "NANO Nuclear Energy Q3 2026 Earnings Preview",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:41:23.415487-03:00"
-    },
-    {
-      "title": "Phoebe Gates and Sophia Kianni reportedly knew Phia was ‘cookie stuffing’ for months",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:41:34.509872-03:00"
-    },
-    {
-      "title": "Accel closes oversubscribed $550M India fund within weeks, 19 months after its last",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:41:37.222903-03:00"
-    },
-    {
       "title": "Cisco Systems Is In a Trading Range Ahead of Earnings - Shorting OTM Puts and Calls Works",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T17:12:06.760146-03:00"
+    },
+    {
+      "title": "Colombia Coffee Exports Partially Resume After Quake",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de café, mas não é um evento de grande impacto.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:15:48.295724-03:00"
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "source": "WSJ Markets",
+      "score": 2.0,
+      "motivo": "A notícia é um resumo genérico de discussões de mercado, sem informações específicas ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:15:52.213995-03:00"
+    },
+    {
+      "title": "Na EcoRodovias, resposta ao El Niño começa muito antes da chuva e onda de calor",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas sim na estratégia da concessionária contra eventos climáticos extremos.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:15:58.513867-03:00"
+    },
+    {
+      "title": "Discord diz que ANPD agiu de forma prematura ao suspender lives da plataforma",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:16:01.312234-03:00"
+    },
+    {
+      "title": "3 things to look out for on Thursday",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:16:04.424932-03:00"
+    },
+    {
+      "title": "Allogene Therapeutics GAAP EPS of -$0.13 beats by $0.04, revenue of $4.64M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:16:07.195875-03:00"
+    },
+    {
+      "title": "Jack In The Box Non-GAAP EPS of $0.96 beats by $0.08, revenue of $257.6M misses by $6.99M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:16:10.025164-03:00"
+    },
+    {
+      "title": "Cisco perks up as Q4 results, guidance top estimates",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:16:12.793992-03:00"
+    },
+    {
+      "title": "Red Robin Gourmet Burgers Non-GAAP EPS of $0.12 beats by $0.12, revenue of $277.6M beats by $11.8M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:16:15.597031-03:00"
+    },
+    {
+      "title": "CuriosityStream GAAP EPS of $0.15 beats by $0.11, revenue of $23.2M beats by $1.99M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:16:18.377334-03:00"
+    },
+    {
+      "title": "Stem GAAP EPS of -$1.58 beats by $0.25, revenue of $33.65M misses by $3M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:16:21.142654-03:00"
+    },
+    {
+      "title": "Milhares de concurseiros tomam as ruas em nova onda de protestos na Índia; entenda",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T17:16:28.583128-03:00"
     }
   ]
 }
