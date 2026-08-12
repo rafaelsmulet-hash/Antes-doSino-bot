@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "CNT/MDA: Lula tem 42% contra 28% de Flávio Bolsonaro em cenário de primeiro turno",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia e sobre politica, nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:26:08.320937-03:00"
-    },
-    {
-      "title": "Conmebol suspende jogos na Colômbia após terremoto que deixou mais de 150 mortos",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia é sobre um evento natural e esportivo, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:26:14.587551-03:00"
-    },
-    {
-      "title": "Wall Street trades muted as eye remain on the Middle East and upcoming inflation data",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A notícia não é específica sobre uma decisão de mercado imediata, mas sim um cenário geral de cautela.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T11:26:17.936495-03:00"
-    },
-    {
-      "title": "Playboy rallies 22% as its licensing model starts to pay off",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:26:20.552837-03:00"
-    },
-    {
-      "title": "Dinheiro 'esquecido' em bancos cai 17,9% com saque de R$ 340 mi e Desenrola",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T11:26:28.684391-03:00"
-    },
-    {
       "title": "Um novo guidance faz ação da Embraer “voar”",
       "source": "Neofeed",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T10:31:13.918970-03:00"
+    },
+    {
+      "title": "Citi's Hollenhorst Weighs Oil Against Domestic Economy",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não apresenta informações específicas ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:35:47.647935-03:00"
+    },
+    {
+      "title": "Why Romantasy May Soon Be a Billion-Dollar Business",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:35:50.540039-03:00"
+    },
+    {
+      "title": "Ondas heads into Q2 earnings with defense orders flooding in: Here's what to watch",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:35:56.368445-03:00"
+    },
+    {
+      "title": "GM sets up $4.5 billion supply chain prepayment facility",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A medida pode ajudar a reduzir os custos e melhorar a eficiência da empresa, o que é positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T10:36:08.334310-03:00"
+    },
+    {
+      "title": "Scott Bessent says America’s Founding Fathers ‘could not have imagined’ today’s economy — how to bet big on the USA",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T10:36:10.981717-03:00"
     }
   ]
 }
