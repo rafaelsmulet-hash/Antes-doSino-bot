@@ -1,186 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Romantasy May Soon Be a Billion-Dollar Business",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:51:25.766449-03:00"
-    },
-    {
-      "title": "Pimco Sees Fed on Hold Through 2026 as Inflation Moderates",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta as expectativas de política monetária da Fed e pode influenciar as taxas de juros futuras.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:51:28.852377-03:00"
-    },
-    {
-      "title": "Pimco’s Seidner Says Angst Over Fed Credibility is Unwarranted",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A opinião da Pimco sobre os juros dos EUA é relevante e pode influenciar as decisões de investimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:51:31.777223-03:00"
-    },
-    {
-      "title": "Lloyds Metals Allowed to Ready Restart of Giant PNG Copper Mine",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Reinicialização da mina de cobre pode impactar positivamente a produção de cobre no futuro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:51:35.019435-03:00"
-    },
-    {
-      "title": "Yen Intervention Put China’s Yuan Under More Pressure, BE Says",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia afeta diretamente a política monetária da China e pode influenciar a economia do país.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:51:38.429387-03:00"
-    },
-    {
-      "title": "EVs dominate China’s car market: 5 takeaways from the country's latest auto sales data",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "Aumento da penetração de veículos de energia renovável na China é relevante para o mercado de automóveis",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:51:41.539310-03:00"
-    },
-    {
-      "title": "Trump afirma ter controle sobre Ormuz enquanto EUA e Irã endurecem posições",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "a noticia e sobre politica internacional e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:51:44.911981-03:00"
-    },
-    {
-      "title": "Inflação nos EUA, serviços no Brasil, balanço do Banco do Brasil e mais destaques",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "notícia reúne vários destaque, mas sem detalhes específicos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:51:47.795426-03:00"
-    },
-    {
-      "title": "Dow Jones Futuro sobe antes de inflação nos EUA, com ações de IA em destaque",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "inflação fraca e ações de IA em destaque são fatores positivos para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:51:50.629595-03:00"
-    },
-    {
-      "title": "Banco do Brasil (BBAS3) divulga balanço nesta 5º: outro tri difícil vem aí?",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "balanço do Banco do Brasil pode trazer informações relevantes sobre a qualidade dos ativos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:51:56.136536-03:00"
-    },
-    {
-      "title": "Ibovespa pode cair mais? Onde está o fundo da Bolsa",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "A noticia menciona a possibilidade de queda da Ibovespa e identifica suportes de correcao, o que indica materialidade relevante e impacto concreto no mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:52:02.694970-03:00"
-    },
-    {
-      "title": "Por que empreender aos 20 é melhor que aos 40, segundo bilionário dos brinquedos",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia não é sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:05.646099-03:00"
-    },
-    {
-      "title": "Jamie Dimon: supremacia militar dos EUA mantém o dólar no topo — e isso pode mudar",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Declaração do CEO do JPMorgan sobre a relação entre poder militar e econômico com o dólar",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:52:08.506621-03:00"
-    },
-    {
-      "title": "Bill Ackman: Livro que inspirou Buffett e “bico” de US$ 14 mil mudaram minha carreira",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia é sobre a carreira de um investidor, mas não tem impacto direto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:11.369466-03:00"
-    },
-    {
-      "title": "R$ 5,5 bi só na 1ª semana: o que explica a debandada do estrangeiro da B3 em agosto?",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "A notícia destaca a fuga de capital externo da B3, o que pode ser um sinal de incerteza e desconfiança do mercado em relação à economia brasileira.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:52:17.893765-03:00"
-    },
-    {
-      "title": "Boleto parcelado e Pix no crédito: empresas estão financiando os próprios clientes",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Aumento da oferta de boleto parcelado e Pix no crédito pode indicar um aumento no endividamento dos consumidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:20.754030-03:00"
-    },
-    {
-      "title": "Bolsas da Ásia fecham majoritariamente em alta, lideradas por Seul",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "as ações de semicondutores lideraram a alta nas bolsas asiáticas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:52:25.219528-03:00"
-    },
-    {
-      "title": "Tempo real: Ibovespa acompanha inflação nos EUA e dados de serviços",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado pois se refere ao Ibovespa e ao crescimento do setor de serviços no Brasil, mas o impacto é neutro pois não há informações específicas sobre mudanças significativas no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:52:28.156457-03:00"
-    },
-    {
-      "title": "Petróleo sobe com dúvidas sobre acordo entre EUA e Irã e preocupações com abastecimento",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T06:52:30.860638-03:00"
-    },
-    {
-      "title": "Goldman Sachs eleva recomendação da SoftBank com avanço da IA",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Elevação da recomendação da Goldman Sachs na SoftBank indica confiança no avanço da IA",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T06:52:33.797405-03:00"
-    },
-    {
       "title": "Por que as ações da Bechtle estão caindo hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17819,186 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T18:41:27.909392-03:00"
+    },
+    {
+      "title": "Kushner, Iger Buy Lakers for Record-Breaking $12.5 Billion",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:45:41.690131-03:00"
+    },
+    {
+      "title": "Indonesian Tech Firm GoTo Cut From MSCI Indexes in Review",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "Remoção da empresa de um índice importante pode afetar a liquidez e a valorização das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:45:44.723803-03:00"
+    },
+    {
+      "title": "Why JPMorgan is investing big in the 2028 LA Olympics",
+      "source": "CNBC - Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:45:47.576692-03:00"
+    },
+    {
+      "title": "Ser Educacional (SEER3) tem lucro ajustado de R$ 115 mi no 2º tri, alta anual de 33%",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:45:51.164571-03:00"
+    },
+    {
+      "title": "Lockheed Martin fecha contrato de defesa de US$ 211 milhões com os Emirados Árabes Unidos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:45:56.403063-03:00"
+    },
+    {
+      "title": "México - Ações fecharam o pregão em alta e o Índice S&P/BMV IPC avançou 0,29%",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Aumento do Índice S&P/BMV IPC indica uma tendência positiva no mercado mexicano",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:45:59.444344-03:00"
+    },
+    {
+      "title": "Ibovespa e dólar hoje: saída de estrangeiros pressiona bolsa e eleva câmbio",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:46:02.189594-03:00"
+    },
+    {
+      "title": "SLC eleva lucro em 75% no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:46:04.869161-03:00"
+    },
+    {
+      "title": "Colômbia - Ações fecharam o pregão em alta e o Índice COLCAP avançou 0,29%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:46:07.612740-03:00"
+    },
+    {
+      "title": "Rumo tem lucro acima do esperado no 2º trimestre",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:46:10.319336-03:00"
+    },
+    {
+      "title": "Silver could hit $90 in next 6-12 months as investment demand recovers, Citi says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:46:14.843805-03:00"
+    },
+    {
+      "title": "Applied Digital vs. Microsoft: Which Technology Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:46:20.966100-03:00"
+    },
+    {
+      "title": "Berkshire CEO Greg Abel Is Sitting on More Than $360 Billion in Cash. Here's How His Deal-Making Approach Differs From Warren Buffett's.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:46:23.805642-03:00"
+    },
+    {
+      "title": "Stock Market Today, Aug. 12: Stocks Edge Higher as Inflation Data Eases Fed Rate Pressure",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:46:26.577997-03:00"
+    },
+    {
+      "title": "Stock Market Today, Aug. 12: Nebius Group Surges on Massive Revenue Growth",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:46:29.315839-03:00"
+    },
+    {
+      "title": "Jamie Dimon Just Issued a 9-Word Warning to Stock Investors. Here's What History Says Comes Next.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:46:32.091380-03:00"
+    },
+    {
+      "title": "Maplebear CEO Chris Rogers Sells 4,933 Shares at $50",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:46:34.796303-03:00"
+    },
+    {
+      "title": "Stock Market Today, Aug. 12: Wendy's Surges 15% on Take-Private Bid Report",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:46:37.540712-03:00"
+    },
+    {
+      "title": "The AI Trade Has a New Battleground and One Stock is Emerging as a Winner",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:46:46.128439-03:00"
+    },
+    {
+      "title": "Don’t Look Now, But Anthropic is Bypassing Hyperscalers",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:46:48.831979-03:00"
     }
   ]
 }
