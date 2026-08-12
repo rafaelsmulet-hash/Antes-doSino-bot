@@ -1,276 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Trump says he spoke recently to Fed Chairman Warsh, denies regular calls",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T12:56:26.118235-03:00"
-    },
-    {
-      "title": "Melhora no cenário de juros cria risco duplo para ativos isentos de IR, alerta Sparta",
-      "source": "InfoMoney",
-      "score": 7.0,
-      "motivo": "Debêntures incentivadas podem enfrentar abertura de spreads e perda de valor do benefício fiscal",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:01:07.190737-03:00"
-    },
-    {
-      "title": "Zuckerberg publica manifesto de 6.500 palavras sobre IA; veja 5 conclusões",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre tecnologia e IA.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:01:10.484605-03:00"
-    },
-    {
-      "title": "Usiminas e Gerdau: BBA vê hora de pisar no freio e corta recomendações; ações caem",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "recomendação de cortar ações de Usiminas e Gerdau por perspectivas fracas",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:01:17.077731-03:00"
-    },
-    {
-      "title": "Real Time Big Data: Lula tem 33 pontos de vantagem sobre Flávio Bolsonaro na Bahia",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia politica sem relevancia direta para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:01:22.784277-03:00"
-    },
-    {
-      "title": "Why Cardinal Infrastructure Group Stock Just Crashed",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:01:28.538753-03:00"
-    },
-    {
-      "title": "Cathie Wood Goes Bargain Hunting: 3 Stocks She Just Bought",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:01:31.250743-03:00"
-    },
-    {
-      "title": "Down 0.5% in 2026, Is Palantir Stock a Buy?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:01:33.960770-03:00"
-    },
-    {
-      "title": "Nvidia Stock Rises As Chipmaker Rounds Up Funding For AI Buildout",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:01:43.080155-03:00"
-    },
-    {
-      "title": "Jeff Dean's hour-by-hour breakdown of his Google exit: an 'emotional' video chat, Yoga at 7, and 'unemployed' at 11:59",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:01:46.313332-03:00"
-    },
-    {
-      "title": "Household debt balances edge down in Q2: New York Fed",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A notícia é relevante porque fornece informações sobre o comportamento do mercado de crédito, mas não é um evento significativo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:05:57.447855-03:00"
-    },
-    {
-      "title": "Cisco options chain braces for ~8% earnings swing",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de lucros da Cisco, uma empresa de tecnologia de grande porte.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:06:00.531380-03:00"
-    },
-    {
-      "title": "Jeffersonville Bancorp declares $0.20 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:06:03.151864-03:00"
-    },
-    {
-      "title": "Muncy Columbia Financial declares $0.155 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:06:05.766536-03:00"
-    },
-    {
-      "title": "Nvidia's half-a-tril deal tackles hyperscalers' funding bottleneck: analysts",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:06:08.420974-03:00"
-    },
-    {
-      "title": "Organigram surges 10% on record Q3 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:06:11.039661-03:00"
-    },
-    {
-      "title": "Cardinal Health forecasts FY27 EPS of $12.40-$12.60 and at least $1B in share repurchases as board adds $5B to buyback authority",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:06:13.735222-03:00"
-    },
-    {
-      "title": "Joby Aviation builds out defense business with $500M acquisition",
-      "source": "TechCrunch",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre um evento financeiro direto, mas sim sobre uma expansão de negócios da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:06:24.348235-03:00"
-    },
-    {
-      "title": "JBS Seeks US Margin Recovery With New CEO Pledging Continuity",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a perspectiva de recuperação de margens para a JBS, o que é relevante para o mercado de ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:11:03.032620-03:00"
-    },
-    {
-      "title": "Bélgica - Ações fecharam o pregão em queda e o Índice BEL 20 recuou 0,84%",
-      "source": "Investing.com Brasil",
-      "score": 3.0,
-      "motivo": "queda no Índice BEL 20",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:11:08.726082-03:00"
-    },
-    {
-      "title": "Suécia - Ações fecharam o pregão em queda e o Índice OMX Stockholm 30 recuou 0,26%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "queda no Índice OMX Stockholm 30 e ações em queda",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:11:11.642221-03:00"
-    },
-    {
-      "title": "Finlândia - Ações fecharam o pregão em alta e o Índice OMX Helsinki 25 avançou 0,21%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:11:14.387805-03:00"
-    },
-    {
-      "title": "Por que o ETF iShares MSCI China está caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:11:17.195094-03:00"
-    },
-    {
-      "title": "UBS eleva Jabil para compra com crescimento em IA e mantém preço-alvo de US$ 430",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:11:19.940713-03:00"
-    },
-    {
-      "title": "Goldman Sachs vê China entrando na era \"Go Global 3.0\" de exportações",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:11:22.667070-03:00"
-    },
-    {
-      "title": "Marcas de beleza e Instituto Maria da Penha unem forças no combate à violência contra a mulher",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:11:26.804417-03:00"
-    },
-    {
-      "title": "IPCA fica em 0,07% em julho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:15:43.541371-03:00"
-    },
-    {
-      "title": "Reino Unido - Ações fecharam o pregão em queda e o Índice Investing.com Reino Unido 100 recuou 0,15%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "queda das ações e do índice no Reino Unido",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:15:47.082325-03:00"
-    },
-    {
-      "title": "Espanha - Ações fecharam o pregão em alta e o Índice IBEX 35 avançou 0,20%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "o Índice IBEX 35 avançou, indicando um mercado em alta",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:15:49.903381-03:00"
-    },
-    {
-      "title": "Portugal - Ações fecharam o pregão em alta e o Índice PSI avançou 0,61%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "o Índice PSI avançou e as ações fecharam em alta, indicando um ambiente positivo no mercado português",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:15:52.713174-03:00"
-    },
-    {
       "title": "Holanda - Ações fecharam o pregão em alta e o Índice AEX avançou 0,31%",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17729,276 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T11:51:20.885286-03:00"
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "source": "WSJ Markets",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações concretas ou impactantes sobre o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:55:36.492626-03:00"
+    },
+    {
+      "title": "Grécia - Ações fecharam o pregão em queda e o Índice Athens General Composite recuou 0,03%",
+      "source": "Investing.com Brasil",
+      "score": 4.0,
+      "motivo": "queda das ações e recuo do índice econômico grego",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:55:40.925089-03:00"
+    },
+    {
+      "title": "Grupo alemão registra queixa criminal contra Meta por óculos com IA",
+      "source": "Investing.com Brasil",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira relevante",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:55:43.678248-03:00"
+    },
+    {
+      "title": "Opções da Analog Devices sugerem variação de 5,8% nos resultados de 19 de agosto",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:55:46.336681-03:00"
+    },
+    {
+      "title": "Ação da Target pode oscilar 6,9% com resultado trimestral",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:55:48.969632-03:00"
+    },
+    {
+      "title": "Opções da Estee Lauder sinalizam movimento de 8,7% nos resultados",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:55:51.643710-03:00"
+    },
+    {
+      "title": "Por que as ações da Cerebras Systems estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:55:54.311631-03:00"
+    },
+    {
+      "title": "Opções da Wolfspeed sinalizam oscilação de 14% nos resultados de 19 de agosto",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:55:56.960757-03:00"
+    },
+    {
+      "title": "Ações da TJX podem oscilar 4,4% com resultados em 19 de agosto",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:55:59.592758-03:00"
+    },
+    {
+      "title": "Ações da Micron disparam com otimismo sobre memória para IA",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:02.226629-03:00"
+    },
+    {
+      "title": "Ações da Lowe’s podem oscilar 3,9% com resultados em 19 de agosto",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:04.861295-03:00"
+    },
+    {
+      "title": "Entregadores de apps terão salário mínimo de R$ 112 por hora na Austrália",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:56:07.788549-03:00"
+    },
+    {
+      "title": "Ibovespa busca fôlego após tombo, mas risco doméstico pesa; dólar mantém alta",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:56:10.436886-03:00"
+    },
+    {
+      "title": "Brasil é o segundo maior mercado da plataforma Discord, que sofreu sanção nesta quarta, 12",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:56:13.137238-03:00"
+    },
+    {
+      "title": "Social Security recipients will get more money next year. Here’s how much benefits may rise.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:16.118059-03:00"
+    },
+    {
+      "title": "Apotex Health declares $0.06 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:18.839576-03:00"
+    },
+    {
+      "title": "RBC keeps bullish S&P 500 view, gives edge to U.S. and growth",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:56:21.479555-03:00"
+    },
+    {
+      "title": "Marex Group declares $0.16 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:24.095948-03:00"
+    },
+    {
+      "title": "JPMorgan Income ETF declares $0.1055 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:56:26.726519-03:00"
+    },
+    {
+      "title": "JPMorgan Active Bond ETF declares $0.0839 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:56:29.354038-03:00"
+    },
+    {
+      "title": "JPMorgan Ultra-Short Income ETF declares $0.0713 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:56:31.988893-03:00"
+    },
+    {
+      "title": "IEA more than doubles global oil deficit forecast to 1.8M bbl/day this quarter",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:34.637658-03:00"
+    },
+    {
+      "title": "Shinsegae launches first overseas off-price store in Laos",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:44.750706-03:00"
+    },
+    {
+      "title": "Here’s Why Baron Opportunity Fund Sold CoStar Group (CSGP)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:47.382605-03:00"
+    },
+    {
+      "title": "ArcelorMittal (MT) vs. Microsoft Corporation (MSFT): A Steel Giant Bets Its Future on Azure",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A empresa de aço está investindo na tecnologia da Microsoft, o que pode ter impacto positivo no seu desempenho futuro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:56:50.633011-03:00"
+    },
+    {
+      "title": "Consumer inflation eased to 3.4% in July, despite recent energy shocks",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:53.277709-03:00"
+    },
+    {
+      "title": "Micron Technology’s (MU) Competitive Edge in a Rapidly Evolving Industry",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:56:55.921262-03:00"
+    },
+    {
+      "title": "Tokenization Promises To Break Trading Barriers. What Investors Need To Know.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:56:58.578969-03:00"
+    },
+    {
+      "title": "BorgWarner (BWA) Q2 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T11:57:01.206119-03:00"
+    },
+    {
+      "title": "I spent 11 hours sharing a cabin with 3 strangers on a sleeper train in Europe. 6 surprises made me regret it.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T11:57:04.320203-03:00"
     }
   ]
 }
