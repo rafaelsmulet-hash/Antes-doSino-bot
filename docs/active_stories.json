@@ -39,7 +39,7 @@
       "id": "cbd5f033-6943-4dad-ac1e-0f54c7901a09",
       "cluster_key": "gol",
       "first_seen": "2026-08-05T06:57:38.913154-03:00",
-      "last_updated": "2026-08-11T21:01:22.874089-03:00",
+      "last_updated": "2026-08-12T06:56:47.780994-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "G1 Economia",
@@ -58,14 +58,14 @@
         "Neofeed",
         "Exame"
       ],
-      "update_count": 131,
+      "update_count": 134,
       "status": "active"
     },
     {
       "id": "00af5ec9-e29c-4df2-b442-0978c6aba1db",
       "cluster_key": "vale",
       "first_seen": "2026-08-05T06:57:46.456273-03:00",
-      "last_updated": "2026-08-11T21:06:17.353994-03:00",
+      "last_updated": "2026-08-12T06:55:39.157049-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "G1 Economia",
@@ -82,7 +82,7 @@
         "UOL Economia",
         "Neofeed"
       ],
-      "update_count": 60,
+      "update_count": 64,
       "status": "active"
     },
     {
@@ -119,14 +119,15 @@
       "id": "2bc33a91-f6b2-44fa-a6c2-42455118edbe",
       "cluster_key": "azul",
       "first_seen": "2026-08-05T08:25:54.751623-03:00",
-      "last_updated": "2026-08-11T10:05:51.996337-03:00",
+      "last_updated": "2026-08-12T06:53:04.525887-03:00",
       "materiality_peak": 5.0,
       "sources_seen": [
         "InfoMoney",
         "UOL Economia",
-        "Investing.com Brasil"
+        "Investing.com Brasil",
+        "Brazil Journal"
       ],
-      "update_count": 6,
+      "update_count": 7,
       "status": "active"
     },
     {
@@ -262,14 +263,14 @@
       "id": "8f6cb92e-966f-4f1e-a6c2-03513c6c2ee8",
       "cluster_key": "banco do brasil",
       "first_seen": "2026-08-07T16:20:58.561285-03:00",
-      "last_updated": "2026-08-11T22:06:18.867448-03:00",
+      "last_updated": "2026-08-12T06:53:32.664391-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "InfoMoney",
         "Exame",
         "UOL Economia"
       ],
-      "update_count": 5,
+      "update_count": 6,
       "status": "active"
     },
     {
@@ -313,12 +314,13 @@
       "id": "00c6f23c-cfaa-400f-968a-a44e3bb56f02",
       "cluster_key": "bbas3",
       "first_seen": "2026-08-11T15:25:59.115803-03:00",
-      "last_updated": "2026-08-11T15:25:59.115803-03:00",
+      "last_updated": "2026-08-12T06:51:56.132046-03:00",
       "materiality_peak": 6.0,
       "sources_seen": [
-        "Money Times"
+        "Money Times",
+        "InfoMoney"
       ],
-      "update_count": 1,
+      "update_count": 2,
       "status": "active"
     },
     {
