@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Europe Is Ticking a Lot of Boxes for Investors Right Now",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Notícia sobre crescimento econômico e lucros robustos é relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T07:04:06.722200-03:00"
-    },
-    {
-      "title": "Adani Lands $800 Million Data Center Loan as US Drops Charges",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois indica investimento em infraestrutura de tecnologia, que pode impactar a demanda por energia e outros recursos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T07:04:09.803166-03:00"
-    },
-    {
       "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
       "source": "WSJ Markets",
       "score": 8.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-11T21:36:02.012228-03:00"
+    },
+    {
+      "title": "Indonesian Bonds May Have Seen Worst of Selling, Analysts Say",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A expectativa de um novo chefe do banco central apoiar a moeda e abordar preocupações sobre estabilidade fiscal é considerada relevante e com impacto concreto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-11T21:40:34.146480-03:00"
+    },
+    {
+      "title": "Hedge Funds Are Piling Back Into the Market",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aumento de investimentos indica confiança no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-11T21:40:46.189157-03:00"
     }
   ]
 }
