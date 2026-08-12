@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Quina hoje, concurso 7089: confira o resultado sorteado nesta terça (11)",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "resultado de concurso de loteria não afeta o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T21:55:47.834253-03:00"
-    },
-    {
-      "title": "Galaxy and Sharplink Launch $125M Fund to Put Institutional ETH to Work Onchain",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque pode aumentar a adoção de ETH em aplicativos de blockchain, o que pode impulsionar o preço da criptomoeda.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T21:56:03.037182-03:00"
-    },
-    {
-      "title": "New Zealand Prime Minister Luxon Wins Party Confidence Vote",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:06:11.944613-03:00"
-    },
-    {
-      "title": "Banco BV tem lucro líquido de R$ 491 mi no 2º tri",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Lucro líquido positivo indica saúde financeira do banco",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T22:06:18.871566-03:00"
-    },
-    {
-      "title": "Evolv expects $180M-$185M 2026 revenue as it targets over 10,000 deployed units",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque indica um crescimento esperado da empresa, o que pode afetar positivamente o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:06:25.238545-03:00"
-    },
-    {
-      "title": "Pixelworks expects cash operating expenses below $2.5M per quarter in 2026 while adding a new multiyear device certification deal",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A redução de custos operacionais e a assinatura de um novo acordo de certificação de dispositivo são indicativos de uma gestão financeira eficaz e podem ter um impacto positivo no desempenho da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:06:28.937331-03:00"
-    },
-    {
-      "title": "Mark Zuckerberg Published His Superintelligence Manifesto Monday Morning. Meta Still Trades at 18 Times Forward Earnings.",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T22:11:02.574032-03:00"
-    },
-    {
       "title": "Limbach Holdings (LMB) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": 0.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T18:31:38.116042-03:00"
+    },
+    {
+      "title": "Former CDC Official on the Cyclospora Outbreak",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:35:43.980651-03:00"
+    },
+    {
+      "title": "Rio Tinto Aluminum Smelter Gets $1.8 Billion Australian Bailout",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "O resgate governamental pode ajudar a manter a usina operando e evitar perdas significativas para a Rio Tinto Group e outros proprietários.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:35:47.220861-03:00"
+    },
+    {
+      "title": "Secretária de Imprensa da Casa Branca, Karoline Leavitt, deixará o cargo",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:35:51.545867-03:00"
+    },
+    {
+      "title": "Banco do Brasil (BBAS3) tem lucro líquido de R$ 3,9 bi no 2T",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Resultado de lucro líquido significativo impacta positivamente a ação do Banco do Brasil",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:35:58.213007-03:00"
+    },
+    {
+      "title": "No mercado de juros, DIs intermediários e longos sobem com risco fiscal-eleitoral",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:36:02.595260-03:00"
+    },
+    {
+      "title": "CAE Q1 Profit Falls",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T18:36:10.059920-03:00"
+    },
+    {
+      "title": "A saída pela América do Sul da Minerva Foods para não perder sua fatia na China",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T18:36:18.218609-03:00"
     }
   ]
 }
