@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Graham Holdings, Amazon lead consumer discretionary stocks with highest earnings beats",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia destaca a performance excepcional de Graham Holdings e Amazon em relação às previsões de lucro, o que é relevante para o mercado atualmente.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:41:33.869813-03:00"
-    },
-    {
-      "title": "Domino's looks for a sales boost from its new Detroit-style pizza offering",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante pois pode afetar as vendas da empresa e, consequentemente, o desempenho do mercado de ações.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:41:36.752590-03:00"
-    },
-    {
-      "title": "Bio-Techne Non-GAAP EPS of $0.52 in-line, revenue of $321.19M beats by $6.67M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Receita superior à expectativa é um sinal positivo para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:41:39.634675-03:00"
-    },
-    {
-      "title": "Valens Semiconductor beats top-line estimates; gives Q3 and raises FY 2026 outlook",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "Aumento da previsão de receita e de resultados financeiros é um sinal positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:41:42.630934-03:00"
-    },
-    {
-      "title": "Liquidia GAAP EPS of $0.74 in-line, revenue of $171.68M beats by $3.2M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em termos de receita, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:41:45.505915-03:00"
-    },
-    {
-      "title": "Ituran Location GAAP EPS of $0.88 beats by $0.02, revenue of $104.79M beats by $4.94M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "Resultados financeiros superiores às expectativas são geralmente considerados positivos para as ações da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:41:48.410535-03:00"
-    },
-    {
-      "title": "Austrália cria proteção inédita para entregadores de aplicativo",
-      "source": "G1 Economia",
-      "score": 2.0,
-      "motivo": "a noticia nao e sobre mercado financeiro, mas sim sobre direitos trabalhistas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:41:57.285430-03:00"
-    },
-    {
-      "title": "PwC's US CEO built an AI assistant called 'PG's Whisperer.' He talks to it all day.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:42:04.127577-03:00"
-    },
-    {
       "title": "SEC Small Business Advisory Committee to Explore Modernizing Market Access",
       "source": "SEC",
       "score": 3.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T20:31:22.241885-03:00"
+    },
+    {
+      "title": "ASX Profit Misses Estimates as Attia Prepares to Lead Exchange",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a ASX, uma das principais bolsas de valores da Austrália, e pode influenciar a percepção dos investidores sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:35:42.352082-03:00"
+    },
+    {
+      "title": "Copasa (CSMG3) tem lucro líquido ajustado de R$ 275,5 mi no 2T, queda anual de 4,8%",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A notícia apresenta uma queda no lucro líquido ajustado, mas uma alta na receita líquida, o que pode ser considerado rotineiro para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:35:46.095919-03:00"
+    },
+    {
+      "title": "Aluguel sobe dez vezes mais que a inflação em julho, segundo FipeZAP",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "o aumento do aluguel superando a inflação pode indicar pressão sobre os consumidores e potencialmente afetar a economia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:35:50.751657-03:00"
+    },
+    {
+      "title": "OptimizeRx reiterates $95M-$100M 2026 revenue outlook amid CFO transition",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:35:53.609866-03:00"
+    },
+    {
+      "title": "Biostem raises 2026 revenue outlook to $26M-$29M while targeting manufacturing transfer in H1 2027",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:35:56.347559-03:00"
+    },
+    {
+      "title": "Intellinetics expects double-digit SaaS growth for fiscal 2026 while outlining a 2-4 year shift toward recurring revenue",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:35:59.088444-03:00"
+    },
+    {
+      "title": "Nortech outlines backlog strength with $93.8M total orders, as Q2 net sales rise 9.3% to $33.5M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:36:01.841993-03:00"
+    },
+    {
+      "title": "Jeep Avenger chega por R$ 114.990 e aposta em tecnologia híbrida leve e equipamentos para encarar chineses",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:36:08.634552-03:00"
     }
   ]
 }
