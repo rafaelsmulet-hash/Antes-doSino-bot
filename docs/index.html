@@ -61,7 +61,7 @@
     display:inline-flex;align-items:center;gap:6px;
     font-size:0.78rem;font-weight:600;padding:8px 14px;border-radius:var(--r-pill);
     background:transparent;border:1px solid var(--line-strong);color:var(--slate);
-    cursor:pointer;white-space:nowrap;transition:color 0.2s ease, border-color 0.2s ease;
+    cursor:pointer;white-space:nowrap;transition:color 0.2s ease, border-color 0.2s ease, transform 0.15s var(--ease-out);
   }
   .btn-customize svg{width:14px;height:14px;flex-shrink:0;}
   .btn-customize:hover{color:var(--cream);border-color:var(--gold);}
@@ -69,7 +69,7 @@
     display:inline-flex;align-items:center;gap:8px;
     font-size:0.78rem;padding:7px 8px 7px 12px;border-radius:var(--r-pill);
     background:var(--surface-1);border:1px solid var(--line-strong);color:var(--slate);
-    cursor:pointer;white-space:nowrap;transition:color 0.2s ease, border-color 0.2s ease;
+    cursor:pointer;white-space:nowrap;transition:color 0.2s ease, border-color 0.2s ease, transform 0.15s var(--ease-out);
   }
   .btn-search svg{width:14px;height:14px;flex-shrink:0;}
   .btn-search:hover{color:var(--cream);border-color:var(--gold);}
@@ -127,6 +127,22 @@
   }
   .panel-head .panel-hide-btn:hover{color:var(--down);}
   .panel-body{flex:1;min-height:0;position:relative;}
+
+  /* Skeleton (placeholder pulsante) enquanto o widget da TradingView
+     carrega - cobre o painel por cima do iframe ate terminal.js tirar
+     a classe .loading (ver comLoadingSkeleton), no lugar de deixar o
+     painel em branco. */
+  @keyframes skeleton-shimmer{
+    0%{background-position:200% 0;}
+    100%{background-position:-200% 0;}
+  }
+  .panel-body.loading::before, .macro-widget-body.loading::before{
+    content:'';position:absolute;inset:0;z-index:1;border-radius:inherit;
+    background-color:var(--surface-1);
+    background-image:linear-gradient(90deg, transparent, var(--surface-2), transparent);
+    background-size:200% 100%;background-repeat:no-repeat;
+    animation:skeleton-shimmer 1.6s ease-in-out infinite;
+  }
   .panel[data-hidden="true"]{display:none;}
 
   /* O widget "Symbol Overview" (usado so no VIX) desenha o selo de
@@ -153,6 +169,7 @@
     background:none;border:1px solid var(--line);color:var(--slate);cursor:pointer;
     font-size:0.76rem;font-weight:600;padding:6px 14px;border-radius:100px;
     font-family:'IBM Plex Mono',monospace;
+    transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.15s var(--ease-out);
   }
   .picker-tab.active{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
   .picker-tab:not(.active):hover{color:var(--cream);border-color:var(--bronze);}
@@ -227,6 +244,7 @@
     flex:1;background:none;border:1px solid var(--line);color:var(--slate);cursor:pointer;
     font-size:0.72rem;font-weight:600;padding:7px 8px;border-radius:8px;
     font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.4px;
+    transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.15s var(--ease-out);
   }
   .sidebar-tab.active{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
   .sidebar-tab:not(.active):hover{color:var(--cream);border-color:var(--bronze);}
@@ -251,7 +269,9 @@
   /* ---------- Painel de personalizacao (drawer) ---------- */
   .customize-drawer{
     position:fixed;top:0;right:0;width:320px;height:100vh;z-index:100;
-    background:var(--navy);border-left:1px solid var(--line);
+    background:color-mix(in srgb, var(--navy) 85%, transparent);
+    backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);
+    border-left:1px solid var(--line);
     padding:20px;overflow-y:auto;
     transform:translateX(100%);transition:transform 0.25s ease;
     box-shadow:-20px 0 40px var(--backdrop);
@@ -271,7 +291,7 @@
   .customize-reset:hover{color:var(--down);border-color:var(--down);}
   .customize-close{
     position:absolute;top:16px;right:16px;background:none;border:none;color:var(--slate);
-    font-size:1.1rem;cursor:pointer;
+    font-size:1.1rem;cursor:pointer;transition:transform 0.15s var(--ease-out), color 0.2s ease;
   }
   .drawer-backdrop{
     display:none;position:fixed;inset:0;background:var(--backdrop);z-index:90;
@@ -286,7 +306,9 @@
   .cmdk-modal{
     display:none;position:fixed;top:14vh;left:50%;transform:translateX(-50%);
     width:min(560px, 92vw);max-height:70vh;z-index:201;
-    background:var(--navy);border:1px solid var(--line-strong);border-radius:var(--r-lg);
+    background:color-mix(in srgb, var(--navy) 82%, transparent);
+    backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);
+    border:1px solid var(--line-strong);border-radius:var(--r-lg);
     box-shadow:0 24px 60px var(--backdrop);overflow:hidden;
     flex-direction:column;
   }

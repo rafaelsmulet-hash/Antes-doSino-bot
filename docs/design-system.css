@@ -102,8 +102,16 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 a{color:inherit;text-decoration:none;}
-.mono{font-family:var(--font-mono);}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
 ::selection{background:var(--gold);color:var(--navy-deep);}
+
+/* Vidro fosco compartilhado - usado no nav (sticky) e em qualquer
+   overlay que sobrepoe conteudo (modais, drawers). Extraido como
+   classe pra nao duplicar os 2 valores em cada lugar novo. */
+.glass{
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
 
 @media (prefers-reduced-motion: reduce){
   *{transition-duration:0.01ms !important;animation-duration:0.01ms !important;scroll-behavior:auto !important;}
@@ -140,7 +148,7 @@ nav{
   display:inline-flex;align-items:center;justify-content:center;
   width:38px;height:38px;border-radius:50%;flex-shrink:0;
   background:var(--surface-1);border:1px solid var(--line-strong);color:var(--slate);
-  cursor:pointer;transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  cursor:pointer;transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.15s var(--ease-out);
 }
 .theme-toggle:hover{color:var(--gold);border-color:var(--gold);}
 .theme-toggle svg{width:17px;height:17px;flex-shrink:0;}
@@ -169,6 +177,9 @@ nav{
 .btn-primary:hover, .nav-cta:hover, .btn-vip:hover{
   transform:translateY(-1px) scale(1.02);box-shadow:var(--shadow-gold);background:var(--gold-soft);
 }
+.btn-primary:active, .nav-cta:active, .btn-vip:active{
+  transform:scale(0.96);box-shadow:none;transition-duration:0.1s;
+}
 .btn-primary:focus-visible, .nav-cta:focus-visible, .btn-vip:focus-visible{
   outline:2px solid var(--gold);outline-offset:2px;
 }
@@ -176,9 +187,17 @@ nav{
   display:inline-flex;align-items:center;gap:6px;
   font-size:0.85rem;font-weight:600;padding:10px 22px;border-radius:var(--r-pill);
   background:transparent;border:1px solid var(--line-strong);color:var(--cream);
-  transition:border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+  transition:border-color 0.2s ease, color 0.2s ease, background 0.2s ease, transform 0.15s var(--ease-out);
 }
 .btn-outline:hover{border-color:var(--gold);color:var(--gold-soft);background:rgba(230,183,110,0.06);}
+.btn-outline:active{transform:scale(0.96);}
+
+/* Feedback de clique padrao pra qualquer botao/controle interativo do
+   sistema (tema, busca, abas, drawer) - sutil, sem exagero. */
+.theme-toggle:active, .btn-search:active, .btn-customize:active,
+.sidebar-tab:active, .picker-tab:active, .customize-close:active{
+  transform:scale(0.94);
+}
 
 /* ---------- Banner secundario (oculto por padrao - grupo gratuito) ---------- */
 .vip-banner{
