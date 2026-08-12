@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "NYPD investigates gold bar scam that has stolen more than $100 million from retirees.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:46:31.948995-03:00"
-    },
-    {
-      "title": "Jim Cramer Weighs In on SoFi’s (SOFI) $16–$19 Range",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:46:34.611201-03:00"
-    },
-    {
-      "title": "Lake Victoria Gold Unveils Maiden 580,000-Ounce Resource at Tembo Project in Tanzania",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:46:37.301243-03:00"
-    },
-    {
-      "title": "A Dozen Ships Switch Oil Outside Hormuz as Barrels Flow Out",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A manutenção da passagem crítica de óleo é relevante, mas não impacta significativamente o mercado agora.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:50:49.699651-03:00"
-    },
-    {
-      "title": "South Africa Vows Eskom Won’t Weaken After Transmission Restructuring",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a estabilidade da empresa de energia estatal da África do Sul, o que pode ter impacto no mercado de energia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:50:53.015450-03:00"
-    },
-    {
-      "title": "AI Data Center Boom Is ‘Maxing Out’ P&C Insurers, AIG CEO Says",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T13:50:55.736732-03:00"
-    },
-    {
-      "title": "Candidato à Presidência, Rui Costa Pimenta, do PCO, é alvo de operação da PF",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre crime e justica criminal, sem relevancia direta para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:50:59.584450-03:00"
-    },
-    {
-      "title": "Kopin stock rises 25% after Q2 revenue beats estimates",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:51:06.013099-03:00"
-    },
-    {
-      "title": "Morgan Stanley maintains Overweight rating on Silence Therapeutics",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:51:08.795044-03:00"
-    },
-    {
-      "title": "Ark restaurants outlines Las Vegas bar opening early next year as America fully reopens by September",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:51:11.582981-03:00"
-    },
-    {
-      "title": "Ampco-Pittsburgh expects a significantly stronger second half of 2026 as demand builds across both segments",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:51:14.364001-03:00"
-    },
-    {
-      "title": "Aramark targets 9%-10% fiscal 2026 organic revenue growth as Nexus hyperscaler site scope rises 40%",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T13:51:17.136474-03:00"
-    },
-    {
       "title": "NHI targets $500M-$700M annual acquisitions while holding 4.1x net debt to adjusted EBITDA and raising dividend to $0.94",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T12:20:56.654118-03:00"
+    },
+    {
+      "title": "Direcional e LPS caem após 2T, enquanto Cury tem dia volátil: o que mercado achou?",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Cancelamentos e despesas afetam empresas de serviços",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:25:44.218086-03:00"
+    },
+    {
+      "title": "AIE corta projeção de demanda global de petróleo e vê déficit maior com caos em Ormuz",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Corte na demanda global e déficit maior de petróleo impactam negativamente o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:25:47.384027-03:00"
+    },
+    {
+      "title": "Restrições a estudantes do exterior nos EUA pode gerar perda de receita de US$ 3,4 bi",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "queda de matrículas pode afetar receita de universidades americanas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:25:50.282959-03:00"
+    },
+    {
+      "title": "Lakers negociam venda por US$ 12 bilhões, equivalente a 12 Flamengos",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:25:56.359591-03:00"
+    },
+    {
+      "title": "Birkenstock Holding Q3 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:25:59.454086-03:00"
+    },
+    {
+      "title": "Forum Markets Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:26:02.152261-03:00"
+    },
+    {
+      "title": "Advanced Flower Capital Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:26:04.854510-03:00"
+    },
+    {
+      "title": "SuperCom Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:26:07.543488-03:00"
+    },
+    {
+      "title": "Nomad Foods Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:26:10.238893-03:00"
+    },
+    {
+      "title": "Wolverine World Wide Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:26:12.947511-03:00"
+    },
+    {
+      "title": "OpenAI's cybersecurity Daybreak models make appearance on AWS",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T12:26:15.668751-03:00"
+    },
+    {
+      "title": "Innospec (IOSP) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T12:26:20.838752-03:00"
     }
   ]
 }
