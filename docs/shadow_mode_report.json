@@ -1,35 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 39768,
-  "aprovadas_pelo_fluxo_atual": 695,
-  "descartadas_pelos_filtros_atuais": 39073,
+  "total_ingeridas": 40016,
+  "aprovadas_pelo_fluxo_atual": 696,
+  "descartadas_pelos_filtros_atuais": 39320,
   "score_medio_materialidade": 3.98,
   "seriam_breaking": 23,
-  "iriam_para_rodada": 290,
-  "seriam_descartadas_pelo_novo_sistema": 1687,
-  "total_divergencias": 672,
+  "iriam_para_rodada": 288,
+  "seriam_descartadas_pelo_novo_sistema": 1689,
+  "total_divergencias": 670,
   "divergencias": [
-    {
-      "title": "Por que as ações da Annexon estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Trimble estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Owlet estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Indian Shares End Off Day's Lows",
       "source": "Nasdaq",
@@ -145,6 +124,27 @@
     {
       "title": "Por que as ações da Liquidia Technologies estão subindo hoje?",
       "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Ações da National Vision sobem após resultados do 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Ocado estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Lazard AUM rises to $286.9B in July",
+      "source": "Seeking Alpha",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"

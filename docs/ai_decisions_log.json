@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que as ações da Annexon estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ações caindo devido a perda de valor, o que é relevante para o mercado agora",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:36:49.674249-03:00"
-    },
-    {
-      "title": "Câmara de Nova York investiga publicidade de mercados de previsão",
-      "source": "Investing.com Brasil",
-      "score": 3.0,
-      "motivo": "investigação não é um evento de mercado significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:36:52.399736-03:00"
-    },
-    {
-      "title": "Por que as ações da Trimble estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A ação da Trimble está subindo devido a uma notícia positiva sobre o desempenho da empresa, o que é relevante para os investidores no mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:36:55.177644-03:00"
-    },
-    {
-      "title": "Por que as ações da Owlet estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A noticia menciona acoes disparando, o que indica uma mudanca positiva no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:36:57.952697-03:00"
-    },
-    {
-      "title": "Nintendo lança consoles Switch na Indonésia em dezembro",
-      "source": "Investing.com Brasil",
-      "score": 0.0,
-      "motivo": "não é uma notícia de mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:37:00.821470-03:00"
-    },
-    {
-      "title": "Super Micro stock is rallying after results. Here’s what Wall Street is saying.",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "Resultados positivos da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:37:04.127528-03:00"
-    },
-    {
       "title": "Indian Shares End Off Day's Lows",
       "source": "Nasdaq",
       "score": 4.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T20:21:48.935157-03:00"
+    },
+    {
+      "title": "Origin Profit Beats Estimates on Australian EV, Battery Uptake",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois o aumento da adoção de veículos elétricos e baterias em casa pode ter um impacto positivo no lucro da Origin Energy e no setor de energia renovável.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:25:33.436232-03:00"
+    },
+    {
+      "title": "Gold Steadies After Tame US Inflation Data Eases Rate-Hike Bets",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia reduziu a pressão para aumento de juros, o que é positivo para o mercado de ouro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:25:36.710799-03:00"
+    },
+    {
+      "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
+      "source": "WSJ Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:25:40.126976-03:00"
+    },
+    {
+      "title": "IA previu alta de 38% em biofarmacêutica coreana antes do rali",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:25:44.486468-03:00"
+    },
+    {
+      "title": "Azzas 2154 tem queda de 62,5% no lucro do 2º tri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:25:47.241221-03:00"
+    },
+    {
+      "title": "SEC Establishes Financial Reporting and Accounting Unit in Enforcement Division",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:25:56.941749-03:00"
     }
   ]
 }
