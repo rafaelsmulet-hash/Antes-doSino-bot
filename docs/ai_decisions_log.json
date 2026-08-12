@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Canadian Stocks Ticks Higher As Investors Monitor Middle East Developments",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-11T18:01:58.272916-03:00"
-    },
-    {
-      "title": "Wheat Posting Monday Morning Strength",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:02:12.214552-03:00"
-    },
-    {
-      "title": "Soybeans Pushing Higher to Begin the Week",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:02:14.869249-03:00"
-    },
-    {
-      "title": "Corn Ticking Higher on Monday Morning",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:02:17.520392-03:00"
-    },
-    {
-      "title": "Flávio prepara regra fiscal com aperto maior de gastos em caso de dívida alta",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Proposta prevê crescimento das despesas menor que das receitas, o que pode ser visto como um sinal de controle fiscal.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:05:52.426613-03:00"
-    },
-    {
-      "title": "PagBank (PAGS34) tem lucro recorrente de R$ 576 mi no 2º tri",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "lucro recorrente e alta de receita líquida demonstram saúde financeira do banco",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:05:55.493372-03:00"
-    },
-    {
-      "title": "Com apenas uma impressora 3D, alunos dessa escola aprenderam a gerir uma startup do zero",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:06:02.279109-03:00"
-    },
-    {
-      "title": "Almonty Industries GAAP EPS of $0.62 beats by $0.54, revenue of $42.99M misses by $6.46M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:06:05.194966-03:00"
-    },
-    {
-      "title": "Savers Value Village launches 15M-share secondary offering with $10M buyback plan",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:06:07.912033-03:00"
-    },
-    {
-      "title": "Vornado Realty teams up with Ken Griffin for $6.2B project at 350 Park Avenue",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:06:10.620492-03:00"
-    },
-    {
-      "title": "Lycos Energy GAAP EPS of C$0.03",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:06:13.273023-03:00"
-    },
-    {
-      "title": "Constellation Software GAAP EPS of $12.93, revenue of $3.34B misses by $10M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:06:15.988709-03:00"
-    },
-    {
-      "title": "Calvin B. Taylor Bankshares reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-11T18:06:18.659025-03:00"
-    },
-    {
       "title": "WhiteHorse Finance signals potential Chase and Naviga monetizations over next 6 to 12 months while holding Q3 dividend at $0.25",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T16:31:43.489466-03:00"
+    },
+    {
+      "title": "Calif. AG Calls Paramount’s Threat to Leave ‘Blackmail’",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:36:07.000765-03:00"
+    },
+    {
+      "title": "EUA devem colher segunda maior safra de milho da história apesar da queda na produtividade, diz USDA",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "safra de milho maior do que o esperado pode pressionar preços a baixo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:36:12.248716-03:00"
+    },
+    {
+      "title": "Playstation Plus: veja os jogos que chegaram ao catálogo em agosto",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:36:15.434156-03:00"
+    },
+    {
+      "title": "Should You Buy Home Depot Stock Before Aug. 18?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:36:20.541510-03:00"
+    },
+    {
+      "title": "Why SpaceX Stock Just Gained 11%",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:36:23.155656-03:00"
+    },
+    {
+      "title": "Treasuries Close Roughly Flat As Early Buying Interest Evaporates",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:36:25.804931-03:00"
+    },
+    {
+      "title": "Coherent Corp. Q4 26 Earnings Conference Call At  4:30 PM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:36:28.455333-03:00"
+    },
+    {
+      "title": "Fundador afastado da Apex vai à Justiça para provar que não decidia sozinho",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T16:36:34.214574-03:00"
+    },
+    {
+      "title": "Ukraine Defies Vance Warning With Massive Strike On Russia's Key Black Sea Port, Shuttering Grain Terminals",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:36:40.560757-03:00"
+    },
+    {
+      "title": "AI Hyperscalers Are Pricing Bitcoin Miners Off The Grid. Here's Why Its A Massive Win-Win...",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:36:43.265097-03:00"
+    },
+    {
+      "title": "Global Oil Deficit To Hit 1.8 Million Bpd This Quarter, IEA Forecasts",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:36:45.931475-03:00"
+    },
+    {
+      "title": "Nature Is Healing: Most S&P100 Companies Dump DEI Criteria From Board Selection",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:36:48.607478-03:00"
+    },
+    {
+      "title": "Trump Admin Ends Medicaid Funding For Sex-Change Procedures On Kids",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T16:36:51.334900-03:00"
     }
   ]
 }
