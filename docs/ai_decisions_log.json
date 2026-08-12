@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Best high-yield savings interest rates today, Wednesday, August 12, 2026: Earn up to 4.15% APY",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não fornece informações concretas sobre o mercado ou a economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:16:31.313892-03:00"
-    },
-    {
-      "title": "Sandisk Is Up 429% This Year -- Its $15.5 Billion Stock Buyback Suggests Management Thinks Shares Are Still Cheap",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O programa de compra de ações é um sinal de confiança da administração na empresa e pode impulsionar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:16:34.382142-03:00"
-    },
-    {
-      "title": "SEC settles charges over SpaceX, Klarna, pre-IPO share fraud",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:16:37.282918-03:00"
-    },
-    {
-      "title": "PwC's US CEO built an AI assistant called 'PG's Whisperer.' He talks to it all day.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:16:41.116576-03:00"
-    },
-    {
-      "title": "Norway $2.3 Trillion Fund Posts Best Quarter Since 2020",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta o desempenho do maior fundo soberano do mundo, influenciando potencialmente a economia global.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:21:26.329675-03:00"
-    },
-    {
-      "title": "Annexon Biosciences GAAP EPS of -$0.28 misses by $0.04",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre o desempenho financeiro da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:21:31.856601-03:00"
-    },
-    {
-      "title": "Korea Electric Power reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "Resultados financeiros da empresa são relevantes para os investidores.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:21:34.701289-03:00"
-    },
-    {
-      "title": "Clive Owen expands corporate finance team with executive appointment",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma nomeação executiva em uma empresa de finanças corporativas, mas não é relevante para o mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:21:44.996039-03:00"
-    },
-    {
-      "title": "Cleveland Fed's Beth Hammack warns one rate hike won't cut it as inflation swallows workers' wage gains",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A declaração da presidente da Fed de Cleveland sugere que a política monetária pode precisar ser ajustada para lidar com a inflação persistente.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:21:47.918450-03:00"
-    },
-    {
-      "title": "CPI Day and What Katsu Curry Says About the Level of the Yen",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia menciona a possibilidade de taxas de juros mais altas, o que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T07:26:07.486660-03:00"
-    },
-    {
-      "title": "Milho e soja recuam na bolsa de Chicago com ajustes de posições antes do relatório do USDA",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "ajustes de posições antes de um relatório importante do USDA",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:26:13.072180-03:00"
-    },
-    {
-      "title": "Maple Leaf Foods reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A empresa divulgou resultados financeiros rotineiros, mas com crescimento positivo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:26:18.092739-03:00"
-    },
-    {
-      "title": "Titan Mining beats top-line estimates; reaffirms FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas de receita, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:26:21.022332-03:00"
-    },
-    {
-      "title": "Boyd Group Services Non-GAAP EPS of $0.80 misses by $0.10, revenue of $1.01B misses by $10M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado pois afeta diretamente as expectativas de lucro e receita da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:26:24.035768-03:00"
-    },
-    {
-      "title": "National Vision Holdings beats top-line and bottom-line estimates; updates FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas de receita e lucro, o que é um sinal de saúde financeira e pode influenciar a decisão de investir no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T07:26:27.139697-03:00"
-    },
-    {
       "title": "Boyd Group Services Inc. Reports Decline In Q2 Income",
       "source": "Nasdaq",
       "score": 4.0,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T20:05:59.076763-03:00"
+    },
+    {
+      "title": "Positivo tem lucro líquido de R$ 2,6 milhões no 2T, alta anual de 14,5%",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "aumento na receita líquida e lucro líquido positivo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:10:42.582813-03:00"
+    },
+    {
+      "title": "Honest Company (HNST) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:10:49.643950-03:00"
+    },
+    {
+      "title": "American Coastal Insurance (ACIC) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma ligação de chamada de resultados de uma empresa de seguros.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:10:52.666455-03:00"
+    },
+    {
+      "title": "Gladstone Commercial (GOOD) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:10:55.344807-03:00"
+    },
+    {
+      "title": "KOSPI May See Profit Taking On Thursday",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:10:58.038343-03:00"
+    },
+    {
+      "title": "Elon Musk Says AI Revenue Will Eclipse the Rest of SpaceX by September. Here’s What Investors Need to Know",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:11:00.784669-03:00"
+    },
+    {
+      "title": "Grab CEO Anthony Tan Sells 400,000 Shares for $1.4 Million. Here's What Investors Need to Know.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante apenas porque envolve uma transação de ações de um CEO de uma empresa de tecnologia, mas não há informações sobre impacto no mercado ou na empresa em si.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:11:04.046150-03:00"
+    },
+    {
+      "title": "Warrior Met Coal (HCC) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-12T20:11:06.811379-03:00"
+    },
+    {
+      "title": "Sex appeal à moda antiga",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:11:12.139090-03:00"
+    },
+    {
+      "title": "VOYG Stock Alert: What to Know as Voyager Technologies Scores New Space Force Contract",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:11:17.294567-03:00"
+    },
+    {
+      "title": "Spirax Gets Punished for Being Merely Good",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:11:19.961030-03:00"
+    },
+    {
+      "title": "XRP Price Forecast: XRP Toys With Key Level and Risks a Big Loss",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:11:22.649375-03:00"
+    },
+    {
+      "title": "Plug Power Reports $178 Million in Revenue and Raises Its 2026 Guidance. Here's What PLUG Investors Need to Know.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:11:25.435481-03:00"
+    },
+    {
+      "title": "Crude Prices Supported as Strait of Hormuz Remains Closed",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:11:28.385325-03:00"
+    },
+    {
+      "title": "Quantum trade moves beyond science fiction: AlphaCheck",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T20:11:31.058039-03:00"
     }
   ]
 }

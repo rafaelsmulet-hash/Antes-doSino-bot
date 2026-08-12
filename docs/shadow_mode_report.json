@@ -1,56 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 39024,
-  "aprovadas_pelo_fluxo_atual": 681,
-  "descartadas_pelos_filtros_atuais": 38343,
-  "score_medio_materialidade": 4.02,
+  "total_ingeridas": 39272,
+  "aprovadas_pelo_fluxo_atual": 685,
+  "descartadas_pelos_filtros_atuais": 38587,
+  "score_medio_materialidade": 4.01,
   "seriam_breaking": 26,
-  "iriam_para_rodada": 305,
-  "seriam_descartadas_pelo_novo_sistema": 1669,
-  "total_divergencias": 668,
+  "iriam_para_rodada": 298,
+  "seriam_descartadas_pelo_novo_sistema": 1676,
+  "total_divergencias": 667,
   "divergencias": [
-    {
-      "title": "Sandisk Is Up 429% This Year -- Its $15.5 Billion Stock Buyback Suggests Management Thinks Shares Are Still Cheap",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Norway $2.3 Trillion Fund Posts Best Quarter Since 2020",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Milho e soja recuam na bolsa de Chicago com ajustes de posições antes do relatório do USDA",
-      "source": "Money Times",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Titan Mining beats top-line estimates; reaffirms FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Boyd Group Services Non-GAAP EPS of $0.80 misses by $0.10, revenue of $1.01B misses by $10M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "National Vision Holdings beats top-line and bottom-line estimates; updates FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Maple Leaf Foods Inc. Bottom Line Declines In Q2",
       "source": "Nasdaq",
@@ -144,6 +102,48 @@
     },
     {
       "title": "Liquidia GAAP EPS of $0.74 in-line, revenue of $171.68M beats by $3.2M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Ituran Location GAAP EPS of $0.88 beats by $0.02, revenue of $104.79M beats by $4.94M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Tencent Holdings in charts: Q2 '26 VAS revenue hits RMB 98.4B (+7.7% Y/Y); online ads up 21.8% Y/Y",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Applied Aerospace &amp; Defense, Inc. GAAP EPS of -$1.04, revenue of $167.3M beats by $12.06M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Brinker Non-GAAP EPS of $3.07 misses by $0.02, revenue of $1.54B beats by $10M",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Einride partners with PACCAR to advance Level 4 autonomous plans",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Riskified Non-GAAP EPS of $0.02 in-line, revenue of $98.7M beats by $9.52M",
       "source": "Seeking Alpha",
       "score": 5.0,
       "decisao_sugerida": "round",
