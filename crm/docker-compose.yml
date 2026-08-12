@@ -1,0 +1,12 @@
+services:
+  crm:
+    build: .
+    container_name: crm-mesa
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      # Troque em producao -- ver README (secao "Como rodar localmente").
+      - CRM_SECRET_KEY=troque-esta-chave-em-producao
+    restart: unless-stopped

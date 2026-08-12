@@ -134,7 +134,39 @@ qualquer chamada de rede externa.
 
 ## Como rodar localmente
 
-Requisitos: Python 3.11+.
+Duas formas de subir o CRM. Escolha uma.
+
+### Opcao A -- Docker (recomendado para quem nao quer mexer com Python)
+
+Requisito: [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+instalado (Windows/Mac) ou Docker + Docker Compose (Linux/servidor
+interno). E o unico programa que precisa ser instalado -- o Python fica
+todo dentro do container, voce nunca interage com ele diretamente.
+
+- **Windows**: de dois cliques em `iniciar-windows.bat`. O navegador abre
+  sozinho em `http://127.0.0.1:8000`. Para parar, de dois cliques em
+  `parar-windows.bat`.
+- **Mac**: de dois cliques em `iniciar-mac.command` (na primeira vez, o
+  macOS pode pedir para autorizar em Preferencias do Sistema > Privacidade
+  e Seguranca). Para parar, `parar-mac.command`.
+- **Linux / servidor interno**: `./iniciar-linux.sh` e `./parar-linux.sh`
+  no terminal.
+
+Por baixo dos panos, esses scripts so rodam `docker compose up -d --build`
+e abrem o navegador. Os dados ficam salvos na pasta `data/` (mapeada para
+dentro do container) e sobrevivem a reinicios do container. Para
+acompanhar os logs manualmente: `docker compose logs -f`. Para trocar a
+porta ou o `CRM_SECRET_KEY`, edite `docker-compose.yml`.
+
+> Nota: o primeiro `iniciar` baixa a imagem base do Python uma unica vez
+> (precisa de rede nesse instante, como qualquer instalacao de software) e
+> depois constroi a imagem localmente. Depois de construida, rodar o
+> container **nao** faz nenhuma chamada de rede externa -- mesma garantia
+> do resto do sistema.
+
+### Opcao B -- Python direto (sem Docker)
+
+Requisito: Python 3.11+.
 
 ```bash
 cd crm
@@ -145,9 +177,11 @@ pip install -r requirements.txt
 python run.py                    # sobe em http://127.0.0.1:8000
 ```
 
-No primeiro start, o banco SQLite e criado em `data/crm.db` e tres
-usuarios de exemplo sao semeados (troque as senhas no primeiro acesso em
-um ambiente real):
+---
+
+No primeiro start (por qualquer uma das duas opcoes), o banco SQLite e
+criado em `data/crm.db` e tres usuarios de exemplo sao semeados (troque
+as senhas no primeiro acesso em um ambiente real):
 
 | usuario     | papel       | senha inicial     |
 |-------------|-------------|--------------------|
@@ -349,4 +383,8 @@ crm/
     test_mural.py                           integracao do mural da mesa
     test_auditoria.py                        integracao do relatorio de auditoria
   run.py                  `python run.py` sobe o servidor local
+  Dockerfile / docker-compose.yml    empacotamento Docker (Opcao A acima)
+  iniciar-windows.bat / parar-windows.bat   clique-duplo (Windows, via Docker)
+  iniciar-mac.command / parar-mac.command    clique-duplo (Mac, via Docker)
+  iniciar-linux.sh / parar-linux.sh           terminal (Linux, via Docker)
 ```
