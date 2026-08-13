@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que setor financeiro perdeu R$ 112 bi, um Banco do Brasil (BBAS3), em dias na Bolsa?",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:01:04.487740-03:00"
-    },
-    {
-      "title": "TotalEnergies compra ativos renováveis da Shell; movimento reforça tese do SNEL11",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:01:12.111112-03:00"
-    },
-    {
-      "title": "French press body asks competition watchdog to take action over Google AI",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:01:16.424910-03:00"
-    },
-    {
-      "title": "SpaceX Rivals Report Mixed Earnings; Rocket Lab Sinks On Possible Neutron Delays",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:01:19.170751-03:00"
-    },
-    {
       "title": "Embraer Continues To Outpace Boeing, Airbus. It's In A Buy Zone Now.",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T14:41:15.156252-03:00"
+    },
+    {
+      "title": "Por que as ações da Accelerant Holdings estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Ações disparando devido a resultado acima do esperado, indicando crescimento da empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:45:49.265600-03:00"
+    },
+    {
+      "title": "CFO da Anthropic realiza reuniões pré-IPO sem discutir valuation",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A noticia especifica a atitude da Anthropic em relação à IPO, o que pode ter impacto no mercado de acoes.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T14:45:52.126062-03:00"
+    },
+    {
+      "title": "Hawaii could see its first hurricane landfall since 1992",
+      "source": "Seeking Alpha",
+      "score": 1.0,
+      "motivo": "A notícia não está diretamente relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:45:55.885762-03:00"
+    },
+    {
+      "title": "S&P 500 tags an all-time high and these 20 names have helped fuel the rally",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia destaca a alta do S&P 500 e as ações que ajudaram a impulsioná-la, o que é relevante para os investidores e traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T14:45:58.974612-03:00"
     }
   ]
 }
