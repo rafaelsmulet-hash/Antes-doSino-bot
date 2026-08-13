@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Armínio Fraga: Caso Master foi falha grotesca de aplicação de regulação",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "Debate sobre regulação de mercados não é notícia específica ou impactante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:20:45.725575-03:00"
-    },
-    {
-      "title": "Ibovespa Futuro cai com dados de inflação nos EUA e risco geopolítico no radar",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Dados de inflação nos EUA e risco geopolítico podem afetar a confiança dos investidores e influenciar a Ibovespa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:20:48.470101-03:00"
-    },
-    {
-      "title": "Beta Technologies shares fall on deeper-than-expected loss",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A perda maior do que o esperado afeta negativamente a confiança dos investidores na empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:20:53.384295-03:00"
-    },
-    {
-      "title": "Victory Capital AUM reaches $345.1B in July; total client assets hit $348.8B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:20:55.997261-03:00"
-    },
-    {
-      "title": "Stanley Black & Decker to invest $1B in U.S. through 2028",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:20:58.605774-03:00"
-    },
-    {
-      "title": "Haoxi Health Technology tumbles 24% after announcing 1-for-20 reverse split",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:21:01.218969-03:00"
-    },
-    {
-      "title": "Chili's serves up another strong quarter for Brinker International",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:21:03.831140-03:00"
-    },
-    {
-      "title": "Which Is the Better Vanguard Short-Term Bond ETF for Your Tax Bracket: BSV or VTES?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:21:08.679142-03:00"
-    },
-    {
-      "title": "Where Will Bitcoin Be in 2030?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:21:11.274731-03:00"
-    },
-    {
-      "title": "Marex Group Q2 26 Earnings Conference Call At 9:00 AM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:21:13.894077-03:00"
-    },
-    {
-      "title": "Performance Food Group Q4 26 Earnings Conference Call At 9:00 AM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:21:16.503544-03:00"
-    },
-    {
-      "title": "Cushman & Wakefield (CWK) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:21:19.423532-03:00"
-    },
-    {
-      "title": "Fervo Energy Q2 Loss Widens",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:21:22.020374-03:00"
-    },
-    {
       "title": "Wilmar H1 Profit Rises",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T07:11:03.703497-03:00"
+    },
+    {
+      "title": "Minidólar (WDOU26): inflação ao produtor e risco local guiam o dia",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "noticia sobre inflacao e risco local, mas sem detalhes sobre impacto no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:16:20.371947-03:00"
+    },
+    {
+      "title": "Mini-índice (WINV26) hoje: IFR perto da sobrevenda favorece repique?",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "análise técnica não é um indicador de tendência de mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:16:23.211432-03:00"
+    },
+    {
+      "title": "Bolsas da Europa sobem majoritariamente com balanços, dados e petróleo em queda",
+      "source": "Money Times",
+      "score": 3.0,
+      "motivo": "balanços corporativos e dados econômicos são rotineiros, mas podem influenciar o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:16:27.660257-03:00"
+    },
+    {
+      "title": "AM Markets Need to Know: Burry adds to AI shorts, Kospi enters bull market, and more",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia menciona ações de investimento e mudanças no mercado, o que é relevante para os traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:16:31.040550-03:00"
+    },
+    {
+      "title": "Birkenstock Holding GAAP EPS of €0.60, revenue of €71.95M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Os resultados financeiros são relevantes, mas não são impactantes para o mercado em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:16:33.871237-03:00"
+    },
+    {
+      "title": "Discovery Mining GAAP EPS of $0.11, revenue of $319.09M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A divulgação de resultados financeiros é relevante para os investidores e pode influenciar a valorização da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:16:36.734939-03:00"
+    },
+    {
+      "title": "China Automotive Systems GAAP EPS of $0.97, revenue of $412.5M; raises FY 2026 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa elevou sua previsão para o ano fiscal de 2026, o que pode ser um sinal positivo para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:16:39.723416-03:00"
+    },
+    {
+      "title": "Rockwell Medical Non-GAAP EPS of -$0.04, revenue of $17.78M misses by $0.06M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento de grande impacto no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:16:42.633177-03:00"
+    },
+    {
+      "title": "Xunlei Non-GAAP EPS of -$0.03, revenue of $102.11M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas os números não são surpreendentes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:16:45.490253-03:00"
+    },
+    {
+      "title": "X-Energy, Inc. Non-GAAP EPS of -$0.15 misses by $0.05, revenue of $54.6M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta negativamente a percepção da empresa e pode influenciar as ações no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:16:48.807717-03:00"
+    },
+    {
+      "title": "Back-to-school season is hectic. To stay sane, we do the bare minimum for 1 month.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:17:00.652409-03:00"
+    },
+    {
+      "title": "Wall Street Zeroes In On This \"Pure-Play\" US Attack Drone Company",
+      "source": "ZeroHedge",
+      "score": 8.0,
+      "motivo": "A empresa está em posição privilegiada para se beneficiar da mudança na cadeia de abastecimento de drones do país, com a possibilidade de se tornar um dos principais fornecedores de drones para o governo americano.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:17:08.032576-03:00"
+    },
+    {
+      "title": "Norway $2.3 Trillion Wealth Fund Posts Record-High Profit in H1",
+      "source": "ZeroHedge",
+      "score": 5.0,
+      "motivo": "O lucro recorde do fundo de pensão da Noruega é relevante para o mercado devido ao seu impacto positivo nas ações de tecnologia asiática.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:17:10.992077-03:00"
     }
   ]
 }
