@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Kalshi Sued Over Bets On Flight Cancellations",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:31:18.156173-03:00"
-    },
-    {
-      "title": "Air taxi firm Joby acquires defense tech company for $500 million",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:31:20.862545-03:00"
-    },
-    {
-      "title": "A Profitable Rare-Disease Prize: Who Might Snap Up BioCryst?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:31:23.567042-03:00"
-    },
-    {
       "title": "US Attorney Makes Rare Move By Convening Special Grand Jury in Washington",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T16:36:11.290886-03:00"
+    },
+    {
+      "title": "Arabica Coffee Prices Hit Record on U.S., Colombia Tariff Spat",
+      "source": "WSJ Markets",
+      "score": 8.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o preço do café arabica, um dos principais commodities do mercado financeiro.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:40:43.979490-03:00"
+    },
+    {
+      "title": "Sete experiências na faculdade que ajudam a construir uma carreira antes do diploma",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não está relacionado a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:40:50.840418-03:00"
+    },
+    {
+      "title": "FitLife Brands GAAP EPS of $0.20 in-line, revenue of $26.5M beats by $0.5M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa apresentou uma receita acima da expectativa, o que é considerado positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:40:54.391273-03:00"
     }
   ]
 }
