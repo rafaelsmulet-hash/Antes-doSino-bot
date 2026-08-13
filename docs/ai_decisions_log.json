@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Prediction: Rigetti Computing Stock Will Be Worth This Much in 1 Year",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é mais uma previsão e não uma informação concreta sobre a empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:10:54.041816-03:00"
-    },
-    {
-      "title": "Elon Musk Says SpaceX Short-Sellers Probably Won't Survive. These 3 Earnings Numbers Say He's Wrong.",
-      "source": "Nasdaq",
-      "score": 8.0,
-      "motivo": "A notícia revela um resultado financeiro negativo da SpaceX, o que pode ter um impacto significativo no mercado.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:11:00.501475-03:00"
-    },
-    {
-      "title": "CAC 40 Advances; Bank, Luxury Stocks Among Top Gainers",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia menciona ações de bancos e luxo como as maiores ganhadoras, o que é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:11:03.703497-03:00"
-    },
-    {
-      "title": "Minidólar (WDOU26): inflação ao produtor e risco local guiam o dia",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "noticia sobre inflacao e risco local, mas sem detalhes sobre impacto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:16:20.371947-03:00"
-    },
-    {
-      "title": "Mini-índice (WINV26) hoje: IFR perto da sobrevenda favorece repique?",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "análise técnica não é um indicador de tendência de mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:16:23.211432-03:00"
-    },
-    {
-      "title": "Bolsas da Europa sobem majoritariamente com balanços, dados e petróleo em queda",
-      "source": "Money Times",
-      "score": 3.0,
-      "motivo": "balanços corporativos e dados econômicos são rotineiros, mas podem influenciar o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:16:27.660257-03:00"
-    },
-    {
-      "title": "AM Markets Need to Know: Burry adds to AI shorts, Kospi enters bull market, and more",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia menciona ações de investimento e mudanças no mercado, o que é relevante para os traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:16:31.040550-03:00"
-    },
-    {
       "title": "Birkenstock Holding GAAP EPS of €0.60, revenue of €71.95M",
       "source": "Seeking Alpha",
       "score": 2.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T20:01:16.107862-03:00"
+    },
+    {
+      "title": "Japan’s Inflation Paradox Is Creating Winners and Losers",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia sinaliza um fim da deflação e início de uma era de crescimento econômico no Japão.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:06:01.029451-03:00"
+    },
+    {
+      "title": "De Robin Hood a dinossauros: 5 filmes chegam aos cinemas nesta quinta-feira",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "nenhuma informação relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:06:09.057463-03:00"
+    },
+    {
+      "title": "Oxbridge outlines AI GridWorks targeting 10-100 MW data center projects while expanding tokenized reinsurance offerings",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque envolve a expansão de uma empresa de tecnologia da informação, o que pode ter impacto no mercado de tecnologia e financeiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:06:12.561265-03:00"
+    },
+    {
+      "title": "Aethlon outlines plan to complete oncology trial follow-up by end of 2026 while targeting 12 months of runway",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:06:15.367543-03:00"
+    },
+    {
+      "title": "PetMeds outlines $37M sale-leaseback while expecting the deal to close within about 120 days",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:06:18.172831-03:00"
+    },
+    {
+      "title": "SYN lucra R$ 6.536 mil no segundo trimestre, queda de 34,3%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:06:28.375679-03:00"
+    },
+    {
+      "title": "1stdibs (DIBS) Q2 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:06:34.857885-03:00"
     }
   ]
 }
