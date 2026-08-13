@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Take a look inside Helen Mirren's $13 million Los Angeles mansion, first built for a silent film star 116 years ago",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:51:56.796442-03:00"
-    },
-    {
-      "title": "I'm 92 and travel the world for eclipses. This time, my daughter has joined me for an adventure in Spain.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:51:59.455332-03:00"
-    },
-    {
-      "title": "Solar eclipse drives Europe hotel prices to over $1,000 a night",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:52:02.226300-03:00"
-    },
-    {
-      "title": "Fed Will Stay on Hold in September, Pimco's Wilding Says",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque discute a política monetária da Fed, mas não é uma decisão ou evento inesperado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T10:55:32.195337-03:00"
-    },
-    {
-      "title": "Ronaldinho Gaúcho pode se tornar dono de time de basquete na Europa, diz jornal",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:55:35.735674-03:00"
-    },
-    {
       "title": "Dinheiro esquecido em bancos soma R$ 5,12 bilhões; veja quem tem valores a receber",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T08:52:11.707847-03:00"
+    },
+    {
+      "title": "US Fuel Prices Will Likely Stay High for a While",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "A notícia pode influenciar a demanda por petróleo e, consequentemente, os preços dos combustíveis.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T08:55:51.290369-03:00"
+    },
+    {
+      "title": "Europe's Vibe Code Start-Up Lovable Hits $13.3 Billion Valuation",
+      "source": "Bloomberg Markets",
+      "score": 8.0,
+      "motivo": "A empresa alcançou um valor de $13,3 bilhões após uma arrecadação de $400 milhões, o que é um evento significativo no mercado de start-ups.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T08:55:54.179318-03:00"
+    },
+    {
+      "title": "Kaplan Says Fed Right Not to Raise Rates in July",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T08:55:56.801718-03:00"
+    },
+    {
+      "title": "What is a good savings account interest rate in 2026?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T08:56:09.286431-03:00"
+    },
+    {
+      "title": "SEC Announces Roundtable on Preparations for 24-Hour Trading",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T08:56:12.536055-03:00"
     }
   ]
 }
