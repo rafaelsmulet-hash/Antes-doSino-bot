@@ -1,28 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 36406,
-  "aprovadas_pelo_fluxo_atual": 663,
-  "descartadas_pelos_filtros_atuais": 35743,
-  "score_medio_materialidade": 4.0,
+  "total_ingeridas": 36654,
+  "aprovadas_pelo_fluxo_atual": 664,
+  "descartadas_pelos_filtros_atuais": 35990,
+  "score_medio_materialidade": 4.01,
   "seriam_breaking": 38,
-  "iriam_para_rodada": 306,
-  "seriam_descartadas_pelo_novo_sistema": 1656,
-  "total_divergencias": 664,
+  "iriam_para_rodada": 308,
+  "seriam_descartadas_pelo_novo_sistema": 1654,
+  "total_divergencias": 663,
   "divergencias": [
-    {
-      "title": "Wall Street banks' newest investment focus: American economic security",
-      "source": "Business Insider",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "An industrywide power crunch is changing how Amazon runs its e-commerce empire",
-      "source": "Business Insider",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Former Google, Tinder, and AWS interns share 4 tips for turning an internship into a full-time offer",
       "source": "Business Insider",
@@ -146,6 +132,20 @@
       "title": "Advanced Micro Devices, Inc. (AMD) vs. Sandisk Corporation (SNDK): Chip Earnings Momentum Meets a Mixed Market Reaction",
       "source": "Yahoo Finance",
       "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "NuScale Could Become the Standard Platform for Nuclear Energy",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Nexon HI Results Climb; Sees Higher Net Profit, Revenues In 9 Months - Update",
+      "source": "Nasdaq",
+      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
