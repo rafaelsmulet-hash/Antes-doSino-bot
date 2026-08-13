@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The National Debt Is Barreling Toward $50 Trillion. Now Trump May Give Out Massive Tax Cuts to the 1%",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T12:51:25.170479-03:00"
-    },
-    {
-      "title": "Gold Rallies as Tame US Inflation Report Calms Rate Hike Fears",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois afeta diretamente as expectativas de aumento de juros da Fed, que pode influenciar o preço do ouro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T12:55:36.268019-03:00"
-    },
-    {
-      "title": "Nvidia lines up $500 billion in financing as CEO Jensen Huang tells CNBC his chips are ‘investable asset’",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A Nvidia pode obter financiamento significativo graças à adotabilidade e flexibilidade de seus chips.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T12:55:39.933545-03:00"
-    },
-    {
-      "title": "Ações da Gerdau (GGBR4) sobem nesta quarta (12) e XP vê mais alta pela frente; veja potencial",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T12:55:44.764743-03:00"
-    },
-    {
       "title": "Intuitive Surgical upgraded at Oppenheimer on robotic surgery market growth",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T10:56:40.985958-03:00"
+    },
+    {
+      "title": "Em junho, indústria recua em 12 dos 15 locais pesquisados",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:00:44.914653-03:00"
+    },
+    {
+      "title": "Ações do Jack In The Box disparam após resultado acima do esperado",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "resultado acima do esperado na empresa Jack In The Box",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:00:48.431960-03:00"
+    },
+    {
+      "title": "Paragon Technologies GAAP EPS of $0.05, revenue of $33.3M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Resultados financeiros rotineiros da empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:00:52.013222-03:00"
+    },
+    {
+      "title": "Metaplanet Denies Bitcoin Sale",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado agora, pois é apenas uma negação de rumores.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:01:03.226171-03:00"
     }
   ]
 }
