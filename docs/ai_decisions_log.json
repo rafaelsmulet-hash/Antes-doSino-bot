@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ceuta Migrants Reach Mainland Spain Despite Government Denials; Report",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:37:11.642333-03:00"
-    },
-    {
-      "title": "Aliado de Flávio pressiona STF por julgamento de lei que reduz pena de Jair Bolsonaro",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia sobre crime e justica criminal",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:40:44.760786-03:00"
-    },
-    {
-      "title": "Análise: com atraso, Lula assina decretos da descarbonização; entenda o que está em jogo",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A notícia trata de medidas de descarbonização, que geralmente são vistas como positivas para a economia e o mercado de ações, especialmente para empresas que investem em tecnologias limpas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:40:50.463914-03:00"
-    },
-    {
-      "title": "Cub Energy GAAP EPS of $0.10, revenue of $142.5M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:40:53.605904-03:00"
-    },
-    {
-      "title": "MFA Financial (MFA) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:40:58.676573-03:00"
-    },
-    {
-      "title": "Vishay Precision Group (VPG) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:41:01.420890-03:00"
-    },
-    {
-      "title": "This Dividend King Is Up 56% This Year, and It Just Hired its First AI Chief",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:41:04.179676-03:00"
-    },
-    {
-      "title": "Why Astronics Stock Popped Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:41:06.832924-03:00"
-    },
-    {
-      "title": "Trump's latest midterm move could reward Bitcoin holders",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:41:16.405062-03:00"
-    },
-    {
-      "title": "Sound Point Meridian Capital Inc Q1 2027 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:41:19.125664-03:00"
-    },
-    {
-      "title": "Palantir Technologies Inc. (PLTR) vs. BigBear.ai Holdings, Inc. (BBAI): Palantir’s “Otherworldly” Quarter Sends Shares Soaring 30%",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:41:21.892152-03:00"
-    },
-    {
-      "title": "Madison Square Garden Entertainment Corp. Q4 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:41:24.591069-03:00"
-    },
-    {
-      "title": "Kamada Ltd. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:41:27.773153-03:00"
-    },
-    {
-      "title": "Nelson Peltz's Trian preparing take-private bid for Wendy's",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:41:30.480653-03:00"
-    },
-    {
-      "title": "SpaceX short sellers are running out of bullets as stock rebounds more than 30% off low",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "A queda na taxa de vendedores a curto prazo indica que os investidores estão otimistas com a recuperação da ação da SpaceX.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:00.451669-03:00"
-    },
-    {
-      "title": "Financial Services Roundup: Market Talk",
-      "source": "WSJ Markets",
-      "score": 2.0,
-      "motivo": "A notícia é um resumo geral de mercado, sem informações específicas ou impactantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:05.814598-03:00"
-    },
-    {
       "title": "Em junho, indústria recua em 12 dos 15 locais pesquisados",
       "source": "IBGE",
       "score": null,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T12:41:36.882661-03:00"
+    },
+    {
+      "title": "What's New This Tax Season That Can Save You Money",
+      "source": "WSJ Markets",
+      "score": 0.0,
+      "motivo": "A notícia não trata de um evento financeiro relevante",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:45:55.541330-03:00"
+    },
+    {
+      "title": "Rede D’Or e Qualicorp destoam da Hapvida e disparam na Bolsa após resultados do 2T",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Resultados do 2T mostraram fortes altas nas companhias, impactando positivamente o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T12:45:58.640738-03:00"
+    },
+    {
+      "title": "E se Flávio Bolsonaro perder o prazo do TSE? Entenda o que pode acontecer",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:01.426465-03:00"
+    },
+    {
+      "title": "Polônia - Ações fecharam o pregão em queda e o Índice WIG30 recuou 1,27%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:06.037597-03:00"
+    },
+    {
+      "title": "Turquia - Ações fecharam o pregão em alta e o Índice BIST 100 avançou 0,16%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:08.690454-03:00"
+    },
+    {
+      "title": "Por que as ações da SanDisk estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:11.313819-03:00"
+    },
+    {
+      "title": "Dinamarca - Ações fecharam o pregão em alta e o Índice OMX Copenhagen 20 avançou 0,58%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:13.979067-03:00"
+    },
+    {
+      "title": "Orizon compra 51% de aterro sanitário no Mato Grosso",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:16.605864-03:00"
+    },
+    {
+      "title": "Como colocar livros no Kindle pelo PC (USB e Internet) passo a passo",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:19.686168-03:00"
+    },
+    {
+      "title": "The inflation picture looks calmer than markets think",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T12:46:22.686478-03:00"
+    },
+    {
+      "title": "CuriosityStream jumps on Q2 beats, raised 2026 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:25.327148-03:00"
+    },
+    {
+      "title": "Aebi Schmidt Holding AG reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:27.952202-03:00"
+    },
+    {
+      "title": "Kuros Bioscience 1H non-GAAP EPS of $0.11, revenue of $92.35M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:30.580292-03:00"
+    },
+    {
+      "title": "KIDZ AI Inc. reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:33.193288-03:00"
+    },
+    {
+      "title": "Instagram introduces a redesigned wordmark",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:44.393785-03:00"
+    },
+    {
+      "title": "Jet-powered Shaheds make up as much as two-thirds of some Russian drone attacks, Ukrainian official says",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:46:48.053102-03:00"
     }
   ]
 }
