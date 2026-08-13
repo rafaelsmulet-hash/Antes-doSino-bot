@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Apotex Health Slips To Loss In Q1, Announces FY27 Revenue Outlook",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:16:39.731992-03:00"
-    },
-    {
       "title": "CPI Inflation Data May Keep Fed Rate Hikes On Hold (Live Coverage)",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T21:50:58.088352-03:00"
+    },
+    {
+      "title": "SEC Charges Private Fund Adviser Adit Ventures Management, Its CEO and Affiliated General Partners in Alleged Fraud",
+      "source": "SEC",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não é um evento significativo ou inesperado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T21:55:56.322708-03:00"
     }
   ]
 }
