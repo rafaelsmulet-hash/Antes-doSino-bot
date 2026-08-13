@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Quase 9 em cada 10 juízes receberam acima do teto em 2025, aponta estudo",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:25:40.381482-03:00"
-    },
-    {
-      "title": "StoneX fecha acordo para comprar Travelex Bank",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Aquisição da Travelex Bank pode expandir a presença da StoneX no mercado financeiro e aumentar sua capacidade de atendimento a clientes.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:25:43.345449-03:00"
-    },
-    {
-      "title": "Messi lamenta morte do pai e coloca em dúvida futuro no futebol",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:25:46.236029-03:00"
-    },
-    {
-      "title": "Auren (AURE3): Por que o Safra cortou a recomendação e reduziu o preço-alvo em 18%",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:25:50.365957-03:00"
-    },
-    {
-      "title": "'Nando Entre Dois Mundos': filme de 'Sintonia' estreia hoje na Netflix",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:25:53.626131-03:00"
-    },
-    {
-      "title": "Nebius stock reclaims 50-MA after Q2 beat",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:25:56.470432-03:00"
-    },
-    {
-      "title": "RBRP11 anuncia novos dividendos para agosto; saiba o valor",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:26:06.518691-03:00"
-    },
-    {
       "title": "China Revives Free-Trade-Zone Bond Market After Crackdown",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T09:21:54.936459-03:00"
+    },
+    {
+      "title": "BB (BBAS3): CEO diz que inadimplência do agro ainda é alta, mas MP 1.376 deve ajudar",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A notícia destaca a implementação do MP 1.376, que deve ajudar a reduzir a inadimplência do agro, o que é positivo para a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:25:45.096231-03:00"
+    },
+    {
+      "title": "O que é a Decart, empresa na mira do Claude que pode ser adquirida por US$ 6 bilhões",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "a noticia nao e sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:25:51.175943-03:00"
+    },
+    {
+      "title": "PLDT declares ₱46.00 interim dividend",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A declaração de dividendos é um sinal de saúde financeira da empresa e pode atrair investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:25:54.544655-03:00"
+    },
+    {
+      "title": "Vital Farms (VITL) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:26:00.461946-03:00"
+    },
+    {
+      "title": "Legence Q2 Loss Widens On Impairment Charges; Raises FY26 Outlook",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:26:03.056626-03:00"
+    },
+    {
+      "title": "Auxly Cannabis Group Inc Bottom Line Declines In Q2",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:26:05.654544-03:00"
+    },
+    {
+      "title": "Ackman unveils six new investments including Netflix, Visa, Mastercard in biggest portfolio overhaul in years",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:26:16.477817-03:00"
     }
   ]
 }
