@@ -1,21 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 45224,
-  "aprovadas_pelo_fluxo_atual": 735,
-  "descartadas_pelos_filtros_atuais": 44489,
-  "score_medio_materialidade": 4.02,
-  "seriam_breaking": 22,
-  "iriam_para_rodada": 289,
-  "seriam_descartadas_pelo_novo_sistema": 1689,
-  "total_divergencias": 693,
+  "total_ingeridas": 45472,
+  "aprovadas_pelo_fluxo_atual": 737,
+  "descartadas_pelos_filtros_atuais": 44735,
+  "score_medio_materialidade": 4.03,
+  "seriam_breaking": 23,
+  "iriam_para_rodada": 290,
+  "seriam_descartadas_pelo_novo_sistema": 1687,
+  "total_divergencias": 694,
   "divergencias": [
-    {
-      "title": "Wall Street’s Favorite Tesla Rumor Could Unlock $824 Billion Pay Day For Elon Musk",
-      "source": "Yahoo Finance",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Nigéria oferece incentivos para desbloquear US$ 50 bi de investimentos em petróleo",
       "source": "InfoMoney",
@@ -148,6 +141,13 @@
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "PolyPid GAAP EPS of -$0.35 beats by $0.03",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }
