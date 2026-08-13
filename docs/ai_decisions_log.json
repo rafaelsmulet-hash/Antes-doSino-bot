@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Serviços no Brasil, inflação nos EUA e balanço do BB em destaque hoje",
-      "source": "UOL Economia",
-      "score": 3.0,
-      "motivo": "noticia lista varios temas, mas sem detalhes especificos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:21:40.515013-03:00"
-    },
-    {
-      "title": "Tesla wants to build a $10B solar factory in Texas",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:21:46.518547-03:00"
-    },
-    {
-      "title": "Form Energy raises $750M to build more 100-hour batteries for the grid",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:21:49.173949-03:00"
-    },
-    {
-      "title": "Trimble Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:21:51.853272-03:00"
-    },
-    {
-      "title": "Stock Of The Day: Boeing, Airbus Supplier Soars 15% On Earnings, Flashing Buy Signals",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:21:54.530602-03:00"
-    },
-    {
-      "title": "Stabilis Solutions Q2 Earnings Call Highlights",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:21:57.158592-03:00"
-    },
-    {
       "title": "The best balance transfer credit cards for August 2026: Don't pay any interest until 2027",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T11:26:57.946941-03:00"
+    },
+    {
+      "title": "CSN sobe e CSN Mineração cai – mesmo que o 2T tenha indicado “o contrário”; entenda",
+      "source": "InfoMoney",
+      "score": 4.0,
+      "motivo": "A notícia compara desempenhos de empresas, mas não apresenta informações novas ou impactantes",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T11:30:41.893974-03:00"
+    },
+    {
+      "title": "Voo secreto de Trump deixou até membros do gabinete para trás; veja quem embarcou",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relevância para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:30:44.791760-03:00"
+    },
+    {
+      "title": "Ibovespa ensaia recuperação, mas queda da Petrobras e Vale pressionam; dólar avança",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "queda da Petrobras e Vale pressionam o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:30:49.676199-03:00"
+    },
+    {
+      "title": "AEON Biopharma Q2 Non-GAAP EPS of -$0.02",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:30:52.525040-03:00"
+    },
+    {
+      "title": "Ørsted slides after posting lower Q2 profit but reiterating full-year outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:30:55.166645-03:00"
+    },
+    {
+      "title": "My Take on Barrick Mining's Pullback: This Is a Buying Window, Not a Red Flag.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:30:59.042986-03:00"
     }
   ]
 }
