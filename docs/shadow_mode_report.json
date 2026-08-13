@@ -1,42 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 34670,
-  "aprovadas_pelo_fluxo_atual": 639,
-  "descartadas_pelos_filtros_atuais": 34031,
-  "score_medio_materialidade": 3.96,
-  "seriam_breaking": 34,
-  "iriam_para_rodada": 326,
-  "seriam_descartadas_pelo_novo_sistema": 1640,
+  "total_ingeridas": 34918,
+  "aprovadas_pelo_fluxo_atual": 642,
+  "descartadas_pelos_filtros_atuais": 34276,
+  "score_medio_materialidade": 3.95,
+  "seriam_breaking": 35,
+  "iriam_para_rodada": 318,
+  "seriam_descartadas_pelo_novo_sistema": 1647,
   "total_divergencias": 671,
   "divergencias": [
-    {
-      "title": "Lenovo’s AI-Driven Revenue Boost Sends Stock to New Record",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Ucrânia ataca terminais de grãos russos e acende alerta para mercados de alimentos",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "MRV&CO: Prejuízo líquido consolidado é de R$ 626,3 mi no 2T, perda 22,7% menor",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Aos 14, ela colhia milho por US$ 1 a hora; hoje, comanda a IA do Google DeepMind",
       "source": "InfoMoney",
@@ -148,6 +120,34 @@
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "SkyX targets 100,000 units in market by end of 2026 as it expects to exit 2026 cash flow positive",
+      "source": "Seeking Alpha",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Robinhood Ventures Fund II sets IPO at $25 per share",
+      "source": "Seeking Alpha",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Google Parent Alphabet Just Revealed How Many SpaceX Shares It Owns... and the Figure Is a Doozy",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Nvidia Stock Investors Just Got Good News From Wall Street (Hint: It's Time to Buy)",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }

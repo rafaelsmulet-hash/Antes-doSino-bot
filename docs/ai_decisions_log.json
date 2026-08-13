@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Korea Stock Bulls Drive Second Day of Emerging-Market Gains",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque menciona o aumento das ações sul-coreanas, o que pode ter um impacto significativo no mercado de ações emergentes.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:50:50.157461-03:00"
-    },
-    {
-      "title": "ZUS Coffee Is Said to Explore Malaysia IPO to Raise at Least $245 Million",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois pode indicar um aumento de capital para a empresa, o que pode afetar seu valor de mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:50:53.328210-03:00"
-    },
-    {
-      "title": "CSN Reports Loss Amid Efforts to Reduce Debt, Sell Assets",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A perda da CSN é relevante para o mercado devido ao impacto direto na saúde financeira da empresa e potencial influência nas ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:50:56.319764-03:00"
-    },
-    {
-      "title": "UK Economy Gets Surprise Boost From Weather, World Cup",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "O crescimento inesperado da economia do Reino Unido pode influenciar a política monetária do Banco da Inglaterra.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:50:59.291880-03:00"
-    },
-    {
-      "title": "SpaceX Passes First Lockup Expiry Test With $500 Billion Rally",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante pois trata da liberação de ações da SpaceX, o que pode afetar o preço da ação no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:51:02.371526-03:00"
-    },
-    {
-      "title": "Lenovo’s AI-Driven Revenue Boost Sends Stock to New Record",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A empresa superou as estimativas de analistas e espera um crescimento significativo de receita, o que é relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:05.727744-03:00"
-    },
-    {
-      "title": "Trucking Is Booming Again, And Drivers Aren't Happy About It",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca um aumento nos volumes e receitas da indústria de transporte rodoviário, o que pode ter impacto positivo no setor.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:51:08.842006-03:00"
-    },
-    {
-      "title": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a liderança de uma empresa chinesa em uma área crítica da indústria de memória, o que pode ter impacto nos preços e demanda futuros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:12.268515-03:00"
-    },
-    {
-      "title": "Ucrânia ataca terminais de grãos russos e acende alerta para mercados de alimentos",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Choque geopolítico pode afetar preços de alimentos e impactar mercados globais",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:16.145513-03:00"
-    },
-    {
-      "title": "Inflação ao produtor nos EUA, varejo no Brasil e mais destaques desta quinta-feira",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "noticia reúne destaque de varios indicadores economicos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:19.264716-03:00"
-    },
-    {
-      "title": "Dow Jones Futuro sobe com redução das apostas em alta da taxa de juros pelo Fed",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Redução das apostas em alta da taxa de juros pelo Fed é vista como positiva para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:51:22.625065-03:00"
-    },
-    {
-      "title": "De guarda-costas a homem forte: como o neto de Raúl Castro ganhou poder em Cuba",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:25.470468-03:00"
-    },
-    {
-      "title": "MRV&CO: Prejuízo líquido consolidado é de R$ 626,3 mi no 2T, perda 22,7% menor",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Perda significativa de R$ 626,3 mi no 2T impacta negativamente a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:28.712876-03:00"
-    },
-    {
-      "title": "Canetas emagrecedoras movimentam R$ 2,35 bi e viram alvo de fraudes online",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre medicamentos e setor de saúde, mas não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:31.668790-03:00"
-    },
-    {
-      "title": "CEO discorda de Musk: “IA não vai eliminar o dinheiro — somos animais de status”",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:34.433938-03:00"
-    },
-    {
       "title": "Taxa das blusinhas: imposto de 20% pode voltar a valer em 9 de setembro",
       "source": "InfoMoney",
       "score": 4.0,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T18:51:17.643588-03:00"
+    },
+    {
+      "title": "Judge Orders Kalshi to Stop Offering Most Wagers in Washington",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A decisão pode afetar negativamente a operação da Kalshi no estado de Washington",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:56:17.913999-03:00"
+    },
+    {
+      "title": "Nubank (ROXO34): lucro líquido sobe 49% no 2º trimestre e vai a US$ 1,06 bilhão",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Nubank alcançou lucro líquido recorde e superou US$ 1 bilhão, indicando saúde financeira robusta",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:56:22.351169-03:00"
+    },
+    {
+      "title": "A taxa de desocupação é de 5,4% e taxa de subutilização é de 12,9% no trimestre encerrado em junho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:56:25.980568-03:00"
+    },
+    {
+      "title": "Nubank tem lucro recorde no 2º tri; crédito cresce menos",
+      "source": "Brazil Journal",
+      "score": 8.0,
+      "motivo": "Lucro recorde e crescimento do crédito são motivos positivos para a ação do Nubank",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:56:31.167344-03:00"
+    },
+    {
+      "title": "Petz-Cobasi cresce, ganha margem e prepara captura de até R$ 260 milhões em sinergias",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:56:34.282708-03:00"
+    },
+    {
+      "title": "Marpai GAAP EPS of -$0.18, revenue of $4.17M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:56:37.314811-03:00"
+    },
+    {
+      "title": "Talon Metals Corp. GAAP EPS of $0.02, revenue of $51.5M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:56:40.014174-03:00"
+    },
+    {
+      "title": "Diginex Limited GAAP EPS of -$1.20, revenue of $3.62M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:56:42.709555-03:00"
+    },
+    {
+      "title": "Nubank supera metas e atinge lucro recorde de US$ 1,06 bi no trimestre",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:56:50.606592-03:00"
+    },
+    {
+      "title": "Você está investindo no banco ou na garantia? Como o caso Master mexeu com o FGC e o seu bolso",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:56:54.095064-03:00"
+    },
+    {
+      "title": "Grab Holdings Limited (GRAB) vs. Sea Limited (SE): Grab Raises Its Outlook as AI and Affordability Pay Off",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:57:00.182654-03:00"
+    },
+    {
+      "title": "Earnings live updates: The Trade Desk stock plummets on earnings miss, Oklo jumps on 'criticality' milestone",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:57:02.959378-03:00"
+    },
+    {
+      "title": "APP Stock Alert: AppLovin's Latest Downgrade Sends Clear Signal on Growth Trajectory",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:57:05.699524-03:00"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting Costco Wholesale Stock Will Climb or Sink?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:57:08.432268-03:00"
+    },
+    {
+      "title": "Stocks Trading Higher on Favorable CPI Report and Positive AI News",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:57:11.177403-03:00"
     }
   ]
 }
