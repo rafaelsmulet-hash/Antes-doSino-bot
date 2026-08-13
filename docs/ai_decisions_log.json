@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "AI’s costly buildout complicates the Fed’s inflation fight",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia destaca a possibilidade de inflação decorrente da expansão da inteligência artificial, o que é relevante para a política monetária da Fed",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T08:10:37.882841-03:00"
-    },
-    {
-      "title": "Qual é a atividade física que mais ajuda a combater a insônia? Nova revisão revela",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:10:40.956323-03:00"
-    },
-    {
-      "title": "Volume de serviços recua 0,4% em maio",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:10:44.558254-03:00"
-    },
-    {
       "title": "Similarweb beats top-line and bottom-line estimates; gives Q3 and raises FY2026 outlook",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T21:25:48.661381-03:00"
+    },
+    {
+      "title": "NextEra enters deal with U.S., Japanese governments to fund up to 10 GW of gas-powered generation",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "O acordo pode impulsionar a expansão da geração a gás nos EUA e Japão, impactando o mercado de energia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T21:30:55.562897-03:00"
+    },
+    {
+      "title": "Hindustan Copper plans supply of Chilean copper to Hindalco and Adani",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia pode ter um impacto positivo nas ações da Hindalco e da Adani devido à disponibilidade de cobre chileno.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T21:31:06.913157-03:00"
+    },
+    {
+      "title": "Think Maxing Out a 401(k) Is Always Smart? This Might Make You Change Your Mind.",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre um evento específico de mercado, mas sim sobre uma estratégia de planejamento financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T21:31:09.900321-03:00"
     }
   ]
 }
