@@ -1,177 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Parceira da Anthropic, empresa brasileira corta mais de 50% do esforço com agentes de IA",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:16:06.426580-03:00"
-    },
-    {
-      "title": "Westport Fuel Systems slides as going-concern warning overshadows Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:16:09.383136-03:00"
-    },
-    {
-      "title": "B3 S.A. - Brasil, Bolsa, Balcão reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:16:12.005748-03:00"
-    },
-    {
-      "title": "Gasto Brasil permite acompanhar os gastos públicos no país",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:16:18.905530-03:00"
-    },
-    {
-      "title": "Gestação de alto risco passa a dispensar carência para auxílio do INSS",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:16:21.543768-03:00"
-    },
-    {
-      "title": "Weg (WEGE3) e ABC Brasil (ABCB4) pagam dividendos nesta quarta-feira; veja detalhes",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:16:25.335594-03:00"
-    },
-    {
-      "title": "Google’s Quick Share adds a tap-to-share mode",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:16:28.835715-03:00"
-    },
-    {
-      "title": "Why fast food chains like McDonald's and Starbucks are going all in on energy drinks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:16:31.517659-03:00"
-    },
-    {
-      "title": "NFP acquires Frontier Risk Group’s cannabis insurance business",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:16:34.176651-03:00"
-    },
-    {
-      "title": "Why Jensen Huang’s $500 billion AI financing plan faces a big risk from China",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta a Nvidia e o mercado de GPUs, que são importantes para a indústria de Inteligência Artificial.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:21:03.264523-03:00"
-    },
-    {
-      "title": "Lumentum’s stock surges, giving a further boost to the optical-networking trade",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "Earnings report positivo da Lumentum impacta positivamente o mercado de redes ópticas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:21:10.671352-03:00"
-    },
-    {
-      "title": "Goldman Sachs, Travelers among financial firms reporting strong EPS beat",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:21:13.477896-03:00"
-    },
-    {
-      "title": "Wall Street pushes higher after the latest inflation report",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "O relatório de inflação foi melhor do que o esperado, o que é positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:21:16.638578-03:00"
-    },
-    {
-      "title": "Commonwealth Bank of Australia reports FY results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:21:19.283575-03:00"
-    },
-    {
-      "title": "Hyliion raised its 2026 outlook; here's what sent HYLN stock higher",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:21:21.906865-03:00"
-    },
-    {
-      "title": "Google unveils Pixel 11 lineup, new AirTag rival, and Gemini features at Made by Google 2026",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:21:33.799182-03:00"
-    },
-    {
-      "title": "Super Micro Advances 13%, Dell Gains 5%, HPE Rises 3% on Blowout AI Server Guidance",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:21:36.629906-03:00"
-    },
-    {
-      "title": "BioMarin Targets Faster Deleveraging as Amicus Deal Expands Rare-Disease Growth",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:21:39.270302-03:00"
-    },
-    {
-      "title": "I did almost every major attraction on the Canadian side of Niagara Falls. Here are 5 that were worth it and 3 I'd skip next time.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:21:42.209141-03:00"
-    },
-    {
       "title": "Quase 9 em cada 10 juízes receberam acima do teto em 2025, aponta estudo",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17828,177 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T09:17:12.816925-03:00"
+    },
+    {
+      "title": "Taiwan Warns Against Uganda Travel as Passport Disputes Grow",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:20:49.735027-03:00"
+    },
+    {
+      "title": "Ibovespa cai com foco sobre inflação ao produtor nos EUA, Galípolo e balanços",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Corte de apostas em alta de juros nos EUA pode afetar expectativas de inflação e política monetária",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:20:56.874379-03:00"
+    },
+    {
+      "title": "Por que as ações da Intuitive Machines estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "a queda das ações da Intuitive Machines pode ser um sinal de desconfiança do mercado em relação à empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:21:01.450715-03:00"
+    },
+    {
+      "title": "Fluminense anuncia demissão do técnico Luis Zubeldía após oito partidas sem vitória",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:21:05.539979-03:00"
+    },
+    {
+      "title": "Bending Spoons' Q2 growth comes with a bigger M&A bill",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:21:08.563555-03:00"
+    },
+    {
+      "title": "Oracle in focus as it expands AWS collaboration",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:21:11.209258-03:00"
+    },
+    {
+      "title": "Pulmatrix GAAP EPS of -$0.29",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:21:13.830823-03:00"
+    },
+    {
+      "title": "Ardagh Metal Packaging gains after parent company says to prepare for potential sale",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:21:16.475243-03:00"
+    },
+    {
+      "title": "Artelo Biosciences GAAP EPS of -$0.89",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:21:19.101194-03:00"
+    },
+    {
+      "title": "Keurig Dr Pepper (KDP) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:21:24.087737-03:00"
+    },
+    {
+      "title": "Wall Street Might Continue In Positive Territory",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:21:26.724099-03:00"
+    },
+    {
+      "title": "Immunovant (IMVT) Q1 2027 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:21:29.396250-03:00"
+    },
+    {
+      "title": "Haemonetics (HAE) Q1 2027 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:21:32.032152-03:00"
+    },
+    {
+      "title": "Fiserv (FISV) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:21:34.640599-03:00"
+    },
+    {
+      "title": "Stantec Q2 26 Earnings Conference Call At 9:00 AM ET",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:21:37.267326-03:00"
+    },
+    {
+      "title": "Kratos Defense Could Be a Huge Winner in Autonomous Warfare",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:21:39.881294-03:00"
+    },
+    {
+      "title": "Americold (COLD) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:21:42.488358-03:00"
+    },
+    {
+      "title": "Krispy Kreme (DNUT) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:21:45.117100-03:00"
+    },
+    {
+      "title": "GrowGeneration Corp. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:21:54.936459-03:00"
     }
   ]
 }
