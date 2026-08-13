@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Yen hovers near 160 level; Goldman says Japan has enough cash to intervene again",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia sugere que o Japão tem a capacidade de influenciar o mercado de câmbio, o que pode ter impacto positivo no país.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:36:18.127566-03:00"
-    },
-    {
-      "title": "Sri Lanka Reducing Reliance on Foreign Debt, Short-Term Bills",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A medida visa tornar a dívida mais sustentável sob um programa do Fundo Monetário Internacional.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:40:45.068404-03:00"
-    },
-    {
-      "title": "Anthropic Said in Talks to Buy Decart AI for $6 Billion Ahead of IPO | The Pulse 8/13/2026",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro, apenas menciona uma empresa em negociações de aquisição.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:40:47.938611-03:00"
-    },
-    {
-      "title": "Mater Dei tem lucro ajustado de R$45 milhões no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "lucro ajustado positivo indica saúde financeira da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:40:52.826586-03:00"
-    },
-    {
-      "title": "Índia - Ações fecharam o pregão inalteradas e o Índice Nifty 50 recuou 0,16%",
-      "source": "Investing.com Brasil",
-      "score": 3.0,
-      "motivo": "Ações fecharam inalteradas e o Índice Nifty 50 recuou pouco, não havendo impacto significativo no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:40:55.614032-03:00"
-    },
-    {
-      "title": "MRV&Co tem prejuízo de R$626,6 mi no 2° tri impactado por impairment de US$110 mi",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "prejuízo significativo e impairment de US$110 mi impactam negativamente a empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:40:58.349690-03:00"
-    },
-    {
-      "title": "Por que as ações da HP Inc estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ações subindo devido a expectativas positivas de crescimento da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:41:01.220254-03:00"
-    },
-    {
       "title": "Por que as ações da Salesforce estão subindo hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T20:31:36.975796-03:00"
+    },
+    {
+      "title": "Plano de governo de Flávio prevê novas regras fiscais e mudanças no STF",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre política não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:35:42.486749-03:00"
+    },
+    {
+      "title": "Ação do Reddit dispara no after-hours após anúncio de entrada no S&P 500",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "inclusão no índice S&P 500 é considerada positiva para a ação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:35:46.885701-03:00"
+    },
+    {
+      "title": "Lucro trimestral do Nubank supera US$1 bi pela primeira vez e ação dispara",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Lucro trimestral recorde e ação dispara, indicando saúde financeira robusta do Nubank",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:35:49.750074-03:00"
+    },
+    {
+      "title": "Digimarc outlines go-to-market rebuild as Secure Gift Card pipeline grows over 30x to more than 31 retailers",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:35:53.416006-03:00"
+    },
+    {
+      "title": "“Crise não se desperdiça”: as lições do CEO do Rock in Rio para transformar pressão em crescimento",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:36:03.389450-03:00"
+    },
+    {
+      "title": "Advanced Micro Devices vs. Alphabet: Which Artificial Intelligence Stock Is a Better Buy in 2026?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:36:06.283488-03:00"
+    },
+    {
+      "title": "How ‘Phantom’ Data Center Projects Are Making It Impossible to Forecast AI Power Demand — ‘Grid Operators Don’t Know Which Ones Are Real’",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:36:09.103320-03:00"
     }
   ]
 }

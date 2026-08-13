@@ -1,35 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 39610,
-  "aprovadas_pelo_fluxo_atual": 691,
-  "descartadas_pelos_filtros_atuais": 38919,
+  "total_ingeridas": 39858,
+  "aprovadas_pelo_fluxo_atual": 693,
+  "descartadas_pelos_filtros_atuais": 39165,
   "score_medio_materialidade": 4.03,
   "seriam_breaking": 33,
-  "iriam_para_rodada": 290,
-  "seriam_descartadas_pelo_novo_sistema": 1677,
-  "total_divergencias": 668,
+  "iriam_para_rodada": 287,
+  "seriam_descartadas_pelo_novo_sistema": 1680,
+  "total_divergencias": 667,
   "divergencias": [
-    {
-      "title": "Mater Dei tem lucro ajustado de R$45 milhões no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "MRV&Co tem prejuízo de R$626,6 mi no 2° tri impactado por impairment de US$110 mi",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da HP Inc estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Por que as ações da Salesforce estão subindo hoje?",
       "source": "Investing.com Brasil",
@@ -146,6 +125,27 @@
       "title": "Tapestry Non-GAAP EPS of $1.32 beats by $0.04, revenue of $1.88B beats by $10M",
       "source": "Seeking Alpha",
       "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Semtech To Sell Cellular Module Business To Compal Electronics In $62 Mln Cash Deal",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Beacon, o family office para fundadores de startups, incorpora gestora e mira R$ 1 bilhão",
+      "source": "Neofeed",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Stellantis traça plano para se manter na “pole position” na América do Sul",
+      "source": "Neofeed",
+      "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
