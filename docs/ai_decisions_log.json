@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "China Revives Free-Trade-Zone Bond Market After Crackdown",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Reabertura do mercado de títulos pode indicar uma política mais liberalizada para investimentos estrangeiros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:30:43.242848-03:00"
-    },
-    {
-      "title": "Além do espetáculo: o que cientistas buscam entender sobre o Sol durante o eclipse total hoje",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia nao e sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:30:49.964368-03:00"
-    },
-    {
-      "title": "ECB leans toward allowing Unicredit's bid for Commerzbank - report",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A UniCredit está tentando adquirir a Commerzbank, o que pode ter um impacto significativo no mercado financeiro europeu.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:30:53.463766-03:00"
-    },
-    {
-      "title": "Mercury Systems rated Overweight at Piper Sandler on defense computing demand",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:30:56.130576-03:00"
-    },
-    {
-      "title": "Stellantis unveils new Jeep Grand Cherokee trims",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:30:58.768183-03:00"
-    },
-    {
-      "title": "Samsung held top market share spot for NAND during Q2; SK Hynix ranked second: Counterpoint",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:31:01.455477-03:00"
-    },
-    {
-      "title": "GrowGeneration jumps as Q2 revenue beats expectations",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:31:04.108352-03:00"
-    },
-    {
-      "title": "Summit higher as partner Akeso wins China label expansion for lead drug",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:31:06.775295-03:00"
-    },
-    {
-      "title": "Spruce Biosciences Q2 Loss Widens; Names Adrian Quarterl CMO, Jessica Cohen VP - Clinical",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:31:11.883561-03:00"
-    },
-    {
-      "title": "Nasdaq 100 Movers: MELI, CRWV",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:31:14.819996-03:00"
-    },
-    {
       "title": "More Retirees Heading Back to Work: 4 Things to Consider Before You Un-Retire",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T09:26:16.477817-03:00"
+    },
+    {
+      "title": "210 estatuetas douradas de Mozart são furtadas na Áustria",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:30:50.747534-03:00"
+    },
+    {
+      "title": "Ibovespa futuro sobe aos 170 mil pontos com varejo e espera pelo PPI dos EUA",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "noticia sobre o Ibovespa futuro e dados de varejo que podem influenciar a atividade econômica",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:30:54.588200-03:00"
+    },
+    {
+      "title": "Por que as ações da IREN estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ação de uma empresa de energia elétrica, o que é relevante para o mercado financeiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:30:57.401546-03:00"
+    },
+    {
+      "title": "US Foods (USFD) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:31:03.727862-03:00"
+    },
+    {
+      "title": "Warby Parker (WRBY) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:31:06.324344-03:00"
+    },
+    {
+      "title": "First Advantage (FA) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "O relatório de rendimentos é uma informação rotineira e não impacta significativamente o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:31:09.150171-03:00"
+    },
+    {
+      "title": "Green Plains (GPRE) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:31:11.802521-03:00"
+    },
+    {
+      "title": "Cogent Communications (CCOI) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:31:14.436986-03:00"
+    },
+    {
+      "title": "Silver prices today, Thursday, August 13, 2026: Silver prices up over 70% YOY with PPI report on deck",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:31:22.843271-03:00"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises Ahead Of Inflation Data; Cisco, AI Name Cerebras Plunge On Earnings (Live Coverage)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:31:25.502933-03:00"
     }
   ]
 }
