@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Em junho, indústria recua em 12 dos 15 locais pesquisados",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:10.672495-03:00"
-    },
-    {
-      "title": "Canadá considera aceitar tarifas automotivas dos EUA em troca de alíquotas menores",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "possibilidade de alívio nas alíquotas pode impactar positivamente as ações de empresas automotivas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:14.920950-03:00"
-    },
-    {
-      "title": "Times valendo bilhões: como as franquias da NBA redefiniram o mercado esportivo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:19.037918-03:00"
-    },
-    {
-      "title": "Robô humanoide troca a própria bateria em menos de 3 minutos",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:21.734434-03:00"
-    },
-    {
-      "title": "First International Bank of Israel GAAP EPS of NIS5.82, revenue of NIS1.76B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:24.671589-03:00"
-    },
-    {
-      "title": "KT reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:27.319313-03:00"
-    },
-    {
-      "title": "Velo3D, Inc. WT EXP 092926 GAAP EPS of -$0.30, revenue of $20.7M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:30.031969-03:00"
-    },
-    {
-      "title": "JD.com Q2 earnings in focus as valuation remains subdued",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:46:32.722946-03:00"
-    },
-    {
-      "title": "Crown Point Energy reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:35.389899-03:00"
-    },
-    {
-      "title": "Applied Aerospace & Defense projects 2026 revenue of $670M-$690M backed by $1.1B+ backlog",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:38.107810-03:00"
-    },
-    {
-      "title": "Gabelli Dividend & Income Trust declares $0.15 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:40.790928-03:00"
-    },
-    {
-      "title": "Agronegócio e estatais lideram ganhos da B3 no 1º semestre; veja o ranking",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:46:50.083592-03:00"
-    },
-    {
-      "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T14:46:54.191083-03:00"
-    },
-    {
-      "title": "Exclusive-Inside the Google executive moves that led to its big AI reshuffle",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre movimentos internos de uma empresa de tecnologia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T14:46:57.453202-03:00"
-    },
-    {
       "title": "U.S. credit card debt hits $1.26 trillion in Q2 2026, near record",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T12:46:48.053102-03:00"
+    },
+    {
+      "title": "Ação mira grupo suspeito de operar bets ilegais, aplicar golpe e movimentar R$ 1,4 bi",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:50:49.522992-03:00"
+    },
+    {
+      "title": "Onda de calor eleva temperaturas em grande parte do país",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:50:52.265065-03:00"
+    },
+    {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai com pressão de BBAS3, HAPV3 e VALE3",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A queda da Ibovespa devido à pressão de ações como BBAS3, HAPV3 e VALE3 é relevante para o mercado brasileiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T12:50:55.044469-03:00"
+    },
+    {
+      "title": "Rede D’Or (RDOR3) traz balanço sólido e salta 6% no Ibovespa; o que chamou a atenção?",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T12:50:58.682463-03:00"
+    },
+    {
+      "title": "These nontech stocks can ride the AI build-out for years",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T12:51:02.257088-03:00"
+    },
+    {
+      "title": "Diesel scarcity likely to persist into winter, Goldman Sachs says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T12:51:05.121051-03:00"
+    },
+    {
+      "title": "KP Tissue Q2 GAAP EPS of $0.24, revenue of $550.89M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:51:07.749418-03:00"
+    },
+    {
+      "title": "André Schwartz vai ser afastado do Banco Genial? Entenda a decisão do BC que inabilitou o CEO e multou o banco em R$ 21,2 milhões",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T12:51:14.263683-03:00"
+    },
+    {
+      "title": "KNIP11, KNCR11 e outros FIIs pagam dividendos hoje (13)",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:51:17.861004-03:00"
+    },
+    {
+      "title": "Claude AI Just Sold ServiceNow and Inter & Co — Should You Too?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:51:21.544687-03:00"
+    },
+    {
+      "title": "Meta (META) Deletes 756,000 Teen Accounts, But Is It Enough?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T12:51:24.173491-03:00"
+    },
+    {
+      "title": "Billionaire Bill Ackman Thinks Netflix (NFLX) Will Rebound Despite Slowdown Trends. Is He Right?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T12:51:26.880606-03:00"
+    },
+    {
+      "title": "Inside the relationship of model Karlie Kloss and billionaire venture capitalist Josh Kushner, the power couple with unconventional ties to Trump",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:51:29.944592-03:00"
+    },
+    {
+      "title": "SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T12:51:33.577342-03:00"
     }
   ]
 }
