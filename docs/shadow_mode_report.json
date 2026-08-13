@@ -1,49 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 40602,
+  "total_ingeridas": 40830,
   "aprovadas_pelo_fluxo_atual": 704,
-  "descartadas_pelos_filtros_atuais": 39898,
+  "descartadas_pelos_filtros_atuais": 40126,
   "score_medio_materialidade": 3.96,
-  "seriam_breaking": 32,
-  "iriam_para_rodada": 270,
-  "seriam_descartadas_pelo_novo_sistema": 1698,
-  "total_divergencias": 661,
+  "seriam_breaking": 33,
+  "iriam_para_rodada": 263,
+  "seriam_descartadas_pelo_novo_sistema": 1704,
+  "total_divergencias": 659,
   "divergencias": [
-    {
-      "title": "Semtech To Sell Cellular Module Business To Compal Electronics In $62 Mln Cash Deal",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Beacon, o family office para fundadores de startups, incorpora gestora e mira R$ 1 bilhão",
-      "source": "Neofeed",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Stellantis traça plano para se manter na “pole position” na América do Sul",
-      "source": "Neofeed",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Lithium Americas GAAP EPS of -$0.02 beats by $0.03",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Nova regra na cobrança de impostos, split payment ameaça asfixiar empresas",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Por que as ações da International Business Machines estão subindo hoje?",
       "source": "Investing.com Brasil",
@@ -148,6 +113,41 @@
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Inuvo, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Evolv Technologies Holdings, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Congresso aprova aval a despesa fora do limit, mas garante ajuste de R$ 10 bi em 2027",
+      "source": "InfoMoney",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Raízen Energia pede à CVM conversão de registro de categoria B para A",
+      "source": "InfoMoney",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Energisa (ENGI11) ⁠conclui venda de 5 ativos à Taesa (TAEE11) por R$ 1,6 bi",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
