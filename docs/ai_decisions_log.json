@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wilmar H1 Profit Rises",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:21:24.609281-03:00"
-    },
-    {
-      "title": "Wilmar International Ltd. Reports Climb In H1 Income",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:21:27.217548-03:00"
-    },
-    {
-      "title": "Plug Power Just Cut Its Losses in Half. Is It Time to Buy the Hydrogen Stock?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:21:29.835474-03:00"
-    },
-    {
-      "title": "Bitcoin and ethereum prices today, Wednesday, August 12, 2026:  Crypto prices rise with CPI report on deck",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:21:37.458898-03:00"
-    },
-    {
-      "title": "Ron Baron Bet $25 Billion on SpaceX and Projects the Rocket Company Will Hit $40 Trillion",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:21:40.081487-03:00"
-    },
-    {
-      "title": "US Stock Futures Rise as Tech Rally Resumes Before Key CPI Data",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A publicação de dados de inflação pode influenciar a decisão dos investidores sobre a continuidade da retomada da bolsa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:26:07.058396-03:00"
-    },
-    {
-      "title": "Trump Claims Hormuz Control as US-Iran Deadlock Continues | The Pulse 8/12/2026",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:26:09.940280-03:00"
-    },
-    {
-      "title": "Dólar hoje devolve parte dos ganhos da véspera e recua antes do CPI nos EUA",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "O dólar recuou, o que pode ser negativo para investimentos em moedas estrangeiras",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:26:13.256145-03:00"
-    },
-    {
-      "title": "Minério de ferro fecha com leve alta na China",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:26:15.854828-03:00"
-    },
-    {
-      "title": "Por que as ações da Performance Food Group estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:26:20.165378-03:00"
-    },
-    {
-      "title": "Por que a ação da Openlane está caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:26:22.765461-03:00"
-    },
-    {
-      "title": "Futuros do TSX sobem antes de dados de inflação dos EUA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:26:25.364398-03:00"
-    },
-    {
-      "title": "Por que as ações da LENZ Therapeutics estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:26:27.970872-03:00"
-    },
-    {
-      "title": "Goldman Sachs vai adquirir a Neos por até US$ 2,25 bilhões em dinheiro e ações",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:26:30.582838-03:00"
-    },
-    {
       "title": "Por que as ações da Savers Value Village estão caindo hoje?",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T07:17:10.992077-03:00"
+    },
+    {
+      "title": "UK Economy Gets Surprise Boost From Weather, World Cup",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "O crescimento inesperado da economia pode influenciar a política monetária da Bank of England.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:20:40.251111-03:00"
+    },
+    {
+      "title": "Why JPMorgan is investing big in the 2028 LA Olympics",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A JPMorgan está investindo em eventos de grande escala, o que pode afetar positivamente a imagem da empresa e potencialmente aumentar suas receitas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:20:43.422361-03:00"
+    },
+    {
+      "title": "Por que as ações da Dell Technologies estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "A Dell Technologies anunciou um aumento de 10% em sua produção de computadores, o que deve impulsionar suas vendas e lucros.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:20:48.079565-03:00"
+    },
+    {
+      "title": "Pou Sheng prevê recuperação do setor esportivo na China até 2028",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A expectativa de recuperação do setor esportivo na China até 2028 pode impulsionar investimentos e crescimento econômico.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:20:50.871019-03:00"
+    },
+    {
+      "title": "Ações da IBM sobem com parceria estratégica com a OpenAI",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Parceria estratégica pode impulsionar crescimento da IBM",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:20:53.628635-03:00"
+    },
+    {
+      "title": "Cortes de preços em alimentos industrializados não impulsionaram volumes, diz BofA",
+      "source": "Investing.com Brasil",
+      "score": 3.0,
+      "motivo": "A noticia não impulsiona volumes, mas é relevante para o mercado de alimentos industrializados",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:20:56.381343-03:00"
+    },
+    {
+      "title": "Jefferies analisa descontos no comércio rápido na Índia em Bangalore",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Descontos no comércio rápido podem impulsionar demanda e crescimento econômico na Índia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:20:59.156802-03:00"
+    },
+    {
+      "title": "Goldman Sachs eleva previsão de lucros para ações europeias a 15%",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Elevação da previsão de lucros é um sinal positivo para as ações europeias.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:21:02.149642-03:00"
+    },
+    {
+      "title": "Acordos de financiamento de IA da Nvidia e Broadcom levantam preocupações de longo prazo",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "acordos de financiamento podem indicar aumento de investimentos em tecnologia de IA, mas também podem levar a aumento de custos e pressão sobre lucros a longo prazo",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:21:08.533486-03:00"
+    },
+    {
+      "title": "Essas 2 ações de IA estão \"extremamente subvalorizadas\", diz analista",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A noticia destaca a opinião de um analista sobre a subvalorizacao de acoes de IA, o que pode influenciar a demanda e o preco dessas acoes.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:21:11.306062-03:00"
+    },
+    {
+      "title": "‘She’s desperate’: My friend’s mother died. Can she stop Medicaid from taking the family home?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro ou à economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:21:14.838092-03:00"
+    },
+    {
+      "title": "JD.com in Charts: JD Logistics remains a growth engine in Q2, while retail revenue slips",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque apresenta resultados financeiros da JD.com, que é uma empresa de tecnologia e comércio eletrônico importante no mercado chinês.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:21:17.843145-03:00"
+    },
+    {
+      "title": "Back-to-school season is hectic. To stay sane, we do the bare minimum for 1 month.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não trata de mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:21:26.736403-03:00"
+    },
+    {
+      "title": "Wendy's stock jumps on report of potential takeover bid from Nelson Peltz's Trian Fund Management",
+      "source": "CNBC - US News",
+      "score": 6.0,
+      "motivo": "A noticia sugere uma potencial mudança de controle na empresa, o que pode ter um impacto significativo no mercado de acoes.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:21:29.876848-03:00"
     }
   ]
 }
