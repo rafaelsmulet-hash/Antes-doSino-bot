@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Compactos são 70% dos lançamentos em SP: 'É a vocação do paulista', diz CEO do Secovi",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Dado relevante sobre mercado imobiliário em São Paulo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:52:52.010160-03:00"
-    },
-    {
-      "title": "Agro deve ganhar R$ 48 bilhões com IA — mas a revolução acontecerá nas máquinas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:52:54.726651-03:00"
-    },
-    {
-      "title": "‘My husband and I are at odds’: Should we tap our home equity or sell stocks to build a $100,000 emergency fund?",
-      "source": "MarketWatch",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta uma situação específica de mercado, mas sim uma decisão financeira pessoal.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:52:58.201636-03:00"
-    },
-    {
       "title": "The latest rally has energized the stock market but left the credit market concerned",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T19:06:35.179475-03:00"
+    },
+    {
+      "title": "Nubank supera US$ 1 bi em lucro no 2º tri pela 1ª vez, mas inadimplência vai a 6,9%",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "Nubank alcança lucro recorde e ROE elevado, mas inadimplência aumenta levemente",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:11:05.369807-03:00"
+    },
+    {
+      "title": "'Tesouraço', corte de imposto e limites ao STF: veja o plano de governo de Flávio Bolsonaro",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre plano de governo de Flávio Bolsonaro, sem impacto direto no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:11:08.354143-03:00"
+    },
+    {
+      "title": "Markets are looking eerily calm as investors chase FOMO rally",
+      "source": "MarketWatch",
+      "score": 2.0,
+      "motivo": "A notícia não menciona nenhum evento específico ou decisão de mercado que possa ter impacto imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:11:12.113758-03:00"
     }
   ]
 }

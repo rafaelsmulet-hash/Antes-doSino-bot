@@ -1,28 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 35414,
+  "total_ingeridas": 35662,
   "aprovadas_pelo_fluxo_atual": 649,
-  "descartadas_pelos_filtros_atuais": 34765,
+  "descartadas_pelos_filtros_atuais": 35013,
   "score_medio_materialidade": 3.96,
-  "seriam_breaking": 37,
-  "iriam_para_rodada": 311,
+  "seriam_breaking": 38,
+  "iriam_para_rodada": 310,
   "seriam_descartadas_pelo_novo_sistema": 1652,
-  "total_divergencias": 669,
+  "total_divergencias": 668,
   "divergencias": [
-    {
-      "title": "Compactos são 70% dos lançamentos em SP: 'É a vocação do paulista', diz CEO do Secovi",
-      "source": "Exame",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Agro deve ganhar R$ 48 bilhões com IA — mas a revolução acontecerá nas máquinas",
-      "source": "Exame",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "The latest rally has energized the stock market but left the credit market concerned",
       "source": "MarketWatch",
@@ -144,6 +130,20 @@
     },
     {
       "title": "US Embassies Across Mideast Are Permanently Reassigning Personnel",
+      "source": "ZeroHedge",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Left-Wing German Parties Pour Record Sums Into Stopping The AfD In The East",
+      "source": "ZeroHedge",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "China Dominates The Humanoid Robot Race. Can Trump Close The Gap?",
       "source": "ZeroHedge",
       "score": null,
       "decisao_sugerida": "discard",
