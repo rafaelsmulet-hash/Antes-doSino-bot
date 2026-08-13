@@ -1,63 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 38370,
-  "aprovadas_pelo_fluxo_atual": 680,
-  "descartadas_pelos_filtros_atuais": 37690,
-  "score_medio_materialidade": 4.04,
-  "seriam_breaking": 36,
-  "iriam_para_rodada": 304,
-  "seriam_descartadas_pelo_novo_sistema": 1660,
-  "total_divergencias": 669,
+  "total_ingeridas": 38618,
+  "aprovadas_pelo_fluxo_atual": 686,
+  "descartadas_pelos_filtros_atuais": 37932,
+  "score_medio_materialidade": 4.03,
+  "seriam_breaking": 34,
+  "iriam_para_rodada": 299,
+  "seriam_descartadas_pelo_novo_sistema": 1667,
+  "total_divergencias": 670,
   "divergencias": [
-    {
-      "title": "Discovery Mining GAAP EPS of $0.11, revenue of $319.09M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "China Automotive Systems GAAP EPS of $0.97, revenue of $412.5M; raises FY 2026 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "X-Energy, Inc. Non-GAAP EPS of -$0.15 misses by $0.05, revenue of $54.6M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Why JPMorgan is investing big in the 2028 LA Olympics",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Dell Technologies estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Pou Sheng prevê recuperação do setor esportivo na China até 2028",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Ações da IBM sobem com parceria estratégica com a OpenAI",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Jefferies analisa descontos no comércio rápido na Índia em Bangalore",
       "source": "Investing.com Brasil",
@@ -147,6 +98,55 @@
       "source": "Investing.com Brasil",
       "score": 8.0,
       "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da HP Inc estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Salesforce estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Omeros estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Ações da Sipef sobem 5% após revisão das perspectivas de lucro para 2026",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Wolverine World Wide Non-GAAP EPS of $0.40 beats by $0.02, revenue of $506.4M beats by $5.12M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Applied Industrial Technologies beats top-line and bottom-line estimates; introduces FY2027 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Idaho Strategic Resources GAAP EPS of $0.23 misses by $0.02, revenue of $10.73M",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
   ]

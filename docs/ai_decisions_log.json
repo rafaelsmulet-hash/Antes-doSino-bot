@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Birkenstock Holding GAAP EPS of €0.60, revenue of €71.95M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Os resultados financeiros são relevantes, mas não são impactantes para o mercado em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:16:33.871237-03:00"
-    },
-    {
-      "title": "Discovery Mining GAAP EPS of $0.11, revenue of $319.09M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A divulgação de resultados financeiros é relevante para os investidores e pode influenciar a valorização da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:16:36.734939-03:00"
-    },
-    {
-      "title": "China Automotive Systems GAAP EPS of $0.97, revenue of $412.5M; raises FY 2026 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa elevou sua previsão para o ano fiscal de 2026, o que pode ser um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:16:39.723416-03:00"
-    },
-    {
-      "title": "Rockwell Medical Non-GAAP EPS of -$0.04, revenue of $17.78M misses by $0.06M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não é um evento de grande impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:16:42.633177-03:00"
-    },
-    {
-      "title": "Xunlei Non-GAAP EPS of -$0.03, revenue of $102.11M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas os números não são surpreendentes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:16:45.490253-03:00"
-    },
-    {
-      "title": "X-Energy, Inc. Non-GAAP EPS of -$0.15 misses by $0.05, revenue of $54.6M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta negativamente a percepção da empresa e pode influenciar as ações no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:16:48.807717-03:00"
-    },
-    {
-      "title": "Back-to-school season is hectic. To stay sane, we do the bare minimum for 1 month.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:17:00.652409-03:00"
-    },
-    {
-      "title": "Wall Street Zeroes In On This \"Pure-Play\" US Attack Drone Company",
-      "source": "ZeroHedge",
-      "score": 8.0,
-      "motivo": "A empresa está em posição privilegiada para se beneficiar da mudança na cadeia de abastecimento de drones do país, com a possibilidade de se tornar um dos principais fornecedores de drones para o governo americano.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:17:08.032576-03:00"
-    },
-    {
-      "title": "Norway $2.3 Trillion Wealth Fund Posts Record-High Profit in H1",
-      "source": "ZeroHedge",
-      "score": 5.0,
-      "motivo": "O lucro recorde do fundo de pensão da Noruega é relevante para o mercado devido ao seu impacto positivo nas ações de tecnologia asiática.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:17:10.992077-03:00"
-    },
-    {
-      "title": "UK Economy Gets Surprise Boost From Weather, World Cup",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "O crescimento inesperado da economia pode influenciar a política monetária da Bank of England.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:20:40.251111-03:00"
-    },
-    {
-      "title": "Why JPMorgan is investing big in the 2028 LA Olympics",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "A JPMorgan está investindo em eventos de grande escala, o que pode afetar positivamente a imagem da empresa e potencialmente aumentar suas receitas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:20:43.422361-03:00"
-    },
-    {
-      "title": "Por que as ações da Dell Technologies estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "A Dell Technologies anunciou um aumento de 10% em sua produção de computadores, o que deve impulsionar suas vendas e lucros.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:20:48.079565-03:00"
-    },
-    {
-      "title": "Pou Sheng prevê recuperação do setor esportivo na China até 2028",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A expectativa de recuperação do setor esportivo na China até 2028 pode impulsionar investimentos e crescimento econômico.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:20:50.871019-03:00"
-    },
-    {
-      "title": "Ações da IBM sobem com parceria estratégica com a OpenAI",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Parceria estratégica pode impulsionar crescimento da IBM",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:20:53.628635-03:00"
-    },
-    {
       "title": "Cortes de preços em alimentos industrializados não impulsionaram volumes, diz BofA",
       "source": "Investing.com Brasil",
       "score": 3.0,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T20:06:34.857885-03:00"
+    },
+    {
+      "title": "CV Sciences outlines hemp-rule delay to December 11, 2026 while expanding PlusHLTH.com and planning multiple 2026 launches",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Atraso na regulamentação do cânhamo pode afetar a demanda por produtos relacionados",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:10:54.350700-03:00"
+    },
+    {
+      "title": "Denali Therapeutics (DNLI) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sobre uma empresa de tecnologia médica",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:11:00.825743-03:00"
+    },
+    {
+      "title": "Cytokinetics (CYTK) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:11:03.596569-03:00"
+    },
+    {
+      "title": "American Healthcare REIT (AHR) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:11:06.365161-03:00"
+    },
+    {
+      "title": "Full House Resorts (FLL) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:11:09.196042-03:00"
+    },
+    {
+      "title": "Down 39%, Should You Buy the Dip in Netflix Stock?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:11:11.940109-03:00"
+    },
+    {
+      "title": "CareTrust REIT (CTRE) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:11:14.699482-03:00"
+    },
+    {
+      "title": "Halozyme (HALO) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:11:17.498133-03:00"
+    },
+    {
+      "title": "Mark Cuban Warns Nvidia Is 'Funding Everyone' in the AI Boom. IREN Stock Proves His Point.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:11:25.344160-03:00"
+    },
+    {
+      "title": "Hyperliquid Turns to CFTC for Path Into U.S. Perpetual Futures Market",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:11:28.143242-03:00"
+    },
+    {
+      "title": "Why IBM Stock Looks Like a Very Promising Long-Term Pick",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A IBM apresenta uma recuperação significativa em sua valorização de açõs e tem um potencial de crescimento a longo prazo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:11:31.287520-03:00"
+    },
+    {
+      "title": "Multiple factors pushed multifamily CMBS distress up in July",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:11:34.063815-03:00"
+    },
+    {
+      "title": "Crude Prices Ease on US Crude Oil Inventory Surge",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:11:36.869752-03:00"
+    },
+    {
+      "title": "Do Wall Street Analysts Like CBRE Group Stock?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:11:39.608375-03:00"
     }
   ]
 }
