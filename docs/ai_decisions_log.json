@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "What is compound interest, and how is it calculated?",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado financeiro em geral, mas não é um evento específico ou atual.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:04:03.605991-03:00"
-    },
-    {
-      "title": "Wendy's stock jumps on report of potential takeover bid from Nelson Peltz's Trian Fund Management",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:04:06.500446-03:00"
-    },
-    {
-      "title": "US Set to Pay Most for 30-Year Debt in Quarter of a Century",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "motivo": "Aumento dos juros nos títulos de 30 anos é um evento significativo para o mercado financeiro.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:06:34.516035-03:00"
-    },
-    {
-      "title": "De quadras patrocinadas a shows: como o Ibirapuera virou um grande negócio de R$ 160 milhões",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "noticia sobre gestão de parque não é relevante para mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:06:39.566484-03:00"
-    },
-    {
-      "title": "Programas de fidelidade entram na rotina de 8 em cada 10 brasileiros",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "O aumento da fidelidade dos consumidores pode impulsionar as vendas e, consequentemente, os lucros das empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:06:42.437288-03:00"
-    },
-    {
-      "title": "Shopee lança entrega em até 4 horas e acirra disputa com Mercado Livre e Amazon",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "não é uma notícia financeira relevante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:06:45.326162-03:00"
-    },
-    {
-      "title": "A nova aposta de Dony De Nuccio, ex-Globo, à frente de TV nos EUA",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "noticia sobre TV e live commerce nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:06:48.077223-03:00"
-    },
-    {
       "title": "Yeti Non-GAAP EPS of $0.67 beats by $0.12, revenue of $483.87M in-line; updates FY 2026 outlook",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T19:45:53.255838-03:00"
+    },
+    {
+      "title": "Dasa (DASA3) reduz prejuízo para R$ 35 milhões no 2º trimestre",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Redução de prejuízo e aumento de Ebitda indicam melhoria financeira da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:50:45.739071-03:00"
+    },
+    {
+      "title": "Milhas em dinheiro? Entenda o projeto de lei aprovado na Câmara dos Deputados",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "O projeto de lei pode impulsionar a liquidez de pontos de programas de fidelidade, aumentando a confiança dos investidores em empresas que os utilizam.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:50:50.225395-03:00"
+    },
+    {
+      "title": "Swarmer outlines ~80% gross margin target while scaling SkyKnight contract to ~$14.2M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa está definindo um alvo de margem bruta, o que pode ser visto como um sinal de confiança em seu modelo de negócios e pode influenciar a percepção dos investidores sobre a saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:50:53.569817-03:00"
+    },
+    {
+      "title": "Lionsgate (LION) Q1 2027 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:50:58.600035-03:00"
+    },
+    {
+      "title": "Brasil inicia processo de reciprocidade contra tarifas dos EUA",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:51:03.865132-03:00"
+    },
+    {
+      "title": "Vestas Finally Catches a Tailwind",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:51:09.014093-03:00"
+    },
+    {
+      "title": "Fortive Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:51:11.722902-03:00"
     }
   ]
 }

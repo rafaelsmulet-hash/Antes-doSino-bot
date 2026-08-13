@@ -1,21 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 37378,
-  "aprovadas_pelo_fluxo_atual": 675,
-  "descartadas_pelos_filtros_atuais": 36703,
-  "score_medio_materialidade": 4.03,
-  "seriam_breaking": 38,
-  "iriam_para_rodada": 303,
-  "seriam_descartadas_pelo_novo_sistema": 1659,
-  "total_divergencias": 665,
+  "total_ingeridas": 37626,
+  "aprovadas_pelo_fluxo_atual": 676,
+  "descartadas_pelos_filtros_atuais": 36950,
+  "score_medio_materialidade": 4.04,
+  "seriam_breaking": 37,
+  "iriam_para_rodada": 305,
+  "seriam_descartadas_pelo_novo_sistema": 1658,
+  "total_divergencias": 668,
   "divergencias": [
-    {
-      "title": "Programas de fidelidade entram na rotina de 8 em cada 10 brasileiros",
-      "source": "Exame",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Yeti Non-GAAP EPS of $0.67 beats by $0.12, revenue of $483.87M in-line; updates FY 2026 outlook",
       "source": "Seeking Alpha",
@@ -146,6 +139,13 @@
       "title": "Russian Diesel Flows Are Lowest in Years as Drones Hit Refiners",
       "source": "Bloomberg Markets",
       "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Pou Sheng prevê recuperação do setor esportivo na China até 2028",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
