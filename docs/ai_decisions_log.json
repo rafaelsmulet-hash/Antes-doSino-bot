@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ibovespa cai de novo e perde os 168 mil pontos; eleição afasta estrangeiros da Bolsa",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:26:10.069163-03:00"
-    },
-    {
-      "title": "Mercado de biometano ganha um “gás extra” antes mesmo de marco regulatório",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:26:13.686116-03:00"
-    },
-    {
-      "title": "David Protein founder's candy launch is full of AI typos. The brand's president says it's intentional 'rage bait.'",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:26:16.757531-03:00"
-    },
-    {
-      "title": "Câmara aprova PLP dos combustíveis com ‘jabutis’ e trava para despesas do governo",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Aprovação do PLP pode impactar positivamente setores como etanol e fertilizantes",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:30:45.890035-03:00"
-    },
-    {
-      "title": "Rússia - Ações fecharam o pregão em queda e o Índice MOEX Russia Index recuou 1,12%",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "A queda das ações e do índice MOEX Russia Index indica um impacto negativo no mercado russo",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:30:50.237547-03:00"
-    },
-    {
-      "title": "Rumo tem lucro acima do esperado no 2º trimestre",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Rumo tem lucro acima do esperado, indicando saúde financeira da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:30:53.125712-03:00"
-    },
-    {
-      "title": "NextEra Energy garante US$ 3,3 bilhões para projetos de energia a gás",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:30:55.841305-03:00"
-    },
-    {
-      "title": "Freio global: Kepler Weber cai 46% no exterior e aposta na Argentina",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:30:58.894250-03:00"
-    },
-    {
-      "title": "Ackman's Pershing Square Inc. Q2 earnings beat; highlights Mastercard and Visa stakes",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:31:01.900769-03:00"
-    },
-    {
-      "title": "Rumo lucra R$ 688 no segundo trimestre, queda de 5,9%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:31:10.270671-03:00"
-    },
-    {
-      "title": "Trump Media Reports $361 Million Crypto Loss",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:31:15.473520-03:00"
-    },
-    {
       "title": "Kalshi Sued Over Bets On Flight Cancellations",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T16:31:43.167694-03:00"
+    },
+    {
+      "title": "Chicago Mayor Demands Data Center Moratorium",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "A medida pode afetar a expansão de centros de dados em Chicago, o que pode ter impacto em empresas de tecnologia e infraestrutura.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:35:32.785869-03:00"
+    },
+    {
+      "title": "VALE3: Apesar de falta de catalisadores no curto prazo, BTG está otimista com Vale",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "O analista da BTG está otimista com a Vale, o que pode influenciar a percepção dos investidores sobre a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T16:35:37.909862-03:00"
+    },
+    {
+      "title": "Regulador da Índia propõe maior acesso para investidores credenciados",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Aumento do acesso para investidores credenciados pode atrair mais capital para o mercado indiano.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:35:40.955659-03:00"
+    },
+    {
+      "title": "Zetwerk Manufacturing protocola IPO de US$ 272 milhões na Índia",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T16:35:43.643758-03:00"
+    },
+    {
+      "title": "MLGU3: Por que as ações do Magazine Luiza estão em queda hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T16:35:46.334315-03:00"
+    },
+    {
+      "title": "Ações da Workday disparam 25% com rumores de aquisição pela Silver Lake",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:35:49.032685-03:00"
+    },
+    {
+      "title": "Rock in Rio 2026: veja line-up completo, ingressos, novas atrações e muito mais",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:35:52.079630-03:00"
+    },
+    {
+      "title": "Rekor Systems GAAP EPS of $0.00 beats by $0.02, revenue of $12.7M misses by $1.68M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:35:55.109657-03:00"
+    },
+    {
+      "title": "Sibanye Stillwater raised to Buy at Citi as historical headwinds fade",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:35:57.806269-03:00"
+    },
+    {
+      "title": "UConn women's coach Geno Auriemma says WNBA should shift focus away from transgender debate",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:36:08.607687-03:00"
+    },
+    {
+      "title": "Trade court upholds Trump's closure of 'de minimis' loophole",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:36:11.290886-03:00"
     }
   ]
 }
