@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Corn Continues to Coil Ahead of USDA Data",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:41:15.875847-03:00"
-    },
-    {
-      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:41:19.668090-03:00"
-    },
-    {
-      "title": "Ibovespa tem 7ª baixa seguida em dia de vencimentos e balanços; Embraer salta 4%",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A notícia menciona a 7ª baixa seguida da Ibovespa, o que é um indicativo de desempenho negativo do mercado brasileiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:45:43.204085-03:00"
-    },
-    {
-      "title": "JFrog lidera as ações de software de segurança, segundo a Cantor",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A empresa lidera a categoria de software de segurança, o que é positivo para a ação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:45:48.492580-03:00"
-    },
-    {
-      "title": "Por que as ações da Cisco estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A queda das ações da Cisco pode ser um sinal de desconfiança no setor de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:45:51.457689-03:00"
-    },
-    {
-      "title": "E.U.A. - Ações fecharam o pregão inalteradas e o Índice Dow Jones Industrial Average recuou 0,04%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:45:54.229818-03:00"
-    },
-    {
-      "title": "Canadá - Ações fecharam o pregão em alta e o Índice S&P/TSX avançou 0,51%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:45:56.940389-03:00"
-    },
-    {
-      "title": "Brasil - Ações fecharam o pregão em queda e o Índice Bovespa recuou 0,23%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:45:59.642369-03:00"
-    },
-    {
-      "title": "Merck nomeia Bart Gourley como diretor de IA da empresa",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:46:02.630550-03:00"
-    },
-    {
-      "title": "Quando será o próximo eclipse solar total no Brasil?",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:46:05.824981-03:00"
-    },
-    {
       "title": "Cinco experiências na faculdade que podem acelerar sua carreira antes do diploma",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T15:31:50.616588-03:00"
+    },
+    {
+      "title": "Santos x Macará: Onde assistir à Copa Sul-Americana?",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há informações financeiras ou econômicas relevantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:35:37.936373-03:00"
+    },
+    {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai com balanços, na contramão do exterior; PETR4 sobe",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "balanços ruins afetam a Ibovespa, mas dados de inflação ao produtor são positivos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:35:41.210650-03:00"
+    },
+    {
+      "title": "Quase 100% do RH da John Deere é treinado para prever o negócio de 2032, revela CHRO",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre RH e planejamento estratégico da John Deere, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:35:45.972233-03:00"
+    },
+    {
+      "title": "Como árvores milenares ajudam cientistas a prever grandes tempestades solares",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:35:48.688889-03:00"
+    },
+    {
+      "title": "JD Logistics, Inc. reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:35:51.704254-03:00"
+    },
+    {
+      "title": "Sagicor Financial declares $0.075 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:35:54.356318-03:00"
+    },
+    {
+      "title": "Gee Group outlines ERP and applicant tracking implementation by end of September as strategic review continues",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:35:57.101456-03:00"
+    },
+    {
+      "title": "Elmet targets 30% gross margin within 4 to 5 years as ADG mix expands",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:35:59.831069-03:00"
+    },
+    {
+      "title": "PicPay (PICS) troca CFO após IPO; quem é André Cazotto, novo chefe das finanças",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:36:07.334076-03:00"
+    },
+    {
+      "title": "SEC Proposes New E-Delivery Approach to Make Information More Readily Accessible and Useful for Investors",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:36:13.309370-03:00"
     }
   ]
 }
