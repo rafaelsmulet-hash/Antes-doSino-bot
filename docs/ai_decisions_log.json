@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Déficit orçamentário dos EUA sobe em julho e já atinge em 10 meses o rombo de 2025",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "o déficit orçamentário dos EUA aumentou significativamente em julho, indicando problemas financeiros significativos",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:00:56.761846-03:00"
-    },
-    {
-      "title": "Bitcoin hoje: cripto opera quase estável em sessão de CPI dos EUA dentro do esperado",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "a noticia não traz nenhum fator que estimule o interesse dos compradores ou vendedores",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:00:59.831908-03:00"
-    },
-    {
       "title": "Por que setor financeiro perdeu R$ 112 bi, um Banco do Brasil (BBAS3), em dias na Bolsa?",
       "source": "Money Times",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T14:36:47.727022-03:00"
+    },
+    {
+      "title": "Disney+ libera cupom de 30% para pedir McDonald’s pelo app; veja como resgatar",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "promoção entre empresas não afeta diretamente o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:41:11.530503-03:00"
+    },
+    {
+      "title": "StubHub's World Cup boom masks tougher road ahead",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A notícia é relevante porque afeta o desempenho financeiro da StubHub, mas o impacto é mais a longo prazo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:41:15.156252-03:00"
     }
   ]
 }
