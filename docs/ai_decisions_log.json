@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Shopee entra na 'guerra' das entregas rápidas e promete delivery em 4 horas",
-      "source": "UOL Economia",
-      "score": 3.0,
-      "motivo": "iniciativa de entrega rápida da Shopee não é um evento de mercado significativo, mas é relevante para o setor de e-commerce",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:03:49.754090-03:00"
-    },
-    {
-      "title": "Aposta de MG fatura mais de R$ 6 milhões na Lotofácil 3760 e Dia de Sorte 1270 tem bola dividida; Mega-Sena continua em segundo plano",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:03:52.848910-03:00"
-    },
-    {
-      "title": "ARTIGO: Quando o agente de IA se veste de Chrome para entrar na Amazon",
-      "source": "Neofeed",
-      "score": 0.0,
-      "motivo": "a noticia nao trata de mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:03:57.540288-03:00"
-    },
-    {
-      "title": "How are mortgage rates determined? The Fed, your credit score, and more.",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia explica um conceito relevante para os empréstimos imobiliários, mas não é um evento específico ou atual.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:04:00.726329-03:00"
-    },
-    {
       "title": "What is compound interest, and how is it calculated?",
       "source": "Yahoo Finance",
       "score": 2.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T19:41:53.871908-03:00"
+    },
+    {
+      "title": "Rival do Corinthians, Rosario Central tem realidade financeira distante do Brasil",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia e sobre esporte e nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:45:38.736729-03:00"
+    },
+    {
+      "title": "TechPrecision outlines $52M backlog delivery over 1 to 3 fiscal years while maintaining FY2027 guidance",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa manteve suas orientações para o ano fiscal de 2027, indicando confiança em suas perspectivas de negócios.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:45:41.981695-03:00"
+    },
+    {
+      "title": "Tarifaço: Governo dá início a processo de reciprocidade contra os Estados Unidos",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:45:48.309598-03:00"
+    },
+    {
+      "title": "Amazon Just Exploded 13% on Its AWS Quarter. This Fund Pays You Every Friday to Own It",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:45:53.255838-03:00"
     }
   ]
 }

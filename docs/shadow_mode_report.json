@@ -1,21 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 37130,
-  "aprovadas_pelo_fluxo_atual": 674,
-  "descartadas_pelos_filtros_atuais": 36456,
-  "score_medio_materialidade": 4.02,
+  "total_ingeridas": 37378,
+  "aprovadas_pelo_fluxo_atual": 675,
+  "descartadas_pelos_filtros_atuais": 36703,
+  "score_medio_materialidade": 4.03,
   "seriam_breaking": 38,
   "iriam_para_rodada": 303,
   "seriam_descartadas_pelo_novo_sistema": 1659,
-  "total_divergencias": 664,
+  "total_divergencias": 665,
   "divergencias": [
-    {
-      "title": "How are mortgage rates determined? The Fed, your credit score, and more.",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Programas de fidelidade entram na rotina de 8 em cada 10 brasileiros",
       "source": "Exame",
@@ -145,6 +138,13 @@
     {
       "title": "Wendy's stock jumps on report of potential takeover bid from Nelson Peltz's Trian Fund Management",
       "source": "CNBC - US News",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Russian Diesel Flows Are Lowest in Years as Drones Hit Refiners",
+      "source": "Bloomberg Markets",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
