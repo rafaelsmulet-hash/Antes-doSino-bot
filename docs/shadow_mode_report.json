@@ -1,56 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 35910,
-  "aprovadas_pelo_fluxo_atual": 654,
-  "descartadas_pelos_filtros_atuais": 35256,
-  "score_medio_materialidade": 3.95,
+  "total_ingeridas": 36158,
+  "aprovadas_pelo_fluxo_atual": 660,
+  "descartadas_pelos_filtros_atuais": 35498,
+  "score_medio_materialidade": 3.97,
   "seriam_breaking": 38,
   "iriam_para_rodada": 306,
   "seriam_descartadas_pelo_novo_sistema": 1656,
-  "total_divergencias": 668,
+  "total_divergencias": 666,
   "divergencias": [
-    {
-      "title": "Nvidia Stock Investors Just Got Good News From Wall Street (Hint: It's Time to Buy)",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Prediction: Amazon Will Join Apple in the $4 Trillion Club Before 2030",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "MTR H1 Profit Rises; Revenue Down 4.1%",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Cathie Wood Is Buying the Dip on Crypto. Here Are 2 Investments to Put on Your Crypto Shopping List.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Mega-Sena pode pagar R$ 3,5 milhões nesta quinta-feira; g1 transmite ao vivo",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Arma contra sonegação, split payment pode ameaçar caixa dos negócios",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Quem saiu das debêntures isentas para se refugiar no CDI cometeu um erro, diz gestor da Absolute; entenda",
       "source": "Seu Dinheiro",
@@ -145,6 +103,48 @@
     {
       "title": "Varejo pressiona Congresso pela volta da taxa das blusinhas",
       "source": "Exame",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Comscore outlines $20M-$25M annual run-rate cost savings as it forecasts $315M-$325M 2026 revenue",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "How are mortgage rates determined? The Fed, your credit score, and more.",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Programas de fidelidade entram na rotina de 8 em cada 10 brasileiros",
+      "source": "Exame",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Yeti Non-GAAP EPS of $0.67 beats by $0.12, revenue of $483.87M in-line; updates FY 2026 outlook",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "JD.com Non-GAAP EPADS of $0.93 beats by $0.10, revenue of $51.05B beats by $310M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Strategy CEO Says Bitcoin Holdings Will Grow By Year’s End",
+      "source": "Yahoo Finance",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
