@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nebius beats quarterly revenue estimates as AI demand fuels growth",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:01:58.558588-03:00"
-    },
-    {
-      "title": "F.N.B. expands family wealth services for UHNW clients",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:02:01.187577-03:00"
-    },
-    {
-      "title": "VC Jason Calacanis says having Starlink WiFi is more important than price, time, or route when he flies",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:02:04.084868-03:00"
-    },
-    {
-      "title": "SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:02:07.633333-03:00"
-    },
-    {
-      "title": "Setor de serviços no Brasil fica estável em junho, ante projeção de leve queda",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "indicador econômico estável, mas com projeção de queda previamente esperada",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:17.326830-03:00"
-    },
-    {
-      "title": "Irã e EUA não discutiram prorrogação do cessar-fogo, diz autoridade do Irã à Reuters",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "a noticia não e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:20.360873-03:00"
-    },
-    {
-      "title": "Petróleo sobe com dúvidas sobre acordo entre EUA e Irã e preocupações com abastecimento",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "preocupações com interrupções no abastecimento do Oriente Médio",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:24.942306-03:00"
-    },
-    {
-      "title": "CNS Pharmaceuticals GAAP EPS of -$0.37 misses by $0.13",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:29.202924-03:00"
-    },
-    {
-      "title": "PodcastOne GAAP EPS of -$0.05 misses by $0.06, revenue of $16.13M misses by $1.63M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:32.090856-03:00"
-    },
-    {
-      "title": "LiqTech GAAP EPS of -$0.14 beats by $0.05, revenue of $4.36M misses by $1.64M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:34.707865-03:00"
-    },
-    {
-      "title": "Century Therapeutics GAAP EPS of -$0.17 misses by $0.05",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:37.350049-03:00"
-    },
-    {
-      "title": "Masco declares $0.32 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:39.945455-03:00"
-    },
-    {
-      "title": "StoneX to acquire Brazilian bank dedicated to forex operations",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:42.555873-03:00"
-    },
-    {
-      "title": "National CineMedia plummets after pausing dividend to help pay for acquisition",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:45.181649-03:00"
-    },
-    {
-      "title": "Dólar abre em queda, com inflação dos EUA e Oriente Médio no foco",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:06:52.434760-03:00"
-    },
-    {
-      "title": "Standard Chartered venture Anchorpoint begins Hong Kong dollar stablecoin rollout",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:06:59.267776-03:00"
-    },
-    {
-      "title": "Nielsen's $2 billion DoubleVerify acquisition is a big play for CMOs",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:07:02.282827-03:00"
-    },
-    {
       "title": "Saudis Report Million-Barrel Output Rebound in July to OPEC",
       "source": "Bloomberg Markets",
       "score": 8.0,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T06:56:03.149769-03:00"
+    },
+    {
+      "title": "Korean Stocks Are on Fire Again, With a Bit Less Excess This Time",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A medida pode reduzir a volatilidade no mercado de ações sul-coreano.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:03:07.477808-03:00"
+    },
+    {
+      "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
+      "source": "WSJ Markets",
+      "score": 6.0,
+      "motivo": "Oferta hostil pode influenciar a valorização da ação da Beacon",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:10.674342-03:00"
+    },
+    {
+      "title": "Resultado acima do esperado e JCP colocam Banco do Brasil no radar do mercado; Ibovespa em dólar sobe hoje (13)",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "Resultado acima do esperado do Banco do Brasil impacta positivamente no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:03:18.367984-03:00"
+    },
+    {
+      "title": "Quais são as top picks na bolsa para atravessar o 2º semestre com ‘tranquilidade’, segundo bancões",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "Recomendação de compra de instituição financeira",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:03:21.176642-03:00"
+    },
+    {
+      "title": "Por que as ações da Fastned estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "A ação da Fastned está disparando devido a um anúncio de expansão de operações, o que sugere crescimento futuro para a empresa.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:24.169576-03:00"
+    },
+    {
+      "title": "Nossa IA sabia: +43%, +30% — ações disparam na temporada de balanços",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "aumento significativo nas ações durante a temporada de balanços sugere otimismo do mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:27.012216-03:00"
+    },
+    {
+      "title": "Por que as ações da Birkenstock estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Aumento de demanda por produtos de confort e saúde durante a pandemia",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:29.757948-03:00"
+    },
+    {
+      "title": "Varejo pressiona Congresso pela volta da taxa das blusinhas",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A notícia pode impulsionar as ações de empresas do setor varejista, como ABVTEX e IDV, com potencial aumento de demanda e vendas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:33.057768-03:00"
+    },
+    {
+      "title": "What is driving the rapid shift as South Korea’s bear market turns back into a bull",
+      "source": "MarketWatch",
+      "score": 6.0,
+      "motivo": "A notícia menciona a recuperação das ações coreanas e a contribuição dos fundamentos, como crescimento de lucros em alta, para essa recuperação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:03:36.200254-03:00"
+    },
+    {
+      "title": "Comscore outlines $20M-$25M annual run-rate cost savings as it forecasts $315M-$325M 2026 revenue",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa espera economizar em custos e apresentar uma receita previsível, o que é positivo para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:39.256734-03:00"
+    },
+    {
+      "title": "XRP (Ripple) Just Did Something It Hasn't Done Since 2024, and Here's What It Means for Investors",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado pois apresenta uma atualização sobre o desenvolvimento de tecnologia financeira pelo Ripple",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:45.364620-03:00"
+    },
+    {
+      "title": "Shopee entra na 'guerra' das entregas rápidas e promete delivery em 4 horas",
+      "source": "UOL Economia",
+      "score": 3.0,
+      "motivo": "iniciativa de entrega rápida da Shopee não é um evento de mercado significativo, mas é relevante para o setor de e-commerce",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:49.754090-03:00"
+    },
+    {
+      "title": "Aposta de MG fatura mais de R$ 6 milhões na Lotofácil 3760 e Dia de Sorte 1270 tem bola dividida; Mega-Sena continua em segundo plano",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:52.848910-03:00"
+    },
+    {
+      "title": "ARTIGO: Quando o agente de IA se veste de Chrome para entrar na Amazon",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "a noticia nao trata de mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:03:57.540288-03:00"
+    },
+    {
+      "title": "How are mortgage rates determined? The Fed, your credit score, and more.",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia explica um conceito relevante para os empréstimos imobiliários, mas não é um evento específico ou atual.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:04:00.726329-03:00"
+    },
+    {
+      "title": "What is compound interest, and how is it calculated?",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro em geral, mas não é um evento específico ou atual.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:04:03.605991-03:00"
+    },
+    {
+      "title": "Wendy's stock jumps on report of potential takeover bid from Nelson Peltz's Trian Fund Management",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:04:06.500446-03:00"
     }
   ]
 }
