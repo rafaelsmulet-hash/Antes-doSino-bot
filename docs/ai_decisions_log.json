@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Marc Benioff says experts are wrong about tech job deaths to AI, but backs startup replacing workers with AI",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:21:38.928764-03:00"
-    },
-    {
-      "title": "Elon Musk says Grok will be trained on SpaceX employee data",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:21:41.862479-03:00"
-    },
-    {
-      "title": "Nigéria oferece incentivos para desbloquear US$ 50 bi de investimentos em petróleo",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "incentivos para investimentos em petróleo podem atrair recursos adicionais para a indústria",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:25:35.019061-03:00"
-    },
-    {
-      "title": "Mini índice entra em zona crítica após forte queda; BTG aponta próximos níveis de atenção",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "mini índice está em zona crítica e pode estender perdas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T08:25:39.192332-03:00"
-    },
-    {
-      "title": "Mega-Sena 3043 paga prêmio milionário para aposta de Rondônia; Lotofácil 3759 tem 42 ganhadores",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "noticia sobre loteria e premio de dinheiro, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:25:45.714950-03:00"
-    },
-    {
-      "title": "Quer deixar o emprego para viver de day trade? Veja como se preparar",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não é sobre um evento específico no mercado, mas sim sobre uma abordagem geral para o day trade.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:30:46.201743-03:00"
-    },
-    {
-      "title": "Trump diz que protocolo de segurança o fez trocar de avião na Turquia após ameaça",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:30:49.213111-03:00"
-    },
-    {
-      "title": "Activist investor Elliott seeks board revamp at Northern Star",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A pressão de Elliott pode levar a mudanças na gestão da empresa, o que pode afetar a estratégia e os resultados financeiros da Northern Star.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:30:55.918921-03:00"
-    },
-    {
       "title": "Entegris in focus as Deutsche Bank upgrades on pending chip equipment cycle",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-12T22:16:19.005910-03:00"
+    },
+    {
+      "title": "Nvidia lines up $500 billion in financing as CEO Jensen Huang tells CNBC his chips are ‘investable asset’",
+      "source": "CNBC - Finance",
+      "score": 6.0,
+      "motivo": "A Nvidia está se preparando para um grande financiamento, o que pode impactar positivamente a empresa e o mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:20:40.893683-03:00"
+    },
+    {
+      "title": "Staar surgical plans to end 2026 with well over $200M in cash while shifting 100% of China supply to Switzerland",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa planeja terminar o ano com uma grande reserva de caixa, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:20:47.721573-03:00"
+    },
+    {
+      "title": "Fossil signals 2026 net sales decline of 3%-5% and adjusted operating margin of 4%-6% as it expects full-year positive free cash flow",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa forneceu uma previsão específica sobre suas vendas e margem operacional, o que é relevante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:20:50.769621-03:00"
+    },
+    {
+      "title": "Kura outlines $90M-$110M 2027 collaboration revenue while targeting 2028 KOMET-017 topline results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:20:53.504518-03:00"
+    },
+    {
+      "title": "Annaly Capital Management 6.95% PFD SER F declares $0.5616 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:20:56.219709-03:00"
+    },
+    {
+      "title": "Annaly Capital Management, Inc. PFD SER G declares $0.5217 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:20:58.934900-03:00"
+    },
+    {
+      "title": "The housing market’s wealth gains are real. So is its distress",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:21:09.219620-03:00"
+    },
+    {
+      "title": "Strategy Cratered 75% Over 12 Months: One Analyst Lodged a 350% Return Target Price",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:21:12.013846-03:00"
     }
   ]
 }
