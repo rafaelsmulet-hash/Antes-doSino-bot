@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Aprea Therapeutics GAAP EPS of -$0.07 beats by $0.16",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:41:09.884330-03:00"
-    },
-    {
       "title": "Headline CPI rises 3.4% in July, slowing from June's pace",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T07:41:45.390668-03:00"
+    },
+    {
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "source": "Federal Reserve",
+      "score": 8.0,
+      "motivo": "A divulgação de projeções econômicas da Fed pode influenciar a política monetária e, consequentemente, os mercados financeiros.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:45:51.217384-03:00"
     }
   ]
 }
