@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Blue-Collar Workers Are Training AI To Take Their Jobs (Video)",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T21:20:54.879459-03:00"
-    },
-    {
-      "title": "Brazil Backs Spending Control Measure in Fiscal Nod From Lula",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A medida visa sinalizar disciplina fiscal e pode influenciar a percepção dos investidores sobre a estabilidade econômica do país.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T21:20:57.845818-03:00"
-    },
-    {
-      "title": "Cisco projects FY 2027 revenue of $72.2B-$73.4B with AI infrastructure revenue targeted at $7.5B",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A previsão de receita é relevante e impacta o mercado de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T21:21:05.842960-03:00"
-    },
-    {
-      "title": "MaxCyte reiterates $30M-$32M 2026 revenue outlook as Genentech partnership expands enterprise model",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T21:21:08.572730-03:00"
-    },
-    {
-      "title": "Cleveland Fed's Beth Hammack says multiple rate hikes needed",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T21:21:19.333307-03:00"
-    },
-    {
-      "title": "Intel's huge rally is helping pay for its AI comeback: Chart of the Day",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T21:21:22.032197-03:00"
-    },
-    {
-      "title": "Nocera Expands AI Infrastructure Strategy with New 50/50 Energy Joint Venture",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T21:21:24.739980-03:00"
-    },
-    {
-      "title": "USA Rare Earth Inc Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T21:21:27.395707-03:00"
-    },
-    {
-      "title": "Riot Platforms, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T21:21:30.054174-03:00"
-    },
-    {
       "title": "Exodus Movement, Inc. Q2 2026 Earnings Call Summary",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T18:22:18.213255-03:00"
+    },
+    {
+      "title": "S&P 500 supera 7.800 pontos com inflação ao produtor abaixo do esperado nos EUA",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "inflacao ao produtor abaixo do esperado, positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:25:47.760460-03:00"
+    },
+    {
+      "title": "Xylem declares $0.43 dividend",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Dividendos significativos podem atrair investidores e impulsionar o preço das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:25:53.947607-03:00"
+    },
+    {
+      "title": "The Collectibles Market Can Push eBay Stock Higher",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:25:59.159605-03:00"
+    },
+    {
+      "title": "Why Cerebras Systems Stock Just Sank",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:26:01.895808-03:00"
+    },
+    {
+      "title": "Kalshi's Valuation Could Nearly Double to $40 Billion After Reports Suggest It Could Raise Another $750 Million. Here's What's Driving the Prediction Market Boom.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:26:04.800823-03:00"
+    },
+    {
+      "title": "30-Year Mortgage Rate Falls To 6.67%",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:26:07.526600-03:00"
+    },
+    {
+      "title": "Applied Materials Q3 Profit Rises As Revenue Jumps 25%",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:26:10.293211-03:00"
+    },
+    {
+      "title": "Cathie Wood Bought $59.9 Million of Nvidia Stock Before Earnings. Here's What Investors Should Know.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:26:13.120870-03:00"
+    },
+    {
+      "title": "Randoncorp tem prejuízo líquido de R$ 90,5 milhões no segundo trimestre",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:26:20.421901-03:00"
     }
   ]
 }
