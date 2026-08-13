@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Rocket Lab Shares Fall as Earnings Miss and Margin Outlook Raise Profitability Concerns",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T16:01:04.972399-03:00"
-    },
-    {
-      "title": "Do Wall Street Analysts Like Consolidated Edison Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T16:01:07.643087-03:00"
-    },
-    {
-      "title": "Por que as ações da Wendy’s estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "aumento de valor das ações da Wendy's devido a uma noticia positiva",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T16:05:52.102068-03:00"
-    },
-    {
-      "title": "Por que as ações da Proficient Auto Logistics estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a ação está subindo devido a uma notícia positiva sobre o desempenho da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T16:05:54.940787-03:00"
-    },
-    {
       "title": "Ações da SpaceX disparam 11% com apostas da Wall Street em IA",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T13:37:10.191465-03:00"
+    },
+    {
+      "title": "O Brasil piscou. O sarampo voltou",
+      "source": "Brazil Journal",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:40:47.967734-03:00"
+    },
+    {
+      "title": "Farmers & Merchants Bancorp raises dividend by 4.7% to $5.60",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Aumento de dividendos é um sinal de saúde financeira da empresa e pode atrair mais investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:40:51.970264-03:00"
+    },
+    {
+      "title": "Ford on track to complete $2B factory overhaul for Fathom EV truck",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:41:02.849456-03:00"
+    },
+    {
+      "title": "Trump-linked oil venture delays Greenland drilling plans after government warning",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:41:06.332017-03:00"
     }
   ]
 }
