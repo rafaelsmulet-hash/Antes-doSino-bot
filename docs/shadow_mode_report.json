@@ -1,49 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 35166,
-  "aprovadas_pelo_fluxo_atual": 647,
-  "descartadas_pelos_filtros_atuais": 34519,
+  "total_ingeridas": 35414,
+  "aprovadas_pelo_fluxo_atual": 649,
+  "descartadas_pelos_filtros_atuais": 34765,
   "score_medio_materialidade": 3.96,
-  "seriam_breaking": 36,
-  "iriam_para_rodada": 313,
-  "seriam_descartadas_pelo_novo_sistema": 1651,
-  "total_divergencias": 670,
+  "seriam_breaking": 37,
+  "iriam_para_rodada": 311,
+  "seriam_descartadas_pelo_novo_sistema": 1652,
+  "total_divergencias": 669,
   "divergencias": [
-    {
-      "title": "Por que as ações da Ottobock estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Mandatum estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Genética de ‘peso’: leilão de gado cresce 125% no Brasil e mira novo recorde em 2026",
-      "source": "Exame",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Criando novas fontes de receita: como utilizar IA para lançar produtos e serviços inéditos",
-      "source": "Exame",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "IA pode adicionar quase R$ 1 trilhão ao PIB brasileiro até 2030, diz estudo inédito",
-      "source": "Exame",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Compactos são 70% dos lançamentos em SP: 'É a vocação do paulista', diz CEO do Secovi",
       "source": "Exame",
@@ -148,6 +113,41 @@
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Wall Street banks' newest investment focus: American economic security",
+      "source": "Business Insider",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "An industrywide power crunch is changing how Amazon runs its e-commerce empire",
+      "source": "Business Insider",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Former Google, Tinder, and AWS interns share 4 tips for turning an internship into a full-time offer",
+      "source": "Business Insider",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Ukraine attacks Russian grain export terminals in Black Sea, prompting warning about food markets",
+      "source": "CNBC - US News",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "US Embassies Across Mideast Are Permanently Reassigning Personnel",
+      "source": "ZeroHedge",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
