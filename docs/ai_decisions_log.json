@@ -1,204 +1,6 @@
 {
   "decisions": [
     {
-      "title": "IFIX recua 0,18%, aos 3.715,09 pontos; BMLG11 e VGHF11 fecham em baixa",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T19:36:20.574342-03:00"
-    },
-    {
-      "title": "Who Has the Leverage Right Now? SONAR’s Pricing Power Index Has the Answer",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:36:25.886814-03:00"
-    },
-    {
-      "title": "Nvidia AI Chips Are Now an Asset Class. BlackRock CEO Larry Fink Just Compared Them to Mortgage-Backed Securities.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:36:28.609522-03:00"
-    },
-    {
-      "title": "Nvidia Rises Amid Massive Wall Street Partnership; Is Nvidia A Buy Now?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:36:31.438825-03:00"
-    },
-    {
-      "title": "A pay cut for a steady job? Economic anxiety fuels forever jobs",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:36:34.260362-03:00"
-    },
-    {
-      "title": "Índice de Preços ao Produtor (IPP) é de -0,77% em junho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:40:48.077255-03:00"
-    },
-    {
-      "title": "Petróleo avança pelo 6º dia consecutivo com tensões no Oriente Médio e impasse sobre Ormuz",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "Impasse no Estreito de Ormuz aumenta tensões no Oriente Médio, impactando preços do petróleo",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:40:51.550969-03:00"
-    },
-    {
-      "title": "De ‘go local’ a ‘go global’. A AI está ampliando a ambição das startups",
-      "source": "Brazil Journal",
-      "score": 5.0,
-      "motivo": "A notícia destaca a expansão das startups latino-americanas, o que pode impulsionar a economia regional e atrair investimentos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:40:55.128897-03:00"
-    },
-    {
-      "title": "Time For Fun tem prejuízo de R$ 14,6 milhões no segundo trimestre",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "prejuízo líquido significativo do Time For Fun pode afetar confiança dos investidores no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T19:41:02.712066-03:00"
-    },
-    {
-      "title": "Azzas 2154 lucra R$ 106,5 milhões no segundo trimestre, queda de 62,5%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T19:41:05.457366-03:00"
-    },
-    {
-      "title": "CVC (CVCB3): prejuízo líquido ajustado sobe mais de 3 vezes e vai a R$ 51,3 mi no 2T",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "prejuízo líquido ajustado sobe significativamente, indicando desempenho negativo da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T19:45:46.325437-03:00"
-    },
-    {
-      "title": "Rede D’Or tem alta de 8,5% no lucro líquido ajustado no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A alta de lucro líquido ajustado é um sinal positivo para a empresa e pode afetar positivamente o preço das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:45:50.729869-03:00"
-    },
-    {
-      "title": "CuriosityStream expects $77M-$82M 2026 revenue while expanding AI training licensing offerings",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa espera um crescimento da receita e expande suas ofertas de licenciamento, o que pode ser positivo para a empresa e seus investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:45:54.492881-03:00"
-    },
-    {
-      "title": "Howard Hughes (HHH) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T19:46:00.489623-03:00"
-    },
-    {
-      "title": "Apple Hospitality REIT (APLE) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T19:46:03.214605-03:00"
-    },
-    {
-      "title": "Matador Resources (MTDR) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T19:46:05.967826-03:00"
-    },
-    {
-      "title": "Heritage Insurance Holdings (HRTG) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T19:46:08.657973-03:00"
-    },
-    {
-      "title": "GASMIG lucra R$ 95,9 milhões no segundo trimestre, queda de 36,42%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T19:46:13.662082-03:00"
-    },
-    {
-      "title": "Etsy's Workforce Reduction Sends a Massive Signal on Its Growth Strategy. How to Play ETSY Stock Now.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:46:18.318940-03:00"
-    },
-    {
-      "title": "Plug Power Earnings Are a Pleasant Surprise. The Stock Is Up.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:46:21.012002-03:00"
-    },
-    {
-      "title": "Consistent Results Restored Confidence in Forgent Power Solutions (FPS)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:46:23.715685-03:00"
-    },
-    {
-      "title": "S&P 500 Closes Near Record High on Tame Inflation: Markets Wrap",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A inflação suave reduz a probabilidade de aumento de juros, o que é positivo para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T19:50:40.057160-03:00"
-    },
-    {
       "title": "Eneva (ENEV3) tem queda de 91,4% no lucro líquido do 2º tri, para R$ 31 milhões",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17801,204 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T17:37:38.140112-03:00"
+    },
+    {
+      "title": "Startups: Shopee lança Turbo e se reforça no jogo da entrega rápida",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Lançamento de uma nova ferramenta de entrega rápida pode impulsionar a demanda por ações de empresas como Shopee e seus parceiros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:40:44.283201-03:00"
+    },
+    {
+      "title": "Ibovespa perde carona em recorde de Wall Street e cai com Banco do Brasil (BBAS3); dólar sobe",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "queda consecutiva do Ibovespa e queda de ações relevantes",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:40:48.823180-03:00"
+    },
+    {
+      "title": "E.U.A. - Ações fecharam o pregão em alta e o Índice Dow Jones Industrial Average avançou 0,13%",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Aumento do Índice Dow Jones é um sinal positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:40:51.881462-03:00"
+    },
+    {
+      "title": "Canadá - Ações fecharam o pregão em alta e o Índice S&P/TSX avançou 0,26%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:40:54.583475-03:00"
+    },
+    {
+      "title": "Brasil - Ações fecharam o pregão em queda e o Índice Bovespa recuou 0,23%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:40:57.275167-03:00"
+    },
+    {
+      "title": "André Fehlauer é nomeado novo CEO da Gol; veja trajetória do executivo",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:41:01.465945-03:00"
+    },
+    {
+      "title": "Birchtech GAAP EPS of $0.11 beats by $0.18, revenue of $3.8M misses by $0.5M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:41:04.561007-03:00"
+    },
+    {
+      "title": "Sensus Healthcare GAAP EPS of -$0.53 misses by $0.40, revenue of $2.29M misses by $2.31M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:41:07.261967-03:00"
+    },
+    {
+      "title": "Tempest Therapeutics GAAP EPS of -$0.34 misses by $0.04",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:41:09.927146-03:00"
+    },
+    {
+      "title": "Cibus GAAP EPS of -$0.29 misses by $0.10, revenue of $0.99M misses by $0.71M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:41:12.618015-03:00"
+    },
+    {
+      "title": "McGraw Hill outlines ROAR dyslexia screening launch as ELA capture runs above 25%–30% target",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:41:15.346998-03:00"
+    },
+    {
+      "title": "CXApp reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:41:17.968411-03:00"
+    },
+    {
+      "title": "Bridgeline Digital GAAP EPS of -$0.04, revenue of $3.92M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:41:20.630169-03:00"
+    },
+    {
+      "title": "See Which Recent 13F Filers Hold XLK But Graetz Wealth Exited",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:41:26.600743-03:00"
+    },
+    {
+      "title": "Stride (LRN) Shares Cross Above 200 DMA",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:41:29.251221-03:00"
+    },
+    {
+      "title": "SMCZ Crosses Critical Technical Indicator",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:41:31.904779-03:00"
+    },
+    {
+      "title": "ICE Makes Bullish Cross Above Critical Moving Average",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:41:34.659539-03:00"
+    },
+    {
+      "title": "GraniteShares YieldBoost RIOT Getting Very Oversold",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:41:37.425003-03:00"
+    },
+    {
+      "title": "Cohen & Steers Quality Income Realty Fund Breaks Above 200-Day Moving Average - Bullish for RQI",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:41:40.160433-03:00"
+    },
+    {
+      "title": "Putnam BDC Income Breaks Above 200-Day Moving Average - Bullish for PBDC",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:41:42.859740-03:00"
+    },
+    {
+      "title": "North American Construction Group Breaks Below 200-Day Moving Average - Notable for NOA",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:41:45.584071-03:00"
+    },
+    {
+      "title": "EUA acusam Brasil de ajudar China a driblar tarifas e colocam país em lista de alto risco comercial",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:41:50.390941-03:00"
     }
   ]
 }
