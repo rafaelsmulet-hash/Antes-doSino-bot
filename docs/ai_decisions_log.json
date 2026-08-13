@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que as ações da Savers Value Village estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:26:33.185401-03:00"
-    },
-    {
-      "title": "CoreWeave’s stock is rocketing after earnings lead to praise from bulls and bears alike",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:26:36.186505-03:00"
-    },
-    {
-      "title": "‘The market is obviously on fire’: Should I take $1,000 from my brokerage account to pay off my car loan?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:26:38.811845-03:00"
-    },
-    {
-      "title": "Okta in focus as Citizens upgrades ahead of coming catalysts",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:26:41.443229-03:00"
-    },
-    {
-      "title": "What analysts are saying about CAVA after earnings",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:26:44.050790-03:00"
-    },
-    {
       "title": "Beta Technologies shares fall on deeper-than-expected loss",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T07:21:29.876848-03:00"
+    },
+    {
+      "title": "Russian Diesel Flows Are Lowest in Years as Drones Hit Refiners",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia afeta diretamente a oferta de diesel russo, o que pode ter impacto no mercado de commodities.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:26:02.797918-03:00"
+    },
+    {
+      "title": "Pou Sheng prevê recuperação do setor esportivo na China até 2028",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A noticia sugere que o setor esportivo na China pode se recuperar, o que pode ser positivo para empresas que operam nesse setor, como a Pou Sheng.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:26:07.460159-03:00"
+    },
+    {
+      "title": "Earnings Snapshot: JD.com posts FQ2 earnings beat; Non-GAAP operating margin expands to 1.6%",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou a previsão de lucro, o que é um sinal positivo para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:26:10.821978-03:00"
+    },
+    {
+      "title": "Onda de calor na Espanha pode levar ao aumento do preço do azeite?",
+      "source": "UOL Economia",
+      "score": 2.0,
+      "motivo": "A noticia não é sobre mercado financeiro, mas sim sobre um evento climatico que pode afetar a producao de azeite.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:26:18.267749-03:00"
+    },
+    {
+      "title": "SEC Small Business Advisory Committee to Explore Modernizing Market Access",
+      "source": "SEC",
+      "score": 3.0,
+      "motivo": "A reunião visa explorar maneiras de modernizar o acesso ao mercado público, mas não há informações sobre mudanças imediatas",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:26:25.364428-03:00"
     }
   ]
 }
