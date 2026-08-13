@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stock Market Today, Aug. 12: Nebius Group Surges on Massive Revenue Growth",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:46:29.315839-03:00"
-    },
-    {
-      "title": "Jamie Dimon Just Issued a 9-Word Warning to Stock Investors. Here's What History Says Comes Next.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:46:32.091380-03:00"
-    },
-    {
-      "title": "Maplebear CEO Chris Rogers Sells 4,933 Shares at $50",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:46:34.796303-03:00"
-    },
-    {
-      "title": "Stock Market Today, Aug. 12: Wendy's Surges 15% on Take-Private Bid Report",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:46:37.540712-03:00"
-    },
-    {
-      "title": "The AI Trade Has a New Battleground and One Stock is Emerging as a Winner",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:46:46.128439-03:00"
-    },
-    {
-      "title": "Don’t Look Now, But Anthropic is Bypassing Hyperscalers",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:46:48.831979-03:00"
-    },
-    {
-      "title": "Here are five key takeaways from the July CPI inflation report",
-      "source": "CNBC - Economy",
-      "score": 2.0,
-      "motivo": "O relatório não trouxe informações surpreendentes ou impactantes para o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:50:35.739873-03:00"
-    },
-    {
-      "title": "Sabesp (SBSP3) lucra R$ 1,46 bi no 2º tri, queda anual de 31%, mas dentro do esperado",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "resultado dentro do esperado, mas com queda anual significativa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:50:39.146475-03:00"
-    },
-    {
-      "title": "Deve haver um equilíbrio entre stablecoins e depósitos tokenizados, diz Itaú",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia destaca a importância de equilíbrio entre stablecoins e depósitos tokenizados, o que pode ter impacto positivo no mercado de criptomoedas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:50:44.119185-03:00"
-    },
-    {
-      "title": "Cogna aumenta receita em 18% no 2° tri e mira dívida menor, dividendos e aquisições",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:50:46.857378-03:00"
-    },
-    {
-      "title": "AtlasIntel: Ciro abre vantagem de 4,7 pontos contra Elmano no 1º turno no Ceará",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:50:49.591640-03:00"
-    },
-    {
-      "title": "Securitize Q2 earnings shock: Revenue miss, wider loss sends stock tumbling",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:50:52.613188-03:00"
-    },
-    {
-      "title": "Silver could hit $90 in next 6-12 months as investment demand recovers, Citi says",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:50:55.341567-03:00"
-    },
-    {
-      "title": "Labcorp CEO Adam Schechter Sells 4,669 Shares for $1.5 Million",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:51:01.250712-03:00"
-    },
-    {
-      "title": "Why Wendy's Stock Blasted Almost 15% Higher Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:51:03.921042-03:00"
-    },
-    {
-      "title": "Which Is the Better Energy Sector ETF, VanEck's Nuclear-Focused NLR or First Trust's EMLP Targeting Energy Infrastructure?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:51:06.713074-03:00"
-    },
-    {
       "title": "Outfront Media (OUT) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T17:01:22.648866-03:00"
+    },
+    {
+      "title": "'Pile On' Real Yields, Enduring Environment: Wrzesniewsky",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não menciona nenhum evento ou informação financeira específica.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:05:39.691801-03:00"
+    },
+    {
+      "title": "HeartFlow, Inc. GAAP EPS of -$0.07 beats by $0.13, revenue of $64.08M beats by $7.44M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as expectativas em termos de lucro e receita, o que é considerado positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:05:45.521593-03:00"
+    },
+    {
+      "title": "FibroGenEPS of $2.96",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:05:48.136130-03:00"
+    },
+    {
+      "title": "Dare Bioscience GAAP EPS of -$0.20 beats by $0.10, revenue of $187.5M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:05:50.811936-03:00"
+    },
+    {
+      "title": "The Metals Company GAAP EPS of -$0.14 misses by $0.08",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:05:53.506692-03:00"
+    },
+    {
+      "title": "Co-Diagnostics GAAP EPS of -$1.46 beats by $1.54, revenue of $0.17M beats by $0.04M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:05:56.205344-03:00"
+    },
+    {
+      "title": "Applied Materials Non-GAAP EPS of $3.50 beats by $0.11, revenue of $9.12B beats by $120M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:05:58.908777-03:00"
+    },
+    {
+      "title": "Stellantis rethinks South America strategy as Chinese rivals gain ground",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:06:01.601501-03:00"
+    },
+    {
+      "title": "CDE Makes Notable Cross Below Critical Moving Average",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:06:05.582147-03:00"
+    },
+    {
+      "title": "ARK Fintech Innovation (ARKF) Shares Cross Above 200 DMA",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:06:08.289641-03:00"
+    },
+    {
+      "title": "Planning a Roth Conversion? Here's the One Thing You Need to Know.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T17:06:10.967508-03:00"
+    },
+    {
+      "title": "Bullish Two Hundred Day Moving Average Cross - DIS",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:06:13.670855-03:00"
+    },
+    {
+      "title": "Simplify's PINK or iShares' IYH: Which Healthcare ETF Should Long-Term Investors Choose Right Now?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:06:16.388878-03:00"
+    },
+    {
+      "title": "Why Pan American Silver Stock Was Tumbling Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:06:19.078787-03:00"
+    },
+    {
+      "title": "Amazon Is the Only $3 Trillion Company That Has Never Paid a Dividend",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:06:21.779904-03:00"
+    },
+    {
+      "title": "Dólar sobe a R$ 5,19 e Bolsa emenda 8ª queda com desconfia fiscal",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T17:06:26.749050-03:00"
     }
   ]
 }
