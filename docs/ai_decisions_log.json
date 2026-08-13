@@ -1,177 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nortech Systems GAAP EPS of $0.11, revenue of $33.5M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:14.439148-03:00"
-    },
-    {
-      "title": "Orezone Gold Non-GAAP EPS of $0.08, revenue of $271.63M beats by $13.79M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:17.118100-03:00"
-    },
-    {
-      "title": "Lulu’s Fashion Lounge Holdings GAAP EPS of -$0.52, revenue of $67.8M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:19.793500-03:00"
-    },
-    {
-      "title": "Alto Neuroscience GAAP EPS of -$0.65 beats by $0.08",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou a expectativa de lucro, o que é considerado positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:22.887441-03:00"
-    },
-    {
-      "title": "U.S. Army gets drone-warfare wake-up call from Ukraine",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:25.542626-03:00"
-    },
-    {
-      "title": "Sem acordo sobre comando, comissão do fim da taxa das blusinhas é adiada",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:34.126716-03:00"
-    },
-    {
-      "title": "Como o Mercado Livre (MELI34) pode continuar crescendo sem um sacrifício tão grande na rentabilidade? BTG aponta 4 caminhos",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:37.035975-03:00"
-    },
-    {
-      "title": "Yum! Brands Stock: Is Wall Street Bullish or Bearish?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:42.306925-03:00"
-    },
-    {
-      "title": "National Health Investors, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:44.975185-03:00"
-    },
-    {
-      "title": "Cannae Holdings, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:47.626847-03:00"
-    },
-    {
-      "title": "PennantPark Investment Corporation Q3 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:51:50.300548-03:00"
-    },
-    {
-      "title": "Behind CME’s Plan for 24/7 Silver Futures To Draw Retail",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A decisão visa atender à forte demanda de retalho e volumes de negociação de fim de semana significativos no contrato de ouro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:56:51.061874-03:00"
-    },
-    {
-      "title": "Equipe econômica propõe novas travas para gastos em projeto que tramita no Congresso",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Proposta de travas para gastos pode gerar economia significativa e reduzir déficit primário.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:56:54.568922-03:00"
-    },
-    {
-      "title": "Ameaça de míssil portátil fez Serviço Secreto esconder Trump em jato na Turquia",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:56:57.550287-03:00"
-    },
-    {
-      "title": "Açúcar bruto alcança maior nível em um ano acima de 17 centavos de dólar e depois recua; cacau sobe",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:57:02.065937-03:00"
-    },
-    {
-      "title": "Presidente da Abiove diz que Moratória da Soja não será retomada",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:57:04.782344-03:00"
-    },
-    {
-      "title": "Spotify vai separar artistas humanos de personas criadas por inteligência artificial",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:57:08.171155-03:00"
-    },
-    {
-      "title": "Mannatech GAAP EPS of $0.53, revenue of $26.65M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:57:11.189051-03:00"
-    },
-    {
-      "title": "Lumexa Imaging Holdings, Inc. Non-GAAP EPS of $0.20 beats by $0.06, revenue of $264.2M beats by $1.08M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:57:13.946451-03:00"
-    },
-    {
       "title": "Aptera Motors Non-GAAP EPS of -$0.20",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17828,177 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T15:46:11.629446-03:00"
+    },
+    {
+      "title": "BB trabalha para enfrentar ‘meteoro que está caindo no agro’, diz VP financeiro",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia indica que o BB está enfrentando problemas com a carteira de crédito rural, o que pode afetar negativamente o desempenho do banco.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:08.133464-03:00"
+    },
+    {
+      "title": "Chime estuda uso de stablecoins em seu aplicativo bancário",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A empresa está explorando a implementação de stablecoins, o que pode aumentar a adoção de criptomoedas em seu aplicativo bancário.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:13.874248-03:00"
+    },
+    {
+      "title": "B3SA3: Por que as ações da B3 estão em alta hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ações da B3 em alta devido a alta demanda por serviços de negociação de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:51:16.953988-03:00"
+    },
+    {
+      "title": "BTG Pactual vira parte do ERP: PJ paga Pix e boleto de dentro da Oracle NetSuite",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:21.470623-03:00"
+    },
+    {
+      "title": "ADC Therapeutics signals cash runway into 2028 while assessing LOTIS-5 regulatory path forward",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:24.664282-03:00"
+    },
+    {
+      "title": "Tecogen expects $2M-$3M more projects to close as base backlog tops $8M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:27.364589-03:00"
+    },
+    {
+      "title": "PAVmed Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:30.019760-03:00"
+    },
+    {
+      "title": "Turkcell Iletisim reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:32.666124-03:00"
+    },
+    {
+      "title": "Why Shares of Tapestry Were Falling Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:36.546354-03:00"
+    },
+    {
+      "title": "Ralph Lauren (RL) Q1 2027 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:51:39.235460-03:00"
+    },
+    {
+      "title": "This Tech-Focused Vanguard Fund Is Crushing the Market This Year",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:51:41.933667-03:00"
+    },
+    {
+      "title": "This Healthcare ETF Is Outperforming the Invesco Equal Weight Fund -- and It Offers a Charitable Twist",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:44.646378-03:00"
+    },
+    {
+      "title": "Why Fermi Stock Is Down 10% Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:47.366215-03:00"
+    },
+    {
+      "title": "Maximus (MMS) Q3 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre um evento específico de uma empresa e não tem impacto direto no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:50.394252-03:00"
+    },
+    {
+      "title": "Why Micron Stock Rallied on Thursday",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:51:53.053105-03:00"
+    },
+    {
+      "title": "Should You Buy Target Stock Before Aug. 19?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:51:55.715597-03:00"
+    },
+    {
+      "title": "Sunrise Realty Trust (SUNS) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:51:58.411128-03:00"
+    },
+    {
+      "title": "Sicoob Asset alcança R$ 200 bi e mira mercado além de cooperados",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:52:04.947986-03:00"
+    },
+    {
+      "title": "Renda fixa, ações, Selic e dólar: as estratégias para o investidor atravessar as eleições sem perder dinheiro",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:52:08.554716-03:00"
     }
   ]
 }
