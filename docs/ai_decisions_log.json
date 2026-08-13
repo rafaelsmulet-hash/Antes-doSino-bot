@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "CuriosityStream GAAP EPS of $0.15 beats by $0.11, revenue of $23.2M beats by $1.99M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:16:18.377334-03:00"
-    },
-    {
-      "title": "Stem GAAP EPS of -$1.58 beats by $0.25, revenue of $33.65M misses by $3M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:16:21.142654-03:00"
-    },
-    {
-      "title": "Milhares de concurseiros tomam as ruas em nova onda de protestos na Índia; entenda",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:16:28.583128-03:00"
-    },
-    {
-      "title": "Wall Street fecha em tom misto com inflação em linha com o esperado e ações de IA",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "aumento das ações ligadas à inteligência artificial",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:20:57.131431-03:00"
-    },
-    {
-      "title": "45 novos bilionários em um ano: como a inteligência artificial criou uma nova elite bilionária",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A noticia nao e sobre mercado financeiro, mas sobre a formacao de uma nova elite bilionaria",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:21:00.463034-03:00"
-    },
-    {
-      "title": "Comscore GAAP EPS of -$0.97, revenue of $79.25M misses by $4.02M",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre a saúde financeira da Comscore.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:21:03.724418-03:00"
-    },
-    {
-      "title": "Virgin Galactic falls after pushing its expected flight timeline to February of 2027",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:21:06.398849-03:00"
-    },
-    {
-      "title": "Atara Biotherapeutics GAAP EPS of -$0.32 misses by $0.06, revenue of $0.63M beats by $0.26M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:21:09.076044-03:00"
-    },
-    {
-      "title": "Atea Pharmaceuticals GAAP EPS of -$0.41 beats by $0.15",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:21:11.724564-03:00"
-    },
-    {
-      "title": "NANO Nuclear Energy GAAP EPS of -$0.19 beats by $0.08, revenue of $0.21M misses by $0.18M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:21:14.404998-03:00"
-    },
-    {
-      "title": "Kura Oncology GAAP EPS of -$0.77 beats by $0.12, revenue of $11.8M misses by $8.38M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:21:17.068167-03:00"
-    },
-    {
-      "title": "Spruce Power Holding GAAP EPS of $0.14, revenue of $30.35M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:21:19.709484-03:00"
-    },
-    {
-      "title": "Simon poised to rake in millions more in rent thanks to Saks Global closures",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:21:28.343441-03:00"
-    },
-    {
-      "title": "Direcional, Cury e LPS Brasil caem após resultados do 2º tri: o que mercado achou?",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Resultados financeiros negativos afetam as ações das empresas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:25:44.956946-03:00"
-    },
-    {
-      "title": "DIRR3: Por que as ações de Direcional tiveram forte queda hoje após o balanço?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "queda nas ações de Direcional após o balanço sugere problemas financeiros",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:25:53.676179-03:00"
-    },
-    {
-      "title": "Coherent supera expectativas no 4º trimestre, mas ações caem 5%",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Coherent superou as expectativas, o que geralmente é visto como positivo para a empresa e suas ações, apesar do preço ter caído 5%.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:25:56.582267-03:00"
-    },
-    {
       "title": "Lula chega à eleição de 2026 mais competitivo que Bolsonaro em 2022, diz diretor da MDA",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T15:06:40.859618-03:00"
+    },
+    {
+      "title": "Milhas poderão virar dinheiro? Veja como funcionaria nova regra aprovada pela Câmara",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A regra pode impulsionar a negociação de programas de fidelidade, gerando receita adicional para empresas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:16.461532-03:00"
+    },
+    {
+      "title": "Bolsas da Europa caem com balanços e PIB em linha com o esperado",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "balanços e dados econômicos em linha com o esperado, mas com possibilidade de aumento de juros",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:11:20.786198-03:00"
+    },
+    {
+      "title": "Microbix Biosystems GAAP EPS of -$0.01, revenue of $4.06M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Os resultados financeiros da empresa são rotineiros e não apresentam impacto significativo no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:24.442835-03:00"
+    },
+    {
+      "title": "Canadian Tire declares CAD 1.80 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:27.089914-03:00"
+    },
+    {
+      "title": "Buda Juice, Inc. GAAP EPS of $0.04 misses by $0.01, revenue of $4.51M beats by $0.71M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:29.784515-03:00"
+    },
+    {
+      "title": "Gunnison Copper Corp. GAAP EPS of $0.03, revenue of $23.61M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:32.455473-03:00"
+    },
+    {
+      "title": "Onex Corporation declares CAD 0.10 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:35.101878-03:00"
+    },
+    {
+      "title": "Hedge funds upped short AI bets in July, Hazeltree says",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:45.928040-03:00"
+    },
+    {
+      "title": "US Dollar Price Forecast: CPI Test Looms as DXY, EUR/USD and GBP/USD Hold Key Levels",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:48.627594-03:00"
+    },
+    {
+      "title": "E.ON Reaffirms 2026 Outlook as First-Half Earnings Edge Higher",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:51.294712-03:00"
+    },
+    {
+      "title": "I'm 62 With $890k in a 401(k), $115k in a Roth and Social Security Eligibility. What's a Realistic Retirement Budget?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:54.026424-03:00"
+    },
+    {
+      "title": "I'm 64 With $650K in an IRA. Is Now the Right Time to Start Roth Conversions?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:56.712916-03:00"
+    },
+    {
+      "title": "Bank of America pledges $250 billion for US infrastructure financing",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:11:59.378940-03:00"
+    },
+    {
+      "title": "Taiwan's Foxconn reports 35% rise in Q2 profit on AI demand, beats forecasts",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:12:02.077147-03:00"
+    },
+    {
+      "title": "Best CD rates today, Wednesday, August 12, 2026: Earn up to 4.30% APY",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:12:04.749570-03:00"
+    },
+    {
+      "title": "Paramount is putting monthly spending limits on Claude for tech employees to promote 'effective' AI use",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:12:07.628214-03:00"
     }
   ]
 }
