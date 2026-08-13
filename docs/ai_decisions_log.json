@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Investors are chasing the latest rally in gold as the yellow metal hits strongest level in 2 months",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:01:03.528520-03:00"
-    },
-    {
-      "title": "Park Dental Partners, Inc. Non-GAAP EPS of $0.66 beats by $0.33, revenue of $66.2M beats by $1.84M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:01:06.418383-03:00"
-    },
-    {
-      "title": "Gaxos.ai GAAP EPS of $0.02 beats by $0.17, revenue of $2.46M beats by $0.71M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:01:09.220698-03:00"
-    },
-    {
-      "title": "Logistic Properties of the Americas GAAP EPS of $0.40 beats by $0.36, revenue of $14.74M beats by $0.6M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:01:12.034105-03:00"
-    },
-    {
-      "title": "Carpenter Technology authorizes additional $1B share buyback",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:01:14.755976-03:00"
-    },
-    {
-      "title": "Pfizer CEO Bourla buys ~$1M worth of company shares",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:01:17.538099-03:00"
-    },
-    {
-      "title": "QT Imaging Holdings GAAP EPS of -$0.75 misses by $0.53, revenue of $7.4M misses by $0.2M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:01:20.325061-03:00"
-    },
-    {
-      "title": "Serviços no Brasil, inflação nos EUA e balanço do BB em destaque hoje",
-      "source": "UOL Economia",
-      "score": 3.0,
-      "motivo": "noticia lista varios temas, mas nao especifica nenhum em profundidade",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:01:28.088454-03:00"
-    },
-    {
-      "title": "SEC Establishes Financial Reporting and Accounting Unit in Enforcement Division",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:01:34.898383-03:00"
-    },
-    {
-      "title": "Mercado vê sucessão na JBS como continuidade, mas monitora riscos de execução",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "anuncio de sucessao na JBS visto como positivo e esperado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T18:05:48.878310-03:00"
-    },
-    {
-      "title": "Raymond James reduz preço-alvo da On Holding após fraqueza no atacado",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "redução do preço-alvo da empresa após fraqueza no atacado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T18:05:53.311655-03:00"
-    },
-    {
       "title": "Por que as ações da Grocery Outlet estão disparando hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T16:01:35.153134-03:00"
+    },
+    {
+      "title": "US Debt Sales See No Summer Slowdown",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Venda de títulos de dívida acima do esperado, indicando demanda forte no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T16:05:48.079293-03:00"
+    },
+    {
+      "title": "Fachin deve levar decisão de Moraes sobre fonte de jornalista ao plenário",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre justica criminal e busca e apreensao, sem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:05:51.927979-03:00"
+    },
+    {
+      "title": "Petrobras comemora 4 bilhões de barris em Tupi",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T16:05:54.580879-03:00"
+    },
+    {
+      "title": "Brasil é o 3º maior mercado do TikTok, e por que isso importa para os times brasileiros",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:06:00.409811-03:00"
+    },
+    {
+      "title": "Evotec SE reports 1H results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:06:03.302685-03:00"
+    },
+    {
+      "title": "INOVIO shares jump 18% after Q2 beat",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:06:05.934925-03:00"
+    },
+    {
+      "title": "ioneer GAAP EPS of -$0.13, revenue of $0.65M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:06:08.571438-03:00"
+    },
+    {
+      "title": "Cellectar targets mid-2027 accelerated approval NDA for iopofosine in WM, backed by up to $140M financing",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:06:11.308073-03:00"
+    },
+    {
+      "title": "Wolverine World Wide signals FY2026 EPS of $1.55-$1.65 as it raises revenue outlook to $1.98B-$2.0B",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:06:14.008118-03:00"
+    },
+    {
+      "title": "Estrangeiros retiram R$ 11,9 bilhões da B3 em apenas 7 pregões de agosto",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T16:06:21.200518-03:00"
+    },
+    {
+      "title": "Bank of America sends blunt message to Nvidia stock investors",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T16:06:27.542295-03:00"
     }
   ]
 }
