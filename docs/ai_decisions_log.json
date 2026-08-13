@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bitcoin se estabiliza nos US$ 63 mil após inflação dos EUA",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:16:47.335201-03:00"
-    },
-    {
-      "title": "Sound Point Meridian Capital dividend declines by 35% to $0.13",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:16:50.092883-03:00"
-    },
-    {
-      "title": "Laurentian Bank of Canada PFD SHS SER 13 declares CAD 0.3872 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:16:52.750354-03:00"
-    },
-    {
-      "title": "Why Super Micro Computer Stock Popped Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:16:58.636427-03:00"
-    },
-    {
-      "title": "Despite the Weakening Yen, Japan's Stock Market Is Outperforming. Here's How to Invest.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:17:01.308589-03:00"
-    },
-    {
-      "title": "The dream of serving ads to AI agents has hit a snag",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:17:10.985204-03:00"
-    },
-    {
-      "title": "Here are five key takeaways from the July CPI inflation report",
-      "source": "CNBC - Economy",
-      "score": 2.0,
-      "motivo": "A inflação de julho ficou próxima do esperado, não tendo impacto significativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:21:17.381969-03:00"
-    },
-    {
-      "title": "Inflação nos EUA desacelera em julho, alivia pressão sobre juros, mas ainda há riscos",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Desaceleração da inflação pode levar a uma política monetária menos restritiva",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:21:20.468660-03:00"
-    },
-    {
-      "title": "Neocloud and memory names lead tech rally as earnings boost investor confidence in AI",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:21:25.467174-03:00"
-    },
-    {
-      "title": "Terremoto afeta exportações de café da Colômbia e ameaça embarques internacionais",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:21:37.446600-03:00"
-    },
-    {
       "title": "Serviços no Brasil, inflação nos EUA e balanço do BB em destaque hoje",
       "source": "UOL Economia",
       "score": 3.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T11:21:41.246387-03:00"
+    },
+    {
+      "title": "Adesivar carro com propaganda eleitoral pode anular o seguro, diz FenSeg",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:26:19.287393-03:00"
+    },
+    {
+      "title": "Resultado da Equatorial (EQTL3) vem em linha e ações reagem, mas será que é hora de comprar?",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "resultado do segundo trimestre da Equatorial impacta no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T11:26:24.763073-03:00"
+    },
+    {
+      "title": "Biggest stock movers Thursday: CSCO, SPCE, JD, and more",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "Movimentos de ações de empresas específicas podem influenciar o mercado de ações.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:26:28.544822-03:00"
+    },
+    {
+      "title": "Diversified Royalty reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:26:31.277354-03:00"
+    },
+    {
+      "title": "Burcon NutraScience Non-GAAP EPS of -$0.30, revenue of $1.3M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:26:33.893973-03:00"
+    },
+    {
+      "title": "REITs: saiba o que são e o rendimento em 5 anos",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T11:26:44.314161-03:00"
+    },
+    {
+      "title": "Patriots and THAAD: Lockheed Martin Corporation (LMT) and Northrop Grumman Corporation (NOC) Bet Big on Missile Defense Surge",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:26:49.162405-03:00"
+    },
+    {
+      "title": "Molina Healthcare (MOH) Surged on Medicaid Clarity and Robust Results",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:26:51.791007-03:00"
+    },
+    {
+      "title": "Flock is making changes after public backlash and 'arrests of several law enforcement officers'",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:26:54.537411-03:00"
+    },
+    {
+      "title": "Futures Rise, Just Under Record High Ahead Of PPI Report",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:26:57.946941-03:00"
     }
   ]
 }
