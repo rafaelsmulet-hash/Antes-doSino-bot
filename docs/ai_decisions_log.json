@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Banco do Brasil (BBAS3) antes do balanço: como chega o preço da ação?",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Balanço previsto pode afetar a volatilidade da ação do Banco do Brasil",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:35:47.942152-03:00"
-    },
-    {
-      "title": "CPI: Inflação ao consumidor dos EUA sobe 0,1% em julho, em linha com o esperado",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:35:50.626532-03:00"
-    },
-    {
-      "title": "FTSE 100 Up Marginally; Miners Gain Ground",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:35:58.548290-03:00"
-    },
-    {
-      "title": "Serviços no Brasil, inflação nos EUA e balanço do BB em destaque hoje",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:36:05.162207-03:00"
-    },
-    {
-      "title": "Accel deepens Europe presence with $800M raise",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:36:10.487248-03:00"
-    },
-    {
-      "title": "Palantir Just Crushed Earnings Again. These 2 Legacy Defense Stocks Are the Cheaper Way to Play the Same Budget.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:36:13.189004-03:00"
-    },
-    {
-      "title": "Stock Market Today: Dow Rises Ahead Of Inflation Data; Nvidia Partner CoreWeave Soars On Results (Live Coverage)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:36:15.904420-03:00"
-    },
-    {
-      "title": "Nebius Soars As Bigger Loss Tops Views, Revenue Beats",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:36:18.576454-03:00"
-    },
-    {
-      "title": "Yardeni Says He Hasn't Been Bullish Enough on Earnings",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Aumento da previsão de lucros do S&P 500 tem impacto direto no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:40:40.189139-03:00"
-    },
-    {
-      "title": "Potential ‘Peak Earnings’ Set the Stage for Disappointing Stocks",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca o crescimento excessivo dos lucros, o que pode indicar um declínio futuro das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:40:43.198111-03:00"
-    },
-    {
-      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
-      "source": "CNBC - Economy",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:40:45.994119-03:00"
-    },
-    {
-      "title": "60% do mercado considera que regulação do BC foi boa para stablecoins, diz pesquisa",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:40:50.644635-03:00"
-    },
-    {
-      "title": "My wife can claim $900 at 62. Should she take it now — or wait for her spousal benefit?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:40:53.768696-03:00"
-    },
-    {
-      "title": "CPI read: Airfares rise 26% in July as jet fuel costs remain elevated",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:40:56.521510-03:00"
-    },
-    {
-      "title": "Stock futures rise as inflation report comes as expected",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:40:59.399480-03:00"
-    },
-    {
-      "title": "Nexteer Automotive reports 1H results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:41:02.010001-03:00"
-    },
-    {
-      "title": "Burry slams Nvidia’s $500B AI financing as a 2008-style 'Wall Street stunt'",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T09:41:04.640901-03:00"
-    },
-    {
-      "title": "IceCure Medical GAAP EPS of -$3.17 misses by $1.65, revenue of $1.82M beats by $0.37M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:41:07.268986-03:00"
-    },
-    {
       "title": "Aprea Therapeutics GAAP EPS of -$0.07 beats by $0.16",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T07:36:18.127566-03:00"
+    },
+    {
+      "title": "Sri Lanka Reducing Reliance on Foreign Debt, Short-Term Bills",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A medida visa tornar a dívida mais sustentável sob um programa do Fundo Monetário Internacional.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:40:45.068404-03:00"
+    },
+    {
+      "title": "Anthropic Said in Talks to Buy Decart AI for $6 Billion Ahead of IPO | The Pulse 8/13/2026",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro, apenas menciona uma empresa em negociações de aquisição.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:40:47.938611-03:00"
+    },
+    {
+      "title": "Mater Dei tem lucro ajustado de R$45 milhões no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "lucro ajustado positivo indica saúde financeira da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:40:52.826586-03:00"
+    },
+    {
+      "title": "Índia - Ações fecharam o pregão inalteradas e o Índice Nifty 50 recuou 0,16%",
+      "source": "Investing.com Brasil",
+      "score": 3.0,
+      "motivo": "Ações fecharam inalteradas e o Índice Nifty 50 recuou pouco, não havendo impacto significativo no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:40:55.614032-03:00"
+    },
+    {
+      "title": "MRV&Co tem prejuízo de R$626,6 mi no 2° tri impactado por impairment de US$110 mi",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "prejuízo significativo e impairment de US$110 mi impactam negativamente a empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:40:58.349690-03:00"
+    },
+    {
+      "title": "Por que as ações da HP Inc estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ações subindo devido a expectativas positivas de crescimento da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:01.220254-03:00"
+    },
+    {
+      "title": "Por que as ações da Salesforce estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Ações da Salesforce subindo devido a boas perspectivas de crescimento e resultados financeiros positivos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:04.016526-03:00"
+    },
+    {
+      "title": "Por que as ações da Omeros estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A ação da Omeros está subindo devido a uma notícia positiva relacionada à empresa, o que é relevante para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:06.771867-03:00"
+    },
+    {
+      "title": "Ações da Sipef sobem 5% após revisão das perspectivas de lucro para 2026",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Revisão positiva das perspectivas de lucro para 2026 impulsiona ação da Sipef",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:09.556427-03:00"
+    },
+    {
+      "title": "Golar LNG reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "Resultados financeiros da empresa são relevantes para os investidores.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:13.132947-03:00"
+    },
+    {
+      "title": "Wolverine World Wide Non-GAAP EPS of $0.40 beats by $0.02, revenue of $506.4M beats by $5.12M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque superou as expectativas de lucro e receita da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:16.103939-03:00"
+    },
+    {
+      "title": "Applied Industrial Technologies beats top-line and bottom-line estimates; introduces FY2027 outlook",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa superou as estimativas, o que é um sinal positivo para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:19.522207-03:00"
+    },
+    {
+      "title": "Idaho Strategic Resources GAAP EPS of $0.23 misses by $0.02, revenue of $10.73M",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A notícia é relevante porque afeta a expectativa de lucro da empresa, que pode influenciar a decisão de investir no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:22.402816-03:00"
+    },
+    {
+      "title": "Figure Technology Solutions beats top-line and bottom-line estimates; gives Q3 outlook",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa superou as estimativas de receita e lucro, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:25.380411-03:00"
+    },
+    {
+      "title": "The Race to $5 Trillion: Who Will Get There First, Apple or Alphabet?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia pode influenciar a percepção dos investidores sobre o desempenho futuro da Apple e Alphabet no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:41:31.349741-03:00"
+    },
+    {
+      "title": "NVR Director George Oliver Buys $405K in Stock -- Should Investors Buy Too?",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Compra de ações por parte de um diretor da empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:34.145537-03:00"
+    },
+    {
+      "title": "While AGNC Investment Offers a 13.5% Yield, I Just Bought This High-Yield Dividend Stock Instead",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A noticia e sobre uma escolha de investimento pessoal e nao tem impacto direto no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:37.090431-03:00"
+    },
+    {
+      "title": "This Mag 7 Dividend Stock Is Trading Near 2026 Highs. Why It's Still a Buy.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a ação como uma compra devido ao seu alto divendoio, o que é relevante para os investidores que buscam renda fixa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:41:45.390668-03:00"
     }
   ]
 }
