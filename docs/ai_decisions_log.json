@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Xtra-Gold Resources GAAP EPS of $0.03",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:05:59.932222-03:00"
-    },
-    {
-      "title": "flyExclusive GAAP EPS of -$0.16, revenue of $111.12M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:06:02.587192-03:00"
-    },
-    {
-      "title": "Small Business Forum’s Report to Congress Highlights Recommendations to Improve Capital-Raising Policy",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:06:14.347286-03:00"
-    },
-    {
-      "title": "U.S. budget deficit surged in July to highest level since March 2021",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "O déficit orçamentário é um indicador importante da saúde financeira dos EUA e pode influenciar as decisões de investimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:10:40.553728-03:00"
-    },
-    {
-      "title": "Comex Gold, Silver Settle Lower",
-      "source": "WSJ Markets",
-      "score": 2.0,
-      "motivo": "Movimento de preços dos metais preciosos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:10:43.728190-03:00"
-    },
-    {
-      "title": "Cleitinho lança candidatura no domingo e deve ficar fora de debate em Minas",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:10:46.827611-03:00"
-    },
-    {
-      "title": "Bank of America comprará até 49,9% da Jio Credit por US$ 1,92 bilhão",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "compra significativa na Jio Credit pode impulsionar ações de empresas relacionadas e melhorar a confiança no mercado indiano",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:10:51.612869-03:00"
-    },
-    {
-      "title": "Ações da Air Canada disparam quase 10% após resultados e acordo bilionário",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:10:54.342884-03:00"
-    },
-    {
-      "title": "Ações europeias recuam de máxima recorde com balanços e riscos no Oriente Médio",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:10:57.056001-03:00"
-    },
-    {
-      "title": "Chili’s has hopped on the chicken-sandwich bandwagon, and it’s driving big sales gains",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T15:11:00.953363-03:00"
-    },
-    {
-      "title": "Annexon outlines Q4 BLA filing for tanruprubart while adding month 24 dual primary endpoint to ARCHER II",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:11:03.806909-03:00"
-    },
-    {
-      "title": "Carl Icahn bid $34 a share for Caesars Entertainment last month",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:11:06.507517-03:00"
-    },
-    {
-      "title": "Better Healthcare ETF: State Street's Pharmaceuticals-Focused XPH vs. Invesco's S&P 500-Targeted RSPH",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T15:11:12.652745-03:00"
-    },
-    {
-      "title": "Is Investing in Coca-Cola Stock Near an All-Time High a Better Buy Than PepsiCo Under $140 Per Share?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T15:11:15.383547-03:00"
-    },
-    {
-      "title": "S&P 500 Stays Near Records After Mild July Inflation Report",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T15:11:18.341907-03:00"
-    },
-    {
-      "title": "Major European Markets Close Weak Amid Profit Taking, Geopolitical Tensions",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T15:11:21.161823-03:00"
-    },
-    {
-      "title": "Schwab REIT ETF vs. State Street Real Estate SPDR: Which Real Estate ETF Is Actually More Diversified?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T15:11:23.914457-03:00"
-    },
-    {
       "title": "Western Union's Dividend Now Yields a Whopping 13.5%. Here's Why I'm Buying Its Competitor Instead.",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T13:01:36.850015-03:00"
+    },
+    {
+      "title": "Tapestry Beats Earnings but Faces Investor Disappointment Amid High Expectations",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta o preço da ação da Tapestry após o relatório de resultados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:05:48.366522-03:00"
+    },
+    {
+      "title": "Bloomberg Surveillance 8/13/2026",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não trata de um evento específico do mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:05:51.169785-03:00"
+    },
+    {
+      "title": "Haddad tem R$ 861 mil em bens declarados; em 2022 eram R$ 595 mil",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:05:54.737822-03:00"
+    },
+    {
+      "title": "Como um homem vestido de lata de lixo virou maior rival de populista no Reino Unido",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:05:57.478085-03:00"
+    },
+    {
+      "title": "Robinhood lança segundo fundo de venture capital para investidores",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:06:02.189551-03:00"
+    },
+    {
+      "title": "BitGo diz que conversas institucionais estão migrando para tokenização",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:06:04.960499-03:00"
+    },
+    {
+      "title": "Pizzarias: 5 estratégias para aumentar as vendas no delivery",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:06:08.186609-03:00"
+    },
+    {
+      "title": "NG Energy International reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:06:11.036982-03:00"
+    },
+    {
+      "title": "Pharma companies sour on Swiss drug applications amid Trump’s MFN policy",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:06:13.754583-03:00"
+    },
+    {
+      "title": "Tapestry forecasts FY2027 EPS of $7.80 to $7.90 while targeting $1.7B in shareholder returns",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:06:16.454408-03:00"
+    },
+    {
+      "title": "BitGo outlines $15M annualized cash savings beginning in Q3 while CFO transition planned",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:06:19.154470-03:00"
+    },
+    {
+      "title": "Why Netflix Stock Rallied Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T13:06:25.049343-03:00"
+    },
+    {
+      "title": "The Broad Market ETF That Belongs in Almost Every Passive Investor's Portfolio",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T13:06:27.825266-03:00"
+    },
+    {
+      "title": "Odysight.ai Signs Agreement To Test Vision-Based Predictive Maintenance Platform At Boeing Sites",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T13:06:30.535221-03:00"
+    },
+    {
+      "title": "Why Intuitive Machines Stock Dropped Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T13:06:33.219840-03:00"
+    },
+    {
+      "title": "Prediction: Alphabet's $200 Billion Bet Will Result in Huge Profit Growth",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T13:06:35.918278-03:00"
+    },
+    {
+      "title": "My friends and I took a weekend trip back to where we grew up. Now, we swear by doing it every year.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:06:45.463773-03:00"
     }
   ]
 }
