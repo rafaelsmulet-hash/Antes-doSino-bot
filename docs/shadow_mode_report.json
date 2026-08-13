@@ -1,28 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 36158,
-  "aprovadas_pelo_fluxo_atual": 660,
-  "descartadas_pelos_filtros_atuais": 35498,
-  "score_medio_materialidade": 3.97,
+  "total_ingeridas": 36406,
+  "aprovadas_pelo_fluxo_atual": 663,
+  "descartadas_pelos_filtros_atuais": 35743,
+  "score_medio_materialidade": 4.0,
   "seriam_breaking": 38,
   "iriam_para_rodada": 306,
   "seriam_descartadas_pelo_novo_sistema": 1656,
-  "total_divergencias": 666,
+  "total_divergencias": 664,
   "divergencias": [
-    {
-      "title": "Quem saiu das debêntures isentas para se refugiar no CDI cometeu um erro, diz gestor da Absolute; entenda",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Corn Faces Pre-USDA Report Pressure on Tuesday",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Wall Street banks' newest investment focus: American economic security",
       "source": "Business Insider",
@@ -146,6 +132,20 @@
       "title": "Strategy CEO Says Bitcoin Holdings Will Grow By Year’s End",
       "source": "Yahoo Finance",
       "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Alphabet Inc. (GOOGL) vs. Meta Platforms, Inc. (META): Washington and Brussels Both Turn Up the Heat on AI Safety",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Advanced Micro Devices, Inc. (AMD) vs. Sandisk Corporation (SNDK): Chip Earnings Momentum Meets a Mixed Market Reaction",
+      "source": "Yahoo Finance",
+      "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
