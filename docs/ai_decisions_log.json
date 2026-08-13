@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Despite More Tech Investments, Coca-Cola Stock Is a Top 5 Holding in Berkshire Hathaway's Portfolio",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:16:13.181186-03:00"
-    },
-    {
-      "title": "Court approves forensic review of ex-Flex CFO candidate’s personal devices",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:16:15.889002-03:00"
-    },
-    {
-      "title": "Twitch faces fury as it confirms Amazon is training AI on its livestreams",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T22:16:19.005910-03:00"
-    },
-    {
-      "title": "Nvidia lines up $500 billion in financing as CEO Jensen Huang tells CNBC his chips are ‘investable asset’",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A Nvidia está se preparando para um grande financiamento, o que pode impactar positivamente a empresa e o mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:20:40.893683-03:00"
-    },
-    {
-      "title": "Staar surgical plans to end 2026 with well over $200M in cash while shifting 100% of China supply to Switzerland",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa planeja terminar o ano com uma grande reserva de caixa, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:20:47.721573-03:00"
-    },
-    {
-      "title": "Fossil signals 2026 net sales decline of 3%-5% and adjusted operating margin of 4%-6% as it expects full-year positive free cash flow",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa forneceu uma previsão específica sobre suas vendas e margem operacional, o que é relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:20:50.769621-03:00"
-    },
-    {
-      "title": "Kura outlines $90M-$110M 2027 collaboration revenue while targeting 2028 KOMET-017 topline results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:20:53.504518-03:00"
-    },
-    {
       "title": "Annaly Capital Management 6.95% PFD SER F declares $0.5616 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T18:41:24.356503-03:00"
+    },
+    {
+      "title": "Lucro da Cyrela (CYRE3) cresce 16% e atinge R$ 452 milhões no 2º trimestre",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Crescimento de receita líquida e lucro da Cyrela indica saúde financeira da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:45:36.341685-03:00"
+    },
+    {
+      "title": "Yduqs tem queda de 54,2% no lucro do 2º tri, em resultado abaixo do esperado",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "queda no lucro do 2º tri em 54,2% e resultado abaixo do esperado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:45:41.100984-03:00"
+    },
+    {
+      "title": "México - Ações fecharam o pregão em queda e o Índice S&P/BMV IPC recuou 1,41%",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "queda do Índice S&P/BMV IPC de 1,41%",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:45:44.663840-03:00"
+    },
+    {
+      "title": "Taxa de acerto de 93%: como os picks de IA da ProPicks geraram retorno de 212%",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A noticia destaca a eficacia de uma ferramenta de IA em gerar retornos financeiros, o que pode inspirar confianca nos investimentos e impulsionar o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:45:47.906600-03:00"
+    },
+    {
+      "title": "Mamdani's NYC pied-à-terre tax can continue rollout during court appeal",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:45:57.017899-03:00"
+    },
+    {
+      "title": "Reddit stock jumps on inclusion in S&P 500",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:45:59.695076-03:00"
+    },
+    {
+      "title": "SEC Announces Continuation of Small Business Advisory Committee Meeting",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:46:02.877382-03:00"
     }
   ]
 }
