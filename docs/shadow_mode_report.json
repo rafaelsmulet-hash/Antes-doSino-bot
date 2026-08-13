@@ -1,63 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 39858,
-  "aprovadas_pelo_fluxo_atual": 693,
-  "descartadas_pelos_filtros_atuais": 39165,
-  "score_medio_materialidade": 4.03,
+  "total_ingeridas": 40106,
+  "aprovadas_pelo_fluxo_atual": 700,
+  "descartadas_pelos_filtros_atuais": 39406,
+  "score_medio_materialidade": 4.02,
   "seriam_breaking": 33,
-  "iriam_para_rodada": 287,
-  "seriam_descartadas_pelo_novo_sistema": 1680,
+  "iriam_para_rodada": 282,
+  "seriam_descartadas_pelo_novo_sistema": 1685,
   "total_divergencias": 667,
   "divergencias": [
-    {
-      "title": "Por que as ações da Salesforce estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Omeros estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Ações da Sipef sobem 5% após revisão das perspectivas de lucro para 2026",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Wolverine World Wide Non-GAAP EPS of $0.40 beats by $0.02, revenue of $506.4M beats by $5.12M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Applied Industrial Technologies beats top-line and bottom-line estimates; introduces FY2027 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Idaho Strategic Resources GAAP EPS of $0.23 misses by $0.02, revenue of $10.73M",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Figure Technology Solutions beats top-line and bottom-line estimates; gives Q3 outlook",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "This Mag 7 Dividend Stock Is Trading Near 2026 Highs. Why It's Still a Buy.",
       "source": "Yahoo Finance",
@@ -146,6 +97,55 @@
       "title": "Stellantis traça plano para se manter na “pole position” na América do Sul",
       "source": "Neofeed",
       "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Lithium Americas GAAP EPS of -$0.02 beats by $0.03",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Nova regra na cobrança de impostos, split payment ameaça asfixiar empresas",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da International Business Machines estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Cullinan Oncology estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Opendoor Technologies estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Jefferies: vendas de equipamentos agrícolas caem em julho com recuo dos tratores",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "POET Technologies GAAP EPS of -$0.07 beats by $0.01, revenue of $0.57M beats by $0.07M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     }
