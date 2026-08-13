@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SEC Small Business Advisory Committee to Explore Modernizing Market Access",
-      "source": "SEC",
-      "score": 3.0,
-      "motivo": "A reunião visa explorar maneiras de modernizar o acesso ao mercado público, mas não há informações sobre mudanças imediatas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:26:25.364428-03:00"
-    },
-    {
-      "title": "'Encha Seu Kindle' oferece mais de 8 mil e-books em promoção hoje; veja como baixar",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "a noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:33:18.773676-03:00"
-    },
-    {
-      "title": "Flying first class is getting cheaper — if you don’t mind giving up some perks",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A notícia sugere uma mudança nos preços e níveis de serviço da classe executiva, o que pode afetar as escolhas dos passageiros e as estratégias das empresas aéreas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:33:21.798729-03:00"
-    },
-    {
       "title": "Cisco stock falls on margin concerns. Here’s what Wall Street analysts are saying.",
       "source": "MarketWatch",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T20:16:41.728482-03:00"
+    },
+    {
+      "title": "Travis Kelce fala pela primeira vez sobre casamento com Taylor Swift: 'Foi uma noite insana'",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:20:41.991115-03:00"
+    },
+    {
+      "title": "Why Grocery Outlet Stock Gained Today",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia indica que a estratégia de recuperação da empresa está tendo sucesso, o que é positivo para a ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:20:48.499178-03:00"
+    },
+    {
+      "title": "IBM partners with OpenAI to bolster enterprise AI push",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:20:54.748750-03:00"
     }
   ]
 }
