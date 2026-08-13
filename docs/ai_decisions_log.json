@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Palantir Stock: Buy or Sell (My Final Verdict)",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não traz informações novas ou concretas sobre a empresa, apenas uma discussão pessoal sobre a compra da ação.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:33:42.617305-03:00"
-    },
-    {
-      "title": "Cisco's stock drops despite earnings, revenue beat",
-      "source": "CNBC - US News",
-      "score": 5.0,
-      "motivo": "A noticia e relevante porque a acao da Cisco caiu apesar de superar estimativas, o que pode ser um sinal de que os investidores estão descontentes com os resultados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:33:52.075480-03:00"
-    },
-    {
-      "title": "Thai Hotel Giant Minor International Delays $1 Billion REIT Plan",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "O atraso do plano de REIT pode influenciar a percepção dos investidores sobre a saúde financeira da Minor International.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:36:00.084027-03:00"
-    },
-    {
-      "title": "Opendoor slides on $650M convertible debt offering, first-ever share buyback",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A oferta de dívida e o programa de compra de ações podem ser vistos como sinais de confiança da empresa em sua capacidade de gerenciar seu capital e valorizar suas ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:36:09.354716-03:00"
-    },
-    {
-      "title": "AIRO Group Holdings GAAP EPS of -$0.06 beats by $0.26, revenue of $43.18M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A superação das expectativas de lucro ajustado GAAP é considerada relevante e material para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:36:12.424369-03:00"
-    },
-    {
-      "title": "IBM, OpenAI team up to help enterprises deploy AI",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "A parceria pode impulsionar a adoção de tecnologias de IA nas empresas.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:36:15.238866-03:00"
-    },
-    {
       "title": "Yen hovers near 160 level; Goldman says Japan has enough cash to intervene again",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T20:26:03.565319-03:00"
+    },
+    {
+      "title": "EUA planejam operações militares em terra contra narcotraficantes na América Latina",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:31:09.156886-03:00"
+    },
+    {
+      "title": "Best credit cards with no annual fee for August 2026",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:31:25.669504-03:00"
+    },
+    {
+      "title": "National Vision Raises Outlook as Higher-Value Customers Fuel Breakout Quarter",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa teve um quarto corrente de quebra impulsionado por clientes de valor mais alto, o que é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:31:28.745889-03:00"
+    },
+    {
+      "title": "Stock Of The Day: Boeing, Airbus Supplier Soars 15% On Earnings, Flashing Buy Signals",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:31:31.518712-03:00"
+    },
+    {
+      "title": "How to request a lower credit card minimum payment",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:31:34.236251-03:00"
+    },
+    {
+      "title": "Robinhood Is Fixing Its Biggest Weakness. HOOD Stock Could Keep Rising From Here.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:31:36.975796-03:00"
     }
   ]
 }
