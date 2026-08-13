@@ -1,21 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 44480,
+  "total_ingeridas": 44728,
   "aprovadas_pelo_fluxo_atual": 731,
-  "descartadas_pelos_filtros_atuais": 43749,
-  "score_medio_materialidade": 4.0,
+  "descartadas_pelos_filtros_atuais": 43997,
+  "score_medio_materialidade": 3.99,
   "seriam_breaking": 21,
   "iriam_para_rodada": 285,
   "seriam_descartadas_pelo_novo_sistema": 1694,
-  "total_divergencias": 687,
+  "total_divergencias": 686,
   "divergencias": [
-    {
-      "title": "CPI Inflation Data May Keep Fed Rate Hikes On Hold (Live Coverage)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",
       "source": "Yahoo Finance",
@@ -145,6 +138,13 @@
     {
       "title": "Global stocks inch up, oil steady before US CPI",
       "source": "Yahoo Finance",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Which Financial ETF Is the Better Buy: iShares' European EUFN or ProShares' Leveraged UYG?",
+      "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"

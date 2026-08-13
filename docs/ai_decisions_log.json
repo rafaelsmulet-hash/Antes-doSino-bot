@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "CPI Inflation Data May Keep Fed Rate Hikes On Hold (Live Coverage)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T08:16:48.639680-03:00"
-    },
-    {
       "title": "India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T21:55:56.322708-03:00"
+    },
+    {
+      "title": "MSGE (MSGE) Q4 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre uma chamada de earnings, que não é um evento relevante em tempo real.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:01:09.978334-03:00"
     }
   ]
 }
