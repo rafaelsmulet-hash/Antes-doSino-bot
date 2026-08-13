@@ -66,7 +66,7 @@
       "id": "00af5ec9-e29c-4df2-b442-0978c6aba1db",
       "cluster_key": "vale",
       "first_seen": "2026-08-05T06:57:46.456273-03:00",
-      "last_updated": "2026-08-13T10:35:54.664807-03:00",
+      "last_updated": "2026-08-13T10:41:07.744464-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "G1 Economia",
@@ -83,7 +83,7 @@
         "UOL Economia",
         "Neofeed"
       ],
-      "update_count": 71,
+      "update_count": 72,
       "status": "active"
     },
     {
@@ -317,7 +317,7 @@
       "id": "00c6f23c-cfaa-400f-968a-a44e3bb56f02",
       "cluster_key": "bbas3",
       "first_seen": "2026-08-11T15:25:59.115803-03:00",
-      "last_updated": "2026-08-13T09:25:45.091417-03:00",
+      "last_updated": "2026-08-13T10:41:11.348194-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "Money Times",
@@ -325,7 +325,7 @@
         "Seu Dinheiro",
         "Suno Noticias"
       ],
-      "update_count": 16,
+      "update_count": 17,
       "status": "active"
     },
     {
@@ -344,12 +344,13 @@
       "id": "c1bb0d54-881a-412f-a006-728bdee80b5c",
       "cluster_key": "hapv3",
       "first_seen": "2026-08-12T20:15:45.370468-03:00",
-      "last_updated": "2026-08-13T10:20:57.347618-03:00",
+      "last_updated": "2026-08-13T10:40:48.888879-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
-        "InfoMoney"
+        "InfoMoney",
+        "Money Times"
       ],
-      "update_count": 2,
+      "update_count": 3,
       "status": "active"
     }
   ]
