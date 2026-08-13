@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Taxa das blusinhas: imposto de 20% pode voltar a valer em 9 de setembro",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "retorno do imposto pode afetar consumo e demanda por blusinhas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:51:37.335601-03:00"
-    },
-    {
-      "title": "Aos 14, ela colhia milho por US$ 1 a hora; hoje, comanda a IA do Google DeepMind",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:51:40.048399-03:00"
-    },
-    {
-      "title": "Conheça o ChatTJB, o “chatbot de IA” sem IA — só um humano e 10 mil voluntários",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia não é sobre mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:42.920004-03:00"
-    },
-    {
-      "title": "Bolsas da Ásia fecham mistas; Kospi lidera ganhos e entra em mercado altista",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "alta do Kospi superou o patamar de mercado altista",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:51:47.471889-03:00"
-    },
-    {
-      "title": "Tempo real: Ibovespa monitora dados de atividade no Brasil e no exterior",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:51:50.219327-03:00"
-    },
-    {
-      "title": "Petróleo recua com perspectiva de demanda mais fraca e preocupações com oferta no Oriente Médio",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "previsão de demanda mais fraca e preocupações com oferta no Oriente Médio",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:53.576451-03:00"
-    },
-    {
-      "title": "Por que as ações da Leslie’s estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:56.454262-03:00"
-    },
-    {
-      "title": "Por que as ações da Swissquote estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a ação está despencando, indicando uma perda de valor",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:51:59.353322-03:00"
-    },
-    {
-      "title": "Citi eleva recomendação da Suzuki Motor com base nas vendas na Índia",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Vendas na Índia são um indicador positivo para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:52:02.229137-03:00"
-    },
-    {
-      "title": "Por que as ações da Sixt estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:52:04.902521-03:00"
-    },
-    {
-      "title": "Por que as ações da Harmonic estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Acao da Harmonic estoura devido a noticias positivas sobre seu desempenho financeiro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:52:07.782863-03:00"
-    },
-    {
-      "title": "Por que as ações da Virgin Galactic estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a queda das ações da Virgin Galactic pode afetar o setor de aviação espacial e a confiança dos investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:52:10.877857-03:00"
-    },
-    {
-      "title": "Por que as ações da Valneva estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:52:13.583114-03:00"
-    },
-    {
       "title": "Por que as ações da Ottobock estão subindo hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T18:57:11.177403-03:00"
+    },
+    {
+      "title": "SEC Delays Crypto Regulation Meeting in Latest Industry Setback",
+      "source": "Bloomberg Markets",
+      "score": 8.0,
+      "motivo": "A notícia revela um atraso na regulamentação de criptomoedas, o que pode ter um impacto significativo no mercado.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:00:57.967510-03:00"
+    },
+    {
+      "title": "Ibovespa cai pela 8ª vez seguida, algo ocorrido só 7 vezes desde 2000; veja por quê",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "queda da Ibovespa por 8ª vez seguida e influência das eleições e resultados de empresas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:01:02.479513-03:00"
+    },
+    {
+      "title": "Ações da BridgeBio caem após KKR lançar oferta secundária",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Oferta secundária pode pressionar preço das ações da BridgeBio",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:01:06.566469-03:00"
+    },
+    {
+      "title": "Por que as ações da StoneCo estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:01:09.241239-03:00"
+    },
+    {
+      "title": "Por que as ações da Eton Pharmaceuticals disparam hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:01:11.939573-03:00"
+    },
+    {
+      "title": "Por que a ação da Heartflow está disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:01:14.609452-03:00"
+    },
+    {
+      "title": "Por que as ações da TMC the metals company estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:01:17.305988-03:00"
+    },
+    {
+      "title": "‘It feels like a medical miracle’: How did a single QR code coupon cut my $618 Walgreens prescription to $15?",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:01:20.519489-03:00"
+    },
+    {
+      "title": "MicroVision announces launch of proposed public offering",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:01:23.233500-03:00"
+    },
+    {
+      "title": "The Stock Market Just Flashed a Warning Seen Only 5 Times Before. History Is Crystal Clear About What Happens Next (Hint: It's Not Good).",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:01:27.338023-03:00"
+    },
+    {
+      "title": "Why StubHub Stock Tanked by 10% Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:01:29.996656-03:00"
+    },
+    {
+      "title": "Stock Market Today, Aug. 13: Accelerant Holdings Surges 43% on All-Cash Buyout Offer",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:01:32.717908-03:00"
+    },
+    {
+      "title": "Stock Market Today, Aug. 13: Stocks Rise as Inflation Cools, Workday Soars 18%",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:01:35.431098-03:00"
     }
   ]
 }
