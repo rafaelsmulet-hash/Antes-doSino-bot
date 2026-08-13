@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T08:16:51.331543-03:00"
-    },
-    {
-      "title": "DHL, Vinted expand alliance to grow locker network for pre-owned fashion",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:16:54.006113-03:00"
-    },
-    {
-      "title": "Mortgage rates finally stop rising, causing demand to trickle back",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T08:16:57.361866-03:00"
-    },
-    {
-      "title": "OMS reforça importância da vacinação infantil após Trump reduzir imunizantes",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:20:45.814466-03:00"
-    },
-    {
       "title": "Inflação volta à meta, mas cenário externo e El Niño preocupam economistas e BC",
       "source": "InfoMoney",
       "score": 4.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T22:01:09.978334-03:00"
+    },
+    {
+      "title": "Coherent outlines path to first $3B-plus revenue quarter by end of fiscal '27 as PhotonLink launch and 6-inch indium phosphide ramp accelerate",
+      "source": "Seeking Alpha",
+      "score": 8.0,
+      "motivo": "O lançamento de PhotonLink e a expansão de indio fosfido em 6 polegadas são eventos significativos que podem impulsionar a receita da empresa.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:05:42.209749-03:00"
+    },
+    {
+      "title": "Lulu’s outlines $2M-$2.5M 2026 capex plan while board committee explores strategic alternatives",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque fornece informações sobre os planos de investimento da Lulu's, mas não é um evento de mercado significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:05:45.453849-03:00"
+    },
+    {
+      "title": "Liftoff forecasts $870M-$880M 2026 revenue as it guides to ~59% adjusted EBITDA margin",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa fornece uma previsão de receita e margem de lucro, o que é relevante para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:05:48.659218-03:00"
+    },
+    {
+      "title": "CoreWeave closes $2.6 billion GPU-backed loan",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O empréstimo de grande valor pode indicar que a CoreWeave está pronta para expandir suas operações e investir em tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T22:06:00.897037-03:00"
     }
   ]
 }

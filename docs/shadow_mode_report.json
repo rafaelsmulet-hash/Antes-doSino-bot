@@ -1,28 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 44728,
+  "total_ingeridas": 44976,
   "aprovadas_pelo_fluxo_atual": 731,
-  "descartadas_pelos_filtros_atuais": 43997,
-  "score_medio_materialidade": 3.99,
-  "seriam_breaking": 21,
-  "iriam_para_rodada": 285,
-  "seriam_descartadas_pelo_novo_sistema": 1694,
-  "total_divergencias": 686,
+  "descartadas_pelos_filtros_atuais": 44245,
+  "score_medio_materialidade": 4.02,
+  "seriam_breaking": 22,
+  "iriam_para_rodada": 287,
+  "seriam_descartadas_pelo_novo_sistema": 1691,
+  "total_divergencias": 687,
   "divergencias": [
-    {
-      "title": "India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",
-      "source": "Yahoo Finance",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Mortgage rates finally stop rising, causing demand to trickle back",
-      "source": "CNBC - US News",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Por que a ação da T1 Energy está subindo hoje?",
       "source": "Investing.com Brasil",
@@ -144,6 +130,20 @@
     },
     {
       "title": "Which Financial ETF Is the Better Buy: iShares' European EUFN or ProShares' Leveraged UYG?",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "1 Hyperscaler Stock to Buy, 1 to Hold, and 1 to Avoid",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Kennametal (KMT) Q4 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
