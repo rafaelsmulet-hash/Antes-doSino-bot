@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The Race to $5 Trillion: Who Will Get There First, Apple or Alphabet?",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia pode influenciar a percepção dos investidores sobre o desempenho futuro da Apple e Alphabet no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:41:31.349741-03:00"
-    },
-    {
-      "title": "NVR Director George Oliver Buys $405K in Stock -- Should Investors Buy Too?",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "Compra de ações por parte de um diretor da empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:41:34.145537-03:00"
-    },
-    {
-      "title": "While AGNC Investment Offers a 13.5% Yield, I Just Bought This High-Yield Dividend Stock Instead",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A noticia e sobre uma escolha de investimento pessoal e nao tem impacto direto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:41:37.090431-03:00"
-    },
-    {
-      "title": "This Mag 7 Dividend Stock Is Trading Near 2026 Highs. Why It's Still a Buy.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a ação como uma compra devido ao seu alto divendoio, o que é relevante para os investidores que buscam renda fixa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:41:45.390668-03:00"
-    },
-    {
-      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
-      "source": "Federal Reserve",
-      "score": 8.0,
-      "motivo": "A divulgação de projeções econômicas da Fed pode influenciar a política monetária e, consequentemente, os mercados financeiros.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:45:51.217384-03:00"
-    },
-    {
       "title": "Quanto o Tesouro IPCA+ rende se a inflação surpreender? Veja simulação",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T20:41:02.660756-03:00"
+    },
+    {
+      "title": "Produção industrial recua -1,8% em junho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:45:41.327849-03:00"
+    },
+    {
+      "title": "'Corrida dos Bichos' é o filme de língua não inglesa mais visto do Prime Video",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:45:45.342617-03:00"
+    },
+    {
+      "title": "'Os prêmios são consequência': Eddy Cue fala sobre o retorno de 'Ted Lasso'",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:45:48.453485-03:00"
+    },
+    {
+      "title": "O lado B da IA: custo dos golpes despenca e ataques sofisticados se multiplicam",
+      "source": "Neofeed",
+      "score": 2.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:45:58.193536-03:00"
+    },
+    {
+      "title": "OpenAI hires new CRO as executive shake-up continues",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:46:00.935878-03:00"
     }
   ]
 }
