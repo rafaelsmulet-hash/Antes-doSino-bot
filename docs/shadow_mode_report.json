@@ -1,28 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 41752,
-  "aprovadas_pelo_fluxo_atual": 712,
-  "descartadas_pelos_filtros_atuais": 41040,
+  "total_ingeridas": 42000,
+  "aprovadas_pelo_fluxo_atual": 717,
+  "descartadas_pelos_filtros_atuais": 41283,
   "score_medio_materialidade": 3.97,
   "seriam_breaking": 21,
   "iriam_para_rodada": 272,
   "seriam_descartadas_pelo_novo_sistema": 1707,
-  "total_divergencias": 670,
+  "total_divergencias": 676,
   "divergencias": [
-    {
-      "title": "Dona da Hello Kitty aumenta lucro em 11% no trimestre, mas ação despenca 20%",
-      "source": "Exame",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Citadel Securities called the stock-market reset. Now it says leverage may build up again.",
-      "source": "MarketWatch",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Does the Big Short's Michael Burry Know Something Wall Street Doesn't? The Famed Investor No Longer Views Berkshire Hathaway as 'an Attractive Investment'",
       "source": "Nasdaq",
@@ -148,6 +134,20 @@
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Valens Semiconductor estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Wall Street’s Favorite Tesla Rumor Could Unlock $824 Billion Pay Day For Elon Musk",
+      "source": "Yahoo Finance",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
