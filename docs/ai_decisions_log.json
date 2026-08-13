@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cisco stock falls on margin concerns. Here’s what Wall Street analysts are saying.",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A noticia especifica a preocupacao com as margens de lucro da Cisco, o que pode ter impacto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T07:33:24.706164-03:00"
-    },
-    {
-      "title": "‘My husband and I are at odds’: Should we tap our home equity or sell stocks to build a $100,000 emergency fund?",
-      "source": "MarketWatch",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações específicas sobre o mercado financeiro, mas discute uma decisão financeira pessoal.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:33:27.764431-03:00"
-    },
-    {
-      "title": "Netflix continues its live sports push with the MLB Field of Dreams game tonight",
-      "source": "Seeking Alpha",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:33:30.701431-03:00"
-    },
-    {
-      "title": "Dynatrace to buy Arize in ~$915M cash-and-stock deal",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "O acordo de compra da Arize é relevante para o mercado de tecnologia e pode ter impacto nas ações da Dynatrace.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:33:33.543001-03:00"
-    },
-    {
-      "title": "This Is the Average Social Security Benefit at Age 65",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:33:39.638616-03:00"
-    },
-    {
       "title": "Palantir Stock: Buy or Sell (My Final Verdict)",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T20:20:54.748750-03:00"
+    },
+    {
+      "title": "Intellicheck expects GAAP profitability in 2026 as a 29% revenue customer evaluates a multi-vendor IDV approach",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa espera lucratividade de acordo com GAAP em 2026, o que pode ser um indicador positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T20:25:43.403716-03:00"
+    },
+    {
+      "title": "TMC targets 3M wet tonnes/year system as NOAA timing shifts to October 2026 certification",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque envolve uma empresa que está alvo em um projeto de redução de emissões e melhoria de eficiência energética, o que pode ter impacto positivo no mercado de energia e meio ambiente.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:25:46.642956-03:00"
+    },
+    {
+      "title": "Belite Bio outlines February 12, 2027 PDUFA date for Tinlarebant in Stargardt disease following FDA priority review acceptance",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de biotecnologia, mas não tem um impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:25:49.949597-03:00"
+    },
+    {
+      "title": "Capricor outlines BLA amendment plan as FDA signals willingness to review, with PDUFA date set for August 22",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:25:52.757387-03:00"
+    },
+    {
+      "title": "Super Micro Computer beats on earnings as margins surge",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T20:26:03.565319-03:00"
     }
   ]
 }
