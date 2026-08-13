@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dinheiro esquecido em bancos soma R$ 5,12 bilhões; veja quem tem valores a receber",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T10:55:38.388519-03:00"
-    },
-    {
-      "title": "China: ex-premiê Zhu Rongji, arquiteto do boom econômico, morre aos 97 anos",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T10:55:41.050273-03:00"
-    },
-    {
-      "title": "IA não substitui profissionais, mas escolhe quem fica para trás, afirma especialista",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T10:55:45.853457-03:00"
-    },
-    {
-      "title": "A cultura que eu construí foi a mesma que me impediu de crescer",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:55:48.493752-03:00"
-    },
-    {
-      "title": "Fim dos penduricalhos? STF limita extras de juízes a 70% do salário",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:55:51.130272-03:00"
-    },
-    {
-      "title": "Central Puerto GAAP EPS of $0.14, revenue of $453.3M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:55:54.068623-03:00"
-    },
-    {
-      "title": "Lumentum soars after 'strong' Q4 keeps analysts largely positive",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:55:56.711375-03:00"
-    },
-    {
-      "title": "Computer Modelling GAAP EPS of C$0.02, revenue of C$27.8M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:55:59.372299-03:00"
-    },
-    {
-      "title": "BTB Real Estate Investment Trust reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:56:02.000988-03:00"
-    },
-    {
-      "title": "Veja quais fundos imobiliários pagam dividendos hoje (12)",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:56:09.548322-03:00"
-    },
-    {
-      "title": "Tech leads sectors higher in early trading as chip stocks gain: AlphaCheck",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T10:56:13.575959-03:00"
-    },
-    {
-      "title": "Supermicro stock jumps on Q4 results, strong Q1 outlook",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:56:16.205588-03:00"
-    },
-    {
-      "title": "ASML Holding N.V. (ASML) vs. Taiwan Semiconductor Manufacturing Company Limited (TSM): A Key Supplier Says it Can Keep Up With the AI Boom",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T10:56:18.881284-03:00"
-    },
-    {
-      "title": "Goldman Sachs eleva recomendação de Hypera para compra e rebaixa Fleury",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Recomendação de compra da Goldman Sachs para Hypera e rebaixa para Fleury impactam diretamente no preço das ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:00:48.993895-03:00"
-    },
-    {
-      "title": "Here are the major earnings after the close Wednesday",
-      "source": "Seeking Alpha",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre resultados financeiros de empresas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:00:54.348492-03:00"
-    },
-    {
-      "title": "Norway wealth fund posts record H1 profit as tech stocks surge",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A alta das ações de tecnologia é um indicador positivo para o mercado de ações em geral.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:00:57.296609-03:00"
-    },
-    {
-      "title": "Velo3D, Inc. Non-GAAP EPS of -$0.30, revenue of $20.7M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T11:00:59.940406-03:00"
-    },
-    {
-      "title": "Applied Materials Q3 earnings on deck: What to expect",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T11:01:02.860213-03:00"
-    },
-    {
       "title": "DINO Added as Top 10 Energy Dividend Stock With 2.45% Yield",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T08:56:12.536055-03:00"
+    },
+    {
+      "title": "Autorregulação da Anbima ajudou a suprir lacunas da CVM, mostra estudo de Harvard",
+      "source": "InfoMoney",
+      "score": 3.0,
+      "motivo": "A noticia fala sobre a regulamentacao do mercado de capitais, mas não traz informações novas ou impactantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:00:44.923464-03:00"
+    },
+    {
+      "title": "Mansão onde Virginia e Zé Felipe moraram com as filhas está à venda por R$ 29 milhões",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:00:47.772361-03:00"
+    },
+    {
+      "title": "Moraes arquiva investigação sobre possível apoio da Havan a atos após eleição de 2022",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "investigação não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:00:50.700550-03:00"
+    },
+    {
+      "title": "Em julho, IBGE prevê safra de 353,0 milhões de toneladas para 2026",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:00:54.345497-03:00"
+    },
+    {
+      "title": "Em junho, vendas no varejo crescem 0,5%",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:00:56.948753-03:00"
+    },
+    {
+      "title": "A taxa de desocupação é de 5,4% e taxa de subutilização é de 12,9% no trimestre encerrado em junho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:00:59.655515-03:00"
+    },
+    {
+      "title": "Apple, Nike e Amazon recuperam bilhões de dólares em tarifas nos EUA",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:01:03.042531-03:00"
+    },
+    {
+      "title": "Karyopharm Therapeutics reports mixed Q2 results; reaffirms FY26 outlook",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:01:06.048971-03:00"
+    },
+    {
+      "title": "American Airlines shakes up management roles as it looks to narrow a profitability gap",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:01:08.661220-03:00"
+    },
+    {
+      "title": "Cisco falls despite 'solid' Q4 and bullish reactions from analysts",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:01:11.266295-03:00"
+    },
+    {
+      "title": "U.S. natural gas output was on track for a record in 2026",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:01:13.890091-03:00"
+    },
+    {
+      "title": "Maersk raises guidance again after Q2 profit surges",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:01:16.493802-03:00"
+    },
+    {
+      "title": "Masonglory acquires 20% stake in Austrian construction supplier via share swap",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A aquisição pode indicar uma estratégia de expansão da Masonglory no setor de construção.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:01:19.564110-03:00"
+    },
+    {
+      "title": "Restaurant Brands (QSR) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:01:24.457542-03:00"
+    },
+    {
+      "title": "Evergy (EVRG) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:01:27.081649-03:00"
+    },
+    {
+      "title": "Nephros (NEPH) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T09:01:29.683581-03:00"
+    },
+    {
+      "title": "B&G Foods, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:01:37.994594-03:00"
+    },
+    {
+      "title": "Codexis, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T09:01:40.584260-03:00"
     }
   ]
 }
