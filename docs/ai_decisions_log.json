@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Headline CPI rises 3.4% in July, slowing from June's pace",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:41:12.499711-03:00"
-    },
-    {
-      "title": "Why Broadcom Is The Low-Beta AI Play To Buy",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:41:19.710267-03:00"
-    },
-    {
-      "title": "I'm 92 and travel the world for eclipses. This time, my daughter has joined me for an adventure in Spain.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:41:22.546429-03:00"
-    },
-    {
-      "title": "China Revives Free-Trade Zone Bond Market After Crackdown",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Reabertura da zona de comércio livre de títulos de empréstimo após restrições significativas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T09:45:48.917581-03:00"
-    },
-    {
       "title": "Estoques baixos de gás na Europa são preocupação real para o inverno",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T07:45:51.217384-03:00"
+    },
+    {
+      "title": "Quanto o Tesouro IPCA+ rende se a inflação surpreender? Veja simulação",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia apresenta uma simulação de como a inflação pode afetar o rendimento do Tesouro IPCA+, mas não é uma notícia de impacto imediato no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:50:47.478284-03:00"
+    },
+    {
+      "title": "YETI Holdings tops profit estimates on broad-based sales strength",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica uma boa saúde financeira da empresa, o que pode influenciar a confiança dos investidores no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:50:52.505745-03:00"
+    },
+    {
+      "title": "Accelerant to be taken private by Thoma Bravo for $20.25/Shr",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois envolve uma aquisição significativa de uma empresa de tecnologia, o que pode afetar o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T07:50:55.562817-03:00"
+    },
+    {
+      "title": "Prejuízo da Americanas quase triplica no 2º trimestre para R$ 274 milhões",
+      "source": "G1 Economia",
+      "score": 6.0,
+      "motivo": "Prejuízo líquido da Americanas quase triplicou, afetando negativamente a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T07:51:02.081079-03:00"
     }
   ]
 }
