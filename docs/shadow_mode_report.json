@@ -1,21 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 43488,
-  "aprovadas_pelo_fluxo_atual": 723,
-  "descartadas_pelos_filtros_atuais": 42765,
-  "score_medio_materialidade": 3.98,
+  "total_ingeridas": 43736,
+  "aprovadas_pelo_fluxo_atual": 728,
+  "descartadas_pelos_filtros_atuais": 43008,
+  "score_medio_materialidade": 3.99,
   "seriam_breaking": 21,
   "iriam_para_rodada": 279,
   "seriam_descartadas_pelo_novo_sistema": 1700,
-  "total_divergencias": 679,
+  "total_divergencias": 683,
   "divergencias": [
-    {
-      "title": "Minério de ferro fecha com leve alta na China",
-      "source": "Money Times",
-      "score": 4.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "At a glance: stocks gapping up premarket",
       "source": "Seeking Alpha",
@@ -145,6 +138,13 @@
     {
       "title": "Direcional aprova recompra de até 32 milhões de ações",
       "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Performance Food Group slumps after earnings miss",
+      "source": "Seeking Alpha",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
