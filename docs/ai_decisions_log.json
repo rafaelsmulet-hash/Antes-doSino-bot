@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fervo anticipates $60M-$80M of 2027 revenue while lifting 2030 installed capacity target to 1.1 GW",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:05:53.358724-03:00"
-    },
-    {
-      "title": "AST SpaceMobile Trades Near $74. Here's The Subscriber Math That Justifies It.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:05:59.425560-03:00"
-    },
-    {
-      "title": "Dólar sobe a R$ 5,18 e Bolsa cai em reação aos juros, inflação e JPMorgan",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:06:04.134542-03:00"
-    },
-    {
-      "title": "Banco Pine (PINE4) despenca mais de 7% após resultados do 2T26; entenda",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:06:07.749086-03:00"
-    },
-    {
-      "title": "How Nvidia’s Huang and Meta’s Zuckerberg Are Combating the AI Backlash",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:06:11.552063-03:00"
-    },
-    {
-      "title": "Inside Paramount, employees say they have bigger concerns than a reported plan to ditch California",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:06:14.463385-03:00"
-    },
-    {
-      "title": "Dólar avança a R$ 5,18 com eleições ainda no radar dos investidores",
-      "source": "Money Times",
-      "score": 5.0,
-      "motivo": "Aumento do valor do dólar pode afetar as importações e, consequentemente, a economia brasileira",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:10:48.480002-03:00"
-    },
-    {
-      "title": "Por que o governo americano está contratando gamers para evitar o caos na aviação",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:10:53.059307-03:00"
-    },
-    {
-      "title": "Journey Medical Non-GAAP EPS of $0.10, revenue of $18.5M beats by $0.13M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou a previsão de receita, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:10:56.654317-03:00"
-    },
-    {
-      "title": "Infleqtion, Inc. GAAP EPS of -$0.12, revenue of $12.6M beats by $1.96M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:10:59.335986-03:00"
-    },
-    {
-      "title": "Virgin Galactic GAAP EPS of -$0.50 beats by $0.14, revenue of $0.13M in-line",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:11:02.017227-03:00"
-    },
-    {
-      "title": "Cisco Non-GAAP EPS of $1.22 beats by $0.05, revenue of $17.25B beats by $420M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:11:04.693206-03:00"
-    },
-    {
       "title": "Coherent Non-GAAP EPS of $1.74 beats by $0.12, revenue of $2.05B beats by $70M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T14:50:58.918289-03:00"
+    },
+    {
+      "title": "BC multa Genial e inabilita CEO por irregularidades em câmbio; banco vai recorrer",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "a noticia se refere a irregularidades em um banco, mas o banco vai recorrer, o que sugere que o impacto para o mercado pode ser limitado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:55:45.343658-03:00"
+    },
+    {
+      "title": "CSN Mineração (CMIN3) cai 3% após balanço; EBITDA supera estimativas, mas mercado vê riscos à frente",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "EBITDA acima das estimativas, mas mercado vê riscos à frente",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T14:55:50.597369-03:00"
+    },
+    {
+      "title": "Hewlett Packard Enterprise wins approval for DOJ settlement in Juniper deal",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "O acordo é rotineiro e não deve ter impacto significativo no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:55:56.371347-03:00"
+    },
+    {
+      "title": "Here's why Bit Digital stock surged: Ethereum, AI, cloud revenue are in focus",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:55:59.097860-03:00"
+    },
+    {
+      "title": "Eagle Point Income Company Inc - 5% PRF REDEEM 30/10/2026 USD 25 - Ser Aprice alerts declares $0.1041 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:56:01.841601-03:00"
+    },
+    {
+      "title": "Kimball Electronics projects FY 2027 net sales of $1.535B-$1.56B, including $60M from Helvoet",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:56:04.560453-03:00"
+    },
+    {
+      "title": "X-Energy outlines up to $1B more ARDP funding as NRC permit targets Q1 ’27",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:56:07.319995-03:00"
+    },
+    {
+      "title": "EnerSys outlines $955M-$995M Q2 sales and $3.15-$3.25 adjusted EPS, backed by a 1 GWh U.S. defense lithium plant plan",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:56:10.071196-03:00"
+    },
+    {
+      "title": "MiNK outlines 4-8 patients per site per month as U.S. ARDS enrollment starts in September",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T14:56:12.797641-03:00"
+    },
+    {
+      "title": "Inadimplência do Banco do Brasil (BBAS3) dispara no cartão; CFO revela o que deu errado e como o banco vai reagir",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T14:56:21.522902-03:00"
+    },
+    {
+      "title": "Aveanna Healthcare Holdings Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T14:56:27.670176-03:00"
+    },
+    {
+      "title": "OpenAI shake-up continues with second major departure of the week",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T14:56:30.658111-03:00"
     }
   ]
 }
