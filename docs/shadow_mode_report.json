@@ -1,21 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 43736,
-  "aprovadas_pelo_fluxo_atual": 728,
-  "descartadas_pelos_filtros_atuais": 43008,
-  "score_medio_materialidade": 3.99,
+  "total_ingeridas": 43984,
+  "aprovadas_pelo_fluxo_atual": 729,
+  "descartadas_pelos_filtros_atuais": 43255,
+  "score_medio_materialidade": 4.0,
   "seriam_breaking": 21,
-  "iriam_para_rodada": 279,
-  "seriam_descartadas_pelo_novo_sistema": 1700,
-  "total_divergencias": 683,
+  "iriam_para_rodada": 283,
+  "seriam_descartadas_pelo_novo_sistema": 1696,
+  "total_divergencias": 685,
   "divergencias": [
-    {
-      "title": "At a glance: stocks gapping up premarket",
-      "source": "Seeking Alpha",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Owens Corning (OC) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
@@ -145,6 +138,13 @@
     {
       "title": "Performance Food Group slumps after earnings miss",
       "source": "Seeking Alpha",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "CoreWeave Earnings Beat Amid Operating Margin Upside. AI Stock Jumps.",
+      "source": "Yahoo Finance",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
