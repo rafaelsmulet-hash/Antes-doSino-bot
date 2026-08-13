@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Morning Bid: Long bond bother",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T16:06:28.727949-03:00"
-    },
-    {
-      "title": "'Terrific Tail Winds' In Secondaries: Dawn",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca um aumento significativo nos negócios de segunda viagem para ativos privados, o que pode ter um impacto positivo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T16:10:42.375547-03:00"
-    },
-    {
-      "title": "It's A 'Weird Time' For The US Economy, Says Christopher Smart",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca a incerteza econômica e a preocupação com a rentabilidade de investimentos em tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T16:10:45.362333-03:00"
-    },
-    {
-      "title": "DeepSeek Won't Sink U.S. AI Titans",
-      "source": "WSJ Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T16:10:48.785376-03:00"
-    },
-    {
-      "title": "Micropigmentação capilar: conheça o procedimento para tatuar couro cabeludo em pessoas calvas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T16:10:54.475600-03:00"
-    },
-    {
-      "title": "OranjeBTC cria ETF de ações de compradoras de bitcoin focado em dividendos",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T16:10:57.186286-03:00"
-    },
-    {
       "title": "O que está acontecendo com a indústria solar da China?",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T13:46:36.291771-03:00"
+    },
+    {
+      "title": "Ibovespa volta a cair nesta 5ª mesmo com boas notícias vindas dos EUA: o que explica?",
+      "source": "InfoMoney",
+      "score": 7.0,
+      "motivo": "a baixa da Ibovespa é influenciada por fatores como eleições e resultados de empresas, que são relevantes e materiais para o mercado agora",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T13:50:43.596494-03:00"
+    },
+    {
+      "title": "TSE adia reunião sobre uso de deepfakes na campanha eleitoral para terça-feira",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "noticia sobre eleicoes e uso de deepfakes nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:50:46.615109-03:00"
+    },
+    {
+      "title": "Por que chapéu panamá deve virar uma das marcas de campanha de Lula",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:50:49.296338-03:00"
+    },
+    {
+      "title": "Câmara aprova projeto para converter milhas em dinheiro",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T13:51:16.028860-03:00"
+    },
+    {
+      "title": "Retail Stock Almost Touches Buy Point As Analyst Upgrades, Citing Big Transformation",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a percepção dos investidores sobre a ação e pode influenciar as decisões de compra e venda.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:51:24.811316-03:00"
+    },
+    {
+      "title": "Sandisk Stock Jumps On Bullish Outlook, Leads Memory Names Higher",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T13:51:27.508642-03:00"
     }
   ]
 }
