@@ -1,42 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 37874,
-  "aprovadas_pelo_fluxo_atual": 677,
-  "descartadas_pelos_filtros_atuais": 37197,
+  "total_ingeridas": 38122,
+  "aprovadas_pelo_fluxo_atual": 678,
+  "descartadas_pelos_filtros_atuais": 37444,
   "score_medio_materialidade": 4.05,
   "seriam_breaking": 37,
-  "iriam_para_rodada": 306,
-  "seriam_descartadas_pelo_novo_sistema": 1657,
-  "total_divergencias": 670,
+  "iriam_para_rodada": 304,
+  "seriam_descartadas_pelo_novo_sistema": 1659,
+  "total_divergencias": 667,
   "divergencias": [
-    {
-      "title": "Alphabet Inc. (GOOGL) vs. Meta Platforms, Inc. (META): Washington and Brussels Both Turn Up the Heat on AI Safety",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Advanced Micro Devices, Inc. (AMD) vs. Sandisk Corporation (SNDK): Chip Earnings Momentum Meets a Mixed Market Reaction",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "NuScale Could Become the Standard Platform for Nuclear Energy",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Nexon HI Results Climb; Sees Higher Net Profit, Revenues In 9 Months - Update",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Discovery Mining GAAP EPS of $0.11, revenue of $319.09M",
       "source": "Seeking Alpha",
@@ -147,6 +119,34 @@
       "source": "CNBC - US News",
       "score": 5.0,
       "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Opendoor slides on $650M convertible debt offering, first-ever share buyback",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "AIRO Group Holdings GAAP EPS of -$0.06 beats by $0.26, revenue of $43.18M",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Mater Dei tem lucro ajustado de R$45 milhões no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "MRV&Co tem prejuízo de R$626,6 mi no 2° tri impactado por impairment de US$110 mi",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado"
     }
   ]
