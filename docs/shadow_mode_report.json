@@ -1,35 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 37626,
-  "aprovadas_pelo_fluxo_atual": 676,
-  "descartadas_pelos_filtros_atuais": 36950,
-  "score_medio_materialidade": 4.04,
+  "total_ingeridas": 37874,
+  "aprovadas_pelo_fluxo_atual": 677,
+  "descartadas_pelos_filtros_atuais": 37197,
+  "score_medio_materialidade": 4.05,
   "seriam_breaking": 37,
-  "iriam_para_rodada": 305,
-  "seriam_descartadas_pelo_novo_sistema": 1658,
-  "total_divergencias": 668,
+  "iriam_para_rodada": 306,
+  "seriam_descartadas_pelo_novo_sistema": 1657,
+  "total_divergencias": 670,
   "divergencias": [
-    {
-      "title": "Yeti Non-GAAP EPS of $0.67 beats by $0.12, revenue of $483.87M in-line; updates FY 2026 outlook",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "JD.com Non-GAAP EPADS of $0.93 beats by $0.10, revenue of $51.05B beats by $310M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Strategy CEO Says Bitcoin Holdings Will Grow By Year’s End",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Alphabet Inc. (GOOGL) vs. Meta Platforms, Inc. (META): Washington and Brussels Both Turn Up the Heat on AI Safety",
       "source": "Yahoo Finance",
@@ -145,6 +124,27 @@
     {
       "title": "Pou Sheng prevê recuperação do setor esportivo na China até 2028",
       "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Flying first class is getting cheaper — if you don’t mind giving up some perks",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Dynatrace to buy Arize in ~$915M cash-and-stock deal",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Cisco's stock drops despite earnings, revenue beat",
+      "source": "CNBC - US News",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"

@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Yeti Non-GAAP EPS of $0.67 beats by $0.12, revenue of $483.87M in-line; updates FY 2026 outlook",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa superou as expectativas de lucro e atualizou sua perspectiva financeira, o que pode ter um impacto positivo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:06:51.164146-03:00"
-    },
-    {
-      "title": "JD.com Non-GAAP EPADS of $0.93 beats by $0.10, revenue of $51.05B beats by $310M",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa superou as expectativas em lucro e receita, o que é um sinal positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:06:54.180645-03:00"
-    },
-    {
-      "title": "Fidelity Investments Now Says You Can Expect to Spend Around $185,000 on Healthcare Expenses in Retirement. Here's How I'm Planning for It.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações concretas sobre impacto no mercado, apenas um alerta para planejamento financeiro individual.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:06:58.353595-03:00"
-    },
-    {
-      "title": "Jeep Avenger é o híbrido mais barato do Brasil por R$ 114.990",
-      "source": "G1 Economia",
-      "score": 2.0,
-      "motivo": "noticia sobre lançamento de veículo não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:07:03.346277-03:00"
-    },
-    {
-      "title": "Strategy CEO Says Bitcoin Holdings Will Grow By Year’s End",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque o CEO de uma empresa de gestão de ativos está expressando otimismo sobre as posições em Bitcoin da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:07:09.306716-03:00"
-    },
-    {
-      "title": "National Bank Of Canada Discloses Stakes In Crypto ETFs",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia revela as posições do banco em ETFs de criptomoedas, o que pode influenciar a percepção do mercado sobre a instituição e o setor de criptomoedas.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T07:07:12.440414-03:00"
-    },
-    {
       "title": "Alphabet Inc. (GOOGL) vs. Meta Platforms, Inc. (META): Washington and Brussels Both Turn Up the Heat on AI Safety",
       "source": "Yahoo Finance",
       "score": 6.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T19:51:11.722902-03:00"
+    },
+    {
+      "title": "CPFL lucra R$ 1,44 bilhão, vê novo impulso de data centers no mercado da distribuição",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "aumento de demanda de energia para data centers é positivo para a empresa de distribuição de energia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:55:47.163937-03:00"
+    },
+    {
+      "title": "Petz Cobasi (AUAU3) tem lucro líquido ajustado de R$ 70,3 mi no 2º tri, alta 8,4%",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Aumento no lucro líquido e alta no crescimento anual são indicativos positivos para a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:55:50.177124-03:00"
+    },
+    {
+      "title": "Dasa reduz prejuízo para R$35 mi no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A redução do prejuízo é um sinal positivo para a empresa e pode influenciar a valorização da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:55:54.833749-03:00"
+    },
+    {
+      "title": "CPFL tem alta do lucro, vê novo impulso de data centers no mercado da distribuição",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "alta do lucro e perspectiva de crescimento em data centers",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:55:57.825687-03:00"
+    },
+    {
+      "title": "Brasil inicia processo para adotar Lei da Reciprocidade contra os EUA",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:56:01.096202-03:00"
+    },
+    {
+      "title": "Dasa registra prejuízo líquido de R$ 35,0 milhőes no segundo trimestre, variaçăo de -92,3%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:56:08.226767-03:00"
     }
   ]
 }
