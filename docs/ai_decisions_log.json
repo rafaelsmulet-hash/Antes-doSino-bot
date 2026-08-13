@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Cerebras stock plunges 14% after second earnings report following IPO",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:26:30.758685-03:00"
-    },
-    {
-      "title": "Ibovespa estende perdas com ‘risco Brasil’ ainda no radar dos investidores; dólar sobe",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "A queda do Ibovespa e o aumento do dólar indicam impacto negativo no mercado brasileiro",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:30:44.471745-03:00"
-    },
-    {
-      "title": "Earnings Snapshot: Coherent AI demand lifts datacenter revenue 59%; Q1 guide tops consensus",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A empresa superou as expectativas de receita dos centros de dados, o que é um indicador positivo para o setor de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T17:30:48.541600-03:00"
-    },
-    {
-      "title": "Brinker forecasts fiscal '27 adjusted EPS of $12.60 to $13.40 with plans for 60 to 80 Chili’s reimages",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:30:51.311114-03:00"
-    },
-    {
-      "title": "Kontoor outlines $5.25-$5.35 EPS outlook while targeting 49.8%-50% gross margin",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:30:54.041973-03:00"
-    },
-    {
-      "title": "Sky Harbour Group GAAP EPS of -$0.04 beats by $0.11, revenue of $9.86M beats by $0.42M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:30:56.744528-03:00"
-    },
-    {
-      "title": "Delek Logistics plunges after launching $175M common unit offering",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:30:59.430720-03:00"
-    },
-    {
-      "title": "Bitgo Holdings, Inc. GAAP EPS of -$0.16 misses by $0.12, revenue of $4.33B beats by $550M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:31:02.145532-03:00"
-    },
-    {
-      "title": "Capstone Green Energy GAAP EPS of -$0.03 misses by $0.03, revenue of $24.92M beats by $2.07M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T17:31:04.899000-03:00"
-    },
-    {
       "title": "Tradr 2X Long APP Daily Getting Very Oversold",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T15:16:22.123612-03:00"
+    },
+    {
+      "title": "MRVE3: Por que as ações da MRV estão disparando +14% hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Aumento significativo das ações da MRV é um sinal de confiança do mercado no desempenho da empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:20:57.475380-03:00"
+    },
+    {
+      "title": "Diretor de receita da OpenAI deixa a empresa após menos de um ano",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:21:00.524256-03:00"
+    },
+    {
+      "title": "Webull detalha mecânica por trás do lançamento de portfólios gerenciados",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "O lançamento de portfólios gerenciados pode atrair mais investidores para a plataforma, aumentando a demanda por ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:21:03.541092-03:00"
+    },
+    {
+      "title": "GOL troca CEO: Ferrer vai para a Boeing e Fehlauer assume",
+      "source": "Brazil Journal",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:21:06.541972-03:00"
+    },
+    {
+      "title": "Otimismo com infraestrutura é o menor desde 2022. Culpa da guerra e da eleição",
+      "source": "Brazil Journal",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:21:09.243141-03:00"
+    },
+    {
+      "title": "'Sistema vai tentar de tudo para me parar', diz Flávio Bolsonaro após filiação no Missão",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:21:11.990467-03:00"
+    },
+    {
+      "title": "Cerveja do Brasil é eleita uma das melhores do mundo",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:21:14.787656-03:00"
+    },
+    {
+      "title": "Todo mundo de BYD? Banco do Brasil e empresa de carros elétricos anunciam parceria no programa Move Brasil",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T15:21:21.211002-03:00"
+    },
+    {
+      "title": "Mortgage and refinance interest rates today, Wednesday, August 12, 2026: Fixed rates move higher",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T15:21:26.392094-03:00"
     }
   ]
 }
