@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "No Goldman Sachs, um cheque de US$ 2,25 bilhões para avançar nos ETFs",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:05:55.058484-03:00"
-    },
-    {
-      "title": "Lovable confirms new $13.3B valuation, raises another $400M",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:05:57.745537-03:00"
-    },
-    {
-      "title": "Wendy's stock jumps on report of potential takeover bid from Nelson Peltz's Trian Fund Management",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:06:00.873231-03:00"
-    },
-    {
-      "title": "Cristiano Ronaldo e Georgina se casam e foto das alianças tem 26 milhões de curtidas",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:10:53.212795-03:00"
-    },
-    {
-      "title": "Operação contra o PCC busca ‘irmãos’ que sequestraram e torturaram advogado em SP",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:10:55.986002-03:00"
-    },
-    {
-      "title": "Vamos (VAMO3) cai mesmo após balanço considerado positivo; o que pesa nas ações?",
-      "source": "Money Times",
-      "score": 2.0,
-      "motivo": "queda nas ações após balanço considerado positivo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:11:00.149315-03:00"
-    },
-    {
-      "title": "Por que as ações da Space Exploration Technologies disparam hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:11:03.022159-03:00"
-    },
-    {
-      "title": "Black Rock Coffee Bar soars after earnings with growth still on the menu",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:11:06.495176-03:00"
-    },
-    {
-      "title": "Global Indemnity (GBLI) Q2 2026 Earnings Call Transcript",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:11:16.322839-03:00"
-    },
-    {
-      "title": "National Vision Raises Outlook as Higher-Value Customers Fuel Breakout Quarter",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:11:18.995657-03:00"
-    },
-    {
-      "title": "Best credit cards with no annual fee for August 2026",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T13:11:21.732475-03:00"
-    },
-    {
-      "title": "3 Stocks Under $10 to Buy in August",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T13:11:24.337108-03:00"
-    },
-    {
       "title": "Putin Threatens Seizures Of European Ships Over EU's \"Piracy & Banditry\"",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T11:12:22.559474-03:00"
+    },
+    {
+      "title": "The Ultimate Tax Deferral: Inside the 351 Conversion ETF",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia aborda a eficiência tributária dos ETFs, o que é relevante para investidores e traders de mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T11:15:45.040717-03:00"
+    },
+    {
+      "title": "'Nobody wants it': Lettuce prices see record-setting plunge as cyclospora spooks consumers",
+      "source": "CNBC - Economy",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:15:47.897835-03:00"
+    },
+    {
+      "title": "AI’s costly build-out complicates the Fed’s inflation fight",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A notícia destaca a possibilidade de inflação causada pela expansão dos centros de dados, o que é relevante para a política monetária da Fed",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:15:51.023553-03:00"
+    },
+    {
+      "title": "Gigantes do Golfo gastam bilhões para driblar dependência do Estreito de Ormuz",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T11:15:54.221124-03:00"
+    },
+    {
+      "title": "Um mercado de US$ 22 trilhões: ETFs de gestão ativa avançam no Brasil",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:16:01.029631-03:00"
+    },
+    {
+      "title": "SIR Royalty Income Fund GAAP EPS of $0.34, revenue of $77.5M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:16:03.936620-03:00"
+    },
+    {
+      "title": "Anthropic investors eye record $2T valuation in October IPO: report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T11:16:06.605004-03:00"
+    },
+    {
+      "title": "Abeona drops after Q2 revenue miss",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:16:09.245771-03:00"
+    },
+    {
+      "title": "Mattr Non-GAAP EPS of $0.32, revenue of $396.19M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:16:11.894086-03:00"
+    },
+    {
+      "title": "CapitaLand Investment Limited reports 1H results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:16:14.541051-03:00"
+    },
+    {
+      "title": "Zedcor Inc. GAAP EPS of -C$0.02, revenue of C$22.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:16:17.203358-03:00"
+    },
+    {
+      "title": "Eagle Point Credit Q2 net investment income slips amid portfolio repositioning",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T11:16:19.872127-03:00"
     }
   ]
 }
