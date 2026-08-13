@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The latest rally has energized the stock market but left the credit market concerned",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:53:00.931058-03:00"
-    },
-    {
-      "title": "Actress Tamara Mello of ‘She’s All That’ puts L.A. home on the market for $1.5 million",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:53:03.687973-03:00"
-    },
-    {
-      "title": "Lenovo profits soar past expectations on AI computers, servers and services",
-      "source": "MarketWatch",
-      "score": 6.0,
-      "motivo": "A notícia destaca o desempenho positivo da Lenovo em seu setor de inteligência artificial, o que pode ter impacto no mercado de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:53:06.731602-03:00"
-    },
-    {
-      "title": "Virgin Galactic forecasts positive quarterly cash flow within 2027 as first commercial spaceflight shifts to February",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:53:09.732703-03:00"
-    },
-    {
-      "title": "China’s YMTC overtakes Kioxia, Micron in global NAND shipments:  Counterpoint",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado de tecnologia e memória, pois pode influenciar a demanda e o preço das ações das empresas envolvidas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:53:13.009133-03:00"
-    },
-    {
-      "title": "SkyX targets 100,000 units in market by end of 2026 as it expects to exit 2026 cash flow positive",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:53:15.735226-03:00"
-    },
-    {
-      "title": "Splitting the MMR vaccine? Experts warn it could take a decade",
-      "source": "Seeking Alpha",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:53:18.920728-03:00"
-    },
-    {
-      "title": "Paramount Skydance willing to sell CNN to clinch Warner Bros. merger",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:53:21.628136-03:00"
-    },
-    {
-      "title": "AI may have an inflation problem",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia pode afetar a confiabilidade dos modelos econômicos e de previsão de inflação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:53:24.546713-03:00"
-    },
-    {
-      "title": "Robinhood Ventures Fund II sets IPO at $25 per share",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:53:27.241319-03:00"
-    },
-    {
-      "title": "DAX Rises As Oil Prices Drop",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois afeta diretamente os preços do petróleo, que influenciam a economia global e, consequentemente, os mercados financeiros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:53:33.558056-03:00"
-    },
-    {
-      "title": "Google Parent Alphabet Just Revealed How Many SpaceX Shares It Owns... and the Figure Is a Doozy",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:53:36.301826-03:00"
-    },
-    {
-      "title": "European Shares Modestly Higher As Oil Prices Ease",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois afeta diretamente a expectativa de juros e, consequentemente, a economia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:53:39.431198-03:00"
-    },
-    {
-      "title": "CK Hutchison H1 Profit Surges, Says Cautious Operating Environment In Rest Of FY26",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:53:42.144659-03:00"
-    },
-    {
-      "title": "Michael Burry Warns of a 1987-Style Crash. Here Are 2 Index ETFs to Buy Anyway.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A opinião de um investidor influente sobre um possível crash no mercado é relevante e tem impacto concreto",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:53:45.268156-03:00"
-    },
-    {
       "title": "Nvidia Stock Investors Just Got Good News From Wall Street (Hint: It's Time to Buy)",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T19:11:12.113758-03:00"
+    },
+    {
+      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
+      "source": "WSJ Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sobre uma empresa de recursos naturais",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:15:50.778497-03:00"
+    },
+    {
+      "title": "Even tem lucro líquido consolidado de R$ 30,686 milhões no 2T, queda anual de 37,2%",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Aumento da margem bruta e lucro líquido consolidado são indicativos positivos para a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:15:53.945101-03:00"
+    },
+    {
+      "title": "SBC targets 1,000 clinics by 2035 while outlining $15M annual fee upside",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia destaca um plano de expansão e aumento de receita da SBC, o que é relevante para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:15:59.346099-03:00"
+    },
+    {
+      "title": "Co-Diagnostics outlines FDA dual 510(k) and CLIA waiver submission as cash falls to $3.6M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:16:02.084413-03:00"
+    },
+    {
+      "title": "X-Energy to get up to $1B additional U.S. funding for Texas reactor project",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:16:04.816522-03:00"
+    },
+    {
+      "title": "Grupo de hackers diz ter roubado dados de quase 50 empresas, incluindo Philips e Shell",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:16:13.446646-03:00"
+    },
+    {
+      "title": "IFIX fecha quinta-feira em queda de 0,6% e termina aos 3.692,65 pontos",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:16:17.497443-03:00"
+    },
+    {
+      "title": "Ibovespa cai pela 8ª vez seguida com saída de estrangeiros; Banco do Brasil (BBAS3) tomba",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:16:20.241271-03:00"
+    },
+    {
+      "title": "Investors sue Selena Gomez alleging fraud tied to her mental health startup",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:16:25.441673-03:00"
+    },
+    {
+      "title": "Space Exploration Technologies Corp (SPCX) Leads Fund’s Performance Following Historic Initial Public Offering",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:16:28.348482-03:00"
+    },
+    {
+      "title": "1 Vanguard ETF That Outperforms the S&P 500 and Still Has Room to Run",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:16:31.068064-03:00"
+    },
+    {
+      "title": "Putin's First Ever Visit To Japanese-Claimed Islands Provokes Outrage In Tokyo",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:16:34.478095-03:00"
+    },
+    {
+      "title": "Violent Crime Rate Drops In Major US Cities",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:16:37.166037-03:00"
+    },
+    {
+      "title": "\"No Rock Left Unturned\": Tether Completes Independent Audit Of Reserves With KPMG",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T19:16:39.908999-03:00"
+    },
+    {
+      "title": "News Groups Sue Trump Over Paid Early Access To Truth Social Posts",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T19:16:42.628340-03:00"
     }
   ]
 }
