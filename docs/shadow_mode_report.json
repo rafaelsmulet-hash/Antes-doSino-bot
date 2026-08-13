@@ -1,21 +1,14 @@
 {
   "date": "2026-08-12",
-  "total_ingeridas": 42744,
+  "total_ingeridas": 42992,
   "aprovadas_pelo_fluxo_atual": 719,
-  "descartadas_pelos_filtros_atuais": 42025,
-  "score_medio_materialidade": 3.97,
+  "descartadas_pelos_filtros_atuais": 42273,
+  "score_medio_materialidade": 3.98,
   "seriam_breaking": 21,
-  "iriam_para_rodada": 275,
-  "seriam_descartadas_pelo_novo_sistema": 1704,
-  "total_divergencias": 671,
+  "iriam_para_rodada": 277,
+  "seriam_descartadas_pelo_novo_sistema": 1702,
+  "total_divergencias": 672,
   "divergencias": [
-    {
-      "title": "$4 billion Vanta has a new CMO who wants to make security compliance marketing 'a little zingier'",
-      "source": "Business Insider",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Minério de ferro fecha com leve alta na China",
       "source": "Money Times",
@@ -148,6 +141,13 @@
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Direcional aprova recompra de até 32 milhões de ações",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }

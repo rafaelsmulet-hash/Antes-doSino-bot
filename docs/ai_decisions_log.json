@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "UK’s Halewood sells Crabbie’s to local group Brookfield Drinks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T08:06:53.705278-03:00"
-    },
-    {
-      "title": "$4 billion Vanta has a new CMO who wants to make security compliance marketing 'a little zingier'",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-12T08:06:56.807836-03:00"
-    },
-    {
       "title": "AI’s costly buildout complicates the Fed’s inflation fight",
       "source": "CNBC - Economy",
       "score": 6.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-12T21:21:35.409377-03:00"
+    },
+    {
+      "title": "SEG Solar opens second PV module factory, lifting US capacity to 6GW",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois aumenta a capacidade de produção de energia solar nos EUA, o que pode ter impacto positivo no mercado de energia e nas ações de empresas relacionadas à energia renovável.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T21:25:45.449385-03:00"
+    },
+    {
+      "title": "RIA Edge 100: Wescott Financial's Psych Profiles Pay Dividends",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A abordagem de investimentos personalizados pode influenciar as decisões de investimento e impactar o desempenho do índice.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-12T21:25:48.661381-03:00"
     }
   ]
 }
