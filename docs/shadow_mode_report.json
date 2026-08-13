@@ -1,21 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 34422,
-  "aprovadas_pelo_fluxo_atual": 638,
-  "descartadas_pelos_filtros_atuais": 33784,
+  "total_ingeridas": 34670,
+  "aprovadas_pelo_fluxo_atual": 639,
+  "descartadas_pelos_filtros_atuais": 34031,
   "score_medio_materialidade": 3.96,
   "seriam_breaking": 34,
-  "iriam_para_rodada": 327,
-  "seriam_descartadas_pelo_novo_sistema": 1635,
+  "iriam_para_rodada": 326,
+  "seriam_descartadas_pelo_novo_sistema": 1640,
   "total_divergencias": 671,
   "divergencias": [
-    {
-      "title": "CK Hutchison Profit Jumps Sharply on Boost From Asset Sales",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Lenovo’s AI-Driven Revenue Boost Sends Stock to New Record",
       "source": "Bloomberg Markets",
@@ -148,6 +141,13 @@
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "China’s YMTC overtakes Kioxia, Micron in global NAND shipments:  Counterpoint",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }

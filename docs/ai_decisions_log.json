@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Annaly Capital Management 6.95% PFD SER F declares $0.5616 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:20:56.219709-03:00"
-    },
-    {
-      "title": "Annaly Capital Management, Inc. PFD SER G declares $0.5217 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:20:58.934900-03:00"
-    },
-    {
-      "title": "The housing market’s wealth gains are real. So is its distress",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:21:09.219620-03:00"
-    },
-    {
-      "title": "Strategy Cratered 75% Over 12 Months: One Analyst Lodged a 350% Return Target Price",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-12T22:21:12.013846-03:00"
-    },
-    {
-      "title": "Nigeria Central Bank Widens Access to Open Market Operations",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "Ampliação da elegibilidade para participar das operações de mercado aberto pode aumentar a liquidez e reduzir os custos de financiamento para as empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:50:40.823217-03:00"
-    },
-    {
-      "title": "Yen Remains on 160 Watch Despite Takaichi’s Support for BOJ Hike",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia afeta a expectativa de uma elevação da taxa de juros do BOJ, que pode influenciar a taxa de câmbio do iene.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T06:50:43.852220-03:00"
-    },
-    {
-      "title": "CK Hutchison Profit Jumps Sharply on Boost From Asset Sales",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A venda de ativos gerou ganhos significativos para a empresa, o que é relevante para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T06:50:46.829672-03:00"
-    },
-    {
       "title": "Korea Stock Bulls Drive Second Day of Emerging-Market Gains",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T18:46:02.877382-03:00"
+    },
+    {
+      "title": "Yduqs (YDUQ3) tem queda de 54,2% no lucro do 2º tri, em resultado abaixo do esperado",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "queda de 54,2% no lucro do 2º tri, resultado abaixo do esperado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:50:50.312487-03:00"
+    },
+    {
+      "title": "IPCA-15 é de 0,06% em julho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:50:54.895529-03:00"
+    },
+    {
+      "title": "Seth Klarman's Baupost adds Pershing Square in Q2; boosts Amazon, Alphabet",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Aumento de participação em empresas de tecnologia relevantes",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T18:50:58.884800-03:00"
+    },
+    {
+      "title": "If Apple sends you a push notification alerting you to a spyware attack, take it seriously",
+      "source": "TechCrunch",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas é relevante para a segurança dos usuários de iPhone.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:51:09.255569-03:00"
+    },
+    {
+      "title": "Baron Discovery Fund Gains from Strategic Accumulation of CareDx (CDNA)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:51:12.169111-03:00"
+    },
+    {
+      "title": "Broadcom Wins If AI Wins So I Keep Buying",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:51:14.863026-03:00"
+    },
+    {
+      "title": "No tax on Social Security? The facts about Trump’s plan are here — and they could hurt US retirees the most",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T18:51:17.643588-03:00"
     }
   ]
 }
