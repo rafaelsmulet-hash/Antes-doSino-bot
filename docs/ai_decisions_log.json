@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "'Sistema vai tentar de tudo para me parar', diz Flávio Bolsonaro após filiação no Missão",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:21:11.990467-03:00"
-    },
-    {
-      "title": "Cerveja do Brasil é eleita uma das melhores do mundo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:21:14.787656-03:00"
-    },
-    {
-      "title": "Todo mundo de BYD? Banco do Brasil e empresa de carros elétricos anunciam parceria no programa Move Brasil",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T15:21:21.211002-03:00"
-    },
-    {
-      "title": "Mortgage and refinance interest rates today, Wednesday, August 12, 2026: Fixed rates move higher",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:21:26.392094-03:00"
-    },
-    {
-      "title": "Goldman Sachs Is Bullish on Active ETFs With Purchase of SPYI, QQQI Issuer",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A aquisição de um emissor de ETFs ativos sugere que a Goldman Sachs está confiante no crescimento desse mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T15:25:52.940437-03:00"
-    },
-    {
-      "title": "TSE diz que filiação de Flávio Bolsonaro foi feita com credencial válida do Missão",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:25:56.456513-03:00"
-    },
-    {
-      "title": "BB trabalha para enfrentar ‘meteoro que está caindo no agro’, diz VP financeiro",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "a noticia menciona problemas no crédito rural que prejudicam a carteira do banco, indicando um impacto negativo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:25:59.390842-03:00"
-    },
-    {
-      "title": "Frete recua em julho, mas safra de milho aquece demanda em agosto, diz Edenred",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:26:02.083701-03:00"
-    },
-    {
-      "title": "Tevez alerta Corinthians antes de duelo com Rosario Central: 'Caldeirão' como a Bombonera",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:26:07.256830-03:00"
-    },
-    {
-      "title": "Como um cliente convenceu o chatbot da Chevrolet a vender um carro por apenas US$ 1",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:26:09.971102-03:00"
-    },
-    {
-      "title": "Financial peril to pasta power: Noodles leads the restaurant sector with a +200% YTD gain",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:26:12.817965-03:00"
-    },
-    {
-      "title": "Eagle Point Institutional Income Fund SER A TERM PFD declares $0.1692 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:26:15.502425-03:00"
-    },
-    {
       "title": "Adcore GAAP EPS of -C$0.01, revenue of C$7.2M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T13:50:31.594155-03:00"
+    },
+    {
+      "title": "Liquidação da Simpala: FGC estima R$ 622 milhões em garantias a credores",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A liquidação da Simpala pode afetar a confiança dos investidores no mercado e causar perdas para os credores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:55:48.960031-03:00"
+    },
+    {
+      "title": "Em junho, vendas no varejo crescem 0,5%",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:55:52.546509-03:00"
+    },
+    {
+      "title": "Ibovespa sob pressão: analista aponta os gatilhos que podem trazer estrangeiros de volta",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "saída de capital estrangeiro e incertezas geopolíticas podem afetar o Ibovespa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:55:55.940899-03:00"
+    },
+    {
+      "title": "Foo Fighters em Belo Horizonte: ingressos custam a partir de R$ 280; veja como comprar",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:56:00.855845-03:00"
+    },
+    {
+      "title": "Libertadores entra na reta decisiva com chaveamento até a final: veja os duelos",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:56:03.553267-03:00"
+    },
+    {
+      "title": "Anglo American reaches iron ore supply deal with China’s state buyer",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:56:06.467458-03:00"
+    },
+    {
+      "title": "Firy expects RZR revenue to nearly double year-over-year as Papaya judgment awarded about $730M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:56:09.181205-03:00"
+    },
+    {
+      "title": "IM Cannabis reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:56:11.821121-03:00"
+    },
+    {
+      "title": "Lantern Pharma outlines Open Medicine AI spin-out amid $10B market outlook by 2030-2031",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:56:14.530822-03:00"
+    },
+    {
+      "title": "Satellos Bioscience Inc. GAAP EPS of -$0.56",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:56:17.193440-03:00"
+    },
+    {
+      "title": "Broadcom falls amid VMware security vulnerability reports",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:56:19.885245-03:00"
+    },
+    {
+      "title": "China quer levar cães-robôs à Lua para construir base com astronautas até 2035",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:56:27.703989-03:00"
     }
   ]
 }
