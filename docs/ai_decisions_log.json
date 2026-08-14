@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Kalshi In Talks To Raise Money At $40 Billion Valuation",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:01:41.062944-03:00"
-    },
-    {
-      "title": "US producer prices unchanged in July; labor market stable",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T12:01:43.723173-03:00"
-    },
-    {
-      "title": "Noruega - Ações fecharam o pregão em queda e o Índice Oslo OBX recuou 0,14%",
-      "source": "Investing.com Brasil",
-      "score": 2.0,
-      "motivo": "queda de ações e índice não é um evento significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:05:50.291992-03:00"
-    },
-    {
-      "title": "Israel - Ações fecharam o pregão em alta e o Índice TA 35 avançou 0,25%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "o Índice TA 35 avançou, indicando um mercado em alta",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:05:53.115672-03:00"
-    },
-    {
-      "title": "Databricks capta US$ 5 bilhões e atinge avaliação de US$ 190 bilhões",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A captação de US$ 5 bilhões e a avaliação de US$ 190 bilhões são indicativos de crescimento e confiança no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:05:56.133880-03:00"
-    },
-    {
-      "title": "Grécia - Ações fecharam o pregão em queda e o Índice Athens General Composite recuou 0,02%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:05:58.820791-03:00"
-    },
-    {
-      "title": "‘Estamos falhando em trazer todos os participantes para a tokenização’, diz executivo da Caixa",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:06:01.923945-03:00"
-    },
-    {
-      "title": "Your prescription drugs shouldn’t cost more than your mortgage. Inside the broken math that got us here.",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:06:04.918416-03:00"
-    },
-    {
-      "title": "Pro Real Estate Investment Trust reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:06:07.683746-03:00"
-    },
-    {
-      "title": "SS Innovations International GAAP EPS of -$0.01 in-line, revenue of $13.94M beats by $2.24M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:06:10.363241-03:00"
-    },
-    {
-      "title": "Keurig Dr Pepper gains after HSBC points to upside",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T12:06:13.006774-03:00"
-    },
-    {
-      "title": "Arrive AI Inc. GAAP EPS of -$0.28 misses by $0.19, revenue of $0.014M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:06:15.651893-03:00"
-    },
-    {
-      "title": "Birkenstock Rallies on Forecast; StubHub Falls on Earnings | Stock Movers",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "Notícias específicas de resultados financeiros de empresas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T12:10:49.014295-03:00"
-    },
-    {
-      "title": "Austrália vai pagar mais de um salário mínimo para motoristas de aplicativo",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "Aumento de custos para empresas de aplicativos de transporte pode afetar lucratividade",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:10:52.956163-03:00"
-    },
-    {
-      "title": "Resposta ao terremoto na Colômbia entra em fase sombria na busca por sobreviventes",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:10:55.622222-03:00"
-    },
-    {
-      "title": "É ‘crítico’ agir agora para levar inflação de volta à meta nos EUA, diz membro do Fed",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "O membro do Fed sugere que a política monetária não é restritiva o suficiente para controlar a inflação, o que pode indicar uma possibilidade de ajustes mais rigorosos no futuro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T12:10:58.660025-03:00"
-    },
-    {
       "title": "Banco do Brasil (BBAS3): lucro sobe e supera projeções, mas por que ações caem 3%?",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T10:26:16.028652-03:00"
+    },
+    {
+      "title": "Treasuries Rise as Weak Retail Sales Dampen Fed Rate-Hike Expectations",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "As vendas de varejo fracos enfraquecem as expectativas de aumento de juros da Fed, afetando as taxas de juros futuras.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T10:30:58.540858-03:00"
+    },
+    {
+      "title": "Dollar Slides to May Low as Weak Retail Sales Dim Rate Bets",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia afeta diretamente as expectativas de aumento de juros, o que é material para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T10:31:01.499898-03:00"
+    },
+    {
+      "title": "Quando cai o pagamento do Bolsa Família em agosto? Veja calendário e valores",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T10:31:05.399340-03:00"
+    },
+    {
+      "title": "Renda Fixa Hoje: Confira as taxas de CDBs, LCIs e LCAs na XP nesta sexta-feira (14)",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:08.031230-03:00"
+    },
+    {
+      "title": "Ebola mata 2.184 na RDC em surto com 4.665 casos",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:13.713264-03:00"
+    },
+    {
+      "title": "O cobre virou o termômetro do próximo tarifaço de Trump; entenda",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:16.334591-03:00"
+    },
+    {
+      "title": "Sem pôster oficial, cinema do Canadá apela para desenho de Homem-Aranha e viraliza",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:18.947402-03:00"
+    },
+    {
+      "title": "iPad para trabalho: os melhores acessórios para otimizar o uso em 2026",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T10:31:21.578049-03:00"
+    },
+    {
+      "title": "Irã confirma presença na cúpula dos Brics em setembro",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:24.285020-03:00"
+    },
+    {
+      "title": "Congress changed the rules around charitable giving. Do it earlier in the year to save money.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:27.266970-03:00"
+    },
+    {
+      "title": "Vera rises after FDA review for kidney disease therapy",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:30.036341-03:00"
+    },
+    {
+      "title": "HeartCore GAAP EPS of -$1.45, revenue of $0.32M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:32.679414-03:00"
+    },
+    {
+      "title": "Warner Bros’ ‘The End of Oak Street’ targets up to $48M global debut",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:35.306176-03:00"
+    },
+    {
+      "title": "Algorhythm Holdings GAAP EPS of -$0.25 beats by $0.11, revenue of $3.01M beats by $0.01M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:38.204664-03:00"
+    },
+    {
+      "title": "Reading International GAAP EPS of $0.10, revenue of $66.9M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:40.816541-03:00"
+    },
+    {
+      "title": "US courts will start publishing how often the government uses spyware",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:31:54.151060-03:00"
     }
   ]
 }
