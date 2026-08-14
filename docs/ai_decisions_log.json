@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Swing trade: BTG Pactual recomenda compra de SpaceX (SPCX34) com potencial de alta de 33,66%",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:05.035370-03:00"
-    },
-    {
-      "title": "Mayfair Gold GAAP EPS of -C$0.11",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:08.063638-03:00"
-    },
-    {
-      "title": "Cerebras slumps after Q2 but analysts remain positive, some see a buying opportunity",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:10.683845-03:00"
-    },
-    {
-      "title": "SharpLink to stake $200M in ETH through Lido",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:13.285133-03:00"
-    },
-    {
-      "title": "Dyadic International secures $2.9M via registered direct offering and concurrent warrant private placement",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:15.916631-03:00"
-    },
-    {
-      "title": "AMMO, Inc. 8.75% PFD SER A declares $0.5469 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:18.517530-03:00"
-    },
-    {
-      "title": "Troca de comando na Gol",
-      "source": "UOL Economia",
-      "score": 2.0,
-      "motivo": "troca de comando é um evento rotineiro que geralmente não afeta significativamente o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:27.324725-03:00"
-    },
-    {
-      "title": "Bitcoin and ethereum prices today, Thursday, August 13, 2026: BTC price trends turn negative",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:32.649926-03:00"
-    },
-    {
-      "title": "Venture Global, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:35.264261-03:00"
-    },
-    {
-      "title": "Cerebras stock plunges 14% after second earnings report following IPO",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:51:38.165358-03:00"
-    },
-    {
       "title": "Iran looks to ramp up economic alliance with BRICS nations as war with U.S. drags on",
       "source": "CNBC - Finance",
       "score": 6.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T08:06:19.709248-03:00"
+    },
+    {
+      "title": "China: novos empréstimos bancários recuam inesperadamente em julho",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Demanda fraca por crédito na China pode afetar o mercado financeiro global",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T08:10:40.207392-03:00"
+    },
+    {
+      "title": "LM Funding America reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A divulgação de resultados financeiros pode influenciar a percepção dos investidores sobre a saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T08:10:45.313483-03:00"
+    },
+    {
+      "title": "IRB(Re) lucra R$ 185,0 milhões no segundo trimestre de 2026",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "Lucro recorde do IRB é positivo para a empresa e pode influenciar a valorização da ação no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T08:10:51.969708-03:00"
+    },
+    {
+      "title": "Ânima Educação lucra R$ 29,1 milhões entre abril e junho, alta de 205,3%",
+      "source": "UOL Economia",
+      "score": 8.0,
+      "motivo": "Alta significativa no lucro líquido ajustado do segundo trimestre",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T08:10:58.343128-03:00"
+    },
+    {
+      "title": "Economatica reduz prejuízo líquido ajustado a R$ 1,77 milhão no segundo trimestre, queda de 75,1%",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "A redução do prejuízo líquido ajustado é um indicador positivo, mas a queda de 75,1% pode ser considerada rotineira e não impactante significativamente no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T08:11:01.134170-03:00"
+    },
+    {
+      "title": "Oceânica reverte lucro e tem prejuízo de R$ 324,2 milhões no segundo trimestre",
+      "source": "UOL Economia",
+      "score": 3.0,
+      "motivo": "A empresa reversa lucro e apresenta prejuízo significativo, o que pode afetar a confiança dos investidores",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T08:11:03.954633-03:00"
+    },
+    {
+      "title": "Azul reverte lucro e tem prejuízo de R$ 1,04 bilhão no segundo trimestre",
+      "source": "UOL Economia",
+      "score": 8.0,
+      "motivo": "prejuízo significativo de R$ 1,04 bilhão impacta negativamente a empresa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T08:11:12.768383-03:00"
+    },
+    {
+      "title": "Rio+ Saneamento registra prejuízo de R$ 47,5 milhões no segundo trimestre",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "prejuízo líquido significativo pode afetar a confiança dos investidores no empreendimento",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T08:11:15.525002-03:00"
+    },
+    {
+      "title": "Target Appoints Its First-Ever AI Exec as the Retailer Pushes Deeper Into Artificial Intelligence. What It Means for TGT Stock.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A nomeação de uma executiva de IA pode indicar uma maior ênfase da empresa em tecnologia de IA, o que pode ter impacto positivo nas ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T08:11:20.259832-03:00"
+    },
+    {
+      "title": "Hyperion Profit More Than Triples to $31M, HYPE Treasury Reaches $133M",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "O aumento significativo do lucro e do tesouro do Hyperion sugere uma boa saúde financeira da empresa e pode influenciar positivamente o mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T08:11:23.195318-03:00"
     }
   ]
 }
