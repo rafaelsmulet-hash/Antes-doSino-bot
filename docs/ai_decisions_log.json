@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Emprego formal teve 2,2 milhões de vagas abertas no primeiro semestre de 2026, diz governo",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T18:01:47.716277-03:00"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:01:54.399709-03:00"
-    },
-    {
-      "title": "Winklevosses’ Gemini Posts Another Loss, Revenue Increases",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A perda trimestral do Gemini é relevante para o mercado de criptomoedas, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T18:05:50.629903-03:00"
-    },
-    {
-      "title": "The Anti-Aging Movement Has Come for Cats and Dogs",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:05:53.619090-03:00"
-    },
-    {
-      "title": "Cinco diretoras, cinco contos: 'Rio de Clarice' reinventa Clarice Lispector nos cinemas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:05:59.193440-03:00"
-    },
-    {
-      "title": "Instil Bio GAAP EPS of -$0.63 misses by $0.28",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:06:01.985885-03:00"
-    },
-    {
-      "title": "Stardust Power GAAP EPS of -$0.35 beats by $0.04",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:06:04.655565-03:00"
-    },
-    {
-      "title": "Jefferson Capital, Inc. GAAP EPS of $0.67 beats by $0.02, revenue of $177.5M beats by $7.24M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:06:07.411757-03:00"
-    },
-    {
       "title": "Intermap Technologies GAAP EPS of -$0.03, revenue of $2M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T17:46:23.180705-03:00"
+    },
+    {
+      "title": "Freshmen Pay Thousands For Sorority Rush Coaches",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:50:42.931930-03:00"
+    },
+    {
+      "title": "New York City Council announces probe into prediction market platforms’ marketing strategies",
+      "source": "CNBC - Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:50:46.665761-03:00"
+    },
+    {
+      "title": "FII XPML11 negocia compra de 60% de shopping da Allos por R$ 331 milhões",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:50:49.779004-03:00"
+    },
+    {
+      "title": "Quando o filme 'Pinóquio: Maldição de Madeira' chega aos cinemas brasileiros?",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:51:10.684425-03:00"
+    },
+    {
+      "title": "Ibovespa fecha 9ª sessão em queda e acumula perda de 3,2% na semana; dólar avança",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:51:13.416462-03:00"
+    },
+    {
+      "title": "Dona do colégio mais antigo de São Paulo fatura R$ 2,2 bilhões e não vai parar de comprar escolas",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:51:16.186741-03:00"
+    },
+    {
+      "title": "Profound Medical names interim CFO",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:51:19.182992-03:00"
+    },
+    {
+      "title": "BorgWarner sets cash prices for up to $720M debt buyback program",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:51:21.896293-03:00"
     }
   ]
 }
