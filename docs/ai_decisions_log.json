@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SBC targets 1,000 clinics by 2035 while outlining $15M annual fee upside",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia destaca um plano de expansão e aumento de receita da SBC, o que é relevante para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T19:15:59.346099-03:00"
-    },
-    {
-      "title": "Co-Diagnostics outlines FDA dual 510(k) and CLIA waiver submission as cash falls to $3.6M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:16:02.084413-03:00"
-    },
-    {
-      "title": "X-Energy to get up to $1B additional U.S. funding for Texas reactor project",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:16:04.816522-03:00"
-    },
-    {
       "title": "Grupo de hackers diz ter roubado dados de quase 50 empresas, incluindo Philips e Shell",
       "source": "G1 Economia",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-14T19:36:19.817660-03:00"
+    },
+    {
+      "title": "Petrobras anuncia descoberta de petróleo na Bacia da Foz do Amazonas",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "Descoberta de petróleo aumenta as perspectivas de produção brasileira",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T19:40:40.164840-03:00"
+    },
+    {
+      "title": "Crédito privado prepara a “rede” para pescar a liquidez bilionária do Tesouro",
+      "source": "Neofeed",
+      "score": 8.0,
+      "motivo": "O Tesouro Nacional pagará R$ 258,6 bilhões em NTN-Bs, impactando a liquidez no mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T19:40:52.861037-03:00"
+    },
+    {
+      "title": "Applied Materials Stock Nearly Tripled On Orders It Cannot Ship Fast Enough",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A notícia é relevante porque indica uma alta demanda por produtos da empresa, o que pode ser um indicador de crescimento futuro.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:40:56.567691-03:00"
     }
   ]
 }
