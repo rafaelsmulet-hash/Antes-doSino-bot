@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Twilio Director Andrew Stafman Sells 500,000 Shares for $123.5 Million",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T13:37:07.534787-03:00"
-    },
-    {
-      "title": "Rocket Lab's Backlog Just Hit $2.4 Billion. Here's Why Neutron's First Flight Matters More.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T13:37:10.191465-03:00"
-    },
-    {
-      "title": "O Brasil piscou. O sarampo voltou",
-      "source": "Brazil Journal",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T13:40:47.967734-03:00"
-    },
-    {
-      "title": "Farmers & Merchants Bancorp raises dividend by 4.7% to $5.60",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Aumento de dividendos é um sinal de saúde financeira da empresa e pode atrair mais investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T13:40:51.970264-03:00"
-    },
-    {
-      "title": "Ford on track to complete $2B factory overhaul for Fathom EV truck",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T13:41:02.849456-03:00"
-    },
-    {
-      "title": "Trump-linked oil venture delays Greenland drilling plans after government warning",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T13:41:06.332017-03:00"
-    },
-    {
-      "title": "Oil’s Rally Stalls as Hormuz Deadlock Brings Flows Into Focus",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca a incerteza sobre a quantidade de petróleo que está sendo transportado, o que pode afetar os preços e a oferta de petróleo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T13:46:03.381304-03:00"
-    },
-    {
-      "title": "Para melhorar saúde mental de alunos, universidade flexibiliza sistema de notas",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "a noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T13:46:06.719060-03:00"
-    },
-    {
-      "title": "Galatasaray oferece R$ 269 milhões por Martinelli, mas Arsenal faz exigência",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira relevante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T13:46:11.834865-03:00"
-    },
-    {
       "title": "Miami, Nashville, Houston lead top 10 U.S. buyer's markets",
       "source": "Seeking Alpha",
       "score": 2.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T12:21:52.470076-03:00"
+    },
+    {
+      "title": "Trump Family-Tied Dronemakers (UMAC, PUSA) Get a Boost From New US Tariffs",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente as importações de componentes de drones, o que pode impactar as empresas envolvidas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:25:37.204512-03:00"
+    },
+    {
+      "title": "Polícia de SP recupera obras de Matisse roubadas da Biblioteca Mário de Andrade",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:25:41.488271-03:00"
+    },
+    {
+      "title": "Tarcísio diz que motorista de Haddad será ouvido em investigação sobre ação da PM",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T12:25:44.170513-03:00"
+    },
+    {
+      "title": "Por que as ações da Strategy estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:25:50.176251-03:00"
+    },
+    {
+      "title": "Wall Street's riskiest trades are suddenly back on top: Chart of the Day",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T12:26:00.234421-03:00"
+    },
+    {
+      "title": "Rocket Lab (RKLB) Set a Revenue Record. Is Neutron Slipping Into 2027?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:26:02.983782-03:00"
+    },
+    {
+      "title": "ResMed (RMD) Q4 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T12:26:05.606530-03:00"
+    },
+    {
+      "title": "Trump's been railing against the electromagnetic catapults on the Navy's newest carriers for years. Now, he's pushing a return to steam.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:26:08.593219-03:00"
+    },
+    {
+      "title": "Luigi Mangione pleads guilty to federal stalking charges in striking reversal",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T12:26:11.230955-03:00"
     }
   ]
 }
