@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Como usar o Figma AI para criar designs, protótipos e acelerar tarefas no trabalho",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:36:29.636975-03:00"
-    },
-    {
-      "title": "Instagram anuncia mudança em logo pela 1ª vez em 10 anos; veja as alterações",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:36:32.383903-03:00"
-    },
-    {
-      "title": "NuCana GAAP EPS of £0.00",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:36:35.692516-03:00"
-    },
-    {
       "title": "Afya GAAP EPS of R$2.22 beats by R$1.85, revenue of R$972M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T16:56:09.572675-03:00"
+    },
+    {
+      "title": "Mercadão na Inglaterra? Após brasileiro comprar 'fatia' do Liverpool, Leicester é colocado à venda",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há conexão direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:00:47.024125-03:00"
+    },
+    {
+      "title": "NEEX 2026 reúne líderes e empresas que estão transformando crescimento em novos negócios",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:00:49.868541-03:00"
+    },
+    {
+      "title": "PayPal gains on report Stripe, Advent in advanced talks for a deal",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia sugere que a Stripe pode ser vendida, o que pode afetar a concorrência no mercado de pagamentos online.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:00:53.381581-03:00"
     }
   ]
 }
