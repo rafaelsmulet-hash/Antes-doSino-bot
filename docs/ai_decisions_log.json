@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dow Jones Futures: Cisco, Coherent Are Earnings Losers After Nebius, Lumentum, CoreWeave Lead AI Rally",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:11:09.305061-03:00"
-    },
-    {
-      "title": "Dollar steadies after benign US inflation curbs Fed rate hike bets",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:11:11.954761-03:00"
-    },
-    {
-      "title": "B&G Foods, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa apresentou resultados financeiros acima das expectativas, o que pode ser um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:11:14.893480-03:00"
-    },
-    {
-      "title": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
-      "source": "CNBC - Finance",
-      "score": 5.0,
-      "motivo": "A empresa chinesa lidera a entrega de chips de memória NAND, o que pode ter impacto positivo no setor de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:15:37.635063-03:00"
-    },
-    {
-      "title": "Google oficializa alta de preços em novos smartphones diante de escassez de memórias",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "alta de preços pode afetar demanda e vendas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:15:40.983279-03:00"
-    },
-    {
-      "title": "Flávio inclui fim da reeleição presidencial em programa que lança nesta quinta",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:15:43.903863-03:00"
-    },
-    {
-      "title": "Por que as ações da Journey Medical estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:15:47.883472-03:00"
-    },
-    {
-      "title": "Por que as ações da Aveanna Healthcare estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aumento de preço das ações devido a uma notícia positiva sobre o desempenho da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:15:50.613637-03:00"
-    },
-    {
-      "title": "Wolfe Research rebaixa Stryker e eleva Abbott em reavaliação do setor médico",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:15:53.255639-03:00"
-    },
-    {
-      "title": "Por que as ações da Outlook Therapeutics estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:15:55.863086-03:00"
-    },
-    {
-      "title": "Por que as ações da Hewlett Packard Enterprise estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:15:58.464448-03:00"
-    },
-    {
-      "title": "Por que as ações da Intuitive Machines estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:16:01.060796-03:00"
-    },
-    {
-      "title": "Por que as ações da IREN estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:16:03.664463-03:00"
-    },
-    {
-      "title": "Ações da IREN sobem 6% após entrega à Microsoft e status NVIDIA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:16:06.271784-03:00"
-    },
-    {
-      "title": "Por que as ações da Akamai Technologies estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:16:08.873592-03:00"
-    },
-    {
-      "title": "UBS rebaixa Coca-Cola Europacific Partners apesar de vendas e volumes acima do esperado no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:16:11.492444-03:00"
-    },
-    {
       "title": "Dona do Claude negocia comprar startup israelense por US$ 6 bilhões",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T06:56:28.921804-03:00"
+    },
+    {
+      "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
+      "source": "WSJ Markets",
+      "score": 5.0,
+      "motivo": "Oferta hostil pode influenciar preço da ação da Beacon",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:04:31.709712-03:00"
+    },
+    {
+      "title": "Azul prevê novo corte de capacidade no 3º tri antes de retomar crescimento",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "corte de capacidade pode afetar a demanda e as expectativas de crescimento da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:04:34.820941-03:00"
+    },
+    {
+      "title": "Cemig registra lucro de R$ 945,44 milhões no 2tri26, queda de 20,44% ante 2tri25",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Aumento na receita líquida e lucro da Cemig são indicativos de estabilidade financeira, o que pode ser visto como positivo pelo mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:04:37.717473-03:00"
+    },
+    {
+      "title": "Light (LIGT3) tem prejuízo líquido de R$ 252 milhões no 2T, alta anual de 390,2%",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "a empresa apresentou resultados financeiros relevantes, mas sem impacto imediato no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:04:40.562368-03:00"
+    },
+    {
+      "title": "Vance: EUA pressionam Irã e utilizam meios diplomáticos para estabilizar petróleo",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia não é direta sobre mercado financeiro, mas menciona petróleo, que é relevante para o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:04:43.392660-03:00"
+    },
+    {
+      "title": "Jayme Garfinkel: “Sucesso é até ontem”",
+      "source": "Brazil Journal",
+      "score": 2.0,
+      "motivo": "noticia biografica sobre empresario, sem impacto direto no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:04:49.034195-03:00"
+    },
+    {
+      "title": "Buscas por carros híbridos crescem mais de 6.000% no Brasil",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "aumento nas buscas por carros híbridos é um sinal de mudança no mercado automotivo brasileiro, indicando uma demanda por tecnologia mais sustentável",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:04:52.329239-03:00"
+    },
+    {
+      "title": "O que levou 53 milhões de chineses aos aplicativos de trabalho",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios, mas sim sobre emprego e economia pessoal",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:04:55.210921-03:00"
+    },
+    {
+      "title": "Marcus & Millichap (MMI) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma empresa específica",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:05:01.818851-03:00"
+    },
+    {
+      "title": "Ellington Financial (EFC) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A divulgação do relatório de earnings é relevante para os investidores que seguem a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:05:04.676116-03:00"
+    },
+    {
+      "title": "Vanguard Is Bullish on Developed Markets Outside the U.S. -- But How Can You Buy Them? These 2 ETFs Can Help.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Previsão de superação de ações internacionais em mercados desenvolvidos em relação às ações de crescimento nos EUA.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:05:07.578813-03:00"
+    },
+    {
+      "title": "Mega-Sena 3044 acumula e prêmio em jogo dispara; Lotofácil, Quina e outras loterias também encalham",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "a noticia e sobre loterias e nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:05:14.567244-03:00"
+    },
+    {
+      "title": "Nubank (ROXO34) tem lucro recorde de US$ 1,1 bilhão no 2T26, salto de 49%; ROE supera expectativas e sobe para 33%",
+      "source": "Seu Dinheiro",
+      "score": 8.0,
+      "motivo": "Lucro recorde e ROE acima das expectativas são positivos para a ação",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:05:17.411182-03:00"
+    },
+    {
+      "title": "São Martinho (SMTO3) vê lucro cair 39% no início da safra; entenda o que pesou",
+      "source": "Suno Noticias",
+      "score": 6.0,
+      "motivo": "Cair de 39% no lucro líquido é um resultado negativo para a empresa e pode afetar a confiança dos investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:05:21.831010-03:00"
+    },
+    {
+      "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
+      "source": "TechCrunch",
+      "score": 5.0,
+      "motivo": "A empresa conseguiu levantar uma quantia significativa de dinheiro em uma rodada de investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:05:26.145898-03:00"
+    },
+    {
+      "title": "Kennedy Center board votes to put Trump name on facade despite court order",
+      "source": "CNBC - US News",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:05:30.112169-03:00"
     }
   ]
 }
