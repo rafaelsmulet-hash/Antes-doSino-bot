@@ -1,28 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 42070,
+  "total_ingeridas": 42298,
   "aprovadas_pelo_fluxo_atual": 716,
-  "descartadas_pelos_filtros_atuais": 41354,
+  "descartadas_pelos_filtros_atuais": 41582,
   "score_medio_materialidade": 3.9,
   "seriam_breaking": 32,
-  "iriam_para_rodada": 240,
-  "seriam_descartadas_pelo_novo_sistema": 1728,
-  "total_divergencias": 661,
+  "iriam_para_rodada": 241,
+  "seriam_descartadas_pelo_novo_sistema": 1727,
+  "total_divergencias": 663,
   "divergencias": [
-    {
-      "title": "Inuvo, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Evolv Technologies Holdings, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Congresso aprova aval a despesa fora do limit, mas garante ajuste de R$ 10 bi em 2027",
       "source": "InfoMoney",
@@ -148,6 +134,20 @@
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Creative Realities GAAP EPS of -$0.41 misses by $0.16, revenue of $21.5M misses by $0.24M",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Diodes plans $325M convertible notes offering",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }
