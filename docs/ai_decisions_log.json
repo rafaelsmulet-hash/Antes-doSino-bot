@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fermi Inc. GAAP EPS of -$0.04 beats by $0.02",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque superou as expectativas de lucro por ação, indicando uma melhoria na situação financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:06:21.728029-03:00"
-    },
-    {
-      "title": "Paysafe Non-GAAP EPS of $0.43 beats by $0.04, revenue of $447.44M beats by $0.46M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas de lucro e receita, o que é considerado positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:06:24.584244-03:00"
-    },
-    {
-      "title": "Bending Spoons S.p.A. Non-GAAP EPS of $0.46 beats by $0.19, revenue of $704M beats by $21.37M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia apresenta resultados financeiros superiores às expectativas, o que é relevante para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:06:27.479156-03:00"
-    },
-    {
-      "title": "Hapvida lucra R$ 12,5 milhões no segundo trimestre, queda de 95,8%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "A empresa apresentou lucro, apesar da queda significativa, o que pode ser visto como um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:06:39.656205-03:00"
-    },
-    {
-      "title": "Mater Dei lucra R$ 45,0 milhões no segundo trimestre, alta de 66,1%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "aumento de lucro da Mater Dei é positivo para a empresa e pode influenciar os investimentos no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:06:42.497709-03:00"
-    },
-    {
-      "title": "COPASA MG lucra R$ 275,5 milhões entre abril e junho, queda de 4,8%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "A noticia apresenta um lucro ajustado positivo, mesmo com uma queda de 4,8%",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:06:45.237553-03:00"
-    },
-    {
-      "title": "Quais são as alternativas ao Estreito de Hormuz?",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "A busca por alternativas ao Estreito de Hormuz pode reduzir a dependência do mercado de petróleo em uma rota crítica e potencialmente insegura.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:06:48.019544-03:00"
-    },
-    {
-      "title": "Big Tech Drives Up Credit Risk for Safe Firms With No AI Links",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia menciona a influência das empresas de tecnologia nos mercados de crédito, o que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:13:45.611472-03:00"
-    },
-    {
       "title": "Private companies added just 44,000 workers in July, below expectations, ADP reports",
       "source": "CNBC - Economy",
       "score": 5.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T21:01:38.039604-03:00"
+    },
+    {
+      "title": "Here are three key takeaways from the disappointing July jobs report",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "O relatorio de emprego de julho foi decepcionante e pode influenciar as expectativas de inflacao e juros nos EUA.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:05:34.119271-03:00"
+    },
+    {
+      "title": "Mega-Sena hoje, concurso 3044: confira o resultado sorteado nesta quinta (13)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de concurso de loteria é irrelevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:05:37.675214-03:00"
+    },
+    {
+      "title": "Xos outlines 2026 revenue of $35M-$43M as Power Hub launch expands focus to power infrastructure",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:05:42.267310-03:00"
+    },
+    {
+      "title": "Mega-Sena, concurso 3044: confira os números sorteados",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:05:47.818042-03:00"
+    },
+    {
+      "title": "This Bullish Trade Cuts The Price Tag On Access To Highflying Cloudflare Stock",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:05:53.323013-03:00"
+    },
+    {
+      "title": "Tesla is planning one of its largest supercharger stations yet — right in the middle of San Francisco",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:05:56.226601-03:00"
+    },
+    {
+      "title": "Outrage As Texas Schools Bus Kids To Mosque So They Can \"Experience Islam\"",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:05:59.435824-03:00"
+    },
+    {
+      "title": "11 Charged In Immigration Scheme Involving Over 1,000 Sham Marriages",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:06:02.157953-03:00"
     }
   ]
 }
