@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Grupo de hackers diz ter roubado dados de quase 50 empresas, incluindo Philips e Shell",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T19:16:13.446646-03:00"
-    },
-    {
-      "title": "IFIX fecha quinta-feira em queda de 0,6% e termina aos 3.692,65 pontos",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:16:17.497443-03:00"
-    },
-    {
-      "title": "Ibovespa cai pela 8ª vez seguida com saída de estrangeiros; Banco do Brasil (BBAS3) tomba",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T19:16:20.241271-03:00"
-    },
-    {
-      "title": "Investors sue Selena Gomez alleging fraud tied to her mental health startup",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T19:16:25.441673-03:00"
-    },
-    {
-      "title": "Space Exploration Technologies Corp (SPCX) Leads Fund’s Performance Following Historic Initial Public Offering",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:16:28.348482-03:00"
-    },
-    {
-      "title": "1 Vanguard ETF That Outperforms the S&P 500 and Still Has Room to Run",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:16:31.068064-03:00"
-    },
-    {
-      "title": "Putin's First Ever Visit To Japanese-Claimed Islands Provokes Outrage In Tokyo",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:16:34.478095-03:00"
-    },
-    {
-      "title": "Violent Crime Rate Drops In Major US Cities",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:16:37.166037-03:00"
-    },
-    {
-      "title": "\"No Rock Left Unturned\": Tether Completes Independent Audit Of Reserves With KPMG",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T19:16:39.908999-03:00"
-    },
-    {
       "title": "News Groups Sue Trump Over Paid Early Access To Truth Social Posts",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T19:40:56.567691-03:00"
+    },
+    {
+      "title": "Antitrust Lawyer on NFL Streaming Cost Concerns",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "A notícia discute o impacto financeiro dos preços de streaming na NFL, mas não é um evento de grande relevância imediata.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:45:35.187504-03:00"
+    },
+    {
+      "title": "Assuruá 4 e 5 reduz prejuízo a R$ 5,7 milhões no segundo trimestre, queda de 51%",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "A redução do prejuízo é um sinal positivo para a empresa e pode influenciar a percepção dos investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T19:45:46.062612-03:00"
+    },
+    {
+      "title": "EPR Triângulo lucra R$ 12,8 milhões no segundo trimestre, queda de 43,0%",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "queda de 43,0% no lucro líquido é um indicativo negativo para a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T19:45:48.848426-03:00"
+    },
+    {
+      "title": "Cosan tem prejuízo de R$ 320 milhões no 2º trimestre com baixa contábil",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T19:45:51.530783-03:00"
+    },
+    {
+      "title": "IFIX cai 0,17% nesta sexta-feira; índice encerra semana em baixa de 2,25%",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:45:55.351420-03:00"
+    },
+    {
+      "title": "Talks to sell PayPal to Stripe and Advent are heating up",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:45:59.448866-03:00"
+    },
+    {
+      "title": "Mark Cuban Says If You Win The Lottery, Don’t Take The Lump Sum — And Tell People Who Ask for Money No, But ‘Be Nice. No One Likes a Mean Billionaire’",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:46:02.289485-03:00"
+    },
+    {
+      "title": "Sam Altman Told the White House He Supports Slowing AI Development. Here's Why That Matters for AI Stocks.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:46:05.008922-03:00"
+    },
+    {
+      "title": "Bitcoin Price Forecast: BTC Could Resume Its Rally as Rate Hike Odds Drop to 30%",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:46:07.702217-03:00"
     }
   ]
 }
