@@ -1,28 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 43528,
+  "total_ingeridas": 43776,
   "aprovadas_pelo_fluxo_atual": 723,
-  "descartadas_pelos_filtros_atuais": 42805,
+  "descartadas_pelos_filtros_atuais": 43053,
   "score_medio_materialidade": 3.88,
-  "seriam_breaking": 33,
+  "seriam_breaking": 34,
   "iriam_para_rodada": 242,
-  "seriam_descartadas_pelo_novo_sistema": 1725,
+  "seriam_descartadas_pelo_novo_sistema": 1724,
   "total_divergencias": 664,
   "divergencias": [
-    {
-      "title": "Votorantim Cimentos lucra R$ 628,0 milhões no segundo trimestre de 2026, queda de 65%",
-      "source": "UOL Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Track & Field lucra R$ 44,3 milhões no segundo trimestre, alta de 8,2%",
-      "source": "UOL Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "De carregador de flores a trader: o sonho de casar que mudou a vida de Caio Scotte",
       "source": "InfoMoney",
@@ -144,6 +130,20 @@
     },
     {
       "title": "Prestige Consumer Healthcare (PBH) Q1 2027 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Onity (ONIT) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Townsquare Media (TSQ) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
