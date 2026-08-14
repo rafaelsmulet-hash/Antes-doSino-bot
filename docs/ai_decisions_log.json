@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "CAE Inc Q1 27 Earnings Conference Call At 8:00 AM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:24:36.366655-03:00"
-    },
-    {
-      "title": "Canadian Tire Q2 26 Earnings Conference Call At 8:00 AM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:24:38.965593-03:00"
-    },
-    {
-      "title": "Dillard's Inc. Q2 Income Climbs",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:24:41.559395-03:00"
-    },
-    {
-      "title": "BRB, União, DF e bancos retomam conciliação no STF nesta quinta para tentar destravar empréstimo; entenda o que está em jogo",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:24:46.552352-03:00"
-    },
-    {
       "title": "Votorantim Cimentos lucra R$ 628,0 milhões no segundo trimestre de 2026, queda de 65%",
       "source": "UOL Economia",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T21:45:50.684019-03:00"
+    },
+    {
+      "title": "New Zealand Immigration Edges to 17-Month High Yet Remains Weak",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A alta da imigração pode ser positiva para a economia da Nova Zelândia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:50:38.554735-03:00"
+    },
+    {
+      "title": "TST define novo caminho na Justiça para quem não consegue sacar valores do FGTS",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:50:42.300061-03:00"
+    },
+    {
+      "title": "International Money Express jumps 35% after New York approves Western Union deal",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A aprovação da negociação é um sinal de confiança na empresa e pode impulsionar suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:50:47.943404-03:00"
+    },
+    {
+      "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:50:57.432254-03:00"
     }
   ]
 }
