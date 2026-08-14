@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:16:37.367934-03:00"
-    },
-    {
-      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:16:41.205127-03:00"
-    },
-    {
-      "title": "'Nobody wants it': Lettuce prices see record-setting plunge as cyclospora spooks consumers",
-      "source": "CNBC - Economy",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:20:45.505712-03:00"
-    },
-    {
-      "title": "Brasil registra 10 milhões de empregos com carteira assinada em três anos e meio",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Crescimento do emprego com carteira assinada é um indicador positivo para a economia brasileira",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:20:52.024741-03:00"
-    },
-    {
-      "title": "Globant Non-GAAP EPS of $1.40 misses by $0.10, revenue of $614.42M beats by $1.57M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:20:55.243468-03:00"
-    },
-    {
       "title": "York Space Systems, Inc. GAAP EPS of -$0.31, revenue of $92.55M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T16:31:18.131745-03:00"
+    },
+    {
+      "title": "Regulators and banks step up scrutiny of prediction markets",
+      "source": "CNBC - Finance",
+      "score": 4.0,
+      "motivo": "Revisão de regulamentação pode afetar operações de mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T16:35:47.402165-03:00"
+    },
+    {
+      "title": "Parents putting money in ‘Trump accounts’ could get a $2,500 tax break. Here’s how.",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "A medida pode impactar a gestão financeira de famílias e suas decisões de investimento",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:35:52.741805-03:00"
+    },
+    {
+      "title": "Coinbase, Kalshi, a16z, Ripple execs expected at White House meeting next week - report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:35:55.552169-03:00"
+    },
+    {
+      "title": "Thrive’s Joshua Kushner chides Silicon Valley VCs over AI euphoria",
+      "source": "TechCrunch",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de tecnologia, mas não apresenta informações concretas ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:36:05.893592-03:00"
+    },
+    {
+      "title": "X reveals the formula for going viral on its platform",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:36:08.828128-03:00"
     }
   ]
 }
