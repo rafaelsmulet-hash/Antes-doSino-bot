@@ -1,153 +1,153 @@
 {
-  "date": "2026-08-13",
-  "total_ingeridas": 45016,
-  "aprovadas_pelo_fluxo_atual": 729,
-  "descartadas_pelos_filtros_atuais": 44287,
-  "score_medio_materialidade": 3.87,
-  "seriam_breaking": 34,
-  "iriam_para_rodada": 247,
-  "seriam_descartadas_pelo_novo_sistema": 1719,
-  "total_divergencias": 672,
+  "date": "2026-08-14",
+  "total_ingeridas": 248,
+  "aprovadas_pelo_fluxo_atual": 33,
+  "descartadas_pelos_filtros_atuais": 215,
+  "score_medio_materialidade": 3.93,
+  "seriam_breaking": 7,
+  "iriam_para_rodada": 28,
+  "seriam_descartadas_pelo_novo_sistema": 68,
+  "total_divergencias": 38,
   "divergencias": [
     {
-      "title": "PBG tem prejuízo ajustado de R$ 58,6 milhões no segundo trimestre, 53,1% maior",
-      "source": "UOL Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "O eclipse no crédito privado, o resultado do Banco do Brasil (BBAS3) e o que mais move o mercado hoje",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "DeepSeek Won't Sink U.S. AI Titans",
-      "source": "WSJ Markets",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Vertical Aerospace GAAP EPS of -£0.32",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Wolverine World Wide Raises 2026 Guidance",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Creative Realities GAAP EPS of -$0.41 misses by $0.16, revenue of $21.5M misses by $0.24M",
-      "source": "Seeking Alpha",
+      "title": "Prabowo Plans Indonesian Commodity Exchange to Control Prices",
+      "source": "Bloomberg Markets",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Diodes plans $325M convertible notes offering",
-      "source": "Seeking Alpha",
+      "title": "Providence Agrees to Buy Property Valuation Provider Hometrack",
+      "source": "Bloomberg Markets",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Act Now: Nvidia's Stock Is a Generational Buying Opportunity",
-      "source": "Nasdaq",
+      "title": "Tempo real: Ibovespa fecha semana de olho no PIB da zona do euro e varejo dos EUA",
+      "source": "Money Times",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "SpaceX Just Reported Earnings for the First Time as a Public Company. Here's the Most Shocking Piece of Guidance Issued by CEO Elon Musk",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
+      "title": "Petróleo sobe após EUA ameaçarem bloqueio indefinido ao Irã",
+      "source": "Money Times",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Reembolsos de tarifas ajudam a turbinar lucros de empresas do S&P 500, diz WSJ",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
+      "title": "Barclays rebaixa Polypeptide após rali no 1º semestre e oferta da Samsung",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Ações da Dell e HP sobem após resultados trimestrais da Lenovo",
+      "title": "Por que as ações da SanDisk estão em alta hoje?",
       "source": "Investing.com Brasil",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "At a glance: stocks gapping up premarket",
+      "title": "HelloFresh cai 5% após Barclays rebaixar recomendação por preocupações com receita",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Birkenstock estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Globant estão despencando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações do Reddit estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "BofA recruta Greg Reider, ex-Warburg Pincus, para liderar tech no Brasil",
+      "source": "Brazil Journal",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações do Mercado Livre há 5 anos",
+      "source": "Exame",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Vale a pena pagar pela versão paga de uma IA? A conta que poucos profissionais fazem",
+      "source": "Exame",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Por que a The Coffee vai para a Colômbia — mas não vai vender café brasileiro por lá",
+      "source": "Exame",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Bill Ackman's latest bets, including Netflix and Visa, mark major portfolio overhaul",
       "source": "Seeking Alpha",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Prediction: This Artificial Intelligence (AI) Stock Is Going to Double by 2027",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Tapestry Sees Growth In FY27; Swings To Profit In Q4; Boosts Dividend 16%; Shares Down 8.8%",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Legacy Housing (LEGH) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Prestige Consumer Healthcare (PBH) Q1 2027 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Onity (ONIT) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Townsquare Media (TSQ) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "1 Sensational Stock-Split Stock to Buy Right Now, and 1 to Avoid",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Europe's Vibe Code Start-Up Lovable Hits $13.3 Billion Valuation",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
+      "title": "RLX Technology GAAP EPS of $0.025, revenue of $148.9M misses by $26.27M",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "KinderCare trims 2026 revenue outlook, sees EPS below consensus",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Globant stock plunges after full-year outlook cut",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Warren Buffett's Successor, Greg Abel, Is About to Drop a Bombshell on Wall Street Later Today, Aug. 14",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "European Shares Mixed With Regional Inflation Data In Focus",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
