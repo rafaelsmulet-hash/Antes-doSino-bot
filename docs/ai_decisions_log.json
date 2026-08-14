@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Are Wall Street Analysts Predicting the Bank of New York Mellon Stock Will Climb or Sink?",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações concretas sobre o desempenho da ação.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:11:45.253050-03:00"
-    },
-    {
-      "title": "‘SaaSpocalypse’ Risk From AI Reaches Beyond Private Equity",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca o risco de substituição de software por inteligência artificial, afetando empresas de software como serviço.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:15:43.193230-03:00"
-    },
-    {
-      "title": "Petróleo interrompe sequência de ganhos e cai com preocupações sobre a demanda",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "preços do petróleo caem em meio a preocupações com a demanda",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:15:48.689906-03:00"
-    },
-    {
-      "title": "Ações da Zentalis Pharmaceuticals caem com anúncio de oferta pública",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:15:51.550557-03:00"
-    },
-    {
-      "title": "Ações da The Trade Desk disparam 8% após semana de quedas",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:15:54.225504-03:00"
-    },
-    {
-      "title": "Taxas dos DIs sobem em sessão marcada por dados de inflação nos EUA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:15:56.919560-03:00"
-    },
-    {
-      "title": "PetMed Express GAAP EPS of -$0.28 misses by $0.40, revenue of $41.02M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:16:00.829394-03:00"
-    },
-    {
-      "title": "AudioEye Non-GAAP EPS of $0.23 beats by $0.02, revenue of $10.7M in-line",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:16:03.536452-03:00"
-    },
-    {
-      "title": "Celcuity GAAP EPS of -$1.44 misses by $0.28",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:16:06.209724-03:00"
-    },
-    {
-      "title": "Quantum-Si GAAP EPS of -$0.11 beats by $0.01, revenue of $0.34M beats by $0.04M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:16:08.963510-03:00"
-    },
-    {
-      "title": "Earnings Snapshot: Applied Materials AI, DRAM growth drive Q3 beat; Q4 outlook tops consensus",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:16:11.732434-03:00"
-    },
-    {
-      "title": "StoneCo GAAP EPS of R$2.40, revenue of R$3.59B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:16:14.466842-03:00"
-    },
-    {
-      "title": "MacroGenics GAAP EPS of -$1.10 misses by $1.02, revenue of $32.83M misses by $26.31M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:16:17.208867-03:00"
-    },
-    {
       "title": "Micron and Sandisk Stock Have Plummeted. Here's Why Now Is the Perfect Time to Buy",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T16:21:20.615449-03:00"
+    },
+    {
+      "title": "EVs dominate China’s car market: 5 takeaways from the country's latest auto sales data",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "Aumento da penetração de veículos de energia renovável é um sinal positivo para a indústria de EVs.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:25:35.430174-03:00"
+    },
+    {
+      "title": "Caiado declara patrimônio de R$ 52,5 milhões; imóveis rurais concentram maior parte",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "a noticia não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:25:38.739995-03:00"
+    },
+    {
+      "title": "Petróleo sobe e acumula valorização de 6% na semana com indefinição sobre Ormuz",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:25:43.274543-03:00"
+    },
+    {
+      "title": "Needham reafirma liderança da Lumentum no setor de tecnologia óptica",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:25:46.112633-03:00"
+    },
+    {
+      "title": "BTG e Itaú BBA divergem em preço-alvo, mas são unânimes no otimismo com Nubank",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Otimismo com Nubank é um sinal positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:25:48.986685-03:00"
+    },
+    {
+      "title": "Stellantis considera venda de fábrica em Brampton em meio a negociações sindicais",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:25:51.665563-03:00"
+    },
+    {
+      "title": "Grêmio acerta com bicampeão da Libertadores e 'rodado' pela Europa",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:25:54.616247-03:00"
+    },
+    {
+      "title": "Mais de 31 milhões de vagas pedem habilidade que só se aprende fora do país",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:25:57.285608-03:00"
+    },
+    {
+      "title": "Congress changed the rules around charitable giving. You’ll now save more money if you donate earlier in the year.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:26:00.572956-03:00"
+    },
+    {
+      "title": "Murphy Oil cut to Sell equivalent at Barclays as legacy cash flow engine weakens",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T16:26:03.311948-03:00"
+    },
+    {
+      "title": "BIO-key targets profitability in second half of 2026 following $2.5M warrant raise",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:26:06.025579-03:00"
+    },
+    {
+      "title": "Gold Pulls Back From Two-Month High as Markets Reassess Fed Rate Outlook",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:26:15.014073-03:00"
+    },
+    {
+      "title": "SpaceX is racing back toward $150 — how to play a breakout with limited risk: Alpha Options Playbook",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:26:17.752003-03:00"
     }
   ]
 }
