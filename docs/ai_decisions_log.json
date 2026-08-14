@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Boeing é condenada a pagar US$ 29 mi à família de vítima de acidente com 737 MAX",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T16:30:56.503026-03:00"
-    },
-    {
-      "title": "Petróleo interrompe sequência de ganhos e cai com preocupações sobre a demanda",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:01.020020-03:00"
-    },
-    {
-      "title": "Choque de Gestão, da EXAME, vence Prêmio Élan por inovação no mercado publicitário",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:05.571692-03:00"
-    },
-    {
-      "title": "Biofrontera outlines September 28, 2026 PDUFA date and expects sBCC launch in Q1 2027 amid ITC lamp remediation",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T16:31:08.612273-03:00"
-    },
-    {
-      "title": "Legence signals raised 2026 guidance to $4.7B-$4.8B revenue and $565M-$585M adjusted EBITDA driven by data center demand",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:11.397508-03:00"
-    },
-    {
-      "title": "Jones Soda GAAP EPS of -$0.01, revenue of $102M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:14.102196-03:00"
-    },
-    {
-      "title": "Kolibri Global Energy GAAP EPS of $0.23",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:16.803218-03:00"
-    },
-    {
-      "title": "Accelerant Holdings Non-GAAP EPS of $0.32, revenue of $356.9M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:19.511955-03:00"
-    },
-    {
-      "title": "Instagram muda logo pela 1ª vez em 10 anos; veja como ficou",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:27.312452-03:00"
-    },
-    {
-      "title": "Leilões de imóveis têm 1.150 opções em todo o Brasil a partir de R$ 5.800",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:31.132703-03:00"
-    },
-    {
-      "title": "São Martinho (SMTO3) vê lucro cair 39% no início da safra; entenda o que pesou",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:35.153168-03:00"
-    },
-    {
-      "title": "The Low-Cost VIX Hedge Most Options Traders Ignore",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:40.176844-03:00"
-    },
-    {
-      "title": "Travis Kelce and Tom Holland know being obsessed with your superstar wife is good for business",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:31:43.167694-03:00"
-    },
-    {
-      "title": "Chicago Mayor Demands Data Center Moratorium",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A medida pode afetar a expansão de centros de dados em Chicago, o que pode ter impacto em empresas de tecnologia e infraestrutura.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:35:32.785869-03:00"
-    },
-    {
-      "title": "VALE3: Apesar de falta de catalisadores no curto prazo, BTG está otimista com Vale",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "O analista da BTG está otimista com a Vale, o que pode influenciar a percepção dos investidores sobre a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T16:35:37.909862-03:00"
-    },
-    {
       "title": "Regulador da Índia propõe maior acesso para investidores credenciados",
       "source": "Investing.com Brasil",
       "score": 6.0,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T15:16:06.626462-03:00"
+    },
+    {
+      "title": "The Equity and Credit Disconnect Is Getting Really Big Again",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia sugere que há um desalinhamento entre o mercado de ações e o mercado de crédito, o que pode ser um sinal de alerta para os investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T15:20:59.785489-03:00"
+    },
+    {
+      "title": "Eles trocaram a carteira assinada pela internet. Veja como estão vivendo dessa escolha",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há informações financeiras ou econômicas relevantes no texto",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:06.208183-03:00"
+    },
+    {
+      "title": "CMCT signals potential asset sales while evaluating adding 8 new guestrooms",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro, apenas uma atualização sobre a estratégia de ativos da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:09.497857-03:00"
+    },
+    {
+      "title": "See Which Recent 13F Filers Hold VST But SIR Capital Management and Aristeia Capital Exited",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:14.671361-03:00"
+    },
+    {
+      "title": "Gladstone Commercial's Series B Preferred Stock About To Put More Money In Your Pocket",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:17.391173-03:00"
+    },
+    {
+      "title": "Why HawkEye 360 Stock Crashed Friday",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A açõ caiu apesar de superar as expectativas, o que pode ser um sinal de preocupação com o futuro da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T15:21:20.370835-03:00"
+    },
+    {
+      "title": "Airbnb vs. MercadoLibre: Evaluating Revenue Trajectories Between These Consumer Companies",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:23.076511-03:00"
+    },
+    {
+      "title": "Noteworthy Friday Option Activity: CVX, NEM, OXY",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T15:21:25.735967-03:00"
+    },
+    {
+      "title": "Friday 8/14 Insider Buying Report: BORR, XRN",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:28.400907-03:00"
+    },
+    {
+      "title": "Atlantic Union Bankshares' Preferred Shares, Series A Ex-Dividend Reminder - 8/17/26",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:31.084688-03:00"
+    },
+    {
+      "title": "If a Stock Market Correction Is Coming, This 1 Move Could Make or Break Your Portfolio",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T15:21:33.821714-03:00"
+    },
+    {
+      "title": "Friday's ETF with Unusual Volume: GSID",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T15:21:36.494837-03:00"
+    },
+    {
+      "title": "Dividendos do MXRF11 e BRCO11: veja os FIIs que pagam nesta sexta (14)",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:44.136452-03:00"
+    },
+    {
+      "title": "XRP Price Prediction: Ripple Not Out of the Woods as it Hovers Near $1",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:49.169875-03:00"
+    },
+    {
+      "title": "Are Wall Street Analysts Predicting PulteGroup Stock Will Climb or Sink?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:21:51.847472-03:00"
     }
   ]
 }
