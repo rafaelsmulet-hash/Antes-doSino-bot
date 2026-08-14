@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Oficial russo é morto em suposto assassinato na Crimeia, diz governador",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:40:51.848795-03:00"
-    },
-    {
-      "title": "Economia do Reino Unido avança com cessar-fogo no Golfo, Copa do Mundo e clima quente",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Crescimento do PIB da Reino Unido é um indicador positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:40:54.644149-03:00"
-    },
-    {
       "title": "Wholesale inflation flattens out in July and price pressure ease",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T07:42:04.822314-03:00"
+    },
+    {
+      "title": "GOL troca CEO: Ferrer vai para a Boeing e Fehlauer assume",
+      "source": "Brazil Journal",
+      "score": 2.0,
+      "motivo": "troca de CEO em uma empresa aérea não é um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:45:57.665786-03:00"
+    },
+    {
+      "title": "Uber and Pony.ai plan to bring 2,000 robotaxis to Europe",
+      "source": "TechCrunch",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:46:11.793420-03:00"
     }
   ]
 }
