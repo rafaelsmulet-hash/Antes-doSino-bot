@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "If Apple sends you a push notification alerting you to a spyware attack, take it seriously",
-      "source": "TechCrunch",
-      "score": 2.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas é relevante para a segurança dos usuários de iPhone.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:51:09.255569-03:00"
-    },
-    {
-      "title": "Baron Discovery Fund Gains from Strategic Accumulation of CareDx (CDNA)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:51:12.169111-03:00"
-    },
-    {
-      "title": "Broadcom Wins If AI Wins So I Keep Buying",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:51:14.863026-03:00"
-    },
-    {
-      "title": "No tax on Social Security? The facts about Trump’s plan are here — and they could hurt US retirees the most",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:51:17.643588-03:00"
-    },
-    {
       "title": "Judge Orders Kalshi to Stop Offering Most Wagers in Washington",
       "source": "Bloomberg Markets",
       "score": 4.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T19:01:33.146389-03:00"
+    },
+    {
+      "title": "Ibovespa fecha perto da estabilidade, mas amarga 9ª queda seguida",
+      "source": "Suno Noticias",
+      "score": 8.0,
+      "motivo": "sequência de 9 quedas consecutivas impacta negativamente o mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T19:06:29.646576-03:00"
+    },
+    {
+      "title": "U.K. Growth Boosts Case for Rate Rise, Bank of England’s Pill Says",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia sugere que o Banco da Inglaterra pode aumentar os juros para controlar a inflação, o que é relevante para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:06:34.654427-03:00"
+    },
+    {
+      "title": "Ray Dalio: The AI investment game is happening — here's how to play",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a influência da inteligência artificial no mercado de investimentos, o que é relevante para os traders e investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:06:37.934795-03:00"
+    },
+    {
+      "title": "Kalshi In Talks To Raise Money At $40 Billion Valuation",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T19:06:40.612178-03:00"
     }
   ]
 }
