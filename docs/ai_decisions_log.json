@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Dillard's Stock Dipped Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:41:22.448579-03:00"
-    },
-    {
-      "title": "CPFL Energia lucra R$ 1,44 bilhão no segundo trimestre, alta de 21,3%",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T19:41:30.476198-03:00"
-    },
-    {
-      "title": "Dear Zoom Stock Fans, Mark Your Calendars for August 25",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:41:36.812487-03:00"
-    },
-    {
       "title": "Stocks Trading Higher on Favorable CPI Report and Positive AI News",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T20:35:50.776025-03:00"
+    },
+    {
+      "title": "Saída de Memphis do Corinthians provoca explosão nas buscas do Google",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre esporte e celebridade, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:40:39.808415-03:00"
+    },
+    {
+      "title": "HBO Max renova 'Stuart Não Consegue Salvar o Universo' para segunda temporada",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:40:42.660322-03:00"
+    },
+    {
+      "title": "The Floor Under PAAS Stock Is Being Tested Again",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A ação PAAS está sendo testada novamente, o que pode ser um sinal de interesse dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:40:52.313939-03:00"
     }
   ]
 }
