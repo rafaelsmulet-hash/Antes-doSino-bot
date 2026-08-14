@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "HeartFlow, Inc. GAAP EPS of -$0.07 beats by $0.13, revenue of $64.08M beats by $7.44M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em termos de lucro e receita, o que é considerado positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:05:45.521593-03:00"
-    },
-    {
-      "title": "FibroGenEPS of $2.96",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:05:48.136130-03:00"
-    },
-    {
-      "title": "Dare Bioscience GAAP EPS of -$0.20 beats by $0.10, revenue of $187.5M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:05:50.811936-03:00"
-    },
-    {
-      "title": "The Metals Company GAAP EPS of -$0.14 misses by $0.08",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:05:53.506692-03:00"
-    },
-    {
-      "title": "Co-Diagnostics GAAP EPS of -$1.46 beats by $1.54, revenue of $0.17M beats by $0.04M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:05:56.205344-03:00"
-    },
-    {
-      "title": "Applied Materials Non-GAAP EPS of $3.50 beats by $0.11, revenue of $9.12B beats by $120M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:05:58.908777-03:00"
-    },
-    {
-      "title": "Stellantis rethinks South America strategy as Chinese rivals gain ground",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:06:01.601501-03:00"
-    },
-    {
-      "title": "CDE Makes Notable Cross Below Critical Moving Average",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:06:05.582147-03:00"
-    },
-    {
-      "title": "ARK Fintech Innovation (ARKF) Shares Cross Above 200 DMA",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:06:08.289641-03:00"
-    },
-    {
-      "title": "Planning a Roth Conversion? Here's the One Thing You Need to Know.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:06:10.967508-03:00"
-    },
-    {
-      "title": "Bullish Two Hundred Day Moving Average Cross - DIS",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:06:13.670855-03:00"
-    },
-    {
-      "title": "Simplify's PINK or iShares' IYH: Which Healthcare ETF Should Long-Term Investors Choose Right Now?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:06:16.388878-03:00"
-    },
-    {
       "title": "Why Pan American Silver Stock Was Tumbling Today",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T16:01:27.898575-03:00"
+    },
+    {
+      "title": "Aluguel sobe quase 6% até julho e continua bem acima da inflação, mostra FipeZap",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Alta de aluguel superando a inflação pode afetar a economia e os investimentos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T16:05:41.758096-03:00"
+    },
+    {
+      "title": "JPMorgan encerra relação bancária com Polymarket por preocupações regulatórias",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "JPMorgan encerra relação com Polymarket, indicando preocupações regulatórias que podem afetar outros atores do mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T16:05:46.596464-03:00"
+    },
+    {
+      "title": "Gasoduto no Novo México para data center da Oracle adiado para 2027",
+      "source": "Investing.com Brasil",
+      "score": 1.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:05:49.649233-03:00"
+    },
+    {
+      "title": "Por que a ação da AXT está subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:05:52.324090-03:00"
+    },
+    {
+      "title": "Catalyst Watch: Eyes on Walmart, Alibaba, Reddit, and McDonald's energy drink push",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T16:05:55.907570-03:00"
+    },
+    {
+      "title": "Dá para lucrar com as eleições? Conheça a estratégia que buscou até 586% em ciclos eleitorais passados",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:06:05.845008-03:00"
+    },
+    {
+      "title": "What we know about the alleged Iranian hacks on U.S. water utilities",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:06:11.264197-03:00"
+    },
+    {
+      "title": "Rise of AI shopping pushes merchants to protect loyalty, Adyen says",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:06:14.383513-03:00"
+    },
+    {
+      "title": "Prediction: Amazon Will Join Apple in the $4 Trillion Club Before 2030",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:06:17.091788-03:00"
+    },
+    {
+      "title": "US Lost 25% Of Its Reaper Drones In Iran War, Officials Estimate",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T16:06:20.995940-03:00"
+    },
+    {
+      "title": "Kennedy Center Votes To Put Trump's Name On Building, Close For Renovations",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:06:24.004506-03:00"
+    },
+    {
+      "title": "FBI Seized Mark Walter's Devices Months Before Record $12.5 Billion Lakers Sale",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T16:06:26.741925-03:00"
     }
   ]
 }
