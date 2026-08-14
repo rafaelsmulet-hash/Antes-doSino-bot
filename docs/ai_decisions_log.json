@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Colombia alista emergencia económica tras terremoto",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter impacto indireto na economia colombiana.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T10:55:37.634257-03:00"
-    },
-    {
-      "title": "MRV (MRVE3): por que as ações saltam mais de 10% mesmo com prejuízo de R$ 626 mi?",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Ação apresenta melhora operacional apesar de prejuízo contábil",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T10:55:42.708934-03:00"
-    },
-    {
-      "title": "PoderData/Aya: Flávio Bolsonaro cresce e empata com Lula no 2º turno",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T10:55:47.552272-03:00"
-    },
-    {
-      "title": "'Encha Seu Kindle': 10 livros de autoajuda que estão gratuitos na Amazon hoje",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T10:55:50.518343-03:00"
-    },
-    {
-      "title": "Bitcoin volta a cair em dia de saída de capital dos ETFs e dado de inflação dos EUA",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T10:55:53.192721-03:00"
-    },
-    {
-      "title": "Minerva S.A. reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T10:55:56.221001-03:00"
-    },
-    {
       "title": "Iran moves closer to BRICS bank membership as sanctions bite - reports",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T09:12:44.988479-03:00"
+    },
+    {
+      "title": "Zambia Electoral Body Suspends Vote Counting, Cites Violence",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:15:36.673203-03:00"
+    },
+    {
+      "title": "Applied Materials shares are down on guidance and margin concerns. Here’s why analysts say it’s time to buy.",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque menciona a demanda crescente por semicondutores para a indústria de inteligência artificial, o que pode ter impacto positivo no futuro da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T09:15:41.807316-03:00"
+    },
+    {
+      "title": "VerifyMe GAAP EPS of -$0.04, revenue of $1.91M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:15:44.446879-03:00"
+    },
+    {
+      "title": "Sprott Physical Silver Trust USD reports results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:15:47.049348-03:00"
+    },
+    {
+      "title": "Por dentro do superiate de US$ 300 milhões de Mark Zuckerberg, que teria violado a mais preciosa lei do mar",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:15:52.653703-03:00"
+    },
+    {
+      "title": "What to Know About Sezzle After Insider Filings, a Post-Earnings Drop, and a Quick Rebound",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:15:56.955372-03:00"
     }
   ]
 }
