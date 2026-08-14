@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wholesale inflation flattens out in July and price pressure ease",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:41:00.496370-03:00"
-    },
-    {
-      "title": "PPEI11 acumula R$ 181,8 mi em dividendos desde IPO; fundo projeta total de R$ 13,40 em 2026",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:41:10.525571-03:00"
-    },
-    {
-      "title": "EXCLUSIVO: André Fehlauer deixa a Livelo e assume a Gol",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:41:14.468576-03:00"
-    },
-    {
-      "title": "Terrestrial Energy Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:41:17.505391-03:00"
-    },
-    {
-      "title": "Intelligent Protection Management Corp. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:41:20.179460-03:00"
-    },
-    {
-      "title": "Putin visita ilhas que são ponto de discórdia na relação da Rússia com o Japão",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia politica sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:46:24.288133-03:00"
-    },
-    {
-      "title": "H&M anuncia quatro novas lojas no Brasil e expande operação para o Nordeste",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Abertura de novas lojas pode impulsionar crescimento da empresa e aumentar a confiança dos investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:46:27.162405-03:00"
-    },
-    {
-      "title": "Irã e EUA apresentam reivindicações conflitantes sobre controle do Estreito de Ormuz",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não está diretamente relacionada ao mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:46:29.971855-03:00"
-    },
-    {
-      "title": "Horas após governo de SP acionar STF, Fazenda libera R$ 5,4 bilhões para o estado",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Liberação de recursos financeiros pode impulsionar a economia do estado e potencialmente afetar positivamente a confiança dos investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:46:32.918424-03:00"
-    },
-    {
-      "title": "Por que as ações da Abeona Therapeutics estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:46:37.786866-03:00"
-    },
-    {
-      "title": "Farmacêuticas retêm pedidos na Suíça por causa de política de preços dos EUA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:46:40.505655-03:00"
-    },
-    {
       "title": "Pré-encomendas do Samsung Galaxy Z8 crescem mais de 30% globalmente",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T07:46:11.793420-03:00"
+    },
+    {
+      "title": "Embraer: a oportunidade de US$ 10 bi com disputa por contrato militar da Índia",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Conquista de contrato militar da Índia poderia elevar em 160% a carteira de pedidos da área de Defesa & Segurança da Embraer",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:50:42.719522-03:00"
+    },
+    {
+      "title": "Grupo Mateus (GMAT3) lucra R$ 237 milhões no 2T, queda anual de 39,3%",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Aumento na receita líquida e lucro do Grupo Mateus, indicando saúde financeira e potencial de crescimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:50:45.806741-03:00"
+    },
+    {
+      "title": "Ações da Nintendo sobem 7% após jogo de Pokémon vender 5 milhões de cópias",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Venda de 5 milhões de cópias de jogo de grande sucesso é um sinal positivo para a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:50:51.147004-03:00"
+    },
+    {
+      "title": "Rates are at multiyear highs, yet stocks hit fresh records. Here’s how long the defiance may last.",
+      "source": "MarketWatch",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque indica que a relação entre juros e ações está se tornando cada vez mais desfavorável para os investimentos em títulos, o que pode ser positivo para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:50:54.400653-03:00"
+    },
+    {
+      "title": "Valneva jumps as Lyme disease vaccine developed with Pfizer undergoes EU review",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A vacina está sendo revisada pela UE, o que pode ser um passo importante para a aprovação e o lançamento no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:50:57.474874-03:00"
+    },
+    {
+      "title": "Martello Technologies Group Inc. reports FQ1 results",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa divulgou resultados financeiros, o que pode influenciar as expectativas dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:51:00.362999-03:00"
+    },
+    {
+      "title": "Netflix narrows its game developer ambitions further",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A empresa está se concentrando em seu negócio principal de streaming, o que pode ser positivo para ações de empresas de entretenimento",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:51:03.384705-03:00"
+    },
+    {
+      "title": "Balde Cheio: programa da Embrapa ajuda pequenas propriedades a melhorar produção de leite",
+      "source": "G1 Economia",
+      "score": 0.0,
+      "motivo": "programa da Embrapa não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:51:12.034058-03:00"
+    },
+    {
+      "title": "Conheça o abacaxi que dura mais tempo após a colheita",
+      "source": "G1 Economia",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:51:14.818886-03:00"
+    },
+    {
+      "title": "Warrior Met Coal (HCC) Q2 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações novas ou impactantes sobre o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:51:21.108573-03:00"
+    },
+    {
+      "title": "ANZ says property tax changes hit mortgage demand, posts slightly higher profit",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a demanda por empréstimos imobiliários, o que pode ter impacto no mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:51:24.169612-03:00"
     }
   ]
 }
