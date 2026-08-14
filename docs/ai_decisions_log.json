@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Microsoft kills off unsuccessful AI features while merging its separate Copilot apps",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T12:31:30.200057-03:00"
-    },
-    {
-      "title": "Beyond SpaceX: 4 IPO Stocks Quietly Crushing The Market",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T12:31:33.037884-03:00"
-    },
-    {
-      "title": "Entry-Level, White-Collar Jobs to See 'Massive' AI Impact, Says Virginie Maisonneuve",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas sim para a economia e a força de trabalho.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:35:36.328899-03:00"
-    },
-    {
-      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
-      "source": "CNBC - Economy",
-      "score": 3.0,
-      "motivo": "A notícia confirma a expectativa de inflação, mas não traz informações surpresa ou impactante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:35:39.963672-03:00"
-    },
-    {
-      "title": "EUA e Japão planejam a mina submarina mais profunda do mundo para desafiar a China",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:35:43.194898-03:00"
-    },
-    {
-      "title": "Ayala Corporation 1H GAAP diluted EPS of ₱16.36, revenue of ₱192.08B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:35:48.081685-03:00"
-    },
-    {
-      "title": "Alithya Group GAAP EPS of -C$0.03, revenue of C$105.05M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T12:35:50.716522-03:00"
-    },
-    {
       "title": "Vital Infrastructure Property Trust reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T10:46:42.644899-03:00"
+    },
+    {
+      "title": "Vendas no varejo dos EUA frustram projeções e caem 0,6% em julho ante junho",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "redução nas vendas no varejo nos EUA pode afetar a economia e, consequentemente, o mercado financeiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:50:48.045917-03:00"
+    },
+    {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai e tenta defender os 166 mil pontos",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A noticia menciona a queda da Ibovespa, o que pode ter impacto no mercado brasileiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T10:50:50.845642-03:00"
+    },
+    {
+      "title": "I have a 9-to-5 job and started dating a bartender. Can I have a future with someone who works nights?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:50:55.372595-03:00"
+    },
+    {
+      "title": "U.S. debt on track to hit $50T by 2029 - BofA",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:50:58.029213-03:00"
+    },
+    {
+      "title": "Adia Med reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:51:00.622423-03:00"
+    },
+    {
+      "title": "Mensalidade de R$ 1,8 mil: como esta rede de idiomas quer expandir com franquias de ‘escolinhas’ bilíngues para crianças",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:51:07.916918-03:00"
+    },
+    {
+      "title": "Farage Crushes Clacton By-Election With 63% As Comedy Candidates Dominate Longest Ballot In British History",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T10:51:13.955650-03:00"
     }
   ]
 }
