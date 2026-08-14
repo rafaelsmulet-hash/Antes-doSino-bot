@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SIMPAR reverte prejuízo ajustado e lucra R$ 52,2 milhões no segundo trimestre",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "A empresa reverteu prejuízo e apresentou lucro ajustado, o que é positivo para a ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:14:41.313785-03:00"
-    },
-    {
-      "title": "Paraná Banco lucra R$ 40,1 milhões entre abril e junho, alta de 54,2%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "o lucro do Paraná Banco é um indicador positivo para o setor bancário",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:14:44.100593-03:00"
-    },
-    {
-      "title": "MRV&CO registra prejuízo de R$ 626,6 milhões no segundo trimestre",
-      "source": "UOL Economia",
-      "score": 4.0,
-      "motivo": "a empresa registrou um prejuízo, mas também um lucro líquido ajustado positivo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:14:46.871964-03:00"
-    },
-    {
-      "title": "Iguá Sergipe registra prejuízo de R$ 82,2 milhões entre abril e junho",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "prejuízo líquido significativo da Iguá Sergipe impacta negativamente a empresa e pode afetar suas ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:14:49.686087-03:00"
-    },
-    {
-      "title": "Iguá Rio tem Ebitda ajustado de R$ 207,1 milhões no segundo trimestre, alta de 24,3%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "alta de Ebitda indica melhora de desempenho da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:14:52.454384-03:00"
-    },
-    {
       "title": "Grupo GPS lucra R$ 410,0 milhões no segundo trimestre, alta de 163%",
       "source": "UOL Economia",
       "score": 5.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T21:11:40.413041-03:00"
+    },
+    {
+      "title": "Grupo Petz Cobasi tem lucro líquido de R$70,3 mi no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Resultados financeiros positivos do Grupo Petz Cobasi são positivos para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:16:12.178948-03:00"
+    },
+    {
+      "title": "VAALCO Energy (EGY) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia é sobre uma transcrição de conferência de resultados financeiros de uma empresa, que não é relevante para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:16:19.277562-03:00"
+    },
+    {
+      "title": "Power Solutions International (PSIX) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "O relatório de lucros é uma informação rotineira para os investidores.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:16:22.309213-03:00"
+    },
+    {
+      "title": "StandardAero (SARO) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:16:25.049061-03:00"
+    },
+    {
+      "title": "Travis Kelce and Tom Holland know being obsessed with your superstar wife is good for business",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:16:36.420622-03:00"
     }
   ]
 }
