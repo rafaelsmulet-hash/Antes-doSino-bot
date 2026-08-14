@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ray Dalio is having a Euro summer vacation to remember",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:15:12.114896-03:00"
-    },
-    {
-      "title": "Aluminum Extends Fall From Seven-Week High as Supply Fears Ease",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a oferta de alumínio, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:23:37.892110-03:00"
-    },
-    {
-      "title": "Congresso aprova aval a despesa fora do limit, mas garante ajuste de R$ 10 bi em 2027",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "Aumento de despesa fora do limite pode pressionar o orçamento e afetar a economia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:23:41.315527-03:00"
-    },
-    {
       "title": "Raízen Energia pede à CVM conversão de registro de categoria B para A",
       "source": "InfoMoney",
       "score": 4.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T21:26:04.916970-03:00"
+    },
+    {
+      "title": "Bolsa perde R$ 279 bi em sete pregões; é hora de entrar no Ibovespa?",
+      "source": "UOL Economia",
+      "score": 8.0,
+      "motivo": "Perda significativa de valor de mercado em sete pregões",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:31:29.901656-03:00"
+    },
+    {
+      "title": "Bitcoin and ethereum prices today, Wednesday, August 12, 2026:  Crypto prices rise with CPI report on deck",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O relatório de CPI é um indicador importante para a economia e pode afetar a percepção dos investidores sobre a inflação, o que pode influenciar os preços das criptomoedas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:31:37.337293-03:00"
+    },
+    {
+      "title": "Lumentum Holdings Inc. Q4 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "O relatório de lucros é relevante para os investidores, pois fornece informações sobre o desempenho financeiro da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:31:40.832013-03:00"
     }
   ]
 }
