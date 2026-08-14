@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Warner Bros. Discovery President Sells $16 Million Stock After 146% Rally",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:32:05.915947-03:00"
-    },
-    {
-      "title": "Is Novo Nordisk's Wegovy-Fueled Rebound Evaporating?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:32:08.564846-03:00"
-    },
-    {
-      "title": "Archer Aviation Stock Has Surged 45% in the Past Month. Should You Buy Into the Rally?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:32:11.260041-03:00"
-    },
-    {
-      "title": "KVH Industries (KVHI) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:32:13.928349-03:00"
-    },
-    {
-      "title": "Cisco Drops 9% and Holds the Dow Back While the Nasdaq Climbs. Common Denominator: Memory Chips.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:32:16.659795-03:00"
-    },
-    {
-      "title": "European Markets Close Weak On U.S.-Iran Tensions",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:32:19.330544-03:00"
-    },
-    {
-      "title": "A nova missão dos CEOs é ser um maestro de agentes de IA, segundo o futurista Neil Redding",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:32:29.802193-03:00"
-    },
-    {
-      "title": "Supreme Court Sets November Arguments In Religious Liberty, Prison Medical Care, And Agency Power Cases",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:32:33.226587-03:00"
-    },
-    {
-      "title": "Running The Hormuz Gauntlet: Recruitment Ad Offers Tanker Crews Double Pay To Brave Drone Strikes",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:32:35.933410-03:00"
-    },
-    {
-      "title": "Treasury Department Ends Ownership Reporting For US Small Businesses",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:32:38.623309-03:00"
-    },
-    {
-      "title": "LIS Technologies' New $6.2M Oak Ridge Building Is The Missing Link In Nano's Fuel-To-Reactor Stack",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:32:41.347097-03:00"
-    },
-    {
       "title": "Paramount Mulling California Exodus Amid Antitrust Scrutiny",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-14T12:56:31.953211-03:00"
+    },
+    {
+      "title": "EUA avaliam lealdade de aliados da Otan a Trump antes de rever apoio militar",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "a noticia e sobre politica externa e nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:00:48.855907-03:00"
+    },
+    {
+      "title": "MBRF busca mitigar riscos nas compras de grãos diante do El Niño",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "noticia especifica sobre riscos de compras de grãos devido ao El Niño",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:00:55.028499-03:00"
+    },
+    {
+      "title": "Conversas da Braskem com credores são construtivas e avançam bem, diz novo diretor financeiro",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "avancos nas negociações com credores são positivos para a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:00:57.854194-03:00"
+    },
+    {
+      "title": "Ações da YXT.Com Group despencam 35% após oferta dilutiva",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:01:00.480339-03:00"
+    },
+    {
+      "title": "Samarco tem prejuízo de US$328,5 mi no 2º tri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:01:03.115036-03:00"
+    },
+    {
+      "title": "Polônia - Ações fecharam o pregão em alta e o Índice WIG30 avançou 0,67%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:01:05.759549-03:00"
+    },
+    {
+      "title": "Turquia - Ações fecharam o pregão em alta e o Índice BIST 100 avançou 0,28%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:01:08.408134-03:00"
+    },
+    {
+      "title": "Dinamarca - Ações fecharam o pregão em alta e o Índice OMX Copenhagen 20 avançou 0,06%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:01:11.060365-03:00"
+    },
+    {
+      "title": "Sombr no Lolla? Cantor se apresenta no Brasil em 2027, diz jornalista",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:01:14.040511-03:00"
+    },
+    {
+      "title": "Phillips 66, Marathon Petroleum held takeover talks - Semafor",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:01:16.970670-03:00"
+    },
+    {
+      "title": "I tried Martha Stewart's hack for making the 'best scrambled eggs in the whole world.' They were deliciously creamy.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:01:27.250815-03:00"
     }
   ]
 }
