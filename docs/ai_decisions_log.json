@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Writer introduces new AI model and upgraded harness to contain token costs",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:16:39.705013-03:00"
-    },
-    {
-      "title": "Kennedy Center board votes to put Trump name on facade despite court order",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:16:42.878520-03:00"
-    },
-    {
-      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
-      "source": "WSJ Markets",
-      "score": 3.0,
-      "motivo": "A notícia é relevante por tratar de uma aquisição de uma empresa de energia, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:11.411269-03:00"
-    },
-    {
-      "title": "Fitch reafirma rating dos EUA em ‘AA+’ e mantém perspectiva estável",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Fitch reafirma o rating dos EUA, mas projeta déficit fiscal e inflação acima da meta do Fed, o que pode ter impacto na economia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T18:21:14.482822-03:00"
-    },
-    {
-      "title": "'Tesouraço', corte de imposto e regras para o STF: veja o plano de governo de Flávio Bolsonaro",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "a noticia e sobre politica e nao tem relevancia direta para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:19.620872-03:00"
-    },
-    {
-      "title": "Assurant declares $0.88 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:22.897965-03:00"
-    },
-    {
-      "title": "EPR Properties declares $0.31 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:25.551310-03:00"
-    },
-    {
-      "title": "Boyd Gaming declares $0.20 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:28.209319-03:00"
-    },
-    {
-      "title": "Global Atomic Corporation GAAP EPS of C$0.01",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:31.162302-03:00"
-    },
-    {
-      "title": "Medical Properties Trust declares $0.09 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:33.827351-03:00"
-    },
-    {
-      "title": "Lear declares $0.77 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:36.477517-03:00"
-    },
-    {
-      "title": "CDP Holdings declares $0.32 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:39.911816-03:00"
-    },
-    {
-      "title": "Renova Energia tem prejuízo de R$ 3,0 milhões entre abril e junho, alta de 1.257,3%",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "prejuízo significativo e alta percentagem de crescimento do prejuízo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T18:21:49.320549-03:00"
-    },
-    {
-      "title": "Scott Bessent says America’s Founding Fathers ‘could not have imagined’ today’s economy — how to bet big on the USA",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:21:55.735087-03:00"
-    },
-    {
       "title": "Fidelity Adds Staking Payments To Ethereum ETF",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T18:11:02.459159-03:00"
+    },
+    {
+      "title": "Bolsas de NY fecham em leve baixa olhando perspectivas para inflação e gastos com IA",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "Baixas nas bolsas de NY devido a preocupações com inflação e gastos com IA",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T18:15:53.094814-03:00"
+    },
+    {
+      "title": "3G Capital Partners adds SNDK, INTC, exits AMZN, ADI among Q2 moves",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Aquisições e vendas de ações de empresas de tecnologia impactam o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:15:59.249037-03:00"
+    },
+    {
+      "title": "AppLovin vs. SoundHound AI: Comparing Recent Revenue Growth Trajectories for These Tech Companies",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia compara as trajetórias de crescimento de receita de duas empresas de tecnologia, o que pode influenciar as expectativas de investidores e o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:16:06.561265-03:00"
+    },
+    {
+      "title": "Factorial Energy is Now Oversold (FAC)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:16:09.209530-03:00"
+    },
+    {
+      "title": "CrowdStrike vs. IonQ: Which Technology Stock Is a Better Buy in 2026?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T18:16:11.885098-03:00"
+    },
+    {
+      "title": "RSI Alert: WidePoint (WYY) Now Oversold",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:16:14.530357-03:00"
+    },
+    {
+      "title": "SPDR Bloomberg 3-12 Month T-Bill Breaks Above 200-Day Moving Average - Bullish for BILS",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T18:16:17.232915-03:00"
+    },
+    {
+      "title": "MAAY Crowded With Sellers",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T18:16:19.863925-03:00"
+    },
+    {
+      "title": "See Which Recent 13F Filers Hold LHX But Castle Hook Partners and Westchester Capital Management Exited",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:16:22.665179-03:00"
+    },
+    {
+      "title": "PIMCO California Municipal Income Fund Breaks Below 200-Day Moving Average - Notable for PCQ",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T18:16:25.380163-03:00"
+    },
+    {
+      "title": "Ridgepost Capital Breaks Below 200-Day Moving Average - Notable for RPC",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T18:16:28.061845-03:00"
+    },
+    {
+      "title": "Viver registra prejuízo líquido de R$ 6,448 milhões no segundo trimestre, queda de 11,5%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T18:16:33.546894-03:00"
+    },
+    {
+      "title": "Micron Technology (MU): A Clear Beneficiary of the AI Infrastructure Buildout?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:16:39.587349-03:00"
+    },
+    {
+      "title": "Ducommun Incorporated (DCO)’s Quiet Comeback: How It Doubled Investors’ Money in 2026",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:16:42.334054-03:00"
     }
   ]
 }
