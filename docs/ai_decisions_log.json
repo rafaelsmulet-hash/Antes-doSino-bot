@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Canetas emagrecedoras viram febre: 1,3 milhão de pedidos movimentam R$ 2,3 bilhões em 6 meses",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:21:13.070380-03:00"
-    },
-    {
-      "title": "Advanced Flower Capital Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:21:19.530170-03:00"
-    },
-    {
-      "title": "Applied Industrial Technologies, Inc. Q4 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:21:22.190475-03:00"
-    },
-    {
-      "title": "LENSAR, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:21:24.827444-03:00"
-    },
-    {
-      "title": "Eagle Point Credit Company Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:21:27.615354-03:00"
-    },
-    {
-      "title": "What Dip? Why Microsoft Stock's Post-Earnings Momentum Is Set To Continue.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:21:30.288147-03:00"
-    },
-    {
-      "title": "Do carbonara ao choripán: pratos clássicos em novas versões",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:25:38.986777-03:00"
-    },
-    {
-      "title": "Zoetis rises as FDA grants EUA for Simparica TRIO for New World screwworm",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A aprovação da FDA é relevante para o mercado de ações da Zoetis.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:25:42.199813-03:00"
-    },
-    {
-      "title": "Nouveau Monde Graphite GAAP EPS of -C$0.04",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:25:44.845977-03:00"
-    },
-    {
-      "title": "New Found Gold GAAP EPS of -C$0.03, revenue of C$15.72M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:25:47.545872-03:00"
-    },
-    {
-      "title": "Conheça os executivos que compraram o Los Angeles Lakers por US$ 12,5 bilhões",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:25:54.156429-03:00"
-    },
-    {
-      "title": "SEC May Advance Crypto Rules, 24/7 Trading Without Clarity Act. OCC Paves Way For Crypto Banks.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:25:57.904459-03:00"
-    },
-    {
-      "title": "Is It Time to 'Buy the Dip' on eBay Stock?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A redução de custos e revisão de preços podem melhorar a rentabilidade da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:26:00.903580-03:00"
-    },
-    {
       "title": "I made Ina Garten's blueberry muffins. The simple recipe was a hit with the whole family.",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-14T12:46:02.204984-03:00"
+    },
+    {
+      "title": "Tyson to Close More Beef Plants as Cattle Shortage Drags On",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a capacidade de produção de carne de boi nos EUA.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:50:44.306686-03:00"
+    },
+    {
+      "title": "Quem pode participar de debates eleitorais neste ano? Conheça as regras",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia sobre eleições não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:50:49.519981-03:00"
+    },
+    {
+      "title": "Em junho, vendas no varejo crescem 0,5%",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:50:52.870575-03:00"
+    },
+    {
+      "title": "‘It’s a double-edged sword’: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:50:57.360138-03:00"
+    },
+    {
+      "title": "Digi Power X targets phase 1 ready for service in December 2026 while anticipating Q3 to increase by approximately over 100% vs. Q2",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:51:00.095705-03:00"
+    },
+    {
+      "title": "Scienture Holdings Q2 non-GAAP EPS of -$0.07, revenue of $0.34M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:51:03.035146-03:00"
+    },
+    {
+      "title": "S&P financial index eyes record 11th straight weekly gain: Here are its top 10 holdings",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T12:51:05.705193-03:00"
+    },
+    {
+      "title": "Wall Street drifts lower a day after the S&P 500 notched a record high",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T12:51:08.340706-03:00"
+    },
+    {
+      "title": "Esqueça o remédio, a nova aposta das farmácias de luxo de São Paulo é vender beleza",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:51:14.212750-03:00"
+    },
+    {
+      "title": "A bomba-relógio do crédito que pode desacelerar o Brasil",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:51:18.381972-03:00"
+    },
+    {
+      "title": "JPMorgan Chase: How To Limit Risk On A Stock That's Doing Well",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T12:51:21.077450-03:00"
+    },
+    {
+      "title": "Morgan Stanley, JPMorgan Increase Crypto ETF Holdings in Q2",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T12:51:23.710453-03:00"
+    },
+    {
+      "title": "Before the lawsuit: Trucking deposition preparation",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T12:51:26.373577-03:00"
     }
   ]
 }
