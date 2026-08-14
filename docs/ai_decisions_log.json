@@ -1,132 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Private companies added just 44,000 workers in July, below expectations, ADP reports",
-      "source": "CNBC - Economy",
-      "score": 5.0,
-      "motivo": "A notícia pode influenciar a percepção dos investidores sobre a economia e, consequentemente, os mercados financeiros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:13:49.061857-03:00"
-    },
-    {
-      "title": "Zema diz que obrigará ‘homens saudáveis com idade de trabalhar’ a aceitar emprego",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:13:52.132263-03:00"
-    },
-    {
-      "title": "Banco do Brasil: lucro supera projeções, mas por que mercado não se animou com 2T?",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "lucro ajustado superou estimativas, mas inadimplência e pressão sobre capital desanimaram os analistas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:13:55.217594-03:00"
-    },
-    {
-      "title": "Minério de ferro oscila pouco com redução de perdas das siderúrgicas e fretes firmes",
-      "source": "Money Times",
-      "score": 4.0,
-      "motivo": "redução de perdas das siderúrgicas e custos de frete firmes são contrabalançados pela queda nas exportações de aço da China",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:13:59.986027-03:00"
-    },
-    {
-      "title": "Operação mira grupo de bets e bloqueia até R$ 1 bilhão",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:14:03.986114-03:00"
-    },
-    {
-      "title": "Por que a Pandora troca prata por platina mesmo após o preço do metal despencar?",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A empresa elevou a projeção de crescimento e margem para 2026, indicando confiança no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:14:06.849176-03:00"
-    },
-    {
-      "title": "Zenas BioPharma GAAP EPS of -$1.77 misses by $0.65, revenue of $1M",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A notícia de perda líquida acima do esperado pode afetar a confiança dos investidores na empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:14:09.890129-03:00"
-    },
-    {
-      "title": "MediWound beats top-line and bottom-line estimates; reaffirms FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:14:12.788785-03:00"
-    },
-    {
-      "title": "Chicago Atlantic BDC NII of $0.34 misses by $0.06",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para os investidores que seguem a empresa, mas não tem impacto significativo no mercado em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:14:15.684259-03:00"
-    },
-    {
-      "title": "Telesat GAAP EPS of -$10.89, revenue of $79.49M beats by $22.62M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A superação das expectativas de receita foi considerada relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:14:19.029722-03:00"
-    },
-    {
-      "title": "BK Technologies Non-GAAP EPS of $1.01 beats by $0.14, revenue of $23.4M beats by $0.8M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas em lucro e receita, o que é considerado positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:14:22.014408-03:00"
-    },
-    {
-      "title": "Quarterhill GAAP EPS of -$0.05 misses by $0.04, revenue of $42.5M misses by $0.66M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado pois afeta a expectativa de lucro da empresa, mas não é um evento de grande impacto.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:14:24.984590-03:00"
-    },
-    {
-      "title": "Aveanna Healthcare Holdings Non-GAAP EPS of $0.22 beats by $0.05, revenue of $670.48M beats by $31.85M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Resultados financeiros superaram as expectativas, indicando potencial de crescimento para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:14:27.927719-03:00"
-    },
-    {
-      "title": "CSN Mineração lucra R$ 219,4 milhões entre abril e junho, alta de 89,5%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "A CSN Mineração apresentou um lucro líquido significativo, o que pode ser visto como um sinal positivo para a empresa e potencialmente para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:14:38.435121-03:00"
-    },
-    {
       "title": "SIMPAR reverte prejuízo ajustado e lucra R$ 52,2 milhões no segundo trimestre",
       "source": "UOL Economia",
       "score": 5.0,
@@ -17999,6 +17873,132 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-13T21:06:02.157953-03:00"
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "source": "WSJ Markets",
+      "score": 2.0,
+      "motivo": "Notícia rotineira sobre empresas do setor financeiro sem impacto imediato no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:10:51.842902-03:00"
+    },
+    {
+      "title": "Quina hoje, concurso 7091: confira o resultado sorteado nesta quinta-feira (13)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de concurso não afeta o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:10:55.183761-03:00"
+    },
+    {
+      "title": "Lotofácil hoje, concurso 3761: confira o resultado sorteado nesta quinta-feira (13)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "resultado de jogo de azar",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:10:58.217310-03:00"
+    },
+    {
+      "title": "EUA planejam operações militares em terra contra narcotraficantes na América Latina",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:11:01.104345-03:00"
+    },
+    {
+      "title": "Pedevco reiterates $60M-$70M 2026 adjusted EBITDA guidance while planning 20+ gross wells",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:11:07.400295-03:00"
+    },
+    {
+      "title": "Post (POST) Q3 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:11:11.446471-03:00"
+    },
+    {
+      "title": "ICU Medical (ICUI) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:11:14.157240-03:00"
+    },
+    {
+      "title": "StepStone (STEP) Q1 2027 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:11:16.828067-03:00"
+    },
+    {
+      "title": "iRhythm (IRTC) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:11:19.492744-03:00"
+    },
+    {
+      "title": "Organogenesis (ORGO) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:11:22.156774-03:00"
+    },
+    {
+      "title": "Verastem (VSTM) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:11:24.831593-03:00"
+    },
+    {
+      "title": "1 Jaw-Dropping Metric That Shows Why Amazon Is a Force to Be Reckoned With in the AI Arms Race",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T21:11:27.585321-03:00"
+    },
+    {
+      "title": "Nearly 50% of Bitcoin Supply in Loss as BTC Price Struggles Below $65K",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:11:37.662630-03:00"
+    },
+    {
+      "title": "Bitcoin and ethereum prices today, Wednesday, August 12, 2026:  Crypto prices rise with CPI report on deck",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:11:40.413041-03:00"
     }
   ]
 }

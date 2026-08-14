@@ -1,56 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 41326,
-  "aprovadas_pelo_fluxo_atual": 708,
-  "descartadas_pelos_filtros_atuais": 40618,
-  "score_medio_materialidade": 3.95,
+  "total_ingeridas": 41574,
+  "aprovadas_pelo_fluxo_atual": 715,
+  "descartadas_pelos_filtros_atuais": 40859,
+  "score_medio_materialidade": 3.92,
   "seriam_breaking": 32,
-  "iriam_para_rodada": 254,
-  "seriam_descartadas_pelo_novo_sistema": 1714,
-  "total_divergencias": 657,
+  "iriam_para_rodada": 244,
+  "seriam_descartadas_pelo_novo_sistema": 1724,
+  "total_divergencias": 658,
   "divergencias": [
-    {
-      "title": "Private companies added just 44,000 workers in July, below expectations, ADP reports",
-      "source": "CNBC - Economy",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Zenas BioPharma GAAP EPS of -$1.77 misses by $0.65, revenue of $1M",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "MediWound beats top-line and bottom-line estimates; reaffirms FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Telesat GAAP EPS of -$10.89, revenue of $79.49M beats by $22.62M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "BK Technologies Non-GAAP EPS of $1.01 beats by $0.14, revenue of $23.4M beats by $0.8M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Aveanna Healthcare Holdings Non-GAAP EPS of $0.22 beats by $0.05, revenue of $670.48M beats by $31.85M",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
     {
       "title": "Inuvo, Inc. Q2 2026 Earnings Call Summary",
       "source": "Yahoo Finance",
@@ -148,6 +106,48 @@
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que as ações da Netflix estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "PBG tem prejuízo ajustado de R$ 58,6 milhões no segundo trimestre, 53,1% maior",
+      "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "O eclipse no crédito privado, o resultado do Banco do Brasil (BBAS3) e o que mais move o mercado hoje",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "DeepSeek Won't Sink U.S. AI Titans",
+      "source": "WSJ Markets",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Vertical Aerospace GAAP EPS of -£0.32",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Wolverine World Wide Raises 2026 Guidance",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
