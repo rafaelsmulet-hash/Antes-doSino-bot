@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Grupo GPS lucra R$ 410,0 milhões no segundo trimestre, alta de 163%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "alta significativa no lucro líquido do Grupo GPS",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:14:55.225695-03:00"
-    },
-    {
       "title": "Desktop tem lucro líquido ajustado de R$ 29,2 milhões no segundo trimestre, queda de 17%",
       "source": "UOL Economia",
       "score": 5.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T21:16:36.420622-03:00"
+    },
+    {
+      "title": "Here's the biggest risk to America's data center building boom",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca um risco concreto para o setor de centros de dados, que é relevante para investidores e empresas que operam nesse mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T21:20:43.708511-03:00"
     }
   ]
 }
