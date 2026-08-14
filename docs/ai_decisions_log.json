@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Explosão em instalação de energia no porto de Roterdã deixa 1 morto",
-      "source": "Investing.com Brasil",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:10:54.507506-03:00"
-    },
-    {
-      "title": "Por que a ação da Robinhood está disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Ação da Robinhood disparando devido a resultados financeiros acima do esperado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:10:57.370820-03:00"
-    },
-    {
-      "title": "Por que as ações da CoreWeave estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a noticias sobre ações da CoreWeave é relevante para o mercado financeiro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:00.482499-03:00"
-    },
-    {
-      "title": "Por que as ações da MapLight Therapeutics estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:03.188119-03:00"
-    },
-    {
-      "title": "Citi vê bebidas energéticas impulsionando crescimento de ações de restaurantes",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:05.935530-03:00"
-    },
-    {
-      "title": "Ações da MapLight Therapeutics sobem com captação de US$ 150 mi",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:08.640554-03:00"
-    },
-    {
-      "title": "Por que as ações da Bullish estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:11.351828-03:00"
-    },
-    {
-      "title": "Por que as ações da Holley estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:14.030433-03:00"
-    },
-    {
-      "title": "Números de Zubeldía no Fluminense: do início histórico à queda que encerrou ciclo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:18.223209-03:00"
-    },
-    {
-      "title": "Mariah Carey abre venda de show extra; ingressos chegam a R$ 9,9 mil",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:21.183929-03:00"
-    },
-    {
-      "title": "Dell’s stock has beaten Micron and AMD this year — and now it’s adding to its gains",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T11:11:24.323814-03:00"
-    },
-    {
-      "title": "Cisco's strong Q4 results put these ten ETFs in focus",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:27.430246-03:00"
-    },
-    {
-      "title": "Freenet AG 1H GAAP EPS of €0.80, revenue of €1.51B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:30.162107-03:00"
-    },
-    {
-      "title": "Toppoint Holdings GAAP EPS of -$0.01, revenue of $4.6M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:32.856843-03:00"
-    },
-    {
-      "title": "Flanigan's GAAP EPS of $1.11, revenue of $56.2M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:35.544759-03:00"
-    },
-    {
-      "title": "NetScout (NTCT) Q1 2027 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T11:11:39.684657-03:00"
-    },
-    {
-      "title": "IonQ Could Become a Massive Winner in the Next Phase of AI Infrastructure",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:11:42.402659-03:00"
-    },
-    {
       "title": "TIC Solutions (TIC) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-14T09:31:22.342523-03:00"
+    },
+    {
+      "title": "Russian Regions Face New Fuel Crunch As Kyiv Hits Refineries",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A crise de combustível pode afetar a economia russa e influenciar a política energética do país.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:35:47.891250-03:00"
+    },
+    {
+      "title": "BC decreta liquidação de administradora de consórcios e de financeira da Simpala",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "A liquidação de uma financeira pode afetar a confiança no sistema financeiro e influenciar a tomada de decisão dos investidores.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T09:35:55.368135-03:00"
+    },
+    {
+      "title": "IRB(Re) tem lucro líquido de R$ 157,5 milhões no 2º trimestre",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A notícia apresenta um resultado financeiro positivo para a empresa IRB, o que pode ser visto como um sinal de saúde financeira e potencial de crescimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:35:58.262272-03:00"
+    },
+    {
+      "title": "Ibovespa futuro sobe aos 171 mil pontos, mas reciprocidade de tarifas dos EUA fica no radar",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T09:36:02.355147-03:00"
+    },
+    {
+      "title": "Minério de ferro sobe com queda nos estoques e sinais de estímulos da China",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T09:36:04.949588-03:00"
+    },
+    {
+      "title": "Ethereum faz grande mudança em cripto para se preparar para a era quântica",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:08.829622-03:00"
+    },
+    {
+      "title": "VistaGen Therapeutics GAAP EPS of -$0.30 beats by $0.06, revenue of $1.48M beats by $1.31M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:11.666018-03:00"
+    },
+    {
+      "title": "Data Storage GAAP EPS of -$0.52, revenue of $0.36M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:14.245427-03:00"
+    },
+    {
+      "title": "U.S. retail sales unexpectedly dip in July",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:16.832593-03:00"
+    },
+    {
+      "title": "Moleculin Biotech GAAP EPS of -$1.40 misses by $0.53",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:19.419184-03:00"
+    },
+    {
+      "title": "Lantheus gains FDA nod for tau PET imaging agent in Alzheimer’s",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:22.012268-03:00"
+    },
+    {
+      "title": "Our Bond, Inc. reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:24.591859-03:00"
+    },
+    {
+      "title": "Inadimplência bate recorde e atinge quase metade dos adultos no Brasil",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T09:36:33.925673-03:00"
+    },
+    {
+      "title": "Get Paid 18% A Year To Cap Your ANET Stock At 21% Higher",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:39.305954-03:00"
+    },
+    {
+      "title": "Intellinetics, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:41.890328-03:00"
+    },
+    {
+      "title": "I spent $2,700 flying around the world just to keep my airline status. I got stuck in Qatar and ran out of clothes, but it was worth it.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:44.664340-03:00"
+    },
+    {
+      "title": "Cisco shares slide 8% despite earnings beat and stronger-than-expected guidance",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:36:47.394832-03:00"
     }
   ]
 }
