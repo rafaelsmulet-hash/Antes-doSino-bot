@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SpaceX Supplier Tumbles After First Earnings Report Since IPO",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T10:56:35.626639-03:00"
-    },
-    {
-      "title": "Gas Vs. Electric: Global EV Sales Still Rising In 2026, But U.S. Looks Ugly",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T10:56:38.293088-03:00"
-    },
-    {
-      "title": "SpaceX Jumps: New Grok Model Released; Elon Musk Holds Companywide Meeting",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T10:56:40.985958-03:00"
-    },
-    {
-      "title": "Em junho, indústria recua em 12 dos 15 locais pesquisados",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:00:44.914653-03:00"
-    },
-    {
-      "title": "Ações do Jack In The Box disparam após resultado acima do esperado",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "resultado acima do esperado na empresa Jack In The Box",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:00:48.431960-03:00"
-    },
-    {
-      "title": "Paragon Technologies GAAP EPS of $0.05, revenue of $33.3M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Resultados financeiros rotineiros da empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T11:00:52.013222-03:00"
-    },
-    {
       "title": "Metaplanet Denies Bitcoin Sale",
       "source": "Yahoo Finance",
       "score": 2.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T09:21:27.084617-03:00"
+    },
+    {
+      "title": "Dólar avança a R$ 5,19 com fuga de investidores estrangeiros, maior nível desde janeiro",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "fuga de investidores estrangeiros afeta o mercado brasileiro",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:25:52.113706-03:00"
+    },
+    {
+      "title": "U.S. national debt about to reach bleak $40 trillion milestone — and it’s likely hit $50 trillion soon",
+      "source": "MarketWatch",
+      "score": 6.0,
+      "motivo": "Expectativa de aumento da dívida nacional pode influenciar a escolha entre ações e títulos de dívida.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T09:25:55.846015-03:00"
+    },
+    {
+      "title": "Source Rock Royalties declares CAD 0.0065 dividend",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Dividendo é um sinal de saúde financeira da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:25:58.834028-03:00"
+    },
+    {
+      "title": "RedotPay delays ~$1B U.S. IPO plan amid legal issues - report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T09:26:01.456205-03:00"
+    },
+    {
+      "title": "Columbia Banking System declares $0.37 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:26:04.071366-03:00"
+    },
+    {
+      "title": "Reddit stock jumps on inclusion in S&P 500",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T09:26:14.222720-03:00"
     }
   ]
 }
