@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Hedge funds upped short AI bets in July, Hazeltree says",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:11:45.928040-03:00"
-    },
-    {
-      "title": "US Dollar Price Forecast: CPI Test Looms as DXY, EUR/USD and GBP/USD Hold Key Levels",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:11:48.627594-03:00"
-    },
-    {
-      "title": "E.ON Reaffirms 2026 Outlook as First-Half Earnings Edge Higher",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:11:51.294712-03:00"
-    },
-    {
-      "title": "I'm 62 With $890k in a 401(k), $115k in a Roth and Social Security Eligibility. What's a Realistic Retirement Budget?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:11:54.026424-03:00"
-    },
-    {
-      "title": "I'm 64 With $650K in an IRA. Is Now the Right Time to Start Roth Conversions?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:11:56.712916-03:00"
-    },
-    {
-      "title": "Bank of America pledges $250 billion for US infrastructure financing",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:11:59.378940-03:00"
-    },
-    {
-      "title": "Taiwan's Foxconn reports 35% rise in Q2 profit on AI demand, beats forecasts",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:12:02.077147-03:00"
-    },
-    {
-      "title": "Best CD rates today, Wednesday, August 12, 2026: Earn up to 4.30% APY",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:12:04.749570-03:00"
-    },
-    {
-      "title": "Paramount is putting monthly spending limits on Claude for tech employees to promote 'effective' AI use",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T15:12:07.628214-03:00"
-    },
-    {
       "title": "Flávio Bolsonaro diz que filiação dele foi fraudada: sistema tenta me parar, afirma",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-14T13:35:50.000933-03:00"
+    },
+    {
+      "title": "Inmet alerta para baixa umidade em 10 estados e no DF nesta sexta-feira",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:41:14.064007-03:00"
+    },
+    {
+      "title": "Emprego bate recorde, mas PNAD expõe estagnação da renda e abismo social",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia revela estagnação da renda e abismo social, indicando possíveis problemas estruturais no mercado de trabalho",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:41:16.938912-03:00"
+    },
+    {
+      "title": "Por que a Disney+ abandonou o projeto de 'Power Rangers'? Entenda a situação",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia e sobre entretenimento e nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:41:23.469433-03:00"
+    },
+    {
+      "title": "Freenome GAAP EPS of -$2.59",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque fornece informações financeiras sobre a empresa, que pode influenciar as expectativas dos investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:41:27.108691-03:00"
+    },
+    {
+      "title": "Ten consumer discretionary stocks leading YTD performance as Q2 wraps",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:41:29.763345-03:00"
+    },
+    {
+      "title": "SoftBank adds Capital One, Life360 to portfolio, among Q2 trades",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:41:32.417080-03:00"
+    },
+    {
+      "title": "Adoção de reciprocidade a tarifas dos EUA depende de empresas, diz Durigan",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:41:39.283754-03:00"
+    },
+    {
+      "title": "I'm a New Yorker who went to Canada for the first time. I found 9 things so impressive that I can't wait to go back.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:41:45.253328-03:00"
+    },
+    {
+      "title": "Group including Jeff Bezos buys minority stake in Liverpool FC, with option to become controlling owner",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:41:48.349420-03:00"
     }
   ]
 }
