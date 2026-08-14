@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Pré-encomendas do Samsung Galaxy Z8 crescem mais de 30% globalmente",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:46:43.159277-03:00"
-    },
-    {
-      "title": "Fitch rebaixa nota do Baidu para A- por queda no negócio de buscas",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:46:45.792629-03:00"
-    },
-    {
-      "title": "DeepSeek vai aumentar preços de API em até 1.100% a partir de segunda-feira",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:46:48.417755-03:00"
-    },
-    {
-      "title": "Por que as ações da Rocket Lab estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:46:51.043754-03:00"
-    },
-    {
-      "title": "Por que as ações da LENSAR estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:46:53.671978-03:00"
-    },
-    {
-      "title": "Estrangeiro retira R$ 4,7 bi da B3 no dia do tombo de 2,5% do Ibovespa",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:46:56.307489-03:00"
-    },
-    {
-      "title": "Otimismo com infraestrutura é o menor desde 2022. Culpa da guerra e da eleição",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:46:59.787236-03:00"
-    },
-    {
-      "title": "Wolverine World Wide raises FY outlook on upbeat Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:47:03.902214-03:00"
-    },
-    {
-      "title": "Allegro Microsystems started with Buy rating at Benchmark",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:47:06.533391-03:00"
-    },
-    {
-      "title": "KP Tissue Inc. declares $0.21 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:47:09.159723-03:00"
-    },
-    {
-      "title": "Curis prices $5.6 million public offering",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:47:11.788540-03:00"
-    },
-    {
       "title": "Cleveland Fed's Hammack says Fed needs to 'act now' to bring down inflation",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T07:51:24.169612-03:00"
+    },
+    {
+      "title": "Sanepar (SAPR11) reverte lucro e tem prejuízo de R$ 505,2 milhões no 2º trimestre",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Prejuízo significativo e queda no ROE afetam a empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:56:31.189738-03:00"
+    },
+    {
+      "title": "Aileron Therapeutics reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Resultados financeiros de uma empresa de biotecnologia não são geralmente relevantes para o mercado financeiro a menos que haja algo inesperado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:56:37.776933-03:00"
+    },
+    {
+      "title": "Fountain Asset reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Os resultados são rotineiros e não apresentam impacto significativo no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:56:40.755758-03:00"
+    },
+    {
+      "title": "Atmus Filtration raises dividend 9% to $0.06",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "Aumento de dividendos é um sinal positivo para os investidores e pode afetar a valorização da ação.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:56:43.742754-03:00"
+    },
+    {
+      "title": "Produtos mais sobretaxados puxam queda de 12,2% nas exportações aos EUA",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "motivo": "queda nas exportações brasileiras aos EUA devido a sobretaxas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:56:53.367280-03:00"
+    },
+    {
+      "title": "Lucro da Ânima Educação triplica e atinge R$ 29,1 milhões no 2º trimestre",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "Aumento significativo no lucro da Ânima Educação, indicando saúde financeira do setor de ensino superior privado no Brasil",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:56:56.199546-03:00"
+    },
+    {
+      "title": "A Acciona ganhou tração no Brasil com metrô e saneamento. Agora, estuda entrar em data centers",
+      "source": "Neofeed",
+      "score": 6.0,
+      "motivo": "A Acciona estuda entrar em data centers, setor de infraestrutura com potencial de crescimento",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:57:01.779496-03:00"
+    },
+    {
+      "title": "A mudança tributária que pode reduzir fraudes e atrair investimentos no mercado de etanol",
+      "source": "Neofeed",
+      "score": 6.0,
+      "motivo": "A mudança tributária pode atrair investimentos no mercado de etanol, impactando positivamente a indústria.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:57:04.715147-03:00"
+    },
+    {
+      "title": "The Latest Robotics IPO is 8000X Oversubscribed. These ETFs Could Take Off if Humanoid Robotics Are The Next Big Thing.",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A sobrescritura em massa do IPO indica que os investidores estão confiantes no futuro da indústria de robótica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:57:08.558631-03:00"
+    },
+    {
+      "title": "How Do ETFs Work? The Complete Beginner's Guide to Exchange-Traded Funds",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é sobre ETFs, mas não há informações específicas sobre movimentos atuais no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:57:11.517980-03:00"
+    },
+    {
+      "title": "Burger King revamped its playbook. It's working.",
+      "source": "Business Insider",
+      "score": 5.0,
+      "motivo": "A notícia sugere que o Burger King está implementando uma nova estratégia eficaz, o que pode impactar positivamente suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:57:14.683065-03:00"
     }
   ]
 }
