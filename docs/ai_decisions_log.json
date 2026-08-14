@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Selena Gomez Accused of Fraud by Mental-Health Startup Investors",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:50:35.785386-03:00"
-    },
-    {
-      "title": "Thirty-Year Bond Auction Attracts Average Demand",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações significativas ou impactantes para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:50:43.552671-03:00"
-    },
-    {
-      "title": "Why Intel Stock Popped Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:50:46.215218-03:00"
-    },
-    {
-      "title": "Arbe Robotics (ARBE) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:50:48.926737-03:00"
-    },
-    {
-      "title": "Palladyne AI (PDYN) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma transcrição de ligação de resultados de uma empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:50:51.845838-03:00"
-    },
-    {
-      "title": "Jeep Avenger: 6 motivos para comprar e 6 motivos para não comprar o novo SUV de R$ 114.990",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:50:55.957233-03:00"
-    },
-    {
-      "title": "BB melhora carteira de crédito, mas agro segue como preocupação do mercado",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:50:58.918289-03:00"
-    },
-    {
-      "title": "BC multa Genial e inabilita CEO por irregularidades em câmbio; banco vai recorrer",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "a noticia se refere a irregularidades em um banco, mas o banco vai recorrer, o que sugere que o impacto para o mercado pode ser limitado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:55:45.343658-03:00"
-    },
-    {
-      "title": "CSN Mineração (CMIN3) cai 3% após balanço; EBITDA supera estimativas, mas mercado vê riscos à frente",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "EBITDA acima das estimativas, mas mercado vê riscos à frente",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T14:55:50.597369-03:00"
-    },
-    {
-      "title": "Hewlett Packard Enterprise wins approval for DOJ settlement in Juniper deal",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "O acordo é rotineiro e não deve ter impacto significativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:55:56.371347-03:00"
-    },
-    {
-      "title": "Here's why Bit Digital stock surged: Ethereum, AI, cloud revenue are in focus",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T14:55:59.097860-03:00"
-    },
-    {
       "title": "Eagle Point Income Company Inc - 5% PRF REDEEM 30/10/2026 USD 25 - Ser Aprice alerts declares $0.1041 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T13:11:43.865918-03:00"
+    },
+    {
+      "title": "Everybody’s Business: The Rise of AI Music",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:16:02.417060-03:00"
+    },
+    {
+      "title": "Missão prolongada de porta-aviões dos EUA gera preocupações com tripulação",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:16:06.079864-03:00"
+    },
+    {
+      "title": "Papagaios vítimas de tráfico ganham novo espaço no Zoo de SP; veja vídeo",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:16:10.256187-03:00"
+    },
+    {
+      "title": "I have $10 million and pay two advisers for financial help, but still have questions",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:16:13.015266-03:00"
+    },
+    {
+      "title": "Fury Gold Mines Limited GAAP EPS of $0.15, revenue of $62.6M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:16:15.682891-03:00"
+    },
+    {
+      "title": "Serve Robotics upgraded to Buy as valuation turns attractive",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:16:18.323799-03:00"
+    },
+    {
+      "title": "Mako Mining Q2 GAAP EPS of $0.15, revenue of $62.6M",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Os resultados financeiros da empresa são relevantes para os investidores, mas não são considerados impactantes para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:16:21.366877-03:00"
+    },
+    {
+      "title": "Creative Media & Community Trust reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:16:23.992157-03:00"
+    },
+    {
+      "title": "Google will now allow users to remove visible watermark from its AI generations",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:16:33.068625-03:00"
+    },
+    {
+      "title": "Oil prices rally as global stocks retreat",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T13:16:35.722436-03:00"
+    },
+    {
+      "title": "Lactalis fires up M&A engine with deal for Saputo’s UK business",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T13:16:38.365182-03:00"
     }
   ]
 }
