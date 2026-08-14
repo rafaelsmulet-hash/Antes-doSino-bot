@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Petz Cobasi (AUAU3) tem lucro líquido ajustado de R$ 70,3 mi no 2º tri, alta 8,4%",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:26:11.000221-03:00"
-    },
-    {
-      "title": "Gestora planeja fundos para a ‘nova corrida dos metais’: de PIPE a crédito",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:26:15.666284-03:00"
-    },
-    {
-      "title": "Yesway raises FY 2026 adjusted EBITDA outlook to $235M-$245M amid diesel-led fuel margin strength",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:26:18.583182-03:00"
-    },
-    {
-      "title": "Global Water outlines $1.9M net revenue increase effective November 1, 2026 as rate case advances",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:26:21.343866-03:00"
-    },
-    {
-      "title": "Live Ventures outlines $9.5M remaining under share repurchase program as retail-flooring revenue falls 29.4%",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:26:24.112341-03:00"
-    },
-    {
       "title": "H&M acelera expansão no Brasil e abre 4 lojas, incluindo estreia no Nordeste",
       "source": "G1 Economia",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T20:00:57.535488-03:00"
+    },
+    {
+      "title": "Por que correr com carrinho de bebê pode reduzir o risco de lesões?",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:05:37.545285-03:00"
+    },
+    {
+      "title": "GLP-1 Demand Is Soaring. 2 Stocks That Could Benefit From This (Hint: Not Eli Lilly or Novo Nordisk)",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é sobre desenvolvimento de um produto farmacêutico, mas não especifica impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:05:44.867056-03:00"
+    },
+    {
+      "title": "Petrobras acha hidrocarbonetos a 175 km da costa do Amapá",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "motivo": "descoberta de hidrocarbonetos pode aumentar a produção e lucro da Petrobras",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T20:05:49.659684-03:00"
+    },
+    {
+      "title": "A vitória da OceanPact sobre a Petrobras que pode colocar mais de R$ 800 milhões no caixa",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:05:56.373488-03:00"
+    },
+    {
+      "title": "AppLovin at 52-Week Low: Buy, Sell or Hold?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:05:59.524706-03:00"
     }
   ]
 }
