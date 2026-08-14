@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stantec Q2 26 Earnings Conference Call At 9:00 AM ET",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:21:37.267326-03:00"
-    },
-    {
-      "title": "Kratos Defense Could Be a Huge Winner in Autonomous Warfare",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:21:39.881294-03:00"
-    },
-    {
-      "title": "Americold (COLD) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:21:42.488358-03:00"
-    },
-    {
-      "title": "Krispy Kreme (DNUT) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:21:45.117100-03:00"
-    },
-    {
-      "title": "GrowGeneration Corp. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:21:54.936459-03:00"
-    },
-    {
-      "title": "BB (BBAS3): CEO diz que inadimplência do agro ainda é alta, mas MP 1.376 deve ajudar",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A notícia destaca a implementação do MP 1.376, que deve ajudar a reduzir a inadimplência do agro, o que é positivo para a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:25:45.096231-03:00"
-    },
-    {
-      "title": "O que é a Decart, empresa na mira do Claude que pode ser adquirida por US$ 6 bilhões",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "a noticia nao e sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:25:51.175943-03:00"
-    },
-    {
-      "title": "PLDT declares ₱46.00 interim dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A declaração de dividendos é um sinal de saúde financeira da empresa e pode atrair investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:25:54.544655-03:00"
-    },
-    {
       "title": "Vital Farms (VITL) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T07:20:49.981925-03:00"
+    },
+    {
+      "title": "Petrochemicals Maker Braskem Beats Estimates Amid Cash Woes",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A empresa superou as estimativas devido a problemas de suprimentos, o que pode ser positivo para a ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:25:50.440645-03:00"
+    },
+    {
+      "title": "Braskem reverte prejuízo e tem lucro de R$ 3,33 bi no 2º tri",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A empresa reverteu prejuízo e apresentou lucro significativo, o que é um sinal positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:25:53.826506-03:00"
+    },
+    {
+      "title": "Shell perde direito de exploração offshore na África do Sul na justiça",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "perda de direito de exploração pode afetar a produção de petróleo e consequentemente os preços",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:25:58.619913-03:00"
+    },
+    {
+      "title": "Por que as ações da Bloom Energy estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "aumento das ações pode ser devido a uma noticia positiva sobre o desempenho da empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:26:01.535540-03:00"
+    },
+    {
+      "title": "Gafisa perde controle do Hotel Praia Ipanema em adjudicação judicial de R$223 mi",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "não é uma notícia financeira relevante para o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:26:04.315295-03:00"
+    },
+    {
+      "title": "Ações da Michael Page sobem 5% após upgrade do UBS",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "Upgrade do UBS é um sinal positivo para a ação da Michael Page",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:26:07.055075-03:00"
+    },
+    {
+      "title": "Hyperscale Data sells 685 Bitcoin for ~$43M to fund Michigan data center",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A venda de Bitcoin não é um evento significativo para o mercado, mas pode afetar o preço do ativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:26:11.128319-03:00"
+    },
+    {
+      "title": "Track&Field (TFCO4) aumenta número de franquias e surpreende no 2T26; saiba quanto custa abrir uma loja",
+      "source": "Seu Dinheiro",
+      "score": 5.0,
+      "motivo": "Crescimento acima das expectativas do mercado em cenário econômico difícil para o varejo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:26:18.949984-03:00"
     }
   ]
 }
