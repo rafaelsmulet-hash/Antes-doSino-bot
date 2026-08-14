@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Daron Acemoglu: We are \"at the Cusp of Losing\" Liberal Democracy",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:26:07.792674-03:00"
-    },
-    {
       "title": "Petz Cobasi (AUAU3) tem lucro líquido ajustado de R$ 70,3 mi no 2º tri, alta 8,4%",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T19:56:36.660761-03:00"
+    },
+    {
+      "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
+      "source": "CNBC - Economy",
+      "score": 8.0,
+      "motivo": "Perda de empregos inesperada afeta expectativas econômicas",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:00:57.535488-03:00"
     }
   ]
 }
