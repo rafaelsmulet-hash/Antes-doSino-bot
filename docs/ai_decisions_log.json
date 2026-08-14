@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "30-Year Mortgage Rate Falls To 6.67%",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T18:26:07.526600-03:00"
-    },
-    {
-      "title": "Applied Materials Q3 Profit Rises As Revenue Jumps 25%",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T18:26:10.293211-03:00"
-    },
-    {
-      "title": "Cathie Wood Bought $59.9 Million of Nvidia Stock Before Earnings. Here's What Investors Should Know.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T18:26:13.120870-03:00"
-    },
-    {
-      "title": "Randoncorp tem prejuízo líquido de R$ 90,5 milhões no segundo trimestre",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T18:26:20.421901-03:00"
-    },
-    {
-      "title": "Northrop Grumman wins $158.8M U.S. Army contract modification",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "O contrato é uma modificação de um contrato existente e não parece ter um impacto significativo no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T18:31:03.922952-03:00"
-    },
-    {
       "title": "United Community Banks raises quarterly dividend by 4% to  $0.26/share",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T18:26:42.186928-03:00"
+    },
+    {
+      "title": "Brasil - Ações fecharam o pregão em queda e o Índice Bovespa recuou 0,10%",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "queda das ações e recuo do Índice Bovespa indicam impacto negativo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:30:53.500080-03:00"
+    },
+    {
+      "title": "Tidewater secures $249M Army construction contract for Germany projects",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas pode ter alguma relevância para empresas de construção e infraestrutura.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:30:57.364631-03:00"
+    },
+    {
+      "title": "Rodobens lucra R$ 146,9 milhões entre abril e junho, alta de 78,5%",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "motivo": "aumento de lucro e alta de 78,5% é um sinal positivo para a empresa e pode influenciar os investimentos no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T18:31:07.082809-03:00"
+    },
+    {
+      "title": "Anthropic defends and explains its AI watermarking feature",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:31:13.571452-03:00"
+    },
+    {
+      "title": "EV prices are rising again as automakers pull back on discounts",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T18:31:16.266283-03:00"
     }
   ]
 }
