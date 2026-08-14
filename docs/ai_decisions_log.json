@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Como a JHSF construiu um trimestre de R$ 985 milhões – de Punta a Milão",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "Resultado acima do esperado e alta significativa em comparação anual",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:35:38.255869-03:00"
-    },
-    {
-      "title": "‘My wife and I are both retired’: Should we dip into our $2.3 million investments to pay off our 2.9% $300,000 mortgage?",
-      "source": "MarketWatch",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma decisão financeira pessoal e não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T19:35:41.816190-03:00"
-    },
-    {
-      "title": "Nubank tem lucro líquido acima de US$ 1 bilhão pela primeira vez",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T19:35:48.805165-03:00"
-    },
-    {
       "title": "IFI do Senado estima perda de R$ 4,7 bi para saúde em 2027 com gatilho em projeto de lei; ministro da Fazenda nega que haja 'prejuízo'",
       "source": "G1 Economia",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-14T20:15:50.793519-03:00"
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "source": "WSJ Markets",
+      "score": 2.0,
+      "motivo": "A notícia é um resumo de discussões rotineiras sobre empresas financeiras.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:20:50.720407-03:00"
+    },
+    {
+      "title": "Bill Ackman Invests in Netflix and Visa in a Tough Year for His Pershing Square Funds",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois indica que Bill Ackman está confiante em investir em empresas de crescimento, como a Netflix e a Visa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:21:04.423092-03:00"
+    },
+    {
+      "title": "Acertus expands with Fisher Shipping acquisition",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aquisição pode levar a sinergias e crescimento para a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T20:21:07.410858-03:00"
     }
   ]
 }
