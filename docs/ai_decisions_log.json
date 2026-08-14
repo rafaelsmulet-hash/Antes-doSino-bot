@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Still Seeing Credit Stress Under Surface: Cudzil",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca a preocupação com o estresse de crédito, o que pode afetar a confiança dos investidores no mercado de crédito.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T16:45:51.829039-03:00"
-    },
-    {
-      "title": "Agência climática dos EUA prevê 90% de chance de El Niño muito forte",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A noticia e sobre clima e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:45:55.240420-03:00"
-    },
-    {
-      "title": "Kalshi ordered to limit activities in Washington over gambling, consumer protection laws violation",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas pode afetar a reputação da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:46:00.527138-03:00"
-    },
-    {
-      "title": "Why Yeti Stock Is Plummeting Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T16:46:05.409378-03:00"
-    },
-    {
-      "title": "Life360 Director Morin Brit Sells 15,582 Shares for $1 Million",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:46:08.097841-03:00"
-    },
-    {
       "title": "Micron and Sandisk Stock Have Plummeted. Here's Why Now Is the Perfect Time to Buy",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T15:31:14.748379-03:00"
+    },
+    {
+      "title": "Dasa (DASA3) desaba 17% após resultados; XP e BTG fazem suas apostas",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "desempenho fraco da DASA afeta a confiança do mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:35:50.912508-03:00"
+    },
+    {
+      "title": "Após viral de Anitta, Nando Reis abre o jogo sobre versão funk de \"Bichos Escrotos\"",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:35:55.295075-03:00"
+    },
+    {
+      "title": "Hedge funds are once again heavily in long-term Treasuries",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Aumento de investimentos em títulos da dívida pública pode indicar que os investidores estão confiantes na recuperação econômica.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:35:58.804364-03:00"
+    },
+    {
+      "title": "Not so bad? Amazon Prime Day and the World Cup impacted the Retail Sales report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:36:01.503891-03:00"
+    },
+    {
+      "title": "Australia, NSW governments commit $1.76bn to Tomago Aluminium",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T15:36:13.212523-03:00"
     }
   ]
 }
