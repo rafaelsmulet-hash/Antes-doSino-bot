@@ -1,204 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Juiz que atuava na falência do Banco Santos é afastado após gravação com herdeiros",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "a noticia e sobre um caso de corrupcao e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:56:10.211961-03:00"
-    },
-    {
-      "title": "Gustavo Franco: juros não estão altos por “BC malvado”, mas por governo irresponsável",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "crítica ao governo e ao BC pode afetar expectativas de política monetária",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:56:16.777061-03:00"
-    },
-    {
-      "title": "Svatantra Microfin protocola IPO de US$ 314 milhões na Índia",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "IPO de grande porte pode atrair investidores e aumentar liquidez no mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:56:26.019868-03:00"
-    },
-    {
-      "title": "Ibovespa tem 8ª queda seguida, sequência vista apenas 7 vezes em mais de 20 anos",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "queda seguida da Ibovespa é um sinal de desempenho ruim do mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:56:34.617845-03:00"
-    },
-    {
-      "title": "Alpha Cognition GAAP EPS of -$0.40 misses by $0.01, revenue of $6.09M beats by $1.78M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:56:37.632306-03:00"
-    },
-    {
-      "title": "KinderCare Non-GAAP EPS of $0.08 misses by $0.02, revenue of $697.5M in-line",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:56:40.367815-03:00"
-    },
-    {
-      "title": "Ensysce Biosciences GAAP EPS of -$0.20 beats by $0.30",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:56:43.069255-03:00"
-    },
-    {
-      "title": "StoneCo stock dips as Q2 adjusted income declines Y/Y, revenue trails consensus",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:56:45.832111-03:00"
-    },
-    {
-      "title": "Innventure GAAP EPS of -$0.32 misses by $0.06, revenue of $0.9M misses by $1.07M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:56:48.582416-03:00"
-    },
-    {
-      "title": "BP, ADNOC-backed XRG strike deals for Venezuela offshore exploration",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:56:51.302782-03:00"
-    },
-    {
-      "title": "Xcel Brands GAAP EPS of -$0.21 beats by $0.17, revenue of $1.12M misses by $0.68M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:56:54.069309-03:00"
-    },
-    {
-      "title": "Corn Popping Higher on Wednesday with Spillover from Wheat",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:57:09.080537-03:00"
-    },
-    {
-      "title": "Wheat Rallying on Black Sea Strikes",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:57:11.761468-03:00"
-    },
-    {
-      "title": "Soybeans Bouncing Ahead of USDA Data",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:57:14.449619-03:00"
-    },
-    {
-      "title": "NIO Stock Falls as Blackrock Slashes Stake in EV Maker",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:57:17.341997-03:00"
-    },
-    {
-      "title": "How do I get the lowest mortgage rate? 8 tips you can use.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:57:20.062837-03:00"
-    },
-    {
-      "title": "PagSeguro Digital Ltd. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:57:22.905444-03:00"
-    },
-    {
-      "title": "Anthropic's $2 Trillion Bet Is That Nothing Goes Wrong",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:57:26.620493-03:00"
-    },
-    {
-      "title": "The 'Burrito' Debate: What's It Really About...",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:57:29.373951-03:00"
-    },
-    {
-      "title": "Inside Utah's Trans-Marxist Militia: From Cuba Revolutionary Trips And Rifle Training To Declaring War On Landlords",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T17:57:32.198235-03:00"
-    },
-    {
-      "title": "Doug Casey On The End Of Honest Markets",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:57:34.931706-03:00"
-    },
-    {
-      "title": "Workday Soars Most On Record As Silver Lake Weighs $43 Billion Buyout",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T17:57:37.739273-03:00"
-    },
-    {
       "title": "\"Unofficial\" FBI Group Swept Up Journalists, Politicians As Russian Disinfo \"Conduits\" For Probing Biden-Ukraine Dealings",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17801,204 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T17:31:27.610542-03:00"
+    },
+    {
+      "title": "Stocks Halt Rally After Signs of Consumer Slowdown: Markets Wrap",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia revela sinais de recessão do consumidor, o que pode afetar a economia e, consequentemente, os mercados financeiros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:35:56.291291-03:00"
+    },
+    {
+      "title": "Consultoria gringa recomenda fugir de bolsa — e culpa é do governo Lula; só um investimento vale a pena",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "rebaixamento da recomendação da bolsa brasileira por uma consultoria gringa",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:36:06.511748-03:00"
+    },
+    {
+      "title": "Ibovespa cai 3% na semana e tem pior sequência desde 2023; dólar sobe",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "queda do Ibovespa e do principal índice da bolsa brasileira",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:36:09.367799-03:00"
+    },
+    {
+      "title": "E.U.A. - Ações fecharam o pregão em queda e o Índice Dow Jones Industrial Average recuou 0,20%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:36:12.350212-03:00"
+    },
+    {
+      "title": "Canadá - Ações fecharam o pregão em queda e o Índice S&P/TSX recuou 0,08%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:36:15.370476-03:00"
+    },
+    {
+      "title": "Brasil - Ações fecharam o pregão em queda e o Índice Bovespa recuou 0,10%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:18.099577-03:00"
+    },
+    {
+      "title": "World Liberty Financial recebe aprovação condicional para licença bancária",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:20.951918-03:00"
+    },
+    {
+      "title": "TD Cowen elege Paycom como principal escolha no setor de software",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:23.726707-03:00"
+    },
+    {
+      "title": "SEC propõe flexibilização das regras de \"pay-to-play\" para gestores de investimentos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:26.508103-03:00"
+    },
+    {
+      "title": "Workslop: o novo problema da IA no trabalho que pode consumir horas a mais e desperdiçar dinheiro",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:36:29.925304-03:00"
+    },
+    {
+      "title": "Cotado ao governo de Alagoas, JHC pode tentar o Senado e bagunçar disputa; entenda",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:32.705826-03:00"
+    },
+    {
+      "title": "Real, RE/MAX Holdings shareholders approve acquisition",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:35.919661-03:00"
+    },
+    {
+      "title": "Glenview adds Eli Lilly, AbbVie, trims CVS, AMAT, among top Q2 trades",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:38.664254-03:00"
+    },
+    {
+      "title": "US distributor RNDC closes in on new deal for Kentucky assets",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:51.756134-03:00"
+    },
+    {
+      "title": "You’ve retired — so grow up already and stop buying these 5 things to save yourself thousands of dollars",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:54.547148-03:00"
+    },
+    {
+      "title": "Why Wall Street Isn't Buying Super Micro's $60 Billion Backlog Quite Yet",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:36:57.285605-03:00"
+    },
+    {
+      "title": "Japan’s Yen Intervention Bought Time. Not a Fix",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:37:00.018507-03:00"
+    },
+    {
+      "title": "EV prices are rising again as automakers pull back on discounts",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:37:03.147968-03:00"
+    },
+    {
+      "title": "America Enters FAFO-Land: Election Sabotage & Blue-State Mutiny As Communist Jihad Escalates",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:37:06.627992-03:00"
+    },
+    {
+      "title": "Former Cambridge Professor Jason Arday Found Dead at 41",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:37:09.395596-03:00"
+    },
+    {
+      "title": "No Illegal Immigrants Released At Southern Border In 15 Months: CBP",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T17:37:12.178965-03:00"
+    },
+    {
+      "title": "Energy Drinks Overtake Coffee As Gen Z's Primary Caffeine Source",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T17:37:14.952281-03:00"
     }
   ]
 }
