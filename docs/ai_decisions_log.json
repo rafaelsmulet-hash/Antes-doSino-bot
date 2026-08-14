@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Shein perde na Justiça batalha que ela mesma iniciou contra a Temu",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:31:37.753903-03:00"
-    },
-    {
-      "title": "Actress Tamara Mello of ‘She’s All That’ puts L.A. home on the market for $1.5 million",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:31:40.473757-03:00"
-    },
-    {
-      "title": "Jack in the Box gains as analysts point to early signs of a turnaround",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:31:43.109437-03:00"
-    },
-    {
       "title": "PLDT Non-GAAP EPS of ₱80.07, revenue of ₱112.01B",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T22:10:55.324137-03:00"
+    },
+    {
+      "title": "Uber and China’s Pony AI to Deploy 2,000 Robotaxis in Europe",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "Implantação de tecnologia autônoma em grande escala pode impactar negócios de empresas de transporte e logística.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T22:15:44.225576-03:00"
+    },
+    {
+      "title": "Uber partners with China's Pony.ai for 2,000 robotaxis in Europe",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A parceria pode impulsionar a adoção de robótaxi em larga escala, impactando o mercado de transporte e logística.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T22:15:47.473598-03:00"
+    },
+    {
+      "title": "Scott Bessent says America’s Founding Fathers ‘could not have imagined’ today’s economy — how to bet big on the USA",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A opinião de um investidor experiente sobre a economia dos EUA é considerada relevante e material para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T22:16:01.462528-03:00"
     }
   ]
 }
