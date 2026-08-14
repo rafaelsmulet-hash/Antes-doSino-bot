@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fachin deve levar decisão de Moraes sobre fonte de jornalista ao plenário",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre justica criminal e busca e apreensao, sem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:05:51.927979-03:00"
-    },
-    {
-      "title": "Petrobras comemora 4 bilhões de barris em Tupi",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T16:05:54.580879-03:00"
-    },
-    {
-      "title": "Brasil é o 3º maior mercado do TikTok, e por que isso importa para os times brasileiros",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:06:00.409811-03:00"
-    },
-    {
-      "title": "Evotec SE reports 1H results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T16:06:03.302685-03:00"
-    },
-    {
       "title": "INOVIO shares jump 18% after Q2 beat",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T14:47:17.911409-03:00"
+    },
+    {
+      "title": "Mangione Admits to Killing Healthcare CEO Brian Thompson",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T14:50:34.293552-03:00"
+    },
+    {
+      "title": "É candidato: Republicanos registra Cleitinho Azevedo ao governo de Minas Gerais",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T14:50:37.567801-03:00"
+    },
+    {
+      "title": "Dólar encosta em R$ 5,25 na quinta alta seguida; juros futuros disparam com ‘estresse’ doméstico",
+      "source": "Money Times",
+      "score": 8.0,
+      "motivo": "Cotação do dólar alta e desempenho negativo da moeda brasileira",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T14:50:45.797335-03:00"
+    },
+    {
+      "title": "Quem é Eduardo Saverin, bilionário brasileiro que comprou participação no Liverpool",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T14:50:53.902757-03:00"
     }
   ]
 }
