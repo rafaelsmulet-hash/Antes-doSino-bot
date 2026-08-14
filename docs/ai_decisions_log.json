@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "First Advantage (FA) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "O relatório de rendimentos é uma informação rotineira e não impacta significativamente o mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:31:09.150171-03:00"
-    },
-    {
-      "title": "Green Plains (GPRE) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:31:11.802521-03:00"
-    },
-    {
-      "title": "Cogent Communications (CCOI) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:31:14.436986-03:00"
-    },
-    {
-      "title": "Silver prices today, Thursday, August 13, 2026: Silver prices up over 70% YOY with PPI report on deck",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:31:22.843271-03:00"
-    },
-    {
-      "title": "Stock Market Today: Dow Rises Ahead Of Inflation Data; Cisco, AI Name Cerebras Plunge On Earnings (Live Coverage)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:31:25.502933-03:00"
-    },
-    {
-      "title": "Frasers Group Buys Harvey Nichols Out of Insolvency, Beating Next",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A compra da Harvey Nichols é relevante para o mercado pois pode afetar a concorrência no setor de varejo britânico.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:36:15.067733-03:00"
-    },
-    {
-      "title": "Tarcísio diz que vídeo antivacina de Eduardo não atrapalhou campanha contra sarampo",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:36:20.033698-03:00"
-    },
-    {
-      "title": "Dólar hoje ronda estabilidade em meio a mais dados de inflação nos EUA",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "dados de inflação nos EUA reforçam a expectativa de manutenção de juros pelo Fed",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:36:22.853062-03:00"
-    },
-    {
-      "title": "Carlos Lopes, da Conafer, se entrega à PF em investigação sobre fraudes no INSS",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T09:36:25.503980-03:00"
-    },
-    {
-      "title": "Mineradora Antofagasta eleva lucro no 1º semestre, mas reduz projeção de produção",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T09:36:28.147581-03:00"
-    },
-    {
       "title": "As melhores mochilas e malas para notebook que testamos em 2026",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T07:31:13.843760-03:00"
+    },
+    {
+      "title": "LyondellBasell declares $0.69 dividend",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "Dividendos são uma notícia rotineira para ações de empresas.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:35:44.189773-03:00"
+    },
+    {
+      "title": "Mark Zuckerberg Just Said That Everyone Will Have &quot;An Exceptionally Capable Personal Agent.&quot; These 3 AI Stocks Will Benefit",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Aumento da demanda por memória devido ao crescimento da tecnologia de agentes pessoais de IA",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:35:49.398015-03:00"
+    },
+    {
+      "title": "Michael Saylor's Strategy Is Selling Bitcoin Again. Here's Why I'm Still Bullish on Bitcoin.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Venda de grande valor de Bitcoin pode influenciar o mercado e afetar a percepção da demanda.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:35:52.208546-03:00"
+    },
+    {
+      "title": "DAX Rises On Easing Rate Concerns",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta as expectativas de juros, que são importantes para a economia alemã e o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:35:55.196185-03:00"
+    },
+    {
+      "title": "This Tech Stock Is 1 of the Most Shorted Stocks of 2026: Is Now the Time to Buy?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A noticia menciona a acao da Oracle, o que pode ser relevante para investidores e traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T07:35:58.006446-03:00"
+    },
+    {
+      "title": "EuroDry (EDRY) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, economia ou negócios, mas sim sobre uma empresa específica.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:36:00.875897-03:00"
+    },
+    {
+      "title": "Abacus Global Authorized To Repurchase $100 Mln Of Shares",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A empresa está aumentando seu valor de ações, o que pode impulsionar seu preço no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:36:04.080535-03:00"
+    },
+    {
+      "title": "Larry Fink's BlackRock Just Crossed $15.3 Trillion in Assets. Here's What That Scale Actually Earns.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não apresenta informações novas ou impactantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:36:06.943984-03:00"
+    },
+    {
+      "title": "StubHub Fails to Turn Profit as Costs Outpace Revenue Growth",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de ações, pois afeta a saúde financeira da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:36:13.620978-03:00"
+    },
+    {
+      "title": "Freshworks (FRSH) Just Turned Profitable, So Why Is Wall Street Skeptical?",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque trata de uma empresa de software que alcançou lucro, mas o impacto é limitado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T07:36:16.730691-03:00"
     }
   ]
 }
