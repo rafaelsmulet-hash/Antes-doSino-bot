@@ -1,21 +1,14 @@
 {
   "date": "2026-08-13",
-  "total_ingeridas": 44024,
-  "aprovadas_pelo_fluxo_atual": 728,
-  "descartadas_pelos_filtros_atuais": 43296,
-  "score_medio_materialidade": 3.86,
+  "total_ingeridas": 44272,
+  "aprovadas_pelo_fluxo_atual": 729,
+  "descartadas_pelos_filtros_atuais": 43543,
+  "score_medio_materialidade": 3.85,
   "seriam_breaking": 34,
-  "iriam_para_rodada": 242,
-  "seriam_descartadas_pelo_novo_sistema": 1724,
-  "total_divergencias": 669,
+  "iriam_para_rodada": 243,
+  "seriam_descartadas_pelo_novo_sistema": 1723,
+  "total_divergencias": 668,
   "divergencias": [
-    {
-      "title": "Por que as ações da Netflix estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "PBG tem prejuízo ajustado de R$ 58,6 milhões no segundo trimestre, 53,1% maior",
       "source": "UOL Economia",
@@ -148,6 +141,13 @@
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Europe's Vibe Code Start-Up Lovable Hits $13.3 Billion Valuation",
+      "source": "Bloomberg Markets",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }

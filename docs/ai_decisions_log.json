@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Simpar amplia prejuízo para R$189,5 mi no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:31:27.078660-03:00"
-    },
-    {
-      "title": "H&M anuncia quatro novas lojas no Brasil e expande operação para o Nordeste",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T08:31:29.703091-03:00"
-    },
-    {
-      "title": "Por que as ações da Netflix estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T08:31:32.294742-03:00"
-    },
-    {
       "title": "Ações da Hershey: alta de 11,2% até o preço-justo, mas custos do cacau pesam",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-13T22:01:40.348899-03:00"
+    },
+    {
+      "title": "Zema diz que usará GLO contra crime organizado em ação conjunta com estados",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T22:05:47.547535-03:00"
+    },
+    {
+      "title": "EUA prometem respeitar resultado de eleição no Brasil desde que ‘livre e justa’",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre política internacional não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-13T22:05:50.718779-03:00"
+    },
+    {
+      "title": "Jefferson Capital outlines $1.1B expected ERC collections in next 12 months while entering Mexico market",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A empresa espera coleções significativas e está expandindo para um novo mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-13T22:05:56.426782-03:00"
     }
   ]
 }
