@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Rival do Corinthians, Rosario Central tem realidade financeira distante do Brasil",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T22:01:08.135620-03:00"
-    },
-    {
-      "title": "You Can't Invest In Trader Joe's, But This Mexican Grocery Stock With the Same Business Model Might Be Even Better",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "motivo": "A notícia destaca a expansão rápida de uma empresa mexicana com um modelo de negócios semelhante ao do Trader Joe's, o que pode ser relevante para investidores interessados em empresas de supermercados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T22:01:13.028286-03:00"
-    },
-    {
       "title": "Quest Resource (QRHC) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T07:26:15.809296-03:00"
+    },
+    {
+      "title": "Marvel divulga novo trailer de 'Vingadores: Doutor Destino'; veja o vídeo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira ou econômica",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:30:41.959776-03:00"
+    },
+    {
+      "title": "Everything we know about how biggest Wall Street banks are using AI",
+      "source": "Business Insider",
+      "score": 6.0,
+      "motivo": "Investimentos significativos em tecnologia podem impulsionar a eficiência e a competitividade dos bancos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T07:30:51.982701-03:00"
     }
   ]
 }
