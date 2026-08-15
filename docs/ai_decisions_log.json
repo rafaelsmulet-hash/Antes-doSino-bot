@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "At a glance: stocks gapping up premarket",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:31:26.333440-03:00"
-    },
-    {
       "title": "ACCO Brands to buy consumer electronics brand Trust",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T12:46:28.625936-03:00"
+    },
+    {
+      "title": "O terno está de volta após perder força na pandemia",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "crescimento de dois dígitos em empresas de vestuário formais",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:50:49.558105-03:00"
     }
   ]
 }
