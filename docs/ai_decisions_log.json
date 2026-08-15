@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "South Africa's top court blocks Shell's offshore oil exploration campaign",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:36:23.638330-03:00"
-    },
-    {
-      "title": "Galípolo critica empresas que pressionam para usar FGC",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:36:33.842626-03:00"
-    },
-    {
-      "title": "Lantern Pharma GAAP EPS of -$0.57 misses by $0.19",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de lucro da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:41:03.186325-03:00"
-    },
-    {
-      "title": "Edible Garden AG GAAP EPS of -$18.79 misses by $7.09, revenue of $3.6M beats by $0.22M",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A perda por ação foi maior do que o esperado, mas a empresa conseguiu superar em receita, o que pode ser considerado positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:41:06.478778-03:00"
-    },
-    {
       "title": "zSpace reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T13:16:03.759010-03:00"
+    },
+    {
+      "title": "Demissões, menos lojas e adiamento de balanço: o que acontece com a Casas Bahia?",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Demissões e fechamento de lojas podem impactar negativamente a empresa e o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:20:57.094063-03:00"
+    },
+    {
+      "title": "James Webb detecta objeto 100 bilhões de vezes mais brilhante que uma estrela",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "Nenhuma relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:21:07.467023-03:00"
+    },
+    {
+      "title": "Após dar palavra a Lula, JHC muda de ideia e sinaliza disputar o governo de Alagoas",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:21:10.338026-03:00"
+    },
+    {
+      "title": "Health insurers are dumping Medicare Advantage plans. Here’s how many seniors could be affected.",
+      "source": "MarketWatch",
+      "score": 3.0,
+      "motivo": "A notícia pode afetar a escolha de plano de saúde para os idosos, mas não é um evento de mercado significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:21:13.483511-03:00"
     }
   ]
 }
