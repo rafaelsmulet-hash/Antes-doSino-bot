@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wells Fargo upgrades Fox, lifts price target to $80",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A Wells Fargo aumentou o alvo de preço da Fox, o que pode influenciar a decisão de investir na empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:36:12.794057-03:00"
-    },
-    {
-      "title": "Kindercare expects $2.66B-$2.7B revenue and $0.05-$0.15 adjusted EPS as it targets 80-85 center closures in 2026",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado devido às expectativas financeiras da Kindercare, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:36:15.776697-03:00"
-    },
-    {
       "title": "Cybin reports Q1 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T13:05:52.369965-03:00"
+    },
+    {
+      "title": "How to tell if your AI platforms’ accounts have been hacked",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:10:47.415636-03:00"
+    },
+    {
+      "title": "Real estate lawyers reveal why calling police won't help when a previous owner refuses to leave your new home",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:10:50.301939-03:00"
     }
   ]
 }
