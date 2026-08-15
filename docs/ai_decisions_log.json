@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A Torre Eiffel dos investimentos, o humor dos mercados e o que mais afeta seu bolso hoje",
-      "source": "Seu Dinheiro",
-      "score": 2.0,
-      "motivo": "A noticia e sobre investimentos, mas nao especifica nenhum evento ou informacao concreta relevante para o mercado agora",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:17:25.491313-03:00"
-    },
-    {
       "title": "Nvidia's Market Value Grew 24% Over the Past Year. Intel's Grew 474%.",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T12:00:56.869862-03:00"
+    },
+    {
+      "title": "Notable trades: Netflix, Coca-Cola, Pfizer among notable names",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "As ações dessas empresas são objeto de negócios notáveis, o que pode afetar seu preço no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T12:05:44.149572-03:00"
     }
   ]
 }
