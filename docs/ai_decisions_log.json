@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "BC vê 'graves violações' e liquida a administradora e financeira da Simpala",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:51:24.589246-03:00"
-    },
-    {
       "title": "If Apple sends you a push notification alerting you to a spyware attack, take it seriously",
       "source": "TechCrunch",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T14:50:43.268697-03:00"
+    },
+    {
+      "title": "Beber, fumar, usar pijama, fazer tarefas domésticas e mais: o que pode dar problema no home office?",
+      "source": "G1 Economia",
+      "score": 2.0,
+      "motivo": "a noticia e sobre trabalho remoto e conduta profissional, nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T14:55:41.652473-03:00"
     }
   ]
 }
