@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Hunt for AI-Proof Trades Turns Convenience Shops Into Hot Stocks",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a tendência de investidores em buscar ações defensivas em meio a incertezas no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T09:11:32.972382-03:00"
-    },
-    {
-      "title": "Kassab diz que Centrão está com Lula e vê chance “zero” de vitória de Flávio",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia politica sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:11:36.380075-03:00"
-    },
-    {
-      "title": "Ibovespa Futuro cai com impasse no Oriente Médio e nova pesquisa eleitoral no radar",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia nao e sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:11:39.177862-03:00"
-    },
-    {
       "title": "S&P 500 em máxima histórica; mesmo assim, estas 3 estratégias o superaram",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T16:50:51.881591-03:00"
+    },
+    {
+      "title": "Piper Sandler Is Bullish on Unusual Machines Stock. Here's Why.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A análise da Piper Sandler destaca a relevância da empresa para o mercado, o que aumenta a materialidade da notícia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T16:55:48.748959-03:00"
+    },
+    {
+      "title": "Nelson Peltz May Be Preparing to Take Wendy’s Private. What It Means for WEN Stock Investors.",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia pode influenciar a valorização da ação WEN, pois a privatização pode levar a uma valorização do ativo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T16:55:51.720678-03:00"
+    },
+    {
+      "title": "Taco Bell's former boss says McDonald's is making a mistake with its new RedBull drink",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T16:55:54.750726-03:00"
     }
   ]
 }
