@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "APC Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T21:36:03.005530-03:00"
-    },
-    {
-      "title": "Funko (FNKO) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T21:36:05.735418-03:00"
-    },
-    {
-      "title": "Hyperfine (HYPR) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T21:36:08.503948-03:00"
-    },
-    {
-      "title": "QuidelOrtho (QDEL) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T21:36:11.251362-03:00"
-    },
-    {
-      "title": "Navient (NAVI) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T21:36:14.018940-03:00"
-    },
-    {
-      "title": "EUA prometem respeitar resultado de eleição no Brasil desde que ‘livre e justa’",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre política externa, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:40:46.348105-03:00"
-    },
-    {
       "title": "Bob Iger e Joshua Kushner compram os Los Angeles Lakers",
       "source": "Brazil Journal",
       "score": 0.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T07:01:31.029051-03:00"
+    },
+    {
+      "title": "Os X-Men de 'Vingadores: Doutor Destino' são os mesmos dos filmes da Fox? Entenda",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há informações financeiras ou econômicas relevantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:05:47.630806-03:00"
+    },
+    {
+      "title": "'Camp Rock 3' é a prova do porquê a nostalgia nem sempre funciona",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:05:50.445404-03:00"
+    },
+    {
+      "title": "Opinião: É hora da reciclagem brasileira sair da retórica e entrar na governança",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A notícia não está relacionada diretamente ao mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:05:53.155827-03:00"
+    },
+    {
+      "title": "Eleições levam dólar ao maior valor em 4 meses, mas alta não deve ser linear, dizem analistas",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia menciona a pressão sobre o real e a volatilidade esperada, indicando que a alta do dólar pode não ser contínua.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:05:55.932032-03:00"
+    },
+    {
+      "title": "I stared deep into the heart of LinkedIn AI cringe slop. Darkness (and engagement) stared back.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "Não há relevância para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:06:06.500992-03:00"
+    },
+    {
+      "title": "Factory to front lines: A Western spy drone’s journey to war in Ukraine",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:06:09.387537-03:00"
     }
   ]
 }
