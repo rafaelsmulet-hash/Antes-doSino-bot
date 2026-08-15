@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Kontrol Technologies GAAP EPS of $0.00, revenue of $1.8M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:01:17.689581-03:00"
-    },
-    {
-      "title": "BridgeBio secondary offering priced at $78 per share",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:01:20.296253-03:00"
-    },
-    {
-      "title": "Sigma Lithium reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:01:22.898987-03:00"
-    },
-    {
       "title": "TuHURA Biosciences reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T16:11:20.382621-03:00"
+    },
+    {
+      "title": "Times esportivos ficaram tão caros que bilionários estão se unindo para comprá-los",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A noticia se refere a esportes e não a mercado financeiro direto",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T16:15:50.158193-03:00"
+    },
+    {
+      "title": "‘Lula se apequenou em processo’, diz Flávio sobre tarifas de reciprocidade contra EUA",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia se refere a uma declaração política e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T16:15:53.096724-03:00"
+    },
+    {
+      "title": "Amapá deve produzir petróleo em 7 anos, diz presidente da Petrobras",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "motivo": "Descoberta de petróleo pode aumentar a produção da Petrobras e impactar positivamente o mercado de petróleo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T16:16:10.021363-03:00"
     }
   ]
 }
