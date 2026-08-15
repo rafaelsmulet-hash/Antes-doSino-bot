@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Carry Traders Are Exploiting Intervention to Rebuild Yen Shorts",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia revela uma estratégia de investimento que os operadores estão utilizando para explorar a intervenção no mercado do iene.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:11:20.429787-03:00"
-    },
-    {
-      "title": "Bessent Gets a Warning on Deficits From the Bond Market",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Aumento do juro de 30 anos pode indicar receio do mercado em relação à dívida pública.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:11:23.320421-03:00"
-    },
-    {
-      "title": "Making 'Significant' Progress on Robotics: Deepmind's Parada",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:11:26.225754-03:00"
-    },
-    {
-      "title": "Beaten-Down Ocado Shares Show Signs of Revival with 45% Rally",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A ação da Ocado está se recuperando após uma queda significativa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:11:29.463179-03:00"
-    },
-    {
-      "title": "Slovak Factories Are Losing Competitiveness, Central Bank Warns",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia pode influenciar a percepção dos investidores sobre a economia da Eslováquia e seus impactos no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:11:32.554353-03:00"
-    },
-    {
-      "title": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
-      "source": "CNBC - Finance",
-      "score": 6.0,
-      "motivo": "A empresa chinesa está superando concorrentes estabelecidos em envios de chips de memória NAND, o que pode ter impacto positivo no setor",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:11:35.819110-03:00"
-    },
-    {
-      "title": "Mini-índice (WINV26): IFR perto da sobrevenda reforça chance de repique?",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "análise técnica sobre o mini-índice, mas sem previsão de impacto claro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:11:39.098549-03:00"
-    },
-    {
       "title": "Day Trade hoje (14): Ibovespa emenda 8ª baixa; queda pode continuar?",
       "source": "InfoMoney",
       "score": 5.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T09:11:33.709595-03:00"
+    },
+    {
+      "title": "Trump pede “um pouquinho a mais” pela gasolina para impedir Irã de ter arma nuclear",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A notícia pode influenciar a percepção dos investidores sobre a política externa dos EUA e sua relação com o Irã, o que pode afetar a demanda por petróleo e, consequentemente, os preços da gasolina.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:15:36.262801-03:00"
+    },
+    {
+      "title": "Do Wall Street Analysts Like Humana Stock?",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não traz informações novas ou impactantes sobre a empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:15:53.477723-03:00"
+    },
+    {
+      "title": "Republican senator urges Trump to back US open-weight AI models amid industry debate",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A medida pode influenciar a regulamentação da IA nos EUA e afetar a competitividade das empresas americanas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:15:56.375843-03:00"
+    },
+    {
+      "title": "OpenAI Reportedly Hits $40 Billion Run Rate While Its Revenue Chief Walks Out",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A OpenAI é uma empresa de tecnologia avançada e seu faturamento é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:15:59.679712-03:00"
+    },
+    {
+      "title": "War On Rowling Continues (Sans Facts)",
+      "source": "ZeroHedge",
+      "score": 1.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:16:03.399798-03:00"
+    },
+    {
+      "title": "North Korea Rages At Upcoming US Drills: \"Rehearsal For Aggressive War\"",
+      "source": "ZeroHedge",
+      "score": 2.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter impactos geopolíticos que afetam a estabilidade global e, consequentemente, os mercados financeiros.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:16:06.548820-03:00"
+    },
+    {
+      "title": "It Was Destroyed In Just Days...",
+      "source": "ZeroHedge",
+      "score": 2.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter implicações políticas e sociais que podem afetar a economia a longo prazo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:16:09.930348-03:00"
     }
   ]
 }
