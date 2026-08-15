@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bradesco (BBDC4) avança em recuperação no 2T, mas por que otimismo ainda é limitado?",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "a noticia menciona desafios macroeconomicos e piora de indicadores de risco, limitando o otimismo para o curto prazo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T09:01:03.832436-03:00"
-    },
-    {
-      "title": "PNAD Contínua Trimestral: desocupação cai em 13 das 27 UFs no 2° trimestre de 2026",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:01:07.160215-03:00"
-    },
-    {
-      "title": "Quanto eu teria tivesse investido R$ 10 mil em ações do Banco do Brasil há 20 anos",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas não é uma notícia atual ou imediata, e sim uma retrospectiva de um período longo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:01:11.857220-03:00"
-    },
-    {
-      "title": "Trustar in talks to buy Alibaba's gaming business",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque pode impactar a posição da Trustar no mercado de jogos e influenciar suas ações futuras.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:01:15.079678-03:00"
-    },
-    {
       "title": "Kontrol Technologies GAAP EPS of $0.00, revenue of $1.8M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T16:05:42.756123-03:00"
+    },
+    {
+      "title": "Bond Traders Agonize Over AI Companies’ $70 Billion of Shadow Credit Backstops",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia destaca a existência de passivos ocultos que podem afetar negativamente as empresas de inteligência artificial, o que é relevante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T16:10:59.936100-03:00"
+    },
+    {
+      "title": "Ataques de drones pressionam Rússia enquanto Putin rejeita cessar-fogo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T16:11:08.102000-03:00"
+    },
+    {
+      "title": "Israel acusa Hezbollah de romper cessar-fogo após ataque que deixou três soldados feridos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T16:11:10.986245-03:00"
+    },
+    {
+      "title": "Com a bolsa em sangria, Hapvida (HAPV3) despenca mais de 30% nesta semana; quais ações se safaram?",
+      "source": "Seu Dinheiro",
+      "score": 6.0,
+      "motivo": "A noticia destaca ações que se safaram da queda da bolsa, indicando que ainda há oportunidades no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T16:11:20.382621-03:00"
     }
   ]
 }
