@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que a ação da Alpha Cognition está disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:15.136683-03:00"
-    },
-    {
-      "title": "Kepler eleva Swissquote para \"compra\" após queda ligada a criptomoedas",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:17.721895-03:00"
-    },
-    {
-      "title": "Por que as ações da Techprecision estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:20.314272-03:00"
-    },
-    {
       "title": "Lucro da Ânima mais que triplica para R$29,1 mi no 2º tri",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T13:45:35.473749-03:00"
+    },
+    {
+      "title": "PCO registra Rui Costa Pimenta ao Planalto com plano de cancelar privatizações",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política e propostas de partido político.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:50:37.826940-03:00"
+    },
+    {
+      "title": "Frozen 3: em cena inédita, Disney mostra nova vilã da animação; assista",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:50:42.296332-03:00"
+    },
+    {
+      "title": "Presidente da Petrobras diz que Amapá está produzindo petróleo em águas ‘ultraprofundas’ em até sete anos",
+      "source": "G1 Economia",
+      "score": 8.0,
+      "motivo": "Descoberta de petróleo em águas ultraprofundas no Amapá pode aumentar as reservas do Brasil e reduzir a dependência de importações.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T13:50:53.689018-03:00"
     }
   ]
 }
