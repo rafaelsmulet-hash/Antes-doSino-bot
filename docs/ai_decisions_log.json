@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A Louis Vuitton acaba de lançar seu primeiro Porsche",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:02.750915-03:00"
-    },
-    {
-      "title": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações do Mercado Livre há 5 anos",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A notícia destaca o retorno positivo de longo prazo da ação do Mercado Livre, o que pode ser visto como um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:05.666255-03:00"
-    },
-    {
-      "title": "Vale a pena pagar pela versão paga de uma IA? A conta que poucos profissionais fazem",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:53:08.360527-03:00"
-    },
-    {
-      "title": "Retorno às origens: candidatos à Presidência definem primeira parada das campanhas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:11.053677-03:00"
-    },
-    {
-      "title": "Agentes de IA começam a conspirar entre si — mesmo sem poder conversar",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "a noticia não é sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:13.901790-03:00"
-    },
-    {
-      "title": "'Nações Desunidas': por que o próximo líder da ONU herdará entidade fragmentada",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "a noticia nao e especifica e materialmente relevante pro mercado agora",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:16.742558-03:00"
-    },
-    {
-      "title": "O que levou 53 milhões de chineses aos aplicativos de trabalho",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:19.427140-03:00"
-    },
-    {
-      "title": "Por que a The Coffee vai para a Colômbia — mas não vai vender café brasileiro por lá",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A The Coffee expande para mercados internacionais, o que pode impulsionar a demanda por café brasileiro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:22.313743-03:00"
-    },
-    {
       "title": "Europa tenta frear chinesas, mas elas podem chegar a 30% do mercado",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T08:11:28.740112-03:00"
+    },
+    {
+      "title": "Cientistas encontram colágeno em fóssil de dinossauro de 66 milhões de anos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:15:51.955190-03:00"
+    },
+    {
+      "title": "What Are Wall Street Analysts' Target Price for Coherent Stock?",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "Preços-alvos divulgados pelos analistas podem influenciar a percepção dos investidores sobre a empresa, mas não há informações sobre mudanças significativas no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:16:04.694678-03:00"
+    },
+    {
+      "title": "The next AI winners may look nothing like Nvidia or Micron: One Big Investment Idea",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a oportunidade de investimento em empresas que desenvolvem tecnologias de inteligência artificial, o que pode ter um impacto significativo no mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:16:07.646107-03:00"
+    },
+    {
+      "title": "Vanguard Is Bullish on Developed Markets Outside the U.S. -- But How Can You Buy Them? These 2 ETFs Can Help.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A Vanguard é uma instituição financeira respeitada e sua opinião sobre os mercados pode ter impacto no investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:16:10.662488-03:00"
+    },
+    {
+      "title": "HELOC and home equity loan rates today, Friday, August 14, 2026: Why understanding how rates work matters",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os emprestadores de hipoteca e empréstimos de hipoteca em casa, mas não tem impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:16:13.637828-03:00"
+    },
+    {
+      "title": "Best high-yield savings interest rates today, Friday, August 14, 2026: Earn up to 4.15% APY with Forbright Bank",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que buscam opções de poupança com juros altos, mas não é um evento de mercado significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:16:16.811070-03:00"
+    },
+    {
+      "title": "Best CD rates today, Friday, August 14, 2026: Up to 4.30% APY return available",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores que buscam opções de poupança com juros altos, mas não é um evento de grande impacto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:16:19.855042-03:00"
+    },
+    {
+      "title": "Mortgage and refinance interest rates today, Friday, August 14, 2026: Fixed rates rise, ARMs fall",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "Aumento das taxas de juros pode afetar a economia e as decisões de investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:16:22.783283-03:00"
     }
   ]
 }
