@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "\"Skies Are Changing\": Northrop Grumman Unveils Chain Gun To Defend Critical Infrastructure From Drone Swarm Attacks",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:56:06.443854-03:00"
-    },
-    {
-      "title": "Decommissioning Spending In UK North Sea Hits Record High",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "A notícia destaca um aumento significativo nas despesas de descomissionamento, o que pode indicar um aumento na atividade da indústria e, consequentemente, um impacto positivo no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:56:09.696035-03:00"
-    },
-    {
       "title": "Where Child Poverty Is Highest (And Lowest) In The OECD",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T08:56:33.901385-03:00"
+    },
+    {
+      "title": "Na era da IA, conhecimento técnico deixa de ser o principal diferencial profissional",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A noticia não é sobre um evento específico do mercado, mas sim sobre uma tendência futura",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:00:44.294216-03:00"
+    },
+    {
+      "title": "Telescópio James Webb revela 'rosto de leão' esculpido por estrela moribunda",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:00:48.742548-03:00"
     }
   ]
 }
