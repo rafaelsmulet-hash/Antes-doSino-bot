@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Travis Kelce fala pela primeira vez sobre casamento com Taylor Swift: 'Foi uma noite insana'",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T20:20:41.991115-03:00"
-    },
-    {
-      "title": "Why Grocery Outlet Stock Gained Today",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia indica que a estratégia de recuperação da empresa está tendo sucesso, o que é positivo para a ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T20:20:48.499178-03:00"
-    },
-    {
-      "title": "IBM partners with OpenAI to bolster enterprise AI push",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T20:20:54.748750-03:00"
-    },
-    {
       "title": "Intellicheck expects GAAP profitability in 2026 as a 29% revenue customer evaluates a multi-vendor IDV approach",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T21:46:13.567345-03:00"
+    },
+    {
+      "title": "Aston Martin CEO on new luxury model, the Valen",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque apresenta um novo modelo de luxo da Aston Martin, o que pode afetar a demanda e a percepção da marca no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T21:50:50.341887-03:00"
+    },
+    {
+      "title": "Super Micro Climbs 7% on Record Backlog, Dell and Hewlett Packard Enterprise Gain 3%",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque o aumento do backlog da Super Micro pode indicar uma demanda crescente por seus produtos, o que pode ser positivo para a empresa e o mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T21:51:03.333478-03:00"
+    },
+    {
+      "title": "Bit Digital, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T21:51:06.005172-03:00"
     }
   ]
 }
