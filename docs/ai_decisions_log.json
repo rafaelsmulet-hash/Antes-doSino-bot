@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Economatica reduz prejuízo líquido ajustado a R$ 1,77 milhão no segundo trimestre, queda de 75,1%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "A redução do prejuízo líquido ajustado é um indicador positivo, mas a queda de 75,1% pode ser considerada rotineira e não impactante significativamente no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:11:01.134170-03:00"
-    },
-    {
-      "title": "Oceânica reverte lucro e tem prejuízo de R$ 324,2 milhões no segundo trimestre",
-      "source": "UOL Economia",
-      "score": 3.0,
-      "motivo": "A empresa reversa lucro e apresenta prejuízo significativo, o que pode afetar a confiança dos investidores",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:11:03.954633-03:00"
-    },
-    {
-      "title": "Azul reverte lucro e tem prejuízo de R$ 1,04 bilhão no segundo trimestre",
-      "source": "UOL Economia",
-      "score": 8.0,
-      "motivo": "prejuízo significativo de R$ 1,04 bilhão impacta negativamente a empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:11:12.768383-03:00"
-    },
-    {
-      "title": "Rio+ Saneamento registra prejuízo de R$ 47,5 milhões no segundo trimestre",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "prejuízo líquido significativo pode afetar a confiança dos investidores no empreendimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:11:15.525002-03:00"
-    },
-    {
       "title": "Target Appoints Its First-Ever AI Exec as the Retailer Pushes Deeper Into Artificial Intelligence. What It Means for TGT Stock.",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T11:21:18.225381-03:00"
+    },
+    {
+      "title": "Home Depot and Lowe's Have Both Raised Their Dividends for 17 Straight Years. Which Stock Is the Smarter Buy Heading Into Earnings?",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "Aumento de dividendos é um sinal positivo para as ações das empresas.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:25:44.807595-03:00"
+    },
+    {
+      "title": "Greg Abel Just Plowed $4.2 Billion Into Warren Buffett's All-Time Favorite Stock",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Investimento significativo em ação de uma empresa liderada por Warren Buffett",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T11:25:47.596885-03:00"
+    },
+    {
+      "title": "Here's Why Middleby Stock Is an Opportunity After This Week's Drop",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores na ação da Middleby, mas não é um evento de mercado maior",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:25:50.437482-03:00"
+    },
+    {
+      "title": "Fed Chair Kevin Warsh Is Reshaping the Central Bank, but the Unintended Consequences of His Actions Can Derail Wall Street",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante para o mercado porque trata de mudanças no Fed, que pode afetar a economia e as ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T11:25:53.274672-03:00"
     }
   ]
 }
