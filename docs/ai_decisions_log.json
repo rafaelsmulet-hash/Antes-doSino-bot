@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Boost Run, Inc. reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:41:19.534397-03:00"
-    },
-    {
-      "title": "Service Properties Trust (SVC) Q2 2026 Earnings Call Transcript",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:41:31.384620-03:00"
-    },
-    {
-      "title": "Trade court upholds Trump's closure of 'de minimis' loophole",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:41:34.808658-03:00"
-    },
-    {
-      "title": "Airtel Mulls UK Listing of its Money Unit in Dollars",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois pode influenciar a percepção dos investidores sobre a viabilidade da empresa em operar em diferentes moedas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:45:56.280943-03:00"
-    },
-    {
-      "title": "Por que as ações da Birkenstock estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a queda das ações da Birkenstock é um sinal de desconfiança do mercado em relação à empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:01.356114-03:00"
-    },
-    {
-      "title": "Por que as ações da Micron Tecnologia estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A noticia especifica a razao pela qual as acoes da Micron Tecnologia estao subindo, o que torna a informacao relevante e materialmente importante para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:04.398365-03:00"
-    },
-    {
       "title": "Por que as ações da Super League Enterprise estão disparando hoje?",
       "source": "Investing.com Brasil",
       "score": 8.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T13:25:59.955195-03:00"
+    },
+    {
+      "title": "Maior avião elétrico já testado faz 1º voo gastando US$ 5 em energia; veja fotos",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:30:56.470585-03:00"
+    },
+    {
+      "title": "Marrocos impede entrada de 148 migrantes em tentativa de travessia para Ceuta",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:31:03.154032-03:00"
+    },
+    {
+      "title": "Prediction: This Is What a $1,000 Investment in Sandisk Will Be Worth by 2030",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque fala sobre a previsão de valorização da empresa a longo prazo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:31:10.092313-03:00"
+    },
+    {
+      "title": "Alphabet Is Facing Thousands of Lawsuits. History Says This Is What May Happen",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia pode afetar negativamente a imagem da Alphabet e potencialmente impactar suas ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:31:13.421444-03:00"
+    },
+    {
+      "title": "Meet the Dividend Stock That Warren Buffett Backed for Decades. Here's Why It Just Hit an All-Time High Under Greg Abel.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a opinião positiva de Warren Buffett sobre a Coca-Cola, o que pode influenciar a confiança dos investidores na ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T13:31:16.355074-03:00"
+    },
+    {
+      "title": "SpaceX officially closes its Cursor acquisition",
+      "source": "TechCrunch",
+      "score": 2.0,
+      "motivo": "Aquisição de uma startup não é um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:31:25.747741-03:00"
     }
   ]
 }
