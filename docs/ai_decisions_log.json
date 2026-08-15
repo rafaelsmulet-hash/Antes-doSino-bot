@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "EuroDry (EDRY) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, economia ou negócios, mas sim sobre uma empresa específica.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:36:00.875897-03:00"
-    },
-    {
-      "title": "Abacus Global Authorized To Repurchase $100 Mln Of Shares",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A empresa está aumentando seu valor de ações, o que pode impulsionar seu preço no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:36:04.080535-03:00"
-    },
-    {
-      "title": "Larry Fink's BlackRock Just Crossed $15.3 Trillion in Assets. Here's What That Scale Actually Earns.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado financeiro, mas não apresenta informações novas ou impactantes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:36:06.943984-03:00"
-    },
-    {
-      "title": "StubHub Fails to Turn Profit as Costs Outpace Revenue Growth",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado de ações, pois afeta a saúde financeira da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:36:13.620978-03:00"
-    },
-    {
-      "title": "Freshworks (FRSH) Just Turned Profitable, So Why Is Wall Street Skeptical?",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque trata de uma empresa de software que alcançou lucro, mas o impacto é limitado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:36:16.730691-03:00"
-    },
-    {
       "title": "Boeing Analysts Turn Most Bullish Since 2022 on ‘Momentum Shift’",
       "source": "Bloomberg Markets",
       "score": 5.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T10:06:28.277755-03:00"
+    },
+    {
+      "title": "Real estate lawyers reveal why calling police won't help when a previous owner refuses to leave your new home",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:11:12.806379-03:00"
+    },
+    {
+      "title": "Alphabet Counts the Ka-Ching With SpaceX Returns",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca os retornos financeiros da Alphabet com a SpaceX, o que é relevante para o mercado de tecnologia e empresas de capital de risco.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T10:11:16.398829-03:00"
+    },
+    {
+      "title": "'Ultimate crash': Peter Schiff calls US stocks a 'ticking time bomb' — but is he right? Protect your wealth now",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a opinião de um economista respeitado sobre o mercado de ações americano, o que pode influenciar a percepção dos investidores sobre o risco de uma crise.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T10:11:19.338303-03:00"
+    },
+    {
+      "title": "Markets just flipped the script on Kevin Warsh's Fed: Chart of the Day",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "As declarações de Warsh sobre a política monetária do Fed tiveram um impacto significativo nos mercados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T10:11:22.237298-03:00"
+    },
+    {
+      "title": "I tried Ina Garten's penne alla vodka. It's one of the best pasta dishes I've ever made.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:11:25.295338-03:00"
     }
   ]
 }
