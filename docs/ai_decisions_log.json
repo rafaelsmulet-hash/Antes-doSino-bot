@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Vance: EUA pressionam Irã e utilizam meios diplomáticos para estabilizar petróleo",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não é direta sobre mercado financeiro, mas menciona petróleo, que é relevante para o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:04:43.392660-03:00"
-    },
-    {
-      "title": "Jayme Garfinkel: “Sucesso é até ontem”",
-      "source": "Brazil Journal",
-      "score": 2.0,
-      "motivo": "noticia biografica sobre empresario, sem impacto direto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:04:49.034195-03:00"
-    },
-    {
-      "title": "Buscas por carros híbridos crescem mais de 6.000% no Brasil",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "aumento nas buscas por carros híbridos é um sinal de mudança no mercado automotivo brasileiro, indicando uma demanda por tecnologia mais sustentável",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:04:52.329239-03:00"
-    },
-    {
-      "title": "O que levou 53 milhões de chineses aos aplicativos de trabalho",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios, mas sim sobre emprego e economia pessoal",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:04:55.210921-03:00"
-    },
-    {
-      "title": "Marcus & Millichap (MMI) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma empresa específica",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:05:01.818851-03:00"
-    },
-    {
-      "title": "Ellington Financial (EFC) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A divulgação do relatório de earnings é relevante para os investidores que seguem a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:05:04.676116-03:00"
-    },
-    {
-      "title": "Vanguard Is Bullish on Developed Markets Outside the U.S. -- But How Can You Buy Them? These 2 ETFs Can Help.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "Previsão de superação de ações internacionais em mercados desenvolvidos em relação às ações de crescimento nos EUA.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:05:07.578813-03:00"
-    },
-    {
-      "title": "Mega-Sena 3044 acumula e prêmio em jogo dispara; Lotofácil, Quina e outras loterias também encalham",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "a noticia e sobre loterias e nao tem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:05:14.567244-03:00"
-    },
-    {
-      "title": "Nubank (ROXO34) tem lucro recorde de US$ 1,1 bilhão no 2T26, salto de 49%; ROE supera expectativas e sobe para 33%",
-      "source": "Seu Dinheiro",
-      "score": 8.0,
-      "motivo": "Lucro recorde e ROE acima das expectativas são positivos para a ação",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:05:17.411182-03:00"
-    },
-    {
-      "title": "São Martinho (SMTO3) vê lucro cair 39% no início da safra; entenda o que pesou",
-      "source": "Suno Noticias",
-      "score": 6.0,
-      "motivo": "Cair de 39% no lucro líquido é um resultado negativo para a empresa e pode afetar a confiança dos investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:05:21.831010-03:00"
-    },
-    {
-      "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
-      "source": "TechCrunch",
-      "score": 5.0,
-      "motivo": "A empresa conseguiu levantar uma quantia significativa de dinheiro em uma rodada de investimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:05:26.145898-03:00"
-    },
-    {
-      "title": "Kennedy Center board votes to put Trump name on facade despite court order",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:05:30.112169-03:00"
-    },
-    {
       "title": "Carry Traders Are Exploiting Intervention to Rebuild Yen Shorts",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T09:06:21.155918-03:00"
+    },
+    {
+      "title": "Inflation Is Cooling. But is 2% Out of Reach?",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia destaca a possibilidade de a inflação permanecer acima do alvo da Fed, o que pode ter impacto nas políticas monetárias futuras.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T09:10:48.919167-03:00"
+    },
+    {
+      "title": "Terremoto de magnitude 7,7 deixa 38 mortos na Indonésia",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:10:53.838554-03:00"
+    },
+    {
+      "title": "Quais atores já estão confirmados para o novo 'Harry Potter'? Veja detalhes do elenco",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:10:56.673341-03:00"
+    },
+    {
+      "title": "Lavanderia autônoma de R$ 19,8 milhões lança rede de minimercados e mira 30 unidades em 2026",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "expansão de uma empresa não é necessariamente um evento de mercado significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:10:59.611077-03:00"
+    },
+    {
+      "title": "Vida Imobiliária: A casa brasileira foi feita para uma família que está desaparecendo",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A notícia não é específica sobre mercado financeiro ou economia, mas sim sobre estilos de vida e escolhas imobiliárias.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:11:02.472959-03:00"
+    },
+    {
+      "title": "Phillips 66 Stock Outlook: Is Wall Street Bullish or Bearish?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A revisão da perspectiva da açõ pode influenciar os preços das açõs relacionadas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:11:15.115923-03:00"
+    },
+    {
+      "title": "Morning Bid: Stay of execution?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A decisão da Fed sobre a taxa de juros é relevante para o mercado de ações e moedas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:11:17.979214-03:00"
+    },
+    {
+      "title": "Ray Dalio sees the ‘classic signs’ of a bubble with AI, says the stock market looks like the run-up to 1929 or 2000",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A declaração de Dalio é relevante pois ele é um investidor respeitado e sua opinião pode influenciar os investidores.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:11:21.200575-03:00"
+    },
+    {
+      "title": "Alphabet vs. Oracle: Which Is the Better AI Stock to Own for the Next 5 Years?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a competição entre duas empresas líderes em tecnologia, o que pode ter impacto no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T09:11:24.179021-03:00"
+    },
+    {
+      "title": "S&P Futures Tick Higher With Focus on U.S. Retail Sales Data",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "Dados de vendas ao consumidor são um indicador importante para a política monetária dos EUA.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:11:27.044675-03:00"
+    },
+    {
+      "title": "I drove Tesla FSD, Rivian Autonomy+ ‘hands-free’ driving systems. Here’s how they compare",
+      "source": "CNBC - US News",
+      "score": 2.0,
+      "motivo": "A notícia é sobre comparação de tecnologias de automação de veículos, mas não é um evento significativo para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:11:30.340415-03:00"
+    },
+    {
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "source": "Federal Reserve",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado pois pode influenciar a política monetária futura da Reserva Federal.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:11:33.709595-03:00"
     }
   ]
 }
