@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "KOSPI e SOX estão em uma bolha? Citi responde",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "A noticia sugere que o KOSPI e o SOX podem estar em uma bolha, o que pode ter um impacto significativo no mercado de acoes",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:41:22.782582-03:00"
-    },
-    {
-      "title": "Índia - Ações fecharam o pregão em queda e o Índice Nifty 50 recuou 0,12%",
-      "source": "Investing.com Brasil",
-      "score": 4.0,
-      "motivo": "queda no Índice Nifty 50 e ações em queda no pregão",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:41:25.607332-03:00"
-    },
-    {
-      "title": "Por que as ações da AP Moeller - Maersk estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "aumento de preços das ações após anúncio de resultados positivos",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:41:28.515610-03:00"
-    },
-    {
       "title": "Wells Fargo: CTAs compraram ações americanas, ouro e Treasuries",
       "source": "Investing.com Brasil",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T10:16:10.354871-03:00"
+    },
+    {
+      "title": "AI’s costly build-out complicates the Fed’s inflation fight",
+      "source": "CNBC - Economy",
+      "score": 6.0,
+      "motivo": "A notícia destaca a possibilidade de inflação gerada pela expansão dos centros de dados e pela adoção lenta das empresas em inteligência artificial, o que é relevante para a economia e a política monetária",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:20:38.822567-03:00"
+    },
+    {
+      "title": "Mansão e 100 mil euros por mês: o suposto acordo de Cristiano Ronaldo e Georgina",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:20:42.375522-03:00"
+    },
+    {
+      "title": "Horas após terremoto de 7,7, Indonésia tem novo tremor de 6,9",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:20:48.080378-03:00"
     }
   ]
 }
