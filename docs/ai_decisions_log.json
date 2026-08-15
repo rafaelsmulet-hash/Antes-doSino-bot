@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "China: novos empréstimos bancários recuam inesperadamente em julho",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Demanda fraca por crédito na China pode afetar o mercado financeiro global",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:10:40.207392-03:00"
-    },
-    {
-      "title": "LM Funding America reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A divulgação de resultados financeiros pode influenciar a percepção dos investidores sobre a saúde financeira da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:10:45.313483-03:00"
-    },
-    {
-      "title": "IRB(Re) lucra R$ 185,0 milhões no segundo trimestre de 2026",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "Lucro recorde do IRB é positivo para a empresa e pode influenciar a valorização da ação no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:10:51.969708-03:00"
-    },
-    {
-      "title": "Ânima Educação lucra R$ 29,1 milhões entre abril e junho, alta de 205,3%",
-      "source": "UOL Economia",
-      "score": 8.0,
-      "motivo": "Alta significativa no lucro líquido ajustado do segundo trimestre",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:10:58.343128-03:00"
-    },
-    {
       "title": "Economatica reduz prejuízo líquido ajustado a R$ 1,77 milhão no segundo trimestre, queda de 75,1%",
       "source": "UOL Economia",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T11:15:50.786245-03:00"
+    },
+    {
+      "title": "Alphabet sinaliza mudança em sua estratégia de IA?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "Alphabet anunciou mudança em sua estratégia de IA, o que pode impulsionar investimentos em tecnologia e inovação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T11:20:54.094128-03:00"
+    },
+    {
+      "title": "Situational Awareness made massive bets on Sandisk, Micron before July implosion",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia revela que um investidor fez apostas massivas em empresas que posteriormente tiveram um desempenho ruim, o que pode influenciar a confiança dos investidores em outras empresas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:20:58.522295-03:00"
+    },
+    {
+      "title": "‘Uma alegria danada’, diz CEO. O que se sabe sobre a descoberta da Petrobras (PETR4) que pode impulsionar a produção e as ações?",
+      "source": "Seu Dinheiro",
+      "score": 8.0,
+      "motivo": "Descoberta de petróleo pode impulsionar a produção e valor das ações da Petrobras",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T11:21:11.713208-03:00"
+    },
+    {
+      "title": "I loved living on Miami Beach — but after 3 years, I knew I had to leave",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:21:18.225381-03:00"
     }
   ]
 }
