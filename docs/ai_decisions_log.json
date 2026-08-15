@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stock Of The Day: Boeing, Airbus Supplier Soars 15% On Earnings, Flashing Buy Signals",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T20:31:31.518712-03:00"
-    },
-    {
       "title": "How to request a lower credit card minimum payment",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T22:01:16.174727-03:00"
+    },
+    {
+      "title": "CACR11: após meses de crise, FII vende CRI Helvetia por R$ 23,5 milhões",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "Venda de ativo por preço significativo, indicando recuperação da crise",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T22:06:05.378235-03:00"
     }
   ]
 }
