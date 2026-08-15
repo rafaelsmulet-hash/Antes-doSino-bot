@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Aileron Therapeutics reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Resultados financeiros de uma empresa de biotecnologia não são geralmente relevantes para o mercado financeiro a menos que haja algo inesperado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:56:37.776933-03:00"
-    },
-    {
       "title": "Fountain Asset reports Q2 results",
       "source": "Seeking Alpha",
       "score": 2.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T10:41:15.092701-03:00"
+    },
+    {
+      "title": "US-Iran War Risks Repeated Cycles of Fighting",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A possibilidade de um conflito prolongado afeta diretamente a estabilidade geopolítica e pode influenciar os preços dos ativos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T10:46:01.423167-03:00"
     }
   ]
 }
