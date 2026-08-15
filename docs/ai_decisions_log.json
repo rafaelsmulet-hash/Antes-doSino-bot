@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Day Trade hoje (14): Ibovespa emenda 8ª baixa; queda pode continuar?",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "queda pode continuar, indicando tendência negativa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:11:41.909605-03:00"
-    },
-    {
-      "title": "Ações da Maersk sobem após comentários positivos do JPMorgan",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "A ação da Maersk sobe após comentários positivos do JPMorgan, indicando uma visão otimista sobre o futuro da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:11:46.008906-03:00"
-    },
-    {
-      "title": "Braskem reverte prejuízo e tem lucro de R$3,33 bi no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A empresa reverteu prejuízo e apresentou lucro significativo, o que é positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:11:48.900092-03:00"
-    },
-    {
-      "title": "Lucro ajustado da Cemig cai para R$1,12 bi no 2º tri",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Cai do lucro ajustado da Cemig pode afetar a confiança dos investidores no setor de energia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:11:51.698846-03:00"
-    },
-    {
-      "title": "Por que o Barclays está mais otimista com as ações europeias?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "o banco está mais otimista com as ações europeias, o que pode impulsionar o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:11:54.512854-03:00"
-    },
-    {
       "title": "Nubank tem lucro recorde no 2º tri; crédito cresce menos",
       "source": "Brazil Journal",
       "score": 8.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T09:16:09.930348-03:00"
+    },
+    {
+      "title": "Parkinson: cientistas descobrem 'ritmo oculto' do cérebro que pode melhorar tratamento",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:20:36.498300-03:00"
+    },
+    {
+      "title": "Dow Jones Futures: Market Ready To Run? Sandisk Soars, Nvidia In Buy Area; Walmart, Target Due",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "Ações específicas como Sandisk e Nvidia apresentam sinais positivos, indicando uma possível tendência de mercado positiva.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T09:20:46.006992-03:00"
+    },
+    {
+      "title": "Nvidia, ASML Lead Five Stocks Near Buy Points With Roaring Growth",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O crescimento das vendas e lucros dessas empresas é relevante para o mercado de tecnologia e tecnologias de precisão.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T09:20:49.089841-03:00"
+    },
+    {
+      "title": "Why Etoro Stock Is Plummeting This Week",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante para o mercado de ações porque afeta diretamente a empresa e pode influenciar a decisão de investir.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:20:51.871299-03:00"
+    },
+    {
+      "title": "Forget Reminding Young People About 'Boat People': South America's Rejection Of Socialism Is Happening In Real Time",
+      "source": "ZeroHedge",
+      "score": 5.0,
+      "motivo": "A notícia destaca a rejeição da América do Sul ao socialismo e a eleição de líderes conservadores, o que pode ter impacto nas políticas econômicas e no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:20:55.802491-03:00"
     }
   ]
 }
