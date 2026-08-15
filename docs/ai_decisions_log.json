@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "TST define novo caminho na Justiça para quem não consegue sacar valores do FGTS",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:50:42.300061-03:00"
-    },
-    {
-      "title": "International Money Express jumps 35% after New York approves Western Union deal",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A aprovação da negociação é um sinal de confiança na empresa e pode impulsionar suas ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:50:47.943404-03:00"
-    },
-    {
-      "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:50:57.432254-03:00"
-    },
-    {
-      "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
-      "source": "CNBC - Economy",
-      "score": 8.0,
-      "motivo": "A perda de empregos é um indicador importante da saúde da economia e pode influenciar a política monetária.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:55:45.802584-03:00"
-    },
-    {
-      "title": "Renan Santos propõe criar reserva de bitcoin e tornar Rio ‘cripto friendly’",
-      "source": "InfoMoney",
-      "score": 4.0,
-      "motivo": "proposta de criar reserva de bitcoin e tornar o Rio 'cripto friendly' é relevante, mas ainda é uma ideia em discussão",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:55:49.042368-03:00"
-    },
-    {
       "title": "Flávio propõe modelo prisional de Bukele e classificar facções como narcoterroristas",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T07:11:11.353999-03:00"
+    },
+    {
+      "title": "O que está por trás da queda de mais de 1% do Ibovespa nesta sexta-feira (14)",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "queda consecutiva do Ibovespa com saída de investidores estrangeiros",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:16:00.279390-03:00"
+    },
+    {
+      "title": "Novo ‘Judas’? Arsenal mira capitão do Tottenham e reabre ferida no futebol inglês",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:16:05.311007-03:00"
+    },
+    {
+      "title": "O cachorro de ‘O Fim da Rua’ morre? Anne Hathaway fala sobre polêmica",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia é sobre entretenimento e não tem relação com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:16:08.327313-03:00"
+    },
+    {
+      "title": "Jim Cramer Discussed Costco Wholesale Corporation (NASDAQ:COST) & Forecast Bumps",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Previsões de um analista influente foram ajustadas, o que pode influenciar a percepção do mercado sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:16:19.747382-03:00"
+    },
+    {
+      "title": "Everyone Thinks Crypto Is Over. Here's Why They're Wrong.",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A percepção de que a criptomoeda é de baixo risco pode atrair investidores e impulsionar seu crescimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:16:22.794877-03:00"
     }
   ]
 }
