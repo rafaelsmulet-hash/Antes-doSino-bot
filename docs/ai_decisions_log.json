@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Comunidade do bitcoin prepara rede contra ataques quânticos",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T20:16:04.138360-03:00"
-    },
-    {
-      "title": "Win Streak May Continue For South Korea Shares",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T20:16:08.748754-03:00"
-    },
-    {
-      "title": "QuinStreet (QNST) Q4 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T20:16:11.428129-03:00"
-    },
-    {
-      "title": "Xponential Fitness (XPOF) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-13T20:16:14.388561-03:00"
-    },
-    {
       "title": "Chesapeake Utilities (CPK) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-14T21:36:14.755566-03:00"
+    },
+    {
+      "title": "Bentley Systems (BSY) Q2 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para os investidores da Bentley Systems, mas não é um evento significativo para o mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T21:41:08.639256-03:00"
+    },
+    {
+      "title": "Rockwell Medical, Inc. Q2 2026 Earnings Call Summary",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A empresa apresentou resultados financeiros positivos, o que pode influenciar a confiança dos investidores e o preço das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T21:41:11.550545-03:00"
+    },
+    {
+      "title": "Corn Fading Back Lower on Thursday",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia especifica o preço do milho caindo, o que pode influenciar os investimentos em commodities.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T21:41:14.596107-03:00"
+    },
+    {
+      "title": "SEC Charges Toms River Trio in Connection with Alleged $47 Million Fraud Targeting Orthodox Jewish Communities",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-14T21:41:18.403368-03:00"
     }
   ]
 }
