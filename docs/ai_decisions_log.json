@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bill Ackman's latest bets, including Netflix and Visa, mark major portfolio overhaul",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:53:36.496501-03:00"
-    },
-    {
-      "title": "RLX Technology GAAP EPS of $0.025, revenue of $148.9M misses by $26.27M",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A notícia é relevante porque afeta negativamente a expectativa de receita da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:39.452861-03:00"
-    },
-    {
-      "title": "Euro Area trade surplus hits €8.6B as exports jump 14.4%",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:42.100626-03:00"
-    },
-    {
-      "title": "Musk’s SpaceX stake stands at 48.4%, filing shows",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:44.742402-03:00"
-    },
-    {
       "title": "KinderCare trims 2026 revenue outlook, sees EPS below consensus",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T08:21:22.042946-03:00"
+    },
+    {
+      "title": "Na JHSF, outro tri recorde. A meta agora é triplicar o EBITDA em 3 anos",
+      "source": "Brazil Journal",
+      "score": 6.0,
+      "motivo": "A empresa alcançou recordes de receita e lucro e estabeleceu uma meta ambiciosa de crescimento do EBITDA",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:25:41.603929-03:00"
+    },
+    {
+      "title": "Os restaurantes favoritos de Anthony Bourdain no mundo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:25:44.493994-03:00"
+    },
+    {
+      "title": "Agility’s CEO on What It Takes to Break Ideas Out of the Lab",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:25:52.620712-03:00"
+    },
+    {
+      "title": "Reddit surges on S&P 500 inclusion, set to replace AvalonBay",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A inclusão no índice S&P 500 é um indicador de que a empresa é considerada estável e atrativa para investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:25:55.639711-03:00"
     }
   ]
 }
