@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SNFZ11 avança 0,86%; Fiagro atinge 16 mil cotistas; IFIX recua",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:21.327670-03:00"
-    },
-    {
-      "title": "9 options trading strategies for beginners, ranked by risk",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é específica de um evento ou decisão atual no mercado, mas sim uma lista de estratégias para iniciantes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:26.232711-03:00"
-    },
-    {
-      "title": "What is a credit card welcome offer?",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:29.122203-03:00"
-    },
-    {
-      "title": "Job-finding rates have fallen the most for America's most reliably-employed workers",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:32.010552-03:00"
-    },
-    {
-      "title": "Career regrets: 10 tech workers share what they wish they'd done differently",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:55:34.687159-03:00"
-    },
-    {
-      "title": "Coinbase CTO says he's getting 'the best feedback' of his career from an AI agent",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:37.730900-03:00"
-    },
-    {
-      "title": "The burger wars are heating up as McDonald's loses ground to an old rival",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:55:40.422959-03:00"
-    },
-    {
-      "title": "I'm the CEO of Siemens. I reply to most emails with 2-letter responses and don't have recurring meetings — here's a day in my life.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não trata de assuntos financeiros ou econômicos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:43.496020-03:00"
-    },
-    {
-      "title": "Aaron Sorkin on why he's optimistic about AI: 'I don't think it's going to work'",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:46.174919-03:00"
-    },
-    {
-      "title": "Fans slammed Cliff Tan for promoting AI. He says ignoring the tech would be 'irresponsible.'",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:49.155101-03:00"
-    },
-    {
-      "title": "Nvidia got Groq's technology and talent. Now it's turning the rest of its former rival into a customer.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:55:51.879370-03:00"
-    },
-    {
-      "title": "AI prices are plunging. That feels bad, but something else is happening.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:54.557086-03:00"
-    },
-    {
-      "title": "Anthropic has soared to a $1.5 trillion valuation on secondary markets. Almost no one wants to sell.",
-      "source": "Business Insider",
-      "score": 5.0,
-      "motivo": "Aumento significativo na valoração da Anthropic nos mercados secundários",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:55:57.628815-03:00"
-    },
-    {
-      "title": "‘Absolutely unacceptable’: Japan PM Takaichi condemns Putin’s visit to disputed Kuril Islands",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:56:00.526539-03:00"
-    },
-    {
-      "title": "The Delusional Premises Of Woke Greens",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:56:03.688547-03:00"
-    },
-    {
       "title": "\"Skies Are Changing\": Northrop Grumman Unveils Chain Gun To Defend Critical Infrastructure From Drone Swarm Attacks",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T08:46:09.110436-03:00"
+    },
+    {
+      "title": "Iran Sanctions Could Put China Oil Trade in Focus",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A possibilidade de sanções afetando o comércio de petrõleo da China é relevante e tem impacto concreto no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:55:42.695279-03:00"
+    },
+    {
+      "title": "Flávio lidera interações nas redes sobre segurança, e Caiado, número de posts",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre política e segurança pública, sem relevância direta para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:55:46.258424-03:00"
+    },
+    {
+      "title": "‘Star Wars: Starfighter’ exibe primeiras cenas com Ryan Gosling na D23",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há nenhuma informação relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:55:51.206130-03:00"
+    },
+    {
+      "title": "Hasbro Exec Rolled a &quot;1&quot; on Video Games -- and Lost His Job",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Cancelamento de jogos de video pode afetar a imagem da empresa e influenciar as decisões de investimento",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T08:55:56.915860-03:00"
+    },
+    {
+      "title": "IYF vs. FNCL: Which Financials ETF Is the Better Buy?",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia compara desempenho de dois ETFs de finanças, mas não apresenta informações novas ou impactantes.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:55:59.818544-03:00"
+    },
+    {
+      "title": "Will SpaceX Be the First Company to Hit $1 Trillion in Revenue? Here's What the Math Says.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque projeta um crescimento significativo da SpaceX, o que pode impactar o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:02.703404-03:00"
+    },
+    {
+      "title": "Is AI Creating New Questions for Verisk Analytics (VRSK)?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque pode afetar a estratégia de negócios da Verisk Analytics e suas perspectivas de crescimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:10.995875-03:00"
+    },
+    {
+      "title": "Is AutoZone’s (AZO) Outperformance Running Out of Fuel?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia pode influenciar a percepção dos investidores sobre a estabilidade financeira da AutoZone.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:13.904613-03:00"
+    },
+    {
+      "title": "Boston Scientific (BSX) Faces Growth Slowdown in Key Businesses",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque afeta diretamente a expectativa de crescimento da empresa, o que pode influenciar a valorização das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:16.798597-03:00"
+    },
+    {
+      "title": "Hubbell (HUBB) Is Quietly Winning From AI Infrastructure Growth",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a relevância do crescimento da infraestrutura de inteligência artificial para o sucesso da Hubbell, o que é um fator importante para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:19.627492-03:00"
+    },
+    {
+      "title": "Archer Aviation Has Fallen Over 20% and Looks Like a Long-Term Buying Opportunity",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A queda da ação pode ser vista como um sinal de que o mercado está subestimando a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:22.453237-03:00"
+    },
+    {
+      "title": "Salesforce (CRM) Loses Favor as AI Opportunities Shift",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A perda de espaço da Salesforce pode afetar negativamente o setor de tecnologia e software.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:25.325566-03:00"
+    },
+    {
+      "title": "Is Wall Street Bullish or Bearish on Lowe's Stock?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia menciona ações de analistas de Wall Street, o que sugere uma relevância para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:28.173506-03:00"
+    },
+    {
+      "title": "Why Realty Income (O) Is Falling Behind the Market",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia específica e relevante para o mercado devido à análise da desempenho da Realty Income em comparação com o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:31.007790-03:00"
+    },
+    {
+      "title": "Why Investors Are Taking a Fresh Look at DoorDash (DASH)",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a melhoria na demanda e expectativa de crescimento da empresa, o que é relevante para o mercado agora",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:56:33.901385-03:00"
     }
   ]
 }
