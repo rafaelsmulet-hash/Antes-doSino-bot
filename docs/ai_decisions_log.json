@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Marex Group Stock Popped Today",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia foi sobre uma açõ que subiu devido a uma boa notícia, o que geralmente é considerado positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:27:46.367472-03:00"
-    },
-    {
-      "title": "Allot Ltd. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:27:48.972264-03:00"
-    },
-    {
-      "title": "SEC Office of Municipal Securities Updates FAQs for Registration of Municipal Advisors",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:27:55.045961-03:00"
-    },
-    {
       "title": "Copper Crunch Worsens as Key Spread Heads for Highest Since 2021",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T12:31:07.730873-03:00"
+    },
+    {
+      "title": "Número de mortos em terremoto na Colômbia sobe para 294",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:35:39.217849-03:00"
+    },
+    {
+      "title": "How value, viral marketing, and better operations helped Chili's turn the tables on fast food",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia destaca a melhoria dos resultados da empresa, o que é relevante para o mercado de ações e investimentos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T12:35:42.468946-03:00"
+    },
+    {
+      "title": "My husband had hobbies. My kids had activities. Somehow, I only had laundry.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:35:52.423489-03:00"
     }
   ]
 }
