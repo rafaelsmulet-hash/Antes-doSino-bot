@@ -1,105 +1,6 @@
 {
   "decisions": [
     {
-      "title": "'Big Short' Michael Burry says the bulletproof AI narrative reminds him of the dot-com and housing bubbles",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:12:41.884220-03:00"
-    },
-    {
-      "title": "US Sending Fresh Carrier To Relieve Over-Extended USS Lincoln Amid Reports Of Sailor Burn-Out",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:12:45.351245-03:00"
-    },
-    {
-      "title": "Guerra comercial no radar do mercado após o Brasil aciona Lei da Reciprocidade; Ibovespa em dólar sobe hoje (14)",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "A noticia menciona a aceleracao de uma guerra comercial, o que pode afetar negativamente o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:16:06.447900-03:00"
-    },
-    {
-      "title": "O que levou 53 milhões de chineses aos aplicativos de trabalho",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre emprego e economia chinesa em um contexto mais amplo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:16:11.077589-03:00"
-    },
-    {
-      "title": "HGLG11 eleva dividendos em 6,4%; FII projeta dividendos de R$ 1,17 por cota no 2º semestre",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "Elevação de dividendos do fundo imobiliário HGLG11, projetando manter a distribuição mensal no segundo semestre de 2026",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:16:22.512504-03:00"
-    },
-    {
-      "title": "XPML11 fecha acordo para comprar 60% de shopping por R$ 331 milhões em SP",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "Aquisição de shopping center pode impulsionar a carteira de investimentos do XPML11",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:16:25.366443-03:00"
-    },
-    {
-      "title": "Inflation Cooled Slightly in July, Easing Pressure on the Fed",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque pode influenciar a tomada de decisão do Fed sobre os juros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:16:29.908207-03:00"
-    },
-    {
-      "title": "Hinge Health (HNGE) Just Bought Its Way Into A New Market, So Now What?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A aquisição pode expandir a presença da Hinge Health em um novo setor, aumentando suas oportunidades de crescimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:16:32.797039-03:00"
-    },
-    {
-      "title": "Robeauté Bets on Rice-Sized Microrobots for Brain Disease",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:20:37.358326-03:00"
-    },
-    {
-      "title": "Minidólar (WDOU26) hoje: risco fiscal e varejo dos EUA guiam o câmbio",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "noticia sobre movimento do câmbio guiado por indicadores econômicos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:20:40.953796-03:00"
-    },
-    {
-      "title": "Braskem reverte prejuízo e lucra US$ 664 milhões no 2º trimestre",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "Lucro significativo da Braskem, empresa de petroquímica, é positivo para o mercado de ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:20:49.981925-03:00"
-    },
-    {
       "title": "Petrochemicals Maker Braskem Beats Estimates Amid Cash Woes",
       "source": "Bloomberg Markets",
       "score": 5.0,
@@ -17999,6 +17900,105 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T09:31:10.939890-03:00"
+    },
+    {
+      "title": "USS Abraham Lincoln Conditions Raise Readiness Concerns",
+      "source": "Bloomberg Markets",
+      "score": 1.0,
+      "motivo": "A notícia não está relacionada a eventos financeiros ou econômicos.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:36:10.917507-03:00"
+    },
+    {
+      "title": "Boa Safra tem lucro líquido de R$ 2,7 mi no 2T, revertendo prejuízo do ano passado",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "aumento significativo da receita operacional líquida e do Ebitda ajustado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:36:14.580057-03:00"
+    },
+    {
+      "title": "Bolsonaro pede ao STF para ser atendido pela nora, que é dentista",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:36:26.843775-03:00"
+    },
+    {
+      "title": "Ballet flats are so popular that even brands like Birkenstock and Crocs are cashing in on the trend",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:36:30.124784-03:00"
+    },
+    {
+      "title": "16 beaten-down AI stocks that are beloved by BofA analysts",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "A noticia destaca a perspectiva positiva dos analistas sobre acoes de inteligencia artificial, o que pode influenciar as decisoes de investimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:36:33.619651-03:00"
+    },
+    {
+      "title": "Why US boomers seriously need to prepare for a stock market crash before it’s too late — 3 red flags and what to do now",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca sinais de alerta importantes que podem indicar uma crise de mercado de ações, tornando-a materialmente relevante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T09:36:46.965200-03:00"
+    },
+    {
+      "title": "Suze Orman warns retirees 'everything can go down' — urges keeping cash reserves, but do you really have enough banked?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a importância de manter reservas em dinheiro para proteger as economias dos aposentados, o que é relevante para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:36:49.992480-03:00"
+    },
+    {
+      "title": "Found a great mortgage rate? Beware — expert says a low rate ‘blinds’ buyers to a catch that could cost them thousands",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia destaca a importância de considerar os custos ocultos em taxas de empréstimo imobiliário baixas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:36:53.062047-03:00"
+    },
+    {
+      "title": "How a Retired Couple Collects $11,500 a Month and Never Pays an IRMAA Surcharge",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:36:56.037358-03:00"
+    },
+    {
+      "title": "Coeur Mining (CDE) Just Topped $1B in Quarterly Revenue. Can It Last?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa alcançou um recorde de receita, o que é um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:36:59.050408-03:00"
+    },
+    {
+      "title": "Stock Market Week Ahead: Walmart, Target Lead Retail Earnings; Nvidia Among Stocks In Buy Areas",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Resultados de varejistas e ações em áreas de compra podem influenciar o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:37:02.074708-03:00"
     }
   ]
 }
