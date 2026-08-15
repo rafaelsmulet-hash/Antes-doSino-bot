@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Trimble Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:31:46.328601-03:00"
-    },
-    {
-      "title": "Wrap Technologies, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:31:48.995493-03:00"
-    },
-    {
-      "title": "The Mega Backdoor Roth: How Tech Workers Add $34,000 Annually to a 401(k) Tax-Free",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:31:51.657610-03:00"
-    },
-    {
-      "title": "Lei da Reciprocidade: o que muda após Brasil notificar os EUA",
-      "source": "Exame",
-      "score": 4.0,
-      "motivo": "notificacao de tarifas pode ter impacto nas relacoes comerciais entre Brasil e EUA",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:36:09.532802-03:00"
-    },
-    {
       "title": "Wells Fargo upgrades Fox, lifts price target to $80",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T13:01:15.076743-03:00"
+    },
+    {
+      "title": "Cultura da FARM: como a marca brasileira está levando seu jeito de trabalhar para o mundo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:05:35.488525-03:00"
+    },
+    {
+      "title": "‘Criador não é outdoor’, diz creator com 2 milhões de seguidores",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:05:38.371966-03:00"
+    },
+    {
+      "title": "Real estate stocks show mixed performance; data center REITs gain, health care REITs lose",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "A notícia apresenta uma análise específica do desempenho de ações de imóveis, o que é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T13:05:41.828093-03:00"
+    },
+    {
+      "title": "Bill Gates’ Portfolio Just Added Home Depot (HD) Despite Risks. Time to Buy?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A ação da Home Depot foi adicionada ao portfólio de um dos investidores mais influentes do mundo, o que pode influenciar a percepção dos investidores sobre a ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:05:52.369965-03:00"
     }
   ]
 }
