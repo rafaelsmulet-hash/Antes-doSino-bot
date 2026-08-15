@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "J&J Snack Foods declares $0.80 dividend",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A declaração de dividendos é um sinal positivo para os acionistas, mas não é um evento de grande impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:16:35.466749-03:00"
-    },
-    {
-      "title": "Energy’s top 10 YTD winners riding powerful momentum into the second half of 2026",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia destaca os principais vencedores do ano até agora, o que é relevante para os investidores e traders de energia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:16:38.369335-03:00"
-    },
-    {
-      "title": "Widening CEO-worker pay gap amplifies battle over wealth inequality",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter implicações a longo prazo para a economia e a estabilidade social.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:16:41.267804-03:00"
-    },
-    {
       "title": "Neumora Therapeutics GAAP EPS of -$0.23 beats by $0.01",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T11:40:39.118881-03:00"
+    },
+    {
+      "title": "JCPs do Banco do Brasil (BBAS3), dividendos da Caixa Seguridade (CXSE3) e liquidação do Ibovespa; veja o que bombou no Money Times na semana",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "noticia sobre movimentacoes no mercado financeiro, incluindo dividendos e balancos corporativos",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T11:45:51.544084-03:00"
+    },
+    {
+      "title": "CMCT (CMCT) Q2 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A transcrição fornece informações financeiras da empresa, mas não é um evento inesperado ou impactante.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:46:04.030022-03:00"
+    },
+    {
+      "title": "CSP Inc. (CSPI) Q3 2026 Earnings Call Transcript",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado pois fornece informações detalhadas sobre os resultados financeiros da CSP Inc., mas não é um evento inesperado ou de grande impacto.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:46:07.167178-03:00"
     }
   ]
 }
