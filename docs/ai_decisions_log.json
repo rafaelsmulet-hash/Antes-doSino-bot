@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nvidia's Market Value Grew 24% Over the Past Year. Intel's Grew 474%.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O crescimento do valor de mercado das empresas de tecnologia é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:17:30.716858-03:00"
-    },
-    {
-      "title": "Fans slammed Cliff Tan for promoting AI. He tells BI ignoring the tech would be 'irresponsible.'",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:17:34.215328-03:00"
-    },
-    {
-      "title": "M. Dias Branco (MDIA3) lucra R$ 168,9 mi no 2T, queda anual de 22%",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "queda na receita líquida, mas aumento no volume de vendas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:21:01.997398-03:00"
-    },
-    {
-      "title": "Petróleo interrompe sequência de ganhos e cai com preocupações sobre a demanda",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "preços do petróleo caem com preocupações sobre a demanda",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:21:06.644160-03:00"
-    },
-    {
       "title": "Capricor surges on amended plans for lead drug",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T12:05:44.149572-03:00"
+    },
+    {
+      "title": "Drone Swarms Push AI Deeper Into Modern Warfare",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia é relevante para o mercado de defesa e tecnologia, mas não tem um impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:10:35.652907-03:00"
+    },
+    {
+      "title": "Alberto Fernández chama Milei de “delirante” e questiona sua “condição psiquiátrica”",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios, e sim sobre politica e celebridade",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:10:38.923406-03:00"
+    },
+    {
+      "title": "Nvidia, Intel, Google: Wall Street is partying like it’s 1999",
+      "source": "MarketWatch",
+      "score": 6.0,
+      "motivo": "A notícia sugere que o mercado está em um clima de euforia, o que pode ser um sinal de alerta para investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T12:10:45.225510-03:00"
+    },
+    {
+      "title": "Social Media Went Negative on Memory Stocks like SanDisk & Micron Last Weekend. Then They Rallied.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A recuperação das ações após uma reação negativa nas mídias sociais sugere uma confiança dos investidores no setor de memória.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T12:10:55.411817-03:00"
     }
   ]
 }
