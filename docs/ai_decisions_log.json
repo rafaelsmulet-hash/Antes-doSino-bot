@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Credit card debt climbs to $1.26 trillion: What latest data means for consumers",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A dívida crescente pode afetar a capacidade dos consumidores de tomar empréstimos e influenciar a economia como um todo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:12:30.760907-03:00"
-    },
-    {
-      "title": "Voya Financial (VOYA) Just Took A Hit. Should Investors Worry?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a empresa, mas o impacto é incerto.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:12:33.641518-03:00"
-    },
-    {
-      "title": "Corn Rallies on Smaller Yield and Cut to Stocks",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A safra menor e a redução nos estoques são fatores que geralmente aumentam o preço do milho.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:12:36.545842-03:00"
-    },
-    {
-      "title": "Alight’s (ALIT) Earnings Beat Hides A Shrinking Core, So What Gives?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:12:39.143047-03:00"
-    },
-    {
       "title": "'Big Short' Michael Burry says the bulletproof AI narrative reminds him of the dot-com and housing bubbles",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T09:26:32.629981-03:00"
+    },
+    {
+      "title": "Uber partners with China's Pony.ai for 2,000 robotaxis in Europe",
+      "source": "CNBC - Finance",
+      "score": 5.0,
+      "motivo": "A parceria pode impulsionar a expansão da Uber no mercado de robô-táxis na Europa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:30:43.442619-03:00"
+    },
+    {
+      "title": "Por que chás “emagrecedores” foram proibidos pela Anvisa?",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia é sobre regulamentação de produtos de saúde, não financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:30:46.955945-03:00"
+    },
+    {
+      "title": "'Encha Seu Kindle': autores nacionais dominam lista dos 10 livros mais vendidos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:30:57.917951-03:00"
+    },
+    {
+      "title": "DARPA wants injured brains to rewire and repair themselves as the US military confronts traumatic brain injuries",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada diretamente ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:31:10.939890-03:00"
     }
   ]
 }
