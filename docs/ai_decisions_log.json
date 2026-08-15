@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "If Apple sends you a push notification alerting you to a spyware attack, take it seriously",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:51:30.445809-03:00"
-    },
-    {
       "title": "World Cup Battles StubHub to a Draw",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T14:55:41.652473-03:00"
+    },
+    {
+      "title": "São Paulo limita velocidade de bicicletas elétricas e patinetes; veja novas regras",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T15:01:03.807404-03:00"
     }
   ]
 }
