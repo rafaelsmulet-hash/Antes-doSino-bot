@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Goldman Sachs rebaixa Douglas após 3º tri fraco e pressão competitiva",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T09:11:53.642281-03:00"
-    },
-    {
-      "title": "Nubank tem lucro recorde no 2º tri; crédito cresce menos",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:11:56.398783-03:00"
-    },
-    {
-      "title": "Reddit vai entrar no S&P 500 e ação dispara no pré-mercado",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T09:11:59.432989-03:00"
-    },
-    {
       "title": "China desafia EUA na corrida da IA, e ações de tecnologia sobem 29% em 2026",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T17:16:23.350475-03:00"
+    },
+    {
+      "title": "3 of Bill Ackman's New Stock Picks Are Interesting: S&P Global Trades 28% Below Its High While Visa and Mastercard Sit Near Theirs",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A perspectiva de investimento de Bill Ackman é relevante para o mercado, pois suas escolhas de ações podem influenciar os preços das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T17:20:56.918060-03:00"
+    },
+    {
+      "title": "Nebius Just Gave Bloom Energy a Big Boost. What It Means for BE Stock.",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A ação da Bloom Energy recebeu um impulso significativo, o que pode afetar o preço da ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T17:21:05.780657-03:00"
+    },
+    {
+      "title": "Buying Bonds Could Be the Single Most Important Investing Decision You Make for 10 Years",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A decisão de comprar títulos pode ter um impacto significativo no patrimônio do investidor a longo prazo.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T17:21:12.344837-03:00"
     }
   ]
 }
