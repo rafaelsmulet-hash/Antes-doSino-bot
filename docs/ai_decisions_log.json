@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Banco Central decreta liquidação extrajudicial de duas empresas do grupo Simpala",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:46:47.750234-03:00"
-    },
-    {
       "title": "Cerebras Swings to Second-Quarter Loss, Lifts Full-Year Outlook",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T14:11:07.570433-03:00"
+    },
+    {
+      "title": "Nvidia revela fatia de US$ 21 bi na SpaceX e US$ 30 bi na Intel",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "Nvidia revela investimentos significativos em empresas de tecnologia, o que pode impactar positivamente suas ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T14:16:00.301681-03:00"
     }
   ]
 }
