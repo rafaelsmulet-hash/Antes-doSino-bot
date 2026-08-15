@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Quantum BioPharma GAAP EPS of -$0.47",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:56:16.097827-03:00"
-    },
-    {
       "title": "Surgepays GAAP EPS of $0.05, revenue of $16.2M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T15:41:06.018703-03:00"
+    },
+    {
+      "title": "Times esportivos ficaram tão caros que bilionários estão se unindo para comprá-los",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "a noticia e sobre esportes, nao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T15:45:54.302381-03:00"
     }
   ]
 }
