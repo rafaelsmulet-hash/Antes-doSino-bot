@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fidelity Healthcare ETF vs. iShares Pharma Fund: Which Wins?",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:51:05.732368-03:00"
-    },
-    {
-      "title": "Better Tech Behemoth: Alphabet vs. Microsoft Stock",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:51:08.412655-03:00"
-    },
-    {
-      "title": "UTStarcom Holdings Posts Wider H1 Net Loss As Revenue Slips, Expenses Climb",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:51:11.092216-03:00"
-    },
-    {
       "title": "SoFi Originated a Record $10.7 Billion in Personal Loans Last Quarter. Here's Where That Credit Risk Actually Sits.",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T14:31:07.014420-03:00"
+    },
+    {
+      "title": "Herança de Silvio Santos: o que patrimônio de Patrícia Abravanel diz sobre disputa?",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia sobre disputa de herança de celebridade",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T14:35:48.215524-03:00"
+    },
+    {
+      "title": "Paramount diz que recebeu aprovação dos reguladores para fusão com Warner",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Aprovação dos reguladores é um passo importante para a fusão, que pode impulsionar a valorização das ações das empresas envolvidas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T14:35:59.402251-03:00"
+    },
+    {
+      "title": "Mais um balde de água fria: consultoria gringa recomenda fugir das ações brasileiras — e a culpa é do governo Lula",
+      "source": "Seu Dinheiro",
+      "score": 8.0,
+      "motivo": "Recomendação de uma consultoria gringa de evitar investir em ações brasileiras devido ao cenário economicamente conturbado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T14:36:12.789631-03:00"
     }
   ]
 }
