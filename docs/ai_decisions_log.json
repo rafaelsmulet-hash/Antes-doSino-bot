@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
-      "source": "WSJ Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque envolve uma ação hostil de uma empresa, o que pode ter impacto significativo no mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T20:15:55.096456-03:00"
-    },
-    {
-      "title": "Governo Lula anuncia abertura de reciprocidade por tarifaço dos EUA",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre política externa, mas sem impacto direto imediato no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T20:15:58.342108-03:00"
-    },
-    {
       "title": "Comunidade do bitcoin prepara rede contra ataques quânticos",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-14T21:30:57.664935-03:00"
+    },
+    {
+      "title": "Tesla precisa de provas do efeito multiplicador do Robotaxi para convencer investidores, diz Morgan Stanley",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A noticia sugere que a Tesla precisa de provas para convencer investidores, o que pode afetar a confiança dos investidores no futuro da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T21:36:08.294147-03:00"
+    },
+    {
+      "title": "Crescimento do LPA do S&P 500 acima de 20% é raro — e 2027 pode estar em risco",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "previsão de risco para o crescimento do índice em 2027",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-14T21:36:14.755566-03:00"
     }
   ]
 }
