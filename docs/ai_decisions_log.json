@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Oil Spills Show Cost of Keeping Middle East Barrels Flowing",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta um impacto imediato no mercado financeiro, mas pode influenciar a percepção dos investidores sobre a sustentabilidade da produção de petróleo no Oriente Médio.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:27:08.282886-03:00"
-    },
-    {
-      "title": "Cemig, Raízen, Azul, MBRF, Embraer e mais ações para acompanhar hoje",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "lista de ações para acompanhar sem informações específicas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:27:15.251403-03:00"
-    },
-    {
-      "title": "SCHD vs. HDV: Which Dividend ETF Is the Better Buy for Investors?",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia compara duas opções de ETFs de dividendos, o que pode ser relevante para investidores interessados em essa área.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:27:25.102493-03:00"
-    },
-    {
       "title": "1 Market-Beating Auto Stock Up 746% in the Past 10 Years That Warren Buffett Would Agree Is a Compounder (Hint: It's Not Tesla)",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T12:21:29.165778-03:00"
+    },
+    {
+      "title": "Colombia Quake Tests New President Days Into Term",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas sim para a política e a segurança da Colômbia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:25:34.825929-03:00"
+    },
+    {
+      "title": "Fóssil de 236 milhões de anos pode reescrever a origem dos mamíferos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:25:39.766403-03:00"
+    },
+    {
+      "title": "Anthropic’s IPO valuation tied to 2028 revenue forecast of $190B - $200B: Reuters",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A previsão de receita alta da Anthropic é relevante para o mercado de ações e pode influenciar a avaliação da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T12:25:42.934757-03:00"
     }
   ]
 }
