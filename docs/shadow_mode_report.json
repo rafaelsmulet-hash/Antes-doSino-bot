@@ -1,153 +1,153 @@
 {
-  "date": "2026-08-14",
-  "total_ingeridas": 42834,
-  "aprovadas_pelo_fluxo_atual": 562,
-  "descartadas_pelos_filtros_atuais": 42272,
-  "score_medio_materialidade": 3.84,
-  "seriam_breaking": 50,
-  "iriam_para_rodada": 376,
-  "seriam_descartadas_pelo_novo_sistema": 1442,
-  "total_divergencias": 610,
+  "date": "2026-08-15",
+  "total_ingeridas": 248,
+  "aprovadas_pelo_fluxo_atual": 18,
+  "descartadas_pelos_filtros_atuais": 230,
+  "score_medio_materialidade": 2.84,
+  "seriam_breaking": 2,
+  "iriam_para_rodada": 22,
+  "seriam_descartadas_pelo_novo_sistema": 62,
+  "total_divergencias": 28,
   "divergencias": [
     {
-      "title": "Prabowo Plans Indonesian Commodity Exchange to Control Prices",
+      "title": "Money Managers Chase €500 Billion Historic German Pension Shift",
       "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Providence Agrees to Buy Property Valuation Provider Hometrack",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Tempo real: Ibovespa fecha semana de olho no PIB da zona do euro e varejo dos EUA",
-      "source": "Money Times",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Petróleo sobe após EUA ameaçarem bloqueio indefinido ao Irã",
-      "source": "Money Times",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Barclays rebaixa Polypeptide após rali no 1º semestre e oferta da Samsung",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da SanDisk estão em alta hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "HelloFresh cai 5% após Barclays rebaixar recomendação por preocupações com receita",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Birkenstock estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que as ações da Globant estão despencando hoje?",
-      "source": "Investing.com Brasil",
       "score": 8.0,
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Por que as ações do Reddit estão disparando hoje?",
+      "title": "Modi Maps India’s Growth Push as He Reaches Out to Students",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Modi Maps India’s Growth Push With Youth Focus",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "A ajuda inesperada de Ray Dalio ao McDonald’s que tornou os McNuggets um sucesso",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "UBS aponta 4 razões para investir em infraestrutura agora",
       "source": "Investing.com Brasil",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "BofA recruta Greg Reider, ex-Warburg Pincus, para liderar tech no Brasil",
-      "source": "Brazil Journal",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações do Mercado Livre há 5 anos",
-      "source": "Exame",
-      "score": 5.0,
+      "title": "Gestores de fundos miram reforma previdenciária alemã de €500 bilhões",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Vale a pena pagar pela versão paga de uma IA? A conta que poucos profissionais fazem",
-      "source": "Exame",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Por que a The Coffee vai para a Colômbia — mas não vai vender café brasileiro por lá",
-      "source": "Exame",
-      "score": 5.0,
+      "title": "Ações de Singapura ganham força com economia \"Cachinhos Dourados\"",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Bill Ackman's latest bets, including Netflix and Visa, mark major portfolio overhaul",
+      "title": "Barfresh outlines $23M-$26M FY2026 revenue outlook while targeting partial commissioning of Defiance plant by end of 2026",
       "source": "Seeking Alpha",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "RLX Technology GAAP EPS of $0.025, revenue of $148.9M misses by $26.27M",
-      "source": "Seeking Alpha",
-      "score": 4.0,
+      "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "KinderCare trims 2026 revenue outlook, sees EPS below consensus",
+      "title": "Sidus outlines early 2027 Fortis VPX commercial availability, backed by $158.5M Q2 capital raises",
       "source": "Seeking Alpha",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Globant stock plunges after full-year outlook cut",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Warren Buffett's Successor, Greg Abel, Is About to Drop a Bombshell on Wall Street Later Today, Aug. 14",
+      "title": "Social Security's 2027 COLA Just Got Downgraded: What Retirees Need to Know Now",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "European Shares Mixed With Regional Inflation Data In Focus",
+      "title": "Could $5,000 in This Nuclear Stock Turn Into a Life-Changing Sum?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Here's How Much Investing $10,000 in Oklo Stock at Its IPO Is Worth Today",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "The Market Is Doing Something It's Only Done Once Before. Here's What History Says Happens Next.",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "China tenta reduzir dependência de alimentos importados; o que isso significa para o agro brasileiro",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Abandono de animais com carro pode virar infração gravíssima e levar à perda da CNH por 18 meses",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Preços com ou sem imposto: reforma tributária deixa dúvida sobre como anunciar valor de produtos",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Queda da fila do INSS acelera nos últimos meses; benefícios negados sobem e chegam a quase 1 milhão em junho",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Bloqueio de ligações indesejadas: Anatel autoriza anti-spam e estuda levar sistema a todos os clientes",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Alpop capta R$ 6,2 milhões para democratizar aluguel",
+      "source": "UOL Economia",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "O gestor que fez aporte no MST virar fenômeno entre pequenos investidores",
+      "source": "UOL Economia",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
     }
   ]
 }
