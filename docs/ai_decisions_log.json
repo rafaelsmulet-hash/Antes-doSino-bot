@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que o Ibovespa cai enquanto Wall Street bate recordes? 5 fatores explicam",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A notícia destaca a queda do Ibovespa em comparação com o crescimento da Wall Street, o que é materialmente relevante para o mercado brasileiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:51:59.184842-03:00"
-    },
-    {
-      "title": "Brasileiro quer IA nas finanças, mas não abre mão da decisão final, mostra estudo",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações financeiras específicas ou impactantes",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:02.253581-03:00"
-    },
-    {
-      "title": "Jennifer Garner criou empresa de US$ 732 milhões aos 45 e vê vantagem na idade",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia sobre celebridade e empreendedorismo, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:05.156081-03:00"
-    },
-    {
-      "title": "Bolsas da Ásia fecham sem direção única; Kospi e Nikkei sobem com tecnologia",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "alta do índice sul-coreano Kospi e das ações de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:52:09.904434-03:00"
-    },
-    {
-      "title": "Tempo real: Ibovespa fecha semana de olho no PIB da zona do euro e varejo dos EUA",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:52:12.597871-03:00"
-    },
-    {
-      "title": "Petróleo sobe após EUA ameaçarem bloqueio indefinido ao Irã",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "ameaças de bloqueio naval ao Irãn reacendem preocupações com o fornecimento de petróleo bruto",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:15.500479-03:00"
-    },
-    {
-      "title": "Barclays rebaixa Polypeptide após rali no 1º semestre e oferta da Samsung",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "rebaixa da empresa por parte da Barclays após rali no 1º semestre",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:18.509710-03:00"
-    },
-    {
-      "title": "Por que as ações da HelloFresh estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:21.151415-03:00"
-    },
-    {
-      "title": "Por que as ações da SanDisk estão em alta hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "aumento de valor das ações da SanDisk é um sinal positivo para o mercado de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:23.983850-03:00"
-    },
-    {
-      "title": "Por que as ações da PSK Holdings estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:26.634976-03:00"
-    },
-    {
-      "title": "HelloFresh cai 5% após Barclays rebaixar recomendação por preocupações com receita",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "rebaixada de recomendação por preocupações com receita",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:29.464759-03:00"
-    },
-    {
-      "title": "Por que as ações da Birkenstock estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ações caindo indicam perda de valor para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:32.323141-03:00"
-    },
-    {
-      "title": "Por que as ações da Swarmer estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:34.962901-03:00"
-    },
-    {
-      "title": "Por que as ações da Globant estão despencando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Ação cai devido a declaração de perda de valor, indicando problema financeiro",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:37.807901-03:00"
-    },
-    {
-      "title": "Ações da Fox disparam após upgrade do JPMorgan e resultados sólidos",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Upgrade do JPMorgan e resultados sólidos são sinais positivos para ações da Fox",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:52:44.295657-03:00"
-    },
-    {
-      "title": "Por que as ações do Reddit estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Ações do Reddit disparando devido a resultados financeiros acima do esperado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:52:47.102581-03:00"
-    },
-    {
       "title": "BofA recruta Greg Reider, ex-Warburg Pincus, para liderar tech no Brasil",
       "source": "Brazil Journal",
       "score": 5.0,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T08:01:09.402107-03:00"
+    },
+    {
+      "title": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações da Localiza há 20 anos?",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "A noticia menciona a perda de forca das acoes da Localiza, o que pode afetar o mercado de acoes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:05:38.268986-03:00"
+    },
+    {
+      "title": "O que acontece após o Brasil acionar a lei de reciprocidade contra os EUA",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas não tem um impacto imediato ou significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:05:41.034967-03:00"
+    },
+    {
+      "title": "‘Crystal Lake’: série de ‘Sexta-feira 13’ ganha data de estreia no Brasil",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:05:43.992741-03:00"
+    },
+    {
+      "title": "Do copo à matéria-prima: como a Nissin reaproveita embalagens de Cup Noodles",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre prática de uma empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:05:46.863618-03:00"
+    },
+    {
+      "title": "Eleições: Lula tem palanques em 26 estados; Flávio Bolsonaro fica sem aliados em 7",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A noticia e sobre politica e eleicoes, nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:05:49.744860-03:00"
+    },
+    {
+      "title": "Do leite à batata: por que os agricultores estão colhendo de madrugada",
+      "source": "Exame",
+      "score": 8.0,
+      "motivo": "Choque climático afeta safras e provoca perdas bilionárias na agricultura europeia",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:05:52.508771-03:00"
+    },
+    {
+      "title": "Pesquisas para presidente na semana: Lula lidera 1º turno, mas disputa com Flávio aperta no 2º",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre eleicoes politicas nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:05:55.321646-03:00"
+    },
+    {
+      "title": "The ‘Hindenburg Omen’ keeps flashing. Should investors worry about a stock-market crash?",
+      "source": "MarketWatch",
+      "score": 3.0,
+      "motivo": "A notícia não é sobre um evento específico, mas sim sobre um indicador técnico que pode ser usado para prever um crash no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:05:58.508110-03:00"
+    },
+    {
+      "title": "Remember MySpace? The social media pioneer eyes a comeback for the ages",
+      "source": "Seeking Alpha",
+      "score": 1.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:06:01.389228-03:00"
+    },
+    {
+      "title": "Sperlonga, o retiro de Tibério que resiste à invasão bárbara de turistas na Itália",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:06:08.569626-03:00"
+    },
+    {
+      "title": "CPTS11 divulga novos dividendos; confira valor e quem tem direito",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "Dividendos anunciados, impactando positivamente os investidores no mercado de ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:06:11.977345-03:00"
+    },
+    {
+      "title": "Cartão vermelho para o machismo: conheça as árbitras que quebraram o “teto de vidro” do apito",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "não está relacionado ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:06:15.636015-03:00"
+    },
+    {
+      "title": "A mulher que “bordou” a vida, quatro filhos e a arte",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:06:18.606049-03:00"
+    },
+    {
+      "title": "Ferragosto, o feriado italiano que transformou o “dolce far niente” em um negócio bilionário",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:06:21.644650-03:00"
+    },
+    {
+      "title": "American Water Works Stock: Is Wall Street Bullish or Bearish?",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque discute a perspectiva de crescimento da empresa, o que pode influenciar a decisão de investir na ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:06:24.709925-03:00"
+    },
+    {
+      "title": "Google Gemini AI Predicts Bitcoin Price by the End of 2026",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações concretas sobre o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:06:27.581930-03:00"
     }
   ]
 }
