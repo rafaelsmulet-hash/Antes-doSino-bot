@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Só lembra da Europa nas férias? Este economista alemão diz por que o seu patrimônio também deveria viajar para lá",
-      "source": "Seu Dinheiro",
-      "score": 2.0,
-      "motivo": "Conselhos de economista não são notícias de mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:06.518896-03:00"
-    },
-    {
-      "title": "SNEL11: Brasil lidera buscas por energia solar residencial; o que isso sinaliza para o fundo",
-      "source": "Suno Noticias",
-      "score": 6.0,
-      "motivo": "O Brasil lidera o interesse por energia solar residencial, o que pode impulsionar investimentos e demanda por tecnologia de energia renovável.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:10.500651-03:00"
-    },
-    {
-      "title": "SNME11: fundo sobe 0,86%, na contramão do IFIX",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:13.140915-03:00"
-    },
-    {
-      "title": "SNFZ11: Fiagro avança 0,86% e fecha em alta ao atingir 16 mil cotistas",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:15.814693-03:00"
-    },
-    {
-      "title": "EXES11 supera o IFIX em mais de 200%; saiba mais sobre o FII",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "A notícia sobre o desempenho do FII EXES11 é relevante para os investidores e pode influenciar suas decisões de mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:55:18.666136-03:00"
-    },
-    {
       "title": "SNFZ11 avança 0,86%; Fiagro atinge 16 mil cotistas; IFIX recua",
       "source": "Suno Noticias",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T08:41:08.665965-03:00"
+    },
+    {
+      "title": "77 pregões para recuperar as perdas: Caio Scotte relata fase mais difícil no trading",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia é sobre um trader e sua experiência, mas não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:45:39.438271-03:00"
+    },
+    {
+      "title": "Petrobras encontra indícios de petróleo na Foz do Amazonas; entenda o que vem agora",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Encontrar petróleo pode aumentar as reservas da Petrobras e impactar positivamente suas ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T08:45:42.259193-03:00"
+    },
+    {
+      "title": "‘Os Incríveis 3’ ganha primeiras imagens e detalhes da trama; veja data de estreia",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia e sobre entretenimento, nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:45:53.600901-03:00"
+    },
+    {
+      "title": "'Vira-casaca'? Novo dono dos Lakers já torceu para rival",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia e sobre esporte e não tem relevância para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:45:56.457727-03:00"
+    },
+    {
+      "title": "Think you're middle-class in America? Think again — 5 signs you've made it, and how to keep climbing while you can",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:46:09.110436-03:00"
     }
   ]
 }
