@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "UConn women's coach Geno Auriemma says WNBA should shift focus away from transgender debate",
-      "source": "CNBC - US News",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:42:01.103036-03:00"
-    },
-    {
-      "title": "SEC Office of Municipal Securities Updates FAQs for Registration of Municipal Advisors",
-      "source": "SEC",
-      "score": 2.0,
-      "motivo": "A atualização é rotineira e não afeta diretamente o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:42:04.822314-03:00"
-    },
-    {
-      "title": "GOL troca CEO: Ferrer vai para a Boeing e Fehlauer assume",
-      "source": "Brazil Journal",
-      "score": 2.0,
-      "motivo": "troca de CEO em uma empresa aérea não é um evento de mercado significativo",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:45:57.665786-03:00"
-    },
-    {
-      "title": "Uber and Pony.ai plan to bring 2,000 robotaxis to Europe",
-      "source": "TechCrunch",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:46:11.793420-03:00"
-    },
-    {
-      "title": "Embraer: a oportunidade de US$ 10 bi com disputa por contrato militar da Índia",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Conquista de contrato militar da Índia poderia elevar em 160% a carteira de pedidos da área de Defesa & Segurança da Embraer",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T07:50:42.719522-03:00"
-    },
-    {
-      "title": "Grupo Mateus (GMAT3) lucra R$ 237 milhões no 2T, queda anual de 39,3%",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Aumento na receita líquida e lucro do Grupo Mateus, indicando saúde financeira e potencial de crescimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:50:45.806741-03:00"
-    },
-    {
-      "title": "Ações da Nintendo sobem 7% após jogo de Pokémon vender 5 milhões de cópias",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Venda de 5 milhões de cópias de jogo de grande sucesso é um sinal positivo para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:50:51.147004-03:00"
-    },
-    {
       "title": "Rates are at multiyear highs, yet stocks hit fresh records. Here’s how long the defiance may last.",
       "source": "MarketWatch",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T10:26:12.623975-03:00"
+    },
+    {
+      "title": "Quanto vale o herói da Copa? PSG paga cerca de R$ 315 milhões por Ferran Torres",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:30:41.014215-03:00"
+    },
+    {
+      "title": "The AI Platforms Are Real. The People Who Built Them Are Leaving.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A saída de executivos-chave pode causar incerteza e impactar a confiança nos investimentos em empresas de tecnologia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:30:54.475075-03:00"
+    },
+    {
+      "title": "Nu Holdings Banks More Than Half the Adults in Brazil",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta impacto direto no mercado financeiro, apenas uma atualização de números de clientes da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:30:57.404612-03:00"
+    },
+    {
+      "title": "Elon Musk's $1 Trillion Pay Package Needs Tesla to Hit an $8.5 Trillion Market Cap. Here's What That Means for Shareholders.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a relação entre o desempenho da Tesla e o pagamento de Musk, o que pode influenciar os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T10:31:00.373324-03:00"
+    },
+    {
+      "title": "Why Tencent Music Stock Sank This Week",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque menciona a superação das expectativas de vendas e lucros, mas o título sugere que a ação caiu, o que é um sinal negativo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T10:31:03.209691-03:00"
+    },
+    {
+      "title": "President Trump Promised Not to Hurt Social Security, but There's Only 1 Way to Avoid That",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado financeiro, mas o impacto é mais a longo prazo e não é um evento imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:31:06.285956-03:00"
+    },
+    {
+      "title": "Social Security's 3.6% COLA Bump Could Push the Program Toward a Funding Crisis",
+      "source": "Nasdaq",
+      "score": 4.0,
+      "motivo": "A notícia sugere que o aumento pode levar a uma crise de financiamento, o que é relevante para o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:31:09.172739-03:00"
     }
   ]
 }
