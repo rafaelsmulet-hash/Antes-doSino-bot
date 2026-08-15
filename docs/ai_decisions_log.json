@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Europa tenta frear chinesas, mas elas podem chegar a 30% do mercado",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:24.986056-03:00"
-    },
-    {
-      "title": "Goiânia terá a maior Casa Ronald McDonald da América Latina e a primeira que nasce sustentável",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:27.907901-03:00"
-    },
-    {
-      "title": "‘It’s a double-edged sword’: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:30.765644-03:00"
-    },
-    {
-      "title": "‘American Pie’ star Seann William Scott lists stunning Malibu waterfront home for $17.5 million",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:53:33.743194-03:00"
-    },
-    {
       "title": "Bill Ackman's latest bets, including Netflix and Visa, mark major portfolio overhaul",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T08:16:22.783283-03:00"
+    },
+    {
+      "title": "Bolsonaro pede ao STF autorização para consulta odontológica com mulher de Flávio",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:21:04.808834-03:00"
+    },
+    {
+      "title": "Como o 'rei dos ônibus' criou um império de R$ 19 bilhões vendendo bem mais do que passagem",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia sobre empresa de transporte não é relevante para mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:21:09.427841-03:00"
+    },
+    {
+      "title": "As habilidades que o profissional do futuro tem que ter — e vão muito além de saber usar a IA",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "A noticia não é sobre mercado financeiro, economia ou negocios.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:21:17.086655-03:00"
+    },
+    {
+      "title": "Tim Draper Says Bitcoin Is Headed for ‘Infinity’ Against Dollar as Growing BTC Payments Could Trigger Bank Runs",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca a perspectiva de crescimento do Bitcoin, o que pode influenciar a percepção dos investidores sobre a criptomoeda.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:21:22.042946-03:00"
     }
   ]
 }
