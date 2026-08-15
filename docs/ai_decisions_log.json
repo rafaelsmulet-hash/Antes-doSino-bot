@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Orizon lucra R$ 103,1 milhões em base ajustada no segundo trimestre, queda de 2,2%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "A empresa apresentou lucro ajustado, mas com queda de 2,2%",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:17:16.967731-03:00"
-    },
-    {
-      "title": "DOTZ lucra R$ 23,3 milhões no segundo trimestre, alta de R$ 21,3 milhões",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "aumento significativo no lucro líquido da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:17:19.847871-03:00"
-    },
-    {
-      "title": "Empregos no Brasil, varejo dos EUA e balanços movimentam esta sexta",
-      "source": "UOL Economia",
-      "score": 3.0,
-      "motivo": "noticia sobre empregos, varejo e balanços, mas sem detalhes específicos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:17:22.621035-03:00"
-    },
-    {
       "title": "A Torre Eiffel dos investimentos, o humor dos mercados e o que mais afeta seu bolso hoje",
       "source": "Seu Dinheiro",
       "score": 2.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T11:56:55.886639-03:00"
+    },
+    {
+      "title": "Teerã responde a Trump e diz que Estreito de Ormuz é iraniano",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre geopolitica não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:00:43.748630-03:00"
+    },
+    {
+      "title": "Nvidia Is Looking to Own Another Layer of the AI Ecosystem",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque a Nvidia está procurando fortalecer sua posição no mercado de inteligência artificial, o que pode ter um impacto significativo no setor de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T12:00:53.517481-03:00"
+    },
+    {
+      "title": "SpaceX vs. Micron: Which High-Growth Titan Is the Better Buy?",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é específica sobre um evento de mercado atual.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:00:56.869862-03:00"
     }
   ]
 }
