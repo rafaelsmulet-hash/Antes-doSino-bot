@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Zona do euro: PIB cresce 0,4% no 2º tri ante 1º tri e confirma estimativa inicial",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Crescimento do PIB confirma estimativa inicial e é positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:05:44.936997-03:00"
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta sexta",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "Índices futuros dos EUA operam mistos, sem impacto direto no mercado brasileiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:05:47.823804-03:00"
-    },
-    {
-      "title": "Ibovespa e dólar hoje: fuga de estrangeiros derruba a bolsa pela 8ª sessão seguida",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Fuga de estrangeiros afeta negativamente a Ibovespa pela 8ª sessão seguida, indicando perda de confiança no mercado brasileiro",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:05:56.070743-03:00"
-    },
-    {
-      "title": "Tvardi Therapeutics GAAP EPS of -$0.69 misses by $0.06",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "O resultado financeiro da empresa caiu abaixo do esperado, o que pode afetar a confiança dos investidores no futuro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:06:00.908383-03:00"
-    },
-    {
-      "title": "Lucid unveils a new model called the most powerful three-row SUV in the U.S.",
-      "source": "Seeking Alpha",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:06:03.828562-03:00"
-    },
-    {
-      "title": "Descubra como dar mais eficiência ao caixa da sua carteira com ETFs de renda fixa",
-      "source": "Seu Dinheiro",
-      "score": 5.0,
-      "motivo": "A notícia fala sobre ETFs de renda fixa, o que é relevante para o mercado financeiro e pode influenciar as decisões de investimento dos traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:06:11.228618-03:00"
-    },
-    {
-      "title": "What SEO Actually Costs — and When You’re Being Overcharged",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "O assunto não está relacionado ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:06:16.671470-03:00"
-    },
-    {
       "title": "Target Appoints Its First-Ever AI Exec as the Retailer Pushes Deeper Into Artificial Intelligence. What It Means for TGT Stock.",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T11:06:37.027352-03:00"
+    },
+    {
+      "title": "Romário anuncia saída do PL e apoio à candidatura de Eduardo Paes",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:10:46.679009-03:00"
+    },
+    {
+      "title": "Ações de Singapura ganham força com economia \"Cachinhos Dourados\"",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A economia de Singapura é considerada estável e com crescimento, o que pode atrair investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:10:51.065567-03:00"
+    },
+    {
+      "title": "Não consegue resistir a alimentos gordurosos? A resposta pode estar no cérebro",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:10:55.200397-03:00"
+    },
+    {
+      "title": "Quem é a executiva à frente da estreia da Cadillac no Brasil",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia e sobre uma executiva de luxo e nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:10:57.987792-03:00"
+    },
+    {
+      "title": "SNME11: FII anuncia dividendos com yield de 1,07%; veja valor",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "anuncio de dividendos com yield atraente",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:11:09.402859-03:00"
+    },
+    {
+      "title": "Larry Fink Says Oil Could Be Cut in Half. If So, This Tech Stock Could Explode Higher",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A declaração de Fink sobre o preço do petróleo pode ter um impacto significativo no mercado de ações de tecnologia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:11:14.093862-03:00"
+    },
+    {
+      "title": "American Gen Z takes radical path to wealth creation",
+      "source": "Yahoo Finance",
+      "score": 0.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:11:16.947795-03:00"
     }
   ]
 }
