@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "OpenAI Revenue Run Rate Tops $40 Billion as IPO Plans Take Shape | The Pulse 8/14/2026",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre um programa de entrevistas.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:30:46.666938-03:00"
-    },
-    {
-      "title": "Gafisa perde controle do Hotel Praia Ipanema em adjudicação judicial de R$ 223 mi",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "a noticia se refere a uma perda de controle de uma empresa, mas não é relevante para o mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:30:50.153142-03:00"
-    },
-    {
       "title": "Conselho da Embraer aprova R$ 154 mi em proventos; veja quem tem direito",
       "source": "InfoMoney",
       "score": 5.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T09:51:00.913331-03:00"
+    },
+    {
+      "title": "Block Stock Slumps Despite Earnings Rising by 65%",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Aumento de lucros não foi suficiente para impulsionar as ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T09:55:58.013343-03:00"
+    },
+    {
+      "title": "SoFi Stock Keeps Falling Despite ‘Exceptional’ Earnings. What It Would Take to Move SOFI Again.",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A queda da ação da SoFi é significativa e pode afetar a confiança dos investidores no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T09:56:00.972132-03:00"
     }
   ]
 }
