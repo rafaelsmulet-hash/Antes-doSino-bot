@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stocks Set To Post Fresh All Time High As Tech Euphoria Returns",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T09:06:35.545379-03:00"
-    },
-    {
       "title": "Unusual Machines Jumps After Trump Slaps 100% Drone Tariff In \"Hard Decoupling\" From China",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T16:26:29.121049-03:00"
+    },
+    {
+      "title": "SEC Charges Private Fund Adviser Adit Ventures Management, Its CEO and Affiliated General Partners in Alleged Fraud",
+      "source": "SEC",
+      "score": 0.0,
+      "motivo": "A notícia é sobre fraude e não tem relação direta com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T16:30:51.604067-03:00"
     }
   ]
 }
