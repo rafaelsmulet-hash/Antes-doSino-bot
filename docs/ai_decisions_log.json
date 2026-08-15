@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bob Iger e Joshua Kushner compram os Los Angeles Lakers",
-      "source": "Brazil Journal",
-      "score": 0.0,
-      "motivo": "A noticia e sobre esporte, nao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:40:52.161262-03:00"
-    },
-    {
-      "title": "How do I get the lowest mortgage rate? 8 tips you can use.",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:41:03.908937-03:00"
-    },
-    {
-      "title": "Rubrik (RBRK) Defies Memory Cost Concerns",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A empresa apresentou uma solução eficaz para reduzir custos de memória, o que pode ter um impacto positivo no mercado de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:41:07.106954-03:00"
-    },
-    {
-      "title": "Baron Discovery Fund’s Strategic Trim of Establishment Labs Holdings Inc (ESTA) Locks Gains",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:41:09.852520-03:00"
-    },
-    {
-      "title": "Is Commvault Systems, Inc. (CVLT) A Good Investment Right Now?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:41:12.565518-03:00"
-    },
-    {
-      "title": "Flávio Bolsonaro propõe tirar do STF julgamento criminal de deputados e senadores",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "Não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:45:47.673626-03:00"
-    },
-    {
-      "title": "Flávio propõe retomar Casa Verde e Amarela e financiar 2,5 milhões de moradias",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:45:50.684019-03:00"
-    },
-    {
-      "title": "New Zealand Immigration Edges to 17-Month High Yet Remains Weak",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A alta da imigração pode ser positiva para a economia da Nova Zelândia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T21:50:38.554735-03:00"
-    },
-    {
       "title": "TST define novo caminho na Justiça para quem não consegue sacar valores do FGTS",
       "source": "InfoMoney",
       "score": 1.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T07:06:09.387537-03:00"
+    },
+    {
+      "title": "4 formas de descobrir quais informações os chatbots têm sobre você",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:10:43.777375-03:00"
+    },
+    {
+      "title": "Jim Cramer Wondered Whether Sandisk Is No Longer Cyclical & Expected Western Digital To Raise Guidance More",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia pode influenciar a percepção dos investidores sobre as empresas de tecnologia e suas perspectivas de crescimento",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:10:53.994733-03:00"
+    },
+    {
+      "title": "Jim Cramer Wonders Whether AppLovin Corporation (NASDAQ:APP) Is Facing Off With Google",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante pois envolve uma disputa entre uma empresa de tecnologia e uma das maiores empresas do mundo, o que pode ter impacto no preço das ações da AppLovin Corporation.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:10:56.943134-03:00"
+    },
+    {
+      "title": "China’s Credit Growth Exceeds Forecasts Despite Rare Loan Slump",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O crescimento do crédito é um indicador importante da saúde econômica da China.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:10:59.791104-03:00"
+    },
+    {
+      "title": "Jim Cramer Explains Datadog, Inc. (NASDAQ:DDOG)’s Share Price Movement",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o preço das ações da Datadog, Inc.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:11:02.639868-03:00"
+    },
+    {
+      "title": "Jim Cramer Used Expedia To Go Against The Trend For This Major Company",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque Jim Cramer é um investidor conhecido e sua opinião pode influenciar o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:11:05.671505-03:00"
+    },
+    {
+      "title": "Jim Cramer Admitted ‘Trimming’ Palo Alto & CrowdStrike Holdings For His Charitable Trust",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A declaração de Cramer sobre a redução de suas ações pode influenciar a percepção dos investidores sobre essas empresas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:11:08.533420-03:00"
+    },
+    {
+      "title": "Jim Cramer Said T-Mobile US Inc. (NASDAQ:TMUS)’s Shares Reflected A Fear Of The Future",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não traz informações concretas sobre o desempenho futuro da empresa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:11:11.353999-03:00"
     }
   ]
 }
