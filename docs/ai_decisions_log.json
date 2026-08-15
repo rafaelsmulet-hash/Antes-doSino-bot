@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fountain Asset reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Os resultados são rotineiros e não apresentam impacto significativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:56:40.755758-03:00"
-    },
-    {
-      "title": "Atmus Filtration raises dividend 9% to $0.06",
-      "source": "Seeking Alpha",
-      "score": 3.0,
-      "motivo": "Aumento de dividendos é um sinal positivo para os investidores e pode afetar a valorização da ação.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:56:43.742754-03:00"
-    },
-    {
-      "title": "Produtos mais sobretaxados puxam queda de 12,2% nas exportações aos EUA",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "queda nas exportações brasileiras aos EUA devido a sobretaxas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:56:53.367280-03:00"
-    },
-    {
       "title": "Lucro da Ânima Educação triplica e atinge R$ 29,1 milhões no 2º trimestre",
       "source": "UOL Economia",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T10:46:01.423167-03:00"
+    },
+    {
+      "title": "Com possibilidade de vitória de Lula, mercado incorpora prêmio eleitoral no real",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A noticia especifica como o mercado incorpora a possibilidade de vitória de Lula no real, o que pode ter impacto concreto no mercado financeiro",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:50:39.978233-03:00"
+    },
+    {
+      "title": "Prediction: Nvidia Stock Will Hit $300 Before 2026 Is Over",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Previsão de preço de ação específica com impacto potencial no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T10:50:58.476712-03:00"
+    },
+    {
+      "title": "Cathie Wood picks up $44.7 million in shares of two highly watched tech stocks. Is it too late to follow along?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A compra significativa de ações por uma investidora influente pode influenciar a percepção do mercado sobre essas empresas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:51:01.375572-03:00"
     }
   ]
 }
