@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "ANZ says property tax changes hit mortgage demand, posts slightly higher profit",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a demanda por empréstimos imobiliários, o que pode ter impacto no mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:51:24.169612-03:00"
-    },
-    {
-      "title": "Sanepar (SAPR11) reverte lucro e tem prejuízo de R$ 505,2 milhões no 2º trimestre",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Prejuízo significativo e queda no ROE afetam a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T07:56:31.189738-03:00"
-    },
-    {
       "title": "Aileron Therapeutics reports Q2 results",
       "source": "Seeking Alpha",
       "score": 2.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T10:36:16.878907-03:00"
+    },
+    {
+      "title": "Insider Sale Alert: Triumph Financial EVP Nelson Sells 3,750 Shares",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Venda de ações por parte de um executivo pode ser um sinal negativo para os investidores.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:41:07.800556-03:00"
+    },
+    {
+      "title": "Insider Sale Alert: Triumph Financial EVP Nelson Sells 3,750 Shares",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A venda de ações por parte de um executivo pode ser um sinal de desconfiança no futuro da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T10:41:15.092701-03:00"
     }
   ]
 }
