@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Rússia rejeita ideia de cessar-fogo no Mar Negro",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "não há informações específicas sobre impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:50:50.955603-03:00"
-    },
-    {
-      "title": "U.S. Physical Therapy names Nchacha Etta as CFO",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A nomeação de um novo CFO é uma mudança rotineira em uma empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:50:57.852381-03:00"
-    },
-    {
-      "title": "Milestone Scientific beats top-line estimates; reaffirms FY26 outlook",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A empresa superou as estimativas de receita, o que é um sinal positivo para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:51:00.713416-03:00"
-    },
-    {
       "title": "Fidelity Healthcare ETF vs. iShares Pharma Fund: Which Wins?",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T14:25:42.180329-03:00"
+    },
+    {
+      "title": "Por baixo da alta do S&P 500: desempenho e fundamentos divergem",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "A noticia destaca a divergencia entre o desempenho e os fundamentos do S&P 500, o que pode indicar um mercado em sobreposicao e pronto para uma correcao.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T14:30:57.697335-03:00"
+    },
+    {
+      "title": "Tiroteio deixa cinco feridos em universidade dos EUA; polícia investiga suspeitos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há conexão direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T14:31:00.715650-03:00"
+    },
+    {
+      "title": "Everyone's Watching Oklo and NuScale for Nuclear Exposure. This Overlooked Stock Is Building One Too.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a construção de uma usina nuclear, o que é relevante para o mercado de energia e recursos naturais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T14:31:07.014420-03:00"
     }
   ]
 }
