@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Old Republic declares $0.315 dividend",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Dividendos significativos podem afetar a valorização das ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:16:32.656028-03:00"
-    },
-    {
       "title": "J&J Snack Foods declares $0.80 dividend",
       "source": "Seeking Alpha",
       "score": 2.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T11:35:58.959388-03:00"
+    },
+    {
+      "title": "Alcolumbre destrava escala 6x1: o que acontece agora?",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre política e governo, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:40:39.118881-03:00"
     }
   ]
 }
