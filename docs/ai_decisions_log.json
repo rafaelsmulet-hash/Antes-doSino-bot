@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "UOL transmite amanhã amistoso entre Manchester United e Milan",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:54:51.454242-03:00"
-    },
-    {
-      "title": "Acionar Lei de Reciprocidade ainda é balé diplomático; veja por quê",
-      "source": "UOL Economia",
-      "score": 8.0,
-      "motivo": "Anotação da Lei de Reciprocidade pode afetar negativamente as exportações brasileiras para os EUA.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:54:54.304682-03:00"
-    },
-    {
-      "title": "Em parceria com UOL, MinutoMega Talks debate novidades no setor de energia",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:54:56.989010-03:00"
-    },
-    {
-      "title": "Bolsa perde R$ 279 bi em 7 pregões: é hora de comprar ou vender?",
-      "source": "UOL Economia",
-      "score": 8.0,
-      "motivo": "perda significativa de valor de mercado da Bolsa brasileira em sete pregões",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:55:03.404002-03:00"
-    },
-    {
       "title": "Só lembra da Europa nas férias? Este economista alemão diz por que o seu patrimônio também deveria viajar para lá",
       "source": "Seu Dinheiro",
       "score": 2.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T08:36:14.557957-03:00"
+    },
+    {
+      "title": "Natural Gas Falls on Shifting Weather Forecasts",
+      "source": "WSJ Markets",
+      "score": 5.0,
+      "motivo": "A notícia afeta diretamente a demanda por gás natural nos EUA, o que é relevante para o mercado de commodities.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:40:45.401741-03:00"
+    },
+    {
+      "title": "VRTA11: carteira do fundo imobiliário tem retorno potencial de IPCA + 20,97%",
+      "source": "Suno Noticias",
+      "score": 5.0,
+      "motivo": "retorno potencial de IPCA + 20,97% é relevante para investidores em fundos imobiliários",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:40:59.816217-03:00"
+    },
+    {
+      "title": "Pharma working capital feels the weight of GLP-1 boom",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A alta demanda por medicamentos GLP-1 está afetando o capital de giro da indústria de fármacos, o que pode ter um impacto significativo no setor.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:41:04.538792-03:00"
+    },
+    {
+      "title": "SEC Announces Continuation of Small Business Advisory Committee Meeting",
+      "source": "SEC",
+      "score": 1.0,
+      "motivo": "A notícia não apresenta informações significativas sobre o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:41:08.665965-03:00"
     }
   ]
 }
