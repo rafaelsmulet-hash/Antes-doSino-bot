@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que as ações da Onfolio estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:25.562009-03:00"
-    },
-    {
-      "title": "Tesla’s stock is bouncing. Here’s what the options market says you should do.",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:46:29.120221-03:00"
-    },
-    {
-      "title": "Beneficient GAAP EPS of -$0.47 beats by $2.04, revenue of $12.17M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:31.854432-03:00"
-    },
-    {
-      "title": "Serina Therapeutics reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:34.426084-03:00"
-    },
-    {
-      "title": "JPMorgan debanks Polymarket on regulatory issues - report",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:46:37.062426-03:00"
-    },
-    {
       "title": "Milestone Scientific beats top-line estimates; reaffirms FY26 outlook",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T14:00:51.314542-03:00"
+    },
+    {
+      "title": "Prediction: Costco Will Beat the S&P 500 Again",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A previsão positiva sobre o desempenho do Costco é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T14:05:41.770842-03:00"
+    },
+    {
+      "title": "Worried About an AI Bubble? These Tech Stocks Are Well-Suited to Survive an AI Bust.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a capacidade da Alphabet de gerar caixa apesar de investimentos em IA, o que pode ser visto como um sinal positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T14:05:44.776239-03:00"
+    },
+    {
+      "title": "Here's How Much a $20,000 Investment in the S&P 500 Could Grow Over the Long Term",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é uma análise geral sobre investimentos na S&P 500, sem informações específicas sobre o mercado atual.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T14:05:47.620220-03:00"
+    },
+    {
+      "title": "Jim Cramer Is Selling His Bitcoin, Citing the Quantum Threat. Here's Why He's Wrong.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não é sobre um evento atual ou iminente, mas sim sobre uma possível ameaça futura.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T14:05:50.500896-03:00"
+    },
+    {
+      "title": "Prediction: Even After Soaring 180%, a Stock Split Isn't on the Horizon for AMD. Here's Why.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois afeta diretamente o preço das ações da AMD, que estão subindo devido ao sucesso da empresa em conquistar contratos importantes.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T14:05:53.715545-03:00"
     }
   ]
 }
