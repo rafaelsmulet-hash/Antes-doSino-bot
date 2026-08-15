@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Processo de reciprocidade marca mais um capítulo negativo da relação Lula x Trump",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia nao se refere a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:51:35.418157-03:00"
-    },
-    {
-      "title": "Medidas de reciprocidade podem elevar custo de vida e produção, diz economista",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "A noticia menciona possivel aumento de custo de vida e produção, o que pode ser negativo para o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:51:38.294565-03:00"
-    },
-    {
-      "title": "Vance: EUA pressionam Irã e utilizam meios diplomáticos para estabilizar petróleo",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "não há menção direta a impactos econômicos ou financeiros",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:51:41.144364-03:00"
-    },
-    {
-      "title": "Varejo nos EUA, PIB na Europa, desemprego no Brasil e mais destaques nesta sexta",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "Noticia sobre destaque de noticias do mercado, sem conteudo especifico",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:51:44.017114-03:00"
-    },
-    {
-      "title": "“2030 já começou”: Tarcísio, Nikolas e Renan já jogam a próxima eleição, diz analista",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:51:46.891051-03:00"
-    },
-    {
-      "title": "S&P 500 e Nasdaq Futuro caminham para 3ª alta semanal; Dow Jones fica para trás",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Noticia sobre inflacao mais branda nos EUA, o que reduz a probabilidade de alta de juros do Fed e beneficia acoes de tecnologia",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:51:49.758653-03:00"
-    },
-    {
-      "title": "Ibovespa em baixa, S&P 500 e Nasdaq em alta: até onde os índices podem ir?",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "a noticia destaca a pressao crescente sobre o Ibovespa, indicando possivel impacto negativo no mercado brasileiro",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:51:56.245256-03:00"
-    },
-    {
       "title": "Por que o Ibovespa cai enquanto Wall Street bate recordes? 5 fatores explicam",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T07:56:51.284388-03:00"
+    },
+    {
+      "title": "Outliers InfoMoney: conheça o mercado de R$ 11,2 trilhões que o prêmio reconhece",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A noticia e sobre o mercado financeiro, mas nao tem conteudo especifico ou impacto concreto",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:00:44.646885-03:00"
+    },
+    {
+      "title": "Mercado global de seguros para datacenters deve atingir US$ 24 bi em 2030",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A expectativa de crescimento do mercado de seguros para datacenters é um sinal positivo para as empresas que operam nessa área.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:00:47.445105-03:00"
+    },
+    {
+      "title": "O novo luxo do executivo é poder escolher quando trabalhar; entenda",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:00:50.260348-03:00"
+    },
+    {
+      "title": "'Maldição da múmia': estudo revela risco biológico na venda de restos mortais",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:00:54.607907-03:00"
+    },
+    {
+      "title": "Dividend Stocks Usually Beat Non-Payers. Berkshire Hathaway Is the Exception.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não traz informações novas ou específicas sobre o mercado atual, apenas uma afirmação geral sobre a história do desempenho de ações de dividendos.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:00:59.504972-03:00"
+    },
+    {
+      "title": "Is $500,000 Enough? What Retirement Really Looks Like on a Half-Million-Dollar Nest Egg.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é sobre planejamento financeiro pessoal e não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:01:02.493924-03:00"
+    },
+    {
+      "title": "How Big Tech Is Inflating Each Other’s Earnings",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia sugere que as empresas de tecnologia estão manipulando seus lucros, o que pode ter um impacto significativo no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T08:01:09.402107-03:00"
     }
   ]
 }
