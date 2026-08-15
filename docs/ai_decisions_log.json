@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "1 Market-Beating Auto Stock Up 746% in the Past 10 Years That Warren Buffett Would Agree Is a Compounder (Hint: It's Not Tesla)",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não é específica sobre o mercado atual, mas sim sobre uma ação específica que teve um desempenho excepcional nos últimos 10 anos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:27:28.193398-03:00"
-    },
-    {
-      "title": "FTSE 100 Down Marginally; Miners Down Sharply",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado pois afeta diretamente os índices de referência britânicos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:27:31.309809-03:00"
-    },
-    {
-      "title": "CAC 40 Up Slightly In Lackluster Trade",
-      "source": "Nasdaq",
-      "score": 3.0,
-      "motivo": "A notícia é relevante para o mercado pois menciona fatores que afetam a confiança dos investidores",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:27:34.338242-03:00"
-    },
-    {
-      "title": "TGAR11 mantém DY de 14,27%; fundo imobiliário lucra R$ 15,6 milhões em junho",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "O fundo imobiliário TGAR11 apresentou um resultado positivo e distribuiu dividendos, o que é positivo para os investidores e pode influenciar a demanda por ações de fundos imobiliários.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T08:27:41.456010-03:00"
-    },
-    {
       "title": "Why Marex Group Stock Popped Today",
       "source": "Yahoo Finance",
       "score": 5.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T12:25:42.934757-03:00"
+    },
+    {
+      "title": "Sindicato prepara ação coletiva contra demissões de Casas Bahia, diz jornal",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "demissões podem afetar a confiança dos investidores",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:30:47.473482-03:00"
+    },
+    {
+      "title": "Social Security recipients will get more money next year. Here’s how much the COLA may boost benefits.",
+      "source": "MarketWatch",
+      "score": 5.0,
+      "motivo": "O aumento do benefício pode influenciar o poder de compra dos idosos, afetando a economia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:30:53.831968-03:00"
+    },
+    {
+      "title": "Lula e Flávio Bolsonaro voltam a empatar, mostra pesquisa; veja a lista de candidatos na corrida pela presidência",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:31:02.456060-03:00"
+    },
+    {
+      "title": "SanDisk CEO reveals what's next after explosive 3,150% stock rally",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações concretas sobre o futuro da empresa ou do mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T12:31:07.730873-03:00"
     }
   ]
 }
