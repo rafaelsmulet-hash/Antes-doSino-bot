@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Europe's Robot Reality | Bloomberg Tech: Europe 08/14/2026",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:51:22.640838-03:00"
-    },
-    {
-      "title": "Emerging Stocks Set for Best Week Since June on Fed Outlook, AI",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Mudança na perspectiva da taxa de juros da Fed e impacto positivo na inteligência artificial",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T06:51:25.630919-03:00"
-    },
-    {
-      "title": "A Historic El Niño Is Coming That Could Cost the World Trillions",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:51:28.618856-03:00"
-    },
-    {
-      "title": "A Historic El Niño Is Coming That Could Cost the World Trillions",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T06:51:31.550818-03:00"
-    },
-    {
       "title": "Processo de reciprocidade marca mais um capítulo negativo da relação Lula x Trump",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T07:46:39.703928-03:00"
+    },
+    {
+      "title": "Seguidores de tendência podem continuar comprando Nasdaq, diz Bank of America",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "A recomendação do Bank of America é considerada positiva para o mercado, indicando que os investidores podem continuar comprando ações da Nasdaq.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T07:56:30.188112-03:00"
+    },
+    {
+      "title": "Quem são os novos X-Men? Marvel revela elenco com Sadie Sink e Adam Driver",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:56:34.788275-03:00"
+    },
+    {
+      "title": "'American Horror Story 13': trailer revela quais personagens estão de volta; veja vídeo",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre entretenimento",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:56:37.585937-03:00"
+    },
+    {
+      "title": "Warren Buffett's Successor, Greg Abel, Is About to Drop a Bombshell on Wall Street Later Today, Aug. 14",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A Berkshire Hathaway é uma das maiores empresas do mundo e as declarações de Abel podem ter um impacto significativo no mercado.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:56:51.284388-03:00"
     }
   ]
 }
