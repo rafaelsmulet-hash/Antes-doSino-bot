@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "GT Biopharma reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:12:07.334024-03:00"
-    },
-    {
-      "title": "Quince Therapeutics GAAP EPS of -$12.31 misses by $0.02",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:12:09.935091-03:00"
-    },
-    {
-      "title": "Decisive Dividend declares C$0.045 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:12:12.512185-03:00"
-    },
-    {
-      "title": "Aptevo Therapeutics reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:12:15.089584-03:00"
-    },
-    {
-      "title": "Annovis Bio GAAP EPS of -$0.40 beats by $0.05",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:12:17.666382-03:00"
-    },
-    {
       "title": "CSP declares $0.03 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T17:25:47.865839-03:00"
+    },
+    {
+      "title": "Herança de Silvio Santos: o que patrimônio de Silvia Abravanel diz sobre disputa?",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "A notícia é sobre a herança de Silvio Santos, mas não há informações concretas sobre impacto no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T17:35:46.161012-03:00"
+    },
+    {
+      "title": "Governo lança curso gratuito de IA para mulheres empreendedoras com premiação em dinheiro; como se inscrever?",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T17:35:56.743370-03:00"
+    },
+    {
+      "title": "Rage Politics: Hakeem Jeffries Will Take A Baseball Bat To The Supreme Court",
+      "source": "ZeroHedge",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T17:36:03.959595-03:00"
+    },
+    {
+      "title": "Woke 2.0 Will Be Worse",
+      "source": "ZeroHedge",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro, mas pode ter impacto político e social.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T17:36:06.981217-03:00"
+    },
+    {
+      "title": "Ukraine Hits Key Russian Space Facility With Flamingo Cruise Missiles",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "O ataque à instalação espacial russa pode ter um impacto significativo na capacidade da Rússia de lançar satélites e veículos espaciais",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T17:36:09.912074-03:00"
     }
   ]
 }
