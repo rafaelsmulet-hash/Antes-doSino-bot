@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "CSP declares $0.03 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:12:20.241264-03:00"
-    },
-    {
-      "title": "Desemprego cai em 13 estados brasileiros no 2º trimestre de 2026, diz IBGE",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:12:28.126345-03:00"
-    },
-    {
       "title": "Journey Medical Corporation Q2 2026 Earnings Call Summary",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T17:36:09.912074-03:00"
+    },
+    {
+      "title": "Looking at RMDs in Retirement? 3 Tips to Manage Them.",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é específica sobre mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T17:41:06.701278-03:00"
+    },
+    {
+      "title": "What a Cintas CEO Insider Filing Signals as It Pursues UniFirst",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Venda de ações significativa pelo CEO pode ser um sinal de desconfiança na empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T17:41:09.760644-03:00"
     }
   ]
 }
