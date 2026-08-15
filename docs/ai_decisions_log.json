@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Petróleo sobe com ameaça de bloqueio dos EUA ao Irã por tempo indeterminado",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "Ameaça de bloqueio dos EUA ao Irã aumenta o risco de restrições ao fluxo de energia, o que pode impulsionar os preços do petróleo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:16:26.937095-03:00"
-    },
-    {
-      "title": "PRC Empreendimentos lança fundo de R$ 10 milhões para mudar a experiência de morar",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "lançamento de fundo de R$ 10 milhões pode impulsionar crescimento da empresa e atrair investimentos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:16:29.730666-03:00"
-    },
-    {
       "title": "Old Republic declares $0.315 dividend",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T11:31:05.046695-03:00"
+    },
+    {
+      "title": "Greve atinge companhia aérea e cancela quase 100 voos em pleno verão europeu",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "a greve é um evento rotineiro e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:35:42.739203-03:00"
+    },
+    {
+      "title": "Leave the Kids the Roth, Spend the IRA Yourself: The Inheritance Order Most Families Get Backward.",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta informações específicas e concretas sobre o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T11:35:58.959388-03:00"
     }
   ]
 }
