@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que as ações da Super League Enterprise estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Ação de uma empresa específica está subindo, o que pode ser um sinal de otimismo do mercado em relação ao setor ou à economia em geral.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:07.279034-03:00"
-    },
-    {
-      "title": "Macquarie favorece BSL, RWC e REH na temporada de balanços australiana",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T08:46:09.884275-03:00"
-    },
-    {
       "title": "Ações da Boost Run disparam 11,5% com acordo de locação de infraestrutura GPU",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T13:31:25.747741-03:00"
+    },
+    {
+      "title": "Apple gets U.S. warning not to buy memory chips from China: WSJ",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "O alerta pode afetar a cadeia de suprimentos da Apple e impactar suas operações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T13:35:50.539933-03:00"
+    },
+    {
+      "title": "Mark Cuban calls these investments 'death' for ultra-rich Americans. Are you making the same mistakes?",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia destaca investimentos específicos que podem ser prejudiciais, o que pode influenciar as decisões de investimento dos traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T13:36:02.807704-03:00"
     }
   ]
 }
