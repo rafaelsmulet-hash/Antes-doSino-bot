@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Tebet declara R$ 10,6 mi em patrimônio ao registrar candidatura ao Senado por SP",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "a noticia e sobre politica e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-13T22:01:00.969683-03:00"
-    },
-    {
       "title": "Rival do Corinthians, Rosario Central tem realidade financeira distante do Brasil",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-15T07:21:33.553816-03:00"
+    },
+    {
+      "title": "Edify achieves financial close for Ganymirra and Majors Creek projects",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não apresenta impacto significativo no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T07:26:15.809296-03:00"
     }
   ]
 }
