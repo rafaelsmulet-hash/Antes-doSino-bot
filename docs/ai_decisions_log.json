@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "China desafia EUA na corrida da IA, e ações de tecnologia sobem 29% em 2026",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:12:02.019755-03:00"
-    },
-    {
-      "title": "Governo Lula atualiza valor do salário mínimo de 2027, diz jornal",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:12:04.601997-03:00"
-    },
-    {
       "title": "GT Biopharma reports Q2 results",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-15T17:21:12.344837-03:00"
+    },
+    {
+      "title": "Honda lança Biz Kuromi, edição especial inspirada em personagem da Sanrio",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao e relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-15T17:25:44.968543-03:00"
+    },
+    {
+      "title": "US$ 17 bilhões em ações do Google: o que Buffett está comprando na bolsa em 2026",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "Warren Buffett aumentou sua exposição ao Google, tornando-o a terceira maior posição em ações do conglomerado, o que é considerado positivo para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-15T17:25:47.865839-03:00"
     }
   ]
 }
