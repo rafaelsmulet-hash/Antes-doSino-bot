@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Here are the major earnings after the close Friday",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:06:21.338076-03:00"
-    },
-    {
       "title": "Blaize downgraded by DA Davidson to Neutral",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T12:50:56.789617-03:00"
+    },
+    {
+      "title": "Lei da Reciprocidade vira munição na disputa eleitoral após governo abrir processo contra os EUA; entenda os impactos",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "a noticia não é sobre mercado financeiro, mas sim sobre política eleitoral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:55:46.263994-03:00"
     }
   ]
 }
