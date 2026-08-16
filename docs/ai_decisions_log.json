@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Sem boi, alta de preço e frigoríficos fechados: o que acontece com a carne nos EUA",
-      "source": "Exame",
-      "score": 8.0,
-      "motivo": "redução da oferta de carne bovina nos EUA impacta negativamente os frigoríficos e eleva preços",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:36.367465-03:00"
-    },
-    {
-      "title": "CNPJ surpresa, regras incertas: o que a reforma tributária não combinou com o nanoempreendedor",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:38.997492-03:00"
-    },
-    {
       "title": "A bota 'assinatura' de Kate Moss nos anos 2000 está de volta",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T14:10:50.493811-03:00"
+    },
+    {
+      "title": "Flávio inicia campanha em Copacabana e chama Lula de 'caloteiro da esperança'",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia é sobre política e não tem relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:15:38.543188-03:00"
+    },
+    {
+      "title": "De Schwarzenegger à Michelle Obama: os planos do SP2B para sua próxima edição",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:15:41.217289-03:00"
     }
   ]
 }
