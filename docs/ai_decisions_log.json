@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Sem pôster oficial, cinema do Canadá apela para desenho de Homem-Aranha e viraliza",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:31:18.947402-03:00"
-    },
-    {
-      "title": "iPad para trabalho: os melhores acessórios para otimizar o uso em 2026",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:31:21.578049-03:00"
-    },
-    {
-      "title": "Irã confirma presença na cúpula dos Brics em setembro",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:31:24.285020-03:00"
-    },
-    {
       "title": "Congress changed the rules around charitable giving. Do it earlier in the year to save money.",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T09:35:40.238722-03:00"
+    },
+    {
+      "title": "Brasil faz história com primeiro ouro no Mundial de ginástica rítmica; veja apresentação",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre esporte e não tem relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:40:45.465416-03:00"
+    },
+    {
+      "title": "Credit Strategist Michael Lewitt warns CoreWeave’s debt load threatens survival",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia destaca um problema específico de endividamento que pode afetar a sobrevivência da empresa, o que é relevante para o mercado agora",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:40:48.518848-03:00"
+    },
+    {
+      "title": "'Ultimate crash': Peter Schiff calls US stocks a 'ticking time bomb' — but is he right? Protect your wealth now",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A declaração de Schiff é relevante para o mercado, pois pode influenciar a percepção dos investidores sobre o risco das ações norte-americanas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:41:01.390959-03:00"
     }
   ]
 }
