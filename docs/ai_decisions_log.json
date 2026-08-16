@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "\"Bin There, Done That?\" Not Quite",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:36:43.960842-03:00"
-    },
-    {
-      "title": "UMich Sentiment Slumps In August As War Re-Escalated, Inflation Fears Tick-Up",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:36:46.612770-03:00"
-    },
-    {
-      "title": "More Than Two-Thirds Of The Power Sought For US Data Centers Will Never Materialize",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:36:49.309531-03:00"
-    },
-    {
-      "title": "FII TVRI11 aprova 2ª emissão de cotas de até R$ 500 milhões; veja detalhes",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A aprovação de uma 2ª emissão de cotas pode atrair investimentos adicionais para a empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:40:41.612872-03:00"
-    },
-    {
       "title": "Medida de reciprocidade sobre tarifas dos EUA pode ser adotada ou não, diz Durigan",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T20:20:51.279136-03:00"
+    },
+    {
+      "title": "WuXi AppTec’s 100% Stock Rally Defies Geopolitical Headwinds",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque indica que a empresa continua a ser uma escolha popular para investidores, apesar de desafios geopolíticos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T20:25:33.643591-03:00"
+    },
+    {
+      "title": "A2 Milk Sees Slow Recovery From China Formula Supply Problem",
+      "source": "Bloomberg Markets",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para a empresa, mas não é um evento de grande impacto no mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:25:36.498072-03:00"
+    },
+    {
+      "title": "Seca em rio revela altar romano dedicado ao deus do trovão na Europa",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:25:41.381054-03:00"
+    },
+    {
+      "title": "Por que ouvir que seu sintoma é 'normal' pode prejudicar o tratamento?",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A noticia nao se refere a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:25:44.126360-03:00"
     }
   ]
 }
