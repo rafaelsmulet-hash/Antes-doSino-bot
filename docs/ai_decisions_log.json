@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Kepler eleva Komax para \"compra\" com pedidos em alta e fundo do ciclo",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:56:04.651697-03:00"
-    },
-    {
-      "title": "Biocombustíveis ampliam fronteiras, mas dependem de segurança regulatória e acesso a mercados",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:56:07.804970-03:00"
-    },
-    {
       "title": "As melhores soundbars, do custo-benefício ao topo de linha, que testamos em 2026",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T07:05:51.965663-03:00"
+    },
+    {
+      "title": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações do Itaú há cinco anos?",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia destaca a valorização da ação do Itaú após fusão com o Unibanco, o que é relevante para o mercado de ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:10:48.914616-03:00"
+    },
+    {
+      "title": "How Dropbox's co-CEO decides which meetings to skip",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:11:01.410727-03:00"
     }
   ]
 }
