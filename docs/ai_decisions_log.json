@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Taxa de desemprego cai em 13 das 27 unidades da federação no 2º trimestre",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Taxa de desemprego em queda é um sinal positivo para a economia e pode influenciar a tomada de decisões de investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:55:42.701641-03:00"
-    },
-    {
       "title": "15 de agosto é feriado? Veja o que abre e fecha no Dia de Assunção de Nossa Senhora",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T12:01:32.574448-03:00"
+    },
+    {
+      "title": "As melhores lâmpadas inteligentes que testamos em 2026: do básico ao premium",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:05:47.902193-03:00"
     }
   ]
 }
