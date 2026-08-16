@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Anthropic Said in Talks to Buy Startup Decart for $6 Billion",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:56:14.887090-03:00"
-    },
-    {
-      "title": "CoreWeave Signals Sunny Skies for AI Infrastructure",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:56:17.497794-03:00"
-    },
-    {
-      "title": "“‘Eu não acredito em herdeiros’: a visão do executivo que assumiu a Cory Alimentos",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sobre uma mudança de gestão de uma empresa",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:00:52.631165-03:00"
-    },
-    {
-      "title": "Eleições 2026: confira as principais datas, da campanha à posse",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:00:55.374228-03:00"
-    },
-    {
-      "title": "Desemprego de mulheres é 39% maior que de homens no 2º trimestre do ano",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Taxa de desocupação das mulheres acima da dos homens pode influenciar a economia e a confiança dos investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:00:58.154689-03:00"
-    },
-    {
-      "title": "Eleições 2026: 18 dos 27 governadores não poderão se reeleger; veja quais",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:01:00.795865-03:00"
-    },
-    {
       "title": "Oconee Federal Financial GAAP EPS of $0.84",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T12:11:07.058590-03:00"
+    },
+    {
+      "title": "Lotofácil: aposta simples de São Paulo fatura prêmio de R$ 1,7 milhão sozinho",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "aposta de loteria não afeta o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:20:42.348712-03:00"
+    },
+    {
+      "title": "Neuroscience Is Becoming AbbVie's Quiet Powerhouse -- and Management Now Sees $12.7 Billion in Sales This Year",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a importância crescente da neurociência para a AbbVie, o que pode ter impacto positivo nas vendas da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:20:48.878283-03:00"
+    },
+    {
+      "title": "Applied Materials Trades More Than 25% Below Its High With Revenue at a Record",
+      "source": "Nasdaq",
+      "score": 8.0,
+      "motivo": "A empresa alcançou receita recorde, o que é um sinal positivo para o mercado.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:20:51.770711-03:00"
+    },
+    {
+      "title": "Why SK Hynix Stock Skyrocketed This Week",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Investimento de um fundo de riqueza soberana em uma empresa de tecnologia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:20:54.767352-03:00"
+    },
+    {
+      "title": "Energy Transfer Just Raised Its 2026 Guidance. Is the Stock Still a Buy?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A empresa aumentou sua previsão para 2026, o que pode ser um sinal de otimismo e crescimento.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:20:57.697820-03:00"
+    },
+    {
+      "title": "Better Quantum Computing Stock: IBM or D-Wave?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia destaca a vantagem financeira e empresarial da IBM em relação à D-Wave, o que pode influenciar a escolha de investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T12:21:00.689514-03:00"
     }
   ]
 }
