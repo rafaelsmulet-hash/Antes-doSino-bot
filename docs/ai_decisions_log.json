@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "‘Lanternas’: veja o que esperar da nova série da DC que estreia neste domingo",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:22.448273-03:00"
-    },
-    {
-      "title": "Por que morte de Jane Austen é um mistério? Cientistas descobrem novas pistas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:25.063314-03:00"
-    },
-    {
-      "title": "Sobrinho de Walter Salles estreia com filme de futebol e conquista prêmio",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:27.823648-03:00"
-    },
-    {
       "title": "Ibovespa cai pela 9ª sessão e dólar sobe com juros em alta e pesquisa eleitoral",
       "source": "Exame",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T13:55:51.759481-03:00"
+    },
+    {
+      "title": "Varejo no 2T: como cenário macro impactou Casas Bahia, Renner, Magalu e Riachuelo?",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia revela que a Renner cortou a projeção de crescimento, o que pode afetar negativamente o mercado de ações da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T14:05:51.270796-03:00"
+    },
+    {
+      "title": "Quem são os 30 semifinalistas do programa da Samsung de inovação em escolas públicas",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:05:56.353303-03:00"
+    },
+    {
+      "title": "A campanha eleitoral começou: veja as regras, o que esperar até as eleições e a estreia dos candidatos nas ruas",
+      "source": "Seu Dinheiro",
+      "score": 0.0,
+      "motivo": "não há nenhuma informação relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:06:04.925697-03:00"
     }
   ]
 }
