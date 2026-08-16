@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Executive Sells Over 2,000 Shares of Tech Stock, Valued at More Than $200,000",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:36:22.737950-03:00"
-    },
-    {
-      "title": "104 Billion Reasons to Buy CoreWeave Stock",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:36:25.338755-03:00"
-    },
-    {
-      "title": "Vistra (VST) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:36:28.066519-03:00"
-    },
-    {
-      "title": "Embecta (EMBC) Q3 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:36:30.698915-03:00"
-    },
-    {
       "title": "Spectrum Brands (SPB) Q3 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T10:06:18.545679-03:00"
+    },
+    {
+      "title": "Eleições 2026: propaganda eleitoral começa neste domingo; veja o que muda",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:10:49.820430-03:00"
+    },
+    {
+      "title": "Voters say their finances have worsened under Trump as midterms approach",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas pode influenciar a percepção dos investidores sobre a economia americana.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:10:53.406237-03:00"
+    },
+    {
+      "title": "Notable healthcare headlines for the week: Eli Lilly, Hims & Hers Health, and Merck in focus",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o setor de saúde, mas não é um evento de grande impacto imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:10:56.259837-03:00"
+    },
+    {
+      "title": "Pousou de emergência: como saber a hora certa de evacuar a aeronave?",
+      "source": "UOL Economia",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:11:05.992331-03:00"
     }
   ]
 }
