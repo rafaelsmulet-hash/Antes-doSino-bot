@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Trump asks Supreme Court to let White House ballroom construction continue",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:21:52.470076-03:00"
-    },
-    {
-      "title": "Trump Family-Tied Dronemakers (UMAC, PUSA) Get a Boost From New US Tariffs",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente as importações de componentes de drones, o que pode impactar as empresas envolvidas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:25:37.204512-03:00"
-    },
-    {
-      "title": "Polícia de SP recupera obras de Matisse roubadas da Biblioteca Mário de Andrade",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:25:41.488271-03:00"
-    },
-    {
-      "title": "Tarcísio diz que motorista de Haddad será ouvido em investigação sobre ação da PM",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:25:44.170513-03:00"
-    },
-    {
       "title": "Por que as ações da Strategy estão caindo hoje?",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T17:36:01.476424-03:00"
+    },
+    {
+      "title": "Exxon, Chevron e Petrobras: como foi o lucro das petroleiras no 2º trimestre de 2026",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Preços do petróleo em alta afetam positivamente as petroleiras",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T17:40:41.315859-03:00"
+    },
+    {
+      "title": "QI antes do nascimento? Startups apostam em testes genéticos de embriões",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é um assunto financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T17:40:45.562654-03:00"
+    },
+    {
+      "title": "Agenda econômica tem prévia do PIB, reunião do CMN e ata do Fed; confira os indicadores que mexem com o mercado nesta semana",
+      "source": "Seu Dinheiro",
+      "score": 6.0,
+      "motivo": "Previsão do PIB e reunião do CMN podem influenciar a política monetária brasileira",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T17:40:53.517281-03:00"
+    },
+    {
+      "title": "NVIDIA’s $3 Billion Bet on the Power Behind AI",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O investimento é relevante porque reflete a confiança da NVIDIA na tecnologia de processamento de dados para a inteligência artificial, que é uma área em rápida expansão.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T17:40:58.143995-03:00"
     }
   ]
 }
