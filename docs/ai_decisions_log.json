@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Big Take: A Major Earthquake Challenges Colombia’s President",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada diretamente ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:10:43.263974-03:00"
-    },
-    {
-      "title": "Yduqs (YDUQ3): por que ação cai quase 7% se queda do lucro já era esperada?",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:10:46.912189-03:00"
-    },
-    {
-      "title": "Lei de Reciprocidade contra os EUA: que impacto essa decisão pode ter na Bolsa e no dólar? Confira avaliação de especialistas",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:10:51.269885-03:00"
-    },
-    {
-      "title": "Por que as ações da Strategy estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:10:54.060766-03:00"
-    },
-    {
-      "title": "Noruega - Ações fecharam o pregão em alta e o Índice Oslo OBX avançou 0,85%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:10:56.717679-03:00"
-    },
-    {
-      "title": "Israel - Ações fecharam o pregão em queda e o Índice TA 35 recuou 0,33%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:10:59.406646-03:00"
-    },
-    {
-      "title": "Grécia - Ações fecharam o pregão em alta e o Índice Athens General Composite avançou 0,38%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:11:02.079466-03:00"
-    },
-    {
-      "title": "Resultados da Sadia Halal deixam companhia bem posicionada para futuro IPO, diz CEO da",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:11:04.751959-03:00"
-    },
-    {
-      "title": "Palmeiras renova com Gustavo Gómez e estende vínculo do capitão até 2030, diz site",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:11:08.598102-03:00"
-    },
-    {
-      "title": "COP17 coloca secas e terras degradadas na agenda ambiental do Brasil",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:11:11.261484-03:00"
-    },
-    {
-      "title": "‘Homem-Aranha: Um Novo Dia’ supera ‘Toy Story 5’ e chega a R$ 250 milhões nos cinemas do Brasil",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:11:14.224845-03:00"
-    },
-    {
-      "title": "Airbus analysis finds hydraulic system faults on Air India jet during mid-air drop",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:11:17.734913-03:00"
-    },
-    {
       "title": "Investors favor ‘anything but bonds’ as Treasuries struggle - BofAf",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T16:50:38.654139-03:00"
+    },
+    {
+      "title": "Produção industrial recua -1,8% em junho",
+      "source": "IBGE",
+      "score": 6.0,
+      "motivo": "redução na produção industrial em junho, apesar de crescimento em relação a junho de 2025",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:55:34.600723-03:00"
+    },
+    {
+      "title": "Barcelona paga R$ 453 milhões por Rodri, melhor jogador da Copa de 2026",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia é sobre esporte e não tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:55:38.325389-03:00"
+    },
+    {
+      "title": "Mirassol x Flamengo: horário, onde assistir e prováveis escalações",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre esporte é irrelevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:55:41.027229-03:00"
+    },
+    {
+      "title": "3 Things You Give Up When You Claim Social Security at 62",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:55:47.270995-03:00"
+    },
+    {
+      "title": "What Three Encompass Health Insiders Selling Signals After a Rate Increase",
+      "source": "Nasdaq",
+      "score": 4.0,
+      "motivo": "Venda de ações por parte de executivos pode ser um sinal de desconfiança na empresa",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:55:50.200352-03:00"
+    },
+    {
+      "title": "Adobe Trades at 10 Times Next Year's Earnings. Is It Finally Time to Buy the Stock?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca um indicador relevante para a avaliação da ação da Adobe, mas não é um evento de mercado maior.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T16:55:53.100730-03:00"
+    },
+    {
+      "title": "Encompass Health's CFO Trimmed His Stake as Shares Jumped After Earnings. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações do CFO não é um evento significativo para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:55:55.980544-03:00"
+    },
+    {
+      "title": "Elon Musk Can't Sell SpaceX Stock Until June 2027 -- But 6 Billion More Shares Could Flood the Market Before Then",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T16:55:58.586827-03:00"
+    },
+    {
+      "title": "Should You Worry That Encompass Health's CEO Sold Into a Rally? Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento significativo",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:56:01.601650-03:00"
+    },
+    {
+      "title": "You Can't Escape Inflation in Retirement. Here's How to Beat It.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T16:56:04.198785-03:00"
+    },
+    {
+      "title": "An AppFolio Insider Has Been Selling for Weeks. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "Venda de ações por parte de um insider não é um evento inesperado, mas pode afetar a confiança dos investidores",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:56:07.062634-03:00"
+    },
+    {
+      "title": "Oil Majors Reap $93 Billion Windfall From the Iran War",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:56:13.419378-03:00"
     }
   ]
 }
