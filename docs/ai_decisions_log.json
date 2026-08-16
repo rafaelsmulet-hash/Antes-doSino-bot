@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "MaxCyte, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:26:13.362033-03:00"
-    },
-    {
-      "title": "Powerball jackpot climbs to $1 billion. What you'd pocket after taxes, and what to do with the rest.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:26:16.028652-03:00"
-    },
-    {
       "title": "Treasuries Rise as Weak Retail Sales Dampen Fed Rate-Hike Expectations",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T09:16:05.340510-03:00"
+    },
+    {
+      "title": "Iran MOU Expires With Diplomacy Still in Play",
+      "source": "Bloomberg Markets",
+      "score": 2.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro imediato, mas pode ter implicações a longo prazo na política de sanções econômicas",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:20:54.774731-03:00"
+    },
+    {
+      "title": "AppLovin’s Real Problem Isn’t Revenue – It’s How the Growth Engine Actually Works",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia destaca problemas internos da empresa, que podem afetar negativamente suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:21:09.725056-03:00"
     }
   ]
 }
