@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A bota 'assinatura' de Kate Moss nos anos 2000 está de volta",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:42.197091-03:00"
-    },
-    {
-      "title": "Como o São Paulo quer somar pontos com a torcida — e ampliar receita fora de campo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:44.818382-03:00"
-    },
-    {
-      "title": "Livro sobre assassinato de Rubens Paiva é premiado no Jabuti Acadêmico de 2026",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:47.596550-03:00"
-    },
-    {
-      "title": "Asia Pacific Wire &amp; Cable Non-GAAP EPS of $0.01, revenue of $136.6M",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "Resultados financeiros rotineiros de uma empresa de cabos e fios.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:50.856693-03:00"
-    },
-    {
       "title": "Jeffs’ Brands Non-GAAP EPS of -$0.09, revenue of $4.2M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T14:15:41.217289-03:00"
+    },
+    {
+      "title": "‘Toda a direita vai estar unida no 2º turno’, diz Romeu Zema no 1º dia de campanha",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política eleitoral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:25:40.682557-03:00"
+    },
+    {
+      "title": "Flávio Bolsonaro: ‘Presidente da República deixa legado de incompetência e corrupção’",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não está relacionado a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:25:43.728513-03:00"
+    },
+    {
+      "title": "Ouro da Venezuela em Londres irá para contas do Tesouro dos EUA, diz deputado",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A notícia sugere que o ouro venezuelano será usado para investimentos em infraestrutura, o que pode ser positivo para a economia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:25:46.597606-03:00"
+    },
+    {
+      "title": "We vacationed just an hour from home. It was more relaxing than our bigger trips.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:26:00.420182-03:00"
     }
   ]
 }
