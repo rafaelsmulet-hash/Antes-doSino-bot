@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Itaú revela 'bastidores analógicos' de campanha sobre IA",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:04:22.794875-03:00"
-    },
-    {
-      "title": "Justiça mantém multa de R$ 12,5 milhões à Netflix em ação sobre compartilhamento de senhas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:04:25.464097-03:00"
-    },
-    {
-      "title": "‘My wife and I are both retired’: Should we dip into our $2.3 million investments to pay off our 2.9% $300,000 mortgage?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:04:28.381871-03:00"
-    },
-    {
       "title": "Fed rate hike odds sink further as retail sales, consumer sentiment fall",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T16:20:40.528308-03:00"
+    },
+    {
+      "title": "João Fonseca vence holandês e avança no Masters 1000 de Cincinnati",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:25:46.220532-03:00"
+    },
+    {
+      "title": "An AppFolio Insider Sold on a Preset Plan After Earnings. Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é sobre uma venda de ações por um executivo da empresa, mas não há informações sobre o impacto no mercado ou nos resultados financeiros da empresa",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:25:54.702145-03:00"
+    },
+    {
+      "title": "ARTIGO: O Vale do Silício não é o centro do Universo. Ou é?",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "A noticia e sobre uma viagem e uma reflexao pessoal, sem conteudo relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:26:03.351971-03:00"
     }
   ]
 }
