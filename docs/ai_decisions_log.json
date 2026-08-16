@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "See inside Eagle's Nest, the 42-acre New York Vanderbilt estate where a Gilded Age heir built his sprawling mansion",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:11:34.990436-03:00"
-    },
-    {
       "title": "PM abre apuração sobre relato de Haddad e diz não ver irregularidade até agora",
       "source": "InfoMoney",
       "score": 1.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T08:06:34.115320-03:00"
+    },
+    {
+      "title": "China tenta reduzir dependência de alimentos importados; o que isso significa para o agro brasileiro",
+      "source": "G1 Economia",
+      "score": 6.0,
+      "motivo": "a China busca reduzir dependência de alimentos importados, o que pode impactar negativamente as exportações brasileiras de soja e carne bovina",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:11:05.391127-03:00"
     }
   ]
 }
