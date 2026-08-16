@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "JPMorgan eleva SanDisk para acima da média após investor day",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "JPMorgan eleva a nota da empresa após apresentação positiva, indicando confiança em seu desempenho futuro",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:16:11.073764-03:00"
-    },
-    {
-      "title": "AE Fuels appoints Jason Tong as CFO",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma nomeação de executivo, mas não há informações sobre impacto financeiro ou estratégico",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:16:14.274428-03:00"
-    },
-    {
-      "title": "Kartoon Studios GAAP EPS of $0.38, revenue of $5.82M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:16:16.872459-03:00"
-    },
-    {
-      "title": "YXT.COM prices $1.5M registered direct offering",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:16:19.471024-03:00"
-    },
-    {
-      "title": "Momentum stocks are cheaper than the market, J.P. Morgan says",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:16:22.078088-03:00"
-    },
-    {
-      "title": "YPF, Argentina LNG submit RIGI application for $51B Vaca Muerta production plan",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:16:24.689433-03:00"
-    },
-    {
-      "title": "MicroVision launches $17M private offering",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:16:27.288400-03:00"
-    },
-    {
       "title": "Dólar sobe a R$ 5,20, após 4 altas, e Bolsa caminha para 9º dia de queda",
       "source": "UOL Economia",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T08:15:51.826799-03:00"
+    },
+    {
+      "title": "Como melhorar a concentração e a memória? Veja hábitos que podem ajudar",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:21:04.418777-03:00"
+    },
+    {
+      "title": "Strategy CEO Phong Le Thinks MSTR Stock Will Outperform Bitcoin During the Next Bull Market. Here's Why He's Wrong.",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de criptomoedas, mas não é um evento significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:21:13.733590-03:00"
+    },
+    {
+      "title": "The Stock Market Is on the Verge of Doing Something That No One's Witnessed in Nearly 156 Years, and the Consequences May Be Dire for Wall Street",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca o desempenho positivo do mercado de ações no ano atual.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T08:21:16.808668-03:00"
+    },
+    {
+      "title": "Broadcom vs. AMD: Which AI Chip Stock Is the Better Buy?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia compara as previsões e o crescimento de receita das duas empresas de chips de inteligência artificial, o que é relevante para investidores que buscam entender melhor as perspectivas das ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:21:19.660284-03:00"
+    },
+    {
+      "title": "Bitcoin Miner Riot Platforms Just Signed a $9 Billion Compute Deal With Anthropic. Why AI Is Now the Key to Valuing Bitcoin Mining Stocks.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "O acordo de $9 bilhões é relevante para a avaliação das ações da Riot Platforms.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T08:21:22.485976-03:00"
+    },
+    {
+      "title": "The L.A. Lakers Delivered a 1-Year Return of 25%. These ETFs Have Done Even Better.",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:21:25.329454-03:00"
+    },
+    {
+      "title": "SEC Charges Private Fund Adviser Adit Ventures Management, Its CEO and Affiliated General Partners in Alleged Fraud",
+      "source": "SEC",
+      "score": 0.0,
+      "motivo": "A notícia é sobre uma ação de fraude e não tem relação direta com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:21:36.120399-03:00"
     }
   ]
 }
