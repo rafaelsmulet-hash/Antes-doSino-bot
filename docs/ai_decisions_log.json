@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Congress changed the rules around charitable giving. Do it earlier in the year to save money.",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:31:27.266970-03:00"
-    },
-    {
       "title": "Vera rises after FDA review for kidney disease therapy",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T09:41:01.390959-03:00"
+    },
+    {
+      "title": "PIB de Israel dispara 15,4% após contração provocada por guerra com Irã",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Recuperação do PIB de Israel após contração provocada por guerra com Irã, liderada por alta de exportações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T09:45:49.250745-03:00"
     }
   ]
 }
