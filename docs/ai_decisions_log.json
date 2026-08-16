@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A mudança tributária que pode reduzir fraudes e atrair investimentos no mercado de etanol",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:06:20.647705-03:00"
-    },
-    {
-      "title": "Kura Oncology, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa apresentou resultados financeiros superiores às expectativas, o que pode impulsionar a ação no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:06:23.868028-03:00"
-    },
-    {
-      "title": "Here is Why Chevron (CVX) is a Favorite Among Hedge Funds",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:06:26.507033-03:00"
-    },
-    {
-      "title": "Petrochemicals Maker Braskem Beats Estimates Amid Cash Woes",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A empresa superou as expectativas devido às interrupções nos suprimentos de petroquímicos, o que é relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:10:47.110258-03:00"
-    },
-    {
       "title": "Swing trade: BTG recomenda compra de Embraer (EMBJ3) com preço-alvo de R$ 110,00",
       "source": "Money Times",
       "score": 6.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T07:55:57.360808-03:00"
+    },
+    {
+      "title": "A mulher chegou à alta liderança — mas muitas vezes continua sozinha",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, e sim sobre igualdade de genero",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:00:41.404102-03:00"
+    },
+    {
+      "title": "Walmart and Target are about to reveal the health of the U.S. consumer",
+      "source": "MarketWatch",
+      "score": 6.0,
+      "motivo": "Os relatórios de lucro dessas empresas são indicadores importantes da saúde do consumidor americano",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T08:00:46.027357-03:00"
+    },
+    {
+      "title": "ARTIGO: No esporte e nos negócios, consistência não é insistência",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:00:53.174218-03:00"
+    },
+    {
+      "title": "Why Are They Getting Free Sh*t?",
+      "source": "ZeroHedge",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:00:57.220191-03:00"
     }
   ]
 }
