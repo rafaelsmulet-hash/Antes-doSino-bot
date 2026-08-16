@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Noteworthy ETF Outflows: GRID, NVT, HUBB, APTV",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:31:41.368524-03:00"
-    },
-    {
-      "title": "Should Investors Take Profits in GE Vernova After Its Big Run?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia sugere que a ação pode estar sobrevalorizada após um grande aumento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:31:44.238410-03:00"
-    },
-    {
-      "title": "SLV: ETF Inflow Alert",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:46.851344-03:00"
-    },
-    {
       "title": "Noteworthy ETF Outflows: AUSF, VZ, MSI, LMT",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T19:10:45.384284-03:00"
+    },
+    {
+      "title": "João Fonseca destaca concentração na vitória no Masters 1000 de Cincinnati",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:15:50.438353-03:00"
+    },
+    {
+      "title": "A obra que um grupo de pedreiros jamais vai esquecer: uma parede de R$ 54 milhões",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:16:09.702457-03:00"
+    },
+    {
+      "title": "Morgan Stanley sends a blunt Tesla message to investors",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia menciona a opinião de uma instituição financeira importante sobre a Tesla, o que pode influenciar a percepção dos investidores sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:16:23.136789-03:00"
     }
   ]
 }
