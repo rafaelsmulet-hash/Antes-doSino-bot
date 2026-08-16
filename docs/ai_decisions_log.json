@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Novos dados mostram força no armazenamento e queda na demanda por PCs",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:55:54.140487-03:00"
-    },
-    {
-      "title": "Ações da Trident Digital Tech sobem com previsão de receita do Sikaflow",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:55:56.780598-03:00"
-    },
-    {
-      "title": "SpaceX conclui aquisição recorde de US$ 60 bilhões da plataforma de codificação com IA Cursor",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:55:59.394430-03:00"
-    },
-    {
-      "title": "CVC Brasil (CVCB3) sob dupla pressão: venda forçada da Apex, balanço fraco no 2T26",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T09:56:02.041385-03:00"
-    },
-    {
       "title": "Kepler eleva Komax para \"compra\" com pedidos em alta e fundo do ciclo",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T07:02:14.471930-03:00"
+    },
+    {
+      "title": "Saiba onde estão as maiores margens de lucro dos próximos anos",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "mercados com maior potencial de expansão",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T07:05:43.716991-03:00"
+    },
+    {
+      "title": "O plano que pode mudar a forma como Hong Kong governa sua economia",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "plano de governo para a economia de Hong Kong pode ter impacto significativo no futuro, mas ainda é cedo para avaliar suas consequências",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:05:46.490601-03:00"
+    },
+    {
+      "title": "Opinião: Super El Niño colocará infraestrutura industrial à prova",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "A notícia é relevante para o mercado pois afeta a infraestrutura industrial, mas não é imediata.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:05:49.246173-03:00"
+    },
+    {
+      "title": "Mercado em K: Megadeals impulsionam valor, mas 'meio da pista' segue parado",
+      "source": "Exame",
+      "score": 6.0,
+      "motivo": "megadeals impulsionam valor do mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:05:51.965663-03:00"
     }
   ]
 }
