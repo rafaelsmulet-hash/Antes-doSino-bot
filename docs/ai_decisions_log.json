@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq slip after stocks hit record high, consumer sentiment declines",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:04:56.855775-03:00"
-    },
-    {
-      "title": "US consumers sour on economy as inflation concerns remain in focus, UMich survey says",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:04:59.513896-03:00"
-    },
-    {
-      "title": "US business inventories unchanged in June",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:05:02.130086-03:00"
-    },
-    {
-      "title": "The Gold “Income” Fund That Turned a 6% Gold Dip Into a 30% Loss",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:05:04.789934-03:00"
-    },
-    {
       "title": "US Bond Sale Records Highest Yield Since 2001",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T16:40:48.154665-03:00"
+    },
+    {
+      "title": "Pesquisadores encontram plantas extintas há 30 anos em área mantida pela Vale em MG",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:45:42.570876-03:00"
+    },
+    {
+      "title": "Marabraz pede recuperação judicial com dívida de R$ 140 mi",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "A empresa pede recuperação judicial com dívida de R$ 140 milhões, o que pode ter impacto negativo no mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T16:45:48.801728-03:00"
+    },
+    {
+      "title": "Novo Homem-Aranha fatura R$ 10,5 bilhões e entra no top 10 da história; veja ranking",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:45:51.498026-03:00"
+    },
+    {
+      "title": "Corinthians x Cruzeiro: horário, onde assistir e prováveis escalações",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia sobre esporte não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:45:56.981009-03:00"
     }
   ]
 }
