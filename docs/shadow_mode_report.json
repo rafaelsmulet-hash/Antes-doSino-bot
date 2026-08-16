@@ -1,153 +1,153 @@
 {
-  "date": "2026-08-15",
-  "total_ingeridas": 32884,
-  "aprovadas_pelo_fluxo_atual": 111,
-  "descartadas_pelos_filtros_atuais": 32773,
-  "score_medio_materialidade": 3.22,
-  "seriam_breaking": 30,
-  "iriam_para_rodada": 225,
-  "seriam_descartadas_pelo_novo_sistema": 294,
-  "total_divergencias": 170,
+  "date": "2026-08-16",
+  "total_ingeridas": 248,
+  "aprovadas_pelo_fluxo_atual": 19,
+  "descartadas_pelos_filtros_atuais": 229,
+  "score_medio_materialidade": 2.74,
+  "seriam_breaking": 4,
+  "iriam_para_rodada": 14,
+  "seriam_descartadas_pelo_novo_sistema": 72,
+  "total_divergencias": 25,
   "divergencias": [
     {
-      "title": "Money Managers Chase €500 Billion Historic German Pension Shift",
+      "title": "Malaysia’s DAP Hands Anwar Reprieve With Vote to Stay in Cabinet",
       "source": "Bloomberg Markets",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "India Readies Big LPG Output Boost as Hormuz Uncertainty Lingers",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "China Plans to Speed Up New Energy Recycling, Waste Rules: CCTV",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Peter Thiel adquire participação de 1% na Vista Energy da Argentina",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Apenas 13% dos fundos de ações de grande capitalização dos EUA superam benchmarks na última década",
+      "source": "Investing.com Brasil",
       "score": 8.0,
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Modi Maps India’s Growth Push as He Reaches Out to Students",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Modi Maps India’s Growth Push With Youth Focus",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "A ajuda inesperada de Ray Dalio ao McDonald’s que tornou os McNuggets um sucesso",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "UBS aponta 4 razões para investir em infraestrutura agora",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Gestores de fundos miram reforma previdenciária alemã de €500 bilhões",
+      "title": "Vivara diz que fundos sob gestão da Guepardo Investimentos compraram ações da companhia",
       "source": "Investing.com Brasil",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Ações de Singapura ganham força com economia \"Cachinhos Dourados\"",
+      "title": "Nvidia planeja investir US$3 bi na SB Energy em  acordo para centro  de dados da OpenAI, diz The  Information",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "Por que a mobilização de US$ 500 bilhões da Nvidia é positiva para as ações",
       "source": "Investing.com Brasil",
       "score": 6.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Barfresh outlines $23M-$26M FY2026 revenue outlook while targeting partial commissioning of Defiance plant by end of 2026",
-      "source": "Seeking Alpha",
+      "title": "No Sítio da Pedra, a vida fora do escritório pariu um azeite",
+      "source": "Brazil Journal",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "A cabeça do VC “pragmático” que está comprando o OnlyFans",
+      "source": "Brazil Journal",
+      "score": 8.0,
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado"
+    },
+    {
+      "title": "OPINIÃO. Lula, o escorpião e os sapos",
+      "source": "Brazil Journal",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "ANZ Group Q3 Cash Profit Rises",
+      "source": "Nasdaq",
       "score": 5.0,
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado"
     },
     {
-      "title": "Sidus outlines early 2027 Fortis VPX commercial availability, backed by $158.5M Q2 capital raises",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Social Security's 2027 COLA Just Got Downgraded: What Retirees Need to Know Now",
+      "title": "These 5 AI Stocks Have Returned 300%-Plus Over the Past 3 Years -- and 1 Still Looks Dirt Cheap",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Could $5,000 in This Nuclear Stock Turn Into a Life-Changing Sum?",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Here's How Much Investing $10,000 in Oklo Stock at Its IPO Is Worth Today",
+      "title": "President Donald Trump Claims Costs Are &quot;All Coming Down Now,&quot; but the Evolution of Trumpflation Appears to Be Having the Opposite Effect",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "The Market Is Doing Something It's Only Done Once Before. Here's What History Says Happens Next.",
+      "title": "CoreWeave's Operating Chief Sold Before Earnings. Here's What to Know",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "China tenta reduzir dependência de alimentos importados; o que isso significa para o agro brasileiro",
+      "title": "Costco: Patient Investors Know the Bear Case (NASDAQ: COST)",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Trilionário por 2 meses: a ‘marcha à ré’ da SpaceX que fez Elon Musk perder bilhões de dólares",
       "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Abandono de animais com carro pode virar infração gravíssima e levar à perda da CNH por 18 meses",
+      "title": "Curral eclético: vacas escutam de forró a música clássica e produzem mais leite em fazenda no ES; veja VÍDEO",
       "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Preços com ou sem imposto: reforma tributária deixa dúvida sobre como anunciar valor de produtos",
+      "title": "China domina mercado de robôs humanoides; entenda por que os EUA decidiram barrá-los",
       "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Queda da fila do INSS acelera nos últimos meses; benefícios negados sobem e chegam a quase 1 milhão em junho",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Bloqueio de ligações indesejadas: Anatel autoriza anti-spam e estuda levar sistema a todos os clientes",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Alpop capta R$ 6,2 milhões para democratizar aluguel",
+      "title": "Atentado mostrado na Netflix explica por que sua bagagem não voa sem você",
       "source": "UOL Economia",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "O gestor que fez aporte no MST virar fenômeno entre pequenos investidores",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     }
   ]
 }
