@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "An airline passenger almost got sucked out of the plane. A new report shows how it happened.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:58:32.651536-03:00"
-    },
-    {
-      "title": "Josh D’Amaro’s vision for a Disney+ super app is taking shape — but comes with clear risks",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:58:35.282681-03:00"
-    },
-    {
-      "title": "SpaceX's $60 billion acquisition of Cursor just closed — here's 3 ways they're already working together",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:58:37.926097-03:00"
-    },
-    {
-      "title": "Evidence of unfair use: AI books squeeze human authors out of the market",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:58:40.552580-03:00"
-    },
-    {
-      "title": "The VC-backed fintech using AI to challenge BlackRock and start a new fee war in ETFs",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:58:43.309406-03:00"
-    },
-    {
       "title": "Property Play: Housing investors say this is their worst market in at least 3 years",
       "source": "CNBC - US News",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T15:55:47.332795-03:00"
+    },
+    {
+      "title": "Rocket Lab-built satellites for MDA Space begin operations in orbit",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de tecnologia e comunicação espacial, mas não tem impacto imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:01:01.824349-03:00"
+    },
+    {
+      "title": "AppFolio's AI Clears a Quarter of Maintenance Requests. Here's What an Insider Filing Shows",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é sobre uma ação específica do AppFolio e não tem impacto direto no mercado em geral.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:01:07.250183-03:00"
+    },
+    {
+      "title": "Why Is Amazon Near a 52-Week High So Much Cheaper Than Walmart at Its Lowest Level This Year? This Is the Only Answer I Can Think Of.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca o desempenho positivo da Amazon, o que é relevante para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T16:01:10.223472-03:00"
+    },
+    {
+      "title": "Should You Read Anything Into AppFolio's CFO Parting With Stock? Here's What to Know",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A venda de ações do CFO é um evento rotineiro que não impacta significativamente o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:01:13.209119-03:00"
+    },
+    {
+      "title": "Tori Dunlap's Her First $100K made Inc. 5000 after growing it from a blog to a multi-million dollar business",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para empreendedores e negócios, mas não tem um impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:01:23.292220-03:00"
     }
   ]
 }
