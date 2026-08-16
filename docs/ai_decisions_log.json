@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Spectrum Brands (SPB) Q3 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:36:33.303101-03:00"
-    },
-    {
-      "title": "ACM Research (ACMR) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:36:36.047821-03:00"
-    },
-    {
-      "title": "ANI Pharmaceuticals (ANIP) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:36:38.784984-03:00"
-    },
-    {
       "title": "PPL (PPL) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T10:11:05.992331-03:00"
+    },
+    {
+      "title": "Iran Pressure Campaign Lacks Clear Off Ramp",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia aborda a pressão econômica sobre o Irã, que pode afetar o mercado de petróleo e a economia global.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T10:20:47.254912-03:00"
+    },
+    {
+      "title": "Indonésia tem mais de 50 mortos e 5 mil fora de casa após terremoto de magnitude 7,7",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "a noticia e sobre um desastre natural e nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:20:50.955622-03:00"
+    },
+    {
+      "title": "Historic retailer gets lifeline after warning it could collapse",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "O apoio financeiro do governo pode ajudar a evitar o colapso da empresa, mantendo a estabilidade no mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:21:05.662081-03:00"
     }
   ]
 }
