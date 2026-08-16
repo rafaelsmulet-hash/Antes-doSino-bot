@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Nu Holdings Stock Jumped 13% Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:41:19.457998-03:00"
-    },
-    {
-      "title": "Why Red Cat Stock Just Popped",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:41:22.137587-03:00"
-    },
-    {
-      "title": "China's courts rule workers can't be fired just because AI replaced them — and the US has no such protections",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:41:29.486798-03:00"
-    },
-    {
       "title": "JPMorgan Turns Bullish on Salesforce as the Stock Runs Three Straight Weeks",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T20:35:39.176211-03:00"
+    },
+    {
+      "title": "Kalil acusa Cleitinho de aprovar Propag “sem ler”; senador diz ser “Mal necessário”",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia nao trata de mercado financeiro, economia ou negocios",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:40:42.639749-03:00"
+    },
+    {
+      "title": "STF pressionou Centrão a não apoiar Flávio Bolsonaro, diz jornalista",
+      "source": "Brazil Journal",
+      "score": 1.0,
+      "motivo": "noticia sobre política e justiça criminal, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:40:47.459384-03:00"
+    },
+    {
+      "title": "Authors in August: Thi Nguyen’s &quot;The Score&quot;",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:40:53.958302-03:00"
     }
   ]
 }
