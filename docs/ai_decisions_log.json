@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ibovespa cai pela 9ª sessão e dólar sobe com juros em alta e pesquisa eleitoral",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "Ibovespa cai pela 9ª sessão e dólar sobe, indicando impacto negativo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:56:30.675267-03:00"
-    },
-    {
-      "title": "Bitcoin cai, acumula perdas de 3,4% em 7 dias e mira os US$ 60 mil",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:56:33.293309-03:00"
-    },
-    {
       "title": "Sem boi, alta de preço e frigoríficos fechados: o que acontece com a carne nos EUA",
       "source": "Exame",
       "score": 8.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T14:06:04.925697-03:00"
+    },
+    {
+      "title": "Quebec, Newfoundland near expanded hydroelectric power agreement",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Acordo pode impulsionar a produção de energia limpa e reduzir custos para os consumidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:10:47.573212-03:00"
+    },
+    {
+      "title": "Charlie Ergen’s CONX to acquire control of MobileX in $200M deal",
+      "source": "Seeking Alpha",
+      "score": 4.0,
+      "motivo": "Aquisição de controle de uma empresa de telecomunicações pode ter impacto na indústria de telecomunicações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:10:50.493811-03:00"
     }
   ]
 }
