@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Startup de saúde mental de Selena Gomez é processada por investidores; artista é acusada de fraude de US$ 1,2 milhão",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:04:50.870396-03:00"
-    },
-    {
       "title": "Stock market today: Dow, S&P 500, Nasdaq slip after stocks hit record high, consumer sentiment declines",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T16:35:38.803358-03:00"
+    },
+    {
+      "title": "Pony.ai (PONY) and Uber (UBER) Team Up For A Bigger Bet",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A parceria pode ter impacto positivo nas ações das empresas envolvidas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:40:48.154665-03:00"
     }
   ]
 }
