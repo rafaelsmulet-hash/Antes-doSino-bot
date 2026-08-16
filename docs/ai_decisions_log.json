@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "U.S. Business Inventories Unexpectedly Unchanged In June",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:57:31.919076-03:00"
-    },
-    {
       "title": "Vanguard Is &quot;Cautious&quot; on U.S. Growth Stocks. These 2 Value ETFs Could Be Smarter Buys for Long-Term Investors.",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T14:55:52.719749-03:00"
+    },
+    {
+      "title": "Grupo Toky, dona da Tok&Stok e da Mobly, tem prejuízo de R$ 232,7 milhões no 2T",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "prejuízo significativo e fechamento de lojas afetam negativamente o desempenho do grupo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T15:00:44.299871-03:00"
     }
   ]
 }
