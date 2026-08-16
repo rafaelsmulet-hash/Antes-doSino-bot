@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "XLB, LIN, FCX, SHW: Large Inflows Detected at ETF",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:30.920941-03:00"
-    },
-    {
-      "title": "PAAA: Large Inflows Detected at ETF",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:33.535845-03:00"
-    },
-    {
-      "title": "FMDE, ALL, AME, NUE: ETF Inflow Alert",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:36.146974-03:00"
-    },
-    {
       "title": "Notable ETF Outflow Detected - PLTU",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T18:56:06.851405-03:00"
+    },
+    {
+      "title": "BHP Heads Into Earnings With Least Amount of ‘Buy’ Ratings Ever",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Recomendações de compra para a ação da BHP estão em recorde baixo, o que pode afetar a ação após os resultados do ano.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T19:05:37.075212-03:00"
+    },
+    {
+      "title": "Here are the major earnings before the open Monday",
+      "source": "Seeking Alpha",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sobre resultados de lucros",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:05:56.872547-03:00"
+    },
+    {
+      "title": "Trump orders reduction in U.S.-South Korea military exercises",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A redução nos exercícios militares pode afetar a percepção de risco de conflito na região e influenciar a valorização das ações de empresas envolvidas em negócios de defesa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:05:59.725665-03:00"
     }
   ]
 }
