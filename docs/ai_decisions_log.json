@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Renda Fixa Hoje: Confira as taxas de CDBs, LCIs e LCAs na XP nesta sexta-feira (14)",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:31:08.031230-03:00"
-    },
-    {
       "title": "Ebola mata 2.184 na RDC em surto com 4.665 casos",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T09:26:04.381721-03:00"
+    },
+    {
+      "title": "These 4 homeowners built tiny homes in their yards to be better caregivers for their loved ones",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:31:07.548723-03:00"
     }
   ]
 }
