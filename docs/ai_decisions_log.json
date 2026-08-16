@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bitmine Immersion declares 17 cash dividends on 9.50% Series A Preferred Stock",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:21:13.452723-03:00"
-    },
-    {
-      "title": "Apple in focus as KeyBanc carrier survey offers some positives ahead of iPhone 18 launch",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:21:16.062584-03:00"
-    },
-    {
-      "title": "Chef premiado retorna a restaurante após denúncias de agressões e humilhações",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:21:23.831090-03:00"
-    },
-    {
       "title": "WhiteFiber (WYFI) Q2 2026 Earnings Call Transcript",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T08:50:48.538555-03:00"
+    },
+    {
+      "title": "M&A em software esquenta: quais ações de SaaS podem ser as próximas?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A noticia destaca a tendencia de M&A no setor de software, o que pode impulsionar as acoes de empresas de SaaS.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:55:45.652526-03:00"
+    },
+    {
+      "title": "Bolsa da Coreia do Sul e semicondutores estão em uma bolha? Citi responde",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "A notícia sugere que a bolsa da Coreia do Sul e o setor de semicondutores podem estar em uma bolha, o que pode ter um impacto significativo no mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T08:55:51.880714-03:00"
+    },
+    {
+      "title": "Destaques de análise de Wall Street da semana",
+      "source": "Investing.com Brasil",
+      "score": 3.0,
+      "motivo": "análise de mercado rotineira da Wall Street",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:55:54.569280-03:00"
     }
   ]
 }
