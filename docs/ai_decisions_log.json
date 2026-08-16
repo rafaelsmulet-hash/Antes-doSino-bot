@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Wall Street's riskiest trades are suddenly back on top: Chart of the Day",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:26:00.234421-03:00"
-    },
-    {
       "title": "Rocket Lab (RKLB) Set a Revenue Record. Is Neutron Slipping Into 2027?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T17:46:24.552600-03:00"
+    },
+    {
+      "title": "Tudo o que a Marvel anunciou na D23 2026: 'X-Men', 'Vingadores' e mais",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T17:51:13.721385-03:00"
     }
   ]
 }
