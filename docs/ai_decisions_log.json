@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "15 de agosto é feriado? Veja o que abre e fecha no Dia de Assunção de Nossa Senhora",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:55:47.791434-03:00"
-    },
-    {
-      "title": "Giro d'Italia chega a São Paulo pela 1ª vez e promete impacto de R$ 70 milhões",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:55:50.561405-03:00"
-    },
-    {
-      "title": "AIB Data Centers Inc. GAAP EPS of -$0.07, revenue of $2.9M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:55:53.485053-03:00"
-    },
-    {
-      "title": "SVB & T Q2 GAAP EPS of $2.75, revenue of $12.51M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:55:56.097647-03:00"
-    },
-    {
-      "title": "American Lithium Minerals, Inc. reports Q3 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:55:58.704525-03:00"
-    },
-    {
-      "title": "Canlan Ice Sports non-GAAP EPS of -$0.03, and revenue of $24.91M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:56:01.317934-03:00"
-    },
-    {
-      "title": "LTC Properties upgraded to Buy equivalent at RBC Capital",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:56:03.973248-03:00"
-    },
-    {
       "title": "Anthropic Said in Talks to Buy Startup Decart for $6 Billion",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T12:05:47.902193-03:00"
+    },
+    {
+      "title": "Beef Prices Stay High as US Cattle Supply Shrinks",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia afeta diretamente os custos de produção de carne de boi nos EUA, o que pode ter impacto nas ações de empresas do setor",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:10:41.014435-03:00"
+    },
+    {
+      "title": "Ataques com drones e mísseis deixam ao menos sete mortos na Rússia",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:10:46.508742-03:00"
+    },
+    {
+      "title": "Moneywise staff confesses worst money mistakes — from ignoring subscriptions to sacrificing first home 'must-haves'",
+      "source": "Yahoo Finance",
+      "score": 1.0,
+      "motivo": "A notícia não apresenta informações financeiras ou econômicas relevantes para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:10:55.336071-03:00"
+    },
+    {
+      "title": "Bill Ackman's $5 billion fund trades 20% below its NAV as S&P 500 soars — and high fees aren't helping",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T12:10:58.507925-03:00"
+    },
+    {
+      "title": "Meta to face massive social media addiction trial Tuesday",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "O julgamento não é diretamente relacionado a uma decisão de mercado ou uma notícia financeira específica.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:11:01.371521-03:00"
+    },
+    {
+      "title": "Jim Cramer Tells Caller to Average Down on Netflix (NFLX)",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "Jim Cramer é um investidor conhecido e seu conselho pode influenciar a percepção do mercado sobre a empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T12:11:04.233794-03:00"
+    },
+    {
+      "title": "Wendy’s Jumps on Report That Nelson Peltz Wants to Take His Old Company Private",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque pode afetar o preço das ações da Wendy's",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:11:07.058590-03:00"
     }
   ]
 }
