@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Radnostix reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:45:53.544181-03:00"
-    },
-    {
-      "title": "Globant tumbles on outlook cut, Wedbush downgrade",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:45:56.153248-03:00"
-    },
-    {
       "title": "Nuveen Virginia Quality Municipal Income Fund declares $0.0615 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T11:00:59.809727-03:00"
+    },
+    {
+      "title": "Arsenal x Manchester City: Haaland e brasileiros disputam a Supercopa da Inglaterra hoje",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "nenhuma relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T11:05:51.892742-03:00"
+    },
+    {
+      "title": "Por que o futuro da inovação pertence a quem controla a infraestrutura?",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A notícia destaca a importância da infraestrutura para a inovação, o que pode impulsionar investimentos em setores como tecnologia e infraestrutura de dados.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T11:05:54.679811-03:00"
     }
   ]
 }
