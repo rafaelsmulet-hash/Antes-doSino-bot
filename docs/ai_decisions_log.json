@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Zeo Energy GAAP EPS of -$0.07, revenue of $16.2M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:41:27.367136-03:00"
-    },
-    {
-      "title": "Transportadora de Gas del Sur GAAP EPS of $0.60, revenue of Ps. 133.15B",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque fornece informações financeiras atualizadas sobre a empresa, que pode influenciar as decisões de investimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:41:30.760036-03:00"
-    },
-    {
-      "title": "McDonald's serving up new kind of energy boost on menus nationwide",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:41:41.857289-03:00"
-    },
-    {
       "title": "Here's every public appearance Melania Trump has made during Donald Trump's second White House term",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T10:41:17.968300-03:00"
+    },
+    {
+      "title": "AI Perfection Fuels a Return to Looking Human",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A mudança pode afetar a demanda por tratamentos cosméticos, como Botox, e influenciar a tendência de aparência.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T10:45:40.821062-03:00"
+    },
+    {
+      "title": "Stripe e Advent podem aumentar oferta pelo PayPal",
+      "source": "Brazil Journal",
+      "score": 8.0,
+      "motivo": "Aumento da oferta pelo PayPal pode indicar interesse contínuo em aquisição, impactando positivamente o preço da ação.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:45:45.784484-03:00"
+    },
+    {
+      "title": "AI spending is surging, but profit gains remain elusive, Goldman Sachs says",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o setor de tecnologia e inteligência artificial, mas não é um evento de mercado significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:45:49.097836-03:00"
     }
   ]
 }
