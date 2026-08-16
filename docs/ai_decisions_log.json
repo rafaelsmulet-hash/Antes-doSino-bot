@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dividendos do MXRF11 e BRCO11: veja os FIIs que pagam nesta sexta (14)",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:57:49.891191-03:00"
-    },
-    {
-      "title": "O caminho (sinuoso) para o País ter uma inteligência artificial made in Brasil",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:57:54.828357-03:00"
-    },
-    {
       "title": "Apple proposes to take a 15% cut of purchases made outside the App Store",
       "source": "TechCrunch",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T15:06:25.385186-03:00"
+    },
+    {
+      "title": "Is Now a Good Time to Buy Costco Wholesale Stock?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca que a ação da Costco Wholesale subestimou o mercado, o que pode ser um sinal de que ela está em baixa e pode ser uma oportunidade de compra.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T15:10:52.270282-03:00"
+    },
+    {
+      "title": "Satya Nadella's Microsoft Stock Jumped 18% in a Week After Azure's Annual Revenue Topped $100 Billion for the First Time. Is It Still a Buy?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque apresenta um resultado financeiro positivo da empresa, o que pode influenciar a decisão de investir na ação.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T15:10:55.179795-03:00"
     }
   ]
 }
