@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I have a 9-to-5 job and started dating a bartender. Can I have a future with someone who works nights?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:36:14.653318-03:00"
-    },
-    {
-      "title": "SpaceX completes $60B acquisition of Cursor as Musk-led firm tries to gain edge in AI coding",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:36:17.337625-03:00"
-    },
-    {
-      "title": "Nam Tai Property Non-GAAP EPS of -$0.05, revenue of $4.95M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:36:19.959182-03:00"
-    },
-    {
-      "title": "Target catches Nike in an unlikely market-cap race",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:36:22.578178-03:00"
-    },
-    {
       "title": "Yduqs (YDUQ3) lidera as perdas do Ibovespa hoje. Por que Itaú BBA e Citi ainda veem potencial de alta de até 107%?",
       "source": "Seu Dinheiro",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T19:40:59.072532-03:00"
+    },
+    {
+      "title": "Patrus falta ao 1º debate em MG para acompanhar Lula em SP",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre política e eleição não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:50:53.993637-03:00"
+    },
+    {
+      "title": "Warsh's Mark Antony Moment",
+      "source": "ZeroHedge",
+      "score": 5.0,
+      "motivo": "A notícia discute a política monetária e a inflação, e o autor apresenta uma visão crítica da política de juros e da forma como a inflação é medida.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:51:24.530057-03:00"
+    },
+    {
+      "title": "The 10 States Losing Public School Students The Fastest",
+      "source": "ZeroHedge",
+      "score": 2.0,
+      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter implicações para a economia e a demografia de longo prazo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:51:27.600286-03:00"
+    },
+    {
+      "title": "How Socialism Gains Popularity",
+      "source": "ZeroHedge",
+      "score": 3.0,
+      "motivo": "A notícia discute a popularidade do socialismo nos EUA e as atitudes dos cidadãos em relação à ideologia, mas não apresenta informações específicas sobre impacto econômico imediato.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:51:30.591913-03:00"
     }
   ]
 }
