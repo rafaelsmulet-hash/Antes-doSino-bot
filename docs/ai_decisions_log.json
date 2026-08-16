@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Apple proposes to take a 15% cut of purchases made outside the App Store",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:57:57.568010-03:00"
-    },
-    {
-      "title": "Kog is going deeper to squeeze more inference out of GPUs",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:58:00.180173-03:00"
-    },
-    {
       "title": "Why Top 3% Biotech Stock, Eton, Just Catapulted To A Record High",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T15:10:55.179795-03:00"
+    },
+    {
+      "title": "EUA consideram novas sanções contra ministro Alexandre de Moraes, diz Financial Times",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "noticia sobre sanções não é relevante para o mercado financeiro imediato",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T15:15:35.686682-03:00"
+    },
+    {
+      "title": "França sofre ataque hacker e dados de 678 mil contas são extraídos de sistema fiscal",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T15:15:38.385641-03:00"
     }
   ]
 }
