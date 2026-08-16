@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Vera rises after FDA review for kidney disease therapy",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:31:30.036341-03:00"
-    },
-    {
-      "title": "HeartCore GAAP EPS of -$1.45, revenue of $0.32M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:31:32.679414-03:00"
-    },
-    {
       "title": "Warner Bros’ ‘The End of Oak Street’ targets up to $48M global debut",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T09:45:49.250745-03:00"
+    },
+    {
+      "title": "By The Way: Headline Roundup",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:50:42.794260-03:00"
+    },
+    {
+      "title": "Arábia Saudita - Ações fecharam o pregão em alta e o Índice Tadawul All Share avançou 0,89%",
+      "source": "Investing.com Brasil",
+      "score": 5.0,
+      "motivo": "o avanço do Índice Tadawul All Share é um sinal positivo para o mercado saudita",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:50:48.009230-03:00"
     }
   ]
 }
