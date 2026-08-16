@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Swing trade: BTG recomenda compra de Embraer (EMBJ3) com preço-alvo de R$ 110,00",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "recomendaÇão de compra de açõ com preço-alvo de valorização",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:10:52.854364-03:00"
-    },
-    {
-      "title": "Anvisa proíbe chás e cápsulas que prometem efeito de canetas emagrecedoras",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:10:56.991080-03:00"
-    },
-    {
-      "title": "MSCI's new index rules could lead to 3 stock deletions and put 3 on the watchlist",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:11:00.036611-03:00"
-    },
-    {
-      "title": "BiomX subsidiary Zorronet wins $300,000 order",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:11:02.664178-03:00"
-    },
-    {
-      "title": "Futures Pointing To Roughly Flat Open On Wall Street",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:11:08.708281-03:00"
-    },
-    {
-      "title": "TVI Pacific Inc. Q2 Earnings Summary",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:11:11.640681-03:00"
-    },
-    {
-      "title": "Bay Street Likely To Open Slightly Up",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:11:14.289291-03:00"
-    },
-    {
-      "title": "Rubrik CTO Arvind Nithrakashyap Sells $3.0 Million Stock",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:11:16.944322-03:00"
-    },
-    {
-      "title": "This Boring Pipeline Stock Just Signed a Deal to Power AI Data Centers",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:11:19.585178-03:00"
-    },
-    {
-      "title": "Beyond Meat Implements Reverse Stock Split To Regain Nasdaq Compliance",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:11:22.214538-03:00"
-    },
-    {
-      "title": "U.S. Retail Sales Unexpectedly Fall 0.6% In July",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:11:24.830635-03:00"
-    },
-    {
-      "title": "FNF (FNF) Q2 2026 Earnings Call Transcript",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:11:31.885017-03:00"
-    },
-    {
       "title": "See inside Eagle's Nest, the 42-acre New York Vanderbilt estate where a Gilded Age heir built his sprawling mansion",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T08:00:57.220191-03:00"
+    },
+    {
+      "title": "Montanha-russa mais antiga do Beto Carrero vai fechar após 32 anos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira relevante",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:05:48.997201-03:00"
+    },
+    {
+      "title": "Discriminação e desigualdade podem custar até 0,8% do PIB, aponta estudo",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A noticia se refere a impactos econômicos, mas não é especifica sobre o mercado financeiro em si, apenas sobre efeitos econômicos",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:05:51.781582-03:00"
+    },
+    {
+      "title": "Com R$ 10 milhões, chega ao Brasil app sueco que indica quando ter relações sexuais sem engravidar",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:05:54.508846-03:00"
+    },
+    {
+      "title": "Lula inicia campanha onde iniciou trajetória política e vê queda em vantagem sobre Flávio",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre política e eleições não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:05:57.243621-03:00"
+    },
+    {
+      "title": "América do Sul dribla crise do turismo nos EUA",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Crescimento do turismo na região pode impulsionar economias locais e melhorar indicadores econômicos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:05:59.986267-03:00"
+    },
+    {
+      "title": "El Niño pode ser o mais forte desde 1950 — e ameaça até metade da soja no Brasil",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "não é uma notícia direta sobre mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:06:02.711411-03:00"
+    },
+    {
+      "title": "Construímos nossa casa no terreno dos meus sogros, mas fiquei viúva. Quais meus direitos?",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:06:05.434908-03:00"
+    },
+    {
+      "title": "IA, dados e estádios inteligentes: como a tecnologia quer mudar o futebol na próxima década",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:06:08.167127-03:00"
+    },
+    {
+      "title": "Às vésperas da campanha, caso de filiação ao Missão prejudica imagem de Flávio Bolsonaro nas redes",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia sobre imagem de político e não sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:06:10.895179-03:00"
+    },
+    {
+      "title": "Entre crises e isolamento, Flávio Bolsonaro chega competitivo ao início da campanha",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:06:13.621510-03:00"
+    },
+    {
+      "title": "‘3ª onda das nanocoins’: Saiba por que este pode ser o momento de investir e como esta inteligência artificial pode te ajudar",
+      "source": "Seu Dinheiro",
+      "score": 8.0,
+      "motivo": "A noticia fala sobre valorizações de criptomoedas, o que é altamente relevante para o mercado de criptomoedas e pode ter impacto significativo nas investidas de traders.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T08:06:29.131576-03:00"
+    },
+    {
+      "title": "Como o ideal iluminista da F.P. Journe reescreve as regras do mercado de luxo (e do tempo)",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "A noticia e sobre um relatorio de luxo e relogios, sem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:06:34.115320-03:00"
     }
   ]
 }
