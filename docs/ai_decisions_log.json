@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "BTG Pactual (BPAC11) e Intelbras (INTB3) pagam dividendos nesta sexta; saiba mais",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:26:08.700409-03:00"
-    },
-    {
       "title": "MaxCyte, Inc. Q2 2026 Earnings Call Summary",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T09:11:10.850241-03:00"
+    },
+    {
+      "title": "Earnings Week Ahead: WMT, BABA, HD, TGT, and more",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Divulgação de resultados financeiros de empresas importantes",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T09:16:05.340510-03:00"
     }
   ]
 }
