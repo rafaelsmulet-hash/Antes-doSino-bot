@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "MBRF (MBRF3) sobe mesmo com lucro menor; eficiência e volumes recordes são destaques",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A BRF apresentou lucro menor, mas volumes recordes e eficiência positiva, o que é visto como um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:05:46.623926-03:00"
-    },
-    {
-      "title": "Dados de inflação mais moderados podem forçar Fed dividido a manter juros",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:05:49.277761-03:00"
-    },
-    {
-      "title": "Regulador alemão define retorno de capital no setor de gás em 5,76%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:05:53.804776-03:00"
-    },
-    {
       "title": "Barclays expande negociações com fundo de hedge QRT para mais de US$ 100 bilhões",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T12:30:58.611007-03:00"
+    },
+    {
+      "title": "Reações das ações cada vez mais desconectadas em histórica temporada de balanços do 2º tri",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "A notícia destaca a desconexão entre as ações e os balanços, o que pode ser relevante para os investidores que analisam os resultados financeiros das empresas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:35:38.320536-03:00"
+    },
+    {
+      "title": "Rússia atinge siderúrgica em novos ataques na Ucrânia, Kiev mira região de Moscou",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "ataques militares não afetam diretamente o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:35:41.027708-03:00"
+    },
+    {
+      "title": "Ações small-cap escolhidas por IA sobem +39% e +34% no mês",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Ações small-cap sobem significativamente, indicando potencial de crescimento no mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:35:43.829802-03:00"
     }
   ]
 }
