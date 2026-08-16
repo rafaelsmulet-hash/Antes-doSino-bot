@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Carlyle e CVC exploram oferta conjunta pela Bauwatch",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Oferta conjunta por investidores experientes pode aumentar valor da empresa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:30:59.888891-03:00"
-    },
-    {
-      "title": "HSBC rebaixa Cisco e aponta falta de catalisadores",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Ação de uma grande instituição financeira rebaixando uma empresa pode ter impacto significativo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:31:02.809484-03:00"
-    },
-    {
       "title": "Bienal do Livro 2026: conheça SenLinYu, que levou uma fanfic à lista de best-sellers dos EUA",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T18:10:59.465681-03:00"
+    },
+    {
+      "title": "Rússia - Ações fecharam o pregão em queda e o Índice MOEX Russia Index recuou 4,29%",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "queda das ações e índice russos em resposta a notícia",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T18:25:42.291099-03:00"
+    },
+    {
+      "title": "'Frozen 3', 'Os Incríveis 3' e mais: veja anúncios da Disney e Pixar na D23",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não é uma notícia financeira",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T18:25:46.421898-03:00"
     }
   ]
 }
