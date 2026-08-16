@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Property Play: Housing investors say this is their worst market in at least 3 years",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:58:45.936219-03:00"
-    },
-    {
-      "title": "Debêntures perdem espaço e fundos imobiliários e ações crescem em julho",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Crescimento das emissões de FIIs e outros fundos estruturados é um sinal positivo para o mercado de ações e fundos imobiliários.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:04:05.640081-03:00"
-    },
-    {
-      "title": "FIDC da NX Boats dobra captação para R$ 100 milhões para financiar embarcações",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:04:08.289560-03:00"
-    },
-    {
       "title": "Flávio Bolsonaro propõe CNH aos 16 anos e liga medida à redução da maioridade penal",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T16:01:23.292220-03:00"
+    },
+    {
+      "title": "Flavio: ‘Vou cortar impostos, burocracia, corrupção e carguinhos petistas’",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não é uma notícia sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:05:41.487555-03:00"
+    },
+    {
+      "title": "U.S. air-conditioner shipments jump in June as H1 growth remains modest",
+      "source": "Seeking Alpha",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado de materiais e indústria de consumo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:05:47.465463-03:00"
+    },
+    {
+      "title": "SEC Announces Departure of Principal Deputy Director of Enforcement Sam Waldon",
+      "source": "SEC",
+      "score": 2.0,
+      "motivo": "A saída de um funcionário não é considerada um evento de mercado significativo.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:05:57.971140-03:00"
     }
   ]
 }
