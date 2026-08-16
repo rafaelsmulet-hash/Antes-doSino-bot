@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Jeffs’ Brands Non-GAAP EPS of -$0.09, revenue of $4.2M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:53.459332-03:00"
-    },
-    {
-      "title": "Aehr Test Systems surges after Jefferies initiates with bullish views",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:56.067112-03:00"
-    },
-    {
-      "title": "Interactive Strength reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "Resultados financeiros da empresa são relevantes para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:58.940621-03:00"
-    },
-    {
       "title": "Gold rally has room to run as investor participation lags prior peaks",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T14:26:00.420182-03:00"
+    },
+    {
+      "title": "BP volta à Venezuela (e vai sair do Mar do Norte)",
+      "source": "Brazil Journal",
+      "score": 6.0,
+      "motivo": "A noticia menciona a volta da BP à Venezuela, o que pode ter impacto positivo no mercado de petroleo",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:31:22.194517-03:00"
+    },
+    {
+      "title": "Beijing Wants Nvidia Out But China's AI Developers Aren't Ready",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "A notícia destaca a dificuldade da China em substituir a Nvidia em suas operações de inteligência artificial, o que pode ter implicações para o mercado de semicondutores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T14:31:36.881814-03:00"
+    },
+    {
+      "title": "'Wolves In White Coats': 5 Key Takeaways From HHS Report On Alleged Pediatric Gender-Treatment Fraud",
+      "source": "ZeroHedge",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T14:31:39.989309-03:00"
     }
   ]
 }
