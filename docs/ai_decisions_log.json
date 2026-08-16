@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Barclays expande negociações com fundo de hedge QRT para mais de US$ 100 bilhões",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:05:56.454139-03:00"
-    },
-    {
-      "title": "Wells Fargo rebaixa Roku para peso neutro após segundo trimestre forte",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:05:59.107775-03:00"
-    },
-    {
-      "title": "Por que as ações da Eton Pharmaceuticals disparam hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:06:01.766531-03:00"
-    },
-    {
       "title": "Por que as ações da Michael Page estão subindo hoje?",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T12:35:43.829802-03:00"
+    },
+    {
+      "title": "Fed’s Internal Rate Debate Faces New Scrutiny",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A notícia destaca a possibilidade de a Fed manter a taxa de juros estável, o que é considerado positivo para o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T12:40:45.517765-03:00"
+    },
+    {
+      "title": "Depois da recuperação, Riachuelo tenta transformar a marca em nova alavanca de crescimento",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A notícia é sobre uma empresa e sua estratégia de crescimento, mas não é diretamente relevante para o mercado financeiro em geral",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:40:52.959207-03:00"
+    },
+    {
+      "title": "As an only child, I've been on many trips with my parents. Traveling one-on-one with each changed how I see them.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não trata de temas financeiros ou econômicos.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:41:06.126028-03:00"
     }
   ]
 }
