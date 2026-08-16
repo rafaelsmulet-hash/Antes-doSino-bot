@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dólar sobe a R$ 5,20, após 4 altas, e Bolsa caminha para 9º dia de queda",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:16:34.249326-03:00"
-    },
-    {
       "title": "Which Is the Better Invesco Healthcare ETF: Equal-Weight RSPH or Biotech-Focused IBBQ?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T08:21:36.120399-03:00"
+    },
+    {
+      "title": "Entrada da China na ação do Brasil na OMC ajuda a combater guerra tarifária contra os EUA?",
+      "source": "G1 Economia",
+      "score": 6.0,
+      "motivo": "A China apoia o Brasil na disputa comercial contra os EUA, o que pode fortalecer a posição brasileira e combater a guerra tarifária.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:25:45.401940-03:00"
     }
   ]
 }
