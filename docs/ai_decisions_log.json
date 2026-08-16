@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que as ações da Space Exploration Technologies estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a queda das ações da Space Exploration Technologies pode ser um sinal de desconfiança do mercado em relação à empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:15.646380-03:00"
-    },
-    {
-      "title": "Radiant World vende alumínio ao STG Group em esforço de liquidez",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "a venda de ativos pode ser um sinal de que a empresa está buscando liberar capital para investimentos ou pagamentos de dívidas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:18.553039-03:00"
-    },
-    {
       "title": "‘Lanternas’: veja o que esperar da nova série da DC que estreia neste domingo",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T13:45:43.668420-03:00"
+    },
+    {
+      "title": "Perto do gol mil, Cristiano Ronaldo sinaliza que 'aposentadoria está perto'",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "noticia sobre aposentadoria de atleta de futebol e hobbies pessoais",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:55:40.079734-03:00"
+    },
+    {
+      "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
+      "source": "TechCrunch",
+      "score": 1.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:55:51.759481-03:00"
     }
   ]
 }
