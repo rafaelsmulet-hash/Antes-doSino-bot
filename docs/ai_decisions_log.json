@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Noteworthy ETF Outflows: AUSF, VZ, MSI, LMT",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:49.462582-03:00"
-    },
-    {
-      "title": "JPMorgan Active Value ETF Experiences Big Outflow",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:31:52.084892-03:00"
-    },
-    {
-      "title": "Raízen (RAIZ4) reduz prejuízo, mas resultado financeiro ainda pesa e ações caem; entenda os próximos passos da companhia",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:31:58.329894-03:00"
-    },
-    {
       "title": "Nubank (ROXO34) sobe mais de 10% após lucro recorde de US$ 1 bilhão no 2T26",
       "source": "Suno Noticias",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T19:16:23.136789-03:00"
+    },
+    {
+      "title": "Receita da Anthropic dispara para mais de US$ 11,5 bilhões no segundo trimestre",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "A notícia destaca o crescimento da Anthropic, o que pode indicar um potencial aumento de valor para a empresa e positivamente impactar o mercado.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:20:35.143855-03:00"
+    },
+    {
+      "title": "Pablo Marçal diz que patrimônio de R$ 7,4 bi está errado e manda corrigir declaração",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não está relacionado a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:20:37.844179-03:00"
+    },
+    {
+      "title": "U.S. stock futures little changed as investors ponder the Fed’s next move",
+      "source": "MarketWatch",
+      "score": 3.0,
+      "motivo": "A notícia é relevante para o mercado pois trata da expectativa de mudanças nas taxas de juros pela Fed",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:20:57.012336-03:00"
     }
   ]
 }
