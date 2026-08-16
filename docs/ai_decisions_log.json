@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Medida de reciprocidade sobre tarifas dos EUA pode ser adotada ou não, diz Durigan",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A medida de reciprocidade pode levar a uma redução das tarifas impostas pelos EUA, impactando positivamente a economia brasileira",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:40:44.581498-03:00"
-    },
-    {
-      "title": "Erupção do Etna prolonga fechamento do aeroporto de Catânia até sábado",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "a noticia e sobre um evento natural e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:40:47.918874-03:00"
-    },
-    {
-      "title": "Índice de Preços ao Produtor (IPP) é de -0,77% em junho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:40:51.682994-03:00"
-    },
-    {
-      "title": "Como a batata pode ter mudado o DNA dos primeiros povos dos Andes",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:40:55.692518-03:00"
-    },
-    {
-      "title": "1 em cada 5 pessoas pode ter risco cardíaco 'oculto'; saiba como identificar",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:40:58.347924-03:00"
-    },
-    {
-      "title": "A volta de 'Ted Lasso': série bate recorde da Apple TV e supera 'Ruptura' e 'Pluribus'",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:41:01.009323-03:00"
-    },
-    {
-      "title": "S&P 500 AI squeeze pressures hyperscaler cash flows - Jefferies",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:41:03.985338-03:00"
-    },
-    {
-      "title": "Braskem S.A. GAAP EPS of R$4.17, revenue of R$21.72B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:41:06.613274-03:00"
-    },
-    {
-      "title": "SouthGobi Resources reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:41:09.240790-03:00"
-    },
-    {
-      "title": "Arrow Electronics (ARW) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:41:14.127536-03:00"
-    },
-    {
       "title": "Berkshire CEO Greg Abel Closed a $6.8 Billion Acquisition of Homebuilder Taylor Morrison. Here's What It Signals About His Capital Allocation Style.",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T20:25:44.126360-03:00"
+    },
+    {
+      "title": "Better Value ETF: Vanguard's Small Cap-Focused VBR vs. the iShares IJJ Targeting Mid-Cap Stocks",
+      "source": "Nasdaq",
+      "score": 8.0,
+      "motivo": "Notícia sobre a comparação de taxas de custo de ETFs, o que é relevante para investidores.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T20:30:46.882613-03:00"
+    },
+    {
+      "title": "The 2027 Social Security COLA Will Push the Average Spousal Benefit to a Major Milestone",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro pois se refere a benefícios de segurança social.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:30:49.778811-03:00"
+    },
+    {
+      "title": "Japan Stock Market May Run Out Of Steam On Monday",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A notícia é relevante porque indica que os investidores podem estar vendendo suas posições, o que pode fazer com que o mercado perca força.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:30:52.776127-03:00"
+    },
+    {
+      "title": "Tesla Stock Faces a High Stakes Reality Check After Its Record Quarter",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia revela um aumento no desequilíbrio entre o poder de ganhos da Tesla e suas expectativas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T20:30:55.749353-03:00"
+    },
+    {
+      "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia destaca investimentos significativos em infraestrutura, o que pode ter impacto positivo no mercado de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T20:30:58.611245-03:00"
+    },
+    {
+      "title": "Micron Is Worth $1.1 Trillion and Sits 23% Below Its 52-Week High. Is the Stock a Buy?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "O aumento significativo do faturamento da Micron é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:31:01.536480-03:00"
+    },
+    {
+      "title": "What BBB Foods' Long Growth Runway Means, and Why a Director's Latest Insider Transaction Doesn't Detract From It",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações, mas não tem impacto significativo no momento",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:31:04.464996-03:00"
+    },
+    {
+      "title": "Micron vs. Teradyne: Which Is the Better AI Stock to Buy Today?",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia discute especificamente o impacto de duas ações em relação à demanda de inteligência artificial, o que é altamente relevante para o mercado agora.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T20:31:07.388632-03:00"
+    },
+    {
+      "title": "1 Jaw-Dropping Metric That Makes Alphabet Stock a No-Brainer Buy.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Aceleração da receita da Google Cloud é um sinal positivo para a ação da Alphabet.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T20:31:10.275040-03:00"
+    },
+    {
+      "title": "Here's How the 2027 Social Security COLA Is Projected to Stack Up to the 2026 COLA",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro imediato",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:31:13.109365-03:00"
     }
   ]
 }
