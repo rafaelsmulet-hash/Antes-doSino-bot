@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I'm a recent college grad who keeps my grocery bill to $30 a week. Here are 9 Aldi items I always buy.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:58:30.019942-03:00"
-    },
-    {
       "title": "An airline passenger almost got sucked out of the plane. A new report shows how it happened.",
       "source": "Business Insider",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T15:51:10.571468-03:00"
+    },
+    {
+      "title": "Lula diz querer quarto mandato para impedir volta de direita que ‘ria de asfixiados’",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T15:55:47.332795-03:00"
     }
   ]
 }
