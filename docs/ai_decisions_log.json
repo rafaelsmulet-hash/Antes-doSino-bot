@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Azul S.A. reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:17.321436-03:00"
-    },
-    {
-      "title": "ETF giants BlackRock, Vanguard, and State Street see inflows slide as competition explodes",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:19.966346-03:00"
-    },
-    {
-      "title": "KB Financial GAAP EPS of ₩5549, revenue of ₩12713.42B",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:22.581673-03:00"
-    },
-    {
       "title": "Hanjin Kal Slips To Loss In Q2 Despite Reporting Higher Operating Income",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T18:40:58.296600-03:00"
+    },
+    {
+      "title": "Trump Says Asked Pentagon to Cut Military Drills With S. Korea",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A redução de gastos militares pode afetar a economia global e os mercados financeiros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T18:51:10.132760-03:00"
+    },
+    {
+      "title": "Calma no mercado nos EUA pode esconder mudança de sentimento de investidores?",
+      "source": "InfoMoney",
+      "score": 4.0,
+      "motivo": "A noticia não é sobre uma evento específico, mas sim sobre o estado de espírito dos investidores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T18:51:14.086909-03:00"
+    },
+    {
+      "title": "Gatos mais mansos ao longo dos séculos? Estudo dá pista sobre felinos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T18:51:22.039588-03:00"
     }
   ]
 }
