@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dólar a R$ 4,65 e Bolsa a 225 mil: o que acontece com seus investimentos se o governo ajustar as contas, segundo a Empiricus",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "ajuste nas contas públicas pode destravar reprecificação dos ativos brasileiros",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:55:55.703129-03:00"
-    },
-    {
-      "title": "Ações da Applied Optoelectronics disparam 17% após resultados recordes",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Resultados recordes e aumento de 17% na ação são um sinal positivo para os investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:55:58.595326-03:00"
-    },
-    {
-      "title": "Ação da Replimune pode oscilar 5,6% com divulgação de resultados",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Divulgação de resultados pode influenciar a ação da Replimune, mas o impacto é previsível",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:01.471050-03:00"
-    },
-    {
-      "title": "Ações da Miniso podem oscilar 6,4% com resultados em 21 de agosto",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "resultados financeiros da Miniso podem afetar valor das ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:04.476586-03:00"
-    },
-    {
-      "title": "Quem é o próximo após o Workday? Analista aponta alvos de M&A no setor de software",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "A noticia menciona M&A no setor de software, o que pode afetar as acoes de empresas desse setor",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:56:07.279686-03:00"
-    },
-    {
       "title": "Ações do BJ’s Wholesale Club podem oscilar 5,8% com resultado trimestral",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T13:31:09.435043-03:00"
+    },
+    {
+      "title": "Eleições 2026: Lula lança campanha de chapéu e com vídeo para Lula de 1979",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "notícia não está relacionada a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:35:38.005784-03:00"
+    },
+    {
+      "title": "Golpistas utilizam nomes de grandes marcas em falsas ofertas de empréstimos",
+      "source": "InfoMoney",
+      "score": 1.0,
+      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre fraudes e segurança pessoal.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:35:40.772842-03:00"
+    },
+    {
+      "title": "Arsenal atropela Manchester City por 3 a 0 e conquista Supercopa da Inglaterra",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:35:46.965088-03:00"
+    },
+    {
+      "title": "J.P. Morgan ended Polymarket banking relationship over regulatory concerns",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia pode afetar a confiança dos investidores na Polymarket e influenciar a percepção do risco associado à empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T13:35:50.221925-03:00"
+    },
+    {
+      "title": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relevância direta para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:36:01.472806-03:00"
     }
   ]
 }
