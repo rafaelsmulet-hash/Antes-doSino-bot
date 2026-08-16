@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Hanjin Kal Slips To Loss In Q2 Despite Reporting Higher Operating Income",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:28.303985-03:00"
-    },
-    {
       "title": "XLB, LIN, FCX, SHW: Large Inflows Detected at ETF",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T18:51:22.039588-03:00"
+    },
+    {
+      "title": "Stripe is said to agree to buy OpenRouter for more than $7B",
+      "source": "Seeking Alpha",
+      "score": 8.0,
+      "motivo": "A notícia é relevante porque pode impactar a concorrência no setor de pagamentos e influenciar a estratégia de expansão da Stripe.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T18:56:06.851405-03:00"
     }
   ]
 }
