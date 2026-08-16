@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I live in London, where we're experiencing our 5th heat wave. I have no AC, so here's how I'm surviving my workday.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:11:41.443009-03:00"
-    },
-    {
-      "title": "SEC to Host Virtual Roundtable on Modernizing IPOs and Expanding Access to Public Markets",
-      "source": "SEC",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:11:45.044283-03:00"
-    },
-    {
       "title": "Bonds Become ‘Really Difficult to Trade’ as Correlations Unwind",
       "source": "Bloomberg Markets",
       "score": 6.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T17:01:23.801838-03:00"
+    },
+    {
+      "title": "As melhores fechaduras e campainhas inteligentes de 2026: segurança sem complicação",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não está relacionado a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T17:05:35.417487-03:00"
+    },
+    {
+      "title": "O que explica o prejuízo de R$ 10 bilhões da Casas Bahia no 2º trimestre",
+      "source": "UOL Economia",
+      "score": 8.0,
+      "motivo": "prejuízo significativo de R$ 10 bilhões no 2º trimestre",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T17:05:44.189792-03:00"
     }
   ]
 }
