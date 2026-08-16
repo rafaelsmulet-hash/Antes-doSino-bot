@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nubank (ROXO34) sobe mais de 10% após lucro recorde de US$ 1 bilhão no 2T26",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:32:02.045650-03:00"
-    },
-    {
-      "title": "Stock Market Today: Dow Steady After Surprise Retail Sales; Applied Materials Dives On Earnings (Live Coverage)",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:32:06.312446-03:00"
-    },
-    {
       "title": "Hims & Hers (HIMS) Raised Guidance. Can Growth Survive Its GLP-1 Margin Reset?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T19:20:57.012336-03:00"
+    },
+    {
+      "title": "Oil Edges Higher as Middle East Tensions Linger: Markets Wrap",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente os preços do petróleo, que é um dos principais ativos financeiros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T19:30:39.832339-03:00"
+    },
+    {
+      "title": "National Australia Bank Profit Edges Up on Business Bank Growth",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "Crescimento do empréstimo para empresas é um indicador positivo para o lucro da instituição financeira.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:30:42.860202-03:00"
     }
   ]
 }
