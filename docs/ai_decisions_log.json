@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Bienal do Livro 2026: conheça SenLinYu, que levou uma fanfic à lista de best-sellers dos EUA",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:06.617030-03:00"
-    },
-    {
-      "title": "AirJoule targets 2,000 liters per day as 2026 cash spend rises to $27M-$28M, backed by Kubota channel deal",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:09.431804-03:00"
-    },
-    {
       "title": "Acurx outlines 20-patient PATHFINDER start in Q4 as FDA stays open to a single Phase III ASPIRE for ibezapolstat",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T18:25:46.421898-03:00"
+    },
+    {
+      "title": "Mais de 100 mil pessoas estão sem energia elétrica no Havaí após furacão Lala",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "a noticia e sobre um evento natural e nao tem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T18:30:58.681409-03:00"
+    },
+    {
+      "title": "Renan Santos ataca Lula e Flávio e promete ‘exterminar’ facções",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T18:31:01.434266-03:00"
     }
   ]
 }
