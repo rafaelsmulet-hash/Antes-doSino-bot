@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "EUA colocam Brasil em lista de países usados para driblar tarifas sobre a China",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A notícia pode afetar negativamente as exportações brasileiras para os EUA e, consequentemente, o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:55:33.964286-03:00"
-    },
-    {
-      "title": "Telescópio flagra dois buracos negros prestes a se fundir",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:55:36.722884-03:00"
-    },
-    {
-      "title": "Sangria vai longe? Bolsa brasileira é emergente com maior peso em fundos globais",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Aumento da participação estrangeira em fundos globais é um sinal positivo para o mercado brasileiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:55:39.652289-03:00"
-    },
-    {
-      "title": "LWSA3: ação da LWSA dispara após balanço e programa de recompra",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "Ação da LWSA dispara após balanço positivo e programa de recompra, sinalizando melhora contínua da rentabilidade e geração de caixa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:55:42.434608-03:00"
-    },
-    {
       "title": "Liga de FIIs completa 5 anos: o que o investidor aprendeu – e ainda precisa aprender",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T13:21:03.255140-03:00"
+    },
+    {
+      "title": "Billionaire Bill Ackman doubles down on these stocks in Q2",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "Aumento de posição em ações de empresas de sucesso pode ter impacto positivo no mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:25:48.178302-03:00"
+    },
+    {
+      "title": "Under Armour’s Turnaround Hits a Wall as North America Demand Craters",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A notícia afeta diretamente a empresa e pode influenciar a percepção dos investidores sobre a saúde financeira da Under Armour.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:25:51.162054-03:00"
+    },
+    {
+      "title": "Bending Spoons Beats on Earnings in Its Public Market Debut Quarter. Investors Focus on the Fine Print Instead",
+      "source": "Yahoo Finance",
+      "score": 5.0,
+      "motivo": "A empresa apresentou resultados financeiros superiores às expectativas, o que é um sinal positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T13:25:54.081598-03:00"
+    },
+    {
+      "title": "My son went to culinary school, and my daughter majors in theater. It's not what I planned for either of them, and that's OK.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:25:57.187650-03:00"
     }
   ]
 }
