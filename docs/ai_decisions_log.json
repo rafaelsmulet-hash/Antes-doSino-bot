@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Top 3% Biotech Stock, Eton, Just Catapulted To A Record High",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:58:02.895341-03:00"
-    },
-    {
-      "title": "AI Shopping is Sending Better Leads to Ulta and Etsy. Can They Keep the Customer?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:58:05.521953-03:00"
-    },
-    {
-      "title": "Fed Rate Hike Odds Fall As Amazon Prime Day Effect Hits Retail Sales",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O declínio nas vendas de varejo pode sugerir uma redução na inflação, o que pode influenciar a decisão da Fed em relação à taxa de juros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:58:08.770162-03:00"
-    },
-    {
       "title": "Tech stocks today: Shares climb higher with AI trade back on",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T15:15:38.385641-03:00"
+    },
+    {
+      "title": "‘Toda a direita vai estar unida no 2º turno’, diz Romeu Zema no 1º dia de campanha",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T15:20:48.034699-03:00"
+    },
+    {
+      "title": "Google passa a integrar Gemini ao Classroom - veja como será a mudança",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "noticia não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T15:20:55.021209-03:00"
+    },
+    {
+      "title": "Can I claim 50% of my husband’s Social Security now — and switch to my higher benefit at 70?",
+      "source": "MarketWatch",
+      "score": 0.0,
+      "motivo": "A notícia não trata de temas financeiros relevantes para o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T15:20:58.385967-03:00"
     }
   ]
 }
