@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "AdvanSix (ASIX) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:06:42.115752-03:00"
-    },
-    {
-      "title": "Johnson Outdoors (JOUT) Q3 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:06:52.011961-03:00"
-    },
-    {
-      "title": "Claritev (CTEV) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:06:54.657641-03:00"
-    },
-    {
-      "title": "Gray Media (GTN) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:06:57.296061-03:00"
-    },
-    {
-      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:07:04.566216-03:00"
-    },
-    {
       "title": "Bond Markets Have Been Hard to Trade, Kaminski Says",
       "source": "Bloomberg Markets",
       "score": 2.0,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T13:02:07.264040-03:00"
+    },
+    {
+      "title": "Quanto custa contratar o C-Level errado? Impacto vai além do financeiro",
+      "source": "Exame",
+      "score": 2.0,
+      "motivo": "A noticia nao e especifica sobre mercado financeiro, mas sim sobre gestao de empresas",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:05:47.179283-03:00"
+    },
+    {
+      "title": "Calm markets mask risk of sudden S&P 500 swings",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia destaca o risco de oscilações repentinas no mercado, o que pode afetar os investimentos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T13:05:50.320411-03:00"
+    },
+    {
+      "title": "Ferragosto, o feriado italiano que transformou o “dolce far niente” em um negócio bilionário",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "noticia sobre feriado e tradição italiana",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:06:03.551393-03:00"
+    },
+    {
+      "title": "TechCrunch Mobility: The shifting flight path of electric air taxis",
+      "source": "TechCrunch",
+      "score": 0.0,
+      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:06:06.487636-03:00"
+    },
+    {
+      "title": "Vivian Tu says investors carrying credit card debt need to stop and pay it off first. The math says she's right",
+      "source": "Yahoo Finance",
+      "score": 3.0,
+      "motivo": "Aconselhamento financeiro direcionado a investidores com dívida de cartão de crédito",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:06:09.436649-03:00"
     }
   ]
 }
