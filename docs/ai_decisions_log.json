@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Hims & Hers (HIMS) Raised Guidance. Can Growth Survive Its GLP-1 Margin Reset?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:32:08.960404-03:00"
-    },
-    {
-      "title": "My husband is LL Cool J. Starting a jewelry business gave me a purpose that's all mine.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:32:11.808553-03:00"
-    },
-    {
-      "title": "Election Angst Fuels Bruising Week in Brazil Markets",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a confiança dos investidores no mercado brasileiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:35:59.209509-03:00"
-    },
-    {
       "title": "Trump impõe tarifa de 100% sobre importação de drones e mira até aliados",
       "source": "InfoMoney",
       "score": 8.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T19:30:42.860202-03:00"
+    },
+    {
+      "title": "Quem participa do primeiro debate ao governo de Minas Gerais neste domingo (16)",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia sobre eleicoes e politica, sem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:35:39.241258-03:00"
+    },
+    {
+      "title": "São Paulo negocia para ter Vardy, nome lendário de campeão da Premier League",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia sobre esporte e não tem relação direta com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:36:00.822629-03:00"
+    },
+    {
+      "title": "A2 Milk profit tumbles 44% after China formula shortage",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "A notícia é relevante pois afeta diretamente a empresa e pode ter impacto no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:36:04.030469-03:00"
     }
   ]
 }
