@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Radiant World Said to Sell Aluminum Stockpile to STG Group",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A venda de um estoque de alumínio é relevante para o mercado de metais e pode trazer liquidez para a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:05:36.966225-03:00"
-    },
-    {
-      "title": "O negócio por trás do Morumbis: São Paulo busca contrato acima de R$ 75 milhões",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:05:42.453398-03:00"
-    },
-    {
-      "title": "Centro de inovação em Recife troca de CEO e prepara transformação de R$ 27 milhões com IA",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:05:45.083940-03:00"
-    },
-    {
-      "title": "E-commerce: como escalar entregas rápidas sem perder eficiência",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:05:47.712717-03:00"
-    },
-    {
-      "title": "Terremoto de 7,4 na Colômbia deixa 281 mortos; buscas continuam",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:05:50.334516-03:00"
-    },
-    {
       "title": "ChatGPT e Claude entram na guerra de preços para não perder clientes para modelos chineses",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T07:26:06.838214-03:00"
+    },
+    {
+      "title": "Stripe e Advent podem aumentar oferta pelo PayPal",
+      "source": "Brazil Journal",
+      "score": 8.0,
+      "motivo": "Aumento da oferta pelo PayPal pode impulsionar a ação da empresa e influenciar o mercado de pagamentos.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:31:00.450077-03:00"
+    },
+    {
+      "title": "Investimentos ‘antifrágeis’: como Nassim Taleb ajuda a preparar a carteira para o imprevisível",
+      "source": "Seu Dinheiro",
+      "score": 3.0,
+      "motivo": "A notícia discute estratégias de investimento, mas não apresenta informações específicas sobre o mercado atual.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:31:10.992834-03:00"
+    },
+    {
+      "title": "Larry Fink’s brutal warning to Americans: This everyday habit is ‘one of the worst financial decisions’ of your life",
+      "source": "Yahoo Finance",
+      "score": 4.0,
+      "motivo": "A notícia destaca a importância de evitar juros de cartão de crédito, o que pode afetar as finanças pessoais e, consequentemente, o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:31:16.218972-03:00"
+    },
+    {
+      "title": "Motherhood didn't make me less ambitious. It sharpened my focus and made me more intentional about the work I take on.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:31:19.342465-03:00"
+    },
+    {
+      "title": "Trump asks Supreme Court to let White House ballroom construction continue",
+      "source": "CNBC - US News",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada a mercado financeiro ou economia",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:31:22.443095-03:00"
     }
   ]
 }
