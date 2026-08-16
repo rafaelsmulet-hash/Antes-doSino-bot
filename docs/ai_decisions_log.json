@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Influential Wife Of Anthropic CEO Pitched Post-Conviction Epstein On 'Luxury Porn' Company, And Claude Has No Idea",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:36:38.669819-03:00"
-    },
-    {
       "title": "Tesla's New Roadster Reportedly Uses SpaceX Cold-Gas Thrusters To Fly",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T20:05:41.092604-03:00"
+    },
+    {
+      "title": "Latest Oil Market News and Analysis for June 17",
+      "source": "Bloomberg Markets",
+      "score": 4.0,
+      "motivo": "A notícia afeta o preço do petróleo, mas não há detalhes específicos sobre a magnitude do impacto.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T20:15:46.003855-03:00"
     }
   ]
 }
