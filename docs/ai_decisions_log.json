@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The $20 Million Boom in Women's Volleyball",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:45:35.063056-03:00"
-    },
-    {
-      "title": "Farage vence eleição, mas adversário vestido de lixeira rouba a cena no Reino Unido",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:45:38.384010-03:00"
-    },
-    {
       "title": "Dragão de 'Game of Thrones'? Nova espécie de lagarto é descoberta na Tailândia",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T20:50:52.828658-03:00"
+    },
+    {
+      "title": "PNAD Contínua Trimestral: desocupação cai em 13 das 27 UFs no 2° trimestre de 2026",
+      "source": "IBGE",
+      "score": 6.0,
+      "motivo": "Taxa de desocupação cai em 13 das 27 UFs, indicando melhoria no mercado de trabalho brasileiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:55:40.329954-03:00"
+    },
+    {
+      "title": "Vasco x Santos: além do 3 x 0, jogo foi recheado de provocações - veja vídeos",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T20:55:44.737772-03:00"
     }
   ]
 }
