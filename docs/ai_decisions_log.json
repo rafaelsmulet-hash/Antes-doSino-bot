@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "U.S. Business Inventories Unexpectedly Unchanged In June",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:04:45.102779-03:00"
-    },
-    {
       "title": "Startup de saúde mental de Selena Gomez é processada por investidores; artista é acusada de fraude de US$ 1,2 milhão",
       "source": "Seu Dinheiro",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T16:31:09.266660-03:00"
+    },
+    {
+      "title": "Marabraz protocola pedido de recuperação judicial; dívidas estimadas são de R$ 140 milhões",
+      "source": "Exame",
+      "score": 3.0,
+      "motivo": "o pedido de recuperação judicial é um evento rotineiro para a empresa, mas ainda relevante para o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:35:38.803358-03:00"
     }
   ]
 }
