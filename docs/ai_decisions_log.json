@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Notable ETF Outflow Detected - PLTU",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:31:38.754172-03:00"
-    },
-    {
       "title": "Noteworthy ETF Outflows: GRID, NVT, HUBB, APTV",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T19:05:59.725665-03:00"
+    },
+    {
+      "title": "O Hamas reafirma aos EUA disposição de dar início à 2ª fase do plano de paz para Gaza",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia não está relacionada a mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:10:45.384284-03:00"
     }
   ]
 }
