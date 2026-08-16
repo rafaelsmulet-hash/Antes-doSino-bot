@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Liga de FIIs completa 5 anos: o que o investidor aprendeu – e ainda precisa aprender",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre a historia da indústria de FIIs, sem impacto direto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:55:45.271548-03:00"
-    },
-    {
-      "title": "BB: explosão da inadimplência em cartões é caso isolado? Como está cenário para setor",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A notícia indica que a inadimplência em cartões não é um problema generalizado, o que pode ser positivo para o setor de cartões",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:55:48.092685-03:00"
-    },
-    {
-      "title": "Cleitinho chega à véspera do prazo sem registro após idas e vindas em Minas",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:55:51.600080-03:00"
-    },
-    {
       "title": "Dólar a R$ 4,65 e Bolsa a 225 mil: o que acontece com seus investimentos se o governo ajustar as contas, segundo a Empiricus",
       "source": "Money Times",
       "score": 6.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T13:25:57.187650-03:00"
+    },
+    {
+      "title": "Lula, Flávio, Caiado, Zema e Renan: principais candidatos à Presidência começam campanha",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "Nenhuma informação relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:30:55.237513-03:00"
+    },
+    {
+      "title": "My move from Los Angeles to Palm Springs was supposed to be temporary. Six years later, I'm still here.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não é relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:31:05.968991-03:00"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "source": "Federal Reserve",
+      "score": 8.0,
+      "motivo": "Decisão da taxa de juros do Banco Central é evento relevante e materialmente importante para o mercado",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:31:09.435043-03:00"
     }
   ]
 }
