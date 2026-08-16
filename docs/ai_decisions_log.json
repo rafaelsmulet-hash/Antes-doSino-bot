@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A The Led quer virar referência em retail media (sem brigar com o OOH)",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:04:19.847566-03:00"
-    },
-    {
       "title": "Itaú revela 'bastidores analógicos' de campanha sobre IA",
       "source": "Exame",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T16:15:37.048393-03:00"
+    },
+    {
+      "title": "US 20-Year Bond Sale to Test Demand as Yield Curve Steepens",
+      "source": "Bloomberg Markets",
+      "score": 6.0,
+      "motivo": "A venda de títulos de longo prazo pode influenciar a percepção de risco dos investidores e afetar a demanda por dívida governamental.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T16:20:40.528308-03:00"
     }
   ]
 }
