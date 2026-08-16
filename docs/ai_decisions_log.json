@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Crop Buyers Cut Off From Black Sea Are Turning to Other Origins",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia afeta a disponibilidade de cereais, mas não há informações sobre impacto imediato no mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:55:15.751242-03:00"
-    },
-    {
-      "title": "Carlyle, CVC Team Up to Bid for Security Systems Group Bauwatch",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia sugere uma aquisição significativa em um setor de tecnologia de segurança, o que pode ter impacto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:55:18.787113-03:00"
-    },
-    {
-      "title": "Airbus Finds System Faults on Air India Jet During Mid-Air Drop",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para a indústria aeroespacial, mas não tem impacto imediato no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:55:21.787714-03:00"
-    },
-    {
-      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
-      "source": "WSJ Markets",
-      "score": 3.0,
-      "motivo": "O acordo é relevante para o mercado de energia, mas não tem impacto imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:55:25.080495-03:00"
-    },
-    {
-      "title": "Bill Ackman cria fundo para dar acesso a pré-IPO ao investidor comum",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Bill Ackman cria fundo que investirá em startups, incluindo SpaceX, o que pode impulsionar o crescimento dessas empresas e trazer oportunidades de investimento para o varejo",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:55:28.218880-03:00"
-    },
-    {
-      "title": "OpenAI dobra receita e ultrapassa US$ 40 bilhões, se preparando para IPO",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Dobramento da receita e planos de IPO indicam crescimento e expansão da empresa, impactando positivamente o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T11:55:31.030109-03:00"
-    },
-    {
       "title": "EUA colocam Brasil em lista de países usados para driblar tarifas sobre a China",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T13:11:03.020247-03:00"
+    },
+    {
+      "title": "Terremoto de magnitude 7,7 deixa 53 mortos e mais de 5 mil desabrigados na Indonésia",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:20:40.656519-03:00"
+    },
+    {
+      "title": "Crocs CEO Andrew Rees Sells 30,000 Shares for $4.2 Million -- Do Investors Need to Take Notice?",
+      "source": "Nasdaq",
+      "score": 4.0,
+      "motivo": "A venda de ações significativas pelo CEO pode ser interpretada como uma sinalização de confiança reduzida na empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T13:20:46.574065-03:00"
+    },
+    {
+      "title": "History Says This Is What Will Happen to Nvidia Stock After Aug. 26",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "A notícia é relevante porque analisa o histórico de performance da ação da Nvidia após relatórios trimestrais.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T13:20:49.573818-03:00"
+    },
+    {
+      "title": "Sundar Pichai Raised Alphabet's Capex Guidance to $205 Billion the Same Quarter Google Cloud's Backlog Hit $514 Billion. Here's Which Number Actually Matters More.",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Aumento da orientação de capex da Alphabet e backlog do Google Cloud são indicadores de investimentos significativos na tecnologia e crescimento futuro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T13:20:52.486520-03:00"
+    },
+    {
+      "title": "This Oil Dividend Just Got a Raise. Here's What It Means for Shareholders.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "Aumento da divida é um sinal positivo para os acionistas, indicando saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:20:55.302337-03:00"
+    },
+    {
+      "title": "Workday Has Its Best Day in a Decade on Report of a Potential $43 Billion Buyout",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A notícia de uma potencial aquisição de US$ 43 bilhões é um evento significativo para a empresa e pode impactar seus preços de ação.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T13:21:03.255140-03:00"
     }
   ]
 }
