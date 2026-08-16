@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I have a 9-to-5 job and started dating a bartender. Can I have a future with someone who works nights?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação com o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:50:55.372595-03:00"
-    },
-    {
-      "title": "U.S. debt on track to hit $50T by 2029 - BofA",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:50:58.029213-03:00"
-    },
-    {
-      "title": "Adia Med reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:51:00.622423-03:00"
-    },
-    {
-      "title": "Mensalidade de R$ 1,8 mil: como esta rede de idiomas quer expandir com franquias de ‘escolinhas’ bilíngues para crianças",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:51:07.916918-03:00"
-    },
-    {
       "title": "Farage Crushes Clacton By-Election With 63% As Comedy Candidates Dominate Longest Ballot In British History",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T11:35:50.544852-03:00"
+    },
+    {
+      "title": "Anthropic CEO’s wife emerges as influential adviser ahead of potential IPO",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "A notícia sugere que a Anthropic está se preparando para um IPO, o que pode ter um impacto significativo no mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T11:55:39.807128-03:00"
+    },
+    {
+      "title": "Bloom Energy Stock Has Surged 150% in 2026. Is It Still a Buy?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca um fator positivo que está impulsionando o crescimento da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T11:55:45.156201-03:00"
+    },
+    {
+      "title": "If You're 50 and Have More Than This Number in Your 401(k), You're Ahead of the Average",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia não traz informações específicas sobre o mercado financeiro, apenas um conselho geral sobre aposentadoria",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T11:55:48.043345-03:00"
+    },
+    {
+      "title": "Why Smithfield Foods Stock Sank This Week",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "As expectativas foram superadas, mas a ação caiu, indicando que o mercado já havia incorporado essas informações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T11:55:50.848756-03:00"
     }
   ]
 }
