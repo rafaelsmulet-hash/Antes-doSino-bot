@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "PM abre apuração sobre relato de Haddad e diz não ver irregularidade até agora",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "relato de Haddad não está relacionado ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:16:03.595096-03:00"
-    },
-    {
-      "title": "Por que as ações da Michael Page estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "a empresa apresentou resultados financeiros positivos, o que geralmente é visto como um sinal positivo para as ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:16:08.290181-03:00"
-    },
-    {
       "title": "JPMorgan eleva SanDisk para acima da média após investor day",
       "source": "Investing.com Brasil",
       "score": 5.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T08:11:05.391127-03:00"
+    },
+    {
+      "title": "Fitch eleva nota de crédito do município do Rio de Janeiro a ‘AAA’",
+      "source": "InfoMoney",
+      "score": 8.0,
+      "motivo": "Elevação da nota de crédito do município do Rio de Janeiro é um sinal positivo para a estabilidade financeira da cidade.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T08:15:40.278022-03:00"
+    },
+    {
+      "title": "I can't find a job at 57. I'm fighting feelings of humiliation and panic.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T08:15:51.826799-03:00"
     }
   ]
 }
