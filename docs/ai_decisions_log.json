@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Incêndios na Espanha: autoridades resgatam restos mortais de reis do Século 11",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:21:06.109325-03:00"
-    },
-    {
       "title": "IRB surpreende e ação sobe – mas olhos se voltam para gatilho de 30% para IRBR3",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T17:11:06.689394-03:00"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
+      "source": "Federal Reserve",
+      "score": 8.0,
+      "motivo": "A decisão da taxa de juros do Banco Central é um evento de mercado relevante e materialmente importante.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T17:16:04.074936-03:00"
     }
   ]
 }
