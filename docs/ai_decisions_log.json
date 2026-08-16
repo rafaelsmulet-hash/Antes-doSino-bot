@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:51:16.977752-03:00"
-    },
-    {
-      "title": "Inovio (INO) Q2 2026 Earnings Call Transcript",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:51:20.063230-03:00"
-    },
-    {
-      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:51:23.419809-03:00"
-    },
-    {
-      "title": "Brasil está no nível médio de relatório da Casa Branca sobre rede paralela com China",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "relatório não afeta diretamente o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:55:34.155852-03:00"
-    },
-    {
-      "title": "Investidores processam Selena Gomez e mãe por suposta fraude de US$ 1 milhão",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:55:36.863240-03:00"
-    },
-    {
-      "title": "Ação da Harte Hanks sobe com acordo de aquisição a US$ 5 por ação",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "Aquisição pode impulsionar crescimento da empresa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:55:41.061756-03:00"
-    },
-    {
-      "title": "Morgan Stanley prevê Fed em pausa até o fim do ano com desinflação",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T09:55:43.681040-03:00"
-    },
-    {
-      "title": "Ações da Zevia disparam após pedido de venda da empresa",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:55:46.286617-03:00"
-    },
-    {
-      "title": "Bank of America diz que intervenção no iene pode precisar de medidas mais fortes",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T09:55:48.924067-03:00"
-    },
-    {
-      "title": "Reddit vai entrar no S&P 500 em 18 de agosto; ações disparam",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T09:55:51.529026-03:00"
-    },
-    {
       "title": "Novos dados mostram força no armazenamento e queda na demanda por PCs",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T06:55:10.484514-03:00"
+    },
+    {
+      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
+      "source": "WSJ Markets",
+      "score": 5.0,
+      "motivo": "A queda das ações de tecnologia de IA é relevante para o mercado de ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:01:38.438331-03:00"
+    },
+    {
+      "title": "Rio avança no combate à informalidade dos combustíveis: como ajuda Vibra e Ultrapar?",
+      "source": "InfoMoney",
+      "score": 5.0,
+      "motivo": "A migração de postos para operadores regulares pode beneficiar empresas de capital aberto",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:01:41.394237-03:00"
+    },
+    {
+      "title": "Eleição de 2026 pode ter “faroeste” nas redes sociais maior que em 2022, diz analista",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:01:44.073018-03:00"
+    },
+    {
+      "title": "Volume de serviços fica estável (0,0%) em junho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:01:47.921969-03:00"
+    },
+    {
+      "title": "Como investidores buscaram ganhos de até 586% aproveitando a volatilidade das eleições",
+      "source": "Money Times",
+      "score": 6.0,
+      "motivo": "A notícia destaca uma estratégia de investimento que aproveita a volatilidade do mercado, o que pode ser visto como positivo para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:01:51.393657-03:00"
+    },
+    {
+      "title": "JCPs do Banco do Brasil (BBAS3), dividendos da Caixa Seguridade (CXSE3) e liquidação do Ibovespa; veja o que bombou no Money Times na semana",
+      "source": "Money Times",
+      "score": 5.0,
+      "motivo": "dividendos e juros sobre capital próprio são relevantes para o mercado",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:01:54.183008-03:00"
+    },
+    {
+      "title": "Ferragosto, o feriado italiano que transformou o “dolce far niente” em um negócio bilionário",
+      "source": "Neofeed",
+      "score": 0.0,
+      "motivo": "não há relação com mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:02:04.927787-03:00"
+    },
+    {
+      "title": "Eli Lilly’s Weight-Loss Pill Just Got Its First Foothold in Europe",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A aprovação da pílula de perda de peso na Europa pode aumentar as receitas da Eli Lilly e impulsionar suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:02:08.040622-03:00"
+    },
+    {
+      "title": "An employee-run, multi-day backpacking trip has become a hot ticket at McKinsey",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não está relacionada ao mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:02:10.987832-03:00"
+    },
+    {
+      "title": "How Much Money Should You Convert To A Roth Each Year?",
+      "source": "ZeroHedge",
+      "score": 1.0,
+      "motivo": "A notícia é sobre planejamento financeiro pessoal e não tem impacto direto no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:02:14.471930-03:00"
     }
   ]
 }
