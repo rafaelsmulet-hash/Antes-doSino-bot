@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "ChatGPT e Claude entram na guerra de preços para não perder clientes para modelos chineses",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:05:52.959942-03:00"
-    },
-    {
-      "title": "Harte Hanks to be acquired by Star Equity for $5 per share",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:05:55.766615-03:00"
-    },
-    {
-      "title": "United States AA+ rating affirmed by Fitch; outlook stable",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:05:58.388922-03:00"
-    },
-    {
       "title": "Fundamental Global Inc. 8.00% CUM PRE STK SERIES A declares $0.50 dividend",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T07:31:22.443095-03:00"
+    },
+    {
+      "title": "Mosca-de-estábulo avança no inverno e causa prejuízo a pecuaristas no interior de SP",
+      "source": "G1 Economia",
+      "score": 2.0,
+      "motivo": "noticia sobre pecuaristas e moscas-de-estábulo, sem impacto direto no mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:35:47.020926-03:00"
+    },
+    {
+      "title": "Peão de Orindiúva viaja 10 mil km para divulgar cultura caipira",
+      "source": "G1 Economia",
+      "score": 0.0,
+      "motivo": "a noticia nao tem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:35:49.917954-03:00"
+    },
+    {
+      "title": "The AI boom has echoes of Enron — but that might be okay, a tech guru says",
+      "source": "Business Insider",
+      "score": 3.0,
+      "motivo": "A notícia discute a comparação entre a bolha do AI e a Enron, mas não apresenta informações concretas sobre impacto no mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T07:35:56.176146-03:00"
     }
   ]
 }
