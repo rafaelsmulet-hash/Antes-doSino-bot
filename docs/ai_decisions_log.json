@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Yduqs (YDUQ3) lidera as perdas do Ibovespa hoje. Por que Itaú BBA e Citi ainda veem potencial de alta de até 107%?",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:36:29.500835-03:00"
-    },
-    {
       "title": "NATO Jets Shoot Down Drone Over Latvia, Which Blames 'Russian Electromagnetic Warfare'",
       "source": "ZeroHedge",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T19:51:30.591913-03:00"
+    },
+    {
+      "title": "Exclusivo: Dono da Tok&Stok apresenta plano que prevê venda da Mobly e conversão de dívidas em ações",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "Venda de ativo pode ser positiva para a empresa e reduzir dívidas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:56:00.977352-03:00"
     }
   ]
 }
