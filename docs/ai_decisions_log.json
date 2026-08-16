@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Trump impõe tarifa de 100% sobre importação de drones e mira até aliados",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Impostos sobre importações podem afetar preços e demanda de produtos, impactando negativamente a economia",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:36:06.497212-03:00"
-    },
-    {
-      "title": "Temor com reciprocidade e exterior morno: o que faz Ibovespa cair (de novo) nesta 6ª",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:36:09.140530-03:00"
-    },
-    {
       "title": "I have a 9-to-5 job and started dating a bartender. Can I have a future with someone who works nights?",
       "source": "MarketWatch",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T19:36:04.030469-03:00"
+    },
+    {
+      "title": "Oil edges higher as Middle East tensions return to focus",
+      "source": "Seeking Alpha",
+      "score": 6.0,
+      "motivo": "Aumento do preço do petróleo devido às tensões no Oriente Médio pode afetar a economia global e os mercados financeiros.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:40:48.226982-03:00"
+    },
+    {
+      "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+      "source": "TechCrunch",
+      "score": 8.0,
+      "motivo": "A notícia sugere uma grande movimentação de Stripe no mercado de tecnologia e inteligência artificial, o que pode ter impacto significativo no setor.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T19:40:59.072532-03:00"
     }
   ]
 }
