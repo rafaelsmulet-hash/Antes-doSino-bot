@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Alpha Metallurgical Resources (AMR) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:46:21.586083-03:00"
-    },
-    {
-      "title": "China Yuchai (CYD) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:46:24.198342-03:00"
-    },
-    {
-      "title": "U.S. Retail Sales Unexpectedly Decrease For First Time In Nine Months",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:46:26.815087-03:00"
-    },
-    {
       "title": "Why Joby Aviation's Move Into Defense Is a Bullish Sign for Investors",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T11:20:54.479546-03:00"
+    },
+    {
+      "title": "Casas Bahia tem prejuízo de R$10 bi no 2º tri com plano de ajuste na operação e não descarta nova recuperação extrajudicial",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "prejuízo de R$10 bi e plano de ajuste na operação",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T11:25:36.907789-03:00"
+    },
+    {
+      "title": "Plano de Flávio não menciona Petrobras, e Lula cita estatal 11 vezes",
+      "source": "Investing.com Brasil",
+      "score": 2.0,
+      "motivo": "A noticia não menciona informacoes financeiras concretas sobre a Petrobras, apenas uma referencia a ela em um contexto politico.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T11:25:39.771349-03:00"
+    },
+    {
+      "title": "Após centenário, marketing do Itaú foca em reapresentar portfólio impulsionado por IA",
+      "source": "Exame",
+      "score": 5.0,
+      "motivo": "A notícia destaca a inovação do Itaú em tecnologia de IA, o que pode ser visto como positivo para a empresa e o mercado financeiro.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T11:25:43.086210-03:00"
     }
   ]
 }
