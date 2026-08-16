@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "JPMorgan Turns Bullish on Salesforce as the Stock Runs Three Straight Weeks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:41:32.141809-03:00"
-    },
-    {
       "title": "The $20 Million Boom in Women's Volleyball",
       "source": "Bloomberg Markets",
       "score": 0.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T20:40:53.958302-03:00"
+    },
+    {
+      "title": "Gold Steady Near $4,400 as Traders Weigh US Data and Rate Path",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a percepção dos traders sobre a política monetária da Fed",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T20:50:52.828658-03:00"
     }
   ]
 }
