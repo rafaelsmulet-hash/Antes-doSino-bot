@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "US Bond Sale Records Highest Yield Since 2001",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A venda de títulos com alta taxa de juros indica que os investidores estão exigindo maior compensação para financiar o déficit do governo dos EUA.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:10:40.196174-03:00"
-    },
-    {
       "title": "Big Take: A Major Earthquake Challenges Colombia’s President",
       "source": "Bloomberg Markets",
       "score": 0.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T16:45:56.981009-03:00"
+    },
+    {
+      "title": "Colombia seeks temporary U.S. tariff relief after deadly earthquake",
+      "source": "Seeking Alpha",
+      "score": 2.0,
+      "motivo": "A notícia não tem um impacto direto e imediato no mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T16:50:38.654139-03:00"
     }
   ]
 }
