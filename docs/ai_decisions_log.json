@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Por que as ações da Michael Page estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:06:04.453847-03:00"
-    },
-    {
-      "title": "Chinesa Z.ai diz que novo modelo supera Claude Mythos 5 em teste de segurança",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:06:07.651842-03:00"
-    },
-    {
-      "title": "I have a 9-to-5 job and started dating a bartender. Can I have a future with someone who works nights?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T11:06:10.504915-03:00"
-    },
-    {
       "title": "Professional Diversity GAAP EPS of -$0.15, revenue of $1.18M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T12:41:06.126028-03:00"
+    },
+    {
+      "title": "Em discurso em ato inaugural da campanha de Lula, Janja reverencia ex-primeira-dama Marisa Letícia",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "notícia não é sobre mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:45:46.046356-03:00"
+    },
+    {
+      "title": "BofA favors value, biotech and commodities as AI productivity lags",
+      "source": "Seeking Alpha",
+      "score": 5.0,
+      "motivo": "Recomendação de investimento de uma instituição financeira influente",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:45:49.341982-03:00"
+    },
+    {
+      "title": "SpaceX stock volatility: What to do next if you own shares",
+      "source": "Yahoo Finance",
+      "score": 2.0,
+      "motivo": "A notícia não menciona eventos específicos que afetem a empresa ou o mercado.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T12:46:00.752919-03:00"
     }
   ]
 }
