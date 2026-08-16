@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Treasuries Rise as Weak Retail Sales Dampen Fed Rate-Hike Expectations",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "As vendas de varejo fracos enfraquecem as expectativas de aumento de juros da Fed, afetando as taxas de juros futuras.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:30:58.540858-03:00"
-    },
-    {
-      "title": "Dollar Slides to May Low as Weak Retail Sales Dim Rate Bets",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia afeta diretamente as expectativas de aumento de juros, o que é material para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:31:01.499898-03:00"
-    },
-    {
-      "title": "Quando cai o pagamento do Bolsa Família em agosto? Veja calendário e valores",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T10:31:05.399340-03:00"
-    },
-    {
       "title": "Renda Fixa Hoje: Confira as taxas de CDBs, LCIs e LCAs na XP nesta sexta-feira (14)",
       "source": "InfoMoney",
       "score": null,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T09:21:09.725056-03:00"
+    },
+    {
+      "title": "Primeira Ferrari elétrica alcança valor de R$ 208 milhões e quebra recorde em leilão",
+      "source": "InfoMoney",
+      "score": 2.0,
+      "motivo": "não é relevante para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:25:48.249877-03:00"
+    },
+    {
+      "title": "Produção industrial recua -1,8% em junho",
+      "source": "IBGE",
+      "score": 6.0,
+      "motivo": "produção industrial recuou 1,8% em junho, mas ainda cresceu 1,7% em relação a junho de 2025",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:25:52.216384-03:00"
+    },
+    {
+      "title": "Retirees with $2.5 million want to pay off their $200K mortgage — but a hidden tax hit could cost them $60K",
+      "source": "Yahoo Finance",
+      "score": 8.0,
+      "motivo": "A notícia é relevante pois trata de um impacto direto no orçamento de aposentados, o que pode afetar a economia e os investimentos.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T09:26:04.381721-03:00"
     }
   ]
 }
