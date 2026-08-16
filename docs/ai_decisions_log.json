@@ -1,51 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nuveen Mortgage and Income Fund declares $0.1535 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:41:14.221197-03:00"
-    },
-    {
-      "title": "Nuveen Real Asset Income and Growth Fund declares $0.1335 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:41:16.863567-03:00"
-    },
-    {
-      "title": "Nuveen Core Plus Impact Fund declares $0.0895 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:41:19.492274-03:00"
-    },
-    {
-      "title": "Nuveen Multi-Asset Income Fund declares $0.116 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:41:22.121638-03:00"
-    },
-    {
-      "title": "Nuveen Global High Income Fund declares $0.1035 dividend",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T10:41:24.745497-03:00"
-    },
-    {
       "title": "Zeo Energy GAAP EPS of -$0.07, revenue of $16.2M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17954,51 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T10:36:02.295587-03:00"
+    },
+    {
+      "title": "Second Ceuta Incursion Attempt Fails as Morocco, Spain Boost Security",
+      "source": "Bloomberg Markets",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:40:51.091002-03:00"
+    },
+    {
+      "title": "Pix vai além das transferências e impulsiona empreendedorismo no Brasil",
+      "source": "InfoMoney",
+      "score": 6.0,
+      "motivo": "Aumento da infraestrutura de pagamentos pode impulsionar a economia brasileira, especialmente pequenos empreendimentos e trabalho por conta própria.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:40:55.159050-03:00"
+    },
+    {
+      "title": "24 horas em Madri: o roteiro de turismo para conhecer a capital da Espanha",
+      "source": "Exame",
+      "score": 0.0,
+      "motivo": "não há informações financeiras ou econômicas relevantes",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:41:02.049885-03:00"
+    },
+    {
+      "title": "Why Is Everyone Talking About AMD Stock?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "O preço da açõ da AMD está em alta, o que é relevante para os investidores.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T10:41:08.515366-03:00"
+    },
+    {
+      "title": "A bomba-relógio do crédito que pode desacelerar o Brasil",
+      "source": "Neofeed",
+      "score": 6.0,
+      "motivo": "A notícia destaca a tendência de redução do consumo devido ao endividamento histórico das famílias brasileiras",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T10:41:17.968300-03:00"
     }
   ]
 }
