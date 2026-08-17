@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SPIB, EVMU: Big ETF Outflows",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:56:17.764713-03:00"
-    },
-    {
-      "title": "Silvaco (SVCO) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:56:20.408700-03:00"
-    },
-    {
       "title": "IA nas eleições: 6 casos reais mostram como deepfakes já desafiaram democracias pelo mundo",
       "source": "G1 Economia",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T22:15:38.214450-03:00"
+    },
+    {
+      "title": "Australian Markets Modestly Lower",
+      "source": "Nasdaq",
+      "score": 4.0,
+      "motivo": "Notícia sobre o desempenho do mercado australiano, mas não há informações específicas sobre empresas ou setores",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T22:20:53.893272-03:00"
+    },
+    {
+      "title": "China Stock Market May Turn Lower Again On Monday",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta diretamente o mercado de ações da China, que é um dos principais mercados emergentes do mundo.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T22:20:56.769212-03:00"
     }
   ]
 }
