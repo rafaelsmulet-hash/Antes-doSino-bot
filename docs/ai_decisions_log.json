@@ -1,195 +1,6 @@
 {
   "decisions": [
     {
-      "title": "BTLG11 anuncia dividendos; veja valor e quem tem direito a receber",
-      "source": "Suno Noticias",
-      "score": 8.0,
-      "motivo": "anúncio de dividendos indica saúde financeira do fundo imobiliário",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:45:54.280565-03:00"
-    },
-    {
-      "title": "I 'soft retired' at 65. I work 3 days a week and take extended vacations.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:45:58.961195-03:00"
-    },
-    {
-      "title": "Mark Cuban calls these investments 'death' for ultra-rich Americans. Are you making the same mistakes?",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "Alerta de Mark Cuban sobre investimentos prejudiciais para os ultra-ricos pode influenciar a tomada de decisão de investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:50:52.114903-03:00"
-    },
-    {
-      "title": "Mark Cuban says your 401(k) is ‘part of the cost of health care problem.’ Do you dump Big Insurance and own your values?",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas discute questões relacionadas à saúde e aposentadoria.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:50:54.997150-03:00"
-    },
-    {
-      "title": "C&S Wholesale Grocers to take majority stake in Winn-Dixie",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A aquisição pode afetar a estrutura de mercado e a concorrência no setor de supermercados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:50:57.770408-03:00"
-    },
-    {
-      "title": "WaterBridge (WBI) Raised Guidance Again, So Why Did Shares Slip?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a confiança dos investidores na empresa, apesar de não haver uma explicação clara para o declínio das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:51:00.913331-03:00"
-    },
-    {
-      "title": "Block Stock Slumps Despite Earnings Rising by 65%",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento de lucros não foi suficiente para impulsionar as ações da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T09:55:58.013343-03:00"
-    },
-    {
-      "title": "SoFi Stock Keeps Falling Despite ‘Exceptional’ Earnings. What It Would Take to Move SOFI Again.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A queda da ação da SoFi é significativa e pode afetar a confiança dos investidores no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:56:00.972132-03:00"
-    },
-    {
-      "title": "AI inflation is putting even more pressure on the Fed. Could higher interest rates be next?",
-      "source": "MarketWatch",
-      "score": 8.0,
-      "motivo": "A notícia sugere que a Fed pode precisar aumentar as taxas de juros para lidar com a inflação gerada pela inteligência artificial, o que é um evento de mercado importante.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T10:01:03.873360-03:00"
-    },
-    {
-      "title": "Trump's ‘Golden Age’ Pitch Meets Affordability Frustration",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a frustração dos eleitores com os custos de vida, o que pode afetar as eleições intermédias.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T10:05:48.873296-03:00"
-    },
-    {
-      "title": "Lula evita ‘cascas de banana’, mas ajustes econômicos devem vir ainda em 2026",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia não menciona ajustes econômicos concretos, apenas a possibilidade futura",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:05:52.806106-03:00"
-    },
-    {
-      "title": "Hapvida (HAPV3) despenca mais de 30% e Embraer (EMBJ3) destoa de cautela local; veja os destaques do Ibovespa na semana",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "O Ibovespa acumulou desvalorização de 3,23% na semana e marcou nove pregões consecutivos, indicando uma tendência negativa no mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T10:06:00.371830-03:00"
-    },
-    {
-      "title": "Projeto de lei de stablecoins: onde o Brasil acerta e o que precisa mudar?",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia é relevante para o mercado financeiro pois trata de regulamentação de stablecoins, mas tem um tom negativo devido à limitação de transferências p2p",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:06:04.189208-03:00"
-    },
-    {
-      "title": "Essa empresa fez um prédio de madeira em Suzano para desafiar o concreto",
-      "source": "Exame",
-      "score": 1.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:06:07.004985-03:00"
-    },
-    {
-      "title": "Should I tap my home equity or sell stocks to build a $100,000 emergency fund?",
-      "source": "MarketWatch",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações específicas sobre o mercado financeiro, apenas uma pergunta pessoal sobre gestão de finanças.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:06:09.989272-03:00"
-    },
-    {
-      "title": "Workday could be acquired by private equity. Should it though?",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A possibilidade de aquisição pode afetar o preço das ações da Workday e a estabilidade da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:06:12.910593-03:00"
-    },
-    {
-      "title": "Do Tesouro Direto para outros investimentos? Veja onde reinvestir o Tesouro IPCA+ 2026 para ter renda passiva",
-      "source": "Seu Dinheiro",
-      "score": 6.0,
-      "motivo": "A notícia fornece sugestões de investimentos alternativos para o Tesouro IPCA+, o que pode influenciar as escolhas de investimento dos traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T10:06:22.285638-03:00"
-    },
-    {
-      "title": "CEO Lip Bu-Tan Just Gave Intel a $10 Million Vote of Confidence",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O investimento do CEO é um sinal de confiança na empresa e pode influenciar a percepção dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T10:06:28.277755-03:00"
-    },
-    {
-      "title": "Real estate lawyers reveal why calling police won't help when a previous owner refuses to leave your new home",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:11:12.806379-03:00"
-    },
-    {
-      "title": "Alphabet Counts the Ka-Ching With SpaceX Returns",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca os retornos financeiros da Alphabet com a SpaceX, o que é relevante para o mercado de tecnologia e empresas de capital de risco.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T10:11:16.398829-03:00"
-    },
-    {
-      "title": "'Ultimate crash': Peter Schiff calls US stocks a 'ticking time bomb' — but is he right? Protect your wealth now",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a opinião de um economista respeitado sobre o mercado de ações americano, o que pode influenciar a percepção dos investidores sobre o risco de uma crise.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T10:11:19.338303-03:00"
-    },
-    {
       "title": "Markets just flipped the script on Kevin Warsh's Fed: Chart of the Day",
       "source": "Yahoo Finance",
       "score": 6.0,
@@ -17999,6 +17810,195 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T14:36:05.615782-03:00"
+    },
+    {
+      "title": "Family office dos Moreira Salles revela posição multimilionária na SpaceX",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:40:42.241878-03:00"
+    },
+    {
+      "title": "TSE manda retirar vídeo de Flávio Bolsonaro que associa Lula ao PCC e ao CV",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:40:45.052937-03:00"
+    },
+    {
+      "title": "Ações da Nike despencam para menor nível em 12 anos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:40:49.877470-03:00"
+    },
+    {
+      "title": "Secretário de Energia dos EUA se reunirá com refinadores para aumentar produção de combustível",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:40:52.609051-03:00"
+    },
+    {
+      "title": "Ações da Bally’s despencam após alerta de continuidade e problemas de financiamento",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:40:55.333840-03:00"
+    },
+    {
+      "title": "MGLU3: Por que as ações do Magazine Luiza estão em alta hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T14:40:58.034426-03:00"
+    },
+    {
+      "title": "UGPA3: Por que as ações da Ultrapar estão em forte alta hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:00.737407-03:00"
+    },
+    {
+      "title": "Ratos, não energia, podem ser o risco ignorado dos data centers de IA",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:03.436019-03:00"
+    },
+    {
+      "title": "Groq levanta US$ 350 milhões; Nvidia entra na rodada e transforma de vez a rival em aliada",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T14:41:07.632923-03:00"
+    },
+    {
+      "title": "Morgan Stanley 4.875% Prfd Stk, Series L declares $0.3047 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:10.542154-03:00"
+    },
+    {
+      "title": "Morgan Stanley 6.625 PFD SER Q declares $0.414 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:13.239149-03:00"
+    },
+    {
+      "title": "Morgan Stanley 6.5% DP SH PFD P declares $0.4062 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:15.932578-03:00"
+    },
+    {
+      "title": "Morgan Stanley 4.250% DP PFD O declares $0.2656 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:18.620757-03:00"
+    },
+    {
+      "title": "Morgan Stanley Prfd Series I declares $0.4073 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:21.308509-03:00"
+    },
+    {
+      "title": "Ocean Power Technologies tumbles after launching review of strategic alternatives",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:24.036168-03:00"
+    },
+    {
+      "title": "Morgan Stanley Dep Shs Rpstg 1/1000th Int Fxd to Flag Prfd Ser F declares $0.4392 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:26.755280-03:00"
+    },
+    {
+      "title": "Governo Lula está comprometido com as contas públicas e não tolerará irresponsabilidade fiscal, diz ministro da Fazenda",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:35.867060-03:00"
+    },
+    {
+      "title": "SEC guidance removes risk rules from Nvidia $500B AI financing push",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T14:41:41.276104-03:00"
+    },
+    {
+      "title": "I've lived in Florida for over 25 years. Skip the major cities and spend time in these 5 gorgeous state parks instead.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:41:44.377733-03:00"
+    },
+    {
+      "title": "Massachusetts Mayor Charged With Using COVID Loan For Election Campaign, Debt Payments",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T14:41:47.700107-03:00"
+    },
+    {
+      "title": "\"July Was A Bad Month\": Jane Street Lost $15 Billion In First Down Month In A Decade",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T14:41:50.452268-03:00"
     }
   ]
 }
