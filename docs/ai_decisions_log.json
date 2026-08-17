@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "SEC Charges Private Fund Adviser Adit Ventures Management, Its CEO and Affiliated General Partners in Alleged Fraud",
-      "source": "SEC",
-      "score": 0.0,
-      "motivo": "A notícia é sobre fraude e não tem relação direta com o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T16:30:51.604067-03:00"
-    },
-    {
-      "title": "Peru’s Economy Unexpectedly Slows as Fishing, Agriculture Slump",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado atual, pois se refere a um evento passado e não tem impacto imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T16:40:48.118848-03:00"
-    },
-    {
-      "title": "IA demite funcionário pela primeira vez em loja administrada por robô em São Francisco",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T16:45:56.313447-03:00"
-    },
-    {
-      "title": "U.S. Bank Triple Cash Rewards Visa Business Card review: A solid option for everyday business costs",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T16:46:09.400428-03:00"
-    },
-    {
-      "title": "Budgeting tips for single parents: How to make your money go further",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "Não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T16:46:12.279375-03:00"
-    },
-    {
-      "title": "Elon Musk Says SpaceX Has a Massive Competitive Advantage in AI That Amazon, Google, and Microsoft Can't Touch",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia destaca uma vantagem competitiva significativa da SpaceX, o que pode impactar o mercado de tecnologia e negócios.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T16:50:51.881591-03:00"
-    },
-    {
-      "title": "Piper Sandler Is Bullish on Unusual Machines Stock. Here's Why.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A análise da Piper Sandler destaca a relevância da empresa para o mercado, o que aumenta a materialidade da notícia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T16:55:48.748959-03:00"
-    },
-    {
-      "title": "Nelson Peltz May Be Preparing to Take Wendy’s Private. What It Means for WEN Stock Investors.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia pode influenciar a valorização da ação WEN, pois a privatização pode levar a uma valorização do ativo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T16:55:51.720678-03:00"
-    },
-    {
       "title": "Taco Bell's former boss says McDonald's is making a mistake with its new RedBull drink",
       "source": "Business Insider",
       "score": 0.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T16:50:52.744984-03:00"
+    },
+    {
+      "title": "Trade Data Hasn't Caught Up With Trump Policy Changes, Says Peter Harrell",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T16:55:42.675243-03:00"
+    },
+    {
+      "title": "Samsung, Bradesco e Electrolux: Casas Bahia tem 28 mil credores; veja maiores dívidas",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T16:55:46.357361-03:00"
+    },
+    {
+      "title": "Paramount pede caução de US$ 1,9 bi a estados que tentam barrar fusão com a Warner",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:55:49.076001-03:00"
+    },
+    {
+      "title": "Aos 25 anos e sem diploma, ele criou startup de chips de IA avaliada em US$ 3,3 bi",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T16:55:53.570575-03:00"
+    },
+    {
+      "title": "'2027 será pior', diz CEO da Casas Bahia após pedido de recuperação",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:56:01.360679-03:00"
+    },
+    {
+      "title": "The L.A. Lakers Delivered a 1-Year Return of 25%. These ETFs Have Done Even Better.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:56:06.276195-03:00"
+    },
+    {
+      "title": "Accelerant Holdings (ARX) Soars 57% as Buyer Bets Big on Firm",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:56:08.966676-03:00"
+    },
+    {
+      "title": "Google is buying Spirit Airlines' old data for $10 million to improve its AI",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T16:56:11.942353-03:00"
     }
   ]
 }
