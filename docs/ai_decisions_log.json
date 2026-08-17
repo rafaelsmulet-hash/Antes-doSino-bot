@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "How to tell if your AI platforms’ accounts have been hacked",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:10:47.415636-03:00"
-    },
-    {
-      "title": "Real estate lawyers reveal why calling police won't help when a previous owner refuses to leave your new home",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:10:50.301939-03:00"
-    },
-    {
-      "title": "If You Want the Largest Lifetime Social Security Benefit, Claiming at This Age Is Probably Your Best Bet",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:15:54.218237-03:00"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "source": "Federal Reserve",
-      "score": 8.0,
-      "motivo": "A declaração da FOMC da Reserva Federal é um evento importante que pode influenciar a política monetária e os mercados financeiros.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:16:03.759010-03:00"
-    },
-    {
-      "title": "Demissões, menos lojas e adiamento de balanço: o que acontece com a Casas Bahia?",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Demissões e fechamento de lojas podem impactar negativamente a empresa e o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:20:57.094063-03:00"
-    },
-    {
-      "title": "James Webb detecta objeto 100 bilhões de vezes mais brilhante que uma estrela",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "Nenhuma relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:21:07.467023-03:00"
-    },
-    {
       "title": "Após dar palavra a Lula, JHC muda de ideia e sinaliza disputar o governo de Alagoas",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T15:46:02.681597-03:00"
+    },
+    {
+      "title": "Trump diz que EUA não pretendem prorrogar acordo provisório com Irã",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T15:50:43.468208-03:00"
+    },
+    {
+      "title": "Labor’s share of economic pie plummets to record low as AI threat looms",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T15:50:49.645383-03:00"
+    },
+    {
+      "title": "AXT continues strong post-earnings run; optical stocks gain",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T15:50:52.394650-03:00"
+    },
+    {
+      "title": "Por que a Selic continua alta? Galípolo aponta culpado para os juros elevados e faz alerta sobre inadimplência",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T15:51:00.454261-03:00"
+    },
+    {
+      "title": "Here's How Much Money You'd Have Today If You Invested $1,000 in the S&P 500 During Every Stock Market Crash Since 1950 (Spoiler Alert: Wow!)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T15:51:05.784119-03:00"
+    },
+    {
+      "title": "Eli Lilly’s (LLY) Growth Story Keeps Adding Chapters",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T15:51:08.536359-03:00"
     }
   ]
 }
