@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dá para lucrar com as eleições? Conheça a estratégia que buscou até 586% em ciclos eleitorais passados",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:06:05.845008-03:00"
-    },
-    {
-      "title": "What we know about the alleged Iranian hacks on U.S. water utilities",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:06:11.264197-03:00"
-    },
-    {
-      "title": "Rise of AI shopping pushes merchants to protect loyalty, Adyen says",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:06:14.383513-03:00"
-    },
-    {
-      "title": "Prediction: Amazon Will Join Apple in the $4 Trillion Club Before 2030",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:06:17.091788-03:00"
-    },
-    {
-      "title": "US Lost 25% Of Its Reaper Drones In Iran War, Officials Estimate",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T16:06:20.995940-03:00"
-    },
-    {
-      "title": "Kennedy Center Votes To Put Trump's Name On Building, Close For Renovations",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:06:24.004506-03:00"
-    },
-    {
-      "title": "FBI Seized Mark Walter's Devices Months Before Record $12.5 Billion Lakers Sale",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:06:26.741925-03:00"
-    },
-    {
-      "title": "Pricey Diesel to Push Harvest Season Costs Higher, Says Tom Kloza",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "Aumento dos preços do diesel pode impactar os custos da safra, tornando a notícia relevante para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T16:10:44.498151-03:00"
-    },
-    {
-      "title": "Everest aposta em eficiência energética e menos plástico para crescer 32% com purificadores",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A noticia e sobre uma empresa especifica e nao tem impacto direto no mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:10:51.158498-03:00"
-    },
-    {
-      "title": "16 beaten-down AI stocks that are beloved by BofA analysts",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A identificação de oportunidades de investimento em ações de setores específicos após uma correção no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T16:10:54.300406-03:00"
-    },
-    {
-      "title": "PF apura uso de CPFs de 549 mortos em operações ligadas à Pixbet",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:15:39.869509-03:00"
-    },
-    {
-      "title": "Filme de 'O Mandaloriano e Grogu' já tem data para estrear no Disney+; veja quando",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:15:44.828639-03:00"
-    },
-    {
-      "title": "Anvisa proíbe chá e medicamento que promete efeito emagrecedor semelhante ao Mounjaro; veja lista completa",
-      "source": "Seu Dinheiro",
-      "score": 2.0,
-      "motivo": "A notícia é sobre um produto específico, mas não tem impacto direto no mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:15:53.621267-03:00"
-    },
-    {
-      "title": "Concorrência ou oportunidade? O que pensa a Panvel sobre a entrada das farmácias nos supermercados",
-      "source": "Neofeed",
-      "score": 2.0,
-      "motivo": "noticia sobre modelo de negocio de farmacia em supermercado, sem impacto imediato no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:15:59.221458-03:00"
-    },
-    {
-      "title": "Iron Mountain Stock: Analyst Estimates & Ratings",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:16:02.015517-03:00"
-    },
-    {
-      "title": "Baker Tilly picks new chief growth officer",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:16:04.676006-03:00"
-    },
-    {
-      "title": "AAVE Price Forecast: Can This DEX Token Deliver 300% Gains Next?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:16:07.954805-03:00"
-    },
-    {
       "title": "Economistas pioram projeção para déficit primário e dívida bruta em 2026 e2027",
       "source": "InfoMoney",
       "score": 6.0,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T09:11:12.781990-03:00"
+    },
+    {
+      "title": "Minério cai após contração de empréstimos na China alimentar temores sobre demanda",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:16:31.821204-03:00"
+    },
+    {
+      "title": "Inscrição para vestibular da Fuvest abre na próxima segunda-feira",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:16:34.414860-03:00"
+    },
+    {
+      "title": "Citi rebaixa SentinelOne e Netskope por preocupações com valuation",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:16:39.221192-03:00"
+    },
+    {
+      "title": "Baird retira destaque da Huntington e comenta sobre bancos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:16:41.819097-03:00"
+    },
+    {
+      "title": "Fundo soberano da Arábia Saudita registra queda de 4,2% no retorno",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:16:44.414469-03:00"
+    },
+    {
+      "title": "System Of A Down anuncia show único no Brasil em 2027",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:16:48.205716-03:00"
+    },
+    {
+      "title": "Conrad GAAP EPS of $0.65",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:16:50.903852-03:00"
+    },
+    {
+      "title": "Zoned Properties GAAP EPS of $0.01, revenue of $0.77M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:16:53.496750-03:00"
+    },
+    {
+      "title": "Foresight Autonomous Non-GAAP EPS of -$0.01, revenue of $0.09M misses by $0.41M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:16:56.093249-03:00"
+    },
+    {
+      "title": "Trane Technologies, Eaton unveil power and cooling design for AI data centers",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:16:58.701232-03:00"
+    },
+    {
+      "title": "Bally's Corporation reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:17:01.295371-03:00"
+    },
+    {
+      "title": "Bakkt appoints Matt White as CFO",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:17:03.878776-03:00"
+    },
+    {
+      "title": "authID GAAP EPS of -$0.29, revenue of $0.49M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:17:06.467274-03:00"
+    },
+    {
+      "title": "PIB recua em junho, mas cresce 0,18% no 2º trimestre, indica prévia do BC",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:17:17.617335-03:00"
+    },
+    {
+      "title": "Dólar abre a R$ 5,21, com IBC-Br, Boletim Focus e Casas Bahia no radar",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:17:20.215441-03:00"
+    },
+    {
+      "title": "I started working longer hours after 2 promotions. Now I spend $300 a month on salon blowouts to buy back free time.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:17:25.259547-03:00"
+    },
+    {
+      "title": "Meta faces ‘astronomical’ consequences as legal fight reaches critical moment in California",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:17:27.916785-03:00"
     }
   ]
 }
