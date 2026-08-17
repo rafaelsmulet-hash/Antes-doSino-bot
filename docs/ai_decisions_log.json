@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fluminense x Palmeiras: Onde assistir?",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:00:49.069328-03:00"
-    },
-    {
-      "title": "Marrocos barra nova tentativa de invasão em massa de migrantes rumo à Espanha",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:00:51.866200-03:00"
-    },
-    {
-      "title": "Considering a Reverse Mortgage? 4 Things to Consider First.",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:01:15.076743-03:00"
-    },
-    {
-      "title": "Cultura da FARM: como a marca brasileira está levando seu jeito de trabalhar para o mundo",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia nao tem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:05:35.488525-03:00"
-    },
-    {
-      "title": "‘Criador não é outdoor’, diz creator com 2 milhões de seguidores",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:05:38.371966-03:00"
-    },
-    {
-      "title": "Real estate stocks show mixed performance; data center REITs gain, health care REITs lose",
-      "source": "Seeking Alpha",
-      "score": 4.0,
-      "motivo": "A notícia apresenta uma análise específica do desempenho de ações de imóveis, o que é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T13:05:41.828093-03:00"
-    },
-    {
-      "title": "Bill Gates’ Portfolio Just Added Home Depot (HD) Despite Risks. Time to Buy?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A ação da Home Depot foi adicionada ao portfólio de um dos investidores mais influentes do mundo, o que pode influenciar a percepção dos investidores sobre a ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:05:52.369965-03:00"
-    },
-    {
       "title": "How to tell if your AI platforms’ accounts have been hacked",
       "source": "TechCrunch",
       "score": 0.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T15:41:24.807872-03:00"
+    },
+    {
+      "title": "Iran Feels It Has 'New Leverage' In MidEast Amid War with US",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T15:45:38.292025-03:00"
+    },
+    {
+      "title": "Turquia e Irã discutem abertura de Ormuz e cessar-fogo entre EUA e Irã, diz fonte",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T15:45:41.538184-03:00"
+    },
+    {
+      "title": "CEO da Casas Bahia diz que fechamento de 298 lojas foi 'onda única' e descarta novos",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T15:45:46.183922-03:00"
+    },
+    {
+      "title": "The size of the American workforce has fallen by over 1 million people in the past year. Here’s what’s going on.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T15:45:49.233922-03:00"
+    },
+    {
+      "title": "Billionaire Bill Ackman Just Invested in Netflix Stock. Here's Why Investors Should Care.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T15:45:53.425984-03:00"
+    },
+    {
+      "title": "Ibovespa muda em setembro: Tenda (TEND3) entra e PetroReconcavo (RECV3) deixa índice",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T15:45:58.726912-03:00"
+    },
+    {
+      "title": "Reddit begins testing a new audio and video experience, similar to popular TikTok videos",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T15:46:02.681597-03:00"
     }
   ]
 }
