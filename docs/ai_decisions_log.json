@@ -1,150 +1,6 @@
 {
   "decisions": [
     {
-      "title": "O Burger King sentava com o Méqui. E você, conversa com quem?",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "não há conteúdo relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:20.167587-03:00"
-    },
-    {
-      "title": "O gestor que fez aporte no MST virar fenômeno entre pequenos investidores",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "Aumento da demanda por investimentos alternativos e cooperativas do MST é um sinal positivo para o mercado de investimentos.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:23.032523-03:00"
-    },
-    {
-      "title": "Mega-Sena: quanto R$ 38 milhões rendem todo mês na poupança e no Tesouro",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre sorteio de prêmio",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:25.881650-03:00"
-    },
-    {
-      "title": "Pousou de emergência: como saber a hora certa de evacuar a aeronave?",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:28.735372-03:00"
-    },
-    {
-      "title": "Empresas rejeitam retaliação e cobram diálogo com os EUA após tarifas",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:31.407811-03:00"
-    },
-    {
-      "title": "Último pagamento do PIS/Pasep de 2026 é feito hoje; veja quem será contemplado",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "A notícia é sobre benefício trabalhista e não tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:34.429378-03:00"
-    },
-    {
-      "title": "SNFF11: fundo divulga dividendos com yield próximo de 1%; veja valor",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "Dividendos anunciados com yield próximo de 1%, o que pode atrair investidores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:38.240455-03:00"
-    },
-    {
-      "title": "VRTA11 avança 0,64% nesta sexta, na contramão do IFIX",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:40.887535-03:00"
-    },
-    {
-      "title": "Russia Captures Record Share of India’s Oil Market",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia indica que a Rússia está aumentando sua influência no mercado de óleo, o que pode ter impacto nas exportações de petróleo e gás.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:45.291905-03:00"
-    },
-    {
-      "title": "Ask an Advisor: Should We Move Our Retirement Assets Into a Target Date Fund or an Annuity?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:47.984374-03:00"
-    },
-    {
-      "title": "US Dollar Price Forecast: Softer PPI Boosts Fed Cut Bets – Can EUR/USD and GBP/USD Rally?",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta as expectativas de taxas de juros da Fed e pode influenciar a valorização das moedas europeias.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:51.154935-03:00"
-    },
-    {
-      "title": "Do Wall Street Analysts Like Amphenol Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:53.786781-03:00"
-    },
-    {
-      "title": "Equity Perp Volume Surges 17x as Chip Stocks Draw Crypto Traders",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento nos volumes de opções perpéquias de ações de chips é um sinal de interesse de investidores em ações, o que pode ser positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:56.788877-03:00"
-    },
-    {
-      "title": "Why Is Nutrien (NTR) Raising Guidance While Nitrogen Volumes Slide?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:53:59.446860-03:00"
-    },
-    {
-      "title": "Wall Street slips from its record following the latest weak update on the US economy",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:54:02.131034-03:00"
-    },
-    {
-      "title": "Chinese humanoid robot maker Unitree powers up for stellar Shanghai debut",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a expansão da empresa, o que pode ser visto como um sinal de crescimento e investimento no setor de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:54:05.268120-03:00"
-    },
-    {
       "title": "e.l.f. Beauty (ELF) Just Logged Its 30th Growth Quarter. Can The Streak Hold?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17855,150 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T12:51:35.429668-03:00"
+    },
+    {
+      "title": "Treasury 30-Year Yields Are Back at 2007 Highs",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:55:33.108381-03:00"
+    },
+    {
+      "title": "Bloomberg Surveillance 8/17/2026",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:55:35.747323-03:00"
+    },
+    {
+      "title": "Brasil terá primeira fábrica do mundo de pele de tilápia para tratar queimadura",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:55:39.170033-03:00"
+    },
+    {
+      "title": "Queda do IBC-Br no 2º tri consolida desaceleração e abre espaço para corte na Selic",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:55:41.836717-03:00"
+    },
+    {
+      "title": "Magnata venezuelano vira peça-chave de Trump para negócios de petróleo no país",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:55:44.498059-03:00"
+    },
+    {
+      "title": "Equinor to buy major stake in Pennsylvania gas power plant in $940M deal",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:55:48.842394-03:00"
+    },
+    {
+      "title": "Perfect Moment Non-GAAP EPS of -$0.07, revenue of $1.2M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:55:51.476523-03:00"
+    },
+    {
+      "title": "Semtech, Marvell positioned well ahead of earnings, UBS says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:55:54.152980-03:00"
+    },
+    {
+      "title": "Software glitch prompts Stellantis recall of 955,000 vehicles",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:55:56.793063-03:00"
+    },
+    {
+      "title": "Juros altos levaram Casas Bahia à recuperação judicial, diz economista",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:56:03.638475-03:00"
+    },
+    {
+      "title": "SpaceX's biggest investors are finally visible — just as millions more shares unlock: Chart of the Day",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:56:09.012933-03:00"
+    },
+    {
+      "title": "Cable One (CABO) Fights Subscriber Losses While Squeezing Out Cash",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:56:11.700756-03:00"
+    },
+    {
+      "title": "Core Thesis on Lifecore Biomedical (LFCR): Monetizing Excess Production",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:56:14.349563-03:00"
+    },
+    {
+      "title": "HIVE Digital Technologies Soars 11% on $350M GPU Cloud Contract, Cipher Mining Ticks Up",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:56:17.006360-03:00"
+    },
+    {
+      "title": "KKR (KKR) Remains Strong Despite Credit Fears",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:56:19.636497-03:00"
+    },
+    {
+      "title": "UBS, Tudor Investment Increase Bitcoin ETF Exposure in Q2",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:56:22.313323-03:00"
     }
   ]
 }
