@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Morgan Stanley, JPMorgan Increase Crypto ETF Holdings in Q2",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:51:23.710453-03:00"
-    },
-    {
-      "title": "Before the lawsuit: Trucking deposition preparation",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:51:26.373577-03:00"
-    },
-    {
-      "title": "‘Economic Isolation’ Plan for Iran, Farage Wins UK Election | The Opening Trade 8/14/2026",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia sobre medidas econômicas inéditas contra o Irã é relevante e pode ter impacto concreto no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:55:37.321932-03:00"
-    },
-    {
-      "title": "Ebony anuncia 'Último Ato' após turnê pela Europa; veja datas",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia e sobre entretenimento",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:55:45.504483-03:00"
-    },
-    {
-      "title": "Leatt GAAP diluted EPS of $0.14, revenue of $16.39M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:55:48.601563-03:00"
-    },
-    {
-      "title": "ChatGPT regains ground against Gemini in July, still the 'clear leader' in AI chatbots: BNP",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:55:51.274309-03:00"
-    },
-    {
       "title": "Americas Gold and Silver Corporation Q2 diluted EPS of $0.02, revenue of $46M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T21:45:41.520326-03:00"
+    },
+    {
+      "title": "Flávio Bolsonaro diz ter sido alvo de mais de 1,8 mil ameaças de morte",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "não há relação direta com o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:50:37.080724-03:00"
+    },
+    {
+      "title": "Mastercard CEO: Cybersecurity Is Our Fastest-Growing Business",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia destaca a importância da segurança cibernética para a Mastercard, o que pode ser positivo para a empresa e suas ações.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T21:50:43.359157-03:00"
+    },
+    {
+      "title": "Taiwan Stock Market May Take Further Damage On Monday",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A perda de quatro dias de alta pode acelerar na segunda-feira",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T21:50:46.216076-03:00"
+    },
+    {
+      "title": "NuScale's Potential TVA Deal Could Be 6 to 8 Gigawatts. Here's Why the CEO Calls It the Largest Nuclear Build-Out in U.S. History.",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "O acordo pode impactar positivamente a empresa e o mercado de energia nuclear.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:50:49.064607-03:00"
+    },
+    {
+      "title": "Home Depot's Customer Transactions Have Fallen for 5 Straight Quarters",
+      "source": "Nasdaq",
+      "score": 6.0,
+      "motivo": "Declínio consecutivo de vendas de clientes é um sinal de alerta para a saúde financeira da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:50:51.940347-03:00"
+    },
+    {
+      "title": "In Retirement, More Spending Can Lead to Higher Taxes",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não é específica sobre mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:50:54.917400-03:00"
     }
   ]
 }
