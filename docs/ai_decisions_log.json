@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Quaest: Flávio Bolsonaro é rejeitado por 54% dos eleitores; Lula, por 52%",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre eleicoes nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:06:02.697844-03:00"
-    },
-    {
-      "title": "Memory Stocks Open Flat And Then Soar: Micron Up 6%, SK Hynix 8%, SanDisk Up 15%. Here’s What’s Driving the Move.",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:06:18.506357-03:00"
-    },
-    {
-      "title": "Is It Time to 'Buy the Dip' on eBay Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:06:21.149778-03:00"
-    },
-    {
-      "title": "Applied Industrial Technologies, Inc. Q4 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:06:23.821782-03:00"
-    },
-    {
-      "title": "Lotofácil hoje, concurso 3762: confira o resultado sorteado nesta sexta-feira (14)",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "resultado de um concurso de loteria",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:15:00.502384-03:00"
-    },
-    {
-      "title": "Na contramão do IFIX, fundos da Suno Asset fecham em alta de até 4%",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "Fundos da Suno Asset encerraram em alta, contrariando o mercado de FIIs",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T21:15:12.145533-03:00"
-    },
-    {
-      "title": "SpaceX Is Down 3.5% Thursday. Why Are Space Stocks Like AST SpaceMobile Under Pressure?",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A queda da SpaceX afeta negativamente as ações de empresas de espaço relacionadas.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:15:16.791253-03:00"
-    },
-    {
-      "title": "Advanced Flower Capital Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A empresa apresentou resultados financeiros acima das expectativas, o que pode influenciar positivamente o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:15:19.737124-03:00"
-    },
-    {
-      "title": "A Wendy's Insider's Shares Vested as Peltz Weighs a Buyout. Is the Stock a Buy?",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é sobre uma ação de venda de ações, mas não há informações sobre o impacto significativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:25:55.321745-03:00"
-    },
-    {
-      "title": "What a Wendy's Insider Filing Signals While a Buyout Looms",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma ação de uma empresa de fast food e não tem impacto direto no mercado financeiro em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:25:58.488951-03:00"
-    },
-    {
-      "title": "Wendy's Comps Fell 7% as Buyout Talk Lifts the Stock. Here's How to Read an Insider Filing",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o valor das ações da Wendy's",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:26:01.536778-03:00"
-    },
-    {
-      "title": "Faria Lima: fundo imobiliário recebe proposta de R$ 557,8 milhões por lajes corporativas",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "Proposta de aquisição de lajes corporativas pode ter impacto no mercado imobiliário, mas não é um evento de grande magnitude",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:26:08.739396-03:00"
-    },
-    {
-      "title": "VRTA11: carteira do fundo imobiliário tem retorno potencial de IPCA + 20,97%",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "retorno potencial de IPCA + 20,97% é um indicativo positivo para os investidores no fundo imobiliário VRTA11",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:26:11.676840-03:00"
-    },
-    {
-      "title": "Living Larger and Larger: Inside the AI Financing Scramble",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:26:15.899540-03:00"
-    },
-    {
-      "title": "Singapore Stocks’ Record Run Gets ‘Goldilocks’ Boost From Growth",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque destaca a performance positiva das ações de Singapura em relação ao mercado global, o que pode influenciar a confiança dos investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T21:30:40.370972-03:00"
-    },
-    {
-      "title": "Lucro da Vibra quase quadriplica no 2° tri",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "O lucro quase quadriplicado é um sinal positivo para os investidores e pode impulsionar a ação da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:30:45.383203-03:00"
-    },
-    {
-      "title": "Warren Buffett's Successor, Greg Abel, Pared Down Bank of America, and Piled Into a Virtual Monopoly That's Now Berkshire's 3rd-Largest Holding",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "Mudanças significativas no portfólio da Berkshire Hathaway após a aposentadoria de Warren Buffett",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T21:30:50.523691-03:00"
-    },
-    {
-      "title": "D-Wave Quantum (QBTS) Q2 2026 Earnings Call Transcript",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:30:57.664935-03:00"
-    },
-    {
       "title": "Tesla precisa de provas do efeito multiplicador do Robotaxi para convencer investidores, diz Morgan Stanley",
       "source": "Investing.com Brasil",
       "score": 6.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T12:11:32.498154-03:00"
+    },
+    {
+      "title": "Credit card issuer Synchrony partners with OpenAI for ChatGPT shopping",
+      "source": "CNBC - Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:15:44.321646-03:00"
+    },
+    {
+      "title": "Dino afasta presidente TCE do Maranhão em caso que envolve propina e homicídio",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:15:47.572490-03:00"
+    },
+    {
+      "title": "Por que as ações da NexGen Energy estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:15:52.477004-03:00"
+    },
+    {
+      "title": "Por que as ações da JetBlue estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:15:55.129967-03:00"
+    },
+    {
+      "title": "Macquarie reduz previsões de receita para bancos australianos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:15:57.804264-03:00"
+    },
+    {
+      "title": "Exportações de Singapura disparam 40,6% em julho com demanda por eletrônicos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:00.480231-03:00"
+    },
+    {
+      "title": "Morgan Stanley reporta alta de 29% nas vendas de imóveis em 50 cidades da China",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:03.164313-03:00"
+    },
+    {
+      "title": "Bank of America prevê LPA da Micron acima de US$ 230 até 2030",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:05.831693-03:00"
+    },
+    {
+      "title": "Por que as ações da Shopify estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:08.485419-03:00"
+    },
+    {
+      "title": "Goldman Sachs descarta alta de juros do Fed em setembro",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:16:11.146518-03:00"
+    },
+    {
+      "title": "Ações da Madison Air caem após acordo de US$ 5,4 bi com ebm-papst",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:13.838888-03:00"
+    },
+    {
+      "title": "Ações da NexGen Energy sobem após conversas com a BHP sobre projeto Rook I",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:16.512554-03:00"
+    },
+    {
+      "title": "Social Security recipients will get more money next year. Here’s how much the COLA may boost benefits.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:20.240501-03:00"
+    },
+    {
+      "title": "Dona do TikTok assina acordo sobre direitos autorais de IA com grupo de Hollywood",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:29.330070-03:00"
+    },
+    {
+      "title": "Nvidia investing $1.5B in SoftBank data center developer behind OpenAI project",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:16:36.918711-03:00"
+    },
+    {
+      "title": "Gen Z swaps retirement saving for sports betting",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:39.755609-03:00"
+    },
+    {
+      "title": "HIVE Digital Technologies Q1 Earnings Call Highlights",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:16:42.432504-03:00"
+    },
+    {
+      "title": "Shortage Of Tungsten, Key For AI, Defense, Is Fueling This Stock",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:16:45.093183-03:00"
     }
   ]
 }
