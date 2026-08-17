@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "The hidden flows breaking bonds and squeezing tech stocks - Nomura",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T15:50:57.784710-03:00"
-    },
-    {
-      "title": "Suspeito de golpe que fez idosa perder R$ 37 mi em falso investimento é preso no Rio",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T15:55:40.665657-03:00"
-    },
-    {
-      "title": "É candidato: Republicanos registra Cleitinho Azevedo ao governo de Minas Gerais",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T15:55:43.761981-03:00"
-    },
-    {
-      "title": "Jayme Garfinkel: “Sucesso é até ontem”",
-      "source": "Brazil Journal",
-      "score": 2.0,
-      "motivo": "A noticia e sobre a trajetoria de um empresario, mas nao tem conteudo financeiro relevante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T15:55:49.037484-03:00"
-    },
-    {
-      "title": "Parents putting money in ‘Trump accounts’ could get a $2,500 tax break. Here’s how.",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T15:55:52.312236-03:00"
-    },
-    {
-      "title": "Türkiye’s Textile Industry Sets the Pace for the Next Season",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T15:56:02.309105-03:00"
-    },
-    {
-      "title": "Rise of AI shopping pushes merchants to protect loyalty, Adyen says",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T15:56:05.016984-03:00"
-    },
-    {
-      "title": "Is Wall Street Bullish or Bearish on Kimberly-Clark Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T15:56:07.681899-03:00"
-    },
-    {
-      "title": "Claude users are canceling their subscriptions, citing Anthropic’s new AI watermark",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T15:56:10.862452-03:00"
-    },
-    {
-      "title": "O que está por trás da queda de mais de 1% do Ibovespa nesta sexta-feira (14)",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "queda consecutiva do Ibovespa e saída de investidores estrangeiros",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T16:00:57.257139-03:00"
-    },
-    {
-      "title": "Energy Transfer's Yield Just Climbed Near 6.5%. Here's Why I'm Not Worried About the Payout.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado de ações de empresas de tubulações, pois afeta a percepção dos investidores sobre o yield da Energy Transfer.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T16:01:04.137304-03:00"
-    },
-    {
-      "title": "Why Reddit Stock Just Gained 10.7%",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A inclusão da empresa no índice S&P 500 é um indicador de confiança e valorização do mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:01:07.403122-03:00"
-    },
-    {
-      "title": "Read-it-later app Pocket shut down down — here are the best alternatives",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:01:16.489774-03:00"
-    },
-    {
-      "title": "Oil Falls Amid Weaker Demand Outlook, Stalled Hormuz Talks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:01:19.372931-03:00"
-    },
-    {
-      "title": "China's WeRide eyes Australia, Southeast Asia among potential new markets after strong Q2",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T16:01:22.040273-03:00"
-    },
-    {
       "title": "Trump promised not to touch Social Security — but his Big Beautiful bill comes with a $169B shock. Protect yourself",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T09:01:42.448142-03:00"
+    },
+    {
+      "title": "Chasing This Global Stocks Rally Boosts the Need for Protection",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:06:57.936915-03:00"
+    },
+    {
+      "title": "Ranking de candidatos mais ricos inclui empresário que bancou viagem para Toffoli",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:07:02.103219-03:00"
+    },
+    {
+      "title": "Prévia do PIB, IBC-Br cai 0,6% em junho, um pouco pior do que o esperado",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:07:04.698088-03:00"
+    },
+    {
+      "title": "B3 divulga segunda prévia do Ibovespa; veja quem entra e quem sai do índice",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:07:08.855288-03:00"
+    },
+    {
+      "title": "BTG Asset lança FI-Infra com possibilidade de renda recorrente e isenção de IR para quem prioriza previsibilidade",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:07:11.458572-03:00"
+    },
+    {
+      "title": "Aos 82 anos, esta empresa familiar passará dos R$ 2 bilhões vendendo peixe sem espinho para crianças",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:07:14.381777-03:00"
+    },
+    {
+      "title": "Pinterest anuncia ex-Meta e ex-Uber para liderar operação no Brasil",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:07:16.981306-03:00"
+    },
+    {
+      "title": "Peter Thiel aposta US$ 76 milhões em petróleo argentino; entenda o motivo",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:07:19.573116-03:00"
+    },
+    {
+      "title": "LGL GAAP EPS of -$0.06, revenue of $1.15M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:07:22.400320-03:00"
+    },
+    {
+      "title": "Kratos, GE Aerospace win Air Force contract for JASSM engine development",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:07:25.033387-03:00"
+    },
+    {
+      "title": "Workday downgraded by Deutsche Bank ahead of possible acquisition",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:07:27.622723-03:00"
+    },
+    {
+      "title": "'Prévia' do PIB do Banco Central registra crescimento de 0,2% no 2º trimestre",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:07:34.624048-03:00"
+    },
+    {
+      "title": "Dólar abre em queda, após pesquisa eleitoral e de olho no varejo brasileiro",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T09:07:37.246370-03:00"
+    },
+    {
+      "title": "Micron stock heats up again, crossing $1,000",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:07:43.515026-03:00"
+    },
+    {
+      "title": "SEC Announces Continuation of Small Business Advisory Committee Meeting",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T09:07:47.735815-03:00"
     }
   ]
 }
