@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Dragão de 'Game of Thrones'? Nova espécie de lagarto é descoberta na Tailândia",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:45:43.467192-03:00"
-    },
-    {
-      "title": "Suncrete GAAP EPS of -$0.72, revenue of $97.23M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:45:46.399794-03:00"
-    },
-    {
-      "title": "When will the U.S. lift its naval blockade on Iran? Markets are pricing the odds",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:45:49.065126-03:00"
-    },
-    {
-      "title": "Zoomcar Holdings reports Q1 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:45:51.686442-03:00"
-    },
-    {
-      "title": "Base Carbon Q2 Non-GAAP EPS of -$0.02",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:45:54.316694-03:00"
-    },
-    {
-      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:46:02.204984-03:00"
-    },
-    {
-      "title": "Tyson to Close More Beef Plants as Cattle Shortage Drags On",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a capacidade de produção de carne de boi nos EUA.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:50:44.306686-03:00"
-    },
-    {
-      "title": "Quem pode participar de debates eleitorais neste ano? Conheça as regras",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "notícia sobre eleições não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:50:49.519981-03:00"
-    },
-    {
-      "title": "Em junho, vendas no varejo crescem 0,5%",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:50:52.870575-03:00"
-    },
-    {
       "title": "‘It’s a double-edged sword’: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
       "source": "MarketWatch",
       "score": 0.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T20:55:44.737772-03:00"
+    },
+    {
+      "title": "Por que as ações da A2 Milk estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "a queda das ações da A2 Milk é materialmente relevante pois afeta diretamente o desempenho do setor de alimentos e bebidas",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:05:47.662495-03:00"
+    },
+    {
+      "title": "Lucro anual da a2 Milk despenca 44% com problemas de fornecimento na China",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "problemas de fornecimento na China afetam negativamente a lucratividade da a2 Milk",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:05:50.433426-03:00"
+    },
+    {
+      "title": "Singapore Stock Market May Head South Again On Monday",
+      "source": "Nasdaq",
+      "score": 2.0,
+      "motivo": "A notícia é relevante para o mercado de ações de Singapura, mas não é um evento significativo global.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:05:55.056508-03:00"
+    },
+    {
+      "title": "Should Investors Be Concerned that Costco Stock Trades at Over 40 Times Forward Earnings?",
+      "source": "Nasdaq",
+      "score": 5.0,
+      "motivo": "A notícia discute a valoração da ação da Costco, o que é relevante para os investidores e traders.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T21:05:57.972332-03:00"
+    },
+    {
+      "title": "The Trade Desk’s Woes & A New AI Doughnut?",
+      "source": "Nasdaq",
+      "score": 0.0,
+      "motivo": "A notícia não trata de um evento específico ou relevante para o mercado financeiro.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:06:00.802551-03:00"
+    },
+    {
+      "title": "Malaysia Stock Market May Extend Losing Streak",
+      "source": "Nasdaq",
+      "score": 3.0,
+      "motivo": "A perda de valor do mercado de ações da Malásia em duas sessões consecutivas é um indicativo de tendência negativa.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:06:03.747036-03:00"
+    },
+    {
+      "title": "Have Middle East Oil Flows Rebounded to 15 Million Bpd as U.S. Claims?",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A recuperação dos fluxos de petróleo do Oriente Médio é relevante para o mercado devido ao impacto direto na oferta de petróleo global.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:06:11.269522-03:00"
+    },
+    {
+      "title": "'Dems Don't Give A Crap About The Country': Martin Armstrong Sees Very, Very Tight Midterm Election",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "A notícia afeta a política e a economia, e pode ter consequências importantes para o mercado e a política nos próximos anos.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T21:06:15.361172-03:00"
+    },
+    {
+      "title": "Apple Trains Custom AI Model For China With Alibaba's Help",
+      "source": "ZeroHedge",
+      "score": 6.0,
+      "motivo": "A Apple ganha uma vantagem competitiva significativa no mercado chinês, onde a empresa vinha sendo desafiada por rivais locais com capacidades de IA nativas.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T21:06:18.338100-03:00"
     }
   ]
 }
