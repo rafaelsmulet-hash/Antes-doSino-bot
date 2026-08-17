@@ -1,141 +1,6 @@
 {
   "decisions": [
     {
-      "title": "These 4 homeowners built tiny homes in their yards to be better caregivers for their loved ones",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:31:07.548723-03:00"
-    },
-    {
-      "title": "Crowded Florida Race Puts Trump’s Clout to Test",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:35:37.318347-03:00"
-    },
-    {
-      "title": "What’s Happening in EM: Traders Get Pickier on Linkers (Podcast)",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "A notícia destaca mudanças no comportamento dos investidores em títulos de dívida indexados à inflação em mercados emergentes.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:35:40.238722-03:00"
-    },
-    {
-      "title": "Brasil faz história com primeiro ouro no Mundial de ginástica rítmica; veja apresentação",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e não tem relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:40:45.465416-03:00"
-    },
-    {
-      "title": "Credit Strategist Michael Lewitt warns CoreWeave’s debt load threatens survival",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia destaca um problema específico de endividamento que pode afetar a sobrevivência da empresa, o que é relevante para o mercado agora",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:40:48.518848-03:00"
-    },
-    {
-      "title": "'Ultimate crash': Peter Schiff calls US stocks a 'ticking time bomb' — but is he right? Protect your wealth now",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A declaração de Schiff é relevante para o mercado, pois pode influenciar a percepção dos investidores sobre o risco das ações norte-americanas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:41:01.390959-03:00"
-    },
-    {
-      "title": "PIB de Israel dispara 15,4% após contração provocada por guerra com Irã",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "Recuperação do PIB de Israel após contração provocada por guerra com Irã, liderada por alta de exportações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T09:45:49.250745-03:00"
-    },
-    {
-      "title": "By The Way: Headline Roundup",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:50:42.794260-03:00"
-    },
-    {
-      "title": "Arábia Saudita - Ações fecharam o pregão em alta e o Índice Tadawul All Share avançou 0,89%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "o avanço do Índice Tadawul All Share é um sinal positivo para o mercado saudita",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:50:48.009230-03:00"
-    },
-    {
-      "title": "At AI-Fueled Market Party, Wall Street Eyes the Rates Punch Bowl",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a relação entre a economia resistente e a demanda, o que pode influenciar a decisão de taxas de juros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T10:00:46.681546-03:00"
-    },
-    {
-      "title": "Gestora de US$ 1,3 tri defende precaução nos mercados, foge dos EUA e compra Sabesp",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A gestora defende compra de ações da Sabesp, o que é um sinal positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T10:00:50.596864-03:00"
-    },
-    {
-      "title": "Dividendos acima de 14%: 6 ações que podem superar a Selic",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "A noticia destaca acoes com dividendos acima da Selic, o que pode atrair investidores em busca de retornos superiores a renda fixa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T10:00:54.624366-03:00"
-    },
-    {
-      "title": "Here’s the real reason oil prices aren’t moving higher",
-      "source": "MarketWatch",
-      "score": 6.0,
-      "motivo": "A mudança na demanda por petróleo afeta diretamente os preços do mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T10:00:58.481643-03:00"
-    },
-    {
-      "title": "Petrobras (PETR4) e Caixa Seguridade (CXSE3): Veja quem paga dividendos na semana",
-      "source": "Suno Noticias",
-      "score": 8.0,
-      "motivo": "Dividendos da Petrobras serão pagos, o que é uma notícia esperada e rotineira para os investidores",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T10:01:11.431587-03:00"
-    },
-    {
-      "title": "Brasil conquista ouro inédito no Mundial de ginástica rítmica com maior nota do ano",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre esporte e não tem relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T10:05:49.911672-03:00"
-    },
-    {
       "title": "A tokenização precisa ir além da vitrine do negócio",
       "source": "Exame",
       "score": 6.0,
@@ -17999,6 +17864,141 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T18:33:15.163439-03:00"
+    },
+    {
+      "title": "Guggenheim Rushes to Clarify 77% Earnings Drop After Loan Slides",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:36:19.305043-03:00"
+    },
+    {
+      "title": "Lula: ‘Eu ainda sonho em comprar de volta a refinaria que eles privatizaram’",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:36:22.527731-03:00"
+    },
+    {
+      "title": "Lojas Renner (LREN3): Citi corta preço-alvo após revisão do guidance; ações caem",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:36:27.139226-03:00"
+    },
+    {
+      "title": "Daycoval aprova aumento de capital de R$ 500 milhões; veja os detalhes da operação",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:36:29.868449-03:00"
+    },
+    {
+      "title": "La-Z-Boy Q1 2027 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:36:33.393095-03:00"
+    },
+    {
+      "title": "ZTO Express Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:36:36.038084-03:00"
+    },
+    {
+      "title": "Keysight Q3 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:36:38.676849-03:00"
+    },
+    {
+      "title": "Toll Brothers Q3 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:36:41.330266-03:00"
+    },
+    {
+      "title": "Sociedad Quimica y Minera de Chile Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:36:44.053854-03:00"
+    },
+    {
+      "title": "Mercury Systems Q4 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:36:46.738874-03:00"
+    },
+    {
+      "title": "Jack Henry &amp; Associates Q4 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:36:49.415544-03:00"
+    },
+    {
+      "title": "Investor Insight: Universal Insurance Executive Chairman Sells 20,000 Shares for $885,400",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:36:54.411563-03:00"
+    },
+    {
+      "title": "Ibovespa cai pela 10ª vez seguida com saída de estrangeiros e petróleo no radar",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:37:00.379080-03:00"
+    },
+    {
+      "title": "Sarah J. Maas announced the titles of her 2 new 'A Court of Thorns and Roses' books. Here's everything we know so far.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:37:05.043064-03:00"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:37:08.330834-03:00"
     }
   ]
 }
