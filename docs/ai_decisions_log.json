@@ -1,240 +1,6 @@
 {
   "decisions": [
     {
-      "title": "President Donald Trump Claims Costs Are &quot;All Coming Down Now,&quot; but the Evolution of Trumpflation Appears to Be Having the Opposite Effect",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:52:53.832504-03:00"
-    },
-    {
-      "title": "What Other Restaurant Chains Should Learn From The Cheesecake Factory's Success",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de ações, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:52:56.702986-03:00"
-    },
-    {
-      "title": "CoreWeave's Operating Chief Sold Before Earnings. Here's What to Know",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:52:59.326733-03:00"
-    },
-    {
-      "title": "Social Security COLA Watch 2027: Here's the Latest on What to Expect",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:01.948880-03:00"
-    },
-    {
-      "title": "A CoreWeave Insider Cashed In Options Before Earnings. Here's What to Know",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "motivo": "A venda de ações por parte de um executivo pode ser interpretada como uma sinalização de desconfiança no desempenho da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:53:04.976008-03:00"
-    },
-    {
-      "title": "Costco: Patient Investors Know the Bear Case (NASDAQ: COST)",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:53:07.595309-03:00"
-    },
-    {
-      "title": "CoreWeave's CEO Sold Stock as Revenue Doubled. Here's What to Know",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:10.220855-03:00"
-    },
-    {
-      "title": "Entrada da China na ação do Brasil na OMC ajuda a combater guerra tarifária contra os EUA?",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:15.960545-03:00"
-    },
-    {
-      "title": "Trilionário por 2 meses: a ‘marcha à ré’ da SpaceX que fez Elon Musk perder bilhões de dólares",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:53:18.613099-03:00"
-    },
-    {
-      "title": "Sem janelas e mais econômico: como será voar no 'avião-arraia', aposta de aéreas americanas",
-      "source": "G1 Economia",
-      "score": 8.0,
-      "motivo": "projeto de avião mais econômico e eficiente pode impactar positivamente a indústria aérea e reduzir custos de combustível",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:53:25.530443-03:00"
-    },
-    {
-      "title": "Curral eclético: vacas escutam de forró a música clássica e produzem mais leite em fazenda no ES; veja VÍDEO",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:53:28.191714-03:00"
-    },
-    {
-      "title": "China domina mercado de robôs humanoides; entenda por que os EUA decidiram barrá-los",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:53:30.846956-03:00"
-    },
-    {
-      "title": "Mega-Sena pode pagar R$ 38 milhões neste domingo; g1 transmite ao vivo",
-      "source": "G1 Economia",
-      "score": 0.0,
-      "motivo": "noticia sobre loteria e sorteio de prêmio",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:33.666621-03:00"
-    },
-    {
-      "title": "Transpetro, PM-SP, UFSCar e outros órgãos: concursos ofertam 30,8 mil vagas",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "a noticia nao e sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:37.448436-03:00"
-    },
-    {
-      "title": "Prévia do PIB do Brasil, ata do Fed e balanços em destaque na semana",
-      "source": "UOL Economia",
-      "score": 6.0,
-      "motivo": "Divulgação de dados econômicos importantes que podem influenciar os mercados brasileiros",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:53:40.337264-03:00"
-    },
-    {
-      "title": "Adesivo político anula seguro de automóvel? Veja o que dizem especialistas",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "A noticia não trata de mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:43.139832-03:00"
-    },
-    {
-      "title": "Atentado mostrado na Netflix explica por que sua bagagem não voa sem você",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:53:45.764758-03:00"
-    },
-    {
-      "title": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "Não há nenhuma conexão direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:50.649933-03:00"
-    },
-    {
-      "title": "Reddit (RDDT) Is Joining the S&P 500 —What’s Next for the Company?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:53.444049-03:00"
-    },
-    {
-      "title": "Applied Optoelectronics (AAOI) Expected to Announce Business Updates Next Week",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A notícia é relevante porque a empresa está prestes a anunciar atualizações comerciais, o que pode ter impacto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:56.438325-03:00"
-    },
-    {
-      "title": "'You have absolutely no expenses': Suze Orman says the perks your job quietly covers could blow up your retirement math",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:53:59.074389-03:00"
-    },
-    {
-      "title": "Mortgage and refinance interest rates today, Saturday, August 15, 2026: Rates falling this weekend",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "As taxas de juros estão caindo, o que pode impulsionar a demanda por imóveis e beneficiar a economia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:54:01.979864-03:00"
-    },
-    {
-      "title": "53-year-old lawn and garden giant faces Chapter 11, liquidation",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:54:04.601291-03:00"
-    },
-    {
-      "title": "Best CD rates today, Saturday, August 15, 2026: Best CD account earns 4.30% APY",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:54:07.223795-03:00"
-    },
-    {
-      "title": "Americans added $21B to credit cards — now 20%+ interest is crushing budgets. Time to use Dave Ramsey’s escape hatch?",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia destaca o aumento das dívidas em cartões de crédito, que pode ter impacto negativo nas finanças pessoais e, consequentemente, no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:54:10.242334-03:00"
-    },
-    {
-      "title": "How New Mexico’s $567 Million Ruling Could Change Meta",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:54:12.861356-03:00"
-    },
-    {
       "title": "Can Abbott Laboratories (ABT)’s Lingo Partnership With Alphabet (GOOG) Unlock a New Era of AI-Powered Health?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17765,240 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T17:21:04.829927-03:00"
+    },
+    {
+      "title": "FII cai quase 5% com temor sobre Casas Bahia; fundo tem 31% da receita exposta",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:25:47.394935-03:00"
+    },
+    {
+      "title": "O varejo quebrou? O que está por trás das RJs de Casas Bahia e Marabraz",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:25:50.138423-03:00"
+    },
+    {
+      "title": "Ibovespa cai pela 10ª sessão consecutiva com incertezas domésticas; dólar cai",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:26:10.149461-03:00"
+    },
+    {
+      "title": "Moody’s eleva rating da TKO para Ba1 com perspectiva de fluxo de caixa sólido",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:26:13.207532-03:00"
+    },
+    {
+      "title": "Citi mantém recomendação de compra para GPT Group após resultados sólidos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:26:15.945049-03:00"
+    },
+    {
+      "title": "XP tem lucro de R$1,38 bi no 2º tri com alta em ativos de clientes para R$2,2 tri",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:26:18.696890-03:00"
+    },
+    {
+      "title": "Minerais críticos são oportunidade para redefinir o desenvolvimento das Amazônias",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:26:22.855056-03:00"
+    },
+    {
+      "title": "Principal Real Estate Income Fund (PGZ) Shares Cross Below 200 DMA",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:26:29.345411-03:00"
+    },
+    {
+      "title": "Advanced Drainage Systems Breaks Below 200-Day Moving Average - Notable for WMS",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:26:32.119066-03:00"
+    },
+    {
+      "title": "ServiceNow (NOW) Shares Cross Below 200 DMA",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:26:34.808288-03:00"
+    },
+    {
+      "title": "Fortune Brands Innovations Breaks Below 200-Day Moving Average - Notable for FBIN",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:26:37.552132-03:00"
+    },
+    {
+      "title": "Enovis (ENOV) Shares Cross Below 200 DMA",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:26:40.245532-03:00"
+    },
+    {
+      "title": "United Parcel Service (UPS) Shares Cross Below 200 DMA",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:26:42.967082-03:00"
+    },
+    {
+      "title": "StoneCo Becomes Oversold",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:26:45.631645-03:00"
+    },
+    {
+      "title": "The Last Memory Boom Ended With Micron Losing $5.8 Billion in a Single Year",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:26:48.361606-03:00"
+    },
+    {
+      "title": "Why Marvell Technology Rallied Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:26:51.051305-03:00"
+    },
+    {
+      "title": "Happen Bank Is Crushing SoFi This Year. Here's the Reason Why It's Still the Better Buy.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:27:00.024973-03:00"
+    },
+    {
+      "title": "Clients Are Craving Income. Here’s How Advisors Are Delivering",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:27:02.753620-03:00"
+    },
+    {
+      "title": "Nebius (NBIS) Soared 48% Last Week. Is It Time to Sell?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:27:05.475066-03:00"
+    },
+    {
+      "title": "Russia's economy has defied the skeptics. Cracks are getting harder to hide",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:27:08.695191-03:00"
+    },
+    {
+      "title": "\"Both Parties Are Whirling Around The Drain Of Extinction...\"",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:27:11.774249-03:00"
+    },
+    {
+      "title": "\"Cash Crunch\" Deepens? Mark Walter Explores Chelsea FC Stake Sale To Clearlake",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:27:14.512929-03:00"
+    },
+    {
+      "title": "Almost 60% Of Democrats Have A Favorable View Of Socialism",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:27:17.247504-03:00"
+    },
+    {
+      "title": "Bill Maher Draws The Line: American Values Are Not Negotiable",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:27:19.989416-03:00"
+    },
+    {
+      "title": "Trump Accuses BBC Of Harassing His Family In $10bn Lawsuit",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:27:22.724553-03:00"
+    },
+    {
+      "title": "Copper Squeeze Deepens In London As Futs Near Record; Barclays Flags Top Mining Picks",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:27:25.495561-03:00"
     }
   ]
 }
