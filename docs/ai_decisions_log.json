@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Blue Moon Metals Inc. reports  results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:01:33.447049-03:00"
-    },
-    {
-      "title": "Horizon Kinetics Holding GAAP EPS of -$0.99",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:01:36.076310-03:00"
-    },
-    {
-      "title": "Entrepreneur Universe Bright Group reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:01:38.710797-03:00"
-    },
-    {
-      "title": "Skeena Resources Limited GAAP EPS of -$0.28",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:01:41.340307-03:00"
-    },
-    {
-      "title": "Wall Street Is Obsessing Over Every Word From Federal Reserve Chairman Kevin Warsh -- This Is the Phrase That Matters Most",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:01:46.472165-03:00"
-    },
-    {
-      "title": "Um dos tubarões mais 'estranhos' do mundo é filmado vivo pela primeira vez",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia nao tem relevancia para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:06:17.834208-03:00"
-    },
-    {
-      "title": "Como esta startup brasileira fará a geração de imagens por IA ser mais confiável para o e-commerce",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A CodeCoast lança uma plataforma que pode aumentar a confiabilidade das imagens de produtos no e-commerce, o que pode impulsionar as vendas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:06:20.749892-03:00"
-    },
-    {
-      "title": "Virgin Galactic adia volta dos voos espaciais e avisa que passagens vão ficar mais caras",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia e sobre empresa de voos espaciais e nao tem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:06:23.667731-03:00"
-    },
-    {
-      "title": "Drone stocks are soaring thanks to Trump’s new tariffs",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:06:26.534326-03:00"
-    },
-    {
-      "title": "Sprott Physical Copper Trust reports 1H results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:06:29.195506-03:00"
-    },
-    {
-      "title": "Vale (VALE3) acelera projeto em Salobo e mira mais 30 mil toneladas de cobre por ano",
-      "source": "Suno Noticias",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:06:40.284495-03:00"
-    },
-    {
-      "title": "A bomba-relógio do crédito que pode desacelerar o Brasil",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:06:43.919375-03:00"
-    },
-    {
-      "title": "S&P Slips Back From Records",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:06:46.878629-03:00"
-    },
-    {
-      "title": "DOJ, CFTC Investigating Iron Ore Trader Radiant World’s Deals",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A investigação pode afetar a confiança no mercado de minério de ferro e impactar os preços.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:10:54.999293-03:00"
-    },
-    {
-      "title": "Wholesale prices were flat in July, below expectations for 0.2% increase",
-      "source": "CNBC - Economy",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta um impacto significativo no mercado, pois o resultado foi apenas um aumento menor do que o esperado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:10:58.240023-03:00"
-    },
-    {
-      "title": "Alcolumbre manda avançar no Senado proposta de fim da 6×1 após encontrar Lula",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:11:01.414923-03:00"
-    },
-    {
-      "title": "A taxa de desocupação é de 5,4% e taxa de subutilização é de 12,9% no trimestre encerrado em junho",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:11:06.095476-03:00"
-    },
-    {
       "title": "BTIG elege Block como top pick após trimestre forte e guidance elevado",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T07:06:40.487866-03:00"
+    },
+    {
+      "title": "Bloomberg News Now",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:10:34.805719-03:00"
+    },
+    {
+      "title": "Thungela Weighs Opportunities to Invest in More Coal Mines",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:10:37.403097-03:00"
+    },
+    {
+      "title": "Mini-índice (WINV26): IFR perto da sobrevenda abre espaço para repique?",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:10:40.655749-03:00"
+    },
+    {
+      "title": "Geely Auto anuncia mudança de liderança com saída do fundador",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:10:48.521213-03:00"
+    },
+    {
+      "title": "Varejo tem alta de 4,7% em julho, diz Stone",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:10:51.112802-03:00"
+    },
+    {
+      "title": "S&P 500 mira recorde em semana decisiva com varejo fraco e risco com Irã",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:10:53.716427-03:00"
+    },
+    {
+      "title": "Deutsche Telekom adquire Fiberhost e Inea por € 1 bilhão",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:10:56.308985-03:00"
+    },
+    {
+      "title": "Por que as ações da Snap estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:10:58.902639-03:00"
+    },
+    {
+      "title": "Como é treinar na academia mais cara do Brasil, onde a mensalidade chega a R$ 5.400",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:11:02.015197-03:00"
+    },
+    {
+      "title": "DAX Declines As Oil Prices Rise On Geopolitical Tensions",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:11:06.121441-03:00"
+    },
+    {
+      "title": "Where Will Workday Stock Be in 5 Years If Silver Lake Doesn't Buy It?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:11:08.717530-03:00"
+    },
+    {
+      "title": "Billionaire Stanley Druckenmiller Dumped Micron and Intel, and More Than 11X'd Duquesne Family Office's Stake in an AI Pioneer",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:11:11.325404-03:00"
+    },
+    {
+      "title": "Bolsas da Ásia sobem após PIB do Japăo; Europa tem estabilidade",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:11:16.319689-03:00"
+    },
+    {
+      "title": "O dinheiro do Tesouro IPCA+ 2026 caiu na conta? Estrategista do BTG indica onde reinvestir essa bolada",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:11:19.057797-03:00"
+    },
+    {
+      "title": "Agenda econômica tem prévia do PIB, reunião do CMN e ata do Fed; confira os indicadores que mexem com o mercado nesta semana",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:11:21.664888-03:00"
+    },
+    {
+      "title": "Iran's Army Chief Offers $30K Reward For Kill Or Capture Of American Troops",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:11:27.841558-03:00"
+    },
+    {
+      "title": "British Medical Journal Retracts Paper Linking COVID Shots To Millions Of Excess Deaths",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:11:30.452695-03:00"
     }
   ]
 }
