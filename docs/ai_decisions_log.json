@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Reddit surges on S&P 500 inclusion, set to replace AvalonBay",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A inclusão no índice S&P 500 é um indicador de que a empresa é considerada estável e atrativa para investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:25:55.639711-03:00"
-    },
-    {
-      "title": "Luiz Cezar Fernandes revela como fazia negócios sem estudo ou valuation",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia é sobre experiência pessoal de um executivo financeiro, mas não traz informações concretas sobre o mercado atual.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:30:51.476264-03:00"
-    },
-    {
-      "title": "Indonésia: Terremoto de 7,7 derruba prédios, gera alerta de tsunami e deixa mortos",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "não há impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:30:54.226003-03:00"
-    },
-    {
-      "title": "Quantas pessoas têm autismo no Brasil? Novo estudo traz estimativa inédita",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, economia ou negocios.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:30:58.938930-03:00"
-    },
-    {
-      "title": "Quando estreia o novo filme dos X-Men? Marvel anuncia data",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:31:01.682548-03:00"
-    },
-    {
-      "title": "This old-school way of investing money is better than ever — even in the age of AI and mega-IPOs",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A notícia aborda uma estratégia de investimento tradicional que continua relevante no mercado atual",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T08:31:04.749047-03:00"
-    },
-    {
-      "title": "Sundar Pichai's Alphabet Reported Negative Free Cash Flow for the First Time Ever. Here's Why That Milestone Matters for Shareholders.",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "O fluxo de caixa livre negativo pode indicar problemas financeiros e impactar a valorização da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T08:31:10.164653-03:00"
-    },
-    {
-      "title": "Social Security Is in Dire Straits, Thanks in Part to President Donald Trump, but Taxing the Rich Won't Fix the Problem",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia alerta sobre o esgotamento do fundo de seguro social, o que pode ter impacto nas despesas governamentais e na economia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T08:31:13.089500-03:00"
-    },
-    {
-      "title": "Target Is Up 58% This Year. Here's Why the Dividend King Has a Lot to Prove on Aug. 19.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a recuperação da empresa e a confiança do CEO, o que pode influenciar a percepção dos investidores sobre a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:31:16.063085-03:00"
-    },
-    {
-      "title": "Reddit Stock Soared on the News of Its Inclusion in the S&P 500. Here Are 3 Things Investors Need to Know About the Social Media Stock in 2026.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A inclusão na S&P 500 é um indicador positivo para a ação da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T08:31:19.057310-03:00"
-    },
-    {
       "title": "This Software Stock Is Up 74% in 1 Month, and It Can Keep Climbing Higher From Here",
       "source": "Nasdaq",
       "score": 5.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T13:47:10.567997-03:00"
+    },
+    {
+      "title": "Vitol Makes Push Into Data-Center Infrastructure With US Deal",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:50:35.229432-03:00"
+    },
+    {
+      "title": "Aplicativo do Tesouro Direto é desativado a partir desta segunda-feira",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:50:39.182495-03:00"
+    },
+    {
+      "title": "Bolsas da Europa fecham majoritariamente em queda com incerteza sobre Oriente Médio",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:50:43.316324-03:00"
+    },
+    {
+      "title": "Nubank pode lucrar mais que o Itaú no varejo já este ano, diz JP Morgan",
+      "source": "Brazil Journal",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:50:46.181552-03:00"
+    },
+    {
+      "title": "Bally shares tumble as funding concerns overshadow second-quarter results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:50:49.216234-03:00"
+    },
+    {
+      "title": "GAAP EPS of -$0.01, revenue of $0.94M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:50:51.852193-03:00"
+    },
+    {
+      "title": "Oconee Federal Financial declares $0.10 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:50:54.501193-03:00"
+    },
+    {
+      "title": "Rio ‘AAA’: o que a nota de crédito da Fitch significa para a cidade?",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:50:59.972517-03:00"
+    },
+    {
+      "title": "Elon Musk Is $142 Billion Short Of A $1 Trillion Net Worth",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:51:05.622144-03:00"
+    },
+    {
+      "title": "The 10 British universities with the most American students, ranked",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:51:08.529366-03:00"
     }
   ]
 }
