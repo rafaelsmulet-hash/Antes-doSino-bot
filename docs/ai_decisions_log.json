@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "I'm 23 and live on a remote island off the coast of Alaska. There are more conveniences than people expect.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T11:20:54.479546-03:00"
-    },
-    {
-      "title": "Casas Bahia tem prejuízo de R$10 bi no 2º tri com plano de ajuste na operação e não descarta nova recuperação extrajudicial",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "prejuízo de R$10 bi e plano de ajuste na operação",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T11:25:36.907789-03:00"
-    },
-    {
-      "title": "Plano de Flávio não menciona Petrobras, e Lula cita estatal 11 vezes",
-      "source": "Investing.com Brasil",
-      "score": 2.0,
-      "motivo": "A noticia não menciona informacoes financeiras concretas sobre a Petrobras, apenas uma referencia a ela em um contexto politico.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T11:25:39.771349-03:00"
-    },
-    {
-      "title": "Após centenário, marketing do Itaú foca em reapresentar portfólio impulsionado por IA",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A notícia destaca a inovação do Itaú em tecnologia de IA, o que pode ser visto como positivo para a empresa e o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T11:25:43.086210-03:00"
-    },
-    {
-      "title": "Lotofácil hoje, concurso 3763: Confira o resultado sorteado neste domingo (16)",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "resultado de jogo de sorte não afeta mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T11:30:39.394727-03:00"
-    },
-    {
-      "title": "Casas Bahia fala em recuperação extrajudicial ou judicial após prejuízo de R$ 10 bi",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A notícia menciona medidas de recuperação e melhoria de eficiência da Casas Bahia, o que pode ter impacto no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T11:30:42.175757-03:00"
-    },
-    {
       "title": "Ukrainian Drone Swarm Attack Obliterates Wildberries' Largest Warehouse Near Moscow",
       "source": "ZeroHedge",
       "score": 8.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T19:11:30.979766-03:00"
+    },
+    {
+      "title": "Stocks Fall, Oil Gains on Middle East Uncertainty: Markets Wrap",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T19:17:16.299033-03:00"
+    },
+    {
+      "title": "Latest Oil Market News and Analysis for Aug. 18",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T19:17:18.984929-03:00"
+    },
+    {
+      "title": "Iraque busca rotas alternativas para petróleo em meio a risco no Estreito de Ormuz",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T19:17:24.977536-03:00"
+    },
+    {
+      "title": "Moraes autoriza ida de Bolsonaro ao dentista sob condição de sigilo",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T19:17:27.697867-03:00"
+    },
+    {
+      "title": "Tenho ações da Casas Bahia, e agora? Especialistas explicam se vale a penar vender",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T19:17:33.937991-03:00"
+    },
+    {
+      "title": "York Space Systems downgraded at Canaccord on supply chain concerns",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T19:17:38.322473-03:00"
     }
   ]
 }
