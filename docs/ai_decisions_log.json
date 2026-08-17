@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lojas Marisa reverte lucro e tem prejuízo de R$ 68.375 mil no segundo trimestre",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T18:45:53.328052-03:00"
-    },
-    {
-      "title": "As habilidades que o profissional do futuro tem que ter — e vão muito além de saber usar a IA",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T18:45:56.242873-03:00"
-    },
-    {
-      "title": "Bulls Are Back in Charge of Corn Prices as a New Rally Forms",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:46:01.198216-03:00"
-    },
-    {
-      "title": "What Are Wall Street Analysts' Target Price for Best Buy Stock?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:46:03.891255-03:00"
-    },
-    {
-      "title": "Beauty and cosmetics retailer Douglas’ stores “under review” after Q3 loss",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:46:06.602253-03:00"
-    },
-    {
-      "title": "Quaest: Flávio Bolsonaro é rejeitado por 54% dos eleitores; Lula, por 52%",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre eleicoes politicas e rejeicoes de candidatos",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:50:43.684166-03:00"
-    },
-    {
-      "title": "Quando é hora de pedir ajuda? As lições de Carole Crema e Semenzato para fazer um negócio crescer",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "a noticia nao e sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:50:49.041013-03:00"
-    },
-    {
-      "title": "Marisa melhora operação com fechamento de lojas, mas tem prejuízo de R$ 68 milhões no 2º tri",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "A empresa está buscando rentabilidade e não abrirá novas lojas, o que pode indicar uma estratégia de redução de custos e aumento de eficiência.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:50:52.114923-03:00"
-    },
-    {
-      "title": "CME Group Stock: Analyst Estimates & Ratings",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:51:03.484462-03:00"
-    },
-    {
-      "title": "AI firm Databricks valued at $190 billion as it bags $5 billion in funding",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:51:06.168161-03:00"
-    },
-    {
-      "title": "Bullish Swings to $280M Q2 Net Loss as Digital Asset Sales Fall 44%",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:51:08.872843-03:00"
-    },
-    {
-      "title": "‘Learn to code’ is so 2010 — now AI boot camps are where it’s at for the future of work",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:51:11.641511-03:00"
-    },
-    {
-      "title": "Tariff Refunds Boost Bottom Line for Dillard’s in Second Quarter",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:51:14.354624-03:00"
-    },
-    {
-      "title": "Cosan (CSAN3) tem prejuízo 66% menor no 2T, a R$ 320 mi; dívida líquida cai 47%",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A empresa apresentou resultados financeiros positivos, com prejuízo menor e dívida líquida em declínio",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T18:55:48.426764-03:00"
-    },
-    {
-      "title": "Quaest: 37% avaliam governo Lula negativamente; 36%, positivamente",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "Avaliação negativa do governo Lula pode afetar a confiança dos investidores",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:55:51.284183-03:00"
-    },
-    {
-      "title": "Receita trimestral da Anthropic supera US$ 11,5 bilhões antes do IPO",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A Anthropic anuncia receita trimestral recorde, indicando potencial de crescimento e sucesso financeiro antes do IPO, o que pode influenciar positivamente a percepção do mercado sobre a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T18:55:55.823476-03:00"
-    },
-    {
-      "title": "CBV segue COI e impede participação de mulheres trans em torneios",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "a noticia nao e sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:55:59.292242-03:00"
-    },
-    {
-      "title": "Einhorn's DME adds PayPal, exits Victoria's Secret, Peloton, among Q2 moves",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:56:02.086927-03:00"
-    },
-    {
       "title": "Lument Finance Trust outlines 10-for-1 reverse stock split effective September 9 as it targets full capital deployment in 2027",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T11:07:10.301066-03:00"
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "source": "WSJ Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:10:41.628038-03:00"
+    },
+    {
+      "title": "Flávio adia retorno a local da facada em Jair Bolsonaro e mantém agenda em BH",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:10:44.565256-03:00"
+    },
+    {
+      "title": "Por que as ações da Peloton estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:10:48.522816-03:00"
+    },
+    {
+      "title": "Por que as ações do The Trade Desk estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:10:51.163670-03:00"
+    },
+    {
+      "title": "Nvidia apoia data center da OpenAI de US$ 100 bi em Ohio",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T11:10:54.048864-03:00"
+    },
+    {
+      "title": "Por que as ações da SpaceX estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:10:56.694342-03:00"
+    },
+    {
+      "title": "Microsoft testa suporte SuperTrend com topo duplo: Ao vivo",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T11:10:59.314443-03:00"
+    },
+    {
+      "title": "Tesla presa entre R$332 e R$350 testando resistência: Níveis ao vivo",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:11:01.965121-03:00"
+    },
+    {
+      "title": "Por que as ações da Molson Coors estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:11:04.620742-03:00"
+    },
+    {
+      "title": "Por que as ações da Mesoblast estão disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:11:07.234048-03:00"
+    },
+    {
+      "title": "Por que a ação da SanDisk está disparando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:11:09.865184-03:00"
+    },
+    {
+      "title": "Por que as ações da Constellation Brands estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:11:12.516415-03:00"
+    },
+    {
+      "title": "EyePoint sinks on Duravyu phase 3 miss",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T11:11:15.826911-03:00"
+    },
+    {
+      "title": "Shein valuation drops to $25B, IPO slated for this week - Reuters",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T11:11:18.486943-03:00"
+    },
+    {
+      "title": "Canada's headline inflation edges to 2.9%; core rates remain near 2% target",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T11:11:21.122133-03:00"
+    },
+    {
+      "title": "NAHB Housing Market Index unexpectedly edges up in August",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T11:11:23.785239-03:00"
+    },
+    {
+      "title": "Prévia do PIB, no Brasil, e ata do Fed, nos EUA, nos destaques da semana",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T11:11:31.084751-03:00"
+    },
+    {
+      "title": "Bitcoin and ethereum prices today, Monday, August 17, 2026: Crypto prices down slightly as analysts question timing of bear market bottom",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T11:11:35.584687-03:00"
     }
   ]
 }
