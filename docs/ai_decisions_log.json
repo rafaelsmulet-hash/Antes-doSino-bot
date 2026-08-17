@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ferragosto, o feriado italiano que transformou o “dolce far niente” em um negócio bilionário",
-      "source": "Neofeed",
-      "score": 0.0,
-      "motivo": "noticia sobre feriado e tradição italiana",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T13:06:03.551393-03:00"
-    },
-    {
-      "title": "TechCrunch Mobility: The shifting flight path of electric air taxis",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T13:06:06.487636-03:00"
-    },
-    {
       "title": "Vivian Tu says investors carrying credit card debt need to stop and pay it off first. The math says she's right",
       "source": "Yahoo Finance",
       "score": 3.0,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T20:31:35.276774-03:00"
+    },
+    {
+      "title": "Padres valendo bilhões? O trocadilho que resultou no maior negócio da história do beisebol",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T20:35:54.603873-03:00"
+    },
+    {
+      "title": "Applied Materials Trades More Than 25% Below Its High With Revenue at a Record",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T20:36:03.620912-03:00"
     }
   ]
 }
