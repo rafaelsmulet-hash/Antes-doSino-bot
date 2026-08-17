@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Why Sandisk Stock Is Soaring Today",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:56:12.439480-03:00"
-    },
-    {
       "title": "Cable One (CABO) Q2 2026 Earnings Call Transcript",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T22:06:09.919804-03:00"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "source": "Federal Reserve",
+      "score": 8.0,
+      "motivo": "A declaração da Reserva Federal pode ter impacto significativo no mercado financeiro",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T22:11:02.720049-03:00"
     }
   ]
 }
