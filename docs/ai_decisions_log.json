@@ -1,78 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Mercado em K: Megadeals impulsionam valor, mas 'meio da pista' segue parado",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "megadeals impulsionam valor do mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T07:05:51.965663-03:00"
-    },
-    {
-      "title": "Quanto eu teria hoje se tivesse investido R$ 10 mil em ações do Itaú há cinco anos?",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia destaca a valorização da ação do Itaú após fusão com o Unibanco, o que é relevante para o mercado de ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T07:10:48.914616-03:00"
-    },
-    {
-      "title": "How Dropbox's co-CEO decides which meetings to skip",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T07:11:01.410727-03:00"
-    },
-    {
-      "title": "3 Reasons This Top Warren Buffett Dividend Stock Is a Passive Income Investor's Dream",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a estabilidade financeira da Coca-Cola, o que é relevante para investidores de renda passiva.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T07:25:38.871235-03:00"
-    },
-    {
-      "title": "$10,000 in NuScale at Its 52-Week High Is Worth About $1,650 Today",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações novas ou impactantes sobre a empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T07:25:41.759264-03:00"
-    },
-    {
-      "title": "Elon Musk Has Said He Wants 25% Voting Control of Tesla to Feel Comfortable Leading Its AI Push. Here's What That Threshold Means for Shareholders.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "Aumento do controle de voto de Elon Musk pode influenciar a direção da empresa e suas decisões futuras.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T07:25:44.708648-03:00"
-    },
-    {
-      "title": "Why the Alnylam Sell-Off Looks Overdone -- and What Investors Are Missing",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante para o mercado pois afeta diretamente a ação da Alnylam, mas o impacto é mais rotineiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T07:25:47.600769-03:00"
-    },
-    {
-      "title": "Meet the Roundhill ETF With 26% of Its Assets Parked in Micron Technology Stock",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a importância da Micron Technology no setor de memória, o que pode ter impacto positivo no mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T07:25:51.508106-03:00"
-    },
-    {
       "title": "Here's How Much Money You'd Have Today If You Invested $1,000 in the S&P 500 During Every Stock Market Crash Since 1950 (Spoiler Alert: Wow!)",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17927,78 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T17:41:29.158027-03:00"
+    },
+    {
+      "title": "Quando um agente compra por você; ainda é social commerce?",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:46:11.437999-03:00"
+    },
+    {
+      "title": "Briga entre pais e filhos e dívida de R$ 140 milhões: como a gigante Marabraz entrou em crise",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:46:14.173032-03:00"
+    },
+    {
+      "title": "Xos wins U.S. Air Force prototype contract for mobile charging",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:46:16.999398-03:00"
+    },
+    {
+      "title": "QDM International Inc. GAAP EPS of $0.36, revenue of $8.39M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:46:19.671693-03:00"
+    },
+    {
+      "title": "Voya Infrastructure, Industrials and Materials Fund declares $0.10 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:46:22.367608-03:00"
+    },
+    {
+      "title": "Kaiser Aluminum names Amcor's Stephan as new President/CEO; Harvey to become Executive Chair",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:46:25.097045-03:00"
+    },
+    {
+      "title": "This Dividend King Has Raised Its Payout for 64 Straight Years -- And It's Outperforming the \"Magnificent Seven\" This Year",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:46:36.886518-03:00"
+    },
+    {
+      "title": "Defense contractor L3Harris ousts CEO Chris Kubasik over unspecified 'conduct,' stock drops 4%",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:46:39.948457-03:00"
     }
   ]
 }
