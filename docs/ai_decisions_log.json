@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "If You're 50 and Have More Than This Number in Your 401(k), You're Ahead of the Average",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia não traz informações específicas sobre o mercado financeiro, apenas um conselho geral sobre aposentadoria",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T11:55:48.043345-03:00"
-    },
-    {
-      "title": "Why Smithfield Foods Stock Sank This Week",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "As expectativas foram superadas, mas a ação caiu, indicando que o mercado já havia incorporado essas informações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T11:55:50.848756-03:00"
-    },
-    {
-      "title": "SpaceX officially closes its Cursor acquisition",
-      "source": "TechCrunch",
-      "score": 0.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T12:01:29.536823-03:00"
-    },
-    {
-      "title": "Real estate lawyers reveal why calling police won't help when a previous owner refuses to leave your new home",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T12:01:32.574448-03:00"
-    },
-    {
-      "title": "As melhores lâmpadas inteligentes que testamos em 2026: do básico ao premium",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T12:05:47.902193-03:00"
-    },
-    {
-      "title": "Beef Prices Stay High as US Cattle Supply Shrinks",
-      "source": "Bloomberg Markets",
-      "score": 4.0,
-      "motivo": "A notícia afeta diretamente os custos de produção de carne de boi nos EUA, o que pode ter impacto nas ações de empresas do setor",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T12:10:41.014435-03:00"
-    },
-    {
-      "title": "Ataques com drones e mísseis deixam ao menos sete mortos na Rússia",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T12:10:46.508742-03:00"
-    },
-    {
       "title": "Moneywise staff confesses worst money mistakes — from ignoring subscriptions to sacrificing first home 'must-haves'",
       "source": "Yahoo Finance",
       "score": 1.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T19:21:38.955780-03:00"
+    },
+    {
+      "title": "Petrobras vê boas indicações para óleo encontrado na Foz do Amazonas, diz diretora",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T19:27:43.490495-03:00"
+    },
+    {
+      "title": "Receita anualizada da Anthropic ultrapassa US$65 bilhões, diz fonte",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T19:27:46.203435-03:00"
+    },
+    {
+      "title": "'Tem petróleo, mas ainda não sabemos quanto', diz Petrobras sobre descoberta no Amapá",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T19:27:49.342907-03:00"
+    },
+    {
+      "title": "Cientistas tentam desvendar fenômeno que surge no chão durante eclipses solares",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T19:27:52.069197-03:00"
+    },
+    {
+      "title": "Synchrony Financial Partners With OpenAI To Enable In-Chat Shopping",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T19:27:57.294971-03:00"
+    },
+    {
+      "title": "Director's Big Bet: Blackstone Mortgage Trust Leader Buys 10,000 Shares",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T19:28:00.010174-03:00"
+    },
+    {
+      "title": "US$ 1 milhão por dia: bastidores da descoberta de petróleo da Petrobras (PETR4) na Margem Equatorial. Vale investir agora?",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T19:28:04.864701-03:00"
     }
   ]
 }
