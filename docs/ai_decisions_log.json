@@ -1,60 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Como o 'rei dos ônibus' criou um império de R$ 19 bilhões vendendo bem mais do que passagem",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia sobre empresa de transporte não é relevante para mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:21:09.427841-03:00"
-    },
-    {
-      "title": "As habilidades que o profissional do futuro tem que ter — e vão muito além de saber usar a IA",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "A noticia não é sobre mercado financeiro, economia ou negocios.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:21:17.086655-03:00"
-    },
-    {
-      "title": "Tim Draper Says Bitcoin Is Headed for ‘Infinity’ Against Dollar as Growing BTC Payments Could Trigger Bank Runs",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca a perspectiva de crescimento do Bitcoin, o que pode influenciar a percepção dos investidores sobre a criptomoeda.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:21:22.042946-03:00"
-    },
-    {
-      "title": "Na JHSF, outro tri recorde. A meta agora é triplicar o EBITDA em 3 anos",
-      "source": "Brazil Journal",
-      "score": 6.0,
-      "motivo": "A empresa alcançou recordes de receita e lucro e estabeleceu uma meta ambiciosa de crescimento do EBITDA",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:25:41.603929-03:00"
-    },
-    {
-      "title": "Os restaurantes favoritos de Anthony Bourdain no mundo",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:25:44.493994-03:00"
-    },
-    {
-      "title": "Agility’s CEO on What It Takes to Break Ideas Out of the Lab",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:25:52.620712-03:00"
-    },
-    {
       "title": "Reddit surges on S&P 500 inclusion, set to replace AvalonBay",
       "source": "Yahoo Finance",
       "score": 6.0,
@@ -17999,6 +17945,60 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T13:41:57.613774-03:00"
+    },
+    {
+      "title": "Morguard North American Residential Real Estate Investment Trust declares CAD 0.0658 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:46:57.361046-03:00"
+    },
+    {
+      "title": "Stripe expands multiple currency conversion, debuts instant conversion; Western Union stock dips",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:47:00.021981-03:00"
+    },
+    {
+      "title": "Kuya Silver Corporation reports H1 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:47:02.636315-03:00"
+    },
+    {
+      "title": "Morguard Real Estate Investment Trust declares CAD 0.02 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:47:05.264908-03:00"
+    },
+    {
+      "title": "Verizon loses bid to appeal $47M FCC fine",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:47:07.925560-03:00"
+    },
+    {
+      "title": "Vanguard FTSE Canadian Capped REIT Index ETF declares CAD 0.0739 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:47:10.567997-03:00"
     }
   ]
 }
