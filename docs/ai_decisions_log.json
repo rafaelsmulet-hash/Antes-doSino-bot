@@ -1,186 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Mangione Admits to Killing Healthcare CEO Brian Thompson",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:50:34.293552-03:00"
-    },
-    {
-      "title": "É candidato: Republicanos registra Cleitinho Azevedo ao governo de Minas Gerais",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:50:37.567801-03:00"
-    },
-    {
-      "title": "Dólar encosta em R$ 5,25 na quinta alta seguida; juros futuros disparam com ‘estresse’ doméstico",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "Cotação do dólar alta e desempenho negativo da moeda brasileira",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:50:45.797335-03:00"
-    },
-    {
-      "title": "Quem é Eduardo Saverin, bilionário brasileiro que comprou participação no Liverpool",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:50:53.902757-03:00"
-    },
-    {
-      "title": "Luigi Mangione Pleads Guilty in US Case Over CEO Killing",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:55:48.329282-03:00"
-    },
-    {
-      "title": "Estresse chega aos juros: Tesouro Direto dispara com saída de estrangeiros",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "saída de estrangeiros do Tesouro Direto pode pressionar o mercado de juros",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:55:55.758046-03:00"
-    },
-    {
-      "title": "Seguros de pessoas arrecadam R$ 34,4 bi até maio; veja os que mais crescem",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia sobre arrecadação de seguros não é relevante para o mercado imediato",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:55:58.736831-03:00"
-    },
-    {
-      "title": "Estes são os 24 países que mais usam inteligência artificial no mundo; veja a posição do Brasil",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:56:04.805555-03:00"
-    },
-    {
-      "title": "Think interest rates are high now? These charts offers a different perspective.",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:56:11.426310-03:00"
-    },
-    {
-      "title": "NoCopi Technologies GAAP EPS of -$0.04, revenue of $0.96M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:56:14.125749-03:00"
-    },
-    {
-      "title": "HealthWarehouse.com GAAP EPS of -$0.01, revenue of $6.1M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:56:16.755349-03:00"
-    },
-    {
-      "title": "Lifeloc Technologies GAAP EPS of -$0.05, revenue of $2.45M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:56:19.383275-03:00"
-    },
-    {
-      "title": "VerticalScope Holdings GAAP EPS of -$0.04, revenue of $13.8M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:56:22.012362-03:00"
-    },
-    {
-      "title": "SRX Global Inc. GAAP EPS of -$0.36, revenue of $3.4M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:56:24.642686-03:00"
-    },
-    {
-      "title": "Strong Market Rally Lifts Four Stocks Near Buy Points, New Highs",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T14:56:35.318548-03:00"
-    },
-    {
-      "title": "Cybersecurity Stock Sets Sights On Buy Point With Bolstered Outlook",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:56:37.962217-03:00"
-    },
-    {
-      "title": "The Triple-Tax HSA Strategy Doctors Max Before Their 401(k) in 2026",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:56:40.613500-03:00"
-    },
-    {
-      "title": "Greek feta prices are getting more expensive because the animals are dying by the hundreds of thousands",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:56:43.566486-03:00"
-    },
-    {
-      "title": "When my family visits my in-laws, my husband and I don't stay with our kids. It's a win for everyone.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T14:56:46.237143-03:00"
-    },
-    {
-      "title": "Ibovespa tem nova semana “sangrenta”: mercado começou a precificar eleições de vez?",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A notícia menciona o tombo do Ibovespa e a influência do cenário eleitoral, o que é materialmente relevante para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T15:00:46.535009-03:00"
-    },
-    {
       "title": "Bolsas da Europa caem com dados de atividade da zona do euro e Oriente Médio no radar",
       "source": "Money Times",
       "score": 6.0,
@@ -17999,6 +17819,186 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T08:06:39.335538-03:00"
+    },
+    {
+      "title": "An inflation report Wednesday should be a big deal for the Fed. Here's what to expect",
+      "source": "CNBC - Economy",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:10:46.591706-03:00"
+    },
+    {
+      "title": "DeepSeek Won't Sink U.S. AI Titans",
+      "source": "WSJ Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:10:49.539484-03:00"
+    },
+    {
+      "title": "Real perde força com eleições mais próximas e Goldman vê volatilidade maior à frente",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:10:52.791823-03:00"
+    },
+    {
+      "title": "Pesquisa BTG/Nexus: Lula empata com Flávio Bolsonaro e Caiado no 2º turno",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:10:56.971160-03:00"
+    },
+    {
+      "title": "NRx Pharmaceuticals GAAP EPS of -$0.44, revenue of $1.1M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:10:59.894651-03:00"
+    },
+    {
+      "title": "Madison Air Solutions enters $5.4B deal to buy ebm-papst",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:11:02.497342-03:00"
+    },
+    {
+      "title": "Adial Pharmaceuticals GAAP EPS of -$11.25 misses by $8.60",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:11:05.100554-03:00"
+    },
+    {
+      "title": "Ten consumer staples stocks with the strongest YTD performance",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:11:07.707311-03:00"
+    },
+    {
+      "title": "InspireMD GAAP EPS of -$0.17, revenue of $1.77M misses by $0.36M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:11:10.314467-03:00"
+    },
+    {
+      "title": "IM Cannabis to sell IMC Holdings and European assets to Slil",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:11:12.957985-03:00"
+    },
+    {
+      "title": "General Shopping registra lucro ajustado de R$ 56,7 milhões no segundo trimestre, queda de 24,7%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:11:18.733233-03:00"
+    },
+    {
+      "title": "Em recuperação, dono da Tok&Stok tem prejuízo de R$ 232,7 milhões no 2º tri",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:11:21.382858-03:00"
+    },
+    {
+      "title": "Via SP Serra registra prejuízo líquido de R$ 11,7 milhões entre abril e junho",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:11:23.993503-03:00"
+    },
+    {
+      "title": "Via Colinas lucra R$ 33,3 milhões entre abril e junho, queda de 97,5%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:11:26.609364-03:00"
+    },
+    {
+      "title": "Em recuperação, dono da Tok&Stok tem prejuízo de R$ 232,7 milhões no 2º tri",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:11:29.223076-03:00"
+    },
+    {
+      "title": "CELESC lucra R$ 296,1 milhões no segundo trimestre, alta de 99,4%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:11:31.835424-03:00"
+    },
+    {
+      "title": "Grupo Toky tem prejuízo de R$ 232,7 milhões no segundo trimestre, alta de 161,7%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:11:34.451430-03:00"
+    },
+    {
+      "title": "I stayed for 8 years and got a $2,600 raise. A colleague who quit got $15,000 more. Do I have to leave to get paid?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T08:11:39.427426-03:00"
+    },
+    {
+      "title": "Vista Energy up 5% after billionaire Peter Thiel buys stake in the Argentine shale oil producer",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:11:42.449671-03:00"
+    },
+    {
+      "title": "What will TV look like in three years? Media insiders share their predictions",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T08:11:45.100024-03:00"
     }
   ]
 }
