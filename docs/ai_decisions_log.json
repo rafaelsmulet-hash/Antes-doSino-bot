@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Profit Taking, Disappointing Data Contribute To Modest Pullback On Wall Street",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T17:31:12.785656-03:00"
-    },
-    {
-      "title": "HLB Reports Narrower H1 Loss On 40% Revenue Growth",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:31:15.476698-03:00"
-    },
-    {
-      "title": "Fidelity Just Filed to Let Its Crypto Ethereum ETF Stake 100% of Its Holdings",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:31:24.914120-03:00"
-    },
-    {
-      "title": "UK regulator, crypto exchange HTX locked in settlement talks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:31:27.610542-03:00"
-    },
-    {
-      "title": "Stocks Halt Rally After Signs of Consumer Slowdown: Markets Wrap",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia revela sinais de recessão do consumidor, o que pode afetar a economia e, consequentemente, os mercados financeiros.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:35:56.291291-03:00"
-    },
-    {
-      "title": "Consultoria gringa recomenda fugir de bolsa — e culpa é do governo Lula; só um investimento vale a pena",
-      "source": "Money Times",
-      "score": 8.0,
-      "motivo": "rebaixamento da recomendação da bolsa brasileira por uma consultoria gringa",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T17:36:06.511748-03:00"
-    },
-    {
-      "title": "Ibovespa cai 3% na semana e tem pior sequência desde 2023; dólar sobe",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "queda do Ibovespa e do principal índice da bolsa brasileira",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T17:36:09.367799-03:00"
-    },
-    {
-      "title": "E.U.A. - Ações fecharam o pregão em queda e o Índice Dow Jones Industrial Average recuou 0,20%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T17:36:12.350212-03:00"
-    },
-    {
-      "title": "Canadá - Ações fecharam o pregão em queda e o Índice S&P/TSX recuou 0,08%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T17:36:15.370476-03:00"
-    },
-    {
-      "title": "Brasil - Ações fecharam o pregão em queda e o Índice Bovespa recuou 0,10%",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:36:18.099577-03:00"
-    },
-    {
-      "title": "World Liberty Financial recebe aprovação condicional para licença bancária",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:36:20.951918-03:00"
-    },
-    {
-      "title": "TD Cowen elege Paycom como principal escolha no setor de software",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:36:23.726707-03:00"
-    },
-    {
-      "title": "SEC propõe flexibilização das regras de \"pay-to-play\" para gestores de investimentos",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:36:26.508103-03:00"
-    },
-    {
-      "title": "Workslop: o novo problema da IA no trabalho que pode consumir horas a mais e desperdiçar dinheiro",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T17:36:29.925304-03:00"
-    },
-    {
-      "title": "Cotado ao governo de Alagoas, JHC pode tentar o Senado e bagunçar disputa; entenda",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:36:32.705826-03:00"
-    },
-    {
-      "title": "Real, RE/MAX Holdings shareholders approve acquisition",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:36:35.919661-03:00"
-    },
-    {
-      "title": "Glenview adds Eli Lilly, AbbVie, trims CVS, AMAT, among top Q2 trades",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T17:36:38.664254-03:00"
-    },
-    {
       "title": "US distributor RNDC closes in on new deal for Kentucky assets",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T10:12:20.316820-03:00"
+    },
+    {
+      "title": "Irã intensificará tensões na região se diplomacia com EUA fracassar, diz autoridade",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:16:23.401891-03:00"
+    },
+    {
+      "title": "FII recebe proposta de R$ 475 milhões por imóveis na Faria Lima e pode ser liquidado; Ifix recua",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:16:27.332126-03:00"
+    },
+    {
+      "title": "A venda de treasuries é uma grande ameaça para os touros da bolsa?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:16:30.780764-03:00"
+    },
+    {
+      "title": "Avaliação da Groq cai para US$ 3,5 bilhões após acordo com a Nvidia",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:16:33.390930-03:00"
+    },
+    {
+      "title": "Canaan reports July bitcoin mining update",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:16:36.383932-03:00"
+    },
+    {
+      "title": "SentinelOne likely to have 'AI-driven EDR renaissance' in Q2, TD Cowen says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:16:38.998578-03:00"
+    },
+    {
+      "title": "ArrowMark Financial declares $0.15 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:16:41.594735-03:00"
+    },
+    {
+      "title": "SoFi trades higher as Piper Sandler initiates coverage with Buy equivalent",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:16:44.217439-03:00"
+    },
+    {
+      "title": "Iran uses diplomatic pause to prepare for wider regional war: WSJ",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:16:46.830593-03:00"
+    },
+    {
+      "title": "Boletim Focus mantém projeção para o IPCA 2026 acima do teto da meta; veja detalhes",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:16:53.967827-03:00"
+    },
+    {
+      "title": "See 6 repurposed Boeing 747s with unusual second lives, from a Swedish hotel to a scuba site in Bahrain",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:16:59.224515-03:00"
+    },
+    {
+      "title": "Trump Threatens To 'Bomb The S**t' Out Of Oman & Touts IRGC Backchannel",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:17:02.538731-03:00"
+    },
+    {
+      "title": "Futures Rise On Fresh Push Higher In Tech",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:17:05.222900-03:00"
+    },
+    {
+      "title": "Trump Says US To 'Substantially Reduce' Military Drills With S.Korea, Cites 'Very Good Relationship' With Kim",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:17:07.859318-03:00"
+    },
+    {
+      "title": "CXMT Becomes China's Most Valuable Company As UBS Calls Apple Sourcing Report A \"Key Catalyst\"",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:17:10.499860-03:00"
+    },
+    {
+      "title": "GB News Host Forced From Home By Migrant Gang Death Threats",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:17:13.118183-03:00"
+    },
+    {
+      "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:17:15.854654-03:00"
     }
   ]
 }
