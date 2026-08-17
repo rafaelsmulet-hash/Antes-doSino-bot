@@ -1,159 +1,6 @@
 {
   "decisions": [
     {
-      "title": "OPEC And IEA Each Took A Knife To 2026 Oil Demand Outlooks. How Bad Are They Really?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:11:15.415573-03:00"
-    },
-    {
-      "title": "Prestige Consumer Healthcare (PBH) Bets Big On M&A, But Can Clear Eyes Recover?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:11:18.094941-03:00"
-    },
-    {
-      "title": "Sandisk forecasts mid-to-high-teens revenue growth through 2030",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:11:20.750603-03:00"
-    },
-    {
-      "title": "Stablecoin Issuer Tether Completes First Audit",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:11:23.394432-03:00"
-    },
-    {
-      "title": "Eli Lilly's GLP-1 Pricing Problem Is Actually a Growth Opportunity",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a capacidade da Eli Lilly de encontrar oportunidades de crescimento em um problema inicialmente considerado negativo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:15:45.481895-03:00"
-    },
-    {
-      "title": "Money Managers Chase €500 Billion Historic German Pension Shift",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "motivo": "Reforma significativa no sistema de pensão alemão, que pode afetar investimentos em grande escala.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:50:45.909930-03:00"
-    },
-    {
-      "title": "Xi Urges Shift to Prevention in Disaster Management, Xinhua Says",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:50:48.932673-03:00"
-    },
-    {
-      "title": "Modi Maps India’s Growth Push as He Reaches Out to Students",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca o compromisso do governo com o crescimento econômico e a atenção ao público jovem, o que pode influenciar a confiança dos investidores e a economia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:50:52.063032-03:00"
-    },
-    {
-      "title": "Malaysia’s Anwar Vows Faster Reforms After Electoral Defeats",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta um impacto direto e imediato no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:50:55.035164-03:00"
-    },
-    {
-      "title": "Modi Maps India’s Growth Push With Youth Focus",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia destaca a estratégia de crescimento da Índia, o que pode influenciar a confiança dos investidores no mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:50:58.016428-03:00"
-    },
-    {
-      "title": "Germany’s Market-Friendly Pension Overhaul: Q&A",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "Reforma do sistema de aposentadoria pode ter impacto nas economias e mercados financeiros da região.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T06:51:00.941606-03:00"
-    },
-    {
-      "title": "China Protests Japan PM, Defense Minister’s Yasukuni Actions",
-      "source": "Bloomberg Markets",
-      "score": 0.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:51:03.920427-03:00"
-    },
-    {
-      "title": "O bilionário que ignorou os céticos da OpenAI agora fecha negócio recorde pelo Lakers",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "negocio do Lakers nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:51:07.422141-03:00"
-    },
-    {
-      "title": "A ajuda inesperada de Ray Dalio ao McDonald’s que tornou os McNuggets um sucesso",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A notícia menciona a influência de um investidor de sucesso no mercado financeiro em uma empresa de fast food, sugerindo uma conexão positiva entre o investidor e o sucesso da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:51:10.382158-03:00"
-    },
-    {
-      "title": "CEO da United tem conselho para a Geração Z: “Pare de dar desculpas”",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia e sobre uma entrevista do CEO da United e nao tem relevancia direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:51:13.278716-03:00"
-    },
-    {
-      "title": "Renda extra, aposentadoria e mais: 13 ETFs para começar a investir",
-      "source": "InfoMoney",
-      "score": 5.0,
-      "motivo": "A notícia destaca a seleção de ETFs por parte da XP, o que pode atrair investidores e aumentar a demanda por ações de empresas relacionadas ao setor financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T06:51:16.209973-03:00"
-    },
-    {
-      "title": "Excesso de escândalos faz eleitor tratar denúncias como ruído, diz cientista político",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre política e eleitorado, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T06:51:19.114993-03:00"
-    },
-    {
       "title": "Lula volta ao berço político para abrir campanha pelo quarto mandato neste domingo",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17846,159 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T12:31:55.896281-03:00"
+    },
+    {
+      "title": "Recuperação da China tropeça com perda de força do consumo e da produção",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:35:41.392232-03:00"
+    },
+    {
+      "title": "Shein busca valor próximo de US$ 25 bilhões como meta de avaliação em IPO",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:35:44.117243-03:00"
+    },
+    {
+      "title": "Casas Bahia deve bilhões a Zurich, Bradesco e Samsung; veja quem são os maiores credores",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:35:50.289351-03:00"
+    },
+    {
+      "title": "'Percy Jackson' terá 4ª temporada? Ator faz promessa caso série chegue a 'Heróis do Olimpo'",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:35:53.030876-03:00"
+    },
+    {
+      "title": "Tower Semiconductor Non-GAAP EPS of $0.79, revenue of $873.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:35:56.098977-03:00"
+    },
+    {
+      "title": "Liberty Defense Holdings, Ltd. Non-GAAP EPS of -$0.43",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:35:58.830836-03:00"
+    },
+    {
+      "title": "September Is Historically the Worst Month for the Stock Market. Is Now the Time to Cash Out?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:36:04.949194-03:00"
+    },
+    {
+      "title": "Why Sandisk Stock Rocketed Higher (Again) Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:36:07.663725-03:00"
+    },
+    {
+      "title": "Micron's AI Boom Is a Utility Story Too. Here's the Power Angle Wall Street Isn't Pricing In.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:36:10.388261-03:00"
+    },
+    {
+      "title": "Reddit to Join the S&P 500. Will This Send the Stock Back to Its 52-Week High?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:36:13.091776-03:00"
+    },
+    {
+      "title": "If You'd Invested $10,000 When SpaceX Went Public, Here's How Much Money You'd Have Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:36:15.824336-03:00"
+    },
+    {
+      "title": "Medical Properties Trust (MPT) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:36:18.513737-03:00"
+    },
+    {
+      "title": "Sonida Senior Living (SNDA) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:36:21.252071-03:00"
+    },
+    {
+      "title": "Conduent (CNDT) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:36:23.952537-03:00"
+    },
+    {
+      "title": "Surgery Partners (SGRY) Q2 2026 Earnings Call Transcript",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:36:26.664963-03:00"
+    },
+    {
+      "title": "Braskem (BRKM5) dá calote nas dívidas e Fitch rebaixa rating de crédito; o que muda para a companhia e para os investidores",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:36:32.191137-03:00"
+    },
+    {
+      "title": "Nem Anne Hathaway conseguiu desbancar Tom Holland: ‘Homem Aranha: Um Novo Dia’ alcança US$ 2 bilhões de bilheteria",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:36:34.953914-03:00"
     }
   ]
 }
