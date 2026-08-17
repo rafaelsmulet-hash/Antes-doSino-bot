@@ -1,96 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Fitch eleva nota de crédito do município do Rio de Janeiro a ‘AAA’",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Elevação da nota de crédito do município do Rio de Janeiro é um sinal positivo para a estabilidade financeira da cidade.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T08:15:40.278022-03:00"
-    },
-    {
-      "title": "I can't find a job at 57. I'm fighting feelings of humiliation and panic.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:15:51.826799-03:00"
-    },
-    {
-      "title": "Como melhorar a concentração e a memória? Veja hábitos que podem ajudar",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:21:04.418777-03:00"
-    },
-    {
-      "title": "Strategy CEO Phong Le Thinks MSTR Stock Will Outperform Bitcoin During the Next Bull Market. Here's Why He's Wrong.",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é relevante para o mercado de criptomoedas, mas não é um evento significativo.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:21:13.733590-03:00"
-    },
-    {
-      "title": "The Stock Market Is on the Verge of Doing Something That No One's Witnessed in Nearly 156 Years, and the Consequences May Be Dire for Wall Street",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca o desempenho positivo do mercado de ações no ano atual.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T08:21:16.808668-03:00"
-    },
-    {
-      "title": "Broadcom vs. AMD: Which AI Chip Stock Is the Better Buy?",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia compara as previsões e o crescimento de receita das duas empresas de chips de inteligência artificial, o que é relevante para investidores que buscam entender melhor as perspectivas das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:21:19.660284-03:00"
-    },
-    {
-      "title": "Bitcoin Miner Riot Platforms Just Signed a $9 Billion Compute Deal With Anthropic. Why AI Is Now the Key to Valuing Bitcoin Mining Stocks.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "O acordo de $9 bilhões é relevante para a avaliação das ações da Riot Platforms.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T08:21:22.485976-03:00"
-    },
-    {
-      "title": "The L.A. Lakers Delivered a 1-Year Return of 25%. These ETFs Have Done Even Better.",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:21:25.329454-03:00"
-    },
-    {
-      "title": "SEC Charges Private Fund Adviser Adit Ventures Management, Its CEO and Affiliated General Partners in Alleged Fraud",
-      "source": "SEC",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma ação de fraude e não tem relação direta com o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:21:36.120399-03:00"
-    },
-    {
-      "title": "Entrada da China na ação do Brasil na OMC ajuda a combater guerra tarifária contra os EUA?",
-      "source": "G1 Economia",
-      "score": 6.0,
-      "motivo": "A China apoia o Brasil na disputa comercial contra os EUA, o que pode fortalecer a posição brasileira e combater a guerra tarifária.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:25:45.401940-03:00"
-    },
-    {
       "title": "Nvidia is becoming the 'Federal Reserve of AI'",
       "source": "Seeking Alpha",
       "score": 6.0,
@@ -17999,6 +17909,96 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T18:06:19.413389-03:00"
+    },
+    {
+      "title": "Test Your ETF Knowledge In Our IQ Test",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:11:33.543671-03:00"
+    },
+    {
+      "title": "Ibovespa fecha no 10º dia de queda com pressão de bancos e vai a 166.783 pontos",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:11:36.852886-03:00"
+    },
+    {
+      "title": "Nestlé aposta em produtos para usuários de GLP-1 e vê oportunidade de crescimento",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:11:39.579552-03:00"
+    },
+    {
+      "title": "Bom para Vale, neutro para Gerdau, diz Morgan sobre possível compra de Porto Sudeste",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:11:42.310011-03:00"
+    },
+    {
+      "title": "Do câncer a doenças cardíacas: Como a genética está transformando o cuidado com cães e gatos",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:11:47.210961-03:00"
+    },
+    {
+      "title": "Um copiloto para o RH: Elofy coloca agentes de IA para trabalhar",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:11:49.915065-03:00"
+    },
+    {
+      "title": "20 reasons why Wendy's may be doomed",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:11:59.777268-03:00"
+    },
+    {
+      "title": "Heartflow (HTFL) Rockets 46%: What Analysts Say and Where Hedge Funds Stand",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:12:02.518222-03:00"
+    },
+    {
+      "title": "At AI-Fueled Market Party, Wall Street Eyes the Rates Punch Bowl",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:12:05.214891-03:00"
+    },
+    {
+      "title": "I went to Royal Caribbean's private island in the Bahamas. It's not for me, but I get why cruisers love it.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:12:08.133977-03:00"
     }
   ]
 }
