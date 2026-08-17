@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Lula chega ao primeiro ato favorito nas pesquisas, mas sob pressão de novas crises",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia politica sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:17.830149-03:00"
-    },
-    {
-      "title": "Flávio abre campanha com eleitorado consolidado, mas palanques ainda fragmentados",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia sobre eleicoes nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:20.628609-03:00"
-    },
-    {
-      "title": "Vivara diz que fundos sob gestão da Guepardo Investimentos compraram ações",
-      "source": "InfoMoney",
-      "score": 3.0,
-      "motivo": "A notícia é sobre aquisição de ações, mas não há informações sobre o volume ou impacto financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:23.424183-03:00"
-    },
-    {
-      "title": "Catar nega estar detendo pilotos iranianos",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:26.191935-03:00"
-    },
-    {
-      "title": "Arthur Lira registra candidatura ao Senado e declara triplo de patrimônio de 2022",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre vida pessoal de um político",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:28.959673-03:00"
-    },
-    {
-      "title": "5 grandes movimentos de analistas em IA: otimismo com memória; Apple e Cisco rebaixadas",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "rebaixamento de ações de Apple e Cisco",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:51:34.223169-03:00"
-    },
-    {
-      "title": "SpaceX pode se tornar uma plataforma de IA de fronteira?",
-      "source": "Investing.com Brasil",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:36.988233-03:00"
-    },
-    {
-      "title": "Peter Thiel adquire participação de 1% na Vista Energy da Argentina",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "investimento de Peter Thiel na Vista Energy pode atrair capital e aumentar a confiança no mercado de energia argentina",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:39.775694-03:00"
-    },
-    {
-      "title": "Apenas 13% dos fundos de ações de grande capitalização dos EUA superam benchmarks na última década",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Noticia revela desempenho fraco de fundos de ações de grande capitalização nos EUA, o que pode influenciar a confiança dos investidores e afetar o mercado de ações.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:42.589184-03:00"
-    },
-    {
-      "title": "Como a Disney pode recuperar seu momentum narrativo?",
-      "source": "Investing.com Brasil",
-      "score": 2.0,
-      "motivo": "a noticia nao e sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:45.351647-03:00"
-    },
-    {
-      "title": "Vivara diz que fundos sob gestão da Guepardo Investimentos compraram ações da companhia",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Ação de compra de ações da companhia por fundos sob gestão da Guepardo Investimentos é um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:48.153770-03:00"
-    },
-    {
-      "title": "Nvidia planeja investir US$3 bi na SB Energy em  acordo para centro  de dados da OpenAI, diz The  Information",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "Investimento significativo em centro de dados pode impulsionar crescimento da Nvidia",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:50.948795-03:00"
-    },
-    {
-      "title": "Por que a mobilização de US$ 500 bilhões da Nvidia é positiva para as ações",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A mobilização de recursos da Nvidia pode indicar confiança na empresa e potencial de crescimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:53.738694-03:00"
-    },
-    {
-      "title": "OPINIÃO. Os erros dos CEOs ao falar com jornalistas",
-      "source": "Brazil Journal",
-      "score": 0.0,
-      "motivo": "A noticia nao trata de mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:57.268499-03:00"
-    },
-    {
-      "title": "No Sítio da Pedra, a vida fora do escritório pariu um azeite",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:51:59.892144-03:00"
-    },
-    {
-      "title": "A cabeça do VC “pragmático” que está comprando o OnlyFans",
-      "source": "Brazil Journal",
-      "score": 8.0,
-      "motivo": "Aquisição de participação significativa na OnlyFans pode impulsionar crescimento da empresa e valorizar ações.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:52:02.707133-03:00"
-    },
-    {
-      "title": "OPINIÃO. Lula, o escorpião e os sapos",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:52:05.326903-03:00"
-    },
-    {
-      "title": "Em Minas, o PIB já tem candidato. Agora faltam os votos",
-      "source": "Brazil Journal",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:52:08.121570-03:00"
-    },
-    {
       "title": "BP volta à Venezuela (e vai sair do Mar do Norte)",
       "source": "Brazil Journal",
       "score": null,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T17:06:35.940525-03:00"
+    },
+    {
+      "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
+      "source": "WSJ Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:10:41.761703-03:00"
+    },
+    {
+      "title": "Impotência e gratidão: demitidos da Casas Bahia falam sobre ‘adeus’ em redes sociais",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:10:44.718933-03:00"
+    },
+    {
+      "title": "Petróleo começa semana em alta e barril supera US$ 90 com temor de escalada das tensões no Oriente Médio",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:10:49.004507-03:00"
+    },
+    {
+      "title": "Taxa de receita anualizada da Anthropic supera US$ 65 bilhões em julho",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:10:51.842000-03:00"
+    },
+    {
+      "title": "Google vence leilão de dados da Spirit Airlines para treinar IA",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:10:54.547093-03:00"
+    },
+    {
+      "title": "Tesla deve lançar Cybercab em Austin ainda este mês",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:10:57.233434-03:00"
+    },
+    {
+      "title": "'Viva - A Vida É uma Festa 2' ganha mês de estreia e primeira imagem oficial; veja",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:11:00.378452-03:00"
+    },
+    {
+      "title": "Opinião: O futuro do Retail Media será definido por confiança e valor",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:11:03.086050-03:00"
+    },
+    {
+      "title": "A Ajinomoto sabe algo que o Brasil ainda não aprendeu",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:11:05.754780-03:00"
+    },
+    {
+      "title": "SA analyst warns rising oil and yields could challenge the AI rally",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:11:08.677825-03:00"
+    },
+    {
+      "title": "Belden declares $0.05 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:11:11.312259-03:00"
+    },
+    {
+      "title": "Rocky Brands declares $0.17 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:11:13.949080-03:00"
+    },
+    {
+      "title": "Duos Technologies GAAP EPS of $1.61 beats by $0.95, revenue of $6.18M beats by $1.28M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:11:16.652872-03:00"
+    },
+    {
+      "title": "Veste lucra R$ 30,7 milhões entre abril e junho, alta de 80,5%",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:11:22.585893-03:00"
+    },
+    {
+      "title": "IBGE diz que segue funcionando normalmente, apesar de greve de servidores",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:11:25.280439-03:00"
+    },
+    {
+      "title": "The AI trade got crushed. The bull market barely noticed: Chart of the Day",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:11:30.007299-03:00"
+    },
+    {
+      "title": "Plug Power Tested a Backup Power System With Microsoft. Here's Why the CEO Says That's Not a Real Pivot Yet.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:11:32.751541-03:00"
+    },
+    {
+      "title": "‘Running out of money’: Kraft, McDonald’s, Whirlpool CEOs all flag same concern over US consumers — protect your wealth",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:11:35.508014-03:00"
     }
   ]
 }
