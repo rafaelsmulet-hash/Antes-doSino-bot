@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Scienture Holdings Q2 non-GAAP EPS of -$0.07, revenue of $0.34M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:51:03.035146-03:00"
-    },
-    {
       "title": "S&P financial index eyes record 11th straight weekly gain: Here are its top 10 holdings",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T21:11:33.219613-03:00"
+    },
+    {
+      "title": "Thai Baht Rally May Fade on Dovish Central Bank, Analysts Say",
+      "source": "Bloomberg Markets",
+      "score": 5.0,
+      "motivo": "A notícia é relevante porque afeta a política monetária e a economia do Tailândia, que pode influenciar a valorização do baht.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-16T21:15:42.188165-03:00"
     }
   ]
 }
