@@ -1,150 +1,150 @@
 {
-  "date": "2026-08-16",
-  "total_ingeridas": 46169,
-  "aprovadas_pelo_fluxo_atual": 123,
-  "descartadas_pelos_filtros_atuais": 46046,
-  "score_medio_materialidade": 3.21,
-  "seriam_breaking": 34,
-  "iriam_para_rodada": 204,
-  "seriam_descartadas_pelo_novo_sistema": 302,
-  "total_divergencias": 147,
+  "date": "2026-08-17",
+  "total_ingeridas": 248,
+  "aprovadas_pelo_fluxo_atual": 31,
+  "descartadas_pelos_filtros_atuais": 217,
+  "score_medio_materialidade": null,
+  "seriam_breaking": 0,
+  "iriam_para_rodada": 0,
+  "seriam_descartadas_pelo_novo_sistema": 98,
+  "total_divergencias": 31,
   "divergencias": [
     {
-      "title": "Malaysia’s DAP Hands Anwar Reprieve With Vote to Stay in Cabinet",
+      "title": "Dollar Extends Slide as Traders Scale Back Fed Tightening Bets",
       "source": "Bloomberg Markets",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "India Readies Big LPG Output Boost as Hormuz Uncertainty Lingers",
+      "title": "China's Xi Touts Military, Economic Agenda at Key Event",
       "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "China Plans to Speed Up New Energy Recycling, Waste Rules: CCTV",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Peter Thiel adquire participação de 1% na Vista Energy da Argentina",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Apenas 13% dos fundos de ações de grande capitalização dos EUA superam benchmarks na última década",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Vivara diz que fundos sob gestão da Guepardo Investimentos compraram ações da companhia",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Nvidia planeja investir US$3 bi na SB Energy em  acordo para centro  de dados da OpenAI, diz The  Information",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "Por que a mobilização de US$ 500 bilhões da Nvidia é positiva para as ações",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "No Sítio da Pedra, a vida fora do escritório pariu um azeite",
-      "source": "Brazil Journal",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "A cabeça do VC “pragmático” que está comprando o OnlyFans",
-      "source": "Brazil Journal",
-      "score": 8.0,
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "OPINIÃO. Lula, o escorpião e os sapos",
-      "source": "Brazil Journal",
+      "title": "Prévia do PIB do Brasil, leilão do BC, Galípolo e mais destaques desta segunda-feira",
+      "source": "InfoMoney",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "ANZ Group Q3 Cash Profit Rises",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado"
-    },
-    {
-      "title": "These 5 AI Stocks Have Returned 300%-Plus Over the Past 3 Years -- and 1 Still Looks Dirt Cheap",
-      "source": "Nasdaq",
+      "title": "Itaú, Bradesco, Santander e BB: o que balanços do 2T dizem sobre cautela do setor?",
+      "source": "InfoMoney",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "President Donald Trump Claims Costs Are &quot;All Coming Down Now,&quot; but the Evolution of Trumpflation Appears to Be Having the Opposite Effect",
-      "source": "Nasdaq",
+      "title": "Tesouro deposita R$ 257 bi nesta segunda; vale a pena travar taxa agora?",
+      "source": "InfoMoney",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "CoreWeave's Operating Chief Sold Before Earnings. Here's What to Know",
+      "title": "Nasdaq e S&P 500 futuros avançam com menor aposta em alta de juros pelo Fed",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Vencimento de títulos do Tesouro e recalibragem de fundos pressionam juros nesta 2ª",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Casas Bahia entra com pedido de recuperação judicial para reestruturar dívidas",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Tempo real: Ibovespa inicia semana com IBC-Br no radar",
+      "source": "Money Times",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "A IA na tomada de decisão sob incerteza: simulando cenários econômicos e mercadológicos",
+      "source": "Exame",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Estrangeiro recua, 'risco eleitoral' cresce e muda perspectiva para o Ibovespa",
+      "source": "Exame",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Investor dubbed ‘AI stock god’ had 56% of his funds in these two stocks before it blew up",
+      "source": "MarketWatch",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Stock futures mixed as investors look ahead to retail earnings",
+      "source": "Seeking Alpha",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "European Shares Mixed In Lackluster Trade",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Costco: Patient Investors Know the Bear Case (NASDAQ: COST)",
+      "title": "Wall Street Says the Stock Market's Return Will Crush the Long-Term Average in the Next Year",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Trilionário por 2 meses: a ‘marcha à ré’ da SpaceX que fez Elon Musk perder bilhões de dólares",
-      "source": "G1 Economia",
+      "title": "OceanaGold To Buy Ausgold For Around A$776 Mln",
+      "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Curral eclético: vacas escutam de forró a música clássica e produzem mais leite em fazenda no ES; veja VÍDEO",
-      "source": "G1 Economia",
+      "title": "Fed Chair Kevin Warsh's Job Just Got Much Easier. Here's What's Likely Next for the Stock Market As a Result.",
+      "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "China domina mercado de robôs humanoides; entenda por que os EUA decidiram barrá-los",
-      "source": "G1 Economia",
+      "title": "Asian Shares Mixed On Concerns Over US Growth",
+      "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Atentado mostrado na Netflix explica por que sua bagagem não voa sem você",
-      "source": "UOL Economia",
+      "title": "Headline Inflation Is Easing, but Trumpflation Isn't -- and That's a Recipe for Disaster on Wall Street",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Warren Buffett and Greg Abel Just Bought 8 Stocks. Here's the Best of the Bunch.",
+      "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
