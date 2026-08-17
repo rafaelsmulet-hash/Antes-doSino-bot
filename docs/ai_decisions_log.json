@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Resultado da Lotofácil 3763: Veja os números sorteados e se você ganhou",
-      "source": "UOL Economia",
-      "score": 0.0,
-      "motivo": "não é uma notícia financeira relevante",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T14:11:07.570433-03:00"
-    },
-    {
-      "title": "Nvidia revela fatia de US$ 21 bi na SpaceX e US$ 30 bi na Intel",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "Nvidia revela investimentos significativos em empresas de tecnologia, o que pode impactar positivamente suas ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T14:16:00.301681-03:00"
-    },
-    {
-      "title": "Alcolumbre sobre petróleo na Margem Equatorial: ‘Sonho que se torna realidade’",
-      "source": "InfoMoney",
-      "score": 8.0,
-      "motivo": "Descoberta de petróleo pode aumentar a oferta de energia e impactar preços no mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T14:25:36.909910-03:00"
-    },
-    {
-      "title": "China to lift travel ban on Manus founders as Meta unwinds buyout deal: FT",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A decisão pode influenciar a valorização das ações da Meta e de outras empresas de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T14:25:42.180329-03:00"
-    },
-    {
-      "title": "Por baixo da alta do S&P 500: desempenho e fundamentos divergem",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "A noticia destaca a divergencia entre o desempenho e os fundamentos do S&P 500, o que pode indicar um mercado em sobreposicao e pronto para uma correcao.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T14:30:57.697335-03:00"
-    },
-    {
-      "title": "Tiroteio deixa cinco feridos em universidade dos EUA; polícia investiga suspeitos",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há conexão direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T14:31:00.715650-03:00"
-    },
-    {
-      "title": "Everyone's Watching Oklo and NuScale for Nuclear Exposure. This Overlooked Stock Is Building One Too.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a construção de uma usina nuclear, o que é relevante para o mercado de energia e recursos naturais.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T14:31:07.014420-03:00"
-    },
-    {
       "title": "Herança de Silvio Santos: o que patrimônio de Patrícia Abravanel diz sobre disputa?",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T16:11:29.057415-03:00"
+    },
+    {
+      "title": "Cosan (CSAN3) cai após abrir em alta mesmo com prejuízo 66% menor no 2T26",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T16:16:02.574536-03:00"
+    },
+    {
+      "title": "ExxonMobil fecha contratos de US$ 1,1 bilhão para GNL em Moçambique",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T16:16:07.431758-03:00"
+    },
+    {
+      "title": "A morte de Hayden Panettiere e o lado sombrio da fama precoce em Hollywood",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:16:11.763718-03:00"
+    },
+    {
+      "title": "Qual a dúvida que Abel tem para o jogo do Palmeiras contra o Cerro?",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:16:14.540536-03:00"
+    },
+    {
+      "title": "Santander não larga o Brasil? Presidente executiva reforça aposta no país em meio à OPA de SANB11",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T16:16:23.932481-03:00"
+    },
+    {
+      "title": "Anvisa aprova duas novas canetas de semaglutida, inclusive a primeira genérica do Brasil; confira a lista completa de medicamentos aprovados",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T16:16:26.785851-03:00"
+    },
+    {
+      "title": "John Gruber calls Claude's AI watermarking 'patently offensive'",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:16:33.833944-03:00"
     }
   ]
 }
