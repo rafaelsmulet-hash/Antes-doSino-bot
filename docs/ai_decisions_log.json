@@ -1,123 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Pesquisa Quaest: Lula tem 7 pontos de vantagem sobre Flávio Bolsonaro no 1º turno",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:26:20.047420-03:00"
-    },
-    {
-      "title": "Boeing wins $636M Army deal for Apache helicopter support work",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T18:26:23.152340-03:00"
-    },
-    {
-      "title": "Ugly STMicroelectronics Stock May Have Just Signaled a Turnaround",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:26:36.841222-03:00"
-    },
-    {
-      "title": "Stocks See Support from Favorable PPI Report",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:26:39.518149-03:00"
-    },
-    {
-      "title": "After a Big Jump, Is Another SpaceX Stock Milestone in View?",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:26:42.186928-03:00"
-    },
-    {
-      "title": "Brasil - Ações fecharam o pregão em queda e o Índice Bovespa recuou 0,10%",
-      "source": "Investing.com Brasil",
-      "score": 5.0,
-      "motivo": "queda das ações e recuo do Índice Bovespa indicam impacto negativo no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:30:53.500080-03:00"
-    },
-    {
-      "title": "Tidewater secures $249M Army construction contract for Germany projects",
-      "source": "Seeking Alpha",
-      "score": 2.0,
-      "motivo": "A notícia não tem impacto direto no mercado financeiro, mas pode ter alguma relevância para empresas de construção e infraestrutura.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:30:57.364631-03:00"
-    },
-    {
-      "title": "Rodobens lucra R$ 146,9 milhões entre abril e junho, alta de 78,5%",
-      "source": "UOL Economia",
-      "score": 5.0,
-      "motivo": "aumento de lucro e alta de 78,5% é um sinal positivo para a empresa e pode influenciar os investimentos no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T18:31:07.082809-03:00"
-    },
-    {
-      "title": "Anthropic defends and explains its AI watermarking feature",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:31:13.571452-03:00"
-    },
-    {
-      "title": "EV prices are rising again as automakers pull back on discounts",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T18:31:16.266283-03:00"
-    },
-    {
-      "title": "México - Ações fecharam o pregão em queda e o Índice S&P/BMV IPC recuou 0,66%",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "queda no Índice S&P/BMV IPC indica desempenho negativo do mercado mexicano",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T18:35:36.765377-03:00"
-    },
-    {
-      "title": "Ibovespa e dólar hoje: bolsa tem 9º pregão de perdas com Irã e eleição no radar",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "perdas na bolsa e influência de eventos internacionais",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T18:35:39.605445-03:00"
-    },
-    {
-      "title": "Druckenmiller aumenta posições em Amazon.com e AMD e abandona chipmakers",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Aumento de posições em Amazon e AMD indica confiança no crescimento dessas empresas",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T18:35:42.426494-03:00"
-    },
-    {
       "title": "Colômbia - Ações fecharam o pregão em alta e o Índice COLCAP avançou 0,84%",
       "source": "Investing.com Brasil",
       "score": null,
@@ -17999,6 +17882,123 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T10:51:09.411803-03:00"
+    },
+    {
+      "title": "Ação da Alliance Laundry cai após oferta secundária de ações",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:55:52.977869-03:00"
+    },
+    {
+      "title": "Por que as ações da Telecom Plus estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:55:55.591219-03:00"
+    },
+    {
+      "title": "Por que as ações da Micron estão em alta hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:55:58.203295-03:00"
+    },
+    {
+      "title": "Raytheon recebe contrato de US$ 22,9 bilhões para mísseis Tomahawk",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:56:00.884099-03:00"
+    },
+    {
+      "title": "General Atlantic estuda retorno aos planos de IPO após registro em 2023",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:56:03.518724-03:00"
+    },
+    {
+      "title": "BHIA3: Por que a Casas Bahia pediu novo processo de recuperação judicial?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:56:06.146588-03:00"
+    },
+    {
+      "title": "Por que as ações da Almonty Industries estão subindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:56:08.761707-03:00"
+    },
+    {
+      "title": "Quantum eMotion Corp. GAAP EPS of $0.03, revenue of $12.06M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:56:11.887883-03:00"
+    },
+    {
+      "title": "Optimi Health Corp. GAAP EPS of -$0.56, revenue of $239.7M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:56:14.504901-03:00"
+    },
+    {
+      "title": "Casas Bahia pede recuperação judicial; entenda o que significa e como funciona",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:56:22.590687-03:00"
+    },
+    {
+      "title": "Ações da Casas Bahia despencam na Bolsa e passam de mais de R$ 400 para centavos em cinco anos",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:56:25.252396-03:00"
+    },
+    {
+      "title": "Ações da Casas Bahia desabam mais de 30% após prejuízo de R$ 10,1 bilhões",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T10:56:28.182059-03:00"
+    },
+    {
+      "title": "Leopold Aschenbrenner's Situational Awareness bet big on SanDisk and Micron before it blew up",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T10:56:34.098055-03:00"
     }
   ]
 }
