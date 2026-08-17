@@ -1,186 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Group including Jeff Bezos buys minority stake in Liverpool FC, with option to become controlling owner",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:41:48.349420-03:00"
-    },
-    {
-      "title": "Flávio tenta marcar distância do governo do pai em pontos do programa",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "Notícia sobre política não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:49:34.493705-03:00"
-    },
-    {
-      "title": "Lula diz que só vai dar aval a embaixador dos EUA após eleição e que falará com Trump",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "noticia politica sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:49:38.027677-03:00"
-    },
-    {
-      "title": "Lula diz que Lulinha será punido se for culpado: ‘Só ele sabe a verdade, eu não sei’",
-      "source": "InfoMoney",
-      "score": 1.0,
-      "motivo": "noticia sobre crime e justiça criminal, sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:49:41.335768-03:00"
-    },
-    {
-      "title": "EUA pedem à UE que flexibilize leis de sustentabilidade corporativa",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "flexibilização de leis de sustentabilidade pode afetar negativamente a competitividade das empresas europeias",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:49:47.653876-03:00"
-    },
-    {
-      "title": "Alphavalue eleva recomendação da ACS com crescimento da Turner e acordo com Thiess",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "Elevação da recomendação da ACS após anúncios positivos",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:49:50.915641-03:00"
-    },
-    {
-      "title": "Grandes bancos do Brasil recuam em empréstimos de maior risco",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "recuo em empréstimos de maior risco pode afetar a saúde financeira dos bancos e impactar o mercado de crédito",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:49:54.198946-03:00"
-    },
-    {
-      "title": "'2DIE4: 24 Horas no Limite' ganha data de estreia no streaming; veja onde assistir",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:49:58.827137-03:00"
-    },
-    {
-      "title": "Brazil Potash Corp. GAAP EPS of -$0.09",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:50:02.298027-03:00"
-    },
-    {
-      "title": "Blackboxstocks GAAP EPS of -$0.59",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:50:05.386457-03:00"
-    },
-    {
-      "title": "Stock Market Midday, Aug. 14: Stocks Wobble on Falling Consumer Confidence, Reddit Jumps 14%",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T13:50:11.338381-03:00"
-    },
-    {
-      "title": "Aehr Test Systems' CEO Sells Shares Worth $5.2 Million After a 564% Rally in Price. Here's a Closer Look at the Transaction.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:50:14.491128-03:00"
-    },
-    {
-      "title": "2 Stocks That Could Double by 2030",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T13:50:17.589301-03:00"
-    },
-    {
-      "title": "Uber and Pony.ai plan to bring 2,000 robotaxis to Europe",
-      "source": "TechCrunch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:50:28.231708-03:00"
-    },
-    {
-      "title": "MIT researchers find AI chatbots give women more conservative financial advice, costing them $60,000 by age 60",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:50:31.594155-03:00"
-    },
-    {
-      "title": "Liquidação da Simpala: FGC estima R$ 622 milhões em garantias a credores",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A liquidação da Simpala pode afetar a confiança dos investidores no mercado e causar perdas para os credores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T13:55:48.960031-03:00"
-    },
-    {
-      "title": "Em junho, vendas no varejo crescem 0,5%",
-      "source": "IBGE",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:55:52.546509-03:00"
-    },
-    {
-      "title": "Ibovespa sob pressão: analista aponta os gatilhos que podem trazer estrangeiros de volta",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "saída de capital estrangeiro e incertezas geopolíticas podem afetar o Ibovespa",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T13:55:55.940899-03:00"
-    },
-    {
-      "title": "Foo Fighters em Belo Horizonte: ingressos custam a partir de R$ 280; veja como comprar",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:56:00.855845-03:00"
-    },
-    {
-      "title": "Libertadores entra na reta decisiva com chaveamento até a final: veja os duelos",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T13:56:03.553267-03:00"
-    },
-    {
       "title": "Anglo American reaches iron ore supply deal with China’s state buyer",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17819,186 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T06:55:26.969302-03:00"
+    },
+    {
+      "title": "Ascend Sport Said to Mull Listing in Up to $740 Million Merger",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:01:30.672932-03:00"
+    },
+    {
+      "title": "DeepSeek Won't Sink U.S. AI Titans",
+      "source": "WSJ Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:01:33.881630-03:00"
+    },
+    {
+      "title": "Apesar de ter vendido ativos da Luggo, MRV acredita na locação no longo prazo",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:01:37.258861-03:00"
+    },
+    {
+      "title": "Mão de obra em queda, Reforma Tributária e a visão do CEO da MRV para o setor",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:01:39.848482-03:00"
+    },
+    {
+      "title": "Valores de equipamentos usados permanecem estáveis em julho, diz BofA",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:01:44.799481-03:00"
+    },
+    {
+      "title": "Por que as ações da SentinelOne estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:01:47.373646-03:00"
+    },
+    {
+      "title": "Berenberg eleva Mobileye para compra após queda excessiva com saída do CEO",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:01:49.952948-03:00"
+    },
+    {
+      "title": "Bank of America lança rastreador de IA com Claude liderando ranking",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:01:52.527435-03:00"
+    },
+    {
+      "title": "Remessas de sistemas de armazenamento de energia da China superam 100 GWh em junho pela primeira vez",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:01:55.105571-03:00"
+    },
+    {
+      "title": "Absolute e Unity ampliam fatia na CVC. “Apex é só mais um acionista”",
+      "source": "Brazil Journal",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:01:57.910136-03:00"
+    },
+    {
+      "title": "reAlpha Tech GAAP EPS of -$0.57, revenue of $1.11M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:02:00.933965-03:00"
+    },
+    {
+      "title": "Casas Bahia tem prejuízo de R$ 10,1 bilhões e faz ajustes em seu plano de reestruturação",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:02:11.762087-03:00"
+    },
+    {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures waver ahead of retail earnings",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:02:14.568113-03:00"
+    },
+    {
+      "title": "HELOC and home equity loan rates today, Monday, August 17, 2026: A 19-basis-point differential",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:02:17.142250-03:00"
+    },
+    {
+      "title": "Mortgage and refinance rates today, Monday, August 17, 2026: Purchase rates currently lower than refi rates",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:02:19.721051-03:00"
+    },
+    {
+      "title": "Best CD rates today, Monday, August 17, 2026: Lock in up to 4.30% APY",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:02:22.305639-03:00"
+    },
+    {
+      "title": "Best high-yield savings interest rates today, Monday, August 17, 2026: Earn up to 4.15% APY",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T07:02:24.938931-03:00"
+    },
+    {
+      "title": "Retailers face a big challenge this fall: figure out what 'value' means for shoppers",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:02:27.752545-03:00"
+    },
+    {
+      "title": "Anthropic revenue reportedly jumps to more than $11.5 billion in second quarter",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:02:30.679867-03:00"
+    },
+    {
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T07:02:33.800360-03:00"
     }
   ]
 }
