@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Markets just flipped the script on Kevin Warsh's Fed: Chart of the Day",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "As declarações de Warsh sobre a política monetária do Fed tiveram um impacto significativo nos mercados.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T10:11:22.237298-03:00"
-    },
-    {
-      "title": "I tried Ina Garten's penne alla vodka. It's one of the best pasta dishes I've ever made.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:11:25.295338-03:00"
-    },
-    {
-      "title": "‘Outlier’ S&P 500 Earnings Strength Cheers Wall Street’s Bulls",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "motivo": "A notícia destaca a força dos lucros da S&P 500, o que é altamente relevante para o mercado de ações.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T10:15:42.813549-03:00"
-    },
-    {
-      "title": "Seu cérebro te sabota? Estudo explica por que insistimos nas mesmas escolhas",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:15:54.009048-03:00"
-    },
-    {
-      "title": "Every fusion startup that has raised over $100M",
-      "source": "TechCrunch",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta impacto direto no mercado financeiro imediato.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:16:06.710700-03:00"
-    },
-    {
-      "title": "We moved abroad when our kids were 5 and 7. Keeping them close to their grandparents became a priority.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:16:10.354871-03:00"
-    },
-    {
-      "title": "AI’s costly build-out complicates the Fed’s inflation fight",
-      "source": "CNBC - Economy",
-      "score": 6.0,
-      "motivo": "A notícia destaca a possibilidade de inflação gerada pela expansão dos centros de dados e pela adoção lenta das empresas em inteligência artificial, o que é relevante para a economia e a política monetária",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T10:20:38.822567-03:00"
-    },
-    {
       "title": "Mansão e 100 mil euros por mês: o suposto acordo de Cristiano Ronaldo e Georgina",
       "source": "InfoMoney",
       "score": 0.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T14:41:50.452268-03:00"
+    },
+    {
+      "title": "Plano de Tarcísio prevê obra em periferias, escolas cívico-militares e crédito a mães",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:45:36.043098-03:00"
+    },
+    {
+      "title": "CEO da Nvidia: 'todo mundo deveria usar esse tipo de IA – é grátis e pode te ensinar qualquer coisa'",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T14:45:41.642849-03:00"
+    },
+    {
+      "title": "Do streaming aos festivais: Sony Music amplia parceria com Rock in Rio e assume palco Supernova",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:45:44.355083-03:00"
+    },
+    {
+      "title": "Automotive Properties Real Estate Investment Trust declares CAD 0.0699 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:45:47.387006-03:00"
+    },
+    {
+      "title": "Klarna Q2 2026 Earnings Preview",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:45:50.056834-03:00"
+    },
+    {
+      "title": "Plaza Retail REIT declares CAD 0.0233 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:45:52.717660-03:00"
+    },
+    {
+      "title": "Banco do Brasil (BBAS3) acende alerta: é hora de investir nas ações?",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T14:46:00.816726-03:00"
     }
   ]
 }
