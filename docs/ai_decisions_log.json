@@ -1,204 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Nvidia is becoming the 'Federal Reserve of AI'",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A notícia destaca a influência crescente da Nvidia no desenvolvimento de inteligência artificial, o que pode ter um impacto significativo no mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T08:30:53.429257-03:00"
-    },
-    {
-      "title": "Sem salão e com menos custos: “cozinhas invisíveis” crescem com boom do delivery",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "O crescimento das cozinhas invisíveis pode impulsionar a demanda por serviços de delivery e afetar positivamente a economia da gastronomia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:35:48.749299-03:00"
-    },
-    {
-      "title": "Plano de Flávio não menciona Petrobras, e Lula cita estatal 11 vezes",
-      "source": "Investing.com Brasil",
-      "score": 2.0,
-      "motivo": "A notícia não menciona impactos diretos no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:35:53.630871-03:00"
-    },
-    {
-      "title": "Amapá produzirá petróleo em até 7 anos, diz presidente da Petrobras",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A noticia menciona a produção de petróleo, um setor relevante para a economia brasileira e global.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T08:35:56.357208-03:00"
-    },
-    {
-      "title": "Como aumentar o valor do próprio serviço — e cobrar mais por ele",
-      "source": "Seu Dinheiro",
-      "score": 5.0,
-      "motivo": "Aumento de faturamento pode afetar positivamente as ações de empresas que já têm um negócio estruturado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T08:36:06.207953-03:00"
-    },
-    {
-      "title": "Why a new Western training program for Ukrainian soldiers skips drone piloting and electronic warfare lessons",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:36:11.597272-03:00"
-    },
-    {
-      "title": "Lula inicia campanha onde iniciou trajetória política e vê queda em vantagem sobre Flávio",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "noticia politica sem impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:41:24.804890-03:00"
-    },
-    {
-      "title": "AMD, Intel and NVIDIA All Rally as Super Micro’s Blowout Numbers Reignite the AI Trade",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque reacende a especulação sobre o comércio de IA, que pode ter um impacto significativo no mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:50:48.538555-03:00"
-    },
-    {
-      "title": "M&A em software esquenta: quais ações de SaaS podem ser as próximas?",
-      "source": "Investing.com Brasil",
-      "score": 6.0,
-      "motivo": "A noticia destaca a tendencia de M&A no setor de software, o que pode impulsionar as acoes de empresas de SaaS.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:55:45.652526-03:00"
-    },
-    {
-      "title": "Bolsa da Coreia do Sul e semicondutores estão em uma bolha? Citi responde",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "A notícia sugere que a bolsa da Coreia do Sul e o setor de semicondutores podem estar em uma bolha, o que pode ter um impacto significativo no mercado",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T08:55:51.880714-03:00"
-    },
-    {
-      "title": "Destaques de análise de Wall Street da semana",
-      "source": "Investing.com Brasil",
-      "score": 3.0,
-      "motivo": "análise de mercado rotineira da Wall Street",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T08:55:54.569280-03:00"
-    },
-    {
-      "title": "Inelegível, Marçal registra candidatura à Presidência e declara patrimônio de R$ 7 bi",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:01:02.289161-03:00"
-    },
-    {
-      "title": "Sem salão e com menos custos: “cozinhas invisíveis” crescem com boom do delivery",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "A notícia destaca a crescente popularidade do delivery, o que pode ser benéfico para empresas de alimentos que investem em espaços de produção e venda sem salão.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:05:46.614919-03:00"
-    },
-    {
-      "title": "The Mediterranean diet is the best out there. Here’s why Americans struggle with it.",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:05:52.434214-03:00"
-    },
-    {
-      "title": "Nvidia scales back OpenAI data-center guarantee to less than $120B, WSJ reports",
-      "source": "Seeking Alpha",
-      "score": 6.0,
-      "motivo": "A redução da garantia de centro de dados da OpenAI é relevante para o mercado pois pode afetar a demanda por GPUs da Nvidia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T09:05:55.431592-03:00"
-    },
-    {
-      "title": "This critical Social Security rule permanently changes in November — with less than 90 days to prepare. Are you ready?",
-      "source": "Yahoo Finance",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, economia ou negócios.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:06:08.008826-03:00"
-    },
-    {
-      "title": "What To Expect From El Niño And La Niña?",
-      "source": "ZeroHedge",
-      "score": 2.0,
-      "motivo": "A notícia não é direta ou imediata para o mercado financeiro, mas pode ter impacto a longo prazo em setores relacionados à agricultura e infraestrutura.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:06:11.934985-03:00"
-    },
-    {
-      "title": "Why Private Equity’s Playbook Is Losing to Public Markets",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A mudança no mercado dificulta para os fundos de Private Equity justificar os buyouts financiados por dívida.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T09:10:39.240473-03:00"
-    },
-    {
-      "title": "Bonds Face a Bigger Threat Than the Fed as Global Rates Climb",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca a possibilidade de aumento das taxas de juros globais, o que pode afetar negativamente os títulos de dívida.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T09:10:42.157943-03:00"
-    },
-    {
-      "title": "Startup cria IA que cruza exames laboratoriais e genéticos e mira faturamento de R$ 8 milhões",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:10:47.299316-03:00"
-    },
-    {
-      "title": "Burger King virou o jogo contra o McDonald’s com a ajuda do Whopper",
-      "source": "Exame",
-      "score": 5.0,
-      "motivo": "Aumento de 8,5% da Burger King nos EUA supera o crescimento de 0,8% da McDonald's, indicando vantagem competitiva",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:10:50.110497-03:00"
-    },
-    {
-      "title": "Billionaire Peter Thiel buys 1% interest in Argentina’s Vista Energy",
-      "source": "Seeking Alpha",
-      "score": 5.0,
-      "motivo": "A compra de uma empresa de energia da Argentina por um investidor de renome pode indicar confiança no setor e no país.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T09:10:53.270885-03:00"
-    },
-    {
       "title": "Trending stocks this week as earnings and inflation shape Wall Street",
       "source": "Seeking Alpha",
       "score": 5.0,
@@ -17999,6 +17801,204 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T18:12:08.133977-03:00"
+    },
+    {
+      "title": "Nasdaq inicia diálogos para operar 24 horas por dia cinco vezes na semana",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:24:37.666630-03:00"
+    },
+    {
+      "title": "Lula e Alcolumbre trocam afagos e defendem exploração de petróleo na Foz do Amazonas",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:24:42.371385-03:00"
+    },
+    {
+      "title": "Oxxo quer transformar pão de queijo em símbolo da marca no Brasil",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:24:45.065713-03:00"
+    },
+    {
+      "title": "Quem vai cair no Brasileirão 2026? Veja a probabilidade de rebaixamento de cada time",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:24:47.807271-03:00"
+    },
+    {
+      "title": "There’s a 49% chance the Dow will finish this year up double digits. Here’s why.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:24:50.633623-03:00"
+    },
+    {
+      "title": "The number of ‘negative-beta’ stocks in the S&P 500 just hit a new record high. What that means for investors.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:24:53.400174-03:00"
+    },
+    {
+      "title": "Kulicke and Soffa Industries appoints Raj Talluri as CEO, Lester Wong to resume CFO role",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:24:56.168985-03:00"
+    },
+    {
+      "title": "Swiss Water announces share buyback program",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:24:58.824380-03:00"
+    },
+    {
+      "title": "Parsons's unit wins $664.8M multi-year Army technical, logistics support contract",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:01.530986-03:00"
+    },
+    {
+      "title": "CVS Health adds JPMorgan Chase exec to board",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:25:04.209763-03:00"
+    },
+    {
+      "title": "Yalla Non-GAAP EPS of $0.24, revenue of $82.6M beats by $3.52M",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:06.934219-03:00"
+    },
+    {
+      "title": "Ballys is Now Oversold (BALY)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:12.147993-03:00"
+    },
+    {
+      "title": "BellRing Brands Becomes Oversold (BRBR)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:14.796461-03:00"
+    },
+    {
+      "title": "Oversold Conditions For Boston Omaha (BOC)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:17.451058-03:00"
+    },
+    {
+      "title": "Cms Energy Enters Oversold Territory (CMSC)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:20.106419-03:00"
+    },
+    {
+      "title": "iShares 25+ Year Treasury STRIPS Bond (GOVZ) Enters Oversold Territory",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:25:22.806667-03:00"
+    },
+    {
+      "title": "Relative Strength Alert For Dte Energy",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:25.457772-03:00"
+    },
+    {
+      "title": "PUMP Makes Bullish Cross Above Critical Moving Average",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:25:28.135785-03:00"
+    },
+    {
+      "title": "3 Magnificent High-Yield Dividend Stocks to Buy That Are Near 52-Week Lows",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:36.101398-03:00"
+    },
+    {
+      "title": "'A serious mistake': Moody's Analytics economist says the Fed is putting the economy at risk with its silence",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:38.865365-03:00"
+    },
+    {
+      "title": "Greg Abel Starts Spending: Berkshire’s Cash Hoard Finally Gets Put to Work",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:41.569199-03:00"
+    },
+    {
+      "title": "Vivian Tu says investors carrying credit card debt need to stop and pay it off first. The math says she's right",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:25:44.347869-03:00"
     }
   ]
 }
