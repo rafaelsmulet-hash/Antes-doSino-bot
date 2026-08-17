@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "S&P financial index eyes record 11th straight weekly gain: Here are its top 10 holdings",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:51:05.705193-03:00"
-    },
-    {
-      "title": "Wall Street drifts lower a day after the S&P 500 notched a record high",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:51:08.340706-03:00"
-    },
-    {
       "title": "Esqueça o remédio, a nova aposta das farmácias de luxo de São Paulo é vender beleza",
       "source": "Seu Dinheiro",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T21:15:42.188165-03:00"
+    },
+    {
+      "title": "“Eu não li”, diz Kalil sobre o próprio plano de governo durante debate em MG",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "noticia politica sem relevancia para o mercado financeiro",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:20:34.740750-03:00"
+    },
+    {
+      "title": "I left my desk job to take over my grandparents' Wagyu farm in rural Japan. It changed how I define success.",
+      "source": "Business Insider",
+      "score": 0.0,
+      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia.",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:20:46.009802-03:00"
     }
   ]
 }
