@@ -1,42 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A tokenização precisa ir além da vitrine do negócio",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia aborda o desenvolvimento do crédito privado, o que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T10:05:55.307757-03:00"
-    },
-    {
-      "title": "A briga de família que colocou a Argentina no mapa do vinho",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T10:05:58.004425-03:00"
-    },
-    {
-      "title": "Aos 16 anos, ele assumiu o restaurante do pai. Hoje vende 200 mil esfihas por mês e prepara expansão",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T10:06:00.715753-03:00"
-    },
-    {
-      "title": "Upcoming Dividend Run For NWL?",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A notícia é relevante porque menciona a possibilidade de aumento nos dividendos da empresa, o que é um fator importante para os investidores.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T10:06:07.233673-03:00"
-    },
-    {
       "title": "Upcoming Dividend Run For CPF?",
       "source": "Nasdaq",
       "score": 6.0,
@@ -17999,6 +17963,42 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T18:37:08.330834-03:00"
+    },
+    {
+      "title": "Gold gains as dollar moves lower on reduced bets for Fed rate hike",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:40:54.528194-03:00"
+    },
+    {
+      "title": "Agência rebaixa Braskem, em inadimplência restrita após atrasar juros",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T18:41:03.002327-03:00"
+    },
+    {
+      "title": "AMD Turned $10,000 Into More Than $700,000 in a Decade. The S&P 500 Turned It Into About $42,000.",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:41:09.035796-03:00"
+    },
+    {
+      "title": "L3Harris ousts CEO Chris Kubasik over unspecified 'conduct,' stock drops 4%",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T18:41:12.154386-03:00"
     }
   ]
 }
