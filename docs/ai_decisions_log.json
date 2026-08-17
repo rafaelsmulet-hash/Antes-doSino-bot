@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Esqueça o remédio, a nova aposta das farmácias de luxo de São Paulo é vender beleza",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:51:14.212750-03:00"
-    },
-    {
       "title": "A bomba-relógio do crédito que pode desacelerar o Brasil",
       "source": "Neofeed",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T21:20:46.009802-03:00"
+    },
+    {
+      "title": "UE planeja pacote de sanções mais abrangente contra a Rússia nos próximos meses",
+      "source": "Investing.com Brasil",
+      "score": 8.0,
+      "motivo": "Aumento de tensão geopolítica pode afetar negativamente os mercados financeiros.",
+      "decisao_sugerida": "breaking",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:25:42.581728-03:00"
     }
   ]
 }
