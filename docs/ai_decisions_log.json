@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Opinião: É hora da reciclagem brasileira sair da retórica e entrar na governança",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A notícia não está relacionada diretamente ao mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:05:53.155827-03:00"
-    },
-    {
-      "title": "Eleições levam dólar ao maior valor em 4 meses, mas alta não deve ser linear, dizem analistas",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "A notícia menciona a pressão sobre o real e a volatilidade esperada, indicando que a alta do dólar pode não ser contínua.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:05:55.932032-03:00"
-    },
-    {
-      "title": "I stared deep into the heart of LinkedIn AI cringe slop. Darkness (and engagement) stared back.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "Não há relevância para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:06:06.500992-03:00"
-    },
-    {
-      "title": "Factory to front lines: A Western spy drone’s journey to war in Ukraine",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não tem relação direta com o mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:06:09.387537-03:00"
-    },
-    {
-      "title": "4 formas de descobrir quais informações os chatbots têm sobre você",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:10:43.777375-03:00"
-    },
-    {
-      "title": "Jim Cramer Wondered Whether Sandisk Is No Longer Cyclical & Expected Western Digital To Raise Guidance More",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia pode influenciar a percepção dos investidores sobre as empresas de tecnologia e suas perspectivas de crescimento",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:10:53.994733-03:00"
-    },
-    {
-      "title": "Jim Cramer Wonders Whether AppLovin Corporation (NASDAQ:APP) Is Facing Off With Google",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante pois envolve uma disputa entre uma empresa de tecnologia e uma das maiores empresas do mundo, o que pode ter impacto no preço das ações da AppLovin Corporation.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:10:56.943134-03:00"
-    },
-    {
-      "title": "China’s Credit Growth Exceeds Forecasts Despite Rare Loan Slump",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "O crescimento do crédito é um indicador importante da saúde econômica da China.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:10:59.791104-03:00"
-    },
-    {
-      "title": "Jim Cramer Explains Datadog, Inc. (NASDAQ:DDOG)’s Share Price Movement",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o preço das ações da Datadog, Inc.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:11:02.639868-03:00"
-    },
-    {
-      "title": "Jim Cramer Used Expedia To Go Against The Trend For This Major Company",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque Jim Cramer é um investidor conhecido e sua opinião pode influenciar o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:11:05.671505-03:00"
-    },
-    {
-      "title": "Jim Cramer Admitted ‘Trimming’ Palo Alto & CrowdStrike Holdings For His Charitable Trust",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A declaração de Cramer sobre a redução de suas ações pode influenciar a percepção dos investidores sobre essas empresas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:11:08.533420-03:00"
-    },
-    {
-      "title": "Jim Cramer Said T-Mobile US Inc. (NASDAQ:TMUS)’s Shares Reflected A Fear Of The Future",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não traz informações concretas sobre o desempenho futuro da empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:11:11.353999-03:00"
-    },
-    {
-      "title": "O que está por trás da queda de mais de 1% do Ibovespa nesta sexta-feira (14)",
-      "source": "Money Times",
-      "score": 6.0,
-      "motivo": "queda consecutiva do Ibovespa com saída de investidores estrangeiros",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:16:00.279390-03:00"
-    },
-    {
-      "title": "Novo ‘Judas’? Arsenal mira capitão do Tottenham e reabre ferida no futebol inglês",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:16:05.311007-03:00"
-    },
-    {
-      "title": "O cachorro de ‘O Fim da Rua’ morre? Anne Hathaway fala sobre polêmica",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A notícia é sobre entretenimento e não tem relação com o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:16:08.327313-03:00"
-    },
-    {
-      "title": "Jim Cramer Discussed Costco Wholesale Corporation (NASDAQ:COST) & Forecast Bumps",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Previsões de um analista influente foram ajustadas, o que pode influenciar a percepção do mercado sobre a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:16:19.747382-03:00"
-    },
-    {
-      "title": "Everyone Thinks Crypto Is Over. Here's Why They're Wrong.",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A percepção de que a criptomoeda é de baixo risco pode atrair investidores e impulsionar seu crescimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:16:22.794877-03:00"
-    },
-    {
-      "title": "Applied Materials slips as investors seek faster growth after stellar run",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta a percepção dos investidores sobre o crescimento futuro da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T07:21:18.124428-03:00"
-    },
-    {
       "title": "Is CF Industries’ (CF) Earnings Boom Built To Last Without Iran?",
       "source": "Yahoo Finance",
       "score": 6.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T13:11:27.937682-03:00"
+    },
+    {
+      "title": "Vibra vê espaço para ampliar volumes e margens com estratégia e combate à ilegalidade",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:15:37.962641-03:00"
+    },
+    {
+      "title": "Portugal - Ações fecharam o pregão em queda e o Índice PSI recuou 0,38%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:15:42.056843-03:00"
+    },
+    {
+      "title": "Holanda - Ações fecharam o pregão em queda e o Índice AEX recuou 0,27%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:15:44.771773-03:00"
+    },
+    {
+      "title": "Itália - Ações fecharam o pregão em queda e o Índice Investing.com Itália 40 recuou 0,01%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:15:47.444019-03:00"
+    },
+    {
+      "title": "Alemanha - Ações fecharam o pregão em queda e o Índice DAX recuou 0,27%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:15:50.103476-03:00"
+    },
+    {
+      "title": "França - Ações fecharam o pregão em queda e o Índice CAC 40 recuou 0,66%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:15:52.763170-03:00"
+    },
+    {
+      "title": "Bélgica - Ações fecharam o pregão em alta e o Índice BEL 20 avançou 1,73%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:15:55.422611-03:00"
+    },
+    {
+      "title": "Suécia - Ações fecharam o pregão em queda e o Índice OMX Stockholm 30 recuou 0,25%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:15:58.084106-03:00"
+    },
+    {
+      "title": "General Atlantic retoma planos de IPO com JPMorgan e Goldman Sachs",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:16:00.736486-03:00"
+    },
+    {
+      "title": "Finlândia - Ações fecharam o pregão em alta e o Índice OMX Helsinki 25 avançou 0,48%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:16:03.412932-03:00"
+    },
+    {
+      "title": "Goldilocks market setup looked increasingly fragile, Deutsche Bank says",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:16:06.619361-03:00"
+    },
+    {
+      "title": "Allied Properties Real Estate Investment Trust declares CAD 0.06 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:16:09.280734-03:00"
+    },
+    {
+      "title": "Estrangeiros retiram R$ 15,6 bilhões da Bolsa em agosto, maior saída desde 2022",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:16:18.364092-03:00"
+    },
+    {
+      "title": "Galípolo defende juros altos para conter aumento da demanda doméstica",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:16:21.895956-03:00"
+    },
+    {
+      "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:16:26.945834-03:00"
+    },
+    {
+      "title": "Stock Market Today: Dow Falls After Trump Oman Threat; Homebuilders Decline Despite This Data (Live Coverage)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:16:30.166960-03:00"
+    },
+    {
+      "title": "Tom Lee’s Bitmine Buys Another $19 Million in Ethereum as Stash Nears 5% of Total Supply",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:16:32.837094-03:00"
+    },
+    {
+      "title": "Russia targets Danube port after one of Ukraine’s largest aerial attacks of the war",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:16:35.968412-03:00"
     }
   ]
 }
