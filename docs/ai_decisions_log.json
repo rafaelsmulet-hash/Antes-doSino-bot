@@ -1,114 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Taco Bell's former boss says McDonald's is making a mistake with its new RedBull drink",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T16:55:54.750726-03:00"
-    },
-    {
-      "title": "Furacão avança sobre Havaí e pode atingir ilha diretamente pela 1ª vez na história",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:05:39.114182-03:00"
-    },
-    {
-      "title": "EUA anunciam mais US$ 11 milhões em ajuda à Colômbia após terremoto",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "ajuda humanitária não afeta diretamente o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:05:41.914099-03:00"
-    },
-    {
-      "title": "Nvidia considera investimento de US$ 3 bilhões na SB Energy para data center de IA em Ohio",
-      "source": "Investing.com Brasil",
-      "score": 8.0,
-      "motivo": "investimento significativo em data center de IA pode impulsionar crescimento da Nvidia",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T17:16:09.934520-03:00"
-    },
-    {
-      "title": "Anthropic says its AI agents are killing rivals and hiding their tracks",
-      "source": "Business Insider",
-      "score": 2.0,
-      "motivo": "A notícia não é diretamente relevante para o mercado financeiro, mas pode ter implicações futuras para a indústria de tecnologia e inteligência artificial.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:16:23.350475-03:00"
-    },
-    {
-      "title": "3 of Bill Ackman's New Stock Picks Are Interesting: S&P Global Trades 28% Below Its High While Visa and Mastercard Sit Near Theirs",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "A perspectiva de investimento de Bill Ackman é relevante para o mercado, pois suas escolhas de ações podem influenciar os preços das ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T17:20:56.918060-03:00"
-    },
-    {
-      "title": "Nebius Just Gave Bloom Energy a Big Boost. What It Means for BE Stock.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A ação da Bloom Energy recebeu um impulso significativo, o que pode afetar o preço da ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:21:05.780657-03:00"
-    },
-    {
-      "title": "Buying Bonds Could Be the Single Most Important Investing Decision You Make for 10 Years",
-      "source": "Yahoo Finance",
-      "score": 8.0,
-      "motivo": "A decisão de comprar títulos pode ter um impacto significativo no patrimônio do investidor a longo prazo.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T17:21:12.344837-03:00"
-    },
-    {
-      "title": "Honda lança Biz Kuromi, edição especial inspirada em personagem da Sanrio",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "A noticia nao e relevante para o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:25:44.968543-03:00"
-    },
-    {
-      "title": "US$ 17 bilhões em ações do Google: o que Buffett está comprando na bolsa em 2026",
-      "source": "Exame",
-      "score": 6.0,
-      "motivo": "Warren Buffett aumentou sua exposição ao Google, tornando-o a terceira maior posição em ações do conglomerado, o que é considerado positivo para o mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T17:25:47.865839-03:00"
-    },
-    {
-      "title": "Herança de Silvio Santos: o que patrimônio de Silvia Abravanel diz sobre disputa?",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A notícia é sobre a herança de Silvio Santos, mas não há informações concretas sobre impacto no mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:35:46.161012-03:00"
-    },
-    {
-      "title": "Governo lança curso gratuito de IA para mulheres empreendedoras com premiação em dinheiro; como se inscrever?",
-      "source": "Seu Dinheiro",
-      "score": 0.0,
-      "motivo": "não há relação direta com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:35:56.743370-03:00"
-    },
-    {
       "title": "Rage Politics: Hakeem Jeffries Will Take A Baseball Bat To The Supreme Court",
       "source": "ZeroHedge",
       "score": 0.0,
@@ -17999,6 +17891,114 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-17T16:56:11.942353-03:00"
+    },
+    {
+      "title": "Levered ETFs Are New Way To Measure Sentiment: Sohn",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:00:47.220420-03:00"
+    },
+    {
+      "title": "What's New This Tax Season That Can Save You Money",
+      "source": "WSJ Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:00:50.556597-03:00"
+    },
+    {
+      "title": "Tesouro Direto: taxas recuam em dia de dado econômico fraco e real mais forte",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:00:53.497248-03:00"
+    },
+    {
+      "title": "Pilotos e comissários enfrentam maior risco de câncer por exposição à radiação",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:00:57.938374-03:00"
+    },
+    {
+      "title": "Quant ratings on Soros Fund Management's top holdings: SUNB, AMZN, NVDA",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:01:00.785019-03:00"
+    },
+    {
+      "title": "Tesla advances testing of its Cybercab robotaxi model",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:01:03.459233-03:00"
+    },
+    {
+      "title": "Anthropic's annual revenue run rate tops $65B: report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:01:06.122023-03:00"
+    },
+    {
+      "title": "Bitcoin eyes breakout as 6-week symmetrical triangle narrows",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:01:08.798190-03:00"
+    },
+    {
+      "title": "Petrobras detalha descoberta de petróleo ou gás na Foz do Amazonas",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:01:16.149519-03:00"
+    },
+    {
+      "title": "Dona do TikTok assina acordo sobre direitos autorais de IA com grupo de Hollywood",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:01:18.864966-03:00"
+    },
+    {
+      "title": "David Ellison's Paramount wants its WBD merger challengers to put up nearly $1.9 billion",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:01:24.329612-03:00"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:01:27.632138-03:00"
     }
   ]
 }
