@@ -1,69 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Ferragosto, o feriado italiano que transformou o “dolce far niente” em um negócio bilionário",
-      "source": "Neofeed",
-      "score": 0.0,
-      "motivo": "não há relação com mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:06:21.644650-03:00"
-    },
-    {
-      "title": "American Water Works Stock: Is Wall Street Bullish or Bearish?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque discute a perspectiva de crescimento da empresa, o que pode influenciar a decisão de investir na ação.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:06:24.709925-03:00"
-    },
-    {
-      "title": "Google Gemini AI Predicts Bitcoin Price by the End of 2026",
-      "source": "Yahoo Finance",
-      "score": 2.0,
-      "motivo": "A notícia não apresenta informações concretas sobre o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:06:27.581930-03:00"
-    },
-    {
-      "title": "Planta carnívora confirma hipótese de Charles Darwin após 150 anos",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não está relacionada ao mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:11:09.656715-03:00"
-    },
-    {
-      "title": "Prefeitura de SP libera mais R$ 200 milhões para retrofits no Centro; 50 prédios já estão em reforma",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "A notícia se refere a um programa de retrofits em prédios do Centro de SP, mas não há informações sobre impacto direto no mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:11:12.553855-03:00"
-    },
-    {
-      "title": "My husband and I are about to be empty nesters. To reconnect, we took a trip together, but it was awkward at first.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:11:25.092338-03:00"
-    },
-    {
-      "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
-      "source": "Federal Reserve",
-      "score": 8.0,
-      "motivo": "A publicação das minutas da Comissão de Mercado Aberto Federal é um evento importante para o mercado financeiro, pois fornece informações sobre as decisões e discussões da Fed, influenciando as expectativas de juros e taxas de câmbio.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T08:11:28.740112-03:00"
-    },
-    {
       "title": "Cientistas encontram colágeno em fóssil de dinossauro de 66 milhões de anos",
       "source": "Exame",
       "score": 0.0,
@@ -17999,6 +17936,69 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T13:31:53.343016-03:00"
+    },
+    {
+      "title": "Microsoft-Tied ‘Project Odyssey’ Bond Lures Buyers at Junk Yield",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T13:36:08.384286-03:00"
+    },
+    {
+      "title": "Hydro-Quebec Reaches $36 Billion Energy Deal With Newfoundland",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:36:11.029488-03:00"
+    },
+    {
+      "title": "BTIG highlights the unusual absence of broad selling pressure in 2026",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:36:16.562714-03:00"
+    },
+    {
+      "title": "Generation Income Properties reports Q2 results",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:36:19.209640-03:00"
+    },
+    {
+      "title": "Peyto Exploration & Development declares CAD 0.12 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:36:21.855912-03:00"
+    },
+    {
+      "title": "Warren Buffett's Berkshire raises stake in world's largest airline",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:36:30.862527-03:00"
+    },
+    {
+      "title": "Oil Profits Have More Than Doubled. Here’s What Trump Escalating the Iran War Could Mean for XOM and CVX",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T13:36:33.566934-03:00"
     }
   ]
 }
