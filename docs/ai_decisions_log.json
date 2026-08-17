@@ -1,213 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Americas Gold and Silver (USAS) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma transcrição de chamada de resultados de uma empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:45:52.495046-03:00"
-    },
-    {
-      "title": "Sigma Lithium (SGML) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre uma transcrição de conferência de resultados de uma empresa.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:45:55.493341-03:00"
-    },
-    {
-      "title": "OpenAI hires new CRO as executive shake-up continues",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:46:05.398532-03:00"
-    },
-    {
-      "title": "Arcos Dorados Holdings Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:46:08.079274-03:00"
-    },
-    {
-      "title": "Terrestrial Energy’s Lifetime Revenue Up 29%, Advancing in Texas A&M, DOE Fuel Program – Quarterly Update Report",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:46:10.868277-03:00"
-    },
-    {
-      "title": "Brookfield Corporation Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:46:13.567345-03:00"
-    },
-    {
-      "title": "Aston Martin CEO on new luxury model, the Valen",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque apresenta um novo modelo de luxo da Aston Martin, o que pode afetar a demanda e a percepção da marca no mercado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T21:50:50.341887-03:00"
-    },
-    {
-      "title": "Super Micro Climbs 7% on Record Backlog, Dell and Hewlett Packard Enterprise Gain 3%",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque o aumento do backlog da Super Micro pode indicar uma demanda crescente por seus produtos, o que pode ser positivo para a empresa e o mercado de tecnologia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:51:03.333478-03:00"
-    },
-    {
-      "title": "Bit Digital, Inc. Q2 2026 Earnings Call Summary",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T21:51:06.005172-03:00"
-    },
-    {
-      "title": "Digi Power X (DGXX) Q2 2026 Earnings Call Transcript",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia é sobre uma ligação de chamada de resultados de uma empresa, o que não é relevante para o mercado financeiro em geral.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:00:50.217895-03:00"
-    },
-    {
-      "title": "Insider Sheds $2.9 Million Worth of Stock Following Option Exercise",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A venda de ações por um executivo não é um evento relevante para o mercado em geral",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:00:53.254065-03:00"
-    },
-    {
-      "title": "Quantinuum’s Cloud Deal With Oracle Sends Clear Message on Hybrid AI",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "O acordo pode impulsionar o crescimento do setor de tecnologia e afetar as ações de empresas que operam nesse nicho.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:01:01.317855-03:00"
-    },
-    {
-      "title": "Rising Fleet Costs? Data Has Answers",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "O estudo fornece dados concretos sobre os custos de frota, que podem ser relevantes para as empresas e investidores.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:01:04.316842-03:00"
-    },
-    {
-      "title": "Databricks raises $5 billion at $190 billion valuation in 2026",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque indica que a empresa está em uma posição financeiramente sólida e pode continuar a investir em seu negócio.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:01:07.355881-03:00"
-    },
-    {
-      "title": "UWM lost $603 million on rate bets — now Oaktree is extracting 10% a year for a $2.05 billion lifeline",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A perda significativa da UWM e o empréstimo com juros altos podem ter um impacto significativo no mercado de seguros de crédito e no setor financeiro em geral.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:01:10.530216-03:00"
-    },
-    {
-      "title": "Married Puts: The FOMO-Proof Way to Play OVV, ONON, and FCX’s Unusually Active Options",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:01:13.221899-03:00"
-    },
-    {
-      "title": "Anthropic IPO Value Could Beat SpaceX's Record: Report",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:01:16.174727-03:00"
-    },
-    {
-      "title": "CACR11: após meses de crise, FII vende CRI Helvetia por R$ 23,5 milhões",
-      "source": "Suno Noticias",
-      "score": 5.0,
-      "motivo": "Venda de ativo por preço significativo, indicando recuperação da crise",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:06:05.378235-03:00"
-    },
-    {
-      "title": "What to Know as JPMorgan Ups Its Price Target on Microsoft Stock",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Aumento do alvo de preço da ação da Microsoft é um sinal de confiança da JPMorgan no desempenho da empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:11:01.214502-03:00"
-    },
-    {
-      "title": "What Trump's Latest Truth Social Lawsuit Means for DJT Stock",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A ação judicial pode gerar incerteza e impactar negativamente a ação DJT.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:11:04.159535-03:00"
-    },
-    {
-      "title": "Riot Platforms Sells 4,300 Bitcoin To Fund Operations",
-      "source": "Yahoo Finance",
-      "score": 3.0,
-      "motivo": "A venda de Bitcoin pela Riot Platforms pode afetar o preço do ativo no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:11:07.070528-03:00"
-    },
-    {
-      "title": "SpaceX Rockets 10% on Grok 4.6 Release. What SPCX Stock Needs to Make a Real Comeback.",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a ação da SpaceX, que é uma empresa de tecnologia e espaço.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:11:10.087784-03:00"
-    },
-    {
-      "title": "Ocugen (OCGN) Q2 2026 Earnings Call Transcript",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T22:11:12.725863-03:00"
-    },
-    {
       "title": "OPEC And IEA Each Took A Knife To 2026 Oil Demand Outlooks. How Bad Are They Really?",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17792,213 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T12:21:31.121712-03:00"
+    },
+    {
+      "title": "Alibaba & Macy's Rise, Snap Shares Tumble | Stock Movers",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:30:42.930814-03:00"
+    },
+    {
+      "title": "Goldman Margin Loan Eased Nashville College’s Liquidity Crunch",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:30:45.604635-03:00"
+    },
+    {
+      "title": "Oncoclínicas (ONCO3): ação sobe 18% mesmo após prejuízo saltar; analistas têm cautela",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:30:49.553859-03:00"
+    },
+    {
+      "title": "Morgan Stanley reduz previsões para o setor imobiliário da China",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:30:54.482623-03:00"
+    },
+    {
+      "title": "United Launch Alliance nomeia Mark Peller como novo CEO",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:30:57.145177-03:00"
+    },
+    {
+      "title": "Por que as ações da DraftKings estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:30:59.825887-03:00"
+    },
+    {
+      "title": "Por que as ações da Flutter Entertainment estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:02.484093-03:00"
+    },
+    {
+      "title": "Por que as ações da Runway Growth Finance estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:05.149731-03:00"
+    },
+    {
+      "title": "Por que as ações da Enovix estão despencando hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:07.799081-03:00"
+    },
+    {
+      "title": "Btig alerta investidores sobre fraqueza sazonal em ano eleitoral",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:10.476165-03:00"
+    },
+    {
+      "title": "Por que as ações da CuriosityStream caem 12% hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:13.133840-03:00"
+    },
+    {
+      "title": "Marrocos - Ações fecharam o pregão em alta e o Índice Moroccan All Shares avançou 0,08%",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:15.824030-03:00"
+    },
+    {
+      "title": "Shein mira avaliação de US$ 26-27 bilhões em IPO em Hong Kong",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:31:18.494774-03:00"
+    },
+    {
+      "title": "'Túmulo dos Vagalumes' volta aos cinemas nesta semana; veja onde assistir",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:21.670091-03:00"
+    },
+    {
+      "title": "General Atlantic revives prospects for an IPO - report",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T12:31:24.532686-03:00"
+    },
+    {
+      "title": "Russia-Ukraine war breaks stalemate on surging drone strikes",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:27.214313-03:00"
+    },
+    {
+      "title": "PAR Technology (PAR)Positioned for Long Growth Runway",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:39.478898-03:00"
+    },
+    {
+      "title": "Corvus Pharmaceuticals (CRVS): This Clinical-Stage Drugmaker Just Got A Lot More Interesting",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:42.167786-03:00"
+    },
+    {
+      "title": "The Numbers Behind Assured Guaranty’s (AGO) Record-Setting Quarter",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:44.841653-03:00"
+    },
+    {
+      "title": "GSK Eyes AnaptysBio (ANAB) Acquisition to Secure Drug Control",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:47.527903-03:00"
+    },
+    {
+      "title": "Here’s How Job Applicants Are Trying to Make Their Resumes Stand Out: ‘There’s No Way to Fight It’",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:50.228191-03:00"
+    },
+    {
+      "title": "Sell-Side Analysts Ignore Burford’s (BUR) Massively Lucrative Protein Cases",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:52.906971-03:00"
+    },
+    {
+      "title": "An interior designer with 27 years of experience shares 10 things he'd never have in his own home",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T12:31:55.896281-03:00"
     }
   ]
 }
