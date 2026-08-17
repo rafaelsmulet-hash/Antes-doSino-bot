@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "A bomba-relógio do crédito que pode desacelerar o Brasil",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:51:18.381972-03:00"
-    },
-    {
-      "title": "JPMorgan Chase: How To Limit Risk On A Stock That's Doing Well",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-14T12:51:21.077450-03:00"
-    },
-    {
       "title": "Morgan Stanley, JPMorgan Increase Crypto ETF Holdings in Q2",
       "source": "Yahoo Finance",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "breaking",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-16T21:25:42.581728-03:00"
+    },
+    {
+      "title": "Ato de Flávio Bolsonaro reúne 8,9 mil pessoas no Rio, estima USP/Cebrap",
+      "source": "InfoMoney",
+      "score": 0.0,
+      "motivo": "A noticia nao e sobre mercado financeiro, e a informacao sobre o evento e irrelevante para o mercado",
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:45:36.924623-03:00"
+    },
+    {
+      "title": "Synlait nega negociações de aquisição com Fonterra e a2 Milk",
+      "source": "Investing.com Brasil",
+      "score": 6.0,
+      "motivo": "negociação de aquisição é um evento significativo no mercado de ações",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:45:41.520326-03:00"
     }
   ]
 }
