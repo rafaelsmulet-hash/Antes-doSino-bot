@@ -1,33 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Jim Cramer Tells Caller to Average Down on Netflix (NFLX)",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "Jim Cramer é um investidor conhecido e seu conselho pode influenciar a percepção do mercado sobre a empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T12:11:04.233794-03:00"
-    },
-    {
-      "title": "Wendy’s Jumps on Report That Nelson Peltz Wants to Take His Old Company Private",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque pode afetar o preço das ações da Wendy's",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T12:11:07.058590-03:00"
-    },
-    {
-      "title": "Lotofácil: aposta simples de São Paulo fatura prêmio de R$ 1,7 milhão sozinho",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "aposta de loteria não afeta o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T12:20:42.348712-03:00"
-    },
-    {
       "title": "Neuroscience Is Becoming AbbVie's Quiet Powerhouse -- and Management Now Sees $12.7 Billion in Sales This Year",
       "source": "Nasdaq",
       "score": 5.0,
@@ -17999,6 +17972,33 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T19:31:08.525517-03:00"
+    },
+    {
+      "title": "'Controle o Paredes': Fifa revela conversa de árbitro com Messi na final da Copa",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T19:35:41.461765-03:00"
+    },
+    {
+      "title": "Stanley Druckenmiller’s Big Bet: New Broadcom, Intel and Arm Stakes in One Quarter",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T19:35:51.977729-03:00"
+    },
+    {
+      "title": "Fidji Simo says she believes AI can 'cure all diseases,' agreeing with Anthropic CEO Dario Amodei",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T19:35:54.992367-03:00"
     }
   ]
 }
