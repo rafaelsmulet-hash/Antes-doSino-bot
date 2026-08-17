@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Mark Cuban calls these investments 'death' for ultra-rich Americans. Are you making the same mistakes?",
-      "source": "Yahoo Finance",
-      "score": 4.0,
-      "motivo": "A notícia destaca investimentos específicos que podem ser prejudiciais, o que pode influenciar as decisões de investimento dos traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:36:02.807704-03:00"
-    },
-    {
-      "title": "Terremoto atinge a cidade espanhola de Granada, danificando prédios e carros; VÍDEO",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:45:35.473749-03:00"
-    },
-    {
-      "title": "PCO registra Rui Costa Pimenta ao Planalto com plano de cancelar privatizações",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A notícia não é sobre mercado financeiro, mas sim sobre política e propostas de partido político.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:50:37.826940-03:00"
-    },
-    {
-      "title": "Frozen 3: em cena inédita, Disney mostra nova vilã da animação; assista",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "não é uma notícia sobre mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T13:50:42.296332-03:00"
-    },
-    {
-      "title": "Presidente da Petrobras diz que Amapá está produzindo petróleo em águas ‘ultraprofundas’ em até sete anos",
-      "source": "G1 Economia",
-      "score": 8.0,
-      "motivo": "Descoberta de petróleo em águas ultraprofundas no Amapá pode aumentar as reservas do Brasil e reduzir a dependência de importações.",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T13:50:53.689018-03:00"
-    },
-    {
-      "title": "Check-in do Bem: Wellhub e Gerando Falcões transformam treino em impacto social",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "a noticia não está relacionada a mercado financeiro ou economia",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T14:00:51.314542-03:00"
-    },
-    {
-      "title": "Prediction: Costco Will Beat the S&P 500 Again",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A previsão positiva sobre o desempenho do Costco é relevante para o mercado de ações.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T14:05:41.770842-03:00"
-    },
-    {
-      "title": "Worried About an AI Bubble? These Tech Stocks Are Well-Suited to Survive an AI Bust.",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca a capacidade da Alphabet de gerar caixa apesar de investimentos em IA, o que pode ser visto como um sinal positivo para o mercado.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T14:05:44.776239-03:00"
-    },
-    {
-      "title": "Here's How Much a $20,000 Investment in the S&P 500 Could Grow Over the Long Term",
-      "source": "Nasdaq",
-      "score": 2.0,
-      "motivo": "A notícia é uma análise geral sobre investimentos na S&P 500, sem informações específicas sobre o mercado atual.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T14:05:47.620220-03:00"
-    },
-    {
       "title": "Jim Cramer Is Selling His Bitcoin, Citing the Quantum Threat. Here's Why He's Wrong.",
       "source": "Nasdaq",
       "score": 2.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T16:01:57.420051-03:00"
+    },
+    {
+      "title": "PF apura reuniões e tratativas de negócios mencionadas em mensagens de Lulinha",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:05:49.028407-03:00"
+    },
+    {
+      "title": "Como essa startup brasileira usa IA para navegar a burocracia das etiquetas de roupa",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:05:53.416859-03:00"
+    },
+    {
+      "title": "Netflix despenca no ranking dos streamings no Brasil; veja quem está na liderança",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T16:05:56.163041-03:00"
+    },
+    {
+      "title": "Higgsfield raises $400M Series B, quadrupling its valuation in 8 months to $5.4B",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:06:06.480286-03:00"
+    },
+    {
+      "title": "Meet the Roundhill ETF With 26% of Its Assets Parked in Micron Technology Stock",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:06:09.480973-03:00"
+    },
+    {
+      "title": "New surveys show central banks are ditching the dollar and buying more gold instead — should you follow along?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:06:12.215517-03:00"
+    },
+    {
+      "title": "Jim Cramer Breaks Down McDonald’s (MCD) Q2 Earnings and Execution Flaws",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:06:14.932551-03:00"
+    },
+    {
+      "title": "I went to Royal Caribbean's private island in the Bahamas. It's not for me, but I get why cruisers love it.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:06:17.932703-03:00"
+    },
+    {
+      "title": "Rugged robotic mules could make dangerous supply missions safer for US soldiers, but there are some things still to work out",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T16:06:20.711290-03:00"
     }
   ]
 }
