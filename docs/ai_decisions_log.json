@@ -1,87 +1,6 @@
 {
   "decisions": [
     {
-      "title": "DARPA wants injured brains to rewire and repair themselves as the US military confronts traumatic brain injuries",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada diretamente ao mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:31:10.939890-03:00"
-    },
-    {
-      "title": "USS Abraham Lincoln Conditions Raise Readiness Concerns",
-      "source": "Bloomberg Markets",
-      "score": 1.0,
-      "motivo": "A notícia não está relacionada a eventos financeiros ou econômicos.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:36:10.917507-03:00"
-    },
-    {
-      "title": "Boa Safra tem lucro líquido de R$ 2,7 mi no 2T, revertendo prejuízo do ano passado",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "aumento significativo da receita operacional líquida e do Ebitda ajustado",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:36:14.580057-03:00"
-    },
-    {
-      "title": "Bolsonaro pede ao STF para ser atendido pela nora, que é dentista",
-      "source": "Exame",
-      "score": 0.0,
-      "motivo": "notícia não é sobre mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:36:26.843775-03:00"
-    },
-    {
-      "title": "Ballet flats are so popular that even brands like Birkenstock and Crocs are cashing in on the trend",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:36:30.124784-03:00"
-    },
-    {
-      "title": "16 beaten-down AI stocks that are beloved by BofA analysts",
-      "source": "MarketWatch",
-      "score": 5.0,
-      "motivo": "A noticia destaca a perspectiva positiva dos analistas sobre acoes de inteligencia artificial, o que pode influenciar as decisoes de investimento.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:36:33.619651-03:00"
-    },
-    {
-      "title": "Why US boomers seriously need to prepare for a stock market crash before it’s too late — 3 red flags and what to do now",
-      "source": "Yahoo Finance",
-      "score": 6.0,
-      "motivo": "A notícia destaca sinais de alerta importantes que podem indicar uma crise de mercado de ações, tornando-a materialmente relevante para o mercado agora.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T09:36:46.965200-03:00"
-    },
-    {
-      "title": "Suze Orman warns retirees 'everything can go down' — urges keeping cash reserves, but do you really have enough banked?",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a importância de manter reservas em dinheiro para proteger as economias dos aposentados, o que é relevante para o mercado financeiro.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:36:49.992480-03:00"
-    },
-    {
-      "title": "Found a great mortgage rate? Beware — expert says a low rate ‘blinds’ buyers to a catch that could cost them thousands",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia destaca a importância de considerar os custos ocultos em taxas de empréstimo imobiliário baixas.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T09:36:53.062047-03:00"
-    },
-    {
       "title": "How a Retired Couple Collects $11,500 a Month and Never Pays an IRMAA Surcharge",
       "source": "Yahoo Finance",
       "score": 0.0,
@@ -17999,6 +17918,87 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T14:26:53.441795-03:00"
+    },
+    {
+      "title": "TSE manda retirar vídeo de Flávio Bolsonaro que associa Lula ao PCC e ao CV",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:30:52.056143-03:00"
+    },
+    {
+      "title": "A taxa de desocupação é de 5,4% e taxa de subutilização é de 12,9% no trimestre encerrado em junho",
+      "source": "IBGE",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:30:55.867521-03:00"
+    },
+    {
+      "title": "'É a renda extra perfeita': Esse emprego paga em dólar, é 100% remoto, não têm reuniões e nem chefe",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:31:00.215817-03:00"
+    },
+    {
+      "title": "Nvidia banca até US$ 105 bi em data center que a OpenAI vai alugar",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T14:31:02.879979-03:00"
+    },
+    {
+      "title": "Chelsea F.C. shareholders Walter and Boehly selling stake—Financial Times",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:31:05.839517-03:00"
+    },
+    {
+      "title": "Endeavour Silver slides as local protest shuts Mexico mine operations",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:31:08.499892-03:00"
+    },
+    {
+      "title": "Weekly survey of mortgage lenders with the lowest rates: Small moves in rates and fees",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:31:21.519471-03:00"
+    },
+    {
+      "title": "Power Semis Soar Monday: Wolfspeed, STMicro and On Semiconductor Rally on Vera Rubin Ramp Signals",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:31:24.221904-03:00"
+    },
+    {
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T14:31:27.961825-03:00"
     }
   ]
 }
