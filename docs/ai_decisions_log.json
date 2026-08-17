@@ -1,24 +1,6 @@
 {
   "decisions": [
     {
-      "title": "‘It’s a double-edged sword’: My husband got a $42,000 bonus. Will it wipe out our Affordable Care Act subsidy?",
-      "source": "MarketWatch",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:50:57.360138-03:00"
-    },
-    {
-      "title": "Digi Power X targets phase 1 ready for service in December 2026 while anticipating Q3 to increase by approximately over 100% vs. Q2",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-14T12:51:00.095705-03:00"
-    },
-    {
       "title": "Scienture Holdings Q2 non-GAAP EPS of -$0.07, revenue of $0.34M",
       "source": "Seeking Alpha",
       "score": null,
@@ -17999,6 +17981,24 @@
       "decisao_sugerida": "round",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-16T21:06:18.338100-03:00"
+    },
+    {
+      "title": "Nelson Peltz May Be Preparing to Take Wendy’s Private. What It Means for WEN Stock Investors.",
+      "source": "Yahoo Finance",
+      "score": 6.0,
+      "motivo": "A possibilidade de a Wendy's ser levada para o mercado privado pode afetar drasticamente o preço da ação e os investimentos da empresa.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:11:30.247571-03:00"
+    },
+    {
+      "title": "NVDA Stock Alert: Nvidia CEO Jensen Huang Says Chips Are ‘Investable Asset Class’",
+      "source": "Yahoo Finance",
+      "score": 7.0,
+      "motivo": "A afirmação do CEO da Nvidia sobre os chips como uma classe de ativos investíveis pode influenciar a percepção dos investidores sobre a empresa e o setor de tecnologia.",
+      "decisao_sugerida": "round",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-16T21:11:33.219613-03:00"
     }
   ]
 }
