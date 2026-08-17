@@ -1,168 +1,6 @@
 {
   "decisions": [
     {
-      "title": "Rage Politics: Hakeem Jeffries Will Take A Baseball Bat To The Supreme Court",
-      "source": "ZeroHedge",
-      "score": 0.0,
-      "motivo": "A notícia não tem relevância direta para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:36:03.959595-03:00"
-    },
-    {
-      "title": "Woke 2.0 Will Be Worse",
-      "source": "ZeroHedge",
-      "score": 2.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro, mas pode ter impacto político e social.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:36:06.981217-03:00"
-    },
-    {
-      "title": "Ukraine Hits Key Russian Space Facility With Flamingo Cruise Missiles",
-      "source": "ZeroHedge",
-      "score": 6.0,
-      "motivo": "O ataque à instalação espacial russa pode ter um impacto significativo na capacidade da Rússia de lançar satélites e veículos espaciais",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-15T17:36:09.912074-03:00"
-    },
-    {
-      "title": "Looking at RMDs in Retirement? 3 Tips to Manage Them.",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não é específica sobre mercado financeiro ou economia.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:41:06.701278-03:00"
-    },
-    {
-      "title": "What a Cintas CEO Insider Filing Signals as It Pursues UniFirst",
-      "source": "Nasdaq",
-      "score": 6.0,
-      "motivo": "Venda de ações significativa pelo CEO pode ser um sinal de desconfiança na empresa.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:41:09.760644-03:00"
-    },
-    {
-      "title": "What investors say went wrong at Selena Gomez's mental health startup Wondermind",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T17:51:17.484464-03:00"
-    },
-    {
-      "title": "São Paulo x Coritiba: Onde assistir?",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não é uma notícia de mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T18:01:03.368934-03:00"
-    },
-    {
-      "title": "Quanto eu teria tivesse investido R$ 10 mil em ações do Banco do Brasil há 20 anos",
-      "source": "Exame",
-      "score": 2.0,
-      "motivo": "notícia histórica sem relevância imediata para o mercado",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-15T18:01:08.490157-03:00"
-    },
-    {
-      "title": "Malaysia’s DAP Hands Anwar Reprieve With Vote to Stay in Cabinet",
-      "source": "Bloomberg Markets",
-      "score": 5.0,
-      "motivo": "A decisão do partido de permanecer no gabinete do primeiro-ministro é relevante para o mercado pois pode influenciar a estabilidade política da Malásia.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:50:48.381639-03:00"
-    },
-    {
-      "title": "India Readies Big LPG Output Boost as Hormuz Uncertainty Lingers",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "Aumento da produção de gás liquefeita pode reduzir a dependência da Índia de importações e aumentar a segurança energética do país.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:50:51.296557-03:00"
-    },
-    {
-      "title": "Hong Kong’s First-Half Air Passenger Traffic Up 11.7%, Chan Says",
-      "source": "Bloomberg Markets",
-      "score": 3.0,
-      "motivo": "Aumento no tráfego de passageiros é um indicador positivo para a economia da região.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:50:54.208183-03:00"
-    },
-    {
-      "title": "China Plans to Speed Up New Energy Recycling, Waste Rules: CCTV",
-      "source": "Bloomberg Markets",
-      "score": 6.0,
-      "motivo": "A notícia destaca a intenção da China de criar um sistema fechado para resíduos da indústria de energia renovável, o que pode ter impacto positivo no setor.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:50:57.158504-03:00"
-    },
-    {
-      "title": "China Revises Timing of July Economic Data Release, Briefing",
-      "source": "Bloomberg Markets",
-      "score": 2.0,
-      "motivo": "A mudança não é significativa e não deve ter impacto direto no mercado.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:00.061031-03:00"
-    },
-    {
-      "title": "Os EUA querem fabricar seus próprios robôs humanoides. Mas isso não será fácil",
-      "source": "InfoMoney",
-      "score": 2.0,
-      "motivo": "A noticia não é sobre mercado financeiro, mas sim sobre tecnologia e inovacao",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:03.797646-03:00"
-    },
-    {
-      "title": "Europa enfrenta nova onda de calor e força turistas a mudar planos de viagem",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "não há relação direta com o mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:06.561624-03:00"
-    },
-    {
-      "title": "Renda recorde é engolida por inflação e juros altos, que espremem bolso das famílias",
-      "source": "InfoMoney",
-      "score": 6.0,
-      "motivo": "inflação e juros altos afetam negativamente a economia e as famílias",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T06:51:09.357413-03:00"
-    },
-    {
-      "title": "Eleição de 2026 pode ter “faroeste” nas redes sociais maior que em 2022, diz analista",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "A noticia nao e sobre mercado financeiro, economia ou negocios",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:12.151195-03:00"
-    },
-    {
-      "title": "Debate em Minas acontece neste domingo após adiamento; Cleitinho não deve participar",
-      "source": "InfoMoney",
-      "score": 0.0,
-      "motivo": "noticia sobre eleicoes politicas e candidaturas",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T06:51:14.953097-03:00"
-    },
-    {
       "title": "Lula chega ao primeiro ato favorito nas pesquisas, mas sob pressão de novas crises",
       "source": "InfoMoney",
       "score": 2.0,
@@ -17999,6 +17837,168 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T17:01:27.632138-03:00"
+    },
+    {
+      "title": "XP Inc. (XPBR31) registra lucro líquido de R$ 1,38 bilhão no 2º tri, alta anual de 5%",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:05:41.483675-03:00"
+    },
+    {
+      "title": "Dólar recua a R$ 5,20 e interrompe sequência de 5 altas ante o real",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:05:45.472007-03:00"
+    },
+    {
+      "title": "Senado aprova criação da Comenda Niède Guidon para homenagear pesquisadores",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:05:49.081134-03:00"
+    },
+    {
+      "title": "Bitcoin eyes breakout as 6-week symmetrical triangle narrows",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:05:52.100515-03:00"
+    },
+    {
+      "title": "Gabelli Multimedia Trust Breaks Below 200-Day Moving Average - Notable for GGT",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:05:56.363301-03:00"
+    },
+    {
+      "title": "American Express Breaks Below 200-Day Moving Average - Notable for AXP",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:05:59.060376-03:00"
+    },
+    {
+      "title": "RETL Crosses Below Key Moving Average Level",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:06:01.732829-03:00"
+    },
+    {
+      "title": "SLYG vs IJT: Which Small-Cap Growth ETF Wins?",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:06:04.416243-03:00"
+    },
+    {
+      "title": "Why Microsoft Stock Dropped Today",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:06:07.062399-03:00"
+    },
+    {
+      "title": "Amazon's Stake in Anthropic Is Now Big Enough to Move Its Earnings. Here's How That Compares to Alphabet's Stake in SpaceX.",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:06:09.842379-03:00"
+    },
+    {
+      "title": "This Has Far and Away Been the Biggest Surprise at Berkshire Hathaway Since Greg Abel Took Over From Warren Buffett",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:06:12.628212-03:00"
+    },
+    {
+      "title": "Bank of America's Preferred Stock Series PP Crosses Above 6.5% Yield Territory",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:06:15.341130-03:00"
+    },
+    {
+      "title": "Capital One Financial's Prefrred Stock Series K Shares Cross 7% Yield Mark",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:06:18.064967-03:00"
+    },
+    {
+      "title": "Notable Monday Option Activity: FULC, BAC, VIAV",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:06:20.730692-03:00"
+    },
+    {
+      "title": "Dólar cai a R$ 5,20 e Bolsa fica estável após Galípolo defender juros altos",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T17:06:25.354218-03:00"
+    },
+    {
+      "title": "Fim da isenção de LCI e LCA pode estar próximo, e quem vai pagar a conta é o investidor, dizem bancos",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:06:28.362387-03:00"
+    },
+    {
+      "title": "Eli Lilly’s (LLY) Growth Story Keeps Adding Chapters",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:06:33.266321-03:00"
+    },
+    {
+      "title": "Broadcom vs. AMD: Which AI Chip Stock Is the Better Buy?",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-17T17:06:35.940525-03:00"
     }
   ]
 }
