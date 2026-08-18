@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "We vacationed just an hour from home. It was more relaxing than our bigger trips.",
-      "source": "Business Insider",
-      "score": 0.0,
-      "motivo": "A notícia não é relevante para o mercado financeiro.",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T14:26:00.420182-03:00"
-    },
-    {
       "title": "BP volta à Venezuela (e vai sair do Mar do Norte)",
       "source": "Brazil Journal",
       "score": 6.0,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-08-17T21:16:21.131682-03:00"
+    },
+    {
+      "title": "Lula provoca Trump ao exaltar descoberta de petróleo na Foz do Amazonas",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-17T21:33:13.388302-03:00"
     }
   ]
 }
