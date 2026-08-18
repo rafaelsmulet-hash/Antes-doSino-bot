@@ -1,1203 +1,6 @@
 {
   "decisions": [
     {
-      "title": "This Software Stock Just Produced a Rule of 40 Score Nearly as High as Palantir's, and Its Valuation Is Much More Attractive",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia destaca um resultado positivo de uma empresa de software, o que pode influenciar a valorização das ações",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T22:05:55.680850-03:00"
-    },
-    {
-      "title": "Cloudflare CEO Says the Internet Is Changing Exponentially",
-      "source": "Nasdaq",
-      "score": 0.0,
-      "motivo": "A notícia não está relacionada a mercado financeiro",
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T22:05:58.461359-03:00"
-    },
-    {
-      "title": "NOW Stock Has Rebounded Over 54% — Why ServiceNow’s Rally Could Have Further Room to Run",
-      "source": "Yahoo Finance",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente a ação da ServiceNow e pode influenciar as decisões de investimento dos traders.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T22:06:09.919804-03:00"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "source": "Federal Reserve",
-      "score": 8.0,
-      "motivo": "A declaração da Reserva Federal pode ter impacto significativo no mercado financeiro",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T22:11:02.720049-03:00"
-    },
-    {
-      "title": "Trump Says He’s Curtailing Drills With South Korea",
-      "source": "Bloomberg Markets",
-      "score": 8.0,
-      "motivo": "Decisão de Trump pode ter impacto significativo nas relações geopolíticas e no mercado de ações",
-      "decisao_sugerida": "breaking",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-16T22:15:38.214450-03:00"
-    },
-    {
-      "title": "Australian Markets Modestly Lower",
-      "source": "Nasdaq",
-      "score": 4.0,
-      "motivo": "Notícia sobre o desempenho do mercado australiano, mas não há informações específicas sobre empresas ou setores",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T22:20:53.893272-03:00"
-    },
-    {
-      "title": "China Stock Market May Turn Lower Again On Monday",
-      "source": "Nasdaq",
-      "score": 5.0,
-      "motivo": "A notícia é relevante porque afeta diretamente o mercado de ações da China, que é um dos principais mercados emergentes do mundo.",
-      "decisao_sugerida": "round",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-16T22:20:56.769212-03:00"
-    },
-    {
-      "title": "Dollar Extends Slide as Traders Scale Back Fed Tightening Bets",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:50:53.455398-03:00"
-    },
-    {
-      "title": "China's Xi Touts Military, Economic Agenda at Key Event",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:50:56.103629-03:00"
-    },
-    {
-      "title": "China Reserve Gauge Hits 12-Year High, Smoothing Yuan Rise",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:50:58.778925-03:00"
-    },
-    {
-      "title": "Xi Ties Predecessor’s Legacy to His Own Agenda as Risks Grow",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:01.420006-03:00"
-    },
-    {
-      "title": "Argenx Soars on Latest Trial Success for Autoimmune Drug Vyvgart",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:04.069798-03:00"
-    },
-    {
-      "title": "How to Train AI Models After OpenAI-Hugging Face Hack",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:06.718742-03:00"
-    },
-    {
-      "title": "Odd Lots: OpenAI, Hugging Face and the AI Danger (Podcast)",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:09.377802-03:00"
-    },
-    {
-      "title": "Financial Services Roundup: Market Talk",
-      "source": "WSJ Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:12.510815-03:00"
-    },
-    {
-      "title": "Autoridade do governo Trump acusa Brasil de censura após X adotar filtro para eleição",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:15.582700-03:00"
-    },
-    {
-      "title": "Escalada da violência no Líbano e em Gaza ameaça a paz no Oriente Médio",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:18.238274-03:00"
-    },
-    {
-      "title": "Prévia do PIB do Brasil, leilão do BC, Galípolo e mais destaques desta segunda-feira",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:51:20.921426-03:00"
-    },
-    {
-      "title": "Itaú, Bradesco, Santander e BB: o que balanços do 2T dizem sobre cautela do setor?",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:51:23.566584-03:00"
-    },
-    {
-      "title": "Tesouro deposita R$ 257 bi nesta segunda; vale a pena travar taxa agora?",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:51:26.261739-03:00"
-    },
-    {
-      "title": "Nasdaq e S&P 500 futuros avançam com menor aposta em alta de juros pelo Fed",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:51:28.936186-03:00"
-    },
-    {
-      "title": "50% vendidos antes de lançar: o teste que convenceu a Vitacon e a Housi sobre os 60+",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:31.581471-03:00"
-    },
-    {
-      "title": "Vencimento de títulos do Tesouro e recalibragem de fundos pressionam juros nesta 2ª",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:51:34.228765-03:00"
-    },
-    {
-      "title": "Lula ou Flávio terá de “ceder cada vez mais” ao Congresso, diz cientista político",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:36.901824-03:00"
-    },
-    {
-      "title": "Casas Bahia entra com pedido de recuperação judicial para reestruturar dívidas",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:51:39.574169-03:00"
-    },
-    {
-      "title": "Tempo real: Ibovespa inicia semana com IBC-Br no radar",
-      "source": "Money Times",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:51:44.022900-03:00"
-    },
-    {
-      "title": "Reddit lidera crescimento de receita por usuário entre redes sociais",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:46.874312-03:00"
-    },
-    {
-      "title": "Bernstein vê desacoplamento EUA-China na robótica após proibição da FCC",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:49.548515-03:00"
-    },
-    {
-      "title": "Remessas de sistemas de armazenamento de energia da China superam 100 GWh em junho pela primeira vez",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:52.224020-03:00"
-    },
-    {
-      "title": "Captação do setor de biotecnologia sobe 75% no ano com M&A em alta",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:54.884335-03:00"
-    },
-    {
-      "title": "TransUnion Índia mostra sinais de recuperação com crescimento de receita voltando ao positivo",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:51:57.541493-03:00"
-    },
-    {
-      "title": "Por que as ações da BSE estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:00.209942-03:00"
-    },
-    {
-      "title": "Por que as ações da AP Moeller - Maersk estão disparando hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:02.852990-03:00"
-    },
-    {
-      "title": "Citi retoma cobertura da UMG com alta de preços e potencial da IA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:05.527792-03:00"
-    },
-    {
-      "title": "Por que as ações da Gulf Marine Services estão subindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:08.186620-03:00"
-    },
-    {
-      "title": "Ações da Maersk sobem 5% após UBS elevar preço-alvo com fretes mais fortes",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:10.840212-03:00"
-    },
-    {
-      "title": "Quem foi Hayden Panettiere: relembre a trajetória da atriz de 'Heroes' e 'Nashville'",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:14.842174-03:00"
-    },
-    {
-      "title": "Lula mantém 5 pontos de vantagem sobre Flávio Bolsonaro no 1º turno, diz pesquisa BTG/Nexus",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:17.506521-03:00"
-    },
-    {
-      "title": "A cafeteria que funciona dentro de uma caverna vulcânica suspensa",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:20.175817-03:00"
-    },
-    {
-      "title": "Hayden Panettiere, atriz de ‘Heroes’ e ‘Pânico’, morre aos 36 anos",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:22.841989-03:00"
-    },
-    {
-      "title": "Modelo pequeno ou grande? Como decidir qual porte de IA resolve cada tarefa sem desperdiçar dinheiro",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:25.574552-03:00"
-    },
-    {
-      "title": "Scania investe R$ 78 milhões no Brasil e amplia segundo maior centro logístico de peças do mundo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:28.246328-03:00"
-    },
-    {
-      "title": "O prédio de luxo próximo à Faria Lima que gastou R$ 100 milhões para sair do embargo",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:30.902994-03:00"
-    },
-    {
-      "title": "Collabs da Shein com famosos ajudam a esgotar peças em poucos dias",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:33.545481-03:00"
-    },
-    {
-      "title": "A IA na tomada de decisão sob incerteza: simulando cenários econômicos e mercadológicos",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:52:36.222655-03:00"
-    },
-    {
-      "title": "Estrangeiro recua, 'risco eleitoral' cresce e muda perspectiva para o Ibovespa",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:52:38.898156-03:00"
-    },
-    {
-      "title": "Investor dubbed ‘AI stock god’ had 56% of his funds in these two stocks before it blew up",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:52:41.801365-03:00"
-    },
-    {
-      "title": "My son does not work, yet he pays $500 for ACA health insurance. How is that fair?",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:44.475273-03:00"
-    },
-    {
-      "title": "Neighbors in rural Texas county are not happy about Elon Musk’s plan to erect world’s largest building",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:47.148539-03:00"
-    },
-    {
-      "title": "Former Starbucks CEO Howard Schultz sells home in Hawaii for $36 million after moving to Florida",
-      "source": "MarketWatch",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:49.821406-03:00"
-    },
-    {
-      "title": "Stock futures mixed as investors look ahead to retail earnings",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:52:52.579637-03:00"
-    },
-    {
-      "title": "Biggest stock movers Monday: DSX, HIVE, and more",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:55.213455-03:00"
-    },
-    {
-      "title": "Motor oil crisis: Automakers reportedly turn to new blends",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:52:57.877911-03:00"
-    },
-    {
-      "title": "reAlpha Tech GAAP EPS of -$0.57, revenue of $1.11M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:00.539453-03:00"
-    },
-    {
-      "title": "Sadot Group GAAP EPS of $109.16",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:03.201835-03:00"
-    },
-    {
-      "title": "Brand Engagement Network reports Q2 results",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:05.864659-03:00"
-    },
-    {
-      "title": "BeyondSpring GAAP EPS of -$0.02",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:08.520279-03:00"
-    },
-    {
-      "title": "Salesforce Borrowed $25 Billion to Buy Its Own Stock and Cut Its Cash Flow Growth Guidance in Half",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:13.736522-03:00"
-    },
-    {
-      "title": "European Shares Mixed In Lackluster Trade",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:16.392963-03:00"
-    },
-    {
-      "title": "Wall Street Says the Stock Market's Return Will Crush the Long-Term Average in the Next Year",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:19.040172-03:00"
-    },
-    {
-      "title": "OceanaGold To Buy Ausgold For Around A$776 Mln",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:21.680742-03:00"
-    },
-    {
-      "title": "Fed Chair Kevin Warsh's Job Just Got Much Easier. Here's What's Likely Next for the Stock Market As a Result.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:24.354319-03:00"
-    },
-    {
-      "title": "Asian Shares Mixed On Concerns Over US Growth",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:27.023012-03:00"
-    },
-    {
-      "title": "One of the Biggest Chip ETFs Has Averaged 14% a Year Since 2001 and Just Made 118% in Twelve Months",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:29.669711-03:00"
-    },
-    {
-      "title": "Headline Inflation Is Easing, but Trumpflation Isn't -- and That's a Recipe for Disaster on Wall Street",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:32.352248-03:00"
-    },
-    {
-      "title": "Warren Buffett and Greg Abel Just Bought 8 Stocks. Here's the Best of the Bunch.",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:35.025383-03:00"
-    },
-    {
-      "title": "3 Reasons to Claim Social Security at 62",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:37.689312-03:00"
-    },
-    {
-      "title": "Novo golpe do Desenrola exibe CPF e dados da vítima para cobrar acordo por PIX; saiba como se proteger",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:42.636161-03:00"
-    },
-    {
-      "title": "Usar o ChatGPT prejudica o cérebro? O que sabemos, e o que não sabemos, sobre a 'dívida cognitiva'",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:45.308083-03:00"
-    },
-    {
-      "title": "Correios: balanço prévio aponta prejuízo de R$ 5,4 bilhões no 1º semestre de 2026",
-      "source": "G1 Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:47.975066-03:00"
-    },
-    {
-      "title": "Mercado reabre com dólar no maior nível em 5 meses e 9 quedas do Ibovespa",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:52.156514-03:00"
-    },
-    {
-      "title": "Aviăo chinęs C919 faz 1ş voo internacional e desafia Boeing e Airbus",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:53:54.813479-03:00"
-    },
-    {
-      "title": "Agendas em disputa e o programa de Lula",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:53:57.473563-03:00"
-    },
-    {
-      "title": "A casa é o maior concorrente dos bares no pós-pandemia, diz Ricardo Garrido",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:00.146143-03:00"
-    },
-    {
-      "title": "Mídia e Marketing #244: Rodrigo Munaretto, diretor de marketing e vendas do Subway",
-      "source": "UOL Economia",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:54:02.820404-03:00"
-    },
-    {
-      "title": "Open Energy: Energia vai funcionar igual aos bancos no Brasil — só falta a Aneel decidir quando",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:05.914752-03:00"
-    },
-    {
-      "title": "IA, canetas emagrecedoras e até Harry Potter: a estratégia do Grupo Boticário para se manter relevante aos 49 anos e ultrapassar a Natura",
-      "source": "Seu Dinheiro",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:54:08.607891-03:00"
-    },
-    {
-      "title": "Dollar falls to lowest since early June as rate hike bets fade",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:54:13.716478-03:00"
-    },
-    {
-      "title": "Indian Oil Giant Secures U.S. License to Return to Venezuela",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:16.381994-03:00"
-    },
-    {
-      "title": "Shares rise, dollar slips as markets pare Fed rate risks",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:54:19.053597-03:00"
-    },
-    {
-      "title": "Alibaba to sell Lingxi Games in more than $2 billion deal, source says",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:21.711121-03:00"
-    },
-    {
-      "title": "Analysis-Emerging markets march out of 'valley of tears' as investors diversify",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:54:24.389837-03:00"
-    },
-    {
-      "title": "Why Medicare Advantage providers are cutting plans — and what to do if your coverage is affected",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:27.072190-03:00"
-    },
-    {
-      "title": "I moved back in with my parents at 31. These are the 3 things I wasn't prepared for.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:30.159802-03:00"
-    },
-    {
-      "title": "The hottest AI models aren’t the ones developers actually use",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:32.821794-03:00"
-    },
-    {
-      "title": "I burned out from AI overload. My anxiety peaked, I lost weight, and I was snapping at my family and friends.",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:35.487012-03:00"
-    },
-    {
-      "title": "We tracked how much 3 young startup founders actually sleep",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:38.163212-03:00"
-    },
-    {
-      "title": "This summer's interns may be helping to kill summer internships",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:40.832263-03:00"
-    },
-    {
-      "title": "Celebrity deaths in 2026: Remembering the famous people we lost this year",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:43.477860-03:00"
-    },
-    {
-      "title": "Law Roach says he tries not to be friends with his clients: ‘I want to get paid’",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:46.148893-03:00"
-    },
-    {
-      "title": "Travis Kalanick says he wouldn't do 'anything different' about the missed Uber-Lyft acquisition",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:48.823590-03:00"
-    },
-    {
-      "title": "A granola for breastfeeding mothers has been recalled over Salmonella contamination",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:54:51.475530-03:00"
-    },
-    {
-      "title": "Hayden Panettiere opened up about motherhood and addiction months before her death at 36",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:54.135454-03:00"
-    },
-    {
-      "title": "Russia targets Danube port after one of Ukraine’s largest aerial attacks of the war",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:57.043402-03:00"
-    },
-    {
-      "title": "Ferrari Luce: Polarizing EV becomes a $40 million collector’s item",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:54:59.719716-03:00"
-    },
-    {
-      "title": "U.S. Drafts Ultimatum for Allies Joining China's AI Bloc",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:55:02.884794-03:00"
-    },
-    {
-      "title": "Qatar Denies Holding Iranian Pilots As Tehran Demands Answers Over Missing Airmen",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:55:05.565889-03:00"
-    },
-    {
-      "title": "Israel Threatens Return Of Lebanon War After Unleashing Deadliest Airstrikes Since Ceasefire",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:55:08.234127-03:00"
-    },
-    {
-      "title": "English Villages In Fear Over 1,200 Male Migrants Moved Next To Schools",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:55:10.934616-03:00"
-    },
-    {
-      "title": "Fog Of War: A World Searching For An Exit",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T06:55:13.616180-03:00"
-    },
-    {
-      "title": "\"I've Never Heard Anything Like It\": Was America's Top Secret Stealth Bomber Just Spotted Over Kansas?",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:55:16.295315-03:00"
-    },
-    {
-      "title": "Dallas Airport Shelves Muslim Washing Facilities After Texas Governor Threatens Airport Funding",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:55:18.970780-03:00"
-    },
-    {
-      "title": "The Democrats' Hasan Piker Problem Is Getting Worse",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:55:21.649272-03:00"
-    },
-    {
-      "title": "Oh, So This Is Why Luigi Mangione Pleaded Guilty...",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:55:24.294043-03:00"
-    },
-    {
-      "title": "Military Contractor's Spy Aircraft Quietly Flying Southern Border On Mysterious Mission",
-      "source": "ZeroHedge",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T06:55:26.969302-03:00"
-    },
-    {
-      "title": "Ascend Sport Said to Mull Listing in Up to $740 Million Merger",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:01:30.672932-03:00"
-    },
-    {
-      "title": "DeepSeek Won't Sink U.S. AI Titans",
-      "source": "WSJ Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:01:33.881630-03:00"
-    },
-    {
-      "title": "Apesar de ter vendido ativos da Luggo, MRV acredita na locação no longo prazo",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T07:01:37.258861-03:00"
-    },
-    {
-      "title": "Mão de obra em queda, Reforma Tributária e a visão do CEO da MRV para o setor",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T07:01:39.848482-03:00"
-    },
-    {
-      "title": "Valores de equipamentos usados permanecem estáveis em julho, diz BofA",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:01:44.799481-03:00"
-    },
-    {
-      "title": "Por que as ações da SentinelOne estão caindo hoje?",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:01:47.373646-03:00"
-    },
-    {
-      "title": "Berenberg eleva Mobileye para compra após queda excessiva com saída do CEO",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:01:49.952948-03:00"
-    },
-    {
-      "title": "Bank of America lança rastreador de IA com Claude liderando ranking",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:01:52.527435-03:00"
-    },
-    {
-      "title": "Remessas de sistemas de armazenamento de energia da China superam 100 GWh em junho pela primeira vez",
-      "source": "Investing.com Brasil",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:01:55.105571-03:00"
-    },
-    {
-      "title": "Absolute e Unity ampliam fatia na CVC. “Apex é só mais um acionista”",
-      "source": "Brazil Journal",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:01:57.910136-03:00"
-    },
-    {
-      "title": "reAlpha Tech GAAP EPS of -$0.57, revenue of $1.11M",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:02:00.933965-03:00"
-    },
-    {
-      "title": "Casas Bahia tem prejuízo de R$ 10,1 bilhões e faz ajustes em seu plano de reestruturação",
-      "source": "Neofeed",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:02:11.762087-03:00"
-    },
-    {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq futures waver ahead of retail earnings",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T07:02:14.568113-03:00"
-    },
-    {
-      "title": "HELOC and home equity loan rates today, Monday, August 17, 2026: A 19-basis-point differential",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:02:17.142250-03:00"
-    },
-    {
-      "title": "Mortgage and refinance rates today, Monday, August 17, 2026: Purchase rates currently lower than refi rates",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:02:19.721051-03:00"
-    },
-    {
-      "title": "Best CD rates today, Monday, August 17, 2026: Lock in up to 4.30% APY",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:02:22.305639-03:00"
-    },
-    {
-      "title": "Best high-yield savings interest rates today, Monday, August 17, 2026: Earn up to 4.15% APY",
-      "source": "Yahoo Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T07:02:24.938931-03:00"
-    },
-    {
-      "title": "Retailers face a big challenge this fall: figure out what 'value' means for shoppers",
-      "source": "Business Insider",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:02:27.752545-03:00"
-    },
-    {
-      "title": "Anthropic revenue reportedly jumps to more than $11.5 billion in second quarter",
-      "source": "CNBC - US News",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:02:30.679867-03:00"
-    },
-    {
-      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
-      "source": "Federal Reserve",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:02:33.800360-03:00"
-    },
-    {
-      "title": "Sri Lanka SEC: State Firms to List Via Holding Company",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:06:01.682511-03:00"
-    },
-    {
-      "title": "These charts show why stocks keep rallying. Profit margins are the highest on record",
-      "source": "CNBC - Finance",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:06:04.316281-03:00"
-    },
-    {
-      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
-      "source": "CNBC - Economy",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:06:06.944897-03:00"
-    },
-    {
-      "title": "Day Trade hoje (17): Ibovespa acumula 9 quedas; há espaço para repique?",
-      "source": "InfoMoney",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T07:06:09.863360-03:00"
-    },
-    {
-      "title": "Quando é o próximo feriado nacional no Brasil? Veja calendário",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:06:13.851861-03:00"
-    },
-    {
-      "title": "'Bancões' projetam conta da eleição e cobram 'pacote fiscal' pós-urnas",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-08-17T07:06:16.433587-03:00"
-    },
-    {
-      "title": "Ciberataques crescem 45% no Brasil em julho, aponta pesquisa",
-      "source": "Exame",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:06:19.014807-03:00"
-    },
-    {
-      "title": "ArcelorMittal Ukraine plant damaged in missile attack; production partially halted",
-      "source": "Seeking Alpha",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "descartado",
-      "timestamp": "2026-08-17T07:06:21.751570-03:00"
-    },
-    {
       "title": "Peão de Orindiúva viaja 10 mil km para divulgar cultura caipira",
       "source": "G1 Economia",
       "score": null,
@@ -17999,6 +16802,1203 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado",
       "timestamp": "2026-08-18T07:57:15.222142-03:00"
+    },
+    {
+      "title": "Braskem’s Mexico Unit Files for Prepackaged Bankruptcy in US",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:55:04.901399-03:00"
+    },
+    {
+      "title": "Global Bonds Slump Sends Borrowing Costs Soaring",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:07.523271-03:00"
+    },
+    {
+      "title": "US Stocks Drop, Led by Tech, as Bond-Yield Spike Sparks Angst",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:10.150540-03:00"
+    },
+    {
+      "title": "AI Election Backlash Is Shaping Wall Street’s Stock Market Views",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:12.779236-03:00"
+    },
+    {
+      "title": "Fed Should ‘Just Hike and Move on With It,’ Says JPM’s Herr",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:15.398766-03:00"
+    },
+    {
+      "title": "Breaking Down the Global Bond Selloff",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:18.016080-03:00"
+    },
+    {
+      "title": "Bond Selloff Is Mostly a Fed Story, Says BofA’s Cabana",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:20.641262-03:00"
+    },
+    {
+      "title": "India Weighs Sugar Import Tax Cut to Bring Local Prices Down",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:55:23.262512-03:00"
+    },
+    {
+      "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
+      "source": "CNBC - Economy",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:55:26.260940-03:00"
+    },
+    {
+      "title": "Renda Fixa Hoje: Confira as taxas de CDBs, LCIs e LCAs na XP nesta terça-feira (18)",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:55:29.253474-03:00"
+    },
+    {
+      "title": "Os 70 das Casas Bahia: do crediário e slogans-chiclete à RJ de R$ 17,3 bilhões",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:55:31.876683-03:00"
+    },
+    {
+      "title": "Construtoras de baixa renda mostram resultados mais consistentes no 2T, diz XP",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:34.509627-03:00"
+    },
+    {
+      "title": "Seguro de carro pode ficar R$ 900 mais barato para motorista de menor risco",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:55:37.140991-03:00"
+    },
+    {
+      "title": "Motorista de Haddad depõe e mantém versão sobre horários; polícia fala em contradição",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:55:39.761358-03:00"
+    },
+    {
+      "title": "TSE aceita ação sobre financiamento de desfile no carnaval que homenageou Lula",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:42.390913-03:00"
+    },
+    {
+      "title": "O julgamento que pode mudar as redes sociais: 29 estados americanos contra a Meta",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:45.021651-03:00"
+    },
+    {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe e tenta retomar fôlego após 10 sessões de quedas",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:47.651174-03:00"
+    },
+    {
+      "title": "Raytheon assina contrato de US$ 22,9 bi para a produção de mísseis Tomahawk",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:55:50.270148-03:00"
+    },
+    {
+      "title": "Zema diz que programas sociais criam ‘geração de imprestáveis’",
+      "source": "InfoMoney",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:52.896008-03:00"
+    },
+    {
+      "title": "Wall Street opera no ‘vermelho’ com avanço dos preços de petróleo e disparada dos juros longos",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:55:57.503309-03:00"
+    },
+    {
+      "title": "Ibovespa dribla mau humor externo com Petrobras (PETR4); 5 coisas para saber antes de investir hoje (18)",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:00.134604-03:00"
+    },
+    {
+      "title": "FII do Pátria aprova emissão de até R$ 1,5 bilhão para comprar novos ativos; veja condições",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:02.766286-03:00"
+    },
+    {
+      "title": "Swing trade: BB Investimentos recomenda a compra da Vale (VALE3) e venda da Gerdau (GGBR4) nesta terça (18)",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:05.403840-03:00"
+    },
+    {
+      "title": "Fundo imobiliário fecha contrato com Mercado Livre e avalia impacto na cota; Ifix recua",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:08.042080-03:00"
+    },
+    {
+      "title": "Day trade: Compre Auren (AURE3) e venda Allos (ALOS3) para ganhar até 1,48% hoje (18), segundo a Ágora",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:10.680581-03:00"
+    },
+    {
+      "title": "Minério de ferro sobe com preocupações sobre demanda da China e esperanças de estímulos",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:13.311786-03:00"
+    },
+    {
+      "title": "Ibovespa futuro engata nova queda e dólar sobe para nível acima de R$ 5,20 com Treasuries nas máximas",
+      "source": "Money Times",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:15.943267-03:00"
+    },
+    {
+      "title": "Por que as ações da Micron estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:18.874145-03:00"
+    },
+    {
+      "title": "Economista-chefe do BCE afirma que inflação de 3% é “muito”",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:21.490908-03:00"
+    },
+    {
+      "title": "Ações da AIxC Holdings disparam com pivô para robótica",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:24.111598-03:00"
+    },
+    {
+      "title": "Por que as ações da SK Hynix estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:26.738449-03:00"
+    },
+    {
+      "title": "Por que as ações da Applied Optoelectronics estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:29.367014-03:00"
+    },
+    {
+      "title": "Por que as ações da Coherent estão caindo hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:31.983086-03:00"
+    },
+    {
+      "title": "HAPV3: Por que as ações da Hapvida estão em alta hoje?",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:34.609477-03:00"
+    },
+    {
+      "title": "Ações dos EUA abrem em baixa com alta de petróleo e rendimentos por impasse com Irã",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:37.234134-03:00"
+    },
+    {
+      "title": "Empréstimo da ByteDance atrai mais de US$ 30 bilhões em pedidos",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:39.859156-03:00"
+    },
+    {
+      "title": "Vendas em lojas de conveniência ficam atrás de outros canais de varejo, diz Bank of America",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:42.492077-03:00"
+    },
+    {
+      "title": "Citi inicia Banco Mercantil com ‘buy’, o ‘banco dos clientes 50+’",
+      "source": "Brazil Journal",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:46.071601-03:00"
+    },
+    {
+      "title": "Ibovespa ensaia recuperação com 'blue chips' após dez quedas seguidas",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:49.834729-03:00"
+    },
+    {
+      "title": "Memphis joga na quinta? Veja se atacante pode entrar em campo contra Rosario Central",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:52.468407-03:00"
+    },
+    {
+      "title": "Bitcoin sobe acima dos US$ 64 mil mesmo com alta do petróleo e queda das bolsas",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:56:55.097085-03:00"
+    },
+    {
+      "title": "Casal fatura R$ 2,1 milhões com móveis planejados, mas freia vendas. Marcus Marques explica o erro",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:56:57.730061-03:00"
+    },
+    {
+      "title": "Do estágio ao conselho: o que mais de duas décadas em finanças ensinaram a este gestor",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:00.357210-03:00"
+    },
+    {
+      "title": "ChatGPT ganha versão para adolescentes que restringe tópicos de conversas",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:02.983869-03:00"
+    },
+    {
+      "title": "Harry Kane diz que vai negociar renovação de contrato com o Bayern nesta semana",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:05.614914-03:00"
+    },
+    {
+      "title": "Mineração pode destravar R$ 1,3 tri em arrecadação no Brasil, aponta Vale",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:57:08.243143-03:00"
+    },
+    {
+      "title": "Qual era o verdadeiro nome de Laura Cardoso? Conheça a trajetória da atriz",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:10.865119-03:00"
+    },
+    {
+      "title": "Digitalização ajuda a impulsionar recordes no turismo brasileiro",
+      "source": "Exame",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:13.483502-03:00"
+    },
+    {
+      "title": "I used a human travel agent instead of AI — and cut $2,000 off the price of my European vacation",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:16.306843-03:00"
+    },
+    {
+      "title": "Why it’s better to buy stocks at record highs than wait for the next crash",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:57:18.939765-03:00"
+    },
+    {
+      "title": "Jimmy Kimmel infuriated Trump. Now Disney is suing the FCC over what it calls a ‘retaliatory campaign.’",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:21.582106-03:00"
+    },
+    {
+      "title": "How to manage estate planning after an Alzheimer’s diagnosis",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:24.204117-03:00"
+    },
+    {
+      "title": "Stocks keep shrugging off rising Treasury yields. Here’s the level that could finally trigger a selloff.",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:57:26.844476-03:00"
+    },
+    {
+      "title": "How do I deal with co-workers who constantly complain about the dumbest problems?",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:29.470991-03:00"
+    },
+    {
+      "title": "Home Depot revenue rises even as customers turn away from bigger projects",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:57:32.103201-03:00"
+    },
+    {
+      "title": "Fund managers have rarely been this bullish about stocks, says a Bank of America survey",
+      "source": "MarketWatch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:57:34.743112-03:00"
+    },
+    {
+      "title": "Brookfield Property Partners L.P. 6.50% Class A Cumulative Redeemable Perpetual Preferred Units declares $0.4063 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:37.414505-03:00"
+    },
+    {
+      "title": "Brookfield Property Preferred L.P. CL A CUM PFD 1 declares $0.3906 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:40.035568-03:00"
+    },
+    {
+      "title": "CBL International declares $0.10 dividend",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:42.657634-03:00"
+    },
+    {
+      "title": "Oakmark International Small-Cap Strategy reshuffles portfolio with six new positions in Q2",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:45.287474-03:00"
+    },
+    {
+      "title": "Super League rallies on $134.6M Metaplanet deal, backed by 2.1K Bitcoin",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:57:47.907543-03:00"
+    },
+    {
+      "title": "Nvidia and LG Electronics plan to speed up commercialization of robotics",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:57:50.529775-03:00"
+    },
+    {
+      "title": "U.S.-Iran talks? Trump says think again",
+      "source": "Seeking Alpha",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:53.144498-03:00"
+    },
+    {
+      "title": "This 12.2% Dividend Has &quot;Paid Back&quot; 97.6% of Our Investment (See How)",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:57:59.271846-03:00"
+    },
+    {
+      "title": "Abercrombie & Fitch COO Scott Lipesky Sells 10,000 Shares for $1 Million",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:01.891571-03:00"
+    },
+    {
+      "title": "New Investors: 3 Rock-Solid Dividend Stocks to Build Your Portfolio Around",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:04.517376-03:00"
+    },
+    {
+      "title": "Stock Market Sell-Off: History Says This Is the Smartest Investing Move to Make Right Now",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:07.146435-03:00"
+    },
+    {
+      "title": "Rexford Industrial To Sell Industrial Portfolio For Approx. $1.2 Bln",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:58:09.771616-03:00"
+    },
+    {
+      "title": "Insider Dumps 1,000 Shares After Industrial Stock Surges by 49% in Last Year",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:58:12.394084-03:00"
+    },
+    {
+      "title": "Move Over, SpaceX: Anthropic Targets a $2 Trillion Valuation",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:15.039960-03:00"
+    },
+    {
+      "title": "Fastly Director Paula Loop Sells 7,332 Shares at $30",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:58:17.656321-03:00"
+    },
+    {
+      "title": "Billionaire Investor Bill Ackman Just Sold Alphabet and Piled Into Another Tech Stock That's Up 65,100% Since Its IPO",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:20.296334-03:00"
+    },
+    {
+      "title": "U.S. Stocks May See Further Downside As Yields, Crude Oil Prices Climb",
+      "source": "Nasdaq",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:22.929872-03:00"
+    },
+    {
+      "title": "STF decide que municípios não podem cobrar IPTU com alíquota maior por causa do tamanho do imóvel",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:58:27.411541-03:00"
+    },
+    {
+      "title": "Dólar opera em alta, de olho em petróleo e dados de atividade nos EUA; Ibovespa sobe",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:30.059878-03:00"
+    },
+    {
+      "title": "ChatGPT anuncia versão para adolescentes com limites de conteúdo, uso e controle dos pais",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:58:32.700791-03:00"
+    },
+    {
+      "title": "Meta enfrenta julgamento que pode forçar mudanças em Facebook e Instagram",
+      "source": "G1 Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:58:35.335850-03:00"
+    },
+    {
+      "title": "Ações da Braskem caem com pedido de recuperação nos EUA e rebaixamento",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:39.555862-03:00"
+    },
+    {
+      "title": "Empresa da Braskem no México pede recuperação judicial nos EUA",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:58:42.177234-03:00"
+    },
+    {
+      "title": "Bolsa sobe após 10 pregões, com dólar a R$ 5,21 e fluxo externo no radar",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:44.819027-03:00"
+    },
+    {
+      "title": "Petróleo a US$ 90 e produção industrial nos EUA movem o mercado hoje",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:47.444970-03:00"
+    },
+    {
+      "title": "Lucro da Xiaomi cai 42,6% e atinge US$ 923 milhões no 2º trimestre",
+      "source": "UOL Economia",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:50.073498-03:00"
+    },
+    {
+      "title": "Operação da Braskem (BRKM5) entra com pedido nos EUA para reestruturar dívida, e controladora precisará prestar socorro",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:58:52.807370-03:00"
+    },
+    {
+      "title": "Wellhub amplia soluções financeiras para academias com repasse semanal e seguros",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:55.450392-03:00"
+    },
+    {
+      "title": "Como a alta renda usa o cartão de crédito, empréstimos e seguros, segundo o Google — e por que esse é o cliente favorito dos bancões",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:58:58.101960-03:00"
+    },
+    {
+      "title": "Com Paulo Guedes, Mansueto Almeida e Gustavo Franco, Money Week discute o cenário econômico em meio às eleições; participe",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:59:00.748399-03:00"
+    },
+    {
+      "title": "BCDI11: Fundo de infraestrutura com previsão de renda recorrente e isenção de IR chega à bolsa para investidores com perfil mais defensivo",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:59:03.408258-03:00"
+    },
+    {
+      "title": "O problema da inadimplência, as eleições presidenciais e o que mais move os mercados hoje",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:06.040522-03:00"
+    },
+    {
+      "title": "Primeira Ferrari elétrica atinge preço recorde e se transforma no carro mais caro já leiloado",
+      "source": "Seu Dinheiro",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:08.676839-03:00"
+    },
+    {
+      "title": "Rede D’Or (RDOR3) pode subir 75%? BTG eleva preço-alvo após 2T26 forte",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:12.349383-03:00"
+    },
+    {
+      "title": "BRCO11 fecha contrato de cinco anos com o Mercado Livre; veja detalhes",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:14.977429-03:00"
+    },
+    {
+      "title": "Rede D’Or (RDOR3) pode subir 75%? Analistas veem espaço após 2T26 forte",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:17.614441-03:00"
+    },
+    {
+      "title": "NDIV11 acumula R$ 25,18 por cota distribuídos em 33 eventos desde 2023",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:20.240339-03:00"
+    },
+    {
+      "title": "Ibovespa esqueceu como sobe? Bolsa emenda 10 quedas e agosto vira teste de nervos",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:59:22.884745-03:00"
+    },
+    {
+      "title": "5 FIIs distribuem dividendos nesta terça; IRIM11 rende 1,28% no mês",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:25.512672-03:00"
+    },
+    {
+      "title": "Tegma (TGMA3) paga dividendos e JCP nesta terça-feira; veja valor por ação",
+      "source": "Suno Noticias",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:28.142064-03:00"
+    },
+    {
+      "title": "Braskem chega a acordo com credores (mas na joint venture com a Idesa para o Chapter 11)",
+      "source": "Neofeed",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:32.782549-03:00"
+    },
+    {
+      "title": "OpenAI launches a safer ChatGPT for teens — years after teens started using it",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:35.498197-03:00"
+    },
+    {
+      "title": "Perplexity’s free AI offer left it with millions more users in India",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:38.127797-03:00"
+    },
+    {
+      "title": "Apple’s new macOS update reportedly contains a video of AirPods with a camera",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:59:40.757674-03:00"
+    },
+    {
+      "title": "Daniel Ek’s body-scanning startup Neko Health opens first US office, in New York",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:43.392948-03:00"
+    },
+    {
+      "title": "Reach Capital raises $265M Fund V to back AI founders building to ‘expand human potential’",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:46.030795-03:00"
+    },
+    {
+      "title": "Fairphone is launching its latest repairable phone in the US too",
+      "source": "TechCrunch",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:59:48.663705-03:00"
+    },
+    {
+      "title": "Bankrupt Italian chain shuts 50 restaurants, exits state entirely",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T10:59:51.462560-03:00"
+    },
+    {
+      "title": "Global bond sell-off pressures stocks: AlphaCheck",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:59:54.079481-03:00"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq Sinks As Treasury Yields Jump; Nvidia, Micron, Sandisk All Tumble (Live Coverage)",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:59:56.716556-03:00"
+    },
+    {
+      "title": "New Prediction Market Novig Sees $125 Million In Trading Volumes",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T10:59:59.349580-03:00"
+    },
+    {
+      "title": "Everforth (EFOR) Positioned to Deliver Modern IT Solutions as Demand Nomalizes",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:01.999931-03:00"
+    },
+    {
+      "title": "Comcast expands Xfinity security offerings to deepen broadband customer ties",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:04.633352-03:00"
+    },
+    {
+      "title": "Cognex Corp’s (CGNX) Elevated Growth Supported by Cost Discipline and Sales Strength",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:07.352174-03:00"
+    },
+    {
+      "title": "Amazon.com (AMZN): AI Demand Triggers AWS Revenue Acceleration",
+      "source": "Yahoo Finance",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:10.066859-03:00"
+    },
+    {
+      "title": "Live Q&A: Hollywood brought the heat this summer. Can it last?",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:13.128051-03:00"
+    },
+    {
+      "title": "Seeking nominations for the most innovative influencer marketers for brands in 2026",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:15.762103-03:00"
+    },
+    {
+      "title": "I thought hiring movers would make relocating easier. It only gave me more stuff to regret.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:18.407464-03:00"
+    },
+    {
+      "title": "Renaming Florida's Palm Beach airport after Donald Trump cost an estimated $5.5 million. Take a look at the changes.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:21.056131-03:00"
+    },
+    {
+      "title": "Companies want employees to help build AI tools they expect them to use. That comes with 2 big challenges.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:23.698745-03:00"
+    },
+    {
+      "title": "I stopped drinking on vacation in Nicaragua with my family. It took time to get used to being social again.",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:26.392259-03:00"
+    },
+    {
+      "title": "Unitree unveils a robot it says can run faster than Usain Bolt ahead of its IPO",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:29.033952-03:00"
+    },
+    {
+      "title": "Ukrainian forces are repurposing assault robots for logistics missions because of supply bot shortages",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:31.686250-03:00"
+    },
+    {
+      "title": "DARPA wants robots to 3D print concrete underwater to build and repair ports",
+      "source": "Business Insider",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:34.339946-03:00"
+    },
+    {
+      "title": "Primary election season rolls into Alaska, Florida and Wyoming",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:37.182213-03:00"
+    },
+    {
+      "title": "American Airlines to add seatback screens, bigger first class in race to catch up to Delta and United",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:00:39.816204-03:00"
+    },
+    {
+      "title": "Nvidia's AI moat is shifting from chips to capital",
+      "source": "CNBC - US News",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:42.444373-03:00"
+    },
+    {
+      "title": "Agricultural Commodity Prices Break Out As JPMorgan's Food Crisis Warning Gets Louder",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:45.700831-03:00"
+    },
+    {
+      "title": "Buy-Now-Pay-Later Klarna Crashes As Outlook Cut Exposes Consumer Growth Cracks",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:48.355345-03:00"
+    },
+    {
+      "title": "US Housing Starts Plummet In July, Near COVID Lows",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:50.993541-03:00"
+    },
+    {
+      "title": "\"Sea Of Red\": Futures Slide As Market Wakes Up To Soaring Bond Yields And Diesel Prices",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:53.777219-03:00"
+    },
+    {
+      "title": "Trump Posts Map Depicting Hormuz As 'New' US Territory, Just After Latest Tanker Attack By Iranians",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:56.435950-03:00"
+    },
+    {
+      "title": "Uber Eyes 1 Million Daily Drone Deliveries With Zipline Partnership",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:00:59.082439-03:00"
+    },
+    {
+      "title": "As Japanese Bond Yields Soar, Unrealized Losses At Life Insurers Hit $200 Billion",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:01:01.743447-03:00"
+    },
+    {
+      "title": "\"Absolutely Unprecedented\": Diesel Crack Spread Hits Record As Refined-Products Crisis Arrives",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado",
+      "timestamp": "2026-08-18T11:01:04.406940-03:00"
+    },
+    {
+      "title": "Top Admiral Visits USS Lincoln, Suggests Reports Of Dire Conditions Are Greatly Exaggerated",
+      "source": "ZeroHedge",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:01:07.054315-03:00"
+    },
+    {
+      "title": "SEC Announces Departure of Principal Deputy Director of Enforcement Sam Waldon",
+      "source": "SEC",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-08-18T11:01:09.962982-03:00"
     }
   ]
 }
