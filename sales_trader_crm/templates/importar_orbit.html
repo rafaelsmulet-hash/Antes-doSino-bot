@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Importar Orbit{% endblock %}
+{% block content %}
+  <h1>Importar monitoramento (CSV Orbit)</h1>
+  <p class="empty-note">
+    O arquivo precisa ter uma coluna de operador (identificando o dono de cada linha pelo nome de usuário
+    cadastrado no sistema) além de Nome Cliente, Estrutura, Ativo, Data operação, Fixing, Notional,
+    Barreira Down, Barreira up, Dis. Barreira(%), Barreira acionada em, Resultado (%) e Resultado (R$).
+    A chave de cada estrutura é Cliente + Ativo + Estrutura + Data operação, escopada por operador.
+    Estruturas ativas de um operador que apareceu no arquivo mas cujo registro sumiu são encerradas
+    automaticamente. Se um operador inteiro não aparecer no arquivo, os dados dele ficam intocados
+    (por segurança) e isso é sinalizado no resultado.
+  </p>
+  <form method="post" enctype="multipart/form-data" class="form">
+    <div class="field">
+      <label for="arquivo">Arquivo CSV</label>
+      <input type="file" id="arquivo" name="arquivo" accept=".csv" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Importar</button>
+  </form>
+{% endblock %}

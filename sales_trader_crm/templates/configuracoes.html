@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Configurações{% endblock %}
+{% block content %}
+  <h1>Configurações de alerta</h1>
+  <form method="post" class="form">
+    <div class="field">
+      <label for="barrier_pct">Distância da barreira considerada "próxima" (%)</label>
+      <input type="text" id="barrier_pct" name="barrier_pct" value="{{ settings.barrier_proximity_pct }}">
+    </div>
+    <div class="field">
+      <label for="loss_pct">Resultado (%) considerado "perda relevante" (abaixo de)</label>
+      <input type="text" id="loss_pct" name="loss_pct" value="{{ settings.loss_threshold_pct }}">
+    </div>
+    <div class="field">
+      <label for="fixing_days">Dias antes do Fixing para alertar (separados por vírgula)</label>
+      <input type="text" id="fixing_days" name="fixing_days" value="{{ settings.fixing_alert_days | join(', ') }}">
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+  </form>
+{% endblock %}

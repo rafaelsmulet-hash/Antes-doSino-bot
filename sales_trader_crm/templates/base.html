@@ -3,20 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}Controle de Clientes{% endblock %}</title>
+  <title>{% block title %}Mesa{% endblock %} — Monitoramento</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+  {% if current_user %}
   <header class="topbar">
-    <a href="{{ url_for('index') }}" class="brand">Controle de Contato — Mesa</a>
-    <a href="{{ url_for('new_client') }}" class="btn btn-primary">+ Novo cliente</a>
+    <div class="brand">
+      Mesa — Monitoramento
+      <span class="sub">operador: {{ current_user.display_name or current_user.username }}</span>
+    </div>
+    <nav class="nav-tabs">
+      <a href="{{ url_for('monitoramento') }}" class="{{ 'active' if request.endpoint == 'monitoramento' }}">Monitoramento</a>
+      <a href="{{ url_for('clientes_list') }}" class="{{ 'active' if request.endpoint and request.endpoint.startswith('cliente') }}">Clientes</a>
+      <a href="{{ url_for('configuracoes') }}" class="{{ 'active' if request.endpoint == 'configuracoes' }}">Configurações</a>
+      {% if current_user.is_admin %}
+        <a href="{{ url_for('importar_orbit') }}" class="{{ 'active' if request.endpoint == 'importar_orbit' }}">Importar Orbit</a>
+        <a href="{{ url_for('admin_operadores') }}" class="{{ 'active' if request.endpoint == 'admin_operadores' }}">Operadores</a>
+      {% endif %}
+    </nav>
+    <div class="topbar-actions">
+      <form method="post" action="{{ url_for('logout') }}">
+        <button type="submit" class="btn btn-sm">Sair</button>
+      </form>
+    </div>
   </header>
-  <main class="container">
+  {% endif %}
+  <main>
     {% with messages = get_flashed_messages() %}
       {% if messages %}
-        <div class="flash">
-          {% for m in messages %}<p>{{ m }}</p>{% endfor %}
-        </div>
+        {% for m in messages %}<div class="flash">{{ m }}</div>{% endfor %}
       {% endif %}
     {% endwith %}
     {% block content %}{% endblock %}

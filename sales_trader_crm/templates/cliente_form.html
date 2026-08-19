@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ "Editar cliente" if cliente else "Novo cliente" }}{% endblock %}
+{% block content %}
+  <h1>{{ "Editar cliente" if cliente else "Novo cliente" }}</h1>
+  <form method="post" class="form">
+    <div class="field">
+      <label for="codigo">Código</label>
+      <input type="text" id="codigo" name="codigo" value="{{ form.codigo or '' }}">
+    </div>
+    <div class="field">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" value="{{ form.name or '' }}" required>
+    </div>
+    <div class="field">
+      <label for="produtos">Produtos</label>
+      <textarea id="produtos" name="produtos">{{ form.produtos or '' }}</textarea>
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <a class="btn" href="{{ url_for('clientes_list') }}">Cancelar</a>
+    </div>
+  </form>
+{% endblock %}

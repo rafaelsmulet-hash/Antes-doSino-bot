@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Rascunho{% endblock %}
+{% block content %}
+  <h1>Rascunho de comunicação</h1>
+  <p class="disclaimer">Isto é apenas um rascunho. Revise e envie manualmente (ex.: pelo Tuvis/Salesforce) — nada é enviado automaticamente por aqui.</p>
+  <p class="empty-note">{{ estrutura.nome_cliente }} · {{ estrutura.estrutura }} · {{ estrutura.ativo }}</p>
+  <textarea class="draft-textarea" id="draft-text" readonly>{{ texto }}</textarea>
+  <div class="form-actions">
+    <button type="button" class="btn btn-primary" onclick="copiarRascunho()">Copiar rascunho</button>
+    <a class="btn" href="{{ url_for('monitoramento') }}">Voltar</a>
+  </div>
+  <script>
+    function copiarRascunho() {
+      var ta = document.getElementById("draft-text");
+      ta.select();
+      navigator.clipboard && navigator.clipboard.writeText(ta.value).then(function () {
+        alert("Rascunho copiado!");
+      }, function () {
+        document.execCommand("copy");
+      });
+    }
+  </script>
+{% endblock %}

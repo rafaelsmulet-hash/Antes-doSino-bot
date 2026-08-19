@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}{{ cliente.name }}{% endblock %}
+{% block content %}
+  <h1>{{ (cliente.codigo + " — ") if cliente.codigo else "" }}{{ cliente.name }}</h1>
+
+  <div class="card">
+    <div class="card-title">Produtos</div>
+    <p style="white-space:pre-wrap;">{{ cliente.produtos or "—" }}</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Operações ativas</div>
+    {% if not operations %}
+      <p class="empty-note">Nenhuma operação importada ainda.</p>
+    {% else %}
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Estrutura</th><th>Fixing</th><th>Ativo</th><th class="num">Quantidade</th><th>Resultado</th></tr></thead>
+          <tbody>
+            {% for op in operations %}
+              <tr>
+                <td>{{ op.estrutura or "—" }}</td>
+                <td class="mono">{{ op.fixing or "—" }}</td>
+                <td>{{ op.ativo or "—" }}</td>
+                <td class="num mono">{{ op.quantidade or "—" }}</td>
+                <td>{% if op.resultado_pct is not none %}<span class="mono {{ 'pos' if op.resultado_pct > 0 else 'neg' }}">{{ op.resultado_pct | pct }}</span>{% else %}—{% endif %}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="card">
+    <div class="card-title">Carteira</div>
+    {% if not carteira %}
+      <p class="empty-note">Nenhuma carteira importada ainda.</p>
+    {% else %}
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Ativo</th><th class="num">Quantidade</th></tr></thead>
+          <tbody>
+            {% for item in carteira %}
+              <tr><td>{{ item.ativo }}</td><td class="num mono">{{ item.quantidade | numfmt }}</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="form-actions">
+    <a class="btn" href="{{ url_for('cliente_editar', client_id=cliente.id) }}">Editar</a>
+    <form method="post" action="{{ url_for('cliente_excluir', client_id=cliente.id) }}" onsubmit="return confirm('Excluir este cliente e todos os dados dele?');">
+      <button type="submit" class="btn btn-danger">Excluir</button>
+    </form>
+    <a class="btn" href="{{ url_for('clientes_list') }}">Voltar</a>
+  </div>
+{% endblock %}

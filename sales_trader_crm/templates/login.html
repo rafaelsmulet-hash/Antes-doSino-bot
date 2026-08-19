@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Entrar{% endblock %}
+{% block content %}
+  <div class="login-wrap">
+    <div class="brand">Mesa — Monitoramento</div>
+    <form method="post" class="form">
+      <div class="field">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" autofocus required>
+      </div>
+      <div class="field">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+  </div>
+{% endblock %}

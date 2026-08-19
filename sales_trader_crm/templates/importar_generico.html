@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ titulo }}{% endblock %}
+{% block content %}
+  <h1>{{ titulo }}</h1>
+  <p class="empty-note">{{ descricao }}</p>
+  <form method="post" action="{{ acao }}" enctype="multipart/form-data" class="form">
+    <div class="field">
+      <label for="arquivo">Planilha (.csv ou .xlsx)</label>
+      <input type="file" id="arquivo" name="arquivo" accept=".csv,.xlsx" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Importar</button>
+  </form>
+{% endblock %}

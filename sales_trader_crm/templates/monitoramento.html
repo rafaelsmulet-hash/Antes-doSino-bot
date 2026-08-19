@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}Monitoramento{% endblock %}
+{% block content %}
+  <h1>🚨 Monitoramento de estruturas</h1>
+
+  <div class="chip-row">
+    <div class="chip chip-green"><span class="count mono">{{ kpis.total }}</span><span class="label">Estruturas ativas</span></div>
+    <div class="chip chip-yellow"><span class="count mono">{{ kpis.proxima }}</span><span class="label">Próximas de barreira</span></div>
+    <div class="chip chip-red"><span class="count mono">{{ kpis.atingida }}</span><span class="label">Barreira atingida</span></div>
+    <div class="chip chip-red"><span class="count mono">{{ kpis.perda }}</span><span class="label">Perda relevante</span></div>
+  </div>
+
+  <section class="card">
+    <div class="card-title">Atenção hoje</div>
+    {% if not alerts %}
+      <div class="all-clear">✅ Nenhum alerta em aberto. Tudo sob controle.</div>
+    {% else %}
+      <div class="alert-list">
+        {% for a in alerts %}
+          <div class="alert-item severity-{{ a.severity }}">
+            <div class="alert-item-body">
+              <div class="alert-item-title">{{ a.title }}</div>
+              <div class="alert-item-detail">{{ a.detail }}</div>
+            </div>
+            <a class="btn btn-sm" href="{{ url_for('rascunho', estrutura_id=a.estrutura.id) }}">Rascunho</a>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+
+  <section>
+    <form method="get" class="search-row">
+      <input type="text" name="q" value="{{ q }}" placeholder="Buscar por cliente, estrutura ou ativo…">
+      <button type="submit" class="btn btn-sm">Buscar</button>
+      <input type="hidden" name="filter" value="{{ quick_filter }}">
+    </form>
+  </section>
+
+  <section class="filter-row">
+    {% for key, label in [("ativas", "Ativas"), ("proxima", "Próximas de barreira"), ("atingida", "Barreira atingida"), ("perda", "Perda relevante"), ("encerradas", "Encerradas"), ("todas", "Todas")] %}
+      <a class="filter-pill {{ 'active' if quick_filter == key }}" href="{{ url_for('monitoramento', q=q, filter=key) }}">{{ label }}</a>
+    {% endfor %}
+  </section>
+
+  {% if not estruturas %}
+    <p class="empty-note">Nenhuma estrutura encontrada para esse filtro.</p>
+  {% else %}
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Cliente</th><th>Estrutura</th><th>Ativo</th><th>Data operação</th><th>Fixing</th>
+            <th class="num">Notional</th><th class="num">Barreira Down</th><th class="num">Barreira Up</th>
+            <th class="num">Dist. Barreira</th><th>Status barreira</th><th>Resultado %</th><th class="num">Resultado R$</th>
+            <th>Status</th><th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for e in estruturas %}
+            <tr>
+              <td>{{ e.nome_cliente or "—" }}</td>
+              <td>{{ e.estrutura or "—" }}</td>
+              <td>{{ e.ativo or "—" }}</td>
+              <td class="mono">{{ e.data_operacao or "—" }}</td>
+              <td class="mono">
+                {{ e.fixing or "—" }}
+                {% if e.status == "ativa" and e.fixing_days_left is not none %}
+                  {% if 0 <= e.fixing_days_left <= 5 %}<span class="badge badge-urgent">{{ e.fixing_days_left }}d</span>{% elif e.fixing_days_left < 0 %}<span class="badge badge-encerrada">venceu</span>{% endif %}
+                {% endif %}
+              </td>
+              <td class="num mono">{{ e.notional | numfmt }}</td>
+              <td class="num mono">{{ e.barreira_down | numfmt }}</td>
+              <td class="num mono">{{ e.barreira_up | numfmt }}</td>
+              <td class="num mono">{% if e.dis_barreira_pct is not none %}{{ e.dis_barreira_pct | numfmt(2) }}%{% else %}—{% endif %}</td>
+              <td><span class="badge badge-{{ e.barrier_status }}">{{ {"atingida": "Atingida", "proxima": "Próxima", "normal": "Normal"}[e.barrier_status] }}</span></td>
+              <td>{% if e.resultado_pct is not none %}<span class="mono {{ 'pos' if e.resultado_pct > 0 else 'neg' }}">{{ e.resultado_pct | pct }}</span>{% else %}—{% endif %}</td>
+              <td class="num mono">{{ e.resultado_rs | money }}</td>
+              <td><span class="badge {{ 'badge-ativa' if e.status == 'ativa' else 'badge-encerrada' }}">{{ "Ativa" if e.status == "ativa" else "Encerrada" }}</span></td>
+              <td><a class="btn btn-sm" href="{{ url_for('rascunho', estrutura_id=e.id) }}">Rascunho</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+{% endblock %}

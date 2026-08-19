@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Clientes{% endblock %}
+{% block content %}
+  <h1>Clientes</h1>
+  <div class="form-actions">
+    <a class="btn btn-primary" href="{{ url_for('cliente_novo') }}">+ Novo cliente</a>
+    <a class="btn" href="{{ url_for('clientes_importar') }}">Importar clientes</a>
+    <a class="btn" href="{{ url_for('operacoes_importar') }}">Importar operações</a>
+    <a class="btn" href="{{ url_for('carteira_importar') }}">Importar carteira</a>
+  </div>
+
+  {% if not clientes %}
+    <p class="empty-note">Nenhum cliente cadastrado ainda.</p>
+  {% else %}
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Código</th><th>Nome</th><th>Produtos</th><th></th></tr></thead>
+        <tbody>
+          {% for c in clientes %}
+            <tr onclick="window.location='{{ url_for('cliente_detail', client_id=c.id) }}'" style="cursor:pointer;">
+              <td class="mono">{{ c.codigo or "—" }}</td>
+              <td>{{ c.name }}</td>
+              <td>{{ (c.produtos or "—").split("\n")[0] }}</td>
+              <td><a class="btn btn-sm" href="{{ url_for('cliente_detail', client_id=c.id) }}">Abrir</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+{% endblock %}

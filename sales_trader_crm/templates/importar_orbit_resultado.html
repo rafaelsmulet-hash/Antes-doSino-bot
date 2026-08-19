@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Resultado da importação{% endblock %}
+{% block content %}
+  <h1>Importação do Orbit concluída</h1>
+  <div class="card">
+    <div class="card-title">Resumo</div>
+    <p>Linhas lidas: <strong class="mono">{{ summary.total_rows }}</strong></p>
+    <p>Estruturas novas: <strong class="mono">{{ summary.created }}</strong></p>
+    <p>Estruturas atualizadas: <strong class="mono">{{ summary.updated }}</strong></p>
+    <p>Encerradas nesta importação: <strong class="mono">{{ summary.closed }}</strong></p>
+  </div>
+
+  {% if summary.unmatched_operadores %}
+    <div class="card">
+      <div class="card-title">⚠ Linhas com operador não reconhecido</div>
+      <p class="empty-note">Esses valores da coluna de operador não batem com nenhum usuário cadastrado — as linhas foram ignoradas. Confira o nome de usuário exato ou cadastre o operador.</p>
+      <ul>
+        {% for nome, count in summary.unmatched_operadores.items() %}
+          <li>{{ nome }} — {{ count }} linha(s)</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if summary.operadores_nao_fechados %}
+    <div class="card">
+      <div class="card-title">⚠ Operadores ausentes neste arquivo</div>
+      <p class="empty-note">
+        Esses operadores têm estruturas ativas no sistema mas não tiveram nenhuma linha neste arquivo —
+        por segurança, as estruturas deles <strong>não</strong> foram encerradas automaticamente. Confirme se
+        o arquivo de hoje realmente não inclui esses operadores antes de assumir que está tudo certo.
+      </p>
+      <ul>
+        {% for nome in summary.operadores_nao_fechados %}
+          <li>{{ nome }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <div class="form-actions">
+    <a class="btn btn-primary" href="{{ url_for('monitoramento') }}">Ver monitoramento</a>
+    <a class="btn" href="{{ url_for('importar_orbit') }}">Importar outro arquivo</a>
+  </div>
+{% endblock %}
