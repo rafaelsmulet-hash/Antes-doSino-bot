@@ -1,35 +1,14 @@
 {
   "date": "2026-08-20",
-  "total_ingeridas": 42764,
-  "aprovadas_pelo_fluxo_atual": 674,
-  "descartadas_pelos_filtros_atuais": 42090,
+  "total_ingeridas": 43012,
+  "aprovadas_pelo_fluxo_atual": 677,
+  "descartadas_pelos_filtros_atuais": 42335,
   "score_medio_materialidade": null,
   "seriam_breaking": 0,
   "iriam_para_rodada": 0,
   "seriam_descartadas_pelo_novo_sistema": 2000,
   "total_divergencias": 668,
   "divergencias": [
-    {
-      "title": "Ibovespa volta a subir após 11 quedas: até onde pode ir a recuperação?",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "O conselho de Steve Jobs que Larry Page não seguiu ao criar a Alphabet",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Casas Bahia em crise: quem mais no varejo enfrenta pressão de dívida?",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Emprego nos EUA, ata do BCE e leilão do Tesouro: o que move os mercados",
       "source": "Exame",
@@ -144,6 +123,27 @@
     },
     {
       "title": "Homem-Aranha na BMW abre discussão: montadoras podem colocar propaganda na tela do carro?",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Mega-Sena pode pagar R$ 50 milhões nesta quinta-feira; g1 transmite ao vivo",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Apesar de queda na fila no INSS, pessoas relatam espera de até 8 meses por resposta a pedido de benefício",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Vazamento de dados na Latam: entenda o que foi exposto e como se proteger",
       "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
