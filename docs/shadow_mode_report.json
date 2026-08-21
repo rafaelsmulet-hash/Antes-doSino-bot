@@ -1,28 +1,14 @@
 {
   "date": "2026-08-20",
-  "total_ingeridas": 42516,
-  "aprovadas_pelo_fluxo_atual": 673,
-  "descartadas_pelos_filtros_atuais": 41843,
+  "total_ingeridas": 42764,
+  "aprovadas_pelo_fluxo_atual": 674,
+  "descartadas_pelos_filtros_atuais": 42090,
   "score_medio_materialidade": null,
   "seriam_breaking": 0,
   "iriam_para_rodada": 0,
   "seriam_descartadas_pelo_novo_sistema": 2000,
-  "total_divergencias": 669,
+  "total_divergencias": 668,
   "divergencias": [
-    {
-      "title": "China: PBoC mantém principais taxas de juros (LPRs) inalteradas",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Desemprego nos EUA, juros na China, Walmart, leilão do Tesouro e mais destaques hoje",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Ibovespa volta a subir após 11 quedas: até onde pode ir a recuperação?",
       "source": "InfoMoney",
@@ -144,6 +130,20 @@
     },
     {
       "title": "Leilão da Casas Bahia tem notebooks, celulares e eletrodomésticos; veja como não cair em golpe",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Por que grandes redes de varejo estão fechando lojas e pedindo recuperação judicial",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Homem-Aranha na BMW abre discussão: montadoras podem colocar propaganda na tela do carro?",
       "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
