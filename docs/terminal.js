@@ -664,12 +664,14 @@
       var card = cards[i];
       var badge = card.querySelector(".badge");
       var titulo = card.querySelector("h3");
+      var resumo = card.querySelector("p");
       var fonte = card.querySelector(".src");
       var link = card.querySelector("a.read");
 
       var badgeClasse = badge ? badge.className.replace("badge", "").trim() : "info";
       var badgeTexto = badge ? badge.textContent.trim() : "INFO";
       var tituloTexto = titulo ? titulo.textContent.trim() : "";
+      var resumoTexto = resumo ? resumo.textContent.trim() : "";
       var fonteTexto = fonte ? fonte.textContent.trim() : "";
       var href = link ? link.getAttribute("href") : "#";
 
@@ -679,13 +681,48 @@
         html +=
           '<div class="feed-item">' +
           '<span class="badge ' + badgeClasse + '">' + badgeTexto + "</span>" +
-          '<h4><a href="' + href + '" target="_blank" rel="noopener">' + tituloTexto + "</a></h4>" +
+          '<h4 class="feed-item-title" role="button" tabindex="0">' + tituloTexto + "</h4>" +
           '<span class="src">' + fonteTexto + "</span>" +
+          (resumoTexto
+            ? '<div class="feed-item-resumo"><p>' + resumoTexto + "</p>" +
+              '<a href="' + href + '" target="_blank" rel="noopener" class="feed-item-link">Leia a matéria completa &rarr;</a></div>'
+            : "") +
           "</div>";
       }
     }
     body.innerHTML = html || '<div class="feed-empty">Sem notícias no momento.</div>';
     TODAS_NOTICIAS = todas;
+  }
+
+  // Leitor inline: clicar no titulo expande o resumo (ja vem no card
+  // gerado pelo main.py, so nao era exibido na coluna lateral) em vez
+  // de abrir a fonte externa direto - "accordion" (so um aberto por
+  // vez, pra caber na largura estreita da sidebar). Delegado no
+  // container porque os itens sao recriados a cada fetch do feed.
+  function inicializarLeitorDeNoticias() {
+    var body = document.getElementById("feed-body");
+    if (!body) return;
+    function alternar(item) {
+      var jaAberto = item.classList.contains("expanded");
+      body.querySelectorAll(".feed-item.expanded").forEach(function (el) {
+        el.classList.remove("expanded");
+      });
+      if (!jaAberto) item.classList.add("expanded");
+    }
+    body.addEventListener("click", function (e) {
+      var titulo = e.target.closest(".feed-item-title");
+      if (!titulo) return;
+      var item = titulo.closest(".feed-item");
+      if (item) alternar(item);
+    });
+    body.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      var titulo = e.target.closest(".feed-item-title");
+      if (!titulo) return;
+      e.preventDefault();
+      var item = titulo.closest(".feed-item");
+      if (item) alternar(item);
+    });
   }
 
   // ---------------------------------------------------------------------
@@ -978,6 +1015,49 @@
   }
 
   // ---------------------------------------------------------------------
+  // Abas do conteudo principal (Visao Geral / Mercado / Acoes & Cripto /
+  // Volatilidade). Nao remonta nada nem mexe nos widgets - so mostra/
+  // oculta as 3 secoes (panels-grid / picker-pair-row / sentiment-row)
+  // via data-tab-section, independente da personalizacao (drag/hide),
+  // que continua funcionando normalmente dentro de cada secao.
+  // ---------------------------------------------------------------------
+
+  var TERM_TAB_STORAGE_KEY = "antesdosino_terminal_tab_v1";
+
+  function ativarTermTab(alvo) {
+    document.querySelectorAll(".term-tab").forEach(function (botao) {
+      botao.classList.toggle("active", botao.getAttribute("data-term-tab") === alvo);
+    });
+    document.querySelectorAll("[data-tab-section]").forEach(function (secao) {
+      secao.style.display = (alvo === "geral" || secao.getAttribute("data-tab-section") === alvo) ? "" : "none";
+    });
+    try {
+      localStorage.setItem(TERM_TAB_STORAGE_KEY, alvo);
+    } catch (e) {
+      // localStorage indisponivel (modo anonimo etc) - so nao persiste a aba.
+    }
+  }
+
+  function inicializarTermTabs() {
+    var botoes = document.querySelectorAll(".term-tab");
+    if (!botoes.length) return;
+    botoes.forEach(function (botao) {
+      botao.addEventListener("click", function () {
+        ativarTermTab(botao.getAttribute("data-term-tab"));
+      });
+    });
+    var salva = null;
+    try {
+      salva = localStorage.getItem(TERM_TAB_STORAGE_KEY);
+    } catch (e) {
+      salva = null;
+    }
+    if (salva && document.querySelector('.term-tab[data-term-tab="' + salva + '"]')) {
+      ativarTermTab(salva);
+    }
+  }
+
+  // ---------------------------------------------------------------------
   // Abas da sidebar: Noticias / Contexto Macro. So troca visibilidade -
   // os dois paineis ja estao montados (widget-macro entra junto com os
   // outros em montarTodosOsWidgets), sem custo de remontar nada.
@@ -1006,6 +1086,8 @@
     inicializarPersonalizacao();
     inicializarCmdk();
     inicializarAbasSidebar();
+    inicializarTermTabs();
+    inicializarLeitorDeNoticias();
   });
 
   // Troca de tema (ver theme.js): reconstroi os widgets no colorTheme

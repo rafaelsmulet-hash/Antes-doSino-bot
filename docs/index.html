@@ -85,6 +85,25 @@
   .btn-back-home svg{width:14px;height:14px;flex-shrink:0;opacity:0.8;}
   .btn-back-home:hover{color:var(--cream);}
 
+  /* ---------- Abas do conteudo principal (Visao Geral / Mercado / etc) ---------- */
+  /* Nao move paineis de container (evitaria mexer no Sortable.js, que
+     so opera dentro de #panels-grid, e no data-hidden da personalizacao,
+     que usa querySelector global) - so mostra/oculta as 3 secoes ja
+     existentes (panels-grid / picker-pair-row / sentiment-row) via JS
+     (ver ativarTermTab em terminal.js). Cada secao mantem seu proprio
+     grid interno intacto, entao quando so uma fica visivel ela ocupa
+     100% do espaco (flex-grow de item unico preenche o container). */
+  .term-tabs{display:flex;gap:6px;flex-shrink:0;}
+  .term-tab{
+    background:none;border:1px solid var(--line);color:var(--slate);cursor:pointer;
+    font-size:0.78rem;font-weight:600;padding:7px 14px;border-radius:100px;
+    font-family:'IBM Plex Mono',monospace;
+    transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.15s var(--ease-out);
+  }
+  .term-tab.active{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
+  .term-tab:not(.active):hover{color:var(--cream);border-color:var(--bronze);}
+  .term-tab:active{transform:scale(0.96);}
+
   /* ---------- Corpo: grid principal + sidebar ---------- */
   /* Tela unica, sem rolagem: term-body ocupa exatamente a altura
      restante da viewport (flex:1 dentro de .terminal-shell, que ja e
@@ -238,6 +257,17 @@
   .feed-item .src{font-size:0.68rem;color:var(--slate-dim);margin-top:3px;display:block;}
   .feed-empty{color:var(--slate-dim);font-size:0.82rem;padding:14px 6px;}
 
+  /* ---------- Leitor inline de noticias (accordion no feed da sidebar) ---------- */
+  .feed-item-title{cursor:pointer;transition:color 0.2s ease;}
+  .feed-item-title:hover{color:var(--gold);}
+  .feed-item-resumo{
+    display:none;margin-top:8px;padding-top:8px;border-top:1px solid var(--line);
+  }
+  .feed-item.expanded .feed-item-resumo{display:block;}
+  .feed-item-resumo p{font-size:0.8rem;line-height:1.5;color:var(--slate);margin-bottom:8px;}
+  .feed-item-link{font-size:0.76rem;font-weight:600;color:var(--gold);white-space:nowrap;}
+  .feed-item-link:hover{color:var(--gold-soft);}
+
   /* ---------- Abas da sidebar: Noticias / Contexto Macro ---------- */
   .sidebar-tabs{display:flex;gap:6px;flex-shrink:0;}
   .sidebar-tab{
@@ -359,6 +389,7 @@
     .btn-search{padding:7px 8px;}
     .btn-back-home{font-size:0.74rem;}
     .term-body{grid-template-columns:1fr;}
+    .term-tabs{flex-wrap:wrap;}
     .panels-grid{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:190px;flex:none;}
     .picker-pair-row{grid-template-columns:1fr;flex:none;}
     .picker-pair-row .panel{height:380px;}
@@ -409,7 +440,14 @@
 
   <div class="term-body">
     <main class="term-main">
-      <section class="panels-grid" id="panels-grid">
+      <div class="term-tabs" id="term-tabs">
+        <button class="term-tab active" data-term-tab="geral" type="button">Visão Geral</button>
+        <button class="term-tab" data-term-tab="mercado" type="button">Índices, Câmbio &amp; Commodities</button>
+        <button class="term-tab" data-term-tab="acoes" type="button">Ações &amp; Cripto</button>
+        <button class="term-tab" data-term-tab="vol" type="button">Volatilidade &amp; Destaques</button>
+      </div>
+
+      <section class="panels-grid" id="panels-grid" data-tab-section="mercado">
 
         <div class="panel" data-panel-id="indices" draggable="true">
           <div class="panel-head">
@@ -449,7 +487,7 @@
 
       </section>
 
-      <section class="picker-pair-row">
+      <section class="picker-pair-row" data-tab-section="acoes">
         <div class="panel" data-panel-id="acoes" draggable="true">
           <div class="panel-head">
             <span class="drag-handle">⠿</span>
@@ -487,7 +525,7 @@
         </div>
       </section>
 
-      <section class="sentiment-row">
+      <section class="sentiment-row" data-tab-section="vol">
         <div class="panel" data-panel-id="vix" draggable="true">
           <div class="panel-head">
             <span class="drag-handle">⠿</span>
