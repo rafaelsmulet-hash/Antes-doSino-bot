@@ -174,7 +174,7 @@
       "id": "2cf9c2b6-5a22-4c45-989f-3fad01a7ea44",
       "cluster_key": "embraer",
       "first_seen": "2026-08-05T12:01:25.371401-03:00",
-      "last_updated": "2026-08-25T12:41:08.196024-03:00",
+      "last_updated": "2026-08-25T13:27:56.791676-03:00",
       "materiality_peak": 8.0,
       "sources_seen": [
         "UOL Economia",
@@ -186,9 +186,10 @@
         "Exame",
         "Suno Noticias",
         "Neofeed",
-        "Money Times"
+        "Money Times",
+        "G1 Economia"
       ],
-      "update_count": 40,
+      "update_count": 41,
       "status": "active"
     },
     {
@@ -380,6 +381,18 @@
         "Investing.com Brasil"
       ],
       "update_count": 18,
+      "status": "active"
+    },
+    {
+      "id": "7b986d62-367b-4e18-aae4-e6e3bcadc40c",
+      "cluster_key": "abev3",
+      "first_seen": "2026-08-25T13:28:01.312302-03:00",
+      "last_updated": "2026-08-25T13:28:01.312302-03:00",
+      "materiality_peak": null,
+      "sources_seen": [
+        "UOL Economia"
+      ],
+      "update_count": 1,
       "status": "active"
     }
   ]
