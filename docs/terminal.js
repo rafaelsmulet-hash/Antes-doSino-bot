@@ -278,8 +278,17 @@
     // "Contexto Macro" na sidebar.
     montarListaAtivos("widget-macro", [
       ["Fluxo Estrangeiro (proxy: EWZ)", "AMEX:EWZ|1D"],
-      ["DI Jan/27 (curto)", "BMFBOVESPA:DI1F2027|1D"],
-      ["DI Jan/31 (longo)", "BMFBOVESPA:DI1F2031|1D"],
+      ["DI Jan/27", "BMFBOVESPA:DI1F2027|1D"],
+      ["DI Jan/28", "BMFBOVESPA:DI1F2028|1D"],
+      ["DI Jan/29", "BMFBOVESPA:DI1F2029|1D"],
+      ["DI Jan/30", "BMFBOVESPA:DI1F2030|1D"],
+      ["DI Jan/31", "BMFBOVESPA:DI1F2031|1D"],
+      ["DI Jan/32", "BMFBOVESPA:DI1F2032|1D"],
+      ["DI Jan/33", "BMFBOVESPA:DI1F2033|1D"],
+      ["DI Jan/34", "BMFBOVESPA:DI1F2034|1D"],
+      ["DI Jan/35", "BMFBOVESPA:DI1F2035|1D"],
+      ["DI Jan/36", "BMFBOVESPA:DI1F2036|1D"],
+      ["DI Jan/37", "BMFBOVESPA:DI1F2037|1D"],
     ]);
 
     montarWidgetAcoes(); // Top 10 / Minha lista - ver secao "Bloco picker" abaixo
