@@ -667,9 +667,9 @@
     }
 
     var todas = [];
-    var html = "";
+    var itens = [];
     var limite = 20;
-    for (var i = 0; i < cards.length; i++) {
+    for (var i = 0; i < cards.length && i < limite; i++) {
       var card = cards[i];
       var badge = card.querySelector(".badge");
       var titulo = card.querySelector("h3");
@@ -685,20 +685,46 @@
       var href = link ? link.getAttribute("href") : "#";
 
       todas.push({ titulo: tituloTexto, fonte: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto });
+      itens.push({ tituloTexto: tituloTexto, resumoTexto: resumoTexto, fonteTexto: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto });
+    }
 
-      if (i < limite) {
-        html +=
-          '<div class="feed-item">' +
-          '<span class="badge ' + badgeClasse + '">' + badgeTexto + "</span>" +
-          '<h4 class="feed-item-title" role="button" tabindex="0">' + tituloTexto + "</h4>" +
-          '<span class="src">' + fonteTexto + "</span>" +
-          (resumoTexto
-            ? '<div class="feed-item-resumo"><p>' + resumoTexto + "</p>" +
-              '<a href="' + href + '" target="_blank" rel="noopener" class="feed-item-link">Leia a matéria completa &rarr;</a></div>'
-            : "") +
-          "</div>";
+    // Hierarquia editorial: o 1o item vira "alerta principal" (maior,
+    // resumo sempre visivel), os proximos 4 ficam como "destaques"
+    // (cards normais), o resto vira uma lista compacta de "radar" -
+    // mesma ordem que ja vem do feed (main.py ja prioriza por
+    // materialidade), so a apresentacao muda por faixa.
+    function montarItem(item, extraClasse) {
+      return (
+        '<div class="feed-item' + (extraClasse ? " " + extraClasse : "") + '">' +
+        '<span class="badge ' + item.badgeClasse + '">' + item.badgeTexto + "</span>" +
+        '<h4 class="feed-item-title" role="button" tabindex="0">' + item.tituloTexto + "</h4>" +
+        '<span class="src">' + item.fonteTexto + "</span>" +
+        (item.resumoTexto
+          ? '<div class="feed-item-resumo"><p>' + item.resumoTexto + "</p>" +
+            '<a href="' + item.href + '" target="_blank" rel="noopener" class="feed-item-link">Leia a matéria completa &rarr;</a></div>'
+          : "") +
+        "</div>"
+      );
+    }
+
+    var html = "";
+    if (itens.length) {
+      html += '<div class="feed-section-label">Alerta principal</div>';
+      html += montarItem(itens[0], "feed-alert");
+    }
+    if (itens.length > 1) {
+      html += '<div class="feed-section-label">Destaques</div>';
+      for (var d = 1; d < Math.min(itens.length, 5); d++) {
+        html += montarItem(itens[d]);
       }
     }
+    if (itens.length > 5) {
+      html += '<div class="feed-section-label">Radar</div>';
+      for (var r = 5; r < itens.length; r++) {
+        html += montarItem(itens[r], "feed-radar-item");
+      }
+    }
+
     body.innerHTML = html || '<div class="feed-empty">Sem notícias no momento.</div>';
     TODAS_NOTICIAS = todas;
   }
