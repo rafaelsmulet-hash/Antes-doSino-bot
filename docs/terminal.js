@@ -1189,6 +1189,7 @@
     inicializarTermTabs();
     inicializarLeitorDeNoticias();
     inicializarContextoAtivo();
+    if (window.AntesDoSinoTema) window.AntesDoSinoTema.montarMarketStatus("market-status-container");
   });
 
   // Troca de tema (ver theme.js): reconstroi os widgets no colorTheme
