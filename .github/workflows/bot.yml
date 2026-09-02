@@ -45,7 +45,6 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
           TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
-          DECISOES_ENCRYPTION_KEY: ${{ secrets.DECISOES_ENCRYPTION_KEY }}
         run: python main.py
 
 

@@ -16,12 +16,12 @@ código)._
 | Cotações BR (pipeline) | brapi.dev (plano free — 15.000 req/mês) |
 | Notícias | Feeds RSS públicos |
 | Distribuição | Telegram (bot próprio) |
-| Segredos | GitHub Secrets — `BRAPI_TOKEN`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `DECISOES_ENCRYPTION_KEY`, `CARTEIRA_PASSWORD_HASH` |
-| Criptografia at-rest | Fernet (`cryptography`), pra dados de usuário (`decisoes_usuarios.json`, `carteira_status.json`) |
+| Segredos | GitHub Secrets — `BRAPI_TOKEN`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_ADMIN_CHAT_ID`, `GROQ_API_KEY`, `TWELVEDATA_API_KEY` |
 
 **Não há**: React/Vue/framework de UI, bundler, npm build step, suíte
 de testes automatizada, banco de dados (tudo é JSON em arquivo,
-versionado no próprio repo git).
+versionado no próprio repo git), backend HTTP próprio (não há mais
+nenhum Cloudflare Worker no projeto).
 
 ## 2. Páginas existentes (`docs/`)
 
@@ -32,10 +32,8 @@ versionado no próprio repo git).
 | `mapa.html` | Mapa de calor (S&P 500 + Ibovespa) |
 | `quant.html` | Painel quantitativo/screener |
 | `sobre.html` | Sobre e Metodologia — de onde vêm os dados, o que o produto não é |
-| `status.html` | Transparência de frescor dos dados por componente (pipeline, TradingView, Carteira, Diário) |
+| `status.html` | Transparência de frescor dos dados (último ciclo do pipeline principal + TradingView como tempo real) |
 | `resumo-semanal.html` | Gerado pelo `main.py` — histórico de volume/sentimento de notícias, navegador de edições anteriores |
-| `diario.html` | Diário de Decisão — login via Telegram Login Widget, mostra registros do usuário |
-| `carteira.html` | Carteira de Dividendos — página privada (senha), não linkada em nav nenhuma |
 | `dados-terminal.html` | **Não é página pública** — gerado pelo `main.py`, consumido via `fetch()` pelo próprio Terminal (evita expor lógica de geração client-side) |
 | `template.html` | Template-fonte usado pelo `main.py` pra gerar `dados-terminal.html` |
 | `fechamento-hoje.html`, `premarket-hoje.html` | Snapshots gerados pelo pipeline (digests do dia) |
@@ -50,10 +48,6 @@ versionado no próprio repo git).
   isolado em `social/`), export de `status.json`, `resumo_historico.json`.
 - **`editorial_foundation.py`** — clustering de stories (`derive_cluster_key`),
   modo sombra de decisão editorial. Recebe tudo por parâmetro do `main.py`.
-- **`diario_decisao.py`** — registro factual de compra/venda via
-  Telegram, sem julgamento nem recomendação; acompanhamento pós-decisão.
-- **`carteira_dividendos.py`** — estratégia mecânica de aporte mensal
-  (dividend growth/yield), universo fixo de 8 tickers, roda todo dia 10.
 
 Todas as integrações novas em `main.py::main()` seguem o padrão
 isolado: `try/except` próprio, log do erro, sem derrubar o ciclo.
@@ -62,14 +56,9 @@ isolado: `try/except` próprio, log do erro, sem derrubar o ciclo.
 
 - Zero redação humana — pipeline 100% automatizado.
 - Zero recomendação de compra/venda — declarado explicitamente em
-  `sobre.html` e reforçado em toda feature nova (Diário de Decisão,
-  Carteira de Dividendos).
+  `sobre.html`.
 - Proxy só quando não há fonte gratuita melhor, e sempre identificado
   como proxy na própria tela (ex: Fluxo Estrangeiro via EWZ).
-- Dados sensíveis de usuário (Diário de Decisão, Carteira) criptografados
-  at-rest com Fernet, porque o repo é público (GitHub Pages free exige
-  isso) e arquivos fora de `docs/` continuam acessíveis via
-  `raw.githubusercontent.com`.
 
 ## 5. Riscos e limitações conhecidos
 
@@ -90,18 +79,26 @@ isolado: `try/except` próprio, log do erro, sem derrubar o ciclo.
   Hoje só é seguro usar como **link de saída** (confirmado:
   `obm.com.br/acoes/<ticker>` pra ações BR) — não como fonte de dado
   embutida no produto.
-- **Cloudflare Worker** (`worker/diario-auth-worker.js`): código pronto
-  pra verificação de login Telegram e senha da Carteira, mas o deploy
-  final (URL do Worker) ainda não foi confirmado/plugado em
-  `diario.html`/`carteira.html` (placeholders ainda presentes).
 
 ## 6. O que NÃO existe (evitar assumir)
 
-- Nenhum sistema de contas/autenticação genérico (Diário de Decisão
-  usa Telegram Login Widget; Carteira usa senha única, hardcoded via
-  hash em secret — ambos single-purpose, não um sistema de usuários).
-- Nenhuma API própria exposta publicamente (o "backend" é só o
-  pipeline batch + os dois endpoints do Cloudflare Worker).
+- Nenhum sistema de contas/autenticação (não há login em nenhuma
+  página do site).
+- Nenhuma API própria exposta publicamente — o "backend" é só o
+  pipeline batch do GitHub Actions.
 - Nenhum componente de UI reutilizável em código (é HTML/CSS repetido
   entre páginas seguindo convenção visual, não uma biblioteca de
   componentes).
+
+## 7. Histórico: features removidas
+
+**Diário de Decisão** e **Carteira de Dividendos** existiram neste
+projeto (registro factual de decisões de investimento via Telegram, e
+uma estratégia mecânica de aporte mensal, respectivamente) e foram
+**removidas por completo** a pedido do usuário — código
+(`diario_decisao.py`, `carteira_dividendos.py`), páginas
+(`docs/diario.html`, `docs/carteira.html`), dados armazenados
+(`decisoes_usuarios.json`, `diario_telegram_offset.json`) e o
+Cloudflare Worker que autenticava as duas (`worker/`) foram excluídos
+do repositório. Não recriar essas features a partir de suposições —
+se forem pedidas de novo, tratar como escopo novo.

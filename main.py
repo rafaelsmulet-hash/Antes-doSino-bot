@@ -1192,10 +1192,7 @@ def format_message(source, entry, ai_result):
 def fetch_brapi_results(ticker):
     """Chamada crua a brapi.dev para 1 ticker - retorna a lista
     'results' do payload (pode ter 0, 1 ou mais itens), ou lista vazia
-    em caso de token ausente/falha de rede. Base compartilhada entre
-    fetch_cockpit_quotes (lista fixa do cockpit) e fetch_brapi_quote
-    (ticker avulso, usado pelo Diario de Decisao Comportamental) -
-    extraida daqui pra nao duplicar a chamada HTTP em 2 lugares."""
+    em caso de token ausente/falha de rede."""
     if not BRAPI_TOKEN:
         return []
     try:
@@ -1218,33 +1215,6 @@ def fetch_cockpit_quotes():
                 "change": r.get("regularMarketChangePercent", 0),
             })
     return quotes
-
-
-def fetch_brapi_quote(ticker):
-    """Busca a cotacao atual de UM ativo especifico via brapi.dev -
-    usado pelo Diario de Decisao Comportamental pra buscar preco de
-    qualquer ativo que o usuario mencionar (nao so os fixos do
-    cockpit). Retorna None se o ticker nao for encontrado ou a busca
-    falhar - nunca lanca excecao."""
-    results = fetch_brapi_results(ticker)
-    if not results:
-        return None
-    r = results[0]
-    return {
-        "symbol": r.get("symbol", ""),
-        "price": r.get("regularMarketPrice", 0),
-        "change": r.get("regularMarketChangePercent", 0),
-    }
-
-
-def fetch_brapi_raw(ticker):
-    """Devolve o resultado CRU da brapi (todos os campos, nao so os 3
-    de fetch_brapi_quote) - usado pela Carteira de Dividendos pra
-    tentar ler um campo de yield de dividendo, se o plano da brapi
-    tiver esse dado disponivel (so em planos pagos, na doc deles;
-    campo tratado como opcional no modulo que consome isso)."""
-    results = fetch_brapi_results(ticker)
-    return results[0] if results else None
 
 
 TWELVEDATA_CACHE_FILE = "docs/twelvedata_cache.json"
@@ -1632,23 +1602,10 @@ def export_status_json():
     classe de ativo tem uma defasagem propria (D-1, D-2...) porque vem
     de fontes upstream distintas; aqui o pipeline principal (noticias +
     cotacoes Brapi + insights de IA) roda tudo junto a cada ciclo, entao
-    o unico numero que importa pra ele e "ultimo ciclo". O que de fato
-    varia e o que tem cadencia PROPRIA, fora desse ciclo principal:
-    Carteira de Dividendos (mensal, todo dia 10) e os widgets da
-    TradingView (tempo real, nem passam pelo nosso pipeline)."""
+    o unico numero que importa pra ele e "ultimo ciclo"."""
     status = {
         "ultimo_ciclo": datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M"),
     }
-    try:
-        import carteira_dividendos
-        historico = carteira_dividendos.carregar_historico()
-        aportes = [l for l in historico.get("leituras", []) if l.get("aporte")]
-        if aportes:
-            ultimo = max(aportes, key=lambda l: l.get("data", ""))
-            status["carteira_ultimo_aporte"] = ultimo.get("data", "")[:10]
-    except Exception as e:
-        print("Erro ao ler historico da Carteira p/ status.json (isolado): " + str(e))
-
     os.makedirs("docs", exist_ok=True)
     with open(STATUS_FILE, "w", encoding="utf-8") as f:
         json.dump(status, f, ensure_ascii=False, indent=2)
@@ -1765,7 +1722,6 @@ def build_weekly_summary_html(archive):
         "<a href='calendario.html'>Calendário</a>"
         "<a href='mapa.html'>Mapa de Calor</a>"
         "<a href='quant.html'>Quant</a>"
-        "<a href='diario.html'>Diário de Decisão</a>"
         "<a href='status.html'>Status</a>"
         "<a href='sobre.html'>Sobre</a>"
         "</div>"
@@ -4363,22 +4319,6 @@ def main():
         content_engine.checar_aprovacoes_pendentes()
     except Exception as e:
         print("Erro ao checar aprovacoes do Social Content Engine (isolado): " + str(e))
-
-    try:
-        import diario_decisao
-        diario_decisao.checar_mensagens_privadas(
-            TICKER_MENTION_LIST, TICKER_HASHTAG_MAP,
-            editorial_foundation.derive_cluster_key, fetch_brapi_quote,
-        )
-        diario_decisao.processar_followups(fetch_brapi_quote)
-    except Exception as e:
-        print("Erro no Diario de Decisao Comportamental (isolado, nao afeta o fluxo principal): " + str(e))
-
-    try:
-        import carteira_dividendos
-        carteira_dividendos.processar_aporte_mensal(fetch_brapi_raw)
-    except Exception as e:
-        print("Erro na Carteira de Dividendos (isolado, nao afeta o fluxo principal): " + str(e))
 
     try:
         export_status_json()
