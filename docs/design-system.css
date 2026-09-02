@@ -324,6 +324,11 @@ section{padding:var(--sp-8) 6vw;max-width:1200px;margin:0 auto;}
   background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-xl);
   overflow:hidden;
 }
+/* Nota de fonte logo abaixo de um widget de terceiro (TradingView) -
+   usa .meta-source (metadados, ver DESIGN_SYSTEM.md) + so o espacamento
+   que cada pagina com widget precisa, pra nao repetir style inline. */
+.widget-source-note{margin-top:var(--sp-3);max-width:680px;}
+.widget-source-note.meta-source{display:block;}
 
 footer{
   display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--sp-3);
