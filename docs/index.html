@@ -171,6 +171,18 @@
      do canto (--r-md) tira o conteudo da area arredondada. */
   #widget-vix{padding:0 0 12px 12px;}
 
+  /* A barra "Track all markets on TradingView" que a maioria dos
+     widgets (Market Overview, Ticker Tape, Hotlists) desenha COMO
+     ELEMENTO NOSSO (fora do iframe, classe padrao deles) - por isso
+     da pra estilizar, ao contrario do selo do widget-vix (Symbol
+     Overview), que fica dentro do iframe e e inacessivel via CSS
+     daqui. Fica apagada por padrao (nao briga visualmente com os
+     dados) e volta ao normal no hover - continua visivel/acessivel,
+     so nao fica gritando o tempo todo (nao remove nem esconde de
+     verdade, o que violaria os termos de uso dos widgets gratuitos). */
+  .tradingview-widget-copyright{opacity:0.32;transition:opacity 0.2s ease;}
+  .tradingview-widget-copyright:hover{opacity:1;}
+
   /* Ativos em Destaque (Market Movers/Hotlists) - o widget da
      TradingView so mostra as linhas que cabem na altura do container,
      sem barra de rolagem propria. Da o widget uma altura maior que o
