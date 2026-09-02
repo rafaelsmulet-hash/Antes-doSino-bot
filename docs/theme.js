@@ -94,6 +94,24 @@
     document.body.appendChild(link);
   }
 
+  // Estado de erro (ver .widget-error-state no design-system.css) -
+  // mesmo padrao usado em terminal.js::montarEstadoErro, duplicado
+  // aqui de proposito (theme.js roda em mais paginas que nao carregam
+  // terminal.js - Calendario, Mapa, Quant - entao nao da pra
+  // reaproveitar a funcao de la sem criar uma dependencia entre os
+  // dois arquivos so por causa disso).
+  function montarEstadoErroWidget(container, tentarNovamente) {
+    if (!container) return;
+    container.innerHTML =
+      '<div class="widget-error-state">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>' +
+      '<p>Não foi possível carregar este painel agora. Pode ser um bloqueador de anúncios, instabilidade de rede, ou a TradingView fora do ar.</p>' +
+      '<button type="button" class="widget-retry-btn">Tentar novamente</button>' +
+      '</div>';
+    var botao = container.querySelector('.widget-retry-btn');
+    if (botao) botao.addEventListener('click', tentarNovamente);
+  }
+
   // containerId: id do elemento onde o widget entra. src: URL do
   // script de embed da TradingView. configBuilder: funcao que recebe
   // o tema atual ("dark"/"light") e devolve o objeto de configuracao
@@ -118,6 +136,9 @@
     script.src = src;
     script.async = true;
     script.text = JSON.stringify(configBuilder(temaAtual()));
+    script.onerror = function () {
+      montarEstadoErroWidget(container, function () { montarWidgetTV(containerId, src, configBuilder); });
+    };
 
     wrapper.appendChild(script);
     container.appendChild(wrapper);

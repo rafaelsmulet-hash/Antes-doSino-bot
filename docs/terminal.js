@@ -54,6 +54,26 @@
     }, SKELETON_DURACAO_MS);
   }
 
+  // Estado de erro (ver .widget-error-state no design-system.css) -
+  // usado quando o <script> de embed da TradingView falha de verdade
+  // (bloqueador de anuncio, rede, CDN deles fora do ar). E o unico
+  // sinal de falha que da pra detectar - nao ha como saber se um
+  // iframe cross-origin carregou "vazio" por dentro, so se o script
+  // sequer rodou. "tentarNovamente" reexecuta a mesma funcao de
+  // montagem, do zero.
+  function montarEstadoErro(container, tentarNovamente) {
+    if (!container) return;
+    container.classList.remove("loading");
+    container.innerHTML =
+      '<div class="widget-error-state">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>' +
+      "<p>Não foi possível carregar este painel agora. Pode ser um bloqueador de anúncios, instabilidade de rede, ou a TradingView fora do ar.</p>" +
+      '<button type="button" class="widget-retry-btn">Tentar novamente</button>' +
+      "</div>";
+    var botao = container.querySelector(".widget-retry-btn");
+    if (botao) botao.addEventListener("click", tentarNovamente);
+  }
+
   function montarSymbolOverview(containerId, simbolos) {
     var container = document.getElementById(containerId);
     if (!container) return;
@@ -99,6 +119,9 @@
       lineType: 0,
       dateRanges: ["1d|1"],
     });
+    script.onerror = function () {
+      montarEstadoErro(container, function () { montarSymbolOverview(containerId, simbolos); });
+    };
 
     wrapper.appendChild(script);
     container.appendChild(wrapper);
@@ -156,6 +179,9 @@
         },
       ],
     });
+    script.onerror = function () {
+      montarEstadoErro(container, function () { montarListaAtivos(containerId, simbolos); });
+    };
 
     wrapper.appendChild(script);
     container.appendChild(wrapper);
@@ -192,6 +218,9 @@
       displayMode: "adaptive",
       locale: "br",
     });
+    script.onerror = function () {
+      montarEstadoErro(container, montarTickerTape);
+    };
 
     wrapper.appendChild(script);
     container.appendChild(wrapper);
@@ -233,6 +262,9 @@
       height: "600",
       isTransparent: true,
     });
+    script.onerror = function () {
+      montarEstadoErro(container, montarMarketMovers);
+    };
 
     wrapper.appendChild(script);
     container.appendChild(wrapper);
