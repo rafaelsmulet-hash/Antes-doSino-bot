@@ -1622,6 +1622,38 @@ def export_resumo_historico(archive):
         json.dump(archive, f, ensure_ascii=False)
 
 
+STATUS_FILE = "docs/status.json"
+
+
+def export_status_json():
+    """Publica docs/status.json - pagina de transparencia de frescor
+    dos dados (docs/status.html), inspirada na pagina /status do OBM
+    (obm.com.br), mas adaptada a nossa arquitetura real: la, cada
+    classe de ativo tem uma defasagem propria (D-1, D-2...) porque vem
+    de fontes upstream distintas; aqui o pipeline principal (noticias +
+    cotacoes Brapi + insights de IA) roda tudo junto a cada ciclo, entao
+    o unico numero que importa pra ele e "ultimo ciclo". O que de fato
+    varia e o que tem cadencia PROPRIA, fora desse ciclo principal:
+    Carteira de Dividendos (mensal, todo dia 10) e os widgets da
+    TradingView (tempo real, nem passam pelo nosso pipeline)."""
+    status = {
+        "ultimo_ciclo": datetime.now(BR_TZ).strftime("%d/%m/%Y %H:%M"),
+    }
+    try:
+        import carteira_dividendos
+        historico = carteira_dividendos.carregar_historico()
+        aportes = [l for l in historico.get("leituras", []) if l.get("aporte")]
+        if aportes:
+            ultimo = max(aportes, key=lambda l: l.get("data", ""))
+            status["carteira_ultimo_aporte"] = ultimo.get("data", "")[:10]
+    except Exception as e:
+        print("Erro ao ler historico da Carteira p/ status.json (isolado): " + str(e))
+
+    os.makedirs("docs", exist_ok=True)
+    with open(STATUS_FILE, "w", encoding="utf-8") as f:
+        json.dump(status, f, ensure_ascii=False, indent=2)
+
+
 def build_weekly_summary_html(archive):
     """Gera a pagina de resumo semanal (docs/resumo-semanal.html) com
     os ultimos 7 dias do arquivo diario acumulado. O restante do
@@ -1734,6 +1766,7 @@ def build_weekly_summary_html(archive):
         "<a href='mapa.html'>Mapa de Calor</a>"
         "<a href='quant.html'>Quant</a>"
         "<a href='diario.html'>Diário de Decisão</a>"
+        "<a href='status.html'>Status</a>"
         "<a href='sobre.html'>Sobre</a>"
         "</div>"
         "</footer>"
@@ -4346,6 +4379,11 @@ def main():
         carteira_dividendos.processar_aporte_mensal(fetch_brapi_raw)
     except Exception as e:
         print("Erro na Carteira de Dividendos (isolado, nao afeta o fluxo principal): " + str(e))
+
+    try:
+        export_status_json()
+    except Exception as e:
+        print("Erro ao publicar status.json (isolado, nao afeta o fluxo principal): " + str(e))
 
     try:
         from social import content_engine
