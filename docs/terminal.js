@@ -889,6 +889,92 @@
     });
   }
 
+  // Fronteira de palavra na busca por ticker/nome dentro de titulos de
+  // noticia - sem isso, termos curtos batem como pedaco de palavra sem
+  // relacao (ex: "gol" dentro de "Goldman") - mesmo bug de substring
+  // que foi corrigido no pipeline em Python (main.py), agora tambem
+  // aqui no cliente, que tinha a mesma logica ingenua (indexOf).
+  function bateTermoNoTitulo(titulo, termo) {
+    if (!termo) return false;
+    var regex = new RegExp("\\b" + termo.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i");
+    return regex.test(titulo);
+  }
+
+  // ---------------------------------------------------------------------
+  // Contexto do Ativo (drawer): abre ao clicar num ativo no Ctrl+K, no
+  // lugar de ir direto pra TradingView numa aba nova. Mostra cotacao
+  // (mesmo widget publico ja usado em outros paineis), noticias do
+  // nosso proprio feed que mencionam o ativo, e links de saida pra
+  // TradingView (grafico completo) e OBM (dados estruturados, quando
+  // for uma acao BR - o padrao de URL /acoes/<ticker> so foi
+  // confirmado pra esse universo, entao cripto nao mostra esse link
+  // pra nao arriscar um link errado).
+  // ---------------------------------------------------------------------
+
+  function inicializarContextoAtivo() {
+    var drawer = document.getElementById("contexto-drawer");
+    var backdrop = document.getElementById("contexto-backdrop");
+    if (!drawer || !backdrop) return;
+
+    function fechar() {
+      drawer.classList.remove("open");
+      backdrop.classList.remove("open");
+    }
+
+    document.getElementById("contexto-close").addEventListener("click", fechar);
+    backdrop.addEventListener("click", fechar);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && drawer.classList.contains("open")) fechar();
+    });
+
+    window.AntesDoSinoContexto = { abrir: abrirContextoAtivo, fechar: fechar };
+  }
+
+  function abrirContextoAtivo(item) {
+    var drawer = document.getElementById("contexto-drawer");
+    var backdrop = document.getElementById("contexto-backdrop");
+    if (!drawer || !backdrop) return;
+
+    document.getElementById("contexto-ticker").textContent = item.ticker;
+    document.getElementById("contexto-nome").textContent = item.nome;
+
+    montarSymbolOverview("contexto-widget", [[item.nome, item.symbol + "|1D"]]);
+
+    var linkTv = document.getElementById("contexto-link-tv");
+    linkTv.href = "https://www.tradingview.com/symbols/" + item.symbol.replace(":", "-") + "/";
+
+    // Padrao /acoes/<ticker> so confirmado pro universo de acoes BR
+    // (STOCK_UNIVERSE usa simbolos BMFBOVESPA:) - cripto (COINBASE:)
+    // nao mostra esse link, pra nao arriscar uma URL nunca validada.
+    var linkObm = document.getElementById("contexto-link-obm");
+    if (item.symbol.indexOf("BMFBOVESPA:") === 0) {
+      linkObm.href = "https://obm.com.br/acoes/" + item.ticker.toLowerCase();
+      linkObm.style.display = "";
+    } else {
+      linkObm.style.display = "none";
+    }
+
+    var lista = document.getElementById("contexto-noticias-lista");
+    var relacionadas = TODAS_NOTICIAS.filter(function (n) {
+      return bateTermoNoTitulo(n.titulo, item.ticker) || bateTermoNoTitulo(n.titulo, item.nome);
+    }).slice(0, 6);
+
+    if (relacionadas.length) {
+      lista.innerHTML = relacionadas.map(function (n) {
+        return (
+          '<div class="contexto-noticia-item">' +
+          '<a href="' + escapeHtml(n.href) + '" target="_blank" rel="noopener">' + escapeHtml(n.titulo) + "</a>" +
+          '<span class="src">' + escapeHtml(n.fonte) + "</span></div>"
+        );
+      }).join("");
+    } else {
+      lista.innerHTML = '<p class="contexto-noticias-vazio">Nenhuma notícia recente do nosso feed menciona esse ativo.</p>';
+    }
+
+    drawer.classList.add("open");
+    backdrop.classList.add("open");
+  }
+
   function inicializarCmdk() {
     var botao = document.getElementById("btn-cmdk");
     var backdrop = document.getElementById("cmdk-backdrop");
@@ -932,14 +1018,17 @@
         return t.ticker.toLowerCase().indexOf(q) === 0 || t.nome.toLowerCase().indexOf(q) !== -1;
       }).slice(0, 5);
 
-      var termosNoticia = [q];
-      if (tickers.length) {
-        termosNoticia.push(tickers[0].nome.toLowerCase());
-        termosNoticia.push(tickers[0].ticker.toLowerCase());
-      }
+      // "q" e o texto que o usuario esta digitando agora mesmo (pode ser
+      // parcial, tipo "pet" pra "Petrobras") - continua usando substring
+      // simples de proposito, senao quebraria a busca-enquanto-digita.
+      // Ja ticker/nome do primeiro resultado sao termos COMPLETOS, entao
+      // usam fronteira de palavra (ver bateTermoNoTitulo) pra nao bater
+      // como pedaco de outra palavra (mesmo cuidado do main.py).
       var noticias = TODAS_NOTICIAS.filter(function (n) {
         var t = n.titulo.toLowerCase();
-        return termosNoticia.some(function (termo) { return t.indexOf(termo) !== -1; });
+        if (t.indexOf(q) !== -1) return true;
+        if (!tickers.length) return false;
+        return bateTermoNoTitulo(n.titulo, tickers[0].ticker) || bateTermoNoTitulo(n.titulo, tickers[0].nome);
       }).slice(0, 5);
 
       var html = "";
@@ -987,7 +1076,9 @@
       body.querySelectorAll("[data-cmdk-symbol]").forEach(function (el) {
         el.addEventListener("click", function () {
           var symbol = el.getAttribute("data-cmdk-symbol");
-          window.open("https://www.tradingview.com/symbols/" + symbol.replace(":", "-") + "/", "_blank");
+          var item = TICKERS_BUSCA.filter(function (t) { return t.symbol === symbol; })[0];
+          fechar();
+          if (item) abrirContextoAtivo(item);
         });
       });
 
@@ -1097,6 +1188,7 @@
     inicializarAbasSidebar();
     inicializarTermTabs();
     inicializarLeitorDeNoticias();
+    inicializarContextoAtivo();
   });
 
   // Troca de tema (ver theme.js): reconstroi os widgets no colorTheme
