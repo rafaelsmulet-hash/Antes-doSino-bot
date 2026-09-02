@@ -593,6 +593,24 @@
   // cards do feed que o main.py ja gerou.
   // ---------------------------------------------------------------------
 
+  // Estado explicito de "DADO INDISPONIVEL" pro feed (diferente do
+  // widget-error-state da TradingView: aqui a falha e nossa - o fetch
+  // de dados-terminal.html, gerado pelo main.py, nao respondeu). Botao
+  // de retry chama a mesma funcao de carga de novo, do zero.
+  function montarFeedIndisponivel() {
+    var body = document.getElementById("feed-body");
+    if (!body) return;
+    body.innerHTML =
+      '<div class="widget-error-state">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>' +
+      '<span class="data-badge stale" style="margin-bottom:4px;"><span class="dot"></span>DADO INDISPONÍVEL</span>' +
+      "<p>Não foi possível carregar as notícias agora. Pode ser instabilidade de rede ou o ciclo do bot ainda não ter publicado.</p>" +
+      '<button type="button" class="widget-retry-btn">Tentar novamente</button>' +
+      "</div>";
+    var botao = body.querySelector(".widget-retry-btn");
+    if (botao) botao.addEventListener("click", carregarDadosDoPortal);
+  }
+
   function carregarDadosDoPortal() {
     fetch("dados-terminal.html")
       .then(function (resp) {
@@ -604,8 +622,7 @@
         popularFeed(doc);
       })
       .catch(function (e) {
-        document.getElementById("feed-body").innerHTML =
-          '<div class="feed-empty">Não foi possível carregar as notícias agora.</div>';
+        montarFeedIndisponivel();
         console.log("Terminal: falha ao carregar dados do portal - " + e);
       });
   }
