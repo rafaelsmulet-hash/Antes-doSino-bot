@@ -340,6 +340,40 @@
   }
   .drawer-backdrop.open{display:block;}
 
+  /* ---------- Contexto do Ativo (drawer) ---------- */
+  /* Reaproveita a base visual do .customize-drawer (slide-in, glass,
+     mesma largura) - so adiciona os elementos de conteudo especificos
+     (cabecalho com ticker, widget de cotacao, lista de noticias,
+     links de saida). Substitui o antigo comportamento de abrir a
+     TradingView direto numa aba nova ao clicar num ativo no Ctrl+K -
+     agora abre esse drawer, com o link pra TradingView disponivel
+     dentro dele, sem perder a opcao de ver o grafico completo la. */
+  .contexto-drawer{padding-top:52px;}
+  .contexto-head{margin-bottom:14px;}
+  .contexto-ticker{
+    display:block;font-family:var(--font-mono);font-size:1.3rem;font-weight:700;
+    color:var(--cream);letter-spacing:-0.01em;
+  }
+  .contexto-nome{display:block;color:var(--slate);font-size:0.85rem;margin-top:2px;}
+  .contexto-widget{height:180px;border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;margin-bottom:18px;background:var(--surface-1);}
+  .contexto-noticias h4{
+    font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.6px;text-transform:uppercase;
+    color:var(--bronze);margin-bottom:10px;
+  }
+  .contexto-noticia-item{padding:9px 0;border-bottom:1px solid var(--line);}
+  .contexto-noticia-item:last-child{border-bottom:none;}
+  .contexto-noticia-item a{color:var(--cream);font-size:0.85rem;font-weight:600;line-height:1.4;display:block;}
+  .contexto-noticia-item a:hover{color:var(--gold);}
+  .contexto-noticia-item .src{font-size:0.68rem;color:var(--slate-dim);margin-top:3px;display:block;}
+  .contexto-noticias-vazio{color:var(--slate-dim);font-size:0.82rem;padding:6px 0 0;}
+  .contexto-links{display:flex;flex-direction:column;gap:8px;margin:18px 0 14px;}
+  .contexto-links a{
+    font-size:0.85rem;font-weight:600;color:var(--gold);padding:9px 0;
+    border-top:1px solid var(--line);transition:color 0.2s ease;
+  }
+  .contexto-links a:hover{color:var(--gold-soft);}
+  .contexto-disclaimer{color:var(--slate-dim);font-size:0.68rem;line-height:1.5;margin:0;}
+
   /* ---------- Busca universal (Ctrl+K / Cmd+K) ---------- */
   .cmdk-backdrop{
     display:none;position:fixed;inset:0;background:var(--backdrop);z-index:200;
@@ -592,6 +626,25 @@
   <p>Arraste os painéis pelos títulos para reordenar. Marque ou desmarque para mostrar/ocultar. Suas preferências ficam salvas neste navegador.</p>
   <div id="customize-list"></div>
   <button class="customize-reset" id="customize-reset" type="button">Restaurar padrão</button>
+</div>
+
+<div class="drawer-backdrop" id="contexto-backdrop"></div>
+<div class="customize-drawer contexto-drawer" id="contexto-drawer">
+  <button class="customize-close" id="contexto-close" type="button">✕</button>
+  <div class="contexto-head">
+    <span class="contexto-ticker" id="contexto-ticker">—</span>
+    <span class="contexto-nome" id="contexto-nome">—</span>
+  </div>
+  <div class="contexto-widget" id="contexto-widget"></div>
+  <div class="contexto-noticias">
+    <h4>Notícias relacionadas</h4>
+    <div id="contexto-noticias-lista"></div>
+  </div>
+  <div class="contexto-links">
+    <a id="contexto-link-tv" href="#" target="_blank" rel="noopener">Ver gráfico completo na TradingView →</a>
+    <a id="contexto-link-obm" href="#" target="_blank" rel="noopener" style="display:none;">Ver dados estruturados no OBM →</a>
+  </div>
+  <p class="contexto-disclaimer">Preço e gráfico: widget público da TradingView (tempo real, fora do nosso pipeline). Notícias: nosso próprio feed, filtradas por menção ao ativo. OBM: fonte externa complementar — link de saída, não é dado nosso.</p>
 </div>
 
 <div class="cmdk-backdrop" id="cmdk-backdrop"></div>
