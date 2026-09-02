@@ -1,8 +1,0 @@
-name = "antesdosino-diario-auth"
-main = "diario-auth-worker.js"
-compatibility_date = "2024-09-23"
-
-# Os secrets (TELEGRAM_BOT_TOKEN, DECISOES_ENCRYPTION_KEY) NAO vao
-# aqui - configure com `wrangler secret put NOME` ou pelo painel do
-# Cloudflare (Workers > este worker > Settings > Variables). Ver
-# README.md nesta pasta para o passo a passo.
