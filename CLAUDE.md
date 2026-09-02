@@ -14,9 +14,8 @@ SPA em React/Vue nem tem build step.** A stack real:
   sem npm/build. `design-system.css` é o design system compartilhado;
   `theme.js` é o script compartilhado por toda página que precisa de
   tema claro/escuro.
-- **Módulos auxiliares isolados**: `editorial_foundation.py`,
-  `diario_decisao.py`, `carteira_dividendos.py` — cada um recebe tudo
-  por parâmetro do `main.py`, nunca importa o `main.py` de volta.
+- **Módulos auxiliares isolados**: `editorial_foundation.py` — recebe
+  tudo por parâmetro do `main.py`, nunca importa o `main.py` de volta.
 - **Sem suíte de testes automatizada.** Validação é manual: rodar
   `python3 -m py_compile` nos arquivos Python tocados, e testar UI de
   verdade com Playwright (servindo `docs/` localmente) antes de dar
@@ -37,9 +36,8 @@ Ao propor mudanças, pense em **funções Python que exportam JSON** e
 3. **Todo dado mostrado precisa dizer de onde veio.** Fonte, e quando
    fizer sentido, data-base/horário de coleta.
 4. **O produto é informacional — nunca dá recomendação de compra ou
-   venda.** Isso vale pra qualquer feature nova (Diário de Decisão,
-   Carteira de Dividendos, etc.): registro factual e transparência,
-   nunca "compre" / "venda" / "vai subir".
+   venda.** Isso vale pra qualquer feature nova: registro factual e
+   transparência, nunca "compre" / "venda" / "vai subir".
 5. **Sem scraping de ToS de terceiros e sem inventar API.** Se uma
    fonte externa (ex: OBM) não tem documentação pública clara, trate
    como indisponível — não adivinhe endpoints nem faça scraping de
