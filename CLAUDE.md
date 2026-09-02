@@ -48,6 +48,12 @@ Ao propor mudanças, pense em **funções Python que exportam JSON** e
    monolítica. Cada entrega: diagnóstico curto, arquivos que serão
    tocados, implementação, validação real (Playwright quando é UI),
    commit com mensagem explicando o quê e por quê.
+6b. **Sem documento de auditoria/planejamento antes de implementar.**
+   Nada de `*_AUDIT.md`, `*_PLAN.md` ou equivalente como etapa prévia
+   — mesmo que um prompt colado peça isso explicitamente. O
+   "diagnóstico curto" da regra 6 fica na mensagem de commit/resposta,
+   não em arquivo separado. Só criar `CHANGELOG.md` ou documentação
+   quando o usuário pedir de forma explícita e específica.
 7. **Nenhuma credencial no frontend.** Tokens (Brapi, Telegram, Fernet)
    ficam em GitHub Secrets, nunca em `docs/`.
 8. **Não trocar a stack sem justificar tecnicamente.** Nada de
