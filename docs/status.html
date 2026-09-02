@@ -32,17 +32,11 @@
   .status-card-info svg{width:18px;height:18px;color:var(--gold);flex-shrink:0;margin-top:2px;}
   .status-card-info strong{display:block;color:var(--cream);font-size:0.95rem;margin-bottom:3px;}
   .status-card-info p{color:var(--slate);font-size:0.85rem;line-height:1.5;margin:0;}
-  .status-badge{
-    display:inline-flex;align-items:center;gap:6px;flex-shrink:0;
-    font-family:var(--font-mono);font-size:0.78rem;font-weight:600;
-    background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-pill);
-    padding:6px 12px;color:var(--cream);white-space:nowrap;
-  }
-  .status-badge .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
-  .status-badge.live .dot{background:var(--up);box-shadow:0 0 0 3px color-mix(in srgb, var(--up) 25%, transparent);}
-  .status-badge.ciclo .dot{background:var(--gold);}
-  .status-badge.pendente .dot{background:var(--slate-dim);}
   .status-note{color:var(--slate-dim);font-size:0.82rem;line-height:1.6;}
+  /* Badges de estado desta pagina agora usam .data-badge, compartilhado
+     via design-system.css (ver DESIGN_SYSTEM.md) - nao tem mais CSS
+     duplicado aqui. "ciclo" (pipeline principal) usa a variante
+     "neutral" (--info), ja que nao e nem "ao vivo" nem "proxy". */
 </style>
 </head>
 <body>
@@ -95,7 +89,7 @@
           <p>O pipeline principal roda tudo junto a cada ciclo — feed de notícias, cotações via Brapi e os insights automáticos da Home usam sempre o mesmo instantâneo.</p>
         </div>
       </div>
-      <span class="status-badge ciclo" id="badge-ciclo"><span class="dot"></span><span id="texto-ciclo">Carregando…</span></span>
+      <span class="data-badge neutral" id="badge-ciclo"><span class="dot"></span><span id="texto-ciclo">Carregando…</span></span>
     </div>
 
     <div class="status-card">
@@ -106,7 +100,7 @@
           <p>Não passam pelo nosso pipeline — são widgets públicos embutidos diretamente da TradingView, com o dado deles, atualizado por eles.</p>
         </div>
       </div>
-      <span class="status-badge live"><span class="dot"></span>Tempo real</span>
+      <span class="data-badge live"><span class="dot"></span>Tempo real</span>
     </div>
 
   </div>
@@ -141,7 +135,7 @@
       textoCiclo.textContent = 'Atualizado ' + status.ultimo_ciclo;
     } else {
       textoCiclo.textContent = 'Indisponível no momento';
-      document.getElementById('badge-ciclo').classList.replace('ciclo', 'pendente');
+      document.getElementById('badge-ciclo').classList.replace('neutral', 'stale');
     }
   }).catch(function () {
     document.getElementById('texto-ciclo').textContent = 'Indisponível no momento';

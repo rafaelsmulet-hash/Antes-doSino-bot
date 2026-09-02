@@ -34,6 +34,25 @@
     return explicito === 'light' ? 'light' : 'dark';
   }
 
+  // Sessao regular da B3: seg-sex, 10h-17h horario de Brasilia. Usa
+  // Intl com timeZone explicito em vez de confiar no fuso do
+  // navegador (visitante pode estar em qualquer lugar do mundo).
+  // Simplificado de proposito - nao cobre feriados nem after-market;
+  // e um indicador visual rapido, nao uma fonte de horario de
+  // negociacao (isso continua sendo responsabilidade da B3/corretora).
+  function statusMercado() {
+    var partes = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/Sao_Paulo', hour12: false,
+      weekday: 'short', hour: '2-digit', minute: '2-digit',
+    }).formatToParts(new Date());
+    var mapa = {};
+    partes.forEach(function (p) { mapa[p.type] = p.value; });
+    var diaUtil = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].indexOf(mapa.weekday) !== -1;
+    var minutos = parseInt(mapa.hour, 10) * 60 + parseInt(mapa.minute, 10);
+    var aberto = diaUtil && minutos >= 10 * 60 && minutos < 17 * 60;
+    return { aberto: aberto, texto: aberto ? 'B3 aberta' : 'B3 fechada' };
+  }
+
   function aplicarTema(tema) {
     document.documentElement.setAttribute('data-theme', tema);
     try {
@@ -104,7 +123,27 @@
     container.appendChild(wrapper);
   }
 
-  window.AntesDoSinoTema = { atual: temaAtual, EVENTO: EVENTO, montarWidgetTV: montarWidgetTV };
+  // Monta o badge de status de mercado (.market-status, ver
+  // design-system.css) num container - helper compartilhado pra nao
+  // duplicar o HTML/logica em cada pagina que quiser mostrar isso.
+  // Reatualiza a cada minuto (sem custo real - so calculo de horario).
+  function montarMarketStatus(containerId) {
+    var container = document.getElementById(containerId);
+    if (!container) return;
+    function render() {
+      var status = statusMercado();
+      container.innerHTML =
+        '<span class="market-status ' + (status.aberto ? 'open' : 'closed') + '">' +
+        '<span class="dot"></span>' + status.texto + '</span>';
+    }
+    render();
+    setInterval(render, 60000);
+  }
+
+  window.AntesDoSinoTema = {
+    atual: temaAtual, EVENTO: EVENTO, montarWidgetTV: montarWidgetTV,
+    statusMercado: statusMercado, montarMarketStatus: montarMarketStatus,
+  };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', inicializar);
