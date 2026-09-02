@@ -255,6 +255,31 @@ footer{
 footer a{color:var(--gold);transition:color 0.2s ease;}
 footer a:hover{color:var(--gold-soft);}
 
+/* Botao flutuante de feedback (inspirado no obm.com.br) - injetado por
+   theme.js em toda pagina que carrega esse script, pra nao duplicar o
+   HTML em cada .html. Fica discreto (so o icone) e expande um rotulo
+   no hover, sem cobrir conteudo de painel (por isso "left" no rotulo,
+   nao um popover por cima). */
+.feedback-float{
+  position:fixed;right:20px;bottom:20px;z-index:150;
+  display:flex;align-items:center;gap:8px;
+  background:var(--navy-deep);border:1px solid var(--line-strong);border-radius:var(--r-pill);
+  color:var(--slate);padding:12px;overflow:hidden;
+  box-shadow:0 8px 24px var(--backdrop);
+  transition:color 0.2s ease, border-color 0.2s ease, transform 0.15s var(--ease-out), padding 0.25s var(--ease-out);
+}
+.feedback-float svg{width:18px;height:18px;flex-shrink:0;}
+.feedback-float span{
+  max-width:0;overflow:hidden;white-space:nowrap;font-size:0.82rem;font-weight:600;
+  transition:max-width 0.25s var(--ease-out);
+}
+.feedback-float:hover{color:var(--cream);border-color:var(--gold);padding:12px 16px;}
+.feedback-float:hover span{max-width:160px;}
+.feedback-float:active{transform:scale(0.96);}
+@media (max-width:768px){
+  .feedback-float{right:14px;bottom:14px;}
+}
+
 @media (max-width:768px){
   nav{padding:14px 5vw;}
   .brand{font-size:1rem;}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KKJKKZB9QG');
+</script>
+<script src="analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Status — Antes do Sino</title>
+<meta name="description" content="Frescor dos dados: quando cada parte do Antes do Sino foi atualizada pela última vez.">
+<script>
+  // Aplica o tema salvo ANTES do CSS carregar, pra nao piscar o tema
+  // errado por uma fracao de segundo (script sincrono de proposito).
+  (function(){try{var t=localStorage.getItem('antes-do-sino-tema');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();
+</script>
+<link rel="stylesheet" href="design-system.css">
+<style>
+  .status-section{max-width:760px;}
+  .status-section + .status-section{padding-top:0;}
+  .status-list{display:flex;flex-direction:column;gap:var(--sp-2);}
+  .status-card{
+    display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap;
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);
+    padding:var(--sp-4) var(--sp-5);
+  }
+  .status-card-info{display:flex;gap:var(--sp-3);align-items:flex-start;min-width:0;}
+  .status-card-info svg{width:18px;height:18px;color:var(--gold);flex-shrink:0;margin-top:2px;}
+  .status-card-info strong{display:block;color:var(--cream);font-size:0.95rem;margin-bottom:3px;}
+  .status-card-info p{color:var(--slate);font-size:0.85rem;line-height:1.5;margin:0;}
+  .status-badge{
+    display:inline-flex;align-items:center;gap:6px;flex-shrink:0;
+    font-family:var(--font-mono);font-size:0.78rem;font-weight:600;
+    background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-pill);
+    padding:6px 12px;color:var(--cream);white-space:nowrap;
+  }
+  .status-badge .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .status-badge.live .dot{background:var(--up);box-shadow:0 0 0 3px color-mix(in srgb, var(--up) 25%, transparent);}
+  .status-badge.ciclo .dot{background:var(--gold);}
+  .status-badge.pendente .dot{background:var(--slate-dim);}
+  .status-note{color:var(--slate-dim);font-size:0.82rem;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v2M8.5 20a3.5 3.5 0 0 0 7 0M5 17h14l-1.4-2.1A7 7 0 0 1 16.5 11V9a4.5 4.5 0 0 0-9 0v2a7 7 0 0 1-1.1 3.9L5 17Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Antes do Sino
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="theme-toggle" type="button" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <a href="https://t.me/+TobMzw-WnQhmZmIx" class="nav-cta">Entrar no grupo grátis</a>
+  </div>
+</nav>
+<div class="sub-nav">
+  <a href="index.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>
+    Terminal
+  </a>
+  <a href="calendario.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    Calendário
+  </a>
+  <a href="mapa.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    Mapa de Calor
+  </a>
+  <a href="quant.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+    Quant
+  </a>
+</div>
+
+<div class="hero reveal">
+  <span class="kicker">Transparência</span>
+  <h1>Frescor<br>dos dados.</h1>
+  <p>Quando cada parte do Antes do Sino foi atualizada pela última vez — pra você saber o que é tempo real, o que roda em ciclo e o que é por demanda antes de usar qualquer número numa decisão sensível ao tempo.</p>
+</div>
+
+<section class="status-section">
+  <div class="status-list reveal">
+    <div class="status-card">
+      <div class="status-card-info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div>
+          <strong>Notícias, cotações Brasil e insights de IA</strong>
+          <p>O pipeline principal roda tudo junto a cada ciclo — feed de notícias, cotações via Brapi e os insights automáticos da Home usam sempre o mesmo instantâneo.</p>
+        </div>
+      </div>
+      <span class="status-badge ciclo" id="badge-ciclo"><span class="dot"></span><span id="texto-ciclo">Carregando…</span></span>
+    </div>
+
+    <div class="status-card">
+      <div class="status-card-info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+        <div>
+          <strong>Cotações e gráficos (widgets TradingView)</strong>
+          <p>Não passam pelo nosso pipeline — são widgets públicos embutidos diretamente da TradingView, com o dado deles, atualizado por eles.</p>
+        </div>
+      </div>
+      <span class="status-badge live"><span class="dot"></span>Tempo real</span>
+    </div>
+
+    <div class="status-card">
+      <div class="status-card-info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>
+        <div>
+          <strong>Carteira de Dividendos</strong>
+          <p>Cadência própria: roda uma única vez por mês, todo dia 10, calculando a alocação do aporte a partir do histórico de yield acumulado.</p>
+        </div>
+      </div>
+      <span class="status-badge pendente" id="badge-carteira"><span class="dot"></span><span id="texto-carteira">Carregando…</span></span>
+    </div>
+
+    <div class="status-card">
+      <div class="status-card-info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <div>
+          <strong>Diário de Decisão</strong>
+          <p>Sem cadência fixa — é você quem registra uma compra ou venda pelo Telegram, quando quiser. O acompanhamento de resultado roda em dias fixos após o registro.</p>
+        </div>
+      </div>
+      <span class="status-badge pendente"><span class="dot"></span>Por demanda</span>
+    </div>
+  </div>
+
+  <p class="status-note reveal">Esta página é atualizada automaticamente a cada ciclo do bot. Nenhum número aqui é uma garantia de disponibilidade — é só transparência sobre a cadência real de cada parte do produto.</p>
+</section>
+
+<footer>
+  <span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>
+  <div style="display:flex;gap:16px;">
+    <a href="calendario.html">Calendário</a>
+    <a href="mapa.html">Mapa de Calor</a>
+    <a href="quant.html">Quant</a>
+    <a href="resumo-semanal.html">Resumo semanal</a>
+    <a href="diario.html">Diário de Decisão</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+</footer>
+
+<script>
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('in-view'); observer.unobserve(entry.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in-view'); });
+  }
+
+  fetch('status.json').then(function (r) { return r.ok ? r.json() : {}; }).then(function (status) {
+    var textoCiclo = document.getElementById('texto-ciclo');
+    if (status.ultimo_ciclo) {
+      textoCiclo.textContent = 'Atualizado ' + status.ultimo_ciclo;
+    } else {
+      textoCiclo.textContent = 'Indisponível no momento';
+      document.getElementById('badge-ciclo').classList.replace('ciclo', 'pendente');
+    }
+
+    var textoCarteira = document.getElementById('texto-carteira');
+    if (status.carteira_ultimo_aporte) {
+      textoCarteira.textContent = 'Último aporte: ' + status.carteira_ultimo_aporte;
+    } else {
+      textoCarteira.textContent = 'Nenhum aporte registrado ainda';
+    }
+  }).catch(function () {
+    document.getElementById('texto-ciclo').textContent = 'Indisponível no momento';
+    document.getElementById('texto-carteira').textContent = 'Indisponível no momento';
+  });
+</script>
+<script src="theme.js"></script>
+
+</body>
+</html>
