@@ -45,6 +45,34 @@
   @media (max-width:768px){
     .widget-frame{height:60vh;min-height:420px;}
   }
+
+  /* ---------- Radar de Impacto ---------- */
+  /* Mapeamento editorial fixo de tema/evento -> ativos e setores
+     potencialmente relacionados. NAO e um score de compra/venda nem
+     previsao - so ajuda a saber o que vale acompanhar quando um
+     evento desse tipo acontece. Grau de relacao usa uma escala neutra
+     (dourado/cinza), nunca verde/vermelho - isso aqui nao e "sobe" ou
+     "desce", e so proximidade tematica. */
+  .radar-impacto-list{display:flex;flex-direction:column;gap:var(--sp-2);}
+  .radar-impacto-item{
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);
+    padding:var(--sp-4) var(--sp-5);
+  }
+  .radar-impacto-head{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;margin-bottom:6px;}
+  .radar-impacto-tema{font-weight:700;font-size:0.98rem;color:var(--cream);}
+  .radar-grau{
+    font-family:var(--font-mono);font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.4px;
+    padding:3px 10px;border-radius:var(--r-pill);border:1px solid var(--line);
+  }
+  .radar-grau.alto{color:var(--gold);border-color:var(--line-strong);}
+  .radar-grau.medio{color:var(--slate);}
+  .radar-grau.baixo{color:var(--slate-dim);}
+  .radar-impacto-justificativa{color:var(--slate);font-size:0.85rem;line-height:1.55;margin-bottom:8px;}
+  .radar-impacto-ativos{display:flex;flex-wrap:wrap;gap:6px;}
+  .radar-impacto-ativos span{
+    font-family:var(--font-mono);font-size:0.72rem;color:var(--cream);
+    background:var(--surface-2);border-radius:var(--r-pill);padding:3px 10px;
+  }
 </style>
 </head>
 <body>
@@ -104,6 +132,37 @@
     <p>Eventos específicos com data que nossa cobertura identificou nas próprias notícias — complementa o calendário genérico acima.</p>
   </div>
   <div class="catalyst-list reveal" id="catalyst-list"></div>
+</section>
+
+<section>
+  <div class="page-head reveal">
+    <span class="kicker">Radar de impacto</span>
+    <h2>Quem costuma ser afetado</h2>
+    <p>Mapeamento editorial fixo — não é previsão nem recomendação. Mostra o que historicamente se relaciona com cada tipo de evento, pra você saber o que vale acompanhar quando ele acontecer.</p>
+  </div>
+  <div class="radar-impacto-list reveal">
+    <div class="radar-impacto-item">
+      <div class="radar-impacto-head"><span class="radar-impacto-tema">Petróleo (preço/OPEP/geopolítica)</span><span class="radar-grau alto">Relação alta</span></div>
+      <p class="radar-impacto-justificativa">Petrobras tem o preço do petróleo como principal driver de receita; aéreas sofrem no custo de combustível; câmbio e inflação reagem via balança comercial.</p>
+      <div class="radar-impacto-ativos"><span>Energia</span><span>Petrobras</span><span>Aéreas</span><span>Inflação</span><span>Câmbio</span></div>
+    </div>
+    <div class="radar-impacto-item">
+      <div class="radar-impacto-head"><span class="radar-impacto-tema">Juros futuros (curva DI)</span><span class="radar-grau alto">Relação alta</span></div>
+      <p class="radar-impacto-justificativa">Curva mais inclinada ou mais alta pressiona o custo de capital — afeta especialmente setores endividados e ativos de renda fixa prefixada.</p>
+      <div class="radar-impacto-ativos"><span>Bancos</span><span>Construção civil</span><span>FIIs</span><span>Small caps</span><span>Prefixados</span></div>
+    </div>
+    <div class="radar-impacto-item">
+      <div class="radar-impacto-head"><span class="radar-impacto-tema">Dólar (USD/BRL)</span><span class="radar-grau medio">Relação média</span></div>
+      <p class="radar-impacto-justificativa">Dólar mais alto favorece exportadoras (receita em dólar) e BDRs (ativo referenciado no exterior), mas pressiona inflação e empresas com dívida em moeda estrangeira.</p>
+      <div class="radar-impacto-ativos"><span>Exportadoras</span><span>BDRs</span><span>Inflação</span><span>Empresas endividadas em USD</span></div>
+    </div>
+    <div class="radar-impacto-item">
+      <div class="radar-impacto-head"><span class="radar-impacto-tema">Decisão do Fed (juros nos EUA)</span><span class="radar-grau medio">Relação média</span></div>
+      <p class="radar-impacto-justificativa">Juro americano mais alto tende a fortalecer o dólar globalmente e reduzir o apetite por risco em mercados emergentes.</p>
+      <div class="radar-impacto-ativos"><span>Dólar</span><span>Nasdaq</span><span>BDRs</span><span>Treasuries</span><span>Emergentes</span></div>
+    </div>
+  </div>
+  <p class="proxy-notice reveal" style="margin-top:var(--sp-4);">Esse mapeamento é fixo e editorial, baseado em relações historicamente observadas — não é um score de compra/venda nem uma previsão de retorno. Cada evento real pode se comportar de forma diferente do padrão histórico.</p>
 </section>
 
 <footer>
