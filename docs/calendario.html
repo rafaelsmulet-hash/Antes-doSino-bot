@@ -46,6 +46,33 @@
     .widget-frame{height:60vh;min-height:420px;}
   }
 
+  /* ---------- Filtros do calendario ---------- */
+  /* So usa parametros que o proprio widget da TradingView aceita no
+     embed (importanceFilter, countryFilter) - ver montarWidgetsCalendario()
+     no fim da pagina. Nao ha filtro por tipo de evento, ativo especifico
+     ou fonte porque o widget publico deles nao expoe isso (e nao vamos
+     fazer scraping/API nao documentada pra simular - ver CLAUDE.md). */
+  .cal-filtros{
+    display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-4);
+    margin-bottom:var(--sp-4);padding-bottom:var(--sp-4);border-bottom:1px solid var(--line);
+  }
+  .cal-filtro-grupo{display:flex;flex-wrap:wrap;align-items:center;gap:8px;}
+  .cal-filtro-label{
+    font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.5px;text-transform:uppercase;
+    color:var(--slate-dim);margin-right:2px;
+  }
+  .cal-filtro-chip{
+    font-family:var(--font-mono);font-size:0.74rem;font-weight:600;color:var(--slate);
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-pill);
+    padding:5px 12px;cursor:pointer;transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.15s var(--ease-out);
+  }
+  .cal-filtro-chip:hover{color:var(--cream);border-color:var(--line-strong);}
+  .cal-filtro-chip:active{transform:scale(0.94);}
+  .cal-filtro-chip.active{color:var(--navy-deep);background:var(--gold);border-color:var(--gold);}
+  .cal-filtro-nota{
+    font-size:0.72rem;color:var(--slate-dim);line-height:1.5;margin-top:-6px;margin-bottom:var(--sp-4);
+  }
+
   /* ---------- Radar de Impacto ---------- */
   /* Mapeamento editorial fixo de tema/evento -> ativos e setores
      potencialmente relacionados. NAO e um score de compra/venda nem
@@ -121,6 +148,24 @@
 </div>
 
 <section>
+  <div class="cal-filtros reveal">
+    <div class="cal-filtro-grupo" id="cal-filtro-impacto">
+      <span class="cal-filtro-label">Impacto</span>
+      <button type="button" class="cal-filtro-chip" data-impacto="1">Alto</button>
+      <button type="button" class="cal-filtro-chip" data-impacto="0">Médio</button>
+      <button type="button" class="cal-filtro-chip" data-impacto="-1">Baixo</button>
+    </div>
+    <div class="cal-filtro-grupo" id="cal-filtro-pais">
+      <span class="cal-filtro-label">País/Região</span>
+      <button type="button" class="cal-filtro-chip" data-pais="us">EUA</button>
+      <button type="button" class="cal-filtro-chip" data-pais="br">Brasil</button>
+      <button type="button" class="cal-filtro-chip" data-pais="eu">Zona do Euro</button>
+      <button type="button" class="cal-filtro-chip" data-pais="gb">Reino Unido</button>
+      <button type="button" class="cal-filtro-chip" data-pais="jp">Japão</button>
+      <button type="button" class="cal-filtro-chip" data-pais="cn">China</button>
+    </div>
+  </div>
+  <p class="cal-filtro-nota reveal">Filtro por data, tipo de evento ou ativo específico não está disponível — o widget público da TradingView não expõe esse recurso, e não fazemos scraping de fonte sem API documentada.</p>
   <div class="widget-frame reveal" id="tv-calendario"></div>
   <p class="meta-source widget-source-note reveal">Fonte: <strong>TradingView</strong> — widget público, dado em tempo real, não passa pelo nosso pipeline.</p>
 </section>
@@ -239,9 +284,78 @@
 </script>
 <script src="theme.js"></script>
 <script>
+  // Filtros de impacto/pais - unicos parametros que o embed publico da
+  // TradingView aceita (importanceFilter, countryFilter). Persistidos
+  // em localStorage pra nao perder a escolha entre visitas, mesmo
+  // padrao ja usado em Minha Exposicao e na personalizacao do Terminal.
+  var FILTROS_STORAGE_KEY = 'antesdosino_calendario_filtros_v1';
+  var TODOS_IMPACTOS = ['1', '0', '-1'];
+  var TODOS_PAISES = ['us', 'br', 'eu', 'gb', 'jp', 'cn'];
+
+  function carregarFiltros() {
+    try {
+      var raw = localStorage.getItem(FILTROS_STORAGE_KEY);
+      var parsed = raw ? JSON.parse(raw) : null;
+      if (parsed && Array.isArray(parsed.impactos) && Array.isArray(parsed.paises)) return parsed;
+    } catch (e) {
+      // segue com o padrao abaixo
+    }
+    return { impactos: TODOS_IMPACTOS.slice(), paises: TODOS_PAISES.slice() };
+  }
+
+  function salvarFiltros(filtros) {
+    try {
+      localStorage.setItem(FILTROS_STORAGE_KEY, JSON.stringify(filtros));
+    } catch (e) {
+      // localStorage indisponivel - filtro ainda funciona nesta visita
+    }
+  }
+
+  var filtrosAtuais = carregarFiltros();
+
+  function aplicarEstadoVisualDosChips() {
+    document.querySelectorAll('#cal-filtro-impacto [data-impacto]').forEach(function (btn) {
+      btn.classList.toggle('active', filtrosAtuais.impactos.indexOf(btn.getAttribute('data-impacto')) !== -1);
+    });
+    document.querySelectorAll('#cal-filtro-pais [data-pais]').forEach(function (btn) {
+      btn.classList.toggle('active', filtrosAtuais.paises.indexOf(btn.getAttribute('data-pais')) !== -1);
+    });
+  }
+
+  function alternarFiltro(lista, valor) {
+    var idx = lista.indexOf(valor);
+    if (idx !== -1) {
+      // nunca deixa a lista vazia (widget sem nenhum filtro selecionado
+      // fica sem sentido) - remove so se sobrar pelo menos 1 selecionado.
+      if (lista.length > 1) lista.splice(idx, 1);
+    } else {
+      lista.push(valor);
+    }
+  }
+
+  function inicializarFiltros() {
+    aplicarEstadoVisualDosChips();
+    document.querySelectorAll('#cal-filtro-impacto [data-impacto]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        alternarFiltro(filtrosAtuais.impactos, btn.getAttribute('data-impacto'));
+        salvarFiltros(filtrosAtuais);
+        aplicarEstadoVisualDosChips();
+        montarWidgetsCalendario();
+      });
+    });
+    document.querySelectorAll('#cal-filtro-pais [data-pais]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        alternarFiltro(filtrosAtuais.paises, btn.getAttribute('data-pais'));
+        salvarFiltros(filtrosAtuais);
+        aplicarEstadoVisualDosChips();
+        montarWidgetsCalendario();
+      });
+    });
+  }
+
   // Widget da TradingView nao segue o CSS da pagina (cor propria via
   // colorTheme) - monta pelo helper compartilhado (ver theme.js) e
-  // reconstroi quando o usuario troca de tema.
+  // reconstroi quando o usuario troca de tema ou muda um filtro.
   function montarWidgetsCalendario() {
     window.AntesDoSinoTema.montarWidgetTV(
       'tv-calendario',
@@ -253,12 +367,13 @@
           width: '100%',
           height: '100%',
           locale: 'br',
-          importanceFilter: '-1,0,1',
-          countryFilter: 'us,br,eu,gb,jp,cn',
+          importanceFilter: filtrosAtuais.impactos.join(','),
+          countryFilter: filtrosAtuais.paises.join(','),
         };
       }
     );
   }
+  inicializarFiltros();
   montarWidgetsCalendario();
   document.addEventListener(window.AntesDoSinoTema.EVENTO, montarWidgetsCalendario);
 </script>
