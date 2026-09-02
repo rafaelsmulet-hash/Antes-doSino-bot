@@ -292,6 +292,36 @@
   .feed-item-link{font-size:0.76rem;font-weight:600;color:var(--gold);white-space:nowrap;}
   .feed-item-link:hover{color:var(--gold-soft);}
 
+  /* ---------- Hierarquia editorial do feed: alerta / destaques / radar ---------- */
+  /* Antes, toda noticia da coluna tinha o mesmo peso visual (mesmo
+     problema de fundo do Terminal, ver DESIGN_AUDIT.md). Agora o
+     primeiro item vira "alerta principal" (maior, resumo sempre
+     visivel), os proximos ficam como "destaques" (padrao atual) e o
+     resto vira uma lista compacta de "radar" - mesma logica de
+     clique/expandir de sempre, so densidade e tamanho mudam. */
+  .feed-section-label{
+    font-family:var(--font-mono);font-size:0.64rem;letter-spacing:0.6px;text-transform:uppercase;
+    color:var(--bronze);padding:12px 4px 6px;
+  }
+  .feed-section-label:first-child{padding-top:2px;}
+
+  .feed-alert{
+    background:color-mix(in srgb, var(--gold) 6%, transparent);
+    border:1px solid var(--line-strong);border-radius:var(--r-md);
+    padding:12px;margin-bottom:2px;
+  }
+  .feed-alert .feed-item-title{font-size:0.98rem;font-weight:700;line-height:1.3;}
+  .feed-alert .feed-item-resumo{display:block;} /* sempre aberto - e o item mais importante, nao devia exigir clique */
+
+  .feed-radar-item{padding:6px 4px;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;}
+  .feed-radar-item .badge{
+    width:6px;height:6px;padding:0;margin:0;font-size:0;flex-shrink:0;
+    align-self:center;
+  }
+  .feed-radar-item .feed-item-title{font-size:0.78rem;font-weight:500;line-height:1.35;flex:1;min-width:0;}
+  .feed-radar-item .src{display:none;}
+  .feed-radar-item .feed-item-resumo{flex-basis:100%;}
+
   /* ---------- Abas da sidebar: Noticias / Contexto Macro ---------- */
   .sidebar-tabs{display:flex;gap:6px;flex-shrink:0;}
   .sidebar-tab{
