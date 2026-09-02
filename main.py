@@ -2717,6 +2717,74 @@ def get_theme_entries(all_history, theme):
     return [e for e in all_history if theme_matches(e, theme)]
 
 
+# Categorizacao editorial por tipo de conteudo (NewsPriorityTag) - eixo
+# DIFERENTE do badge alta/baixa/info ja existente (que vem do
+# sentiment BULLISH/BEARISH/NEUTRAL calculado pela IA e alimenta
+# Sinais do Dia/clustering - nao mexe nisso). Aqui e so um rotulo de
+# "que tipo de noticia e essa" pra ajudar a escanear o feed, calculado
+# por palavra-chave (mesmo padrao de THEME_PROFILES/theme_matches,
+# regex com \b pra evitar falso positivo de substring) - sem chamada
+# de IA nova, sem tocar no pipeline de publicacao/despacho existente.
+# Ordem da lista importa: cada entrada e testada em sequencia e a
+# primeira que bater vence. Marcadores de FORMATO do texto (fechamento
+# de pregao, agenda futura, urgencia, explicativo, analise) vem antes
+# dos marcadores de TEMA (empresas/macro/mercados) de proposito -
+# senao uma materia educativa tipo "o que e a Selic" cai em MACRO so
+# por citar "selic", quando o formato "o que e" e um sinal mais
+# especifico do que o texto realmente e.
+NEWS_CATEGORY_RULES = [
+    {"slug": "fechamento", "label": "FECHAMENTO",
+     "kw": ["fecha em alta", "fecha em baixa", "fechou em alta", "fechou em baixa",
+            "fechamento do pregão", "ibovespa fecha", "pregão encerra", "pregão encerrou"]},
+    {"slug": "agenda", "label": "AGENDA",
+     "kw": ["agenda da semana", "copom se reúne", "reunião do copom", "divulga balanço",
+            "estreia na bolsa", "ipo de", "leilão de títulos", "agenda econômica"]},
+    {"slug": "urgente", "label": "URGENTE",
+     "kw": ["urgente", "breaking", "última hora", "acaba de", "ocorre agora"]},
+    {"slug": "educacional", "label": "EDUCACIONAL",
+     "kw": ["o que é", "como funciona", "entenda", "glossário", "guia para", "passo a passo"]},
+    {"slug": "contexto", "label": "CONTEXTO",
+     "kw": ["análise:", "contexto:", "o que esperar", "bastidores", "panorama"]},
+    {"slug": "empresas", "label": "EMPRESAS",
+     "kw": ["balanço", "lucro líquido", "ebitda", "resultado trimestral", "dividendo",
+            "jcp", "aquisição", "fusão", "ação da", "ações da", "recompra de ações"]},
+    {"slug": "macro", "label": "MACRO",
+     "kw": ["selic", "copom", "ipca", "igp-m", "inflação", "pib", "arcabouço fiscal",
+            "dólar", "câmbio", "juros", "fed", "powell", "payroll", "treasury"]},
+    {"slug": "mercados", "label": "MERCADOS",
+     "kw": ["ibovespa", "bolsa", "wall street", "nasdaq", "s&p 500", "dow jones",
+            "mercado global", "ações em alta", "ações em queda", "bolsas asiáticas"]},
+]
+
+_TICKER_MENTION_REGEX = re.compile(r"\b[A-Z]{4}\d{1,2}\b")
+
+
+def classify_news_category(entry):
+    """Retorna (slug, label) do NEWS_CATEGORY_RULES que melhor descreve
+    a noticia. EMPRESAS tambem aceita um ticker no formato padrao (ex:
+    PETR4) no titulo original (sem lowercase, pra nao perder a letra
+    maiuscula que distingue ticker de palavra comum). Quando nenhuma
+    regra de palavra-chave bate, usa o sentiment (BULLISH/BEARISH/
+    NEUTRAL) que ja vem calculado pela IA - a mesma fonte do badge
+    alta/baixa/info - como proxy honesto pra distinguir IMPORTANTE
+    (a IA julgou que ha impacto direcional) de MERCADOS (informativo,
+    sem direcao clara), sem precisar de uma chamada de IA nova so pra
+    essa categorizacao."""
+    text = (entry.get("title", "") + " " + entry.get("body", "")).lower()
+
+    if _TICKER_MENTION_REGEX.search(entry.get("title", "")):
+        return "empresas", "EMPRESAS"
+
+    for regra in NEWS_CATEGORY_RULES:
+        for kw in regra["kw"]:
+            if re.search(r"\b" + re.escape(kw) + r"\b", text):
+                return regra["slug"], regra["label"]
+
+    if entry.get("sentiment") in ("BULLISH", "BEARISH"):
+        return "importante", "IMPORTANTE"
+    return "mercados", "MERCADOS"
+
+
 BRIEFINGS_STATE_FILE = "docs/briefings_state.json"
 
 BR_ASSET_GROUPS = {"commodities_br", "financeiro_br", "industrial_br"}
@@ -3807,10 +3875,12 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
     cards_html = ""
     for e in entries[:12]:
         cls, label = sentiment_class(e["sentiment"])
+        cat_slug, cat_label = classify_news_category(e)
         link = e.get("link", "#") or "#"
         cards_html += (
-            '<div class="card">'
+            '<div class="card" data-categoria="' + cat_slug + '">'
             '<div class="card-meta"><span class="badge ' + cls + '">' + label + "</span>"
+            '<span class="tag-categoria cat-' + cat_slug + '">' + cat_label + "</span>"
             '<span class="src">' + html_module.escape(e["source"]) + "</span>"
             '<span class="time">' + e["time"] + "</span></div>"
             "<h3>" + html_module.escape(e["title"]) + "</h3>"
