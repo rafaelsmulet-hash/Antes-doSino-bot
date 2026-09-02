@@ -341,15 +341,20 @@
      compartilhado nao assume padding horizontal por si so). */
   .macro-disclaimer{flex-shrink:0;padding-left:12px;padding-right:12px;padding-bottom:10px;}
 
+  /* CTA discreto de proposito - nao deve competir visualmente com o
+     Alerta Principal do feed acima. Fundo neutro (nao o gradiente
+     dourado saturado de antes), texto direto sem tom de vendedor. */
   .lead-card{
-    flex-shrink:0;background:linear-gradient(160deg, color-mix(in srgb, var(--gold) 12%, transparent), color-mix(in srgb, var(--gold) 2%, transparent));
-    border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;
+    flex-shrink:0;background:var(--surface-1);
+    border:1px solid var(--line);border-radius:12px;padding:12px 14px;
+    display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
   }
-  .lead-card p{font-size:0.85rem;color:var(--cream);line-height:1.5;margin-bottom:12px;}
+  .lead-card p{font-size:0.78rem;color:var(--slate);line-height:1.4;margin:0;flex:1;min-width:160px;}
   .lead-card a{
-    display:inline-block;background:var(--gold);color:var(--navy-deep);font-weight:700;
-    font-size:0.82rem;padding:11px 20px;border-radius:100px;
+    display:inline-block;background:none;color:var(--gold);font-weight:600;
+    font-size:0.78rem;padding:6px 4px;white-space:nowrap;
   }
+  .lead-card a:hover{color:var(--gold-soft);}
 
   /* ---------- Painel de personalizacao (drawer) ---------- */
   .customize-drawer{
@@ -662,8 +667,8 @@
       </div>
 
       <div class="lead-card">
-        <p>Quer receber estes alertas instantaneamente sem delay no seu celular antes de todo mundo? Entre no grupo gratuito do Antes do Sino.</p>
-        <a href="https://t.me/+TobMzw-WnQhmZmIx">Entrar no grupo grátis →</a>
+        <p>Receba os principais alertas do mercado direto no Telegram.</p>
+        <a href="https://t.me/+TobMzw-WnQhmZmIx">Entrar no grupo →</a>
       </div>
     </aside>
   </div>
