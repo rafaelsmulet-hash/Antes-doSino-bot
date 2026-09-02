@@ -647,6 +647,7 @@
     for (var i = 0; i < cards.length && i < limite; i++) {
       var card = cards[i];
       var badge = card.querySelector(".badge");
+      var categoria = card.querySelector(".tag-categoria");
       var titulo = card.querySelector("h3");
       var resumo = card.querySelector("p");
       var fonte = card.querySelector(".src");
@@ -654,13 +655,15 @@
 
       var badgeClasse = badge ? badge.className.replace("badge", "").trim() : "info";
       var badgeTexto = badge ? badge.textContent.trim() : "INFO";
+      var catSlug = card.getAttribute("data-categoria") || "";
+      var catTexto = categoria ? categoria.textContent.trim() : "";
       var tituloTexto = titulo ? titulo.textContent.trim() : "";
       var resumoTexto = resumo ? resumo.textContent.trim() : "";
       var fonteTexto = fonte ? fonte.textContent.trim() : "";
       var href = link ? link.getAttribute("href") : "#";
 
       todas.push({ titulo: tituloTexto, fonte: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto });
-      itens.push({ tituloTexto: tituloTexto, resumoTexto: resumoTexto, fonteTexto: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto });
+      itens.push({ tituloTexto: tituloTexto, resumoTexto: resumoTexto, fonteTexto: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto, catSlug: catSlug, catTexto: catTexto });
     }
 
     // Hierarquia editorial: o 1o item vira "alerta principal" (maior,
@@ -672,6 +675,7 @@
       return (
         '<div class="feed-item' + (extraClasse ? " " + extraClasse : "") + '">' +
         '<span class="badge ' + item.badgeClasse + '">' + item.badgeTexto + "</span>" +
+        (item.catTexto ? '<span class="tag-categoria cat-' + item.catSlug + '">' + item.catTexto + "</span>" : "") +
         '<h4 class="feed-item-title" role="button" tabindex="0">' + item.tituloTexto + "</h4>" +
         '<span class="src">' + item.fonteTexto + "</span>" +
         (item.resumoTexto

@@ -277,6 +277,20 @@
   .feed-item .badge.alta{background:color-mix(in srgb, var(--up) 15%, transparent);color:var(--up);}
   .feed-item .badge.baixa{background:color-mix(in srgb, var(--down) 15%, transparent);color:var(--down);}
   .feed-item .badge.info{background:color-mix(in srgb, var(--slate) 15%, transparent);color:var(--slate);}
+  /* Tag de categoria editorial (NewsPriorityTag) - eixo diferente do
+     badge alta/baixa/info acima (aquele e direcao de preco vinda do
+     sentiment da IA; este e "que tipo de noticia e essa", calculado
+     em main.py::classify_news_category). Paleta deliberadamente
+     neutra (so urgente/importante ganham cor) pra nao competir
+     visualmente com o badge de direcao no mesmo card-meta. */
+  .feed-item .tag-categoria{
+    display:inline-block;padding:2px 8px;border-radius:100px;font-weight:700;font-size:0.6rem;
+    margin-bottom:5px;margin-left:4px;font-family:var(--font-mono);letter-spacing:0.3px;
+    text-transform:uppercase;border:1px solid var(--line-strong);color:var(--slate);background:none;
+  }
+  .feed-item .tag-categoria.cat-urgente{border-color:var(--gold);color:var(--gold);}
+  .feed-item .tag-categoria.cat-importante{border-color:var(--warning);color:var(--warning);}
+  .feed-radar-item .tag-categoria{display:none;}
   .feed-item h4{font-size:0.85rem;font-weight:600;line-height:1.35;color:var(--cream);}
   .feed-item .src{font-size:0.68rem;color:var(--slate-dim);margin-top:3px;display:block;}
   .feed-empty{color:var(--slate-dim);font-size:0.82rem;padding:14px 6px;}
