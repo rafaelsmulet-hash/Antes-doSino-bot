@@ -24,6 +24,48 @@
   @media (max-width:768px){
     .widget-frame{height:60vh;min-height:420px;}
   }
+
+  /* Hero mais compacto nesta pagina de proposito - e uma ferramenta de
+     uso diario (como o Terminal), nao uma pagina de marketing, entao
+     nao precisa do respiro grande padrao do design-system pra
+     titulo/subtitulo antes do mapa aparecer. */
+  .hero{padding:var(--sp-6) 6vw var(--sp-5);}
+  .hero h1{font-size:clamp(1.8rem, 4vw, 3rem);margin-bottom:var(--sp-3);}
+
+  .mapa-meta-row{
+    display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:var(--sp-3);
+  }
+  .mapa-atualizar-btn{
+    font-family:var(--font-mono);font-size:0.72rem;font-weight:600;color:var(--gold);
+    background:none;border:1px solid var(--line-strong);border-radius:var(--r-pill);
+    padding:6px 14px;cursor:pointer;margin-left:auto;
+    transition:color 0.2s ease, border-color 0.2s ease, transform 0.15s var(--ease-out);
+  }
+  .mapa-atualizar-btn:hover{color:var(--gold-soft);border-color:var(--gold);}
+  .mapa-atualizar-btn:active{transform:scale(0.96);}
+  .mapa-instrucao{font-size:0.8rem;color:var(--slate);margin-bottom:var(--sp-3);}
+
+  .mapa-legenda{
+    display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:var(--sp-4);
+    padding:10px 14px;background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);
+  }
+  .mapa-legenda-label{
+    font-family:var(--font-mono);font-size:0.66rem;letter-spacing:0.5px;text-transform:uppercase;
+    color:var(--slate-dim);
+  }
+  .mapa-legenda-escala{display:flex;align-items:center;gap:6px;}
+  .mapa-legenda-escala span{font-size:0.72rem;color:var(--slate);white-space:nowrap;}
+  .mapa-legenda-barra{
+    width:120px;height:8px;border-radius:4px;flex-shrink:0;
+    background:linear-gradient(90deg, var(--down), var(--slate-dim), var(--up));
+  }
+
+  .mapa-acessivel{
+    font-size:0.82rem;color:var(--slate);line-height:1.6;margin-top:var(--sp-4);
+    padding:var(--sp-4);background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);
+  }
+  .mapa-acessivel a{font-weight:600;color:var(--gold);}
+  .mapa-acessivel a:hover{color:var(--gold-soft);}
 </style>
 </head>
 <body>
@@ -71,8 +113,28 @@
 </div>
 
 <section>
+  <div class="mapa-meta-row reveal">
+    <span class="data-badge neutral"><span class="dot"></span>Bolsa inicial: S&amp;P 500</span>
+    <span class="data-badge neutral"><span class="dot"></span>Período: 1 dia</span>
+    <span class="data-badge neutral" id="mapa-ciclo-badge"><span class="dot"></span>Carregando…</span>
+    <button type="button" class="mapa-atualizar-btn" id="mapa-atualizar-btn">↻ Atualizar mapa</button>
+  </div>
+  <p class="mapa-instrucao reveal">Toque ou clique num bloco pra ver detalhes do ativo. Use o seletor no topo do próprio mapa pra trocar de bolsa (S&amp;P 500, Ibovespa e outros mercados).</p>
+
+  <div class="mapa-legenda reveal">
+    <span class="mapa-legenda-label">Legenda</span>
+    <div class="mapa-legenda-escala">
+      <span>Queda forte</span>
+      <div class="mapa-legenda-barra"></div>
+      <span>Alta forte</span>
+    </div>
+    <span style="font-size:0.72rem;color:var(--slate-dim);">— tamanho do bloco = valor de mercado, cor = variação do dia</span>
+  </div>
+
   <div class="widget-frame reveal" id="tv-heatmap"></div>
   <p class="meta-source widget-source-note reveal">Fonte: <strong>TradingView</strong> — widget público, dado em tempo real, não passa pelo nosso pipeline.</p>
+
+  <p class="mapa-acessivel reveal">Alternativa em texto (e pra quando o mapa não carregar): este widget mostra ações agrupadas por setor, com o tamanho de cada bloco representando o valor de mercado e a cor representando a variação percentual do dia (vermelho = queda, verde = alta). Não temos hoje uma fonte própria de cotação por ativo pra montar uma tabela equivalente nesta página — pra ver os mesmos ativos em formato de tabela navegável, com preço, variação e indicadores, use o <a href="quant.html">Painel Quantitativo</a>.</p>
 </section>
 
 <footer>
@@ -118,6 +180,7 @@
           grouping: 'sector',
           blockSize: 'market_cap_basic',
           blockColor: 'change',
+          dateRange: '1D',
           locale: 'br',
           symbolUrl: '',
           colorTheme: tema,
@@ -134,6 +197,27 @@
   }
   montarWidgetsMapa();
   document.addEventListener(window.AntesDoSinoTema.EVENTO, montarWidgetsMapa);
+
+  document.getElementById('mapa-atualizar-btn').addEventListener('click', montarWidgetsMapa);
+
+  // "Horario da ultima atualizacao" - mesmo dado real do ciclo do bot
+  // (status.json) usado no Terminal, nao um horario generico. O
+  // proprio widget e ao vivo (fonte ja indicada no selo TradingView).
+  fetch('status.json')
+    .then(function (r) { return r.ok ? r.json() : {}; })
+    .then(function (status) {
+      var el = document.getElementById('mapa-ciclo-badge');
+      if (!el) return;
+      if (status.ultimo_ciclo) {
+        el.innerHTML = '<span class="dot"></span>Ciclo ' + status.ultimo_ciclo.split(' ')[1];
+      } else {
+        el.innerHTML = '<span class="dot"></span>Indisponível';
+      }
+    })
+    .catch(function () {
+      var el = document.getElementById('mapa-ciclo-badge');
+      if (el) el.innerHTML = '<span class="dot"></span>Indisponível';
+    });
 </script>
 
 </body>
