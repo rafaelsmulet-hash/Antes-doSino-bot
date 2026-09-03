@@ -601,6 +601,7 @@
 </head>
 <body>
 
+<h1 class="sr-only">Terminal Pré-Market — Antes do Sino</h1>
 <div class="terminal-shell">
   <header class="term-header">
     <div class="term-brand">
@@ -797,7 +798,7 @@
 </div>
 
 <div class="drawer-backdrop" id="drawer-backdrop"></div>
-<div class="customize-drawer" id="customize-drawer">
+<div class="customize-drawer" id="customize-drawer" role="dialog" aria-label="Personalizar tela" aria-hidden="true">
   <button class="customize-close" id="customize-close" type="button">✕</button>
   <h3>Personalizar tela</h3>
   <p>Arraste os painéis pelos títulos para reordenar. Marque ou desmarque para mostrar/ocultar. Suas preferências ficam salvas neste navegador.</p>
@@ -825,7 +826,7 @@
 </div>
 
 <div class="drawer-backdrop" id="contexto-backdrop"></div>
-<div class="customize-drawer contexto-drawer" id="contexto-drawer">
+<div class="customize-drawer contexto-drawer" id="contexto-drawer" role="dialog" aria-label="Contexto do ativo" aria-hidden="true">
   <button class="customize-close" id="contexto-close" type="button">✕</button>
   <div class="contexto-head">
     <span class="contexto-ticker" id="contexto-ticker">—</span>
@@ -844,7 +845,7 @@
 </div>
 
 <div class="cmdk-backdrop" id="cmdk-backdrop"></div>
-<div class="cmdk-modal" id="cmdk-modal" role="dialog" aria-modal="true" aria-label="Busca universal">
+<div class="cmdk-modal" id="cmdk-modal" role="dialog" aria-modal="true" aria-label="Busca universal" aria-hidden="true">
   <div class="cmdk-input-row">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
     <input class="cmdk-input" id="cmdk-input" type="text" placeholder="Ex: PETR4, VALE3, AAPL, Bitcoin, agenda, exposição..." autocomplete="off" spellcheck="false" aria-label="Buscar ativo ou comando">

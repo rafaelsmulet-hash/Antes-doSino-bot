@@ -120,6 +120,9 @@
     lista.push({ ticker: ativo.ticker, nome: ativo.nome, symbol: ativo.symbol, tags: [], observacao: "", addedAt: new Date().toISOString() });
     salvarLista(lista);
     renderizarLista();
+    // CTA do Telegram so depois que a pessoa de fato usou a
+    // ferramenta (adicionou um ativo) - nunca antes disso.
+    if (window.AntesDoSinoTema) window.AntesDoSinoTema.mostrarCtaTelegramUmaVez("vip-banner");
   }
 
   function removerAtivo(ticker) {

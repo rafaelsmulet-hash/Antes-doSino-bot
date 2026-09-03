@@ -126,8 +126,8 @@
   </a>
 </div>
 
-<div class="vip-banner" style="display:none;">
-  <p>Quer saber na hora quando um ativo entrar em sobrecompra/sobrevenda? Acompanhe de perto no grupo do Antes do Sino.</p>
+<div class="vip-banner" id="vip-banner" style="display:none;">
+  <p>Receba o resumo pré-abertura e os principais alertas do mercado no Telegram. <span class="vip-freq">Notícias de alta materialidade e o resumo do dia antes da abertura — sem spam.</span></p>
   <a href="https://t.me/+TobMzw-WnQhmZmIx" class="btn-vip">Entrar no grupo grátis</a>
 </div>
 
@@ -258,6 +258,7 @@
         salvarColuna(colunaAtual);
         aplicarEstadoVisualDoFiltro();
         montarWidgetsQuant();
+        window.AntesDoSinoTema.mostrarCtaTelegramUmaVez('vip-banner');
       });
     });
     document.getElementById('quant-filtro-limpar').addEventListener('click', function () {
