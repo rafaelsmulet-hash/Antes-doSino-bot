@@ -206,12 +206,17 @@
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
     script.async = true;
     script.text = JSON.stringify({
+      // Resumo acionavel do mercado, sempre visivel no topo da pagina
+      // (faixa do header) - Ibovespa, dolar, S&P e Nasdaq futuros e VIX
+      // (mesmo proxy VIXY usado no painel de volatilidade), a lista
+      // pedida explicitamente. Ouro e Bitcoin continuam visiveis nos
+      // paineis de Commodities/Cripto, so nao duplicados aqui em cima.
       symbols: [
-        { proName: "FOREXCOM:SPXUSD", title: "S&P 500" },
-        { proName: "FX_IDC:USDBRL", title: "Dólar (USD/BRL)" },
-        { proName: "TVC:GOLD", title: "Ouro" },
-        { proName: "BITSTAMP:BTCUSD", title: "Bitcoin" },
         { proName: "BMFBOVESPA:IBOV", title: "Ibovespa" },
+        { proName: "FX_IDC:USDBRL", title: "Dólar (USD/BRL)" },
+        { proName: "FOREXCOM:SPXUSD", title: "S&P 500 fut." },
+        { proName: "FOREXCOM:NSXUSD", title: "Nasdaq fut." },
+        { proName: "AMEX:VIXY", title: "VIX (proxy)" },
       ],
       showSymbolLogo: true,
       colorTheme: temaWidgetAtual(),
@@ -615,6 +620,28 @@
     if (botao) botao.addEventListener("click", carregarDadosDoPortal);
   }
 
+  // "Horario da ultima atualizacao" do resumo do topo - dado real do
+  // proprio ciclo do bot (status.json, mesmo arquivo que status.html ja
+  // le), nao um horario generico ou o momento em que a pagina abriu.
+  // Os widgets da TradingView em si sao ao vivo (nao tem "ultima
+  // atualizacao" discreta pra eles); isso aqui reflete quando o NOSSO
+  // pipeline (feed/insights) rodou pela ultima vez.
+  function montarUltimaAtualizacao() {
+    var container = document.getElementById("ultima-atualizacao-container");
+    if (!container) return;
+    fetch("status.json")
+      .then(function (resp) { return resp.ok ? resp.json() : {}; })
+      .then(function (status) {
+        if (!status.ultimo_ciclo) return;
+        container.innerHTML =
+          '<span class="data-badge neutral" title="Horário do último ciclo do pipeline (feed de notícias e insights) - os widgets de cotação são ao vivo, ver selo TradingView.">' +
+          '<span class="dot"></span>Ciclo ' + status.ultimo_ciclo.split(" ")[1] + "</span>";
+      })
+      .catch(function () {
+        // Sem status.json disponivel agora - so nao mostra o selo, sem quebrar o resto da pagina.
+      });
+  }
+
   function carregarDadosDoPortal() {
     fetch("dados-terminal.html")
       .then(function (resp) {
@@ -798,8 +825,110 @@
 
   var estadoOcultos = {};
 
+  // Configuracao propria do usuario, separada do estado ATIVO (STORAGE_KEY)
+  // - assim aplicar um atalho pronto (preset) nao apaga o que o usuario
+  // ja tinha montado manualmente, e "Minha configuração" sempre volta
+  // pro que a pessoa de fato escolheu, nao pro ultimo preset clicado.
+  var STORAGE_KEY_CUSTOM = STORAGE_KEY + "_custom";
+
+  function salvarComoCustom() {
+    try {
+      localStorage.setItem(STORAGE_KEY_CUSTOM, JSON.stringify({ ordem: ordemAtualDoDom(), ocultos: estadoOcultos }));
+    } catch (e) {
+      // localStorage indisponivel - "Minha configuração" so nao vai ter o que carregar depois
+    }
+  }
+
+  function carregarCustom() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY_CUSTOM);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
   function persistirEstadoAtual() {
     salvarPrefs(ordemAtualDoDom(), estadoOcultos);
+    mostrarIndicadorSalvo();
+  }
+
+  function mostrarIndicadorSalvo() {
+    var el = document.getElementById("customize-saved");
+    if (!el) return;
+    var agora = new Date();
+    var hh = String(agora.getHours()).padStart(2, "0");
+    var mm = String(agora.getMinutes()).padStart(2, "0");
+    el.textContent = "Salvo às " + hh + ":" + mm + " neste navegador";
+  }
+
+  // Desfazer: 1 nivel so (o estado imediatamente anterior a ultima
+  // mudanca, seja manual ou por preset) - simples e honesto, sem fingir
+  // um historico completo que o produto nao guarda de verdade.
+  var estadoAntesDaUltimaMudanca = null;
+
+  function guardarParaDesfazer() {
+    estadoAntesDaUltimaMudanca = { ordem: ordemAtualDoDom(), ocultos: JSON.parse(JSON.stringify(estadoOcultos)) };
+    var botaoUndo = document.getElementById("customize-undo");
+    if (botaoUndo) botaoUndo.disabled = false;
+  }
+
+  function desfazerUltimaMudanca() {
+    if (!estadoAntesDaUltimaMudanca) return;
+    estadoOcultos = estadoAntesDaUltimaMudanca.ocultos;
+    aplicarOrdem(estadoAntesDaUltimaMudanca.ordem);
+    aplicarVisibilidade(estadoOcultos);
+    persistirEstadoAtual();
+    estadoAntesDaUltimaMudanca = null;
+    var botaoUndo = document.getElementById("customize-undo");
+    if (botaoUndo) botaoUndo.disabled = true;
+    marcarPresetAtivo(null);
+  }
+
+  function marcarPresetAtivo(nome) {
+    document.querySelectorAll(".preset-btn").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-preset") === nome);
+    });
+  }
+
+  // Atalhos prontos - cada um so define quais paineis ficam ocultos,
+  // reaproveitando aplicarVisibilidade/persistirEstadoAtual que ja
+  // existiam pra edicao manual. "minha" e especial: carrega de
+  // STORAGE_KEY_CUSTOM em vez de uma lista fixa (ver carregarCustom).
+  var PRESETS_PERSONALIZACAO = {
+    abertura: ["emergentes", "commodities", "cripto"],
+    macro: ["acoes", "cripto", "vix", "market-movers"],
+    acoes: ["moedas", "emergentes", "commodities", "cripto", "vix"],
+    cripto: ["moedas", "emergentes", "commodities", "acoes", "vix", "market-movers"],
+  };
+
+  function aplicarPreset(nome) {
+    guardarParaDesfazer();
+
+    if (nome === "minha") {
+      var custom = carregarCustom();
+      estadoOcultos = (custom && custom.ocultos) || {};
+      if (custom && custom.ordem) aplicarOrdem(custom.ordem);
+    } else {
+      var ocultarIds = PRESETS_PERSONALIZACAO[nome] || [];
+      var novoOcultos = {};
+      PANEL_DEFS.forEach(function (def) {
+        novoOcultos[def.id] = ocultarIds.indexOf(def.id) !== -1;
+      });
+      estadoOcultos = novoOcultos;
+    }
+
+    aplicarVisibilidade(estadoOcultos);
+    persistirEstadoAtual();
+    marcarPresetAtivo(nome);
+  }
+
+  function inicializarPresets() {
+    document.querySelectorAll(".preset-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        aplicarPreset(btn.getAttribute("data-preset"));
+      });
+    });
   }
 
   function montarListaDePersonalizacao() {
@@ -816,10 +945,13 @@
 
     lista.querySelectorAll("input[type=checkbox]").forEach(function (chk) {
       chk.addEventListener("change", function () {
+        guardarParaDesfazer();
         var id = chk.getAttribute("data-panel");
         estadoOcultos[id] = !chk.checked;
         aplicarVisibilidade(estadoOcultos);
         persistirEstadoAtual();
+        salvarComoCustom();
+        marcarPresetAtivo(null);
       });
     });
   }
@@ -834,6 +966,8 @@
       aplicarVisibilidade(estadoOcultos);
     }
 
+    inicializarPresets();
+
     // Drag-and-drop dos paineis de cotacao (grid 2x2). VIX/Ativos em Destaque ficam
     // numa linha fixa por design (sempre por ultimo).
     if (window.Sortable) {
@@ -841,18 +975,26 @@
         handle: ".panel-head",
         animation: 150,
         ghostClass: "dragging",
+        onStart: function () {
+          guardarParaDesfazer();
+        },
         onEnd: function () {
           persistirEstadoAtual();
+          salvarComoCustom();
+          marcarPresetAtivo(null);
         },
       });
     }
 
     document.querySelectorAll(".panel-hide-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
+        guardarParaDesfazer();
         var id = btn.getAttribute("data-hide");
         estadoOcultos[id] = true;
         aplicarVisibilidade(estadoOcultos);
         persistirEstadoAtual();
+        salvarComoCustom();
+        marcarPresetAtivo(null);
       });
     });
 
@@ -862,6 +1004,8 @@
       } catch (e) {}
       window.location.reload();
     });
+
+    document.getElementById("customize-undo").addEventListener("click", desfazerUltimaMudanca);
 
     var drawer = document.getElementById("customize-drawer");
     var backdrop = document.getElementById("drawer-backdrop");
@@ -1224,6 +1368,42 @@
   }
 
   // ---------------------------------------------------------------------
+  // Onboarding discreto - so na 1a visita (marcador em localStorage),
+  // nunca mais reaparece depois de dispensado, mesmo sem terminar de
+  // ler os 3 passos (fechar = "ja vi", nao "lembrar depois").
+  // ---------------------------------------------------------------------
+
+  var ONBOARDING_STORAGE_KEY = "antesdosino_onboarding_visto_v1";
+
+  function inicializarOnboarding() {
+    var card = document.getElementById("onboarding-card");
+    var botaoFechar = document.getElementById("onboarding-close");
+    if (!card || !botaoFechar) return;
+
+    var jaViu = true;
+    try {
+      jaViu = localStorage.getItem(ONBOARDING_STORAGE_KEY) === "true";
+    } catch (e) {
+      jaViu = true; // sem localStorage, nao da pra saber - nao insiste toda visita
+    }
+    if (jaViu) return;
+
+    card.classList.add("visible");
+    setTimeout(function () { card.classList.add("in"); }, 50);
+
+    function dispensar() {
+      card.classList.remove("in");
+      setTimeout(function () { card.classList.remove("visible"); }, 300);
+      try {
+        localStorage.setItem(ONBOARDING_STORAGE_KEY, "true");
+      } catch (e) {
+        // sem localStorage - fecha so nesta visita, pode reaparecer na proxima
+      }
+    }
+    botaoFechar.addEventListener("click", dispensar);
+  }
+
+  // ---------------------------------------------------------------------
   document.addEventListener("DOMContentLoaded", function () {
     montarTodosOsWidgets();
     carregarDadosDoPortal();
@@ -1234,6 +1414,8 @@
     inicializarLeitorDeNoticias();
     inicializarContextoAtivo();
     inicializarMenuMobile();
+    montarUltimaAtualizacao();
+    inicializarOnboarding();
     if (window.AntesDoSinoTema) window.AntesDoSinoTema.montarMarketStatus("market-status-container");
   });
 
