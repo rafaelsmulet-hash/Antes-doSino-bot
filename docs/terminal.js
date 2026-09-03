@@ -382,6 +382,7 @@
   ];
 
   var CRYPTO_UNIVERSE = (window.AntesDoSinoUniverso && window.AntesDoSinoUniverso.CRYPTO_UNIVERSE) || [];
+  var INDEX_UNIVERSE = (window.AntesDoSinoUniverso && window.AntesDoSinoUniverso.INDEX_UNIVERSE) || [];
   var LIMITE_MINHA_LISTA = 15;
 
   // Bloco "picker" generico: abas Top 10 / Minha lista com busca e
@@ -889,6 +890,7 @@
     { chaves: ["agenda", "calendario", "calendário"], label: "Calendário Econômico", href: "calendario.html" },
     { chaves: ["mapa", "heatmap", "calor"], label: "Mapa de Calor", href: "mapa.html" },
     { chaves: ["quant", "screener"], label: "Painel Quantitativo", href: "quant.html" },
+    { chaves: ["exposição", "exposicao", "watchlist"], label: "Minha Exposição", href: "exposicao.html" },
   ];
 
   function escapeHtml(str) {
@@ -955,7 +957,7 @@
     // (STOCK_UNIVERSE usa simbolos BMFBOVESPA:) - cripto (COINBASE:)
     // nao mostra esse link, pra nao arriscar uma URL nunca validada.
     var linkObm = document.getElementById("contexto-link-obm");
-    if (item.symbol.indexOf("BMFBOVESPA:") === 0) {
+    if (!item.isIndice && item.symbol.indexOf("BMFBOVESPA:") === 0) {
       linkObm.href = "https://obm.com.br/acoes/" + item.ticker.toLowerCase();
       linkObm.style.display = "";
     } else {
@@ -991,7 +993,7 @@
     var body = document.getElementById("cmdk-body");
     if (!botao || !modal || !input || !body) return;
 
-    var TICKERS_BUSCA = STOCK_UNIVERSE.concat(CRYPTO_UNIVERSE);
+    var TICKERS_BUSCA = STOCK_UNIVERSE.concat(CRYPTO_UNIVERSE).concat(INDEX_UNIVERSE);
 
     function abrir() {
       modal.classList.add("open");
@@ -1014,7 +1016,7 @@
     function renderResultados(query) {
       var q = query.trim().toLowerCase();
       if (!q) {
-        body.innerHTML = '<div class="cmdk-empty">Digite um ticker (ex: PETR4) ou comando (agenda, mapa, quant)…</div>';
+        body.innerHTML = '<div class="cmdk-empty">Digite um ticker (ex: PETR4, VALE3, AAPL), setor, índice, cripto (ex: Bitcoin) ou comando (agenda, mapa, quant, exposição)…</div>';
         return;
       }
 
@@ -1023,7 +1025,9 @@
       });
 
       var tickers = TICKERS_BUSCA.filter(function (t) {
-        return t.ticker.toLowerCase().indexOf(q) === 0 || t.nome.toLowerCase().indexOf(q) !== -1;
+        return t.ticker.toLowerCase().indexOf(q) === 0 ||
+          t.nome.toLowerCase().indexOf(q) !== -1 ||
+          (t.setor && t.setor.toLowerCase().indexOf(q) !== -1);
       }).slice(0, 5);
 
       // "q" e o texto que o usuario esta digitando agora mesmo (pode ser
@@ -1188,6 +1192,38 @@
   }
 
   // ---------------------------------------------------------------------
+  // Menu mobile (links de pagina + tema/personalizar) - colapsado atras
+  // de um botao hamburger so no mobile (ver .term-nav-toggle, escondido
+  // por CSS no desktop, onde o grupo ja fica sempre visivel inline).
+  // ---------------------------------------------------------------------
+
+  function inicializarMenuMobile() {
+    var botao = document.getElementById("term-nav-toggle");
+    var menu = document.getElementById("term-nav-links");
+    if (!botao || !menu) return;
+
+    function fechar() {
+      menu.classList.remove("open");
+      botao.setAttribute("aria-expanded", "false");
+    }
+    function alternar() {
+      var abrindo = !menu.classList.contains("open");
+      menu.classList.toggle("open", abrindo);
+      botao.setAttribute("aria-expanded", abrindo ? "true" : "false");
+    }
+
+    botao.addEventListener("click", alternar);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menu.classList.contains("open")) fechar();
+    });
+    document.addEventListener("click", function (e) {
+      if (!menu.classList.contains("open")) return;
+      if (menu.contains(e.target) || botao.contains(e.target)) return;
+      fechar();
+    });
+  }
+
+  // ---------------------------------------------------------------------
   document.addEventListener("DOMContentLoaded", function () {
     montarTodosOsWidgets();
     carregarDadosDoPortal();
@@ -1197,6 +1233,7 @@
     inicializarTermTabs();
     inicializarLeitorDeNoticias();
     inicializarContextoAtivo();
+    inicializarMenuMobile();
     if (window.AntesDoSinoTema) window.AntesDoSinoTema.montarMarketStatus("market-status-container");
   });
 
