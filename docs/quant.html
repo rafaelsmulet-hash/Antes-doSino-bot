@@ -33,6 +33,59 @@
   @media (max-width:768px){
     .widget-frame{height:60vh;min-height:420px;}
   }
+
+  /* ---------- Filtros do Quant ---------- */
+  /* Controla defaultColumn no MOMENTO de montar os 2 widgets (BR/EUA)
+     - unico parametro de "visao inicial" que o embed publico da
+     TradingView aceita de forma documentada. Filtro de sinal
+     (sobrecompra/sobrevenda), busca por ticker e ordenacao ficam
+     dentro do proprio painel (toolbar do widget, showToolbar:true) -
+     nao da pra ler nem controlar isso de fora (iframe cross-origin),
+     entao nao fingimos ter esse controle aqui na pagina. */
+  .quant-filtros{
+    display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+    margin-bottom:var(--sp-2);
+  }
+  .quant-filtro-label{
+    font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.5px;text-transform:uppercase;
+    color:var(--slate-dim);margin-right:2px;
+  }
+  .quant-filtro-chip{
+    font-family:var(--font-mono);font-size:0.74rem;font-weight:600;color:var(--slate);
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-pill);
+    padding:5px 12px;cursor:pointer;transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.15s var(--ease-out);
+  }
+  .quant-filtro-chip:hover{color:var(--cream);border-color:var(--line-strong);}
+  .quant-filtro-chip:active{transform:scale(0.94);}
+  .quant-filtro-chip.active{color:var(--navy-deep);background:var(--gold);border-color:var(--gold);}
+  .quant-filtro-limpar{
+    font-family:var(--font-mono);font-size:0.72rem;color:var(--slate-dim);
+    background:none;border:none;cursor:pointer;text-decoration:underline;
+    margin-left:auto;padding:5px 4px;transition:color 0.2s ease;
+  }
+  .quant-filtro-limpar:hover{color:var(--down);}
+  .quant-filtro-nota{
+    font-size:0.72rem;color:var(--slate-dim);line-height:1.5;margin-bottom:var(--sp-5);
+  }
+
+  /* ---------- Glossario + Como ler os sinais ---------- */
+  .quant-glossario{
+    display:grid;grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));gap:var(--sp-3);
+    margin-bottom:var(--sp-5);
+  }
+  .quant-glossario-item{
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);
+    padding:var(--sp-3) var(--sp-4);
+  }
+  .quant-glossario-item dt{font-weight:700;font-size:0.85rem;color:var(--cream);margin-bottom:4px;}
+  .quant-glossario-item dd{font-size:0.8rem;color:var(--slate);line-height:1.5;}
+  .quant-como-ler{
+    background:var(--surface-1);border:1px solid var(--line-strong);border-radius:var(--r-md);
+    padding:var(--sp-4) var(--sp-5);margin-bottom:var(--sp-6);
+  }
+  .quant-como-ler h3{font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin-bottom:8px;}
+  .quant-como-ler ul{padding-left:18px;color:var(--slate);font-size:0.85rem;line-height:1.7;}
+  .quant-como-ler li{margin-bottom:2px;}
 </style>
 </head>
 <body>
@@ -85,6 +138,36 @@
 </div>
 
 <section>
+  <div class="quant-filtros reveal">
+    <span class="quant-filtro-label">Visão inicial dos painéis</span>
+    <button type="button" class="quant-filtro-chip" data-coluna="overview">Visão geral</button>
+    <button type="button" class="quant-filtro-chip" data-coluna="oscillators">Osciladores</button>
+    <button type="button" class="quant-filtro-chip" data-coluna="moving_averages">Médias móveis</button>
+    <button type="button" class="quant-filtro-chip" data-coluna="performance">Performance</button>
+    <button type="button" class="quant-filtro-limpar" id="quant-filtro-limpar">Limpar filtro</button>
+  </div>
+  <p class="quant-filtro-nota reveal">Isso troca a coluna inicial dos 2 painéis abaixo. Busca por ticker, filtro de sinal (sobrecompra/sobrevenda) e ordenação ficam dentro do próprio painel — widget de terceiro, não conseguimos ler nem controlar esses estados por fora.</p>
+
+  <div class="quant-como-ler reveal">
+    <h3>Como ler os sinais</h3>
+    <ul>
+      <li>RSI acima de 70 costuma ser lido como <strong>sobrecompra</strong>; abaixo de 30, <strong>sobrevenda</strong> — não é um sinal de compra/venda por si só, só um extremo estatístico recente.</li>
+      <li>Preço acima da média móvel de longo prazo costuma indicar tendência de alta; abaixo, tendência de baixa.</li>
+      <li>Volume relativo bem acima de 1x indica que o ativo está sendo mais negociado que o normal hoje — pode ser resultado de notícia, mas também de rebalanceamento de índice ou outros motivos.</li>
+      <li>Nenhum indicador aqui é uma recomendação de compra ou venda — são leituras técnicas de dados públicos, pra ajudar a entender o que está acontecendo, não pra decidir sozinho.</li>
+    </ul>
+  </div>
+
+  <dl class="quant-glossario reveal">
+    <div class="quant-glossario-item"><dt>RSI (Índice de Força Relativa)</dt><dd>Indicador de 0 a 100 que mede a velocidade e a magnitude das variações recentes de preço.</dd></div>
+    <div class="quant-glossario-item"><dt>Sobrecompra</dt><dd>Quando o preço subiu rápido demais recentemente segundo o indicador — historicamente associado a uma pausa ou correção, não uma garantia.</dd></div>
+    <div class="quant-glossario-item"><dt>Sobrevenda</dt><dd>O oposto: o preço caiu rápido demais recentemente segundo o indicador.</dd></div>
+    <div class="quant-glossario-item"><dt>Médias móveis</dt><dd>Média do preço num período (ex: 50 ou 200 dias) — suaviza o ruído do dia a dia pra mostrar a tendência.</dd></div>
+    <div class="quant-glossario-item"><dt>Osciladores</dt><dd>Categoria de indicadores (RSI, MACD, Estocástico) que oscilam entre valores fixos pra sinalizar momentum e extremos.</dd></div>
+    <div class="quant-glossario-item"><dt>Volume relativo</dt><dd>Compara o volume negociado hoje com a média recente do próprio ativo — acima de 1x é acima do normal.</dd></div>
+    <div class="quant-glossario-item"><dt>Performance</dt><dd>Variação percentual do preço em diferentes janelas de tempo (1 semana, 1 mês, YTD, 1 ano).</dd></div>
+  </dl>
+
   <div class="screener-section reveal">
     <div class="screener-head">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18M8 12h8"/></svg>
@@ -135,9 +218,59 @@
 </script>
 <script src="theme.js"></script>
 <script>
+  // Filtro de coluna inicial - unico parametro de "visao inicial" que
+  // o embed publico da TradingView documenta (defaultColumn). Padrao
+  // "oscillators", mesmo default que a pagina ja usava antes desse
+  // filtro existir - "Limpar filtro" volta pra esse mesmo valor.
+  var QUANT_COLUNA_PADRAO = 'oscillators';
+  var QUANT_STORAGE_KEY = 'antesdosino_quant_coluna_v1';
+
+  function carregarColuna() {
+    try {
+      var salva = localStorage.getItem(QUANT_STORAGE_KEY);
+      return salva || QUANT_COLUNA_PADRAO;
+    } catch (e) {
+      return QUANT_COLUNA_PADRAO;
+    }
+  }
+
+  function salvarColuna(coluna) {
+    try {
+      localStorage.setItem(QUANT_STORAGE_KEY, coluna);
+    } catch (e) {
+      // localStorage indisponivel - filtro ainda funciona nesta visita
+    }
+  }
+
+  var colunaAtual = carregarColuna();
+
+  function aplicarEstadoVisualDoFiltro() {
+    document.querySelectorAll('.quant-filtro-chip').forEach(function (btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-coluna') === colunaAtual);
+    });
+  }
+
+  function inicializarFiltroQuant() {
+    aplicarEstadoVisualDoFiltro();
+    document.querySelectorAll('.quant-filtro-chip').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        colunaAtual = btn.getAttribute('data-coluna');
+        salvarColuna(colunaAtual);
+        aplicarEstadoVisualDoFiltro();
+        montarWidgetsQuant();
+      });
+    });
+    document.getElementById('quant-filtro-limpar').addEventListener('click', function () {
+      colunaAtual = QUANT_COLUNA_PADRAO;
+      salvarColuna(colunaAtual);
+      aplicarEstadoVisualDoFiltro();
+      montarWidgetsQuant();
+    });
+  }
+
   // Widgets da TradingView nao seguem o CSS da pagina (cor propria via
   // colorTheme) - monta pelo helper compartilhado (ver theme.js) e
-  // reconstroi quando o usuario troca de tema.
+  // reconstroi quando o usuario troca de tema ou o filtro de coluna.
   function montarWidgetsQuant() {
     window.AntesDoSinoTema.montarWidgetTV(
       'tv-screener-br',
@@ -146,7 +279,7 @@
         return {
           width: '100%',
           height: '100%',
-          defaultColumn: 'oscillators',
+          defaultColumn: colunaAtual,
           defaultScreen: 'general',
           market: 'brazil',
           showToolbar: true,
@@ -164,7 +297,7 @@
         return {
           width: '100%',
           height: '100%',
-          defaultColumn: 'oscillators',
+          defaultColumn: colunaAtual,
           defaultScreen: 'general',
           market: 'america',
           showToolbar: true,
@@ -176,6 +309,7 @@
       'Carregando sinais quantitativos (EUA)...'
     );
   }
+  inicializarFiltroQuant();
   montarWidgetsQuant();
   document.addEventListener(window.AntesDoSinoTema.EVENTO, montarWidgetsQuant);
 </script>
