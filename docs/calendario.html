@@ -69,8 +69,46 @@
   .cal-filtro-chip:hover{color:var(--cream);border-color:var(--line-strong);}
   .cal-filtro-chip:active{transform:scale(0.94);}
   .cal-filtro-chip.active{color:var(--navy-deep);background:var(--gold);border-color:var(--gold);}
+  .cal-filtro-limpar{
+    font-family:var(--font-mono);font-size:0.72rem;color:var(--slate-dim);
+    background:none;border:none;cursor:pointer;text-decoration:underline;
+    margin-left:auto;padding:5px 4px;transition:color 0.2s ease;
+  }
+  .cal-filtro-limpar:hover{color:var(--down);}
+  .cal-filtro-ativos{
+    font-size:0.76rem;color:var(--slate);margin-top:-8px;margin-bottom:var(--sp-3);
+  }
+  .cal-filtro-ativos strong{color:var(--gold);font-weight:600;}
   .cal-filtro-nota{
     font-size:0.72rem;color:var(--slate-dim);line-height:1.5;margin-top:-6px;margin-bottom:var(--sp-4);
+  }
+
+  /* ---------- Resumo de hoje ---------- */
+  /* Mesma fonte de dado do Radar de catalisadores mais abaixo
+     (eventos_radar.json, gerado por main.py a partir de eventos com
+     data que a cobertura identificou nas noticias) - filtrado so pros
+     eventos de HOJE (days_away === 0). Categoria/pais sao inferidos
+     por palavra-chave no proprio label do evento (mesmo padrao de
+     THEME_PROFILES/classify_news_category em main.py) - nao inventa
+     horario nem grau de impacto, que essa fonte nao tem. */
+  .resumo-hoje-section{padding-bottom:var(--sp-5);}
+  .resumo-hoje-list{display:flex;flex-direction:column;gap:var(--sp-2);}
+  .resumo-hoje-item{
+    display:flex;align-items:flex-start;gap:var(--sp-3);flex-wrap:wrap;
+    background:var(--surface-1);border:1px solid var(--line-strong);border-radius:var(--r-md);
+    padding:var(--sp-4) var(--sp-5);
+  }
+  .resumo-hoje-item .tag-pais, .resumo-hoje-item .tag-categoria{
+    font-family:var(--font-mono);font-size:0.66rem;font-weight:600;text-transform:uppercase;
+    color:var(--gold);border:1px solid var(--line-strong);border-radius:var(--r-pill);
+    padding:3px 10px;white-space:nowrap;flex-shrink:0;
+  }
+  .resumo-hoje-body{flex:1;min-width:200px;}
+  .resumo-hoje-label{font-weight:700;font-size:0.95rem;color:var(--cream);}
+  .resumo-hoje-why{color:var(--slate);font-size:0.84rem;margin-top:4px;line-height:1.5;}
+  .resumo-hoje-vazio, .resumo-hoje-carregando{
+    color:var(--slate-dim);font-size:0.85rem;padding:var(--sp-4);text-align:center;
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);
   }
 
   /* ---------- Radar de Impacto ---------- */
@@ -151,6 +189,17 @@
   <p>Indicadores macroeconômicos, decisões de juros e divulgações que costumam movimentar ações, câmbio e juros — no Brasil e no mundo.</p>
 </div>
 
+<section class="resumo-hoje-section">
+  <div class="page-head reveal">
+    <span class="kicker">Resumo de hoje</span>
+    <h2>O que o nosso radar identificou pra hoje</h2>
+  </div>
+  <div class="resumo-hoje-list reveal" id="resumo-hoje-list">
+    <div class="resumo-hoje-carregando">Carregando resumo de hoje...</div>
+  </div>
+  <p class="proxy-notice reveal" style="margin-top:var(--sp-3);">Baseado nos eventos com data que nossa cobertura identificou nas notícias (mesma fonte do Radar de catalisadores, abaixo) — continua visível mesmo se o widget da TradingView não carregar. Categoria e país são inferidos do próprio título do evento; não temos horário exato nem uma classificação própria de impacto pra esses itens.</p>
+</section>
+
 <section>
   <div class="cal-filtros reveal">
     <div class="cal-filtro-grupo" id="cal-filtro-impacto">
@@ -168,7 +217,9 @@
       <button type="button" class="cal-filtro-chip" data-pais="jp">Japão</button>
       <button type="button" class="cal-filtro-chip" data-pais="cn">China</button>
     </div>
+    <button type="button" class="cal-filtro-limpar" id="cal-filtro-limpar">Limpar filtros</button>
   </div>
+  <p class="cal-filtro-ativos" id="cal-filtro-ativos"></p>
   <p class="cal-filtro-nota reveal">Filtro por data, tipo de evento ou ativo específico não está disponível — o widget público da TradingView não expõe esse recurso, e não fazemos scraping de fonte sem API documentada.</p>
   <div class="widget-frame reveal" id="tv-calendario"></div>
   <p class="meta-source widget-source-note reveal">Fonte: <strong>TradingView</strong> — widget público, dado em tempo real, não passa pelo nosso pipeline.</p>
@@ -227,9 +278,82 @@
 </footer>
 
 <script>
+  // Categoria/pais do evento inferidos por palavra-chave no proprio
+  // label (mesmo padrao de THEME_PROFILES/classify_news_category do
+  // main.py) - eventos_radar.json nao guarda esses campos, entao isso
+  // e derivado do texto que ja temos, nunca um dado novo inventado.
+  var EVENTO_CATEGORIA_REGRAS = [
+    { rotulo: 'Juros', kw: ['juros', 'fomc', 'copom', 'selic', 'fed'] },
+    { rotulo: 'Inflação', kw: ['cpi', 'inflação', 'ipca', 'igp-m'] },
+    { rotulo: 'Emprego', kw: ['payroll', 'emprego', 'employment', 'desemprego'] },
+    { rotulo: 'PIB', kw: ['pib', 'gdp'] },
+    { rotulo: 'Fiscal', kw: ['fiscal', 'orçamento', 'déficit', 'superávit'] },
+  ];
+  var EVENTO_PAIS_REGRAS = [
+    { rotulo: 'EUA', kw: ['eua', 'fed', 'fomc', 'estados unidos', 'usa'] },
+    { rotulo: 'Brasil', kw: ['copom', 'selic', 'ipca', 'brasil', 'b3', 'bc '] },
+    { rotulo: 'Zona do Euro', kw: ['bce', 'zona do euro', 'euro'] },
+  ];
+  function inferirPorPalavraChave(texto, regras) {
+    var t = texto.toLowerCase();
+    for (var i = 0; i < regras.length; i++) {
+      for (var j = 0; j < regras[i].kw.length; j++) {
+        if (t.indexOf(regras[i].kw[j]) !== -1) return regras[i].rotulo;
+      }
+    }
+    return null;
+  }
+
+  function montarResumoDeHoje(eventos) {
+    var container = document.getElementById('resumo-hoje-list');
+    if (!container) return;
+    var hoje = (eventos || []).filter(function (ev) { return ev.days_away === 0; });
+
+    if (!hoje.length) {
+      container.innerHTML = '<div class="resumo-hoje-vazio">Nosso radar não identificou nenhum evento crítico com data marcada para hoje. Veja a agenda completa no calendário abaixo.</div>';
+      return;
+    }
+
+    container.innerHTML = '';
+    hoje.forEach(function (ev) {
+      var categoria = inferirPorPalavraChave(ev.label || '', EVENTO_CATEGORIA_REGRAS);
+      var pais = inferirPorPalavraChave(ev.label || '', EVENTO_PAIS_REGRAS);
+
+      var item = document.createElement('div');
+      item.className = 'resumo-hoje-item';
+      if (pais) {
+        var tagPais = document.createElement('span');
+        tagPais.className = 'tag-pais';
+        tagPais.textContent = pais;
+        item.appendChild(tagPais);
+      }
+      if (categoria) {
+        var tagCat = document.createElement('span');
+        tagCat.className = 'tag-categoria';
+        tagCat.textContent = categoria;
+        item.appendChild(tagCat);
+      }
+      var body = document.createElement('div');
+      body.className = 'resumo-hoje-body';
+      var label = document.createElement('div');
+      label.className = 'resumo-hoje-label';
+      label.textContent = ev.label || '';
+      body.appendChild(label);
+      if (ev.why) {
+        var why = document.createElement('p');
+        why.className = 'resumo-hoje-why';
+        why.textContent = ev.why;
+        body.appendChild(why);
+      }
+      item.appendChild(body);
+      container.appendChild(item);
+    });
+  }
+
   fetch('eventos_radar.json')
     .then(function (r) { return r.ok ? r.json() : []; })
     .then(function (eventos) {
+      montarResumoDeHoje(eventos);
       if (!eventos || !eventos.length) return;
       var list = document.getElementById('catalyst-list');
       eventos.forEach(function (ev) {
@@ -268,7 +392,9 @@
       });
       document.getElementById('catalisadores-section').style.display = '';
     })
-    .catch(function () {});
+    .catch(function () {
+      montarResumoDeHoje([]);
+    });
 
   // Revelacao suave ao rolar (progressive enhancement - sem JS, o
   // conteudo ja fica visivel via CSS, ver .reveal no design-system.css).
@@ -317,6 +443,23 @@
 
   var filtrosAtuais = carregarFiltros();
 
+  var LABEL_IMPACTO = { '1': 'Alto', '0': 'Médio', '-1': 'Baixo' };
+  var LABEL_PAIS = { us: 'EUA', br: 'Brasil', eu: 'Zona do Euro', gb: 'Reino Unido', jp: 'Japão', cn: 'China' };
+
+  function atualizarIndicadorFiltrosAtivos() {
+    var el = document.getElementById('cal-filtro-ativos');
+    if (!el) return;
+    var tudoSelecionado = filtrosAtuais.impactos.length === TODOS_IMPACTOS.length &&
+      filtrosAtuais.paises.length === TODOS_PAISES.length;
+    if (tudoSelecionado) {
+      el.textContent = 'Nenhum filtro ativo — mostrando todos os impactos e países.';
+      return;
+    }
+    var impactosTexto = filtrosAtuais.impactos.map(function (v) { return LABEL_IMPACTO[v]; }).join(', ');
+    var paisesTexto = filtrosAtuais.paises.map(function (v) { return LABEL_PAIS[v]; }).join(', ');
+    el.innerHTML = 'Filtros ativos: <strong>' + impactosTexto + '</strong> de impacto · <strong>' + paisesTexto + '</strong>';
+  }
+
   function aplicarEstadoVisualDosChips() {
     document.querySelectorAll('#cal-filtro-impacto [data-impacto]').forEach(function (btn) {
       btn.classList.toggle('active', filtrosAtuais.impactos.indexOf(btn.getAttribute('data-impacto')) !== -1);
@@ -324,6 +467,7 @@
     document.querySelectorAll('#cal-filtro-pais [data-pais]').forEach(function (btn) {
       btn.classList.toggle('active', filtrosAtuais.paises.indexOf(btn.getAttribute('data-pais')) !== -1);
     });
+    atualizarIndicadorFiltrosAtivos();
   }
 
   function alternarFiltro(lista, valor) {
@@ -355,6 +499,16 @@
         montarWidgetsCalendario();
       });
     });
+    var botaoLimpar = document.getElementById('cal-filtro-limpar');
+    if (botaoLimpar) {
+      botaoLimpar.addEventListener('click', function () {
+        filtrosAtuais.impactos = TODOS_IMPACTOS.slice();
+        filtrosAtuais.paises = TODOS_PAISES.slice();
+        salvarFiltros(filtrosAtuais);
+        aplicarEstadoVisualDosChips();
+        montarWidgetsCalendario();
+      });
+    }
   }
 
   // Widget da TradingView nao segue o CSS da pagina (cor propria via
