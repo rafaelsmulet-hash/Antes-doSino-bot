@@ -154,23 +154,12 @@
     padding:2px 4px;line-height:1;
   }
   .panel-head .panel-hide-btn:hover{color:var(--down);}
-  .panel-body{flex:1;min-height:0;position:relative;}
+  .panel-body{flex:1;min-height:0;}
 
-  /* Skeleton (placeholder pulsante) enquanto o widget da TradingView
-     carrega - cobre o painel por cima do iframe ate terminal.js tirar
-     a classe .loading (ver comLoadingSkeleton), no lugar de deixar o
-     painel em branco. */
-  @keyframes skeleton-shimmer{
-    0%{background-position:200% 0;}
-    100%{background-position:-200% 0;}
-  }
-  .panel-body.loading::before, .macro-widget-body.loading::before{
-    content:'';position:absolute;inset:0;z-index:1;border-radius:inherit;
-    background-color:var(--surface-1);
-    background-image:linear-gradient(90deg, transparent, var(--surface-2), transparent);
-    background-size:200% 100%;background-repeat:no-repeat;
-    animation:skeleton-shimmer 1.6s ease-in-out infinite;
-  }
+  /* Skeleton com rotulo (shimmer + texto via data-loading-text) agora
+     compartilhado em design-system.css (.panel-body.loading,
+     .macro-widget-body.loading) - reaproveitado por Calendario/Mapa/
+     Quant tambem, ver terminal.js::aplicarSkeleton. */
   .panel[data-hidden="true"]{display:none;}
 
   /* O widget "Symbol Overview" (usado so no VIX) desenha o selo de
