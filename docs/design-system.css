@@ -215,6 +215,36 @@ a{color:inherit;text-decoration:none;}
 .widget-retry-btn:hover{color:var(--gold-soft);border-color:var(--gold);}
 .widget-retry-btn:active{transform:scale(0.96);}
 
+/* =========================================================================
+   Skeleton de carregamento com rotulo (LoadingState)
+   =========================================================================
+   Generalizado a partir do skeleton que so existia dentro do Terminal
+   (paineis TradingView) - agora compartilhado por qualquer container que
+   vá receber um widget externo (Calendario, Mapa, Quant, Terminal).
+   Precisa de position:relative no container (ja garantido abaixo pros
+   3 seletores usados). O texto vem de data-loading-text, setado pelo JS
+   ANTES de montar o widget (ver theme.js::montarWidgetTV e
+   terminal.js::aplicarSkeleton) - cada pagina usa o rotulo do seu
+   proprio painel ("Carregando indices...", "Carregando mapa de
+   calor...", etc), nunca um texto generico igual em todo lugar. */
+.widget-frame, .panel-body, .macro-widget-body{position:relative;}
+@keyframes skeleton-shimmer{
+  0%{background-position:200% 0;}
+  100%{background-position:-200% 0;}
+}
+.widget-frame.loading::before, .panel-body.loading::before, .macro-widget-body.loading::before{
+  content:'';position:absolute;inset:0;z-index:1;border-radius:inherit;
+  background-color:var(--surface-1);
+  background-image:linear-gradient(90deg, transparent, var(--surface-2), transparent);
+  background-size:200% 100%;background-repeat:no-repeat;
+  animation:skeleton-shimmer 1.6s ease-in-out infinite;
+}
+.widget-frame.loading::after, .panel-body.loading::after, .macro-widget-body.loading::after{
+  content:attr(data-loading-text);position:absolute;inset:0;z-index:2;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  font-family:var(--font-mono);font-size:0.74rem;color:var(--slate-dim);padding:var(--sp-4);
+}
+
 @media (prefers-reduced-motion: reduce){
   *{transition-duration:0.01ms !important;animation-duration:0.01ms !important;scroll-behavior:auto !important;}
 }

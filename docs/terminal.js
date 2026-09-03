@@ -46,8 +46,9 @@
   // apps de produção pra widgets externos sem callback de load).
   var SKELETON_DURACAO_MS = 1300;
 
-  function aplicarSkeleton(container) {
+  function aplicarSkeleton(container, texto) {
     if (!container) return;
+    container.setAttribute("data-loading-text", texto || "Carregando dados...");
     container.classList.add("loading");
     setTimeout(function () {
       container.classList.remove("loading");
@@ -74,11 +75,11 @@
     if (botao) botao.addEventListener("click", tentarNovamente);
   }
 
-  function montarSymbolOverview(containerId, simbolos) {
+  function montarSymbolOverview(containerId, simbolos, texto) {
     var container = document.getElementById(containerId);
     if (!container) return;
     container.innerHTML = ""; // permite re-renderizar (troca de aba/lista) sem acumular widgets
-    aplicarSkeleton(container);
+    aplicarSkeleton(container, texto);
 
     var wrapper = document.createElement("div");
     wrapper.className = "tradingview-widget-container";
@@ -120,7 +121,7 @@
       dateRanges: ["1d|1"],
     });
     script.onerror = function () {
-      montarEstadoErro(container, function () { montarSymbolOverview(containerId, simbolos); });
+      montarEstadoErro(container, function () { montarSymbolOverview(containerId, simbolos, texto); });
     };
 
     wrapper.appendChild(script);
@@ -136,11 +137,11 @@
   // de abas. Mesma assinatura de montarSymbolOverview (mesmos pares
   // [label, "EXCHANGE:TICKER|intervalo"]) pra poder trocar so a
   // chamada, sem mexer em quem chama.
-  function montarListaAtivos(containerId, simbolos) {
+  function montarListaAtivos(containerId, simbolos, texto) {
     var container = document.getElementById(containerId);
     if (!container) return;
     container.innerHTML = "";
-    aplicarSkeleton(container);
+    aplicarSkeleton(container, texto);
 
     var wrapper = document.createElement("div");
     wrapper.className = "tradingview-widget-container";
@@ -180,7 +181,7 @@
       ],
     });
     script.onerror = function () {
-      montarEstadoErro(container, function () { montarListaAtivos(containerId, simbolos); });
+      montarEstadoErro(container, function () { montarListaAtivos(containerId, simbolos, texto); });
     };
 
     wrapper.appendChild(script);
@@ -230,7 +231,7 @@
     var container = document.getElementById("widget-market-movers");
     if (!container) return;
     container.innerHTML = "";
-    aplicarSkeleton(container);
+    aplicarSkeleton(container, "Carregando destaques...");
 
     // O widget Hotlists da TradingView so renderiza as linhas que cabem
     // na altura pedida, sem scroll interno proprio - com height:100%
@@ -279,29 +280,29 @@
       ["Dow Jones", "FOREXCOM:DJI|1D"],
       ["Ibovespa", "BMFBOVESPA:IBOV|1D"],
       ["DAX", "XETR:DAX|1D"],
-    ]);
+    ], "Carregando índices...");
 
     montarListaAtivos("widget-moedas", [
       ["USD/JPY", "FX:USDJPY|1D"],
       ["EUR/USD", "FX:EURUSD|1D"],
       ["GBP/USD", "FX:GBPUSD|1D"],
       ["USD/BRL", "FX_IDC:USDBRL|1D"],
-    ]);
+    ], "Carregando câmbio...");
 
     montarListaAtivos("widget-emergentes", [
       ["USD/MXN", "FX_IDC:USDMXN|1D"],
       ["USD/ZAR", "FX_IDC:USDZAR|1D"],
       ["USD/TRY", "FX_IDC:USDTRY|1D"],
-    ]);
+    ], "Carregando emergentes...");
 
     montarListaAtivos("widget-commodities", [
       ["Petróleo (WTI)", "TVC:USOIL|1D"],
       ["Ouro", "TVC:GOLD|1D"],
       ["Prata", "TVC:SILVER|1D"],
       ["Milho", "FOREXCOM:CORN|1D"],
-    ]);
+    ], "Carregando commodities...");
 
-    montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]]);
+    montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]], "Carregando volatilidade...");
     montarMarketMovers();
 
     // Fluxo Estrangeiro (proxy via EWZ - nao ha fonte gratuita do dado
@@ -321,7 +322,7 @@
       ["DI Jan/35", "BMFBOVESPA:DI1F2035|1D"],
       ["DI Jan/36", "BMFBOVESPA:DI1F2036|1D"],
       ["DI Jan/37", "BMFBOVESPA:DI1F2037|1D"],
-    ]);
+    ], "Carregando contexto macro...");
 
     montarWidgetAcoes(); // Top 10 / Minha lista - ver secao "Bloco picker" abaixo
     montarWidgetCripto(); // idem, para criptomoedas
@@ -516,7 +517,7 @@
         var symbol = ativo ? ativo.symbol : config.symbolFallbackPrefix + ticker;
         return [label, symbol + "|1D"];
       });
-      montarListaAtivos(config.widgetId, simbolos);
+      montarListaAtivos(config.widgetId, simbolos, config.loadingText);
     }
 
     function trocarAba(aba) {
@@ -529,7 +530,7 @@
       renderChips();
 
       if (aba === "top10") {
-        montarListaAtivos(config.widgetId, config.top10);
+        montarListaAtivos(config.widgetId, config.top10, config.loadingText);
       } else {
         renderWidgetCustom();
       }
@@ -571,6 +572,7 @@
       itemPlural: "ações",
       emptyHint: "Busque acima e adicione as ações que você quer acompanhar.",
       symbolFallbackPrefix: "BMFBOVESPA:",
+      loadingText: "Carregando ações...",
     }).montar();
   }
 
@@ -584,6 +586,7 @@
       itemPlural: "criptomoedas",
       emptyHint: "Busque acima e adicione as criptomoedas que você quer acompanhar.",
       symbolFallbackPrefix: "COINBASE:",
+      loadingText: "Carregando criptomoedas...",
     }).montar();
   }
 
