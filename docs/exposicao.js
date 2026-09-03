@@ -17,11 +17,15 @@
   "use strict";
 
   var STORAGE_KEY = "antesdosino_exposicao_v1";
+  var ORDENAR_STORAGE_KEY = "antesdosino_exposicao_ordenar_v1";
   var universo = (window.AntesDoSinoUniverso && window.AntesDoSinoUniverso.STOCK_UNIVERSE) || [];
   var universoCripto = (window.AntesDoSinoUniverso && window.AntesDoSinoUniverso.CRYPTO_UNIVERSE) || [];
   var TODOS_ATIVOS = universo.concat(universoCripto);
 
   var NOTICIAS = []; // preenchido pelo fetch de dados-terminal.html
+  var EVENTOS_CALENDARIO = []; // preenchido pelo fetch de eventos_radar.json (mesma fonte do Calendário)
+
+  var EXEMPLOS_VAZIO = ["PETR4", "VALE3", "AAPL", "BTC"];
 
   function carregarLista() {
     try {
@@ -134,20 +138,101 @@
     }).slice(0, 3);
   }
 
+  // Eventos do calendario relacionados ao ativo - mesma fonte real do
+  // Calendario (eventos_radar.json, gerado por main.py a partir de
+  // mencoes nas proprias noticias), casado por palavra-chave contra
+  // ticker/nome/setor do ativo (mesmo padrao de bateTermoNoTitulo). So
+  // mostra a secao quando ha pelo menos 1 evento relacionado de
+  // verdade - nao inventa "nenhum evento" pra todo card, o que so
+  // adicionaria ruido visual sem informacao nova.
+  function eventosRelacionados(item) {
+    var ativo = TODOS_ATIVOS.filter(function (a) { return a.ticker === item.ticker; })[0];
+    var setor = ativo && ativo.setor;
+    // Primeira palavra do nome (ex: "Petrobras" de "Petrobras PN") -
+    // o nome completo raramente aparece por extenso num texto de
+    // evento, mas o nome "de marca" da empresa costuma aparecer.
+    var primeiraPalavraNome = (item.nome || "").split(" ")[0];
+    return EVENTOS_CALENDARIO.filter(function (ev) {
+      var texto = (ev.label || "") + " " + (ev.why || "");
+      return bateTermoNoTitulo(texto, item.ticker) ||
+        (primeiraPalavraNome && bateTermoNoTitulo(texto, primeiraPalavraNome)) ||
+        (setor && bateTermoNoTitulo(texto, setor));
+    }).slice(0, 2);
+  }
+
+  function ordenarLista(lista) {
+    var modo = "recentes";
+    try {
+      modo = localStorage.getItem(ORDENAR_STORAGE_KEY) || "recentes";
+    } catch (e) {
+      modo = "recentes";
+    }
+    var copia = lista.slice();
+    if (modo === "ticker") {
+      copia.sort(function (a, b) { return a.ticker.localeCompare(b.ticker); });
+    } else {
+      copia.sort(function (a, b) { return (b.addedAt || "").localeCompare(a.addedAt || ""); });
+    }
+    return copia;
+  }
+
+  // Mini cotacao (preco + variacao + mini-historico de 1 mes) via
+  // widget real da TradingView, montado DEPOIS do innerHTML - mesmo
+  // helper compartilhado usado no resto do site (loading/erro/retry de
+  // graca, ver theme.js::montarWidgetTV).
+  function montarCotacoes(lista) {
+    if (!window.AntesDoSinoTema) return;
+    lista.forEach(function (item) {
+      window.AntesDoSinoTema.montarWidgetTV(
+        "exp-cotacao-" + item.ticker,
+        "https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js",
+        function (tema) {
+          return {
+            symbol: item.symbol,
+            width: "100%",
+            height: "100%",
+            locale: "br",
+            dateRange: "1M",
+            colorTheme: tema,
+            isTransparent: false,
+            autosize: true,
+            noTimeScale: true,
+          };
+        },
+        "Carregando cotação..."
+      );
+    });
+  }
+
   function renderizarLista() {
     var container = document.getElementById("exp-list-container");
+    var toolbar = document.getElementById("exp-toolbar");
     if (!container) return;
-    var lista = carregarLista();
+    var listaBruta = carregarLista();
 
-    if (!lista.length) {
-      container.innerHTML = '<div class="exp-empty">Você ainda não adicionou nenhum ativo. Busque acima pra começar a acompanhar.</div>';
+    if (toolbar) toolbar.style.display = listaBruta.length ? "" : "none";
+
+    if (!listaBruta.length) {
+      container.innerHTML =
+        '<div class="exp-empty">Você ainda não adicionou nenhum ativo. Busque acima pra começar a acompanhar, ou use um dos exemplos:' +
+        '<div class="exp-empty-exemplos">' +
+        EXEMPLOS_VAZIO.map(function (t) {
+          return '<button type="button" class="exp-empty-exemplo" data-exemplo="' + escapeHtml(t) + '">' + escapeHtml(t) + "</button>";
+        }).join("") +
+        "</div></div>";
+      container.querySelectorAll("[data-exemplo]").forEach(function (btn) {
+        btn.addEventListener("click", function () { adicionarAtivo(btn.getAttribute("data-exemplo")); });
+      });
       return;
     }
+
+    var lista = ordenarLista(listaBruta);
 
     container.innerHTML =
       '<div class="exp-list">' +
       lista.map(function (item) {
         var relacionadas = noticiasRelacionadas(item);
+        var eventos = eventosRelacionados(item);
         var tagsHtml = (item.tags || []).map(function (tag) {
           return '<span class="exp-tag">' + escapeHtml(tag) + '<button type="button" data-remover-tag="' + escapeHtml(tag) + '" data-ticker="' + escapeHtml(item.ticker) + '">✕</button></span>';
         }).join("");
@@ -158,6 +243,16 @@
             }).join("")
           : '<p class="exp-sem-noticias">Nenhuma notícia recente do nosso feed menciona esse ativo.</p>';
 
+        var eventosHtml = eventos.length
+          ? '<div class="exp-eventos"><h5>Próximos eventos do calendário</h5>' +
+            eventos.map(function (ev) {
+              var d = new Date(ev.date + "T00:00:00");
+              var dataTexto = String(d.getDate()).padStart(2, "0") + "/" + String(d.getMonth() + 1).padStart(2, "0");
+              return '<div class="exp-evento-item"><span class="data">' + dataTexto + "</span>" + escapeHtml(ev.label || "") + "</div>";
+            }).join("") +
+            "</div>"
+          : "";
+
         var tvUrl = "https://www.tradingview.com/symbols/" + item.symbol.replace(":", "-") + "/";
         var obmUrl = item.symbol.indexOf("BMFBOVESPA:") === 0 ? "https://obm.com.br/acoes/" + item.ticker.toLowerCase() : null;
 
@@ -167,9 +262,11 @@
           "<div><span class=\"ticker\">" + escapeHtml(item.ticker) + '</span><span class="nome">' + escapeHtml(item.nome) + "</span></div>" +
           '<button type="button" class="exp-remove-btn" data-remover="' + escapeHtml(item.ticker) + '" title="Remover da lista">✕ Remover</button>' +
           "</div>" +
+          '<div class="exp-cotacao" id="exp-cotacao-' + escapeHtml(item.ticker) + '"></div>' +
           '<div class="exp-tags">' + tagsHtml + '<button type="button" class="exp-tag-add" data-add-tag="' + escapeHtml(item.ticker) + '">+ tag</button></div>' +
           '<textarea class="exp-obs" data-observacao="' + escapeHtml(item.ticker) + '" placeholder="Sua observação sobre esse ativo (tese, motivo de acompanhar, etc.)">' + escapeHtml(item.observacao || "") + "</textarea>" +
           '<div class="exp-noticias"><h5>Notícias relacionadas</h5>' + noticiasHtml + "</div>" +
+          eventosHtml +
           '<div class="exp-links">' +
           '<a href="' + tvUrl + '" target="_blank" rel="noopener">Ver gráfico na TradingView →</a>' +
           (obmUrl ? '<a href="' + obmUrl + '" target="_blank" rel="noopener">Ver no OBM →</a>' : "") +
@@ -178,6 +275,8 @@
         );
       }).join("") +
       "</div>";
+
+    montarCotacoes(lista);
 
     container.querySelectorAll("[data-remover]").forEach(function (btn) {
       btn.addEventListener("click", function () { removerAtivo(btn.getAttribute("data-remover")); });
@@ -253,9 +352,44 @@
       });
   }
 
+  // Eventos do calendario (mesma fonte real do Calendario) - ver
+  // eventosRelacionados() acima.
+  function carregarEventosCalendario() {
+    fetch("eventos_radar.json")
+      .then(function (resp) { return resp.ok ? resp.json() : []; })
+      .then(function (eventos) {
+        EVENTOS_CALENDARIO = Array.isArray(eventos) ? eventos : [];
+        renderizarLista();
+      })
+      .catch(function () {
+        // Sem eventos_radar.json disponivel agora - a lista ainda
+        // funciona, so sem a secao de eventos relacionados populada.
+      });
+  }
+
+  function inicializarOrdenacao() {
+    var select = document.getElementById("exp-ordenar");
+    if (!select) return;
+    try {
+      select.value = localStorage.getItem(ORDENAR_STORAGE_KEY) || "recentes";
+    } catch (e) {
+      select.value = "recentes";
+    }
+    select.addEventListener("change", function () {
+      try {
+        localStorage.setItem(ORDENAR_STORAGE_KEY, select.value);
+      } catch (e) {
+        // localStorage indisponivel - ordenacao ainda funciona nesta visita
+      }
+      renderizarLista();
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     inicializarBusca();
+    inicializarOrdenacao();
     renderizarLista();
     carregarNoticias();
+    carregarEventosCalendario();
   });
 })();
