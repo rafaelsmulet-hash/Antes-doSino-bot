@@ -45,6 +45,24 @@
     color:var(--slate-dim);font-size:0.9rem;padding:var(--sp-6);text-align:center;
     background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);
   }
+  .exp-empty-exemplos{
+    display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:var(--sp-4);
+  }
+  .exp-empty-exemplo{
+    font-family:var(--font-mono);font-size:0.8rem;font-weight:600;color:var(--gold);
+    background:var(--surface-2);border:1px solid var(--line-strong);border-radius:var(--r-pill);
+    padding:7px 16px;cursor:pointer;transition:color 0.2s ease, border-color 0.2s ease, transform 0.15s var(--ease-out);
+  }
+  .exp-empty-exemplo:hover{color:var(--gold-soft);border-color:var(--gold);}
+  .exp-empty-exemplo:active{transform:scale(0.94);}
+
+  .exp-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:8px;margin-bottom:var(--sp-3);}
+  .exp-toolbar label{font-family:var(--font-mono);font-size:0.7rem;color:var(--slate-dim);}
+  .exp-ordenar{
+    font-family:var(--font-mono);font-size:0.76rem;color:var(--cream);
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-sm);
+    padding:6px 10px;cursor:pointer;
+  }
 
   .exp-list{display:flex;flex-direction:column;gap:var(--sp-3);}
   .exp-card{
@@ -96,6 +114,21 @@
   .exp-links{display:flex;gap:14px;margin-top:10px;}
   .exp-links a{font-size:0.78rem;font-weight:600;color:var(--gold);}
   .exp-links a:hover{color:var(--gold-soft);}
+
+  /* Cotacao + mini-historico via widget real da TradingView (Mini
+     Symbol Overview) - preco/variacao/grafico de 1 mes, mesmo dado ao
+     vivo que qualquer outro painel do site usa, nunca um numero
+     digitado por nos (nao temos fonte propria de cotacao no cliente
+     pra fabricar isso). */
+  .exp-cotacao{height:90px;margin-bottom:10px;border-radius:var(--r-sm);overflow:hidden;background:var(--surface-2);}
+
+  .exp-eventos{border-top:1px solid var(--line);padding-top:10px;margin-top:10px;}
+  .exp-eventos h5{
+    font-family:var(--font-mono);font-size:0.66rem;letter-spacing:0.6px;text-transform:uppercase;
+    color:var(--bronze);margin-bottom:6px;
+  }
+  .exp-evento-item{padding:4px 0;font-size:0.8rem;color:var(--slate);display:flex;gap:8px;align-items:baseline;}
+  .exp-evento-item .data{font-family:var(--font-mono);font-size:0.7rem;color:var(--slate-dim);white-space:nowrap;flex-shrink:0;}
 </style>
 </head>
 <body>
@@ -148,9 +181,17 @@
     <div class="exp-add-results" id="exp-add-results"></div>
   </div>
 
+  <div class="exp-toolbar reveal" id="exp-toolbar" style="display:none;">
+    <label for="exp-ordenar">Ordenar por</label>
+    <select id="exp-ordenar" class="exp-ordenar">
+      <option value="recentes">Adicionados recentemente</option>
+      <option value="ticker">Ticker (A-Z)</option>
+    </select>
+  </div>
+
   <div id="exp-list-container"></div>
 
-  <p class="proxy-notice reveal" style="margin-top:var(--sp-5);">Retorno contra benchmark e histórico de preço não estão disponíveis ainda — o Antes do Sino não guarda série histórica própria de cotação hoje. Cotação e notícias relacionadas usam as mesmas fontes do Terminal.</p>
+  <p class="proxy-notice reveal" style="margin-top:var(--sp-5);">Retorno contra benchmark não está disponível ainda — o Antes do Sino não guarda série histórica própria de cotação pra calcular isso hoje. Cotação, mini-histórico (1 mês) e notícias relacionadas usam as mesmas fontes públicas do Terminal (widgets TradingView + nosso próprio feed).</p>
 </section>
 
 <footer>

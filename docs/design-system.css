@@ -227,19 +227,19 @@ a{color:inherit;text-decoration:none;}
    terminal.js::aplicarSkeleton) - cada pagina usa o rotulo do seu
    proprio painel ("Carregando indices...", "Carregando mapa de
    calor...", etc), nunca um texto generico igual em todo lugar. */
-.widget-frame, .panel-body, .macro-widget-body{position:relative;}
+.widget-frame, .panel-body, .macro-widget-body, .exp-cotacao{position:relative;}
 @keyframes skeleton-shimmer{
   0%{background-position:200% 0;}
   100%{background-position:-200% 0;}
 }
-.widget-frame.loading::before, .panel-body.loading::before, .macro-widget-body.loading::before{
+.widget-frame.loading::before, .panel-body.loading::before, .macro-widget-body.loading::before, .exp-cotacao.loading::before{
   content:'';position:absolute;inset:0;z-index:1;border-radius:inherit;
   background-color:var(--surface-1);
   background-image:linear-gradient(90deg, transparent, var(--surface-2), transparent);
   background-size:200% 100%;background-repeat:no-repeat;
   animation:skeleton-shimmer 1.6s ease-in-out infinite;
 }
-.widget-frame.loading::after, .panel-body.loading::after, .macro-widget-body.loading::after{
+.widget-frame.loading::after, .panel-body.loading::after, .macro-widget-body.loading::after, .exp-cotacao.loading::after{
   content:attr(data-loading-text);position:absolute;inset:0;z-index:2;
   display:flex;align-items:center;justify-content:center;text-align:center;
   font-family:var(--font-mono);font-size:0.74rem;color:var(--slate-dim);padding:var(--sp-4);
