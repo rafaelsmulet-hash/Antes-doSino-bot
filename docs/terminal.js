@@ -1007,19 +1007,31 @@
 
     document.getElementById("customize-undo").addEventListener("click", desfazerUltimaMudanca);
 
+    // Foco controlado: abrir move o foco pra dentro do drawer (botao
+    // fechar, primeiro elemento focavel), fechar devolve o foco pra
+    // quem abriu - sem isso, um usuario de teclado/leitor de tela
+    // "perde o lugar" ao fechar um modal.
     var drawer = document.getElementById("customize-drawer");
     var backdrop = document.getElementById("drawer-backdrop");
+    var botaoAbrirDrawer = document.getElementById("btn-customize");
     function abrirDrawer() {
       drawer.classList.add("open");
       backdrop.classList.add("open");
+      drawer.removeAttribute("aria-hidden");
+      document.getElementById("customize-close").focus();
     }
     function fecharDrawer() {
       drawer.classList.remove("open");
       backdrop.classList.remove("open");
+      drawer.setAttribute("aria-hidden", "true");
+      botaoAbrirDrawer.focus();
     }
-    document.getElementById("btn-customize").addEventListener("click", abrirDrawer);
+    botaoAbrirDrawer.addEventListener("click", abrirDrawer);
     document.getElementById("customize-close").addEventListener("click", fecharDrawer);
     backdrop.addEventListener("click", fecharDrawer);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && drawer.classList.contains("open")) fecharDrawer();
+    });
   }
 
   // ---------------------------------------------------------------------
@@ -1065,6 +1077,8 @@
   // pra nao arriscar um link errado).
   // ---------------------------------------------------------------------
 
+  var elementoAntesDoContexto = null;
+
   function inicializarContextoAtivo() {
     var drawer = document.getElementById("contexto-drawer");
     var backdrop = document.getElementById("contexto-backdrop");
@@ -1073,6 +1087,14 @@
     function fechar() {
       drawer.classList.remove("open");
       backdrop.classList.remove("open");
+      drawer.setAttribute("aria-hidden", "true");
+      // Devolve o foco pra quem abriu (linha do Ctrl+K, item da
+      // Exposicao, etc) - sem isso um usuario de teclado "perde o
+      // lugar" ao fechar o drawer.
+      if (elementoAntesDoContexto && document.contains(elementoAntesDoContexto)) {
+        elementoAntesDoContexto.focus();
+      }
+      elementoAntesDoContexto = null;
     }
 
     document.getElementById("contexto-close").addEventListener("click", fechar);
@@ -1088,6 +1110,8 @@
     var drawer = document.getElementById("contexto-drawer");
     var backdrop = document.getElementById("contexto-backdrop");
     if (!drawer || !backdrop) return;
+
+    elementoAntesDoContexto = document.activeElement;
 
     document.getElementById("contexto-ticker").textContent = item.ticker;
     document.getElementById("contexto-nome").textContent = item.nome;
@@ -1127,6 +1151,8 @@
 
     drawer.classList.add("open");
     backdrop.classList.add("open");
+    drawer.removeAttribute("aria-hidden");
+    document.getElementById("contexto-close").focus();
   }
 
   function inicializarCmdk() {
@@ -1142,6 +1168,7 @@
     function abrir() {
       modal.classList.add("open");
       backdrop.classList.add("open");
+      modal.removeAttribute("aria-hidden");
       input.value = "";
       renderResultados("");
       input.focus();
@@ -1150,7 +1177,9 @@
     function fechar() {
       modal.classList.remove("open");
       backdrop.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
       body.innerHTML = "";
+      botao.focus();
     }
 
     function estaAberto() {

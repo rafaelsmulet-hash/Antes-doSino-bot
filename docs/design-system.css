@@ -115,6 +115,15 @@ a{color:inherit;text-decoration:none;}
 .mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
 ::selection{background:var(--gold);color:var(--navy-deep);}
 
+/* Visualmente escondido mas presente pra leitor de tela - usado pra
+   dar hierarquia semantica (ex: um <h1> real) em telas onde o titulo
+   grande de sempre quebraria o layout (Terminal, tela unica sem
+   rolagem) sem tirar o elemento da navegacao por leitor de tela. */
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+
 /* Vidro fosco compartilhado - usado no nav (sticky) e em qualquer
    overlay que sobrepoe conteudo (modais, drawers). Extraido como
    classe pra nao duplicar os 2 valores em cada lugar novo. */
@@ -341,6 +350,10 @@ nav{
 }
 .vip-banner p{font-size:0.92rem;color:var(--cream);}
 .vip-banner strong{color:var(--gold);}
+/* Explicacao curta de frequencia/conteudo do CTA - sempre junto da
+   chamada principal, nunca escondida (o pedido explicito e dizer o
+   que vai ser enviado e com que frequencia). */
+.vip-banner .vip-freq{display:block;font-size:0.78rem;color:var(--slate);margin-top:2px;font-weight:400;}
 
 /* ---------- Hero: tipografia grande e confiante, estilo Apple ---------- */
 .hero{

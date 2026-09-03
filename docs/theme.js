@@ -173,9 +173,25 @@
     setInterval(render, 60000);
   }
 
+  // Revela o CTA do Telegram (.vip-banner, comeca com display:none no
+  // HTML) DEPOIS que a pessoa interagiu com alguma ferramenta da
+  // pagina (filtro, busca, item adicionado) - nunca de cara. So
+  // aparece 1 vez por carregamento de pagina: como o elemento comeca
+  // escondido via style inline, tirar o display uma vez ja e
+  // suficiente (chamadas seguintes viram no-op, display ja nao e mais
+  // "none"). Compartilhado pra nao duplicar essa logica em cada
+  // pagina que quiser esse comportamento.
+  function mostrarCtaTelegramUmaVez(containerId) {
+    var el = document.getElementById(containerId);
+    if (!el || el.style.display !== 'none') return;
+    el.style.display = '';
+    el.classList.add('reveal', 'in-view');
+  }
+
   window.AntesDoSinoTema = {
     atual: temaAtual, EVENTO: EVENTO, montarWidgetTV: montarWidgetTV,
     statusMercado: statusMercado, montarMarketStatus: montarMarketStatus,
+    mostrarCtaTelegramUmaVez: mostrarCtaTelegramUmaVez,
   };
 
   if (document.readyState === 'loading') {

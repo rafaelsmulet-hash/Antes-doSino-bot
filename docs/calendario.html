@@ -178,8 +178,8 @@
   </a>
 </div>
 
-<div class="vip-banner" style="display:none;">
-  <p>Não perca os horários do mercado: receba alertas antes dos eventos no grupo do Antes do Sino.</p>
+<div class="vip-banner" id="vip-banner" style="display:none;">
+  <p>Receba o resumo pré-abertura e os principais alertas do mercado no Telegram. <span class="vip-freq">Notícias de alta materialidade e o resumo do dia antes da abertura — sem spam.</span></p>
   <a href="https://t.me/+TobMzw-WnQhmZmIx" class="btn-vip">Entrar no grupo grátis</a>
 </div>
 
@@ -489,6 +489,7 @@
         salvarFiltros(filtrosAtuais);
         aplicarEstadoVisualDosChips();
         montarWidgetsCalendario();
+        window.AntesDoSinoTema.mostrarCtaTelegramUmaVez('vip-banner');
       });
     });
     document.querySelectorAll('#cal-filtro-pais [data-pais]').forEach(function (btn) {
@@ -497,6 +498,7 @@
         salvarFiltros(filtrosAtuais);
         aplicarEstadoVisualDosChips();
         montarWidgetsCalendario();
+        window.AntesDoSinoTema.mostrarCtaTelegramUmaVez('vip-banner');
       });
     });
     var botaoLimpar = document.getElementById('cal-filtro-limpar');
