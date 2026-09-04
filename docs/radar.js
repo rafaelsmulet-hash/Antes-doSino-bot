@@ -193,18 +193,30 @@
       );
     }).join("");
 
+    // Mini Symbol Overview (nome + preco + variacao + minigrafico) em
+    // vez do Symbol Info usado antes: o Symbol Info desenha varias
+    // colunas lado a lado (anterior/abertura/volume) pensadas pra um
+    // painel largo, e como o widget roda dentro de um iframe da
+    // TradingView, o CSS daqui nao alcanca o conteudo interno pra
+    // diminuir fonte ou reorganizar colunas - em telas menores o card
+    // inteiro ficava com texto cortado (reportado pelo usuario com
+    // foto da tela). O Mini Symbol Overview mostra so nome/preco/
+    // variacao (exatamente o que o card pede) e foi desenhado pra
+    // caber num espaco estreito, sem a densidade que nao cabia.
     INDICADORES.forEach(function (ind) {
       window.AntesDoSinoTema.montarWidgetTV(
         "indicador-widget-" + ind.id,
-        "https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js",
+        "https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js",
         function (tema) {
           return {
             symbol: ind.symbol,
             width: "100%",
             height: "100%",
             locale: "br",
+            dateRange: "1D",
             colorTheme: tema,
             isTransparent: true,
+            autosize: true,
           };
         },
         "Carregando " + ind.nome + "..."
