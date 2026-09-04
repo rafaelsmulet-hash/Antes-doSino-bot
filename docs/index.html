@@ -123,16 +123,25 @@
   .indicadores-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--sp-3);}
   .indicador-card{
     background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-lg);
-    padding:var(--sp-4);display:flex;flex-direction:column;gap:8px;min-height:170px;
+    padding:var(--sp-4);display:flex;flex-direction:column;gap:8px;min-height:170px;min-width:0;
   }
   .indicador-card h3{font-size:0.82rem;font-weight:700;color:var(--cream);}
-  .indicador-widget{flex:1;min-height:70px;border-radius:var(--r-sm);overflow:hidden;position:relative;background:var(--surface-2);}
+  .indicador-widget{flex:1;min-height:70px;min-width:0;border-radius:var(--r-sm);overflow:hidden;position:relative;background:var(--surface-2);}
   .indicador-meta{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:0.66rem;color:var(--slate-dim);font-family:var(--font-mono);}
   @media (max-width:960px){
     .indicadores-grid{grid-template-columns:repeat(2,1fr);}
   }
   @media (max-width:560px){
-    .indicadores-grid{grid-template-columns:1fr;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;gap:10px;}
+    /* grid-template-columns:none (em vez de so omitir a propriedade) e
+       de proposito: sem isso, o repeat(2,1fr) herdado do breakpoint de
+       960px continuava valendo aqui (ambas media queries batem num
+       celular), criando 2 colunas explicitas de 1fr competindo com as
+       colunas implicitas de 78% do grid-auto-columns - o resultado era
+       os 2 primeiros cards espremidos a ~34px em vez de 78% da tela
+       (bug real encontrado ao validar o fix de overflow abaixo). Com
+       "none", os 5 cards viram todos "implicitos" e ficam com a mesma
+       largura via grid-auto-columns. */
+    .indicadores-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;gap:10px;}
     .indicador-card{scroll-snap-align:start;}
   }
 
@@ -215,7 +224,7 @@
 
   /* ---------- Ativos em movimento ---------- */
   .movimento-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3);}
-  .movimento-card{background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--sp-4);}
+  .movimento-card{background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--sp-4);min-width:0;}
   .movimento-card h3{font-size:0.85rem;font-weight:700;margin-bottom:8px;}
   .movimento-widget{height:260px;position:relative;border-radius:var(--r-sm);overflow:hidden;background:var(--surface-2);}
   @media (max-width:768px){.movimento-grid{grid-template-columns:1fr;}}
