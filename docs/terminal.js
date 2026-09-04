@@ -137,15 +137,27 @@
   // de abas. Mesma assinatura de montarSymbolOverview (mesmos pares
   // [label, "EXCHANGE:TICKER|intervalo"]) pra poder trocar so a
   // chamada, sem mexer em quem chama.
-  function montarListaAtivos(containerId, simbolos, texto) {
+  function montarListaAtivos(containerId, simbolos, texto, alturaFixaPx) {
     var container = document.getElementById(containerId);
     if (!container) return;
     container.innerHTML = "";
     aplicarSkeleton(container, texto);
 
+    // alturaFixaPx (opcional): usado so pelos paineis curtos de
+    // panels-grid (Indices/Moedas/Emergentes/Commodities), que tem
+    // poucos ativos (3 a 5) e antes recebiam height:100% de um painel
+    // esticado por flex-grow pra preencher a tela toda - o widget
+    // "Market Overview" nao estica as linhas pra preencher, entao
+    // sobrava um espaco vazio enorme abaixo da lista. Com altura fixa
+    // baseada na quantidade real de ativos, o widget (e o painel ao
+    // redor, ver CSS de panels-grid) ficam do tamanho do conteudo.
+    // Callers que nao passam esse parametro mantem o comportamento
+    // antigo (100%, preenche o painel que os envolve).
+    var altura = alturaFixaPx ? alturaFixaPx + "px" : "100%";
+
     var wrapper = document.createElement("div");
     wrapper.className = "tradingview-widget-container";
-    wrapper.style.height = "100%";
+    wrapper.style.height = altura;
     wrapper.style.width = "100%";
 
     var widgetDiv = document.createElement("div");
@@ -171,7 +183,7 @@
       showSymbolLogo: true,
       showFloatingTooltip: false,
       width: "100%",
-      height: "100%",
+      height: alturaFixaPx ? String(alturaFixaPx) : "100%",
       tabs: [
         {
           title: "Ativos",
@@ -181,11 +193,19 @@
       ],
     });
     script.onerror = function () {
-      montarEstadoErro(container, function () { montarListaAtivos(containerId, simbolos, texto); });
+      montarEstadoErro(container, function () { montarListaAtivos(containerId, simbolos, texto, alturaFixaPx); });
     };
 
     wrapper.appendChild(script);
     container.appendChild(wrapper);
+  }
+
+  // Altura em px pra uma lista curta do Market Overview (usado so pelos
+  // 4 paineis de panels-grid) - aproximacao da altura real do widget
+  // (cabecalho da aba + 1 linha por ativo), o suficiente pro painel nao
+  // sobrar vazio nem cortar nenhum ativo.
+  function alturaListaCurta(qtdAtivos) {
+    return 46 + qtdAtivos * 44;
   }
 
   function montarTickerTape() {
@@ -279,33 +299,37 @@
   function montarTodosOsWidgets() {
     montarTickerTape();
 
-    montarListaAtivos("widget-indices", [
+    var simbolosIndices = [
       ["S&P 500", "FOREXCOM:SPXUSD|1D"],
       ["Nasdaq", "FOREXCOM:NSXUSD|1D"],
       ["Dow Jones", "FOREXCOM:DJI|1D"],
       ["Ibovespa", "BMFBOVESPA:IBOV|1D"],
       ["DAX", "XETR:DAX|1D"],
-    ], "Carregando índices...");
+    ];
+    montarListaAtivos("widget-indices", simbolosIndices, "Carregando índices...", alturaListaCurta(simbolosIndices.length));
 
-    montarListaAtivos("widget-moedas", [
+    var simbolosMoedas = [
       ["USD/JPY", "FX:USDJPY|1D"],
       ["EUR/USD", "FX:EURUSD|1D"],
       ["GBP/USD", "FX:GBPUSD|1D"],
       ["USD/BRL", "FX_IDC:USDBRL|1D"],
-    ], "Carregando câmbio...");
+    ];
+    montarListaAtivos("widget-moedas", simbolosMoedas, "Carregando câmbio...", alturaListaCurta(simbolosMoedas.length));
 
-    montarListaAtivos("widget-emergentes", [
+    var simbolosEmergentes = [
       ["USD/MXN", "FX_IDC:USDMXN|1D"],
       ["USD/ZAR", "FX_IDC:USDZAR|1D"],
       ["USD/TRY", "FX_IDC:USDTRY|1D"],
-    ], "Carregando emergentes...");
+    ];
+    montarListaAtivos("widget-emergentes", simbolosEmergentes, "Carregando emergentes...", alturaListaCurta(simbolosEmergentes.length));
 
-    montarListaAtivos("widget-commodities", [
+    var simbolosCommodities = [
       ["Petróleo (WTI)", "TVC:USOIL|1D"],
       ["Ouro", "TVC:GOLD|1D"],
       ["Prata", "TVC:SILVER|1D"],
       ["Milho", "FOREXCOM:CORN|1D"],
-    ], "Carregando commodities...");
+    ];
+    montarListaAtivos("widget-commodities", simbolosCommodities, "Carregando commodities...", alturaListaCurta(simbolosCommodities.length));
 
     montarSymbolOverview("widget-vix", [["VIX (via ETF VIXY)", "AMEX:VIXY|1D"]], "Carregando volatilidade...");
     montarMarketMovers();

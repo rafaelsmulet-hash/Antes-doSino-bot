@@ -139,12 +139,25 @@
      de design, ver DESIGN_AUDIT.md - nao "estetica de IA" generica,
      e sim ausencia de hierarquia visual). A regra e presa ao
      data-panel-id, entao continua funcionando mesmo se o usuario
-     reordenar os paineis pela personalizacao. */
+     reordenar os paineis pela personalizacao.
+
+     panels-grid NAO cresce mais por flex-grow (era flex:1.6 1 0,
+     esticando pra preencher toda a altura restante da tela mesmo com
+     a aba "Indices, Cambio & Commodities" sozinha, ou dividindo com
+     as outras 2 abas em "Visao Geral") - Indices/Moedas/Emergentes/
+     Commodities sao listas curtas (3 a 5 ativos, widget Market
+     Overview da TradingView, que nao estica linha pra preencher
+     espaco sobrando) e isso deixava um vazio enorme abaixo de cada
+     lista. Agora o grid (e os widgets dentro, ver
+     terminal.js::alturaListaCurta) tem a altura do proprio conteudo;
+     o espaco realmente sobrando fica so no fim da aba, dentro do
+     scroll de term-main, que ja existia pra isso. */
   .panels-grid{
-    display:grid;grid-template-columns:repeat(3, 1fr);grid-template-rows:1.3fr 1fr;gap:10px;
-    flex:1.6 1 0;min-height:0;
+    display:grid;grid-template-columns:repeat(3, 1fr);gap:10px;
+    flex:0 1 auto;
   }
   .panels-grid .panel[data-panel-id="indices"]{grid-column:span 3;border-top:2px solid var(--gold);}
+  .panels-grid .panel-body{flex:0 1 auto;}
 
   .panel{
     background:var(--panel-bg);border:1px solid var(--line);border-radius:12px;
@@ -478,7 +491,7 @@
     .btn-back-home{font-size:0.74rem;}
     .term-body{grid-template-columns:1fr;}
     .term-tabs{flex-wrap:wrap;}
-    .panels-grid{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:190px;flex:none;}
+    .panels-grid{grid-template-columns:1fr;flex:none;}
     .panels-grid .panel[data-panel-id="indices"]{grid-column:span 1;}
     .picker-pair-row{grid-template-columns:1fr;flex:none;}
     .picker-pair-row .panel{height:380px;}
