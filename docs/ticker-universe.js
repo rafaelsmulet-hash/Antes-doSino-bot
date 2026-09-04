@@ -64,6 +64,7 @@
     { ticker: "MRVE3", nome: "MRV", symbol: "BMFBOVESPA:MRVE3", setor: "Construção Civil" },
     { ticker: "RENT3", nome: "Localiza", symbol: "BMFBOVESPA:RENT3", setor: "Locação de Veículos" },
     { ticker: "BRAP4", nome: "Bradespar", symbol: "BMFBOVESPA:BRAP4", setor: "Holding (Mineração)" },
+    { ticker: "IVVB11", nome: "ETF S&P 500 (IVVB11)", symbol: "BMFBOVESPA:IVVB11", setor: "ETF Internacional" },
     { ticker: "AAPL", nome: "Apple", symbol: "NASDAQ:AAPL", setor: "Tecnologia" },
     { ticker: "TSLA", nome: "Tesla", symbol: "NASDAQ:TSLA", setor: "Automotivo" },
     { ticker: "NVDA", nome: "Nvidia", symbol: "NASDAQ:NVDA", setor: "Tecnologia" },

@@ -1469,6 +1469,104 @@ def compute_market_snapshot():
     }
 
 
+TEMPERATURA_LABELS = {
+    "risco_on": "Risco-on",
+    "risco_off": "Risco-off",
+    "misto": "Misto",
+    "atencao": "Atenção",
+    "sem_leitura": "Sem leitura disponível",
+}
+
+
+def compute_market_temperature(market_snapshot, entries_today):
+    """Temperatura do Mercado (Radar de Abertura) - classificacao
+    simples e transparente baseada SO em numeros que realmente temos
+    hoje (nunca inventa uma leitura sem dado suficiente, ver
+    CLAUDE.md regra 2):
+
+    - Ibovespa (variacao % via brapi, quotes_by_symbol['^BVSP'])
+    - Dolar USD/BRL (variacao % via Twelve Data)
+    - Bitcoin (variacao % via Twelve Data) - usado como proxy de
+      apetite a risco global, nao como leitura cripto em si
+    - Tom das noticias de hoje (compute_sentiment_thermometer, ja
+      existente - % de manchetes BULLISH/BEARISH)
+
+    S&P 500 futuro, petroleo e VIX NAO entram na conta - o TwelveData
+    (plano gratis) nao retorna esses simbolos hoje (confirmado: cache
+    so tem USD/BRL e BTC/USD), e FRED exigiria uma chave que o projeto
+    nao tem configurada. Esses 3 continuam aparecendo nos "5
+    indicadores essenciais" da home via widget da TradingView (dado
+    real, so que visual - nao da pra ler o numero em Python), mas
+    entrar na Temperatura exigiria um numero que hoje nao existe pro
+    lado do servidor - por isso ficam de fora da classificacao em vez
+    de fingir que foram usados.
+
+    Score de -3 a +3 (ibov + usd invertido + btc), score final decide
+    risco-on/off/misto. "Atencao" e um caso especial: sinais mistos
+    mas o noticiario do dia pende fortemente pro lado negativo."""
+    ibov = (market_snapshot.get("quotes_by_symbol") or {}).get("^BVSP")
+    usd = market_snapshot.get("usd")
+    btc = market_snapshot.get("bitcoin")
+
+    fatores = []
+    if ibov and ibov.get("change") is not None:
+        fatores.append({"nome": "Ibovespa", "valor_pct": round(ibov["change"], 2)})
+    if usd and usd.get("change") is not None:
+        fatores.append({"nome": "Dólar (USD/BRL)", "valor_pct": round(usd["change"], 2)})
+    if btc and btc.get("change") is not None:
+        fatores.append({"nome": "Bitcoin", "valor_pct": round(btc["change"], 2)})
+
+    agora = datetime.now(BR_TZ).strftime("%Y-%m-%d %H:%M")
+
+    if not ibov or not usd or not btc:
+        faltando = []
+        if not ibov:
+            faltando.append("Ibovespa")
+        if not usd:
+            faltando.append("Dólar")
+        if not btc:
+            faltando.append("Bitcoin")
+        return {
+            "classificacao": "sem_leitura",
+            "label": TEMPERATURA_LABELS["sem_leitura"],
+            "frase": "Não foi possível calcular uma leitura agora.",
+            "motivo": "Fonte de cotação indisponível no momento para: " + ", ".join(faltando) + ".",
+            "fatores": fatores,
+            "calculado_em": agora,
+        }
+
+    score = 0
+    score += 1 if ibov["change"] > 0.3 else (-1 if ibov["change"] < -0.3 else 0)
+    score += 1 if usd["change"] < -0.2 else (-1 if usd["change"] > 0.2 else 0)
+    score += 1 if btc["change"] > 1 else (-1 if btc["change"] < -1 else 0)
+
+    thermo = compute_sentiment_thermometer(entries_today)
+    noticiario_negativo = thermo["total"] > 0 and thermo["baixa"] >= 55
+
+    if score >= 2:
+        classificacao = "risco_on"
+        frase = "Ibovespa e Bitcoin em alta, dólar em queda - sinais consistentes com apetite a risco. Isso não é recomendação de investimento, só uma leitura do momento."
+    elif score <= -2:
+        classificacao = "risco_off"
+        frase = "Ibovespa e Bitcoin em queda, dólar em alta - sinais de aversão a risco no mercado hoje. Isso não é recomendação de investimento, só uma leitura do momento."
+    elif noticiario_negativo:
+        classificacao = "atencao"
+        frase = "Sinais entre os ativos acompanhados estão mistos, mas o tom das notícias de hoje pende para o lado negativo - vale acompanhar de perto."
+        fatores.append({"nome": "Tom das notícias de hoje", "valor_pct": None, "extra": str(thermo["baixa"]) + "% das manchetes de hoje têm viés negativo"})
+    else:
+        classificacao = "misto"
+        frase = "Sinais mistos entre os ativos acompanhados - sem uma direção clara até o momento."
+
+    return {
+        "classificacao": classificacao,
+        "label": TEMPERATURA_LABELS[classificacao],
+        "frase": frase,
+        "motivo": None,
+        "fatores": fatores,
+        "calculado_em": agora,
+    }
+
+
 def build_cockpit_html(portal_entries, entries_today=None, market_snapshot=None):
     if entries_today is None:
         entries_today = portal_entries
@@ -1677,10 +1775,10 @@ def build_weekly_summary_html(archive):
         "</style>"
         "</head><body>"
         "<nav>"
-        "<div class='brand'>"
+        "<a class='brand' href='index.html' aria-label='Ir para o Radar de Abertura'>"
         "<svg viewBox='0 0 24 24' fill='none'><path d='M12 2v2M8.5 20a3.5 3.5 0 0 0 7 0M5 17h14l-1.4-2.1A7 7 0 0 1 16.5 11V9a4.5 4.5 0 0 0-9 0v2a7 7 0 0 1-1.1 3.9L5 17Z' stroke='currentColor' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         "Antes do Sino"
-        "</div>"
+        "</a>"
         "<div class='nav-right'>"
         "<button class='theme-toggle' id='theme-toggle' type='button' title='Alternar tema claro/escuro' aria-label='Alternar tema claro/escuro'>"
         "<svg class='icon-moon' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z'/></svg>"
@@ -1691,6 +1789,9 @@ def build_weekly_summary_html(archive):
         "</nav>"
         "<div class='sub-nav'>"
         "<a href='index.html' class='nav-links'>"
+        "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 12l2-2m0 0 7-7 7 7m-9-7v7m-7 0h18v9a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4H9v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z'/></svg>"
+        "Radar de Abertura</a>"
+        "<a href='terminal.html' class='nav-links'>"
         "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='4' width='18' height='16' rx='2'/><path d='M3 9h18M9 9v11'/></svg>"
         "Terminal</a>"
         "<a href='calendario.html' class='nav-links'>"
@@ -1702,6 +1803,9 @@ def build_weekly_summary_html(archive):
         "<a href='quant.html' class='nav-links'>"
         "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 3v18h18'/><path d='M7 15l4-5 3 3 5-7'/></svg>"
         "Quant</a>"
+        "<a href='exposicao.html' class='nav-links'>"
+        "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 20V10M18 20V4M6 20v-4'/></svg>"
+        "Minha Exposição</a>"
         "</div>"
         "<div class='hero reveal'>"
         "<span class='kicker'>Resumo semanal</span>"
@@ -2646,15 +2750,18 @@ def build_market_insights(intelligence):
 
 def gerar_sitemap_completo(diretorio_docs="docs"):
     """Gera/atualiza o sitemap.xml com as rotas estaticas do site -
-    Terminal (home), Calendario, Mapa de Calor e Quant."""
+    Radar de Abertura (home), Terminal, Calendario, Mapa de Calor,
+    Quant e Minha Exposicao."""
     now_iso = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     base_url = "https://antesdosino.com.br"
 
     urls_xml = (
         "  <url><loc>" + base_url + "/</loc><lastmod>" + now_iso + "</lastmod></url>\n"
+        "  <url><loc>" + base_url + "/terminal.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/calendario.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/mapa.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
         "  <url><loc>" + base_url + "/quant.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
+        "  <url><loc>" + base_url + "/exposicao.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
     )
 
     sitemap_xml = (
@@ -3851,13 +3958,13 @@ def save_portal_history(entries):
         json.dump(trimmed, f, ensure_ascii=False)
 
 
-def generate_portal(entries, entries_today=None, template_path="docs/template.html", output_path="docs/index.html", home_insights=None, market_snapshot=None):
+def generate_portal(entries, entries_today=None, template_path="docs/template.html", output_path="docs/dados-terminal.html", home_insights=None, market_snapshot=None):
     """Le o template.html, substitui os placeholders de ticker e feed
-    pelos dados reais mais recentes, e salva em output_path. Desde que
-    o Terminal virou a home (docs/index.html), a chamada real usa
-    output_path="docs/dados-terminal.html" - um arquivo interno (nao e
-    uma pagina do site, nao tem link em lugar nenhum), lido pelo
-    Terminal via fetch() no cliente."""
+    pelos dados reais mais recentes, e salva em output_path. A chamada
+    real sempre usa output_path="docs/dados-terminal.html" - um arquivo
+    interno (nao e uma pagina do site, nao tem link em lugar nenhum),
+    lido pelo Terminal (docs/terminal.html) e pelo Radar de Abertura
+    (docs/index.html, a nova home) via fetch() no cliente."""
     if not os.path.exists(template_path):
         print("AVISO: template.html nao encontrado, portal nao gerado.")
         return
@@ -4347,10 +4454,22 @@ def main():
     # (Cockpit) e pelos Briefings, sem nenhuma chamada de API duplicada.
     market_snapshot = compute_market_snapshot()
 
+    # Temperatura do Mercado (Radar de Abertura, docs/index.html) -
+    # isolado em seu proprio try/except: uma falha aqui nunca derruba
+    # o ciclo inteiro, so deixa o card do Radar em "sem leitura".
+    try:
+        temperatura = compute_market_temperature(market_snapshot, entries_today)
+        with open("docs/radar_temperatura.json", "w", encoding="utf-8") as f:
+            json.dump(temperatura, f, ensure_ascii=False)
+        print("Temperatura do mercado: " + temperatura["label"])
+    except Exception as e:
+        print("Erro ao calcular Temperatura do Mercado (isolado, nao afeta o fluxo principal): " + str(e))
+
     # output_path NAO aponta mais para uma pagina publica - dados-terminal.html
     # e um arquivo interno (sem nav, sem link em lugar nenhum do site) que so
-    # existe para o Terminal (index.html) ler o feed gerado aqui via
-    # fetch("dados-terminal.html") no lado do cliente (ver docs/terminal.js).
+    # existe pro Terminal (docs/terminal.html) e pro Radar de Abertura
+    # (docs/index.html, a home) lerem o feed gerado aqui via
+    # fetch("dados-terminal.html") no lado do cliente.
     generate_portal(all_portal_entries, entries_today, output_path="docs/dados-terminal.html", home_insights=insights["home"], market_snapshot=market_snapshot)
 
     try:
