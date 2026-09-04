@@ -698,8 +698,17 @@
 
     var todas = [];
     var itens = [];
-    var limite = 20;
-    for (var i = 0; i < cards.length && i < limite; i++) {
+    // limiteSidebar so vale pra coluna visivel do feed (Alerta
+    // principal/Destaques/Radar) - continua em 20, um numero razoavel
+    // pra lista de verdade na tela. TODAS_NOTICIAS (busca do Ctrl+K e
+    // "Contexto do Ativo") passa por TODOS os cards que o
+    // dados-terminal.html mandou (ate 150, ver main.py::generate_portal),
+    // sem recortar de novo aqui - antes os dois usavam o mesmo limite
+    // de 20, entao pesquisar qualquer ativo que nao estivesse entre as
+    // ~20 manchetes mais recentes sempre voltava "nenhuma noticia
+    // relacionada".
+    var limiteSidebar = 20;
+    for (var i = 0; i < cards.length; i++) {
       var card = cards[i];
       var badge = card.querySelector(".badge");
       var categoria = card.querySelector(".tag-categoria");
@@ -718,7 +727,9 @@
       var href = link ? link.getAttribute("href") : "#";
 
       todas.push({ titulo: tituloTexto, fonte: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto });
-      itens.push({ tituloTexto: tituloTexto, resumoTexto: resumoTexto, fonteTexto: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto, catSlug: catSlug, catTexto: catTexto });
+      if (i < limiteSidebar) {
+        itens.push({ tituloTexto: tituloTexto, resumoTexto: resumoTexto, fonteTexto: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto, catSlug: catSlug, catTexto: catTexto });
+      }
     }
 
     // Hierarquia editorial: o 1o item vira "alerta principal" (maior,
