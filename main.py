@@ -3979,8 +3979,18 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
             return "baixa", "BAIXA"
         return "info", "INFO"
 
+    # entries aqui e all_portal_entries (hoje + ate 72h de historico,
+    # ver save_portal_history) - 12 cards era pouco demais: como este
+    # feed-grid e a UNICA fonte de noticias que o Ctrl+K e o "Contexto
+    # do Ativo" do Terminal usam pra achar mencao a um ticker
+    # (terminal.js::TODAS_NOTICIAS/abrirContextoAtivo), so os ativos
+    # que estavam entre as ~12 manchetes mais recentes apareciam -
+    # pesquisar qualquer outro ativo sempre voltava "nenhuma noticia
+    # relacionada", mesmo quando o feed completo tinha materia sobre
+    # ele. dados-terminal.html nao e uma pagina navegavel (so
+    # fetch() interno), entao nao ha custo de UX em mostrar mais.
     cards_html = ""
-    for e in entries[:12]:
+    for e in entries[:150]:
         cls, label = sentiment_class(e["sentiment"])
         cat_slug, cat_label = classify_news_category(e)
         link = e.get("link", "#") or "#"
