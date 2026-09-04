@@ -1,21 +1,14 @@
 {
   "date": "2026-09-03",
-  "total_ingeridas": 45569,
-  "aprovadas_pelo_fluxo_atual": 672,
-  "descartadas_pelos_filtros_atuais": 44897,
+  "total_ingeridas": 45817,
+  "aprovadas_pelo_fluxo_atual": 673,
+  "descartadas_pelos_filtros_atuais": 45144,
   "score_medio_materialidade": null,
   "seriam_breaking": 0,
   "iriam_para_rodada": 0,
-  "seriam_descartadas_pelo_novo_sistema": 1999,
+  "seriam_descartadas_pelo_novo_sistema": 2000,
   "total_divergencias": 672,
   "divergencias": [
-    {
-      "title": "A $5 Billion Bond Revamp Starts Clock on Senegal Default",
-      "source": "Bloomberg Markets",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Schroders Buys 10-Year Treasuries Citing Attractive Yields",
       "source": "Bloomberg Markets",
@@ -144,6 +137,13 @@
     },
     {
       "title": "Nvidia Beat Earnings Estimates Again (15 Times Straight). History Says the Stock Will Do This Next.",
+      "source": "Nasdaq",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "European Shares Mostly Higher In Cautious Trade",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
