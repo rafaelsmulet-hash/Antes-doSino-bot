@@ -1,13 +1,13 @@
 {
   "date": "2026-09-05",
-  "total_ingeridas": 496,
-  "aprovadas_pelo_fluxo_atual": 19,
-  "descartadas_pelos_filtros_atuais": 477,
+  "total_ingeridas": 744,
+  "aprovadas_pelo_fluxo_atual": 20,
+  "descartadas_pelos_filtros_atuais": 724,
   "score_medio_materialidade": null,
   "seriam_breaking": 0,
   "iriam_para_rodada": 0,
-  "seriam_descartadas_pelo_novo_sistema": 83,
-  "total_divergencias": 19,
+  "seriam_descartadas_pelo_novo_sistema": 89,
+  "total_divergencias": 20,
   "divergencias": [
     {
       "title": "Europe’s Wealth Managers Are Turning Their Backs on Stock Rally",
@@ -138,6 +138,13 @@
     {
       "title": "Novo A330neo da Gol fará voos domésticos antes de estreia internacional",
       "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Walmart's copycat strategy: Restaurant delivery is its latest use of heft to break into established markets",
+      "source": "Business Insider",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
