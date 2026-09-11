@@ -1,28 +1,14 @@
 {
   "date": "2026-09-10",
-  "total_ingeridas": 45412,
+  "total_ingeridas": 45660,
   "aprovadas_pelo_fluxo_atual": 671,
-  "descartadas_pelos_filtros_atuais": 44741,
+  "descartadas_pelos_filtros_atuais": 44989,
   "score_medio_materialidade": null,
   "seriam_breaking": 0,
   "iriam_para_rodada": 0,
   "seriam_descartadas_pelo_novo_sistema": 2000,
-  "total_divergencias": 655,
+  "total_divergencias": 653,
   "divergencias": [
-    {
-      "title": "The ECB is virtually certain to raise rates. Wall Street is bracing for what comes next.",
-      "source": "MarketWatch",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Running the numbers on Trump’s $5,000 dividend proposal, from its cost to the impact on average American’s finances",
-      "source": "MarketWatch",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "AM Markets Need to Know: Trump dividend, AI spending, and more",
       "source": "Seeking Alpha",
@@ -144,6 +130,20 @@
     },
     {
       "title": "Mega-Sena: quanto R$ 76 milhões rendem todo mês na poupança e no Tesouro",
+      "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "O estrangeiro compra, o brasileiro vende. Quem está certo?",
+      "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Duo por R$ 31 mil: Quanto rende valor dos novos iPhones na poupança?",
       "source": "UOL Economia",
       "score": null,
       "decisao_sugerida": "discard",
