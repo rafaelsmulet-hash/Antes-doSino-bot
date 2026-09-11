@@ -1,21 +1,14 @@
 {
   "date": "2026-09-10",
-  "total_ingeridas": 43676,
-  "aprovadas_pelo_fluxo_atual": 665,
-  "descartadas_pelos_filtros_atuais": 43011,
+  "total_ingeridas": 43924,
+  "aprovadas_pelo_fluxo_atual": 666,
+  "descartadas_pelos_filtros_atuais": 43258,
   "score_medio_materialidade": null,
   "seriam_breaking": 0,
   "iriam_para_rodada": 0,
   "seriam_descartadas_pelo_novo_sistema": 2000,
   "total_divergencias": 653,
   "divergencias": [
-    {
-      "title": "Tempo real: Ibovespa acompanha decisão de juros do BCE e indicadores dos Estados Unidos",
-      "source": "Money Times",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
     {
       "title": "Sanepar luta pelo precatório, descarta privatização e quer ir além do Paraná",
       "source": "Brazil Journal",
@@ -144,6 +137,13 @@
     },
     {
       "title": "Capinha de novo iPhone dobrável chama atenção pelo preço; veja detalhes",
+      "source": "G1 Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Mega-Sena pode pagar R$ 76 milhões nesta quinta-feira; g1 transmite ao vivo",
       "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
