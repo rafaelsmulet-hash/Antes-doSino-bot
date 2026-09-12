@@ -18,6 +18,12 @@ except Exception as e:
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+# Ja usado pelo motor de conteudo social (social/content_engine.py) pra
+# aprovacoes - reaproveitado aqui so pra notificacao de revisao manual
+# de temas sensiveis (ver notificar_revisao_manual). Sem essa variavel
+# configurada, a notificacao e um no-op silencioso - nunca afeta a
+# publicacao real no canal principal.
+TELEGRAM_ADMIN_CHAT_ID = os.environ.get("TELEGRAM_ADMIN_CHAT_ID", "")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 BRAPI_TOKEN = os.environ.get("BRAPI_TOKEN", "")
 FRED_API_KEY = os.environ.get("FRED_API_KEY", "")
@@ -1103,7 +1109,7 @@ def classify_news_ai(title, body, translate=False):
             instruction = (
                 "Voce e o classificador e tradutor de um canal de Telegram de mercado "
                 "financeiro para traders brasileiros. Analise a noticia abaixo (em ingles) "
-                "e responda sete coisas:\n"
+                "e responda nove coisas:\n"
                 "1. relevante_mercado: true SOMENTE se a noticia for genuinamente sobre "
                 "mercado financeiro, economia ou negocios. false se for sobre crime, policia, "
                 "justica criminal, celebridade, entretenimento, esporte, ou qualquer assunto "
@@ -1112,10 +1118,16 @@ def classify_news_ai(title, body, translate=False):
                 "BEARISH ou NEUTRAL - considere o contexto real (ex: corte de custos costuma "
                 "ser BULLISH para a acao, mesmo soando negativo a primeira vista).\n"
                 "3. translated_title: traduza o titulo para portugues do Brasil de forma "
-                "fiel e direta, sem inventar informacao.\n"
+                "fiel e direta, sem inventar informacao. Se o assunto for politica, eleicoes, "
+                "guerra, terrorismo, autoridades publicas, acusacoes judiciais ou geopolitica, "
+                "use linguagem neutra e evite titulo sensacionalista - traduza o fato relatado, "
+                "nunca afirme causalidade que o texto original nao afirma.\n"
                 "4. translated_summary: traduza/resuma o texto original para portugues do "
                 "Brasil em 1-2 frases fieis ao conteudo original, sem inventar fato novo. Se "
-                "o texto original for vazio, deixe translated_summary como string vazia.\n"
+                "o texto original for vazio, deixe translated_summary como string vazia. Nos "
+                "mesmos temas sensiveis do item 3, distinga fato de alegacao/opiniao (use "
+                "'segundo a fonte' ou equivalente quando o texto original atribuir a "
+                "informacao a alguem, em vez de apresentar como fato confirmado).\n"
                 "5. score_materialidade: de 0 a 10, o quanto essa noticia especifica e "
                 "materialmente relevante pro mercado AGORA (nao pro tema em geral) - 0-2 "
                 "irrelevante/ruido, 3-5 relevante mas rotineiro, 6-8 relevante e com impacto "
@@ -1128,21 +1140,29 @@ def classify_news_ai(title, body, translate=False):
                 "promessa de retorno ou linguagem como 'oportunidade imperdivel'. Se o texto "
                 "nao trouxer informacao suficiente pra explicar o canal com seguranca, responda "
                 "exatamente 'Impacto ainda incerto com base no texto disponivel' em vez de "
-                "inventar um mecanismo.\n\n"
+                "inventar um mecanismo.\n"
+                "8. tipo_conteudo: 'fato' se for reportagem factual normal; 'opiniao' se for "
+                "artigo de opiniao, analise autoral ou coluna (nao noticia factual); "
+                "'entrevista' se for entrevista, Q&A ou transcricao de fala de alguem "
+                "apresentada como declaracao (nao como fato confirmado pela redacao).\n"
+                "9. tema_sensivel: true se a noticia for sobre politica, eleicoes, guerra, "
+                "terrorismo, autoridades publicas, acusacoes judiciais ou geopolitica. false "
+                "caso contrario.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
                 "formato exato:\n"
                 '{"relevante_mercado": true, "sentiment": "BULLISH", '
                 '"translated_title": "titulo em portugues", '
                 '"translated_summary": "resumo em portugues", '
                 '"score_materialidade": 5, "motivo_materialidade": "motivo curto", '
-                '"por_que_importa": "explicacao curta do canal economico"}\n\n'
+                '"por_que_importa": "explicacao curta do canal economico", '
+                '"tipo_conteudo": "fato", "tema_sensivel": false}\n\n'
                 "Titulo: " + title + "\n"
                 "Texto: " + body_cleaned
             )
         else:
             instruction = (
                 "Voce e o classificador de um canal de Telegram de mercado financeiro para "
-                "traders. Analise a noticia abaixo e responda cinco coisas:\n"
+                "traders. Analise a noticia abaixo e responda sete coisas:\n"
                 "1. relevante_mercado: true SOMENTE se a noticia for genuinamente sobre mercado "
                 "financeiro, economia ou negocios. false se for sobre crime, policia, justica "
                 "criminal, celebridade, entretenimento, esporte, ou qualquer assunto fora desse "
@@ -1162,12 +1182,22 @@ def classify_news_ai(title, body, translate=False):
                 "promessa de retorno ou linguagem como 'oportunidade imperdivel'. Se o texto "
                 "nao trouxer informacao suficiente pra explicar o canal com seguranca, responda "
                 "exatamente 'Impacto ainda incerto com base no texto disponivel' em vez de "
-                "inventar um mecanismo.\n\n"
+                "inventar um mecanismo.\n"
+                "6. tipo_conteudo: 'fato' se for reportagem factual normal; 'opiniao' se for "
+                "artigo de opiniao, analise autoral ou coluna (nao noticia factual); "
+                "'entrevista' se for entrevista, Q&A ou transcricao de fala de alguem "
+                "apresentada como declaracao (nao como fato confirmado pela redacao).\n"
+                "7. tema_sensivel: true se a noticia for sobre politica, eleicoes, guerra, "
+                "terrorismo, autoridades publicas, acusacoes judiciais ou geopolitica. false "
+                "caso contrario. Quando true, e ao considerar o titulo/resumo, lembre-se: use "
+                "linguagem neutra, distinga fato de alegacao/opiniao, evite titulo "
+                "sensacionalista e nunca afirme causalidade que o texto original nao afirma.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
                 "formato exato:\n"
                 '{"relevante_mercado": true, "sentiment": "BULLISH", '
                 '"score_materialidade": 5, "motivo_materialidade": "motivo curto", '
-                '"por_que_importa": "explicacao curta do canal economico"}\n\n'
+                '"por_que_importa": "explicacao curta do canal economico", '
+                '"tipo_conteudo": "fato", "tema_sensivel": false}\n\n'
                 "Titulo: " + title + "\n"
                 "Texto: " + body_cleaned
             )
@@ -1220,6 +1250,21 @@ def classify_news_ai(title, body, translate=False):
             result["por_que_importa"] = texto_por_que_importa if texto_por_que_importa else None
         else:
             result["por_que_importa"] = None
+
+        # tipo_conteudo (PDF, secao "Hierarquia de fontes": "Itens de
+        # opiniao devem ser marcados como OPINIAO. Entrevistas devem
+        # ser marcadas como ENTREVISTA") - qualquer valor fora dos 3
+        # esperados cai em "fato" (o mais conservador: nunca marca
+        # algo como opiniao/entrevista por engano a partir de uma
+        # resposta malformada da IA).
+        raw_tipo_conteudo = parsed.get("tipo_conteudo")
+        if isinstance(raw_tipo_conteudo, str) and raw_tipo_conteudo.strip().lower() in ("fato", "opiniao", "entrevista"):
+            result["tipo_conteudo"] = raw_tipo_conteudo.strip().lower()
+        else:
+            result["tipo_conteudo"] = "fato"
+
+        raw_tema_sensivel = parsed.get("tema_sensivel")
+        result["tema_sensivel"] = raw_tema_sensivel if isinstance(raw_tema_sensivel, bool) else False
 
         if translate:
             # Validacao defensiva - se a traducao vier vazia/invalida,
@@ -1410,6 +1455,19 @@ def format_message(source, entry, ai_result):
 
     if not title:
         title = "Atualizacao de mercado"
+
+    # Marcacao visivel de OPINIAO/ENTREVISTA (PDF, "Hierarquia de
+    # fontes": "Itens de opiniao devem ser marcados como OPINIAO.
+    # Entrevistas devem ser marcadas como ENTREVISTA") - prefixada no
+    # titulo aqui, que e o unico lugar de onde final_title sai pra
+    # TODOS os consumidores (mensagem do Telegram, item do Giro,
+    # portal entry do site). tipo_conteudo "fato" (o padrao/fallback,
+    # ver classify_news_ai) nunca ganha prefixo.
+    tipo_conteudo = ai_result.get("tipo_conteudo") if ai_result else None
+    if tipo_conteudo == "opiniao":
+        title = "[OPINIÃO] " + title
+    elif tipo_conteudo == "entrevista":
+        title = "[ENTREVISTA] " + title
 
     title_esc = html_module.escape(title, quote=False)
 
@@ -3781,6 +3839,43 @@ def send_briefing_message(text, telegram_bot_token, telegram_chat_id):
         return False
 
 
+REVISAO_MANUAL_SCORE_MINIMO = MATERIALITY_BREAKING_THRESHOLD
+
+
+def notificar_revisao_manual(title, motivo, score, source, link):
+    """Notificacao discreta pro chat admin (TELEGRAM_ADMIN_CHAT_ID) -
+    PDF, 'Temas sensiveis': 'encaminhar casos de alto risco para
+    revisao manual'. So dispara quando o item e de tema sensivel
+    (politica/eleicoes/guerra/terrorismo/autoridades publicas/
+    acusacoes judiciais/geopolitica, ver classify_news_ai) E tem score
+    de materialidade alto (>= REVISAO_MANUAL_SCORE_MINIMO) - baixo
+    volume de proposito, so pra chamar atencao humana pros casos que
+    mais importam. NUNCA bloqueia, atrasa ou altera a publicacao real
+    no canal principal - roda depois, isolada em try/except, e sem
+    TELEGRAM_ADMIN_CHAT_ID configurado e um no-op silencioso."""
+    if not TELEGRAM_ADMIN_CHAT_ID:
+        return
+    try:
+        linhas = [
+            "🔎 <b>Revisão manual sugerida</b> (tema sensível + alto impacto)",
+            "",
+            html_module.escape(sanitize_message_text(title), quote=False),
+        ]
+        if motivo:
+            linhas.append("")
+            linhas.append("Motivo do score: " + html_module.escape(sanitize_message_text(motivo), quote=False))
+        linhas.append("")
+        linhas.append("Score de materialidade: " + str(score))
+        if source:
+            linhas.append("Fonte: " + html_module.escape(sanitize_message_text(source), quote=False))
+        if link:
+            linhas.append("Link: " + link)
+        texto = "\n".join(linhas)
+        send_briefing_message(texto, TELEGRAM_BOT_TOKEN, TELEGRAM_ADMIN_CHAT_ID)
+    except Exception as e:
+        print("Aviso (notificacao de revisao manual, isolado, nao afeta publicacao real): " + str(e))
+
+
 def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram_chat_id, market_snapshot=None):
     """Funcao principal e modular dos briefings automaticos.
 
@@ -4133,6 +4228,9 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                 if dispatch_tier == "breaking" and not registrar_e_verificar_limite_breaking():
                     print("Limite diario de alertas essenciais atingido - rebaixado pra Giro do Mercado (encaminhador): " + titulo_puro[:60])
                     dispatch_tier = "round"
+                if dispatch_tier in ("breaking", "round") and ai_result and ai_result.get("tema_sensivel") \
+                        and canal_score is not None and canal_score >= REVISAO_MANUAL_SCORE_MINIMO:
+                    notificar_revisao_manual(final_title, canal_motivo, canal_score, source_for_message, post_link)
                 hashtags = extract_ticker_hashtags(titulo_puro + " " + corpo_puro)
                 earnings = maybe_extract_earnings_details(
                     dispatch_tier, hashtags, titulo_puro, corpo_puro, final_title, final_body
@@ -4617,6 +4715,9 @@ def main():
             if dispatch_tier == "breaking" and not registrar_e_verificar_limite_breaking():
                 print("Limite diario de alertas essenciais atingido - rebaixado pra Giro do Mercado: " + title[:60])
                 dispatch_tier = "round"
+            if dispatch_tier in ("breaking", "round") and ai_result and ai_result.get("tema_sensivel") \
+                    and shadow_score is not None and shadow_score >= REVISAO_MANUAL_SCORE_MINIMO:
+                notificar_revisao_manual(final_title, shadow_motivo, shadow_score, source, entry.get("link", ""))
             hashtags = extract_ticker_hashtags(title + " " + raw_body)
             earnings = maybe_extract_earnings_details(
                 dispatch_tier, hashtags, title, raw_body, final_title, final_body
