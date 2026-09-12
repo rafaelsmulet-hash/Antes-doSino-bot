@@ -23,6 +23,15 @@ BRAPI_TOKEN = os.environ.get("BRAPI_TOKEN", "")
 FRED_API_KEY = os.environ.get("FRED_API_KEY", "")
 TWELVEDATA_API_KEY = os.environ.get("TWELVEDATA_API_KEY", "")
 
+# Modo preview/dry-run: gera as mensagens normalmente (passa por toda a
+# limpeza/formatacao/validacao) mas NUNCA chama a API do Telegram - so
+# imprime a mensagem completa no log. Default "false" de proposito: o
+# bot ja esta em producao mandando pro canal real, entao o comportamento
+# atual precisa continuar sendo o padrao (CLAUDE.md regra 1). Ativar so
+# explicitamente via env var, pra testar formato/cadencia novos sem
+# arriscar mandar pro canal de verdade.
+DRY_RUN = os.environ.get("DRY_RUN", "false").strip().lower() in ("1", "true", "yes")
+
 COCKPIT_TICKERS = ["^BVSP", "PETR4", "VALE3", "ITUB4", "BBDC4", "ABEV3", "WEGE3", "B3SA3", "BBAS3", "MGLU3"]
 
 TICKER_MENTION_LIST = [
@@ -1074,7 +1083,21 @@ def maybe_extract_earnings_details(dispatch_tier, hashtags, title, body, final_t
     return earnings
 
 
+def _log_preview_dry_run(text, label):
+    """Log estruturado usado no lugar do envio real quando DRY_RUN esta
+    ativo - mostra a mensagem inteira (nao um trecho) pra dar pra
+    validar formato/tamanho igual seria visto no Telegram de verdade."""
+    print("=" * 60)
+    print("[DRY_RUN] " + label + " - mensagem NAO enviada (preview):")
+    print("-" * 60)
+    print(text)
+    print("=" * 60)
+
+
 def send_telegram_message(text):
+    if DRY_RUN:
+        _log_preview_dry_run(text, "send_telegram_message")
+        return True
     url = "https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
     try:
@@ -3506,6 +3529,9 @@ def build_evening_briefing_message(entries_today, eventos, market_snapshot=None)
 def send_briefing_message(text, telegram_bot_token, telegram_chat_id):
     """Envio de mensagem parametrizado (token/chat id explicitos),
     independente das variaveis globais do bot principal."""
+    if DRY_RUN:
+        _log_preview_dry_run(text, "send_briefing_message")
+        return True
     url = "https://api.telegram.org/bot" + telegram_bot_token + "/sendMessage"
     payload = {"chat_id": telegram_chat_id, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
     try:
