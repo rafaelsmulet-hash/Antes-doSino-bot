@@ -1817,7 +1817,14 @@ def compute_market_temperature(market_snapshot, entries_today):
 
     Score de -3 a +3 (ibov + usd invertido + btc), score final decide
     risco-on/off/misto. "Atencao" e um caso especial: sinais mistos
-    mas o noticiario do dia pende fortemente pro lado negativo."""
+    mas o noticiario do dia pende fortemente pro lado negativo.
+
+    market_snapshot=None (dado indisponivel, nao so um campo faltando
+    dentro dele) e tratado igual a "nenhum dos 3 sinais disponivel" -
+    cai no mesmo branch "sem_leitura" de baixo, em vez de quebrar com
+    AttributeError. Usado pelo Briefing de Abertura quando o snapshot
+    de mercado ainda nao foi calculado no ciclo."""
+    market_snapshot = market_snapshot or {}
     ibov = (market_snapshot.get("quotes_by_symbol") or {}).get("^BVSP")
     usd = market_snapshot.get("usd")
     btc = market_snapshot.get("bitcoin")
@@ -3208,6 +3215,125 @@ def classify_news_category(entry):
 
 BRIEFINGS_STATE_FILE = "docs/briefings_state.json"
 
+# ---------------------------------------------------------------------
+# Briefing de Abertura (Morning Briefing, tipo "abertura") - mesma
+# arquitetura do Fechamento B3 acima (estado em docs/*.json, janela
+# por minutos-desde-meia-noite, envio via send_briefing_message, que
+# ja respeita DRY_RUN), com 3 diferencas deliberadas:
+#   1. Janela com tolerancia mais larga (30min: -10/+20 em volta do
+#      horario alvo, configuravel) em vez dos 30min fixos do
+#      Fechamento B3 - pedido explicito do usuario.
+#   2. Lock de arquivo contra 2 execucoes simultaneas - nenhum outro
+#      briefing tinha isso ate agora (nao precisavam: o disparo
+#      externo roda a cada poucos minutos, mas so um processo por vez
+#      de verdade acessa o repo gracas ao concurrency: cancel-in-
+#      progress:false do workflow; o lock aqui e defesa extra, pedida
+#      explicitamente).
+#   3. Retry explicito (varias tentativas com espera) no envio, em vez
+#      de so confiar no "tenta de novo no proximo ciclo dentro da
+#      janela" que os outros briefings usam.
+# ---------------------------------------------------------------------
+MORNING_BRIEFING_STATE_FILE = "docs/morning_briefing_state.json"
+MORNING_BRIEFING_LOCK_FILE = "docs/morning_briefing.lock"
+# Lock mais velho que isso e considerado orfao (processo anterior
+# travou ou caiu sem liberar) e pode ser destravado - sem isso, um bug
+# que impedisse a liberacao do lock travaria o Briefing de Abertura
+# para sempre. 10 minutos e bem maior que o tempo real de
+# processamento (segundos), entao nao aciona em uso normal.
+MORNING_BRIEFING_LOCK_STALE_SECONDS = 600
+MORNING_BRIEFING_MAX_TENTATIVAS_ENVIO = 3
+MORNING_BRIEFING_ESPERA_ENTRE_TENTATIVAS_SEGUNDOS = 5
+
+# Horario alvo configuravel via env var (default 06h50, BR_TZ ja e
+# America/Sao_Paulo em todo o arquivo). A janela de tolerancia e
+# calculada A PARTIR do alvo (nao um par fixo de horarios), entao
+# continua coerente se o alvo for reconfigurado.
+MORNING_BRIEFING_HORA_ALVO = int(os.environ.get("MORNING_BRIEFING_HORA", "6"))
+MORNING_BRIEFING_MINUTO_ALVO = int(os.environ.get("MORNING_BRIEFING_MINUTO", "50"))
+MORNING_BRIEFING_TOLERANCIA_ANTES_MINUTOS = 10
+MORNING_BRIEFING_TOLERANCIA_DEPOIS_MINUTOS = 20
+
+# Disparo manual forcado (teste/operacao) - bypassa janela, dia util e
+# "ja enviado hoje". Mesmo padrao de parsing do DRY_RUN.
+FORCE_MORNING_BRIEFING = os.environ.get("FORCE_MORNING_BRIEFING", "false").strip().lower() in ("1", "true", "yes")
+
+
+def load_morning_briefing_state():
+    if os.path.exists(MORNING_BRIEFING_STATE_FILE):
+        try:
+            with open(MORNING_BRIEFING_STATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {"last_morning_date": ""}
+    return {"last_morning_date": ""}
+
+
+def save_morning_briefing_state(state):
+    os.makedirs(os.path.dirname(MORNING_BRIEFING_STATE_FILE), exist_ok=True)
+    with open(MORNING_BRIEFING_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+
+
+def adquirir_lock_morning_briefing():
+    """Lock de arquivo simples (sem dependencia nova - so os.open com
+    O_CREAT|O_EXCL, que e atomico) contra 2 execucoes simultaneas do
+    Briefing de Abertura. Retorna True se conseguiu o lock - quem
+    chama DEVE chamar liberar_lock_morning_briefing() depois (sucesso
+    ou falha, ideal num try/finally)."""
+    if os.path.exists(MORNING_BRIEFING_LOCK_FILE):
+        try:
+            idade_segundos = time.time() - os.path.getmtime(MORNING_BRIEFING_LOCK_FILE)
+        except Exception:
+            idade_segundos = 0
+        if idade_segundos < MORNING_BRIEFING_LOCK_STALE_SECONDS:
+            return False
+        print("Lock do Briefing de Abertura encontrado mas orfao (" + str(int(idade_segundos)) + "s) - destravando.")
+        try:
+            os.remove(MORNING_BRIEFING_LOCK_FILE)
+        except Exception:
+            pass
+    try:
+        os.makedirs(os.path.dirname(MORNING_BRIEFING_LOCK_FILE), exist_ok=True)
+        fd = os.open(MORNING_BRIEFING_LOCK_FILE, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+        os.write(fd, str(os.getpid()).encode("utf-8"))
+        os.close(fd)
+        return True
+    except FileExistsError:
+        return False
+    except Exception as e:
+        print("Aviso (lock Briefing de Abertura, isolado): " + str(e))
+        return False
+
+
+def liberar_lock_morning_briefing():
+    try:
+        if os.path.exists(MORNING_BRIEFING_LOCK_FILE):
+            os.remove(MORNING_BRIEFING_LOCK_FILE)
+    except Exception as e:
+        print("Aviso (liberar lock Briefing de Abertura, isolado): " + str(e))
+
+
+def should_send_morning_briefing():
+    """Janela configuravel (default 06h40-07h10, alvo 06h50), no
+    maximo 1x por dia util da B3. FORCE_MORNING_BRIEFING bypassa TUDO
+    (dia util, janela, ja enviado hoje) - existe pra teste/execucao
+    manual forcada."""
+    if FORCE_MORNING_BRIEFING:
+        return True
+    if not eh_dia_util_b3():
+        return False
+    now = datetime.now(BR_TZ)
+    today_str = now.strftime("%Y-%m-%d")
+    state = load_morning_briefing_state()
+    if state.get("last_morning_date") == today_str:
+        return False
+    minutos_agora = now.hour * 60 + now.minute
+    alvo_minutos = MORNING_BRIEFING_HORA_ALVO * 60 + MORNING_BRIEFING_MINUTO_ALVO
+    inicio = alvo_minutos - MORNING_BRIEFING_TOLERANCIA_ANTES_MINUTOS
+    fim = alvo_minutos + MORNING_BRIEFING_TOLERANCIA_DEPOIS_MINUTOS
+    return inicio <= minutos_agora <= fim
+
+
 BR_ASSET_GROUPS = {"commodities_br", "financeiro_br", "industrial_br"}
 
 BR_RELEVANT_KEYWORDS = [
@@ -3915,6 +4041,233 @@ def processar_briefings_telegram(noticias, eventos, telegram_bot_token, telegram
             print("Falha ao enviar Evening Briefing - sera tentado novamente no proximo ciclo dentro da janela.")
 
 
+MORNING_TEMPERATURA_LABELS = dict(TEMPERATURA_LABELS)
+MORNING_TEMPERATURA_LABELS["sem_leitura"] = "Aguardando dados"
+
+
+def _assinatura_titulo_morning(titulo):
+    """Chave de dedupe simples por titulo - minuscula, sem pontuacao,
+    6 primeiras palavras. Mesmo espirito do assinaturaTitulo() ja
+    usado no Radar (docs/radar.js), reimplementado aqui em Python -
+    existe pra nao mostrar 2 manchetes quase identicas (mesmo fato,
+    fontes diferentes) juntas no Briefing de Abertura."""
+    sem_pontuacao = re.sub(r"[^\w\s]", "", titulo.lower())
+    return " ".join(sem_pontuacao.split()[:6])
+
+
+def build_morning_briefing_message(entries_today, eventos, market_snapshot=None, temperatura=None):
+    """Monta o texto do Briefing de Abertura (tipo 'abertura').
+    Reaproveita blocos de calculo ja existentes (compute_market_temperature,
+    ja usado pelo Radar de Abertura; compute_news_clusters e
+    build_sellside_synopsis, ja usados pelo Fechamento B3) - so a
+    apresentacao final e nova, no formato pedido.
+
+    Cada secao depende so de dado real ja calculado; quando esse dado
+    nao existe, a secao mostra uma frase honesta em vez de inventar
+    conteudo (CLAUDE.md regra 2). Noticias sem fonte, sem link ou sem
+    titulo sao excluidas de toda a mensagem - nunca aparecem."""
+    agora = datetime.now(BR_TZ)
+    data_str = agora.strftime("%d/%m/%Y")
+    hora_str = agora.strftime("%H:%M")
+
+    if temperatura is None:
+        temperatura = compute_market_temperature(market_snapshot, entries_today)
+
+    label = MORNING_TEMPERATURA_LABELS.get(
+        temperatura.get("classificacao"), temperatura.get("label") or "Aguardando dados"
+    )
+
+    partes = [
+        "🌅 <b>ANTES DO SINO | BRIEFING DE ABERTURA</b> — " + data_str + " " + hora_str,
+        "",
+        "🌡 <b>TEMPERATURA DO MERCADO</b>",
+        html_module.escape(label, quote=False),
+    ]
+    explicacao_temperatura = (temperatura.get("frase") or "").strip()
+    motivo_temperatura = (temperatura.get("motivo") or "").strip()
+    if motivo_temperatura:
+        explicacao_temperatura = (explicacao_temperatura + " " + motivo_temperatura).strip()
+    if explicacao_temperatura:
+        partes.append(html_module.escape(sanitize_message_text(explicacao_temperatura), quote=False))
+    partes.append("")
+
+    # Base comum das secoes de noticia: fato real, com titulo, fonte E
+    # link (PDF - criterio de aceite: "nenhuma noticia factual for
+    # publicada sem fonte e link"), ordenada por materialidade (ver
+    # Fase 7 - score_materialidade ja persistido no portal entry;
+    # entradas antigas sem esse campo, de antes dessa fase, caem pro
+    # fim da ordenacao em vez de quebrar a funcao).
+    candidatos = [e for e in entries_today if e.get("title") and e.get("source") and e.get("link")]
+    candidatos_ordenados = sorted(
+        candidatos,
+        key=lambda e: e.get("score_materialidade") if e.get("score_materialidade") is not None else -1,
+        reverse=True,
+    )
+
+    vistos = set()
+    madrugada = []
+    for e in candidatos_ordenados:
+        chave = _assinatura_titulo_morning(e["title"])
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        madrugada.append(e)
+        if len(madrugada) >= 2:
+            break
+
+    partes.append("🌍 <b>O QUE ACONTECEU DURANTE A MADRUGADA</b>")
+    if madrugada:
+        for e in madrugada:
+            partes.append("• " + html_module.escape(sanitize_message_text(e["title"]), quote=False))
+    else:
+        partes.append("Sem novidades relevantes coletadas até o momento.")
+    partes.append("")
+
+    essenciais = []
+    for e in candidatos_ordenados:
+        chave = _assinatura_titulo_morning(e["title"])
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        essenciais.append(e)
+        if len(essenciais) >= 5:
+            break
+
+    partes.append("🔥 <b>NOTÍCIAS ESSENCIAIS</b>")
+    if essenciais:
+        for i, e in enumerate(essenciais, start=1):
+            titulo_esc = html_module.escape(sanitize_message_text(e["title"]), quote=False)
+            partes.append(str(i) + ". " + titulo_esc)
+            resumo = (e.get("body") or "").strip()
+            if resumo and resumo.lower() != e["title"].strip().lower():
+                partes.append("   " + html_module.escape(sanitize_message_text(resumo), quote=False))
+            por_que = e.get("por_que_importa")
+            if por_que:
+                partes.append("   Por que importa: " + html_module.escape(sanitize_message_text(por_que), quote=False))
+            rodape_fonte = "   Fonte: " + html_module.escape(sanitize_message_text(e["source"]), quote=False)
+            if e.get("time"):
+                rodape_fonte += " · " + e["time"]
+            rodape_fonte += " · " + e["link"]
+            partes.append(rodape_fonte)
+            partes.append("")
+    else:
+        partes.append("Sem notícias essenciais identificadas até o momento.")
+        partes.append("")
+
+    # Agenda de HOJE (nao de amanha, diferente do Fechamento B3), sem
+    # filtro de pais - um evento internacional (ex: decisao do Fed) e
+    # exatamente o tipo de catalisador que precisa aparecer aqui, na
+    # abertura. Sem horario por evento: o cadastro (SEED_EVENTS/
+    # events_detected.json) so guarda a data, nunca a hora do dia -
+    # inventar um horario que nao temos violaria CLAUDE.md regra 2.
+    hoje_iso = agora.strftime("%Y-%m-%d")
+    eventos_hoje = [ev for ev in (eventos or []) if ev.get("date") == hoje_iso][:3]
+    partes.append("📅 <b>AGENDA QUE PODE MEXER COM O MERCADO</b>")
+    if eventos_hoje:
+        for ev in eventos_hoje:
+            linha = "• " + html_module.escape(sanitize_message_text(ev.get("label", "")), quote=False)
+            if ev.get("organizer"):
+                linha += " (" + html_module.escape(sanitize_message_text(ev["organizer"]), quote=False) + ")"
+            partes.append(linha)
+    else:
+        partes.append("Sem eventos de grande destaque previstos para hoje.")
+    partes.append("")
+
+    # Ativos/setores - clusters reais (compute_news_clusters, ja usado
+    # pelo Fechamento B3 e pelo site): cada ativo mostrado tem pelo
+    # menos 1 mencao textual validada por fronteira de palavra (ver
+    # TICKER_MENTION_LIST/_TICKER_TERM_REGEX) - nunca ticker solto sem
+    # relacao comprovada com o texto.
+    clusters = compute_news_clusters(candidatos_ordenados) if candidatos_ordenados else []
+    partes.append("📊 <b>ATIVOS E SETORES PARA ACOMPANHAR</b>")
+    if clusters:
+        for c in clusters[:5]:
+            linha = "• " + html_module.escape(c["term"].upper(), quote=False)
+            motivo_cluster = c["representative"].get("title", "")
+            if motivo_cluster:
+                linha += " — " + html_module.escape(sanitize_message_text(motivo_cluster), quote=False)
+            partes.append(linha)
+    else:
+        partes.append("Sem ativos específicos em destaque até o momento.")
+    partes.append("")
+
+    # Riscos - reaproveita a mesma sintese sell-side do Fechamento B3
+    # (so o campo "riscos"), sem nenhuma chamada de IA adicional alem
+    # da que build_sellside_synopsis ja faz.
+    sellside = build_sellside_synopsis(candidatos_ordenados) if candidatos_ordenados else None
+    riscos = sellside["riscos"] if sellside and sellside.get("riscos") else []
+    partes.append("⚠️ <b>RISCOS E INCERTEZAS</b>")
+    if riscos:
+        for r in riscos:
+            partes.append("• " + html_module.escape(r, quote=False))
+    else:
+        partes.append("Nenhum risco específico identificado nas notícias monitoradas até o momento.")
+    partes.append("")
+
+    partes.append("Dados públicos. Conteúdo informativo; não é recomendação de investimento.")
+
+    message = "\n".join(partes)
+    message = sanitize_message_text(message)
+    if len(message) > 3900:
+        message = smart_truncate(message, 3900)
+    return message
+
+
+def processar_morning_briefing_telegram(noticias, eventos, telegram_bot_token, telegram_chat_id, market_snapshot=None, temperatura=None):
+    """Funcao principal do Briefing de Abertura - mesmo padrao de
+    processar_briefings_telegram (Fechamento B3: janela + estado +
+    envio), com 2 diferencas (lock de arquivo + retry explicito, ver
+    comentario acima de MORNING_BRIEFING_STATE_FILE).
+
+    noticias/eventos/market_snapshot sao os MESMOS objetos ja
+    calculados 1x por ciclo em main() - nenhuma chamada de API
+    adicional acontece aqui."""
+    if not should_send_morning_briefing():
+        return
+
+    if not adquirir_lock_morning_briefing():
+        print("Briefing de Abertura: outra execucao ja esta em andamento (lock ativo) - ciclo ignorado.")
+        return
+
+    try:
+        today_str = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+        entries_today = [e for e in noticias if e.get("date") == today_str]
+
+        if editorial_foundation is not None:
+            try:
+                editorial_foundation.run_shadow_checkpoint("morning_briefing")
+            except Exception as e:
+                print("Aviso (checkpoint sombra, isolado, nao afeta envio real): " + str(e))
+
+        message = build_morning_briefing_message(entries_today, eventos, market_snapshot, temperatura)
+
+        enviado = False
+        for tentativa in range(1, MORNING_BRIEFING_MAX_TENTATIVAS_ENVIO + 1):
+            if send_briefing_message(message, telegram_bot_token, telegram_chat_id):
+                enviado = True
+                break
+            if tentativa < MORNING_BRIEFING_MAX_TENTATIVAS_ENVIO:
+                print(
+                    "Falha ao enviar Briefing de Abertura (tentativa " + str(tentativa) + "/"
+                    + str(MORNING_BRIEFING_MAX_TENTATIVAS_ENVIO) + ") - tentando de novo em "
+                    + str(MORNING_BRIEFING_ESPERA_ENTRE_TENTATIVAS_SEGUNDOS) + "s."
+                )
+                time.sleep(MORNING_BRIEFING_ESPERA_ENTRE_TENTATIVAS_SEGUNDOS)
+
+        if enviado:
+            state = load_morning_briefing_state()
+            state["last_morning_date"] = today_str
+            save_morning_briefing_state(state)
+            print("Briefing de Abertura enviado com sucesso.")
+        else:
+            print(
+                "Falha ao enviar Briefing de Abertura apos " + str(MORNING_BRIEFING_MAX_TENTATIVAS_ENVIO)
+                + " tentativas - sera tentado novamente no proximo ciclo dentro da janela."
+            )
+    finally:
+        liberar_lock_morning_briefing()
+
+
 FORWARDED_CHANNELS = [
     "panoramajonasesteves",
     "grupobovespanews",
@@ -4464,12 +4817,18 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
     print("Portal atualizado: " + output_path)
 
 
-JANELA_OPERACAO_INICIO_MINUTOS = 6 * 60 + 50
+JANELA_OPERACAO_INICIO_MINUTOS = 6 * 60 + 40
 JANELA_OPERACAO_FIM_MINUTOS = 22 * 60 + 30
+# Inicio adiantado de 06h50 pra 06h40 especificamente pra caber a
+# ponta inicial da janela de tolerancia do Briefing de Abertura
+# (06h40-07h10, ver MORNING_BRIEFING_TOLERANCIA_*) - sem isso, essa
+# guarda bloquearia o ciclo inteiro (main() inteiro retorna aqui,
+# antes de qualquer outro processamento) exatamente nos 10 minutos em
+# que o Briefing de Abertura mais precisa rodar.
 
 
 def dentro_da_janela_de_operacao():
-    """Guarda de seguranca - o bot so deve operar das 06h50 as 22h30
+    """Guarda de seguranca - o bot so deve operar das 06h40 as 22h30
     (BR_TZ). O controle principal fica no agendamento externo
     (cron-job.org), mas essa checagem evita processamento (e consumo
     de API) caso o cron dispare fora da janela por qualquer motivo."""
@@ -4556,7 +4915,7 @@ def main():
         return
 
     if not dentro_da_janela_de_operacao():
-        print("Fora da janela de operacao (06h50-22h30 BRT) - ciclo ignorado.")
+        print("Fora da janela de operacao (06h40-22h30 BRT) - ciclo ignorado.")
         return
 
     # Night Wrap deve ser SEMPRE a ultima mensagem do dia - se ja foi
@@ -4872,6 +5231,12 @@ def main():
     # Temperatura do Mercado (Radar de Abertura, docs/index.html) -
     # isolado em seu proprio try/except: uma falha aqui nunca derruba
     # o ciclo inteiro, so deixa o card do Radar em "sem leitura".
+    # temperatura comeca em None (em vez de so viver dentro do try) pra
+    # ficar seguro reaproveitar essa variavel mais abaixo, no Briefing
+    # de Abertura - se o calculo falhar aqui, o Briefing recalcula
+    # sozinho (ver build_morning_briefing_message) em vez de quebrar
+    # com NameError.
+    temperatura = None
     try:
         temperatura = compute_market_temperature(market_snapshot, entries_today)
         with open("docs/radar_temperatura.json", "w", encoding="utf-8") as f:
@@ -4903,6 +5268,11 @@ def main():
         processar_briefings_telegram(all_portal_entries, combined_events, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, market_snapshot)
     except Exception as e:
         print("Erro ao processar briefings (isolado, nao afeta o fluxo principal): " + str(e))
+
+    try:
+        processar_morning_briefing_telegram(all_portal_entries, combined_events, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, market_snapshot, temperatura)
+    except Exception as e:
+        print("Erro ao processar Briefing de Abertura (isolado, nao afeta o fluxo principal): " + str(e))
 
     try:
         processar_giro_do_mercado(TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
