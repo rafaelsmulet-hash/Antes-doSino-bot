@@ -186,12 +186,19 @@ def build_earnings_lines(earnings):
     return linhas
 
 
-def build_breaking_message(title, resumo, motivo, sentiment, source, hashtags, earnings=None):
+def build_breaking_message(title, resumo, motivo, sentiment, source, hashtags, earnings=None, por_que_importa=None):
     """Template A - Breaking News (score >= 8): mensagem individual,
     formato fixo com hashtag de ativo, destaques em bullet e fonte.
     Quando 'earnings' vem preenchido (noticia de resultado trimestral
     de uma empresa especifica, ver maybe_extract_earnings_details), o
-    bloco estruturado de resultado substitui o resumo/motivo genericos."""
+    bloco estruturado de resultado substitui o resumo/motivo genericos.
+
+    por_que_importa (ver classify_news_ai) explica o canal economico
+    da noticia pro LEITOR (juros/margem/cambio/etc) - diferente de
+    'motivo', que e a justificativa editorial da NOTA de materialidade
+    dada pela IA. Quando disponivel, substitui o bullet de 'motivo'
+    (evita mostrar as duas frases parecidas uma embaixo da outra);
+    sem por_que_importa, cai de volta pro motivo, como sempre foi."""
     hashtag_str = " ".join("#" + h for h in hashtags)
     header = "🚨 <b>BREAKING</b>" + (" | " + hashtag_str if hashtag_str else "")
 
@@ -206,8 +213,9 @@ def build_breaking_message(title, resumo, motivo, sentiment, source, hashtags, e
     if not bullets:
         if resumo:
             bullets.append("• " + html_module.escape(sanitize_message_text(resumo), quote=False))
-        if motivo:
-            bullets.append("• " + html_module.escape(sanitize_message_text(motivo), quote=False))
+        contexto = por_que_importa or motivo
+        if contexto:
+            bullets.append("• 🔍 Por que importa: " + html_module.escape(sanitize_message_text(contexto), quote=False))
     bullets.append("• Impacto: " + impacto)
 
     partes = [
@@ -1032,7 +1040,7 @@ def classify_news_ai(title, body, translate=False):
             instruction = (
                 "Voce e o classificador e tradutor de um canal de Telegram de mercado "
                 "financeiro para traders brasileiros. Analise a noticia abaixo (em ingles) "
-                "e responda seis coisas:\n"
+                "e responda sete coisas:\n"
                 "1. relevante_mercado: true SOMENTE se a noticia for genuinamente sobre "
                 "mercado financeiro, economia ou negocios. false se for sobre crime, policia, "
                 "justica criminal, celebridade, entretenimento, esporte, ou qualquer assunto "
@@ -1050,20 +1058,28 @@ def classify_news_ai(title, body, translate=False):
                 "irrelevante/ruido, 3-5 relevante mas rotineiro, 6-8 relevante e com impacto "
                 "concreto, 9-10 evento de mercado maior (decisao de juros, choque geopolitico, "
                 "resultado muito acima/abaixo do esperado).\n"
-                "6. motivo_materialidade: 1 frase curta explicando o score dado.\n\n"
+                "6. motivo_materialidade: 1 frase curta explicando o score dado.\n"
+                "7. por_que_importa: 1 frase curta e objetiva explicando o CANAL ECONOMICO "
+                "pelo qual essa noticia pode afetar o mercado (ex: juros, margem, demanda, "
+                "oferta, risco, cambio, expectativa) - nunca recomendacao personalizada, "
+                "promessa de retorno ou linguagem como 'oportunidade imperdivel'. Se o texto "
+                "nao trouxer informacao suficiente pra explicar o canal com seguranca, responda "
+                "exatamente 'Impacto ainda incerto com base no texto disponivel' em vez de "
+                "inventar um mecanismo.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
                 "formato exato:\n"
                 '{"relevante_mercado": true, "sentiment": "BULLISH", '
                 '"translated_title": "titulo em portugues", '
                 '"translated_summary": "resumo em portugues", '
-                '"score_materialidade": 5, "motivo_materialidade": "motivo curto"}\n\n'
+                '"score_materialidade": 5, "motivo_materialidade": "motivo curto", '
+                '"por_que_importa": "explicacao curta do canal economico"}\n\n'
                 "Titulo: " + title + "\n"
                 "Texto: " + body_cleaned
             )
         else:
             instruction = (
                 "Voce e o classificador de um canal de Telegram de mercado financeiro para "
-                "traders. Analise a noticia abaixo e responda quatro coisas:\n"
+                "traders. Analise a noticia abaixo e responda cinco coisas:\n"
                 "1. relevante_mercado: true SOMENTE se a noticia for genuinamente sobre mercado "
                 "financeiro, economia ou negocios. false se for sobre crime, policia, justica "
                 "criminal, celebridade, entretenimento, esporte, ou qualquer assunto fora desse "
@@ -1076,11 +1092,19 @@ def classify_news_ai(title, body, translate=False):
                 "irrelevante/ruido, 3-5 relevante mas rotineiro, 6-8 relevante e com impacto "
                 "concreto, 9-10 evento de mercado maior (decisao de juros, choque geopolitico, "
                 "resultado muito acima/abaixo do esperado).\n"
-                "4. motivo_materialidade: 1 frase curta explicando o score dado.\n\n"
+                "4. motivo_materialidade: 1 frase curta explicando o score dado.\n"
+                "5. por_que_importa: 1 frase curta e objetiva explicando o CANAL ECONOMICO "
+                "pelo qual essa noticia pode afetar o mercado (ex: juros, margem, demanda, "
+                "oferta, risco, cambio, expectativa) - nunca recomendacao personalizada, "
+                "promessa de retorno ou linguagem como 'oportunidade imperdivel'. Se o texto "
+                "nao trouxer informacao suficiente pra explicar o canal com seguranca, responda "
+                "exatamente 'Impacto ainda incerto com base no texto disponivel' em vez de "
+                "inventar um mecanismo.\n\n"
                 "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
                 "formato exato:\n"
                 '{"relevante_mercado": true, "sentiment": "BULLISH", '
-                '"score_materialidade": 5, "motivo_materialidade": "motivo curto"}\n\n'
+                '"score_materialidade": 5, "motivo_materialidade": "motivo curto", '
+                '"por_que_importa": "explicacao curta do canal economico"}\n\n'
                 "Titulo: " + title + "\n"
                 "Texto: " + body_cleaned
             )
@@ -1119,6 +1143,20 @@ def classify_news_ai(title, body, translate=False):
 
         raw_motivo = parsed.get("motivo_materialidade")
         result["motivo_materialidade"] = raw_motivo.strip() if isinstance(raw_motivo, str) else None
+
+        # "Por que importa" - canal economico da noticia pro leitor
+        # (diferente de motivo_materialidade, que justifica a NOTA
+        # dada, nao o mecanismo de mercado em si). sanitize_message_text
+        # ja remove qualquer artefato tecnico; se vier vazio ou so
+        # espaco, fica None e quem monta a mensagem final (ver
+        # build_breaking_message) cai de volta em motivo_materialidade
+        # em vez de mostrar uma linha vazia.
+        raw_por_que_importa = parsed.get("por_que_importa")
+        if isinstance(raw_por_que_importa, str):
+            texto_por_que_importa = sanitize_message_text(raw_por_que_importa)
+            result["por_que_importa"] = texto_por_que_importa if texto_por_que_importa else None
+        else:
+            result["por_que_importa"] = None
 
         if translate:
             # Validacao defensiva - se a traducao vier vazia/invalida,
@@ -4040,6 +4078,7 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                         title=final_title, resumo=final_body, motivo=canal_motivo,
                         sentiment=sentiment, source=source_for_message, hashtags=hashtags,
                         earnings=earnings,
+                        por_que_importa=ai_result.get("por_que_importa") if ai_result else None,
                     )
                     enviado_ou_enfileirado = send_telegram_message(breaking_message)
                     if enviado_ou_enfileirado:
@@ -4514,6 +4553,7 @@ def main():
                     title=final_title, resumo=final_body, motivo=shadow_motivo,
                     sentiment=sentiment, source=source, hashtags=hashtags,
                     earnings=earnings,
+                    por_que_importa=ai_result.get("por_que_importa") if ai_result else None,
                 )
                 enviado_ou_enfileirado = send_telegram_message(breaking_message)
                 if enviado_ou_enfileirado:
