@@ -239,7 +239,61 @@ def build_breaking_message(title, resumo, motivo, sentiment, source, hashtags, e
     return result
 
 
-GIRO_INTERVALO_MINUTOS = 60
+# Teto diario de alertas "breaking" (score >= 8, mensagem individual
+# imediata) - antes nao existia nenhum limite, so o score decidia. O
+# fato de uma noticia pontuar 8+ nao significa que o canal deve
+# interromper o leitor toda vez - por isso um teto conservador
+# (PDF: "recomenda-se limitar a zero ou tres por dia"). Ao bater o
+# teto, o item NAO e descartado - so deixa de ser um alerta individual
+# e entra na fila do Giro do Mercado normalmente (dispatch_tier vira
+# "round" em vez de "breaking"), preservando o "nunca perder noticia
+# real" do resto do pipeline.
+BREAKING_ALERTS_MAX_POR_DIA = 3
+BREAKING_STATE_FILE = "docs/breaking_state.json"
+
+
+def load_breaking_state():
+    if os.path.exists(BREAKING_STATE_FILE):
+        try:
+            with open(BREAKING_STATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {"date": "", "count": 0}
+    return {"date": "", "count": 0}
+
+
+def save_breaking_state(state):
+    os.makedirs(os.path.dirname(BREAKING_STATE_FILE), exist_ok=True)
+    with open(BREAKING_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+
+
+def registrar_e_verificar_limite_breaking():
+    """Chamar exatamente uma vez por item que decide_dispatch_tier
+    classificou como 'breaking', ANTES de trata-lo como tal. Retorna
+    True (e ja incrementa o contador) se ainda ha espaco no teto de
+    hoje; False se o teto ja foi atingido - quem chama deve rebaixar
+    o item pra 'round' nesse caso. O contador reseta sozinho a cada
+    virada de dia (comparando com a data salva)."""
+    hoje = datetime.now(BR_TZ).strftime("%Y-%m-%d")
+    state = load_breaking_state()
+    if state.get("date") != hoje:
+        state = {"date": hoje, "count": 0}
+    if state.get("count", 0) >= BREAKING_ALERTS_MAX_POR_DIA:
+        return False
+    state["count"] = state.get("count", 0) + 1
+    save_breaking_state(state)
+    return True
+
+
+GIRO_INTERVALO_MINUTOS = 240
+# Aumentado de 60 pra 240 (4h) - o Giro do Mercado rodava toda hora
+# fechada (ate ~16x dentro da janela de operacao do bot, 06h50-22h30),
+# bem mais que o "2 a 4 atualizacoes intradiarias por dia" pedido
+# explicitamente. Com 4h de intervalo, o Giro passa a rodar de 3 a 4
+# vezes dentro da mesma janela - ja publica so quando ha algo na fila
+# (ver processar_giro_do_mercado), entao continua respeitando "se nada
+# relevante mudou, nao publicar" como antes.
 # Reduzido de 20 para 8: cada item agora carrega o contexto completo da
 # noticia (sem corte artificial - ver GIRO_ITEM_MAX_CHARS), entao um
 # numero menor de itens por mensagem mantem o Giro dentro do limite
@@ -333,7 +387,16 @@ def build_giro_message(queue_items):
 
     rodape = "⚡ Antes do Sino — Curadoria em tempo real"
     if restantes > 0:
-        rodape = "+" + str(restantes) + " atualizações adicionais nesta hora.\n\n" + rodape
+        # Sem numero cru aqui de proposito (PDF: "nao usar mensagens
+        # como '+291 atualizacoes adicionais', que demonstram volume
+        # mas nao entregam curadoria"). Tambem nao usamos a frase
+        # generica sugerida no prompt ("monitoramos centenas...") sem
+        # mais - "restantes" normalmente e um numero bem menor que
+        # centenas (a fila real raramente acumula tanto), e CLAUDE.md
+        # regra 2 proibe inventar uma escala que nao bate com o dado
+        # real. A frase abaixo comunica que existe mais conteudo
+        # curado, sem expor a contagem bruta nem inflar a escala.
+        rodape = "Selecionamos o que mais importa desta hora; o restante segue na curadoria.\n\n" + rodape
 
     headline = build_giro_headline(mostrados)
     headline_bloco = ("💡 " + html_module.escape(headline, quote=False) + "\n\n") if headline else ""
@@ -4067,6 +4130,9 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                 # confirmada.
                 fonte_tier_canal = "premium" if is_real_agency else "low"
                 dispatch_tier = decide_dispatch_tier(canal_score, fonte_tier_canal)
+                if dispatch_tier == "breaking" and not registrar_e_verificar_limite_breaking():
+                    print("Limite diario de alertas essenciais atingido - rebaixado pra Giro do Mercado (encaminhador): " + titulo_puro[:60])
+                    dispatch_tier = "round"
                 hashtags = extract_ticker_hashtags(titulo_puro + " " + corpo_puro)
                 earnings = maybe_extract_earnings_details(
                     dispatch_tier, hashtags, titulo_puro, corpo_puro, final_title, final_body
@@ -4548,6 +4614,9 @@ def main():
             except Exception as e:
                 print("Aviso (fonte_tier, isolado, nao afeta publicacao real): " + str(e))
             dispatch_tier = decide_dispatch_tier(shadow_score, fonte_tier)
+            if dispatch_tier == "breaking" and not registrar_e_verificar_limite_breaking():
+                print("Limite diario de alertas essenciais atingido - rebaixado pra Giro do Mercado: " + title[:60])
+                dispatch_tier = "round"
             hashtags = extract_ticker_hashtags(title + " " + raw_body)
             earnings = maybe_extract_earnings_details(
                 dispatch_tier, hashtags, title, raw_body, final_title, final_body
