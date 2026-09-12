@@ -127,7 +127,7 @@ def is_earnings_news(text):
     return any(kw in text_lower for kw in EARNINGS_KEYWORDS)
 
 
-def decide_dispatch_tier(score):
+def decide_dispatch_tier(score, fonte_tier=None):
     """Decide o destino REAL de uma noticia ja aprovada pelos filtros de
     relevancia, com base no score_materialidade (0-10) calculado pela
     IA. Graduacao do modo sombra (Fase 1, editorial_foundation.py) para
@@ -144,12 +144,31 @@ def decide_dispatch_tier(score):
     'round' (score 4-7, ou sem score): entra na fila do Giro do
     Mercado, consolidada em 1 mensagem por hora em vez de 1 por
     noticia.
-    'discard' (score < 4): nao publica."""
+    'discard' (score < 4): nao publica.
+
+    fonte_tier (opcional, ver editorial_foundation.get_tier_for_source):
+    um "breaking" vindo de fonte tier 'low' (nivel D - agregador de
+    opiniao, post de canal sem confirmacao de agencia real) e rebaixado
+    pra 'round' - o fato ainda e publicado, so nao como alerta
+    individual imediato. Fontes tier 'official_critical'/'premium'/
+    'standard' (a maioria esmagadora do FEEDS, incluindo veiculos como
+    G1/UOL/Yahoo Finance que tem prioridade editorial 3 mas sao fontes
+    jornalisticas de verdade, nao agregadores) mantem o comportamento
+    de sempre - o rebaixamento e deliberadamente conservador, so pro
+    caso mais claro (fonte nao confirmada), pra nao suprimir alerta
+    legitimo de veiculo reconhecido so por causa de prioridade
+    editorial interna."""
+    tier = None
     if score is not None and score >= MATERIALITY_BREAKING_THRESHOLD:
-        return "breaking"
-    if score is None or score >= MATERIALITY_ROUND_THRESHOLD:
+        tier = "breaking"
+    elif score is None or score >= MATERIALITY_ROUND_THRESHOLD:
+        tier = "round"
+    else:
+        tier = "discard"
+
+    if tier == "breaking" and fonte_tier == "low":
         return "round"
-    return "discard"
+    return tier
 
 
 def build_earnings_lines(earnings):
@@ -3999,7 +4018,17 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                     source_for_message, entry_for_format, ai_result
                 )
 
-                dispatch_tier = decide_dispatch_tier(canal_score)
+                # Post de canal do Telegram nunca e tier oficial/premium
+                # de verdade (nao passa por FEEDS) - so sobe pra
+                # 'premium' quando fonte_detectada bate com uma agencia
+                # de noticias conhecida (is_real_agency); sem essa
+                # confirmacao, fica em 'low' (nivel D: post de rede
+                # social sem confirmacao), que rebaixa breaking->round
+                # em decide_dispatch_tier - o fato ainda e publicado,
+                # so nao como alerta individual imediato sem fonte
+                # confirmada.
+                fonte_tier_canal = "premium" if is_real_agency else "low"
+                dispatch_tier = decide_dispatch_tier(canal_score, fonte_tier_canal)
                 hashtags = extract_ticker_hashtags(titulo_puro + " " + corpo_puro)
                 earnings = maybe_extract_earnings_details(
                     dispatch_tier, hashtags, titulo_puro, corpo_puro, final_title, final_body
@@ -4465,8 +4494,15 @@ def main():
             # Fase 2 - decisao real de despacho (graduada do modo sombra
             # Fase 1): breaking sai na hora, round entra na fila do Giro
             # do Mercado (1 msg/hora em vez de 1 msg/noticia), discard
-            # nao publica. Ver decide_dispatch_tier().
-            dispatch_tier = decide_dispatch_tier(shadow_score)
+            # nao publica. Ver decide_dispatch_tier(). fonte_tier (modo
+            # sombra, isolado) so pode REBAIXAR breaking->round pra
+            # fonte nao confiavel - nunca afeta round/discard.
+            fonte_tier = None
+            try:
+                fonte_tier = editorial_foundation.get_tier_for_source(FEEDS, source)
+            except Exception as e:
+                print("Aviso (fonte_tier, isolado, nao afeta publicacao real): " + str(e))
+            dispatch_tier = decide_dispatch_tier(shadow_score, fonte_tier)
             hashtags = extract_ticker_hashtags(title + " " + raw_body)
             earnings = maybe_extract_earnings_details(
                 dispatch_tier, hashtags, title, raw_body, final_title, final_body
