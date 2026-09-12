@@ -514,18 +514,30 @@ def load_state():
     formato de antes desta mudanca) sao descartadas ao carregar, ja
     que nao da pra saber a idade real delas - a janela de 12h se
     autopreenche de novo em poucas horas, sem risco de duplicar nesse
-    meio-tempo (o hash exato continua cobrindo o caso mais obvio)."""
+    meio-tempo (o hash exato continua cobrindo o caso mais obvio).
+
+    'hashes' e um dict usado como conjunto ordenado (chave=hash,
+    valor ignorado) em vez de um set() de verdade - um set() do Python
+    NAO preserva ordem de insercao, entao "os ultimos 3000" em
+    save_state (list(hashes)[-3000:]) era uma fatia de ordem
+    arbitraria: hashes recentes podiam ser descartados enquanto
+    antigos sobreviviam, sem nenhum criterio real. dict (3.7+)
+    preserva ordem de insercao com o mesmo custo O(1) de 'in'/adicao
+    que um set - list(dict)[-3000:] agora significa de verdade "os
+    3000 hashes adicionados mais recentemente". O arquivo em disco
+    continua sendo uma lista simples de strings, sem mudanca de
+    formato."""
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                hashes = set(data.get("hashes", []))
+                hashes = dict.fromkeys(data.get("hashes", []))
                 raw_titles = data.get("titles", [])
                 titles = [t for t in raw_titles if isinstance(t, dict) and t.get("title") and t.get("sent_at")]
                 return hashes, titles
         except Exception as e:
             print("AVISO: falha ao carregar estado (" + str(e) + "). Criando novo.")
-    return set(), []
+    return {}, []
 
 
 def save_state(hashes, titles):
@@ -538,6 +550,9 @@ def save_state(hashes, titles):
         except Exception:
             continue
 
+    # list(hashes) itera as CHAVES do dict na ordem de insercao (ver
+    # docstring de load_state) - [-3000:] agora pega de fato os 3000
+    # hashes mais recentes, nao uma fatia arbitraria de um set().
     trimmed_hashes = list(hashes)[-3000:]
     # Trava de seguranca adicional (independente da janela de tempo) -
     # evita que um dia excepcionalmente movimentado deixe o arquivo
@@ -4006,7 +4021,7 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                     now = datetime.now(BR_TZ)
                     print(("Encaminhado (breaking)" if dispatch_tier == "breaking" else "Encaminhado (giro)") + " de " + clean_channel + " (id " + str(post["id"]) + "): " + titulo_puro[:40] + "...")
 
-                    sent_hashes.add(h_forward)
+                    sent_hashes[h_forward] = None
                     add_to_recent_titles(recent_titles, titulo_puro)
                     save_state(sent_hashes, recent_titles)
 
@@ -4347,7 +4362,7 @@ def main():
 
             title = entry.get("title", "")
             if is_duplicate_title(title, recent_titles):
-                sent_hashes.add(h)
+                sent_hashes[h] = None
                 save_state(sent_hashes, recent_titles)
                 registrar_descarte("duplicado")
                 continue
@@ -4403,20 +4418,20 @@ def main():
 
             if ai_result and ai_result.get("relevante_mercado") is False:
                 print("Descartada pela IA (fora do escopo de mercado): " + title[:60])
-                sent_hashes.add(h)
+                sent_hashes[h] = None
                 save_state(sent_hashes, recent_titles)
                 registrar_descarte_com_sombra("IA classificou como fora do escopo")
                 continue
 
             if not is_relevant(entry) or not is_recent_enough(entry):
-                sent_hashes.add(h)
+                sent_hashes[h] = None
                 save_state(sent_hashes, recent_titles)
                 registrar_descarte_com_sombra("sem impacto economico / fora do escopo")
                 continue
 
             passou_filtro, motivo_filtro = passes_source_specific_filter(source, entry)
             if not passou_filtro:
-                sent_hashes.add(h)
+                sent_hashes[h] = None
                 save_state(sent_hashes, recent_titles)
                 registrar_descarte_com_sombra(motivo_filtro)
                 continue
@@ -4425,7 +4440,7 @@ def main():
             check_body = raw_body
             if not has_minimum_content(check_title, check_body):
                 print("Descartada por conteudo insuficiente: " + title[:60])
-                sent_hashes.add(h)
+                sent_hashes[h] = None
                 save_state(sent_hashes, recent_titles)
                 registrar_descarte_com_sombra("conteudo insuficiente")
                 continue
@@ -4474,7 +4489,7 @@ def main():
                         time.sleep(3)
 
             if enviado_ou_enfileirado:
-                sent_hashes.add(h)
+                sent_hashes[h] = None
                 add_to_recent_titles(recent_titles, title)
                 new_count += 1
                 aprovados += 1
@@ -4512,7 +4527,7 @@ def main():
                     "date": datetime.now(BR_TZ).strftime("%Y-%m-%d"),
                 })
             else:
-                sent_hashes.add(h)
+                sent_hashes[h] = None
                 save_state(sent_hashes, recent_titles)
                 registrar_descarte_com_sombra(
                     "score de materialidade abaixo do limiar (" + str(shadow_score) + ")"
