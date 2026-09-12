@@ -7,6 +7,10 @@ on:
         description: "Modo preview: gera as mensagens no log sem enviar ao Telegram real (disparo externo via cron-job.org nao passa esse input, entao continua false/producao normal)"
         type: boolean
         default: false
+      force_morning_briefing:
+        description: "Forca o envio do Briefing de Abertura (tipo 'abertura') mesmo fora da janela 06h40-07h10, fora de dia util ou ja enviado hoje - use com dry_run marcado pra testar sem publicar de verdade"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -51,6 +55,7 @@ jobs:
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
           TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}
+          FORCE_MORNING_BRIEFING: ${{ github.event.inputs.force_morning_briefing }}
         run: python main.py
 
 
