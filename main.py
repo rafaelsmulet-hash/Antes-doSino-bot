@@ -465,17 +465,32 @@ NEGATIVE_KEYWORDS = [
     "crime", "assassinato", "preso em flagrante", "acidente de carro", "tiroteio", "policia",
     "trafico", "homicidio", "roubo de bolsa", "furto", "assalto", "sequestro", "baleado",
     "murder", "shooting", "police raid", "car crash", "kidnapping", "homicide",
-    "acoes judiciais", "acao judicial", "processo na justica", "processa", "processado por",
-    "tribunal de justica", "liminar", "reclamacao trabalhista",
-    "lawsuit", "lawsuits", "legal action", "suing", "sued by", "courthouse", "injunction",
-    "judge rules", "labor lawsuit",
     "matsunaga", "assassino", "assassina", "homicidio", "homicídio", "preso", "presa",
     "cadeia", "penitenciaria", "penitenciária", "policia", "polícia", "crime", "criminoso",
-    "violencia", "violência", "tribunal", "juri", "júri", "heranca", "herança",
+    "violencia", "violência", "heranca", "herança",
     "ferias escolares", "férias escolares", "guarda do filho", "guarda da filha",
     "celebridade", "celebridades", "famosos", "famosa", "influencer", "reality show",
     "ex-marido", "ex-mulher", "affair", "traicao", "traição",
 ]
+
+# Termos juridicos/regulatorios NAO entram mais em NEGATIVE_KEYWORDS
+# (removidos: "acoes judiciais", "acao judicial", "processo na
+# justica", "processa", "processado por", "tribunal de justica",
+# "liminar", "reclamacao trabalhista", "lawsuit(s)", "legal action",
+# "suing", "sued by", "courthouse", "injunction", "judge rules",
+# "labor lawsuit", "tribunal", "juri"/"júri"). Antes qualquer mencao a
+# um desses termos descartava a noticia em is_relevant ANTES da IA
+# avaliar - matando processo judicial/decisao regulatoria que pode
+# mexer o mercado de verdade (ex: decisao do CADE ou do STF sobre uma
+# empresa listada, multa da SEC, disputa que afeta contrato de uma
+# companhia aberta). Sem esse bloqueio, is_relevant cai no
+# comportamento normal (so passa se tambem bater em KEYWORDS - ticker,
+# nome de empresa ou termo de mercado/macro) - um processo sem NENHUMA
+# mencao a empresa/mercado continua sendo descartado do mesmo jeito,
+# so que agora por falta de sinal financeiro, nao por ser "juridico".
+# "processa"/"processado por" em especial ja eram um risco de falso
+# positivo mesmo fora do contexto juridico (ex: "sistema que processa
+# transacoes").
 
 WORDPRESS_BOILERPLATE_PATTERNS = [
     r"The post .* appeared first on \w+\s*\.?",
