@@ -4116,6 +4116,12 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                         "link": post_link,
                         "time": now.strftime("%H:%M"),
                         "date": now.strftime("%Y-%m-%d"),
+                        # Ver comentario no ponto equivalente do loop de
+                        # RSS principal (mesmos 3 campos novos, mesmo
+                        # motivo de "categoria" ficar de fora).
+                        "score_materialidade": canal_score,
+                        "fonte_tier": fonte_tier_canal,
+                        "por_que_importa": ai_result.get("por_que_importa") if ai_result else None,
                     })
 
                     has_updates = True
@@ -4616,6 +4622,20 @@ def main():
                     "link": entry.get("link", ""),
                     "time": datetime.now(BR_TZ).strftime("%H:%M"),
                     "date": datetime.now(BR_TZ).strftime("%Y-%m-%d"),
+                    # Campos novos (Fase 7) - antes score_materialidade/
+                    # fonte_tier/por_que_importa eram calculados e
+                    # descartados assim que a mensagem do Telegram
+                    # saia; agora ficam disponiveis pra quem consumir o
+                    # historico depois (site, futuras paginas de
+                    # ativo/tema). "categoria" nao entra aqui de
+                    # proposito - classify_news_category() ja calcula
+                    # isso em cima destes mesmos campos (title/body/
+                    # sentiment) no momento de renderizar o card,
+                    # persistir de novo so criaria risco de ficar
+                    # dessincronizado se a regra de categoria mudar.
+                    "score_materialidade": shadow_score,
+                    "fonte_tier": fonte_tier,
+                    "por_que_importa": ai_result.get("por_que_importa") if ai_result else None,
                 })
             else:
                 sent_hashes[h] = None
