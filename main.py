@@ -485,6 +485,18 @@ WORDPRESS_BOILERPLATE_PATTERNS = [
     r"Cr[eé]dito\s*(da\s*)?(foto|imagem)[,:]?\s*[^\n]*",
     r"^\s*Getty Images\s*$",
     r"^\s*Reuters/[A-Za-z ]+$",
+    # "Key Points" colado ao inicio do resumo (comum em feeds tipo
+    # CNBC/Seeking Alpha) - so existia removido no encaminhador de
+    # canais (que so recebe conteudo ja em portugues), nunca no
+    # pipeline de RSS principal, onde esse prefixo em ingles realmente
+    # aparece.
+    r"^\s*key\s*(points|takeaways)\s*:?\s*",
+    r"^\s*pontos[- ]chave\s*:?\s*",
+    # Tag de agencia entre parenteses colada no inicio do texto (ex:
+    # "(RTTNews) - ", "(AP) - ") - metadado de distribuicao da materia,
+    # nao conteudo. A fonte de verdade pro usuario e o campo "source"
+    # do proprio pipeline, nunca essa tag solta dentro do corpo.
+    r"^\([A-Z][A-Za-z]*(?:\s[A-Z][A-Za-z]*){0,2}\)\s*[-–—]\s*",
 ]
 
 
@@ -682,8 +694,65 @@ def strip_html_tags(text):
     text = re.sub(r"<[^>]+>", "", text)
     text = re.sub(r"@media[^{]*\{[^}]*\}", "", text, flags=re.DOTALL | re.IGNORECASE)
     text = re.sub(r"\.[a-zA-Z0-9_-]+\s*\{[^}]*\}", "", text, flags=re.DOTALL)
-    text = text.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", '"').replace("&#39;", "'")
+    # html.unescape decodifica TODAS as entidades (nomeadas: &rsquo;
+    # &eacute; &mdash; &hellip; ... e numericas: &#39; &#8217; &#x2019;
+    # ...), nao so as 4 hardcoded manualmente antes - essas sobravam
+    # visiveis na mensagem final (ex: "&rsquo;" literal no Telegram).
+    text = html_module.unescape(text)
     return text.strip()
+
+
+def fix_mojibake(text):
+    """Corrige um padrao especifico de corrupcao de encoding encontrado
+    na amostra real (ex: 'męs' em vez de 'mês', 'manutençăo' em vez de
+    'manutenção', 'confirmaçőes' em vez de 'confirmações'): texto que
+    foi corretamente codificado como Latin-1/Windows-1252 (cada
+    acentuacao = 1 byte) mas teve esse byte bruto DECODIFICADO como
+    Windows-1250 (Europa Central) em algum ponto anterior do pipeline
+    de origem - os dois code pages so divergem numa faixa pequena de
+    bytes, entao o resultado e um texto quase certo com so as vogais
+    acentuadas trocadas por letras parecidas de outro alfabeto (ę/ă/ő
+    no lugar de ê/ã/õ).
+
+    O truque e o caminho inverso: re-codificar essa string como
+    cp1250 (recuperando o byte original) e decodificar esse byte como
+    cp1252/Latin-1 (a codificacao real pretendida). Como cp1250 e
+    cp1252 sao identicos pra ASCII e pra praticamente toda acentuacao
+    portuguesa NORMAL, esse round-trip e virtualmente um no-op em
+    texto que ja esta correto (testado com frases reais em PT) - so
+    muda algo quando o texto ja contem um desses caracteres
+    "estrangeiros" que nao apareceriam legitimamente em portugues. Se
+    o texto tiver qualquer caractere fora de cp1250 (emoji, travessao,
+    aspas curvas, CJK...), o encode falha e a funcao devolve o texto
+    original sem tocar nele - falha sempre pro lado seguro."""
+    if not text:
+        return text
+    try:
+        return text.encode("cp1250").decode("cp1252")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        return text
+
+
+def parece_truncado(text):
+    """Detecta se um resumo JA CHEGA cortado da propria fonte (RSS),
+    antes de qualquer truncamento nosso - reticencias no final, ou
+    marcadores tipicos de feed que so manda um trecho ('[...]',
+    'Continue reading', 'Read more'). Nao tenta adivinhar frase
+    incompleta por falta de pontuacao final (isso daria muito falso
+    positivo em resumos curtos legitimos) - so os sinais explicitos.
+    Usado pra NAO publicar um resumo visivelmente pela metade (PDF:
+    'titulos e resumos cortados no meio da frase') - melhor nao
+    mostrar resumo nenhum do que mostrar um cortado."""
+    if not text:
+        return False
+    t = text.strip()
+    if not t:
+        return False
+    if t.endswith("...") or t.endswith("…"):
+        return True
+    if re.search(r"(?i)\[\s*…\s*\]|\[\s*\.\.\.\s*\]|\bcontinue\s+reading\b|\bread\s+more\b|\bread\s+the\s+full\s+story\b", t):
+        return True
+    return False
 
 
 def truncate_text_clean(text, max_length=160):
@@ -728,6 +797,11 @@ def sanitize_message_text(text):
         return ""
     text = str(text)
 
+    # Corrige mojibake de encoding ANTES de qualquer outra limpeza (ver
+    # fix_mojibake) - se nao corrigir aqui, a palavra corrompida
+    # sobreviveria intacta pra mensagem final.
+    text = fix_mojibake(text)
+
     # Remove fragmentos de JSON/markdown que eventualmente escapem do parse
     text = re.sub(r"```[a-zA-Z]*", "", text)
     text = text.replace("```", "")
@@ -735,8 +809,14 @@ def sanitize_message_text(text):
     # Remove chaves soltas (JSON quebrado nunca deve aparecer pro usuario)
     text = text.replace("{", "").replace("}", "")
 
-    # Remove null/None/undefined literais (typico de parse malformado)
-    text = re.sub(r"\b(null|none|undefined)\b", "", text, flags=re.IGNORECASE)
+    # Remove null/None/undefined literais (typico de parse malformado,
+    # ex: str(dic.get("campo")) quando "campo" nao existe). Sem
+    # IGNORECASE de proposito: "none" minusculo e uma palavra inglesa
+    # normal ("there is none available") que aparecia sendo apagada de
+    # qualquer texto traduzido - so os literais de verdade (Python
+    # "None" maiusculo, JSON/JS "null"/"undefined" sempre minusculos)
+    # sao artefato tecnico.
+    text = re.sub(r"\b(None|null|undefined)\b", "", text)
 
     # Remove aspas orfas de JSON quebrado (ex: '"summary":' sobrando)
     text = re.sub(r'"\s*[a-zA-Z_]+"\s*:\s*', "", text)
@@ -1164,12 +1244,15 @@ def format_message(source, entry, ai_result):
         raw_body = re.sub(r"\s+", " ", raw_body).strip()
 
         summary_text = ""
-        if raw_body and raw_body.lower() != title.lower():
+        if raw_body and raw_body.lower() != title.lower() and not parece_truncado(raw_body):
             # Sem limite artificial aqui - o corpo real da noticia vai
             # inteiro pra mensagem. O unico corte que pode acontecer e
             # o do limite de 4096 caracteres do Telegram em si (ver
             # smart_truncate no final desta funcao), que corta no fim
-            # de uma frase, nao no meio dela.
+            # de uma frase, nao no meio dela. Se o proprio resumo da
+            # fonte ja chega cortado (parece_truncado), preferimos nao
+            # mostrar resumo nenhum a mostrar uma frase pela metade -
+            # a mensagem fica so com o titulo.
             summary_text = raw_body
 
     title = sanitize_message_text(title)
