@@ -1,13 +1,13 @@
 {
   "date": "2026-09-20",
-  "total_ingeridas": 1488,
-  "aprovadas_pelo_fluxo_atual": 17,
-  "descartadas_pelos_filtros_atuais": 1471,
+  "total_ingeridas": 1736,
+  "aprovadas_pelo_fluxo_atual": 19,
+  "descartadas_pelos_filtros_atuais": 1717,
   "score_medio_materialidade": null,
   "seriam_breaking": 0,
   "iriam_para_rodada": 0,
-  "seriam_descartadas_pelo_novo_sistema": 94,
-  "total_divergencias": 17,
+  "seriam_descartadas_pelo_novo_sistema": 97,
+  "total_divergencias": 19,
   "divergencias": [
     {
       "title": "Yen Is Vulnerable With Japan on Holiday After BOJ Disappoints",
@@ -124,6 +124,20 @@
     {
       "title": "Golpes chegam ao sistema de pontos e milhas; saiba como evitar a fraude",
       "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Bolsas da Arábia Saudita e do Golfo caem após ataques Houthis a Riad",
+      "source": "Investing.com Brasil",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "17,8% do mundo já usa IA no trabalho. Entenda onde o Brasil está nesse mapa",
+      "source": "Exame",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
