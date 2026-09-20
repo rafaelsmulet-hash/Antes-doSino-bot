@@ -1,150 +1,122 @@
 {
-  "date": "2026-09-19",
-  "total_ingeridas": 47288,
-  "aprovadas_pelo_fluxo_atual": 213,
-  "descartadas_pelos_filtros_atuais": 47075,
+  "date": "2026-09-20",
+  "total_ingeridas": 248,
+  "aprovadas_pelo_fluxo_atual": 16,
+  "descartadas_pelos_filtros_atuais": 232,
   "score_medio_materialidade": null,
   "seriam_breaking": 0,
   "iriam_para_rodada": 0,
-  "seriam_descartadas_pelo_novo_sistema": 663,
-  "total_divergencias": 213,
+  "seriam_descartadas_pelo_novo_sistema": 71,
+  "total_divergencias": 16,
   "divergencias": [
     {
-      "title": "Europe’s Winter Power Surge Is Biggest Since Energy Crisis",
+      "title": "Yen Is Vulnerable With Japan on Holiday After BOJ Disappoints",
       "source": "Bloomberg Markets",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Reforma Tributária justifica mudança de endereço fiscal para o Paraguai? Entenda",
+      "title": "Hong Kong’s Chan Says City to Expand Market for Dim Sum Bonds",
+      "source": "Bloomberg Markets",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "France’s wine production nears a 70-year low, leaving winemakers with tough choices",
+      "source": "CNBC - Economy",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Geração Z não confia na IA para emprego, mas confia para ações e apostas esportivas",
       "source": "InfoMoney",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Bolsa Família ajuda Lula a virar pauta após crise do STF, enquanto casos são adiados",
+      "title": "Fraudes, deepfakes e o verdadeiro risco da IA — que não é o apocalipse",
       "source": "InfoMoney",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "“Brasil é país high yield”: por que não investir lá fora é cada vez mais arriscado",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "“Indústria 5.0” com IA: China tem oportunidade de US$ 12 tri e Morgan destaca ações",
-      "source": "InfoMoney",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "James Webb revela mudanças inesperadas nos anéis de Chariklo",
+      "title": "A era do salário aumentado por IA: mesma função, faixas de pagamento diferentes",
       "source": "Exame",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Festa de bilionários vira pesadelo em novo filme com Chris Evans e Anya Taylor-Joy",
+      "title": "R$ 230 mil por gestação e sem limites: como funciona a barriga de aluguel nos EUA?",
       "source": "Exame",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Quando a IA trapaceia: os atalhos que fazem agentes burlarem as próprias metas",
-      "source": "Exame",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "'Monstro: A História de Lizzie Borden' é baseado em uma história real?",
-      "source": "Exame",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Dia do Batman: qual é a ordem dos filmes do Homem-Morcego e onde assistir?",
-      "source": "Exame",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Prediction: The Hard Times Are Ending for These 3 Leading Cryptocurrencies",
+      "title": "Prediction: These 3 Stocks Will 10x in the Next 10 Years",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "The S&P 500 Has Returned About 11% Annually Since 1958. Here's the ETF I'd Trust for the Next 30 Years.",
+      "title": "Prediction: Here's What a $1,000 Investment in Tesla (TSLA) Stock Could Be Worth By 2036",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Sam Altman Admits the AI Industry Has Done &quot;a Terrible Job&quot; Explaining Its Benefits Amid Growing Backlash. Should That Worry Nvidia and Microsoft Investors?",
+      "title": "Better Artificial Intelligence Stock: Arm Holdings vs. SK Hynix",
       "source": "Nasdaq",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "These 15 Words From Amazon’s Andy Jassy May Eliminate Nvidia’s Biggest Risk",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Will There Be a Stock Market Crash in Year 6 of Donald Trump's Presidency? One Historically Flawless Metric Paints a Worrisome Picture.",
-      "source": "Nasdaq",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Corrida pelo ouro: por que países europeus estão tirando suas reservas dos EUA",
+      "title": "Casa própria vira sonho distante, e jovens gastam mais com pequenos luxos; entenda",
       "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "A IA pode superar a inteligência humana? Se revoltar? Veja o que dizem especialistas",
+      "title": "Mega-Sena pode pagar R$ 28 milhões neste domingo; g1 transmite ao vivo",
       "source": "G1 Economia",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
     },
     {
-      "title": "Quase metade dos profissionais admite fingir estar ocupada para evitar mais trabalho, diz pesquisa",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "De chatbots de IA que 'alucinam' ao temor pela humanidade: como chegamos a esse ponto?",
-      "source": "G1 Economia",
-      "score": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado"
-    },
-    {
-      "title": "Mega-Sena: quanto R$ 28 milhões rendem todo mês na poupança e no Tesouro",
+      "title": "Margem de lucro da Petrobras supera a da Saudi Aramco pela 1ª vez",
       "source": "UOL Economia",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "AI agents are ready to run your life. Do you trust them?",
+      "source": "Business Insider",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "The double-whammy that's about to hit the US economy",
+      "source": "Business Insider",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "The Apocalyptic Game: Panic And Opportunity",
+      "source": "ZeroHedge",
       "score": null,
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "publicado"
