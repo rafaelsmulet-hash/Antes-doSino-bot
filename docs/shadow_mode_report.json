@@ -1,13 +1,13 @@
 {
   "date": "2026-09-26",
-  "total_ingeridas": 992,
-  "aprovadas_pelo_fluxo_atual": 15,
-  "descartadas_pelos_filtros_atuais": 977,
+  "total_ingeridas": 1240,
+  "aprovadas_pelo_fluxo_atual": 19,
+  "descartadas_pelos_filtros_atuais": 1221,
   "score_medio_materialidade": null,
   "seriam_breaking": 0,
   "iriam_para_rodada": 0,
-  "seriam_descartadas_pelo_novo_sistema": 70,
-  "total_divergencias": 15,
+  "seriam_descartadas_pelo_novo_sistema": 75,
+  "total_divergencias": 19,
   "divergencias": [
     {
       "title": "Da aceleração ao freio: o que aconteceu na indústria de IA nas últimas semanas?",
@@ -109,6 +109,34 @@
     },
     {
       "title": "Inside Meta's grind to turn Muse from a clunky chatbot into an AI sensation",
+      "source": "Business Insider",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Disputa entre gestoras vai parar na CVM e ameaça fundo que opera eleições",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Brasil terá nova rodada de negociação com EUA sobre tarifas no G-20. O que esperar?",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Ata do Copom, preocupação com construtoras e Vale; veja os destaques da semana",
+      "source": "InfoMoney",
+      "score": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "publicado"
+    },
+    {
+      "title": "Inflation is kicking off a discount arms race between grocery stores",
       "source": "Business Insider",
       "score": null,
       "decisao_sugerida": "discard",
