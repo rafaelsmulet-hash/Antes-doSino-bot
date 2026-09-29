@@ -126,12 +126,14 @@
   // mostrado no skeleton enquanto carrega (ver .widget-frame.loading
   // no design-system.css) - cada pagina passa o texto do seu proprio
   // painel ("Carregando mapa de calor...", etc).
-  function montarWidgetTV(containerId, src, configBuilder, loadingText) {
-    var container = document.getElementById(containerId);
-    if (!container) return;
-    container.innerHTML = '';
-    container.classList.add('loading');
-    container.setAttribute('data-loading-text', loadingText || 'Carregando dados...');
+  // Carrega o widget de verdade (injeta o script real da TradingView) -
+  // separado de montarWidgetTV pra poder ser adiado ate o container
+  // entrar na tela (ver IntersectionObserver abaixo, pedido do
+  // usuario: "carregue widgets do TradingView so quando entrarem na
+  // tela"). O skeleton "Carregando..." aparece na hora (container ja
+  // fica visivel/reservado no layout); so o script pesado do widget em
+  // si e adiado.
+  function montarWidgetTVAgora(container, containerId, src, configBuilder, loadingText) {
     setTimeout(function () { container.classList.remove('loading'); }, SKELETON_DURACAO_MS);
 
     var wrapper = document.createElement('div');
@@ -154,6 +156,34 @@
 
     wrapper.appendChild(script);
     container.appendChild(wrapper);
+  }
+
+  function montarWidgetTV(containerId, src, configBuilder, loadingText) {
+    var container = document.getElementById(containerId);
+    if (!container) return;
+    container.innerHTML = '';
+    container.classList.add('loading');
+    container.setAttribute('data-loading-text', loadingText || 'Carregando dados...');
+
+    // rootMargin de 200px: comeca a carregar um pouco ANTES do widget
+    // entrar na tela de verdade, pra nao ter espera visivel no exato
+    // instante em que o usuario rola ate ele. Se o container ja esta
+    // visivel no momento de observar, o IntersectionObserver dispara o
+    // callback quase na hora - troca de tema num widget ja visivel
+    // continua parecendo instantanea.
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            observer.unobserve(entry.target);
+            montarWidgetTVAgora(container, containerId, src, configBuilder, loadingText);
+          }
+        });
+      }, { rootMargin: '200px' });
+      observer.observe(container);
+    } else {
+      montarWidgetTVAgora(container, containerId, src, configBuilder, loadingText);
+    }
   }
 
   // Monta o badge de status de mercado (.market-status, ver

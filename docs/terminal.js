@@ -14,6 +14,25 @@
 
   var STORAGE_KEY = "antesdosino_terminal_prefs_v1";
 
+  // Timeout por integracao (pedido do usuario) - sem isso, um fetch()
+  // que trava deixa a secao presa em "Carregando..." pra sempre.
+  // AbortController cancela apos timeoutMs; quem chama distingue
+  // "demorou demais" de erro de rede pelo error.name === "AbortError".
+  function fetchComTimeout(url, timeoutMs) {
+    var controller = new AbortController();
+    var timeoutId = setTimeout(function () { controller.abort(); }, timeoutMs || 8000);
+    return fetch(url, { signal: controller.signal }).finally(function () {
+      clearTimeout(timeoutId);
+    });
+  }
+
+  function mensagemDeErroFetch(error, nomeFonte) {
+    if (error && error.name === "AbortError") {
+      return "Tempo esgotado ao carregar " + nomeFonte + " - conexão lenta ou fonte indisponível.";
+    }
+    return "Não foi possível carregar " + nomeFonte + " agora.";
+  }
+
   // Os widgets da TradingView tem cor propria (parametro colorTheme)
   // que nao segue o CSS da pagina - por isso le o tema atual do site
   // (ver theme.js) toda vez que um widget e (re)criado, em vez de
@@ -630,14 +649,14 @@
   // widget-error-state da TradingView: aqui a falha e nossa - o fetch
   // de dados-terminal.html, gerado pelo main.py, nao respondeu). Botao
   // de retry chama a mesma funcao de carga de novo, do zero.
-  function montarFeedIndisponivel() {
+  function montarFeedIndisponivel(error) {
     var body = document.getElementById("feed-body");
     if (!body) return;
     body.innerHTML =
       '<div class="widget-error-state">' +
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>' +
       '<span class="data-badge stale" style="margin-bottom:4px;"><span class="dot"></span>DADO INDISPONÍVEL</span>' +
-      "<p>Não foi possível carregar as notícias agora. Pode ser instabilidade de rede ou o ciclo do bot ainda não ter publicado.</p>" +
+      "<p>" + mensagemDeErroFetch(error, "as notícias") + "</p>" +
       '<button type="button" class="widget-retry-btn">Tentar novamente</button>' +
       "</div>";
     var botao = body.querySelector(".widget-retry-btn");
@@ -653,7 +672,7 @@
   function montarUltimaAtualizacao() {
     var container = document.getElementById("ultima-atualizacao-container");
     if (!container) return;
-    fetch("status.json")
+    fetchComTimeout("status.json", 6000)
       .then(function (resp) { return resp.ok ? resp.json() : {}; })
       .then(function (status) {
         if (!status.ultimo_ciclo) return;
@@ -667,7 +686,7 @@
   }
 
   function carregarDadosDoPortal() {
-    fetch("dados-terminal.html")
+    fetchComTimeout("dados-terminal.html", 10000)
       .then(function (resp) {
         if (!resp.ok) throw new Error("HTTP " + resp.status);
         return resp.text();
@@ -677,7 +696,7 @@
         popularFeed(doc);
       })
       .catch(function (e) {
-        montarFeedIndisponivel();
+        montarFeedIndisponivel(e);
         console.log("Terminal: falha ao carregar dados do portal - " + e);
       });
   }

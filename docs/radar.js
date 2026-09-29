@@ -31,6 +31,29 @@
   }
 
   // ---------------------------------------------------------------------
+  // Timeout por integracao (pedido do usuario) - sem isso, um fetch()
+  // que trava (rede lenta, servidor nao responde) deixa a secao presa
+  // em "Carregando..." pra sempre, sem nenhum feedback. AbortController
+  // cancela a requisicao apos timeoutMs; quem chama distingue "demorou
+  // demais" de "erro de rede" pelo error.name === "AbortError", pra
+  // mostrar uma mensagem util em vez de generica.
+  // ---------------------------------------------------------------------
+  function fetchComTimeout(url, timeoutMs) {
+    var controller = new AbortController();
+    var timeoutId = setTimeout(function () { controller.abort(); }, timeoutMs || 8000);
+    return fetch(url, { signal: controller.signal }).finally(function () {
+      clearTimeout(timeoutId);
+    });
+  }
+
+  function mensagemDeErroFetch(error, nomeFonte) {
+    if (error && error.name === "AbortError") {
+      return "Tempo esgotado ao carregar " + nomeFonte + " - conexão lenta ou fonte indisponível.";
+    }
+    return "Não foi possível carregar " + nomeFonte + " agora.";
+  }
+
+  // ---------------------------------------------------------------------
   // Menu mobile (mesmo padrao do Terminal)
   // ---------------------------------------------------------------------
   function inicializarMenuMobile() {
@@ -193,7 +216,7 @@
     var lista = document.getElementById("temperatura-historico-lista");
     if (!bloco || !lista) return;
 
-    fetch("resumo_historico.json")
+    fetchComTimeout("resumo_historico.json", 8000)
       .then(function (r) { return r.ok ? r.json() : []; })
       .then(function (historico) {
         var comTemperatura = (historico || []).filter(function (d) { return d.temperatura; });
@@ -221,7 +244,7 @@
     var desdeOntemEl = document.getElementById("temperatura-desde-ontem");
     if (!selo || !label || !frase) return;
 
-    fetch("radar_temperatura.json")
+    fetchComTimeout("radar_temperatura.json", 8000)
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (dado) {
         if (!dado) throw new Error("sem dado");
@@ -251,10 +274,10 @@
         }
         montarHistoricoTemperatura();
       })
-      .catch(function () {
+      .catch(function (error) {
         selo.className = "temperatura-selo sem_leitura";
         label.textContent = "Sem leitura disponível";
-        frase.textContent = "Não foi possível carregar a leitura do dia agora.";
+        frase.textContent = mensagemDeErroFetch(error, "a leitura do dia");
         motivoEl.textContent = "Fonte de dados indisponível no momento. Tente novamente mais tarde.";
         motivoEl.hidden = false;
       });
@@ -396,7 +419,7 @@
   var TODAS_NOTICIAS_RADAR = [];
 
   function carregarNoticias() {
-    fetch("dados-terminal.html")
+    fetchComTimeout("dados-terminal.html", 10000)
       .then(function (resp) { return resp.ok ? resp.text() : ""; })
       .then(function (html) {
         if (!html) throw new Error("vazio");
@@ -442,11 +465,11 @@
         renderizarNoticias("todas");
         montarResumo60(itens);
       })
-      .catch(function () {
+      .catch(function (error) {
         var grid = document.getElementById("noticias-grid");
         if (grid) {
           grid.innerHTML =
-            '<div class="noticias-vazio">Não foi possível carregar as notícias agora. ' +
+            '<div class="noticias-vazio">' + escapeHtml(mensagemDeErroFetch(error, "as notícias")) +
             '<button type="button" class="widget-retry-btn" id="noticias-retry" style="margin-left:8px;">Tentar novamente</button></div>';
           var botao = document.getElementById("noticias-retry");
           if (botao) botao.addEventListener("click", carregarNoticias);
@@ -554,7 +577,7 @@
   // do Calendario), mostra os 3 mais proximos.
   // ---------------------------------------------------------------------
   function carregarAgenda() {
-    fetch("eventos_radar.json")
+    fetchComTimeout("eventos_radar.json", 8000)
       .then(function (r) { return r.ok ? r.json() : []; })
       .then(function (eventos) {
         var lista = document.getElementById("agenda-list");
@@ -575,9 +598,9 @@
           );
         }).join("");
       })
-      .catch(function () {
+      .catch(function (error) {
         var lista = document.getElementById("agenda-list");
-        if (lista) lista.innerHTML = '<div class="agenda-vazio">Não foi possível carregar a agenda agora.</div>';
+        if (lista) lista.innerHTML = '<div class="agenda-vazio">' + escapeHtml(mensagemDeErroFetch(error, "a agenda")) + "</div>";
       });
   }
 
