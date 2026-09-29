@@ -712,6 +712,7 @@
       var card = cards[i];
       var badge = card.querySelector(".badge");
       var categoria = card.querySelector(".tag-categoria");
+      var etiqueta = card.querySelector(".tag-etiqueta");
       var titulo = card.querySelector("h3");
       var resumo = card.querySelector("p");
       var fonte = card.querySelector(".src");
@@ -721,6 +722,11 @@
       var badgeTexto = badge ? badge.textContent.trim() : "INFO";
       var catSlug = card.getAttribute("data-categoria") || "";
       var catTexto = categoria ? categoria.textContent.trim() : "";
+      // Etiqueta confirmado/rumor/opiniao/entrevista por noticia -
+      // mesmo padrao da tag de categoria acima (classe carrega o
+      // slug, ex: "tag-etiqueta etq-rumor").
+      var etqSlug = etiqueta ? etiqueta.className.replace("tag-etiqueta", "").replace("etq-", "").trim() : "";
+      var etqTexto = etiqueta ? etiqueta.textContent.trim() : "";
       var tituloTexto = titulo ? titulo.textContent.trim() : "";
       var resumoTexto = resumo ? resumo.textContent.trim() : "";
       var fonteTexto = fonte ? fonte.textContent.trim() : "";
@@ -728,7 +734,7 @@
 
       todas.push({ titulo: tituloTexto, fonte: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto });
       if (i < limiteSidebar) {
-        itens.push({ tituloTexto: tituloTexto, resumoTexto: resumoTexto, fonteTexto: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto, catSlug: catSlug, catTexto: catTexto });
+        itens.push({ tituloTexto: tituloTexto, resumoTexto: resumoTexto, fonteTexto: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto, catSlug: catSlug, catTexto: catTexto, etqSlug: etqSlug, etqTexto: etqTexto });
       }
     }
 
@@ -742,6 +748,12 @@
         '<div class="feed-item' + (extraClasse ? " " + extraClasse : "") + '">' +
         '<span class="badge ' + item.badgeClasse + '">' + item.badgeTexto + "</span>" +
         (item.catTexto ? '<span class="tag-categoria cat-' + item.catSlug + '">' + item.catTexto + "</span>" : "") +
+        // "confirmado" e o estado default (a maioria das noticias) -
+        // so mostra a etiqueta quando ela sinaliza a excecao
+        // (rumor/opiniao/entrevista), pra nao poluir a lista densa da
+        // sidebar; o card completo em dados-terminal.html sempre traz
+        // a etiqueta, inclusive CONFIRMADO.
+        (item.etqTexto && item.etqSlug !== "confirmado" ? '<span class="tag-etiqueta etq-' + item.etqSlug + '">' + item.etqTexto + "</span>" : "") +
         '<h4 class="feed-item-title" role="button" tabindex="0">' + item.tituloTexto + "</h4>" +
         '<span class="src">' + item.fonteTexto + "</span>" +
         (item.resumoTexto

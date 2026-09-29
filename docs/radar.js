@@ -320,6 +320,7 @@
           var fonteEl = card.querySelector(".src");
           var horaEl = card.querySelector(".time");
           var linkEl = card.querySelector("a.read");
+          var etiquetaEl = card.querySelector(".tag-etiqueta");
 
           var titulo = tituloEl ? tituloEl.textContent.trim() : "";
           if (!titulo) return;
@@ -337,6 +338,8 @@
             secao: secao,
             relevancia: CATEGORIA_PARA_RELEVANCIA[categoria] || "monitorar",
             ingles: pareceIngles(titulo),
+            etqSlug: etiquetaEl ? etiquetaEl.className.replace("tag-etiqueta", "").replace("etq-", "").trim() : "confirmado",
+            etqTexto: etiquetaEl ? etiquetaEl.textContent.trim() : "CONFIRMADO",
           });
         });
 
@@ -381,6 +384,9 @@
         '<div class="noticia-card-meta">' +
         '<span class="relevancia-selo ' + n.relevancia + '">' + RELEVANCIA_LABEL[n.relevancia] + "</span>" +
         '<span class="categoria-tag">' + (SECAO_LABEL[n.secao] || "") + "</span>" +
+        // "confirmado" e o estado default - so mostra a etiqueta
+        // quando sinaliza a excecao (rumor/opiniao/entrevista).
+        (n.etqSlug !== "confirmado" ? '<span class="etiqueta-tag etq-' + n.etqSlug + '">' + n.etqTexto + "</span>" : "") +
         (n.ingles ? '<span class="en-flag">EN</span>' : "") +
         '<span class="src-time">' + escapeHtml(n.fonte) + " · " + escapeHtml(n.hora) + "</span>" +
         "</div>" +

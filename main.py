@@ -1229,7 +1229,14 @@ def classify_news_ai(title, body, translate=False):
                 "apresentada como declaracao (nao como fato confirmado pela redacao).\n"
                 "9. tema_sensivel: true se a noticia for sobre politica, eleicoes, guerra, "
                 "terrorismo, autoridades publicas, acusacoes judiciais ou geopolitica. false "
-                "caso contrario.\n\n"
+                "caso contrario.\n"
+                "10. fato_confirmado: true se a noticia apresenta a informacao como fato "
+                "estabelecido/confirmado (anuncio oficial, dado publicado, declaracao "
+                "on-the-record). false SOMENTE se o texto sinalizar explicitamente que a "
+                "informacao ainda NAO esta confirmada - linguagem como 'segundo apurou', "
+                "'segundo fontes', 'fontes ouvidas por', 'estaria avaliando', 'teria', 'nao "
+                "confirmado', 'boato', 'especulacao'. Se tipo_conteudo for 'opiniao' ou "
+                "'entrevista', responda true (esse eixo so vale pra noticia factual).\n\n"
                 "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
                 "formato exato:\n"
                 '{"relevante_mercado": true, "sentiment": "BULLISH", '
@@ -1237,7 +1244,7 @@ def classify_news_ai(title, body, translate=False):
                 '"translated_summary": "resumo em portugues", '
                 '"score_materialidade": 5, "motivo_materialidade": "motivo curto", '
                 '"por_que_importa": "explicacao curta do canal economico", '
-                '"tipo_conteudo": "fato", "tema_sensivel": false}\n\n'
+                '"tipo_conteudo": "fato", "tema_sensivel": false, "fato_confirmado": true}\n\n'
                 "Titulo: " + title + "\n"
                 "Texto: " + body_cleaned
             )
@@ -1273,13 +1280,20 @@ def classify_news_ai(title, body, translate=False):
                 "terrorismo, autoridades publicas, acusacoes judiciais ou geopolitica. false "
                 "caso contrario. Quando true, e ao considerar o titulo/resumo, lembre-se: use "
                 "linguagem neutra, distinga fato de alegacao/opiniao, evite titulo "
-                "sensacionalista e nunca afirme causalidade que o texto original nao afirma.\n\n"
+                "sensacionalista e nunca afirme causalidade que o texto original nao afirma.\n"
+                "8. fato_confirmado: true se a noticia apresenta a informacao como fato "
+                "estabelecido/confirmado (anuncio oficial, dado publicado, declaracao "
+                "on-the-record). false SOMENTE se o texto sinalizar explicitamente que a "
+                "informacao ainda NAO esta confirmada - linguagem como 'segundo apurou', "
+                "'segundo fontes', 'fontes ouvidas por', 'estaria avaliando', 'teria', 'nao "
+                "confirmado', 'boato', 'especulacao'. Se tipo_conteudo for 'opiniao' ou "
+                "'entrevista', responda true (esse eixo so vale pra noticia factual).\n\n"
                 "Responda APENAS em JSON plano, sem markdown, sem texto antes ou depois, no "
                 "formato exato:\n"
                 '{"relevante_mercado": true, "sentiment": "BULLISH", '
                 '"score_materialidade": 5, "motivo_materialidade": "motivo curto", '
                 '"por_que_importa": "explicacao curta do canal economico", '
-                '"tipo_conteudo": "fato", "tema_sensivel": false}\n\n'
+                '"tipo_conteudo": "fato", "tema_sensivel": false, "fato_confirmado": true}\n\n'
                 "Titulo: " + title + "\n"
                 "Texto: " + body_cleaned
             )
@@ -1347,6 +1361,16 @@ def classify_news_ai(title, body, translate=False):
 
         raw_tema_sensivel = parsed.get("tema_sensivel")
         result["tema_sensivel"] = raw_tema_sensivel if isinstance(raw_tema_sensivel, bool) else False
+
+        # fato_confirmado (etiqueta confirmado/rumor por noticia,
+        # pedido do usuario) - so se aplica quando tipo_conteudo =
+        # "fato" (opiniao/entrevista tem etiqueta propria, ver
+        # editorial_tag_for_entry). Default conservador True: a
+        # maioria das noticias publicadas E factual/confirmada: so
+        # marca como rumor quando a IA respondeu False explicitamente,
+        # nunca a partir de campo ausente/malformado.
+        raw_fato_confirmado = parsed.get("fato_confirmado")
+        result["fato_confirmado"] = raw_fato_confirmado if isinstance(raw_fato_confirmado, bool) else True
 
         if translate:
             # Validacao defensiva - se a traducao vier vazia/invalida,
@@ -1554,18 +1578,23 @@ def format_message(source, entry, ai_result):
     if not title:
         title = "Atualizacao de mercado"
 
-    # Marcacao visivel de OPINIAO/ENTREVISTA (PDF, "Hierarquia de
+    # Marcacao visivel de OPINIAO/ENTREVISTA/RUMOR (PDF, "Hierarquia de
     # fontes": "Itens de opiniao devem ser marcados como OPINIAO.
-    # Entrevistas devem ser marcadas como ENTREVISTA") - prefixada no
-    # titulo aqui, que e o unico lugar de onde final_title sai pra
-    # TODOS os consumidores (mensagem do Telegram, item do Giro,
-    # portal entry do site). tipo_conteudo "fato" (o padrao/fallback,
-    # ver classify_news_ai) nunca ganha prefixo.
+    # Entrevistas devem ser marcadas como ENTREVISTA"; e pedido do
+    # usuario - etiqueta confirmado/rumor/opiniao por noticia) -
+    # prefixada no titulo aqui, que e o unico lugar de onde final_title
+    # sai pra TODOS os consumidores (mensagem do Telegram, item do
+    # Giro, portal entry do site). tipo_conteudo "fato" com
+    # fato_confirmado=True (o padrao/fallback, ver classify_news_ai)
+    # nunca ganha prefixo - so a excecao (opiniao/entrevista/rumor)
+    # precisa chamar atencao no titulo.
     tipo_conteudo = ai_result.get("tipo_conteudo") if ai_result else None
     if tipo_conteudo == "opiniao":
         title = "[OPINIÃO] " + title
     elif tipo_conteudo == "entrevista":
         title = "[ENTREVISTA] " + title
+    elif ai_result and ai_result.get("fato_confirmado") is False:
+        title = "[RUMOR] " + title
 
     title_esc = html_module.escape(title, quote=False)
 
@@ -3317,6 +3346,27 @@ def classify_news_category(entry):
     return "mercados", "MERCADOS"
 
 
+def editorial_tag_for_entry(entry):
+    """Retorna (slug, label) da etiqueta confirmado/rumor/opiniao por
+    noticia (pedido do usuario - PDF: "em cada noticia: fonte, horario,
+    link e etiqueta confirmado/rumor/opiniao"). Calculada em cima dos
+    campos ja persistidos no portal entry (tipo_conteudo/
+    fato_confirmado, ver classify_news_ai), no MOMENTO do render - mesmo
+    padrao ja usado por classify_news_category, pra nunca ficar
+    dessincronizado se a regra mudar. Entry sem esses campos (historico
+    salvo antes desta mudanca, ou IA desligada) cai no default mais
+    conservador: 'confirmado' (nunca marca como rumor por falta de
+    dado)."""
+    tipo_conteudo = entry.get("tipo_conteudo")
+    if tipo_conteudo == "opiniao":
+        return "opiniao", "OPINIÃO"
+    if tipo_conteudo == "entrevista":
+        return "entrevista", "ENTREVISTA"
+    if entry.get("fato_confirmado") is False:
+        return "rumor", "RUMOR"
+    return "confirmado", "CONFIRMADO"
+
+
 BRIEFINGS_STATE_FILE = "docs/briefings_state.json"
 
 # ---------------------------------------------------------------------
@@ -4755,6 +4805,13 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                         "score_materialidade": canal_score,
                         "fonte_tier": fonte_tier_canal,
                         "por_que_importa": ai_result.get("por_que_importa") if ai_result else None,
+                        # Etiqueta confirmado/rumor/opiniao (pedido do
+                        # usuario) - persistido cru, rotulo calculado no
+                        # render por editorial_tag_for_entry (mesmo
+                        # motivo de "categoria" nao entrar aqui: evitar
+                        # ficar dessincronizado se a regra mudar).
+                        "tipo_conteudo": ai_result.get("tipo_conteudo") if ai_result else "fato",
+                        "fato_confirmado": ai_result.get("fato_confirmado") if ai_result else True,
                     })
 
                     has_updates = True
@@ -4839,11 +4896,13 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
     for e in entries[:150]:
         cls, label = sentiment_class(e["sentiment"])
         cat_slug, cat_label = classify_news_category(e)
+        etq_slug, etq_label = editorial_tag_for_entry(e)
         link = e.get("link", "#") or "#"
         cards_html += (
             '<div class="card" data-categoria="' + cat_slug + '">'
             '<div class="card-meta"><span class="badge ' + cls + '">' + label + "</span>"
             '<span class="tag-categoria cat-' + cat_slug + '">' + cat_label + "</span>"
+            '<span class="tag-etiqueta etq-' + etq_slug + '">' + etq_label + "</span>"
             '<span class="src">' + html_module.escape(e["source"]) + "</span>"
             '<span class="time">' + e["time"] + "</span></div>"
             "<h3>" + html_module.escape(e["title"]) + "</h3>"
@@ -5281,6 +5340,8 @@ def main():
                     "score_materialidade": shadow_score,
                     "fonte_tier": fonte_tier,
                     "por_que_importa": ai_result.get("por_que_importa") if ai_result else None,
+                    "tipo_conteudo": ai_result.get("tipo_conteudo") if ai_result else "fato",
+                    "fato_confirmado": ai_result.get("fato_confirmado") if ai_result else True,
                 })
             else:
                 sent_hashes[h] = None

@@ -303,6 +303,19 @@
   .feed-item .tag-categoria.cat-urgente{border-color:var(--gold);color:var(--gold);}
   .feed-item .tag-categoria.cat-importante{border-color:var(--warning);color:var(--warning);}
   .feed-radar-item .tag-categoria{display:none;}
+  /* Etiqueta confirmado/rumor/opiniao/entrevista por noticia (eixo de
+     CONFIABILIDADE da informacao - diferente do badge de direcao e da
+     tag de categoria acima). "confirmado" nunca aparece aqui (ver
+     montarItem em terminal.js) - so a excecao chama atencao. */
+  .feed-item .tag-etiqueta{
+    display:inline-block;padding:2px 8px;border-radius:100px;font-weight:700;font-size:0.6rem;
+    margin-bottom:5px;margin-left:4px;font-family:var(--font-mono);letter-spacing:0.3px;
+    text-transform:uppercase;border:1px solid var(--line-strong);color:var(--slate);background:none;
+  }
+  .feed-item .tag-etiqueta.etq-rumor{border-color:var(--warning);color:var(--warning);}
+  .feed-item .tag-etiqueta.etq-opiniao,
+  .feed-item .tag-etiqueta.etq-entrevista{border-color:var(--info);color:var(--info);}
+  .feed-radar-item .tag-etiqueta{display:none;}
   .feed-item h4{font-size:0.85rem;font-weight:600;line-height:1.35;color:var(--cream);}
   .feed-item .src{font-size:0.68rem;color:var(--slate-dim);margin-top:3px;display:block;}
   .feed-empty{color:var(--slate-dim);font-size:0.82rem;padding:14px 6px;}

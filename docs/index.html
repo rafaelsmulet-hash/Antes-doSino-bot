@@ -185,6 +185,16 @@
     font-family:var(--font-mono);font-size:0.62rem;font-weight:600;color:var(--slate);
     background:var(--surface-2);border-radius:var(--r-pill);padding:3px 9px;
   }
+  /* Etiqueta confirmado/rumor/opiniao/entrevista - so aparece quando
+     sinaliza excecao ao padrao (ver renderizarNoticias em radar.js);
+     "confirmado" (a maioria das noticias) nunca chega a ser renderizado. */
+  .noticia-card .etiqueta-tag{
+    font-family:var(--font-mono);font-size:0.62rem;font-weight:700;letter-spacing:0.3px;text-transform:uppercase;
+    border-radius:var(--r-pill);padding:3px 9px;border:1px solid var(--line-strong);color:var(--slate);
+  }
+  .noticia-card .etiqueta-tag.etq-rumor{border-color:var(--warning);color:var(--warning);}
+  .noticia-card .etiqueta-tag.etq-opiniao,
+  .noticia-card .etiqueta-tag.etq-entrevista{border-color:var(--info);color:var(--info);}
   .noticia-card .src-time{font-size:0.68rem;color:var(--slate-dim);margin-left:auto;}
   .noticia-card h3{font-size:0.94rem;font-weight:700;line-height:1.35;color:var(--cream);}
   .noticia-card .en-flag{font-size:0.68rem;color:var(--slate-dim);font-weight:600;}
