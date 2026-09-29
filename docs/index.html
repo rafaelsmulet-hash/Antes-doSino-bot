@@ -124,6 +124,19 @@
   .temperatura-fator .up{color:var(--up);font-weight:700;}
   .temperatura-fator .down{color:var(--down);font-weight:700;}
   .temperatura-motivo{font-size:0.85rem;color:var(--slate-dim);}
+  .temperatura-desde-ontem{font-size:0.85rem;color:var(--slate);padding-top:var(--sp-3);border-top:1px solid var(--line);}
+  .temperatura-historico{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-top:var(--sp-3);border-top:1px solid var(--line);}
+  .temperatura-historico-titulo{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.4px;text-transform:uppercase;color:var(--slate-dim);flex-shrink:0;}
+  .temperatura-historico-lista{display:flex;gap:8px;flex-wrap:wrap;}
+  .temperatura-historico-dia{
+    display:flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:0.72rem;color:var(--slate);
+    background:var(--surface-2);border-radius:var(--r-pill);padding:4px 10px;
+  }
+  .temperatura-historico-dia .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .temperatura-historico-dia .dot.risco_on{background:var(--up);}
+  .temperatura-historico-dia .dot.risco_off{background:var(--down);}
+  .temperatura-historico-dia .dot.misto{background:var(--slate);}
+  .temperatura-historico-dia .dot.atencao{background:var(--warning);}
 
   /* ---------- 5 indicadores essenciais ---------- */
   .indicadores-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--sp-3);}
@@ -363,6 +376,11 @@
     </div>
     <div class="temperatura-fatores" id="temperatura-fatores" hidden></div>
     <p class="temperatura-motivo" id="temperatura-motivo" hidden></p>
+    <p class="temperatura-desde-ontem" id="temperatura-desde-ontem" hidden></p>
+    <div class="temperatura-historico" id="temperatura-historico" hidden>
+      <span class="temperatura-historico-titulo">Últimos dias</span>
+      <div class="temperatura-historico-lista" id="temperatura-historico-lista"></div>
+    </div>
   </div>
 </section>
 

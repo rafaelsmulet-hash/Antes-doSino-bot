@@ -2021,6 +2021,27 @@ def compute_market_temperature(market_snapshot, entries_today):
     }
 
 
+def build_temperature_since_yesterday(temperatura, archive, today_str):
+    """"O que mudou desde ontem" (pedido do usuario) - compara a
+    classificacao de hoje com a do ultimo dia registrado no arquivo
+    diario ANTES de hoje (nao necessariamente ontem no calendario - se
+    o ciclo nao rodou num fim de semana/feriado, compara com o ultimo
+    dia util que tem leitura). Nunca inventa comparacao: sem leitura
+    de hoje ou sem nenhum dia anterior com temperatura registrada,
+    retorna uma frase honesta em vez de forcar uma comparacao."""
+    if not temperatura or temperatura.get("classificacao") in (None, "sem_leitura"):
+        return None
+    dias_anteriores = [d for d in archive if d["date"] != today_str and d.get("temperatura")]
+    if not dias_anteriores:
+        return "Sem leitura de um dia anterior registrada ainda para comparar."
+    ultimo_dia = dias_anteriores[-1]
+    temp_ontem = ultimo_dia["temperatura"]
+    label_ontem = TEMPERATURA_LABELS.get(temp_ontem, temp_ontem)
+    if temp_ontem == temperatura["classificacao"]:
+        return "Mesma leitura de " + ultimo_dia["date"] + " (" + label_ontem + ")."
+    return "Em " + ultimo_dia["date"] + ": " + label_ontem + ". Hoje: " + temperatura["label"] + "."
+
+
 def build_cockpit_html(portal_entries, entries_today=None, market_snapshot=None):
     if entries_today is None:
         entries_today = portal_entries
@@ -5443,6 +5464,7 @@ def main():
     temperatura = None
     try:
         temperatura = compute_market_temperature(market_snapshot, entries_today)
+        temperatura["desde_ontem"] = build_temperature_since_yesterday(temperatura, archive, today_str)
         with open("docs/radar_temperatura.json", "w", encoding="utf-8") as f:
             json.dump(temperatura, f, ensure_ascii=False)
         print("Temperatura do mercado: " + temperatura["label"])
@@ -5532,6 +5554,12 @@ def main():
         "alta": thermo_today["alta"],
         "baixa": thermo_today["baixa"],
         "info": thermo_today["info"],
+        # Historico da Temperatura do Mercado (pedido do usuario) -
+        # so a classificacao (ex: "risco_on"), reaproveitando o mesmo
+        # arquivo diario que ja alimenta o resumo semanal, em vez de
+        # criar um arquivo paralelo so pra isso. None quando o calculo
+        # de hoje falhou ou ainda nao rodou neste ciclo.
+        "temperatura": temperatura["classificacao"] if temperatura else None,
     })
     save_daily_archive(archive)
     build_weekly_summary_html(archive)

@@ -123,12 +123,45 @@
   // ---------------------------------------------------------------------
   // Temperatura do Mercado
   // ---------------------------------------------------------------------
+  var TEMPERATURA_LABEL = {
+    risco_on: "Risco-on",
+    risco_off: "Risco-off",
+    misto: "Misto",
+    atencao: "Atenção",
+    sem_leitura: "Sem leitura disponível",
+  };
+
+  function montarHistoricoTemperatura() {
+    var bloco = document.getElementById("temperatura-historico");
+    var lista = document.getElementById("temperatura-historico-lista");
+    if (!bloco || !lista) return;
+
+    fetch("resumo_historico.json")
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (historico) {
+        var comTemperatura = (historico || []).filter(function (d) { return d.temperatura; });
+        if (!comTemperatura.length) return; // sem historico ainda - bloco fica escondido, nunca mostra vazio
+        var ultimosDias = comTemperatura.slice(-7).reverse();
+        lista.innerHTML = ultimosDias.map(function (d) {
+          var label = TEMPERATURA_LABEL[d.temperatura] || d.temperatura;
+          return (
+            '<span class="temperatura-historico-dia" title="' + escapeHtml(d.date) + ': ' + escapeHtml(label) + '">' +
+            '<span class="dot ' + d.temperatura + '"></span>' + escapeHtml(d.date.slice(5)) +
+            "</span>"
+          );
+        }).join("");
+        bloco.hidden = false;
+      })
+      .catch(function () { /* sem historico - bloco permanece escondido, nunca inventa dado */ });
+  }
+
   function montarTemperatura() {
     var selo = document.getElementById("temperatura-selo");
     var label = document.getElementById("temperatura-label");
     var frase = document.getElementById("temperatura-frase");
     var fatoresEl = document.getElementById("temperatura-fatores");
     var motivoEl = document.getElementById("temperatura-motivo");
+    var desdeOntemEl = document.getElementById("temperatura-desde-ontem");
     if (!selo || !label || !frase) return;
 
     fetch("radar_temperatura.json")
@@ -155,6 +188,11 @@
           motivoEl.textContent = dado.motivo;
           motivoEl.hidden = false;
         }
+        if (dado.desde_ontem && desdeOntemEl) {
+          desdeOntemEl.textContent = "Desde a última leitura: " + dado.desde_ontem;
+          desdeOntemEl.hidden = false;
+        }
+        montarHistoricoTemperatura();
       })
       .catch(function () {
         selo.className = "temperatura-selo sem_leitura";
