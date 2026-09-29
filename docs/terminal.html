@@ -580,11 +580,11 @@
 
   <div class="term-body">
     <main class="term-main">
-      <div class="term-tabs" id="term-tabs">
-        <button class="term-tab active" data-term-tab="geral" type="button">Visão Geral</button>
-        <button class="term-tab" data-term-tab="mercado" type="button">Índices, Câmbio &amp; Commodities</button>
-        <button class="term-tab" data-term-tab="acoes" type="button">Ações &amp; Cripto</button>
-        <button class="term-tab" data-term-tab="vol" type="button">Volatilidade &amp; Destaques</button>
+      <div class="term-tabs" id="term-tabs" role="tablist" aria-label="Seções do Terminal">
+        <button class="term-tab active" data-term-tab="geral" type="button" role="tab" aria-selected="true">Visão Geral</button>
+        <button class="term-tab" data-term-tab="mercado" type="button" role="tab" aria-selected="false">Índices, Câmbio &amp; Commodities</button>
+        <button class="term-tab" data-term-tab="acoes" type="button" role="tab" aria-selected="false">Ações &amp; Cripto</button>
+        <button class="term-tab" data-term-tab="vol" type="button" role="tab" aria-selected="false">Volatilidade &amp; Destaques</button>
       </div>
 
       <section class="panels-grid" id="panels-grid" data-tab-section="mercado">
@@ -687,14 +687,14 @@
     </main>
 
     <aside class="term-sidebar">
-      <div class="sidebar-tabs">
-        <button class="sidebar-tab active" data-sidebar-tab="noticias" type="button">Notícias</button>
-        <button class="sidebar-tab" data-sidebar-tab="macro" type="button">Contexto Macro</button>
+      <div class="sidebar-tabs" role="tablist" aria-label="Painel da barra lateral">
+        <button class="sidebar-tab active" data-sidebar-tab="noticias" type="button" role="tab" aria-selected="true">Notícias</button>
+        <button class="sidebar-tab" data-sidebar-tab="macro" type="button" role="tab" aria-selected="false">Contexto Macro</button>
       </div>
 
       <div class="feed-card sidebar-panel active" data-sidebar-panel="noticias">
         <div class="feed-card-head">Últimas notícias</div>
-        <div class="feed-card-body" id="feed-body">
+        <div class="feed-card-body" id="feed-body" aria-live="polite">
           <div class="feed-empty">Carregando notícias...</div>
         </div>
       </div>

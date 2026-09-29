@@ -1358,7 +1358,9 @@
 
   function ativarTermTab(alvo) {
     document.querySelectorAll(".term-tab").forEach(function (botao) {
-      botao.classList.toggle("active", botao.getAttribute("data-term-tab") === alvo);
+      var ehAlvo = botao.getAttribute("data-term-tab") === alvo;
+      botao.classList.toggle("active", ehAlvo);
+      botao.setAttribute("aria-selected", ehAlvo ? "true" : "false");
     });
     document.querySelectorAll("[data-tab-section]").forEach(function (secao) {
       secao.style.display = (alvo === "geral" || secao.getAttribute("data-tab-section") === alvo) ? "" : "none";
@@ -1403,6 +1405,7 @@
         var alvo = botao.getAttribute("data-sidebar-tab");
         document.querySelectorAll(".sidebar-tab").forEach(function (b) {
           b.classList.toggle("active", b === botao);
+          b.setAttribute("aria-selected", b === botao ? "true" : "false");
         });
         document.querySelectorAll(".sidebar-panel").forEach(function (p) {
           p.classList.toggle("active", p.getAttribute("data-sidebar-panel") === alvo);

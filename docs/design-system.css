@@ -258,6 +258,17 @@ a{color:inherit;text-decoration:none;}
   *{transition-duration:0.01ms !important;animation-duration:0.01ms !important;scroll-behavior:auto !important;}
 }
 
+/* Foco visivel generico (navegacao por teclado) - cobre qualquer link,
+   botao, aba ou item clicavel que nao tenha um :focus-visible proprio
+   mais especifico (ex: .btn-primary/.nav-cta acima ja tem o deles).
+   :focus-visible (nao :focus puro) so mostra o anel pra quem navega
+   por teclado, sem aparecer em todo clique de mouse. */
+a:focus-visible, button:focus-visible, [role="tab"]:focus-visible,
+[tabindex]:focus-visible, input:focus-visible, select:focus-visible,
+textarea:focus-visible{
+  outline:2px solid var(--gold);outline-offset:2px;border-radius:4px;
+}
+
 /* Revelacao suave ao rolar (Apple usa muito esse padrao) - progressive
    enhancement via IntersectionObserver (ver script no fim de cada
    pagina); sem JS, o conteudo so fica visivel do jeito normal. */
