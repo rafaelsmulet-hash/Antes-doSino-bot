@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script src="cookie-consent.js"></script>
+<script src="analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metodologia e fontes — Antes do Sino</title>
+<meta name="description" content="Como o Antes do Sino coleta, classifica e publica notícias: fontes de dados, papel da IA e o que ela nunca faz.">
+<script>
+  (function(){try{var t=localStorage.getItem('antes-do-sino-tema');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();
+</script>
+<link rel="stylesheet" href="design-system.css">
+<style>
+  .legal-section{max-width:760px;}
+  .legal-section + .legal-section{padding-top:0;}
+  .legal-updated{color:var(--slate-dim);font-size:0.82rem;margin-bottom:var(--sp-6);}
+  .legal-block{margin-bottom:var(--sp-7);}
+  .legal-block:last-child{margin-bottom:0;}
+  .legal-block h2{font-family:var(--font-display);font-weight:700;font-size:1.25rem;letter-spacing:-0.01em;margin-bottom:var(--sp-3);}
+  .legal-block h3{font-size:1rem;font-weight:700;color:var(--cream);margin:var(--sp-4) 0 var(--sp-2);}
+  .legal-block p{color:var(--slate);font-size:0.95rem;line-height:1.7;margin-bottom:var(--sp-3);}
+  .legal-block p:last-child{margin-bottom:0;}
+  .legal-block strong{color:var(--cream);}
+  .legal-block ul{color:var(--slate);font-size:0.95rem;line-height:1.7;margin:0 0 var(--sp-3);padding-left:1.2em;}
+  .legal-block li{margin-bottom:6px;}
+  .legal-block a{color:var(--gold);}
+  .legal-table{width:100%;border-collapse:collapse;font-size:0.88rem;margin-bottom:var(--sp-3);}
+  .legal-table th,.legal-table td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);color:var(--slate);}
+  .legal-table th{color:var(--cream);font-weight:600;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.3px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="index.html" aria-label="Ir para o Radar de Abertura">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v2M8.5 20a3.5 3.5 0 0 0 7 0M5 17h14l-1.4-2.1A7 7 0 0 1 16.5 11V9a4.5 4.5 0 0 0-9 0v2a7 7 0 0 1-1.1 3.9L5 17Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Antes do Sino
+  </a>
+  <div class="nav-right">
+    <button class="theme-toggle" id="theme-toggle" type="button" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <a href="https://t.me/+TobMzw-WnQhmZmIx" class="nav-cta">Entrar no grupo grátis</a>
+  </div>
+</nav>
+<div class="sub-nav">
+  <a href="index.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0 7-7 7 7m-9-7v7m-7 0h18v9a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4H9v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z"/></svg>
+    Radar de Abertura
+  </a>
+  <a href="terminal.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>
+    Terminal
+  </a>
+  <a href="calendario.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    Calendário
+  </a>
+  <a href="mapa.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    Mapa de Calor
+  </a>
+  <a href="quant.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+    Quant
+  </a>
+  <a href="exposicao.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+    Minha Exposição
+  </a>
+</div>
+
+<div class="hero reveal">
+  <span class="kicker">Metodologia e fontes</span>
+  <h1>Como os dados<br>chegam até aqui.</h1>
+  <p>Detalhamento técnico do pipeline: de onde vêm as notícias e cotações, o que a IA classifica e as travas que existem contra alucinação e invenção de dado.</p>
+</div>
+
+<section class="legal-section">
+  <p class="legal-updated reveal">Última atualização: 29/09/2026</p>
+
+  <div class="legal-block reveal">
+    <h2>Como o pipeline funciona</h2>
+    <p>O <strong>Antes do Sino</strong> roda um pipeline automatizado (Python, GitHub Actions) disparado a cada poucos minutos, das 06h40 às 22h30 (horário de Brasília). Cada execução: coleta feeds RSS, limpa o texto, classifica cada notícia por IA, remove duplicatas, decide o que publicar e gera os arquivos do site. Não há redação humana revisando cada notícia antes da publicação — a curadoria é por regras e por um modelo de linguagem, descritas abaixo.</p>
+  </div>
+
+  <div class="legal-block reveal">
+    <h2>Fontes de notícias</h2>
+    <p>Feeds RSS públicos, com prioridade editorial por confiabilidade da fonte (tiers A/B/C/D — agências e imprensa financeira estabelecida entram no tier mais alto). Alguns exemplos, sem esgotar a lista completa:</p>
+    <table class="legal-table">
+      <tr><th>Categoria</th><th>Fontes (exemplos)</th></tr>
+      <tr><td>Agências e imprensa financeira</td><td>Reuters, Bloomberg Markets, CNBC, WSJ Markets, MarketWatch, Nasdaq</td></tr>
+      <tr><td>Mercado financeiro Brasil</td><td>InfoMoney, Money Times, Investing.com Brasil, Seu Dinheiro, Suno Notícias</td></tr>
+      <tr><td>Empresas e negócios</td><td>Brazil Journal, Exame, Neofeed, Business Insider</td></tr>
+      <tr><td>Indicadores e governo</td><td>IBGE, Banco Central/Federal Reserve, Poder360 (recorte fiscal/econômico), SEC, BLS</td></tr>
+      <tr><td>Tecnologia</td><td>TechCrunch (recorte IA/Big Tech/venture capital)</td></tr>
+    </table>
+    <p>Cada card de notícia no site traz a fonte original e o link para a matéria completa — o Antes do Sino nunca reescreve a notícia como se fosse reportagem própria.</p>
+  </div>
+
+  <div class="legal-block reveal">
+    <h2>Classificação por IA — o que ela faz e o que ela NUNCA faz</h2>
+    <p>Cada notícia passa por um modelo de linguagem (Groq, modelos Llama) numa chamada só, que decide:</p>
+    <ul>
+      <li><strong>Relevância</strong> — descarta o que não é sobre mercado/economia/negócios (crime, celebridade, esporte etc.).</li>
+      <li><strong>Sentimento</strong> — BULLISH, BEARISH ou NEUTRAL, considerando contexto (ex: corte de custos costuma ser lido como positivo pro papel mesmo soando negativo à primeira vista).</li>
+      <li><strong>Score de materialidade</strong> — 0 a 10, o quanto aquela notícia específica importa pro mercado agora (não o tema em geral).</li>
+      <li><strong>Tradução</strong> — só quando a fonte é em inglês, tradução fiel do título/resumo original.</li>
+      <li><strong>Tipo de conteúdo e confiabilidade</strong> — fato, opinião, entrevista ou rumor (ver etiqueta "CONFIRMADO/RUMOR/OPINIÃO/ENTREVISTA" em cada notícia do Terminal).</li>
+    </ul>
+    <p><strong>O que a IA nunca faz:</strong> nunca gera número, cotação ou percentual do próprio conhecimento — todo dado numérico vem direto da fonte ou de uma API de mercado (Brapi/TwelveData), nunca do modelo de linguagem. Depois de gerada, toda tradução/síntese passa por uma checagem automática que compara cada número do texto contra o texto original; se algum número não bate, o trecho é descartado e o sistema cai num texto de fallback em vez de publicar algo não verificado.</p>
+  </div>
+
+  <div class="legal-block reveal">
+    <h2>Cotações e outros dados de mercado</h2>
+    <ul>
+      <li><strong>Brapi</strong> — cotações de ações e ativos da B3.</li>
+      <li><strong>TwelveData</strong> — câmbio e cripto.</li>
+      <li><strong>Widgets TradingView</strong> — embutidos diretamente no Terminal e no Radar; o dado é deles, atualizado por eles, fora do nosso pipeline (ver <a href="status.html">página de Status</a> pra frescor de cada fonte).</li>
+    </ul>
+    <p>Quando não existe uma fonte pública e gratuita confiável pra um indicador (ex: fluxo estrangeiro oficial da B3), ou usamos uma aproximação explícita na tela, ou simplesmente não mostramos o número — nunca inventamos um valor.</p>
+  </div>
+
+  <div class="legal-block reveal">
+    <h2>Deduplicação e frequência</h2>
+    <p>Notícias sobre o mesmo fato, mesmo vindas de fontes diferentes com fraseado próprio, são identificadas por similaridade textual e só a versão da fonte com maior prioridade editorial é publicada. Notícias de menor materialidade entram no Giro do Mercado (digest a cada 4h) em vez de virarem alertas individuais — o volume de publicação é limitado de propósito pra manter sinal alto e ruído baixo.</p>
+  </div>
+</section>
+
+<footer>
+  <span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>
+  <div style="display:flex;gap:16px;flex-wrap:wrap;">
+    <a href="calendario.html">Calendário</a>
+    <a href="mapa.html">Mapa de Calor</a>
+    <a href="quant.html">Quant</a>
+    <a href="resumo-semanal.html">Resumo semanal</a>
+    <a href="exposicao.html">Minha Exposição</a>
+    <a href="status.html">Status</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+  <div class="footer-legal" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
+    <a href="metodologia.html">Metodologia e fontes</a>
+    <a href="correcoes.html">Política de correção</a>
+    <a href="privacidade.html">Privacidade</a>
+    <a href="cookies.html">Cookies</a>
+    <a href="termos.html">Termos</a>
+    <a href="aviso-de-risco.html">Aviso de risco</a>
+  </div>
+</footer>
+
+<script>
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in-view'); });
+  }
+</script>
+<script src="theme.js"></script>
+
+</body>
+</html>

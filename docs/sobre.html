@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKJKKZB9QG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KKJKKZB9QG');
-</script>
+<script src="cookie-consent.js"></script>
 <script src="analytics.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -112,18 +106,26 @@
       </div>
       <div class="sobre-list-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
-        <p><strong>Notícias</strong>Feeds RSS públicos de veículos de imprensa e mercado. Cada card do feed traz a fonte original — clique pra ler a matéria completa lá.</p>
+        <p><strong>Notícias</strong>Feeds RSS públicos de veículos de imprensa e mercado (ex: InfoMoney, Reuters, Bloomberg Markets, CNBC, Investing.com Brasil, Money Times, Brazil Journal, Exame, entre outros). Cada card do feed traz a fonte original — clique pra ler a matéria completa lá.</p>
+      </div>
+      <div class="sobre-list-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h6M7 16h4"/></svg>
+        <p><strong>Cotações Brasil e câmbio</strong>Brapi (ações e ativos da B3) e TwelveData (câmbio e cripto), usados pelo Radar, Briefings e cálculo da Temperatura do Mercado — nunca as mesmas cotações do widget da TradingView acima, que é embutido à parte.</p>
+      </div>
+      <div class="sobre-list-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5v2a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5Z"/><path d="M6 10v1a6 6 0 0 0 12 0v-1M12 17v4M9 21h6"/></svg>
+        <p><strong>Classificação por IA</strong>Cada notícia passa por um modelo de linguagem (Groq/Llama) que calcula um score de materialidade (0–10), classifica o sentimento (alta/baixa/neutro) e, quando a fonte é em inglês, traduz título e resumo. Números, cotações e percentuais nunca são gerados pela IA — são sempre extraídos direto da fonte, e o texto gerado é checado contra a fonte original antes de publicar (qualquer número que não bata é descartado, nunca publicado). A IA nunca decide o que é fato, opinião ou rumor sem sinalizar isso: itens marcados como opinião, entrevista ou não confirmados levam etiqueta visível.</p>
       </div>
       <div class="sobre-list-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        <p><strong>Sem invenção de dado</strong>Quando não existe uma fonte confiável e gratuita pra um indicador (ex: fluxo estrangeiro oficial da B3), usamos uma aproximação e deixamos isso explícito na própria tela — nunca apresentamos um proxy como se fosse o dado oficial.</p>
+        <p><strong>Sem invenção de dado</strong>Quando não existe uma fonte confiável e gratuita pra um indicador (ex: fluxo estrangeiro oficial da B3), usamos uma aproximação e deixamos isso explícito na própria tela — nunca apresentamos um proxy como se fosse o dado oficial. Quando algo simplesmente não está disponível, mostramos isso com uma frase honesta, nunca um número inventado.</p>
       </div>
     </div>
   </div>
 
   <div class="sobre-block reveal">
     <h2>O que a Antes do Sino não é</h2>
-    <p>Não somos uma consultoria de investimentos e não damos recomendação de compra ou venda de nenhum ativo. Todo o conteúdo é informativo — a decisão é sempre sua.</p>
+    <p>Não somos uma consultoria de investimentos e não damos recomendação de compra ou venda de nenhum ativo. Todo o conteúdo é informativo e descritivo — a decisão é sempre sua. Veja também <a href="metodologia.html" style="color:var(--gold);">o detalhamento completo de fontes e classificação</a>, a <a href="correcoes.html" style="color:var(--gold);">política de correção</a> e o <a href="aviso-de-risco.html" style="color:var(--gold);">aviso de risco</a>.</p>
   </div>
 
   <div class="sobre-cta reveal">
@@ -141,6 +143,15 @@
     <a href="resumo-semanal.html">Resumo semanal</a>
     <a href="exposicao.html">Minha Exposição</a>
     <a href="status.html">Status</a>
+  </div>
+
+  <div class="footer-legal" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
+    <a href="metodologia.html">Metodologia e fontes</a>
+    <a href="correcoes.html">Política de correção</a>
+    <a href="privacidade.html">Privacidade</a>
+    <a href="cookies.html">Cookies</a>
+    <a href="termos.html">Termos</a>
+    <a href="aviso-de-risco.html">Aviso de risco</a>
   </div>
 </footer>
 

@@ -5,32 +5,29 @@
 <script src="analytics.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Status — Antes do Sino</title>
-<meta name="description" content="Frescor dos dados: quando cada parte do Antes do Sino foi atualizada pela última vez.">
+<title>Termos de uso — Antes do Sino</title>
+<meta name="description" content="Termos de uso do Antes do Sino: natureza informacional do produto, conteúdo de terceiros e limitação de responsabilidade.">
 <script>
-  // Aplica o tema salvo ANTES do CSS carregar, pra nao piscar o tema
-  // errado por uma fracao de segundo (script sincrono de proposito).
   (function(){try{var t=localStorage.getItem('antes-do-sino-tema');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();
 </script>
 <link rel="stylesheet" href="design-system.css">
 <style>
-  .status-section{max-width:760px;}
-  .status-section + .status-section{padding-top:0;}
-  .status-list{display:flex;flex-direction:column;gap:var(--sp-2);}
-  .status-card{
-    display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap;
-    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);
-    padding:var(--sp-4) var(--sp-5);
-  }
-  .status-card-info{display:flex;gap:var(--sp-3);align-items:flex-start;min-width:0;}
-  .status-card-info svg{width:18px;height:18px;color:var(--gold);flex-shrink:0;margin-top:2px;}
-  .status-card-info strong{display:block;color:var(--cream);font-size:0.95rem;margin-bottom:3px;}
-  .status-card-info p{color:var(--slate);font-size:0.85rem;line-height:1.5;margin:0;}
-  .status-note{color:var(--slate-dim);font-size:0.82rem;line-height:1.6;}
-  /* Badges de estado desta pagina agora usam .data-badge, compartilhado
-     via design-system.css (ver DESIGN_SYSTEM.md) - nao tem mais CSS
-     duplicado aqui. "ciclo" (pipeline principal) usa a variante
-     "neutral" (--info), ja que nao e nem "ao vivo" nem "proxy". */
+  .legal-section{max-width:760px;}
+  .legal-section + .legal-section{padding-top:0;}
+  .legal-updated{color:var(--slate-dim);font-size:0.82rem;margin-bottom:var(--sp-6);}
+  .legal-block{margin-bottom:var(--sp-7);}
+  .legal-block:last-child{margin-bottom:0;}
+  .legal-block h2{font-family:var(--font-display);font-weight:700;font-size:1.25rem;letter-spacing:-0.01em;margin-bottom:var(--sp-3);}
+  .legal-block h3{font-size:1rem;font-weight:700;color:var(--cream);margin:var(--sp-4) 0 var(--sp-2);}
+  .legal-block p{color:var(--slate);font-size:0.95rem;line-height:1.7;margin-bottom:var(--sp-3);}
+  .legal-block p:last-child{margin-bottom:0;}
+  .legal-block strong{color:var(--cream);}
+  .legal-block ul{color:var(--slate);font-size:0.95rem;line-height:1.7;margin:0 0 var(--sp-3);padding-left:1.2em;}
+  .legal-block li{margin-bottom:6px;}
+  .legal-block a{color:var(--gold);}
+  .legal-table{width:100%;border-collapse:collapse;font-size:0.88rem;margin-bottom:var(--sp-3);}
+  .legal-table th,.legal-table td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);color:var(--slate);}
+  .legal-table th{color:var(--cream);font-weight:600;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.3px;}
 </style>
 </head>
 <body>
@@ -76,51 +73,51 @@
 </div>
 
 <div class="hero reveal">
-  <span class="kicker">Transparência</span>
-  <h1>Frescor<br>dos dados.</h1>
-  <p>Quando cada parte do Antes do Sino foi atualizada pela última vez — pra você saber o que é tempo real, o que roda em ciclo e o que é por demanda antes de usar qualquer número numa decisão sensível ao tempo.</p>
+  <span class="kicker">Termos de uso</span>
+  <h1>As regras<br>do jogo.</h1>
+  <p>Curto e direto: o que você pode esperar do produto e o que o uso do site/Telegram implica.</p>
 </div>
 
-<section class="status-section">
-  <div class="status-list reveal">
-    <div class="status-card">
-      <div class="status-card-info">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        <div>
-          <strong>Notícias, cotações Brasil e insights de IA</strong>
-          <p>O pipeline principal roda tudo junto a cada ciclo — feed de notícias, cotações via Brapi e os insights automáticos da Home usam sempre o mesmo instantâneo.</p>
-        </div>
-      </div>
-      <span class="data-badge neutral" id="badge-ciclo"><span class="dot"></span><span id="texto-ciclo">Carregando…</span></span>
-    </div>
+<section class="legal-section">
+  <p class="legal-updated reveal">Última atualização: 29/09/2026</p>
 
-    <div class="status-card">
-      <div class="status-card-info">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
-        <div>
-          <strong>Cotações e gráficos (widgets TradingView)</strong>
-          <p>Não passam pelo nosso pipeline — são widgets públicos embutidos diretamente da TradingView, com o dado deles, atualizado por eles.</p>
-        </div>
-      </div>
-      <span class="data-badge live"><span class="dot"></span>AO VIVO</span>
-    </div>
-
+  <div class="legal-block reveal">
+    <h2>Natureza do produto</h2>
+    <p>O Antes do Sino é um produto informacional: agrega, traduz, resume e classifica notícias públicas de mercado financeiro. Ao usar o site ou o grupo/canal do Telegram, você concorda com estes termos.</p>
   </div>
 
-  <p class="status-note reveal">Esta página é atualizada automaticamente a cada ciclo do bot. Nenhum número aqui é uma garantia de disponibilidade — é só transparência sobre a cadência real de cada parte do produto.</p>
+  <div class="legal-block reveal">
+    <h2>Não é recomendação de investimento</h2>
+    <p>Nada publicado aqui — texto, classificação de sentimento, score de materialidade, gráfico ou widget — constitui recomendação de compra, venda ou manutenção de qualquer ativo. Ver <a href="aviso-de-risco.html">Aviso de risco</a> para o detalhamento completo.</p>
+  </div>
+
+  <div class="legal-block reveal">
+    <h2>Conteúdo de terceiros</h2>
+    <p>As notícias agregadas pertencem às fontes originais — sempre indicadas em cada item, com link para a matéria completa. O Antes do Sino não reivindica autoria sobre o conteúdo jornalístico de terceiros. Os widgets de cotação/gráfico são fornecidos pela TradingView e seguem os termos de uso dela, incluindo a atribuição visível exigida.</p>
+  </div>
+
+  <div class="legal-block reveal">
+    <h2>Disponibilidade e limitação de responsabilidade</h2>
+    <p>O serviço é fornecido "como está", sem garantia de disponibilidade contínua, ausência de erro ou atualidade perfeita de qualquer dado. O Antes do Sino não se responsabiliza por decisão financeira tomada com base no conteúdo publicado — ver <a href="aviso-de-risco.html">Aviso de risco</a>.</p>
+  </div>
+
+  <div class="legal-block reveal">
+    <h2>Mudanças nestes termos</h2>
+    <p>Este texto pode ser atualizado conforme o produto evolui. A data no topo desta página indica a última revisão.</p>
+  </div>
 </section>
 
 <footer>
   <span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>
-  <div style="display:flex;gap:16px;">
+  <div style="display:flex;gap:16px;flex-wrap:wrap;">
     <a href="calendario.html">Calendário</a>
     <a href="mapa.html">Mapa de Calor</a>
     <a href="quant.html">Quant</a>
     <a href="resumo-semanal.html">Resumo semanal</a>
     <a href="exposicao.html">Minha Exposição</a>
+    <a href="status.html">Status</a>
     <a href="sobre.html">Sobre</a>
   </div>
-
   <div class="footer-legal" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
     <a href="metodologia.html">Metodologia e fontes</a>
     <a href="correcoes.html">Política de correção</a>
@@ -134,24 +131,17 @@
 <script>
   if ('IntersectionObserver' in window) {
     var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('in-view'); observer.unobserve(entry.target); } });
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
     }, { threshold: 0.15 });
     document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
   } else {
     document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in-view'); });
   }
-
-  fetch('status.json').then(function (r) { return r.ok ? r.json() : {}; }).then(function (status) {
-    var textoCiclo = document.getElementById('texto-ciclo');
-    if (status.ultimo_ciclo) {
-      textoCiclo.textContent = 'Atualizado ' + status.ultimo_ciclo;
-    } else {
-      textoCiclo.textContent = 'Indisponível no momento';
-      document.getElementById('badge-ciclo').classList.replace('neutral', 'stale');
-    }
-  }).catch(function () {
-    document.getElementById('texto-ciclo').textContent = 'Indisponível no momento';
-  });
 </script>
 <script src="theme.js"></script>
 
