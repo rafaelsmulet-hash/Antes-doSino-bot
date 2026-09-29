@@ -1069,6 +1069,47 @@ def ask_groq(prompt, purpose="analysis"):
     return data["choices"][0]["message"]["content"].strip()
 
 
+def _extrair_digitos_numericos(texto):
+    """Extrai, de um texto, o 'fingerprint' (so os digitos, sem
+    pontuacao) de numeros que parecem dado de mercado: percentual,
+    valor monetario ou decimal - nao conta numero solto de 1-2 digitos
+    (esses costumam ser contagem/score/item de lista, nao cotacao ou
+    resultado, e gerariam falso positivo demais)."""
+    if not texto:
+        return set()
+    padroes = [
+        r"(?:R\$|US\$|\$)\s*\d[\d.,]*",             # valores monetarios
+        r"\d+(?:[.,]\d+)?\s*%",                      # percentuais
+        r"\b\d{1,3}(?:[.,]\d{3})+(?:[.,]\d+)?\b",   # numeros com separador de milhar
+        r"\b\d+[.,]\d+\b",                           # decimais simples (7,05 / 7.05)
+    ]
+    fingerprints = set()
+    for padrao in padroes:
+        for m in re.findall(padrao, texto):
+            digitos = re.sub(r"[^\d]", "", m)
+            if len(digitos) >= 2:
+                fingerprints.add(digitos)
+    return fingerprints
+
+
+def checar_numeros_inventados(texto_gerado, texto_fonte):
+    """Guard anti-alucinacao numerica: retorna a lista de numeros
+    (percentual/monetario/decimal) que aparecem em texto_gerado (saida
+    da IA) mas NAO aparecem em texto_fonte (o texto real usado como
+    entrada) - sinal de que a IA inventou ou distorceu um numero em vez
+    de so resumir/traduzir o que ja estava la.
+
+    Compara apenas a sequencia de digitos (fingerprint), ignorando
+    separador decimal/milhar - assim traducao pt-BR/en-US (virgula e
+    ponto trocados) nunca gera falso positivo, so numero que
+    genuinamente nao esta na fonte."""
+    numeros_gerados = _extrair_digitos_numericos(texto_gerado)
+    if not numeros_gerados:
+        return []
+    numeros_fonte = _extrair_digitos_numericos(texto_fonte)
+    return sorted(n for n in numeros_gerados if n not in numeros_fonte)
+
+
 VALUE_PROP_BLOCK = (
     "<section style='background:rgba(255,255,255,0.02);border-top:1px solid var(--line);'>"
     "<div class='section-head'>"
@@ -1270,16 +1311,24 @@ def classify_news_ai(title, body, translate=False):
             # Validacao defensiva - se a traducao vier vazia/invalida,
             # nao preenche o campo, e format_message cai de volta no
             # texto original em ingles em vez de mostrar algo quebrado.
+            fonte_original = title + " " + body_cleaned
+
             raw_translated_title = parsed.get("translated_title")
             if isinstance(raw_translated_title, str):
                 clean_title = sanitize_message_text(raw_translated_title)
-                if clean_title:
+                numeros_suspeitos = checar_numeros_inventados(clean_title, fonte_original)
+                if numeros_suspeitos:
+                    print("AVISO: numero(s) " + str(numeros_suspeitos) + " no titulo traduzido nao encontrados na fonte original - descartando traducao (fallback: titulo original).")
+                elif clean_title:
                     result["translated_title"] = clean_title
 
             raw_translated_summary = parsed.get("translated_summary")
             if isinstance(raw_translated_summary, str):
                 clean_summary = sanitize_message_text(raw_translated_summary)
-                if clean_summary:
+                numeros_suspeitos = checar_numeros_inventados(clean_summary, fonte_original)
+                if numeros_suspeitos:
+                    print("AVISO: numero(s) " + str(numeros_suspeitos) + " no resumo traduzido nao encontrados na fonte original - descartando traducao (fallback: resumo original).")
+                elif clean_summary:
                     result["translated_summary"] = clean_summary
 
         return result
@@ -1332,6 +1381,14 @@ def extract_earnings_details(title, body):
             "vs_esperado": sanitize_message_text(vs_esperado) if isinstance(vs_esperado, str) else "",
             "destaque": sanitize_message_text(destaque) if isinstance(destaque, str) else "",
         }
+
+        fonte_original = title + " " + body_cleaned
+        for campo in ("reportado", "vs_esperado", "destaque"):
+            numeros_suspeitos = checar_numeros_inventados(result[campo], fonte_original)
+            if numeros_suspeitos:
+                print("AVISO: numero(s) " + str(numeros_suspeitos) + " no campo '" + campo + "' de resultado trimestral nao encontrados na fonte - descartando campo (fallback seguro).")
+                result[campo] = ""
+
         if not result["reportado"] and not result["destaque"]:
             return None
         return result
@@ -3787,7 +3844,12 @@ def summarize_briefing_with_ai(entries, tipo):
 
     try:
         response = ask_groq(prompt, purpose="generation")
-        return response.strip().strip('"')
+        texto_final = response.strip().strip('"')
+        numeros_suspeitos = checar_numeros_inventados(texto_final, headlines_text)
+        if numeros_suspeitos:
+            print("AVISO: numero(s) " + str(numeros_suspeitos) + " na sintese do briefing nao encontrados nas manchetes - descartando sintese (fallback seguro).")
+            return "Sintese indisponivel no momento - confira as noticias completas no site."
+        return texto_final
     except Exception as e:
         print("Erro ao gerar sintese do briefing (Groq): " + str(e))
         return "Sintese indisponivel no momento - confira as noticias completas no site."
@@ -3859,6 +3921,13 @@ def build_sellside_synopsis(entries):
         }
         if not result["tese"]:
             return None
+
+        texto_completo = result["tese"] + " " + " ".join(result["catalisadores"]) + " " + " ".join(result["riscos"])
+        numeros_suspeitos = checar_numeros_inventados(texto_completo, headlines_text)
+        if numeros_suspeitos:
+            print("AVISO: numero(s) " + str(numeros_suspeitos) + " na sintese sell-side nao encontrados nas manchetes - descartando sintese (fallback seguro).")
+            return None
+
         return result
     except Exception as e:
         print("Erro ao gerar sintese sell-side do Fechamento B3 (Groq, fallback seguro): " + str(e))
