@@ -16228,7 +16228,7 @@
     "expires_at": "2026-09-29 11:56:45",
     "prompt_version": "v1.0",
     "status": "draft",
-    "expired_notice_sent": false,
+    "expired_notice_sent": true,
     "platform": "x",
     "publish_url": null,
     "publish_error": null,
@@ -16307,6 +16307,66 @@
       "comments": null
     },
     "design_folder": "docs/social_posts/2026-09-29_petrobras-cheniere-energy-anunciou-hoje-a-assinatura-deum-co",
+    "design_pregerado": true
+  },
+  {
+    "id": "20260929-120234-562",
+    "content_mode": "midday",
+    "content_template": "market_snapshot",
+    "headline": "Mercado ao meio-dia: Ibovespa -0.4% | Dólar -0.0% | Bitcoin +0.22%",
+    "instagram": {
+      "hook": "Mercado ao meio-dia: Ibovespa -0.4% | Dólar -0.0% | Bitcoin +0.22%",
+      "context": "Ibovespa -0.4% | Dólar -0.0% | Bitcoin +0.22%",
+      "why_it_matters": "",
+      "impact": "",
+      "watch_next": "",
+      "cta": "Acompanhe o mercado em tempo real no Antes do Sino."
+    },
+    "instagram_caption": "Mercado ao meio-dia: Ibovespa -0.4% | Dólar -0.0% | Bitcoin +0.22% Acompanhe o mercado em tempo real no Antes do Sino.",
+    "hashtags": [
+      "#AntesDoSino",
+      "#Mercado",
+      "#Bolsa",
+      "#Investimentos"
+    ],
+    "x": {
+      "post": "Mercado ao meio-dia: Ibovespa -0.4% | Dólar -0.0% | Bitcoin +0.22%"
+    },
+    "tiktok": {
+      "scenes": [],
+      "cta": ""
+    },
+    "editorial": {
+      "tipo_noticia": "Mercado",
+      "historia_principal": ""
+    },
+    "score": null,
+    "reason": [
+      "Snapshot de meio de pregão programado (12h00) - fallback sem IA"
+    ],
+    "priority": "medium",
+    "expires_at": "2026-09-29 15:00:00",
+    "prompt_version": "midday-template-v1.0",
+    "status": "draft",
+    "expired_notice_sent": false,
+    "platform": "x",
+    "publish_url": null,
+    "publish_error": null,
+    "history": [
+      {
+        "status": "draft",
+        "at": "2026-09-29 12:02:34",
+        "detalhe": "Conteúdo gerado"
+      }
+    ],
+    "date": "2026-09-29",
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "shares": null,
+      "comments": null
+    },
+    "design_folder": "docs/social_posts/2026-09-29_mercado-ao-meio-dia-ibovespa-0-4-dolar-0-0-bitcoin-0-22",
     "design_pregerado": true
   }
 ]
