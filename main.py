@@ -859,6 +859,40 @@ def fix_mojibake(text):
         return text
 
 
+def strip_markdown_artifacts(text):
+    """Remove marcador de formatacao (Markdown/wire-service) que vaza
+    pro titulo/resumo quando a fonte (RSS ou canal do Telegram
+    encaminhado) usa cabecalho/negrito/italico pra destacar o texto -
+    ex: '# Ibovespa e dolar hoje...', '*++ Trump diz...*'. So mexe no
+    INICIO/FIM da string (nunca no meio), e exige espaco logo depois do
+    marcador de cabecalho/abertura - assim nunca remove hashtag/
+    cashtag legitimo colado ao texto (ex: '#PETR4 dispara') nem
+    pontuacao de dentro da frase (ex: 'AT&T', 'rating BB-')."""
+    if not text:
+        return text
+    t = text.strip()
+    t = re.sub(r"^#{1,6}\s+", "", t)
+    t = re.sub(r"^[*_+]{1,4}\s+", "", t)
+    t = re.sub(r"(?<=\S)[*_]{1,2}$", "", t)
+    return t.strip()
+
+
+# Typos recorrentes confirmados na amostra real de fontes RSS (ex:
+# "Trasuries" em vez de "Treasuries", Investing.com Brasil) - lista
+# pequena e deliberadamente conservadora, so com erro ja confirmado;
+# corrige so a GRAFIA do termo, nunca reescreve ou completa sentido.
+TERMOS_COM_TYPO_CONHECIDO = {
+    "trasuries": "Treasuries",
+}
+
+
+def fix_known_term_typos(text):
+    if not text or not TERMOS_COM_TYPO_CONHECIDO:
+        return text
+    padrao = r"\b(" + "|".join(re.escape(k) for k in TERMOS_COM_TYPO_CONHECIDO) + r")\b"
+    return re.sub(padrao, lambda m: TERMOS_COM_TYPO_CONHECIDO[m.group(0).lower()], text, flags=re.IGNORECASE)
+
+
 def parece_truncado(text):
     """Detecta se um resumo JA CHEGA cortado da propria fonte (RSS),
     antes de qualquer truncamento nosso - reticencias no final, ou
@@ -927,6 +961,13 @@ def sanitize_message_text(text):
     # fix_mojibake) - se nao corrigir aqui, a palavra corrompida
     # sobreviveria intacta pra mensagem final.
     text = fix_mojibake(text)
+
+    # Remove cabecalho/negrito/italico de Markdown vazando da fonte
+    # (ex: '# Titulo', '*++ Texto*') e corrige typo conhecido de termo
+    # financeiro (ex: 'Trasuries' -> 'Treasuries') - ver
+    # strip_markdown_artifacts/fix_known_term_typos.
+    text = strip_markdown_artifacts(text)
+    text = fix_known_term_typos(text)
 
     # Remove fragmentos de JSON/markdown que eventualmente escapem do parse
     text = re.sub(r"```[a-zA-Z]*", "", text)
@@ -1556,7 +1597,13 @@ def format_message(source, entry, ai_result):
     if len(result) > 3900:
         result = smart_truncate(result, 3900)
 
-    final_body = summary_text if summary_text else title
+    # Nunca repete o titulo como se fosse resumo (PDF/pedido do
+    # usuario: "evite titulo e resumo repetidos") - quando nao ha
+    # resumo distinto de verdade, final_body fica vazio, e cada
+    # consumidor decide o fallback honesto (ver round_queue/portal_entries
+    # abaixo), em vez de fingir que ha um resumo quando so ha o titulo
+    # de novo.
+    final_body = summary_text
     return result, title, final_body, sentiment
 
 
@@ -4673,7 +4720,7 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                     if editorial_foundation is not None:
                         editorial_foundation.add_to_round_queue({
                             "title": final_title,
-                            "resumo": truncate_text_clean(final_body, GIRO_ITEM_MAX_CHARS) if final_body else final_title,
+                            "resumo": truncate_text_clean(final_body, GIRO_ITEM_MAX_CHARS) if final_body else "",
                             "hashtags": hashtags,
                             "source": source_for_message,
                             "score": canal_score,
@@ -5166,7 +5213,7 @@ def main():
                 if editorial_foundation is not None:
                     editorial_foundation.add_to_round_queue({
                         "title": final_title,
-                        "resumo": truncate_text_clean(final_body, GIRO_ITEM_MAX_CHARS) if final_body else final_title,
+                        "resumo": truncate_text_clean(final_body, GIRO_ITEM_MAX_CHARS) if final_body else "",
                         "hashtags": hashtags,
                         "source": source,
                         "score": shadow_score,
@@ -5214,7 +5261,7 @@ def main():
 
                 portal_entries.append({
                     "title": final_title,
-                    "body": truncate_text_clean(final_body, 200),
+                    "body": truncate_text_clean(final_body, 200) if final_body else "Confira mais detalhes no link abaixo.",
                     "source": source,
                     "sentiment": sentiment,
                     "link": entry.get("link", ""),
