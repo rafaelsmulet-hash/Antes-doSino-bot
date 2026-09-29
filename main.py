@@ -2198,6 +2198,18 @@ def build_weekly_summary_html(archive):
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         "<title>Resumo Semanal — Antes do Sino</title>"
         "<meta name='description' content='Como o mercado se moveu nos últimos dias e semanas: volume de notícias e proporção de alta, baixa e neutro.'>"
+        "<link rel='canonical' href='https://antesdosino.com.br/resumo-semanal.html'>"
+        "<meta property='og:type' content='website'>"
+        "<meta property='og:site_name' content='Antes do Sino'>"
+        "<meta property='og:url' content='https://antesdosino.com.br/resumo-semanal.html'>"
+        "<meta property='og:title' content='Resumo Semanal — Antes do Sino'>"
+        "<meta property='og:description' content='Como o mercado se moveu nos últimos dias e semanas: volume de notícias e proporção de alta, baixa e neutro.'>"
+        "<meta property='og:image' content='https://antesdosino.com.br/og-image.png'>"
+        "<meta property='og:locale' content='pt_BR'>"
+        "<meta name='twitter:card' content='summary_large_image'>"
+        "<meta name='twitter:title' content='Resumo Semanal — Antes do Sino'>"
+        "<meta name='twitter:description' content='Como o mercado se moveu nos últimos dias e semanas: volume de notícias e proporção de alta, baixa e neutro.'>"
+        "<meta name='twitter:image' content='https://antesdosino.com.br/og-image.png'>"
         "<script>"
         "(function(){try{var t=localStorage.getItem('antes-do-sino-tema');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();"
         "</script>"
@@ -3208,21 +3220,30 @@ def build_market_insights(intelligence):
     return {"home": home_insights}
 
 
+# Rotas estaticas reais do site (paginas navegaveis, com nav/footer) -
+# lista explicita em vez de escanear diretorio_docs: docs/ tambem tem
+# JSON de estado, dados-terminal.html/template.html (uso interno via
+# fetch, nunca uma pagina de verdade) e paginas orfas do antigo motor
+# social (premarket-hoje.html/fechamento-hoje.html) que nunca devem
+# entrar no sitemap. Path vazio "" = home (barra).
+SITEMAP_PAGINAS = [
+    "", "terminal.html", "calendario.html", "mapa.html", "quant.html",
+    "exposicao.html", "resumo-semanal.html", "sobre.html", "status.html",
+    "metodologia.html", "correcoes.html", "privacidade.html", "cookies.html",
+    "termos.html", "aviso-de-risco.html",
+]
+
+
 def gerar_sitemap_completo(diretorio_docs="docs"):
-    """Gera/atualiza o sitemap.xml com as rotas estaticas do site -
-    Radar de Abertura (home), Terminal, Calendario, Mapa de Calor,
-    Quant e Minha Exposicao."""
+    """Gera/atualiza o sitemap.xml com todas as paginas reais do site
+    (ver SITEMAP_PAGINAS) - roda a cada ciclo do bot (ver main()),
+    entao lastmod sempre reflete a execucao mais recente."""
     now_iso = datetime.now(BR_TZ).strftime("%Y-%m-%d")
     base_url = "https://antesdosino.com.br"
 
-    urls_xml = (
-        "  <url><loc>" + base_url + "/</loc><lastmod>" + now_iso + "</lastmod></url>\n"
-        "  <url><loc>" + base_url + "/terminal.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
-        "  <url><loc>" + base_url + "/calendario.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
-        "  <url><loc>" + base_url + "/mapa.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
-        "  <url><loc>" + base_url + "/quant.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
-        "  <url><loc>" + base_url + "/exposicao.html</loc><lastmod>" + now_iso + "</lastmod></url>\n"
-    )
+    urls_xml = ""
+    for pagina in SITEMAP_PAGINAS:
+        urls_xml += "  <url><loc>" + base_url + "/" + pagina + "</loc><lastmod>" + now_iso + "</lastmod></url>\n"
 
     sitemap_xml = (
         "<?xml version='1.0' encoding='UTF-8'?>\n"
@@ -3233,7 +3254,7 @@ def gerar_sitemap_completo(diretorio_docs="docs"):
 
     with open(diretorio_docs + "/sitemap.xml", "w", encoding="utf-8") as f:
         f.write(sitemap_xml)
-    print("sitemap.xml atualizado (escaneado a partir de " + diretorio_docs + ").")
+    print("sitemap.xml atualizado (" + str(len(SITEMAP_PAGINAS)) + " paginas).")
 
 
 THEME_PROFILES = [
@@ -5482,6 +5503,11 @@ def main():
         export_status_json()
     except Exception as e:
         print("Erro ao publicar status.json (isolado, nao afeta o fluxo principal): " + str(e))
+
+    try:
+        gerar_sitemap_completo()
+    except Exception as e:
+        print("Erro ao gerar sitemap.xml (isolado, nao afeta o fluxo principal): " + str(e))
 
     try:
         from social import content_engine
