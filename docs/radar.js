@@ -63,21 +63,26 @@
   // Radar. Simplificado de proposito (nao cobre feriados), mesmo
   // disclaimer ja usado em theme.js::statusMercado.
   // ---------------------------------------------------------------------
-  function statusB3Detalhado() {
+  function obterContextoHorario() {
     var partes = new Intl.DateTimeFormat("en-US", {
       timeZone: "America/Sao_Paulo", hour12: false,
       weekday: "short", hour: "2-digit", minute: "2-digit",
     }).formatToParts(new Date());
     var mapa = {};
     partes.forEach(function (p) { mapa[p.type] = p.value; });
-    var diaUtil = ["Mon", "Tue", "Wed", "Thu", "Fri"].indexOf(mapa.weekday) !== -1;
-    var minutos = parseInt(mapa.hour, 10) * 60 + parseInt(mapa.minute, 10);
+    return {
+      diaUtil: ["Mon", "Tue", "Wed", "Thu", "Fri"].indexOf(mapa.weekday) !== -1,
+      minutos: parseInt(mapa.hour, 10) * 60 + parseInt(mapa.minute, 10),
+    };
+  }
 
-    if (!diaUtil) return "B3 fechada";
-    if (minutos < 9 * 60 + 45) return "B3 fechada";
-    if (minutos < 10 * 60) return "Pré-abertura";
-    if (minutos < 17 * 60) return "Mercado aberto";
-    if (minutos < 18 * 60) return "Pós-mercado";
+  function statusB3Detalhado() {
+    var ctx = obterContextoHorario();
+    if (!ctx.diaUtil) return "B3 fechada";
+    if (ctx.minutos < 9 * 60 + 45) return "B3 fechada";
+    if (ctx.minutos < 10 * 60) return "Pré-abertura";
+    if (ctx.minutos < 17 * 60) return "Mercado aberto";
+    if (ctx.minutos < 18 * 60) return "Pós-mercado";
     return "B3 fechada";
   }
 
@@ -92,6 +97,58 @@
     }
     render();
     setInterval(render, 60000);
+  }
+
+  // ---------------------------------------------------------------------
+  // Mensagem principal do hero adaptada ao momento do dia (pedido do
+  // usuario: "modos por horario com mensagem principal adaptada ao
+  // momento, e promessa clara no topo") - reaproveita o mesmo
+  // obterContextoHorario() usado no status detalhado acima, nao
+  // duplica a logica de dia util/minutos.
+  // ---------------------------------------------------------------------
+  var MENSAGEM_POR_MOMENTO = {
+    pre_abertura: {
+      kicker: "Radar de abertura",
+      titulo: "O que pode mover o mercado hoje",
+      promessa: "Um briefing visual com mercados, notícias, agenda e ativos que merecem sua atenção antes da abertura.",
+    },
+    pregao: {
+      kicker: "Pregão em andamento",
+      titulo: "O que está movendo o mercado agora",
+      promessa: "Cotações ao vivo, notícias do dia e a leitura mais recente do apetite a risco — direto da sessão em andamento.",
+    },
+    pos_mercado: {
+      kicker: "Depois do fechamento",
+      titulo: "Como foi o pregão de hoje",
+      promessa: "O resumo do dia, o que ficou pra amanhã e a agenda da próxima sessão.",
+    },
+    fim_de_semana: {
+      kicker: "Fim de semana",
+      titulo: "O mercado não abre hoje",
+      promessa: "Confira o resumo da semana e o que fica pra segunda-feira, quando a B3 reabre.",
+    },
+  };
+
+  function modoDoMomento() {
+    var ctx = obterContextoHorario();
+    if (!ctx.diaUtil) return "fim_de_semana";
+    if (ctx.minutos < 10 * 60) return "pre_abertura";
+    if (ctx.minutos < 17 * 60) return "pregao";
+    return "pos_mercado";
+  }
+
+  function montarMensagemPrincipal() {
+    var hero = document.querySelector(".radar-hero");
+    if (!hero) return;
+    var kickerEl = hero.querySelector(".kicker");
+    var tituloEl = hero.querySelector("h1");
+    var promessaEl = hero.querySelector("p");
+    if (!kickerEl || !tituloEl || !promessaEl) return;
+    var msg = MENSAGEM_POR_MOMENTO[modoDoMomento()];
+    if (!msg) return;
+    kickerEl.textContent = msg.kicker;
+    tituloEl.textContent = msg.titulo;
+    promessaEl.textContent = msg.promessa;
   }
 
   // ---------------------------------------------------------------------
@@ -789,6 +846,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     inicializarMenuMobile();
     montarDataHora();
+    montarMensagemPrincipal();
     inicializarOnboarding();
     montarTemperatura();
     montarIndicadores();
