@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script src="cookie-consent.js"></script>
+<script src="analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Derivativos — Antes do Sino</title>
+<meta name="description" content="Simule trava de alta, trava de baixa, collar ou put protetora e veja o payoff no vencimento - com calendário dos próximos vencimentos de opções na B3.">
+<link rel="canonical" href="https://antesdosino.com.br/derivativos.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Antes do Sino">
+<meta property="og:url" content="https://antesdosino.com.br/derivativos.html">
+<meta property="og:title" content="Simulador de Derivativos — Antes do Sino">
+<meta property="og:description" content="Simule trava de alta, trava de baixa, collar ou put protetora e veja o payoff no vencimento - com calendário dos próximos vencimentos de opções na B3.">
+<meta property="og:image" content="https://antesdosino.com.br/og-image.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Simulador de Derivativos — Antes do Sino">
+<meta name="twitter:description" content="Simule trava de alta, trava de baixa, collar ou put protetora e veja o payoff no vencimento - com calendário dos próximos vencimentos de opções na B3.">
+<meta name="twitter:image" content="https://antesdosino.com.br/og-image.png">
+<script>
+  (function(){try{var t=localStorage.getItem('antes-do-sino-tema');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();
+</script>
+<link rel="stylesheet" href="design-system.css">
+<style>
+  .deriv-section{max-width:820px;}
+  .deriv-section + .deriv-section{padding-top:0;}
+  .deriv-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:var(--sp-3);}
+  .deriv-tab{
+    font-size:0.85rem;font-weight:600;padding:9px 18px;border-radius:var(--r-pill);
+    background:transparent;border:1px solid var(--line-strong);color:var(--slate);cursor:pointer;
+    transition:border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+  }
+  .deriv-tab.active{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
+  .deriv-tab:not(.active):hover{border-color:var(--gold);color:var(--cream);}
+  .deriv-descricao{color:var(--slate);font-size:0.92rem;line-height:1.6;margin-bottom:var(--sp-5);}
+  .deriv-form{background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--sp-6);}
+  .deriv-campos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--sp-4);margin-bottom:var(--sp-5);}
+  .deriv-campo label{display:block;font-size:0.82rem;color:var(--slate);margin-bottom:6px;}
+  .deriv-campo input{
+    width:100%;background:var(--surface-2);border:1px solid var(--line-strong);border-radius:var(--r-sm);
+    padding:10px 12px;color:var(--cream);font-family:var(--font-mono);font-size:0.92rem;
+  }
+  .deriv-campo input:focus-visible{outline:2px solid var(--gold);outline-offset:1px;}
+  .deriv-erro{color:var(--down);font-size:0.85rem;margin-top:var(--sp-3);}
+  .deriv-metricas{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--sp-3);margin-bottom:var(--sp-5);}
+  .deriv-metrica{
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-4);
+  }
+  .deriv-metrica span{display:block;font-size:0.72rem;color:var(--slate-dim);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:4px;}
+  .deriv-metrica strong{font-family:var(--font-mono);font-size:1.15rem;color:var(--cream);}
+  .deriv-metrica strong.up{color:var(--up);}
+  .deriv-metrica strong.down{color:var(--down);}
+  .deriv-grafico{background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--sp-5);margin-bottom:var(--sp-4);}
+  .deriv-grafico svg{width:100%;height:auto;}
+  .deriv-legenda{display:flex;gap:var(--sp-5);flex-wrap:wrap;font-size:0.82rem;color:var(--slate);margin-top:var(--sp-3);}
+  .deriv-legenda span{display:inline-flex;align-items:center;gap:6px;}
+  .deriv-legenda .dot{width:10px;height:10px;border-radius:3px;}
+  .deriv-disclaimer{font-size:0.82rem;color:var(--slate-dim);line-height:1.6;}
+  .deriv-vencimentos{display:flex;flex-direction:column;gap:var(--sp-2);}
+  .deriv-vencimento-item{
+    display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap;
+    background:var(--surface-1);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-3) var(--sp-4);
+  }
+  .deriv-vencimento-data{font-family:var(--font-mono);font-weight:600;color:var(--cream);}
+  .deriv-vencimento-dias{font-size:0.8rem;color:var(--slate-dim);}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="index.html" aria-label="Ir para o Radar de Abertura">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v2M8.5 20a3.5 3.5 0 0 0 7 0M5 17h14l-1.4-2.1A7 7 0 0 1 16.5 11V9a4.5 4.5 0 0 0-9 0v2a7 7 0 0 1-1.1 3.9L5 17Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Antes do Sino
+  </a>
+  <div class="nav-right">
+    <button class="theme-toggle" id="theme-toggle" type="button" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <a href="https://t.me/+TobMzw-WnQhmZmIx" class="nav-cta">Entrar no grupo grátis</a>
+  </div>
+</nav>
+<div class="sub-nav">
+  <a href="index.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0 7-7 7 7m-9-7v7m-7 0h18v9a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4H9v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z"/></svg>
+    Radar de Abertura
+  </a>
+  <a href="terminal.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>
+    Terminal
+  </a>
+  <a href="calendario.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+    Calendário
+  </a>
+  <a href="mapa.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    Mapa de Calor
+  </a>
+  <a href="quant.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+    Quant
+  </a>
+  <a href="exposicao.html" class="nav-links">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+    Minha Exposição
+  </a>
+</div>
+
+<div class="hero reveal">
+  <span class="kicker">Derivativos</span>
+  <h1>Simule uma estrutura<br>antes de montar.</h1>
+  <p>Trava de alta, trava de baixa, collar ou put protetora — veja o payoff no vencimento com os números que você informar. Ferramenta educacional: nunca é recomendação de investimento.</p>
+</div>
+
+<section class="deriv-section">
+  <div class="page-head reveal">
+    <span class="kicker">1. Escolha a estrutura</span>
+    <h2>Qual estrutura você quer simular?</h2>
+  </div>
+  <div class="deriv-tabs reveal" id="deriv-tabs" role="tablist" aria-label="Estrutura de opções">
+    <button class="deriv-tab active" data-estrutura="trava_alta" role="tab" aria-selected="true" type="button">Trava de Alta</button>
+    <button class="deriv-tab" data-estrutura="trava_baixa" role="tab" aria-selected="false" type="button">Trava de Baixa</button>
+    <button class="deriv-tab" data-estrutura="collar" role="tab" aria-selected="false" type="button">Collar</button>
+    <button class="deriv-tab" data-estrutura="put_protetora" role="tab" aria-selected="false" type="button">Put Protetora</button>
+  </div>
+  <p class="deriv-descricao reveal" id="deriv-descricao"></p>
+
+  <form class="deriv-form reveal" id="deriv-form">
+    <div class="deriv-campos" id="deriv-campos"></div>
+    <button type="submit" class="btn-primary">Calcular payoff</button>
+    <p class="deriv-erro" id="deriv-erro" hidden></p>
+  </form>
+</section>
+
+<section class="deriv-section" id="deriv-resultado-section" hidden aria-live="polite">
+  <div class="page-head reveal">
+    <span class="kicker">2. Resultado no vencimento</span>
+    <h2>Payoff da estrutura</h2>
+  </div>
+  <div class="deriv-metricas" id="deriv-metricas"></div>
+  <div class="deriv-grafico" id="deriv-grafico">
+    <div class="deriv-legenda">
+      <span><span class="dot" style="background:var(--up);opacity:0.5;"></span>Região de lucro</span>
+      <span><span class="dot" style="background:var(--down);opacity:0.5;"></span>Região de perda</span>
+    </div>
+  </div>
+  <p class="deriv-disclaimer">Simulação educacional com os números que você informou — não considera custos operacionais (corretagem, emolumentos, IR) nem confirma que esses strikes/prêmios existem de verdade no mercado agora. Não é recomendação de investimento.</p>
+</section>
+
+<section class="deriv-section">
+  <div class="page-head reveal">
+    <span class="kicker">Calendário</span>
+    <h2>Próximos vencimentos de opções</h2>
+    <p>Regra padrão do ciclo mensal da B3 (3ª sexta-feira do mês) — feriados podem deslocar a data exata; confirme sempre com sua corretora ou a B3 antes de operar.</p>
+  </div>
+  <div class="deriv-vencimentos reveal" id="deriv-vencimentos"></div>
+</section>
+
+<footer>
+  <span>&copy; Antes do Sino — dados públicos, não é recomendação de investimento.</span>
+  <div style="display:flex;gap:16px;flex-wrap:wrap;">
+    <a href="calendario.html">Calendário</a>
+    <a href="mapa.html">Mapa de Calor</a>
+    <a href="quant.html">Quant</a>
+    <a href="resumo-semanal.html">Resumo semanal</a>
+    <a href="exposicao.html">Minha Exposição</a>
+    <a href="status.html">Status</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+  <div class="footer-legal" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
+    <a href="metodologia.html">Metodologia e fontes</a>
+    <a href="correcoes.html">Política de correção</a>
+    <a href="privacidade.html">Privacidade</a>
+    <a href="cookies.html">Cookies</a>
+    <a href="termos.html">Termos</a>
+    <a href="aviso-de-risco.html">Aviso de risco</a>
+  </div>
+</footer>
+
+<script src="derivativos.js"></script>
+<script>
+  (function () {
+    "use strict";
+    var D = window.AntesDoSinoDerivativos;
+    var estruturaAtual = "trava_alta";
+
+    function montarCampos() {
+      var estrutura = D.ESTRUTURAS[estruturaAtual];
+      document.getElementById("deriv-descricao").textContent = estrutura.descricao;
+      var container = document.getElementById("deriv-campos");
+      container.innerHTML = estrutura.campos.map(function (campo) {
+        return (
+          '<div class="deriv-campo">' +
+          '<label for="campo-' + campo.id + '">' + campo.label + "</label>" +
+          '<input type="number" step="0.01" id="campo-' + campo.id + '" name="' + campo.id + '"' +
+          (campo.min0 ? ' min="0"' : "") + " required></div>"
+        );
+      }).join("");
+      document.getElementById("deriv-resultado-section").hidden = true;
+      document.getElementById("deriv-erro").hidden = true;
+    }
+
+    function inicializarTabs() {
+      var tabs = document.querySelectorAll(".deriv-tab");
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          tabs.forEach(function (t) {
+            t.classList.toggle("active", t === tab);
+            t.setAttribute("aria-selected", t === tab ? "true" : "false");
+          });
+          estruturaAtual = tab.getAttribute("data-estrutura");
+          montarCampos();
+        });
+      });
+    }
+
+    function lerParametros() {
+      var estrutura = D.ESTRUTURAS[estruturaAtual];
+      var params = {};
+      for (var i = 0; i < estrutura.campos.length; i++) {
+        var campo = estrutura.campos[i];
+        var input = document.getElementById("campo-" + campo.id);
+        var valor = input.value.trim() === "" ? null : parseFloat(input.value);
+        // O campo "preco atual" das travas e opcional (so pra marcar no
+        // grafico) - todos os outros campos sao obrigatorios pro calculo.
+        var opcional = estruturaAtual.indexOf("trava_") === 0 && campo.id === "precoAtual";
+        if (!opcional && (valor === null || isNaN(valor))) {
+          return { erro: "Preencha \"" + campo.label + "\" com um número válido." };
+        }
+        params[campo.id] = valor === null || isNaN(valor) ? undefined : valor;
+      }
+      return { params: params };
+    }
+
+    function formatarSinal(valor) {
+      return (valor >= 0 ? "+" : "") + D.formatarMoeda(valor);
+    }
+
+    function montarMetricas(metricas) {
+      var el = document.getElementById("deriv-metricas");
+      var lucroTexto = metricas.lucroIlimitado ? "Ilimitado (sobe com o preço)" : formatarSinal(metricas.lucroMaximo);
+      var perdaTexto = metricas.perdaIlimitada ? "Ilimitada (cai com o preço)" : formatarSinal(metricas.perdaMaxima);
+      var breakevenTexto = metricas.pontosDeEquilibrio.length
+        ? metricas.pontosDeEquilibrio.map(function (v) { return D.formatarMoeda(v); }).join(" e ")
+        : "Não há cruzamento com zero na faixa simulada";
+      el.innerHTML =
+        '<div class="deriv-metrica"><span>Lucro máximo</span><strong class="up">' + lucroTexto + "</strong></div>" +
+        '<div class="deriv-metrica"><span>Perda máxima</span><strong class="down">' + perdaTexto + "</strong></div>" +
+        '<div class="deriv-metrica"><span>Ponto(s) de equilíbrio</span><strong>' + breakevenTexto + "</strong></div>";
+    }
+
+    function inicializarForm() {
+      document.getElementById("deriv-form").addEventListener("submit", function (evento) {
+        evento.preventDefault();
+        var erroEl = document.getElementById("deriv-erro");
+        var leitura = lerParametros();
+        if (leitura.erro) {
+          erroEl.textContent = leitura.erro;
+          erroEl.hidden = false;
+          return;
+        }
+        erroEl.hidden = true;
+
+        var precoCentral = D.precoCentralPadrao(estruturaAtual, leitura.params);
+        var precoAtual = D.precoAtualDeParams(estruturaAtual, leitura.params);
+        var serie = D.calcularSerie(estruturaAtual, leitura.params, precoCentral);
+        var metricas = D.calcularMetricas(serie);
+
+        montarMetricas(metricas);
+        var graficoEl = document.getElementById("deriv-grafico");
+        var legenda = graficoEl.querySelector(".deriv-legenda");
+        graficoEl.innerHTML = D.construirSVGPayoff(serie, metricas, precoAtual);
+        graficoEl.appendChild(legenda);
+
+        document.getElementById("deriv-resultado-section").hidden = false;
+        document.getElementById("deriv-resultado-section").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+
+    function montarVencimentos() {
+      var lista = document.getElementById("deriv-vencimentos");
+      var hoje = new Date();
+      hoje.setHours(0, 0, 0, 0);
+      var vencimentos = D.proximosVencimentos(6);
+      lista.innerHTML = vencimentos.map(function (data) {
+        var dias = Math.round((data - hoje) / 86400000);
+        var dataTexto = data.toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" });
+        return (
+          '<div class="deriv-vencimento-item">' +
+          '<span class="deriv-vencimento-data">' + dataTexto + "</span>" +
+          '<span class="deriv-vencimento-dias">' + (dias === 0 ? "Hoje" : "Em " + dias + " dias") + "</span>" +
+          "</div>"
+        );
+      }).join("");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      montarCampos();
+      inicializarTabs();
+      inicializarForm();
+      montarVencimentos();
+
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) { entry.target.classList.add("in-view"); observer.unobserve(entry.target); }
+          });
+        }, { threshold: 0.15 });
+        document.querySelectorAll(".reveal").forEach(function (el) { observer.observe(el); });
+      } else {
+        document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in-view"); });
+      }
+    });
+  })();
+</script>
+<script src="theme.js"></script>
+
+</body>
+</html>

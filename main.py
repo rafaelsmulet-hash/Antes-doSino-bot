@@ -2343,6 +2343,7 @@ def build_weekly_summary_html(archive):
         "<a href='calendario.html'>Calendário</a>"
         "<a href='mapa.html'>Mapa de Calor</a>"
         "<a href='quant.html'>Quant</a>"
+        "<a href='derivativos.html'>Derivativos</a>"
         "<a href='exposicao.html'>Minha Exposição</a>"
         "<a href='status.html'>Status</a>"
         "<a href='sobre.html'>Sobre</a>"
@@ -3283,7 +3284,7 @@ SITEMAP_PAGINAS = [
     "", "terminal.html", "calendario.html", "mapa.html", "quant.html",
     "exposicao.html", "resumo-semanal.html", "sobre.html", "status.html",
     "metodologia.html", "correcoes.html", "privacidade.html", "cookies.html",
-    "termos.html", "aviso-de-risco.html",
+    "termos.html", "aviso-de-risco.html", "derivativos.html",
 ]
 
 
