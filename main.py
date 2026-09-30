@@ -4948,6 +4948,89 @@ def save_portal_history(entries):
         json.dump(trimmed, f, ensure_ascii=False)
 
 
+FEED_JSON_DIR = "docs/feed"
+FEED_JSON_ITENS_POR_PAGINA = 30
+
+
+def export_feed_json(entries):
+    """Feed de noticias em JSON paginado - pedido do usuario pra
+    substituir o antigo bloco de cards HTML embutido em
+    dados-terminal.html (~285KB de markup repetitivo pra ate 150
+    itens). Mesmos campos que o card HTML computava (categoria,
+    etiqueta confirmado/rumor/opiniao, ativos/setores citados via
+    classify_news_category/editorial_tag_for_entry), so serializados
+    como dado estruturado em vez de markup - MUITO menor pro mesmo
+    volume de informacao, e sem precisar de DOMParser no cliente pra
+    extrair campo por campo de dentro de <span>/<div>.
+
+    Continua ate 150 itens (entries e all_portal_entries, hoje + ate
+    72h de historico) pelo mesmo motivo de antes: e a unica fonte que
+    o Ctrl+K e o "Contexto do Ativo" do Terminal usam pra achar
+    mencao a um ticker - um teto menor fazia a busca por ativo pouco
+    citado recentemente sempre voltar vazia.
+
+    Paginas de FEED_JSON_ITENS_POR_PAGINA itens (30) + um manifesto
+    com o total - quem consome busca a 1a pagina pro render inicial
+    rapido (nao precisa esperar o universo inteiro) e o resto em
+    segundo plano quando precisar buscar em tudo (ver
+    docs/feed-loader.js, script compartilhado por
+    terminal.js/radar.js/exposicao.js)."""
+    def sentiment_class(s):
+        if s == "BULLISH":
+            return "alta", "ALTA"
+        if s == "BEARISH":
+            return "baixa", "BAIXA"
+        return "info", "INFO"
+
+    itens = []
+    for e in entries[:150]:
+        cls, label = sentiment_class(e["sentiment"])
+        cat_slug, cat_label = classify_news_category(e)
+        etq_slug, etq_label = editorial_tag_for_entry(e)
+        itens.append({
+            "titulo": e["title"],
+            "resumo": e["body"],
+            "fonte": e["source"],
+            "horario": e["time"],
+            "data": e.get("date", ""),
+            "link": e.get("link", "#") or "#",
+            "sentimento_slug": cls,
+            "sentimento_label": label,
+            "categoria_slug": cat_slug,
+            "categoria_label": cat_label,
+            "etiqueta_slug": etq_slug,
+            "etiqueta_label": etq_label,
+            "ativos": e.get("hashtags") or [],
+            "setores": e.get("setores") or [],
+        })
+
+    os.makedirs(FEED_JSON_DIR, exist_ok=True)
+
+    total_paginas = (len(itens) + FEED_JSON_ITENS_POR_PAGINA - 1) // FEED_JSON_ITENS_POR_PAGINA if itens else 0
+
+    # Remove pagina obsoleta (ex: o feed encolheu e sobrou pagina-6.json
+    # de um ciclo anterior com mais itens) - nunca deixa lixo que um
+    # cliente poderia buscar por engano e receber dado velho.
+    for nome in os.listdir(FEED_JSON_DIR):
+        m = re.match(r"^pagina-(\d+)\.json$", nome)
+        if m and int(m.group(1)) > total_paginas:
+            os.remove(os.path.join(FEED_JSON_DIR, nome))
+
+    for i in range(total_paginas):
+        pagina_itens = itens[i * FEED_JSON_ITENS_POR_PAGINA:(i + 1) * FEED_JSON_ITENS_POR_PAGINA]
+        with open(os.path.join(FEED_JSON_DIR, "pagina-" + str(i + 1) + ".json"), "w", encoding="utf-8") as f:
+            json.dump(pagina_itens, f, ensure_ascii=False)
+
+    manifesto = {
+        "total_itens": len(itens),
+        "paginas": total_paginas,
+        "itens_por_pagina": FEED_JSON_ITENS_POR_PAGINA,
+        "gerado_em": datetime.now(BR_TZ).strftime("%Y-%m-%d %H:%M"),
+    }
+    with open(os.path.join(FEED_JSON_DIR, "manifesto.json"), "w", encoding="utf-8") as f:
+        json.dump(manifesto, f, ensure_ascii=False)
+
+
 def generate_portal(entries, entries_today=None, template_path="docs/template.html", output_path="docs/dados-terminal.html", home_insights=None, market_snapshot=None):
     """Le o template.html, substitui os placeholders de ticker e feed
     pelos dados reais mais recentes, e salva em output_path. A chamada
@@ -4969,58 +5052,18 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
             return "baixa", "BAIXA"
         return "info", "INFO"
 
-    # entries aqui e all_portal_entries (hoje + ate 72h de historico,
-    # ver save_portal_history) - 12 cards era pouco demais: como este
-    # feed-grid e a UNICA fonte de noticias que o Ctrl+K e o "Contexto
-    # do Ativo" do Terminal usam pra achar mencao a um ticker
-    # (terminal.js::TODAS_NOTICIAS/abrirContextoAtivo), so os ativos
-    # que estavam entre as ~12 manchetes mais recentes apareciam -
-    # pesquisar qualquer outro ativo sempre voltava "nenhuma noticia
-    # relacionada", mesmo quando o feed completo tinha materia sobre
-    # ele. dados-terminal.html nao e uma pagina navegavel (so
-    # fetch() interno), entao nao ha custo de UX em mostrar mais.
-    cards_html = ""
-    for e in entries[:150]:
-        cls, label = sentiment_class(e["sentiment"])
-        cat_slug, cat_label = classify_news_category(e)
-        etq_slug, etq_label = editorial_tag_for_entry(e)
-        link = e.get("link", "#") or "#"
+    # O feed de noticias (ate 150 itens - ver comentario historico em
+    # export_feed_json) saia embutido como HTML repetitivo direto no
+    # <!-- FEED_CARDS_START/END --> deste template (~285KB pra 150
+    # cards) - agora vira JSON paginado em docs/feed/ (pedido do
+    # usuario), lido pelo Terminal/Radar/Minha Exposicao via
+    # docs/feed-loader.js em vez de fetch+DOMParser do HTML inteiro.
+    # A secao <section id="feed"> do template.html fica com o exemplo
+    # estatico original, nunca mais substituida - dados-terminal.html
+    # continua existindo so pelas outras secoes (cockpit/sinais/
+    # inteligencia/agenda/since-visit).
+    export_feed_json(entries)
 
-        # Relacao neutra noticia/ativo/setor (pedido do usuario) - so
-        # descreve o que a noticia menciona, nunca "compre"/"venda".
-        # Ausente pra entry historico (persistido antes deste campo
-        # existir) - card so nao mostra a linha, nunca inventa relacao.
-        relacoes_html = ""
-        hashtags_e = e.get("hashtags") or []
-        setores_e = e.get("setores") or []
-        if hashtags_e or setores_e:
-            partes_relacao = ""
-            if hashtags_e:
-                partes_relacao += "".join(
-                    '<span class="tag-ativo">#' + html_module.escape(h) + "</span>" for h in hashtags_e
-                )
-            if setores_e:
-                partes_relacao += "".join(
-                    '<span class="tag-setor">' + html_module.escape(s) + "</span>" for s in setores_e
-                )
-            relacoes_html = '<div class="card-relacoes">' + partes_relacao + "</div>"
-
-        cards_html += (
-            '<div class="card" data-categoria="' + cat_slug + '">'
-            '<div class="card-meta"><span class="badge ' + cls + '">' + label + "</span>"
-            '<span class="tag-categoria cat-' + cat_slug + '">' + cat_label + "</span>"
-            '<span class="tag-etiqueta etq-' + etq_slug + '">' + etq_label + "</span>"
-            '<span class="src">' + html_module.escape(e["source"]) + "</span>"
-            '<span class="time">' + e["time"] + "</span></div>"
-            "<h3>" + html_module.escape(e["title"]) + "</h3>"
-            "<p>" + html_module.escape(e["body"]) + "</p>"
-            + relacoes_html +
-            '<a href="' + link + '" class="read" target="_blank">Leia mais &rarr;</a>'
-            "</div>\n"
-        )
-
-    start_marker_c = "<!-- FEED_CARDS_START -->"
-    end_marker_c = "<!-- FEED_CARDS_END -->"
     start_marker_k = "<!-- COCKPIT_START -->"
     end_marker_k = "<!-- COCKPIT_END -->"
     start_marker_s = "<!-- SIGNALS_START -->"
@@ -5034,11 +5077,6 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
 
     entries_for_today = entries_today if entries_today is not None else []
     clusters = compute_news_clusters(entries_for_today)
-
-    if start_marker_c in template and end_marker_c in template:
-        before = template.split(start_marker_c)[0]
-        after = template.split(end_marker_c)[1]
-        template = before + start_marker_c + "\n" + cards_html + end_marker_c + after
 
     if start_marker_k in template and end_marker_k in template:
         cockpit_html = build_cockpit_html(entries, entries_today, market_snapshot)

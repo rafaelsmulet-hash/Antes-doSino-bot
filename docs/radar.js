@@ -418,71 +418,77 @@
 
   var TODAS_NOTICIAS_RADAR = [];
 
-  function carregarNoticias() {
-    fetchComTimeout("dados-terminal.html", 10000)
-      .then(function (resp) { return resp.ok ? resp.text() : ""; })
-      .then(function (html) {
-        if (!html) throw new Error("vazio");
-        var doc = new DOMParser().parseFromString(html, "text/html");
-        var cards = doc.querySelectorAll("#feed-grid .card");
-        var vistos = {};
-        var itens = [];
+  function processarItensDoFeed(itensDoFeed) {
+    var vistos = {};
+    var itens = [];
 
-        cards.forEach(function (card) {
-          var categoria = card.getAttribute("data-categoria") || "mercados";
-          var secao = CATEGORIA_PARA_SECAO.hasOwnProperty(categoria) ? CATEGORIA_PARA_SECAO[categoria] : "mercados";
-          if (!secao) return; // educacional etc. - fora do Radar
+    itensDoFeed.forEach(function (item) {
+      var categoria = item.categoria_slug || "mercados";
+      var secao = CATEGORIA_PARA_SECAO.hasOwnProperty(categoria) ? CATEGORIA_PARA_SECAO[categoria] : "mercados";
+      if (!secao) return; // educacional etc. - fora do Radar
 
-          var tituloEl = card.querySelector("h3");
-          var resumoEl = card.querySelector("p");
-          var fonteEl = card.querySelector(".src");
-          var horaEl = card.querySelector(".time");
-          var linkEl = card.querySelector("a.read");
-          var etiquetaEl = card.querySelector(".tag-etiqueta");
-          // Relacao neutra noticia/ativo/setor (pedido do usuario) -
-          // pode ter varios de cada, ao contrario da etiqueta (so 1).
-          var ativosEls = card.querySelectorAll(".tag-ativo");
-          var setoresEls = card.querySelectorAll(".tag-setor");
+      var titulo = item.titulo || "";
+      if (!titulo) return;
+      var assinatura = assinaturaTitulo(titulo);
+      if (vistos[assinatura]) return; // duplicata (mesmo fato, outra fonte)
+      vistos[assinatura] = true;
 
-          var titulo = tituloEl ? tituloEl.textContent.trim() : "";
-          if (!titulo) return;
-          var assinatura = assinaturaTitulo(titulo);
-          if (vistos[assinatura]) return; // duplicata (mesmo fato, outra fonte)
-          vistos[assinatura] = true;
-
-          itens.push({
-            titulo: titulo,
-            resumo: resumoEl ? resumoEl.textContent.trim() : "",
-            fonte: fonteEl ? fonteEl.textContent.trim() : "",
-            hora: horaEl ? horaEl.textContent.trim() : "",
-            href: linkEl ? linkEl.getAttribute("href") : "#",
-            categoria: categoria,
-            secao: secao,
-            relevancia: CATEGORIA_PARA_RELEVANCIA[categoria] || "monitorar",
-            ingles: pareceIngles(titulo),
-            etqSlug: etiquetaEl ? etiquetaEl.className.replace("tag-etiqueta", "").replace("etq-", "").trim() : "confirmado",
-            etqTexto: etiquetaEl ? etiquetaEl.textContent.trim() : "CONFIRMADO",
-            ativos: Array.prototype.map.call(ativosEls, function (el) { return el.textContent.trim(); }),
-            setores: Array.prototype.map.call(setoresEls, function (el) { return el.textContent.trim(); }),
-          });
-        });
-
-        TODAS_NOTICIAS_RADAR = itens;
-        renderizarNoticias("todas");
-        montarResumo60(itens);
-      })
-      .catch(function (error) {
-        var grid = document.getElementById("noticias-grid");
-        if (grid) {
-          grid.innerHTML =
-            '<div class="noticias-vazio">' + escapeHtml(mensagemDeErroFetch(error, "as notícias")) +
-            '<button type="button" class="widget-retry-btn" id="noticias-retry" style="margin-left:8px;">Tentar novamente</button></div>';
-          var botao = document.getElementById("noticias-retry");
-          if (botao) botao.addEventListener("click", carregarNoticias);
-        }
-        var resumo = document.getElementById("resumo60-list");
-        if (resumo) resumo.innerHTML = '<div class="resumo60-item"><span class="rotulo">Indisponível</span><p>Não foi possível montar o resumo agora - as notícias não carregaram.</p></div>';
+      itens.push({
+        titulo: titulo,
+        resumo: item.resumo || "",
+        fonte: item.fonte || "",
+        hora: item.horario || "",
+        href: item.link || "#",
+        categoria: categoria,
+        secao: secao,
+        relevancia: CATEGORIA_PARA_RELEVANCIA[categoria] || "monitorar",
+        ingles: pareceIngles(titulo),
+        etqSlug: item.etiqueta_slug || "confirmado",
+        etqTexto: item.etiqueta_label || "CONFIRMADO",
+        ativos: item.ativos || [],
+        setores: item.setores || [],
       });
+    });
+
+    TODAS_NOTICIAS_RADAR = itens;
+    renderizarNoticias("todas");
+    montarResumo60(itens);
+  }
+
+  function montarErroNoticias(error) {
+    var grid = document.getElementById("noticias-grid");
+    if (grid) {
+      grid.innerHTML =
+        '<div class="noticias-vazio">' + escapeHtml(mensagemDeErroFetch(error, "as notícias")) +
+        '<button type="button" class="widget-retry-btn" id="noticias-retry" style="margin-left:8px;">Tentar novamente</button></div>';
+      var botao = document.getElementById("noticias-retry");
+      if (botao) botao.addEventListener("click", carregarNoticias);
+    }
+    var resumo = document.getElementById("resumo60-list");
+    if (resumo) resumo.innerHTML = '<div class="resumo60-item"><span class="rotulo">Indisponível</span><p>Não foi possível montar o resumo agora - as notícias não carregaram.</p></div>';
+  }
+
+  function carregarNoticias() {
+    // A home so mostra uma curadoria (12 itens no maximo, ver
+    // renderizarNoticias) - a 1a pagina do feed (30 itens, ver
+    // FEED_JSON_ITENS_POR_PAGINA em main.py) ja e mais que suficiente,
+    // entao processa so ela e ignora as paginas seguintes que chegam
+    // em segundo plano (usadas pelo Terminal/Minha Exposicao, que
+    // precisam do universo completo pra busca).
+    var jaProcessou = false;
+    window.AntesDoSinoFeed.carregarFeedPaginado(
+      function (itensDaPagina, numeroPagina, totalPaginas, todosAteAgora) {
+        if (jaProcessou) return;
+        jaProcessou = true;
+        processarItensDoFeed(todosAteAgora);
+      },
+      function (todosOsItens) {
+        if (jaProcessou) return;
+        jaProcessou = true;
+        processarItensDoFeed(todosOsItens);
+      },
+      montarErroNoticias
+    );
   }
 
   function renderizarNoticias(filtroSecao) {

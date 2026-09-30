@@ -685,77 +685,81 @@
       });
   }
 
-  function carregarDadosDoPortal() {
-    fetchComTimeout("dados-terminal.html", 10000)
-      .then(function (resp) {
-        if (!resp.ok) throw new Error("HTTP " + resp.status);
-        return resp.text();
-      })
-      .then(function (html) {
-        var doc = new DOMParser().parseFromString(html, "text/html");
-        popularFeed(doc);
-      })
-      .catch(function (e) {
-        montarFeedIndisponivel(e);
-        console.log("Terminal: falha ao carregar dados do portal - " + e);
-      });
-  }
-
   // Guarda o feed completo (nao so os 20 exibidos na coluna lateral)
   // pra busca universal (Ctrl+K) conseguir filtrar noticias por ticker
-  // ou palavra-chave sem precisar buscar dados-terminal.html de novo.
+  // ou palavra-chave sem precisar buscar o feed de novo. Atualizado a
+  // cada pagina que chega (ver carregarDadosDoPortal) - fica completa
+  // so quando window.AntesDoSinoFeed::carregarFeedPaginado termina de
+  // buscar todas as paginas.
   var TODAS_NOTICIAS = [];
 
-  function popularFeed(doc) {
-    var cards = doc.querySelectorAll("#feed-grid .card");
+  function atualizarTodasNoticias(itensDoFeed) {
+    TODAS_NOTICIAS = itensDoFeed.map(function (item) {
+      return { titulo: item.titulo, fonte: item.fonte, href: item.link };
+    });
+  }
+
+  function carregarDadosDoPortal() {
+    var jaRenderizouSidebar = false;
+    window.AntesDoSinoFeed.carregarFeedPaginado(
+      function (itensDaPagina, numeroPagina, totalPaginas, todosAteAgora) {
+        atualizarTodasNoticias(todosAteAgora);
+        if (!jaRenderizouSidebar) {
+          // A 1a pagina (30 itens, ver FEED_JSON_ITENS_POR_PAGINA em
+          // main.py) ja cobre os 20 exibidos na coluna lateral -
+          // renderiza so uma vez aqui, pra nao ficar re-desenhando o
+          // DOM (e perdendo o accordion aberto do usuario) a cada
+          // pagina que chega em segundo plano.
+          jaRenderizouSidebar = true;
+          popularFeed(todosAteAgora);
+        }
+      },
+      function (todosOsItens) {
+        atualizarTodasNoticias(todosOsItens);
+        if (!jaRenderizouSidebar) {
+          jaRenderizouSidebar = true;
+          popularFeed(todosOsItens);
+        }
+      },
+      function (erro) {
+        montarFeedIndisponivel(erro);
+        console.log("Terminal: falha ao carregar o feed - " + erro);
+      }
+    );
+  }
+
+  function popularFeed(todosOsItens) {
     var body = document.getElementById("feed-body");
-    if (!cards || cards.length === 0) {
+    if (!body) return;
+    if (!todosOsItens || todosOsItens.length === 0) {
       body.innerHTML = '<div class="feed-empty">Sem notícias no momento.</div>';
-      TODAS_NOTICIAS = [];
       return;
     }
 
-    var todas = [];
-    var itens = [];
     // limiteSidebar so vale pra coluna visivel do feed (Alerta
     // principal/Destaques/Radar) - continua em 20, um numero razoavel
     // pra lista de verdade na tela. TODAS_NOTICIAS (busca do Ctrl+K e
-    // "Contexto do Ativo") passa por TODOS os cards que o
-    // dados-terminal.html mandou (ate 150, ver main.py::generate_portal),
-    // sem recortar de novo aqui - antes os dois usavam o mesmo limite
-    // de 20, entao pesquisar qualquer ativo que nao estivesse entre as
-    // ~20 manchetes mais recentes sempre voltava "nenhuma noticia
-    // relacionada".
+    // "Contexto do Ativo") e atualizada a parte (ver
+    // atualizarTodasNoticias), com TODOS os itens que o feed paginado
+    // mandar (ate 150, ver main.py::export_feed_json) - antes os dois
+    // usavam o mesmo limite de 20, entao pesquisar qualquer ativo que
+    // nao estivesse entre as ~20 manchetes mais recentes sempre
+    // voltava "nenhuma noticia relacionada".
     var limiteSidebar = 20;
-    for (var i = 0; i < cards.length; i++) {
-      var card = cards[i];
-      var badge = card.querySelector(".badge");
-      var categoria = card.querySelector(".tag-categoria");
-      var etiqueta = card.querySelector(".tag-etiqueta");
-      var titulo = card.querySelector("h3");
-      var resumo = card.querySelector("p");
-      var fonte = card.querySelector(".src");
-      var link = card.querySelector("a.read");
-
-      var badgeClasse = badge ? badge.className.replace("badge", "").trim() : "info";
-      var badgeTexto = badge ? badge.textContent.trim() : "INFO";
-      var catSlug = card.getAttribute("data-categoria") || "";
-      var catTexto = categoria ? categoria.textContent.trim() : "";
-      // Etiqueta confirmado/rumor/opiniao/entrevista por noticia -
-      // mesmo padrao da tag de categoria acima (classe carrega o
-      // slug, ex: "tag-etiqueta etq-rumor").
-      var etqSlug = etiqueta ? etiqueta.className.replace("tag-etiqueta", "").replace("etq-", "").trim() : "";
-      var etqTexto = etiqueta ? etiqueta.textContent.trim() : "";
-      var tituloTexto = titulo ? titulo.textContent.trim() : "";
-      var resumoTexto = resumo ? resumo.textContent.trim() : "";
-      var fonteTexto = fonte ? fonte.textContent.trim() : "";
-      var href = link ? link.getAttribute("href") : "#";
-
-      todas.push({ titulo: tituloTexto, fonte: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto });
-      if (i < limiteSidebar) {
-        itens.push({ tituloTexto: tituloTexto, resumoTexto: resumoTexto, fonteTexto: fonteTexto, href: href, badgeClasse: badgeClasse, badgeTexto: badgeTexto, catSlug: catSlug, catTexto: catTexto, etqSlug: etqSlug, etqTexto: etqTexto });
-      }
-    }
+    var itens = todosOsItens.slice(0, limiteSidebar).map(function (item) {
+      return {
+        tituloTexto: item.titulo,
+        resumoTexto: item.resumo,
+        fonteTexto: item.fonte,
+        href: item.link,
+        badgeClasse: item.sentimento_slug,
+        badgeTexto: item.sentimento_label,
+        catSlug: item.categoria_slug,
+        catTexto: item.categoria_label,
+        etqSlug: item.etiqueta_slug,
+        etqTexto: item.etiqueta_label,
+      };
+    });
 
     // Hierarquia editorial: o 1o item vira "alerta principal" (maior,
     // resumo sempre visivel), os proximos 4 ficam como "destaques"
@@ -802,7 +806,6 @@
     }
 
     body.innerHTML = html || '<div class="feed-empty">Sem notícias no momento.</div>';
-    TODAS_NOTICIAS = todas;
   }
 
   // Leitor inline: clicar no titulo expande o resumo (ja vem no card

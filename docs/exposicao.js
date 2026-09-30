@@ -329,30 +329,27 @@
   // ---------------------------------------------------------------------
 
   function carregarNoticias() {
-    fetch("dados-terminal.html")
-      .then(function (resp) { return resp.ok ? resp.text() : ""; })
-      .then(function (html) {
-        if (!html) return;
-        var doc = new DOMParser().parseFromString(html, "text/html");
-        var cards = doc.querySelectorAll("#feed-grid .card");
-        var todas = [];
-        cards.forEach(function (card) {
-          var titulo = card.querySelector("h3");
-          var fonte = card.querySelector(".src");
-          var link = card.querySelector("a.read");
-          todas.push({
-            titulo: titulo ? titulo.textContent.trim() : "",
-            fonte: fonte ? fonte.textContent.trim() : "",
-            href: link ? link.getAttribute("href") : "#",
-          });
+    // Precisa do universo completo (nao so a 1a pagina) pra correlacionar
+    // qualquer ativo salvo com noticia que o mencione, mesmo uma nao tao
+    // recente - so processa quando window.AntesDoSinoFeed termina TODAS
+    // as paginas (ver docs/feed-loader.js).
+    window.AntesDoSinoFeed.carregarFeedPaginado(
+      null,
+      function (todosOsItens) {
+        NOTICIAS = todosOsItens.map(function (item) {
+          return {
+            titulo: item.titulo || "",
+            fonte: item.fonte || "",
+            href: item.link || "#",
+          };
         });
-        NOTICIAS = todas;
         renderizarLista();
-      })
-      .catch(function () {
+      },
+      function () {
         // Sem noticias disponiveis agora - a lista ainda funciona, so
         // sem a secao de noticias relacionadas populada.
-      });
+      }
+    );
   }
 
   // Eventos do calendario (mesma fonte real do Calendario) - ver
