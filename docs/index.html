@@ -223,6 +223,17 @@
     padding:8px 10px;line-height:1.5;
   }
   .noticia-card .porque-importa strong{color:var(--gold);}
+  /* Relacao neutra noticia/ativo/setor (pedido do usuario) - so
+     descreve o que a noticia menciona, nunca "compre"/"venda". */
+  .noticia-relacoes{display:flex;flex-wrap:wrap;gap:6px;}
+  .noticia-relacoes .relacao-ativo{
+    font-family:var(--font-mono);font-size:0.68rem;font-weight:600;color:var(--gold);
+    background:color-mix(in srgb, var(--gold) 10%, transparent);border-radius:var(--r-pill);padding:3px 9px;
+  }
+  .noticia-relacoes .relacao-setor{
+    font-family:var(--font-mono);font-size:0.68rem;color:var(--slate);
+    border:1px solid var(--line-strong);border-radius:var(--r-pill);padding:3px 9px;
+  }
   .noticia-card .ler-mais{font-size:0.78rem;font-weight:600;color:var(--gold);align-self:flex-start;}
   .noticia-card .ler-mais:hover{color:var(--gold-soft);}
   .noticias-vazio{

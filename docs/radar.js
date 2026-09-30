@@ -439,6 +439,10 @@
           var horaEl = card.querySelector(".time");
           var linkEl = card.querySelector("a.read");
           var etiquetaEl = card.querySelector(".tag-etiqueta");
+          // Relacao neutra noticia/ativo/setor (pedido do usuario) -
+          // pode ter varios de cada, ao contrario da etiqueta (so 1).
+          var ativosEls = card.querySelectorAll(".tag-ativo");
+          var setoresEls = card.querySelectorAll(".tag-setor");
 
           var titulo = tituloEl ? tituloEl.textContent.trim() : "";
           if (!titulo) return;
@@ -458,6 +462,8 @@
             ingles: pareceIngles(titulo),
             etqSlug: etiquetaEl ? etiquetaEl.className.replace("tag-etiqueta", "").replace("etq-", "").trim() : "confirmado",
             etqTexto: etiquetaEl ? etiquetaEl.textContent.trim() : "CONFIRMADO",
+            ativos: Array.prototype.map.call(ativosEls, function (el) { return el.textContent.trim(); }),
+            setores: Array.prototype.map.call(setoresEls, function (el) { return el.textContent.trim(); }),
           });
         });
 
@@ -511,6 +517,12 @@
         "<h3>" + escapeHtml(n.titulo) + "</h3>" +
         (n.resumo ? '<p class="resumo">' + escapeHtml(n.resumo) + "</p>" : "") +
         '<p class="porque-importa"><strong>Por que isso importa?</strong> ' + porque + "</p>" +
+        (n.ativos.length || n.setores.length
+          ? '<div class="noticia-relacoes">' +
+            n.ativos.map(function (a) { return '<span class="relacao-ativo">' + escapeHtml(a) + "</span>"; }).join("") +
+            n.setores.map(function (s) { return '<span class="relacao-setor">' + escapeHtml(s) + "</span>"; }).join("") +
+            "</div>"
+          : "") +
         '<a href="' + escapeHtml(n.href) + '" target="_blank" rel="noopener" class="ler-mais">Leia a matéria original →</a>' +
         "</article>"
       );

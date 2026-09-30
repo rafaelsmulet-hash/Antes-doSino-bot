@@ -109,6 +109,38 @@ def extract_ticker_hashtags(text):
     return found
 
 
+# Setor de cada hashtag de ativo (pedido do usuario - "relacao neutra
+# entre noticia, ativos e setores citados"). So classificacao de setor
+# de mercado (nunca leitura de "bom" ou "mau" pro papel) - mesmo
+# espirito neutro de ASSET_PROFILES/THEME_PROFILES, so que indexado
+# pela hashtag ja calculada em extract_ticker_hashtags, pra nao
+# precisar rodar a deteccao de novo.
+SETOR_POR_HASHTAG = {
+    "PETR4": "Petróleo & Gás", "PETR3": "Petróleo & Gás",
+    "VALE3": "Mineração & Siderurgia",
+    "ITUB4": "Financeiro", "BBDC4": "Financeiro", "BBAS3": "Financeiro", "B3SA3": "Financeiro",
+    "WEGE3": "Industrial & Bens de Capital",
+    "MGLU3": "Varejo & Consumo",
+    "ABEV3": "Bebidas & Consumo",
+    "AZUL4": "Aviação & Transporte", "GOLL4": "Aviação & Transporte",
+    "EMBR3": "Industrial & Bens de Capital",
+    "HAPV3": "Saúde",
+    "USD/BRL": "Câmbio", "IBOVESPA": "Índice Ibovespa", "SELIC": "Juros",
+}
+
+
+def setores_para_hashtags(hashtags):
+    """Retorna os setores distintos (na ordem de aparicao) das hashtags
+    de ativo ja extraidas - nunca inventa setor pra hashtag que nao
+    esta no mapa (fica de fora da lista em vez de adivinhar)."""
+    setores = []
+    for h in hashtags or []:
+        setor = SETOR_POR_HASHTAG.get(h)
+        if setor and setor not in setores:
+            setores.append(setor)
+    return setores
+
+
 # Termos que indicam noticia de resultado trimestral/balanco de uma
 # empresa especifica - usados como filtro barato (regex) antes de
 # gastar uma chamada de IA extra em extract_earnings_details.
@@ -4860,6 +4892,12 @@ def process_forwarded_channels(sent_hashes, recent_titles):
                         # ficar dessincronizado se a regra mudar).
                         "tipo_conteudo": ai_result.get("tipo_conteudo") if ai_result else "fato",
                         "fato_confirmado": ai_result.get("fato_confirmado") if ai_result else True,
+                        # Relacao neutra noticia/ativo/setor (pedido do
+                        # usuario) - hashtags ja calculadas pra este
+                        # item (Telegram); setores derivados delas, sem
+                        # rodar deteccao de novo.
+                        "hashtags": hashtags,
+                        "setores": setores_para_hashtags(hashtags),
                     })
 
                     has_updates = True
@@ -4946,6 +4984,26 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
         cat_slug, cat_label = classify_news_category(e)
         etq_slug, etq_label = editorial_tag_for_entry(e)
         link = e.get("link", "#") or "#"
+
+        # Relacao neutra noticia/ativo/setor (pedido do usuario) - so
+        # descreve o que a noticia menciona, nunca "compre"/"venda".
+        # Ausente pra entry historico (persistido antes deste campo
+        # existir) - card so nao mostra a linha, nunca inventa relacao.
+        relacoes_html = ""
+        hashtags_e = e.get("hashtags") or []
+        setores_e = e.get("setores") or []
+        if hashtags_e or setores_e:
+            partes_relacao = ""
+            if hashtags_e:
+                partes_relacao += "".join(
+                    '<span class="tag-ativo">#' + html_module.escape(h) + "</span>" for h in hashtags_e
+                )
+            if setores_e:
+                partes_relacao += "".join(
+                    '<span class="tag-setor">' + html_module.escape(s) + "</span>" for s in setores_e
+                )
+            relacoes_html = '<div class="card-relacoes">' + partes_relacao + "</div>"
+
         cards_html += (
             '<div class="card" data-categoria="' + cat_slug + '">'
             '<div class="card-meta"><span class="badge ' + cls + '">' + label + "</span>"
@@ -4955,6 +5013,7 @@ def generate_portal(entries, entries_today=None, template_path="docs/template.ht
             '<span class="time">' + e["time"] + "</span></div>"
             "<h3>" + html_module.escape(e["title"]) + "</h3>"
             "<p>" + html_module.escape(e["body"]) + "</p>"
+            + relacoes_html +
             '<a href="' + link + '" class="read" target="_blank">Leia mais &rarr;</a>'
             "</div>\n"
         )
@@ -5390,6 +5449,8 @@ def main():
                     "por_que_importa": ai_result.get("por_que_importa") if ai_result else None,
                     "tipo_conteudo": ai_result.get("tipo_conteudo") if ai_result else "fato",
                     "fato_confirmado": ai_result.get("fato_confirmado") if ai_result else True,
+                    "hashtags": hashtags,
+                    "setores": setores_para_hashtags(hashtags),
                 })
             else:
                 sent_hashes[h] = None
