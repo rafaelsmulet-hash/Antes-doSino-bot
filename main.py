@@ -3284,7 +3284,7 @@ SITEMAP_PAGINAS = [
     "", "terminal.html", "calendario.html", "mapa.html", "quant.html",
     "exposicao.html", "resumo-semanal.html", "sobre.html", "status.html",
     "metodologia.html", "correcoes.html", "privacidade.html", "cookies.html",
-    "termos.html", "aviso-de-risco.html", "derivativos.html",
+    "termos.html", "aviso-de-risco.html", "derivativos.html", "en.html",
 ]
 
 

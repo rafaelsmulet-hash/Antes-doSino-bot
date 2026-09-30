@@ -4,6 +4,80 @@ Bot de notícias financeiras do mercado brasileiro. Lê feeds RSS, classifica e 
 
 Não é uma SPA nem tem build step — veja `CLAUDE.md` para as regras permanentes do projeto (stack real, o que pode e não pode mudar).
 
+**[Read this in English →](README.en.md)**
+
+## Sobre este projeto (case)
+
+### O problema
+
+Conteúdo financeiro voltado a varejo no Brasil tende a dois extremos: um fluxo bruto de manchetes sem nenhum sinal de materialidade, ou recomendações simplificadas de "compra/venda" sem transparência sobre de onde vem cada número. O Antes do Sino nasceu como um projeto de portfólio (para vagas de inteligência de mercado, RI, research e sales trading) construído contra os dois problemas: pontua o que realmente importa, marca o que é confirmado/rumor/opinião, e nunca gera um número que não seja rastreável até a fonte.
+
+### Arquitetura
+
+```mermaid
+flowchart TB
+    subgraph Fontes["Fontes públicas"]
+        RSS["Feeds RSS<br/>(Reuters, Bloomberg, InfoMoney...)"]
+        TG["Canais do Telegram<br/>encaminhados"]
+        BRAPI["Brapi<br/>cotações B3"]
+        TD["TwelveData<br/>câmbio/cripto"]
+    end
+
+    RSS --> CLEAN["Limpeza de texto<br/>(mojibake, boilerplate, markdown)"]
+    TG --> CLEAN
+    CLEAN --> AI["Classificação por IA<br/>(Groq/Llama): materialidade,<br/>sentimento, tipo, tradução"]
+    AI --> GUARD["Guard anti-alucinação<br/>(número no texto gerado<br/>precisa existir na fonte)"]
+    GUARD --> DEDUP["Deduplicação<br/>(hash + similaridade textual)"]
+    DEDUP --> DISPATCH{"Score de<br/>materialidade"}
+    DISPATCH -->|"alto"| BREAKING["Alerta imediato"]
+    DISPATCH -->|"médio"| GIRO["Giro do Mercado<br/>(digest a cada 4h)"]
+    DISPATCH -->|"baixo"| DISCARD["Descartado"]
+
+    BRAPI --> SNAPSHOT["Snapshot de mercado"]
+    TD --> SNAPSHOT
+    SNAPSHOT --> TEMP["Temperatura do Mercado"]
+
+    BREAKING --> TELEGRAM["Telegram"]
+    GIRO --> TELEGRAM
+    DEDUP --> SITE["Site estático (docs/)"]
+    TEMP --> SITE
+    SITE --> PAGES["GitHub Pages"]
+```
+
+Todo o pipeline roda em `main.py`, disparado a cada poucos minutos por um cron externo via `workflow_dispatch` (ver [Como o bot roda](#como-o-bot-roda) abaixo). `editorial_foundation.py` e `market_data_provider.py` são módulos isolados (nunca importam `main.py` de volta) — o primeiro guarda o "modo sombra" (métricas que não afetam a publicação real), o segundo é um padrão factory/DI pra fonte de cotação, hoje só usado pela Brapi.
+
+### Decisões técnicas
+
+- **Sem framework, sem build step, de propósito.** HTML/CSS/JS vanilla, hospedagem gratuita no GitHub Pages, um único `design-system.css` (tokens de cor/espaçamento, tema claro/escuro) compartilhado por toda página.
+- **Guard anti-alucinação numérica.** Toda síntese gerada por IA (tradução, resumo executivo) passa por uma checagem que compara cada número do texto gerado contra o texto fonte, por fingerprint de dígitos (imune a troca de separador decimal pt-BR/en-US) — número que não bate é descartado, nunca publicado.
+- **Nunca inventar dado ausente.** Sem fonte gratuita confiável pra um indicador, ou a tela mostra isso explicitamente (proxy assumido) ou o número simplesmente não aparece — nunca um placeholder fingindo ser dado real.
+- **Consentimento antes de analytics.** Google Analytics só carrega depois que o usuário aceita explicitamente (faixa de cookies) — antes disso, nenhum cookie de terceiro é criado.
+- **Widgets carregados sob demanda.** Todo widget da TradingView (Terminal, Radar, Mapa de Calor, Calendário, Quant) passa por uma única função compartilhada (`theme.js::montarWidgetTV`) — deu pra adicionar lazy-load via `IntersectionObserver` em todas as páginas de uma vez, sem tocar em cada uma individualmente.
+- **Simulador de derivativos 100% client-side.** Não existe fonte gratuita de cadeia de opções da B3 em tempo real — em vez de inventar ou fazer scraping, o simulador de trava/collar/put protetora calcula o payoff só com os números que o próprio usuário informa.
+
+### Capturas de tela
+
+![Radar de Abertura — home do site, com Temperatura do Mercado e notícias curadas](screenshots/radar-de-abertura.png)
+*Radar de Abertura: temperatura do mercado (com histórico e comparação "desde a última leitura"), indicadores essenciais e notícias com etiqueta de confiabilidade e relação com ativo/setor.*
+
+![Simulador de derivativos — resultado de um Collar com gráfico de payoff](screenshots/derivativos.png)
+*Simulador de estruturas (trava de alta/baixa, collar, put protetora): métricas de lucro/perda máxima e ponto de equilíbrio calculadas numericamente, gráfico de payoff em SVG sem biblioteca externa.*
+
+### Limitações conhecidas
+
+- **Sem suíte de testes automatizada** (nem pytest). Validação é manual: `py_compile` + scripts ad hoc por mudança + Playwright real pra UI — ver `CLAUDE.md`.
+- **`dados-terminal.html` ainda é um HTML monolítico (~285 KB)**, não paginado nem comprimido em JSON — identificado como próximo passo, não implementado ainda (mudança de arquitetura maior, que toca `generate_portal` em `main.py` e a lógica de parse em `terminal.js`/`radar.js` ao mesmo tempo).
+- **Fundamentos via dados abertos da CVM (DFP/ITR) e feed de Fatos Relevantes/Comunicados ao Mercado não estão implementados.** O ambiente de desenvolvimento usado nesta fase do projeto não tinha acesso de rede a `dados.cvm.gov.br`/`b3.com.br` pra verificar o formato real dos dados antes de escrever o parser — pendente de um ambiente com acesso real (ex: dentro do próprio GitHub Actions) antes de implementar.
+- **OBM (fluxo estrangeiro oficial) indisponível.** Sem API pública documentada — tratado como indisponível, nunca com scraping ou endpoint adivinhado (ver `CLAUDE.md` regra 5).
+- **`social/` (motor de conteúdo social) usa uma paleta visual antiga** (azul), anterior ao redesign atual do site (navy + dourado) — módulo isolado, funcional, mas não prioritário no momento (o foco atual é o produto informacional, não crescimento em redes sociais).
+
+### Próximos passos
+
+1. Fundamentos financeiros via CVM (DFP/ITR) com comparação setorial, assim que houver um ambiente com acesso de rede validado.
+2. Feed de Fatos Relevantes e Comunicados ao Mercado.
+3. Substituir `dados-terminal.html` por um formato JSON paginado/comprimido.
+4. Suíte de testes automatizada básica (pytest) para as funções puras do pipeline (parsing, classificação, cálculo de payoff).
+
 ## Como o bot roda
 
 `main.py` é executado pela GitHub Action `.github/workflows/bot.yml`, disparada externamente (cron-job.org → `workflow_dispatch`) a cada poucos minutos. Não há `schedule:` no workflow — a cadência real vem do disparo externo, não do GitHub Actions.
