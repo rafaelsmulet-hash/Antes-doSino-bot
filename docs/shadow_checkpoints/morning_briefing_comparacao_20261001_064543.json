@@ -1,0 +1,82 @@
+{
+  "checkpoint": "morning_briefing",
+  "data": "2026-10-01",
+  "gerado_em": "2026-10-01T06:45:43.195805-03:00",
+  "fluxo_atual": {
+    "mensagens_enviadas_hoje": 43,
+    "principais_noticias": [
+      "Fundador da marca de tênis Veja defende valorização para preservar Amazônia",
+      "Empresas incentivam IA sem dar ferramentas, dizem 28% dos profissionais",
+      "Petrobras recebe R$ 1 bi em novas parcelas de subvenção de combustíveis",
+      "Bolsa Família será maior em outubro de 2026: veja quando reajuste começa a ser pago e quem poderá se beneficiar",
+      "Thinking about a career pivot? A Google engineer shares what he learned from taking a leap of faith.",
+      "Trump is right, 'Artificial Intelligence' is a bad name. I suggest 'Robo-Doodad.'",
+      "16 U.S. Trucking Companies File For Bankruptcy In Less Than A Month As Diesel Prices Soar",
+      "'Sensitive Security Situation': Israeli Army Chief Abruptly Cancels Trip To US",
+      "Brazil Election Polls Too Close To Call, But Polymarket Gives Bolsonaro Clear Lead",
+      "\"Zero Hormuz\": Abu Dhabi Crown Prince Readies Tens Of Billions To Turn Fujairah Into Hormuz Bypass"
+    ]
+  },
+  "novo_sistema": {
+    "mensagens_que_enviaria_neste_checkpoint": 1,
+    "eventos_consolidados_neste_checkpoint": [
+      "Bianco Turns Bullish on Treasuries as Yields Climb",
+      "Turkey Wants Fund Investors to Give Back ‘Excessive’ Profits",
+      "Zimbabwe’s Payments to Former White Farmers Reach $508 Million",
+      "Debate presidencial, PMIs, Datafolha, falas do Fed e mais destaques desta quinta",
+      "Dow Jones Futuro recua com alta dos Treasuries e Nasdaq sobe impulsionado pela Micron",
+      "Como os assentos no almoço de Trump sobre IA revelam quem tem a atenção do presidente",
+      "Magalu salta 61% e lidera Ibovespa em setembro: por que disparou e o que vem agora?",
+      "Ambev, B3, Itaú e mais empresas pagam dividendos em outubro; veja a agenda"
+    ]
+  },
+  "diferencas": {
+    "enviadas_pelo_atual_que_o_novo_descartaria_hoje": [
+      "Bianco Turns Bullish on Treasuries as Yields Climb",
+      "Turkey Wants Fund Investors to Give Back ‘Excessive’ Profits",
+      "Zimbabwe’s Payments to Former White Farmers Reach $508 Million",
+      "Debate presidencial, PMIs, Datafolha, falas do Fed e mais destaques desta quinta",
+      "Dow Jones Futuro recua com alta dos Treasuries e Nasdaq sobe impulsionado pela Micron",
+      "Como os assentos no almoço de Trump sobre IA revelam quem tem a atenção do presidente",
+      "Magalu salta 61% e lidera Ibovespa em setembro: por que disparou e o que vem agora?",
+      "Ambev, B3, Itaú e mais empresas pagam dividendos em outubro; veja a agenda",
+      "Controle cambial no Brasil? Gestores veem risco baixo, mas compram proteção",
+      "Bolsas da Ásia sobem com ações ligadas à IA, apesar de tensões no Oriente Médio",
+      "Tempo real: Ibovespa monitora nova rodada de pesquisas eleitorais",
+      "Ações da Alphabet sobem no pré-mercado após lançamento do Gemini 4 Argon",
+      "Por que as ações da Alphabet estão subindo hoje?",
+      "Goldman Sachs adiciona quatro ações europeias à lista de convicção com catalisadores de resultados",
+      "Copilot no Excel: 10 tarefas que a IA consegue fazer por você",
+      "France’s bond market is stumbling. Should Americans care?",
+      "Retail investors are aggressively piling into this bold contrarian bet through one ETF.",
+      "AM Need to Know: Micron beats estimates, Amazon expands nuclear deal & more",
+      "Is Wall Street Dead Wrong About Intuitive Surgical? Here's My Honest Answer.",
+      "$500 a Month in Vanguard's Total Stock Market ETF Since 2001 Grew to About $876,000",
+      "Should You Forget Chevron and Buy This Uranium Stock Instead?",
+      "Is XRP a Buy Right Now?",
+      "History Says October Is the Stock Market's Most Dangerous Month. Here's My Defensive Playbook.",
+      "Uh-Oh! The Latest September Inflation Forecast Spells Trouble for Wall Street, and It's Not Just Energy Prices to Blame.",
+      "What Is the Best Performing &quot;Magnificent 7&quot; Stock in 2026?",
+      "Inteligência artificial muda planos de carreira dos jovens; veja profissões que ganham espaço",
+      "Bolsa Família 2026: veja calendário de pagamentos em outubro, primeiro mês após reajuste",
+      "Pagamento do INSS de outubro: veja calendário e datas",
+      "Quinto dia útil de outubro de 2026: veja a data do pagamento",
+      "Saque-aniversário FGTS outubro: veja calendário e quem pode sacar",
+      "Justiça do Rio aprova plano de recuperação judicial da OSX",
+      "Teoria das Implicações: a maior oportunidade é aquela que quase ninguém vê",
+      "Mega-Sena: quanto R$ 75 milhões rendem todo mês na poupança e no Tesouro",
+      "Fundador da marca de tênis Veja defende valorização para preservar Amazônia",
+      "Empresas incentivam IA sem dar ferramentas, dizem 28% dos profissionais",
+      "Petrobras recebe R$ 1 bi em novas parcelas de subvenção de combustíveis",
+      "Bolsa Família será maior em outubro de 2026: veja quando reajuste começa a ser pago e quem poderá se beneficiar",
+      "Thinking about a career pivot? A Google engineer shares what he learned from taking a leap of faith.",
+      "Trump is right, 'Artificial Intelligence' is a bad name. I suggest 'Robo-Doodad.'",
+      "16 U.S. Trucking Companies File For Bankruptcy In Less Than A Month As Diesel Prices Soar",
+      "'Sensitive Security Situation': Israeli Army Chief Abruptly Cancels Trip To US",
+      "Brazil Election Polls Too Close To Call, But Polymarket Gives Bolsonaro Clear Lead",
+      "\"Zero Hormuz\": Abu Dhabi Crown Prince Readies Tens Of Billions To Turn Fujairah Into Hormuz Bypass"
+    ],
+    "priorizadas_pelo_novo_e_nao_enviadas_pelo_atual": null,
+    "nota_limitacao": "O campo acima e None de proposito: nesta fase, o modo sombra so pontua noticias que JA sobreviveram aos filtros atuais - nao e possivel ainda mostrar noticias que o novo sistema priorizaria e o atual nunca chegou a publicar. Isso exigiria pontuar ANTES da decisao atual, planejado para uma fase futura."
+  }
+}
