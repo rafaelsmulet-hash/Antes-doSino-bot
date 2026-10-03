@@ -1,15 +1,6 @@
 {
   "decisions": [
     {
-      "title": "CWT Crosses Critical Technical Indicator",
-      "source": "Nasdaq",
-      "score": null,
-      "motivo": null,
-      "decisao_sugerida": "discard",
-      "decisao_sistema_atual": "publicado",
-      "timestamp": "2026-10-01T17:11:53.911924-03:00"
-    },
-    {
       "title": "York Water (YORW) Shares Enter Oversold Territory",
       "source": "Nasdaq",
       "score": null,
@@ -17999,6 +17990,15 @@
       "decisao_sugerida": "discard",
       "decisao_sistema_atual": "descartado",
       "timestamp": "2026-10-03T19:07:06.401426-03:00"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "source": "Federal Reserve",
+      "score": null,
+      "motivo": null,
+      "decisao_sugerida": "discard",
+      "decisao_sistema_atual": "descartado",
+      "timestamp": "2026-10-03T19:12:20.625128-03:00"
     }
   ]
 }
